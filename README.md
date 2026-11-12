@@ -259,6 +259,10 @@ Settings such as `APP_SECRET` and `MONGODB_URI` can go in a `.env` file (copy `.
 which describes each one); the scripts load it with Node's built-in `--env-file` support. Outside
 production, emails (such as password reset links) are printed to the console.
 
+On macOS before 14, Sass's native compiler cannot run, and the Angular build and tests stop at
+"Building...". Set `NG_BUILD_SASS_EMBEDDED=0` in your shell (in `~/.zshrc`, say), not in `.env`, which
+`ng` does not read: the build then uses Sass's JavaScript compiler, and so does the server's Bootstrap test.
+
 <details>
 <summary>All the tools, with install links and version checks</summary>
 

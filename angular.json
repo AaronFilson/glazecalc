@@ -133,7 +133,17 @@
           "builder": "@angular/build:unit-test",
           "options": {
             "tsConfig": "tsconfig.spec.json",
-            "runnerConfig": "vitest-base.config.mts"
+            "runnerConfig": "vitest-base.config.mts",
+            "coverageExclude": [
+              "lib/**",
+              "data/**",
+              "client/app/testing/**",
+              "client/**/*.json",
+              "client/main.ts",
+              "client/main.server.ts",
+              "client/server-entry.ts",
+              "client/app/app.config.server.ts"
+            ]
           }
         }
       }

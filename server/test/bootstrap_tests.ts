@@ -1,7 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import * as sass from 'sass-embedded';
 import { expect } from './support/app.ts';
+
+// Sass's native compiler (sass-embedded) runs only on macOS 14 or later. Where the Angular build is told to
+// use the JavaScript one instead (NG_BUILD_SASS_EMBEDDED=0, as the README says), so is this test: the same
+// compile, from the sass package @angular/build depends on.
+const javascriptSass = ['0', 'false'].includes((process.env['NG_BUILD_SASS_EMBEDDED'] ?? '').toLowerCase());
+/** Options both compilers take: what the one call below passes. */
+type Options = NonNullable<Parameters<typeof import('sass').compile>[1]> &
+  NonNullable<Parameters<typeof import('sass-embedded').compile>[1]>;
+const compile: (file: string, options: Options) => { css: string } = javascriptSass
+  ? (await import('sass')).compile
+  : (await import('sass-embedded')).compile;
 
 // The client's stylesheet has only the parts of Bootstrap it uses (client/bootstrap.scss), not the whole
 // bootstrap.min.css. A template that names a Bootstrap class whose part is left out would lose its style
@@ -42,7 +52,7 @@ describe("the client's Bootstrap", function () {
       'utf8'
     );
     const bootstrap = classesIn(full);
-    const trimmed = sass.compile(path.join(ROOT, 'client', 'bootstrap.scss'), {
+    const trimmed = compile(path.join(ROOT, 'client', 'bootstrap.scss'), {
       loadPaths: [path.join(ROOT, 'node_modules')],
       silenceDeprecations: ['import'],
       quietDeps: true,
