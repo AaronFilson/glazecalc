@@ -76,7 +76,27 @@ describe("the README's numbers (scripts/readme-numbers.mjs)", () => {
 
   it('finds every number the README gives, and can read each one', () => {
     for (const claim of CLAIMS) expect([...README.matchAll(claim.pattern)].length, claim.what).to.be.above(0);
-    expect(findings(README, NUMBERS).filter((result) => result.verdict === 'missing')).to.deep.equal([]);
+    const unread = findings(README, NUMBERS).filter((result) => ['missing', 'unread'].includes(result.verdict));
+    expect(unread).to.deep.equal([]);
+  });
+
+  it('reads a number whose words are split across lines, and keeps the line breaks when writing', () => {
+    const text = 'over 1,600 server\n  tests (97% of\n  statements)';
+    const read = findings(text, NUMBERS).filter((result) => result.what.startsWith('server'));
+    expect(read.map((result) => [result.stated, result.verdict])).to.deep.equal([
+      [1600, 'true'],
+      [97, 'true']
+    ]);
+    expect(writeNumbers(text, NUMBERS)).to.equal('over 1,650 server\n  tests (98% of\n  statements)');
+  });
+
+  it('calls a number it cannot read an error, never a number nobody checks', () => {
+    const text = 'about 1,800 server tests, and over 1,650 server tests (98% of statements)';
+    const server = findings(text, NUMBERS).filter((result) => result.what === 'server tests');
+    expect(server.map((result) => [result.verdict, result.line])).to.deep.equal([
+      ['true', 1],
+      ['unread', 1]
+    ]);
   });
 
   it('writes the measured numbers in, every one of them then true, and writing again changes nothing', () => {

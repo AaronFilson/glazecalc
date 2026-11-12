@@ -16,8 +16,10 @@
 //
 // The README gives counts rounded down to a multiple of 50 below them ("over
 // 1,650"), and coverage and scores as whole numbers, so that they stay true as
-// tests are added. A number the README no longer gives is an error here: a change
-// to its wording comes with a change to CLAIMS below.
+// tests are added. A number the README no longer gives is an error here, and so is
+// one worded so that CLAIMS below cannot read it: a change to the wording comes
+// with a change to CLAIMS. Writing changes only the numbers, so the README's line
+// breaks stay where they were.
 import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
@@ -76,53 +78,59 @@ export function measureLighthouse(manifest) {
 const totalTests = (numbers) => numbers.server.tests + numbers.client.tests + numbers.e2e.tests;
 const otherScores = (numbers) =>
   Math.min(numbers.lighthouse.accessibility, numbers.lighthouse.bestPractices, numbers.lighthouse.seo);
-const badgeText = (match) => decodeURIComponent(match);
-const badge = (label, text) => `img.shields.io/badge/${label}-${encodeURIComponent(text)}-`;
+/** A count as the README gives it: rounded down, below the count. */
+const countText = (count) => formatCount(roundCount(count));
+/** A percent as the README gives it: the whole percent, rounded down. */
+const percentText = (pct) => String(Math.floor(pct));
 
 /** Reads a badge's message, or says the badge no longer looks as CLAIMS expects. */
 const badgeParts = (label, encoded, pattern) => {
-  const parts = pattern.exec(badgeText(encoded));
-  if (!parts) throw new Error(`The ${label} badge says "${badgeText(encoded)}", which this does not read`);
+  const parts = pattern.exec(decodeURIComponent(encoded));
+  if (!parts) throw new Error(`The ${label} badge says "${decodeURIComponent(encoded)}", which this does not read`);
   return parts;
 };
 
 /**
- * Each place the README gives numbers: its pattern (every match is checked), the numbers in a match
- * with what each is measured by, and the text that puts measured numbers in its place. A kind says how
- * a number is judged (judge below).
+ * Each place the README gives numbers. pattern finds them, and every match is checked; its words may be
+ * split across lines, as Prettier leaves them. mention finds the same number however it is worded, so
+ * that one the pattern cannot read is an error, never a number nobody checks. numbers says what each
+ * number in a match is and what measures it (judged by its kind, below), and values gives each one's
+ * text from what was measured, rounded down, for write.
  */
 export const CLAIMS = [
   {
     what: 'server tests',
-    pattern: /over ([\d,]+) server tests \((\d+)% of statements\)/g,
+    pattern: /over\s+([\d,]+)\s+server\s+tests\s+\((\d+)%\s+of\s+statements\)/g,
+    mention: /[\d,]+\+?\s+server\s+tests/g,
     numbers: (match) => [
       { what: 'server tests', kind: 'count', stated: parseCount(match[1]), measured: (n) => n.server.tests },
       { what: 'server coverage', kind: 'percent', stated: Number(match[2]), measured: (n) => n.server.statements }
     ],
-    render: (n) =>
-      `over ${formatCount(roundCount(n.server.tests))} server tests (${Math.floor(n.server.statements)}% of statements)`
+    values: (n) => [countText(n.server.tests), percentText(n.server.statements)]
   },
   {
     what: 'Angular unit tests',
-    pattern: /over ([\d,]+) Angular unit tests \((\d+)% of statements\)/g,
+    pattern: /over\s+([\d,]+)\s+Angular\s+unit\s+tests\s+\((\d+)%\s+of\s+statements\)/g,
+    mention: /[\d,]+\+?\s+Angular\s+unit\s+tests/g,
     numbers: (match) => [
       { what: 'Angular unit tests', kind: 'count', stated: parseCount(match[1]), measured: (n) => n.client.tests },
       { what: 'Angular coverage', kind: 'percent', stated: Number(match[2]), measured: (n) => n.client.statements }
     ],
-    render: (n) =>
-      `over ${formatCount(roundCount(n.client.tests))} Angular unit tests (${Math.floor(n.client.statements)}% of statements)`
+    values: (n) => [countText(n.client.tests), percentText(n.client.statements)]
   },
   {
     what: 'browser tests',
-    pattern: /over ([\d,]+) Playwright browser tests/g,
+    pattern: /over\s+([\d,]+)\s+Playwright\s+browser\s+tests/g,
+    mention: /[\d,]+\+?\s+Playwright\s+browser\s+tests/g,
     numbers: (match) => [
       { what: 'browser tests', kind: 'count', stated: parseCount(match[1]), measured: (n) => n.e2e.tests }
     ],
-    render: (n) => `over ${formatCount(roundCount(n.e2e.tests))} Playwright browser tests`
+    values: (n) => [countText(n.e2e.tests)]
   },
   {
     what: 'Lighthouse',
-    pattern: /performance (\d+); accessibility, best practices and SEO (\d+)/g,
+    pattern: /performance\s+(\d+);\s+accessibility,\s+best\s+practices\s+and\s+SEO\s+(\d+)/g,
+    mention: /performance\s+\d+/g,
     numbers: (match) => [
       {
         what: 'Lighthouse performance',
@@ -137,7 +145,7 @@ export const CLAIMS = [
         measured: otherScores
       }
     ],
-    render: (n) => `performance ${n.lighthouse.performance}; accessibility, best practices and SEO ${otherScores(n)}`
+    values: (n) => [String(n.lighthouse.performance), String(otherScores(n))]
   },
   {
     what: 'tests badge',
@@ -150,7 +158,7 @@ export const CLAIMS = [
         measured: totalTests
       }
     ],
-    render: (n) => badge('tests', formatCount(roundCount(totalTests(n))) + '+')
+    values: (n) => [encodeURIComponent(countText(totalTests(n)) + '+')]
   },
   {
     what: 'coverage badge',
@@ -172,8 +180,9 @@ export const CLAIMS = [
         }
       ];
     },
-    render: (n) =>
-      badge('coverage', `${Math.floor(n.server.statements)}% server · ${Math.floor(n.client.statements)}% client`)
+    values: (n) => [
+      encodeURIComponent(`${percentText(n.server.statements)}% server · ${percentText(n.client.statements)}% client`)
+    ]
   },
   {
     what: 'Lighthouse badge',
@@ -202,9 +211,9 @@ export const CLAIMS = [
         { what: 'Lighthouse badge, SEO', kind: 'score', stated: Number(parts[4]), measured: (n) => n.lighthouse.seo }
       ];
     },
-    render: (n) => {
+    values: (n) => {
       const l = n.lighthouse;
-      return badge('Lighthouse', `${l.performance} · ${l.accessibility} · ${l.bestPractices} · ${l.seo}`);
+      return [encodeURIComponent(`${l.performance} · ${l.accessibility} · ${l.bestPractices} · ${l.seo}`)];
     }
   }
 ];
@@ -223,25 +232,37 @@ export function judge(kind, stated, measured) {
   return stated > measured ? 'not true' : measured - stated >= 3 ? 'out of date' : 'true';
 }
 
-/** Every number the README gives, where, against what was measured; and a claim it no longer makes. */
+/**
+ * Every number the README gives, where, against what was measured; a claim it no longer makes
+ * ('missing'); and a number for a claim worded so that its pattern cannot read it ('unread').
+ */
 export function findings(text, numbers) {
   const results = [];
+  const lineOf = (index) => text.slice(0, index).split('\n').length;
   for (const claim of CLAIMS) {
     const matches = [...text.matchAll(claim.pattern)];
-    if (!matches.length) {
-      results.push({ what: claim.what, line: 0, stated: null, measured: null, verdict: 'missing' });
-      continue;
-    }
+    if (!matches.length) results.push({ what: claim.what, line: 0, stated: null, measured: null, verdict: 'missing' });
     for (const match of matches) {
-      const line = text.slice(0, match.index).split('\n').length;
       for (const number of claim.numbers(match)) {
         const measured = number.measured(numbers);
         results.push({
           what: number.what,
-          line,
+          line: lineOf(match.index),
           stated: number.stated,
           measured,
           verdict: judge(number.kind, number.stated, measured)
+        });
+      }
+    }
+    for (const mention of claim.mention ? text.matchAll(claim.mention) : []) {
+      const read = matches.some((m) => mention.index >= m.index && mention.index < m.index + m[0].length);
+      if (!read) {
+        results.push({
+          what: claim.what,
+          line: lineOf(mention.index),
+          stated: null,
+          measured: null,
+          verdict: 'unread'
         });
       }
     }
@@ -249,9 +270,26 @@ export function findings(text, numbers) {
   return results;
 }
 
+/** A match with each captured number's text replaced, and everything around them, line breaks too, as it was. */
+const replaceGroups = (match, groups, values) => {
+  let out = '';
+  let rest = match;
+  groups.forEach((group, i) => {
+    const at = rest.indexOf(group);
+    out += rest.slice(0, at) + values[i];
+    rest = rest.slice(at + group.length);
+  });
+  return out + rest;
+};
+
 /** The README with every number it gives replaced by the measured one, rounded as above. */
 export function writeNumbers(text, numbers) {
-  return CLAIMS.reduce((result, claim) => result.replace(claim.pattern, () => claim.render(numbers)), text);
+  return CLAIMS.reduce((result, claim) => {
+    const values = claim.values(numbers);
+    return result.replace(claim.pattern, (match, ...rest) =>
+      replaceGroups(match, rest.slice(0, values.length), values)
+    );
+  }, text);
 }
 
 /** What the runs measured, from every numbers/<part>.json in a folder, as one object. */
@@ -307,11 +345,13 @@ function main([command, ...args]) {
     const message =
       r.verdict === 'missing'
         ? `README.md no longer gives the ${r.what}; change CLAIMS in scripts/readme-numbers.mjs with its wording`
-        : `README.md says ${r.stated} for the ${r.what}, and this run measured ${r.measured} (${r.verdict}); ` +
-          'node scripts/readme-numbers.mjs write <numbers> puts the measured numbers in';
+        : r.verdict === 'unread'
+          ? `README.md gives a number for the ${r.what} in words CLAIMS in scripts/readme-numbers.mjs does not read`
+          : `README.md says ${r.stated} for the ${r.what}, and this run measured ${r.measured} (${r.verdict}); ` +
+            'node scripts/readme-numbers.mjs write <numbers> puts the measured numbers in';
     console.log(`::${level} file=README.md,line=${r.line || 1}::${message}`);
   }
-  if (results.some((r) => r.verdict === 'not true' || r.verdict === 'missing')) process.exitCode = 1;
+  if (results.some((r) => ['not true', 'missing', 'unread'].includes(r.verdict))) process.exitCode = 1;
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) main(process.argv.slice(2));

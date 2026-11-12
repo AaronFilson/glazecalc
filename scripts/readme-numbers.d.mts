@@ -7,13 +7,16 @@ export interface Numbers {
 }
 /** How a number the README states compares with what a run measured. */
 export type Verdict = 'true' | 'out of date' | 'not true';
-/** A number the README gives, where, and how it compares; 'missing' when the README no longer gives it. */
+/**
+ * A number the README gives, where, and how it compares; 'missing' when the README no longer gives it,
+ * 'unread' when it gives one for the claim in words the claim's pattern cannot read.
+ */
 export interface Finding {
   what: string;
   line: number;
   stated: number | null;
   measured: number | null;
-  verdict: Verdict | 'missing';
+  verdict: Verdict | 'missing' | 'unread';
 }
 /** The largest multiple of 50 below a count: what "over N" may say of it. */
 export function roundCount(count: number): number;
@@ -34,12 +37,12 @@ export function measureLighthouse(
   manifest: Array<{ isRepresentativeRun: boolean; summary: Record<string, number> }>
 ): Numbers['lighthouse'];
 /** Each place the README gives numbers, and how they are read and written. */
-export const CLAIMS: ReadonlyArray<{ what: string; pattern: RegExp }>;
+export const CLAIMS: ReadonlyArray<{ what: string; pattern: RegExp; mention?: RegExp }>;
 /** Whether a stated number is true of a measured one, out of date, or not true. */
 export function judge(kind: 'count' | 'percent' | 'score', stated: number, measured: number): Verdict;
 /** Every number the README gives, against what was measured. */
 export function findings(text: string, numbers: Numbers): Finding[];
-/** The README with every number it gives replaced by the measured one, rounded down. */
+/** The README with every number it gives replaced by the measured one, rounded down; nothing else changes. */
 export function writeNumbers(text: string, numbers: Numbers): string;
 /** What the runs measured, from every numbers/<part>.json in a folder. */
 export function readNumbers(dir: string): Numbers;
