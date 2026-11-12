@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Your Glazecalc password was changed",
+    "text": "The password for the Glazecalc account {account} was just changed, and every device that was signed in has been signed out.\n\nIf this was you, there is nothing else to do. If not, reset your password right away at {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "A new email was requested for your Glazecalc account",
+    "text": "A change of email was just asked for on the Glazecalc account {account}. A link was sent to the new address, and the change happens only when that link is opened.\n\nIf this was you, there is nothing else to do. If not, someone may know your password: reset it right away at {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Confirm your new email for Glazecalc",
+    "text": "Someone (hopefully you) asked to use {account} as the email for their Glazecalc account.\n\nTo make the change, open this link within {hours} hours:\n\n{link}\n\nThe link works once, and every device that was signed in will be signed out. If you did not ask for this, ignore this email; nothing will change.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "never ask. Changes from apps and access tokens are made at once",
+    "removals": "ask before removals only: moving a record to the Trash, or taking a material off the materials on hand. Other changes from apps and access tokens are made at once"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Glazecalc now asks less before apps change your records",
+    "text": "Confirm before changes, on the Glazecalc account {account}, was just set to: {choice}.\n\nIf this was you, there is nothing else to do. You can see and change it on Connected apps at {page}\n\nIf not, set it back there, revoke any app or token you do not know, and reset your password right away at {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "An app was connected to your Glazecalc account",
+    "opening": "An app was connected to the Glazecalc account {account} on {date} at {time} (UTC).\n\n",
+    "named": "The app: \"{name}\"\n",
+    "checked": "Its address, checked by Glazecalc: {host}\n",
+    "selfDescribed": "It registered itself, so its name is only what it says about itself.\n",
+    "answerAt": "It receives the answer at: {host}\n",
+    "loopback": "It receives the answer on the computer it was connected from ({host}).\n",
+    "read": "\nIt can read the recipes, notebook, materials, shelf and settings saved in the account. It cannot change anything.\n\n",
+    "write": "\nIt can read the recipes, notebook, materials, shelf and settings saved in the account, and for {days} days it can also change them: make and change records, and move them to the Trash. Every change keeps a version of the record as it was, so you can undo it on the website.\n\n",
+    "closing": "If this was you, there is nothing else to do. You can see what it does and revoke it at {page}\n\nIf not, revoke it there and reset your password right away at {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Your Glazecalc account was deleted",
+    "text": "The Glazecalc account {account} has been deleted, with everything saved in it: recipes, materials, firings, notes and settings. It cannot be undone.\n\nCopies in the site backups are deleted as the backups expire, within {days} days.\n\nYou can make a new account at any time.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "an authenticator app",
+    "passkey": "the passkey \"{name}\""
+  },
+  "MFA_ADDED": {
+    "subject": "A sign-in step was added to your Glazecalc account",
+    "text": "This was just added to the Glazecalc account {account} as a second step for signing in: {method}.\n\nIf this was you, there is nothing else to do. Keep your recovery codes somewhere safe. If not, someone may know your password: reset it right away at {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "Two-step sign-in on your Glazecalc account will be turned off",
+    "text": "Someone asked for two-step sign-in to be turned off on the Glazecalc account {account}, because every authenticator app, passkey and recovery code for it was lost.\n\nTwo-step sign-in will be turned off on {date} unless you write to privacy@glazecalcapp.com before then. After that, the account can be signed in to with its password alone.\n\nIf this was you, there is nothing else to do. If not, write to privacy@glazecalcapp.com now, and reset your password right away at {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "Two-step sign-in was turned off on your Glazecalc account",
+    "text": "Two-step sign-in was just turned off on the Glazecalc account {account}: every authenticator app, passkey and recovery code was removed, and every device that was signed in has been signed out. Signing in now needs only the password.\n\nYou can turn two-step sign-in on again on your account page. If you did not ask for this, reset your password right away at {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "A sign-in step was removed from your Glazecalc account",
+    "text": "This was just removed from the Glazecalc account {account} as a second step for signing in: {method}. If it was the last one, signing in now needs only the password.\n\nIf this was you, there is nothing else to do. If not, reset your password right away at {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "A new way to sign in was added to your Glazecalc account",
+    "text": "You can now sign in to the Glazecalc account {account} with {provider}.\n\nIf this was you, there is nothing else to do. If not, unlink it on your account page at {page} and reset your password right away at {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "A way to sign in was removed from your Glazecalc account",
+    "text": "{provider} was unlinked from the Glazecalc account {account}, and can no longer be used to sign in to it.\n\nIf this was you, there is nothing else to do. If not, someone may be signed in to your account: reset your password right away at {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "New recovery codes for your Glazecalc account",
+    "text": "New recovery codes were just made for the Glazecalc account {account}. The old codes no longer work.\n\nIf this was you, keep the new codes somewhere safe. If not, reset your password right away at {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "A recovery code was used on your Glazecalc account",
+    "text": "One of the recovery codes for the Glazecalc account {account} was just used, so it will not work again. Unused codes left: {left}. You can make new codes on your account page: {page}\n\nIf this was not you, someone may have your password and your codes: reset your password right away at {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Reset your Glazecalc password",
+    "text": "Someone (hopefully you) asked to reset the password for the Glazecalc account {account}.\n\nTo choose a new password, open this link within {minutes} minutes:\n\n{link}\n\nThe link works once. If you did not ask for this, ignore this email; your password stays the same.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "Your Glazecalc password was changed",
+    "opening": "The password for the Glazecalc account {account} was just reset, and every device that was signed in has been signed out.\n\n",
+    "stopped": "In case someone else had the old password, the reset also stopped these:\n\n",
+    "tokens": "- The access tokens and connected apps that could reach your saved work ({count}). If you still need one, make a new token on your account page at {page}\n",
+    "providers": "- Signing in with {providers}, which you can link again on your account page at {page}\n",
+    "shareLinks": "- The links you had made to share recipes. You can make new ones from each recipe.\n",
+    "closing": "\nIf this was you, there is nothing else to do. If not, reset your password right away at {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Someone entered your Glazecalc password but did not finish signing in",
+    "text": "Someone entered the right password for the Glazecalc account {account}, but did not finish the second step of signing in. Your second step kept them out.\n\nIf this was you, there is nothing else to do. If not, someone knows your password: change it right away. You can reset it at {forgot}\n\nAfter 10 wrong codes from an authenticator app, codes are refused for an hour; after 10 more, for a day; and then for a week each time. A passkey or a recovery code still works while codes are refused. Resetting your password by email shuts that person out: any sign-in they started ends, the password they know stops working, and codes work again.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "An access token for your Glazecalc account expires soon",
+    "text": "The access token named \"{name}\" on the Glazecalc account {account} stops working on {date}.\n\nIf you still use it, make a new token before then at {page} and give it to your assistant or script in place of the old one. If you no longer use it, there is nothing to do.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "A new access token for your Glazecalc account",
+    "text": "An access token named \"{name}\" was just made for the Glazecalc account {account}. It can read the recipes, materials, notes and firing logs saved in the account until {date}.\n\nIf this was you, there is nothing else to do. You can see and revoke your tokens at {page}\n\nIf not, revoke it there and reset your password right away at {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "A new access token that can change your Glazecalc records",
+    "text": "An access token named \"{name}\" was just made for the Glazecalc account {account}. It can read and change the recipes, materials, notes and firing logs saved in the account, and move them to the Trash, until {date}. Every change it makes keeps the record as it was, so you can undo it on the website.\n\nIf this was you, there is nothing else to do. You can see and revoke your tokens at {page}\n\nIf not, revoke it there and reset your password right away at {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Confirm your email for Glazecalc",
+    "text": "Someone (hopefully you) made a Glazecalc account with the address {account}.\n\nTo confirm that this address is yours, open this link within {hours} hours:\n\n{link}\n\nThe link works once. If you did not make an account, ignore this email; nothing else will be sent to you unless you ask for it.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Vaša je lozinka za aplikaciju Glazecalc promijenjena",
+    "text": "Lozinka za račun {account} u aplikaciji Glazecalc upravo je promijenjena, a svi uređaji na kojima je račun bio prijavljen odjavljeni su.\n\nAko ste to bili vi, ne morate ništa drugo učiniti. Ako niste, odmah ponovno postavite lozinku ovdje: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "Zatražena je nova adresa e-pošte za vaš račun Glazecalc",
+    "text": "Za račun Glazecalc {account} upravo je zatražena promjena adrese e-pošte. Poveznica je poslana na novu adresu, a promjena se provodi tek kad se ta poveznica otvori.\n\nAko ste to bili vi, ne morate ništa učiniti. Ako niste, netko možda zna vašu lozinku: odmah postavite novu lozinku na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Potvrdite svoju novu adresu e-pošte za Glazecalc",
+    "text": "Netko (nadamo se da ste to bili vi) zatražio je da se {account} koristi kao adresa e-pošte njegova računa Glazecalc.\n\nDa biste proveli promjenu, otvorite ovu poveznicu u roku od {hours} sati:\n\n{link}\n\nPoveznica vrijedi samo jednom, a svi prijavljeni uređaji bit će odjavljeni. Ako to niste zatražili, zanemarite ovu e-poruku; ništa se neće promijeniti.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "nikad – promjene iz aplikacija i pristupnih tokena izvršavaju se odmah",
+    "removals": "samo prije uklanjanja – premještanja zapisa u Koš za smeće ili uklanjanja sirovine iz zalihe. Ostale promjene iz aplikacija i pristupnih tokena izvršavaju se odmah"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Glazecalc sada manje pita prije nego što aplikacije promijene vaše zapise",
+    "text": "Postavka „Potvrda prije promjena” za račun Glazecalc {account} upravo je promijenjena u: {choice}.\n\nAko ste to bili vi, ne morate ništa drugo učiniti. Postavku možete vidjeti i promijeniti na stranici Povezane aplikacije na adresi {page}\n\nAko niste, ondje je vratite, opozovite svaku aplikaciju ili token koje ne poznajete i odmah ponovno postavite lozinku ovdje: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "S vašim računom Glazecalc povezana je aplikacija",
+    "opening": "S računom Glazecalc {account} povezana je aplikacija {date} u {time} (UTC).\n\n",
+    "named": "Aplikacija: „{name}”\n",
+    "checked": "Njezina adresa, koju je provjerio Glazecalc: {host}\n",
+    "selfDescribed": "Registrirala se sama, pa je njezin naziv samo ono što sama o sebi kaže.\n",
+    "answerAt": "Odgovor prima na: {host}\n",
+    "loopback": "Odgovor prima na računalu s kojeg je povezana ({host}).\n",
+    "read": "\nMože čitati recepte, bilježnicu, sirovine, zalihu i postavke spremljene u računu. Ne može ništa mijenjati.\n\n",
+    "write": "\nMože čitati recepte, bilježnicu, sirovine, zalihu i postavke spremljene u računu, a tijekom {days} dana može ih i mijenjati: izrađivati i mijenjati zapise te ih premještati u Koš za smeće. Svaka promjena čuva verziju zapisa onakvu kakav je bio, pa je možete poništiti na web-stranici.\n\n",
+    "closing": "Ako ste to bili vi, ne morate ništa drugo učiniti. Što radi možete vidjeti i opozvati je na adresi {page}\n\nAko niste, ondje je opozovite i odmah ponovno postavite lozinku ovdje: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Vaš račun Glazecalc je izbrisan",
+    "text": "Račun Glazecalc {account} izbrisan je zajedno sa svime što je u njemu bilo spremljeno: receptima, sirovinama, pečenjima, bilješkama i postavkama. To se ne može poništiti.\n\nKopije u sigurnosnim kopijama stranice brišu se kad sigurnosne kopije isteknu, u roku od {days} dana.\n\nU bilo kojem trenutku možete stvoriti novi račun.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "aplikacija za provjeru autentičnosti",
+    "passkey": "pristupni ključ „{name}”"
+  },
+  "MFA_ADDED": {
+    "subject": "Vašem računu Glazecalc dodan je korak prijave",
+    "text": "Računu Glazecalc {account} upravo je dodano kao drugi korak prijave: {method}.\n\nAko ste to bili vi, ne morate ništa učiniti. Kodove za oporavak spremite na sigurno mjesto. Ako niste, netko možda zna vašu lozinku: odmah postavite novu lozinku na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "Dvostupanjska prijava na vašem računu Glazecalc bit će isključena",
+    "text": "Netko je zatražio isključivanje dvostupanjske prijave na računu Glazecalc {account}, jer je izgubljena svaka aplikacija za provjeru autentičnosti, svaki pristupni ključ i svaki kod za oporavak za njega.\n\nDvostupanjska prijava bit će isključena {date}, osim ako do tada ne napišete na privacy@glazecalcapp.com. Nakon toga će se u račun moći prijaviti samo lozinkom.\n\nAko ste to bili vi, ne morate ništa učiniti. Ako niste, sada napišite na privacy@glazecalcapp.com i odmah postavite novu lozinku na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "Na vašem računu Glazecalc isključena je dvostupanjska prijava",
+    "text": "Na računu Glazecalc {account} upravo je isključena dvostupanjska prijava: uklonjena je svaka aplikacija za provjeru autentičnosti, svaki pristupni ključ i svaki kod za oporavak, a svi prijavljeni uređaji su odjavljeni. Za prijavu je sada dovoljna samo lozinka.\n\nDvostupanjsku prijavu možete ponovno uključiti na stranici svojeg računa. Ako to niste zatražili, odmah postavite novu lozinku na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "S vašeg računa Glazecalc uklonjen je korak prijave",
+    "text": "S računa Glazecalc {account} upravo je uklonjeno kao drugi korak prijave: {method}. Ako je to bio posljednji, za prijavu je sada dovoljna samo lozinka.\n\nAko ste to bili vi, ne morate ništa učiniti. Ako niste, odmah postavite novu lozinku na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "Vašem računu Glazecalc dodan je novi način prijave",
+    "text": "Sada se možete prijavljivati u račun Glazecalc {account} putem usluge {provider}.\n\nAko ste to bili vi, ne morate ništa drugo učiniti. Ako niste, prekinite vezu na stranici svojeg računa na adresi {page} i odmah ponovno postavite lozinku ovdje: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "S vašeg računa Glazecalc uklonjen je jedan način prijave",
+    "text": "Veza računa Glazecalc {account} s uslugom {provider} prekinuta je: u račun se više ne možete prijavljivati putem usluge {provider}.\n\nAko ste to bili vi, ne morate ništa drugo učiniti. Ako niste, netko bi mogao biti prijavljen u vaš račun: odmah ponovno postavite lozinku ovdje: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Novi kodovi za oporavak za vaš račun Glazecalc",
+    "text": "Za račun Glazecalc {account} upravo su stvoreni novi kodovi za oporavak. Stari kodovi više ne vrijede.\n\nAko ste to bili vi, nove kodove spremite na sigurno mjesto. Ako niste, odmah postavite novu lozinku na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "Na vašem računu Glazecalc upotrijebljen je kod za oporavak",
+    "text": "Jedan od kodova za oporavak za račun Glazecalc {account} upravo je upotrijebljen, pa više neće vrijediti. Neupotrijebljenih kodova preostaje: {left}. Nove kodove možete stvoriti na stranici svojeg računa: {page}\n\nAko to niste bili vi, netko možda ima vašu lozinku i vaše kodove: odmah postavite novu lozinku na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Ponovno postavljanje lozinke za aplikaciju Glazecalc",
+    "text": "Netko (nadamo se da ste to bili vi) zatražio je ponovno postavljanje lozinke za račun {account} u aplikaciji Glazecalc.\n\nDa biste odabrali novu lozinku, otvorite ovu poveznicu u roku od {minutes} min:\n\n{link}\n\nPoveznica vrijedi samo jednom. Ako to niste zatražili, zanemarite ovu e-poruku; vaša lozinka ostaje ista.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "Vaša je lozinka za aplikaciju Glazecalc promijenjena",
+    "opening": "Lozinka za račun {account} u aplikaciji Glazecalc upravo je ponovno postavljena, a svi uređaji na kojima je račun bio prijavljen odjavljeni su.\n\n",
+    "stopped": "Za slučaj da je netko drugi imao staru lozinku, ponovno postavljanje zaustavilo je i sljedeće:\n\n",
+    "tokens": "- Pristupne tokene i povezane aplikacije koje su mogle pristupiti vašem spremljenom radu ({count}). Ako vam još treba neki, izradite novi token na stranici svojeg računa na adresi {page}\n",
+    "providers": "- Prijavu putem {providers}, koju možete ponovno povezati na stranici svojeg računa na adresi {page}\n",
+    "shareLinks": "- Poveznice koje ste izradili za dijeljenje recepata. Nove možete izraditi iz svakog recepta.\n",
+    "closing": "\nAko ste to bili vi, ne morate ništa drugo učiniti. Ako niste, odmah ponovno postavite lozinku ovdje: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Netko je unio vašu lozinku za Glazecalc, ali nije dovršio prijavu",
+    "text": "Netko je unio točnu lozinku za račun Glazecalc {account}, ali nije dovršio drugi korak prijave. Vaš drugi korak ga je zaustavio.\n\nAko ste to bili vi, ne morate ništa učiniti. Ako niste, netko zna vašu lozinku: odmah je promijenite. Novu možete postaviti na {forgot}\n\nNakon 10 pogrešnih kodova iz aplikacije za provjeru autentičnosti kodovi se odbijaju sat vremena; nakon sljedećih 10 jedan dan; a zatim svaki put tjedan dana. Pristupni ključ ili kod za oporavak i dalje radi dok se kodovi odbijaju. Ponovno postavljanje lozinke e-poštom to prekida: nedovršene prijave te osobe prestaju, ta osoba više ne zna lozinku, a kodovi opet rade.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Pristupni token za vaš račun Glazecalc uskoro istječe",
+    "text": "Pristupni token naziva „{name}” na računu Glazecalc {account} prestaje raditi {date}.\n\nAko ga još koristite, prije toga izradite novi token na adresi {page} i dajte ga svojem asistentu ili skripti umjesto starog. Ako ga više ne koristite, ne morate ništa učiniti.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Novi pristupni token za vaš račun Glazecalc",
+    "text": "Upravo je izrađen pristupni token naziva „{name}” za račun Glazecalc {account}. Može čitati recepte, sirovine, bilješke i zapisnike pečenja spremljene u računu do {date}.\n\nAko ste to bili vi, ne morate ništa drugo učiniti. Svoje tokene možete vidjeti i opozvati na adresi {page}\n\nAko niste, opozovite ga ondje i odmah ponovno postavite lozinku ovdje: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Novi pristupni token koji može mijenjati zapise na vašem računu Glazecalc",
+    "text": "Upravo je izrađen pristupni token naziva „{name}” za račun Glazecalc {account}. Do {date} može čitati i mijenjati recepte, sirovine, bilješke i zapisnike pečenja spremljene u računu te ih premještati u Koš za smeće. Svaka promjena koju napravi čuva zapis onakvim kakav je bio, pa je možete poništiti na web-stranici.\n\nAko ste to bili vi, ne morate ništa drugo učiniti. Svoje tokene možete vidjeti i opozvati na adresi {page}\n\nAko niste, opozovite ga ondje i odmah ponovno postavite lozinku ovdje: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Potvrdite svoju adresu e-pošte za Glazecalc",
+    "text": "Netko (nadamo se da ste to bili vi) stvorio je račun Glazecalc s adresom {account}.\n\nDa biste potvrdili da ta adresa pripada vama, otvorite ovu poveznicu u roku od {hours} sati:\n\n{link}\n\nPoveznica vrijedi samo jednom. Ako niste stvorili račun, zanemarite ovu e-poruku; ništa drugo neće vam biti poslano ako to ne zatražite.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

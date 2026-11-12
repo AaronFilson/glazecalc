@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Glazecalc: slaptažodis pakeistas",
+    "text": "Programos Glazecalc paskyros {account} slaptažodis ką tik pakeistas, ir visi įrenginiai, kuriuose buvo prisijungta, atjungti.\n\nJei tai buvote jūs, daugiau nieko daryti nereikia. Jei ne, nedelsdami atkurkite slaptažodį čia: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "Paprašyta naujo el. pašto adreso jūsų Glazecalc paskyrai",
+    "text": "Ką tik paprašyta pakeisti Glazecalc paskyros {account} el. pašto adresą. Nuoroda išsiųsta naujuoju adresu, o pakeitimas įvyks tik atidarius tą nuorodą.\n\nJei tai buvote jūs, daugiau nieko daryti nereikia. Jei ne, kažkas gali žinoti jūsų slaptažodį: nedelsdami atkurkite jį čia: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Patvirtinkite naują el. pašto adresą programai Glazecalc",
+    "text": "Kažkas (tikimės, kad jūs) paprašė naudoti {account} kaip savo Glazecalc paskyros el. pašto adresą.\n\nNorėdami atlikti pakeitimą, per {hours} val. atidarykite šią nuorodą:\n\n{link}\n\nNuorodą galima panaudoti vieną kartą, o visi įrenginiai, kuriuose buvo prisijungta, bus atjungti. Jei to neprašėte, nekreipkite dėmesio į šį laišką; niekas nepasikeis.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "niekada: programų ir prieigos žetonų pakeitimai atliekami iš karto",
+    "removals": "tik prieš šalinimą: įrašo perkėlimą į šiukšlinę arba žaliavos pašalinimą iš turimų žaliavų. Kiti programų ir prieigos žetonų pakeitimai atliekami iš karto"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Glazecalc dabar mažiau klausia, prieš programoms keičiant jūsų įrašus",
+    "text": "Glazecalc paskyrai {account} ką tik nustatyta prašyti patvirtinimo {choice}.\n\nJei tai buvote jūs, daugiau nieko daryti nereikia. Tai matyti ir pakeisti galite puslapyje Prijungtos programos adresu {page}\n\nJei ne, grąžinkite ankstesnį nustatymą ten, atšaukite visas nepažįstamas programas ir žetonus ir nedelsdami atkurkite slaptažodį čia: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "Prie jūsų Glazecalc paskyros prijungta programa",
+    "opening": "Prie Glazecalc paskyros {account} {date} {time} (UTC) prijungta programa.\n\n",
+    "named": "Programa: „{name}“\n",
+    "checked": "Jos adresas, patikrintas Glazecalc: {host}\n",
+    "selfDescribed": "Ji užsiregistravo pati, todėl jos pavadinimas yra tik tai, ką ji pati apie save sako.\n",
+    "answerAt": "Atsakymą ji gauna adresu: {host}\n",
+    "loopback": "Atsakymą ji gauna kompiuteryje, iš kurio buvo prijungta ({host}).\n",
+    "read": "\nJi gali skaityti paskyroje įrašytus receptus, sąsiuvinį, žaliavas, turimas žaliavas ir nustatymus. Ji negali nieko pakeisti.\n\n",
+    "write": "\nJi gali skaityti paskyroje įrašytus receptus, sąsiuvinį, žaliavas, turimas žaliavas ir nustatymus, o {days} d. ji gali juos ir keisti: kurti ir keisti įrašus bei perkelti juos į šiukšlinę. Kiekvienas pakeitimas išsaugo įrašo versiją tokią, kokia ji buvo, todėl pakeitimą galite anuliuoti svetainėje.\n\n",
+    "closing": "Jei tai buvote jūs, daugiau nieko daryti nereikia. Ką ji daro, galite matyti ir ją atšaukti adresu {page}\n\nJei ne, atšaukite ją ten ir nedelsdami atkurkite slaptažodį čia: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Jūsų Glazecalc paskyra ištrinta",
+    "text": "Glazecalc paskyra {account} ištrinta kartu su viskuo, kas joje buvo įrašyta: receptais, žaliavomis, degimais, užrašais ir nustatymais. Šio veiksmo anuliuoti negalima.\n\nSvetainės atsarginėse kopijose esančios kopijos ištrinamos joms pasibaigus per {days} d.\n\nNaują paskyrą galite susikurti bet kada.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "autentifikavimo programa",
+    "passkey": "prieigos raktas „{name}“"
+  },
+  "MFA_ADDED": {
+    "subject": "Į jūsų Glazecalc paskyrą pridėtas prisijungimo žingsnis",
+    "text": "Ką tik į Glazecalc paskyrą {account} pridėtas antras prisijungimo žingsnis: {method}.\n\nJei tai buvote jūs, daugiau nieko daryti nereikia. Atkūrimo kodus laikykite saugioje vietoje. Jei ne, kažkas gali žinoti jūsų slaptažodį: nedelsdami atkurkite jį čia: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "Jūsų Glazecalc paskyroje bus išjungtas dviejų žingsnių prisijungimas",
+    "text": "Kažkas paprašė išjungti dviejų žingsnių prisijungimą Glazecalc paskyroje {account}, nes prarastos visos jos autentifikavimo programos, prieigos raktai ir atkūrimo kodai.\n\nDviejų žingsnių prisijungimas bus išjungtas {date}, nebent iki to laiko parašysite adresu privacy@glazecalcapp.com. Po to prie paskyros bus galima prisijungti vien slaptažodžiu.\n\nJei tai buvote jūs, daugiau nieko daryti nereikia. Jei ne, nedelsdami parašykite adresu privacy@glazecalcapp.com ir nedelsdami atkurkite slaptažodį čia: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "Jūsų Glazecalc paskyroje išjungtas dviejų žingsnių prisijungimas",
+    "text": "Glazecalc paskyroje {account} ką tik išjungtas dviejų žingsnių prisijungimas: pašalintos visos autentifikavimo programos, prieigos raktai ir atkūrimo kodai, o visi įrenginiai, kuriuose buvo prisijungta, atjungti. Dabar prisijungti pakanka tik slaptažodžio.\n\nDviejų žingsnių prisijungimą vėl galite įjungti savo paskyros puslapyje. Jei to neprašėte, nedelsdami atkurkite slaptažodį čia: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "Iš jūsų Glazecalc paskyros pašalintas prisijungimo žingsnis",
+    "text": "Ką tik iš Glazecalc paskyros {account} pašalintas antras prisijungimo žingsnis: {method}. Jei tai buvo paskutinis, dabar prisijungti pakanka tik slaptažodžio.\n\nJei tai buvote jūs, daugiau nieko daryti nereikia. Jei ne, nedelsdami atkurkite slaptažodį čia: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "Glazecalc: pridėtas naujas prisijungimo būdas",
+    "text": "Dabar prie Glazecalc paskyros {account} galite prisijungti per {provider}.\n\nJei tai buvote jūs, daugiau nieko daryti nereikia. Jei ne, atsiekite jį paskyros puslapyje {page} ir nedelsdami atkurkite slaptažodį čia: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "Glazecalc: pašalintas prisijungimo būdas",
+    "text": "Glazecalc paskyra {account} atsieta nuo {provider}, todėl prisijungti per {provider} prie jos nebegalima.\n\nJei tai buvote jūs, daugiau nieko daryti nereikia. Jei ne, kažkas gali būti prisijungęs prie jūsų paskyros: nedelsdami atkurkite slaptažodį čia: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Nauji atkūrimo kodai jūsų Glazecalc paskyrai",
+    "text": "Glazecalc paskyrai {account} ką tik sukurti nauji atkūrimo kodai. Seni kodai nebeveikia.\n\nJei tai buvote jūs, naujus kodus laikykite saugioje vietoje. Jei ne, nedelsdami atkurkite slaptažodį čia: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "Jūsų Glazecalc paskyroje panaudotas atkūrimo kodas",
+    "text": "Vienas iš Glazecalc paskyros {account} atkūrimo kodų ką tik buvo panaudotas, todėl daugiau neveiks. Liko nepanaudotų kodų: {left}. Naujus kodus galite sukurti savo paskyros puslapyje: {page}\n\nJei tai buvote ne jūs, kažkas gali turėti jūsų slaptažodį ir kodus: nedelsdami atkurkite slaptažodį čia: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Glazecalc: slaptažodžio atkūrimas",
+    "text": "Kažkas (tikimės, kad jūs) paprašė atkurti programos Glazecalc paskyros {account} slaptažodį.\n\nNorėdami pasirinkti naują slaptažodį, per {minutes} min. atidarykite šią nuorodą:\n\n{link}\n\nNuorodą galima panaudoti vieną kartą. Jei to neprašėte, nekreipkite dėmesio į šį laišką; jūsų slaptažodis liks toks pat.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "Glazecalc: slaptažodis pakeistas",
+    "opening": "Programos Glazecalc paskyros {account} slaptažodis ką tik buvo atkurtas, ir visi įrenginiai, kuriuose buvo prisijungta, atjungti.\n\n",
+    "stopped": "Jei senąjį slaptažodį galėjo žinoti kas nors kitas, atkūrimas sustabdė ir tai:\n\n",
+    "tokens": "- Prieigos žetonai ir prijungtos programos, galėjusios pasiekti jūsų įrašytą darbą ({count}). Jei kurio nors dar reikia, sukurkite naują žetoną paskyros puslapyje {page}\n",
+    "providers": "- Prisijungimas per {providers}; jį galite susieti iš naujo paskyros puslapyje {page}\n",
+    "shareLinks": "- Nuorodos, kurias buvote sukūrę receptams bendrinti. Naujas galite sukurti prie kiekvieno recepto.\n",
+    "closing": "\nJei tai buvote jūs, daugiau nieko daryti nereikia. Jei ne, nedelsdami atkurkite slaptažodį čia: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Kažkas įvedė jūsų Glazecalc slaptažodį, bet neužbaigė prisijungimo",
+    "text": "Kažkas įvedė teisingą Glazecalc paskyros {account} slaptažodį, bet neužbaigė antro prisijungimo žingsnio. Jūsų antras žingsnis jį sustabdė.\n\nJei tai buvote jūs, daugiau nieko daryti nereikia. Jei ne, kažkas žino jūsų slaptažodį: nedelsdami jį pakeiskite. Atkurti jį galite čia: {forgot}\n\nPo 10 neteisingų kodų iš autentifikavimo programos kodai atmetami valandai; po dar 10 – parai; vėliau kaskart savaitei. Kol kodai atmetami, prieigos raktas arba atkūrimo kodas vis dar veikia. Slaptažodžio atkūrimas el. paštu tai nutraukia: to asmens nebaigti prisijungimai nutraukiami, jis nebeturi slaptažodžio, o kodai vėl veikia.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Glazecalc: prieigos žetonas netrukus nustos galioti",
+    "text": "Prieigos žetonas „{name}“ Glazecalc paskyroje {account} nustos veikti {date}.\n\nJei jį vis dar naudojate, iki tol sukurkite naują žetoną adresu {page} ir atiduokite jį savo asistentui ar scenarijui vietoj seno. Jei jo nebenaudojate, nieko daryti nereikia.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Glazecalc: naujas prieigos žetonas",
+    "text": "Glazecalc paskyrai {account} ką tik sukurtas prieigos žetonas „{name}“. Jis gali skaityti paskyroje įrašytus receptus, žaliavas, užrašus ir degimo žurnalus iki {date}.\n\nJei tai buvote jūs, daugiau nieko daryti nereikia. Savo žetonus galite matyti ir atšaukti adresu {page}\n\nJei ne, atšaukite jį ten ir nedelsdami atkurkite slaptažodį čia: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Glazecalc: naujas prieigos žetonas, galintis keisti jūsų įrašus",
+    "text": "Glazecalc paskyrai {account} ką tik sukurtas prieigos žetonas „{name}“. Jis gali skaityti ir keisti paskyroje įrašytus receptus, žaliavas, užrašus ir degimo žurnalus bei perkelti juos į šiukšlinę iki {date}. Kiekvienas jo atliktas pakeitimas išsaugo įrašą tokį, koks jis buvo prieš tai, todėl pakeitimą galite anuliuoti svetainėje.\n\nJei tai buvote jūs, daugiau nieko daryti nereikia. Savo žetonus galite matyti ir atšaukti adresu {page}\n\nJei ne, atšaukite jį ten ir nedelsdami atkurkite slaptažodį čia: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Patvirtinkite el. pašto adresą programai Glazecalc",
+    "text": "Kažkas (tikimės, kad jūs) sukūrė Glazecalc paskyrą su adresu {account}.\n\nNorėdami patvirtinti, kad šis adresas jūsų, per {hours} val. atidarykite šią nuorodą:\n\n{link}\n\nNuorodą galima panaudoti vieną kartą. Jei paskyros nekūrėte, nekreipkite dėmesio į šį laišką; daugiau jums nieko nebus siunčiama, nebent paprašysite.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

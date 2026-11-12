@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Teie Glazecalci parool on muudetud",
+    "text": "Glazecalci konto {account} parool muudeti just praegu ja kõik seadmed, kus konto oli sisse logitud, on välja logitud.\n\nKui see olite teie, ei pea te midagi muud tegema. Kui mitte, lähtestage parool kohe siin: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "Teie Glazecalci konto jaoks paluti uut e-posti aadressi",
+    "text": "Glazecalci konto {account} e-posti aadressi muutmist paluti just praegu. Uuele aadressile saadeti link ja muudatus tehakse alles siis, kui see link avatakse.\n\nKui see olite teie, ei pea te midagi muud tegema. Kui mitte, võib keegi teie parooli teada: lähtestage see kohe siin: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Kinnitage oma uus e-posti aadress Glazecalcis",
+    "text": "Keegi (loodetavasti teie) palus kasutada aadressi {account} oma Glazecalci konto e-posti aadressina.\n\nMuudatuse tegemiseks avage {hours} tunni jooksul see link:\n\n{link}\n\nLink töötab ühe korra ja kõik seadmed, kuhu oli sisse logitud, logitakse välja. Kui te seda ei palunud, jätke see e-kiri tähelepanuta; midagi ei muutu.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "mitte kunagi: rakenduste ja juurdepääsulubade muudatused tehakse kohe",
+    "removals": "ainult enne eemaldamist: kirje viimist prügikasti või tooraine eemaldamist toorainete varust. Muud rakenduste ja juurdepääsulubade muudatused tehakse kohe"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Glazecalc küsib nüüd vähem, enne kui rakendused teie kirjeid muudavad",
+    "text": "Glazecalci konto {account} seati just küsima heakskiitu {choice}.\n\nKui see olite teie, ei pea te midagi muud tegema. Seda saate näha ja muuta lehel Ühendatud rakendused aadressil {page}\n\nKui mitte, muutke see seal tagasi, tühistage kõik rakendused ja load, mida te ei tunne, ja lähtestage parool kohe siin: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "Teie Glazecalci kontoga ühendati rakendus",
+    "opening": "Glazecalci kontoga {account} ühendati rakendus {date} kell {time} (UTC).\n\n",
+    "named": "Rakendus: „{name}“\n",
+    "checked": "Selle aadress, mille Glazecalc kontrollis: {host}\n",
+    "selfDescribed": "See registreeris end ise, seega on selle nimi ainult see, mida see enda kohta ütleb.\n",
+    "answerAt": "See saab vastuse aadressil: {host}\n",
+    "loopback": "See saab vastuse arvutis, millest see ühendati ({host}).\n",
+    "read": "\nSee saab lugeda kontole salvestatud retsepte, märkmikku, tooraineid, varu ja sätteid. See ei saa midagi muuta.\n\n",
+    "write": "\nSee saab lugeda kontole salvestatud retsepte, märkmikku, tooraineid, varu ja sätteid ning {days} päeva jooksul saab see neid ka muuta: teha ja muuta kirjeid ning viia neid prügikasti. Iga muudatus säilitab kirje versiooni sellisena, nagu see oli, nii et saate selle veebisaidil tagasi võtta.\n\n",
+    "closing": "Kui see olite teie, ei pea te midagi muud tegema. Mida see teeb, saate näha ja selle tühistada aadressil {page}\n\nKui mitte, tühistage see seal ja lähtestage parool kohe siin: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Teie Glazecalci konto kustutati",
+    "text": "Glazecalci konto {account} on kustutatud koos kõigega, mis selles oli salvestatud: retseptid, toorained, põletused, märkmed ja sätted. Seda ei saa tagasi võtta.\n\nSaidi varukoopiates olevad koopiad kustutatakse varukoopiate aegumisel, {days} päeva jooksul.\n\nUue konto saate luua igal ajal.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "autentimisrakendus",
+    "passkey": "pääsuvõti „{name}“"
+  },
+  "MFA_ADDED": {
+    "subject": "Teie Glazecalci kontole lisati sisselogimise samm",
+    "text": "Glazecalci kontole {account} lisati just sisselogimise teise sammuna: {method}.\n\nKui see olite teie, ei pea te midagi muud tegema. Hoidke oma taastekoode turvalises kohas. Kui mitte, võib keegi teie parooli teada: lähtestage see kohe siin: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "Teie Glazecalci konto kaheastmeline sisselogimine lülitatakse välja",
+    "text": "Keegi palus lülitada Glazecalci konto {account} kaheastmeline sisselogimine välja, sest kõik selle autentimisrakendused, pääsuvõtmed ja taastekoodid kadusid.\n\nKaheastmeline sisselogimine lülitatakse välja {date}, kui te ei kirjuta enne seda aadressile privacy@glazecalcapp.com. Pärast seda saab kontole sisse logida ainult parooliga.\n\nKui see olite teie, ei pea te midagi muud tegema. Kui mitte, kirjutage kohe aadressile privacy@glazecalcapp.com ja lähtestage oma parool kohe siin: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "Teie Glazecalci kontol lülitati kaheastmeline sisselogimine välja",
+    "text": "Glazecalci kontol {account} lülitati just kaheastmeline sisselogimine välja: kõik autentimisrakendused, pääsuvõtmed ja taastekoodid eemaldati ning kõik seadmed, kuhu oli sisse logitud, on välja logitud. Sisselogimiseks piisab nüüd ainult paroolist.\n\nKaheastmelise sisselogimise saate oma konto lehel uuesti sisse lülitada. Kui te seda ei palunud, lähtestage oma parool kohe siin: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "Teie Glazecalci kontolt eemaldati sisselogimise samm",
+    "text": "Glazecalci kontolt {account} eemaldati just sisselogimise teise sammuna: {method}. Kui see oli viimane, piisab sisselogimiseks nüüd ainult paroolist.\n\nKui see olite teie, ei pea te midagi muud tegema. Kui mitte, lähtestage oma parool kohe siin: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "Teie Glazecalci kontole lisati uus sisselogimisviis",
+    "text": "Glazecalci kontole {account} saab nüüd sisse logida järgmisega: {provider}.\n\nKui see olite teie, ei pea te midagi muud tegema. Kui mitte, ühendage see oma konto lehel aadressil {page} lahti ja lähtestage parool kohe siin: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "Teie Glazecalci kontolt eemaldati üks sisselogimisviis",
+    "text": "Glazecalci kontolt {account} ühendati lahti {provider}, seega ei saa seda enam sellele kontole sisselogimiseks kasutada.\n\nKui see olite teie, ei pea te midagi muud tegema. Kui mitte, võib keegi olla teie kontole sisse logitud: lähtestage parool kohe siin: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Uued taastekoodid teie Glazecalci kontole",
+    "text": "Glazecalci kontole {account} tehti just uued taastekoodid. Vanad koodid enam ei tööta.\n\nKui see olite teie, hoidke uusi koode turvalises kohas. Kui mitte, lähtestage oma parool kohe siin: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "Teie Glazecalci kontol kasutati taastekoodi",
+    "text": "Üht Glazecalci konto {account} taastekoodidest kasutati just, seega see enam ei tööta. Kasutamata koode on alles: {left}. Uusi koode saate teha oma konto lehel: {page}\n\nKui see ei olnud teie, võib kellelgi olla teie parool ja koodid: lähtestage oma parool kohe siin: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Glazecalci parooli lähtestamine",
+    "text": "Keegi (loodetavasti teie) palus lähtestada Glazecalci konto {account} parooli.\n\nUue parooli valimiseks avage see link {minutes} minuti jooksul:\n\n{link}\n\nLink töötab ühe korra. Kui te seda ei palunud, jätke see e-kiri tähelepanuta; teie parool jääb samaks.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "Teie Glazecalci parool on muudetud",
+    "opening": "Glazecalci konto {account} parool lähtestati just praegu ja kõik seadmed, kus konto oli sisse logitud, on välja logitud.\n\n",
+    "stopped": "Juhuks, kui keegi teine teadis vana parooli, peatas lähtestamine ka need:\n\n",
+    "tokens": "- Juurdepääsuload ja ühendatud rakendused, mis pääsesid teie salvestatud tööle ligi ({count}). Kui vajate mõnda neist endiselt, tehke uus luba oma konto lehel aadressil {page}\n",
+    "providers": "- Sisselogimine: {providers}. Need saate uuesti siduda oma konto lehel aadressil {page}\n",
+    "shareLinks": "- Retseptide jagamiseks tehtud lingid. Uusi saate teha igast retseptist.\n",
+    "closing": "\nKui see olite teie, ei pea te midagi muud tegema. Kui mitte, lähtestage parool kohe siin: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Keegi sisestas teie Glazecalci parooli, kuid ei lõpetanud sisselogimist",
+    "text": "Keegi sisestas Glazecalci konto {account} õige parooli, kuid ei lõpetanud sisselogimise teist sammu. Teie teine samm hoidis ta väljas.\n\nKui see olite teie, ei pea te midagi muud tegema. Kui mitte, teab keegi teie parooli: muutke see kohe ära. Saate selle lähtestada siin: {forgot}\n\nPärast 10 valet koodi autentimisrakendusest lükatakse koodid tagasi tunniks; pärast veel 10 päevaks; ja seejärel iga kord nädalaks. Pääsuvõti või taastekood töötab ka siis, kui koode tagasi lükatakse. Parooli lähtestamine e-posti teel lõpetab selle: tema pooleli jäänud sisselogimised lõpevad, tal ei ole enam parooli ja koodid töötavad jälle.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Teie Glazecalci konto juurdepääsuluba aegub peagi",
+    "text": "Glazecalci konto {account} juurdepääsuluba „{name}“ lakkab töötamast {date}.\n\nKui kasutate seda endiselt, tehke enne seda uus luba aadressil {page} ja andke see oma assistendile või skriptile vana asemel. Kui te seda enam ei kasuta, ei pea te midagi tegema.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Uus juurdepääsuluba teie Glazecalci kontole",
+    "text": "Glazecalci kontole {account} tehti just juurdepääsuluba „{name}“. See saab lugeda kontole salvestatud retsepte, tooraineid, märkmeid ja põletuspäevikuid kuni {date}.\n\nKui see olite teie, ei pea te midagi muud tegema. Oma lube saate näha ja tühistada aadressil {page}\n\nKui mitte, tühistage see seal ja lähtestage parool kohe siin: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Uus juurdepääsuluba, mis saab muuta teie Glazecalci kirjeid",
+    "text": "Glazecalci kontole {account} tehti just juurdepääsuluba „{name}“. See saab lugeda ja muuta kontole salvestatud retsepte, tooraineid, märkmeid ja põletuspäevikuid ning viia neid prügikasti kuni {date}. Iga selle tehtud muudatus säilitab kirje sellisena, nagu see oli, nii et saate selle veebisaidil tagasi võtta.\n\nKui see olite teie, ei pea te midagi muud tegema. Oma lube saate näha ja tühistada aadressil {page}\n\nKui mitte, tühistage see seal ja lähtestage parool kohe siin: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Kinnitage oma e-posti aadress Glazecalcis",
+    "text": "Keegi (loodetavasti teie) lõi aadressiga {account} Glazecalci konto.\n\nKinnitamaks, et see aadress on teie oma, avage {hours} tunni jooksul see link:\n\n{link}\n\nLink töötab ühe korra. Kui te kontot ei loonud, jätke see e-kiri tähelepanuta; rohkem teile midagi ei saadeta, kui te seda ei palu.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

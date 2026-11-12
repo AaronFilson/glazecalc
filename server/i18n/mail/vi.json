@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Mật khẩu Glazecalc của bạn đã được đổi",
+    "text": "Mật khẩu của tài khoản Glazecalc {account} vừa được đổi, và mọi thiết bị đã đăng nhập đều đã bị đăng xuất.\n\nNếu đó là bạn, không cần làm gì thêm. Nếu không, hãy đặt lại mật khẩu của bạn ngay tại {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "Đã có yêu cầu dùng email mới cho tài khoản Glazecalc của bạn",
+    "text": "Vừa có yêu cầu đổi email cho tài khoản Glazecalc {account}. Một liên kết đã được gửi đến địa chỉ mới, và việc đổi chỉ xảy ra khi liên kết đó được mở.\n\nNếu đó là bạn, không cần làm gì thêm. Nếu không, có thể có người biết mật khẩu của bạn: hãy đặt lại mật khẩu ngay tại {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Xác nhận email mới của bạn cho Glazecalc",
+    "text": "Có người (hy vọng là bạn) đã yêu cầu dùng {account} làm email cho tài khoản Glazecalc của họ.\n\nĐể thực hiện thay đổi, hãy mở liên kết này trong vòng {hours} giờ:\n\n{link}\n\nLiên kết chỉ dùng được một lần, và mọi thiết bị đã đăng nhập sẽ bị đăng xuất. Nếu bạn không yêu cầu việc này, hãy bỏ qua email này; sẽ không có gì thay đổi.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "không bao giờ: các thay đổi từ ứng dụng và mã thông báo truy cập được thực hiện ngay",
+    "removals": "chỉ trước khi gỡ bỏ: chuyển một bản ghi vào Thùng rác, hoặc bỏ một nguyên liệu khỏi nguyên liệu tôi có. Các thay đổi khác từ ứng dụng và mã thông báo truy cập được thực hiện ngay"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Glazecalc giờ hỏi ít hơn trước khi ứng dụng thay đổi các bản ghi của bạn",
+    "text": "Tài khoản Glazecalc {account} vừa được đặt để yêu cầu chấp thuận {choice}.\n\nNếu đó là bạn, không cần làm gì thêm. Bạn có thể xem và thay đổi cài đặt này tại Ứng dụng được kết nối ở {page}\n\nNếu không, hãy đặt lại như cũ ở đó, thu hồi mọi ứng dụng hoặc mã thông báo bạn không biết, và đặt lại mật khẩu của bạn ngay tại {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "Một ứng dụng đã được kết nối với tài khoản Glazecalc của bạn",
+    "opening": "Một ứng dụng đã được kết nối với tài khoản Glazecalc {account} vào {date} lúc {time} (UTC).\n\n",
+    "named": "Ứng dụng: “{name}”\n",
+    "checked": "Địa chỉ của nó, đã được Glazecalc kiểm tra: {host}\n",
+    "selfDescribed": "Nó tự đăng ký, nên tên của nó chỉ là những gì nó tự nói về mình.\n",
+    "answerAt": "Nó nhận câu trả lời tại: {host}\n",
+    "loopback": "Nó nhận câu trả lời trên máy tính đã dùng để kết nối nó ({host}).\n",
+    "read": "\nNó có thể đọc các công thức men, sổ tay, nguyên liệu, nguyên liệu tôi có và cài đặt đã lưu trong tài khoản. Nó không thể thay đổi gì.\n\n",
+    "write": "\nNó có thể đọc các công thức men, sổ tay, nguyên liệu, nguyên liệu tôi có và cài đặt đã lưu trong tài khoản, và trong {days} ngày nó cũng có thể thay đổi chúng: tạo và thay đổi bản ghi, và chuyển chúng vào Thùng rác. Mỗi thay đổi giữ lại một phiên bản của bản ghi như trước đó, nên bạn có thể hoàn tác trên trang web.\n\n",
+    "closing": "Nếu đó là bạn, không cần làm gì thêm. Bạn có thể xem những gì nó làm và thu hồi nó tại {page}\n\nNếu không, hãy thu hồi nó ở đó và đặt lại mật khẩu của bạn ngay tại {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Tài khoản Glazecalc của bạn đã được xóa",
+    "text": "Tài khoản Glazecalc {account} đã được xóa, cùng mọi thứ đã lưu trong đó: công thức men, nguyên liệu, các lần nung, ghi chú và cài đặt. Không thể hoàn tác.\n\nCác bản sao trong bản sao lưu của trang web sẽ bị xóa khi các bản sao lưu hết hạn, trong vòng {days} ngày.\n\nBạn có thể tạo tài khoản mới bất cứ lúc nào.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "một ứng dụng xác thực",
+    "passkey": "khóa truy cập “{name}”"
+  },
+  "MFA_ADDED": {
+    "subject": "Một bước đăng nhập đã được thêm vào tài khoản Glazecalc của bạn",
+    "text": "Mục này vừa được thêm vào tài khoản Glazecalc {account} làm bước thứ hai để đăng nhập: {method}.\n\nNếu đó là bạn, không cần làm gì thêm. Hãy giữ các mã khôi phục của bạn ở nơi an toàn. Nếu không, có thể có người biết mật khẩu của bạn: hãy đặt lại mật khẩu ngay tại {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "Xác minh hai bước trên tài khoản Glazecalc của bạn sẽ bị tắt",
+    "text": "Có người đã yêu cầu tắt xác minh hai bước trên tài khoản Glazecalc {account}, vì mọi ứng dụng xác thực, khóa truy cập và mã khôi phục của tài khoản đã bị mất.\n\nXác minh hai bước sẽ bị tắt vào {date} trừ khi bạn viết thư đến privacy@glazecalcapp.com trước đó. Sau đó, tài khoản có thể được đăng nhập chỉ bằng mật khẩu.\n\nNếu đó là bạn, không cần làm gì thêm. Nếu không, hãy viết thư đến privacy@glazecalcapp.com ngay, và đặt lại mật khẩu của bạn ngay tại {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "Xác minh hai bước đã bị tắt trên tài khoản Glazecalc của bạn",
+    "text": "Xác minh hai bước vừa bị tắt trên tài khoản Glazecalc {account}: mọi ứng dụng xác thực, khóa truy cập và mã khôi phục đã bị xóa, và mọi thiết bị đã đăng nhập đều đã bị đăng xuất. Giờ đây đăng nhập chỉ cần mật khẩu.\n\nBạn có thể bật lại xác minh hai bước trên trang tài khoản của bạn. Nếu bạn không yêu cầu việc này, hãy đặt lại mật khẩu của bạn ngay tại {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "Một bước đăng nhập đã bị xóa khỏi tài khoản Glazecalc của bạn",
+    "text": "Mục này vừa bị xóa khỏi tài khoản Glazecalc {account}, vốn là bước thứ hai để đăng nhập: {method}. Nếu đó là bước cuối cùng, giờ đây đăng nhập chỉ cần mật khẩu.\n\nNếu đó là bạn, không cần làm gì thêm. Nếu không, hãy đặt lại mật khẩu của bạn ngay tại {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "Một cách đăng nhập mới đã được thêm vào tài khoản Glazecalc của bạn",
+    "text": "Giờ đây bạn có thể đăng nhập vào tài khoản Glazecalc {account} bằng {provider}.\n\nNếu đó là bạn, không cần làm gì thêm. Nếu không, hãy hủy liên kết trên trang tài khoản của bạn tại {page} và đặt lại mật khẩu của bạn ngay tại {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "Một cách đăng nhập đã bị xóa khỏi tài khoản Glazecalc của bạn",
+    "text": "{provider} đã bị hủy liên kết khỏi tài khoản Glazecalc {account}, và không còn dùng được để đăng nhập vào tài khoản đó.\n\nNếu đó là bạn, không cần làm gì thêm. Nếu không, có thể có người đang đăng nhập vào tài khoản của bạn: hãy đặt lại mật khẩu ngay tại {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Mã khôi phục mới cho tài khoản Glazecalc của bạn",
+    "text": "Các mã khôi phục mới vừa được tạo cho tài khoản Glazecalc {account}. Các mã cũ không còn dùng được.\n\nNếu đó là bạn, hãy giữ các mã mới ở nơi an toàn. Nếu không, hãy đặt lại mật khẩu của bạn ngay tại {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "Một mã khôi phục đã được dùng trên tài khoản Glazecalc của bạn",
+    "text": "Một trong các mã khôi phục của tài khoản Glazecalc {account} vừa được dùng, nên nó sẽ không dùng lại được. Số mã chưa dùng còn lại: {left}. Bạn có thể tạo mã mới trên trang tài khoản của bạn: {page}\n\nNếu đó không phải bạn, có thể có người có mật khẩu và các mã của bạn: hãy đặt lại mật khẩu của bạn ngay tại {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Đặt lại mật khẩu Glazecalc của bạn",
+    "text": "Có người (hy vọng là bạn) đã yêu cầu đặt lại mật khẩu cho tài khoản Glazecalc {account}.\n\nĐể chọn mật khẩu mới, hãy mở liên kết này trong vòng {minutes} phút:\n\n{link}\n\nLiên kết chỉ dùng được một lần. Nếu bạn không yêu cầu việc này, hãy bỏ qua email này; mật khẩu của bạn vẫn như cũ.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "Mật khẩu Glazecalc của bạn đã được đổi",
+    "opening": "Mật khẩu của tài khoản Glazecalc {account} vừa được đặt lại, và mọi thiết bị đã đăng nhập đều đã bị đăng xuất.\n\n",
+    "stopped": "Phòng khi có người khác biết mật khẩu cũ, việc đặt lại cũng đã vô hiệu hóa những thứ sau:\n\n",
+    "tokens": "- Các mã thông báo truy cập và ứng dụng được kết nối có thể truy cập công việc đã lưu của bạn ({count}). Nếu bạn vẫn cần một mã, hãy tạo mã thông báo mới trên trang tài khoản của bạn tại {page}\n",
+    "providers": "- Đăng nhập bằng {providers}, mà bạn có thể liên kết lại trên trang tài khoản của bạn tại {page}\n",
+    "shareLinks": "- Các liên kết bạn đã tạo để chia sẻ công thức men. Bạn có thể tạo liên kết mới từ từng công thức men.\n",
+    "closing": "\nNếu đó là bạn, không cần làm gì thêm. Nếu không, hãy đặt lại mật khẩu của bạn ngay tại {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Có người đã nhập mật khẩu Glazecalc của bạn nhưng chưa hoàn tất đăng nhập",
+    "text": "Có người đã nhập đúng mật khẩu của tài khoản Glazecalc {account}, nhưng chưa hoàn tất bước thứ hai của việc đăng nhập. Bước thứ hai của bạn đã chặn họ.\n\nNếu đó là bạn, không cần làm gì thêm. Nếu không, có người biết mật khẩu của bạn: hãy đổi mật khẩu ngay. Bạn có thể đặt lại mật khẩu tại {forgot}\n\nSau 10 mã sai từ ứng dụng xác thực, các mã bị từ chối trong một giờ; sau thêm 10 mã sai nữa, trong một ngày; và sau đó trong một tuần mỗi lần. Khóa truy cập hoặc mã khôi phục vẫn dùng được khi các mã bị từ chối. Đặt lại mật khẩu bằng email sẽ chặn người đó: mọi lần đăng nhập họ đã bắt đầu đều kết thúc, mật khẩu họ biết ngừng hoạt động, và các mã dùng được trở lại.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Một mã thông báo truy cập của tài khoản Glazecalc của bạn sắp hết hạn",
+    "text": "Mã thông báo truy cập có tên “{name}” trên tài khoản Glazecalc {account} sẽ ngừng hoạt động vào {date}.\n\nNếu bạn vẫn dùng nó, hãy tạo mã thông báo mới trước thời điểm đó tại {page} và đưa nó cho trợ lý hoặc tập lệnh của bạn thay cho mã cũ. Nếu bạn không còn dùng nó, không cần làm gì.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Một mã thông báo truy cập mới cho tài khoản Glazecalc của bạn",
+    "text": "Một mã thông báo truy cập có tên “{name}” vừa được tạo cho tài khoản Glazecalc {account}. Nó có thể đọc các công thức men, nguyên liệu, ghi chú và nhật ký nung đã lưu trong tài khoản đến {date}.\n\nNếu đó là bạn, không cần làm gì thêm. Bạn có thể xem và thu hồi các mã thông báo của mình tại {page}\n\nNếu không, hãy thu hồi nó ở đó và đặt lại mật khẩu của bạn ngay tại {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Một mã thông báo truy cập mới có thể thay đổi các bản ghi Glazecalc của bạn",
+    "text": "Một mã thông báo truy cập có tên “{name}” vừa được tạo cho tài khoản Glazecalc {account}. Nó có thể đọc và thay đổi các công thức men, nguyên liệu, ghi chú và nhật ký nung đã lưu trong tài khoản, và chuyển chúng vào Thùng rác, đến {date}. Mỗi thay đổi nó thực hiện đều giữ lại bản ghi như trước đó, nên bạn có thể hoàn tác trên trang web.\n\nNếu đó là bạn, không cần làm gì thêm. Bạn có thể xem và thu hồi các mã thông báo của mình tại {page}\n\nNếu không, hãy thu hồi nó ở đó và đặt lại mật khẩu của bạn ngay tại {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Xác nhận email của bạn cho Glazecalc",
+    "text": "Có người (hy vọng là bạn) đã tạo một tài khoản Glazecalc với địa chỉ {account}.\n\nĐể xác nhận địa chỉ này là của bạn, hãy mở liên kết này trong vòng {hours} giờ:\n\n{link}\n\nLiên kết chỉ dùng được một lần. Nếu bạn không tạo tài khoản, hãy bỏ qua email này; sẽ không có gì khác được gửi cho bạn trừ khi bạn yêu cầu.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

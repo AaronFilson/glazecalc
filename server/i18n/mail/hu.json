@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Glazecalc-jelszava megváltozott",
+    "text": "A(z) {account} Glazecalc-fiók jelszava az imént megváltozott, és minden eszközt, amely be volt jelentkezve, kijelentkeztettünk.\n\nHa Ön volt az, nincs további teendője. Ha nem, azonnal állítsa vissza a jelszavát itt: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "Új e-mail-címet kértek a Glazecalc-fiókjához",
+    "text": "Az imént e-mail-cím módosítását kérték a(z) {account} Glazecalc-fiókhoz. Az új címre linket küldtünk, és a módosítás csak akkor történik meg, ha megnyitják a linket.\n\nHa Ön volt az, nincs további teendője. Ha nem, valaki ismerheti a jelszavát: azonnal állítsa vissza itt: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Erősítse meg az új e-mail-címét a Glazecalchoz",
+    "text": "Valaki (remélhetőleg Ön) azt kérte, hogy a(z) {account} cím legyen a Glazecalc-fiókja e-mail-címe.\n\nA módosításhoz {hours} órán belül nyissa meg ezt a linket:\n\n{link}\n\nA link egyszer használható, és minden eszközt, amely be volt jelentkezve, kijelentkeztetünk. Ha nem Ön kérte, hagyja figyelmen kívül ezt az e-mailt; semmi sem változik.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "soha: az alkalmazások és a hozzáférési tokenek módosításai azonnal megtörténnek",
+    "removals": "csak eltávolítás előtt: egy bejegyzés Lomtárba helyezésekor vagy egy nyersanyag eltávolításakor a meglévő nyersanyagok közül. Az alkalmazások és a hozzáférési tokenek egyéb módosításai azonnal megtörténnek"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "A Glazecalc mostantól kevesebbet kérdez, mielőtt az alkalmazások módosítják a bejegyzéseit",
+    "text": "A(z) {account} Glazecalc-fiók az imént úgy lett beállítva, hogy jóváhagyást kérjen: {choice}.\n\nHa Ön volt az, nincs további teendője. A Csatlakoztatott alkalmazások oldalon láthatja és módosíthatja: {page}\n\nHa nem, állítsa vissza ott, vonjon vissza minden alkalmazást vagy tokent, amelyet nem ismer, és azonnal állítsa vissza a jelszavát itt: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "Egy alkalmazást csatlakoztattak a Glazecalc-fiókjához",
+    "opening": "A(z) {account} Glazecalc-fiókhoz egy alkalmazást csatlakoztattak ekkor: {date}, {time} (UTC).\n\n",
+    "named": "Az alkalmazás: „{name}”\n",
+    "checked": "A címe, amelyet a Glazecalc ellenőrzött: {host}\n",
+    "selfDescribed": "Saját magát regisztrálta, így a neve csak az, amit saját magáról állít.\n",
+    "answerAt": "Itt kapja meg a választ: {host}\n",
+    "loopback": "Azon a számítógépen kapja meg a választ, amelyről csatlakoztatták ({host}).\n",
+    "read": "\nOlvashatja a fiókban mentett recepteket, műhelyfüzetet, nyersanyagokat, készletet és beállításokat. Semmit sem módosíthat.\n\n",
+    "write": "\nOlvashatja a fiókban mentett recepteket, műhelyfüzetet, nyersanyagokat, készletet és beállításokat, és {days} napig módosíthatja is őket: bejegyzéseket hozhat létre és módosíthat, és a Lomtárba helyezheti őket. Minden módosítás megőrzi a bejegyzés egy változatát olyannak, amilyen volt, így a weboldalon visszavonhatja.\n\n",
+    "closing": "Ha Ön volt az, nincs további teendője. Itt láthatja, mit tesz, és itt vonhatja vissza: {page}\n\nHa nem, vonja vissza ott, és azonnal állítsa vissza a jelszavát itt: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "A Glazecalc-fiókját törölték",
+    "text": "A(z) {account} Glazecalc-fiókot töröltük, mindennel együtt, ami benne volt elmentve: receptekkel, nyersanyagokkal, égetésekkel, jegyzetekkel és beállításokkal. Ez nem vonható vissza.\n\nA webhely biztonsági mentéseiben lévő másolatok a mentések lejártával törlődnek, {days} napon belül.\n\nBármikor létrehozhat új fiókot.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "egy hitelesítő alkalmazás",
+    "passkey": "a(z) „{name}” hozzáférési kulcs"
+  },
+  "MFA_ADDED": {
+    "subject": "Új bejelentkezési lépést adtak hozzá a Glazecalc-fiókjához",
+    "text": "A(z) {account} Glazecalc-fiókhoz az imént adták hozzá a bejelentkezés második lépéseként: {method}.\n\nHa Ön volt az, nincs további teendője. Őrizze meg a helyreállítási kódjait biztos helyen. Ha nem, valaki ismerheti a jelszavát: azonnal állítsa vissza itt: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "A kétlépéses bejelentkezést ki fogják kapcsolni a Glazecalc-fiókjában",
+    "text": "Valaki azt kérte, hogy kapcsolják ki a kétlépéses bejelentkezést a(z) {account} Glazecalc-fiókban, mert a fiók minden hitelesítő alkalmazását, hozzáférési kulcsát és helyreállítási kódját elveszítették.\n\nA kétlépéses bejelentkezést ekkor kapcsoljuk ki: {date}, hacsak előbb nem ír a privacy@glazecalcapp.com címre. Ezután a fiókba a jelszóval önmagában is be lehet jelentkezni.\n\nHa Ön volt az, nincs további teendője. Ha nem, azonnal írjon a privacy@glazecalcapp.com címre, és azonnal állítsa vissza a jelszavát itt: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "A kétlépéses bejelentkezést kikapcsolták a Glazecalc-fiókjában",
+    "text": "A kétlépéses bejelentkezést az imént kikapcsolták a(z) {account} Glazecalc-fiókban: minden hitelesítő alkalmazást, hozzáférési kulcsot és helyreállítási kódot eltávolítottak, és minden eszközt, amely be volt jelentkezve, kijelentkeztettünk. A bejelentkezéshez mostantól csak a jelszó kell.\n\nA kétlépéses bejelentkezést a fiókja oldalán újra bekapcsolhatja. Ha nem Ön kérte, azonnal állítsa vissza a jelszavát itt: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "Egy bejelentkezési lépést eltávolítottak a Glazecalc-fiókjából",
+    "text": "A(z) {account} Glazecalc-fiókból az imént távolították el a bejelentkezés második lépéseként: {method}. Ha ez volt az utolsó, a bejelentkezéshez mostantól csak a jelszó kell.\n\nHa Ön volt az, nincs további teendője. Ha nem, azonnal állítsa vissza a jelszavát itt: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "Új bejelentkezési mód került a Glazecalc-fiókjába",
+    "text": "Mostantól a(z) {account} Glazecalc-fiókba bejelentkezhet a következővel is: {provider}.\n\nHa Ön volt az, nincs további teendője. Ha nem, válassza le a fiókoldalán itt: {page}, és azonnal állítsa vissza a jelszavát itt: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "Egy bejelentkezési módot eltávolítottak a Glazecalc-fiókjából",
+    "text": "A(z) {provider} le lett választva a(z) {account} Glazecalc-fiókról, és már nem használható a bejelentkezéshez.\n\nHa Ön volt az, nincs további teendője. Ha nem, lehet, hogy valaki be van jelentkezve a fiókjába: azonnal állítsa vissza a jelszavát itt: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Új helyreállítási kódok a Glazecalc-fiókjához",
+    "text": "A(z) {account} Glazecalc-fiókhoz az imént új helyreállítási kódokat készítettek. A régi kódok már nem működnek.\n\nHa Ön volt az, őrizze meg az új kódokat biztos helyen. Ha nem, azonnal állítsa vissza a jelszavát itt: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "Helyreállítási kódot használtak a Glazecalc-fiókjában",
+    "text": "A(z) {account} Glazecalc-fiók egyik helyreállítási kódját az imént használták fel, ezért az többé nem működik. Megmaradt fel nem használt kódok: {left}. Új kódokat a fiókja oldalán készíthet: {page}\n\nHa nem Ön volt, valaki birtokolhatja a jelszavát és a kódjait: azonnal állítsa vissza a jelszavát itt: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Glazecalc-jelszavának visszaállítása",
+    "text": "Valaki (remélhetőleg Ön) kérte, hogy állítsuk vissza a(z) {account} Glazecalc-fiók jelszavát.\n\nÚj jelszó választásához {minutes} percen belül nyissa meg ezt a linket:\n\n{link}\n\nA link egyszer használható. Ha nem Ön kérte, hagyja figyelmen kívül ezt az e-mailt; a jelszava nem változik.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "A Glazecalc-jelszava megváltozott",
+    "opening": "A(z) {account} Glazecalc-fiók jelszavát az imént visszaállították, és minden bejelentkezett eszközt kijelentkeztettünk.\n\n",
+    "stopped": "Arra az esetre, ha valaki más ismerte a régi jelszót, a visszaállítás ezeket is leállította:\n\n",
+    "tokens": "- A mentett munkájához hozzáférő hozzáférési tokenek és csatlakoztatott alkalmazások ({count}). Ha még szüksége van valamelyikre, hozzon létre új tokent a fiókoldalán itt: {page}\n",
+    "providers": "- A bejelentkezés ezekkel: {providers}. Ezeket újra összekapcsolhatja a fiókoldalán itt: {page}\n",
+    "shareLinks": "- A receptek megosztására készített linkjei. Újakat készíthet az egyes receptekből.\n",
+    "closing": "\nHa Ön volt az, nincs további teendője. Ha nem, azonnal állítsa vissza a jelszavát itt: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Valaki megadta a Glazecalc-jelszavát, de nem fejezte be a bejelentkezést",
+    "text": "Valaki megadta a helyes jelszót a(z) {account} Glazecalc-fiókhoz, de nem fejezte be a bejelentkezés második lépését. A második lépése kint tartotta.\n\nHa Ön volt az, nincs további teendője. Ha nem, valaki ismeri a jelszavát: azonnal változtassa meg. Itt állíthatja vissza: {forgot}\n\nHitelesítő alkalmazásból érkező 10 hibás kód után a kódokat egy órára elutasítjuk; újabb 10 után egy napra; azután minden alkalommal egy hétre. Amíg a kódokat elutasítjuk, a hozzáférési kulcs vagy a helyreállítási kód továbbra is működik. A jelszó e-mailben való visszaállítása ezt megszünteti: a félbehagyott bejelentkezései véget érnek, már nincs meg neki a jelszó, és a kódok újra működnek.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "A Glazecalc-fiókja egyik hozzáférési tokenje hamarosan lejár",
+    "text": "A(z) {account} Glazecalc-fiók „{name}” nevű hozzáférési tokenje ekkor áll le: {date}.\n\nHa még használja, addig hozzon létre új tokent itt: {page}, és adja meg az asszisztensének vagy szkriptjének a régi helyett. Ha már nem használja, nincs teendője.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Új hozzáférési token a Glazecalc-fiókjához",
+    "text": "A(z) {account} Glazecalc-fiókhoz az imént létrehoztak egy „{name}” nevű hozzáférési tokent. A fiókban mentett recepteket, nyersanyagokat, jegyzeteket és égetési naplókat olvashatja eddig: {date}.\n\nHa Ön volt az, nincs további teendője. A tokenjeit itt láthatja és vonhatja vissza: {page}\n\nHa nem, vonja vissza ott, és azonnal állítsa vissza a jelszavát itt: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Új hozzáférési token, amely módosíthatja a Glazecalc-bejegyzéseit",
+    "text": "A(z) {account} Glazecalc-fiókhoz az imént létrehoztak egy „{name}” nevű hozzáférési tokent. Olvashatja és módosíthatja a fiókban mentett recepteket, nyersanyagokat, jegyzeteket és égetési naplókat, és a Lomtárba helyezheti őket, eddig: {date}. Minden módosítása megőrzi a bejegyzést olyannak, amilyen volt, így a weboldalon visszavonhatja.\n\nHa Ön volt az, nincs további teendője. A tokenjeit itt láthatja és vonhatja vissza: {page}\n\nHa nem, vonja vissza ott, és azonnal állítsa vissza a jelszavát itt: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Erősítse meg az e-mail-címét a Glazecalchoz",
+    "text": "Valaki (remélhetőleg Ön) Glazecalc-fiókot hozott létre a(z) {account} címmel.\n\nAnnak megerősítéséhez, hogy ez a cím az Öné, {hours} órán belül nyissa meg ezt a linket:\n\n{link}\n\nA link egyszer használható. Ha nem Ön hozott létre fiókot, hagyja figyelmen kívül ezt az e-mailt; több levelet nem küldünk Önnek, hacsak nem kéri.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

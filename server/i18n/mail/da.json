@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Adgangskoden til Glazecalc er ændret",
+    "text": "Adgangskoden til kontoen {account} i Glazecalc er netop blevet ændret, og alle enheder, der var logget ind, er blevet logget ud.\n\nHvis det var dig, er der ikke mere at gøre. Hvis ikke, så nulstil adgangskoden med det samme på {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "Der er bedt om en ny e-mailadresse til din Glazecalc-konto",
+    "text": "Der er netop bedt om en ændring af e-mailadressen på Glazecalc-kontoen {account}. Et link er sendt til den nye adresse, og ændringen sker først, når linket åbnes.\n\nHvis det var dig, er der ikke mere at gøre. Hvis ikke, kender nogen måske adgangskoden: Nulstil den med det samme på {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Bekræft din nye e-mailadresse til Glazecalc",
+    "text": "Nogen (forhåbentlig dig) har bedt om at bruge {account} som e-mailadresse til sin Glazecalc-konto.\n\nFor at gennemføre ændringen skal du åbne dette link inden for {hours} timer:\n\n{link}\n\nLinket virker én gang, og alle enheder, der var logget ind, bliver logget ud. Hvis du ikke har bedt om dette, kan du se bort fra denne e-mail; der ændres intet.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "aldrig; ændringer fra apps og adgangstokens foretages med det samme",
+    "removals": "kun før en fjernelse (at flytte en post til papirkurven eller fjerne en råvare fra råvarerne på lager); andre ændringer fra apps og adgangstokens foretages med det samme"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Glazecalc spørger nu mindre, før apps ændrer dine poster",
+    "text": "Glazecalc-kontoen {account} er netop blevet indstillet til at bede om godkendelse: {choice}.\n\nHvis det var dig, er der ikke mere at gøre. Du kan se og ændre den under Tilsluttede apps på {page}\n\nHvis ikke, så sæt den tilbage dér, tilbagekald enhver app eller ethvert adgangstoken, du ikke kender, og nulstil adgangskoden med det samme på {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "En app er blevet tilsluttet din Glazecalc-konto",
+    "opening": "En app blev tilsluttet Glazecalc-kontoen {account} den {date} kl. {time} (UTC).\n\n",
+    "named": "Appen: »{name}«\n",
+    "checked": "Dens adresse, kontrolleret af Glazecalc: {host}\n",
+    "selfDescribed": "Den har registreret sig selv, så dens navn er kun, hvad den siger om sig selv.\n",
+    "answerAt": "Den modtager svaret på: {host}\n",
+    "loopback": "Den modtager svaret på den computer, den blev tilsluttet fra ({host}).\n",
+    "read": "\nDen kan læse opskrifterne, notesbogen, råvarerne, lageret og indstillingerne, der er gemt i kontoen. Den kan ikke ændre noget.\n\n",
+    "write": "\nDen kan læse opskrifterne, notesbogen, råvarerne, lageret og indstillingerne, der er gemt i kontoen, og i {days} dage kan den også ændre dem: oprette og ændre poster og flytte dem til papirkurven. Hver ændring bevarer en version af posten, som den var, så du kan fortryde den på webstedet.\n\n",
+    "closing": "Hvis det var dig, er der ikke mere at gøre. Du kan se, hvad den gør, og tilbagekalde den på {page}\n\nHvis ikke, så tilbagekald den dér, og nulstil adgangskoden med det samme på {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Din Glazecalc-konto er slettet",
+    "text": "Glazecalc-kontoen {account} er slettet med alt, hvad der var gemt i den: opskrifter, råvarer, brændinger, noter og indstillinger. Det kan ikke fortrydes.\n\nKopier i webstedets sikkerhedskopier slettes, efterhånden som sikkerhedskopierne udløber, inden for {days} dage.\n\nDu kan oprette en ny konto når som helst.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "en godkendelsesapp",
+    "passkey": "adgangsnøglen »{name}«"
+  },
+  "MFA_ADDED": {
+    "subject": "Et trin til login er føjet til din Glazecalc-konto",
+    "text": "Dette er netop føjet til Glazecalc-kontoen {account} som et andet trin ved login: {method}.\n\nHvis det var dig, er der ikke mere at gøre. Opbevar gendannelseskoderne et sikkert sted. Hvis ikke, kender nogen måske adgangskoden: Nulstil den med det samme på {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "Login i to trin på din Glazecalc-konto bliver slået fra",
+    "text": "Nogen har bedt om, at login i to trin slås fra på Glazecalc-kontoen {account}, fordi alle godkendelsesapps, adgangsnøgler og gendannelseskoder til den er gået tabt.\n\nLogin i to trin slås fra den {date}, medmindre du skriver til privacy@glazecalcapp.com inden da. Derefter kan der logges ind på kontoen med adgangskoden alene.\n\nHvis det var dig, er der ikke mere at gøre. Hvis ikke, så skriv til privacy@glazecalcapp.com nu, og nulstil adgangskoden med det samme på {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "Login i to trin er slået fra på din Glazecalc-konto",
+    "text": "Login i to trin er netop slået fra på Glazecalc-kontoen {account}: Alle godkendelsesapps, adgangsnøgler og gendannelseskoder er fjernet, og alle enheder, der var logget ind, er logget ud. Login kræver nu kun adgangskoden.\n\nDu kan slå login i to trin til igen på kontosiden. Hvis du ikke har bedt om dette, så nulstil adgangskoden med det samme på {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "Et trin til login er fjernet fra din Glazecalc-konto",
+    "text": "Dette er netop fjernet fra Glazecalc-kontoen {account} som et andet trin ved login: {method}. Hvis det var det sidste, kræver login nu kun adgangskoden.\n\nHvis det var dig, er der ikke mere at gøre. Hvis ikke, så nulstil adgangskoden med det samme på {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "Der er tilføjet en ny måde at logge ind på din Glazecalc-konto",
+    "text": "Du kan nu logge ind på Glazecalc-kontoen {account} med {provider}.\n\nHvis det var dig, er der ikke mere at gøre. Hvis ikke, så frakobl den på kontosiden på {page}, og nulstil adgangskoden med det samme på {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "En måde at logge ind på er fjernet fra din Glazecalc-konto",
+    "text": "{provider} er frakoblet Glazecalc-kontoen {account} og kan ikke længere bruges til at logge ind på den.\n\nHvis det var dig, er der ikke mere at gøre. Hvis ikke, kan en anden være logget ind på kontoen: nulstil adgangskoden med det samme på {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Nye gendannelseskoder til din Glazecalc-konto",
+    "text": "Der er netop lavet nye gendannelseskoder til Glazecalc-kontoen {account}. De gamle koder virker ikke længere.\n\nHvis det var dig, skal du opbevare de nye koder et sikkert sted. Hvis ikke, så nulstil adgangskoden med det samme på {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "En gendannelseskode er brugt på din Glazecalc-konto",
+    "text": "En af gendannelseskoderne til Glazecalc-kontoen {account} er netop brugt, så den virker ikke igen. Ubrugte koder tilbage: {left}. Du kan lave nye koder på kontosiden: {page}\n\nHvis det ikke var dig, har nogen måske adgangskoden og dine koder: Nulstil adgangskoden med det samme på {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Nulstil adgangskoden til Glazecalc",
+    "text": "Nogen (forhåbentlig dig) har bedt om at nulstille adgangskoden til kontoen {account} i Glazecalc.\n\nÅbn dette link inden for {minutes} minutter for at vælge en ny adgangskode:\n\n{link}\n\nLinket virker én gang. Hvis du ikke har bedt om dette, kan du se bort fra denne e-mail; adgangskoden forbliver den samme.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "Adgangskoden til Glazecalc er ændret",
+    "opening": "Adgangskoden til kontoen {account} i Glazecalc er netop blevet nulstillet, og alle enheder, der var logget ind, er blevet logget ud.\n\n",
+    "stopped": "I tilfælde af, at en anden havde den gamle adgangskode, stoppede nulstillingen også disse:\n\n",
+    "tokens": "- Adgangstokens og tilsluttede apps, der kunne nå dit gemte arbejde ({count}). Hvis du stadig har brug for et, så opret et nyt adgangstoken på kontosiden på {page}\n",
+    "providers": "- Login med {providers}, som du kan tilknytte igen på kontosiden på {page}\n",
+    "shareLinks": "- De links, du havde oprettet til at dele opskrifter. Du kan oprette nye fra hver opskrift.\n",
+    "closing": "\nHvis det var dig, er der ikke mere at gøre. Hvis ikke, så nulstil adgangskoden med det samme på {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Nogen angav din Glazecalc-adgangskode, men gennemførte ikke login",
+    "text": "Nogen angav den rigtige adgangskode til Glazecalc-kontoen {account}, men gennemførte ikke det andet trin i login. Dit andet trin holdt dem ude.\n\nHvis det var dig, er der ikke mere at gøre. Hvis ikke, kender nogen adgangskoden: Skift den med det samme. Du kan nulstille den på {forgot}\n\nEfter 10 forkerte koder fra en godkendelsesapp afvises koder i en time; efter yderligere 10 i et døgn; og derefter i en uge hver gang. En adgangsnøgle eller en gendannelseskode virker stadig, mens koder afvises. Nulstilling af adgangskoden via e-mail bringer det til ophør: Den andens ufuldførte login ophører, vedkommende har ikke længere adgangskoden, og koderne virker igen.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Et adgangstoken til din Glazecalc-konto udløber snart",
+    "text": "Adgangstokenet med navnet »{name}« på Glazecalc-kontoen {account} holder op med at virke {date}.\n\nHvis du stadig bruger det, så opret et nyt adgangstoken inden da på {page}, og giv det til din assistent eller dit script i stedet for det gamle. Hvis du ikke længere bruger det, er der intet at gøre.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Et nyt adgangstoken til din Glazecalc-konto",
+    "text": "Et adgangstoken med navnet »{name}« er netop oprettet til Glazecalc-kontoen {account}. Det kan læse opskrifterne, råvarerne, noterne og brændingsjournalerne, der er gemt i kontoen, indtil {date}.\n\nHvis det var dig, er der ikke mere at gøre. Du kan se og tilbagekalde dine adgangstokens på {page}\n\nHvis ikke, så tilbagekald det dér, og nulstil adgangskoden med det samme på {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Et nyt adgangstoken, der kan ændre dine poster i Glazecalc",
+    "text": "Et adgangstoken med navnet »{name}« er netop oprettet til Glazecalc-kontoen {account}. Det kan læse og ændre opskrifterne, råvarerne, noterne og brændingsjournalerne, der er gemt i kontoen, og flytte dem til papirkurven, indtil {date}. Hver ændring, det foretager, bevarer posten, som den var, så du kan fortryde den på webstedet.\n\nHvis det var dig, er der ikke mere at gøre. Du kan se og tilbagekalde dine adgangstokens på {page}\n\nHvis ikke, så tilbagekald det dér, og nulstil adgangskoden med det samme på {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Bekræft din e-mailadresse til Glazecalc",
+    "text": "Nogen (forhåbentlig dig) har oprettet en Glazecalc-konto med adressen {account}.\n\nFor at bekræfte, at adressen er din, skal du åbne dette link inden for {hours} timer:\n\n{link}\n\nLinket virker én gang. Hvis du ikke har oprettet en konto, kan du se bort fra denne e-mail; du får ikke mere, medmindre du beder om det.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

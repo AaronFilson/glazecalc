@@ -1,0 +1,10 @@
+{
+  "CHANGED": {
+    "subject": "Sua senha do Glazecalc foi alterada",
+    "text": "A senha da conta {account} do Glazecalc acabou de ser alterada, e todos os dispositivos que estavam conectados foram desconectados.\n\nSe foi você, não há mais nada a fazer. Se não foi, redefina sua senha agora mesmo em {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Redefinir sua senha do Glazecalc",
+    "text": "Alguém (esperamos que você) pediu para redefinir a senha da conta {account} do Glazecalc.\n\nPara escolher uma nova senha, abra este link em até {minutes} minutos:\n\n{link}\n\nO link funciona uma única vez. Se você não pediu isso, ignore este e-mail; sua senha continua a mesma.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

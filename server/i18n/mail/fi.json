@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Glazecalcin salasana on vaihdettu",
+    "text": "Glazecalc-tilin {account} salasana vaihdettiin juuri, ja kaikki laitteet, joilla oli kirjauduttu sisään, on kirjattu ulos.\n\nJos salasanan vaihtoi tilin omistaja itse, muuta ei tarvitse tehdä. Muussa tapauksessa palauta salasana heti osoitteessa {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "Glazecalc-tilillesi on pyydetty uutta sähköpostiosoitetta",
+    "text": "Glazecalc-tilin {account} sähköpostiosoitteen vaihtoa pyydettiin juuri. Uuteen osoitteeseen lähetettiin linkki, ja vaihto tapahtuu vasta, kun linkki avataan.\n\nJos pyysit sitä itse, mitään muuta ei tarvitse tehdä. Jos et, joku saattaa tietää salasanasi: palauta se heti osoitteessa {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Vahvista uusi sähköpostiosoitteesi Glazecalcia varten",
+    "text": "Joku (toivottavasti tilin omistaja itse) on pyytänyt osoitetta {account} Glazecalc-tilinsä sähköpostiosoitteeksi.\n\nTee muutos avaamalla tämä linkki {hours} tunnin kuluessa:\n\n{link}\n\nLinkki toimii kerran, ja kaikki kirjautuneet laitteet kirjataan ulos. Jos muutosta ei pyydetty sinun toimestasi, jätä tämä viesti huomiotta; mikään ei muutu.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "ei koskaan: sovellusten ja käyttöoikeustunnusten muutokset tehdään heti",
+    "removals": "vain ennen poistoa: tietueen siirtämistä roskakoriin tai raaka-aineen poistamista varastosta. Muut sovellusten ja käyttöoikeustunnusten muutokset tehdään heti"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Glazecalc kysyy nyt vähemmän ennen kuin sovellukset muuttavat tietueita",
+    "text": "Glazecalc-tili {account} asetettiin juuri pyytämään hyväksyntää {choice}.\n\nJos tämän teki tilin omistaja itse, muuta ei tarvitse tehdä. Asetuksen voi nähdä ja muuttaa Yhdistetyt sovellukset -sivulla osoitteessa {page}\n\nMuussa tapauksessa palauta asetus siellä, peruuta kaikki tuntemattomat sovellukset ja tunnukset ja palauta salasana heti osoitteessa {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "Glazecalc-tiliin yhdistettiin sovellus",
+    "opening": "Glazecalc-tiliin {account} yhdistettiin sovellus {date} kello {time} (UTC).\n\n",
+    "named": "Sovellus: ”{name}”\n",
+    "checked": "Sen osoite, Glazecalcin tarkistama: {host}\n",
+    "selfDescribed": "Se rekisteröi itse itsensä, joten sen nimi on vain se, mitä se kertoo itsestään.\n",
+    "answerAt": "Se vastaanottaa vastauksen osoitteessa: {host}\n",
+    "loopback": "Se vastaanottaa vastauksen tietokoneella, jolta se yhdistettiin ({host}).\n",
+    "read": "\nSe voi lukea tilille tallennettuja reseptejä, muistikirjaa, raaka-aineita, varastoa ja asetuksia. Se ei voi muuttaa mitään.\n\n",
+    "write": "\nSe voi lukea tilille tallennettuja reseptejä, muistikirjaa, raaka-aineita, varastoa ja asetuksia, ja {days} päivän ajan se voi myös muuttaa niitä: tehdä ja muuttaa tietueita ja siirtää niitä roskakoriin. Jokainen muutos säilyttää version tietueesta sellaisena kuin se oli, joten sen voi kumota verkkosivustolla.\n\n",
+    "closing": "Jos tämän teki tilin omistaja itse, muuta ei tarvitse tehdä. Sen toimet voi nähdä ja sen voi peruuttaa osoitteessa {page}\n\nMuussa tapauksessa peruuta se siellä ja palauta salasana heti osoitteessa {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Glazecalc-tilisi on poistettu",
+    "text": "Glazecalc-tili {account} on poistettu kaikkine tallennettuine tietoineen: resepteineen, raaka-aineineen, polttoineen, muistiinpanoineen ja asetuksineen. Toimintoa ei voi kumota.\n\nPalvelun varmuuskopioissa olevat kopiot poistetaan varmuuskopioiden vanhentuessa {days} päivän kuluessa.\n\nVoit luoda uuden tilin milloin tahansa.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "todennussovellus",
+    "passkey": "pääsyavain ”{name}”"
+  },
+  "MFA_ADDED": {
+    "subject": "Glazecalc-tilillesi lisättiin kirjautumisvaihe",
+    "text": "Glazecalc-tilille {account} lisättiin juuri toiseksi kirjautumisvaiheeksi: {method}.\n\nJos lisäsit sen itse, mitään muuta ei tarvitse tehdä. Säilytä varmuuskoodit turvallisessa paikassa. Jos et, joku saattaa tietää salasanasi: palauta se heti osoitteessa {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "Glazecalc-tilisi kaksivaiheinen kirjautuminen poistetaan käytöstä",
+    "text": "Joku on pyytänyt kaksivaiheisen kirjautumisen poistamista käytöstä Glazecalc-tililtä {account}, koska kaikki tilin todennussovellukset, pääsyavaimet ja varmuuskoodit on menetetty.\n\nKaksivaiheinen kirjautuminen poistetaan käytöstä {date}, ellet kirjoita osoitteeseen privacy@glazecalcapp.com ennen sitä. Sen jälkeen tilille voi kirjautua pelkällä salasanalla.\n\nJos pyysit sitä itse, mitään muuta ei tarvitse tehdä. Jos et, kirjoita heti osoitteeseen privacy@glazecalcapp.com ja palauta salasanasi saman tien osoitteessa {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "Glazecalc-tilisi kaksivaiheinen kirjautuminen poistettiin käytöstä",
+    "text": "Glazecalc-tilin {account} kaksivaiheinen kirjautuminen poistettiin juuri käytöstä: kaikki todennussovellukset, pääsyavaimet ja varmuuskoodit poistettiin, ja kaikki kirjautuneet laitteet kirjattiin ulos. Kirjautumiseen riittää nyt pelkkä salasana.\n\nVoit ottaa kaksivaiheisen kirjautumisen uudelleen käyttöön tilisivulla. Jos et pyytänyt tätä, palauta salasanasi heti osoitteessa {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "Glazecalc-tililtäsi poistettiin kirjautumisvaihe",
+    "text": "Glazecalc-tililtä {account} poistettiin juuri tämä toinen kirjautumisvaihe: {method}. Jos se oli viimeinen, kirjautumiseen riittää nyt pelkkä salasana.\n\nJos poistit sen itse, mitään muuta ei tarvitse tehdä. Jos et, palauta salasanasi heti osoitteessa {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "Glazecalc-tiliin on lisätty uusi kirjautumistapa",
+    "text": "Glazecalc-tilille {account} voi nyt kirjautua sisään palvelulla {provider}.\n\nJos tämän teki tilin omistaja itse, muuta ei tarvitse tehdä. Muussa tapauksessa irrota se tilisivulla osoitteessa {page} ja palauta salasana heti osoitteessa {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "Kirjautumistapa on poistettu Glazecalc-tililtä",
+    "text": "{provider} irrotettiin Glazecalc-tililtä {account}, eikä sillä voi enää kirjautua tilille.\n\nJos tämän teki tilin omistaja itse, muuta ei tarvitse tehdä. Muussa tapauksessa joku voi olla kirjautuneena tilille: palauta salasana heti osoitteessa {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Uudet varmuuskoodit Glazecalc-tilillesi",
+    "text": "Glazecalc-tilille {account} luotiin juuri uudet varmuuskoodit. Vanhat koodit eivät enää toimi.\n\nJos loit ne itse, säilytä uudet koodit turvallisessa paikassa. Jos et, palauta salasanasi heti osoitteessa {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "Glazecalc-tililläsi käytettiin varmuuskoodia",
+    "text": "Yhtä Glazecalc-tilin {account} palautuskoodeista käytettiin juuri, joten se ei toimi uudelleen. Käyttämättömiä koodeja jäljellä: {left}. Voit luoda uudet koodit tilisivulla: {page}\n\nJos et käyttänyt sitä itse, joku saattaa tietää salasanasi ja koodisi: palauta salasanasi heti osoitteessa {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Glazecalcin salasanan palauttaminen",
+    "text": "Joku (toivottavasti tilin omistaja itse) on pyytänyt Glazecalc-tilin {account} salasanan palauttamista.\n\nValitse uusi salasana avaamalla tämä linkki {minutes} minuutin kuluessa:\n\n{link}\n\nLinkki toimii kerran. Jos palauttamista ei ole pyydetty, jätä tämä viesti huomiotta; salasana pysyy ennallaan.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "Glazecalc-salasana on vaihdettu",
+    "opening": "Glazecalc-tilin {account} salasana palautettiin juuri, ja kaikki laitteet, joilla oli kirjauduttu sisään, on kirjattu ulos.\n\n",
+    "stopped": "Siltä varalta, että joku muu tiesi vanhan salasanan, palautus pysäytti myös nämä:\n\n",
+    "tokens": "- Käyttöoikeustunnukset ja yhdistetyt sovellukset, jotka pääsivät tallennettuun työhön ({count}). Jos jotakin niistä tarvitaan yhä, tee uusi tunnus tilisivulla osoitteessa {page}\n",
+    "providers": "- Kirjautuminen: {providers}. Ne voi liittää uudelleen tilisivulla osoitteessa {page}\n",
+    "shareLinks": "- Reseptien jakamiseen tehdyt linkit. Uudet voi tehdä kustakin reseptistä.\n",
+    "closing": "\nJos tämän teki tilin omistaja itse, muuta ei tarvitse tehdä. Muussa tapauksessa palauta salasana heti osoitteessa {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Joku antoi Glazecalc-salasanasi mutta ei viimeistellyt kirjautumista",
+    "text": "Joku antoi oikean salasanan Glazecalc-tilille {account}, mutta ei viimeistellyt kirjautumisen toista vaihetta. Toinen vaihe esti pääsyn.\n\nJos se olit sinä, mitään muuta ei tarvitse tehdä. Jos et, joku tietää salasanasi: vaihda se heti. Voit palauttaa sen osoitteessa {forgot}\n\nKun todennussovelluksen koodeja on annettu väärin 10, koodit hylätään tunnin ajan; seuraavien 10 väärän jälkeen vuorokauden ajan; ja sen jälkeen aina viikon ajan. Pääsyavain tai varmuuskoodi toimii edelleen, vaikka koodit hylätään. Salasanan palauttaminen sähköpostilla päättää tämän: heidän keskeneräiset kirjautumisensa päättyvät, heillä ei enää ole salasanaa ja koodit toimivat taas.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Glazecalc-tilin käyttöoikeustunnus vanhenee pian",
+    "text": "Glazecalc-tilin {account} käyttöoikeustunnus ”{name}” lakkaa toimimasta {date}.\n\nJos sitä käytetään yhä, tee uusi tunnus ennen sitä osoitteessa {page} ja anna se avustajalle tai skriptille vanhan tilalle. Jos sitä ei enää käytetä, mitään ei tarvitse tehdä.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Uusi käyttöoikeustunnus Glazecalc-tilille",
+    "text": "Glazecalc-tilille {account} tehtiin juuri käyttöoikeustunnus ”{name}”. Se voi lukea tilille tallennetut reseptit, raaka-aineet, muistiinpanot ja polttopäiväkirjat {date} asti.\n\nJos tämän teki tilin omistaja itse, muuta ei tarvitse tehdä. Tunnukset voi nähdä ja peruuttaa osoitteessa {page}\n\nMuussa tapauksessa peruuta tunnus siellä ja palauta salasana heti osoitteessa {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Uusi käyttöoikeustunnus, joka voi muuttaa Glazecalc-tietueita",
+    "text": "Glazecalc-tilille {account} tehtiin juuri käyttöoikeustunnus ”{name}”. Se voi lukea ja muuttaa tilille tallennettuja reseptejä, raaka-aineita, muistiinpanoja ja polttopäiväkirjoja sekä siirtää niitä roskakoriin {date} asti. Jokainen sen tekemä muutos säilyttää tietueen sellaisena kuin se oli, joten sen voi kumota verkkosivustolla.\n\nJos tämän teki tilin omistaja itse, muuta ei tarvitse tehdä. Tunnukset voi nähdä ja peruuttaa osoitteessa {page}\n\nMuussa tapauksessa peruuta tunnus siellä ja palauta salasana heti osoitteessa {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Vahvista sähköpostiosoitteesi Glazecalcia varten",
+    "text": "Joku (toivottavasti tilin omistaja itse) on luonut Glazecalc-tilin osoitteella {account}.\n\nVahvista osoite omaksesi avaamalla tämä linkki {hours} tunnin kuluessa:\n\n{link}\n\nLinkki toimii kerran. Jos tiliä ei luotu sinun toimestasi, jätä tämä viesti huomiotta; sinulle ei lähetetä muuta, ellet pyydä sitä.\n\n-- \nGlazecalc, {app}\n"
+  }
+}
