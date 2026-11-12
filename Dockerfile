@@ -57,7 +57,7 @@ COPY server ./server
 COPY lib ./lib
 # The MCP prompt dictation reads the skill's own files (server/mcp/dictation.ts).
 COPY skills ./skills
-COPY scripts/seed-standard.js ./scripts/
+COPY scripts/seed-standard.js scripts/usage-stats.mjs ./scripts/
 COPY --from=build /app/dist/glazecalc/browser ./dist/glazecalc/browser
 COPY --from=build /app/dist/glazecalc/prerendered ./dist/glazecalc/prerendered
 

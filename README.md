@@ -298,6 +298,9 @@ The Angular CLI, TypeScript, ESLint and the test runners are installed into the 
                      public pages in every language to dist/glazecalc/prerendered (docs/seo-plan.md)
     npm start        builds, then runs one server on port 3000 (PORT) with the app and its API
     npm run seed     loads the standard materials, additives and advice into MONGODB_URI
+    node scripts/usage-stats.mjs
+                     totals for the README: accounts, what they keep, connected apps, countries;
+                     counts only (on the instance: docker compose exec app node scripts/usage-stats.mjs)
     npm run lint     checks the code with ESLint
     npm run typecheck  checks the server's TypeScript (Node runs it without compiling)
     npm run format   formats files with Prettier (npm run format -- .)
