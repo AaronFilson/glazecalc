@@ -8,6 +8,8 @@ import { SIGN_IN_PROVIDERS } from '../core/auth.service';
 import { FIRST_RENDER } from '../core/first-render';
 import { sessionExpiredInterceptor } from '../core/session-expired.interceptor';
 import { provideEnglish } from './i18n';
+// This file is not a spec, so the app's own build type-checks it too, where Vitest's globals are not declared.
+import { vi } from 'vitest';
 
 export const API = 'http://api.test';
 
