@@ -49,7 +49,8 @@ For anyone reading the code; the [highlights](#highlights) below give the detail
   and hydrated; offline once visited (PWA); one $13-a-month Graviton instance, with automatic rollback.
 - **How it is built:** with Claude Code as a directed coding agent. Decisions are written down first, in
   [decision records](docs/adr/README.md); every change goes through the checks above; production deploys wait for
-  approval. The [case study](docs/case-study.md) tells how the 2017 app was revived.
+  approval. The [case study](docs/case-study.md) tells how the 2017 app was revived, how the agent was directed,
+  and what the checks caught.
 
 ## Highlights
 
