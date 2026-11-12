@@ -6,6 +6,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **A load test** (`.github/workflows/load.yml`, `scripts/load/`): the production image on an arm64 runner, held to
+  the live instance's size (a t4g.micro's 2 vCPUs and 1 GB, MongoDB's cache as in production), under k6 with 50
+  visitors at once for a minute. It fails if more than 1% of requests fail or the 95th percentile passes 500 ms, and
+  runs when the test changes and by hand.
 - **Usage at a glance** (`scripts/usage-stats.mjs`, in the image too): the number of accounts and trials, what they
   keep, the share links and the AI apps connected to them, and in how many countries and languages, as counts only.
   Calls to the MCP endpoint are counted from nginx's access log, which the script's header shows how to do.

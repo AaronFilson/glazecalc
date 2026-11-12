@@ -1,0 +1,22 @@
+# compose.yaml as the load test needs it (.github/workflows/load.yml): the app and MongoDB held to the
+# live instance's size, a t4g.micro's 2 vCPUs and 1 GB, MongoDB's cache as deploy/compose.prod.yaml sets
+# it, and the rate limits off, since the test sends every request from one address.
+#
+#   docker compose -f compose.yaml -f scripts/load/compose.load.yaml up -d --wait
+services:
+  app:
+    environment:
+      RATE_LIMITS: 'off'
+    deploy:
+      resources:
+        limits:
+          cpus: '1.5'
+          memory: 768M
+
+  mongo:
+    command: ['mongod', '--wiredTigerCacheSizeGB', '0.25']
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M

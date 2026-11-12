@@ -1,0 +1,84 @@
+name: Load test
+
+# How much the app serves on a machine the size of the live one, a t4g.micro (2 vCPUs, 1 GB, arm64):
+# the production image, built and run as compose.yaml runs it, on an arm64 runner, with the app's
+# container held to 1.5 CPUs and 768 MB and MongoDB's to 0.5 and 256 MB (scripts/load/compose.load.yaml),
+# under k6 (scripts/load/glazecalc.k6.mjs): 50 visitors at once for a minute. The run's summary gives
+# requests a second and the percentiles; it fails if more than 1% fail or the 95th passes 500 ms.
+#
+# Not on every pull request: when the test itself changes, and by hand (Actions → Load test).
+on:
+  pull_request:
+    paths:
+      - 'scripts/load/**'
+      - '.github/workflows/load.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  load:
+    name: Load test (t4g.micro-sized)
+    runs-on: ubuntu-24.04-arm
+    # The image's build prerenders about 11,500 pages before the test starts.
+    timeout-minutes: 40
+    env:
+      APP_SECRET: load-test-only-secret
+      MAIL_TRANSPORT: log
+      APP_URL: http://127.0.0.1:3000
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Build
+        run: docker compose -f compose.yaml -f scripts/load/compose.load.yaml build
+
+      - name: Start, held to a t4g.micro's size
+        run: docker compose -f compose.yaml -f scripts/load/compose.load.yaml up -d --wait --wait-timeout 180
+
+      - name: Load the standard library
+        run: docker compose -f compose.yaml -f scripts/load/compose.load.yaml run --rm app node scripts/seed-standard.js
+
+      # k6's own image, pinned by digest (k6 1.8.2, amd64 and arm64).
+      - name: Load test
+        run: |
+          mkdir -p "$RUNNER_TEMP/k6"
+          docker run --rm --network host --user "$(id -u)" \
+            -v "$PWD/scripts/load:/load:ro" -v "$RUNNER_TEMP/k6:/out" \
+            grafana/k6:1.8.2@sha256:00fdcebafbc86cb0137d429529b1caa401a02e09025f02fc74866fa6e2b004d8 \
+            run --summary-export=/out/summary.json /load/glazecalc.k6.mjs
+
+      - name: Summary
+        if: ${{ !cancelled() }}
+        run: |
+          node -e '
+            const m = require(process.argv[1]).metrics;
+            const d = m.http_req_duration;
+            const lines = [
+              "### Load test, t4g.micro-sized (2 vCPUs, 1 GB, arm64), 50 visitors at once",
+              "",
+              "| Requests a second | Median | p95 | p99 | Failed |",
+              "| --- | --- | --- | --- | --- |",
+              `| ${m.http_reqs.rate.toFixed(0)} | ${d.med.toFixed(0)} ms | ${d["p(95)"].toFixed(0)} ms | ${d["p(99)"].toFixed(0)} ms | ${(100 * m.http_req_failed.value).toFixed(2)}% |`
+            ];
+            require("fs").appendFileSync(process.env.GITHUB_STEP_SUMMARY, lines.join("\n") + "\n");
+            console.log(lines.join("\n"));
+          ' "$RUNNER_TEMP/k6/summary.json"
+
+      - name: Keep the summary
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: load-test
+          path: ${{ runner.temp }}/k6/summary.json
+          retention-days: 30
+
+      - name: Show logs
+        if: failure()
+        run: docker compose -f compose.yaml -f scripts/load/compose.load.yaml logs --tail 200
+
+      - name: Stop
+        if: always()
+        run: docker compose -f compose.yaml -f scripts/load/compose.load.yaml down -v
