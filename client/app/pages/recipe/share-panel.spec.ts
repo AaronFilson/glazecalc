@@ -168,4 +168,29 @@ describe('SharePanel', () => {
     expect(notes.checked).toBe(false);
     expect(text(fixture, '.share-problem')).toBe('That did not work. Please try again.');
   });
+
+  it('keeps the notes box as it is while a link is being made, and takes a click again once it is', async () => {
+    const { fixture, root, click } = await create({ shared: false });
+    await click('Make a link');
+    const notes = root.querySelector('#share-notes-r1') as HTMLInputElement;
+    expect(notes.getAttribute('aria-disabled')).toBe('true');
+    notes.click();
+    await settle(fixture);
+    // Unticked, as the link being made: it is made without the notes.
+    expect(notes.checked).toBe(false);
+    const made = httpMock().expectOne((req) => req.method === 'POST' && req.url === URL);
+    expect(made.request.body).toEqual({ includeNotes: false });
+    made.flush({ secret: SECRET, createdAt: '2026-10-16T10:00:00Z', includeNotes: false });
+    await settle(fixture);
+    expect(notes.checked).toBe(false);
+
+    notes.click();
+    await settle(fixture);
+    const put = httpMock().expectOne((req) => req.method === 'PUT' && req.url === URL);
+    expect(put.request.body).toEqual({ includeNotes: true });
+    put.flush({ includeNotes: true });
+    await settle(fixture);
+    expect(notes.checked).toBe(true);
+    expect(text(fixture, '.share-status')).toBe('The shared recipe shows its notes now.');
+  });
 });
