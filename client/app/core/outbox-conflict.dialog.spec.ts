@@ -3,6 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { provideEnglish } from '../testing/i18n';
 import { Outbox, type OutboxEntry } from './outbox';
 import { OutboxConflictDialog, OutboxFailedList } from './outbox-conflict.dialog';
+import { waitFor } from '../testing/test-providers';
 
 const entry = (changes: Partial<OutboxEntry>): OutboxEntry => ({
   seq: 1,
@@ -53,7 +54,7 @@ describe('OutboxConflictDialog', () => {
     expect(dialog.getAttribute('aria-modal')).toBe('true');
     expect(root.querySelector('#conflict-body')?.textContent).toContain('Celadon 2');
     expect(labels(root)).toEqual(['Save mine as a copy', 'Keep mine', 'Keep theirs']);
-    await vi.waitFor(() => expect(document.activeElement).toBe(buttons(root)[0]));
+    await waitFor(() => expect(document.activeElement).toBe(buttons(root)[0]));
 
     buttons(root)[2].click();
     expect(outbox.resolve).toHaveBeenCalledWith(1, 'theirs');
@@ -71,7 +72,7 @@ describe('OutboxConflictDialog', () => {
     await fixture.whenStable();
     const root: HTMLElement = fixture.nativeElement;
     expect(labels(root)).toEqual(['Save as new', 'Discard my changes']);
-    await vi.waitFor(() => expect(document.activeElement).toBe(buttons(root)[0]));
+    await waitFor(() => expect(document.activeElement).toBe(buttons(root)[0]));
     buttons(root)[1].click();
     expect(outbox.resolve).toHaveBeenCalledWith(1, 'discard');
     fixture.nativeElement.remove();

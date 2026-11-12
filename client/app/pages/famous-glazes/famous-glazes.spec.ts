@@ -26,9 +26,10 @@ import { famousGlazeOf, knownFamousGlaze } from './famous-route';
 // Famous glazes' pages, from the tests' fixture glaze (data/famous-glazes/fixtures) and İznik, each as
 // scripts/famous-glazes.mjs writes it: every material its full record.
 
-// Most of these work a glaze's version out with the solver (Target & Solve), a page's included: seconds
-// each, and about three times as long with coverage on, as CI runs them, so past Vitest's default 5.
-vi.setConfig({ testTimeout: 20_000 });
+// Most of these run the solver (Target & Solve), a page's included. It is numeric work that coverage
+// slows several times over: about 7 seconds a test in CI, and up to 30 on a 4-core machine running
+// the whole suite, past the 15 the others have (vitest-base.config.mts).
+vi.setConfig({ testTimeout: 60_000 });
 
 const standard = (name: string) => STANDARD_MATERIALS.find((material) => material.name === name)!;
 const additive = (name: string, oxide: string): Additive => ({ name, fields: [{ name: oxide, amount: '100' }] });
