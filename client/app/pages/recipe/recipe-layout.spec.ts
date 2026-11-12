@@ -59,6 +59,24 @@ describe('recipe layout choice', () => {
     expect(storedLayout(broken)).toBe('standard');
     expect(() => storeLayout('workbench', broken)).not.toThrow();
   });
+
+  it('works where the browser will not even hand over its storage', () => {
+    const own = Object.getOwnPropertyDescriptor(globalThis, 'localStorage');
+    Object.defineProperty(globalThis, 'localStorage', {
+      configurable: true,
+      get: () => {
+        throw new DOMException('The operation is insecure.', 'SecurityError');
+      }
+    });
+    try {
+      expect(storedLayout()).toBe('standard');
+      expect(() => storeLayout('guided')).not.toThrow();
+    } finally {
+      if (own) Object.defineProperty(globalThis, 'localStorage', own);
+      else delete (globalThis as { localStorage?: Storage }).localStorage;
+    }
+    expect(localStorage.getItem(LAYOUT_KEY)).toBeNull();
+  });
 });
 
 describe('RecipePage layouts', () => {

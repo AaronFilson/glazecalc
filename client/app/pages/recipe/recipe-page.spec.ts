@@ -293,6 +293,24 @@ describe('RecipePage', () => {
     expect(evaluate(base, [stain, odd, veegum]).warnings).toEqual([]);
   });
 
+  it('counts nothing for a colorant with no amount yet, and does not warn about it', () => {
+    TestBed.inject(TranslocoService);
+    const base = [
+      { ...WHITING, amount: '20' },
+      { ...SILICA, amount: '30' }
+    ];
+    const odd: Additive = {
+      name: 'Odd ochre',
+      percentmole: 'percent',
+      loi: 0,
+      fields: [{ name: 'Fe', amount: '100' }],
+      amount: ''
+    };
+    const counted = evaluate(base, [{ ...COBALT, amount: '0' }, odd], { includeAdditives: true });
+    expect(counted.warnings).toEqual([]);
+    expect(counted.analysis?.uList['CoO']).toBeUndefined();
+  });
+
   it("counts a colorant saved by an older version with the library's chemistry for it, or leaves it out", () => {
     TestBed.inject(TranslocoService);
     const base = [

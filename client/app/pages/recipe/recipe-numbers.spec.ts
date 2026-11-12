@@ -411,6 +411,35 @@ describe('SlurryCalculator', () => {
     expect(fixture.componentInstance['sgTarget']()).toBeNull();
   });
 
+  it('says a dry SG must be over water’s, and offers to keep no target the dry materials do not reach', async () => {
+    const { fixture, root, type } = await create();
+    const save = () => root.querySelector('.slurry-target button');
+    expect(save()).not.toBeNull();
+    await type('slurry-dry', '0.9');
+    expect(text(fixture, '.slurry-problem')).toBe("The dry materials' SG has to be more than 1.");
+    expect(save()).toBeNull();
+    // Dry materials at 1.4 cannot make a glaze of 1.45.
+    await type('slurry-dry', '1.4');
+    expect(text(fixture, '.slurry-problem')).toBe(
+      "An SG has to be more than 1 (water's) and less than the dry materials' 1.4."
+    );
+    expect(save()).toBeNull();
+  });
+
+  it('gives the volumes in the unit chosen', async () => {
+    const { fixture, root, type } = await create();
+    await type('slurry-dry', '2.5');
+    await type('slurry-volume', '10');
+    await type('slurry-measured', '1.5');
+    expect(text(fixture, '.slurry-results')).toContain('It ends at about 11.11 L.');
+    const unit = root.querySelector('.slurry-pair select') as HTMLSelectElement;
+    unit.value = 'usGallon';
+    unit.dispatchEvent(new Event('change'));
+    await fixture.whenStable();
+    // Ten US gallons, now.
+    expect(text(fixture, '.slurry-results')).toMatch(/It ends at about 11\.11 US gal\.$/);
+  });
+
   it('starts from the target a recipe keeps, as Settings read densities', async () => {
     TestBed.inject(PreferencesService).remember('density', 'baume');
     const fixture = TestBed.createComponent(SlurryCalculator);
