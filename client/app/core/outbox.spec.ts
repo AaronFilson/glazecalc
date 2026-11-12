@@ -19,6 +19,7 @@ import {
   Outbox,
   applyEntry,
   mergeNote,
+  nameOfRecord,
   outboxCallOf,
   rewriteIds,
   textOfEntry
@@ -183,6 +184,23 @@ describe('the outbox: changes made while offline', () => {
       materials: [{ id: 'm1' }],
       note: 'tmp:1x'
     });
+    // Numbers and empty values are left as they are.
+    expect(rewriteIds({ amount: 10, unit: null }, new Map([['tmp:1', 'm1']]))).toEqual({ amount: 10, unit: null });
+
+    // A record made offline is in the copy once, however often the change is made to it.
+    const made = { area: 'recipe', op: 'create' as const, id: 'tmp:2', body: { title: 'Tenmoku' }, userId: 'u' };
+    const once = applyEntry([], made);
+    expect(applyEntry(once, made)).toEqual(once);
+    // A change to a copy that holds no list leaves it as it is.
+    expect(applyEntry({ prices: [] }, { area: 'recipe', op: 'change', id: 'a', body: {}, userId: 'u' })).toEqual({
+      prices: []
+    });
+  });
+
+  it('names a record by its name, else its title, from the first that has one', () => {
+    expect(nameOfRecord(undefined, { name: 'Feldspar', title: 'not this' })).toBe('Feldspar');
+    expect(nameOfRecord('text', [{ title: 'in a list' }], { title: 'Celadon' })).toBe('Celadon');
+    expect(nameOfRecord(null, { title: '' })).toBe('');
   });
 
   it('queues a create the network fails: answers 202 with a temporary id, and the copy has the record at once', async () => {
@@ -537,6 +555,10 @@ describe('the outbox: changes made while offline', () => {
     expect(await outbox.entries()).toHaveLength(1);
     expect(await databases()).toContain(RECORDS_DB);
     expect(localStorage.getItem(OUTBOX_NOTE)).toBe('1');
+    // Nothing is sent while nobody is signed in: it waits for the same user's next sign-in.
+    await outbox.flush();
+    expect(outbox.signInNeeded()).toBe(true);
+    httpMock().expectNone(API + '/notes/change/n1');
   });
 
   it('names the unsent changes in the sign-out question; Delete removes them, Cancel changes nothing', async () => {
@@ -621,6 +643,214 @@ describe('the outbox: changes made while offline', () => {
     expect(left).toHaveLength(1);
     expect(left[0].userId).toBe('u1');
     expect(await databases()).toContain(RECORDS_DB);
+  });
+
+  it('sends the queued settings: the preferences with PUT, the prices with PATCH', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    const outbox = TestBed.inject(Outbox);
+    await turnOn(records);
+    offline(true);
+    await firstValueFrom(http().put(`${API}/preferences`, { currency: 'EUR' }));
+    await firstValueFrom(http().patch(`${API}/prices`, { set: [{ key: 'silica', perKg: 2 }] }));
+    vi.restoreAllMocks();
+
+    const flushed = outbox.flush();
+    const preferences = await nextRequest(API + '/preferences');
+    expect(preferences.request.method).toBe('PUT');
+    expect(preferences.request.body).toEqual({ currency: 'EUR' });
+    // A setting has no rev: nothing to match.
+    expect(preferences.request.headers.has('If-Match')).toBe(false);
+    preferences.flush({ currency: 'EUR' });
+    const prices = await nextRequest(API + '/prices');
+    expect(prices.request.method).toBe('PATCH');
+    expect(prices.request.body).toEqual({ set: [{ key: 'silica', perKg: 2 }] });
+    prices.flush({ prices: [{ key: 'silica', perKg: 2 }] });
+    await answerNext(records.addressOf('preferences'), { currency: 'EUR' });
+    await answerNext(records.addressOf('prices'), { prices: [{ key: 'silica', perKg: 2 }] });
+    await flushed;
+    expect(await outbox.entries()).toEqual([]);
+  });
+
+  it('queues a change to a record whose earlier change is on its way, and sends it from the rev that one made', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    const outbox = TestBed.inject(Outbox);
+    await turnOn(records);
+    offline(true);
+    await change('notes', 'n1', { content: 'first edit' });
+    vi.restoreAllMocks();
+
+    const flushed = outbox.flush();
+    const first = await nextRequest(API + '/notes/change/n1');
+    expect(first.request.headers.get('If-Match')).toBe('"1"');
+    // Online, while the first is on its way: the next edit waits behind it, with no request of its own.
+    expect(await change('notes', 'n1', { content: 'second edit' })).toMatchObject({ queued: true, id: 'n1' });
+    httpMock().expectNone(API + '/notes/change/n1');
+
+    first.flush({ code: 'record-updated', rev: 2 });
+    const next = await nextRequest(API + '/notes/change/n1');
+    expect(next.request.headers.get('If-Match')).toBe('"2"');
+    expect(next.request.body).toEqual({ content: 'second edit' });
+    next.flush({ code: 'record-updated', rev: 3 });
+    await answerNext(records.addressOf('notes'), [{ _id: 'n1', content: 'second edit', rev: 3 }]);
+    await flushed;
+    expect(await outbox.entries()).toEqual([]);
+  });
+
+  it('sends a change to another record at once while one waits', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    const outbox = TestBed.inject(Outbox);
+    await turnOn(records);
+    offline(true);
+    await change('notes', 'n1', { content: 'offline edit' });
+    // The note's change cannot go yet: the server is busy.
+    vi.restoreAllMocks();
+    const busy = outbox.flush();
+    (await nextRequest(API + '/notes/change/n1')).flush(null, { status: 503, statusText: 'Unavailable' });
+    await busy;
+
+    const saved = change('recipe', 'r1', { recipe: { title: 'Celadon 2' } });
+    const req = await nextRequest(API + '/recipe/change/r1');
+    req.flush({ code: 'record-updated', rev: 4 });
+    expect(await saved).toEqual({ code: 'record-updated', rev: 4 });
+    await answerNext(records.addressOf('recipe'), RECIPES);
+    expect((await outbox.entries()).map((e) => e.id)).toEqual(['n1']);
+  });
+
+  it('sends in one tab at a time, under a Web Lock where the browser has them', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    const outbox = TestBed.inject(Outbox);
+    await turnOn(records);
+    offline(true);
+    await change('notes', 'n1', { content: 'x' });
+    vi.restoreAllMocks();
+    const request = vi.fn((_name: string, run: () => Promise<void>) => run());
+    Object.defineProperty(navigator, 'locks', { value: { request }, configurable: true });
+    try {
+      const flushed = outbox.flush();
+      (await nextRequest(API + '/notes/change/n1')).flush({ code: 'record-updated', rev: 2 });
+      await answerNext(records.addressOf('notes'), []);
+      await flushed;
+      expect(request).toHaveBeenCalledWith('gc-outbox', expect.any(Function));
+      expect(await outbox.entries()).toEqual([]);
+    } finally {
+      Reflect.deleteProperty(navigator, 'locks');
+    }
+  });
+
+  it('fails a later change that names a record whose making was refused, without sending it', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    const outbox = TestBed.inject(Outbox);
+    await turnOn(records);
+    offline(true);
+    const material = await create('materials', { name: 'Feldspar' });
+    vi.restoreAllMocks();
+    const refused = outbox.flush();
+    (await nextRequest(API + '/materials/create')).flush({ code: 'quota' }, { status: 403, statusText: 'Forbidden' });
+    await refused;
+
+    // Offline again, the new material (still in the copy) goes into another recipe.
+    offline(true);
+    await change('recipe', 'r2', { recipe: { materials: [{ id: material['_id'], amount: '5' }] } });
+    vi.restoreAllMocks();
+    await outbox.flush();
+    httpMock().expectNone(API + '/recipe/change/r2');
+    expect((await outbox.entries()).map((e) => `${e.area}:${e.state}:${e.error}`)).toEqual([
+      'materials:failed:quota',
+      'recipe:failed:depends-on-failed'
+    ]);
+    expect(outbox.failures()).toHaveLength(2);
+  });
+
+  it('sends what waited over a restart once /verify names the same user', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    offline(true);
+    await change('notes', 'n1', { content: 'x' });
+    vi.restoreAllMocks();
+
+    const again = restart();
+    const flushed = again.outbox.flush();
+    await answerNext(API + '/verify', { id: 'u1', email: 'a@b.c' });
+    const sent = await nextRequest(API + '/notes/change/n1');
+    expect(sent.request.body).toEqual({ content: 'x' });
+    sent.flush({ code: 'record-updated', rev: 2 });
+    await answerNext(again.records.addressOf('notes'), []);
+    await flushed;
+    expect(await again.outbox.entries()).toEqual([]);
+  });
+
+  it('sends what waits as soon as an answer from the server shows the network works', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    const outbox = TestBed.inject(Outbox);
+    await turnOn(records);
+    offline(true);
+    await change('notes', 'n1', { content: 'x' });
+    vi.restoreAllMocks();
+
+    // A page loads its recipes, with no online event to go by.
+    const page = firstValueFrom(http().get(API + '/recipe/getAll'));
+    await answerNext(API + '/recipe/getAll', RECIPES);
+    await page;
+    (await nextRequest(API + '/notes/change/n1')).flush({ code: 'record-updated', rev: 2 });
+    await answerNext(records.addressOf('notes'), []);
+    await waitFor(async () => expect(await outbox.entries()).toEqual([]));
+  });
+
+  it("passes on the server's refusal of a change made online, and queues nothing", async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    const outbox = TestBed.inject(Outbox);
+    await turnOn(records);
+    const saved = change('recipe', 'r1', { recipe: { title: '' } }).catch((e: unknown) => e);
+    await answerNext(
+      API + '/recipe/change/r1',
+      { code: 'record-invalid', msg: 'A recipe needs a title.' },
+      { status: 400, statusText: 'Bad Request' }
+    );
+    expect(((await saved) as HttpErrorResponse).status).toBe(400);
+    expect(await outbox.entries()).toEqual([]);
+    expect(outbox.count()).toBe(0);
+  });
+
+  it('lets another tab delete the database, and opens it afresh when it is next needed', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    const outbox = TestBed.inject(Outbox);
+    await turnOn(records);
+    offline(true);
+    await change('notes', 'n1', { content: 'x' });
+    expect(await outbox.entries()).toHaveLength(1);
+    // Another tab clears everything: this tab's open connection lets go, so the delete is not blocked.
+    const deleting = indexedDB.deleteDatabase(RECORDS_DB);
+    await new Promise((resolve, reject) => {
+      deleting.onsuccess = resolve;
+      deleting.onblocked = () => reject(new Error('blocked'));
+    });
+    expect(await outbox.entries()).toEqual([]);
+    // Opened again, empty, rather than read through the connection that was closed.
+    expect(await databases()).toContain(RECORDS_DB);
+  });
+
+  it('counts nothing and sends nothing where the database cannot be opened', async () => {
+    localStorage.setItem(OUTBOX_NOTE, '1');
+    setUp(null);
+    vi.spyOn(indexedDB, 'open').mockImplementation(() => {
+      const failing = {} as IDBOpenDBRequest;
+      setTimeout(() => failing.onerror?.(new Event('error')));
+      return failing;
+    });
+    const outbox = TestBed.inject(Outbox);
+    expect(await outbox.entries()).toEqual([]);
+    await outbox.refreshCount('u1');
+    expect(outbox.count()).toBe(0);
+    expect(await outbox.mine('u1')).toEqual([]);
   });
 });
 
@@ -781,6 +1011,104 @@ describe('the outbox: conflicts', () => {
     await waitFor(async () =>
       expect(((await records.read('recipe'))?.body as Array<{ title: string }>)[0].title).toBe('Celadon theirs')
     );
+    // Decided already (in another tab, say): deciding again changes nothing and fetches nothing.
+    await outbox.resolve(seq, 'mine');
+    httpMock().expectNone(records.addressOf('recipe'));
+    expect(await outbox.entries()).toEqual([]);
+  });
+
+  /** A recipe change that met a newer record, with a later edit of the same recipe waiting behind it. */
+  async function conflictWithEditBehind() {
+    const { records, outbox } = await queued(() => change('recipe', 'r1', { recipe: { title: 'Celadon 2' } }));
+    const flushed = outbox.flush();
+    (await nextRequest(API + '/recipe/change/r1')).flush(
+      { code: 'record-conflict', record: { _id: 'r1', title: 'Celadon theirs', rev: 4 } },
+      conflict
+    );
+    await flushed;
+    offline(true);
+    await change('recipe', 'r1', { recipe: { notes: 'later' } });
+    vi.restoreAllMocks();
+    expect((await outbox.entries()).map((e) => `${e.id}:${e.state}`)).toEqual(['r1:conflict', 'r1:waiting']);
+    return { records, outbox, seq: outbox.conflicts()[0].seq! };
+  }
+
+  it("Keep theirs sends a later edit of the record from the server's rev", async () => {
+    const { records, outbox, seq } = await conflictWithEditBehind();
+    const resolved = outbox.resolve(seq, 'theirs');
+    await answerNext(records.addressOf('recipe'), RECIPES);
+    await resolved;
+    const later = await nextRequest(API + '/recipe/change/r1');
+    expect(later.request.headers.get('If-Match')).toBe('"4"');
+    expect(later.request.body).toEqual({ recipe: { notes: 'later' } });
+    later.flush({ code: 'record-updated', rev: 5 });
+    await answerNext(records.addressOf('recipe'), RECIPES);
+    await waitFor(async () => expect(await outbox.entries()).toEqual([]));
+  });
+
+  it('Save mine as a copy takes the later edits of the record along to the copy', async () => {
+    const { records, outbox, seq } = await conflictWithEditBehind();
+    const resolved = outbox.resolve(seq, 'copy');
+    await answerNext(records.addressOf('recipe'), RECIPES);
+    await resolved;
+    const made = await nextRequest(API + '/recipe/create');
+    expect(made.request.body).toEqual({ title: 'Celadon 2 (offline copy)' });
+    made.flush({ _id: 'r7', rev: 0 });
+    // The later edit goes to the new record, from the rev it was made with.
+    const later = await nextRequest(API + '/recipe/change/r7');
+    expect(later.request.headers.get('If-Match')).toBe('"0"');
+    expect(later.request.body).toEqual({ recipe: { notes: 'later' } });
+    later.flush({ code: 'record-updated', rev: 1 });
+    await answerNext(records.addressOf('recipe'), RECIPES);
+    await waitFor(async () => expect(await outbox.entries()).toEqual([]));
+    httpMock().expectNone(API + '/recipe/change/r1');
+  });
+
+  it('Discard drops the later edits of a record that is gone, too', async () => {
+    const { records, outbox } = await queued(() => change('recipe', 'r2', { recipe: { title: 'Shino 2' } }));
+    const flushed = outbox.flush();
+    (await nextRequest(API + '/recipe/change/r2')).flush({ code: 'record-gone' }, gone);
+    await flushed;
+    offline(true);
+    await change('recipe', 'r2', { recipe: { notes: 'later' } });
+    vi.restoreAllMocks();
+    expect(await outbox.entries()).toHaveLength(2);
+    const resolved = outbox.resolve(outbox.conflicts()[0].seq!, 'discard');
+    await answerNext(records.addressOf('recipe'), RECIPES);
+    await resolved;
+    expect(await outbox.entries()).toEqual([]);
+    httpMock().expectNone(API + '/recipe/change/r2');
+  });
+
+  it('drops a note edit that leaves the note as it was, when the note changed elsewhere meanwhile', async () => {
+    // Edited, then put back as it was: the change says what the note said already.
+    const { outbox } = await queued(() => change('notes', 'n1', { content: 'first' }));
+    const flushed = outbox.flush();
+    (await nextRequest(API + '/notes/change/n1')).flush(
+      { code: 'record-conflict', record: { _id: 'n1', content: 'edited elsewhere', rev: 2 } },
+      conflict
+    );
+    await flushed;
+    httpMock().expectNone(API + '/notes/change/n1');
+    expect(await outbox.entries()).toEqual([]);
+    expect(outbox.conflicts()).toEqual([]);
+    expect(outbox.notices()).toEqual([]);
+  });
+
+  it('asks the person about a note that keeps changing elsewhere as it is merged', async () => {
+    const { outbox } = await queued(() => change('notes', 'n1', { content: 'mine' }));
+    const flushed = outbox.flush();
+    // Merged and sent again three times, and each time the note has moved on again.
+    for (let rev = 2; rev <= 5; rev++) {
+      (await nextRequest(API + '/notes/change/n1')).flush(
+        { code: 'record-conflict', record: { _id: 'n1', content: 'theirs ' + rev, rev } },
+        conflict
+      );
+    }
+    await flushed;
+    httpMock().expectNone(API + '/notes/change/n1');
+    expect(outbox.conflicts()).toHaveLength(1);
+    expect(outbox.conflicts()[0]).toMatchObject({ error: 'record-conflict', theirs: { rev: 5 } });
   });
 
   it('a record that is gone: Save as new makes it again with the same name; Discard drops the change', async () => {

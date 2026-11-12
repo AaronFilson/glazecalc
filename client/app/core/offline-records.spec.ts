@@ -1,6 +1,6 @@
 import { HttpClient, HttpContext, HttpErrorResponse, provideHttpClient, withInterceptors } from '@angular/common/http';
 import { TestRequest, provideHttpClientTesting } from '@angular/common/http/testing';
-import { signal } from '@angular/core';
+import { PLATFORM_ID, signal } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { provideRouter } from '@angular/router';
 import { IDBFactory } from 'fake-indexeddb';
@@ -23,7 +23,7 @@ import {
   iosEvictionRisk
 } from './offline-records';
 import { changedBy, copyOf, offlineRecordsInterceptor } from './offline-records.interceptor';
-import { OUTBOX_SYNC_TAG, Outbox } from './outbox';
+import { OUTBOX_SYNC_MESSAGE, OUTBOX_SYNC_TAG, Outbox } from './outbox';
 import { sessionExpiredInterceptor } from './session-expired.interceptor';
 
 const network = { status: 0, statusText: 'Unknown Error' };
@@ -393,6 +393,12 @@ describe('the records kept on this device', () => {
     });
     await verify;
     expect(spy).toHaveBeenCalledWith({ id: 'u1', endsAt: Date.parse('2099-01-01T00:00:00.000Z'), sessionOnly: true });
+    // An answer that names nobody notes nobody.
+    spy.mockClear();
+    const nobody = get(API + '/verify');
+    await answerNext(API + '/verify', { msg: 'No user' });
+    await nobody;
+    expect(spy).not.toHaveBeenCalled();
   });
 
   it('keeps the copy when the sign-in has run out, offline, and at the next start', async () => {
@@ -723,6 +729,13 @@ describe('the records kept on this device', () => {
     // Firefox and Safari: a registration with no sync.
     vi.stubGlobal('navigator', { ...navigator, serviceWorker: { getRegistration: () => Promise.resolve({}) } });
     expect(await outbox.requestSync()).toBe(false);
+    // A browser that says no (no worker in charge yet, or the permission refused).
+    const refused = vi.fn().mockRejectedValue(new DOMException('No active registration.', 'InvalidStateError'));
+    vi.stubGlobal('navigator', {
+      ...navigator,
+      serviceWorker: { getRegistration: () => Promise.resolve({ sync: { register: refused } }) }
+    });
+    expect(await outbox.requestSync()).toBe(false);
   });
 
   it('counts the keep window from the last open, and keeps forever by default', () => {
@@ -838,5 +851,195 @@ describe('the records kept on this device', () => {
     expect(localStorage.getItem(RECORDS_FLAG)).toBeNull();
     httpMock().expectNone(API + '/recipe/getAll');
     expect(await databases()).not.toContain(RECORDS_DB);
+    // Nothing to ask about when the trial signs out.
+    expect(await records.askSignOut()).toBe('keep');
+    expect(TestBed.inject(OfflineAsk).open()).toBeNull();
+  });
+
+  it('on the server (the prerender), keeps nothing, offers nothing and asks nothing', async () => {
+    localStorage.setItem(RECORDS_FLAG, '1');
+    localStorage.setItem(OFFLINE_GONE, 'u1');
+    setUp();
+    TestBed.overrideProvider(PLATFORM_ID, { useValue: 'server' });
+    const records = TestBed.inject(OfflineRecords);
+    expect(records.enabled()).toBe(false);
+    expect(records.available()).toBe(false);
+    expect(records.keepsAnything()).toBe(false);
+    expect(records.goneId()).toBeNull();
+    expect(await records.askSignOut()).toBe('keep');
+    expect(TestBed.inject(OfflineAsk).open()).toBeNull();
+    expect(await databases()).not.toContain(RECORDS_DB);
+  });
+
+  it('sends the waiting changes when the service worker says the browser fired Background Sync', () => {
+    const worker = new EventTarget();
+    Object.defineProperty(navigator, 'serviceWorker', { value: worker, configurable: true });
+    try {
+      setUp();
+      TestBed.inject(OfflineRecords);
+      const flush = vi.spyOn(TestBed.inject(Outbox), 'flush').mockResolvedValue();
+      worker.dispatchEvent(new MessageEvent('message', { data: { type: OUTBOX_SYNC_MESSAGE } }));
+      // Any other message from the worker is not about the outbox.
+      worker.dispatchEvent(new MessageEvent('message', { data: { type: 'SKIP_WAITING' } }));
+      worker.dispatchEvent(new MessageEvent('message', { data: null }));
+      expect(flush).toHaveBeenCalledTimes(1);
+    } finally {
+      Reflect.deleteProperty(navigator, 'serviceWorker');
+    }
+  });
+
+  it('turns on all the same when the browser will not promise to keep the storage', async () => {
+    setUp();
+    const persist = vi.fn(() => Promise.reject(new DOMException('Not allowed.', 'NotAllowedError')));
+    Object.defineProperty(navigator, 'storage', { value: { persist }, configurable: true });
+    try {
+      const records = TestBed.inject(OfflineRecords);
+      expect(await turnOn(records)).toBe(true);
+      expect(persist).toHaveBeenCalledTimes(1);
+      expect(records.notKept()).toBe(false);
+    } finally {
+      Reflect.deleteProperty(navigator, 'storage');
+    }
+  });
+
+  it("says it won't keep a copy where this browser's storage refuses the switch", async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    vi.spyOn(Storage.prototype, 'setItem').mockImplementation(() => {
+      throw new DOMException('The quota has been exceeded.', 'QuotaExceededError');
+    });
+    expect(await records.setEnabled(true)).toBe(false);
+    expect(records.notKept()).toBe(true);
+    expect(records.enabled()).toBe(false);
+    httpMock().expectNone(API + '/verify');
+  });
+
+  it('keeps and asks nothing where this browser blocks its storage', async () => {
+    setUp();
+    vi.spyOn(Storage.prototype, 'getItem').mockImplementation(() => {
+      throw new DOMException('The operation is insecure.', 'SecurityError');
+    });
+    const records = TestBed.inject(OfflineRecords);
+    const outbox = TestBed.inject(Outbox);
+    expect(TestBed.inject(AuthService).hasSession()).toBe(false);
+    expect(records.enabled()).toBe(false);
+    expect(records.keepsAnything()).toBe(false);
+    expect(records.goneId()).toBeNull();
+    expect(outbox.noted()).toBe(false);
+    expect(await records.askSignOut()).toBe('keep');
+    expect(TestBed.inject(OfflineAsk).open()).toBeNull();
+  });
+
+  it('turned on in a tab that knows who is signed in, asks /verify nothing more', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    const verify = get(API + '/verify');
+    await answerNext(API + '/verify', { id: 'u1', email: 'a@b.c' });
+    await verify;
+    const on = records.setEnabled(true);
+    for (const key of RECORD_KEYS) await answerNext(records.addressOf(key), key === 'recipe' ? RECIPES : []);
+    expect(await on).toBe(true);
+    httpMock().expectNone(API + '/verify');
+    await waitFor(async () => expect((await records.read('recipe'))?.body).toEqual(RECIPES));
+  });
+
+  it('fetches nothing again after a change is saved while the copy is off', async () => {
+    setUp();
+    TestBed.inject(OfflineRecords);
+    const saved = firstValueFrom(TestBed.inject(HttpClient).post(API + '/recipe/create', { title: 'Shino' }));
+    await answerNext(API + '/recipe/create', { _id: 'r2', title: 'Shino' });
+    await saved;
+    await new Promise((resolve) => setTimeout(resolve, 20));
+    httpMock().expectNone(API + '/recipe/getAll');
+  });
+
+  it('a refresh of the copy that the network fails changes nothing on the page', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    await waitFor(async () => expect(await records.read('recipe')).not.toBeNull());
+    const refreshing = records.refetch(['recipe']);
+    await answerNext(API + '/recipe/getAll', null, network);
+    await refreshing;
+    // Not answered from the copy: the page did not ask for it, so it does not turn read-only or warn.
+    expect(records.showingCopy()).toBeNull();
+    expect(records.notSaved()).toBe(false);
+    expect((await records.read('recipe'))?.body).toEqual(RECIPES);
+  });
+
+  it('where the database cannot be opened, answers nothing from a copy, and a refresh fetches everything', async () => {
+    localStorage.setItem(RECORDS_FLAG, '1');
+    setUp();
+    vi.spyOn(indexedDB, 'open').mockImplementation(() => {
+      const failing = {} as IDBOpenDBRequest;
+      setTimeout(() => failing.onerror?.(new Event('error')));
+      return failing;
+    });
+    const records = TestBed.inject(OfflineRecords);
+    expect(await records.read('recipe')).toBeNull();
+    expect(await offlineGet(API + '/recipe/getAll')).toBeInstanceOf(HttpErrorResponse);
+    expect(records.notSaved()).toBe(true);
+    // How old the copy is cannot be read: it is all fetched again.
+    const refreshing = records.refresh();
+    for (const key of RECORD_KEYS) await answerNext(records.addressOf(key), []);
+    await refreshing;
+    await answerNext(API + '/verify', null, network);
+  });
+
+  it('asks nothing about a deleted account when this device keeps nothing of it', async () => {
+    setUp();
+    TestBed.inject(OfflineRecords);
+    TestBed.inject(AuthService).sessionEnded(true);
+    await new Promise((resolve) => setTimeout(resolve, 50));
+    expect(TestBed.inject(OfflineAsk).open()).toBeNull();
+    expect(localStorage.getItem(OFFLINE_GONE)).toBeNull();
+  });
+
+  it('account deleted elsewhere with changes not sent: says so, and Later after the export keeps everything', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    await waitFor(async () => expect(await records.read('recipe')).not.toBeNull());
+    vi.spyOn(navigator, 'onLine', 'get').mockReturnValue(false);
+    await firstValueFrom(TestBed.inject(HttpClient).put(API + '/recipe/change/r1', { recipe: { title: 'Celadon 2' } }));
+    const saved: Blob[] = [];
+    vi.spyOn(URL, 'createObjectURL').mockImplementation((blob) => {
+      saved.push(blob as Blob);
+      return 'blob:offline';
+    });
+    vi.spyOn(HTMLAnchorElement.prototype, 'click').mockImplementation(() => undefined);
+
+    TestBed.inject(AuthService).sessionEnded(true);
+    const ask = TestBed.inject(OfflineAsk);
+    await waitFor(() => expect(ask.open()?.question.title).toBe('Your account was deleted'));
+    expect(ask.open()!.question.body.join(' ')).toContain('1 change that has not been sent yet will be lost.');
+    ask.open()!.answer('export');
+    await waitFor(() => expect(saved).toHaveLength(1));
+    const file = JSON.parse(await saved[0].text()) as { records: { recipes: Array<{ title: string }> } };
+    expect(file.records.recipes[0].title).toBe('Celadon 2');
+    await answerAsk('later');
+    await new Promise((resolve) => setTimeout(resolve, 50));
+    expect(localStorage.getItem(OFFLINE_GONE)).toBe('u1');
+    expect(await databases()).toContain(RECORDS_DB);
+    expect(await TestBed.inject(Outbox).mine('u1')).toHaveLength(1);
+  });
+
+  it("removes an account's locked copy when it signs in again after the time it chose, and says so", async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    await records.setKeepDays(7);
+    // Someone else signs in on this browser: the first account's copy is locked away, unused.
+    await signInAs('b@b.c', 'u2');
+    await waitFor(() => expect(localStorage.getItem(RECORDS_FLAG)).toBe(RECORDS_LOCKED));
+    expect(records.keepRemoved()).toBe(false);
+
+    // The first account comes back after more than the week it chose.
+    vi.spyOn(Date, 'now').mockReturnValue(Date.now() + 8 * DAY);
+    await signInAs('a@b.c', 'u1');
+    await waitFor(() => expect(records.keepRemoved()).toBe(true));
+    expect(records.enabled()).toBe(false);
+    expect(await records.read('recipe')).toBeNull();
+    await waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
   });
 });
