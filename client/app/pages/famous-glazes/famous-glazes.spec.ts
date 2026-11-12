@@ -1,17 +1,19 @@
 import { TestBed } from '@angular/core/testing';
-import { ActivatedRoute, ActivatedRouteSnapshot, convertToParamMap, provideRouter } from '@angular/router';
+import { ActivatedRoute, ActivatedRouteSnapshot, Router, convertToParamMap, provideRouter } from '@angular/router';
 import { of } from 'rxjs';
 import fixtureFile from '../../../../data/famous-glazes/fixtures/fixture-celadon.json';
 import iznikFile from '../../../../data/famous-glazes/iznik.json';
 import oribeFile from '../../../../data/famous-glazes/oribe.json';
-import { Additive } from '../../core/models';
+import { Additive, Material } from '../../core/models';
+import { PendingRecipeService } from '../../core/pending-recipe.service';
 import { PAGE_LANGUAGE } from '../../i18n/language';
-import { httpMock, settle, skippedHeadings, testProviders } from '../../testing/test-providers';
+import { API, httpMock, settle, skippedHeadings, testProviders } from '../../testing/test-providers';
 import { STANDARD_MATERIALS } from '../materials/standard-materials';
 import { FamousGlazePage } from './famous-glaze-page';
 import {
   FamousGlaze,
   FamousGlazes,
+  celsiusText,
   famousGlazesUrl,
   localVersion,
   nativeRecipe,
@@ -21,7 +23,13 @@ import {
   targetUnity
 } from './famous-glaze';
 import { FamousGlazesPage } from './famous-glazes-page';
-import { famousGlazeOf, knownFamousGlaze } from './famous-route';
+import {
+  anyFamousGlaze,
+  famousGlazeList,
+  famousGlazeOf,
+  famousGlazeTitleParams,
+  knownFamousGlaze
+} from './famous-route';
 
 // Famous glazes' pages, from the tests' fixture glaze (data/famous-glazes/fixtures) and İznik, each as
 // scripts/famous-glazes.mjs writes it: every material its full record.
@@ -125,6 +133,27 @@ describe('a famous glaze worked out', () => {
     expect(proseIn(fixture.origin, 'fr').english).toBe(true);
     expect(proseIn(fixture.origin, 'en').english).toBe(false);
   });
+
+  it('has no version to work out without a recipe, an analysis and lead-free version for a lead glaze, or materials that help', () => {
+    expect(nativeUnity(iznik)).toBeNull();
+    expect(targetUnity({ ...iznik, leadFree: null })).toBeNull();
+    expect(targetUnity({ ...iznik, analysis: null })).toBeNull();
+    expect(localVersion(fixture, [])).toBeNull();
+    // Tin oxide brings none of the celadon's oxides: the solver has nothing to make it from.
+    const tin: Material = {
+      name: 'Tin oxide',
+      percentmole: 'molecular',
+      loi: 0,
+      fields: [{ name: 'SnO2', amount: 1 }]
+    };
+    expect(localVersion(fixture, [tin])).toBeNull();
+  });
+
+  it('writes the firing temperature as a range or one figure, and nothing where no source gives one', () => {
+    expect(celsiusText([950, 1050])).toBe('950–1050 °C');
+    expect(celsiusText(1280)).toBe('1280 °C');
+    expect(celsiusText(undefined)).toBe('');
+  });
 });
 
 describe("a famous glaze's route", () => {
@@ -144,6 +173,42 @@ describe("a famous glaze's route", () => {
     expect(glaze.slug).toBe('fixture-celadon');
   });
 
+  it("opens the index once a glaze is published, with the glazes listed, and titles a glaze's page with its names", async () => {
+    const opens = TestBed.runInInjectionContext(() =>
+      anyFamousGlaze({} as never, [] as never, {} as never)
+    ) as Promise<boolean>;
+    await settle();
+    httpMock().expectOne(famousGlazesUrl('en')).flush([fixture, iznik]);
+    expect(await opens).toBe(true);
+    const listed = await TestBed.runInInjectionContext(
+      () => famousGlazeList({} as never, {} as never) as Promise<FamousGlaze[]>
+    );
+    expect(listed.map((glaze) => glaze.slug)).toEqual(['fixture-celadon', 'iznik']);
+    const titleOf = (slug: string) =>
+      TestBed.runInInjectionContext(
+        () =>
+          famousGlazeTitleParams(
+            { paramMap: convertToParamMap({ slug }) } as unknown as ActivatedRouteSnapshot,
+            {} as never
+          ) as Promise<{ name: string; native: string }>
+      );
+    expect(await titleOf('iznik')).toEqual({ name: 'İznik', native: 'İznik çinisi' });
+    expect(await titleOf('shino')).toEqual({ name: '', native: '' });
+  });
+
+  it('keeps the index closed while the file cannot be read, and reads it again the next time', async () => {
+    const opens = TestBed.runInInjectionContext(() =>
+      anyFamousGlaze({} as never, [] as never, {} as never)
+    ) as Promise<boolean>;
+    await settle();
+    httpMock().expectOne(famousGlazesUrl('en')).flush(null, { status: 503, statusText: 'Service Unavailable' });
+    expect(await opens).toBe(false);
+    const again = TestBed.inject(FamousGlazes).all();
+    await settle();
+    httpMock().expectOne(famousGlazesUrl('en')).flush([fixture]);
+    expect((await again).map((glaze) => glaze.slug)).toEqual(['fixture-celadon']);
+  });
+
   it("reads the file of the page's language only", async () => {
     TestBed.resetTestingModule();
     TestBed.configureTestingModule({ providers: [...testProviders(), { provide: PAGE_LANGUAGE, useValue: 'ta' }] });
@@ -155,7 +220,7 @@ describe("a famous glaze's route", () => {
 });
 
 describe("a famous glaze's page", () => {
-  const render = async (glaze: FamousGlaze, language = 'en') => {
+  const setUp = (glaze: FamousGlaze, language = 'en') => {
     // A session another spec left in localStorage would hide the sign-up link.
     localStorage.clear();
     TestBed.resetTestingModule();
@@ -167,6 +232,9 @@ describe("a famous glaze's page", () => {
         { provide: ActivatedRoute, useValue: { data: of({ glaze }) } }
       ]
     });
+  };
+  const render = async (glaze: FamousGlaze, language = 'en') => {
+    setUp(glaze, language);
     const fixture = TestBed.createComponent(FamousGlazePage);
     await settle(fixture);
     await settle(fixture);
@@ -205,6 +273,96 @@ describe("a famous glaze's page", () => {
   it('notes in another language what is still in English', async () => {
     expect((await render(fixture, 'de')).page.querySelector('.guide-note')).toBeNull();
     expect((await render(fixture, 'fr')).page.querySelector('.guide-note')).not.toBeNull();
+  });
+
+  it('marks a recipe not yet test-fired, gives its own note, and makes it from the materials sold where the reader buys', async () => {
+    const { fixture: rendered, page } = await render(oribeWith(oribeFile.recipe.lines));
+    const local = () => page.querySelector('#famous-local')!.closest('section')!;
+    expect(page.querySelector('#famous-untested')?.textContent).toContain('Calculated, not yet test-fired.');
+    expect(page.querySelector('#famous-recipe')?.closest('section')?.textContent).toContain(oribeFile.recipe.note.en);
+    // Where the reader buys is asked first.
+    expect(page.querySelector('#famous-local-recipe')).toBeNull();
+    expect(local().textContent).toContain('Choose where you buy materials to see it made from those sold there.');
+    const region = page.querySelector('#famous-region') as HTMLSelectElement;
+    region.value = 'US';
+    region.dispatchEvent(new Event('change'));
+    await settle(rendered);
+    const lines = [...page.querySelectorAll('#famous-local-recipe th')].map((th) => th.textContent?.trim());
+    expect(lines.length).toBeGreaterThan(2);
+    expect(lines.at(-1)).toBe('+ Copper oxide');
+    expect(local().textContent).toMatch(/to the target formula\./);
+  });
+
+  describe('its main button', () => {
+    /** A click as a person makes it; whether the page left it to the browser (it follows the link) is noted. */
+    const press = async (
+      rendered: { whenStable(): Promise<unknown> },
+      page: HTMLElement,
+      init: MouseEventInit = {}
+    ) => {
+      let leftToBrowser = false;
+      page.addEventListener(
+        'click',
+        (event) => {
+          leftToBrowser = !event.defaultPrevented;
+          // The test browser cannot open another page.
+          event.preventDefault();
+        },
+        { once: true }
+      );
+      page
+        .querySelector('#famous-open')!
+        .dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, button: 0, ...init }));
+      await settle(rendered as never);
+      return leftToBrowser;
+    };
+    const TRIAL = { guest: true, name: 'quiet kilns', expiresAt: '2099-01-01T00:00:00.000Z' };
+
+    it('leaves a click for a new tab to the link, and opens the recipe for a visitor in a new trial', async () => {
+      const { fixture: rendered, page } = await render(fixture);
+      const navigate = vi.spyOn(TestBed.inject(Router), 'navigateByUrl').mockResolvedValue(true);
+      expect(await press(rendered, page, { ctrlKey: true })).toBe(true);
+      httpMock().expectNone(API + '/guest');
+      expect(navigate).not.toHaveBeenCalled();
+
+      expect(await press(rendered, page)).toBe(false);
+      httpMock()
+        .expectOne({ method: 'POST', url: API + '/guest' })
+        .flush(TRIAL);
+      await settle(rendered);
+      expect(navigate).toHaveBeenCalledWith('/recipe');
+      const recipe = TestBed.inject(PendingRecipeService).take()!;
+      expect(recipe.title).toBe('Fixture celadon');
+      expect(recipe.materials.map((line) => line.name)).toEqual(['Custer Spar', 'Silica', 'Whiting', 'EPK Kaolin']);
+    });
+
+    it('opens the lead-free version once, even when pressed twice before the materials have loaded', async () => {
+      setUp(iznik);
+      localStorage.setItem('session', 'account');
+      const rendered = TestBed.createComponent(FamousGlazePage);
+      // Drawn at once, as the browser adopts the page, before the standard materials have come.
+      rendered.detectChanges();
+      const page = rendered.nativeElement as HTMLElement;
+      expect(page.querySelector('#famous-local-recipe')).toBeNull();
+      expect(page.textContent).not.toContain('Choose where you buy');
+      const navigate = vi.spyOn(TestBed.inject(Router), 'navigateByUrl').mockResolvedValue(true);
+      const open = page.querySelector('#famous-open') as HTMLAnchorElement;
+      open.click();
+      open.click();
+      await settle(rendered);
+      // Signed in: no trial is started.
+      httpMock()
+        .expectOne(API + '/verify')
+        .flush({ msg: 'User verified', id: 'u1', email: 'a@b.com' });
+      await settle(rendered);
+      await settle(rendered);
+      expect(navigate.mock.calls.filter(([address]) => address === '/recipe')).toHaveLength(1);
+      const recipe = TestBed.inject(PendingRecipeService).take()!;
+      expect(recipe.title).toBe('İznik style, lead-free');
+      expect(recipe.notes).toBe('Calculated, not yet test-fired: fire test tiles before use.');
+      expect(recipe.materials.every((line) => iznikFile.leadFree.prefer.includes(line.name))).toBe(true);
+      expect(recipe.additives?.map((line) => line.name)).toEqual(['Tin oxide']);
+    });
   });
 });
 
