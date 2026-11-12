@@ -6,6 +6,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Usage at a glance** (`scripts/usage-stats.mjs`, in the image too): the number of accounts and trials, what they
+  keep, the share links and the AI apps connected to them, and in how many countries and languages, as counts only.
+  Calls to the MCP endpoint are counted from nginx's access log, which the script's header shows how to do.
 - **A supply chain that can be checked:** the production image is published with an SBOM and SLSA build provenance
   (BuildKit's, in full), and its provenance is signed through GitHub (`actions/attest-build-provenance`), so
   `gh attestation verify oci://ghcr.io/aaronfilson/glazecalc:latest --owner AaronFilson` checks where and how it was
