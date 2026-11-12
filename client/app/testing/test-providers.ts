@@ -32,6 +32,14 @@ export function httpMock(): HttpTestingController {
   return TestBed.inject(HttpTestingController);
 }
 
+/**
+ * vi.waitFor, with 10 seconds instead of its 1: with coverage on and every core busy, the fake IndexedDB
+ * and the requests a test waits for can take longer than a second.
+ */
+export function waitFor<T>(check: () => T | Promise<T>): Promise<T> {
+  return vi.waitFor(check, { timeout: 10_000 });
+}
+
 /** Lets pending promises finish, then renders. */
 export async function settle(fixture?: ComponentFixture<unknown>): Promise<void> {
   await new Promise((resolve) => setTimeout(resolve));

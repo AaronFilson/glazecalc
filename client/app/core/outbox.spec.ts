@@ -5,7 +5,7 @@ import { TestBed } from '@angular/core/testing';
 import { provideRouter } from '@angular/router';
 import { IDBFactory } from 'fake-indexeddb';
 import { firstValueFrom } from 'rxjs';
-import { API, httpMock } from '../testing/test-providers';
+import { API, httpMock, waitFor } from '../testing/test-providers';
 import { provideEnglish } from '../testing/i18n';
 import { API_BASE } from './api-base';
 import { AuthService, SIGN_IN_PROVIDERS } from './auth.service';
@@ -62,7 +62,7 @@ async function databases(): Promise<string[]> {
 
 async function nextRequest(address: string): Promise<TestRequest> {
   let req!: TestRequest;
-  await vi.waitFor(() => {
+  await waitFor(() => {
     req = httpMock().expectOne(address);
   });
   return req;
@@ -89,7 +89,7 @@ async function turnOn(records: OfflineRecords, id = 'u1'): Promise<void> {
     await answerNext(records.addressOf(key), body);
   }
   await on;
-  await vi.waitFor(async () => expect(await records.read('recipe')).not.toBeNull());
+  await waitFor(async () => expect(await records.read('recipe')).not.toBeNull());
 }
 
 /** The browser says it is offline (or back). */
@@ -100,7 +100,7 @@ function offline(on: boolean): void {
 /** Answers the question on screen (core/offline-ask.ts) once it is there. */
 async function answerAsk(id: string): Promise<void> {
   const ask = TestBed.inject(OfflineAsk);
-  await vi.waitFor(() => expect(ask.open()).not.toBeNull());
+  await waitFor(() => expect(ask.open()).not.toBeNull());
   ask.open()!.answer(id);
 }
 
@@ -443,7 +443,7 @@ describe('the outbox: changes made while offline', () => {
     (await nextRequest(API + '/recipe/change/r1')).flush({ code: 'record-updated', rev: 4 });
     await answerNext(records.addressOf('notes'), []);
     await answerNext(records.addressOf('recipe'), []);
-    await vi.waitFor(async () => expect(await outbox.entries()).toEqual([]));
+    await waitFor(async () => expect(await outbox.entries()).toEqual([]));
   });
 
   it('keeps the queue and the copy over a restart while offline, and the sign-in running out', async () => {
@@ -479,7 +479,7 @@ describe('the outbox: changes made while offline', () => {
     await answerNext(API + '/signin', { msg: 'Signed in.', email: 'b@b.c', kept: 0 });
     await signIn;
     await answerNext(API + '/verify', { id: 'u2', email: 'b@b.c' });
-    await vi.waitFor(() => expect(records.enabled()).toBe(false));
+    await waitFor(() => expect(records.enabled()).toBe(false));
     const outbox = TestBed.inject(Outbox);
     await outbox.flush();
     await new Promise((resolve) => setTimeout(resolve, 50));
@@ -513,7 +513,7 @@ describe('the outbox: changes made while offline', () => {
     await off;
     expect(await outbox.entries()).toEqual([]);
     expect(localStorage.getItem(OUTBOX_NOTE)).toBeNull();
-    await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
+    await waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
   });
 
   it('signing out keeps the copy and the queued changes, locked to the user', async () => {
@@ -551,7 +551,7 @@ describe('the outbox: changes made while offline', () => {
     await create('notes', { title: 'new' });
 
     const first = records.askSignOut();
-    await vi.waitFor(() => expect(ask.open()).not.toBeNull());
+    await waitFor(() => expect(ask.open()).not.toBeNull());
     const question = ask.open()!.question;
     expect(question.body.join(' ')).toContain('2 changes you made offline have not been sent yet.');
     expect(question.choices.map((choice) => choice.id)).toEqual(['keep', 'delete', 'cancel']);
@@ -586,7 +586,7 @@ describe('the outbox: changes made while offline', () => {
     offline(true);
     await change('notes', 'n1', { content: 'x' });
     const clearing = records.clearWithConfirm();
-    await vi.waitFor(() => expect(ask.open()).not.toBeNull());
+    await waitFor(() => expect(ask.open()).not.toBeNull());
     expect(ask.open()!.question.body.join(' ')).toContain('1 change that has not been sent yet will be lost.');
     ask.open()!.answer('cancel');
     expect(await clearing).toBe(false);
@@ -598,7 +598,7 @@ describe('the outbox: changes made while offline', () => {
     expect(await again).toBe(true);
     expect(await outbox.entries()).toEqual([]);
     expect(localStorage.getItem(RECORDS_FLAG)).toBeNull();
-    await vi.waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
+    await waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
   });
 
   it("never touches another account's changes: the signed-in user clearing their own data leaves them", async () => {
@@ -613,7 +613,7 @@ describe('the outbox: changes made while offline', () => {
     await answerNext(API + '/signin', { msg: 'Signed in.', email: 'b@b.c', kept: 0 });
     await signIn;
     await answerNext(API + '/verify', { id: 'u2', email: 'b@b.c' });
-    await vi.waitFor(() => expect(records.enabled()).toBe(false));
+    await waitFor(() => expect(records.enabled()).toBe(false));
     expect(outbox.count()).toBe(0);
 
     await records.clear();
@@ -757,7 +757,7 @@ describe('the outbox: conflicts', () => {
     expect(create.request.headers.has('If-Match')).toBe(false);
     create.flush({ _id: 'r7', rev: 0 });
     await answerNext(records.addressOf('recipe'), RECIPES);
-    await vi.waitFor(async () => expect(await outbox.entries()).toEqual([]));
+    await waitFor(async () => expect(await outbox.entries()).toEqual([]));
   });
 
   it("Keep mine sends the change again from the server's rev", async () => {
@@ -769,7 +769,7 @@ describe('the outbox: conflicts', () => {
     expect(again.request.headers.get('If-Match')).toBe('"4"');
     again.flush({ code: 'record-updated', rev: 5 });
     await answerNext(records.addressOf('recipe'), RECIPES);
-    await vi.waitFor(async () => expect(await outbox.entries()).toEqual([]));
+    await waitFor(async () => expect(await outbox.entries()).toEqual([]));
   });
 
   it("Keep theirs drops the change and brings the server's record back into the copy", async () => {
@@ -778,7 +778,7 @@ describe('the outbox: conflicts', () => {
     await answerNext(records.addressOf('recipe'), [{ _id: 'r1', title: 'Celadon theirs', rev: 4 }]);
     await resolved;
     expect(await outbox.entries()).toEqual([]);
-    await vi.waitFor(async () =>
+    await waitFor(async () =>
       expect(((await records.read('recipe'))?.body as Array<{ title: string }>)[0].title).toBe('Celadon theirs')
     );
   });
@@ -803,7 +803,7 @@ describe('the outbox: conflicts', () => {
         create.flush({ _id: 'r8', rev: 0 });
         await answerNext(records.addressOf('recipe'), RECIPES);
       }
-      await vi.waitFor(async () => expect(await outbox.entries()).toEqual([]));
+      await waitFor(async () => expect(await outbox.entries()).toEqual([]));
     }
   });
 
@@ -813,7 +813,7 @@ describe('the outbox: conflicts', () => {
     await answerNext(records.addressOf('recipe'), RECIPES);
     await resolved;
     (await nextRequest(API + '/recipe/create')).flush({ code: 'quota' }, { status: 403, statusText: 'Forbidden' });
-    await vi.waitFor(() => expect(outbox.failures()).toHaveLength(1));
+    await waitFor(() => expect(outbox.failures()).toHaveLength(1));
     const [failed] = outbox.failures();
     expect(failed.state).toBe('failed');
     expect(textOfEntry(failed)).toBe('Celadon 2 (offline copy)\n\nmine');
