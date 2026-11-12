@@ -1,14 +1,24 @@
+import { Component } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
-import { ActivatedRoute, ActivatedRouteSnapshot, Router, convertToParamMap, provideRouter } from '@angular/router';
+import {
+  ActivatedRoute,
+  ActivatedRouteSnapshot,
+  NavigationEnd,
+  Router,
+  Routes,
+  convertToParamMap,
+  provideRouter
+} from '@angular/router';
 import { TranslocoService } from '@jsverse/transloco';
-import { of } from 'rxjs';
+import { filter, of } from 'rxjs';
 import { textKey } from '../../../../lib/regions/languages';
 import { ORTON, SK } from '../../../../lib/cones';
 import { AuthService } from '../../core/auth.service';
 import { PendingRecipeService } from '../../core/pending-recipe.service';
+import { signedInGuard } from '../../core/signed-in.guard';
 import { useCodedMessages } from '../../i18n/coded';
 import { PAGE_LANGUAGE } from '../../i18n/language';
-import { httpMock, skippedHeadings, testProviders } from '../../testing/test-providers';
+import { API, httpMock, settle, skippedHeadings, testProviders } from '../../testing/test-providers';
 import { ConesPage } from './cones-page';
 import { MaterialInfoPage, analysisOf, hasFlux } from './material-info-page';
 import {
@@ -119,12 +129,12 @@ describe('the page of a standard material', () => {
   beforeEach(() => localStorage.clear());
 
   /** A page of the material, as its route opens it; a test may open more than one. */
-  const render = async (name: string, language = 'en', translated: readonly string[] = ['en']) => {
+  const render = async (name: string, language = 'en', translated: readonly string[] = ['en'], routes: Routes = []) => {
     TestBed.resetTestingModule();
     TestBed.configureTestingModule({
       providers: [
         ...testProviders(),
-        provideRouter([]),
+        provideRouter(routes),
         { provide: PAGE_LANGUAGE, useValue: language },
         { provide: REFERENCE_LANGUAGE_LIST, useValue: translated },
         { provide: ActivatedRoute, useValue: { data: of({ material: named(name) }) } }
@@ -313,6 +323,33 @@ describe('the page of a standard material', () => {
       // The recipe page's guard asks for a sign-in, with the recipe waiting.
       expect(failing.navigate).toHaveBeenCalledWith('/recipe');
       expect(TestBed.inject(PendingRecipeService).take()?.materials?.[0]?.name).toBe('Silica');
+    });
+
+    it('takes a visitor to the recipe page in their trial without passing the sign-in page', async () => {
+      @Component({ selector: 'gc-test-recipe', template: '' })
+      class Stand {}
+      const { page } = await render(
+        'Silica',
+        'en',
+        ['en'],
+        [
+          { path: 'recipe', canActivate: [signedInGuard], component: Stand },
+          { path: 'signin', component: Stand }
+        ]
+      );
+      const shown: string[] = [];
+      TestBed.inject(Router)
+        .events.pipe(filter((event) => event instanceof NavigationEnd))
+        .subscribe((event) => shown.push(event.urlAfterRedirects));
+      await click(page);
+      // While the trial starts, the page stays as it is.
+      expect(shown).toEqual([]);
+      httpMock()
+        .expectOne({ method: 'POST', url: API + '/guest' })
+        .flush({ guest: true, name: 'quiet kilns', expiresAt: '2099-01-01T00:00:00.000Z' });
+      await settle();
+      await settle();
+      expect(shown).toEqual(['/recipe']);
     });
 
     it('leaves a click for a new tab to the link', async () => {

@@ -1,4 +1,4 @@
-import { isPlatformBrowser } from '@angular/common';
+import { Location, isPlatformBrowser } from '@angular/common';
 import { Component, PLATFORM_ID, computed, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
@@ -234,7 +234,7 @@ const unityRows = (unity: Record<string, number>): Array<{ oxide: string; amount
         <a
           id="famous-open"
           class="btn btn-primary"
-          routerLink="/recipe"
+          [href]="recipeAddress"
           [attr.aria-busy]="starting() || null"
           (click)="open($event)"
           >{{ glaze().lead ? t('famous.glaze.openLeadFree') : t('famous.glaze.open') }}</a
@@ -383,6 +383,11 @@ export class FamousGlazePage {
 
   protected readonly path = computed(() => '/famous-glazes/' + this.glaze().slug);
   protected readonly starting = signal(false);
+  /**
+   * The main button's address in the page's language (/de/recipe), for a new tab. Not a routerLink, whose own
+   * navigation would take a visitor to the sign-in page while their trial starts.
+   */
+  protected readonly recipeAddress = inject(Location).prepareExternalUrl('/recipe');
 
   /** The recipe the main button opens: the native one, or for a lead glaze its lead-free version. */
   private recipeToOpen(): Recipe | null {

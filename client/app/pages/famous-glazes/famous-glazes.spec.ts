@@ -1,11 +1,22 @@
+import { APP_BASE_HREF } from '@angular/common';
+import { Component } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
-import { ActivatedRoute, ActivatedRouteSnapshot, Router, convertToParamMap, provideRouter } from '@angular/router';
-import { of } from 'rxjs';
+import {
+  ActivatedRoute,
+  ActivatedRouteSnapshot,
+  NavigationEnd,
+  Router,
+  Routes,
+  convertToParamMap,
+  provideRouter
+} from '@angular/router';
+import { filter, of } from 'rxjs';
 import fixtureFile from '../../../../data/famous-glazes/fixtures/fixture-celadon.json';
 import iznikFile from '../../../../data/famous-glazes/iznik.json';
 import oribeFile from '../../../../data/famous-glazes/oribe.json';
 import { Additive, Material } from '../../core/models';
 import { PendingRecipeService } from '../../core/pending-recipe.service';
+import { signedInGuard } from '../../core/signed-in.guard';
 import { PAGE_LANGUAGE } from '../../i18n/language';
 import { API, httpMock, settle, skippedHeadings, testProviders } from '../../testing/test-providers';
 import { STANDARD_MATERIALS } from '../materials/standard-materials';
@@ -220,21 +231,21 @@ describe("a famous glaze's route", () => {
 });
 
 describe("a famous glaze's page", () => {
-  const setUp = (glaze: FamousGlaze, language = 'en') => {
+  const setUp = (glaze: FamousGlaze, language = 'en', routes: Routes = []) => {
     // A session another spec left in localStorage would hide the sign-up link.
     localStorage.clear();
     TestBed.resetTestingModule();
     TestBed.configureTestingModule({
       providers: [
         ...testProviders(),
-        provideRouter([]),
+        provideRouter(routes),
         { provide: PAGE_LANGUAGE, useValue: language },
         { provide: ActivatedRoute, useValue: { data: of({ glaze }) } }
       ]
     });
   };
-  const render = async (glaze: FamousGlaze, language = 'en') => {
-    setUp(glaze, language);
+  const render = async (glaze: FamousGlaze, language = 'en', routes: Routes = []) => {
+    setUp(glaze, language, routes);
     const fixture = TestBed.createComponent(FamousGlazePage);
     await settle(fixture);
     await settle(fixture);
@@ -334,6 +345,38 @@ describe("a famous glaze's page", () => {
       const recipe = TestBed.inject(PendingRecipeService).take()!;
       expect(recipe.title).toBe('Fixture celadon');
       expect(recipe.materials.map((line) => line.name)).toEqual(['Custer Spar', 'Silica', 'Whiting', 'EPK Kaolin']);
+    });
+
+    it('takes a visitor to the recipe page in their trial without passing the sign-in page', async () => {
+      @Component({ selector: 'gc-test-recipe', template: '' })
+      class Stand {}
+      const { fixture: rendered, page } = await render(fixture, 'en', [
+        { path: 'recipe', canActivate: [signedInGuard], component: Stand },
+        { path: 'signin', component: Stand }
+      ]);
+      const shown: string[] = [];
+      TestBed.inject(Router)
+        .events.pipe(filter((event) => event instanceof NavigationEnd))
+        .subscribe((event) => shown.push(event.urlAfterRedirects));
+      await press(rendered, page);
+      // While the trial starts, the page stays as it is.
+      expect(shown).toEqual([]);
+      httpMock()
+        .expectOne({ method: 'POST', url: API + '/guest' })
+        .flush(TRIAL);
+      await settle(rendered);
+      await settle(rendered);
+      expect(shown).toEqual(['/recipe']);
+    });
+
+    it("links the recipe page in the page's language, for a new tab", async () => {
+      setUp(fixture, 'de');
+      TestBed.overrideProvider(APP_BASE_HREF, { useValue: '/de/' });
+      const rendered = TestBed.createComponent(FamousGlazePage);
+      await settle(rendered);
+      expect((rendered.nativeElement as HTMLElement).querySelector('#famous-open')?.getAttribute('href')).toBe(
+        '/de/recipe'
+      );
     });
 
     it('opens the lead-free version once, even when pressed twice before the materials have loaded', async () => {
