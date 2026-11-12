@@ -32,8 +32,10 @@
     "test:e2e:both": "node scripts/test-e2e-both.mjs",
     "test:all": "npm test && npm run test:client && npm run test:e2e",
     "test:all:linux": "npm test && npm run test:client && npm run test:e2e:linux",
-    "test:coverage": "c8 --include \"server/**\" --include \"lib/**\" --exclude \"server/test/**\" --reporter text-summary --reporter html mocha",
+    "test:coverage": "c8 --include \"server/**\" --include \"lib/**\" --exclude \"server/test/**\" --reporter text-summary --reporter html --reporter json-summary mocha",
     "test:client:coverage": "ng test --watch=false --coverage",
+    "prelighthouse": "node --env-file-if-exists=.env scripts/ensure-db.mjs",
+    "lighthouse": "node scripts/lighthouse.mjs",
     "seed": "node --env-file-if-exists=.env scripts/seed-standard.js"
   },
   "repository": {

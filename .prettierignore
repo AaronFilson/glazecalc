@@ -3,6 +3,9 @@ coverage/
 playwright-report/
 test-results/
 test-results-linux/
+/.lighthouseci/
+/lighthouse-results/
+/numbers/
 .angular/
 db/
 package-lock.json

@@ -14,6 +14,10 @@ coverage/
 test-results/
 test-results-linux/
 playwright-report/
+# Lighthouse (npm run lighthouse) and what CI measured for the README (scripts/readme-numbers.mjs)
+/.lighthouseci/
+/lighthouse-results/
+/numbers/
 
 # Local settings loaded by the npm scripts; see .env.example
 .env

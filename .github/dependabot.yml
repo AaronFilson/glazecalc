@@ -28,6 +28,12 @@ updates:
     schedule:
       interval: weekly
 
+  # Lighthouse CI, which CI installs apart too (scripts/lighthouse/).
+  - package-ecosystem: npm
+    directory: /scripts/lighthouse
+    schedule:
+      interval: weekly
+
   - package-ecosystem: github-actions
     directory: /
     schedule:
