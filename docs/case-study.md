@@ -100,8 +100,8 @@ themselves; and light, dark and six palettes named for glazes.
   command: `npm run test:e2e:linux` runs the browser tests in CI's Ubuntu, on the code as it is,
   in about six minutes. CI is pinned to that Ubuntu, so the next upgrade, and its fonts, come by
   choice.
-- **Translating safety advice with no budget for translators.** Glazecalc is now in six more
-  languages, translated by AI. Each language had a glossary built from its own suppliers' catalogues,
+- **Translating safety advice with no budget for translators.** Glazecalc is in 57 languages,
+  translated by AI. Each language had a glossary built from its own suppliers' catalogues,
   each part a second reviewer, and the safety text a third pass that translated it back into English
   without looking at the original, then compared. That pass found what reviewers missed: "locked
   storage" that had become merely closed, a respirator that applied only outdoors, a pet's food bowl
@@ -113,16 +113,52 @@ themselves; and light, dark and six palettes named for glazes.
   footer painted at the bottom of the window and was pushed down when the page arrived. Showing
   it after the first navigation brought it to 0.
 
+## Working with an AI coding agent
+
+Most of the 2026 work was done with Claude Code, an AI coding agent: most commits since October
+name it as co-author. I used it the way I would lead a fast, capable engineer. I decided what to
+build and how it should behave, it wrote the code, and nothing reached production that the checks
+below had not passed and I had not approved.
+
+- **Decisions first, in writing.** A plan or a decision record came before the code for anything
+  that shaped the app, each saying what was decided, why, and what it costs
+  ([docs/adr](adr/README.md)). Where a choice was mine, the record says so in my words, as ADR 25
+  does: "The reason for a confirm is to keep bad AI from going wild."
+- **Checks that do not trust the author.** Every change runs the same gates whoever wrote it: the
+  server, Angular and browser suites with their accessibility checks (the README gives their size
+  and coverage, and CI checks those numbers), the MCP conformance suite, CodeQL, Lighthouse and the
+  checks on 57 languages' messages. Security-sensitive work gets an adversarial review before it
+  ships. Production deploys wait for my approval, and a failed health check rolls back.
+- **What the checks caught.** The agent was wrong in ways a reviewer could have missed, and the
+  gates found each one. These are from the week before 1.0:
+  - It moved a test helper into a file the production build also compiles, using a name only the
+    test build declares. The unit tests passed; CI's build stopped at "Cannot find name 'vi'".
+  - Its first version of the README's number check read only numbers written on one line, so the
+    ones Prettier had wrapped went unchecked. The check's own table in CI showed it, and a test now
+    fails on any number the check cannot read.
+  - On its first run that check found the README claiming 92% Angular coverage where CI measured
+    91.41%: the number had been true once and nobody had looked since.
+  - Turning coverage on in CI made the solver's tests slow enough to fail at random; CI's second
+    run showed it before anyone relied on the numbers.
+  - The Lighthouse tool it chose arrived with nine high-severity advisories in its dependencies.
+    `npm audit` found them before the commit, and an override pins the fixed package.
+  - In the translations, the blind back-translation of the safety text keeps catching what the AI
+    translators get wrong; the "back-translation fixes" commits in the history are those catches.
+- **What stays mine.** What to build and what to leave out, the trade-offs in the decision records,
+  the review of anything touching accounts and security, and every merge and production deploy.
+
 ## Where it ended up
 
-| Measure                          | 2017                  | Now                                                    |
-| -------------------------------- | --------------------- | ------------------------------------------------------ |
-| Automated tests                  | basic API route tests | 789: server, Angular unit and browser, with axe checks |
-| Server statement coverage        | not measured          | 98.6%                                                  |
-| Standard materials and colorants | 53, from one book     | 204, each with a source and a status                   |
-| Deploys                          | SSH and restart       | approved click, keyless, rolls back on a failed check  |
-| Monthly cost                     | $15-17                | about $13                                              |
-| Lighthouse (desktop)             | not measured          | performance 99; accessibility, best practices, SEO 100 |
+| Measure                          | 2017                  | At 1.0                                                        |
+| -------------------------------- | --------------------- | ------------------------------------------------------------- |
+| Automated tests                  | basic API route tests | over 3,400: server, Angular unit and browser, with axe checks |
+| Server statement coverage        | not measured          | 98%                                                           |
+| Standard materials and colorants | 53, from one book     | 219, each with a source and a status                          |
+| Languages                        | English               | 57, right to left included                                    |
+| Deploys                          | SSH and restart       | approved click, keyless, rolls back on a failed check         |
+| Security headers                 | not measured          | Mozilla HTTP Observatory A+ (120)                             |
+| Monthly cost                     | $15-17                | about $13                                                     |
+| Lighthouse (desktop)             | not measured          | performance 99; accessibility, best practices, SEO 100        |
 
 ## What I would do next
 
