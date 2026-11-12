@@ -16,8 +16,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   lockfile in `scripts/lighthouse/`, like the MCP conformance tools.
 - **The README's numbers are checked against each CI run** (`scripts/readme-numbers.mjs`). The server and Angular
   suites run with coverage in CI, each job keeps what it measured, and a last job fails the run when the README says
-  more than the run measured, and warns when it says much less. The README has badges for the tests, coverage and
-  Lighthouse.
+  more than the run measured, or gives a number in words the check cannot read, and warns when it says much less.
+  The README has badges for the tests, coverage and Lighthouse.
 - **A code of conduct** (the Contributor Covenant), a pull request template with the checks, and forms for something
   that does not work and for an idea beside the translation form; the New issue page links the security policy.
 - **Famous glazes** (/famous-glazes, docs/famous-glazes.md): a public page per published glaze, from one data file
@@ -1111,8 +1111,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 - **The README starts with the engineering:** an "At a glance" section for anyone reading the code, then the
   highlights, which now name the standard terms beside the plain ones (MFA, CSRF protection, SSG, PWA, WCAG 2.2 AA,
-  CI/CD) and link the privacy records and the live checks. What the app does is folded below them. Its test counts
-  were far behind (about 1,000, 700 and 175, for over 1,750, 1,100 and 450).
+  CI/CD) and link the privacy records and the live checks. What the app does is folded below them. Its numbers were
+  out of date: about 1,000, 700 and 175 tests where CI ran over 1,750, 1,150 and 450, and 92% Angular coverage
+  where it measured 91%.
 - **1.0.0** is the version that was 0.5.0 (not yet released): the app has been live since October.
 - **Compressed pages** (docs/prerender-compression-and-material-pages-plan.md, Part A). Each page reply is compressed
   in Node after its fresh nonce goes in (`server/lib/compress.ts`: brotli 5, else gzip 5), with `Vary` and

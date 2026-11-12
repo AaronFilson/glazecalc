@@ -9,8 +9,8 @@ Aaron Filson, in 57 languages, and usable from AI assistants through its MCP ser
 
 [![CI](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/AaronFilson/glazecalc/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/AaronFilson/glazecalc/actions/workflows/codeql.yml)
-[![Tests](https://img.shields.io/badge/tests-3%2C300%2B-2ea44f)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
-[![Coverage](https://img.shields.io/badge/coverage-98%25%20server%20%C2%B7%2092%25%20client-2ea44f)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
+[![Tests](https://img.shields.io/badge/tests-3%2C450%2B-2ea44f)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
+[![Coverage](https://img.shields.io/badge/coverage-98%25%20server%20%C2%B7%2091%25%20client-2ea44f)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
 [![Lighthouse](https://img.shields.io/badge/Lighthouse-99%20%C2%B7%20100%20%C2%B7%20100%20%C2%B7%20100-f44b21)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
 [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-com.glazecalcapp%2Fglazecalc-5b5bd6)](https://registry.modelcontextprotocol.io/v0/servers?search=com.glazecalcapp/glazecalc)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -33,8 +33,8 @@ For anyone reading the code; the [highlights](#highlights) below give the detail
 
 - **Stack:** Angular 22 (standalone components, signals, zoneless), TypeScript on Node 24 with Express 5 and
   Mongoose 9, MongoDB 9, Docker, and AWS (EC2, SSM, SES, S3, CloudWatch).
-- **Tested in CI on every pull request:** over 1,750 server tests (98% of statements), over 1,100 Angular unit tests
-  (92% of statements) and over 450 Playwright browser tests, with axe checks against WCAG 2.2 AA. Also the official
+- **Tested in CI on every pull request:** over 1,750 server tests (98% of statements), over 1,150 Angular unit tests
+  (91% of statements) and over 450 Playwright browser tests, with axe checks against WCAG 2.2 AA. Also the official
   MCP conformance suite, CodeQL on the code and the workflows, and Lighthouse on desktop: performance 99;
   accessibility, best practices and SEO 100. CI checks these numbers too.
 - **Security:** sign-in with OAuth 2.0 and OpenID Connect (Google, GitHub, Microsoft) or a password; MFA with WebAuthn
@@ -58,7 +58,7 @@ The details, with the decisions behind them:
   and put back online. The
   [case study](docs/case-study.md) tells how.
 - **Tested at three levels, in CI on every pull request and push to master:** over 1,750 server tests (98% of
-  statements) run against the app in-process; over 1,100 Angular unit tests (92% of statements); over 450 Playwright
+  statements) run against the app in-process; over 1,150 Angular unit tests (91% of statements); over 450 Playwright
   browser tests, including [axe](https://github.com/dequelabs/axe-core) accessibility checks against WCAG 2.2 AA of
   every page in light and dark mode, every page in a pseudo-locale to find text not marked for translation, and
   every page in each language at a phone's width. CodeQL scans the code and the workflows
