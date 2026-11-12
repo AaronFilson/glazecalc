@@ -55,12 +55,16 @@ async function create() {
 }
 
 /** Waits for a request to the address and answers it. */
-async function answerNext(address: string, body: unknown): Promise<void> {
+async function answerNext(
+  address: string,
+  body: unknown,
+  init?: { status: number; statusText: string }
+): Promise<void> {
   let req!: TestRequest;
   await waitFor(() => {
     req = httpMock().expectOne(address);
   });
-  req.flush(body as object);
+  req.flush(body as object, init);
 }
 
 /** Ticks the switch, and answers /verify and the fetch of every record and setting that follow. */
@@ -197,6 +201,22 @@ describe('OfflineRecordsSection', () => {
     again.keep()!.dispatchEvent(new Event('change'));
     await answerNext(API + '/verify', { id: 'u1', email: 'a@b.c' });
     await waitFor(() => expect(TestBed.inject(OfflineRecords).keepDays()).toBeNull());
+  });
+
+  it('shows the time the copy is kept for as it is, when a new choice cannot be saved', async () => {
+    // The copy is on, and the site opens with no network: /verify cannot say who is signed in.
+    localStorage.setItem(RECORDS_FLAG, '1');
+    setUp();
+    const made = await create();
+    made.keep()!.value = '7';
+    made.keep()!.dispatchEvent(new Event('change'));
+    await answerNext(API + '/verify', null, { status: 0, statusText: 'Unknown Error' });
+    await waitFor(async () => {
+      await settle(made.fixture);
+      expect(made.keep()!.disabled).toBe(false);
+    });
+    expect(TestBed.inject(OfflineRecords).keepDays()).toBeNull();
+    expect(made.keep()!.selectedOptions[0]!.textContent?.trim()).toBe('Never (keep it until I delete it)');
   });
 
   it("unticks itself where the browser won't keep a copy, and says why", async () => {
