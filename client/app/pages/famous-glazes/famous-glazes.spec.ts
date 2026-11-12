@@ -26,6 +26,10 @@ import { famousGlazeOf, knownFamousGlaze } from './famous-route';
 // Famous glazes' pages, from the tests' fixture glaze (data/famous-glazes/fixtures) and İznik, each as
 // scripts/famous-glazes.mjs writes it: every material its full record.
 
+// Most of these work a glaze's version out with the solver (Target & Solve), a page's included: seconds
+// each, and about three times as long with coverage on, as CI runs them, so past Vitest's default 5.
+vi.setConfig({ testTimeout: 20_000 });
+
 const standard = (name: string) => STANDARD_MATERIALS.find((material) => material.name === name)!;
 const additive = (name: string, oxide: string): Additive => ({ name, fields: [{ name: oxide, amount: '100' }] });
 
@@ -81,8 +85,6 @@ describe('a famous glaze worked out', () => {
     near(withTalc['SiO2'], 3.15, 0.05);
   });
 
-  // The solver (Target & Solve) works the version out here: a few seconds, about three times as long with
-  // coverage on, as CI runs these, so past the default 5.
   it('has its native unity formula, and a version from the materials sold in a region', () => {
     const unity = nativeUnity(fixture)!;
     expect(unity['CaO']! + unity['K2O']! + unity['Na2O']!).toBeGreaterThan(0.9);
@@ -93,7 +95,7 @@ describe('a famous glaze worked out', () => {
     expect(version.materials.length).toBeGreaterThan(0);
     expect(version.additives.map((a) => a.name)).toEqual(['Red iron oxide']);
     expect(['close', 'fair']).toContain(version.verdict);
-  }, 20000);
+  });
 
   it('opens the native recipe as a new recipe, but never a lead glaze', () => {
     const recipe = nativeRecipe(fixture, 'Fixture celadon')!;
