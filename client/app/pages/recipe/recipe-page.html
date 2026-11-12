@@ -1037,6 +1037,10 @@
             </div>
           </section>
         }
+        <!-- Why Replace lead or the match did not go on: said with the materials to swap, above, when they show. -->
+        @if (suggestProblem() && !(modern().swaps.length || modern().colorants.length)) {
+          <p class="recipe-swap-problem" role="alert">{{ suggestProblem() }}</p>
+        }
       </div>
     }
     @defer (when swapUndo(); prefetch on idle) {

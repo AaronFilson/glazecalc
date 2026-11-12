@@ -3240,6 +3240,40 @@ describe('RecipePage', () => {
         expect(materialsShown(root)).toEqual(['Red lead', 'China Clay', 'Silica']);
       });
 
+      it('says when the lead cannot be replaced for a material with no analysis to work from', async () => {
+        const { fixture, root, page } = await startWith(
+          [WHITING, SILICA, CHINA_CLAY, RED_LEAD, frit('Borosilicate frit', 0.6)],
+          [MYSTERY]
+        );
+        fill(page, [...LEAD_RECIPE, [MYSTERY, '5']]);
+        await settle(fixture);
+        click(fixture, 'Replace lead');
+        await settle(fixture);
+        expect(root.querySelector('#lead-heading')).toBeNull();
+        expect(text(fixture, '.recipe-swap-problem')).toBe(
+          'The lead cannot be replaced: a material in the recipe has no analysis to work from.'
+        );
+      });
+
+      it('says which amount stops a match for a recipe with nothing to swap', async () => {
+        const { fixture, router, page } = await startWith([WHITING, SILICA, G200]);
+        fill(page, [
+          [WHITING, '20'],
+          [SILICA, 'lots']
+        ]);
+        await settle(fixture);
+        click(fixture, 'Match with what I have');
+        await settle(fixture);
+        answer('/shelf', { shelf: ['Whiting', 'Silica', 'G-200 EU Feldspar'] });
+        await settle(fixture);
+        click(fixture, 'Match and compare');
+        await settle(fixture);
+        expect(router.url).toBe('/');
+        expect(text(fixture, '.recipe-swap-problem')).toBe(
+          'The amount for Silica is not a number ("lots"). Please fix it first.'
+        );
+      });
+
       it('closes Match with what I have by its own button or Cancel, keeping what must be used, and saves nothing for a tick', async () => {
         const { fixture, root, page } = await startWith([WHITING, SILICA, CUSTER, G200]);
         fill(page, [
