@@ -8,6 +8,11 @@ materials, colorants, firing logs and notes together in one private notebook.
 Aaron Filson, in 57 languages, and usable from AI assistants through its MCP server.
 
 [![CI](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/AaronFilson/glazecalc/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/AaronFilson/glazecalc/actions/workflows/codeql.yml)
+[![Tests](https://img.shields.io/badge/tests-3%2C300%2B-2ea44f)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
+[![Coverage](https://img.shields.io/badge/coverage-98%25%20server%20%C2%B7%2092%25%20client-2ea44f)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
+[![Lighthouse](https://img.shields.io/badge/Lighthouse-99%20%C2%B7%20100%20%C2%B7%20100%20%C2%B7%20100-f44b21)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
+[![MCP Registry](https://img.shields.io/badge/MCP%20Registry-com.glazecalcapp%2Fglazecalc-5b5bd6)](https://registry.modelcontextprotocol.io/v0/servers?search=com.glazecalcapp/glazecalc)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 ![Angular 22](https://img.shields.io/badge/Angular-22-c3002f.svg)
 ![Node.js 24](https://img.shields.io/badge/Node.js-24-417e38.svg)
@@ -22,7 +27,99 @@ Aaron Filson, in 57 languages, and usable from AI assistants through its MCP ser
   </tr>
 </table>
 
+## At a glance
+
+For anyone reading the code; the [highlights](#highlights) below give the details.
+
+- **Stack:** Angular 22 (standalone components, signals, zoneless), TypeScript on Node 24 with Express 5 and
+  Mongoose 9, MongoDB 9, Docker, and AWS (EC2, SSM, SES, S3, CloudWatch).
+- **Tested in CI on every pull request:** over 1,750 server tests (98% of statements), over 1,100 Angular unit tests
+  (92% of statements) and over 450 Playwright browser tests, with axe checks against WCAG 2.2 AA. Also the official
+  MCP conformance suite, CodeQL on the code and the workflows, and Lighthouse on desktop: performance 99;
+  accessibility, best practices and SEO 100. CI checks these numbers too.
+- **Security:** sign-in with OAuth 2.0 and OpenID Connect (Google, GitHub, Microsoft) or a password; MFA with WebAuthn
+  passkeys, TOTP and recovery codes; JWTs in httpOnly cookies with CSRF protection; a layered content security
+  policy; keyless CI/CD with no stored AWS keys.
+- **AI assistants:** an MCP server in the official MCP Registry, with its own OAuth authorization server: apps reach
+  a person's records only with their consent, and, if the person chooses, an app's changes wait for their approval.
+- **Reach on a small budget:** 57 languages, right to left (RTL) included; about 11,500 public pages prerendered (SSG)
+  and hydrated; offline once visited (PWA); one $13-a-month Graviton instance, with automatic rollback.
+- **How it is built:** with Claude Code as a directed coding agent. Decisions are written down first, in
+  [decision records](docs/adr/README.md); every change goes through the checks above; production deploys wait for
+  approval. The [case study](docs/case-study.md) tells how the 2017 app was revived.
+
+## Highlights
+
+The details, with the decisions behind them:
+
+- **A 2017 AngularJS app rebuilt** as Angular 22 (standalone components, signals, zoneless with no zone.js,
+  strict templates) and a TypeScript server on Express 5, Mongoose 9 and Node 24, which runs the
+  `.ts` files directly with no build step ([ADR 8](docs/adr/0008-typescript-server-without-a-build.md)),
+  and put back online. The
+  [case study](docs/case-study.md) tells how.
+- **Tested at three levels, in CI on every pull request and push to master:** over 1,750 server tests (98% of
+  statements) run against the app in-process; over 1,100 Angular unit tests (92% of statements); over 450 Playwright
+  browser tests, including [axe](https://github.com/dequelabs/axe-core) accessibility checks against WCAG 2.2 AA of
+  every page in light and dark mode, every page in a pseudo-locale to find text not marked for translation, and
+  every page in each language at a phone's width. CodeQL scans the code and the workflows
+  ([its settings](.github/codeql/codeql-config.yml)), and CI checks the numbers in this README against each run
+  ([scripts/readme-numbers.mjs](scripts/readme-numbers.mjs)).
+- **One glaze chemistry library** for the browser and the tests, checked against values worked
+  out by hand ([ADR 4](docs/adr/0004-shared-chemistry.md)).
+- **Keyless CI/CD with approval:** GitHub Actions gets short-lived AWS credentials through
+  OIDC, for a role that can only run one SSM command document on this app's instance. There is
+  no SSH, there are no stored AWS keys, and a failed health check means an automatic rollback
+  ([ADR 2](docs/adr/0002-keyless-deploys.md)). After every deploy, [live checks](.github/workflows/live-checks.yml)
+  test the site from outside (post-deploy synthetic monitoring): its health and security headers, each language's
+  home page, the pages in a browser with no CSP violation or script error, and the MCP endpoint against the protocol.
+- **Production for about $13 a month:** one Graviton EC2 instance with Docker Compose, nginx and
+  Let's Encrypt, a layered content security policy (nginx's, a nonce per reply, and script hashes with
+  'strict-dynamic') with subresource integrity, structured JSON logs, nightly backups to S3,
+  snapshots and CloudWatch alarms ([ADR 1](docs/adr/0001-one-ec2-instance.md),
+  [ADR 3](docs/adr/0003-nginx-and-lets-encrypt.md)).
+- **Careful accounts:** bcrypt; HS256 JWTs with a version, so changing the password signs out
+  every device, kept in an httpOnly, SameSite=Strict cookie with a cross-site request check (CSRF protection);
+  hashed single-use reset links sent through Amazon SES with DKIM, SPF and DMARC;
+  rate limits; ownership checks on every query; the current password to change the email or
+  delete the account ([ADR 5](docs/adr/0005-sign-in-tokens.md),
+  [ADR 6](docs/adr/0006-email-through-ses-smtp.md)).
+- **Two-step sign-in (MFA) and outside providers:** WebAuthn passkeys, authenticator apps (TOTP) and recovery codes
+  ([ADR 14](docs/adr/0014-two-step-sign-in.md)); Google and GitHub (OAuth 2.0 and OpenID Connect) linked by the
+  provider's id, never silently by email ([ADR 15](docs/adr/0015-provider-sign-in.md)); Microsoft by tenant and
+  subject ([ADR 23](docs/adr/0023-microsoft-sign-in.md)).
+- **Privacy, written down:** the records GDPR and the UK GDPR ask of a small service, kept with the code: a
+  [record of processing](docs/processing-record.md) (Article 30), a [breach plan](docs/breach-plan.md) (Articles 33
+  and 34), and how [data-protection requests](docs/data-requests.md) are answered (Articles 12 to 22).
+- **AI assistants as first-class clients:** a stateless MCP endpoint sharing the app's recipe tools
+  ([ADR 17](docs/adr/0017-mcp-server.md), [ADR 19](docs/adr/0019-shared-recipe-tools.md)), listed in the
+  [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=com.glazecalcapp/glazecalc) and checked
+  in CI against the official conformance suite; Glazecalc's own OAuth authorization server
+  ([ADR 24](docs/adr/0024-authorization-server.md)); and changes from an app that wait for the person's yes, when
+  they choose ([ADR 25](docs/adr/0025-confirm-before-changes.md)).
+- **A translation pipeline (i18n) for 57 languages, right to left (RTL) included:** Transloco with ICU messages and the language in the URL
+  ([ADR 13](docs/adr/0013-translations.md)); per-language glossaries sourced from suppliers'
+  catalogues, staged reviews, blind back-translation of the safety text, and a plain notice for
+  languages AI translates less well ([process](docs/translations/process)); `npm run check:i18n`
+  guards placeholders, plurals and stale English in CI.
+- **Works offline once visited, as a PWA:** Angular's service worker keeps the app, and the app keeps the
+  reader's language and the guides in Cache Storage ([ADR 28](docs/adr/0028-service-worker.md)).
+- **Public pages prerendered at build (SSG)** in every language and hydrated in place (Angular hydration), with hreflang and
+  a sitemap per language under one index, about 11,457 pages, each reply compressed in Node with a
+  fresh nonce ([ADR 16](docs/adr/0016-prerendered-public-pages.md)).
+- **Trials as real accounts:** a generated name, a placeholder email on the reserved `.invalid`
+  domain so every email stays unique, conversion to an account in place (or into an existing
+  account at sign-in), limits against abuse,
+  and an hourly cleanup ([ADR 7](docs/adr/0007-trials-as-real-accounts.md)).
+- **Lighthouse in CI, on a production build (desktop):** performance 99; accessibility, best practices and SEO 100;
+  no layout shift. Four public pages, the median of three runs each; CI fails below the limits in
+  [lighthouserc.json](scripts/lighthouse/lighthouserc.json), and `npm run lighthouse` measures the same here.
+
 ## What it does
+
+Every feature, as a potter meets it.
+
+<details>
+<summary>Recipes and their chemistry, sharing, guides, regions and languages, and the rest</summary>
 
 - **Recipe to unity formula, as you type.** Build a glaze from your own materials or the
   standard ones and watch its oxides in unity, grouped as fluxes, stabilizers and glass formers,
@@ -102,60 +199,7 @@ Aaron Filson, in 57 languages, and usable from AI assistants through its MCP ser
   kilns". Creating an account keeps everything; trials are removed after 14 days.
 - Light and dark mode, from phone to desktop. Free and open source.
 
-## Highlights
-
-For anyone reading the code:
-
-- **A 2017 AngularJS app rebuilt** as Angular 22 (standalone components, signals, no zone.js,
-  strict templates) and a TypeScript server on Express 5, Mongoose 9 and Node 24, which runs the
-  `.ts` files directly with no build step ([ADR 8](docs/adr/0008-typescript-server-without-a-build.md)),
-  and put back online. The
-  [case study](docs/case-study.md) tells how.
-- **Tested at three levels, in CI on every pull request and push to master:** about 1,000 server tests (98% of
-  statements) run against the app in-process; over 700 Angular unit tests (92%); about 175 Playwright browser tests,
-  including [axe](https://github.com/dequelabs/axe-core) accessibility checks of every page in
-  light and dark mode, every page in a pseudo-locale to find text not marked for translation, and
-  every page in each language at a phone's width.
-- **One glaze chemistry library** for the browser and the tests, checked against values worked
-  out by hand ([ADR 4](docs/adr/0004-shared-chemistry.md)).
-- **Keyless deploys with approval:** GitHub Actions gets short-lived AWS credentials through
-  OIDC, for a role that can only run one SSM command document on this app's instance. There is
-  no SSH, there are no stored AWS keys, and a failed health check rolls back
-  ([ADR 2](docs/adr/0002-keyless-deploys.md)).
-- **Production for about $13 a month:** one Graviton EC2 instance with Docker Compose, nginx and
-  Let's Encrypt, a content security policy with subresource integrity, nightly backups to S3,
-  snapshots and alarms ([ADR 1](docs/adr/0001-one-ec2-instance.md),
-  [ADR 3](docs/adr/0003-nginx-and-lets-encrypt.md)).
-- **Careful accounts:** bcrypt; HS256 tokens with a version, so changing the password signs out
-  every device, kept in an httpOnly, SameSite=Strict cookie with a cross-site request check;
-  hashed single-use reset links sent through Amazon SES with DKIM, SPF and DMARC;
-  rate limits; ownership checks on every query; the current password to change the email or
-  delete the account ([ADR 5](docs/adr/0005-sign-in-tokens.md),
-  [ADR 6](docs/adr/0006-email-through-ses-smtp.md)).
-- **Two-step sign-in and outside providers:** passkeys, authenticator apps and recovery codes
-  ([ADR 14](docs/adr/0014-two-step-sign-in.md)); Google and GitHub linked by the provider's id, never
-  silently by email ([ADR 15](docs/adr/0015-provider-sign-in.md)); Microsoft by tenant and subject
-  ([ADR 23](docs/adr/0023-microsoft-sign-in.md)).
-- **AI assistants as first-class clients:** a stateless MCP endpoint sharing the app's recipe tools
-  ([ADR 17](docs/adr/0017-mcp-server.md), [ADR 19](docs/adr/0019-shared-recipe-tools.md)), Glazecalc's
-  own OAuth authorization server ([ADR 24](docs/adr/0024-authorization-server.md)), and changes from an
-  app that wait for the person's yes ([ADR 25](docs/adr/0025-confirm-before-changes.md)).
-- **A translation pipeline for 57 languages:** Transloco with ICU messages and the language in the URL
-  ([ADR 13](docs/adr/0013-translations.md)); per-language glossaries sourced from suppliers'
-  catalogues, staged reviews, blind back-translation of the safety text, and a plain notice for
-  languages AI translates less well ([process](docs/translations/process)); `npm run check:i18n`
-  guards placeholders, plurals and stale English in CI.
-- **Works offline once visited:** Angular's service worker keeps the app, and the app keeps the
-  reader's language and the guides in Cache Storage ([ADR 28](docs/adr/0028-service-worker.md)).
-- **Public pages prerendered** in every language at build and hydrated in place, with hreflang and
-  a sitemap per language under one index, about 11,457 pages, each reply compressed in Node with a
-  fresh nonce ([ADR 16](docs/adr/0016-prerendered-public-pages.md)).
-- **Trials as real accounts:** a generated name, a placeholder email on the reserved `.invalid`
-  domain so every email stays unique, conversion to an account in place (or into an existing
-  account at sign-in), limits against abuse,
-  and an hourly cleanup ([ADR 7](docs/adr/0007-trials-as-real-accounts.md)).
-- **Lighthouse on a production build (desktop):** performance 99; accessibility, best practices
-  and SEO 100; no layout shift.
+</details>
 
 ## How it fits together
 
@@ -261,6 +305,7 @@ including PowerShell and cmd.
 | `npm run i18n:sources`   | Writes the English of the messages kept in code and data (the server's, the chemistry's, the standard records', who to call, the region data) for translators, and takes out every translation made from English that has changed since ([docs/translating.md](docs/translating.md)). It refuses while translations have uncommitted changes (`--force` overrides); `-- --dry-run` shows what it would change. |
 | `npm run test:all`       | The server, Angular and browser tests, on this machine.                                                                                                                                                                                                                                                                                                                                                        |
 | `npm run test:all:linux` | The server and Angular tests, then the browser tests on Linux. Run it before pushing anything that changes layout or printing.                                                                                                                                                                                                                                                                                 |
+| `npm run lighthouse`     | Lighthouse on a production build, as CI runs it: four public pages on the desktop setting, three runs each, against the limits in `scripts/lighthouse/lighthouserc.json`. It builds when `dist/` is out of date, runs the app as production on port 3200 (`LIGHTHOUSE_PORT`) with a `glazecalc_lighthouse` database, and needs Chrome. The reports go to `lighthouse-results/`.                                |
 
 `npm run test:coverage` and `npm run test:client:coverage` add coverage reports, and
 `npx playwright show-report` opens the browser test results. GitHub Actions runs lint, the format
@@ -268,6 +313,10 @@ check, an npm audit, the build and all three suites on pushes to master and on p
 against a MongoDB 9 service container, and builds and checks the Docker image
 (`.github/workflows/ci.yml`). The jobs run side by side, and the browser tests are split across
 three runners (`--shard`), whose reports are merged into one (the `playwright-report` artifact).
+The server and Angular suites run with coverage, a Lighthouse job measures a production build, and
+a last job checks the numbers this README gives against the run (`scripts/readme-numbers.mjs`): one
+that is no longer true fails the run, and one that has fallen well behind gets a warning. CodeQL scans
+the code and the workflows in a workflow of its own (`.github/workflows/codeql.yml`).
 
 ## Project structure
 
@@ -302,14 +351,15 @@ three runners (`--shard`), whose reports are merged into one (the `playwright-re
     data/             the standard materials, additives and advice, loaded by npm run seed
     scripts/          the dev runner (npm run dev), the seed script, the messages check and
                       sources (npm run check:i18n, i18n:sources), the browser tests on Linux
-                      (npm run test:e2e:linux), and one that adds records to the library
+                      (npm run test:e2e:linux), Lighthouse (npm run lighthouse), the README's
+                      numbers check, and one that adds records to the library
     Dockerfile, compose.yaml
                       the production image, and the app plus MongoDB in containers
     deploy/           production on EC2: Compose file, nginx, cloud-init, deploy and backup
                       scripts, AWS policies and setup commands
     docs/             decision records (adr/), the case study, the translation plan and guides
                       (translating.md, translations/), setup notes
-    .github/          CI, image publishing and deploy workflows, Dependabot
+    .github/          CI, CodeQL, image publishing and deploy workflows, issue forms, Dependabot
 
 ## Docker and deployment
 
