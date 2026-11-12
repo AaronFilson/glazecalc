@@ -127,6 +127,63 @@ describe('RecipeFiring', () => {
     expect(note).toContain('No cone is marked as tested yet.');
   });
 
+  it('takes a range of temperatures typed in the reader’s scale, and an end left blank takes it off', async () => {
+    const { fixture, root, choose, tick, firing } = await create();
+    await choose('firing-scale', 'temperature');
+    await tick('firing-range');
+    expect(text(fixture, 'label[for=firing-low]')).toBe('From (°F)');
+    expect(text(fixture, 'label[for=firing-high]')).toBe('To (°F)');
+    await choose('firing-low', '2192');
+    await choose('firing-high', '2264');
+    expect(firing.block()).toEqual({ scale: 'temperature', low: '1200', high: '1240' });
+    expect((root.querySelector('#firing-high') as HTMLInputElement).value).toBe('2264');
+    expect(text(fixture, '.firing-claimed')).toMatch(/^Range 2192\s°F to 2264\s°F; no cone ticked as tested$/);
+    const ticks = [...root.querySelectorAll('.firing-ticks label')].map((l) => l.textContent?.replace(/\s+/g, ' '));
+    expect(ticks).toEqual(['2192 °F', '2264 °F']);
+    // Blank, the top goes; blank at the bottom, the whole firing goes with it.
+    await choose('firing-high', '');
+    expect(firing.block()).toEqual({ scale: 'temperature', low: '1200' });
+    await choose('firing-high', '2264');
+    await choose('firing-low', '');
+    expect(firing.block()).toBeNull();
+  });
+
+  it('turns a range back into one cone, dropping its top and the cones ticked', async () => {
+    const { tick, firing } = await create({ scale: 'orton', low: '6', high: '10', tested: ['6', '8'] });
+    await tick('firing-range');
+    expect(firing.block()).toEqual({ scale: 'orton', low: '6' });
+  });
+
+  it('keeps a schedule note, a witness cone and an atmosphere ticked off again', async () => {
+    const { choose, tick, firing } = await create({ scale: 'orton', low: '6' });
+    await choose('firing-schedule', 'Slow cool from 1900 °F');
+    await tick('firing-witness');
+    await tick('firing-atmosphere-oxidation');
+    expect(firing.block()).toEqual({
+      scale: 'orton',
+      low: '6',
+      atmospheres: ['oxidation'],
+      schedule: 'Slow cool from 1900 °F',
+      witness: true
+    });
+    await tick('firing-atmosphere-oxidation');
+    await tick('firing-witness');
+    expect(firing.block()).toEqual({ scale: 'orton', low: '6', schedule: 'Slow cool from 1900 °F' });
+  });
+
+  it('says why a rate or a hold is not kept, and takes either off when left blank', async () => {
+    const { fixture, choose, firing } = await create({ scale: 'temperature', low: '1240', rate: 60, hold: 15 });
+    await choose('firing-rate', '0');
+    expect(text(fixture, '.firing-problem')).toBe('Give the rate as a whole number of degrees an hour.');
+    await choose('firing-hold', '2000');
+    expect(text(fixture, '.firing-problem')).toBe('Give the hold in whole minutes, up to a day.');
+    expect(firing.block()).toMatchObject({ rate: 60, hold: 15 });
+    await choose('firing-rate', '');
+    await choose('firing-hold', ' ');
+    expect(fixture.nativeElement.querySelector('.firing-problem')).toBeNull();
+    expect(firing.block()).toEqual({ scale: 'temperature', low: '1240' });
+  });
+
   it('links to the guide on what a cone means', async () => {
     const { root } = await create();
     const link = root.querySelector('.firing-top a') as HTMLAnchorElement;
@@ -163,6 +220,19 @@ describe('firing in words', () => {
     // A stated cone not ticked is not "tested".
     expect(firingLine({ scale: 'orton', low: '5.5' }, orton)).toBe('Stated cone 5½; not ticked as tested');
     expect(firingWords(null, orton)).toBeNull();
+  });
+
+  it('gives the schedule in the order it is fired: the rate, the hold, the note, then a witness cone', () => {
+    const words = firingWords(
+      { scale: 'temperature', low: '1240', rate: 60, hold: 15, schedule: 'Slow cool', witness: true },
+      { cones: 'orton', temperature: 'F' }
+    )!;
+    expect(words.schedule).toBe(
+      '108 °F an hour over the last hour; held 15 min; Slow cool; checked with a witness cone'
+    );
+    expect(
+      firingLine({ scale: 'temperature', low: '1220', high: '1240' }, { cones: 'orton', temperature: 'C' })
+    ).toMatch(/^Range 1220\s°C to 1240\s°C; no cone ticked as tested$/);
   });
 
   it("converts Orton cones to cone 15 by Orton's older chart at 150 °C an hour, and says so; none from 16 up", () => {

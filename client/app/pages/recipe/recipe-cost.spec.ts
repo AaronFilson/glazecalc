@@ -191,6 +191,41 @@ describe('RecipeCost', () => {
     await settle(fixture);
   });
 
+  it('asks for a batch size before costing a batch', async () => {
+    const { fixture, root } = await create([
+      { key: 'potash', perKg: 2 },
+      { key: 'whiting', perKg: 0.5 }
+    ]);
+    const batch = root.querySelector('#cost-batch-size') as HTMLInputElement;
+    batch.value = '';
+    batch.dispatchEvent(new Event('input'));
+    await settle(fixture);
+    expect(text(fixture, '.recipe-cost-summary')).toBe('Enter the amounts and a batch size to see what a batch costs.');
+    // The prices stay; nothing is costed, and nothing is said to have no price.
+    expect(rows(root)).toEqual([
+      ['Potash Feldspar', '2', ''],
+      ['Whiting', '0.5', ''],
+      ['Cobalt Carbonate', '', '']
+    ]);
+    expect(root.querySelector('.recipe-cost-rounding')).toBeNull();
+  });
+
+  it('drops a price being typed when the session changes, showing the other list’s price in its place', async () => {
+    const { fixture, root } = await create([{ key: 'potash', perKg: 2 }]);
+    const typing = root.querySelector('#price-1') as HTMLInputElement;
+    typing.value = '3';
+    typing.dispatchEvent(new Event('input'));
+    await fixture.whenStable();
+    TestBed.inject(AuthService).sessionVersion.update((v) => v + 1);
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/prices')
+      .flush({ prices: [{ key: 'whiting', perKg: 7 }] });
+    await settle(fixture);
+    expect((root.querySelector('#price-1') as HTMLInputElement).value).toBe('7');
+    httpMock().expectNone((req) => req.method === 'PATCH');
+  });
+
   it('says how many of a trial’s prices were not copied for being in another currency', async () => {
     const { fixture } = await create([]);
     expect(fixture.nativeElement.querySelector('.recipe-cost-skipped')).toBeNull();
