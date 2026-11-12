@@ -2,10 +2,24 @@
 
 Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, from the history.
 
-## 0.5.0 (not yet released)
+## 1.0.0 (2026-11-12)
 
 ### Added
 
+- **CodeQL**, from a workflow with this project's settings (`.github/workflows/codeql.yml`,
+  `.github/codeql/codeql-config.yml`) instead of default setup, which takes no configuration: the JavaScript and
+  TypeScript and the workflows, on pull requests to master and pushes to it that change code or workflows, and weekly.
+  It leaves out the tests and the messages in 57 languages. Default setup must stay off.
+- **Lighthouse in CI** (`npm run lighthouse`, `scripts/lighthouse.mjs`): four public pages on a production build, on
+  Lighthouse's desktop setting, the median of three runs each. It fails below performance 90, below 100 for
+  accessibility, best practices or SEO, or with layout shift over 0.01. Lighthouse CI is installed apart, from its own
+  lockfile in `scripts/lighthouse/`, like the MCP conformance tools.
+- **The README's numbers are checked against each CI run** (`scripts/readme-numbers.mjs`). The server and Angular
+  suites run with coverage in CI, each job keeps what it measured, and a last job fails the run when the README says
+  more than the run measured, and warns when it says much less. The README has badges for the tests, coverage and
+  Lighthouse.
+- **A code of conduct** (the Contributor Covenant), a pull request template with the checks, and forms for something
+  that does not work and for an idea beside the translation form; the New issue page links the security policy.
 - **Famous glazes** (/famous-glazes, docs/famous-glazes.md): a public page per published glaze, from one data file
   each in `data/famous-glazes/`, with the traditional recipe or historic analysis, its unity formula and limits, a
   version from the materials sold in the reader's region (the Target & Solve solver), a button that opens it as a
@@ -1095,6 +1109,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **The README starts with the engineering:** an "At a glance" section for anyone reading the code, then the
+  highlights, which now name the standard terms beside the plain ones (MFA, CSRF protection, SSG, PWA, WCAG 2.2 AA,
+  CI/CD) and link the privacy records and the live checks. What the app does is folded below them. Its test counts
+  were far behind (about 1,000, 700 and 175, for over 1,750, 1,100 and 450).
+- **1.0.0** is the version that was 0.5.0 (not yet released): the app has been live since October.
 - **Compressed pages** (docs/prerender-compression-and-material-pages-plan.md, Part A). Each page reply is compressed
   in Node after its fresh nonce goes in (`server/lib/compress.ts`: brotli 5, else gzip 5), with `Vary` and
   `Content-Length`; the sitemaps are compressed once each with an ETag. nginx passes these through and gzips the rest
