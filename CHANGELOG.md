@@ -6,6 +6,16 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **A supply chain that can be checked:** the production image is published with an SBOM and SLSA build provenance
+  (BuildKit's, in full), and its provenance is signed through GitHub (`actions/attest-build-provenance`), so
+  `gh attestation verify oci://ghcr.io/aaronfilson/glazecalc:latest --owner AaronFilson` checks where and how it was
+  built. OpenSSF Scorecard rates the repository weekly (`.github/workflows/scorecard.yml`), its findings kept as the
+  run's artifact rather than as code scanning alerts.
+- **Live checks every day**, not only after a deploy: the live site against master's checks, at about a hundred
+  requests, so a fault between deploys is found within a day.
+- **A Permissions-Policy** on every reply: the camera, microphone, location, payment, USB, serial, HID, MIDI and
+  screen capture are off for every page and anything it frames; passkeys, the clipboard and sharing keep their
+  default. Mozilla's HTTP Observatory grades the site A+ (120).
 - **CodeQL**, from a workflow with this project's settings (`.github/workflows/codeql.yml`,
   `.github/codeql/codeql-config.yml`) instead of default setup, which takes no configuration: the JavaScript and
   TypeScript and the workflows, on pull requests to master and pushes to it that change code or workflows, and weekly.
