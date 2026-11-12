@@ -1,0 +1,10 @@
+{
+  "CHANGED": {
+    "subject": "Agbanweela okwuntughe Glazecalc gị",
+    "text": "A gbanwere okwuntughe maka akaụntụ Glazecalc {account} ugbu a, e mekwara ka ngwaọrụ ọ bụla banyere pụọ.\n\nỌ bụrụ na ọ bụ gị, ọ dịghị ihe ọzọ ị ga-eme. Ọ bụrụ na ọ bụghị gị, tọgharịa okwuntughe gị ozugbo na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Tọgharịa okwuntughe Glazecalc gị",
+    "text": "Mmadụ (anyị na-atụ anya na ọ bụ gị) rịọrọ ka a tọgharịa okwuntughe maka akaụntụ Glazecalc {account}.\n\nIji họrọ okwuntughe ọhụrụ, mepee njikọ a n'ime nkeji {minutes}:\n\n{link}\n\nNjikọ ahụ na-arụ ọrụ otu ugboro. Ọ bụrụ na ọ bụghị gị rịọrọ nke a, leghara email a anya; okwuntughe gị ka ga-adị otu ahụ.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

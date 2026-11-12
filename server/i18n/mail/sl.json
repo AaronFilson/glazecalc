@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Geslo za aplikacijo Glazecalc je bilo spremenjeno",
+    "text": "Geslo za račun {account} v aplikaciji Glazecalc je bilo pravkar spremenjeno, vse naprave, ki so bile prijavljene, pa so bile odjavljene.\n\nČe ste bili to Vi, Vam ni treba storiti ničesar več. Če ne, takoj ponastavite geslo tukaj: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "Za Vaš račun Glazecalc je bil zahtevan nov e-poštni naslov",
+    "text": "Pri računu Glazecalc {account} je bila pravkar zahtevana sprememba e-poštnega naslova. Povezava je bila poslana na novi naslov, sprememba pa se izvede šele, ko se ta povezava odpre.\n\nČe ste to bili Vi, Vam ni treba storiti ničesar. Če ne, morda nekdo pozna Vaše geslo: takoj ga ponastavite na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Potrdite svoj novi e-poštni naslov za Glazecalc",
+    "text": "Nekdo (upamo, da Vi) je zahteval, naj se {account} uporablja kot e-poštni naslov njegovega računa Glazecalc.\n\nČe želite izvesti spremembo, v {hours} urah odprite to povezavo:\n\n{link}\n\nPovezava deluje samo enkrat, vse prijavljene naprave pa bodo odjavljene. Če tega niste zahtevali, prezrite to e-poštno sporočilo; nič se ne bo spremenilo.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "nikoli: spremembe aplikacij in dostopnih žetonov se izvedejo takoj",
+    "removals": "samo pred odstranitvijo: premikom zapisa v koš ali odstranitvijo surovine iz zaloge. Druge spremembe aplikacij in dostopnih žetonov se izvedejo takoj"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Glazecalc zdaj manj sprašuje, preden aplikacije spremenijo Vaše zapise",
+    "text": "Račun Glazecalc {account} je bil pravkar nastavljen tako, da zahteva odobritev {choice}.\n\nČe ste bili to Vi, Vam ni treba storiti ničesar več. To lahko vidite in spremenite na strani Povezane aplikacije na {page}\n\nČe ne, nastavitev tam vrnite, prekličite vse aplikacije in žetone, ki jih ne poznate, in takoj ponastavite geslo tukaj: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "Z Vašim računom Glazecalc je bila povezana aplikacija",
+    "opening": "Z računom Glazecalc {account} je bila {date} ob {time} (UTC) povezana aplikacija.\n\n",
+    "named": "Aplikacija: »{name}«\n",
+    "checked": "Njen naslov, ki ga je preveril Glazecalc: {host}\n",
+    "selfDescribed": "Registrirala se je sama, zato je njeno ime samo to, kar pravi o sebi.\n",
+    "answerAt": "Odgovor prejme na: {host}\n",
+    "loopback": "Odgovor prejme na računalniku, s katerega je bila povezana ({host}).\n",
+    "read": "\nBere lahko recepte, beležnico, surovine, zalogo in nastavitve, shranjene v računu. Ne more spremeniti ničesar.\n\n",
+    "write": "\nBere lahko recepte, beležnico, surovine, zalogo in nastavitve, shranjene v računu, {days} dni pa jih lahko tudi spreminja: ustvarja in spreminja zapise ter jih premika v koš. Vsaka sprememba ohrani različico zapisa, kakršen je bil, zato jo lahko razveljavite na spletni strani.\n\n",
+    "closing": "Če ste bili to Vi, Vam ni treba storiti ničesar več. Kaj počne, lahko vidite in jo prekličete na {page}\n\nČe ne, jo tam prekličite in takoj ponastavite geslo tukaj: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Vaš račun Glazecalc je bil izbrisan",
+    "text": "Račun Glazecalc {account} je bil izbrisan skupaj z vsem, kar je bilo v njem shranjeno: recepti, surovinami, žganji, zapiski in nastavitvami. Tega ni mogoče razveljaviti.\n\nKopije v varnostnih kopijah spletnega mesta se izbrišejo ob njihovem poteku, v {days} dneh.\n\nKadar koli lahko ustvarite nov račun.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "aplikacija za preverjanje pristnosti",
+    "passkey": "ključ za dostop »{name}«"
+  },
+  "MFA_ADDED": {
+    "subject": "Vašemu računu Glazecalc je bil dodan korak prijave",
+    "text": "Računu Glazecalc {account} je bilo pravkar dodano kot drugi korak prijave: {method}.\n\nČe ste to bili Vi, Vam ni treba storiti ničesar. Obnovitvene kode shranite na varno mesto. Če ne, morda nekdo pozna Vaše geslo: takoj ga ponastavite na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "Dvostopenjska prijava na Vašem računu Glazecalc bo izklopljena",
+    "text": "Nekdo je zahteval izklop dvostopenjske prijave na računu Glazecalc {account}, ker so bile izgubljene vse aplikacije za preverjanje pristnosti, vsi ključi za dostop in vse obnovitvene kode zanj.\n\nDvostopenjska prijava bo izklopljena {date}, če do takrat ne pišete na privacy@glazecalcapp.com. Potem se bo v račun mogoče prijaviti samo z geslom.\n\nČe ste to bili Vi, Vam ni treba storiti ničesar. Če ne, zdaj pišite na privacy@glazecalcapp.com in takoj ponastavite geslo na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "Na Vašem računu Glazecalc je bila izklopljena dvostopenjska prijava",
+    "text": "Na računu Glazecalc {account} je bila pravkar izklopljena dvostopenjska prijava: vsaka aplikacija za preverjanje pristnosti, vsak ključ za dostop in vsaka obnovitvena koda so bili odstranjeni, vse prijavljene naprave pa odjavljene. Za prijavo zdaj zadostuje samo geslo.\n\nDvostopenjsko prijavo lahko znova vklopite na strani svojega računa. Če tega niste zahtevali, takoj ponastavite geslo na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "Z Vašega računa Glazecalc je bil odstranjen korak prijave",
+    "text": "Z računa Glazecalc {account} je bilo pravkar odstranjeno kot drugi korak prijave: {method}. Če je bil to zadnji, za prijavo zdaj zadostuje samo geslo.\n\nČe ste to bili Vi, Vam ni treba storiti ničesar. Če ne, takoj ponastavite geslo na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "Vašemu računu Glazecalc je bil dodan nov način prijave",
+    "text": "Zdaj se lahko v račun Glazecalc {account} prijavite prek storitve {provider}.\n\nČe ste bili to Vi, Vam ni treba storiti ničesar več. Če ne, na strani računa na {page} prekinite povezavo in takoj ponastavite geslo tukaj: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "Z Vašega računa Glazecalc je bil odstranjen en način prijave",
+    "text": "Povezava s storitvijo {provider} je bila za račun Glazecalc {account} prekinjena, zato se z njo vanj ni več mogoče prijaviti.\n\nČe ste bili to Vi, Vam ni treba storiti ničesar več. Če ne, je v Vaš račun morda prijavljen še kdo drug: takoj ponastavite geslo tukaj: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Nove obnovitvene kode za Vaš račun Glazecalc",
+    "text": "Za račun Glazecalc {account} so bile pravkar ustvarjene nove obnovitvene kode. Stare kode ne delujejo več.\n\nČe ste to bili Vi, nove kode shranite na varno mesto. Če ne, takoj ponastavite geslo na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "Na Vašem računu Glazecalc je bila uporabljena obnovitvena koda",
+    "text": "Ena od obnovitvenih kod za račun Glazecalc {account} je bila pravkar uporabljena, zato ne bo več delovala. Neuporabljenih kod je še: {left}. Nove kode lahko ustvarite na strani svojega računa: {page}\n\nČe to niste bili Vi, ima nekdo morda Vaše geslo in Vaše kode: takoj ponastavite geslo na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Ponastavitev gesla za aplikacijo Glazecalc",
+    "text": "Nekdo (upamo, da Vi) je zahteval ponastavitev gesla za račun {account} v aplikaciji Glazecalc.\n\nČe želite izbrati novo geslo, v {minutes} minutah odprite to povezavo:\n\n{link}\n\nPovezava deluje samo enkrat. Če tega niste zahtevali, prezrite to e-poštno sporočilo; Vaše geslo ostane enako.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "Geslo za aplikacijo Glazecalc je bilo spremenjeno",
+    "opening": "Geslo za račun {account} v aplikaciji Glazecalc je bilo pravkar ponastavljeno, vse naprave, ki so bile prijavljene, pa so bile odjavljene.\n\n",
+    "stopped": "Za primer, da je staro geslo poznal še kdo drug, je ponastavitev ustavila tudi tole:\n\n",
+    "tokens": "- Dostopne žetone in povezane aplikacije, ki so lahko dosegli Vaše shranjeno delo ({count}). Če še kateri potrebujete, ustvarite nov žeton na strani računa na {page}\n",
+    "providers": "- Prijavo prek: {providers}; povezavo lahko znova vzpostavite na strani računa na {page}\n",
+    "shareLinks": "- Povezave, ki ste jih ustvarili za deljenje receptov. Nove lahko ustvarite pri vsakem receptu.\n",
+    "closing": "\nČe ste bili to Vi, Vam ni treba storiti ničesar več. Če ne, takoj ponastavite geslo tukaj: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Nekdo je vnesel Vaše geslo za Glazecalc, a ni dokončal prijave",
+    "text": "Nekdo je vnesel pravilno geslo za račun Glazecalc {account}, a ni dokončal drugega koraka prijave. Vaš drugi korak ga je ustavil.\n\nČe ste to bili Vi, Vam ni treba storiti ničesar. Če ne, nekdo pozna Vaše geslo: takoj ga spremenite. Ponastavite ga lahko na {forgot}\n\nPo 10 napačnih kodah iz aplikacije za preverjanje pristnosti se kode zavračajo eno uro; po nadaljnjih 10 en dan; nato vsakič en teden. Ključ za dostop ali obnovitvena koda med zavračanjem kod še vedno deluje. Ponastavitev gesla po e-pošti to konča: nedokončane prijave te osebe se končajo, ta oseba gesla ne pozna več, kode pa spet delujejo.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Dostopni žeton za Vaš račun Glazecalc kmalu poteče",
+    "text": "Dostopni žeton z imenom »{name}« za račun Glazecalc {account} preneha delovati. Datum izteka: {date}.\n\nČe ga še uporabljate, pred tem na {page} ustvarite nov žeton in ga namesto starega dajte svojemu pomočniku ali skriptu. Če ga ne uporabljate več, ni treba storiti ničesar.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Nov dostopni žeton za Vaš račun Glazecalc",
+    "text": "Za račun Glazecalc {account} je bil pravkar ustvarjen dostopni žeton z imenom »{name}«. Lahko bere recepte, surovine, zapiske in dnevnike žganja, shranjene v računu, do izteka: {date}.\n\nČe ste bili to Vi, Vam ni treba storiti ničesar več. Žetone lahko vidite in prekličete na {page}\n\nČe ne, ga tam prekličite in takoj ponastavite geslo tukaj: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Nov dostopni žeton, ki lahko spreminja zapise v Vašem računu Glazecalc",
+    "text": "Za račun Glazecalc {account} je bil pravkar ustvarjen dostopni žeton z imenom »{name}«. Lahko bere in spreminja recepte, surovine, zapiske in dnevnike žganja, shranjene v računu, ter jih premika v koš do izteka: {date}. Vsaka njegova sprememba ohrani zapis, kakršen je bil, zato jo lahko razveljavite na spletni strani.\n\nČe ste bili to Vi, Vam ni treba storiti ničesar več. Žetone lahko vidite in prekličete na {page}\n\nČe ne, ga tam prekličite in takoj ponastavite geslo tukaj: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Potrdite svoj e-poštni naslov za Glazecalc",
+    "text": "Nekdo (upamo, da Vi) je ustvaril račun Glazecalc z naslovom {account}.\n\nČe želite potrditi, da ta naslov pripada Vam, v {hours} urah odprite to povezavo:\n\n{link}\n\nPovezava deluje samo enkrat. Če računa niste ustvarili Vi, prezrite to e-poštno sporočilo; nič drugega Vam ne bo poslano, razen če to zahtevate.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Kata sandi Glazecalc Anda diubah",
+    "text": "Kata sandi untuk akun Glazecalc {account} baru saja diubah, dan setiap perangkat yang sedang masuk telah dikeluarkan.\n\nJika ini Anda, tidak ada lagi yang perlu dilakukan. Jika bukan, segera setel ulang kata sandi Anda di {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "Email baru diminta untuk akun Glazecalc Anda",
+    "text": "Pergantian email baru saja diminta untuk akun Glazecalc {account}. Sebuah tautan telah dikirim ke alamat baru, dan perubahan hanya terjadi bila tautan itu dibuka.\n\nJika ini Anda, tidak ada lagi yang perlu dilakukan. Jika bukan, mungkin seseorang mengetahui kata sandi Anda: segera setel ulang di {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Konfirmasi email baru Anda untuk Glazecalc",
+    "text": "Seseorang (semoga Anda) meminta agar {account} dipakai sebagai email untuk akunnya di Glazecalc.\n\nUntuk melakukan perubahan, buka tautan ini dalam {hours} jam:\n\n{link}\n\nTautan hanya berfungsi sekali, dan setiap perangkat yang sedang masuk akan dikeluarkan. Jika Anda tidak memintanya, abaikan email ini; tidak ada yang akan berubah.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "tidak pernah: perubahan dari aplikasi dan token akses langsung dibuat",
+    "removals": "hanya sebelum penghapusan: memindahkan catatan ke Sampah, atau mengeluarkan bahan dari bahan yang dipunya. Perubahan lain dari aplikasi dan token akses langsung dibuat"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Glazecalc sekarang lebih jarang bertanya sebelum aplikasi mengubah catatan Anda",
+    "text": "Akun Glazecalc {account} baru saja diatur untuk meminta persetujuan {choice}.\n\nJika ini Anda, tidak ada lagi yang perlu dilakukan. Anda dapat melihat dan mengubahnya di Aplikasi terhubung di {page}\n\nJika bukan, kembalikan pengaturannya di sana, cabut aplikasi atau token apa pun yang tidak Anda kenal, dan segera setel ulang kata sandi Anda di {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "Sebuah aplikasi terhubung ke akun Glazecalc Anda",
+    "opening": "Sebuah aplikasi terhubung ke akun Glazecalc {account} pada {date} pukul {time} (UTC).\n\n",
+    "named": "Aplikasi: \"{name}\"\n",
+    "checked": "Alamatnya, diperiksa oleh Glazecalc: {host}\n",
+    "selfDescribed": "Aplikasi ini mendaftarkan dirinya sendiri, jadi namanya hanyalah apa yang dikatakannya tentang dirinya.\n",
+    "answerAt": "Aplikasi ini menerima jawaban di: {host}\n",
+    "loopback": "Aplikasi ini menerima jawaban di komputer tempat aplikasi itu dihubungkan ({host}).\n",
+    "read": "\nAplikasi ini dapat membaca resep, buku catatan, bahan, daftar bahan yang dipunya, dan pengaturan yang tersimpan di akun. Aplikasi ini tidak dapat mengubah apa pun.\n\n",
+    "write": "\nAplikasi ini dapat membaca resep, buku catatan, bahan, daftar bahan yang dipunya, dan pengaturan yang tersimpan di akun, dan selama {days} hari aplikasi ini juga dapat mengubahnya: membuat dan mengubah catatan, dan memindahkannya ke Sampah. Setiap perubahan menyimpan versi catatan seperti sebelumnya, jadi Anda dapat mengurungkannya di situs web.\n\n",
+    "closing": "Jika ini Anda, tidak ada lagi yang perlu dilakukan. Anda dapat melihat apa yang dilakukannya dan mencabutnya di {page}\n\nJika bukan, cabut aplikasi itu di sana dan segera setel ulang kata sandi Anda di {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Akun Glazecalc Anda telah dihapus",
+    "text": "Akun Glazecalc {account} telah dihapus, beserta semua yang tersimpan di dalamnya: resep, bahan, catatan pembakaran, catatan, dan pengaturan. Tindakan ini tidak dapat dibatalkan.\n\nSalinan di cadangan situs dihapus saat cadangan itu kedaluwarsa, dalam waktu {days} hari.\n\nAnda dapat membuat akun baru kapan saja.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "aplikasi autentikator",
+    "passkey": "kunci sandi \"{name}\""
+  },
+  "MFA_ADDED": {
+    "subject": "Langkah masuk ditambahkan ke akun Glazecalc Anda",
+    "text": "Langkah kedua untuk masuk ini baru saja ditambahkan ke akun Glazecalc {account}: {method}.\n\nJika ini Anda, tidak ada lagi yang perlu dilakukan. Simpan kode pemulihan Anda di tempat yang aman. Jika bukan, mungkin seseorang mengetahui kata sandi Anda: segera setel ulang di {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "Autentikasi dua langkah pada akun Glazecalc Anda akan dimatikan",
+    "text": "Seseorang meminta agar autentikasi dua langkah dimatikan pada akun Glazecalc {account}, karena semua aplikasi autentikator, kunci sandi, dan kode pemulihan untuk akun itu hilang.\n\nAutentikasi dua langkah akan dimatikan pada {date} kecuali Anda menulis ke privacy@glazecalcapp.com sebelum itu. Setelah itu, orang dapat masuk ke akun ini hanya dengan kata sandinya.\n\nJika ini Anda, tidak ada lagi yang perlu dilakukan. Jika bukan, tulis ke privacy@glazecalcapp.com sekarang, dan segera setel ulang kata sandi Anda di {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "Autentikasi dua langkah dimatikan pada akun Glazecalc Anda",
+    "text": "Autentikasi dua langkah baru saja dimatikan pada akun Glazecalc {account}: semua aplikasi autentikator, kunci sandi, dan kode pemulihan dihapus, dan setiap perangkat yang sedang masuk telah dikeluarkan. Sekarang untuk masuk hanya perlu kata sandi.\n\nAnda dapat menyalakan kembali autentikasi dua langkah di halaman akun Anda. Jika Anda tidak memintanya, segera setel ulang kata sandi Anda di {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "Langkah masuk dihapus dari akun Glazecalc Anda",
+    "text": "Langkah kedua untuk masuk ini baru saja dihapus dari akun Glazecalc {account}: {method}. Jika itu yang terakhir, sekarang untuk masuk hanya perlu kata sandi.\n\nJika ini Anda, tidak ada lagi yang perlu dilakukan. Jika bukan, segera setel ulang kata sandi Anda di {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "Cara masuk baru ditambahkan ke akun Glazecalc Anda",
+    "text": "Sekarang Anda dapat masuk ke akun Glazecalc {account} dengan {provider}.\n\nJika ini Anda, tidak ada lagi yang perlu dilakukan. Jika bukan, lepaskan tautannya di halaman akun Anda di {page} dan segera setel ulang kata sandi Anda di {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "Cara masuk dihapus dari akun Glazecalc Anda",
+    "text": "Tautan {provider} ke akun Glazecalc {account} telah dilepas, sehingga {provider} tidak lagi dapat dipakai untuk masuk ke akun itu.\n\nJika ini Anda, tidak ada lagi yang perlu dilakukan. Jika bukan, mungkin seseorang sedang masuk ke akun Anda: segera setel ulang kata sandi Anda di {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Kode pemulihan baru untuk akun Glazecalc Anda",
+    "text": "Kode pemulihan baru baru saja dibuat untuk akun Glazecalc {account}. Kode lama tidak lagi berfungsi.\n\nJika ini Anda, simpan kode baru di tempat yang aman. Jika bukan, segera setel ulang kata sandi Anda di {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "Kode pemulihan dipakai pada akun Glazecalc Anda",
+    "text": "Salah satu kode pemulihan untuk akun Glazecalc {account} baru saja dipakai, sehingga tidak akan berfungsi lagi. Sisa kode yang belum dipakai: {left}. Anda dapat membuat kode baru di halaman akun Anda: {page}\n\nJika ini bukan Anda, mungkin seseorang memiliki kata sandi dan kode Anda: segera setel ulang kata sandi Anda di {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Setel ulang kata sandi Glazecalc Anda",
+    "text": "Seseorang (semoga Anda) meminta penyetelan ulang kata sandi untuk akun Glazecalc {account}.\n\nUntuk memilih kata sandi baru, buka tautan ini dalam {minutes} menit:\n\n{link}\n\nTautan hanya berfungsi sekali. Jika Anda tidak memintanya, abaikan email ini; kata sandi Anda tetap sama.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "Kata sandi Glazecalc Anda diubah",
+    "opening": "Kata sandi untuk akun Glazecalc {account} baru saja disetel ulang, dan setiap perangkat yang sedang masuk telah dikeluarkan.\n\n",
+    "stopped": "Untuk berjaga-jaga jika orang lain mengetahui kata sandi lama, penyetelan ulang ini juga telah menghentikan hal-hal berikut:\n\n",
+    "tokens": "- Token akses dan aplikasi terhubung yang dapat mengakses pekerjaan Anda yang tersimpan ({count}). Jika Anda masih memerlukan salah satunya, buat token baru di halaman akun Anda di {page}\n",
+    "providers": "- Masuk dengan {providers}, yang dapat Anda tautkan kembali di halaman akun Anda di {page}\n",
+    "shareLinks": "- Tautan yang Anda buat untuk membagikan resep. Anda dapat membuat yang baru dari setiap resep.\n",
+    "closing": "\nJika ini Anda, tidak ada lagi yang perlu dilakukan. Jika bukan, segera setel ulang kata sandi Anda di {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Seseorang memasukkan kata sandi Glazecalc Anda tetapi tidak menyelesaikan proses masuk",
+    "text": "Seseorang memasukkan kata sandi yang benar untuk akun Glazecalc {account}, tetapi tidak menyelesaikan langkah kedua untuk masuk. Langkah kedua Anda mencegah orang itu masuk.\n\nJika ini Anda, tidak ada lagi yang perlu dilakukan. Jika bukan, seseorang mengetahui kata sandi Anda: segera ubah kata sandi itu. Anda dapat menyetel ulangnya di {forgot}\n\nSetelah 10 kode yang salah dari aplikasi autentikator, kode ditolak selama satu jam; setelah 10 lagi, selama satu hari; dan selanjutnya selama satu minggu setiap kalinya. Kunci sandi atau kode pemulihan tetap berfungsi selama kode ditolak. Menyetel ulang kata sandi Anda lewat email mengeluarkan orang itu: setiap proses masuk yang ia mulai berakhir, kata sandi yang ia ketahui berhenti berfungsi, dan kode berfungsi lagi.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Token akses untuk akun Glazecalc Anda segera kedaluwarsa",
+    "text": "Token akses bernama \"{name}\" pada akun Glazecalc {account} berhenti berfungsi pada {date}.\n\nJika Anda masih memakainya, buat token baru sebelum itu di {page} dan berikan ke asisten atau skrip Anda sebagai pengganti yang lama. Jika Anda tidak lagi memakainya, tidak ada yang perlu dilakukan.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Token akses baru untuk akun Glazecalc Anda",
+    "text": "Token akses bernama \"{name}\" baru saja dibuat untuk akun Glazecalc {account}. Token ini dapat membaca resep, bahan, catatan, dan catatan pembakaran yang tersimpan di akun sampai {date}.\n\nJika ini Anda, tidak ada lagi yang perlu dilakukan. Anda dapat melihat dan mencabut token Anda di {page}\n\nJika bukan, cabut token itu di sana dan segera setel ulang kata sandi Anda di {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Token akses baru yang dapat mengubah catatan Glazecalc Anda",
+    "text": "Token akses bernama \"{name}\" baru saja dibuat untuk akun Glazecalc {account}. Token ini dapat membaca dan mengubah resep, bahan, catatan, dan catatan pembakaran yang tersimpan di akun, dan memindahkannya ke Sampah, sampai {date}. Setiap perubahan yang dibuatnya menyimpan catatan seperti sebelumnya, jadi Anda dapat mengurungkannya di situs web.\n\nJika ini Anda, tidak ada lagi yang perlu dilakukan. Anda dapat melihat dan mencabut token Anda di {page}\n\nJika bukan, cabut token itu di sana dan segera setel ulang kata sandi Anda di {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Konfirmasi email Anda untuk Glazecalc",
+    "text": "Seseorang (semoga Anda) membuat akun Glazecalc dengan alamat {account}.\n\nUntuk memastikan bahwa alamat ini milik Anda, buka tautan ini dalam {hours} jam:\n\n{link}\n\nTautan hanya berfungsi sekali. Jika Anda tidak membuat akun, abaikan email ini; tidak ada email lain yang akan dikirim kepada Anda kecuali Anda memintanya.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "您的 Glazecalc 密码已修改",
+    "text": "Glazecalc 账户 {account} 的密码刚刚被修改，所有已登录的设备均已退出登录。\n\n如果是您本人操作，无需再做任何事。如果不是，请立即在此重置密码：{forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "有人申请更换您的 Glazecalc 账户的电子邮箱",
+    "text": "刚刚有人申请更改 Glazecalc 账户 {account} 的电子邮箱。链接已发送到新地址，只有打开该链接，更改才会生效。\n\n如果是您本人操作，无需再做任何事。如果不是，说明有人可能知道您的密码，请立即在此重置：{forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "确认您的 Glazecalc 新电子邮箱",
+    "text": "有人（希望是您本人）申请把 {account} 用作 Glazecalc 账户的电子邮箱。\n\n要完成更改，请在 {hours} 小时内打开此链接：\n\n{link}\n\n此链接只能使用一次，所有已登录的设备都会退出登录。如果您没有提出这个申请，请忽略此邮件；不会有任何更改。\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "从不询问：来自应用和访问令牌的更改立即生效",
+    "removals": "仅在移除前询问：把记录移入回收站，或从手头的原料中去掉一种原料。来自应用和访问令牌的其他更改立即生效"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "现在 Glazecalc 在应用更改您的记录前询问得更少了",
+    "text": "Glazecalc 账户 {account} 刚刚被设置为如下方式请求批准：{choice}。\n\n如果是您本人操作，无需再做任何事。您可以在 {page} 的“已连接的应用”中查看和更改这项设置\n\n如果不是，请在那里改回原来的设置，吊销任何您不认识的应用或令牌，并立即在此重置密码：{forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "有应用连接到了您的 Glazecalc 账户",
+    "opening": "{date} {time}（UTC），有一个应用连接到了 Glazecalc 账户 {account}。\n\n",
+    "named": "应用：“{name}”\n",
+    "checked": "它的地址，已由 Glazecalc 核实：{host}\n",
+    "selfDescribed": "它是自行注册的，所以它的名称只是它对自己的说法。\n",
+    "answerAt": "它在此接收答复：{host}\n",
+    "loopback": "它在连接它的那台电脑（{host}）上接收答复。\n",
+    "read": "\n它可以读取该账户中保存的配方、笔记本、原料、手头的原料和设置。它不能更改任何内容。\n\n",
+    "write": "\n它可以读取该账户中保存的配方、笔记本、原料、手头的原料和设置，并且在 {days} 天内还可以更改它们：创建和更改记录，并把记录移入回收站。每次更改都会保留记录原来的一个版本，所以您可以在网站上撤销。\n\n",
+    "closing": "如果是您本人操作，无需再做任何事。您可以在 {page} 查看它做了什么并吊销它\n\n如果不是，请在那里吊销它，并立即在此重置密码：{forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "您的 Glazecalc 账户已删除",
+    "text": "Glazecalc 账户 {account} 已删除，其中保存的所有内容也一并删除：配方、原料、烧窑记录、笔记和设置。此操作无法撤销。\n\n网站备份中的副本会随备份到期而删除，最迟在 {days} 天内。\n\n您随时可以创建新账户。\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "身份验证器应用",
+    "passkey": "通行密钥“{name}”"
+  },
+  "MFA_ADDED": {
+    "subject": "您的 Glazecalc 账户新增了一个登录步骤",
+    "text": "刚刚为 Glazecalc 账户 {account} 添加了以下内容，作为登录的第二步：{method}。\n\n如果是您本人操作，无需再做任何事。请把您的恢复码保存在安全的地方。如果不是，说明有人可能知道您的密码，请立即在此重置：{forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "您的 Glazecalc 账户的两步验证将被关闭",
+    "text": "有人申请关闭 Glazecalc 账户 {account} 的两步验证，原因是该账户所有的身份验证器应用、通行密钥和恢复码都丢失了。\n\n除非您在此之前写信给 privacy@glazecalcapp.com，否则两步验证将在 {date} 关闭。之后，只用密码就可以登录该账户。\n\n如果是您本人操作，无需再做任何事。如果不是，请立即写信给 privacy@glazecalcapp.com，并立即在此重置密码：{forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "您的 Glazecalc 账户的两步验证已关闭",
+    "text": "刚刚关闭了 Glazecalc 账户 {account} 的两步验证：所有的身份验证器应用、通行密钥和恢复码都已移除，所有已登录的设备都已退出登录。现在登录只需要密码。\n\n您可以在账户页面重新开启两步验证。如果您没有提出这个操作，请立即在此重置密码：{forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "您的 Glazecalc 账户移除了一个登录步骤",
+    "text": "刚刚从 Glazecalc 账户 {account} 移除了以下内容，它原本是登录的第二步：{method}。如果它是最后一个，现在登录只需要密码。\n\n如果是您本人操作，无需再做任何事。如果不是，请立即在此重置密码：{forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "您的 Glazecalc 账户新增了一种登录方式",
+    "text": "现在可以用 {provider} 登录 Glazecalc 账户 {account}。\n\n如果是您本人操作，无需再做任何事。如果不是，请到账户页面 {page} 取消它的关联，并立即在此重置密码：{forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "您的 Glazecalc 账户移除了一种登录方式",
+    "text": "已取消 {provider} 与 Glazecalc 账户 {account} 的关联，不能再用它登录该账户。\n\n如果是您本人操作，无需再做任何事。如果不是，说明有人可能已登录您的账户：请立即在此重置密码：{forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "您的 Glazecalc 账户有了新的恢复码",
+    "text": "刚刚为 Glazecalc 账户 {account} 生成了新的恢复码，旧的恢复码已失效。\n\n如果是您本人操作，请把新的恢复码保存在安全的地方。如果不是，请立即在此重置密码：{forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "您的 Glazecalc 账户使用了一个恢复码",
+    "text": "Glazecalc 账户 {account} 的一个恢复码刚刚被使用，不能再次使用。未使用的恢复码还剩 {left} 个。您可以在账户页面生成新的恢复码：{page}\n\n如果不是您本人操作，说明有人可能知道您的密码和恢复码：请立即在此重置密码：{forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "重置 Glazecalc 密码",
+    "text": "有人（希望是您本人）申请重置 Glazecalc 账户 {account} 的密码。\n\n要设置新密码，请在 {minutes} 分钟内打开此链接：\n\n{link}\n\n此链接只能使用一次。如果您没有申请，请忽略此邮件；您的密码保持不变。\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "您的 Glazecalc 密码已修改",
+    "opening": "Glazecalc 账户 {account} 的密码刚刚被重置，所有已登录的设备都已退出登录。\n\n",
+    "stopped": "为防有人知道旧密码，这次重置还使以下内容失效：\n\n",
+    "tokens": "- 可以访问您已保存内容的访问令牌和已连接的应用（{count} 个）。如果您仍需要，请到账户页面 {page} 生成新令牌\n",
+    "providers": "- 使用 {providers} 登录，您可以在账户页面 {page} 再次关联\n",
+    "shareLinks": "- 您为分享配方生成的链接。您可以在每个配方中生成新的链接。\n",
+    "closing": "\n如果是您本人操作，无需再做任何事。如果不是，请立即在此重置密码：{forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "有人输入了您的 Glazecalc 密码，但没有完成登录",
+    "text": "有人输入了 Glazecalc 账户 {account} 的正确密码，但没有完成登录的第二步。您设置的第二步把此人挡在了门外。\n\n如果是您本人操作，无需再做任何事。如果不是，说明有人知道您的密码：请立即修改。您可以在此重置：{forgot}\n\n身份验证器应用的验证码连续输错 10 次后，将在一小时内拒绝验证码；再输错 10 次后，拒绝一天；此后每次都拒绝一周。在验证码被拒绝期间，通行密钥或恢复码仍然可以使用。通过电子邮件重置密码，可以把此人拒之门外：其已开始的任何登录都会结束，其所知道的密码会失效，验证码也会恢复可用。\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "您的 Glazecalc 账户的一个访问令牌即将失效",
+    "text": "Glazecalc 账户 {account} 上名为“{name}”的访问令牌将在 {date} 失效。\n\n如果您仍在使用它，请在此之前到 {page} 生成新令牌，并交给您的助手或脚本，以取代旧令牌。如果您已不再使用它，无需做任何事。\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "您的 Glazecalc 账户有了新的访问令牌",
+    "text": "刚刚为 Glazecalc 账户 {account} 生成了一个名为“{name}”的访问令牌。在 {date} 之前，它可以读取该账户中保存的配方、原料、笔记和烧窑记录。\n\n如果是您本人操作，无需再做任何事。您可以在 {page} 查看并吊销您的令牌\n\n如果不是，请在那里吊销它，并立即在此重置密码：{forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "您的 Glazecalc 账户有了可以更改记录的新访问令牌",
+    "text": "刚刚为 Glazecalc 账户 {account} 生成了一个名为“{name}”的访问令牌。在 {date} 之前，它可以读取和更改该账户中保存的配方、原料、笔记和烧窑记录，并把它们移入回收站。它所做的每一次更改都会保留记录原来的样子，所以您可以在网站上撤销。\n\n如果是您本人操作，无需再做任何事。您可以在 {page} 查看并吊销您的令牌\n\n如果不是，请在那里吊销它，并立即在此重置密码：{forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "确认您的 Glazecalc 电子邮箱",
+    "text": "有人（希望是您本人）用地址 {account} 创建了 Glazecalc 账户。\n\n要确认此地址属于您，请在 {hours} 小时内打开此链接：\n\n{link}\n\n此链接只能使用一次。如果您没有创建账户，请忽略此邮件；除非您提出要求，否则不会再向您发送任何邮件。\n\n-- \nGlazecalc, {app}\n"
+  }
+}

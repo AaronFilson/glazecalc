@@ -1119,6 +1119,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **The account emails' words are data,** one file a language (`server/i18n/mail/<language>.json`), as the app's
+  own messages are. `server/lib/account_mail.ts` went from 8,422 lines to about 700, and every export it had is
+  the same, checked value for value; a language without an email still gets the English.
 - **The README starts with the engineering:** an "At a glance" section for anyone reading the code, then the
   highlights, which now name the standard terms beside the plain ones (MFA, CSRF protection, SSG, PWA, WCAG 2.2 AA,
   CI/CD) and link the privacy records and the live checks. What the app does is folded below them. Its numbers were

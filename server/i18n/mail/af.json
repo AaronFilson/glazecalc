@@ -1,0 +1,10 @@
+{
+  "CHANGED": {
+    "subject": "Jou Glazecalc-wagwoord is verander",
+    "text": "Die wagwoord vir die Glazecalc-rekening {account} is pas verander, en elke toestel wat aangemeld was, is afgemeld.\n\nAs dit jy was, is daar niks anders om te doen nie. As nie, stel jou wagwoord dadelik terug by {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Stel jou Glazecalc-wagwoord terug",
+    "text": "Iemand (hopelik jy) het gevra om die wagwoord vir die Glazecalc-rekening {account} terug te stel.\n\nOm 'n nuwe wagwoord te kies, maak hierdie skakel binne {minutes} minute oop:\n\n{link}\n\nDie skakel werk een keer. As jy nie hiervoor gevra het nie, ignoreer hierdie e-pos; jou wagwoord bly dieselfde.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Jūsu lietotnes Glazecalc parole ir nomainīta",
+    "text": "Lietotnes Glazecalc konta {account} parole tikko ir nomainīta, un konts ir izrakstīts no visām ierīcēm, kurās tas bija pierakstīts.\n\nJa to izdarījāt Jūs, nekas cits nav jādara. Ja ne, nekavējoties atiestatiet paroli šeit: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "Jūsu lietotnes Glazecalc kontam pieprasīta jauna e-pasta adrese",
+    "text": "Lietotnes Glazecalc kontam {account} tikko pieprasīta e-pasta adreses maiņa. Uz jauno adresi nosūtīta saite, un izmaiņa notiks tikai tad, kad šī saite tiks atvērta.\n\nJa to izdarījāt Jūs, nekas cits nav jādara. Ja ne, kāds var zināt Jūsu paroli: nekavējoties atiestatiet to šeit: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Apstipriniet savu jauno e-pasta adresi lietotnei Glazecalc",
+    "text": "Kāds (cerams, Jūs) pieprasīja izmantot {account} kā e-pasta adresi savam lietotnes Glazecalc kontam.\n\nLai veiktu izmaiņu, {hours} stundu laikā atveriet šo saiti:\n\n{link}\n\nSaite darbojas vienu reizi, un visas ierīces, kurās konts bija pierakstīts, tiks izrakstītas. Ja to nepieprasījāt, neņemiet vērā šo vēstuli; nekas nemainīsies.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "nekad: izmaiņas no lietotnēm un piekļuves marķieriem tiek veiktas uzreiz",
+    "removals": "tikai pirms noņemšanas: ieraksta pārvietošanas uz atkritni vai izejvielas noņemšanas no krājumiem. Citas izmaiņas no lietotnēm un piekļuves marķieriem tiek veiktas uzreiz"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Glazecalc tagad mazāk jautā, pirms lietotnes maina Jūsu ierakstus",
+    "text": "Lietotnes Glazecalc kontam {account} tikko iestatīts prasīt apstiprinājumu šādi: {choice}.\n\nJa to izdarījāt Jūs, nekas cits nav jādara. To varat apskatīt un mainīt lapā Pievienotās lietotnes adresē {page}\n\nJa ne, iestatiet to tur atpakaļ, anulējiet visas lietotnes vai marķierus, ko nepazīstat, un nekavējoties atiestatiet paroli šeit: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "Jūsu Glazecalc kontam pievienota lietotne",
+    "opening": "Lietotnes Glazecalc kontam {account} {date} plkst. {time} (UTC) tika pievienota lietotne.\n\n",
+    "named": "Lietotne: “{name}”\n",
+    "checked": "Tās adrese, ko pārbaudījis Glazecalc: {host}\n",
+    "selfDescribed": "Lietotne reģistrējās pati, tāpēc tās nosaukums ir tikai tas, ko tā pati par sevi saka.\n",
+    "answerAt": "Atbildi tā saņem šeit: {host}\n",
+    "loopback": "Atbildi tā saņem datorā, no kura tā tika pievienota ({host}).\n",
+    "read": "\nTā var lasīt kontā saglabātās receptes, burtnīcu, izejvielas, krājumus un iestatījumus. Tā nevar neko mainīt.\n\n",
+    "write": "\nTā var lasīt kontā saglabātās receptes, burtnīcu, izejvielas, krājumus un iestatījumus, un {days} dienas tā var tos arī mainīt: izveidot un mainīt ierakstus un pārvietot tos uz atkritni. Katras izmaiņas saglabā ieraksta versiju tādu, kāds tas bija, lai Jūs tās varētu atsaukt tīmekļa vietnē.\n\n",
+    "closing": "Ja to izdarījāt Jūs, nekas cits nav jādara. To, ko tā dara, varat apskatīt un to anulēt adresē {page}\n\nJa ne, anulējiet to tur un nekavējoties atiestatiet paroli šeit: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Jūsu lietotnes Glazecalc konts ir dzēsts",
+    "text": "Lietotnes Glazecalc konts {account} ir dzēsts kopā ar visu, kas tajā bija saglabāts: receptēm, izejvielām, apdedzināšanām, piezīmēm un iestatījumiem. Šo darbību nevar atsaukt.\n\nKopijas vietnes rezerves kopijās tiek dzēstas, kad rezerves kopijām beidzas derīgums, {days} dienu laikā.\n\nJaunu kontu varat izveidot jebkurā laikā.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "autentifikatora lietotne",
+    "passkey": "piekļuves atslēga “{name}”"
+  },
+  "MFA_ADDED": {
+    "subject": "Jūsu lietotnes Glazecalc kontam pievienots pierakstīšanās solis",
+    "text": "Lietotnes Glazecalc kontam {account} tikko pievienots otrais pierakstīšanās solis: {method}.\n\nJa to izdarījāt Jūs, nekas cits nav jādara. Glabājiet atkopšanas kodus drošā vietā. Ja ne, kāds var zināt Jūsu paroli: nekavējoties atiestatiet to šeit: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "Jūsu lietotnes Glazecalc kontā tiks izslēgta divpakāpju pierakstīšanās",
+    "text": "Kāds pieprasīja izslēgt divpakāpju pierakstīšanos lietotnes Glazecalc kontā {account}, jo ir pazaudētas visas tā autentifikatora lietotnes, piekļuves atslēgas un atkopšanas kodi.\n\nDivpakāpju pierakstīšanās tiks izslēgta {date}, ja vien pirms tam nerakstīsiet uz privacy@glazecalcapp.com. Pēc tam kontā varēs pierakstīties tikai ar paroli.\n\nJa to izdarījāt Jūs, nekas cits nav jādara. Ja ne, nekavējoties rakstiet uz privacy@glazecalcapp.com un nekavējoties atiestatiet paroli šeit: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "Jūsu lietotnes Glazecalc kontā izslēgta divpakāpju pierakstīšanās",
+    "text": "Lietotnes Glazecalc kontā {account} tikko izslēgta divpakāpju pierakstīšanās: noņemtas visas autentifikatora lietotnes, piekļuves atslēgas un atkopšanas kodi, un konts ir izrakstīts no visām ierīcēm, kurās tas bija pierakstīts. Pierakstīties tagad var tikai ar paroli.\n\nDivpakāpju pierakstīšanos varat atkal ieslēgt sava konta lapā. Ja to nepieprasījāt, nekavējoties atiestatiet paroli šeit: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "No Jūsu lietotnes Glazecalc konta noņemts pierakstīšanās solis",
+    "text": "No lietotnes Glazecalc konta {account} tikko noņemts otrais pierakstīšanās solis: {method}. Ja tas bija pēdējais, pierakstīties tagad var tikai ar paroli.\n\nJa to izdarījāt Jūs, nekas cits nav jādara. Ja ne, nekavējoties atiestatiet paroli šeit: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "Jūsu Glazecalc kontam pievienots jauns pierakstīšanās veids",
+    "text": "Tagad lietotnes Glazecalc kontā {account} varat pierakstīties ar {provider}.\n\nJa to izdarījāt Jūs, nekas cits nav jādara. Ja ne, atsaistiet to sava konta lapā {page} un nekavējoties atiestatiet paroli šeit: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "No Jūsu Glazecalc konta noņemts pierakstīšanās veids",
+    "text": "Sasaiste ar {provider} lietotnes Glazecalc kontam {account} ir noņemta, un ar to vairs nevar pierakstīties šajā kontā.\n\nJa to izdarījāt Jūs, nekas cits nav jādara. Ja ne, kāds var būt pierakstījies Jūsu kontā: nekavējoties atiestatiet paroli šeit: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Jauni atkopšanas kodi Jūsu lietotnes Glazecalc kontam",
+    "text": "Lietotnes Glazecalc kontam {account} tikko izveidoti jauni atkopšanas kodi. Vecie kodi vairs nedarbojas.\n\nJa to izdarījāt Jūs, glabājiet jaunos kodus drošā vietā. Ja ne, nekavējoties atiestatiet paroli šeit: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "Jūsu lietotnes Glazecalc kontā izmantots atkopšanas kods",
+    "text": "Viens no lietotnes Glazecalc konta {account} atkopšanas kodiem tikko tika izmantots, tāpēc vairs nedarbosies. Neizmantoto kodu skaits: {left}. Jaunus kodus varat izveidot sava konta lapā: {page}\n\nJa tas nebijāt Jūs, kādam var būt Jūsu parole un kodi: nekavējoties atiestatiet paroli šeit: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Lietotnes Glazecalc paroles atiestatīšana",
+    "text": "Kāds (cerams, Jūs) pieprasīja atiestatīt paroli lietotnes Glazecalc kontam {account}.\n\nLai izvēlētos jaunu paroli, atveriet šo saiti {minutes} min laikā:\n\n{link}\n\nSaite darbojas vienu reizi. Ja to nepieprasījāt, neņemiet vērā šo vēstuli – Jūsu parole paliek tā pati.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "Jūsu lietotnes Glazecalc parole ir nomainīta",
+    "opening": "Lietotnes Glazecalc konta {account} parole tikko ir atiestatīta, un konts ir izrakstīts no visām ierīcēm, kurās tas bija pierakstīts.\n\n",
+    "stopped": "Gadījumam, ja vecā parole bija zināma kādam citam, atiestatīšana apturēja arī šo:\n\n",
+    "tokens": "- Piekļuves marķieri un pievienotās lietotnes, kas varēja piekļūt Jūsu saglabātajam darbam ({count}). Ja kāds vēl ir vajadzīgs, izveidojiet jaunu marķieri sava konta lapā {page}\n",
+    "providers": "- Pierakstīšanās ar {providers}; sasaisti var izveidot atkal sava konta lapā {page}\n",
+    "shareLinks": "- Saites, kas tika izveidotas receptu kopīgošanai. Jaunas varat izveidot pie katras receptes.\n",
+    "closing": "\nJa to izdarījāt Jūs, nekas cits nav jādara. Ja ne, nekavējoties atiestatiet paroli šeit: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Kāds ievadīja Jūsu lietotnes Glazecalc paroli, bet nepabeidza pierakstīšanos",
+    "text": "Kāds ievadīja pareizo lietotnes Glazecalc konta {account} paroli, bet nepabeidza pierakstīšanās otro soli. Jūsu otrais solis viņu neielaida.\n\nJa to izdarījāt Jūs, nekas cits nav jādara. Ja ne, kāds zina Jūsu paroli: nekavējoties nomainiet to. Varat to atiestatīt šeit: {forgot}\n\nPēc 10 nepareiziem kodiem no autentifikatora lietotnes kodi tiek noraidīti uz stundu; pēc vēl 10 – uz diennakti; pēc tam katru reizi uz nedēļu. Kamēr kodi tiek noraidīti, piekļuves atslēga vai atkopšanas kods joprojām darbojas. Paroles atiestatīšana pa e-pastu to beidz: viņa nepabeigtās pierakstīšanās beidzas, viņam paroles vairs nav, un kodi atkal darbojas.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Jūsu Glazecalc konta piekļuves marķieris drīz beigs darboties",
+    "text": "Piekļuves marķieris “{name}” lietotnes Glazecalc kontā {account} beigs darboties. Derīguma beigu datums: {date}.\n\nJa to joprojām izmantojat, līdz tam izveidojiet jaunu marķieri adresē {page} un nododiet to savam asistentam vai skriptam vecā vietā. Ja to vairs neizmantojat, nekas nav jādara.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Jauns piekļuves marķieris Jūsu Glazecalc kontam",
+    "text": "Lietotnes Glazecalc kontam {account} tikko tika izveidots piekļuves marķieris “{name}”. Tas var lasīt kontā saglabātās receptes, izejvielas, piezīmes un apdedzināšanas žurnālus līdz: {date}.\n\nJa to izdarījāt Jūs, nekas cits nav jādara. Savus marķierus varat apskatīt un anulēt adresē {page}\n\nJa ne, anulējiet to tur un nekavējoties atiestatiet paroli šeit: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Jauns piekļuves marķieris, kas var mainīt Jūsu Glazecalc ierakstus",
+    "text": "Lietotnes Glazecalc kontam {account} tikko tika izveidots piekļuves marķieris “{name}”. Tas var lasīt un mainīt kontā saglabātās receptes, izejvielas, piezīmes un apdedzināšanas žurnālus un pārvietot tos uz atkritni līdz: {date}. Katra tā veiktā izmaiņa saglabā ierakstu tādu, kāds tas bija, tāpēc to var atsaukt tīmekļa vietnē.\n\nJa to izdarījāt Jūs, nekas cits nav jādara. Savus marķierus varat apskatīt un anulēt adresē {page}\n\nJa ne, anulējiet to tur un nekavējoties atiestatiet paroli šeit: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Apstipriniet savu e-pasta adresi lietotnei Glazecalc",
+    "text": "Kāds (cerams, Jūs) izveidoja lietotnes Glazecalc kontu ar adresi {account}.\n\nLai apstiprinātu, ka šī adrese ir Jūsu, {hours} stundu laikā atveriet šo saiti:\n\n{link}\n\nSaite darbojas vienu reizi. Ja kontu neveidojāt, neņemiet vērā šo vēstuli; Jums vairs nekas netiks sūtīts, ja vien to nepieprasīsiet.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

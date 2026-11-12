@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Zmieniono hasło w aplikacji Glazecalc",
+    "text": "Hasło do konta {account} w aplikacji Glazecalc zostało właśnie zmienione, a wszystkie urządzenia, na których konto było zalogowane, zostały wylogowane.\n\nJeśli hasło zmienił właściciel konta, nie trzeba nic więcej robić. Jeśli nie, należy od razu zresetować hasło na stronie {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "Poproszono o nowy adres e-mail dla konta Glazecalc",
+    "text": "Właśnie poproszono o zmianę adresu e-mail dla konta Glazecalc {account}. Link wysłano na nowy adres, a zmiana nastąpi dopiero po jego otwarciu.\n\nJeśli prośba pochodzi od właściciela konta, nie trzeba nic robić. W przeciwnym razie ktoś może znać hasło: należy je natychmiast zresetować pod adresem {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Potwierdzenie nowego adresu e-mail w aplikacji Glazecalc",
+    "text": "Ktoś (miejmy nadzieję, że właściciel konta) poprosił o użycie adresu {account} jako adresu e-mail konta Glazecalc.\n\nAby wprowadzić zmianę, należy otworzyć ten link w ciągu {hours} godz.:\n\n{link}\n\nLink działa jeden raz, a wszystkie zalogowane urządzenia zostaną wylogowane. Jeśli prośba nie pochodzi od właściciela konta, wystarczy zignorować tę wiadomość; nic się nie zmieni.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "nigdy; zmiany od aplikacji i tokenów dostępu są wprowadzane od razu",
+    "removals": "tylko przed usunięciem (przeniesieniem zapisu do kosza lub zdjęciem surowca z listy posiadanych surowców); inne zmiany od aplikacji i tokenów dostępu są wprowadzane od razu"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Glazecalc pyta teraz rzadziej, zanim aplikacje zmienią zapisy",
+    "text": "Konto Glazecalc {account} zostało właśnie ustawione tak, by pytać o zatwierdzenie: {choice}.\n\nJeśli zrobił to właściciel konta, nie trzeba nic więcej robić. Można to zobaczyć i zmienić na stronie Połączone aplikacje: {page}\n\nJeśli nie, należy tam przywrócić poprzednie ustawienie, unieważnić każdą nieznaną aplikację lub token i od razu zresetować hasło na stronie {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "Z kontem Glazecalc połączono aplikację",
+    "opening": "Z kontem Glazecalc {account} połączono aplikację {date} o {time} (UTC).\n\n",
+    "named": "Aplikacja: „{name}”\n",
+    "checked": "Jej adres, sprawdzony przez Glazecalc: {host}\n",
+    "selfDescribed": "Zarejestrowała się sama, więc jej nazwa to tylko to, co sama o sobie mówi.\n",
+    "answerAt": "Odbiera odpowiedź pod adresem: {host}\n",
+    "loopback": "Odbiera odpowiedź na komputerze, z którego została połączona ({host}).\n",
+    "read": "\nMoże odczytywać receptury, notatnik, surowce, listę posiadanych surowców i ustawienia zapisane na koncie. Nie może niczego zmienić.\n\n",
+    "write": "\nMoże odczytywać receptury, notatnik, surowce, listę posiadanych surowców i ustawienia zapisane na koncie, a przez {days} dni może też je zmieniać: tworzyć i zmieniać zapisy oraz przenosić je do kosza. Każda zmiana zachowuje wersję zapisu sprzed zmiany, więc można ją cofnąć na stronie internetowej.\n\n",
+    "closing": "Jeśli zrobił to właściciel konta, nie trzeba nic więcej robić. Można zobaczyć, co robi, i unieważnić ją na stronie {page}\n\nJeśli nie, należy ją tam unieważnić i od razu zresetować hasło na stronie {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Konto Glazecalc zostało usunięte",
+    "text": "Konto Glazecalc {account} zostało usunięte wraz ze wszystkim, co w nim zapisano: recepturami, surowcami, zapisami wypałów, notatkami i ustawieniami. Tej operacji nie można cofnąć.\n\nKopie w kopiach zapasowych serwisu są usuwane w miarę wygasania tych kopii, w ciągu {days} dni.\n\nW dowolnej chwili można założyć nowe konto.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "aplikacja uwierzytelniająca",
+    "passkey": "klucz dostępu „{name}”"
+  },
+  "MFA_ADDED": {
+    "subject": "Do konta Glazecalc dodano krok logowania",
+    "text": "Do konta Glazecalc {account} właśnie dodano jako drugi krok logowania: {method}.\n\nJeśli zrobił to właściciel konta, nie trzeba nic robić. Kody odzyskiwania należy przechowywać w bezpiecznym miejscu. W przeciwnym razie ktoś może znać hasło: należy je natychmiast zresetować pod adresem {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "Logowanie dwuetapowe na koncie Glazecalc zostanie wyłączone",
+    "text": "Ktoś poprosił o wyłączenie logowania dwuetapowego na koncie Glazecalc {account}, ponieważ utracono każdą aplikację uwierzytelniającą, każdy klucz dostępu i każdy kod odzyskiwania tego konta.\n\nLogowanie dwuetapowe zostanie wyłączone dnia {date}, chyba że przed tym terminem zostanie wysłana wiadomość na adres privacy@glazecalcapp.com. Potem do konta będzie można zalogować się samym hasłem.\n\nJeśli prośba pochodzi od właściciela konta, nie trzeba nic robić. W przeciwnym razie należy teraz napisać na adres privacy@glazecalcapp.com i natychmiast zresetować hasło pod adresem {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "Wyłączono logowanie dwuetapowe na koncie Glazecalc",
+    "text": "Właśnie wyłączono logowanie dwuetapowe na koncie Glazecalc {account}: usunięto każdą aplikację uwierzytelniającą, każdy klucz dostępu i każdy kod odzyskiwania, a wszystkie zalogowane urządzenia zostały wylogowane. Do zalogowania wystarczy teraz samo hasło.\n\nLogowanie dwuetapowe można włączyć ponownie na stronie konta. Jeśli to nie właściciel konta o to poprosił, należy natychmiast zresetować hasło pod adresem {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "Z konta Glazecalc usunięto krok logowania",
+    "text": "Z konta Glazecalc {account} właśnie usunięto jako drugi krok logowania: {method}. Jeśli był to ostatni, do zalogowania wystarczy teraz samo hasło.\n\nJeśli zrobił to właściciel konta, nie trzeba nic robić. W przeciwnym razie należy natychmiast zresetować hasło pod adresem {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "Do konta Glazecalc dodano nowy sposób logowania",
+    "text": "Do konta Glazecalc {account} można teraz logować się przez {provider}.\n\nJeśli zrobił to właściciel konta, nie trzeba nic więcej robić. Jeśli nie, należy odłączyć ten sposób logowania na stronie konta pod adresem {page} i od razu zresetować hasło na stronie {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "Z konta Glazecalc usunięto jeden ze sposobów logowania",
+    "text": "Odłączono sposób logowania {provider} od konta Glazecalc {account}. Nie można już z niego korzystać przy logowaniu na to konto.\n\nJeśli zrobił to właściciel konta, nie trzeba nic więcej robić. Jeśli nie, ktoś może być zalogowany na tym koncie: należy od razu zresetować hasło na stronie {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Nowe kody odzyskiwania dla konta Glazecalc",
+    "text": "Właśnie wygenerowano nowe kody odzyskiwania dla konta Glazecalc {account}. Stare kody już nie działają.\n\nJeśli zrobił to właściciel konta, nowe kody należy przechowywać w bezpiecznym miejscu. W przeciwnym razie należy natychmiast zresetować hasło pod adresem {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "Użyto kodu odzyskiwania na koncie Glazecalc",
+    "text": "Właśnie użyto jednego z kodów odzyskiwania konta Glazecalc {account}, więc ten kod nie zadziała ponownie. Pozostało niewykorzystanych kodów: {left}. Nowe kody można wygenerować na stronie konta: {page}\n\nJeśli nie zrobił tego właściciel konta, ktoś może mieć hasło i kody: należy natychmiast zresetować hasło pod adresem {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Resetowanie hasła w aplikacji Glazecalc",
+    "text": "Ktoś (miejmy nadzieję, że właściciel konta) poprosił o zresetowanie hasła do konta {account} w aplikacji Glazecalc.\n\nAby ustawić nowe hasło, należy otworzyć ten link w ciągu {minutes} min:\n\n{link}\n\nLink działa jeden raz. Jeśli prośba nie pochodzi od właściciela konta, wystarczy zignorować tę wiadomość; hasło pozostanie bez zmian.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "Zmieniono hasło w aplikacji Glazecalc",
+    "opening": "Hasło do konta {account} w aplikacji Glazecalc zostało właśnie zresetowane, a wszystkie urządzenia, na których konto było zalogowane, zostały wylogowane.\n\n",
+    "stopped": "Na wypadek, gdyby ktoś inny znał stare hasło, reset zatrzymał też:\n\n",
+    "tokens": "- Tokeny dostępu i połączone aplikacje, które miały dostęp do zapisanych prac ({count}). Jeśli któryś jest nadal potrzebny, należy utworzyć nowy token na stronie konta pod adresem {page}\n",
+    "providers": "- Logowanie przez {providers}, które można ponownie połączyć na stronie konta pod adresem {page}\n",
+    "shareLinks": "- Linki utworzone do udostępniania receptur. Nowe można utworzyć przy każdej recepturze.\n",
+    "closing": "\nJeśli zrobił to właściciel konta, nie trzeba nic więcej robić. Jeśli nie, należy od razu zresetować hasło na stronie {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Ktoś wpisał hasło do Glazecalc, ale nie dokończył logowania",
+    "text": "Ktoś wpisał prawidłowe hasło do konta Glazecalc {account}, ale nie dokończył drugiego kroku logowania. Drugi krok go zatrzymał.\n\nJeśli był to właściciel konta, nie trzeba nic robić. W przeciwnym razie ktoś zna hasło: należy je natychmiast zmienić. Można je zresetować pod adresem {forgot}\n\nPo 10 błędnych kodach z aplikacji uwierzytelniającej kody są odrzucane przez godzinę; po kolejnych 10 przez dobę, a potem za każdym razem przez tydzień. Klucz dostępu lub kod odzyskiwania nadal działa, gdy kody są odrzucane. Zresetowanie hasła e-mailem to kończy: niedokończone logowania tej osoby wygasają, nie zna ona już hasła, a kody znów działają.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Token dostępu do konta Glazecalc wkrótce wygaśnie",
+    "text": "Token dostępu o nazwie „{name}” na koncie Glazecalc {account} przestanie działać {date}.\n\nJeśli jest nadal używany, należy przed tym terminem utworzyć nowy token na stronie {page} i przekazać go asystentowi lub skryptowi zamiast starego. Jeśli nie jest już używany, nie trzeba nic robić.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Nowy token dostępu do konta Glazecalc",
+    "text": "Token dostępu o nazwie „{name}” został właśnie utworzony dla konta Glazecalc {account}. Może on odczytywać receptury, surowce, notatki i dzienniki wypałów zapisane na koncie do {date}.\n\nJeśli zrobił to właściciel konta, nie trzeba nic więcej robić. Tokeny można zobaczyć i unieważnić na stronie {page}\n\nJeśli nie, należy go tam unieważnić i od razu zresetować hasło na stronie {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Nowy token dostępu, który może zmieniać zapisy w Glazecalc",
+    "text": "Token dostępu o nazwie „{name}” został właśnie utworzony dla konta Glazecalc {account}. Może on odczytywać i zmieniać receptury, surowce, notatki i dzienniki wypałów zapisane na koncie oraz przenosić je do kosza, do {date}. Każda wprowadzona przez niego zmiana zachowuje zapis w dotychczasowej postaci, więc można ją cofnąć na stronie internetowej.\n\nJeśli zrobił to właściciel konta, nie trzeba nic więcej robić. Tokeny można zobaczyć i unieważnić na stronie {page}\n\nJeśli nie, należy go tam unieważnić i od razu zresetować hasło na stronie {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Potwierdzenie adresu e-mail w aplikacji Glazecalc",
+    "text": "Ktoś (miejmy nadzieję, że właściciel adresu) założył konto Glazecalc z adresem {account}.\n\nAby potwierdzić, że jest się właścicielem tego adresu, należy otworzyć ten link w ciągu {hours} godz.:\n\n{link}\n\nLink działa jeden raz. Jeśli konto nie zostało założone przez właściciela adresu, wystarczy zignorować tę wiadomość; nic więcej nie zostanie wysłane, chyba że ktoś o to poprosi.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

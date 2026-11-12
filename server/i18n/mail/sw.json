@@ -1,0 +1,10 @@
+{
+  "CHANGED": {
+    "subject": "Nenosiri lako la Glazecalc limebadilishwa",
+    "text": "Nenosiri la akaunti ya Glazecalc {account} limebadilishwa sasa hivi, na kila kifaa kilichokuwa kimeingia kimetolewa.\n\nIkiwa ulifanya hili wewe, hakuna kingine cha kufanya. Ikiwa sivyo, weka upya nenosiri lako mara moja kwenye {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Weka upya nenosiri lako la Glazecalc",
+    "text": "Mtu (tunatumaini ni wewe) ameomba kuweka upya nenosiri la akaunti ya Glazecalc {account}.\n\nIli kuchagua nenosiri jipya, fungua kiungo hiki ndani ya dakika {minutes}:\n\n{link}\n\nKiungo kinafanya kazi mara moja tu. Ikiwa hukuomba hili, puuza barua pepe hii; nenosiri lako litabaki kama lilivyo.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

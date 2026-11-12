@@ -1,0 +1,10 @@
+{
+  "CHANGED": {
+    "subject": "An canza kalmar sirrinku ta Glazecalc",
+    "text": "An canza kalmar sirri ta asusun Glazecalc {account} yanzun nan, kuma an fitar da duk na'urorin da suka shiga.\n\nIdan ku ne, babu wani abu kuma da za ku yi. Idan ba ku ba ne, sake saita kalmar sirrinku nan take a {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Sake saita kalmar sirrinku ta Glazecalc",
+    "text": "Wani (muna fatan ku ne) ya nemi a sake saita kalmar sirri ta asusun Glazecalc {account}.\n\nDon zaɓar sabuwar kalmar sirri, buɗe wannan hanyar haɗi cikin minti {minutes}:\n\n{link}\n\nHanyar haɗin tana aiki sau ɗaya. Idan ba ku nemi wannan ba, ku yi watsi da wannan imel; kalmar sirrinku za ta kasance yadda take.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

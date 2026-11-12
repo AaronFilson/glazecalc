@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Ihr Passwort für Glazecalc wurde geändert",
+    "text": "Das Passwort für das Konto {account} bei Glazecalc wurde gerade geändert, und alle Geräte, die angemeldet waren, wurden abgemeldet.\n\nWenn Sie das waren, müssen Sie nichts weiter tun. Wenn nicht, setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "Für Ihr Glazecalc-Konto wurde eine neue E-Mail-Adresse angefordert",
+    "text": "Für das Glazecalc-Konto {account} wurde gerade eine Änderung der E-Mail-Adresse angefordert. An die neue Adresse wurde ein Link gesendet, und die Änderung erfolgt erst, wenn dieser Link geöffnet wird.\n\nWenn Sie das waren, müssen Sie nichts weiter tun. Wenn nicht, kennt vielleicht jemand Ihr Passwort: Setzen Sie es sofort hier zurück: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Bestätigen Sie Ihre neue E-Mail-Adresse für Glazecalc",
+    "text": "Jemand (hoffentlich Sie) hat angefordert, {account} als E-Mail-Adresse für sein Glazecalc-Konto zu verwenden.\n\nUm die Änderung vorzunehmen, öffnen Sie innerhalb von {hours} Stunden diesen Link:\n\n{link}\n\nDer Link funktioniert nur einmal, und alle Geräte, die angemeldet waren, werden abgemeldet. Wenn Sie das nicht angefordert haben, ignorieren Sie diese E-Mail; es ändert sich nichts.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "nie um Genehmigung fragt (Änderungen von Apps und Zugriffstoken werden sofort vorgenommen)",
+    "removals": "nur vor dem Entfernen um Genehmigung fragt, also bevor ein Datensatz in den Papierkorb gelegt oder ein Rohstoff aus dem Vorrat genommen wird (andere Änderungen von Apps und Zugriffstoken werden sofort vorgenommen)"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Glazecalc fragt jetzt seltener, bevor Apps Ihre Datensätze ändern",
+    "text": "Das Glazecalc-Konto {account} wurde gerade so eingestellt, dass es {choice}.\n\nWenn Sie das waren, müssen Sie nichts weiter tun. Sie können es unter „Verbundene Apps“ ansehen und ändern: {page}\n\nWenn nicht, stellen Sie es dort zurück, widerrufen Sie jede App und jedes Token, die Sie nicht kennen, und setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "Eine App wurde mit Ihrem Glazecalc-Konto verbunden",
+    "opening": "Am {date} um {time} Uhr (UTC) wurde eine App mit dem Glazecalc-Konto {account} verbunden.\n\n",
+    "named": "Die App: „{name}“\n",
+    "checked": "Ihre Adresse, von Glazecalc geprüft: {host}\n",
+    "selfDescribed": "Sie hat sich selbst registriert, ihr Name ist also nur das, was sie über sich selbst sagt.\n",
+    "answerAt": "Sie empfängt die Antwort unter: {host}\n",
+    "loopback": "Sie empfängt die Antwort auf dem Computer, von dem aus sie verbunden wurde ({host}).\n",
+    "read": "\nSie kann die Rezepte, das Notizbuch, die Rohstoffe, den Vorrat und die Einstellungen lesen, die im Konto gespeichert sind. Sie kann nichts ändern.\n\n",
+    "write": "\nSie kann die Rezepte, das Notizbuch, die Rohstoffe, den Vorrat und die Einstellungen lesen, die im Konto gespeichert sind, und {days} Tage lang kann sie sie auch ändern: Datensätze erstellen und ändern und sie in den Papierkorb legen. Jede Änderung bewahrt eine Fassung des Datensatzes, wie er war, sodass Sie sie auf der Website rückgängig machen können.\n\n",
+    "closing": "Wenn Sie das waren, müssen Sie nichts weiter tun. Unter {page} können Sie sehen, was sie tut, und sie widerrufen.\n\nWenn nicht, widerrufen Sie sie dort und setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Ihr Glazecalc-Konto wurde gelöscht",
+    "text": "Das Glazecalc-Konto {account} wurde gelöscht, mit allem, was darin gespeichert war: Rezepte, Rohstoffe, Brennprotokolle, Notizen und Einstellungen. Das lässt sich nicht rückgängig machen.\n\nKopien in den Sicherungen der Website werden gelöscht, sobald die Sicherungen ablaufen, innerhalb von {days} Tagen.\n\nSie können jederzeit ein neues Konto erstellen.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "eine Authenticator-App",
+    "passkey": "der Passkey „{name}“"
+  },
+  "MFA_ADDED": {
+    "subject": "Ein Anmeldeschritt wurde Ihrem Glazecalc-Konto hinzugefügt",
+    "text": "Dem Glazecalc-Konto {account} wurde gerade ein zweiter Schritt für die Anmeldung hinzugefügt: {method}.\n\nWenn Sie das waren, müssen Sie nichts weiter tun. Bewahren Sie Ihre Wiederherstellungscodes an einem sicheren Ort auf. Wenn nicht, kennt vielleicht jemand Ihr Passwort: Setzen Sie es sofort hier zurück: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "Die Zwei-Schritt-Anmeldung für Ihr Glazecalc-Konto wird ausgeschaltet",
+    "text": "Jemand hat darum gebeten, die Zwei-Schritt-Anmeldung für das Glazecalc-Konto {account} auszuschalten, weil jede Authenticator-App, jeder Passkey und jeder Wiederherstellungscode dafür verloren gegangen ist.\n\nDie Zwei-Schritt-Anmeldung wird am {date} ausgeschaltet, es sei denn, Sie schreiben vorher an privacy@glazecalcapp.com. Danach kann man sich allein mit dem Passwort bei dem Konto anmelden.\n\nWenn Sie das waren, müssen Sie nichts weiter tun. Wenn nicht, schreiben Sie sofort an privacy@glazecalcapp.com und setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "Die Zwei-Schritt-Anmeldung wurde für Ihr Glazecalc-Konto ausgeschaltet",
+    "text": "Die Zwei-Schritt-Anmeldung wurde gerade für das Glazecalc-Konto {account} ausgeschaltet: Jede Authenticator-App, jeder Passkey und jeder Wiederherstellungscode wurde entfernt, und alle Geräte, die angemeldet waren, wurden abgemeldet. Zum Anmelden genügt jetzt das Passwort allein.\n\nSie können die Zwei-Schritt-Anmeldung auf Ihrer Kontoseite wieder einschalten. Wenn Sie das nicht angefordert haben, setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "Ein Anmeldeschritt wurde von Ihrem Glazecalc-Konto entfernt",
+    "text": "Vom Glazecalc-Konto {account} wurde gerade ein zweiter Schritt für die Anmeldung entfernt: {method}. Wenn es der letzte war, genügt zum Anmelden jetzt das Passwort allein.\n\nWenn Sie das waren, müssen Sie nichts weiter tun. Wenn nicht, setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "Eine neue Anmeldemöglichkeit wurde Ihrem Glazecalc-Konto hinzugefügt",
+    "text": "Sie können sich jetzt mit {provider} beim Glazecalc-Konto {account} anmelden.\n\nWenn Sie das waren, müssen Sie nichts weiter tun. Wenn nicht, trennen Sie die Verbindung auf Ihrer Kontoseite unter {page} und setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "Eine Anmeldemöglichkeit wurde von Ihrem Glazecalc-Konto entfernt",
+    "text": "{provider} wurde vom Glazecalc-Konto {account} getrennt und kann nicht mehr verwendet werden, um sich dort anzumelden.\n\nWenn Sie das waren, müssen Sie nichts weiter tun. Wenn nicht, ist vielleicht jemand bei Ihrem Konto angemeldet: Setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Neue Wiederherstellungscodes für Ihr Glazecalc-Konto",
+    "text": "Für das Glazecalc-Konto {account} wurden gerade neue Wiederherstellungscodes erstellt. Die alten Codes funktionieren nicht mehr.\n\nWenn Sie das waren, bewahren Sie die neuen Codes an einem sicheren Ort auf. Wenn nicht, setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "Ein Wiederherstellungscode wurde für Ihr Glazecalc-Konto verwendet",
+    "text": "Einer der Wiederherstellungscodes für das Glazecalc-Konto {account} wurde gerade verwendet und funktioniert deshalb nicht noch einmal. Noch nicht verwendete Codes: {left}. Neue Codes können Sie auf Ihrer Kontoseite erstellen: {page}\n\nWenn Sie das nicht waren, haben vielleicht andere Ihr Passwort und Ihre Codes: Setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Passwort für Glazecalc zurücksetzen",
+    "text": "Jemand (hoffentlich Sie) hat angefordert, das Passwort für das Konto {account} bei Glazecalc zurückzusetzen.\n\nUm ein neues Passwort zu wählen, öffnen Sie innerhalb von {minutes} Minuten diesen Link:\n\n{link}\n\nDer Link funktioniert nur einmal. Wenn Sie das nicht angefordert haben, ignorieren Sie diese E-Mail; Ihr Passwort bleibt unverändert.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "Ihr Passwort für Glazecalc wurde geändert",
+    "opening": "Das Passwort für das Glazecalc-Konto {account} wurde gerade zurückgesetzt, und alle Geräte, die angemeldet waren, wurden abgemeldet.\n\n",
+    "stopped": "Falls jemand anderes das alte Passwort kannte, hat das Zurücksetzen außerdem Folgendes beendet:\n\n",
+    "tokens": "- Die Zugriffstoken und verbundenen Apps, die auf Ihre gespeicherten Arbeiten zugreifen konnten ({count}). Wenn Sie noch eines brauchen, erstellen Sie ein neues Token auf Ihrer Kontoseite unter {page}\n",
+    "providers": "- Die Anmeldung mit {providers}, die Sie auf Ihrer Kontoseite unter {page} erneut verknüpfen können\n",
+    "shareLinks": "- Die Links, die Sie zum Teilen von Rezepten erstellt hatten. Sie können für jedes Rezept neue erstellen.\n",
+    "closing": "\nWenn Sie das waren, müssen Sie nichts weiter tun. Wenn nicht, setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Jemand hat Ihr Glazecalc-Passwort eingegeben, aber die Anmeldung nicht abgeschlossen",
+    "text": "Jemand hat das richtige Passwort für das Glazecalc-Konto {account} eingegeben, aber den zweiten Schritt der Anmeldung nicht abgeschlossen. Ihr zweiter Schritt hat die Person ausgesperrt.\n\nWenn Sie das waren, müssen Sie nichts weiter tun. Wenn nicht, kennt jemand Ihr Passwort: Ändern Sie es sofort. Sie können es hier zurücksetzen: {forgot}\n\nNach 10 falschen Codes aus einer Authenticator-App werden Codes eine Stunde lang abgelehnt, nach 10 weiteren einen Tag lang, danach jedes Mal eine Woche lang. Ein Passkey oder ein Wiederherstellungscode funktioniert weiterhin, während Codes abgelehnt werden. Wenn Sie Ihr Passwort per E-Mail zurücksetzen, endet das: Die nicht abgeschlossenen Anmeldungen der Person enden, sie hat das Passwort nicht mehr, und Codes funktionieren wieder.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Ein Zugriffstoken für Ihr Glazecalc-Konto läuft bald ab",
+    "text": "Das Zugriffstoken „{name}“ für das Glazecalc-Konto {account} funktioniert ab dem {date} nicht mehr.\n\nWenn Sie es noch verwenden, erstellen Sie vorher unter {page} ein neues Token und geben Sie es Ihrem Assistenten oder Skript anstelle des alten. Wenn Sie es nicht mehr verwenden, müssen Sie nichts tun.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Ein neues Zugriffstoken für Ihr Glazecalc-Konto",
+    "text": "Für das Glazecalc-Konto {account} wurde gerade das Zugriffstoken „{name}“ erstellt. Es kann bis zum {date} die Rezepte, Rohstoffe, Notizen und Brennprotokolle lesen, die im Konto gespeichert sind.\n\nWenn Sie das waren, müssen Sie nichts weiter tun. Ihre Token können Sie unter {page} ansehen und widerrufen.\n\nWenn nicht, widerrufen Sie es dort und setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Ein neues Zugriffstoken, das Ihre Glazecalc-Datensätze ändern kann",
+    "text": "Für das Glazecalc-Konto {account} wurde gerade das Zugriffstoken „{name}“ erstellt. Es kann bis zum {date} die Rezepte, Rohstoffe, Notizen und Brennprotokolle, die im Konto gespeichert sind, lesen und ändern und sie in den Papierkorb legen. Jede Änderung, die es vornimmt, bewahrt den Datensatz, wie er war, sodass Sie sie auf der Website rückgängig machen können.\n\nWenn Sie das waren, müssen Sie nichts weiter tun. Ihre Token können Sie unter {page} ansehen und widerrufen.\n\nWenn nicht, widerrufen Sie es dort und setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Bestätigen Sie Ihre E-Mail-Adresse für Glazecalc",
+    "text": "Jemand (hoffentlich Sie) hat ein Glazecalc-Konto mit der Adresse {account} erstellt.\n\nUm zu bestätigen, dass diese Adresse Ihnen gehört, öffnen Sie innerhalb von {hours} Stunden diesen Link:\n\n{link}\n\nDer Link funktioniert nur einmal. Wenn Sie kein Konto erstellt haben, ignorieren Sie diese E-Mail; Sie erhalten nichts weiter, es sei denn, Sie fordern es an.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

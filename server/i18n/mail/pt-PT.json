@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "A sua palavra-passe do Glazecalc foi alterada",
+    "text": "A palavra-passe da conta Glazecalc {account} acabou de ser alterada, e a sessão foi terminada em todos os dispositivos em que estava iniciada.\n\nSe a alteração foi feita por si, não precisa de fazer mais nada. Caso contrário, reponha já a sua palavra-passe em {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "Foi pedido um novo e-mail para a sua conta Glazecalc",
+    "text": "Acabou de ser pedida uma alteração de e-mail na conta Glazecalc {account}. Foi enviada uma ligação para o novo endereço, e a alteração só acontece quando essa ligação for aberta.\n\nSe foi você, não precisa de fazer mais nada. Caso contrário, alguém pode conhecer a sua palavra-passe: reponha-a já em {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Confirmar o seu novo e-mail do Glazecalc",
+    "text": "Alguém (esperamos que seja você) pediu para usar {account} como e-mail da sua conta Glazecalc.\n\nPara fazer a alteração, abra esta ligação nas próximas {hours} horas:\n\n{link}\n\nA ligação só funciona uma vez, e a sessão será terminada em todos os dispositivos com sessão iniciada. Se não fez este pedido, ignore este e-mail; nada será alterado.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "nunca pedir aprovação (as alterações de aplicações e tokens de acesso são feitas de imediato)",
+    "removals": "pedir aprovação só antes de uma remoção, ou seja, antes de mover um registo para o Lixo ou de retirar uma matéria-prima das matérias-primas disponíveis (as outras alterações de aplicações e tokens de acesso são feitas de imediato)"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "O Glazecalc agora pergunta menos antes de as aplicações alterarem os seus registos",
+    "text": "A conta Glazecalc {account} acabou de ser configurada para {choice}.\n\nSe foi você, não precisa de fazer mais nada. Pode ver e alterar isto em Aplicações ligadas, em {page}\n\nCaso contrário, reponha a definição aí, revogue qualquer aplicação ou token que não conheça e reponha já a sua palavra-passe em {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "Foi ligada uma aplicação à sua conta Glazecalc",
+    "opening": "Foi ligada uma aplicação à conta Glazecalc {account} em {date} às {time} (UTC).\n\n",
+    "named": "A aplicação: «{name}»\n",
+    "checked": "O seu endereço, verificado pelo Glazecalc: {host}\n",
+    "selfDescribed": "Registou-se a si própria, por isso o seu nome é apenas o que ela diz de si mesma.\n",
+    "answerAt": "Recebe a resposta em: {host}\n",
+    "loopback": "Recebe a resposta no computador a partir do qual foi ligada ({host}).\n",
+    "read": "\nPode ler as receitas, o caderno, as matérias-primas, a prateleira e as definições guardados na conta. Não pode alterar nada.\n\n",
+    "write": "\nPode ler as receitas, o caderno, as matérias-primas, a prateleira e as definições guardados na conta, e durante {days} dias também os pode alterar: criar e alterar registos, e movê-los para o Lixo. Cada alteração guarda uma versão do registo tal como estava, por isso pode anulá-la no site.\n\n",
+    "closing": "Se foi você, não precisa de fazer mais nada. Pode ver o que ela faz e revogá-la em {page}\n\nCaso contrário, revogue-a aí e reponha já a sua palavra-passe em {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "A sua conta Glazecalc foi eliminada",
+    "text": "A conta Glazecalc {account} foi eliminada, com tudo o que nela estava guardado: receitas, matérias-primas, cozeduras, notas e definições. Esta ação não pode ser anulada.\n\nAs cópias nas cópias de segurança do site são eliminadas à medida que estas expiram, no prazo de {days} dias.\n\nPode criar uma nova conta em qualquer altura.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "uma aplicação de autenticação",
+    "passkey": "a chave de acesso «{name}»"
+  },
+  "MFA_ADDED": {
+    "subject": "Foi adicionado um passo de início de sessão à sua conta Glazecalc",
+    "text": "Este segundo passo para iniciar sessão acabou de ser adicionado à conta Glazecalc {account}: {method}.\n\nSe foi você, não precisa de fazer mais nada. Guarde os códigos de recuperação num local seguro. Caso contrário, alguém pode conhecer a sua palavra-passe: reponha-a já em {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "O início de sessão em dois passos na sua conta Glazecalc vai ser desativado",
+    "text": "Alguém pediu que o início de sessão em dois passos fosse desativado na conta Glazecalc {account}, porque todas as aplicações de autenticação, chaves de acesso e códigos de recuperação da conta foram perdidos.\n\nO início de sessão em dois passos será desativado em {date}, a menos que escreva para privacy@glazecalcapp.com antes dessa data. Depois disso, será possível iniciar sessão na conta apenas com a palavra-passe.\n\nSe foi você, não precisa de fazer mais nada. Caso contrário, escreva já para privacy@glazecalcapp.com e reponha a sua palavra-passe em {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "O início de sessão em dois passos foi desativado na sua conta Glazecalc",
+    "text": "O início de sessão em dois passos acabou de ser desativado na conta Glazecalc {account}: todas as aplicações de autenticação, chaves de acesso e códigos de recuperação foram removidos, e a sessão foi terminada em todos os dispositivos em que estava iniciada. Iniciar sessão passa agora a exigir apenas a palavra-passe.\n\nPode ativar novamente o início de sessão em dois passos na página da sua conta. Se não fez este pedido, reponha já a sua palavra-passe em {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "Foi removido um passo de início de sessão da sua conta Glazecalc",
+    "text": "Este segundo passo para iniciar sessão acabou de ser removido da conta Glazecalc {account}: {method}. Se era o último, iniciar sessão passa a exigir apenas a palavra-passe.\n\nSe foi você, não precisa de fazer mais nada. Caso contrário, reponha já a sua palavra-passe em {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "Foi adicionada uma nova forma de iniciar sessão à sua conta Glazecalc",
+    "text": "Já pode iniciar sessão na conta Glazecalc {account} com {provider}.\n\nSe foi você, não precisa de fazer mais nada. Caso contrário, desassocie-o na página da sua conta, em {page}, e reponha já a sua palavra-passe em {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "Foi removida uma forma de iniciar sessão da sua conta Glazecalc",
+    "text": "{provider} foi desassociado da conta Glazecalc {account} e já não pode ser usado para iniciar sessão nela.\n\nSe foi você, não precisa de fazer mais nada. Caso contrário, alguém pode ter sessão iniciada na sua conta: reponha já a sua palavra-passe em {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Novos códigos de recuperação para a sua conta Glazecalc",
+    "text": "Acabaram de ser criados novos códigos de recuperação para a conta Glazecalc {account}. Os códigos antigos deixaram de funcionar.\n\nSe foi você, guarde os novos códigos num local seguro. Caso contrário, reponha já a sua palavra-passe em {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "Foi usado um código de recuperação na sua conta Glazecalc",
+    "text": "Um dos códigos de recuperação da conta Glazecalc {account} acabou de ser usado, por isso não voltará a funcionar. Códigos por usar: {left}. Pode criar novos códigos na página da sua conta: {page}\n\nSe não foi você, alguém pode ter a sua palavra-passe e os seus códigos: reponha já a sua palavra-passe em {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Repor a sua palavra-passe do Glazecalc",
+    "text": "Foi feito um pedido, esperamos que por si, para repor a palavra-passe da conta Glazecalc {account}.\n\nPara escolher uma nova palavra-passe, abra esta ligação nos próximos {minutes} minutos:\n\n{link}\n\nA ligação só funciona uma vez. Se não fez este pedido, ignore este e-mail; a sua palavra-passe mantém-se igual.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "A sua palavra-passe do Glazecalc foi alterada",
+    "opening": "A palavra-passe da conta Glazecalc {account} acabou de ser reposta, e a sessão foi terminada em todos os dispositivos em que estava iniciada.\n\n",
+    "stopped": "Caso outra pessoa tivesse a palavra-passe antiga, a reposição também anulou o seguinte:\n\n",
+    "tokens": "- Os tokens de acesso e as aplicações ligadas que podiam aceder ao seu trabalho guardado ({count}). Se ainda precisar de um, crie um novo token na página da sua conta, em {page}\n",
+    "providers": "- O início de sessão com {providers}, que pode associar de novo na página da sua conta, em {page}\n",
+    "shareLinks": "- As ligações que tinha criado para partilhar receitas. Pode criar novas a partir de cada receita.\n",
+    "closing": "\nSe foi você, não precisa de fazer mais nada. Caso contrário, reponha já a sua palavra-passe em {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Alguém introduziu a sua palavra-passe do Glazecalc mas não concluiu o início de sessão",
+    "text": "Alguém introduziu a palavra-passe certa da conta Glazecalc {account}, mas não concluiu o segundo passo do início de sessão. O seu segundo passo manteve-o de fora.\n\nSe foi você, não precisa de fazer mais nada. Caso contrário, alguém conhece a sua palavra-passe: altere-a já. Pode repô-la em {forgot}\n\nApós 10 códigos errados de uma aplicação de autenticação, os códigos são recusados durante uma hora; após mais 10, durante um dia; e depois durante uma semana de cada vez. Uma chave de acesso ou um código de recuperação continua a funcionar enquanto os códigos são recusados. Repor a palavra-passe por e-mail põe fim a isto: os inícios de sessão por concluir dessa pessoa terminam, ela deixa de ter a palavra-passe e os códigos voltam a funcionar.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Um token de acesso da sua conta Glazecalc expira em breve",
+    "text": "O token de acesso com o nome «{name}» da conta Glazecalc {account} deixa de funcionar em {date}.\n\nSe ainda o usa, crie um novo token antes dessa data em {page} e dê-o ao seu assistente ou script em vez do antigo. Se já não o usa, não há nada a fazer.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Um novo token de acesso para a sua conta Glazecalc",
+    "text": "Acabou de ser criado um token de acesso com o nome «{name}» para a conta Glazecalc {account}. Pode ler as receitas, as matérias-primas, as notas e os registos de cozedura guardados na conta até {date}.\n\nSe foi você, não precisa de fazer mais nada. Pode ver e revogar os seus tokens em {page}\n\nCaso contrário, revogue-o aí e reponha já a sua palavra-passe em {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Um novo token de acesso que pode alterar os seus registos do Glazecalc",
+    "text": "Acabou de ser criado um token de acesso com o nome «{name}» para a conta Glazecalc {account}. Pode ler e alterar as receitas, as matérias-primas, as notas e os registos de cozedura guardados na conta, e movê-los para o Lixo, até {date}. Cada alteração que faz guarda o registo como estava, por isso pode anulá-la no site.\n\nSe foi você, não precisa de fazer mais nada. Pode ver e revogar os seus tokens em {page}\n\nCaso contrário, revogue-o aí e reponha já a sua palavra-passe em {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Confirmar o seu e-mail do Glazecalc",
+    "text": "Alguém (esperamos que seja você) criou uma conta Glazecalc com o endereço {account}.\n\nPara confirmar que este endereço é seu, abra esta ligação nas próximas {hours} horas:\n\n{link}\n\nA ligação só funciona uma vez. Se não criou uma conta, ignore este e-mail; não receberá mais nada, a menos que o peça.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

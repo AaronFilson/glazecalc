@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Glazecalc parolanız değiştirildi",
+    "text": "Glazecalc hesabı {account} için parola az önce değiştirildi ve oturum açık olan tüm cihazlarda oturum kapatıldı.\n\nBunu siz yaptıysanız başka bir şey yapmanız gerekmez. Siz yapmadıysanız parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "Glazecalc hesabınız için yeni bir e-posta adresi istendi",
+    "text": "Glazecalc hesabı {account} için az önce e-posta adresi değişikliği istendi. Yeni adrese bir bağlantı gönderildi; değişiklik yalnızca bu bağlantı açıldığında gerçekleşir.\n\nBunu siz yaptıysanız başka bir şey yapmanız gerekmez. Siz yapmadıysanız biri parolanızı biliyor olabilir: parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Glazecalc için yeni e-posta adresinizi doğrulayın",
+    "text": "Birisi (umarız sizsinizdir) {account} adresinin Glazecalc hesabının e-posta adresi olarak kullanılmasını istedi.\n\nDeğişikliği yapmak için {hours} saat içinde bu bağlantıyı açın:\n\n{link}\n\nBağlantı bir kez kullanılabilir ve oturum açık olan tüm cihazlarda oturum kapatılır. Bunu siz istemediyseniz bu e-postayı dikkate almayın; hiçbir şey değişmez.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "hiçbir zaman: uygulamalardan ve erişim belirteçlerinden gelen değişiklikler hemen yapılır",
+    "removals": "yalnızca bir kaldırmadan önce: bir kaydı Çöp kutusuna taşımak veya bir hammaddeyi elinizdeki hammaddelerden çıkarmak. Uygulamalardan ve erişim belirteçlerinden gelen diğer değişiklikler hemen yapılır"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Glazecalc artık uygulamalar kayıtlarınızı değiştirmeden önce daha az soruyor",
+    "text": "Glazecalc hesabı {account} için onay isteme ayarı az önce şöyle değiştirildi: {choice}.\n\nBu sizseniz başka bir şey yapmanız gerekmez. Bunu Bağlı uygulamalar sayfasında şu adreste görebilir ve değiştirebilirsiniz: {page}\n\nDeğilseniz ayarı orada geri alın, tanımadığınız her uygulamayı veya belirteci iptal edin ve parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "Glazecalc hesabınıza bir uygulama bağlandı",
+    "opening": "Glazecalc hesabı {account} için bir uygulama bağlandı. Tarih: {date}, saat {time} (UTC).\n\n",
+    "named": "Uygulama: “{name}”\n",
+    "checked": "Glazecalc tarafından doğrulanan adresi: {host}\n",
+    "selfDescribed": "Kendini kendisi kaydetti; bu yüzden adı yalnızca kendisi hakkında söylediğidir.\n",
+    "answerAt": "Yanıtı aldığı yer: {host}\n",
+    "loopback": "Yanıtı, bağlandığı bilgisayarda alır ({host}).\n",
+    "read": "\nHesapta kayıtlı reçeteleri, atölye defterini, hammaddeleri, eldeki hammaddeleri ve ayarları okuyabilir. Hiçbir şeyi değiştiremez.\n\n",
+    "write": "\nHesapta kayıtlı reçeteleri, atölye defterini, hammaddeleri, eldeki hammaddeleri ve ayarları okuyabilir ve {days} gün boyunca bunları değiştirebilir de: kayıt oluşturabilir, değiştirebilir ve Çöp kutusuna taşıyabilir. Her değişiklik kaydın önceki hâlinin bir sürümünü saklar, böylece web sitesinde geri alabilirsiniz.\n\n",
+    "closing": "Bu sizseniz başka bir şey yapmanız gerekmez. Ne yaptığını görebilir ve onu şu adreste iptal edebilirsiniz: {page}\n\nDeğilseniz onu orada iptal edin ve parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Glazecalc hesabınız silindi",
+    "text": "Glazecalc hesabı {account}, içinde kayıtlı her şeyle birlikte silindi: reçeteler, hammaddeler, pişirim kayıtları, notlar ve ayarlar. Bu işlem geri alınamaz.\n\nSite yedeklerindeki kopyalar, yedeklerin süresi doldukça {days} gün içinde silinir.\n\nİstediğiniz zaman yeni bir hesap oluşturabilirsiniz.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "bir kimlik doğrulama uygulaması",
+    "passkey": "“{name}” adlı geçiş anahtarı"
+  },
+  "MFA_ADDED": {
+    "subject": "Glazecalc hesabınıza bir oturum açma adımı eklendi",
+    "text": "Glazecalc hesabı {account} için oturum açmada ikinci adım olarak az önce şu eklendi: {method}.\n\nBunu siz yaptıysanız başka bir şey yapmanız gerekmez. Kurtarma kodlarınızı güvenli bir yerde saklayın. Siz yapmadıysanız biri parolanızı biliyor olabilir: parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "Glazecalc hesabınızda iki adımlı oturum açma devre dışı bırakılacak",
+    "text": "Birisi, Glazecalc hesabı {account} için tüm kimlik doğrulama uygulamaları, geçiş anahtarları ve kurtarma kodları kaybedildiğinden iki adımlı oturum açmanın devre dışı bırakılmasını istedi.\n\nİki adımlı oturum açma {date} tarihinde devre dışı bırakılacak; bunu önlemek için bu tarihten önce privacy@glazecalcapp.com adresine yazın. Bundan sonra hesaba yalnızca parolayla oturum açılabilecek.\n\nBunu siz istediyseniz başka bir şey yapmanız gerekmez. İstemediyseniz şimdi privacy@glazecalcapp.com adresine yazın ve parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "Glazecalc hesabınızda iki adımlı oturum açma devre dışı bırakıldı",
+    "text": "Glazecalc hesabı {account} için iki adımlı oturum açma az önce devre dışı bırakıldı: tüm kimlik doğrulama uygulamaları, geçiş anahtarları ve kurtarma kodları kaldırıldı ve oturum açık olan tüm cihazlarda oturum kapatıldı. Oturum açmak için artık yalnızca parola gerekir.\n\nİki adımlı oturum açmayı hesap sayfanızdan yeniden etkinleştirebilirsiniz. Bunu siz istemediyseniz parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "Glazecalc hesabınızdan bir oturum açma adımı kaldırıldı",
+    "text": "Glazecalc hesabı {account} için oturum açmada ikinci adım olarak kullanılan şu az önce kaldırıldı: {method}. Bu sonuncusuysa oturum açmak için artık yalnızca parola gerekir.\n\nBunu siz yaptıysanız başka bir şey yapmanız gerekmez. Siz yapmadıysanız parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "Glazecalc hesabınıza yeni bir oturum açma yolu eklendi",
+    "text": "Glazecalc hesabı {account} için artık {provider} ile oturum açabilirsiniz.\n\nBu sizseniz başka bir şey yapmanız gerekmez. Değilseniz hesap sayfanızdan ({page}) bu oturum açma yolunun bağlantısını kaldırın ve parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "Glazecalc hesabınızdan bir oturum açma yolu kaldırıldı",
+    "text": "{provider} bağlantısı Glazecalc hesabı {account} için kaldırıldı ve artık bu hesapta oturum açmak için kullanılamaz.\n\nBu sizseniz başka bir şey yapmanız gerekmez. Değilseniz biri hesabınızda oturum açmış olabilir: parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Glazecalc hesabınız için yeni kurtarma kodları",
+    "text": "Glazecalc hesabı {account} için az önce yeni kurtarma kodları oluşturuldu. Eski kodlar artık çalışmıyor.\n\nBunu siz yaptıysanız yeni kodları güvenli bir yerde saklayın. Siz yapmadıysanız parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "Glazecalc hesabınızda bir kurtarma kodu kullanıldı",
+    "text": "Glazecalc hesabı {account} için kurtarma kodlarından biri az önce kullanıldı; bu kod bir daha çalışmaz. Kalan kullanılmamış kodlar: {left}. Hesap sayfanızda yeni kodlar oluşturabilirsiniz: {page}\n\nBu siz değilseniz biri parolanızı ve kodlarınızı ele geçirmiş olabilir: parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Glazecalc parolanızı sıfırlayın",
+    "text": "Birisi (umarız sizsinizdir) Glazecalc hesabı {account} için parolanın sıfırlanmasını istedi.\n\nYeni bir parola seçmek için {minutes} dakika içinde bu bağlantıyı açın:\n\n{link}\n\nBağlantı bir kez kullanılabilir. Bunu siz istemediyseniz bu e-postayı dikkate almayın; parolanız aynı kalır.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "Glazecalc parolanız değiştirildi",
+    "opening": "Glazecalc hesabı {account} için parola az önce sıfırlandı ve oturumu açık olan tüm cihazların oturumu kapatıldı.\n\n",
+    "stopped": "Eski parolayı başka biri biliyorsa diye, sıfırlama şunları da durdurdu:\n\n",
+    "tokens": "- Kayıtlı çalışmanıza erişebilen erişim belirteçleri ve bağlı uygulamalar ({count}). Birine hâlâ ihtiyacınız varsa hesap sayfanızda ({page}) yeni bir belirteç oluşturun\n",
+    "providers": "- {providers} ile oturum açma; bunları hesap sayfanızda ({page}) yeniden bağlayabilirsiniz\n",
+    "shareLinks": "- Reçete paylaşmak için oluşturduğunuz bağlantılar. Her reçeteden yenilerini oluşturabilirsiniz.\n",
+    "closing": "\nBu sizseniz başka bir şey yapmanız gerekmez. Değilseniz parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Birisi Glazecalc parolanızı girdi ama oturum açmayı tamamlamadı",
+    "text": "Birisi Glazecalc hesabı {account} için doğru parolayı girdi ama oturum açmanın ikinci adımını tamamlamadı. İkinci adımınız bu kişinin girmesini engelledi.\n\nBu sizseniz başka bir şey yapmanız gerekmez. Değilseniz biri parolanızı biliyor: parolanızı hemen değiştirin. Şu adresten sıfırlayabilirsiniz: {forgot}\n\nBir kimlik doğrulama uygulamasından 10 yanlış koddan sonra kodlar bir saat boyunca reddedilir; 10 yanlış kod daha girilirse bir gün; sonrasında her seferinde bir hafta. Kodlar reddedilirken geçiş anahtarı veya kurtarma kodu yine çalışır. Parolanızı e-postayla sıfırlamak bunu sona erdirir: bu kişinin tamamlanmamış oturum açmaları sona erer, parola artık elinde olmaz ve kodlar yeniden çalışır.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Glazecalc hesabınızdaki bir erişim belirtecinin süresi yakında doluyor",
+    "text": "Glazecalc hesabı {account} üzerindeki “{name}” adlı erişim belirteci {date} tarihinde çalışmayı bırakacak.\n\nHâlâ kullanıyorsanız, o tarihten önce {page} adresinde yeni bir belirteç oluşturun ve eskisinin yerine asistanınıza veya betiğinize verin. Artık kullanmıyorsanız yapmanız gereken bir şey yok.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Glazecalc hesabınız için yeni bir erişim belirteci",
+    "text": "Glazecalc hesabı {account} için az önce “{name}” adlı bir erişim belirteci oluşturuldu. {date} tarihine kadar hesapta kayıtlı reçeteleri, hammaddeleri, notları ve pişirim kayıtlarını okuyabilir.\n\nBu sizseniz başka bir şey yapmanız gerekmez. Belirteçlerinizi şu adreste görebilir ve iptal edebilirsiniz: {page}\n\nDeğilseniz onu orada iptal edin ve parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Glazecalc kayıtlarınızı değiştirebilen yeni bir erişim belirteci",
+    "text": "Glazecalc hesabı {account} için az önce “{name}” adlı bir erişim belirteci oluşturuldu. {date} tarihine kadar hesapta kayıtlı reçeteleri, hammaddeleri, notları ve pişirim kayıtlarını okuyabilir ve değiştirebilir, ayrıca bunları çöp kutusuna taşıyabilir. Yaptığı her değişiklik kaydı eski haliyle saklar; böylece web sitesinde geri alabilirsiniz.\n\nBu sizseniz başka bir şey yapmanız gerekmez. Belirteçlerinizi şu adreste görebilir ve iptal edebilirsiniz: {page}\n\nDeğilseniz onu orada iptal edin ve parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Glazecalc için e-posta adresinizi doğrulayın",
+    "text": "Birisi (umarız sizsinizdir) {account} adresiyle bir Glazecalc hesabı oluşturdu.\n\nBu adresin size ait olduğunu doğrulamak için {hours} saat içinde bu bağlantıyı açın:\n\n{link}\n\nBağlantı bir kez kullanılabilir. Hesap oluşturmadıysanız bu e-postayı dikkate almayın; siz istemedikçe size başka bir şey gönderilmez.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

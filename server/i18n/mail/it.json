@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "La Sua password di Glazecalc è stata cambiata",
+    "text": "La password dell’account Glazecalc {account} è stata appena cambiata e tutti i dispositivi su cui era stato effettuato l’accesso sono stati disconnessi.\n\nSe la modifica l’ha fatta Lei, non c’è altro da fare. Altrimenti, reimposti subito la password all’indirizzo {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "È stato richiesto un nuovo indirizzo email per il Suo account Glazecalc",
+    "text": "È appena stato richiesto un cambio di indirizzo email per l’account Glazecalc {account}. Un link è stato inviato al nuovo indirizzo, e la modifica avviene solo quando quel link viene aperto.\n\nSe l’ha richiesto Lei, non c’è altro da fare. Altrimenti, qualcuno potrebbe conoscere la Sua password: la reimposti subito all’indirizzo {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Conferma del nuovo indirizzo email per Glazecalc",
+    "text": "Qualcuno (speriamo Lei) ha chiesto di usare {account} come indirizzo email del proprio account Glazecalc.\n\nPer effettuare la modifica, apra questo link entro {hours} ore:\n\n{link}\n\nIl link funziona una sola volta e tutti i dispositivi su cui era stato effettuato l’accesso verranno disconnessi. Se non ha chiesto Lei la modifica, ignori questa email: non cambierà nulla.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "non chiedere mai l’approvazione (le modifiche da app e token di accesso vengono fatte subito)",
+    "removals": "chiedere l’approvazione solo prima di una rimozione, cioè prima di spostare un elemento nel cestino o di togliere un materiale dai materiali disponibili (le altre modifiche da app e token di accesso vengono fatte subito)"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Glazecalc ora chiede meno prima che le app modifichino i Suoi dati",
+    "text": "L’account Glazecalc {account} è stato appena impostato per {choice}.\n\nSe l’ha fatto Lei, non c’è altro da fare. Può vederlo e cambiarlo in App collegate all’indirizzo {page}\n\nAltrimenti, lo reimposti lì, revochi ogni app o token che non conosce e reimposti subito la password all’indirizzo {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "Un’app è stata collegata al Suo account Glazecalc",
+    "opening": "Un’app è stata collegata all’account Glazecalc {account} il {date} alle {time} (UTC).\n\n",
+    "named": "L’app: «{name}»\n",
+    "checked": "Il suo indirizzo, verificato da Glazecalc: {host}\n",
+    "selfDescribed": "Si è registrata da sola, quindi il suo nome è solo ciò che dice di sé.\n",
+    "answerAt": "Riceve la risposta a: {host}\n",
+    "loopback": "Riceve la risposta sul computer da cui è stata collegata ({host}).\n",
+    "read": "\nPuò leggere le ricette, il quaderno, i materiali, lo scaffale e le impostazioni salvati nell’account. Non può modificare nulla.\n\n",
+    "write": "\nPuò leggere le ricette, il quaderno, i materiali, lo scaffale e le impostazioni salvati nell’account, e per {days} giorni può anche modificarli: creare e modificare elementi, e spostarli nel cestino. Ogni modifica conserva una versione dell’elemento com’era, così Lei può annullarla nel sito.\n\n",
+    "closing": "Se l’ha fatto Lei, non c’è altro da fare. Può vedere che cosa fa e revocarla all’indirizzo {page}\n\nAltrimenti, la revochi lì e reimposti subito la password all’indirizzo {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Il Suo account Glazecalc è stato eliminato",
+    "text": "L’account Glazecalc {account} è stato eliminato, con tutto ciò che conteneva: ricette, materiali, cotture, note e impostazioni. L’operazione non può essere annullata.\n\nLe copie nei backup del sito vengono eliminate man mano che i backup scadono, entro {days} giorni.\n\nPuò creare un nuovo account in qualsiasi momento.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "un’app di autenticazione",
+    "passkey": "la passkey «{name}»"
+  },
+  "MFA_ADDED": {
+    "subject": "Un passaggio di accesso è stato aggiunto al Suo account Glazecalc",
+    "text": "All’account Glazecalc {account} è appena stato aggiunto un secondo passaggio per l’accesso: {method}.\n\nSe l’ha fatto Lei, non c’è altro da fare. Conservi i Suoi codici di recupero in un luogo sicuro. Altrimenti, qualcuno potrebbe conoscere la Sua password: la reimposti subito all’indirizzo {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "L’accesso in due passaggi del Suo account Glazecalc verrà disattivato",
+    "text": "Qualcuno ha chiesto di disattivare l’accesso in due passaggi sull’account Glazecalc {account}, perché ogni app di autenticazione, passkey e codice di recupero di quell’account è andato perso.\n\nL’accesso in due passaggi verrà disattivato il {date}, a meno che Lei non scriva a privacy@glazecalcapp.com prima di allora. Dopo, all’account si potrà accedere con la sola password.\n\nSe l’ha chiesto Lei, non c’è altro da fare. Altrimenti, scriva subito a privacy@glazecalcapp.com e reimposti subito la password all’indirizzo {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "L’accesso in due passaggi è stato disattivato sul Suo account Glazecalc",
+    "text": "L’accesso in due passaggi è appena stato disattivato sull’account Glazecalc {account}: ogni app di autenticazione, passkey e codice di recupero è stato rimosso e tutti i dispositivi su cui era stato effettuato l’accesso sono stati disconnessi. Per accedere ora basta la password.\n\nPuò attivare di nuovo l’accesso in due passaggi nella pagina del Suo account. Se non l’ha richiesto Lei, reimposti subito la password all’indirizzo {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "Un passaggio di accesso è stato rimosso dal Suo account Glazecalc",
+    "text": "Dall’account Glazecalc {account} è appena stato rimosso un secondo passaggio per l’accesso: {method}. Se era l’ultimo, per accedere ora basta la password.\n\nSe l’ha fatto Lei, non c’è altro da fare. Altrimenti, reimposti subito la password all’indirizzo {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "Un nuovo modo di accedere è stato aggiunto al Suo account Glazecalc",
+    "text": "Ora può accedere all’account Glazecalc {account} con {provider}.\n\nSe l’ha fatto Lei, non c’è altro da fare. Altrimenti, lo scolleghi nella pagina del Suo account, all’indirizzo {page}, e reimposti subito la password all’indirizzo {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "Un modo di accedere è stato rimosso dal Suo account Glazecalc",
+    "text": "{provider} è stato scollegato dall’account Glazecalc {account} e non può più essere usato per accedervi.\n\nSe l’ha fatto Lei, non c’è altro da fare. Altrimenti, qualcuno potrebbe aver effettuato l’accesso al Suo account: reimposti subito la password all’indirizzo {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Nuovi codici di recupero per il Suo account Glazecalc",
+    "text": "Sono appena stati creati nuovi codici di recupero per l’account Glazecalc {account}. I vecchi codici non funzionano più.\n\nSe li ha creati Lei, conservi i nuovi codici in un luogo sicuro. Altrimenti, reimposti subito la password all’indirizzo {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "Un codice di recupero è stato usato sul Suo account Glazecalc",
+    "text": "Uno dei codici di recupero dell’account Glazecalc {account} è appena stato usato, quindi non funzionerà più. Codici inutilizzati rimasti: {left}. Può creare nuovi codici nella pagina del Suo account: {page}\n\nSe non è stato Lei, qualcuno potrebbe avere la Sua password e i Suoi codici: reimposti subito la password all’indirizzo {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Reimpostazione della password di Glazecalc",
+    "text": "Qualcuno (speriamo Lei) ha chiesto di reimpostare la password dell’account Glazecalc {account}.\n\nPer scegliere una nuova password, apra questo link entro {minutes} minuti:\n\n{link}\n\nIl link funziona una sola volta. Se non ha chiesto Lei la reimpostazione, ignori questa email: la Sua password resta la stessa.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "La Sua password di Glazecalc è stata cambiata",
+    "opening": "La password dell’account Glazecalc {account} è stata appena reimpostata e tutti i dispositivi su cui era stato effettuato l’accesso sono stati disconnessi.\n\n",
+    "stopped": "Nel caso in cui qualcun altro avesse la vecchia password, la reimpostazione ha interrotto anche quanto segue:\n\n",
+    "tokens": "- I token di accesso e le app collegate che potevano accedere al Suo lavoro salvato ({count}). Se ne ha ancora bisogno, crei un nuovo token nella pagina del Suo account, all’indirizzo {page}\n",
+    "providers": "- L’accesso con {providers}, che può collegare di nuovo nella pagina del Suo account, all’indirizzo {page}\n",
+    "shareLinks": "- I link che aveva creato per condividere le ricette. Può crearne di nuovi da ogni ricetta.\n",
+    "closing": "\nSe l’ha fatto Lei, non c’è altro da fare. Altrimenti, reimposti subito la password all’indirizzo {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Qualcuno ha inserito la Sua password di Glazecalc ma non ha completato l’accesso",
+    "text": "Qualcuno ha inserito la password giusta dell’account Glazecalc {account}, ma non ha completato il secondo passaggio dell’accesso. Il Suo secondo passaggio lo ha tenuto fuori.\n\nSe era Lei, non c’è altro da fare. Altrimenti, qualcuno conosce la Sua password: la cambi subito. Può reimpostarla all’indirizzo {forgot}\n\nDopo 10 codici errati di un’app di autenticazione, i codici vengono rifiutati per un’ora; dopo altri 10, per un giorno; e poi, ogni volta, per una settimana. Una passkey o un codice di recupero funziona ancora mentre i codici vengono rifiutati. Reimpostare la password via email mette fine a tutto questo: gli accessi non completati di quella persona terminano, quella persona non ha più la password e i codici tornano a funzionare.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Un token di accesso del Suo account Glazecalc scade a breve",
+    "text": "Il token di accesso chiamato «{name}» dell’account Glazecalc {account} smette di funzionare il {date}.\n\nSe lo usa ancora, crei prima di allora un nuovo token all’indirizzo {page} e lo dia al Suo assistente o al Suo script al posto del vecchio. Se non lo usa più, non c’è nulla da fare.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Un nuovo token di accesso per il Suo account Glazecalc",
+    "text": "È stato appena creato un token di accesso chiamato «{name}» per l’account Glazecalc {account}. Può leggere le ricette, i materiali, le note e i registri di cottura salvati nell’account fino al {date}.\n\nSe l’ha fatto Lei, non c’è altro da fare. Può vedere e revocare i Suoi token all’indirizzo {page}\n\nAltrimenti, lo revochi lì e reimposti subito la password all’indirizzo {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Un nuovo token di accesso che può modificare i Suoi dati Glazecalc",
+    "text": "È stato appena creato un token di accesso chiamato «{name}» per l’account Glazecalc {account}. Può leggere e modificare le ricette, i materiali, le note e i registri di cottura salvati nell’account, e spostarli nel cestino, fino al {date}. Ogni modifica che fa conserva l’elemento com’era, così Lei può annullarla nel sito.\n\nSe l’ha fatto Lei, non c’è altro da fare. Può vedere e revocare i Suoi token all’indirizzo {page}\n\nAltrimenti, lo revochi lì e reimposti subito la password all’indirizzo {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Conferma dell’indirizzo email per Glazecalc",
+    "text": "Qualcuno (speriamo Lei) ha creato un account Glazecalc con l’indirizzo {account}.\n\nPer confermare che questo indirizzo è Suo, apra questo link entro {hours} ore:\n\n{link}\n\nIl link funziona una sola volta. Se non ha creato un account, ignori questa email: non Le verrà inviato altro, a meno che non lo richieda.\n\n-- \nGlazecalc, {app}\n"
+  }
+}
