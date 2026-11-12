@@ -175,6 +175,57 @@ describe('RecipePage layouts', () => {
     expect(document.activeElement?.id).toBe('guided-step-1');
   });
 
+  it('keeps the workbench folds as they were left, and its peek bar goes to the formula', async () => {
+    const { fixture, page, element } = await create();
+    (element.querySelector('#layout-workbench') as HTMLInputElement).click();
+    fill(page);
+    await settle(fixture);
+    for (const id of ['fix-fold', 'details-fold']) {
+      const fold = element.querySelector('#' + id) as HTMLDetailsElement;
+      fold.open = true;
+      fold.dispatchEvent(new Event('toggle'));
+    }
+    await settle(fixture);
+    // Drawn again, by way of another layout, they are still open.
+    (element.querySelector('#layout-standard') as HTMLInputElement).click();
+    await settle(fixture);
+    (element.querySelector('#layout-workbench') as HTMLInputElement).click();
+    await settle(fixture);
+    expect((element.querySelector('#fix-fold') as HTMLDetailsElement).open).toBe(true);
+    expect((element.querySelector('#details-fold') as HTMLDetailsElement).open).toBe(true);
+
+    // jsdom does not scroll: the scroll is recorded instead.
+    const scrolled = vi.fn();
+    const own = Object.getOwnPropertyDescriptor(Element.prototype, 'scrollIntoView');
+    Element.prototype.scrollIntoView = scrolled;
+    try {
+      (element.querySelector('.workbench-peek button') as HTMLButtonElement).click();
+      expect(scrolled).toHaveBeenCalledWith({ block: 'start' });
+      expect(scrolled.mock.contexts[0]).toBe(element.querySelector('#unity-heading'));
+      expect(document.activeElement?.id).toBe('unity-heading');
+    } finally {
+      if (own) Object.defineProperty(Element.prototype, 'scrollIntoView', own);
+      else delete (Element.prototype as { scrollIntoView?: unknown }).scrollIntoView;
+    }
+  });
+
+  it('goes to a guided step by its tab, and a step back by Back', async () => {
+    const { fixture, page, element } = await create();
+    (element.querySelector('#layout-guided') as HTMLInputElement).click();
+    fill(page);
+    await settle(fixture);
+    const panes = [...element.querySelectorAll('.guided-pane')] as HTMLElement[];
+    (element.querySelector('#guided-tab-2') as HTMLButtonElement).click();
+    await settle(fixture);
+    expect(panes.map((pane) => pane.hidden)).toEqual([true, true, false, true]);
+    expect(element.querySelector('#guided-tab-2')?.getAttribute('aria-current')).toBe('step');
+    expect(document.activeElement?.id).toBe('guided-step-2');
+    (element.querySelector('#guided-back') as HTMLButtonElement).click();
+    await settle(fixture);
+    expect(panes.map((pane) => pane.hidden)).toEqual([true, false, true, true]);
+    expect(document.activeElement?.id).toBe('guided-step-1');
+  });
+
   it('shows the step a field is in when the focus is sent there, as a missing title on Save', async () => {
     const { fixture, page, element } = await create();
     page['chooseLayout']('guided');
