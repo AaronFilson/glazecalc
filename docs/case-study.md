@@ -158,6 +158,7 @@ below had not passed and I had not approved.
 | Deploys                          | SSH and restart       | approved click, keyless, rolls back on a failed check         |
 | Security headers                 | not measured          | Mozilla HTTP Observatory A+ (120)                             |
 | Monthly cost                     | $15-17                | about $13                                                     |
+| Load, on a container its size    | not measured          | about 250 requests a second; 95th percentile 270 ms           |
 | Lighthouse (desktop)             | not measured          | performance 99; accessibility, best practices, SEO 100        |
 
 ## What I would do next

@@ -46,7 +46,8 @@ For anyone reading the code; the [highlights](#highlights) below give the detail
 - **AI assistants:** an MCP server in the official MCP Registry, with its own OAuth authorization server: apps reach
   a person's records only with their consent, and, if the person chooses, an app's changes wait for their approval.
 - **Reach on a small budget:** 57 languages, right to left (RTL) included; about 11,500 public pages prerendered (SSG)
-  and hydrated; offline once visited (PWA); one $13-a-month Graviton instance, with automatic rollback.
+  and hydrated; offline once visited (PWA); one $13-a-month Graviton instance, with automatic rollback. A load test
+  on a container that size serves about 250 requests a second, with a 95th percentile of 270 ms.
 - **How it is built:** with Claude Code as a directed coding agent. Decisions are written down first, in
   [decision records](docs/adr/README.md); every change goes through the checks above; production deploys wait for
   approval. The [case study](docs/case-study.md) tells how the 2017 app was revived, how the agent was directed,
@@ -86,7 +87,9 @@ The details, with the decisions behind them:
   [Mozilla's HTTP Observatory](https://developer.mozilla.org/en-US/observatory/analyze?host=glazecalcapp.com),
   structured JSON logs, nightly backups to S3,
   snapshots and CloudWatch alarms ([ADR 1](docs/adr/0001-one-ec2-instance.md),
-  [ADR 3](docs/adr/0003-nginx-and-lets-encrypt.md)).
+  [ADR 3](docs/adr/0003-nginx-and-lets-encrypt.md)). A [load test](.github/workflows/load.yml) on a container held to the
+  instance's size (2 vCPUs, 1 GB, arm64) served 50 visitors at once at about 250 requests a second, with a median of
+  215 ms, a 95th percentile of 270 ms and no failures (12 November 2026).
 - **Careful accounts:** bcrypt; HS256 JWTs with a version, so changing the password signs out
   every device, kept in an httpOnly, SameSite=Strict cookie with a cross-site request check (CSRF protection);
   hashed single-use reset links sent through Amazon SES with DKIM, SPF and DMARC;
