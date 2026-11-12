@@ -84,6 +84,17 @@ describe('client routes', function () {
     expect(policy).to.include("manifest-src 'self'");
   });
 
+  it('turns off the browser features no page uses, on every reply, the API included', async () => {
+    for (const address of ['/recipe', '/api/health']) {
+      const policy = String((await site().get(address)).headers['permissions-policy']);
+      for (const feature of ['camera', 'microphone', 'geolocation', 'payment', 'usb']) {
+        expect(policy, address).to.include(`${feature}=()`);
+      }
+      // Passkeys, the clipboard and sharing, which the app uses, keep their default (this site only).
+      expect(policy, address).not.to.match(/publickey-credentials|clipboard|web-share/);
+    }
+  });
+
   // Needs a build with the service worker (scripts/service-worker.mjs).
   describe('the service worker', function () {
     before(function () {

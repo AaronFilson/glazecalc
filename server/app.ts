@@ -77,8 +77,24 @@ export const contentSecurityPolicy = (nonce?: string): string =>
     "form-action 'self'",
     "frame-ancestors 'none'"
   ].join('; ');
+// Powerful browser features no page here uses, turned off for every page and anything it frames, so a
+// script that got in could not reach the camera, the microphone or the like. Passkeys, the clipboard and
+// sharing, which the app does use, keep their default: this site only. Only names Chrome knows, as an
+// unknown one is a console error on every page.
+export const PERMISSIONS_POLICY = [
+  'camera=()',
+  'microphone=()',
+  'geolocation=()',
+  'payment=()',
+  'usb=()',
+  'serial=()',
+  'hid=()',
+  'midi=()',
+  'display-capture=()'
+].join(', ');
 app.use((req, res, next) => {
   res.set('Content-Security-Policy', contentSecurityPolicy());
+  res.set('Permissions-Policy', PERMISSIONS_POLICY);
   next();
 });
 // X-Robots-Tag on every response of a copy that is not to be indexed (NOINDEX).

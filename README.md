@@ -13,6 +13,8 @@ Aaron Filson, in 57 languages, and usable from AI assistants through its MCP ser
 [![Coverage](https://img.shields.io/badge/coverage-98%25%20server%20%C2%B7%2091%25%20client-2ea44f)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
 [![Lighthouse](https://img.shields.io/badge/Lighthouse-99%20%C2%B7%20100%20%C2%B7%20100%20%C2%B7%20100-f44b21)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
 [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-com.glazecalcapp%2Fglazecalc-5b5bd6)](https://registry.modelcontextprotocol.io/v0/servers?search=com.glazecalcapp/glazecalc)
+[![Mozilla HTTP Observatory: A+](https://img.shields.io/badge/HTTP%20Observatory-A%2B-2ea44f)](https://developer.mozilla.org/en-US/observatory/analyze?host=glazecalcapp.com)
+[![Live checks](https://github.com/AaronFilson/glazecalc/actions/workflows/live-checks.yml/badge.svg)](https://github.com/AaronFilson/glazecalc/actions/workflows/live-checks.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 ![Angular 22](https://img.shields.io/badge/Angular-22-c3002f.svg)
 ![Node.js 24](https://img.shields.io/badge/Node.js-24-417e38.svg)
@@ -39,7 +41,8 @@ For anyone reading the code; the [highlights](#highlights) below give the detail
   accessibility, best practices and SEO 100. CI checks these numbers too.
 - **Security:** sign-in with OAuth 2.0 and OpenID Connect (Google, GitHub, Microsoft) or a password; MFA with WebAuthn
   passkeys, TOTP and recovery codes; JWTs in httpOnly cookies with CSRF protection; a layered content security
-  policy; keyless CI/CD with no stored AWS keys.
+  policy and a Permissions-Policy, graded A+ by Mozilla's HTTP Observatory; keyless CI/CD with no stored AWS keys,
+  and images published with an SBOM and signed SLSA build provenance.
 - **AI assistants:** an MCP server in the official MCP Registry, with its own OAuth authorization server: apps reach
   a person's records only with their consent, and, if the person chooses, an app's changes wait for their approval.
 - **Reach on a small budget:** 57 languages, right to left (RTL) included; about 11,500 public pages prerendered (SSG)
@@ -69,12 +72,18 @@ The details, with the decisions behind them:
 - **Keyless CI/CD with approval:** GitHub Actions gets short-lived AWS credentials through
   OIDC, for a role that can only run one SSM command document on this app's instance. There is
   no SSH, there are no stored AWS keys, and a failed health check means an automatic rollback
-  ([ADR 2](docs/adr/0002-keyless-deploys.md)). After every deploy, [live checks](.github/workflows/live-checks.yml)
-  test the site from outside (post-deploy synthetic monitoring): its health and security headers, each language's
-  home page, the pages in a browser with no CSP violation or script error, and the MCP endpoint against the protocol.
+  ([ADR 2](docs/adr/0002-keyless-deploys.md)). After every deploy, and daily, [live checks](.github/workflows/live-checks.yml)
+  test the site from outside (synthetic monitoring): its health and security headers, each language's home page, the
+  pages in a browser with no CSP violation or script error, and the MCP endpoint against the protocol.
+- **A supply chain you can check:** every action pinned to a commit, Dependabot, CodeQL, and the production image
+  published with an SBOM and SLSA build provenance, signed through GitHub
+  (`gh attestation verify oci://ghcr.io/aaronfilson/glazecalc:latest --owner AaronFilson`). OpenSSF Scorecard
+  rates the repository weekly ([.github/workflows/scorecard.yml](.github/workflows/scorecard.yml)).
 - **Production for about $13 a month:** one Graviton EC2 instance with Docker Compose, nginx and
   Let's Encrypt, a layered content security policy (nginx's, a nonce per reply, and script hashes with
-  'strict-dynamic') with subresource integrity, structured JSON logs, nightly backups to S3,
+  'strict-dynamic') with subresource integrity and a Permissions-Policy, graded A+ (120) by
+  [Mozilla's HTTP Observatory](https://developer.mozilla.org/en-US/observatory/analyze?host=glazecalcapp.com),
+  structured JSON logs, nightly backups to S3,
   snapshots and CloudWatch alarms ([ADR 1](docs/adr/0001-one-ec2-instance.md),
   [ADR 3](docs/adr/0003-nginx-and-lets-encrypt.md)).
 - **Careful accounts:** bcrypt; HS256 JWTs with a version, so changing the password signs out
