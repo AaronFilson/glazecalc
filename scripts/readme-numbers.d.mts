@@ -1,7 +1,7 @@
 /** What one CI run measured, by part, as the numbers/<part>.json files hold it. */
 export interface Numbers {
-  server: { tests: number; statements: number };
-  client: { tests: number; statements: number };
+  server: { tests: number; statements: number; branches: number };
+  client: { tests: number; statements: number; branches: number };
   e2e: { tests: number };
   lighthouse: { pages: number; performance: number; accessibility: number; bestPractices: number; seo: number };
 }
@@ -20,16 +20,14 @@ export interface Finding {
 }
 /** The largest multiple of 50 below a count: what "over N" may say of it. */
 export function roundCount(count: number): number;
-/** The server tests that passed, from Mocha's summary, and the statements c8 saw run. */
-export function measureServer(
-  mochaOutput: string,
-  coverageSummary: { total: { statements: { pct: number } } }
-): Numbers['server'];
-/** The Angular unit tests that passed, from Vitest's JSON report, and the statements they ran. */
-export function measureClient(
-  report: { numPassedTests?: number },
-  coverageSummary: { total: { statements: { pct: number } } }
-): Numbers['client'];
+/** A coverage summary's totals, as c8 and Vitest write coverage-summary.json: the parts read here. */
+export interface CoverageSummary {
+  total: { statements: { pct: number }; branches: { pct: number } };
+}
+/** The server tests that passed, from Mocha's summary, and the statements and branches c8 saw run. */
+export function measureServer(mochaOutput: string, coverageSummary: CoverageSummary): Numbers['server'];
+/** The Angular unit tests that passed, from Vitest's JSON report, and the statements and branches they ran. */
+export function measureClient(report: { numPassedTests?: number }, coverageSummary: CoverageSummary): Numbers['client'];
 /** The browser tests that passed, from Playwright's JSON report. */
 export function measureE2e(report: { stats?: { expected?: number; flaky?: number } }): Numbers['e2e'];
 /** Each Lighthouse category's score out of 100: the lowest over the pages, of each page's median run. */

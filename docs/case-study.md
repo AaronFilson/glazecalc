@@ -120,10 +120,11 @@ name it as co-author. I used it the way I would lead a fast, capable engineer. I
 build and how it should behave, it wrote the code, and nothing reached production that the checks
 below had not passed and I had not approved.
 
-- **Decisions first, in writing.** A plan or a decision record came before the code for anything
-  that shaped the app, each saying what was decided, why, and what it costs
-  ([docs/adr](adr/README.md)). Where a choice was mine, the record says so in my words, as ADR 25
-  does: "The reason for a confirm is to keep bad AI from going wild."
+- **Plans first, in writing.** Most larger features were planned before the code, among them the
+  deploy, sign-in and AI access, search and two-step sign-in (`docs/*-plan.md`). A decision record
+  keeps each decision that shaped the app, written as it landed: what was decided, why, and what it
+  costs ([docs/adr](adr/README.md)). Where a choice was mine, the record says so in my words, as
+  ADR 25 does: "The reason for a confirm is to keep bad AI from going wild."
 - **Checks that do not trust the author.** Every change runs the same gates whoever wrote it: the
   server, Angular and browser suites with their accessibility checks (the README gives their size
   and coverage, and CI checks those numbers), the MCP conformance suite, CodeQL, Lighthouse and the
@@ -137,7 +138,10 @@ below had not passed and I had not approved.
     ones Prettier had wrapped went unchecked. The check's own table in CI showed it, and a test now
     fails on any number the check cannot read.
   - On its first run that check found the README claiming 92% Angular coverage where CI measured
-    91.41%: the number had been true once and nobody had looked since.
+    91.41%: the number had been true once and nobody had looked since. Since then the Angular figure
+    counts the app's own code, each component, service and template the tests load, and no longer
+    the shared library in `lib/` (whose tests and coverage are the server's), the tests' helpers,
+    the JSON messages or the data; the entry points are left to the browser tests and the prerender.
   - Turning coverage on in CI made the solver's tests slow enough to fail at random; CI's second
     run showed it before anyone relied on the numbers.
   - The Lighthouse tool it chose arrived with nine high-severity advisories in its dependencies.
@@ -161,6 +165,34 @@ below had not passed and I had not approved.
 | Monthly cost                     | $15-17                | about $13                                                                                  |
 | Load, on a container its size    | not measured          | about 250 requests a second at full CPU (a burst on the t4g.micro); 95th percentile 270 ms |
 | Lighthouse (desktop)             | not measured          | performance 99; accessibility, best practices, SEO 100                                     |
+
+## Limits, and what growing past them would take
+
+Production had to be cheap ([ADR 1](adr/0001-one-ec2-instance.md)), and that sets its limits:
+
+- **One `t4g.micro`, about $13 a month:** 2 vCPUs and 1 GB for the app, MongoDB, nginx and, at
+  times, the staging copy. The CPU runs at full speed only while its credits last, then at 10% of
+  each vCPU; with `standard` credits a busy spell slows it down instead of adding to the bill.
+- **MongoDB on the same instance, standalone:** no replica set, so no failover and no
+  transactions. A failure or a reboot of the instance is downtime.
+- **Backups, but no timed restore:** a `mongodump` to S3 each night at 10:30 UTC and before each
+  deploy, and an EBS snapshot each day, so up to about a day of changes could be lost. A restore
+  (`deploy/restore.sh`) has not been timed, so there is no measured recovery time.
+- **Limits in one process:** the rate limits, the MCP tools' and the authorization server's counts,
+  and the rule of one import at a time per account live in the app's memory
+  (`server/lib/rate_limit.ts`). A second instance would count apart, so each limit would allow its
+  number on each. The authorization server's grants, tokens and consent steps are in MongoDB, with
+  cookies signed by a key made from `APP_SECRET`, so those would carry over.
+
+Growing past these limits would take:
+
+- a larger instance: ADR 1 names `t4g.small` (2 GB) as the step up;
+- for a second instance, a load balancer, which alone costs more than this whole setup (ADR 1;
+  about $16-22 a month by [ADR 3](adr/0003-nginx-and-lets-encrypt.md)), and a store the instances
+  share for what is now kept in memory;
+- for failover, a MongoDB replica set on more than one machine;
+- a CDN for the prerendered pages, which today get a fresh nonce from the server in each reply
+  ([ADR 16](adr/0016-prerendered-public-pages.md)).
 
 ## What I would do next
 

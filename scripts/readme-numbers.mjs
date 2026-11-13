@@ -38,17 +38,23 @@ const parseCount = (text) => Number(text.replace(/,/g, ''));
 // eslint-disable-next-line no-control-regex
 const stripColors = (text) => text.replace(/\u001b\[[0-9;]*m/g, '');
 
-/** The server tests that passed, from Mocha's summary ("1669 passing"), and the statements c8 saw run. */
+/** The percent of statements and of branches a coverage summary says the tests ran. */
+const coverageOf = (coverageSummary) => ({
+  statements: coverageSummary.total.statements.pct,
+  branches: coverageSummary.total.branches.pct
+});
+
+/** The server tests that passed, from Mocha's summary ("1669 passing"), and the statements and branches c8 saw run. */
 export function measureServer(mochaOutput, coverageSummary) {
   const passing = [...stripColors(mochaOutput).matchAll(/^\s*(\d+) passing\b/gm)].at(-1);
   if (!passing) throw new Error('Mocha\'s output has no "N passing" line');
-  return { tests: Number(passing[1]), statements: coverageSummary.total.statements.pct };
+  return { tests: Number(passing[1]), ...coverageOf(coverageSummary) };
 }
 
-/** The Angular unit tests that passed, from Vitest's JSON report, and the statements they ran. */
+/** The Angular unit tests that passed, from Vitest's JSON report, and the statements and branches they ran. */
 export function measureClient(report, coverageSummary) {
   if (!Number.isInteger(report.numPassedTests)) throw new Error("Vitest's report has no numPassedTests");
-  return { tests: report.numPassedTests, statements: coverageSummary.total.statements.pct };
+  return { tests: report.numPassedTests, ...coverageOf(coverageSummary) };
 }
 
 /** The browser tests that passed, from Playwright's JSON report (a flaky one passed on a retry). */
@@ -93,30 +99,54 @@ const badgeParts = (label, encoded, pattern) => {
 /**
  * Each place the README gives numbers. pattern finds them, and every match is checked; its words may be
  * split across lines, as Prettier leaves them. mention finds the same number however it is worded, so
- * that one the pattern cannot read is an error, never a number nobody checks. numbers says what each
+ * that one the pattern cannot read is an error, never a number nobody checks. A suite's statement and
+ * branch coverage are read in one match with its count, so the count's mention also finds a line that
+ * words either of them differently or leaves one out. numbers says what each
  * number in a match is and what measures it (judged by its kind, below), and values gives each one's
  * text from what was measured, rounded down, for write.
  */
 export const CLAIMS = [
   {
     what: 'server tests',
-    pattern: /over\s+([\d,]+)\s+server\s+tests\s+\((\d+)%\s+of\s+statements\)/g,
+    pattern: /over\s+([\d,]+)\s+server\s+tests\s+\((\d+)%\s+of\s+statements,\s+(\d+)%\s+of\s+branches\)/g,
     mention: /[\d,]+\+?\s+server\s+tests/g,
     numbers: (match) => [
       { what: 'server tests', kind: 'count', stated: parseCount(match[1]), measured: (n) => n.server.tests },
-      { what: 'server coverage', kind: 'percent', stated: Number(match[2]), measured: (n) => n.server.statements }
+      {
+        what: 'server statement coverage',
+        kind: 'percent',
+        stated: Number(match[2]),
+        measured: (n) => n.server.statements
+      },
+      {
+        what: 'server branch coverage',
+        kind: 'percent',
+        stated: Number(match[3]),
+        measured: (n) => n.server.branches
+      }
     ],
-    values: (n) => [countText(n.server.tests), percentText(n.server.statements)]
+    values: (n) => [countText(n.server.tests), percentText(n.server.statements), percentText(n.server.branches)]
   },
   {
     what: 'Angular unit tests',
-    pattern: /over\s+([\d,]+)\s+Angular\s+unit\s+tests\s+\((\d+)%\s+of\s+statements\)/g,
+    pattern: /over\s+([\d,]+)\s+Angular\s+unit\s+tests\s+\((\d+)%\s+of\s+statements,\s+(\d+)%\s+of\s+branches\)/g,
     mention: /[\d,]+\+?\s+Angular\s+unit\s+tests/g,
     numbers: (match) => [
       { what: 'Angular unit tests', kind: 'count', stated: parseCount(match[1]), measured: (n) => n.client.tests },
-      { what: 'Angular coverage', kind: 'percent', stated: Number(match[2]), measured: (n) => n.client.statements }
+      {
+        what: 'Angular statement coverage',
+        kind: 'percent',
+        stated: Number(match[2]),
+        measured: (n) => n.client.statements
+      },
+      {
+        what: 'Angular branch coverage',
+        kind: 'percent',
+        stated: Number(match[3]),
+        measured: (n) => n.client.branches
+      }
     ],
-    values: (n) => [countText(n.client.tests), percentText(n.client.statements)]
+    values: (n) => [countText(n.client.tests), percentText(n.client.statements), percentText(n.client.branches)]
   },
   {
     what: 'browser tests',

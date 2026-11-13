@@ -35,10 +35,10 @@ For anyone reading the code; the [highlights](#highlights) below give the detail
 
 - **Stack:** Angular 22 (standalone components, signals, zoneless), TypeScript on Node 24 with Express 5 and
   Mongoose 9, MongoDB 9, Docker, and AWS (EC2, SSM, SES, S3, CloudWatch).
-- **Tested in CI on every pull request:** over 1,800 server tests (98% of statements), over 1,550 Angular unit tests
-  (99% of statements) and over 450 Playwright browser tests, with axe checks against WCAG 2.2 AA. Also the official
-  MCP conformance suite, CodeQL on the code and the workflows, and Lighthouse on desktop: performance 99;
-  accessibility, best practices and SEO 100. CI checks these numbers too.
+- **Tested in CI on every pull request:** over 1,800 server tests (98% of statements, 88% of branches), over 1,550
+  Angular unit tests (99% of statements, 91% of branches) and over 450 Playwright browser tests, with axe checks
+  against WCAG 2.2 AA. Also the official MCP conformance suite, CodeQL on the code and the workflows, and Lighthouse
+  on desktop: performance 99; accessibility, best practices and SEO 100. CI checks these numbers too.
 - **Security:** sign-in with OAuth 2.0 and OpenID Connect (Google, GitHub, Microsoft) or a password; MFA with WebAuthn
   passkeys, TOTP and recovery codes; JWTs in httpOnly cookies with CSRF protection; a layered content security
   policy and a Permissions-Policy, graded A+ by Mozilla's HTTP Observatory; keyless CI/CD with no stored AWS keys,
@@ -49,10 +49,11 @@ For anyone reading the code; the [highlights](#highlights) below give the detail
   and hydrated; offline once visited (PWA); one $13-a-month Graviton instance, with automatic rollback. A load test
   on a container that size, at full CPU, serves about 250 requests a second, with a 95th percentile of 270 ms; the
   instance runs at full CPU only while its CPU credits last.
-- **How it is built:** with Claude Code as a directed coding agent. Decisions are written down first, in
-  [decision records](docs/adr/README.md); every change goes through the checks above; production deploys wait for
-  approval. The [case study](docs/case-study.md) tells how the 2017 app was revived, how the agent was directed,
-  and what the checks caught.
+- **How it is built:** with Claude Code as a directed coding agent; commits made with it carry a
+  `Co-Authored-By: Claude` trailer. Most larger features were planned in writing first (`docs/*-plan.md`), and a
+  [decision record](docs/adr/README.md) keeps each decision that shaped the app, written as it landed; every change
+  goes through the checks above; production deploys wait for approval. The [case study](docs/case-study.md) tells
+  how the 2017 app was revived, how the agent was directed, and what the checks caught.
 
 ## Highlights
 
@@ -64,12 +65,12 @@ The details, with the decisions behind them:
   and put back online. The
   [case study](docs/case-study.md) tells how.
 - **Tested at three levels, in CI on every pull request and push to master:** over 1,800 server tests (98% of
-  statements) run against the app in-process; over 1,550 Angular unit tests (99% of statements); over 450 Playwright
-  browser tests, including [axe](https://github.com/dequelabs/axe-core) accessibility checks against WCAG 2.2 AA of
-  every page in light and dark mode, every page in a pseudo-locale to find text not marked for translation, and
-  every page in each language at a phone's width. CodeQL scans the code and the workflows
-  ([its settings](.github/codeql/codeql-config.yml)), and CI checks the numbers in this README against each run
-  ([scripts/readme-numbers.mjs](scripts/readme-numbers.mjs)).
+  statements, 88% of branches) run against the app in-process; over 1,550 Angular unit tests (99% of statements,
+  91% of branches); over 450 Playwright browser tests, including [axe](https://github.com/dequelabs/axe-core)
+  accessibility checks against WCAG 2.2 AA of every page in light and dark mode, every page in a pseudo-locale to
+  find text not marked for translation, and every page in each language at a phone's width. CodeQL scans the code
+  and the workflows ([its settings](.github/codeql/codeql-config.yml)), and CI checks the numbers in this README
+  against each run ([scripts/readme-numbers.mjs](scripts/readme-numbers.mjs)).
 - **One glaze chemistry library** for the browser and the tests, checked against values worked
   out by hand ([ADR 4](docs/adr/0004-shared-chemistry.md)). It is plain JavaScript with hand-written
   declarations for the app and the server, and CI type-checks the JavaScript against them
@@ -109,10 +110,13 @@ The details, with the decisions behind them:
 - **Privacy, written down:** the records GDPR and the UK GDPR ask of a small service, kept with the code: a
   [record of processing](docs/processing-record.md) (Article 30), a [breach plan](docs/breach-plan.md) (Articles 33
   and 34), and how [data-protection requests](docs/data-requests.md) are answered (Articles 12 to 22).
-- **AI assistants as first-class clients:** a stateless MCP endpoint sharing the app's recipe tools
+- **AI assistants as first-class clients:** a stateless MCP endpoint that serves the protocol's 2026-07-28 revision
+  (and the 2025 ones to older clients) and shares the app's recipe tools
   ([ADR 17](docs/adr/0017-mcp-server.md), [ADR 19](docs/adr/0019-shared-recipe-tools.md)), listed in the
   [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=com.glazecalcapp/glazecalc) and checked
-  in CI against the official conformance suite; Glazecalc's own OAuth authorization server
+  in CI against the official conformance suite; Glazecalc's own OAuth authorization server, built on the OpenID
+  Certified [oidc-provider](https://github.com/panva/node-oidc-provider) library rather than by hand, since PKCE,
+  refresh token rotation and resource indicators are each easy to get subtly wrong
   ([ADR 24](docs/adr/0024-authorization-server.md)); and changes from an app that wait for the person's yes, when
   they choose ([ADR 25](docs/adr/0025-confirm-before-changes.md)).
 - **A translation pipeline (i18n) for 57 languages, right to left (RTL) included:** Transloco with ICU messages and the language in the URL
