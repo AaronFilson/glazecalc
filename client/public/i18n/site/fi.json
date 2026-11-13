@@ -54,7 +54,7 @@
     "builtHeading": "Miten se on rakennettu",
     "built": "Glazecalc sai alkunsa vuonna 2017, ja se rakennettiin uudelleen vuonna 2026. Se on yksi pieni verkkosovellus, ja sen <source>lähdekoodi on GitHubissa</source> MIT-lisenssillä.",
     "stackBrowser": "Selaimessa Angular 22 (standalone-komponentit ja signaalit), ja lasitekemia on pienessä jaetussa kirjastossa.",
-    "stackServer": "TypeScript-rajapinta, joka toimii Node.js 24:llä ja Express 5:llä, tietokantana MongoDB 9, ja sen tarkistaa yli 350 automaattista testiä.",
+    "stackServer": "TypeScript-rajapinta, joka toimii Node.js 24:llä ja Express 5:llä, tietokantana MongoDB 9, ja sen tarkistaa yli 1 800 automaattista testiä.",
     "stackHosting": "Toimii Dockerissa Amazon Web Services -palvelussa nginxin takana, ja HTTPS-varmenne tulee Let's Encrypt -palvelusta.",
     "stackDeploy": "Julkaistaan GitHub Actionsilla: konttikuvat rakennetaan ja testataan jokaisen muutoksen yhteydessä, ja julkaisut kirjautuvat AWS:ään ilman tallennettuja avaimia.",
     "creditsHeading": "Kiitokset",

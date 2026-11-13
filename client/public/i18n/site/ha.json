@@ -54,7 +54,7 @@
     "builtHeading": "Yadda aka gina shi",
     "built": "An fara Glazecalc a 2017 kuma an sake gina shi a 2026. Ƙaramar manhajar yanar gizo ce guda ɗaya, kuma <source>lambar tushensa tana kan GitHub</source> ƙarƙashin MIT License.",
     "stackBrowser": "Angular 22 a cikin burauza (standalone components da signals), tare da sinadaran glaze a cikin ƙaramin ɗakin karatu da ake rabawa.",
-    "stackServer": "API na TypeScript a kan Node.js 24 da Express 5, tare da MongoDB 9, wanda gwaje-gwaje na atomatik fiye da 350 ke dubawa.",
+    "stackServer": "API na TypeScript a kan Node.js 24 da Express 5, tare da MongoDB 9, wanda gwaje-gwaje na atomatik fiye da 1,800 ke dubawa.",
     "stackHosting": "Yana gudana a Docker a kan Amazon Web Services, bayan nginx tare da HTTPS daga Let's Encrypt.",
     "stackDeploy": "GitHub Actions ne ke tura shi: ana gina hotuna kuma a gwada su a kowane canji, kuma turawa tana shiga AWS ba tare da ajiyayyun maɓallai ba.",
     "creditsHeading": "Godiya",

@@ -54,7 +54,7 @@
     "builtHeading": "Otu e si wuo ya",
     "built": "Glazecalc malitere na 2017, e wughachiri ya na 2026. Ọ bụ otu obere ngwa weebụ, <source>koodu isi mmalite ya dị na GitHub</source> n'okpuru MIT License.",
     "stackBrowser": "Angular 22 na brawza (standalone components na signals), ya na kemistri glaze n'otu obere ọbá koodu a na-ekerịta.",
-    "stackServer": "API TypeScript na Node.js 24 na Express 5, ya na MongoDB 9, nke ihe karịrị nnwale akpaaka 350 na-enyocha.",
+    "stackServer": "API TypeScript na Node.js 24 na Express 5, ya na MongoDB 9, nke ihe karịrị nnwale akpaaka 1,800 na-enyocha.",
     "stackHosting": "Ọ na-arụ na Docker na Amazon Web Services, n'azụ nginx ya na HTTPS site na Let's Encrypt.",
     "stackDeploy": "GitHub Actions na-ebunye ya: a na-ewu ma nwalee images na mgbanwe ọ bụla, mbunye na-abanye na AWS n'enweghị igodo e chekwara.",
     "creditsHeading": "Ekele",

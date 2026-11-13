@@ -54,7 +54,7 @@
     "builtHeading": "Ako je vytvorený",
     "built": "Glazecalc vznikol v roku 2017 a v roku 2026 bol nanovo prerobený. Je to jedna malá webová aplikácia a jej <source>zdrojový kód je na GitHube</source> pod licenciou MIT.",
     "stackBrowser": "Angular 22 v prehliadači (standalone komponenty a signály), s chémiou glazúr v malej zdieľanej knižnici.",
-    "stackServer": "API v jazyku TypeScript na Node.js 24 a Express 5 s databázou MongoDB 9, overené viac ako 350 automatizovanými testami.",
+    "stackServer": "API v jazyku TypeScript na Node.js 24 a Express 5 s databázou MongoDB 9, overené viac ako 1 800 automatizovanými testami.",
     "stackHosting": "Beží v Dockeri na Amazon Web Services, za serverom nginx s HTTPS od Let's Encrypt.",
     "stackDeploy": "Nasadzuje ho GitHub Actions: pri každej zmene sa zostavia a otestujú obrazy a nasadenie sa prihlasuje do AWS bez uložených kľúčov.",
     "creditsHeading": "Poďakovanie",

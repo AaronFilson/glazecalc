@@ -54,7 +54,7 @@
     "builtHeading": "Kif inbena",
     "built": "Glazecalc beda fl-2017 u reġa’ nbena fl-2026. Huwa applikazzjoni web żgħira waħda, u <source>il-kodiċi sors tiegħu jinsab fuq GitHub</source> taħt il-Liċenzja MIT.",
     "stackBrowser": "Angular 22 fil-brawżer (komponenti standalone u signals), bil-kimika tal-glejż f’librerija żgħira komuni.",
-    "stackServer": "API f’TypeScript fuq Node.js 24 u Express 5, b’MongoDB 9, ivverifikat b’aktar minn 350 test awtomatiku.",
+    "stackServer": "API f’TypeScript fuq Node.js 24 u Express 5, b’MongoDB 9, ivverifikat b’aktar minn 1,800 test awtomatiku.",
     "stackHosting": "Jaħdem f’Docker fuq Amazon Web Services, wara nginx b’HTTPS minn Let's Encrypt.",
     "stackDeploy": "Jiġi implimentat minn GitHub Actions: l-images jinbnew u jiġu ttestjati ma’ kull bidla, u l-implimentazzjonijiet jidħlu f’AWS mingħajr ċwievet maħżuna.",
     "creditsHeading": "Krediti",

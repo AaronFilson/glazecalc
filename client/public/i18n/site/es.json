@@ -54,7 +54,7 @@
     "builtHeading": "Cómo está hecho",
     "built": "Glazecalc nació en 2017 y se rehízo en 2026. Es una pequeña aplicación web, y su <source>código fuente está en GitHub</source> con licencia MIT.",
     "stackBrowser": "Angular 22 en el navegador (componentes standalone y signals), con la química de esmaltes en una pequeña biblioteca compartida.",
-    "stackServer": "Una API en TypeScript sobre Node.js 24 y Express 5, con MongoDB 9, comprobada por más de 350 pruebas automáticas.",
+    "stackServer": "Una API en TypeScript sobre Node.js 24 y Express 5, con MongoDB 9, comprobada por más de 1800 pruebas automáticas.",
     "stackHosting": "Funciona en Docker en Amazon Web Services, detrás de nginx, con HTTPS de Let’s Encrypt.",
     "stackDeploy": "Se despliega con GitHub Actions: las imágenes se crean y se prueban con cada cambio, y los despliegues inician sesión en AWS sin claves guardadas.",
     "creditsHeading": "Créditos",

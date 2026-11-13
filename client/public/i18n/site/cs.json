@@ -54,7 +54,7 @@
     "builtHeading": "Jak je aplikace postavená",
     "built": "Aplikace Glazecalc vznikla v roce 2017 a v roce 2026 byla postavena znovu. Je to jedna malá webová aplikace a její <source>zdrojový kód je na webu GitHub</source> pod licencí MIT.",
     "stackBrowser": "Angular 22 v prohlížeči (standalone komponenty a signály), chemie glazur v malé sdílené knihovně.",
-    "stackServer": "API v jazyce TypeScript na Node.js 24 a Express 5 s databází MongoDB 9, ověřované více než 350 automatickými testy.",
+    "stackServer": "API v jazyce TypeScript na Node.js 24 a Express 5 s databází MongoDB 9, ověřované více než 1 800 automatickými testy.",
     "stackHosting": "Běží v kontejnerech Docker na Amazon Web Services, za serverem nginx s HTTPS od Let's Encrypt.",
     "stackDeploy": "Nasazování přes GitHub Actions: obrazy se při každé změně sestaví a otestují a nasazení se k AWS přihlašuje bez uložených klíčů.",
     "creditsHeading": "Poděkování",

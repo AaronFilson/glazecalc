@@ -54,7 +54,7 @@
     "builtHeading": "ఇది ఎలా తయారైంది",
     "built": "Glazecalc 2017లో మొదలై 2026లో తిరిగి నిర్మించబడింది. ఇది ఒక చిన్న వెబ్ అప్లికేషన్, దాని <source>సోర్స్ కోడ్ GitHubలో ఉంది</source>, MIT License కింద.",
     "stackBrowser": "బ్రౌజరులో Angular 22 (స్టాండలోన్ కాంపోనెంట్లు, సిగ్నల్స్), గ్లేజ్ రసాయన శాస్త్రం ఒక చిన్న షేర్డ్ లైబ్రరీలో.",
-    "stackServer": "Node.js 24, Express 5పై ఒక TypeScript API, MongoDB 9తో, 350 కంటే ఎక్కువ ఆటోమేటెడ్ టెస్టులతో తనిఖీ చేయబడింది.",
+    "stackServer": "Node.js 24, Express 5పై ఒక TypeScript API, MongoDB 9తో, 1,800 కంటే ఎక్కువ ఆటోమేటెడ్ టెస్టులతో తనిఖీ చేయబడింది.",
     "stackHosting": "Amazon Web Servicesలో Dockerలో నడుస్తుంది, Let's Encrypt నుండి HTTPSతో nginx వెనుక.",
     "stackDeploy": "GitHub Actions ద్వారా డిప్లాయ్ చేయబడుతుంది: ప్రతి మార్పుకు ఇమేజులు తయారై పరీక్షించబడతాయి, డిప్లాయులు నిల్వ చేసిన కీలు లేకుండా AWSలోకి సైన్ ఇన్ అవుతాయి.",
     "creditsHeading": "క్రెడిట్స్",

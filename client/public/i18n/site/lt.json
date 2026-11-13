@@ -54,7 +54,7 @@
     "builtHeading": "Kaip ji sukurta",
     "built": "Programa Glazecalc pradėta kurti 2017 m., o 2026 m. sukurta iš naujo. Tai viena nedidelė žiniatinklio programa, o jos <source>pirminis kodas skelbiamas svetainėje GitHub</source> pagal MIT licenciją.",
     "stackBrowser": "Naršyklėje – Angular 22 (savarankiški komponentai ir signalai), o glazūrų chemija iškelta į nedidelę bendrą biblioteką.",
-    "stackServer": "Serveryje – TypeScript API su Node.js 24, Express 5 ir MongoDB 9; ją tikrina daugiau nei 350 automatinių testų.",
+    "stackServer": "Serveryje – TypeScript API su Node.js 24, Express 5 ir MongoDB 9; ją tikrina daugiau nei 1 800 automatinių testų.",
     "stackHosting": "Veikia Docker aplinkoje platformoje Amazon Web Services, už serverio nginx, su Let's Encrypt suteiktu HTTPS sertifikatu.",
     "stackDeploy": "Diegiama per GitHub Actions: po kiekvieno pakeitimo atvaizdai sukuriami ir išbandomi, o diegiant prie AWS prisijungiama be saugomų raktų.",
     "creditsHeading": "Padėkos",

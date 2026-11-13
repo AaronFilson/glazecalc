@@ -54,7 +54,7 @@
     "builtHeading": "Sida loo dhisay",
     "built": "Glazecalc wuxuu bilaabmay 2017 waxaana dib loo dhisay 2026. Waa hal app internet oo yar, <source>koodhkiisa ishuna wuxuu ku yaal GitHub</source> iyadoo hoos timaada MIT License.",
     "stackBrowser": "Angular 22 browser-ka (standalone components iyo signals), iyadoo kimistariga glaze-ku ku jiro maktabad yar oo la wadaago.",
-    "stackServer": "API TypeScript ah oo ku shaqeeya Node.js 24 iyo Express 5, iyo MongoDB 9, oo ay hubiyaan in ka badan 350 tijaabo oo otomaatig ah.",
+    "stackServer": "API TypeScript ah oo ku shaqeeya Node.js 24 iyo Express 5, iyo MongoDB 9, oo ay hubiyaan in ka badan 1,800 tijaabo oo otomaatig ah.",
     "stackHosting": "Wuxuu ku shaqeeyaa Docker ee Amazon Web Services, gadaal nginx iyo HTTPS ka yimid Let's Encrypt.",
     "stackDeploy": "Waxaa daabaca GitHub Actions: image-yada waa la dhisaa oo la tijaabiyaa isbeddel kasta, daabacaaduna waxay galaan AWS furayaal kaydsan la'aan.",
     "creditsHeading": "Mahadnaq",

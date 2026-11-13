@@ -54,7 +54,7 @@
     "builtHeading": "Imejengwa vipi",
     "built": "Glazecalc ilianza mwaka 2017 na ilijengwa upya mwaka 2026. Ni programu moja ndogo ya wavuti, na <source>msimbo wake wa chanzo uko GitHub</source> chini ya Leseni ya MIT.",
     "stackBrowser": "Angular 22 kwenye kivinjari (standalone components na signals), na kemia ya glaze katika maktaba ndogo inayoshirikiwa.",
-    "stackServer": "API ya TypeScript kwenye Node.js 24 na Express 5, pamoja na MongoDB 9, iliyokaguliwa na majaribio ya kiotomatiki zaidi ya 350.",
+    "stackServer": "API ya TypeScript kwenye Node.js 24 na Express 5, pamoja na MongoDB 9, iliyokaguliwa na majaribio ya kiotomatiki zaidi ya 1,800.",
     "stackHosting": "Inaendeshwa katika Docker kwenye Amazon Web Services, nyuma ya nginx yenye HTTPS kutoka Let’s Encrypt.",
     "stackDeploy": "Inasambazwa na GitHub Actions: picha hujengwa na kujaribiwa kila mabadiliko yanapofanywa, na usambazaji huingia AWS bila funguo zilizohifadhiwa.",
     "creditsHeading": "Shukrani",

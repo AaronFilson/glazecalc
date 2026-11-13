@@ -54,7 +54,7 @@
     "builtHeading": "How it is built",
     "built": "Glazecalc started in 2017 and was rebuilt in 2026. It is one small web application, and its <source>source code is on GitHub</source> under the MIT License.",
     "stackBrowser": "Angular 22 in the browser (standalone components and signals), with the glaze chemistry in a small shared library.",
-    "stackServer": "A TypeScript API on Node.js 24 and Express 5, with MongoDB 9, checked by more than 350 automated tests.",
+    "stackServer": "A TypeScript API on Node.js 24 and Express 5, with MongoDB 9, checked by more than 1,800 automated tests.",
     "stackHosting": "Runs in Docker on Amazon Web Services, behind nginx with HTTPS from Let's Encrypt.",
     "stackDeploy": "Deployed by GitHub Actions: images are built and tested on every change, and deploys sign in to AWS without stored keys.",
     "creditsHeading": "Credits",

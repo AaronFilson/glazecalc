@@ -54,7 +54,7 @@
     "builtHeading": "Budowa aplikacji",
     "built": "Aplikacja Glazecalc powstała w 2017 r. i została przebudowana w 2026 r. To jedna niewielka aplikacja internetowa, a jej <source>kod źródłowy jest w serwisie GitHub</source> na licencji MIT.",
     "stackBrowser": "Angular 22 w przeglądarce (komponenty standalone i sygnały), z chemią szkliw w małej, wspólnej bibliotece.",
-    "stackServer": "API w języku TypeScript na Node.js 24 i Express 5, z bazą MongoDB 9, sprawdzane przez ponad 350 testów automatycznych.",
+    "stackServer": "API w języku TypeScript na Node.js 24 i Express 5, z bazą MongoDB 9, sprawdzane przez ponad 1800 testów automatycznych.",
     "stackHosting": "Działa w kontenerach Docker w Amazon Web Services, za serwerem nginx, z HTTPS od Let's Encrypt.",
     "stackDeploy": "Wdrażana przez GitHub Actions: obrazy są budowane i testowane przy każdej zmianie, a wdrożenia logują się do AWS bez przechowywanych kluczy.",
     "creditsHeading": "Podziękowania",

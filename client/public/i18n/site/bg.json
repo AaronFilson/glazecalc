@@ -54,7 +54,7 @@
     "builtHeading": "Как е изградено",
     "built": "Проектът Glazecalc започна през 2017 г. и беше изграден наново през 2026 г. Това е едно малко уеб приложение, а <source>изходният му код е в GitHub</source> под лиценза MIT.",
     "stackBrowser": "Angular 22 в браузъра (самостоятелни компоненти и сигнали), а химията на глазурите е в малка споделена библиотека.",
-    "stackServer": "API на TypeScript върху Node.js 24 и Express 5, с MongoDB 9, проверявано от над 350 автоматични теста.",
+    "stackServer": "API на TypeScript върху Node.js 24 и Express 5, с MongoDB 9, проверявано от над 1800 автоматични теста.",
     "stackHosting": "Работи в Docker на Amazon Web Services, зад nginx, с HTTPS от Let’s Encrypt.",
     "stackDeploy": "Внедрява се чрез GitHub Actions: при всяка промяна образите се изграждат и тестват, а внедряванията влизат в AWS без съхранени ключове.",
     "creditsHeading": "Благодарности",

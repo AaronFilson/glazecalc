@@ -54,7 +54,7 @@
     "builtHeading": "Cum este construit",
     "built": "Glazecalc a început în 2017 și a fost refăcut în 2026. Este o singură aplicație web mică, iar <source>codul sursă este pe GitHub</source>, sub licența MIT.",
     "stackBrowser": "Angular 22 în browser (componente standalone și semnale), cu chimia glazurilor într-o mică bibliotecă partajată.",
-    "stackServer": "Un API în TypeScript pe Node.js 24 și Express 5, cu MongoDB 9, verificat de peste 350 de teste automate.",
+    "stackServer": "Un API în TypeScript pe Node.js 24 și Express 5, cu MongoDB 9, verificat de peste 1.800 de teste automate.",
     "stackHosting": "Rulează în Docker pe Amazon Web Services, în spatele nginx, cu HTTPS de la Let’s Encrypt.",
     "stackDeploy": "Se implementează prin GitHub Actions: imaginile sunt construite și testate la fiecare modificare, iar implementările se conectează la AWS fără chei stocate.",
     "creditsHeading": "Credite",

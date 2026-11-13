@@ -54,7 +54,7 @@
     "builtHeading": "技術的な構成",
     "built": "Glazecalc は2017年に始まり、2026年に作り直されました。小さな一つのウェブアプリケーションで、<source>ソースコードは GitHub にあり</source>、MIT License で公開しています。",
     "stackBrowser": "ブラウザでは Angular 22（スタンドアロンコンポーネントとシグナル）を使い、釉薬の化学計算は小さな共有ライブラリにまとめています。",
-    "stackServer": "サーバーは Node.js 24 と Express 5 上の TypeScript API で、MongoDB 9 を使い、350件を超える自動テストで検証しています。",
+    "stackServer": "サーバーは Node.js 24 と Express 5 上の TypeScript API で、MongoDB 9 を使い、1,800件を超える自動テストで検証しています。",
     "stackHosting": "Amazon Web Services 上の Docker で動作し、Let's Encrypt の HTTPS を使う nginx を前段に置いています。",
     "stackDeploy": "GitHub Actions でデプロイしています。変更のたびにイメージをビルドしてテストし、デプロイの際は保存済みの鍵を使わずに AWS にログインします。",
     "creditsHeading": "クレジット",

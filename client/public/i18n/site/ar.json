@@ -54,7 +54,7 @@
     "builtHeading": "كيف بُني",
     "built": "بدأ Glazecalc عام 2017 وأُعيد بناؤه عام 2026. وهو تطبيق ويب صغير واحد، و<source>شيفرته المصدرية على GitHub</source> برخصة MIT.",
     "stackBrowser": "واجهة Angular 22 في المتصفح (مكوّنات مستقلة وإشارات)، مع كيمياء الطلاء في مكتبة مشتركة صغيرة.",
-    "stackServer": "واجهة برمجية (API) بلغة TypeScript على Node.js 24 و Express 5، مع MongoDB 9، وتفحصها أكثر من 350 اختباراً آلياً.",
+    "stackServer": "واجهة برمجية (API) بلغة TypeScript على Node.js 24 و Express 5، مع MongoDB 9، وتفحصها أكثر من 1,800 اختبار آلي.",
     "stackHosting": "يعمل في Docker على Amazon Web Services، خلف nginx مع HTTPS من Let's Encrypt.",
     "stackDeploy": "يُنشر عبر GitHub Actions: تُبنى الصور وتُختبر عند كل تغيير، وتسجّل عمليات النشر الدخول إلى AWS دون مفاتيح مخزّنة.",
     "creditsHeading": "شكر وتقدير",
