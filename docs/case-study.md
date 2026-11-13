@@ -151,8 +151,9 @@ below had not passed and I had not approved.
 
 | Measure                          | 2017                  | At 1.0                                                        |
 | -------------------------------- | --------------------- | ------------------------------------------------------------- |
-| Automated tests                  | basic API route tests | over 3,400: server, Angular unit and browser, with axe checks |
+| Automated tests                  | basic API route tests | over 3,800: server, Angular unit and browser, with axe checks |
 | Server statement coverage        | not measured          | 98%                                                           |
+| Angular statement coverage       | not measured          | 99%                                                           |
 | Standard materials and colorants | 53, from one book     | 219, each with a source and a status                          |
 | Languages                        | English               | 57, right to left included                                    |
 | Deploys                          | SSH and restart       | approved click, keyless, rolls back on a failed check         |
