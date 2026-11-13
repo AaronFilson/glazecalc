@@ -760,6 +760,31 @@ describe('Paste-in import: finding the material', () => {
     expect(twoAliases.candidates.map((r) => r.name)).to.eql(['One', 'Two']);
   });
 
+  it('prepares each record’s name once for a paste’s names, not once a line, with the same matches', () => {
+    const typed = ['Custer Feldspar', 'Silca', 'Whitting', 'EPK kaolin clay', 'Neph Sy 270', 'Gerstly borate'];
+    const names = Array.from({ length: 300 }, (_, i) => typed[i % typed.length] + (i % 7 ? '' : ' x'));
+    const first = names.map((name) => recipe.matchName(name, LIBRARY));
+    // Counted, not timed: the second time, no name is normalized again. Before, each line normalized every
+    // record's names and aliases several times over (about 14 ms a name).
+    const normalize = String.prototype.normalize;
+    let normalized = 0;
+    String.prototype.normalize = function (this: string, form?: 'NFC' | 'NFD' | 'NFKC' | 'NFKD') {
+      normalized++;
+      return normalize.call(this, form);
+    };
+    let again: ReturnType<typeof recipe.matchName>[];
+    try {
+      again = names.map((name) => recipe.matchName(name, LIBRARY));
+    } finally {
+      String.prototype.normalize = normalize;
+    }
+    expect(normalized).to.equal(0);
+    expect(again.map((m) => [m.how, m.record?.name, m.candidates.length])).to.eql(
+      first.map((m) => [m.how, m.record?.name, m.candidates.length])
+    );
+    expect(matched('Silca')).to.eql(['close', 'Silica']);
+  });
+
   it('compares accented and plain letters loosely, and Turkish dotless i', () => {
     expect(recipe.compactName('Feldspäth')).to.equal(recipe.compactName('Feldspath'));
     expect(recipe.compactName('SİLİCA')).to.equal('silica');
