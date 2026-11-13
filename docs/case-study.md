@@ -137,7 +137,10 @@ below had not passed and I had not approved.
     ones Prettier had wrapped went unchecked. The check's own table in CI showed it, and a test now
     fails on any number the check cannot read.
   - On its first run that check found the README claiming 92% Angular coverage where CI measured
-    91.41%: the number had been true once and nobody had looked since.
+    91.41%: the number had been true once and nobody had looked since. Since then the Angular figure
+    counts the app's own code, each component, service and template the tests load, and no longer
+    the shared library in `lib/` (whose tests and coverage are the server's), the tests' helpers,
+    the JSON messages or the data; the entry points are left to the browser tests and the prerender.
   - Turning coverage on in CI made the solver's tests slow enough to fail at random; CI's second
     run showed it before anyone relied on the numbers.
   - The Lighthouse tool it chose arrived with nine high-severity advisories in its dependencies.
