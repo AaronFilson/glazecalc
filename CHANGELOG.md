@@ -58,6 +58,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   The index is hidden until a glaze is published. The glazes' names and prose are kept per language in the data file,
   and the build writes one file per language (`/i18n/famous-glazes/<code>.json`) so each page stays under the
   prerender's limit. Titles stay short; the search terms go in the description.
+- **A Famous glazes card on the guides list** (/guides), under Reference pages after Standard materials, in every
+  language with that language's own title and lead for the famous glazes (2026-11-07).
 - **A dry SG estimate** (`lib/recipe/density.js`, sources in docs/sources/dry-sg-sources.md). The slurry panel on the
   recipe page now fills in the SG of the dry materials from each material's mineral, its kind or, for a frit, its
   oxides, and the recipe's from them (its weight over the sum of each weight over its SG), saying how it got it and
@@ -145,6 +147,22 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   fails part way is taken back the same way, as MongoDB here runs without transactions. For the web session of an
   account only, never a trial, token or AI app: one import at a time, 5 an hour, up to 20 MB and 20,000 records a file
   (Express and nginx take the larger body on these routes alone). In every language.
+- **Search engines are told when pages change** (`scripts/indexnow.mjs`, the last job of the Deploy workflow). Once a
+  production deploy has passed its Live checks, IndexNow (Bing, Yandex, Seznam, Naver) is sent every address in the
+  live sitemaps, 10,000 a request, when the commits since the last one sent change anything a page shows (the client,
+  `lib/`, `data/` or `server/lib/pages.ts`), and nothing when they do not; the last commit sent is kept in the Actions
+  cache. It never fails a deploy: it runs after it, its failure does not fail the run, and it exits 0 whatever IndexNow
+  answers. It refuses any site but production, can be left out of a deploy run by hand, and writes what it did to the
+  job's summary. The site's key is public by design (`lib/indexnow.js`, served at `/<key>.txt`), and the Live checks
+  fetch it.
+- **A link preview image in each language** (`scripts/og-images.mjs`, `lib/og-images.json`): 1200 × 630, the logo and
+  the home page's heading in the language beside a photo of fired cone packs, drawn by Chromium so that right-to-left
+  text, India's scripts and Nastaliq are shaped as a browser shapes them; a letter missing from the app's fonts stops
+  the script rather than drawing an empty box. Each page names its language's image in `og:image` and `twitter:image`,
+  with its alt text in the language (the English image for a page shown in English), and each file is named for its
+  content's hash, so a changed heading is a new address that link previews fetch again. The images are checked in
+  (`npm run og-images`, through Docker on Windows and macOS); a server test checks their sizes and names, and the Live
+  checks fetch the English and German ones.
 - **The teaching companion, round 12** (docs/adr/0017-mcp-server.md; MCP server 1.4.0). A new prompt, `teach_me`: a
   short lesson on any glaze topic at the learner's level (new, some, experienced), with up to two guide sections
   attached, one small experiment with one tool, and John Britt's videos linked by his titles with credit only when the
@@ -1255,6 +1273,14 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   out of date: about 1,000, 700 and 175 tests where CI ran over 1,750, 1,150 and 450, and 92% Angular coverage
   where it measured 91%.
 - **1.0.0** is the version that was 0.5.0 (not yet released): the app has been live since October.
+- **A cone from a book is not a cone you have tested** (docs/adr/0021-recipe-firing.md, amended 2026-11-08). A single
+  stated cone has its own tick, "I've test-fired this at cone 6", off until ticked; before, choosing a cone counted it
+  as tested. A range keeps one tick per cone, none ticked at the start, and a pasted recipe's cone is never ticked. A
+  stated cone not ticked reads "Stated cone 6; not ticked as tested" in the editor, the saved list, the print and the
+  shared page, and its result card stays. What is stored is unchanged (`firedAt.tested` is still a list of cones), so
+  the REST routes, the MCP tools, sharing, the export and the offline outbox work as before; a saved recipe keeps its
+  ticks, and one with a cone and none ticked now reads as untested. The MCP tools' description says so. In every
+  language.
 - **Compressed pages** (docs/prerender-compression-and-material-pages-plan.md, Part A). Each page reply is compressed
   in Node after its fresh nonce goes in (`server/lib/compress.ts`: brotli 5, else gzip 5), with `Vary` and
   `Content-Length`; the sitemaps are compressed once each with an ETag. nginx passes these through and gzips the rest
@@ -1274,6 +1300,12 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   estimate and guide section, the Stull chart, the teaching guide's card, the new materials' notes and hazards, the
   changed guide sections) in five language groups, each language back-translated blind and the differences fixed
   (docs/translations/process/README.md).
+- **The messages still in English, translated** (2026-10-31), in every language then live: Target & Solve, the silica
+  limits table, the who-to-call words, the offline and region messages, the AI assistants page and the dictation
+  skill's, and the pages' titles and descriptions. Each language's translation was reviewed, and its safety text (the
+  silica table, who to call) back-translated blind and compared with the English; services keep their names as they
+  write them. The guides list's Standard materials card no longer says "In English.", as every live language had the
+  reference pages.
 - **"Choose your country or region"**: the guides' region list and the prompts under it ask for a country or region
   (the owner's choice), as Hong Kong and Taiwan are among the places listed. In every language, in the words its
   region list already uses ("countries and regions"). So does the making-a-glaze guide's line on shops ("choose
@@ -1630,6 +1662,12 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   language or writes it otherwise than Node (`lib/regions/locale-fallback.js`), so each page shows its own month
   names, digits and grouping, and matches the prerendered page; the Digits setting works as before. A server test
   fails if the data and Node's Intl part.
+- **Buttons are named by the words they show** (WCAG 2.5.3, Label in Name; found by axe-core 4.14, 2026-11-02). The
+  Add buttons in the recipe page's lists of materials and additives, and the swap report's Add it, were announced as
+  "Add Silica" and the like while they showed the name, its status and "+ Add"; each one's name is now its visible
+  text. The swap report's "Leave it out" and "Use it instead", and Solve for a target's "Leave it out", are named by
+  their own words too, with the line they act on as their description. The five spoken labels are gone from all 57
+  languages.
 - **Bengali no longer writes dissolving as melting**: two material notes and the glazing basics guide's paragraph on
   leaching said a glaze or frit "melts" where the English says it dissolves. Found by the Kannada review; Hindi, Urdu
   and Marathi were checked and did not have it.
