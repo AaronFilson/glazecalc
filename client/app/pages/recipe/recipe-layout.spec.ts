@@ -5,6 +5,7 @@ import { RouterTestingHarness } from '@angular/router/testing';
 import { Material } from '../../core/models';
 import { EXPIRING_KEYS } from '../../core/settings-expiry';
 import { answer, httpMock, settle, testProviders } from '../../testing/test-providers';
+import { focusShown } from './focus';
 import { LAYOUT_KEY, layoutFromParam, storeLayout, storedLayout } from './recipe-layout';
 import { RecipePage } from './recipe-page';
 
@@ -101,10 +102,10 @@ describe('RecipePage layouts', () => {
   };
 
   const fill = (page: Page) => {
-    page['addMaterial'](WHITING);
-    page['setAmount'](0, '20');
-    page['addMaterial'](SILICA);
-    page['setAmount'](1, '30');
+    page['edit'].addMaterial(WHITING);
+    page['edit'].setAmount(0, '20');
+    page['edit'].addMaterial(SILICA);
+    page['edit'].setAmount(1, '30');
   };
 
   it('shows the standard form by default, with the switch on it', async () => {
@@ -144,7 +145,7 @@ describe('RecipePage layouts', () => {
     const { fixture, page, element } = await create();
     page['chooseLayout']('workbench');
     await settle(fixture);
-    page['focusShown']('recipe-notes');
+    focusShown('recipe-notes');
     expect((element.querySelector('#details-fold') as HTMLDetailsElement).open).toBe(true);
     expect(document.activeElement?.id).toBe('recipe-notes');
   });

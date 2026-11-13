@@ -1,0 +1,160 @@
+/* The recipe page's firing part's fold, its tools and the form's layouts (styles.scss has the rest of the page's). */
+/* The firing part folds on a phone: its summary is the one line shown. */
+.firing-fold > summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--gc-border);
+}
+.firing-fold[open] > summary {
+  border-top: 0;
+  padding-bottom: 0;
+}
+/* Paste in recipes and Blends, which have pages of their own. */
+.recipe-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin: 0 0 1rem;
+}
+
+/* The form's layout (recipe-layout.ts): a small switch above the editor. */
+.layout-choice {
+  display: flex;
+  align-items: center;
+  margin-block-end: 0.75rem;
+}
+.layout-choice legend {
+  float: none;
+  width: auto;
+  margin: 0;
+  margin-inline-end: 0.4rem;
+  font-size: 0.95rem;
+}
+
+/* A, the workbench: the recipe at the start, its formula and limits beside it, in view as it scrolls. */
+.layout-workbench .workbench-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 0;
+}
+.workbench-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+.workbench-more {
+  position: relative;
+}
+.workbench-more > summary {
+  list-style: none;
+}
+.workbench-more > summary::-webkit-details-marker {
+  display: none;
+}
+.workbench-more-list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.3rem;
+  margin-block-start: 0.3rem;
+}
+.workbench-status {
+  margin-block: 0.25rem 0.5rem;
+}
+.workbench-fold {
+  margin-block: 1rem;
+  border-block-start: 1px solid var(--gc-border);
+  padding-block-start: 0.75rem;
+}
+.workbench-fold > summary {
+  font-weight: 600;
+  margin-block-end: 0.5rem;
+}
+/* On a phone: the formula on one line, kept at the top, with a way to the whole of it. */
+.workbench-peek {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.5rem;
+  margin-block-end: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  background: var(--gc-surface-2);
+  color: var(--gc-text);
+  border: 1px solid var(--gc-border);
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+}
+.workbench-peek-text {
+  flex: 1 1 12rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+/* What gets the focus scrolls clear of the peek bar (WCAG 2.4.11). */
+.layout-workbench :is(input, select, textarea, button, a, summary, [tabindex]) {
+  scroll-margin-block-start: 6rem;
+}
+@media (min-width: 992px) {
+  .layout-workbench {
+    grid-template-columns: minmax(0, 1fr) minmax(19rem, 26rem);
+  }
+  .workbench-peek {
+    display: none;
+  }
+  .layout-workbench :is(input, select, textarea, button, a, summary, [tabindex]) {
+    scroll-margin-block-start: 1rem;
+  }
+  .layout-workbench .workbench-side {
+    position: sticky;
+    inset-block-start: 1rem;
+    align-self: start;
+    max-block-size: calc(100vh - 2rem);
+    overflow-y: auto;
+  }
+  .layout-workbench .workbench-side .unity-panel {
+    position: static;
+  }
+}
+
+/* B, guided steps: one part of the recipe at a time. */
+.guided-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+.guided-steps .btn {
+  border-radius: 999px;
+}
+/* The step's number in the reader's own digits (gcFixed), set apart by weight rather than a full stop. */
+.guided-step-number {
+  font-weight: 700;
+  margin-inline-end: 0.2rem;
+}
+.guided-steps .btn[aria-current='step'] {
+  background: var(--gc-primary);
+  border-color: var(--gc-primary);
+  color: var(--gc-on-primary);
+}
+.guided-heading {
+  font-size: 1.2rem;
+}
+.guided-additives {
+  margin-block-start: 1.5rem;
+}
+.guided-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-block-start: 1rem;
+}
+.guided-nav #guided-next {
+  margin-inline-start: auto;
+}

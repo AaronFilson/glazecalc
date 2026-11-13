@@ -1,18 +1,16 @@
-import { Location, NgTemplateOutlet } from '@angular/common';
+import { NgTemplateOutlet } from '@angular/common';
 import {
   Component,
   DestroyRef,
   Injector,
   OnInit,
-  WritableSignal,
   afterEveryRender,
   afterNextRender,
   computed,
   effect,
   inject,
-  linkedSignal,
   signal,
-  untracked
+  viewChild
 } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
@@ -20,23 +18,20 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { TranslocoDirective, TranslocoService, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { map } from 'rxjs';
-import { CONES, MaterialInput } from '../../../../lib/chemistry';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { AsksBeforeLeaving } from '../../core/leave.guard';
-import { Additive, AdditiveUnit, Firing, FiringLink, Material, Recipe, RecipeMaterial } from '../../core/models';
+import { Additive, Firing, FiringLink, Recipe, RecipeMaterial } from '../../core/models';
 import { PreferencesService } from '../../core/preferences.service';
 import { LocaleService } from '../../core/locale.service';
 import { PendingRecipeService } from '../../core/pending-recipe.service';
-import { ShelfService } from '../../core/shelf.service';
 import { UpdateService } from '../../core/update.service';
 import { RichText } from '../../i18n/rich-text';
 import { Busy } from '../../shared/busy';
-import { fixed, formatTemperature, formatTime, listOf, notANumber, upTo } from '../../shared/format';
-import { DatePipe, FixedPipe, PlainPipe } from '../../shared/format-pipes';
-import { NumberInput } from '../../shared/number-input';
-import { Check, FieldCheck, FieldChecks, required, reveal } from '../../shared/field-checks';
+import { fixed, formatTime, notANumber } from '../../shared/format';
+import { FixedPipe } from '../../shared/format-pipes';
+import { Check, FieldCheck, FieldChecks, required } from '../../shared/field-checks';
 import {
   GUIDED_STEPS,
   LAYOUT_OPTIONS,
@@ -47,47 +42,25 @@ import {
 } from './recipe-layout';
 import { localDate } from '../../shared/dates';
 import { Notices, NoticesList } from '../../shared/notices';
-import { chosenRegion, findNamed, folded, hasLead } from '../../shared/library-info';
 import { firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
-import { PendingBadge } from '../../shared/pending-badge';
-import { Removal, RemoveButton } from '../../shared/remove-button';
-import { GRAMS_PER_POUND, WeightUnit, formatWeight } from '../../shared/weights';
-import { LibraryMaterial, modernMaterials } from './compare';
-import { Rebase, amountOf, isAmount, rebase, totalOf, unitOf } from './rebase';
-import { additiveAmount, evaluate, savedAnalysis } from './recipe-analysis';
-// Types apart from the components, which recipe-page.html defers (@defer), so their files can be left out until needed.
-import type { CompareChoice } from './recipe-compare';
+import { Removal } from '../../shared/remove-button';
+import { amountOf, isAmount, unitOf } from './rebase';
+import { additiveAmount, evaluate } from './recipe-analysis';
 import { RecipeCompare } from './recipe-compare';
 import { RecipeCost } from './recipe-cost';
 import { RecipeHazards, hazardSources } from './recipe-hazards';
 import { RecipeHelp } from './recipe-help';
 import { RecipeLibrary, libraryKey } from './recipe-library';
 import { RecipePrint } from './recipe-print';
-import { SharePanel } from './share-panel';
-import { Plan, oxideLabel, planSuggestion, suggestAmounts } from './suggest';
-import { BaseChoice, LeadMode, leadFreeBases, leadIn, recipeHasLead, replaceLead } from './lead';
-import { TryMaterial } from './pool';
-import { matchFromShelf } from './shelf';
-import type { Run, SwapResult } from './swap-report';
+// A type apart from the report, which recipe-page.html defers (@defer), so its file can be left out until needed.
+import type { SwapResult } from './swap-report';
 import { SwapReport } from './swap-report';
-import { TryMaterials } from './try-materials';
 import { UnityFormula, silicaAluminaRatio, unityColumns } from './unity-formula';
-import { OwnLimitsNote } from './own-limits-note';
 import { RecipeNumbers } from './recipe-numbers';
 import { SlurryCalculator } from './slurry-calculator';
-import { FiringBand, LIMIT_SETS, bandOf } from '../../../../lib/recipe/limits';
-import {
-  ATMOSPHERES,
-  ConeScale,
-  FiringBlock,
-  PROCESSES,
-  compareCones,
-  conesBetween,
-  firingBands,
-  inRange,
-  testedCones
-} from '../../../../lib/cones/firing';
+import { FiringBand } from '../../../../lib/recipe/limits';
+import { ConeScale, FiringBlock } from '../../../../lib/cones/firing';
 import type { ConeResult } from '../../../../lib/cones/results';
 import { RecipeFiring } from './recipe-firing';
 import { RecipeFirings } from './recipe-firings';
@@ -95,7 +68,16 @@ import { RecipeConeCards, type ConePlace } from './recipe-cone-cards';
 import { recipeText } from './recipe-messages';
 import { coneFit } from '../../../../lib/recipe/cone-fit';
 import { recipeDrySg } from '../../../../lib/recipe/density';
-import { ATMOSPHERE_NAMES, Reader, coneText, firingLine, firingSummary } from './firing-text';
+import { Reader, firingSummary } from './firing-text';
+import { focusShown } from './focus';
+import { RecipeSwaps, SwapKind, SwapUndo } from './recipe-swaps';
+import { RecipeLibraries, fetchList } from './recipe-libraries';
+import { RecipeLines } from './recipe-lines';
+import { RecipeSwapsPanel } from './recipe-swaps-panel';
+import { RecipeAdditivesTable } from './recipe-additives-table';
+import { RecipeMaterialsTable } from './recipe-materials-table';
+import { RecipeViews } from './recipe-views';
+import { SavedRecipes } from './saved-recipes';
 
 const INCLUDE_KEY = 'includeAdditives';
 
@@ -108,23 +90,7 @@ const includeByDefault = (): boolean => {
   }
 };
 
-/** Each label is the key of its message. */
-const ADDITIVE_UNITS: ReadonlyArray<{ value: AdditiveUnit; label: string }> = [
-  { value: 'percent', label: marker('recipe.page.units.percent') },
-  { value: 'parts', label: marker('recipe.page.units.parts') },
-  { value: 'grams', label: marker('recipe.page.units.grams') }
-];
-
 const copy = <T>(value: T): T => structuredClone(value);
-/** What a change of scale did, as the key of its message. */
-const SCALE_NOTES: Record<Exclude<Rebase['to'], 'batch'>, string> = {
-  percent: marker('recipe.page.scaledPercent'),
-  parts: marker('recipe.page.scaledParts')
-};
-
-/** A batch weight to start from, in each unit: about a pound either way. */
-const DEFAULT_BATCH: Record<WeightUnit, string> = { g: '500', lb: '1' };
-
 type SaveMode = 'save' | 'next' | 'copy';
 
 /** An amount to save: blank is not one, though 0 is. */
@@ -145,19 +111,6 @@ interface Saved {
   changedId: string | null;
 }
 
-/** What Undo the swap puts back: the recipe as it was, and whether (and as what) it was saved. */
-interface SwapUndo {
-  recipe: Recipe;
-  savedId: string | null;
-  savedSnapshot: string;
-  savedAt: Date | null;
-  /** How Suggest amounts or Replace lead made it, to show and to work out again. */
-  result?: SwapResult;
-}
-
-/** What a swap makes of the recipe, for its new title: "Celadon with modern materials". */
-type SwapKind = 'modern' | 'lead' | 'shelf';
-
 /** Waiting on a decision about unsaved changes, before starting a new recipe, opening another or leaving the page. */
 interface PendingLeave {
   next: () => void;
@@ -171,314 +124,41 @@ interface PendingLeave {
   from: HTMLElement | null;
 }
 
-/** More saved recipes than this, and a filter is offered. */
-const SAVED_FILTER_FROM = 5;
-/** How many saved recipes are listed until all are asked for. */
-const SAVED_SHOWN = 8;
-
-/** The set with the id added, or taken out if it was there. */
-const toggled = (set: ReadonlySet<string>, id: string): ReadonlySet<string> => {
-  const next = new Set(set);
-  if (!next.delete(id)) next.add(id);
-  return next;
-};
-
 /** A phone-width screen (Bootstrap's md breakpoint), where the firing part folds once it is set. */
 const narrowScreen = (): boolean => typeof matchMedia === 'function' && matchMedia('(max-width: 767.98px)').matches;
 
 @Component({
   selector: 'gc-recipe-page',
   imports: [
-    DatePipe,
     FieldCheck,
     FixedPipe,
-    PlainPipe,
     FormsModule,
     NgTemplateOutlet,
     NoticesList,
-    NumberInput,
     PageHeader,
-    PendingBadge,
     RecipeHelp,
     RecipeCompare,
     RecipeCost,
     RecipeHazards,
+    RecipeAdditivesTable,
     RecipeLibrary,
+    RecipeMaterialsTable,
+    RecipeSwapsPanel,
     RecipePrint,
-    SharePanel,
-    RemoveButton,
     RichText,
     RouterLink,
+    SavedRecipes,
     SwapReport,
     TranslocoDirective,
-    TryMaterials,
     UnityFormula,
     RecipeNumbers,
-    OwnLimitsNote,
     SlurryCalculator,
     RecipeFiring,
     RecipeFirings,
     RecipeConeCards
   ],
   templateUrl: './recipe-page.html',
-  // The saved recipes (styles.scss has the rest of the page's).
-  styles: `
-    /* The firing part folds on a phone: its summary is the one line shown. */
-    .firing-fold > summary {
-      cursor: pointer;
-      font-weight: 600;
-      padding: 0.5rem 0;
-      border-top: 1px solid var(--gc-border);
-    }
-    .firing-fold[open] > summary {
-      border-top: 0;
-      padding-bottom: 0;
-    }
-    /* Paste in recipes and Blends, which have pages of their own. */
-    .recipe-tools {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.25rem 1.25rem;
-      margin: 0 0 1rem;
-    }
-    .saved-recipes-top {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.5rem 1rem;
-      margin-bottom: 0.5rem;
-    }
-    .saved-recipes-top h2 {
-      margin: 0;
-    }
-    .saved-count {
-      color: var(--gc-muted);
-      font-size: 1rem;
-      font-weight: 400;
-    }
-    .saved-filter {
-      width: auto;
-      flex: 0 1 16rem;
-    }
-    .saved-list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    .saved-recipe {
-      border-top: 1px solid var(--gc-border);
-      padding: 0.35rem 0;
-    }
-    .saved-recipe-top {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.4rem 0.75rem;
-    }
-    .saved-recipe-name {
-      display: inline-flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      gap: 0.25rem 0.75rem;
-      min-width: 0;
-    }
-    /* The name opens it: a link's look, a heading's weight, and a finger's height on a phone. */
-    .saved-recipe-open {
-      --bs-btn-padding-x: 0;
-      font-weight: 600;
-      text-align: start;
-      overflow-wrap: anywhere;
-    }
-    .saved-recipe-date {
-      color: var(--gc-muted);
-      font-size: 0.9rem;
-    }
-    .saved-recipe-actions,
-    .saved-recipe-more {
-      display: inline-flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.4rem;
-    }
-    .saved-recipe-actions {
-      margin-inline-start: auto;
-    }
-    /* Print, Compare, Share and Remove, on a line of their own under the name, Remove last. */
-    .saved-recipe-more {
-      flex-basis: 100%;
-      justify-content: flex-end;
-    }
-    .saved-open-mark {
-      background: var(--gc-success-bg);
-      border-radius: 999px;
-      color: var(--gc-success-text);
-      font-size: 0.8rem;
-      padding: 0.1rem 0.5rem;
-    }
-    .saved-recipe-details {
-      padding: 0.25rem 0 0.5rem;
-    }
-    .saved-show-all {
-      margin-top: 0.5rem;
-    }
-    .saved-firing {
-      color: var(--gc-muted);
-      font-size: 0.9rem;
-      flex-basis: 100%;
-    }
-    .saved-firing-filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .saved-firing-filters select {
-      width: auto;
-      flex: 0 1 14rem;
-    }
-
-    /* The form's layout (recipe-layout.ts): a small switch above the editor. */
-    .layout-choice {
-      display: flex;
-      align-items: center;
-      margin-block-end: 0.75rem;
-    }
-    .layout-choice legend {
-      float: none;
-      width: auto;
-      margin: 0;
-      margin-inline-end: 0.4rem;
-      font-size: 0.95rem;
-    }
-
-    /* A, the workbench: the recipe at the start, its formula and limits beside it, in view as it scrolls. */
-    .layout-workbench .workbench-side {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      min-width: 0;
-    }
-    .workbench-actions {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      gap: 0.4rem;
-    }
-    .workbench-more {
-      position: relative;
-    }
-    .workbench-more > summary {
-      list-style: none;
-    }
-    .workbench-more > summary::-webkit-details-marker {
-      display: none;
-    }
-    .workbench-more-list {
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      gap: 0.3rem;
-      margin-block-start: 0.3rem;
-    }
-    .workbench-status {
-      margin-block: 0.25rem 0.5rem;
-    }
-    .workbench-fold {
-      margin-block: 1rem;
-      border-block-start: 1px solid var(--gc-border);
-      padding-block-start: 0.75rem;
-    }
-    .workbench-fold > summary {
-      font-weight: 600;
-      margin-block-end: 0.5rem;
-    }
-    /* On a phone: the formula on one line, kept at the top, with a way to the whole of it. */
-    .workbench-peek {
-      position: sticky;
-      inset-block-start: 0;
-      z-index: 2;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.25rem 0.5rem;
-      margin-block-end: 0.5rem;
-      padding: 0.4rem 0.6rem;
-      background: var(--gc-surface-2);
-      color: var(--gc-text);
-      border: 1px solid var(--gc-border);
-      border-radius: 0.5rem;
-      font-size: 0.85rem;
-    }
-    .workbench-peek-text {
-      flex: 1 1 12rem;
-      min-width: 0;
-      overflow-wrap: anywhere;
-    }
-    /* What gets the focus scrolls clear of the peek bar (WCAG 2.4.11). */
-    .layout-workbench :is(input, select, textarea, button, a, summary, [tabindex]) {
-      scroll-margin-block-start: 6rem;
-    }
-    @media (min-width: 992px) {
-      .layout-workbench {
-        grid-template-columns: minmax(0, 1fr) minmax(19rem, 26rem);
-      }
-      .workbench-peek {
-        display: none;
-      }
-      .layout-workbench :is(input, select, textarea, button, a, summary, [tabindex]) {
-        scroll-margin-block-start: 1rem;
-      }
-      .layout-workbench .workbench-side {
-        position: sticky;
-        inset-block-start: 1rem;
-        align-self: start;
-        max-block-size: calc(100vh - 2rem);
-        overflow-y: auto;
-      }
-      .layout-workbench .workbench-side .unity-panel {
-        position: static;
-      }
-    }
-
-    /* B, guided steps: one part of the recipe at a time. */
-    .guided-steps {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.3rem;
-      margin: 0 0 1rem;
-      padding: 0;
-      list-style: none;
-    }
-    .guided-steps .btn {
-      border-radius: 999px;
-    }
-    /* The step's number in the reader's own digits (gcFixed), set apart by weight rather than a full stop. */
-    .guided-step-number {
-      font-weight: 700;
-      margin-inline-end: 0.2rem;
-    }
-    .guided-steps .btn[aria-current='step'] {
-      background: var(--gc-primary);
-      border-color: var(--gc-primary);
-      color: var(--gc-on-primary);
-    }
-    .guided-heading {
-      font-size: 1.2rem;
-    }
-    .guided-additives {
-      margin-block-start: 1.5rem;
-    }
-    .guided-nav {
-      display: flex;
-      justify-content: space-between;
-      gap: 0.5rem;
-      margin-block-start: 1rem;
-    }
-    .guided-nav #guided-next {
-      margin-inline-start: auto;
-    }
-  `,
+  styleUrl: './recipe-page.css',
   host: { '(window:beforeunload)': 'beforeUnload($event)', '(gc-reveal)': 'revealStep($event)' }
 })
 export class RecipePage implements OnInit, AsksBeforeLeaving {
@@ -487,24 +167,18 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   private readonly injector = inject(Injector);
   private readonly route = inject(ActivatedRoute);
   private readonly router = inject(Router);
-  private readonly location = inject(Location);
   private readonly preferences = inject(PreferencesService);
-  private readonly shelf = inject(ShelfService);
+  private readonly locale = inject(LocaleService);
   private readonly pendingRecipe = inject(PendingRecipeService);
-  private readonly weightUnit = this.preferences.weightUnit;
   /** Lead is off in Settings: materials with lead are not listed to add, or suggested. */
   protected readonly leadOff = computed(() => this.preferences.lead() === 'off');
   private readonly recipes = this.resources.for<Recipe>('recipe');
-  private readonly materials = this.resources.for<Material>('materials');
-  private readonly additives = this.resources.for<Additive>('additives');
 
   protected readonly notices = new Notices();
+  /** The lists to add from: the potter's own materials and additives, and the standard ones (recipe-libraries.ts). */
+  protected readonly libraries = new RecipeLibraries(this.notices);
   protected readonly saving = new Busy();
-  protected readonly savedAnalysis = savedAnalysis;
-  protected readonly firstOf = firstOf;
   protected readonly additiveAmount = additiveAmount;
-  protected readonly additiveUnits = ADDITIVE_UNITS;
-  protected readonly unitOf = unitOf;
 
   // The recipe being edited.
   protected readonly title = signal('');
@@ -515,106 +189,18 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   /** The materials' names, for the limits' cone check (ash, Gerstley borate). */
   protected readonly materialNames = computed(() => this.lines().map((line) => line.name));
 
-  // The lists to add from, and the saved recipes.
-  protected readonly myMaterials = signal<Material[]>([]);
-  protected readonly standardMaterials = signal<Material[]>([]);
-  protected readonly myAdditives = signal<Additive[]>([]);
-  protected readonly standardAdditives = signal<Additive[]>([]);
-  /** The standard lists could not be fetched: the lists say so, and offer to try again. */
-  protected readonly standardMaterialsFailed = signal(false);
-  protected readonly standardAdditivesFailed = signal(false);
-  /** The account's own lists that could not be fetched: the page offers to try again. */
-  protected readonly myMaterialsFailed = signal(false);
-  protected readonly myAdditivesFailed = signal(false);
+  // The saved recipes.
+  /** The saved recipes could not be fetched: the page offers to try again, with the potter's own lists. */
   protected readonly myRecipesFailed = signal(false);
-  protected readonly ownFailed = computed(
-    () => this.myMaterialsFailed() || this.myAdditivesFailed() || this.myRecipesFailed()
-  );
+  protected readonly ownFailed = computed(() => this.libraries.mineFailed() || this.myRecipesFailed());
   protected readonly myRecipes = signal<Recipe[]>([]);
-  protected readonly expanded = signal<ReadonlySet<string>>(new Set());
-  /** The saved recipes whose More (Print, Compare, Share, Remove) is open. */
-  protected readonly moreOpen = signal<ReadonlySet<string>>(new Set());
-  /** The saved recipe whose Share is open, under its More. */
-  protected readonly shareOpen = signal<string | null>(null);
-  /** A trial cannot share a recipe; its Share says why. */
-  protected readonly isTrial = computed(() => !!this.auth.trial());
-  /** Whether there are enough saved recipes to offer to filter them by title. */
-  protected readonly filterShown = computed(() => this.myRecipes().length > SAVED_FILTER_FROM);
-  /** What the list is filtered by: emptied when the filter box goes, so a list it no longer shows is not filtered. */
-  protected readonly recipeFilter = linkedSignal({ source: this.filterShown, computation: () => '' });
-  protected readonly showAllRecipes = signal(false);
+  /** The saved recipes, listed above the editor: each says what to do with it, and the focus goes back to its More. */
+  private readonly savedList = viewChild(SavedRecipes);
   /** How the reader fires, for the firing in words. */
   protected readonly reader = computed<Reader>(() => ({
     cones: this.locale.cones(),
     temperature: this.locale.temperature()
   }));
-  /** The cones the saved recipes' firings cover ("orton:6"), to filter by; offered once two recipes state one. */
-  protected readonly coneOptions = computed(() => {
-    const keys = new Map<string, { scale: ConeScale; cone: string }>();
-    for (const recipe of this.myRecipes()) {
-      const block = recipe.firedAt;
-      if (!block?.low) continue;
-      for (const cone of conesBetween(block.scale, block.low, block.high)) {
-        keys.set(block.scale + ':' + cone, { scale: block.scale, cone });
-      }
-    }
-    const order: ConeScale[] = ['orton', 'sk', 'temperature'];
-    return [...keys.entries()]
-      .sort(([, a], [, b]) => order.indexOf(a.scale) - order.indexOf(b.scale) || compareCones(a.scale, a.cone, b.cone))
-      .map(([key, { scale, cone }]) => ({ key, label: coneText(scale, cone, this.reader()) }));
-  });
-  /** The atmospheres and processes the saved recipes name, to filter by. */
-  protected readonly atmosphereOptions = computed(() => {
-    const named = new Set(
-      this.myRecipes().flatMap((r) => [...(r.firedAt?.atmospheres ?? []), ...(r.firedAt?.processes ?? [])])
-    );
-    return [...ATMOSPHERES, ...PROCESSES]
-      .filter((a) => named.has(a as never))
-      .map((a) => ({ key: a as string, label: translate(ATMOSPHERE_NAMES[a]) }));
-  });
-  protected readonly firingFiltersShown = computed(
-    () => this.myRecipes().filter((recipe) => recipe.firedAt?.low || recipe.firedAt?.atmospheres?.length).length > 1
-  );
-  protected readonly coneFilter = linkedSignal({ source: this.firingFiltersShown, computation: () => '' });
-  protected readonly atmosphereFilter = linkedSignal({ source: this.firingFiltersShown, computation: () => '' });
-  /** A filter is set: the list shows every match. */
-  private readonly filtering = computed(
-    () => !!(this.recipeFilter().trim() || this.coneFilter() || this.atmosphereFilter())
-  );
-  /**
-   * The saved recipes as listed: the newest first, those whose titles match the filter and whose firing
-   * takes in the cone chosen (a range matches any cone inside it, those tested at it first) and names the
-   * atmosphere chosen, the first few until all are asked for.
-   */
-  private readonly listedRecipes = computed(() => {
-    const filter = this.recipeFilter().trim().toLocaleLowerCase();
-    let listed = [...this.myRecipes()].reverse();
-    if (filter) listed = listed.filter((recipe) => recipe.title.toLocaleLowerCase().includes(filter));
-    const atmosphere = this.atmosphereFilter();
-    if (atmosphere) {
-      listed = listed.filter((r) =>
-        [...(r.firedAt?.atmospheres ?? []), ...(r.firedAt?.processes ?? [])].includes(atmosphere as never)
-      );
-    }
-    const coneKey = this.coneFilter();
-    if (coneKey) {
-      const [scale, cone] = coneKey.split(':') as [ConeScale, string];
-      listed = listed.filter((r) => inRange(r.firedAt, scale, cone));
-      const untested = (r: Recipe) => (testedCones(r.firedAt).includes(cone) ? 0 : 1);
-      listed = [...listed].sort((a, b) => untested(a) - untested(b));
-    }
-    return listed;
-  });
-  protected readonly shownRecipes = computed(() => {
-    const listed = this.listedRecipes();
-    return this.showAllRecipes() || this.filtering() ? listed : listed.slice(0, SAVED_SHOWN);
-  });
-  /** A saved recipe's firing on one line. */
-  protected savedFiring(recipe: Recipe): string {
-    return firingLine(recipe.firedAt, this.reader());
-  }
-  /** How many saved recipes are left out until all are asked for, or 0. */
-  protected readonly hiddenRecipes = computed(() => this.listedRecipes().length - this.shownRecipes().length);
   protected readonly removal = new Removal(this.recipes, this.myRecipes, this.notices, (recipe) => recipe.title);
 
   /** Whether the unity formula counts the colorants and additives too; saved with the recipe. */
@@ -730,35 +316,17 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
    */
   private showing = 0;
 
-  // Scale changes.
-  protected readonly batchOpen = signal(false);
-  /** The batch weight as typed, and the unit it was typed in. */
-  private readonly batchTyped = signal<{ text: string; unit: WeightUnit } | null>(null);
-  /** The batch weight in the account's unit (grams, or pounds). */
-  protected readonly batchText = computed(() => {
-    const typed = this.batchTyped();
-    const unit = this.weightUnit();
-    return typed?.unit === unit ? typed.text : DEFAULT_BATCH[unit];
-  });
-  protected readonly batchUnit = computed(() => (this.weightUnit() === 'lb' ? 'lb' : 'g'));
-  protected readonly scaleMessage = signal<{ text: string; problem: boolean } | null>(null);
-  /**
-   * Scaled to a batch in pounds: the amounts are pounds, and each shows what it
-   * weighs in pounds and ounces, until the scale changes or another recipe opens.
-   */
-  private readonly inPounds = signal(false);
-  protected readonly poundReadings = computed(() => {
-    if (!this.inPounds()) return null;
-    const reading = (pounds: number): string => (pounds > 0 ? formatWeight(pounds * GRAMS_PER_POUND, 'lb') : '');
-    const base = this.total();
-    return {
-      materials: this.lines().map((line) => reading(amountOf(line.amount))),
-      // A percent of the base is that share of the batch.
-      additives: this.additiveLines().map((line) =>
-        reading(unitOf(line) === 'percent' ? (amountOf(line.amount) / 100) * base : amountOf(line.amount))
-      ),
-      total: reading(base)
-    };
+  /** Adding to the materials and the colorants, their amounts and units, and the scale (recipe-lines.ts). */
+  protected readonly edit = new RecipeLines({
+    lines: this.lines,
+    additiveLines: this.additiveLines,
+    checks: this.checks,
+    unreadable: () => {
+      const unreadable = this.unreadableLine();
+      return unreadable ? this.notANumber(unreadable) : '';
+    },
+    closeQuestions: () => this.swaps.closeQuestions(),
+    announce: (text) => this.announcement.set(text)
   });
   /** Told to screen readers: what an action did that the focus does not show. */
   protected readonly announcement = signal('');
@@ -766,13 +334,12 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   protected readonly evaluation = computed(() =>
     evaluate(this.lines(), this.additiveLines(), {
       includeAdditives: this.includeAdditives(),
-      chemistryOf: (name) => this.findByName(name)
+      chemistryOf: (name) => this.libraries.findByName(name)
     })
   );
-  protected readonly total = computed(() => totalOf(this.lines().map((l) => l.amount)));
   /** The dry materials' SG estimated from the recipe (lib/recipe/density.js), for the SG calculator. */
   protected readonly drySgEstimate = computed(() => {
-    const base = this.total();
+    const base = this.edit.total();
     const additives = this.additiveLines().map((line) => ({
       ...line,
       amount: String(unitOf(line) === 'percent' ? (amountOf(line.amount) / 100) * base : amountOf(line.amount))
@@ -801,15 +368,6 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     return this.hasContent() ? translate('recipe.page.notSavedYet') : '';
   });
 
-  // Printing: ?print=draft prints the recipe being edited, ?print=<id> a saved one.
-  private readonly printParam = toSignal(this.route.queryParamMap.pipe(map((params) => params.get('print'))), {
-    initialValue: null
-  });
-  /** ?sheet=worked opens the print view on the worked calculation (Show the working). */
-  protected readonly printSheet = toSignal(
-    this.route.queryParamMap.pipe(map((params) => (params.get('sheet') === 'worked' ? ('worked' as const) : null))),
-    { initialValue: null }
-  );
   private readonly recipesLoaded = signal(false);
   /** The recipe being edited, as it would be saved. */
   private readonly draft = computed<Recipe>(() => ({
@@ -826,191 +384,68 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     ...(this.firings().length ? { firings: this.firings() } : {}),
     ...(this.coneResults().length ? { coneResults: this.coneResults() } : {})
   }));
-  /** The recipe in the print view, while it is open. */
-  protected readonly printRecipe = computed<Recipe | null>(() => {
-    const wanted = this.printParam();
-    if (!wanted) return null;
-    if (wanted === 'draft') return this.lines().length ? this.draft() : null;
-    return this.myRecipes().find((recipe) => recipe._id === wanted) ?? null;
-  });
-  /** Asked to print a saved recipe, before the saved recipes are in. */
-  protected readonly printWaiting = computed(
-    () => !!this.printParam() && this.printParam() !== 'draft' && !this.recipesLoaded()
-  );
-  /** Whether this page opened the print or compare view, so closing it can go back in the history. */
-  private viewOpenedHere = false;
-  protected readonly chemistryOf = (name: string) => this.findByName(name);
+  protected readonly chemistryOf = (name: string) => this.libraries.findByName(name);
   /** What the recipe's hazards are read from: the library's current records for its standard materials. */
   protected readonly hazardSources = computed(() =>
     hazardSources(
       [...this.lines(), ...this.additiveLines()],
-      [...this.standardMaterials(), ...this.standardAdditives()],
-      [...this.myMaterials(), ...this.myAdditives()]
+      [...this.libraries.standardMaterials(), ...this.libraries.standardAdditives()],
+      [...this.libraries.myMaterials(), ...this.libraries.myAdditives()]
     )
   );
-  /** The same for the recipe being printed. */
-  protected readonly printHazards = computed(() => {
-    const recipe = this.printRecipe();
-    return recipe
-      ? hazardSources(
-          [...(recipe.materials ?? []), ...(recipe.additives ?? [])],
-          [...this.standardMaterials(), ...this.standardAdditives()],
-          [...this.myMaterials(), ...this.myAdditives()]
-        )
-      : [];
-  });
-
-  // Comparing: ?compare=<first>,<second>, each 'draft' (the recipe being edited),
-  // 'before' (it before Try modern materials) or a saved recipe's id.
-  private readonly compareParam = toSignal(this.route.queryParamMap.pipe(map((params) => params.get('compare'))), {
-    initialValue: null
-  });
   /** The recipe being edited as it was before Try modern materials, to compare with. */
   private readonly beforeSwap = signal<Recipe | null>(null);
-  protected readonly compareKeys = computed(() => {
-    const param = this.compareParam();
-    if (param === null) return null;
-    const [left = '', right = ''] = param.split(',');
-    return { left, right };
-  });
-  protected readonly compareLeft = computed(() => this.recipeFor(this.compareKeys()?.left));
-  protected readonly compareRight = computed(() => this.recipeFor(this.compareKeys()?.right));
-  /** Whether the compare view is open: asked for, and at least one of the two is there. */
-  protected readonly comparing = computed(() => !!this.compareKeys() && !!(this.compareLeft() || this.compareRight()));
-  protected readonly compareWaiting = computed(() => !!this.compareKeys() && !this.recipesLoaded());
-  protected readonly compareChoices = computed<CompareChoice[]>(() => {
-    const before = this.beforeSwap();
-    return [
-      ...(this.lines().length
-        ? [
-            {
-              key: 'draft',
-              label: translate('recipe.page.beingEdited', {
-                title: this.title().trim() || translate('recipe.page.untitled')
-              })
-            }
-          ]
-        : []),
-      ...(before ? [{ key: 'before', label: translate('recipe.page.beforeSwap', { title: before.title }) }] : []),
-      ...this.myRecipes().map((recipe) => ({ key: recipe._id ?? '', label: recipe.title }))
-    ];
-  });
-  /** The button that opened the compare view, for the focus to go back to. */
-  private compareOpener = '';
   /** What Undo the swap puts back: the recipe as it was, and whether (and as what) it was saved. */
   protected readonly swapUndo = signal<SwapUndo | null>(null);
-  protected readonly swapResult = computed(() => this.swapUndo()?.result ?? null);
-  /** The report goes with the compare view while it shows the new recipe, and under Materials otherwise. */
-  protected readonly reportInCompare = computed(() => this.comparing() && this.compareKeys()?.right === 'draft');
-  /** The materials of the recipe as it was and as it is, marked in the lists to try. */
-  protected readonly swapKeys = computed(
-    () => new Set([...(this.swapUndo()?.recipe.materials ?? []).map(libraryKey), ...this.materialKeys()])
-  );
 
-  /** Materials that are no longer current, with what the library says replaces them. */
-  protected readonly modern = computed(() =>
-    modernMaterials(this.lines(), (name) => this.findMaterial(name), chosenRegion(), {
-      allowLead: !this.leadOff(),
-      findAdditive: (name) => findNamed(this.standardAdditives(), name)
-    })
-  );
-  /** Whether a swap needs its amounts worked out again, so Suggest amounts is offered. */
-  protected readonly notLikeForLike = computed(() => this.modern().swaps.some((swap) => !swap.like));
-  /** Suggest amounts' question: for each oxide a swap leaves short, what brings it back ('' leaves it out). */
-  protected readonly suggestQuestion = signal<{ plan: Plan; chosen: Record<string, string> } | null>(null);
-  protected readonly suggestProblem = signal('');
-  protected readonly oxideLabel = oxideLabel;
-  /** Materials to try, added in Suggest amounts' or Replace lead's question. */
-  protected readonly suggestTries = signal<TryMaterial[]>([]);
-  protected readonly leadTries = signal<TryMaterial[]>([]);
-  protected readonly tryingMore = signal(false);
-
-  // Match with what I have: the recipe made again from only the materials on hand.
-  protected readonly shelfOpen = signal(false);
-  protected readonly shelfTries = signal<TryMaterial[]>([]);
-  protected readonly shelfLoaded = computed(() => this.shelf.keys() !== null);
-  protected readonly shelfProblem = this.shelf.problem;
-  /** How many on hand have lead, left out while lead is off. */
-  protected readonly shelfLeadHidden = computed(() =>
-    this.leadOff()
-      ? (this.shelf.keys() ?? []).filter((key) => {
-          const material = this.libraryMaterial(key);
-          return !!material && hasLead(material);
-        }).length
-      : 0
-  );
-  protected readonly shelfStatus = signal('');
-  protected readonly noKeys: ReadonlySet<string> = new Set();
-
-  // Replace lead: the recipe without lead, rebuilt or with its colour carried onto a lead-free base.
-  protected readonly cones = CONES;
-  protected readonly listOf = listOf;
-  private readonly locale = inject(LocaleService);
-  /**
-   * Firing to Orton cones (Settings). A recipe's cone is an Orton number, and none is turned into an SK number,
-   * so a potter who fires to SK cones sees the temperature.
-   */
-  protected readonly byCones = computed(() => this.locale.cones() === 'orton');
-  /** A firing as the potter names it: "04 (1060 °C)" to cones, or "1060 °C" by temperature. */
-  protected firingLabel(firing: { cone: string; celsius: number }): string {
-    const temperature = formatTemperature(firing.celsius, this.locale.temperature());
-    return this.byCones() ? `${firing.cone} (${temperature})` : temperature;
-  }
-  protected readonly hasLead = computed(() => recipeHasLead(this.lines()));
-  protected readonly leadAmount = computed(() => (this.hasLead() ? leadIn(this.lines()) : null));
-  protected readonly leadQuestion = signal<{
-    cone: string;
-    mode: LeadMode;
-    bases: BaseChoice[];
-    base: string;
-  } | null>(null);
+  /** The print and compare views, which the address opens (recipe-views.ts). */
+  protected readonly views = new RecipeViews({
+    lines: this.lines,
+    title: this.title,
+    draft: this.draft,
+    savedId: this.savedId,
+    recipes: this.myRecipes,
+    recipesLoaded: this.recipesLoaded,
+    beforeSwap: this.beforeSwap,
+    myMaterials: this.libraries.myMaterials,
+    standardMaterials: this.libraries.standardMaterials,
+    myAdditives: this.libraries.myAdditives,
+    standardAdditives: this.libraries.standardAdditives,
+    saveProblem: this.saveProblem,
+    unreadableField: () => this.unreadableField(),
+    report: (field, problem) => this.checks.report(field, problem),
+    showMore: (id) => this.savedList()?.showMore(id)
+  });
+  /** Try modern materials, Suggest amounts, Replace lead and Match with what I have (recipe-swaps.ts). */
+  protected readonly swaps = new RecipeSwaps({
+    lines: this.lines,
+    additiveLines: this.additiveLines,
+    firing: this.firing,
+    firedAt: this.firedAt,
+    myMaterials: this.libraries.myMaterials,
+    standardMaterials: this.libraries.standardMaterials,
+    standardAdditives: this.libraries.standardAdditives,
+    leadOff: this.leadOff,
+    undo: this.swapUndo,
+    unreadable: () => {
+      const unreadable = this.unreadableLine();
+      return unreadable ? this.notANumber(unreadable) : '';
+    },
+    swapIn: (...swap) => this.swapIn(...swap),
+    restore: (undo) => this.restore(undo),
+    announce: (text) => this.announcement.set(text),
+    focusTitle: () => this.focusTitle()
+  });
 
   constructor() {
     // A new version waits for the changes not saved (core/update.service.ts), which a reload would lose.
     const updates = inject(UpdateService);
     effect(() => updates.holdWhile(this.unsaved()));
     inject(DestroyRef).onDestroy(() => updates.holdWhile(false));
-    // Asked to print what is not there (an empty page after a reload, a recipe removed elsewhere): show the editor.
-    effect(() => {
-      if (this.printParam() && !this.printRecipe() && !this.printWaiting()) untracked(() => this.leavePrint());
-    });
-    // Asked to compare two recipes neither of which is there: show the editor.
-    effect(() => {
-      if (this.compareKeys() && !this.comparing() && !this.compareWaiting()) untracked(() => this.leaveCompare());
-    });
-    // The focus goes to the compare options when they open, and back to the button that opened them.
-    let compared = false;
-    effect(() => {
-      const comparing = this.comparing();
-      if (comparing === compared) return;
-      compared = comparing;
-      const target = comparing ? 'compare-heading' : this.compareOpener;
-      if (!comparing && target.startsWith('compare-') && target !== 'compare-draft') {
-        untracked(() => this.showMore(target.slice('compare-'.length)));
-      }
-      untracked(() => this.focusWhenDrawn(target, comparing ? 'compare-heading' : null));
-    });
-    // The focus goes to the print options when they open, and back to the Print button that opened them.
-    // Show the working opened it from its own button, in the unity formula's panel.
-    let printed: string | null = null;
-    let sheet: string | null = null;
-    effect(() => {
-      const printing = this.printRecipe() ? this.printParam() : null;
-      if (printing === printed) return;
-      const opener = printed === 'draft' && sheet === 'worked' ? 'worked-draft' : 'print-' + printed;
-      const target = printing ? 'print-heading' : opener;
-      if (!printing && printed && printed !== 'draft') untracked(() => this.showMore(printed!));
-      printed = printing;
-      sheet = untracked(this.printSheet);
-      untracked(() => this.focusWhenDrawn(target, printing ? 'print-heading' : null, null));
-    });
   }
 
   ngOnInit(): void {
-    this.loadMyMaterials();
-    this.loadStandardMaterials();
-    this.loadMyAdditives();
-    this.loadStandardAdditives();
+    this.libraries.load();
     this.loadMyRecipes();
     const handed = this.pendingRecipe.take();
     if (handed) this.openHanded(handed);
@@ -1033,35 +468,17 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
 
   /** Asks again for each of the account's own lists that could not be fetched. */
   protected readonly retryOwn = (): void => {
-    if (this.myMaterialsFailed()) this.loadMyMaterials();
-    if (this.myAdditivesFailed()) this.loadMyAdditives();
+    this.libraries.retryMine();
     if (this.myRecipesFailed()) this.loadMyRecipes();
   };
-
-  private loadMyMaterials(): void {
-    void this.load(
-      this.materials.getAll(),
-      this.myMaterials,
-      marker('recipe.page.fetchMaterials'),
-      this.myMaterialsFailed
-    );
-  }
-
-  private loadMyAdditives(): void {
-    void this.load(
-      this.additives.getAll(),
-      this.myAdditives,
-      marker('recipe.page.fetchAdditives'),
-      this.myAdditivesFailed
-    );
-  }
 
   /**
    * The saved recipes. Only once they have arrived is the account known to have none, so a failed
    * fetch does not open the first-run help or say the list is empty; it offers to try again.
    */
   private loadMyRecipes(): void {
-    void this.load(
+    void fetchList(
+      this.notices,
       this.recipes.getAll(),
       this.myRecipes,
       marker('recipe.page.fetchRecipes'),
@@ -1088,160 +505,6 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
         );
       }
     });
-  }
-
-  // Materials and additives.
-
-  protected addMaterial(material: Material): void {
-    this.lines.update((list) => [...list, { ...copy(material), amount: '' }]);
-    this.scaleMessage.set(null);
-    this.suggestQuestion.set(null);
-    this.leadQuestion.set(null);
-    this.shelfOpen.set(false);
-    this.focusAmount('material', this.lines().length - 1);
-  }
-
-  protected setAmount(index: number, amount: string): void {
-    this.lines.update((list) => list.map((line, i) => (i === index ? { ...line, amount } : line)));
-    this.scaleMessage.set(null);
-    this.suggestQuestion.set(null);
-    this.leadQuestion.set(null);
-    this.shelfOpen.set(false);
-  }
-
-  /**
-   * Enter in an amount: that line is done, so the focus goes back to the list the next one is added from (its
-   * filter field, which a screen reader names). Enter did nothing here before, and there is no form to send.
-   * An amount missing or unreadable keeps the focus, marked, with its problem said.
-   */
-  protected amountEntered(event: Event, kind: 'material' | 'additive', index: number): void {
-    // Enter that ends a composition (Chinese, Japanese, Korean) belongs to it.
-    if ((event as KeyboardEvent).isComposing) return;
-    event.preventDefault();
-    if (!this.checks.confirm(kind + '-amount-' + index)) return;
-    document.getElementById(kind + 's-filter')?.focus();
-  }
-
-  protected removeMaterial(index: number): void {
-    const name = this.lines()[index]?.name;
-    this.lines.update((list) => list.filter((_, i) => i !== index));
-    this.suggestQuestion.set(null);
-    this.leadQuestion.set(null);
-    this.shelfOpen.set(false);
-    // The amounts after it move up a place, so their marks would be on the wrong lines.
-    this.checks.clear();
-    this.afterTakingOut('material', name, index, this.lines().length);
-  }
-
-  protected addAdditive(additive: Additive): void {
-    // Most recipes give colorants as a percent of the base.
-    this.additiveLines.update((list) => [...list, { ...copy(additive), amount: '', unit: 'percent' }]);
-    this.focusAmount('additive', this.additiveLines().length - 1);
-  }
-
-  protected setAdditiveAmount(index: number, amount: string): void {
-    this.additiveLines.update((list) => list.map((line, i) => (i === index ? { ...line, amount } : line)));
-  }
-
-  protected setAdditiveUnit(index: number, unit: AdditiveUnit): void {
-    this.additiveLines.update((list) => list.map((line, i) => (i === index ? { ...line, unit } : line)));
-  }
-
-  protected removeAdditive(index: number): void {
-    const name = this.additiveLines()[index]?.name;
-    this.additiveLines.update((list) => list.filter((_, i) => i !== index));
-    this.checks.clear();
-    this.afterTakingOut('additive', name, index, this.additiveLines().length);
-  }
-
-  /**
-   * Says what was taken out, and keeps the focus in the list: on the ✕ now in
-   * the same place, or the one before, or the list's heading once it is empty.
-   */
-  private afterTakingOut(kind: 'material' | 'additive', name: string | undefined, index: number, left: number): void {
-    this.announcement.set(
-      name === undefined ? translate('recipe.page.itTakenOut') : translate('recipe.page.takenOut', { name })
-    );
-    afterNextRender(
-      () => {
-        const target = left
-          ? document.getElementById(kind + '-remove-' + Math.min(index, left - 1))
-          : document.getElementById(kind + 's-heading');
-        target?.focus();
-      },
-      { injector: this.injector }
-    );
-  }
-
-  /** A material's share of the batch, as a percent. */
-  protected share(amount: string | undefined): string {
-    const total = this.total();
-    return total && amountOf(amount) ? upTo((amountOf(amount) / total) * 100, 1) + '%' : '';
-  }
-
-  /** The whole batch's share, 100%, in the reader's digits as the other shares are. */
-  protected totalShare(): string {
-    return this.total() ? upTo(100, 0) + '%' : '';
-  }
-
-  protected formatTotal(): string {
-    return upTo(this.total(), 3);
-  }
-
-  protected scale(how: Exclude<Rebase, { to: 'batch' }>): void {
-    if (this.rescale(how, translate('recipe.page.enterAmountsFirst'))) {
-      this.inPounds.set(false);
-      this.scaleMessage.set({ text: translate(SCALE_NOTES[how.to]), problem: false });
-    }
-  }
-
-  protected setBatchText(text: string): void {
-    this.batchTyped.set({ text, unit: this.weightUnit() });
-  }
-
-  /** Scales to a batch in the account's unit: grams, or pounds (shown in pounds and ounces too). */
-  protected scaleToBatch(): void {
-    const pounds = this.weightUnit() === 'lb';
-    const missing = pounds ? translate('recipe.page.batchPounds') : translate('recipe.page.batchGrams');
-    if (!this.rescale({ to: 'batch', weight: amountOf(this.batchText()) }, missing)) return;
-    if (!pounds) {
-      this.inPounds.set(false);
-      this.scaleMessage.set({ text: translate('recipe.page.scaledGrams'), problem: false });
-      return;
-    }
-    // Colorants in grams would now be pounds: in parts, they say they scale as the materials do.
-    const inGrams = this.additiveLines().some((line) => unitOf(line) === 'grams');
-    this.additiveLines.update((list) =>
-      list.map((line) => (unitOf(line) === 'grams' ? { ...line, unit: 'parts' as const } : line))
-    );
-    this.inPounds.set(true);
-    this.scaleMessage.set({
-      text: inGrams ? translate('recipe.page.scaledPoundsParts') : translate('recipe.page.scaledPounds'),
-      problem: false
-    });
-  }
-
-  /** Puts the recipe on a new scale; false, with the reason shown, when it cannot. */
-  private rescale(how: Rebase, missing: string): boolean {
-    // Scaling around an amount it cannot read would change the proportions.
-    const unreadable = this.unreadableLine();
-    if (unreadable) {
-      this.scaleMessage.set({ text: this.notANumber(unreadable), problem: true });
-      return false;
-    }
-    const result = rebase(
-      this.lines().map((l) => l.amount),
-      this.additiveLines(),
-      how
-    );
-    if (!result) {
-      this.scaleMessage.set({ text: missing, problem: true });
-      return false;
-    }
-    this.lines.update((list) => list.map((line, i) => ({ ...line, amount: result.materials[i] })));
-    this.additiveLines.update((list) => list.map((line, i) => ({ ...line, amount: result.additives[i] })));
-    this.batchOpen.set(false);
-    return true;
   }
 
   // Saving.
@@ -1420,490 +683,10 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     return additive >= 0 ? 'additive-amount-' + additive : null;
   }
 
-  // Printing.
-
-  /** Opens the print view for the recipe being edited, saved or not; on the worked calculation for Show the working. */
-  protected printDraft(sheet?: 'worked'): void {
-    this.saveProblem.set('');
-    if (!this.lines().length) {
-      this.saveProblem.set(translate('recipe.page.addMaterialToPrint'));
-      return;
-    }
-    // It would print as 0 g. (Blank amounts are fine to print; they count as 0.)
-    const unreadable = this.unreadableField();
-    if (unreadable) {
-      this.checks.report(unreadable, notANumber());
-      return;
-    }
-    this.openPrint('draft', sheet);
-  }
-
-  /** Opens the print view: for 'draft', or a saved recipe's id. Back in the browser closes it. */
-  protected openPrint(what: string, sheet?: 'worked'): void {
-    this.viewOpenedHere = true;
-    void this.router.navigate([], {
-      relativeTo: this.route,
-      queryParams: { print: what, sheet: sheet ?? null },
-      queryParamsHandling: 'merge'
-    });
-  }
-
-  protected closePrint(): void {
-    if (!this.viewOpenedHere) return this.leavePrint();
-    this.viewOpenedHere = false;
-    this.location.back();
-  }
-
-  private leavePrint(): void {
-    void this.router.navigate([], {
-      relativeTo: this.route,
-      queryParams: { print: null, sheet: null },
-      queryParamsHandling: 'merge',
-      replaceUrl: true
-    });
-  }
-
-  // Comparing (issue #6).
-
-  /** Compares the recipe being edited with a saved one (the first other, to start with). */
-  protected compareDraft(): void {
-    this.saveProblem.set('');
-    if (!this.lines().length) {
-      this.saveProblem.set(translate('recipe.page.addMaterialToCompare'));
-      return;
-    }
-    const unreadable = this.unreadableField();
-    if (unreadable) {
-      this.checks.report(unreadable, notANumber());
-      return;
-    }
-    const other = this.myRecipes().find((recipe) => recipe._id !== this.savedId());
-    this.openCompare('draft', other?._id ?? '', 'compare-draft');
-  }
-
-  /** Compares a saved recipe with the one being edited, or with another saved one. */
-  protected compareSaved(recipe: Recipe): void {
-    const id = recipe._id ?? '';
-    const other =
-      this.lines().length && this.savedId() !== id ? 'draft' : (this.myRecipes().find((r) => r._id !== id)?._id ?? '');
-    this.openCompare(id, other, 'compare-' + id);
-  }
-
-  protected chooseCompared(choice: { side: 'left' | 'right'; key: string }): void {
-    const keys = { left: '', right: '', ...this.compareKeys(), [choice.side]: choice.key };
-    void this.router.navigate([], {
-      relativeTo: this.route,
-      queryParams: { compare: keys.left + ',' + keys.right },
-      queryParamsHandling: 'merge',
-      replaceUrl: true
-    });
-  }
-
-  protected closeCompare(): void {
-    if (!this.viewOpenedHere) return this.leaveCompare();
-    this.viewOpenedHere = false;
-    this.location.back();
-  }
-
-  private openCompare(left: string, right: string, opener: string): void {
-    this.viewOpenedHere = true;
-    this.compareOpener = opener;
-    void this.router.navigate([], {
-      relativeTo: this.route,
-      queryParams: { compare: left + ',' + right },
-      queryParamsHandling: 'merge'
-    });
-  }
-
-  private leaveCompare(): void {
-    void this.router.navigate([], {
-      relativeTo: this.route,
-      queryParams: { compare: null },
-      queryParamsHandling: 'merge',
-      replaceUrl: true
-    });
-  }
-
-  private recipeFor(key: string | undefined): Recipe | null {
-    if (!key) return null;
-    if (key === 'draft') return this.lines().length ? this.draft() : null;
-    if (key === 'before') return this.beforeSwap();
-    return this.myRecipes().find((recipe) => recipe._id === key) ?? null;
-  }
+  // Swaps (recipe-swaps.ts): a new recipe in place of the one on the page, and the one before put back.
 
   /**
-   * Swaps each material that is no longer current for what replaces it, one for
-   * one, as a new recipe (the one opened stays as it was), and compares the two.
-   */
-  protected tryModernMaterials(): void {
-    const { materials, swaps } = this.modern();
-    if (!swaps.length) return;
-    const swapped = swaps.map((s) =>
-      s.like
-        ? translate('recipe.page.became', { from: s.from, to: s.to })
-        : translate('recipe.page.becameNotLike', { from: s.from, to: s.to })
-    );
-    this.swapIn(
-      materials,
-      translate('recipe.page.swappedNote', { list: listOf(swapped) }),
-      translate('recipe.page.swappedCount', { count: swaps.length }),
-      'try-modern'
-    );
-  }
-
-  /**
-   * Suggest amounts: works out the modern materials' amounts, and the rest of
-   * the recipe's, to bring its unity formula back while changing it as little
-   * as it can. When a swap leaves an oxide well short, it asks first what
-   * should bring it back.
-   */
-  protected suggestModernAmounts(): void {
-    this.suggestProblem.set('');
-    this.leadQuestion.set(null);
-    this.shelfOpen.set(false);
-    const unreadable = this.unreadableLine();
-    if (unreadable) {
-      this.suggestProblem.set(this.notANumber(unreadable));
-      return;
-    }
-    let plan: Plan;
-    try {
-      plan = planSuggestion(this.lines(), (name) => this.findMaterial(name), this.standardMaterials(), chosenRegion(), {
-        allowLead: !this.leadOff()
-      });
-    } catch {
-      this.suggestProblem.set(translate('recipe.page.cannotSuggest'));
-      return;
-    }
-    if (!plan.shortfalls.length) {
-      this.applySuggestion(this.runOf('suggest'));
-      return;
-    }
-    const chosen = Object.fromEntries(plan.shortfalls.map((short) => [short.oxide, short.choices[0]?.name ?? '']));
-    this.suggestTries.set([]);
-    this.tryingMore.set(false);
-    this.suggestQuestion.set({ plan, chosen });
-    afterNextRender(() => document.getElementById('suggest-heading')?.focus(), { injector: this.injector });
-  }
-
-  protected chooseBringIn(oxide: string, name: string): void {
-    this.suggestQuestion.update((question) =>
-      question ? { ...question, chosen: { ...question.chosen, [oxide]: name } } : question
-    );
-  }
-
-  protected cancelSuggestion(): void {
-    this.suggestQuestion.set(null);
-    this.leadQuestion.set(null);
-    this.shelfOpen.set(false);
-    afterNextRender(() => document.getElementById('suggest-amounts')?.focus(), { injector: this.injector });
-  }
-
-  /** Works the amounts out with what was chosen to bring short oxides back, and compares. */
-  protected workOutSuggestion(): void {
-    const chosen = Object.values(this.suggestQuestion()?.chosen ?? {}).filter(Boolean);
-    const bringIn = [...new Set(chosen)]
-      .map((name) => this.standardMaterials().find((material) => material.name === name))
-      .filter((material): material is Material => !!material);
-    const run = { ...this.runOf('suggest'), bringIn, tries: this.suggestTries() };
-    this.suggestQuestion.set(null);
-    this.leadQuestion.set(null);
-    this.shelfOpen.set(false);
-    this.applySuggestion(run);
-  }
-
-  /** A run with nothing chosen yet. */
-  private runOf(kind: Run['kind']): Run {
-    return { kind, bringIn: [], tries: [], avoid: [], uncapped: [], cone: '', mode: 'rebuild', base: '' };
-  }
-
-  private applySuggestion(run: Run, compare = true): void {
-    const { swaps } = this.modern();
-    const suggestion = suggestAmounts(this.lines(), (name) => this.findMaterial(name), run.bringIn, chosenRegion(), {
-      allowLead: !this.leadOff(),
-      tries: run.tries,
-      avoid: run.avoid,
-      additives: this.additiveLines(),
-      uncapped: run.uncapped
-    });
-    const swapped = listOf(swaps.map((s) => translate('recipe.page.became', { from: s.from, to: s.to })));
-    const parts = [
-      translate('recipe.page.suggestedNote', { list: swapped }),
-      this.changedNote(suggestion.changes),
-      suggestion.unused.length ? translate('recipe.page.unusedNote', { list: listOf(suggestion.unused) }) : '',
-      suggestion.stillShort.length
-        ? translate('recipe.page.stillShortNote', { list: listOf(suggestion.stillShort) })
-        : '',
-      ...suggestion.cautions,
-      translate('recipe.page.testFirst')
-    ];
-    this.swapIn(
-      suggestion.materials,
-      parts.filter(Boolean).join(' '),
-      compare ? translate('recipe.page.suggested') : translate('recipe.page.workedOutAgain'),
-      'suggest-amounts',
-      'modern',
-      { run, report: suggestion.report, cautions: suggestion.cautions },
-      compare
-    );
-  }
-
-  /** What a substitution changed, for the new recipe's notes: "Changed: Whiting 20 → 18.1; Silica 30 → 31.5." */
-  private changedNote(changes: string[]): string {
-    return changes.length ? translate('recipe.page.changedNote', { changes: changes.join('; ') }) : '';
-  }
-
-  private celsiusOf(cone: string): number {
-    return CONES.find((c) => c.cone === cone)?.celsius ?? 1060;
-  }
-
-  private basesFor(cone: string, mode: LeadMode = 'rebuild'): BaseChoice[] {
-    return leadFreeBases(
-      this.lines(),
-      this.additiveLines(),
-      (name) => this.findMaterial(name),
-      this.standardMaterials(),
-      chosenRegion(),
-      this.celsiusOf(cone),
-      mode
-    );
-  }
-
-  /** Replace lead: asks the firing, how, and which lead-free frit to build on. */
-  protected askReplaceLead(): void {
-    this.suggestQuestion.set(null);
-    this.leadQuestion.set(null);
-    this.shelfOpen.set(false);
-    const cone = '04';
-    let bases: BaseChoice[];
-    try {
-      bases = this.basesFor(cone);
-    } catch {
-      this.suggestProblem.set(translate('recipe.page.cannotReplaceLead'));
-      return;
-    }
-    this.leadTries.set([]);
-    this.tryingMore.set(false);
-    this.leadQuestion.set({ cone, mode: 'rebuild', bases, base: bases[0]?.name ?? '' });
-    afterNextRender(() => document.getElementById('lead-heading')?.focus(), { injector: this.injector });
-  }
-
-  /** A different firing sets different boron, so the frits are ranked again. */
-  protected chooseCone(cone: string): void {
-    const question = this.leadQuestion();
-    if (!question) return;
-    const bases = this.basesFor(cone, question.mode);
-    const base = bases.some((b) => b.name === question.base) ? question.base : (bases[0]?.name ?? '');
-    this.leadQuestion.set({ ...question, cone, bases, base });
-  }
-
-  /** Rebuilding and keeping the colour rank the frits differently. */
-  protected chooseLeadMode(mode: LeadMode): void {
-    const question = this.leadQuestion();
-    if (!question) return;
-    const bases = this.basesFor(question.cone, mode);
-    const base = bases.some((b) => b.name === question.base) ? question.base : (bases[0]?.name ?? '');
-    this.leadQuestion.set({ ...question, mode, bases, base });
-  }
-
-  protected chooseLeadBase(base: string): void {
-    this.leadQuestion.update((question) => (question ? { ...question, base } : question));
-  }
-
-  protected cancelReplaceLead(): void {
-    this.leadQuestion.set(null);
-    this.shelfOpen.set(false);
-    afterNextRender(() => document.getElementById('replace-lead')?.focus(), { injector: this.injector });
-  }
-
-  /** Replaces the lead as chosen, as a new recipe compared with the old one. */
-  protected workOutReplaceLead(): void {
-    const question = this.leadQuestion();
-    if (!question?.base) return;
-    const { cone, mode, base } = question;
-    const run: Run = { ...this.runOf('lead'), cone, mode, base, tries: mode === 'rebuild' ? this.leadTries() : [] };
-    this.leadQuestion.set(null);
-    this.shelfOpen.set(false);
-    this.applyLead(run);
-  }
-
-  private applyLead(run: Run, compare = true): void {
-    const replacement = replaceLead(
-      this.lines(),
-      this.additiveLines(),
-      (name) => this.findMaterial(name),
-      this.standardMaterials(),
-      chosenRegion(),
-      {
-        base: run.base,
-        celsius: this.celsiusOf(run.cone),
-        mode: run.mode,
-        tries: run.tries,
-        avoid: run.avoid,
-        uncapped: run.uncapped
-      }
-    );
-    const firing = CONES.find((c) => c.cone === run.cone) ?? { cone: run.cone, celsius: 0 };
-    const how =
-      run.mode === 'rebuild'
-        ? this.byCones()
-          ? translate('recipe.page.leadRebuiltCone', { cone: run.cone, base: run.base })
-          : translate('recipe.page.leadRebuilt', { firing: this.firingLabel(firing), base: run.base })
-        : translate('recipe.page.leadColour', { base: run.base });
-    const parts = [
-      how,
-      this.changedNote(replacement.changes),
-      ...replacement.cautions,
-      translate('recipe.page.leadGloss'),
-      translate('recipe.page.leadSafety')
-    ];
-    this.swapIn(
-      replacement.materials,
-      parts.filter(Boolean).join(' '),
-      compare ? translate('recipe.page.leadReplaced') : translate('recipe.page.workedOutAgain'),
-      'replace-lead',
-      'lead',
-      { run, report: replacement.report, cautions: replacement.cautions },
-      compare
-    );
-    // The cone it was rebuilt for tells which firing the recipe is for, when it has none yet.
-    if (!this.firing() && !firingBands(this.firedAt()).length && firing.celsius) {
-      this.firing.set(bandOf(LIMIT_SETS['hesselberth-roy'], firing.celsius) ?? '');
-    }
-  }
-
-  /** Match with what I have: shows the materials on hand, fetched from the account. */
-  protected async askShelf(): Promise<void> {
-    if (this.shelfOpen()) return this.closeShelf();
-    this.suggestQuestion.set(null);
-    this.leadQuestion.set(null);
-    this.suggestProblem.set('');
-    this.shelfStatus.set('');
-    this.shelfOpen.set(true);
-    afterNextRender(() => document.getElementById('shelf-heading')?.focus(), { injector: this.injector });
-    await this.loadShelf();
-  }
-
-  /** Fetches the materials on hand (again, after a fetch that failed), and lists those this page can use. */
-  protected async loadShelf(): Promise<void> {
-    await this.shelf.load();
-    const kept = this.shelfTries();
-    this.shelfTries.set(
-      (this.shelf.keys() ?? [])
-        .map((key) => this.shelfMaterial(key))
-        .filter((material): material is LibraryMaterial => !!material)
-        .map((material) => ({
-          material,
-          must: kept.some((tried) => tried.must && tried.material.name === material.name)
-        }))
-    );
-  }
-
-  /** A material in the standard library or the user's own, by its key (recipe-library.ts libraryKey). */
-  private libraryMaterial(key: string): LibraryMaterial | undefined {
-    return [...this.standardMaterials(), ...this.myMaterials()].find((material) => libraryKey(material) === key);
-  }
-
-  /** A material on hand that a match may use: one that is loaded, and without lead while lead is off. */
-  private shelfMaterial(key: string): LibraryMaterial | undefined {
-    const material = this.libraryMaterial(key);
-    return material && !(this.leadOff() && hasLead(material)) ? material : undefined;
-  }
-
-  protected closeShelf(): void {
-    this.shelfOpen.set(false);
-    afterNextRender(() => document.getElementById('match-shelf')?.focus(), { injector: this.injector });
-  }
-
-  /**
-   * A change to the materials on hand, saved with the account at once. Those
-   * not listed here (not loaded, or with lead while lead is off) stay on it.
-   */
-  protected async changeShelf(tries: TryMaterial[]): Promise<void> {
-    const saved = this.shelf.keys();
-    if (saved === null) return;
-    this.shelfTries.set(tries);
-    const listed = tries.map((tried) => libraryKey(tried.material));
-    const keys = [...new Set([...saved.filter((key) => listed.includes(key) || !this.shelfMaterial(key)), ...listed])];
-    if (keys.join('\n') === saved.join('\n')) return;
-    this.shelfStatus.set('');
-    if (await this.shelf.save(keys)) this.shelfStatus.set(translate('recipe.page.shelfSaved'));
-  }
-
-  /** Adds the materials this recipe uses to those on hand. */
-  protected addRecipeToShelf(): void {
-    const have = new Set(this.shelfTries().map((tried) => tried.material.name));
-    const adding = this.lines()
-      .map((line) => this.findMaterial(line.name))
-      .filter((material): material is LibraryMaterial => !!material && !have.has(material.name))
-      .filter((material, i, list) => list.findIndex((other) => other.name === material.name) === i)
-      .filter((material) => !(this.leadOff() && hasLead(material)));
-    void this.changeShelf([...this.shelfTries(), ...adding.map((material) => ({ material, must: false }))]);
-  }
-
-  /** Makes the recipe again from what is on hand, as a new recipe compared with the old one. */
-  protected matchShelf(): void {
-    if (!this.shelfTries().length) return;
-    const unreadable = this.unreadableLine();
-    if (unreadable) {
-      this.suggestProblem.set(this.notANumber(unreadable));
-      return;
-    }
-    const run: Run = { ...this.runOf('shelf'), tries: this.shelfTries() };
-    try {
-      this.applyShelf(run);
-    } catch {
-      this.suggestProblem.set(translate('recipe.page.cannotMatch'));
-      return;
-    }
-    this.shelfOpen.set(false);
-  }
-
-  private applyShelf(run: Run, compare = true): void {
-    const match = matchFromShelf(this.lines(), run.tries, {
-      avoid: run.avoid,
-      additives: this.additiveLines(),
-      uncapped: run.uncapped
-    });
-    const parts = [
-      translate('recipe.page.shelfNote'),
-      this.changedNote(match.changes),
-      ...match.cautions,
-      translate('recipe.page.testFirst')
-    ];
-    this.swapIn(
-      match.materials,
-      parts.filter(Boolean).join(' '),
-      compare ? translate('recipe.page.shelfMade') : translate('recipe.page.workedOutAgain'),
-      'match-shelf',
-      'shelf',
-      { run, report: match.report, cautions: match.cautions },
-      compare
-    );
-  }
-
-  /**
-   * Works the substitution out again from the recipe as it was, with a change
-   * from its report: a material left out or added, or a cap lifted.
-   */
-  protected rerun(change: Partial<Run>): void {
-    const undo = this.swapUndo();
-    if (!undo?.result) return;
-    const run = { ...undo.result.run, ...change };
-    this.restore(undo);
-    try {
-      if (run.kind === 'suggest') this.applySuggestion(run, false);
-      else if (run.kind === 'shelf') this.applyShelf(run, false);
-      else this.applyLead(run, false);
-    } catch {
-      this.suggestProblem.set(translate('recipe.page.cannotRerun'));
-      return;
-    }
-    this.focusWhenDrawn('swap-report-heading', 'swap-report-heading', null);
-  }
-
-  /**
-   * Puts the modern materials in as a new recipe (the one opened stays as it
+   * Puts a swap's materials in as a new recipe (the one opened stays as it
    * was), with a note on what changed, and compares the two.
    */
   private swapIn(
@@ -1936,23 +719,10 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     this.savedAt.set(null);
     this.savedSnapshot.set('');
     this.checks.clear();
-    this.scaleMessage.set(null);
+    this.edit.scaleMessage.set(null);
     this.saveProblem.set('');
-    this.suggestProblem.set('');
     this.announcement.set(announcement);
-    if (compare) this.openCompare(before, 'draft', opener);
-  }
-
-  /** Puts the recipe back as it was before Try modern materials. */
-  protected undoSwap(): void {
-    const undo = this.swapUndo();
-    if (!undo) return;
-    this.restore(undo);
-    this.suggestQuestion.set(null);
-    this.leadQuestion.set(null);
-    this.shelfOpen.set(false);
-    this.announcement.set(translate('recipe.page.swapUndone'));
-    this.focusTitle();
+    if (compare) this.views.openCompare(before, 'draft', opener);
   }
 
   /** The page as it was before a swap: the recipe, and whether (and as what) it was saved. */
@@ -1973,11 +743,6 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     this.swapUndo.set(null);
     this.beforeSwap.set(null);
     this.checks.clear();
-  }
-
-  /** A material by its name, or else another name: the user's own before a standard one. */
-  private findMaterial(name: string): LibraryMaterial | undefined {
-    return findNamed([...this.myMaterials(), ...this.standardMaterials()], name);
   }
 
   // Starting over, and opening saved recipes.
@@ -2033,18 +798,14 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       this.savedId.set(null);
       this.savedSnapshot.set('');
       this.savedAt.set(null);
-      this.scaleMessage.set(null);
-      this.inPounds.set(false);
+      this.edit.clear();
       this.saveProblem.set('');
       this.checks.clear();
       this.swapUndo.set(null);
       this.beforeSwap.set(null);
-      this.suggestQuestion.set(null);
-      this.leadQuestion.set(null);
-      this.shelfOpen.set(false);
-      this.suggestProblem.set('');
+      this.swaps.clear();
       this.notices.success(translate('recipe.firing.duplicateNote', { title: recipe.title }), 'duplicate');
-      afterNextRender(() => this.focusShown('firing-low'), { injector: this.injector });
+      afterNextRender(() => focusShown('firing-low'), { injector: this.injector });
     });
   }
 
@@ -2066,16 +827,12 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
         this.savedId.set(recipe._id ?? null);
         this.savedSnapshot.set(this.snapshot());
         this.savedAt.set(null);
-        this.scaleMessage.set(null);
-        this.inPounds.set(false);
+        this.edit.clear();
         this.saveProblem.set('');
         this.checks.clear();
         this.swapUndo.set(null);
         this.beforeSwap.set(null);
-        this.suggestQuestion.set(null);
-        this.leadQuestion.set(null);
-        this.shelfOpen.set(false);
-        this.suggestProblem.set('');
+        this.swaps.clear();
         this.focusTitle();
       },
       { recipeId: recipe._id }
@@ -2151,26 +908,14 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     this.savedId.set(null);
     this.savedAt.set(null);
     this.savedSnapshot.set(this.snapshot());
-    this.scaleMessage.set(null);
-    this.inPounds.set(false);
+    this.edit.clear();
     this.saveProblem.set('');
     this.checks.clear();
     this.swapUndo.set(null);
     this.beforeSwap.set(null);
-    this.suggestQuestion.set(null);
-    this.leadQuestion.set(null);
-    this.shelfOpen.set(false);
-    this.suggestProblem.set('');
-    this.batchOpen.set(false);
+    this.swaps.clear();
+    this.edit.batchOpen.set(false);
   }
-
-  /** What the workbench's "Fix and swap" fold has to offer: modern swaps, lead to replace, a swap to undo. */
-  protected readonly fixCount = computed(
-    () =>
-      (this.lines().length ? this.modern().swaps.length + this.modern().colorants.length : 0) +
-      (this.leadAmount() ? 1 : 0) +
-      (this.swapUndo() ? 1 : 0)
-  );
 
   /** The layout chosen here: kept on this browser, and over ?layout= for the rest of the visit. */
   protected chooseLayout(layout: RecipeLayout): void {
@@ -2196,14 +941,6 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     pane.hidden = false;
   }
 
-  /** Moves the focus to an element, opening a fold or step it is in. */
-  private focusShown(id: string): void {
-    const element = document.getElementById(id);
-    if (!element) return;
-    reveal(element);
-    element.focus();
-  }
-
   /** The workbench's peek bar on a phone: to the formula and limits beside (below) the recipe. */
   protected toFormula(): void {
     const heading = document.getElementById('unity-heading');
@@ -2221,56 +958,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     }
   }
 
-  /** A material or additive by its name or one of its aliases, for one that borrows another's chemistry. */
-  private findByName(name: string): MaterialInput | undefined {
-    const wanted = folded(name.trim());
-    const records = [
-      ...this.standardAdditives(),
-      ...this.myAdditives(),
-      ...this.standardMaterials(),
-      ...this.myMaterials()
-    ];
-    return records.find(
-      (record) => folded(record.name) === wanted || (record.aliases ?? []).some((alias) => folded(alias) === wanted)
-    );
-  }
-
   // The saved list.
-
-  /** A saved recipe's notes; "None." is saved for a recipe with none. */
-  protected savedNotes(recipe: Recipe): string {
-    const notes = firstOf(recipe.notes);
-    return !notes || notes === 'None.' ? translate('recipe.page.noNotes') : notes;
-  }
-
-  protected toggleExpanded(recipe: Recipe): void {
-    this.expanded.update((set) => toggled(set, recipe._id ?? ''));
-  }
-
-  protected toggleMore(recipe: Recipe): void {
-    this.moreOpen.update((set) => toggled(set, recipe._id ?? ''));
-    if (!this.moreOpen().has(recipe._id ?? '') && this.shareOpen() === recipe._id) this.shareOpen.set(null);
-  }
-
-  /** Opens or closes a saved recipe's Share; the focus goes to its heading when it opens. */
-  protected toggleShare(recipe: Recipe): void {
-    const id = recipe._id ?? '';
-    const opening = this.shareOpen() !== id;
-    this.shareOpen.set(opening ? id : null);
-    if (opening) {
-      this.focusWhenDrawn('share-heading-' + id, 'share-heading-' + id, null);
-    }
-  }
-
-  /** Lists a saved recipe and opens its More, so the focus can go back to its Print or Compare. */
-  private showMore(id: string): void {
-    // Opened from the address, it may be one of those the list leaves out until all are asked for.
-    if (!this.shownRecipes().some((recipe) => recipe._id === id)) {
-      this.recipeFilter.set('');
-      this.showAllRecipes.set(true);
-    }
-    if (!this.moreOpen().has(id)) this.moreOpen.update((set) => toggled(set, id));
-  }
 
   protected async remove(recipe: Recipe): Promise<void> {
     if (!(await this.removal.remove(recipe))) return;
@@ -2288,75 +976,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     }
   }
 
-  protected loadStandardMaterials(): void {
-    void this.load(
-      this.materials.getStandard(),
-      this.standardMaterials,
-      marker('recipe.page.fetchStandardMaterials'),
-      this.standardMaterialsFailed
-    );
-  }
-
-  protected loadStandardAdditives(): void {
-    void this.load(
-      this.additives.getStandard(),
-      this.standardAdditives,
-      marker('recipe.page.fetchStandardAdditives'),
-      this.standardAdditivesFailed
-    );
-  }
-
-  /**
-   * Fills the list, or says it could not: failure is the key of the message.
-   * A list that can be asked for again keeps whether it failed, and says so once;
-   * fetched on a later try, its message goes. Whether the list arrived.
-   */
-  private async load<T>(
-    request: Promise<T[]>,
-    target: { set(value: T[]): void },
-    failure: string,
-    failed?: WritableSignal<boolean>
-  ): Promise<boolean> {
-    try {
-      target.set(await request);
-      if (failed?.()) {
-        const message = translate(failure);
-        this.notices.errors.update((list) => list.filter((text) => text !== message));
-      }
-      failed?.set(false);
-      return true;
-    } catch {
-      if (!failed?.()) this.notices.error(translate(failure));
-      failed?.set(true);
-      return false;
-    }
-  }
-
-  private focusAmount(kind: 'material' | 'additive', index: number): void {
-    afterNextRender(() => document.getElementById(kind + '-amount-' + index)?.focus(), { injector: this.injector });
-  }
-
-  /**
-   * Gives an element the focus once the page is drawn. Print, compare, share and the swap report are deferred
-   * (recipe-page.html, @defer): when one is asked for before its file is in, it draws a moment later, so the
-   * focus waits for `deferred` (the element it brings) for up to two seconds. Any other element is looked for
-   * once, as before; `fallback` takes the focus where the element is not there.
-   */
-  private focusWhenDrawn(id: string, deferred: string | null, fallback: string | null = 'recipe-name'): void {
-    const started = Date.now();
-    const attempt = () => {
-      const element = document.getElementById(id);
-      if (element) return this.focusShown(id);
-      if (id === deferred && Date.now() - started < 2000) {
-        setTimeout(attempt, 20);
-        return;
-      }
-      if (fallback) this.focusShown(fallback);
-    };
-    afterNextRender(attempt, { injector: this.injector });
-  }
-
   private focusTitle(): void {
-    afterNextRender(() => this.focusShown('recipe-name'), { injector: this.injector });
+    afterNextRender(() => focusShown('recipe-name'), { injector: this.injector });
   }
 }
