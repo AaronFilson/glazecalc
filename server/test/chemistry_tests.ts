@@ -72,14 +72,61 @@ const atomsIn = (formula: string, k = 1): Record<string, number> => {
 const massOf = (atoms: Record<string, number>): number =>
   Object.entries(atoms).reduce((mass, [element, n]) => mass + ATOMIC_WEIGHTS[element] * n, 0);
 
+// The reference data: CIAAW's abridged standard atomic weights of 2024, as printed there with their
+// uncertainty (https://www.ciaaw.org/abridged-atomic-weights.htm). Zirconium's was revised in 2024.
+const CIAAW_2024: Record<string, string> = {
+  H: '1.0080 ± 0.0002',
+  Li: '6.94 ± 0.06',
+  B: '10.81 ± 0.02',
+  C: '12.011 ± 0.002',
+  O: '15.999 ± 0.001',
+  Na: '22.990 ± 0.001',
+  Mg: '24.305 ± 0.002',
+  Al: '26.982 ± 0.001',
+  Si: '28.085 ± 0.001',
+  P: '30.974 ± 0.001',
+  S: '32.06 ± 0.02',
+  K: '39.098 ± 0.001',
+  Ca: '40.078 ± 0.004',
+  Ti: '47.867 ± 0.001',
+  V: '50.942 ± 0.001',
+  Cr: '51.996 ± 0.001',
+  Mn: '54.938 ± 0.001',
+  Fe: '55.845 ± 0.002',
+  Co: '58.933 ± 0.001',
+  Ni: '58.693 ± 0.001',
+  Cu: '63.546 ± 0.003',
+  Zn: '65.38 ± 0.02',
+  Sr: '87.62 ± 0.01',
+  Zr: '91.222 ± 0.003',
+  Sn: '118.71 ± 0.01',
+  Sb: '121.76 ± 0.01',
+  Ba: '137.33 ± 0.01',
+  Ce: '140.12 ± 0.01',
+  Pr: '140.91 ± 0.01',
+  Pb: '207.2 ± 1.1'
+};
+
 describe('glaze chemistry', () => {
   describe('molar masses', () => {
-    it('should derive oxide molar masses from atomic weights', () => {
+    it("should use CIAAW 2024's standard atomic weights, as its abridged table rounds them", () => {
+      expect(Object.keys(chemistry.ATOMIC_WEIGHTS).sort()).to.eql(Object.keys(CIAAW_2024).sort());
+      for (const [element, printed] of Object.entries(CIAAW_2024)) {
+        const [value, uncertainty] = printed.split(' ± ');
+        const places = value.split('.')[1]?.length ?? 0;
+        // Ba, Ce and Pr are a place longer, as in CIAAW's full table: the same once rounded.
+        expect(Number(chemistry.ATOMIC_WEIGHTS[element].toFixed(places)), element).to.equal(Number(value));
+        expect(chemistry.ATOMIC_WEIGHTS[element], element).to.be.closeTo(Number(value), Number(uncertainty));
+      }
+    });
+
+    it('should derive oxide molar masses from atomic weights (CIAAW 2024)', () => {
       expect(MW.SiO2).to.be.closeTo(60.083, 0.001);
       expect(MW.Al2O3).to.be.closeTo(101.961, 0.001);
       expect(MW.K2O).to.be.closeTo(94.195, 0.001);
       expect(MW.CaO).to.be.closeTo(56.077, 0.001);
       expect(MW.B2O3).to.be.closeTo(69.617, 0.001);
+      expect(MW.ZrO2).to.be.closeTo(123.22, 0.001);
     });
   });
 
