@@ -100,10 +100,12 @@ export class OfflineRecordsSection {
 
   /** How long the copy is kept without Glazecalc being opened here; removed only as the site next opens. */
   protected async keep(event: Event): Promise<void> {
-    const value = (event.target as HTMLSelectElement).value;
+    const select = event.target as HTMLSelectElement;
     this.busy.set(true);
     try {
-      await this.records.setKeepDays(value ? Number(value) : null);
+      await this.records.setKeepDays(select.value ? Number(select.value) : null);
+      // The list shows what is so: the time chosen before, when this one could not be saved.
+      select.value = String(this.records.keepDays() ?? '');
     } finally {
       this.busy.set(false);
     }

@@ -2,7 +2,16 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import type { MfaSummary } from '../../../../lib/mfa';
 import { AuthService } from '../../core/auth.service';
 import { PASSKEYS } from '../auth/passkeys';
-import { answer, API, httpMock, NO_TOKENS, settle, testProviders, text } from '../../testing/test-providers';
+import {
+  answer,
+  API,
+  fieldProblem,
+  httpMock,
+  NO_TOKENS,
+  settle,
+  testProviders,
+  text
+} from '../../testing/test-providers';
 import { AccountPage } from './account-page';
 
 const ON: MfaSummary = {
@@ -316,5 +325,154 @@ describe('AccountPage access tokens', () => {
     await settle(fixture);
     expect(el(fixture, '.tokens-after-change')).toBeNull();
     expect(text(fixture, '.server-msg')).toContain('2 access tokens were revoked.');
+  });
+
+  /** Fills in a name and presses Continue, opening the step that confirms it is you. */
+  const startToken = async (fixture: ComponentFixture<unknown>, name = 'My laptop') => {
+    await type(fixture, 'token-name', name);
+    await press(fixture, 'Continue', '.tokens-section');
+  };
+
+  it('selects the new token when it takes the focus, and copies it, saying when the clipboard would not', async () => {
+    const writeText = vi.fn<(text: string) => Promise<void>>().mockResolvedValue(undefined);
+    Object.defineProperty(navigator, 'clipboard', { value: { writeText }, configurable: true });
+    try {
+      const { fixture } = await create();
+      await startToken(fixture);
+      await type(fixture, 'token-confirm-password', 'password123');
+      await press(fixture, 'Make the token');
+      const token = 'glazecalc_pat_' + 'x'.repeat(49);
+      httpMock()
+        .expectOne(API + '/tokens')
+        .flush(
+          { code: 'token-made', msg: 'Ready.', token, row: row('My laptop') },
+          { status: 201, statusText: 'Created' }
+        );
+      await settle(fixture);
+      const field = el(fixture, '#new-token') as HTMLInputElement;
+      field.focus();
+      expect([field.selectionStart, field.selectionEnd]).toEqual([0, token.length]);
+      await press(fixture, 'Copy the token');
+      expect(writeText).toHaveBeenCalledWith(token);
+      expect(text(fixture, '.new-token-panel .copied')).toBe('Copied.');
+      writeText.mockRejectedValueOnce(new DOMException('Write permission denied.', 'NotAllowedError'));
+      await press(fixture, 'Copy the token');
+      expect(text(fixture, '.new-token-panel .copied')).toBe('Could not copy. Select the token and copy it yourself.');
+    } finally {
+      Reflect.deleteProperty(navigator, 'clipboard');
+    }
+  });
+
+  it('says when the access tokens could not be loaded, and that they need a connection when offline', async () => {
+    const cases = [
+      [
+        { status: 500, statusText: 'Server Error' },
+        'Your access tokens could not be loaded. Please reload the page to try again.'
+      ],
+      [{ status: 0, statusText: 'Unknown Error' }, 'Not available offline. Connect to the internet to see this.']
+    ] as const;
+    for (const [failure, said] of cases) {
+      TestBed.resetTestingModule();
+      localStorage.clear();
+      localStorage.setItem('session', 'account');
+      const passkeys = {
+        supported: vi.fn(() => false),
+        autofillSupported: vi.fn(async () => false),
+        authenticate: vi.fn(),
+        register: vi.fn(),
+        cancel: vi.fn()
+      };
+      TestBed.configureTestingModule({ providers: [...testProviders(), { provide: PASSKEYS, useValue: passkeys }] });
+      const fixture = TestBed.createComponent(AccountPage);
+      await fixture.whenStable();
+      answer('/preferences', { weightUnit: 'g' });
+      answer('/mfa', OFF);
+      answer('/share/recipes', []);
+      httpMock()
+        .expectOne(API + '/tokens')
+        .flush(null, failure);
+      await settle(fixture);
+      expect(text(fixture, '.tokens-section .help-text')).toBe(said);
+      expect(el(fixture, '#token-name')).toBeNull();
+    }
+  });
+
+  it('gives the focus back to Continue when the step is cancelled, and goes back to reading only', async () => {
+    const { fixture } = await create();
+    (el(fixture, '#token-scope-write') as HTMLInputElement).click();
+    await settle(fixture);
+    expect(el(fixture, '#token-no-confirm')).not.toBeNull();
+    (el(fixture, '#token-scope-read') as HTMLInputElement).click();
+    await settle(fixture);
+    expect(el(fixture, '#token-no-confirm')).toBeNull();
+    expect([...(el(fixture, '#token-days') as HTMLSelectElement).options]).toHaveLength(4);
+
+    await startToken(fixture);
+    expect(el(fixture, '#token-confirm-password')).not.toBeNull();
+    await press(fixture, 'Cancel', '.tokens-section');
+    expect(el(fixture, '#token-confirm-password')).toBeNull();
+    expect(document.activeElement?.id).toBe('token-submit');
+  });
+
+  it('checks the name again when the token is made, closing the step when it was emptied meanwhile', async () => {
+    const { fixture } = await create();
+    await startToken(fixture);
+    await type(fixture, 'token-name', '   ');
+    await type(fixture, 'token-confirm-password', 'password123');
+    await press(fixture, 'Make the token');
+    httpMock().expectNone(API + '/tokens');
+    expect(el(fixture, '#token-confirm-password')).toBeNull();
+    expect(fieldProblem(fixture, 'token-name')).toBe('Please give the token a name of 1 to 100 characters.');
+  });
+
+  it('marks a name the server refuses, and says when the most tokens are made already', async () => {
+    const { fixture } = await create();
+    await startToken(fixture, 'Laptop');
+    await type(fixture, 'token-confirm-password', 'password123');
+    await press(fixture, 'Make the token');
+    httpMock()
+      .expectOne(API + '/tokens')
+      .flush(
+        { code: 'token-name', msg: 'You have a token with that name already.' },
+        { status: 400, statusText: 'Bad Request' }
+      );
+    await settle(fixture);
+    expect(el(fixture, '#token-confirm-password')).toBeNull();
+    expect(fieldProblem(fixture, 'token-name')).toBe('You have a token with that name already.');
+
+    await startToken(fixture, 'Laptop 2');
+    await type(fixture, 'token-confirm-password', 'password123');
+    await press(fixture, 'Make the token');
+    httpMock()
+      .expectOne(API + '/tokens')
+      .flush(
+        { code: 'token-limit', msg: 'You have 10 access tokens working, the most there can be.' },
+        { status: 400, statusText: 'Bad Request' }
+      );
+    await settle(fixture);
+    expect(el(fixture, '#token-confirm-password')).toBeNull();
+    expect(text(fixture, '.tokens-section .errors-section')).toContain(
+      'You have 10 access tokens working, the most there can be.'
+    );
+  });
+
+  it('sends the confirmation link again once at a time, and says when it could not', async () => {
+    const { fixture } = await create();
+    const auth = TestBed.inject(AuthService);
+    auth.email.set('potter@example.com');
+    auth.unverified.set(true);
+    await settle(fixture);
+    const resend = [...el(fixture, '.tokens-section')!.querySelectorAll('button')].find(
+      (b) => b.textContent?.trim() === 'Send the confirmation link again'
+    )!;
+    resend.click();
+    resend.click();
+    httpMock()
+      .expectOne(API + '/email/resend')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(text(fixture, '.tokens-section .errors-section')).toContain(
+      'Error: could not send the link. Please try again.'
+    );
   });
 });

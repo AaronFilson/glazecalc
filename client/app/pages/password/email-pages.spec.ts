@@ -150,6 +150,20 @@ describe('ConfirmEmailPage', () => {
     expect(fixture.nativeElement.querySelector('a[href="/signin"]')).not.toBeNull();
   });
 
+  it('confirms from its button, once while the answer is on its way', async () => {
+    const { fixture } = await create('tok123');
+    const confirm = [...(fixture.nativeElement as HTMLElement).querySelectorAll('button')].find(
+      (one) => one.textContent?.trim() === 'Confirm'
+    )!;
+    confirm.click();
+    confirm.click();
+    httpMock()
+      .expectOne(API + '/email/confirm')
+      .flush({ code: 'email-confirmed', msg: 'Your email is confirmed. Thank you.' });
+    await settle(fixture);
+    expect(text(fixture, '.done-text')).toContain('Your email is confirmed.');
+  });
+
   it('ends this browser session when the email changed, since every device is signed out', async () => {
     const { page } = await create('tok123', true);
     const auth = TestBed.inject(AuthService);

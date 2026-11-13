@@ -1,5 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { API, httpMock, settle, testProviders, text } from '../../testing/test-providers';
+import { AuthService } from '../../core/auth.service';
 import type { ConnectionRow } from '../../core/connections.service';
 import { ConnectionsPage } from './connections-page';
 
@@ -280,5 +281,167 @@ describe('ConnectionsPage', () => {
     await settle(fixture);
     expect(root.querySelector<HTMLInputElement>('#confirm-off')!.checked).toBe(true);
     expect(text(fixture)).toContain('could not save your choice');
+  });
+
+  it("says when a row's details cannot be loaded, and when it did nothing lately", async () => {
+    const { fixture, root, click } = await create();
+    await click('button[aria-controls="details-c2"]');
+    httpMock()
+      .expectOne(API + '/connections/c2/activity')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    httpMock()
+      .expectOne(API + '/connections/c2/trash')
+      .flush({ entries: [] });
+    await settle(fixture);
+    expect(text(fixture, '#details-c2')).toBe('Could not load the details. Please try again.');
+
+    await click('button[aria-controls="details-c1"]');
+    httpMock()
+      .expectOne(API + '/connections/c1/activity')
+      .flush({ activity: [], next: null });
+    httpMock()
+      .expectOne(API + '/connections/c1/trash')
+      .flush({ entries: [] });
+    await settle(fixture);
+    expect(text(fixture, '#details-c1')).toContain('Nothing in the last 90 days.');
+    expect(root.querySelector('#details-c1 .older')).toBeNull();
+  });
+
+  it('loads older activity once at a time, and says when it could not', async () => {
+    const { fixture, root, open } = await create();
+    await open('c2', LINES, [], 'cursor-1');
+    const older = root.querySelector<HTMLButtonElement>('.older')!;
+    older.click();
+    older.click();
+    await settle(fixture);
+    expect(older.getAttribute('aria-disabled')).toBe('true');
+    httpMock()
+      .expectOne(API + '/connections/c2/activity?before=cursor-1')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(text(fixture, '.errors-section')).toContain('Could not load the details. Please try again.');
+    expect(root.querySelectorAll('.activity-list > li')).toHaveLength(2);
+    expect(older.hasAttribute('aria-disabled')).toBe(false);
+  });
+
+  it('says when a record was put back already, and when putting one back failed', async () => {
+    const { fixture, root, open, click } = await create();
+    await open('c2');
+    const first = root.querySelector<HTMLButtonElement>('.moved-list button')!;
+    first.click();
+    // Pressed twice while it is on its way: put back once.
+    first.click();
+    httpMock()
+      .expectOne(API + '/trash/restore/t1')
+      .flush({ code: 'trash-not-found', msg: 'Not in the Trash.' }, { status: 404, statusText: 'Not Found' });
+    await settle(fixture);
+    expect(text(fixture, '.server-msg')).toContain('"Celadon" was put back already.');
+    // The list is read again; when that fails, the one shown stays.
+    httpMock()
+      .expectOne(API + '/connections')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/connections/c2/activity')
+      .flush({ activity: LINES, next: null });
+    httpMock()
+      .expectOne(API + '/connections/c2/trash')
+      .flush({ entries: [MOVED[1]] });
+    await settle(fixture);
+    expect(root.querySelectorAll('.connection-row').length).toBe(2);
+
+    await click('.moved-list button');
+    httpMock()
+      .expectOne(API + '/trash/restore/t2')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(text(fixture, '.errors-section')).toContain('Error: could not put the records back. Please try again.');
+    expect(root.querySelectorAll('.moved-list > li')).toHaveLength(1);
+  });
+
+  it('says when revoking failed, and Cancel on Revoke all leaves everything as it was', async () => {
+    const { fixture, root, click } = await create();
+    await click('.revoke-all');
+    await click('.revoke-all-row .confirm button.btn-light');
+    expect(root.querySelector('.confirm')).toBeNull();
+    httpMock().expectNone((req) => req.method === 'DELETE');
+
+    await click('.revoke-one');
+    await click('.confirm button.btn-outline-danger');
+    httpMock()
+      .expectOne(API + '/connections/c2')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(text(fixture, '.errors-section')).toContain('Error: could not revoke. Please try again.');
+    expect(root.querySelector('.revoke-one, .confirm')).not.toBeNull();
+  });
+
+  it('saves one choice about approving changes at a time', async () => {
+    const { fixture, root } = await create();
+    root.querySelector<HTMLInputElement>('#confirm-all')!.click();
+    root.querySelector<HTMLInputElement>('#confirm-removals')!.click();
+    await settle(fixture);
+    const req = httpMock().expectOne(API + '/connections/confirm-setting');
+    expect(req.request.body).toEqual({ confirmChanges: 'all' });
+    req.flush({ code: 'confirm-setting-saved', msg: 'Saved.', confirmChanges: 'all' });
+    await settle(fixture);
+    expect(root.querySelector<HTMLInputElement>('#confirm-all')!.checked).toBe(true);
+  });
+
+  it('revokes one, and all, even when the list cannot be read again after', async () => {
+    const { fixture, root, click } = await create();
+    await click('.revoke-one');
+    await click('.confirm button.btn-outline-danger');
+    httpMock()
+      .expectOne((req) => req.method === 'DELETE' && req.url === API + '/connections/c2')
+      .flush({ code: 'token-revoked', msg: 'The access token was revoked. It no longer works.' });
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/connections')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(text(fixture, '.server-msg')).toContain('The access token was revoked.');
+    expect(root.querySelector('.confirm')).toBeNull();
+
+    await click('.revoke-all');
+    await click('.revoke-all-yes');
+    httpMock()
+      .expectOne((req) => req.method === 'DELETE' && req.url === API + '/connections')
+      .flush({ code: 'tokens-revoked', msg: '1 access token was revoked.', params: { count: 1 } });
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/connections')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(text(fixture, '.server-msg')).toContain('1 access token was revoked.');
+  });
+
+  it("shows nothing of the account signed in before while the next one's list loads", async () => {
+    localStorage.setItem('session', 'account');
+    const { fixture } = await create();
+    expect(text(fixture)).toContain('Claude');
+    fixture.destroy();
+    const auth = TestBed.inject(AuthService);
+    const out = auth.signOut();
+    httpMock()
+      .expectOne(API + '/signout')
+      .flush({});
+    await out;
+    // Someone else signs in on this tab, and opens Connected apps.
+    const signIn = auth.signIn('b@b.com', 'password123');
+    httpMock()
+      .expectOne(API + '/signin')
+      .flush({ msg: 'Success in signin', email: 'b@b.com', kept: 0 });
+    await signIn;
+    const next = TestBed.createComponent(ConnectionsPage);
+    await next.whenStable();
+    expect(text(next)).not.toContain('Claude');
+    expect((next.nativeElement as HTMLElement).querySelector('.connection-row')).toBeNull();
+    httpMock()
+      .expectOne(API + '/connections')
+      .flush({ connections: [] });
+    await settle(next);
+    expect(text(next, '.apps-none')).toBe('Nothing is connected to your account.');
+    localStorage.clear();
   });
 });

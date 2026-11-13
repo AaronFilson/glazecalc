@@ -156,6 +156,53 @@ describe('signing in with a provider', () => {
     await settle(fixture);
     expect(fixture.nativeElement.textContent).toContain('No verified email.');
   });
+
+  it('goes to the account page, saying so, when the provider sends the browser back from linking', async () => {
+    const { navigate } = await create('signin', { provider: 'google' });
+    httpMock()
+      .expectOne(API + '/auth/finish')
+      .flush({ code: 'provider-linked', msg: 'Google is linked.', params: { provider: 'google' }, provider: 'google' });
+    await settle();
+    expect(navigate).toHaveBeenCalledWith('/account');
+    expect(TestBed.inject(AuthService).providerNotice()).toBe('Google is linked.');
+  });
+
+  it('says on the account page when linking failed after signing in to the account with the email', async () => {
+    const { fixture, navigate } = await create('signin', { provider: 'google' });
+    httpMock()
+      .expectOne(API + '/auth/finish')
+      .flush(
+        {
+          code: 'provider-sign-in-to-link',
+          msg: 'A Glazecalc account already uses the email from Google.',
+          params: { provider: 'google' },
+          provider: 'google'
+        },
+        { status: 409, statusText: 'Conflict' }
+      );
+    await settle(fixture);
+    for (const [id, value] of [
+      ['email', 'potter@example.com'],
+      ['password', 'password123']
+    ]) {
+      const field = fixture.nativeElement.querySelector('#' + id) as HTMLInputElement;
+      field.value = value;
+      field.dispatchEvent(new Event('input'));
+    }
+    await settle(fixture);
+    (fixture.nativeElement.querySelector('form button[type="submit"]') as HTMLButtonElement).click();
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/signin')
+      .flush({ email: 'potter@example.com' });
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/auth/finish')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(navigate).toHaveBeenCalledWith('/account');
+    expect(TestBed.inject(AuthService).providerNotice()).toBe('Could not link it. Please try again.');
+  });
 });
 
 describe('the account page section for Google and GitHub', () => {
@@ -301,5 +348,128 @@ describe('the account page section for Google and GitHub', () => {
     await settle(fixture);
     expect(TestBed.inject(AuthService).reauth()?.grant).toBe('fresh-grant');
     expect(fixture.nativeElement.textContent).toContain('You signed in again with Google.');
+  });
+
+  it('links a provider after the password, sending the browser to it; Cancel links nothing', async () => {
+    const fixture = await create();
+    answer('/auth/methods', { enabled: ['google', 'github'], passwordless: false, linked: [] });
+    await settle(fixture);
+    const root = fixture.nativeElement as HTMLElement;
+    root.querySelector<HTMLButtonElement>('[data-link="google"]')!.click();
+    await settle(fixture);
+    // The row's own button steps aside while its confirmation is open.
+    expect(root.querySelector('[data-link="google"]')).toBeNull();
+    [...root.querySelectorAll('button')].find((b) => b.textContent?.trim() === 'Cancel')!.click();
+    await settle(fixture);
+    expect(root.querySelector('.identity-confirm')).toBeNull();
+
+    root.querySelector<HTMLButtonElement>('[data-link="google"]')!.click();
+    await settle(fixture);
+    const password = root.querySelector('#provider-confirm-password') as HTMLInputElement;
+    password.value = 'password123';
+    password.dispatchEvent(new Event('input'));
+    await settle(fixture);
+    expect(root.querySelector('.identity-confirm button[type="submit"]')!.textContent?.trim()).toBe('Link Google');
+    root.querySelector<HTMLButtonElement>('.identity-confirm button[type="submit"]')!.click();
+    await settle(fixture);
+    const req = httpMock().expectOne(API + '/auth/google/link');
+    expect(req.request.method).toBe('POST');
+    expect(req.request.body).toEqual({ password: 'password123', next: location.pathname });
+    // The provider's address; one on this page stands in for it, as jsdom goes only to those.
+    req.flush({ location: location.pathname + '#linking-google' });
+    await settle(fixture);
+    expect(location.hash).toBe('#linking-google');
+    history.replaceState(null, '', location.pathname);
+  });
+
+  it('asks to confirm the email first, and offers no link or unlink until then', async () => {
+    const fixture = await create();
+    TestBed.inject(AuthService).unverified.set(true);
+    answer('/auth/methods', {
+      enabled: ['google', 'github'],
+      passwordless: false,
+      linked: [{ provider: 'github', linkedAt: '2026-10-01T10:00:00Z' }]
+    });
+    await settle(fixture);
+    expect(text(fixture, '.providers-section')).toContain(
+      'Confirm your email first, with the link we sent you, to link Google, GitHub or Microsoft.'
+    );
+    expect(fixture.nativeElement.querySelector('[data-link], [data-unlink]')).toBe(null);
+  });
+
+  it('says what the sign-in page brought back from the provider, once', async () => {
+    localStorage.clear();
+    localStorage.setItem('session', 'account');
+    TestBed.configureTestingModule({
+      providers: [
+        ...testProviders(),
+        { provide: ActivatedRoute, useValue: route('signin') },
+        { provide: PASSKEYS, useValue: noPasskeys },
+        { provide: SIGN_IN_PROVIDERS, useValue: () => Promise.resolve(['google', 'github']) }
+      ]
+    });
+    const auth = TestBed.inject(AuthService);
+    auth.providerNotice.set('Google is linked.');
+    const fixture = TestBed.createComponent(ProvidersSection);
+    await settle(fixture);
+    answer('/auth/methods', {
+      enabled: ['google', 'github'],
+      passwordless: false,
+      linked: [{ provider: 'google', linkedAt: '2026-10-01T10:00:00Z' }]
+    });
+    await settle(fixture);
+    expect(text(fixture, '.providers-section .server-msg')).toContain('Google is linked.');
+    expect(auth.providerNotice()).toBe(null);
+  });
+
+  it("shows nothing when the account's providers cannot be read", async () => {
+    const fixture = await create();
+    httpMock()
+      .expectOne(API + '/auth/methods')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(fixture.nativeElement.querySelector('.providers-section')).toBe(null);
+  });
+
+  it('says when linking could not be finished after the provider sent the browser back', async () => {
+    localStorage.clear();
+    localStorage.setItem('session', 'account');
+    TestBed.configureTestingModule({
+      providers: [
+        ...testProviders(),
+        { provide: ActivatedRoute, useValue: route('signin', { provider: 'google' }) },
+        { provide: PASSKEYS, useValue: noPasskeys },
+        { provide: SIGN_IN_PROVIDERS, useValue: () => Promise.resolve(['google', 'github']) }
+      ]
+    });
+    vi.spyOn(TestBed.inject(Router), 'navigate').mockResolvedValue(true);
+    const fixture = TestBed.createComponent(ProvidersSection);
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/auth/finish')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    answer('/auth/methods', { enabled: ['google', 'github'], passwordless: false, linked: [] });
+    await settle(fixture);
+    expect(text(fixture, '.providers-section .errors-section')).toContain('Could not link it. Please try again.');
+  });
+
+  it('sends the link to set a password once at a time, and says when it could not', async () => {
+    const fixture = await create();
+    TestBed.inject(AuthService).email.set('potter@example.com');
+    answer('/auth/methods', {
+      enabled: ['google', 'github'],
+      passwordless: true,
+      linked: [{ provider: 'google', linkedAt: '2026-10-01T10:00:00Z' }]
+    });
+    await settle(fixture);
+    const send = fixture.nativeElement.querySelector('.passwordless button') as HTMLButtonElement;
+    send.click();
+    send.click();
+    httpMock()
+      .expectOne(API + '/password/forgot')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(text(fixture, '.providers-section .errors-section')).toContain('Could not send the link. Please try again.');
   });
 });

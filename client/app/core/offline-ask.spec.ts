@@ -78,6 +78,11 @@ describe('OfflineAskDialog', () => {
     expect(document.activeElement).toBe(buttons(root)[0]);
     dialog.dispatchEvent(new KeyboardEvent('keydown', { key: 'Tab', shiftKey: true, bubbles: true, cancelable: true }));
     expect(document.activeElement).toBe(last);
+    // Any other key is the button's own.
+    const enter = new KeyboardEvent('keydown', { key: 'Enter', bubbles: true, cancelable: true });
+    dialog.dispatchEvent(enter);
+    expect(enter.defaultPrevented).toBe(false);
+    expect(document.activeElement).toBe(last);
     dialog.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true, cancelable: true }));
     expect(await answer).toBe('cancel');
     fixture.nativeElement.remove();

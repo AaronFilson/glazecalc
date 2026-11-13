@@ -253,4 +253,53 @@ describe('SecondStep', () => {
     button(fixture, 'Start over').click();
     expect(startOver).toHaveBeenCalledWith(null);
   });
+
+  it('goes back from a recovery code to the app, its field taking the focus', async () => {
+    const { fixture } = await create();
+    button(fixture, 'Use a recovery code instead').click();
+    await settle(fixture);
+    button(fixture, 'Use your authenticator app instead').click();
+    await settle(fixture);
+    expect(fixture.nativeElement.querySelector('#second-recovery')).toBeNull();
+    expect(document.activeElement).toBe(fixture.nativeElement.querySelector('#second-code'));
+  });
+
+  it('asks for a recovery code before sending one, and marks a wrong one on its field', async () => {
+    const { fixture, signedIn } = await create();
+    button(fixture, 'Use a recovery code instead').click();
+    await settle(fixture);
+    button(fixture, 'Finish signing in').click();
+    await settle(fixture);
+    httpMock().expectNone(API + '/signin/second-step');
+    expect(fieldProblem(fixture, 'second-recovery')).toBe('Enter one of your recovery codes.');
+
+    await type(fixture, 'second-recovery', 'abcde-00000');
+    button(fixture, 'Finish signing in').click();
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/signin/second-step')
+      .flush(
+        { code: 'recovery-code-wrong', msg: 'That recovery code is not correct.' },
+        { status: 401, statusText: 'Unauthorized' }
+      );
+    await settle(fixture);
+    expect(fieldProblem(fixture, 'second-recovery')).toBe('That recovery code is not correct.');
+    expect(signedIn).not.toHaveBeenCalled();
+  });
+
+  it('asks for the passkey once, however often its button is pressed', async () => {
+    const { fixture } = await create(step({ totp: false, passkey: true }, true));
+    let answer: (value: unknown) => void = () => {};
+    passkeys.authenticate.mockImplementationOnce(() => new Promise((resolve) => (answer = resolve)));
+    button(fixture, 'Use a passkey').click();
+    button(fixture, 'Use a passkey').click();
+    await settle(fixture);
+    expect(passkeys.authenticate).toHaveBeenCalledTimes(1);
+    answer(PASSKEY_RESPONSE);
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/signin/second-step')
+      .flush({ code: 'signed-in', msg: 'Signed in.', email: 'a@b.com', kept: 0 });
+    await settle(fixture);
+  });
 });
