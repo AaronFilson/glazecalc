@@ -93,6 +93,16 @@ describe('TranslatedTitles', () => {
     expect(read('property="og:title"')).toBe('Silica: analysis');
   });
 
+  it('leaves the title and the tags as they are for a route with no title', () => {
+    const { read, title } = setup('en');
+    TestBed.inject(Title).setTitle('Glazecalc');
+    const strategy = TestBed.inject(TranslatedTitles);
+    vi.spyOn(strategy, 'buildTitle').mockReturnValue(undefined);
+    strategy.updateTitle({ root: { data: {}, firstChild: null } } as unknown as RouterStateSnapshot);
+    expect(title()).toBe('Glazecalc');
+    expect(read('name="description"')).toBe('English');
+  });
+
   it('adds no tags the page does not have', () => {
     const { doc, update } = setup('en');
     doc.head.querySelector('[name="description"]')!.remove();
