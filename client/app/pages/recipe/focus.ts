@@ -3,6 +3,21 @@ import { reveal } from '../../shared/field-checks';
 
 // Where the focus goes on the recipe page and its parts, once what it goes to is drawn.
 
+/**
+ * A style for a part of the editor in a file of its own: what gets the focus in the workbench scrolls clear
+ * of the peek bar above it (WCAG 2.4.11), as recipe-page.ts has it for the rest of the editor.
+ */
+export const CLEAR_OF_PEEK = `
+  :host-context(.layout-workbench) :is(input, select, textarea, button, a, summary, [tabindex]) {
+    scroll-margin-block-start: 6rem;
+  }
+  @media (min-width: 992px) {
+    :host-context(.layout-workbench) :is(input, select, textarea, button, a, summary, [tabindex]) {
+      scroll-margin-block-start: 1rem;
+    }
+  }
+`;
+
 /** Moves the focus to an element, opening a fold or step it is in; nothing when it is not there. */
 export function focusShown(id: string): void {
   const element = document.getElementById(id);

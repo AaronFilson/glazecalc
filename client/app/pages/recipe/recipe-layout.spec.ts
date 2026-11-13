@@ -102,10 +102,10 @@ describe('RecipePage layouts', () => {
   };
 
   const fill = (page: Page) => {
-    page['addMaterial'](WHITING);
-    page['setAmount'](0, '20');
-    page['addMaterial'](SILICA);
-    page['setAmount'](1, '30');
+    page['edit'].addMaterial(WHITING);
+    page['edit'].setAmount(0, '20');
+    page['edit'].addMaterial(SILICA);
+    page['edit'].setAmount(1, '30');
   };
 
   it('shows the standard form by default, with the switch on it', async () => {

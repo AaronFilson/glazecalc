@@ -387,113 +387,7 @@
     }
   </ng-template>
   <ng-template #materialsPart>
-    <h3 id="materials-heading" tabindex="-1">{{ t('recipe.page.materialsHeading') }}</h3>
-    @if (lines().length) {
-      <table class="recipe-table recipe-materials">
-        <thead>
-          <tr>
-            <th scope="col">{{ t('recipe.page.materialColumn') }}</th>
-            <th scope="col">{{ t('recipe.page.amountColumn') }}</th>
-            <th scope="col">{{ t('recipe.page.shareColumn') }}</th>
-            <th scope="col">
-              <span class="visually-hidden">{{ t('recipe.page.removeColumn') }}</span>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          @for (line of lines(); track $index) {
-            <tr class="recipe-row">
-              <th scope="row">
-                <bdi>{{ line.name }}</bdi>
-              </th>
-              <td>
-                <input
-                  [id]="'material-amount-' + $index"
-                  type="text"
-                  inputmode="decimal"
-                  class="form-control form-control-sm material-amount"
-                  [attr.aria-label]="t('recipe.page.amountOf', { name: line.name })"
-                  [gcNumber]="line.amount"
-                  (gcNumberChange)="setAmount($index, $event)"
-                  (keydown.enter)="amountEntered($event, 'material', $index)"
-                  [gcField]="checks"
-                  [gcFieldName]="'material-amount-' + $index"
-                />
-                @if (poundReadings()?.materials?.[$index]; as weight) {
-                  <span class="recipe-weight">{{ weight }}</span>
-                }
-              </td>
-              <td class="recipe-share">{{ share(line.amount) }}</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-light border btn-sm recipe-remove"
-                  [id]="'material-remove-' + $index"
-                  [attr.aria-label]="t('recipe.page.removeLine', { name: line.name })"
-                  (click)="removeMaterial($index)"
-                >
-                  ✕
-                </button>
-              </td>
-            </tr>
-          }
-        </tbody>
-        <tfoot>
-          <tr>
-            <th scope="row">{{ t('recipe.page.total') }}</th>
-            <td class="recipe-total">
-              {{ formatTotal() }}
-              @if (poundReadings()?.total; as weight) {
-                <span class="recipe-weight">{{ weight }}</span>
-              }
-            </td>
-            <td class="recipe-share">{{ totalShare() }}</td>
-            <td></td>
-          </tr>
-        </tfoot>
-      </table>
-
-      @if (inlineSummary(); as summary) {
-        <p class="unity-inline">
-          <b>{{ t('recipe.page.unityInline') }}</b> {{ summary }}
-        </p>
-      }
-
-      <div class="recipe-scale">
-        <span class="recipe-scale-label">{{ t('recipe.page.changeScale') }}</span>
-        <button type="button" class="btn btn-light border btn-sm" (click)="scale({ to: 'percent' })">
-          {{ t('recipe.page.toPercent') }}
-        </button>
-        <button type="button" class="btn btn-light border btn-sm" (click)="scale({ to: 'parts' })">
-          {{ t('recipe.page.toParts') }}
-        </button>
-        <button type="button" class="btn btn-light border btn-sm" (click)="batchOpen.set(!batchOpen())">
-          {{ t('recipe.page.scaleToBatch') }}
-        </button>
-        @if (batchOpen()) {
-          <span class="recipe-batch">
-            <label for="batch-weight">{{ t('recipe.page.batchWeight', { unit: batchUnit() }) }}</label>
-            <input
-              id="batch-weight"
-              type="text"
-              inputmode="decimal"
-              class="form-control form-control-sm"
-              [gcNumber]="batchText()"
-              (gcNumberChange)="setBatchText($event)"
-              (keydown.enter)="scaleToBatch()"
-            />
-            <button type="button" class="btn btn-primary btn-sm" (click)="scaleToBatch()">
-              {{ t('recipe.page.scale') }}
-            </button>
-          </span>
-        }
-      </div>
-      <p class="recipe-scale-note" [class.is-problem]="scaleMessage()?.problem" role="status">
-        {{ scaleMessage()?.text }}
-      </p>
-    } @else {
-      <p class="muted">{{ t('recipe.page.noMaterials') }}</p>
-    }
+    <gc-recipe-materials [edit]="edit" [summary]="inlineSummary()" />
   </ng-template>
   <ng-template #fixPart>
     <gc-recipe-swaps
@@ -517,83 +411,12 @@
       [standardFailed]="standardMaterialsFailed()"
       [inRecipe]="materialKeys()"
       [hideLead]="leadOff()"
-      (pick)="addMaterial($event)"
+      (pick)="edit.addMaterial($event)"
       (retry)="loadStandardMaterials()"
     />
   </ng-template>
   <ng-template #additivesPart>
-    <h3 id="additives-heading" class="recipe-additives-heading" tabindex="-1">
-      {{ t('recipe.page.additivesHeading') }} <span class="muted">{{ t('recipe.page.onTopOfBase') }}</span>
-    </h3>
-    @if (additiveLines().length) {
-      <table class="recipe-table recipe-additives">
-        <thead>
-          <tr>
-            <th scope="col">{{ t('recipe.page.additiveColumn') }}</th>
-            <th scope="col">{{ t('recipe.page.amountColumn') }}</th>
-            <th scope="col">
-              <span class="visually-hidden">{{ t('recipe.page.removeColumn') }}</span>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          @for (line of additiveLines(); track $index; let i = $index) {
-            <tr class="recipe-row">
-              <th scope="row">
-                <bdi>{{ line.name }}</bdi>
-              </th>
-              <td>
-                <div class="additive-amount-cell">
-                  <input
-                    [id]="'additive-amount-' + $index"
-                    type="text"
-                    inputmode="decimal"
-                    class="form-control form-control-sm additive-amount"
-                    [attr.aria-label]="t('recipe.page.amountOf', { name: line.name })"
-                    [gcNumber]="line.amount"
-                    (gcNumberChange)="setAdditiveAmount($index, $event)"
-                    (keydown.enter)="amountEntered($event, 'additive', $index)"
-                    [gcField]="checks"
-                    [gcFieldName]="'additive-amount-' + $index"
-                  />
-                  <!-- Beside the amount, or under it on a phone. -->
-                  <fieldset class="unit-choice">
-                    <legend class="visually-hidden">{{ t('recipe.page.unitFor', { name: line.name }) }}</legend>
-                    @for (unit of additiveUnits; track unit.value) {
-                      <input
-                        type="radio"
-                        class="btn-check"
-                        [id]="'additive-unit-' + i + '-' + unit.value"
-                        [name]="'additive-unit-' + i"
-                        [checked]="unitOf(line) === unit.value"
-                        (change)="setAdditiveUnit(i, unit.value)"
-                      />
-                      <label class="btn btn-sm" [for]="'additive-unit-' + i + '-' + unit.value">{{
-                        t(unit.label)
-                      }}</label>
-                    }
-                  </fieldset>
-                  @if (poundReadings()?.additives?.[i]; as weight) {
-                    <span class="recipe-weight">{{ weight }}</span>
-                  }
-                </div>
-              </td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-light border btn-sm recipe-remove"
-                  [id]="'additive-remove-' + $index"
-                  [attr.aria-label]="t('recipe.page.removeLine', { name: line.name })"
-                  (click)="removeAdditive($index)"
-                >
-                  ✕
-                </button>
-              </td>
-            </tr>
-          }
-        </tbody>
-      </table>
-    }
+    <gc-recipe-additives [edit]="edit" />
   </ng-template>
   <ng-template #additiveLibrary>
     <gc-recipe-library
@@ -606,7 +429,7 @@
       [standardFailed]="standardAdditivesFailed()"
       [inRecipe]="additiveKeys()"
       [hideLead]="leadOff()"
-      (pick)="addAdditive($event)"
+      (pick)="edit.addAdditive($event)"
       (retry)="loadStandardAdditives()"
     />
   </ng-template>

@@ -4,6 +4,7 @@ import { Material } from '../../core/models';
 import { RichText } from '../../i18n/rich-text';
 import { listOf } from '../../shared/format';
 import { FixedPipe } from '../../shared/format-pipes';
+import { CLEAR_OF_PEEK } from './focus';
 import { OwnLimitsNote } from './own-limits-note';
 import { RecipeSwaps } from './recipe-swaps';
 import { oxideLabel } from './suggest';
@@ -19,21 +20,15 @@ import { TryMaterials } from './try-materials';
   selector: 'gc-recipe-swaps',
   imports: [FixedPipe, OwnLimitsNote, RichText, SwapReport, TranslocoDirective, TryMaterials],
   templateUrl: './recipe-swaps-panel.html',
-  styles: `
-    /* No box of its own: its parts are laid out as parts of the editor. */
-    :host {
-      display: contents;
-    }
-    /* What gets the focus scrolls clear of the workbench's peek bar (WCAG 2.4.11), as in the rest of the editor. */
-    :host-context(.layout-workbench) :is(input, select, textarea, button, a, summary, [tabindex]) {
-      scroll-margin-block-start: 6rem;
-    }
-    @media (min-width: 992px) {
-      :host-context(.layout-workbench) :is(input, select, textarea, button, a, summary, [tabindex]) {
-        scroll-margin-block-start: 1rem;
+  styles: [
+    `
+      /* No box of its own: its parts are laid out as parts of the editor. */
+      :host {
+        display: contents;
       }
-    }
-  `
+    `,
+    CLEAR_OF_PEEK
+  ]
 })
 export class RecipeSwapsPanel {
   readonly swaps = input.required<RecipeSwaps>();

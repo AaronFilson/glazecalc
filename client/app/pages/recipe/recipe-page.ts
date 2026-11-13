@@ -24,16 +24,15 @@ import { ApiResourceFactory } from '../../core/api-resource.service';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { AsksBeforeLeaving } from '../../core/leave.guard';
-import { Additive, AdditiveUnit, Firing, FiringLink, Material, Recipe, RecipeMaterial } from '../../core/models';
+import { Additive, Firing, FiringLink, Material, Recipe, RecipeMaterial } from '../../core/models';
 import { PreferencesService } from '../../core/preferences.service';
 import { LocaleService } from '../../core/locale.service';
 import { PendingRecipeService } from '../../core/pending-recipe.service';
 import { UpdateService } from '../../core/update.service';
 import { RichText } from '../../i18n/rich-text';
 import { Busy } from '../../shared/busy';
-import { fixed, formatTime, notANumber, upTo } from '../../shared/format';
+import { fixed, formatTime, notANumber } from '../../shared/format';
 import { FixedPipe } from '../../shared/format-pipes';
-import { NumberInput } from '../../shared/number-input';
 import { Check, FieldCheck, FieldChecks, required } from '../../shared/field-checks';
 import {
   GUIDED_STEPS,
@@ -49,8 +48,7 @@ import { folded } from '../../shared/library-info';
 import { firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
 import { Removal } from '../../shared/remove-button';
-import { GRAMS_PER_POUND, WeightUnit, formatWeight } from '../../shared/weights';
-import { Rebase, amountOf, isAmount, rebase, totalOf, unitOf } from './rebase';
+import { amountOf, isAmount, unitOf } from './rebase';
 import { additiveAmount, evaluate } from './recipe-analysis';
 import { RecipeCompare } from './recipe-compare';
 import { RecipeCost } from './recipe-cost';
@@ -76,7 +74,10 @@ import { recipeDrySg } from '../../../../lib/recipe/density';
 import { Reader, firingSummary } from './firing-text';
 import { focusShown } from './focus';
 import { RecipeSwaps, SwapKind, SwapUndo } from './recipe-swaps';
+import { RecipeLines } from './recipe-lines';
 import { RecipeSwapsPanel } from './recipe-swaps-panel';
+import { RecipeAdditivesTable } from './recipe-additives-table';
+import { RecipeMaterialsTable } from './recipe-materials-table';
 import { RecipeViews } from './recipe-views';
 import { SavedRecipes } from './saved-recipes';
 
@@ -91,23 +92,7 @@ const includeByDefault = (): boolean => {
   }
 };
 
-/** Each label is the key of its message. */
-const ADDITIVE_UNITS: ReadonlyArray<{ value: AdditiveUnit; label: string }> = [
-  { value: 'percent', label: marker('recipe.page.units.percent') },
-  { value: 'parts', label: marker('recipe.page.units.parts') },
-  { value: 'grams', label: marker('recipe.page.units.grams') }
-];
-
 const copy = <T>(value: T): T => structuredClone(value);
-/** What a change of scale did, as the key of its message. */
-const SCALE_NOTES: Record<Exclude<Rebase['to'], 'batch'>, string> = {
-  percent: marker('recipe.page.scaledPercent'),
-  parts: marker('recipe.page.scaledParts')
-};
-
-/** A batch weight to start from, in each unit: about a pound either way. */
-const DEFAULT_BATCH: Record<WeightUnit, string> = { g: '500', lb: '1' };
-
 type SaveMode = 'save' | 'next' | 'copy';
 
 /** An amount to save: blank is not one, though 0 is. */
@@ -152,13 +137,14 @@ const narrowScreen = (): boolean => typeof matchMedia === 'function' && matchMed
     FormsModule,
     NgTemplateOutlet,
     NoticesList,
-    NumberInput,
     PageHeader,
     RecipeHelp,
     RecipeCompare,
     RecipeCost,
     RecipeHazards,
+    RecipeAdditivesTable,
     RecipeLibrary,
+    RecipeMaterialsTable,
     RecipeSwapsPanel,
     RecipePrint,
     RichText,
@@ -347,7 +333,6 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   private readonly preferences = inject(PreferencesService);
   private readonly locale = inject(LocaleService);
   private readonly pendingRecipe = inject(PendingRecipeService);
-  private readonly weightUnit = this.preferences.weightUnit;
   /** Lead is off in Settings: materials with lead are not listed to add, or suggested. */
   protected readonly leadOff = computed(() => this.preferences.lead() === 'off');
   private readonly recipes = this.resources.for<Recipe>('recipe');
@@ -358,8 +343,6 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   protected readonly saving = new Busy();
   protected readonly firstOf = firstOf;
   protected readonly additiveAmount = additiveAmount;
-  protected readonly additiveUnits = ADDITIVE_UNITS;
-  protected readonly unitOf = unitOf;
 
   // The recipe being edited.
   protected readonly title = signal('');
@@ -508,35 +491,17 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
    */
   private showing = 0;
 
-  // Scale changes.
-  protected readonly batchOpen = signal(false);
-  /** The batch weight as typed, and the unit it was typed in. */
-  private readonly batchTyped = signal<{ text: string; unit: WeightUnit } | null>(null);
-  /** The batch weight in the account's unit (grams, or pounds). */
-  protected readonly batchText = computed(() => {
-    const typed = this.batchTyped();
-    const unit = this.weightUnit();
-    return typed?.unit === unit ? typed.text : DEFAULT_BATCH[unit];
-  });
-  protected readonly batchUnit = computed(() => (this.weightUnit() === 'lb' ? 'lb' : 'g'));
-  protected readonly scaleMessage = signal<{ text: string; problem: boolean } | null>(null);
-  /**
-   * Scaled to a batch in pounds: the amounts are pounds, and each shows what it
-   * weighs in pounds and ounces, until the scale changes or another recipe opens.
-   */
-  private readonly inPounds = signal(false);
-  protected readonly poundReadings = computed(() => {
-    if (!this.inPounds()) return null;
-    const reading = (pounds: number): string => (pounds > 0 ? formatWeight(pounds * GRAMS_PER_POUND, 'lb') : '');
-    const base = this.total();
-    return {
-      materials: this.lines().map((line) => reading(amountOf(line.amount))),
-      // A percent of the base is that share of the batch.
-      additives: this.additiveLines().map((line) =>
-        reading(unitOf(line) === 'percent' ? (amountOf(line.amount) / 100) * base : amountOf(line.amount))
-      ),
-      total: reading(base)
-    };
+  /** Adding to the materials and the colorants, their amounts and units, and the scale (recipe-lines.ts). */
+  protected readonly edit = new RecipeLines({
+    lines: this.lines,
+    additiveLines: this.additiveLines,
+    checks: this.checks,
+    unreadable: () => {
+      const unreadable = this.unreadableLine();
+      return unreadable ? this.notANumber(unreadable) : '';
+    },
+    closeQuestions: () => this.swaps.closeQuestions(),
+    announce: (text) => this.announcement.set(text)
   });
   /** Told to screen readers: what an action did that the focus does not show. */
   protected readonly announcement = signal('');
@@ -547,10 +512,9 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       chemistryOf: (name) => this.findByName(name)
     })
   );
-  protected readonly total = computed(() => totalOf(this.lines().map((l) => l.amount)));
   /** The dry materials' SG estimated from the recipe (lib/recipe/density.js), for the SG calculator. */
   protected readonly drySgEstimate = computed(() => {
-    const base = this.total();
+    const base = this.edit.total();
     const additives = this.additiveLines().map((line) => ({
       ...line,
       amount: String(unitOf(line) === 'percent' ? (amountOf(line.amount) / 100) * base : amountOf(line.amount))
@@ -737,154 +701,6 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
         );
       }
     });
-  }
-
-  // Materials and additives.
-
-  protected addMaterial(material: Material): void {
-    this.lines.update((list) => [...list, { ...copy(material), amount: '' }]);
-    this.scaleMessage.set(null);
-    this.swaps.closeQuestions();
-    this.focusAmount('material', this.lines().length - 1);
-  }
-
-  protected setAmount(index: number, amount: string): void {
-    this.lines.update((list) => list.map((line, i) => (i === index ? { ...line, amount } : line)));
-    this.scaleMessage.set(null);
-    this.swaps.closeQuestions();
-  }
-
-  /**
-   * Enter in an amount: that line is done, so the focus goes back to the list the next one is added from (its
-   * filter field, which a screen reader names). Enter did nothing here before, and there is no form to send.
-   * An amount missing or unreadable keeps the focus, marked, with its problem said.
-   */
-  protected amountEntered(event: Event, kind: 'material' | 'additive', index: number): void {
-    // Enter that ends a composition (Chinese, Japanese, Korean) belongs to it.
-    if ((event as KeyboardEvent).isComposing) return;
-    event.preventDefault();
-    if (!this.checks.confirm(kind + '-amount-' + index)) return;
-    document.getElementById(kind + 's-filter')?.focus();
-  }
-
-  protected removeMaterial(index: number): void {
-    const name = this.lines()[index]?.name;
-    this.lines.update((list) => list.filter((_, i) => i !== index));
-    this.swaps.closeQuestions();
-    // The amounts after it move up a place, so their marks would be on the wrong lines.
-    this.checks.clear();
-    this.afterTakingOut('material', name, index, this.lines().length);
-  }
-
-  protected addAdditive(additive: Additive): void {
-    // Most recipes give colorants as a percent of the base.
-    this.additiveLines.update((list) => [...list, { ...copy(additive), amount: '', unit: 'percent' }]);
-    this.focusAmount('additive', this.additiveLines().length - 1);
-  }
-
-  protected setAdditiveAmount(index: number, amount: string): void {
-    this.additiveLines.update((list) => list.map((line, i) => (i === index ? { ...line, amount } : line)));
-  }
-
-  protected setAdditiveUnit(index: number, unit: AdditiveUnit): void {
-    this.additiveLines.update((list) => list.map((line, i) => (i === index ? { ...line, unit } : line)));
-  }
-
-  protected removeAdditive(index: number): void {
-    const name = this.additiveLines()[index]?.name;
-    this.additiveLines.update((list) => list.filter((_, i) => i !== index));
-    this.checks.clear();
-    this.afterTakingOut('additive', name, index, this.additiveLines().length);
-  }
-
-  /**
-   * Says what was taken out, and keeps the focus in the list: on the ✕ now in
-   * the same place, or the one before, or the list's heading once it is empty.
-   */
-  private afterTakingOut(kind: 'material' | 'additive', name: string | undefined, index: number, left: number): void {
-    this.announcement.set(
-      name === undefined ? translate('recipe.page.itTakenOut') : translate('recipe.page.takenOut', { name })
-    );
-    afterNextRender(
-      () => {
-        const target = left
-          ? document.getElementById(kind + '-remove-' + Math.min(index, left - 1))
-          : document.getElementById(kind + 's-heading');
-        target?.focus();
-      },
-      { injector: this.injector }
-    );
-  }
-
-  /** A material's share of the batch, as a percent. */
-  protected share(amount: string | undefined): string {
-    const total = this.total();
-    return total && amountOf(amount) ? upTo((amountOf(amount) / total) * 100, 1) + '%' : '';
-  }
-
-  /** The whole batch's share, 100%, in the reader's digits as the other shares are. */
-  protected totalShare(): string {
-    return this.total() ? upTo(100, 0) + '%' : '';
-  }
-
-  protected formatTotal(): string {
-    return upTo(this.total(), 3);
-  }
-
-  protected scale(how: Exclude<Rebase, { to: 'batch' }>): void {
-    if (this.rescale(how, translate('recipe.page.enterAmountsFirst'))) {
-      this.inPounds.set(false);
-      this.scaleMessage.set({ text: translate(SCALE_NOTES[how.to]), problem: false });
-    }
-  }
-
-  protected setBatchText(text: string): void {
-    this.batchTyped.set({ text, unit: this.weightUnit() });
-  }
-
-  /** Scales to a batch in the account's unit: grams, or pounds (shown in pounds and ounces too). */
-  protected scaleToBatch(): void {
-    const pounds = this.weightUnit() === 'lb';
-    const missing = pounds ? translate('recipe.page.batchPounds') : translate('recipe.page.batchGrams');
-    if (!this.rescale({ to: 'batch', weight: amountOf(this.batchText()) }, missing)) return;
-    if (!pounds) {
-      this.inPounds.set(false);
-      this.scaleMessage.set({ text: translate('recipe.page.scaledGrams'), problem: false });
-      return;
-    }
-    // Colorants in grams would now be pounds: in parts, they say they scale as the materials do.
-    const inGrams = this.additiveLines().some((line) => unitOf(line) === 'grams');
-    this.additiveLines.update((list) =>
-      list.map((line) => (unitOf(line) === 'grams' ? { ...line, unit: 'parts' as const } : line))
-    );
-    this.inPounds.set(true);
-    this.scaleMessage.set({
-      text: inGrams ? translate('recipe.page.scaledPoundsParts') : translate('recipe.page.scaledPounds'),
-      problem: false
-    });
-  }
-
-  /** Puts the recipe on a new scale; false, with the reason shown, when it cannot. */
-  private rescale(how: Rebase, missing: string): boolean {
-    // Scaling around an amount it cannot read would change the proportions.
-    const unreadable = this.unreadableLine();
-    if (unreadable) {
-      this.scaleMessage.set({ text: this.notANumber(unreadable), problem: true });
-      return false;
-    }
-    const result = rebase(
-      this.lines().map((l) => l.amount),
-      this.additiveLines(),
-      how
-    );
-    if (!result) {
-      this.scaleMessage.set({ text: missing, problem: true });
-      return false;
-    }
-    this.lines.update((list) => list.map((line, i) => ({ ...line, amount: result.materials[i] })));
-    this.additiveLines.update((list) => list.map((line, i) => ({ ...line, amount: result.additives[i] })));
-    this.batchOpen.set(false);
-    return true;
   }
 
   // Saving.
@@ -1099,7 +915,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     this.savedAt.set(null);
     this.savedSnapshot.set('');
     this.checks.clear();
-    this.scaleMessage.set(null);
+    this.edit.scaleMessage.set(null);
     this.saveProblem.set('');
     this.announcement.set(announcement);
     if (compare) this.views.openCompare(before, 'draft', opener);
@@ -1178,8 +994,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       this.savedId.set(null);
       this.savedSnapshot.set('');
       this.savedAt.set(null);
-      this.scaleMessage.set(null);
-      this.inPounds.set(false);
+      this.edit.clear();
       this.saveProblem.set('');
       this.checks.clear();
       this.swapUndo.set(null);
@@ -1208,8 +1023,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
         this.savedId.set(recipe._id ?? null);
         this.savedSnapshot.set(this.snapshot());
         this.savedAt.set(null);
-        this.scaleMessage.set(null);
-        this.inPounds.set(false);
+        this.edit.clear();
         this.saveProblem.set('');
         this.checks.clear();
         this.swapUndo.set(null);
@@ -1290,14 +1104,13 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     this.savedId.set(null);
     this.savedAt.set(null);
     this.savedSnapshot.set(this.snapshot());
-    this.scaleMessage.set(null);
-    this.inPounds.set(false);
+    this.edit.clear();
     this.saveProblem.set('');
     this.checks.clear();
     this.swapUndo.set(null);
     this.beforeSwap.set(null);
     this.swaps.clear();
-    this.batchOpen.set(false);
+    this.edit.batchOpen.set(false);
   }
 
   /** The layout chosen here: kept on this browser, and over ?layout= for the rest of the visit. */
@@ -1415,10 +1228,6 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       failed?.set(true);
       return false;
     }
-  }
-
-  private focusAmount(kind: 'material' | 'additive', index: number): void {
-    afterNextRender(() => document.getElementById(kind + '-amount-' + index)?.focus(), { injector: this.injector });
   }
 
   private focusTitle(): void {
