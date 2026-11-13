@@ -1526,6 +1526,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   and @hono/node-server 2.1.6 (Dependabot's two open alerts, and five moderate ones for hono), and Lighthouse CI takes
   basic-ftp 6.2.4. A moderate advisory for the minimatch bundled inside aws-cdk-lib has no fix to take yet; the
   Infrastructure workflow says why it does not reach this setup.
+- **The deploy docs say what the AWS setup does**, found while the CDK stacks were held to it: which documents name
+  the account and region, the mail documents in the file table, what the operator may create without the
+  `app=glazecalc` tag and do to the old servers, the instance role reading dumps to restore one, the staging tags the
+  role accepts and the order of build and approval, production deploys starting by themselves after Publish image,
+  and the mail bucket aborting unfinished uploads after a day.
 
 - **Numbers and dates in a language the browser lacks**: Google Chrome 156 and Playwright's Chromium have no Intl
   data for Nepali, Sinhala or Odia and only part of Punjabi's, so live Odia and Punjabi pages showed English dates
