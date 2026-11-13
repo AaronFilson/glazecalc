@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { Component, computed, inject, signal } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
@@ -93,10 +94,10 @@ export const hasFlux = (material: Material): boolean =>
               @if (item.path) {
                 <a [routerLink]="item.path">{{ item.name }}</a>
               } @else {
-                {{ item.name }}
+                <span>{{ item.name }}</span>
               }
               @if (!last) {
-                {{ ', ' }}
+                <span>, </span>
               }
             }
           </dd>
@@ -108,10 +109,10 @@ export const hasFlux = (material: Material): boolean =>
               @if (item.path) {
                 <a [routerLink]="item.path">{{ item.name }}</a>
               } @else {
-                {{ item.name }}
+                <span>{{ item.name }}</span>
               }
               @if (!last) {
-                {{ ', ' }}
+                <span>, </span>
               }
             }
           </dd>
@@ -230,7 +231,7 @@ export const hasFlux = (material: Material): boolean =>
         <a
           id="material-try"
           class="btn btn-primary"
-          routerLink="/recipe"
+          [href]="recipeAddress"
           [attr.aria-busy]="starting() || null"
           (click)="useInRecipe($event)"
           >{{ t('reference.material.useLink') }}</a
@@ -321,6 +322,11 @@ export class MaterialInfoPage {
   protected readonly path = computed(() => materialPath(this.material()));
   /** Whether the main button is starting a trial. */
   protected readonly starting = signal(false);
+  /**
+   * The main button's address in the page's language (/de/recipe), for a new tab. Not a routerLink, whose own
+   * navigation would take a visitor to the sign-in page while their trial starts.
+   */
+  protected readonly recipeAddress = inject(Location).prepareExternalUrl('/recipe');
   /** A guide's name from its page title: "How to make a glaze - Glazecalc" is "How to make a glaze". */
   protected readonly guideTitle = (title: string): string => title.replace(/ - Glazecalc$/, '');
 

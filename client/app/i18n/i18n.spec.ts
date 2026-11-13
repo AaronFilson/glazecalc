@@ -13,9 +13,11 @@ import {
   provideTranslocoTranspiler,
   translate
 } from '@jsverse/transloco';
-import { of } from 'rxjs';
+import { Observable, firstValueFrom, of } from 'rxjs';
+import type { ChemistryError } from '../../../lib/chemistry';
 import { languageOfTag } from '../../../lib/regions/languages';
 import { formatLocale } from '../shared/format';
+import { chemistryText } from './coded';
 import { IcuTranspiler } from './icu-transpiler';
 import { baseHrefFor, languageOfPath, pathIn } from './language';
 import { MissingKey } from './missing';
@@ -32,7 +34,9 @@ const FILES: Record<string, Translation> = {
     materials: '{count, plural, one {# material} other {# materials}}',
     leadOff: 'Lead is off in <settings>Settings</settings>.',
     named: 'Your material {name} is saved.',
-    onlyEnglish: 'Only in English so far'
+    onlyEnglish: 'Only in English so far',
+    marked:
+      'An <em>easy</em> <i>slip</i> for <bdi>{name}</bdi>, <odd>plain</odd> words, the <web>site</web> and <act>a button</act>.'
   },
   de: {
     materials: '{count, plural, one {# Rohstoff} other {# Rohstoffe}}',
@@ -119,6 +123,26 @@ describe('translations', () => {
     it('stops on a message missing its values while developing, rather than show it broken', () => {
       expect(() => write('en', 'Saved {name}.', {})).toThrow(/The message test could not be written/);
     });
+
+    it('writes a date in a message as Settings say, and leaves what is not a message as it is', () => {
+      formatLocale.set('en-GB');
+      expect(write('en', 'Fired on {when, date, long}.', { when: new Date(2026, 9, 4) })).toBe(
+        'Fired on 4 October 2026.'
+      );
+      const nested = { title: 'Guides' };
+      expect(new IcuTranspiler().transpile({ value: nested, params: {}, translation: {}, key: 'guides' })).toBe(nested);
+    });
+
+    it('stops at a message with no English while developing, rather than show its key', () => {
+      setUp('en');
+      expect(() => translate('no.such.message')).toThrow('No English for the message no.such.message');
+    });
+
+    it('gives a chemistry problem that has no code in its own words', () => {
+      expect(chemistryText({ message: 'The analysis could not be read.' } as ChemistryError)).toBe(
+        'The analysis could not be read.'
+      );
+    });
   });
 
   describe('tags', () => {
@@ -149,6 +173,29 @@ describe('translations', () => {
       expect(p.textContent).toBe('Blei ist in den Einstellungen ausgeschaltet.');
       expect(p.querySelector('a')?.getAttribute('href')).toBe('/de/settings');
       expect(p.querySelector('a')?.textContent).toBe('Einstellungen');
+    });
+
+    it('draws emphasis, a name set apart, a link to another site and an action, and a tag it does not know as words', async () => {
+      setUp('en', [provideRouter([])]);
+      let pressed = 0;
+      @Component({
+        imports: [RichText],
+        template: `<p><gc-rich [text]="message" [links]="links" /></p>`
+      })
+      class Host {
+        readonly message = translate('marked', { name: 'שירה' });
+        readonly links = { web: 'https://example.com/', act: () => pressed++ };
+      }
+      const fixture = TestBed.createComponent(Host);
+      await fixture.whenStable();
+      const p = (fixture.nativeElement as HTMLElement).querySelector('p')!;
+      expect(p.textContent).toBe('An easy slip for שירה, plain words, the site and a button.');
+      expect([...p.querySelectorAll('em')].map((em) => em.textContent)).toEqual(['easy', 'slip']);
+      expect(p.querySelector('bdi')?.textContent).toBe('שירה');
+      expect(p.querySelector('odd')).toBeNull();
+      expect(p.querySelector('a')?.getAttribute('href')).toBe('https://example.com/');
+      (p.querySelector('button') as HTMLButtonElement).click();
+      expect(pressed).toBe(1);
     });
   });
 
@@ -274,6 +321,14 @@ describe('translations', () => {
       // Code on the page reads the same messages.
       expect(translate('example.open')).toBe('Rezept öffnen');
     });
+
+    it('loads nothing more for an English page whose words come with the data it shows', async () => {
+      const transloco = setUp('en', [provideTranslocoScope('records')]);
+      const load = vi.spyOn(transloco, 'load');
+      const ready = TestBed.runInInjectionContext(() => scopeTranslations({} as never, {} as never));
+      expect(await firstValueFrom(ready as Observable<boolean>)).toBe(true);
+      expect(load).not.toHaveBeenCalled();
+    });
   });
 
   describe('pseudo-locales', () => {
@@ -291,6 +346,12 @@ describe('translations', () => {
     it('sets text right to left for a mirrored page', () => {
       expect(pseudoMessage('Save {name}', 'ar-XB')).toBe('‮Save ‬{name}');
       expect(pseudoTranslation({ a: { b: 'Hi' } }, 'ar-XB')).toEqual({ a: { b: '‮Hi‬' } });
+      // A guide's text too, but for blank text, which has nothing to turn.
+      expect(pseudoText('Fire it', 'ar-XB')).toBe('‮Fire it‬');
+      expect(pseudoText('  ', 'ar-XB')).toBe('  ');
+      expect(pseudoText('Save recipe', 'ar-XD')).toBe(pseudoMessage('Save recipe', 'ar-XD'));
+      // What is not words in a file, such as a number, stays as it is.
+      expect(pseudoTranslation({ count: 3, none: null }, 'en-XA')).toEqual({ count: 3, none: null });
     });
 
     it('writes every message in Japanese characters, shorter and with no spaces, by Japanese plural rules', () => {
