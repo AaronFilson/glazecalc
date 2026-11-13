@@ -7,7 +7,7 @@ import {
   HttpHeaders,
   HttpResponse
 } from '@angular/common/http';
-import { Injectable, Injector, PLATFORM_ID, inject, signal } from '@angular/core';
+import { DestroyRef, Injectable, Injector, PLATFORM_ID, inject, signal } from '@angular/core';
 import { translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { firstValueFrom } from 'rxjs';
@@ -318,6 +318,15 @@ export class Outbox {
   private noticeId = 0;
   private sentCount = 0;
   private readonly mergeTries = new Map<number, number>();
+  /** Torn down (the app, or a test's injector): no try is left waiting, and nothing more is sent. */
+  private destroyed = false;
+
+  constructor() {
+    inject(DestroyRef).onDestroy(() => {
+      this.destroyed = true;
+      clearTimeout(this.retry);
+    });
+  }
 
   /** Whether a change to this record (or setting) waits to be sent: for a "Waiting to save" mark. */
   pendingFor(area: string, id: string): boolean {
@@ -336,7 +345,7 @@ export class Outbox {
   /** Whether the outbox may hold a change; false skips opening the database. */
   noted(): boolean {
     try {
-      return this.browser && localStorage.getItem(OUTBOX_NOTE) === '1';
+      return !this.destroyed && this.browser && localStorage.getItem(OUTBOX_NOTE) === '1';
     } catch {
       return false;
     }
@@ -502,7 +511,7 @@ export class Outbox {
   }
 
   private async run(): Promise<void> {
-    if (navigator.onLine === false) return;
+    if (this.destroyed || navigator.onLine === false) return;
     const userId = await this.records().whoIs();
     if (!userId) {
       // Waiting for a sign-in (the sign-in ran out): the same user's next sign-in sends.
@@ -521,7 +530,7 @@ export class Outbox {
       }
     } finally {
       await this.refreshCount(userId);
-      if (touched.size) await this.records().refetch([...touched]);
+      if (touched.size && !this.destroyed) await this.records().refetch([...touched]);
       // Everything that could go has gone: the person is told once.
       if (this.sentCount > 0 && this.sendable() === 0) this.tell(marker('outbox.saved'));
       this.sentCount = 0;
@@ -748,6 +757,7 @@ export class Outbox {
     }
     await done(tx);
     await this.refreshCount(entry.userId);
+    if (this.destroyed) return;
     // The copy of the records follows: the server's version for a dropped change, with the new record for a copy.
     await this.records().refetch([entry.area]);
     void this.flush();
@@ -758,7 +768,7 @@ export class Outbox {
     const entry = (await this.entries()).find((one) => one.seq === seq);
     await this.drop(seq);
     await this.refreshCount(entry?.userId);
-    if (entry) await this.records().refetch([entry.area]);
+    if (entry && !this.destroyed) await this.records().refetch([entry.area]);
   }
 
   /** What was to be made with the temporary id of a record that failed to be made cannot be sent either. */
@@ -785,6 +795,7 @@ export class Outbox {
   }
 
   private retryLater(): void {
+    if (this.destroyed) return;
     clearTimeout(this.retry);
     this.failedTries++;
     this.retry = setTimeout(() => void this.flush(), retryDelay(this.failedTries));
