@@ -2,9 +2,9 @@
 
 Accepted, 2026-10-17. From the research report "Recipe cone field" (2026-10-17, kept out of the
 repository in `reports/`) and the owner's decisions on its open questions. Amended 2026-10-19 (SK
-and Orton by Kyoto's same-kiln columns; result cards), 2026-10-20 (higher cones) and 2026-11-08 (a
-cone counts as tested only when ticked), each marked below. The chemistry-against-cone check it
-left for later is [ADR 22](0022-chemistry-against-the-stated-cone.md).
+and Orton by Kyoto's same-kiln columns; result cards), 2026-10-20 (higher cones), 2026-11-08 (a
+cone counts as tested only when ticked) and 2026-11-13 (cone 05½), each marked below. The
+chemistry-against-cone check it left for later is [ADR 22](0022-chemistry-against-the-stated-cone.md).
 
 ## Context
 
@@ -52,7 +52,10 @@ panel. Recipes so far say their firing only in the notes, if at all.
 - **Order by ordinal, never text or number.** Orton runs 022 … 01 (−22 … −1), then 1 … 42; a half
   cone sits halfway. SK follows its chart's order, letter cones included. Ranges, filters and
   ticks use the ordinal. The picker offers Orton 022–13 first, then half cones (1½–12½), then 14–42
-  (rare in pottery, last but there); SK offers its chart.
+  (rare in pottery, last but there); SK offers its chart. (Amended 2026-11-13: the half cones begin
+  with 05½, which Orton makes and charts between 06 and 05, at −5.5 in the order; it is read from a
+  paste or a log, kept, checked and converted as every half cone is, halfway between its
+  neighbours. Before, it was no cone, and pasted text read "cone 05½" as cone 05.)
 - **Conversions are display only, labelled approximate, and say what they rest on.** Orton cones
   to °C by Orton's large-cone chart at 60 °C an hour (022–14; none above 14; a half cone halfway;
   the amendment of 2026-10-20 found these figures are the older chart's at 150 °C an hour, and
