@@ -19,6 +19,7 @@
 import express, { type Request } from 'express';
 import jwtAuth, { userOf } from '../lib/jwt_auth.ts';
 import { say } from '../lib/messages.ts';
+import { registerPreview } from '../lib/pending_changes.ts';
 import { logActivity } from '../lib/record_history.ts';
 import requireScope from '../lib/require_scope.ts';
 import { confirmFirst, inputOf, registerOp, send, type Op, type Reply, type Who } from '../lib/rest_changes.ts';
@@ -102,6 +103,8 @@ const undo: Op = async (who) => {
 registerOp('shelf.add', add);
 registerOp('shelf.remove', remove);
 registerOp('shelf.undo', undo);
+// What a waiting undo would put back, for its page.
+registerPreview('rest', 'shelf.undo', (_args, _current, userId) => shelves.shelfUndoPreview(userId));
 
 /** The material a body names, as the change's summary says it. */
 const nameIn = (req: Request): string => {

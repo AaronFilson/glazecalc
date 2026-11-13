@@ -1107,3 +1107,111 @@ describe('confirm before changes: the MCP write tools', () => {
     expect((await Recipe.findById(recipeId).lean())!.title).to.equal('Changed on the website');
   });
 });
+
+// What the page shows must be what approving does: a recipe line's chemistry can change while its name
+// and amount stay ("Custer Spar 30" given the analysis of lead oxide), and an undo puts back what the
+// person cannot otherwise see.
+describe('confirm before changes: what the page shows of a line’s chemistry and of an undo', () => {
+  let mine: Awaited<ReturnType<typeof makeUser>>;
+  let write: string;
+  beforeEach(async () => {
+    mine = await makeUser();
+    write = await makeToken(mine.user, { scopes: ['data:write'] });
+  });
+  const pageOf = async (pendingId: string) =>
+    (
+      await api()
+        .get('/pending-changes/' + pendingId)
+        .set('Authorization', bearer(mine.token))
+    ).body as Json;
+  const LINER = [
+    { material: 'Custer Spar', amount: 30 },
+    { material: 'Silica', amount: 30 },
+    { material: 'Whiting', amount: 20 },
+    { material: 'EPK', amount: 20 }
+  ];
+
+  it('shows a line an assistant gives other chemistry, though its name and amount stay', async () => {
+    const made = await callTool(write, 'create_recipe', { title: 'Liner', lines: LINER, foodSurface: true });
+    const id = JSON.parse(textOf(made.body)).id as string;
+    await setting(mine.token, 'all');
+
+    // The same lines again: nothing to show.
+    const same = await callTool(write, 'update_recipe', { id, lines: LINER });
+    expect((await pageOf(pendingIdIn(textOf(same.body)))).changes).to.deep.equal([]);
+
+    const lead = LINER.map((line, i) => (i === 0 ? { ...line, analysis: { PbO: 100 } } : line));
+    const asked = await callTool(write, 'update_recipe', { id, lines: lead });
+    const [lines] = (await pageOf(pendingIdIn(textOf(asked.body)))).changes;
+    expect(lines.field).to.equal('materials');
+    expect(lines.before.split('\n')[0]).to.match(/^Custer Spar 30 \(SiO2 [\d.]+%, Al2O3 [\d.]+%.*\)$/);
+    expect(lines.after.split('\n')).to.deep.equal([
+      'Custer Spar 30 (PbO 100%)',
+      'Silica 30',
+      'Whiting 20',
+      'EPK Kaolin 20'
+    ]);
+
+    // A new recipe: a line given by its analysis shows it, one by its name does not.
+    const fresh = await callTool(write, 'create_recipe', {
+      title: 'Another',
+      lines: [
+        { material: 'Silica', amount: 70 },
+        { material: 'Whiting', amount: 30, analysis: { PbO: 100 } }
+      ]
+    });
+    const [created] = (await pageOf(pendingIdIn(textOf(fresh.body)))).changes.filter(
+      (change: Json) => change.field === 'materials'
+    );
+    expect(created.after).to.equal('Silica 70\nWhiting 30 (PbO 100%)');
+  });
+
+  it('shows a change to a line’s chemistry made on the REST routes', async () => {
+    const made = await callTool(write, 'create_recipe', { title: 'Liner', lines: LINER });
+    const id = JSON.parse(textOf(made.body)).id as string;
+    await setting(mine.token, 'all');
+    const materials = structuredClone((await Recipe.findById(id).lean())!.materials) as Json[];
+    materials[0]!.fields = [{ name: 'PbO', amount: '100' }];
+    const asked = await api()
+      .put('/recipe/change/' + id)
+      .set('Authorization', bearer(write))
+      .send({ recipe: { materials } });
+    expect(asked).to.have.status(202);
+    const [lines] = (await pageOf(asked.body.pendingId)).changes;
+    expect(lines.before.split('\n')[0]).to.match(/^Custer Spar 30 \(SiO2 /);
+    expect(lines.after.split('\n')[0]).to.equal('Custer Spar 30 (PbO 100%, LOI 0.3%)');
+    expect(lines.after.split('\n').slice(1)).to.deep.equal(['Silica 30', 'Whiting 20', 'EPK Kaolin 20']);
+  });
+
+  it('shows what an undo would put back: a record’s fields, and the shelf by name', async () => {
+    const noteId = (await newNote(mine.token)).body._id as string;
+    await api()
+      .put('/notes/change/' + noteId)
+      .set('Authorization', bearer(mine.token))
+      .send({ title: 'Renamed' });
+    await api()
+      .put('/shelf')
+      .set('Authorization', bearer(mine.token))
+      .send({ shelf: ['name:Silica'] });
+    await api()
+      .put('/shelf')
+      .set('Authorization', bearer(mine.token))
+      .send({ shelf: ['name:Silica', 'name:Whiting'] });
+    await setting(mine.token, 'all');
+
+    const note = await api()
+      .post('/notes/undo/' + noteId)
+      .set('Authorization', bearer(write));
+    expect(note).to.have.status(202);
+    expect((await pageOf(note.body.pendingId)).changes).to.deep.equal([
+      { field: 'title', before: 'Renamed', after: 'Glaze test' }
+    ]);
+
+    const shelf = { field: 'shelf', before: 'Silica\nWhiting', after: 'Silica' };
+    const rest = await api().post('/shelf/undo').set('Authorization', bearer(write));
+    expect(rest).to.have.status(202);
+    expect((await pageOf(rest.body.pendingId)).changes).to.deep.equal([shelf]);
+    const tool = await callTool(write, 'undo_shelf_change', {});
+    expect((await pageOf(pendingIdIn(textOf(tool.body)))).changes).to.deep.equal([shelf]);
+  });
+});

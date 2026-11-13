@@ -250,6 +250,18 @@ export default function recordRoutes(
   registerPreview('rest', area + '.change', (args, current) =>
     fieldChanges(pick(recordIn((args as OpInput).body, wrapper.change) ?? {}, fields), current)
   );
+  // And what an undo would put back: each field as it is and as the version before the last change has it.
+  registerPreview('rest', area + '.undo', async (args, current, userId) => {
+    const id = (args as OpInput).params?.id;
+    if (!current || !mongoose.isValidObjectId(id)) return [];
+    const version = await RecordVersion.findOne({ ownedBy: userId, fromCollection: area, recordId: id })
+      .sort({ savedAt: -1, _id: -1 })
+      .lean();
+    if (!version) return [];
+    const earlier = earlierOf(version.record as Body);
+    // A field the version lacks goes with the undo: shown as nothing.
+    return fieldChanges(Object.fromEntries(fields.map((field) => [field, earlier[field] ?? null])), current);
+  });
 
   /** The title of one of the account's records of this kind ('' for none), or null when there is no such record. */
   const titleIn = async (id: unknown, userId: unknown): Promise<string | null> => {

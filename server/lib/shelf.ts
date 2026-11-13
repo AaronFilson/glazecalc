@@ -11,7 +11,8 @@
 // must stay text.
 import Material from '../models/material.ts';
 import User, { SHELF_MOST } from '../models/user.ts';
-import { findMaterial, libraryKeyOf, nameKey } from '../mcp/library.ts';
+import { findById, findMaterial, libraryKeyOf, nameKey } from '../mcp/library.ts';
+import { fieldChanges, type FieldChange } from './pending_changes.ts';
 
 /** The shelf as it is now: what an expression in a pipeline reads. */
 const NOW = { $ifNull: ['$shelf', []] };
@@ -98,6 +99,24 @@ export const removeKeys = async (userId: string, keys: string[]): Promise<{ shel
     { returnDocument: 'after', updatePipeline: true, projection: { shelf: 1 } }
   ).lean();
   return { shelf: done?.shelf ?? [], changed: true };
+};
+
+/**
+ * What an Undo would put back, for its page (server/lib/pending_changes.ts):
+ * the shelf as it is and as it was before its last change, by the materials'
+ * names (the account's own, else the library's; a key found in neither as it
+ * is). Nothing when there is nothing to put back.
+ */
+export const shelfUndoPreview = async (userId: string): Promise<FieldChange[]> => {
+  const user = await User.findById(userId, { shelf: 1, shelfPrevious: 1 }).lean();
+  if (!user?.shelfPrevious) return [];
+  const own = await Material.find({ ownedBy: userId }, { name: 1 }).lean();
+  const ownById = new Map(own.map((m) => [String(m._id), m.name]));
+  const nameOf = (key: string): string =>
+    key.startsWith('name:')
+      ? (findMaterial(key.slice(5))?.name ?? key.slice(5))
+      : (ownById.get(key) ?? findById(key)?.name ?? key);
+  return fieldChanges({ shelf: user.shelfPrevious.map(nameOf) }, { shelf: (user.shelf ?? []).map(nameOf) });
 };
 
 /**

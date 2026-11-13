@@ -103,7 +103,12 @@ pendingId, url, expiresAt }`. The script polls `GET /api/pending-changes/:id` wi
 - **The page** `/confirm/:id` (`client/app/pages/confirm/confirm-page.ts`) shows the summary; each
   field the change sets, as it is now and as it would be (built by the server for the signed-in
   owner only, from the waiting arguments and the record; long text cut short with "…" and a
-  "Show all"); for a removal, what the record was called before this app's latest changes to it
+  "Show all"). A recipe's lines are compared as they would be saved, and a line's oxides are shown
+  wherever its chemistry changes, on both sides, though its name and amount stay ("Custer Spar 30
+  (PbO 100%)"), and for a new line given by its own analysis (2026-11, the 1.0 security review: the
+  name and amount alone hid a line made lead oxide). An undo shows what it puts back: a record's
+  fields from the version before its last change, the shelf by the materials' names. For a removal,
+  what the record was called before this app's latest changes to it
   and how many minutes ago it changed it (from the record's versions, which now note the token or
   app that made each); who asked (an app that registered itself marked "self-described", as on
   Connected apps) and when it lapses; Approve and Decline, the heading focused and never the
