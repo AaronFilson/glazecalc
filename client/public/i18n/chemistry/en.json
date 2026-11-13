@@ -13,6 +13,8 @@
   "invalid-amount": "Invalid amount for material {material}",
   "missing-material": "Recipe line is missing a material",
   "unknown-material": "Unknown material {material}",
+  "blank-name": "The name {name} of material {material} has no letters or digits to find it by",
+  "duplicate-name": "Materials {other} and {material} both go by the name {name}",
   "no-flux": "Recipe contains no flux oxides, so the UMF is undefined",
   "no-target": "The target has no oxides to aim for",
   "no-materials": "There are no materials to work out",

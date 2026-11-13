@@ -1475,6 +1475,62 @@ describe('glaze chemistry', () => {
       expect(() => calculateUMF({ Unobtainium: 10 })).to.throw(/Unknown material/);
     });
 
+    it('should find a material by its name in any script, and refuse extra names that leave no key or share one', () => {
+      const codeOf = (work: () => unknown): string | undefined => {
+        try {
+          work();
+        } catch (e) {
+          return (e as ChemistryError).code;
+        }
+        return undefined;
+      };
+      type Named = MaterialInput & { aliases?: string[]; noChemistry?: boolean };
+      const standard = (
+        [...standardData.load('materials'), ...standardData.load('additives')] as unknown as Named[]
+      ).filter((record) => record.fields?.length && !record.noChemistry);
+      const kamado = standard.find((record) => record.name.startsWith('Kamado Feldspar'))!;
+      const alone = (material: MaterialInput) => calculateUMF([{ material, amount: 100 }]);
+      // A Japanese or Russian name kept nothing of itself, so any one found whichever such material came last.
+      expect(calculateUMF({ 釜戸長石: 100 }, { materials: [kamado] }).umf).to.deep.equal(alone(kamado).umf);
+      expect(codeOf(() => calculateUMF({ 福島長石: 100 }, { materials: [kamado] }))).to.equal('unknown-material');
+      // Accents and full-width letters fold away; ASCII names are read as before.
+      const spar: MaterialInput = { name: 'Feldspáth sodique', analysis: { Na2O: 11.8, Al2O3: 19.4, SiO2: 68.7 } };
+      expect(calculateUMF({ 'FELDSPATH SODIQUE': 100 }, { materials: [spar] }).umf).to.deep.equal(alone(spar).umf);
+      expect(calculateUMF({ ＳＩＬＩＣＡ: 30, Whiting: 20 }).umf).to.deep.equal(
+        calculateUMF({ Silica: 30, Whiting: 20 }).umf
+      );
+      // Every standard name and alias finds its own record: each record's names in one batch, beside a flux
+      // (for those with none), come to the record's own unity formula.
+      const flux = { material: { name: 'A flux', analysis: { CaO: 56 }, loi: 44 }, amount: 10 };
+      for (const record of standard) {
+        const names = [record.name, ...(record.aliases ?? [])];
+        const own = calculateUMF([{ material: record, amount: 100 }, flux]).umf;
+        const lines = names.map((name) => ({ material: name, amount: 100 / names.length }));
+        const found = calculateUMF([...lines, flux], { materials: standard }).umf;
+        expect(Object.keys(found).sort(), record.name).to.deep.equal(Object.keys(own).sort());
+        for (const [oxide, moles] of Object.entries(own)) expect(found[oxide], record.name).to.be.closeTo(moles, 1e-9);
+      }
+      // Among the extra materials, a name or alias with no letters or digits, or one two of them share, is refused.
+      const whiting: Named = { name: 'My whiting', analysis: { CaO: 56 }, loi: 44 };
+      expect(codeOf(() => calculateUMF({ Silica: 1 }, { materials: [{ ...whiting, name: '—' }] }))).to.equal(
+        'blank-name'
+      );
+      expect(codeOf(() => calculateUMF({ Silica: 1 }, { materials: [{ ...whiting, aliases: ['()'] }] }))).to.equal(
+        'blank-name'
+      );
+      expect(
+        codeOf(() => calculateUMF({ Silica: 1 }, { materials: [whiting, { ...whiting, name: 'my-Whiting!' }] }))
+      ).to.equal('duplicate-name');
+      expect(
+        codeOf(() => calculateUMF({ Silica: 1 }, { materials: [whiting, { ...spar, aliases: ['MY WHITING'] }] }))
+      ).to.equal('duplicate-name');
+      // Its own name again among its aliases is no clash, and an extra material still replaces a built-in one.
+      expect(
+        codeOf(() => calculateUMF({ 'my whiting': 1 }, { materials: [{ ...whiting, aliases: ['My Whiting'] }] }))
+      ).to.equal(undefined);
+      expect(calculateUMF({ Whiting: 1 }, { materials: [{ ...whiting, name: 'Whiting' }] }).loi).to.equal(44);
+    });
+
     it('should reject misspelled oxides such as Si02', () => {
       const bad = { name: 'Typo', analysis: { Si02: 100 } };
       expect(() => calculateUMF([{ material: bad, amount: 1 }])).to.throw(/Unknown oxide/);
