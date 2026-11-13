@@ -720,7 +720,7 @@ export class OfflineRecords {
     // Named while the copy is being turned on: setEnabled writes the user's own copy itself.
     const turningOn = this.turningOn;
     try {
-      if (!turningOn && this.storesAnything() && this.user === user && (await this.currentId()) !== user.id)
+      if (!turningOn && this.storesAnything() && this.user === user && (await this.needsSwitch(user)))
         await this.switchTo(user);
     } finally {
       if (this.user === user) this.held = false;
@@ -729,6 +729,15 @@ export class OfflineRecords {
       void this.outbox().refreshCount(user.id);
       void this.outbox().flush();
     }
+  }
+
+  /**
+   * Whether `user`'s sign-in changes which copy is shown: the copy shown last is another account's, or it is
+   * theirs but locked. A sign-in during which the database could not be opened locks the copy without changing
+   * whose it is, so the account's next sign-in shows it again rather than leave it locked until turned on anew.
+   */
+  private async needsSwitch(user: SignedInUser): Promise<boolean> {
+    return (await this.currentId()) !== user.id || this.rawFlag() === RECORDS_LOCKED;
   }
 
   /** Makes `user`'s copy the one shown, or none when they keep none here; every other copy stays, locked. */

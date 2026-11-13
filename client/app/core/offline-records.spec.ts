@@ -527,6 +527,27 @@ describe('the records kept on this device', () => {
     expect(await databases()).toContain(RECORDS_DB);
   });
 
+  it("the account's next sign-in shows the copy that a sign-in the database could not be opened for locked", async () => {
+    setUp();
+    const first = TestBed.inject(OfflineRecords);
+    await turnOn(first);
+    await waitFor(async () => expect(await first.read('recipe')).not.toBeNull());
+    const records = restart();
+    const open = vi.spyOn(indexedDB, 'open').mockImplementation(() => {
+      const failing = {} as IDBOpenDBRequest;
+      setTimeout(() => failing.onerror?.(new Event('error')));
+      return failing;
+    });
+    await signInAs('a@b.c', 'u1');
+    await waitFor(() => expect(localStorage.getItem(RECORDS_FLAG)).toBe(RECORDS_LOCKED));
+    open.mockRestore();
+    // The database opens again, and still names this account's copy as the one shown last: it is theirs.
+    await signInAs('a@b.c', 'u1');
+    await waitFor(() => expect(records.enabled()).toBe(true));
+    expect(localStorage.getItem(RECORDS_FLAG)).toBe('1');
+    expect((await records.read('recipe'))?.body).toEqual(RECIPES);
+  });
+
   it('a sign-in answered as the app is torn down locks nothing away, with no errors after', async () => {
     setUp();
     const first = TestBed.inject(OfflineRecords);
