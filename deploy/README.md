@@ -7,10 +7,11 @@ How the production setup fits together. The plan and reasoning are in
 ```
 GitHub: push to master ─► CI (tests, Docker check) ─► Publish image (amd64 + arm64)
                                                         └─► ghcr.io/aaronfilson/glazecalc:sha-<commit>, :latest
-GitHub: Actions → Deploy (manual, approved) ─OIDC─► AWS role ─SSM Run Command─► /opt/glazecalc/deploy.sh <tag>
+GitHub: Publish image on master ─► Deploy (or Actions → Deploy <tag> by hand) ─► (approved)
+          ─OIDC─► AWS role ─SSM Run Command─► /opt/glazecalc/deploy.sh <tag>
           deploy.sh: backup.sh ─► new image, healthy, indexes built ─► nginx files from the same commit
         └─► Live checks: health, headers, every language's home page, pages in a browser, /mcp
-GitHub: Actions → Deploy staging <branch> (approved) ─► arm64 image :staging-<commit>
+GitHub: Actions → Deploy staging <branch> ─► arm64 image :staging-<commit> ─► (approved)
           ─OIDC─► staging role ─SSM Run Command─► /opt/glazecalc/staging.sh staging-<commit> ─► Live checks
 
 EC2 (Debian 13, t4g.micro):
@@ -54,7 +55,9 @@ them from the commit production runs rather than from master.
 | `systemd/*`                                              | `/etc/systemd/system/`                 | the units listed above                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | `compose.staging.yaml`, `staging.sh`, `mongo-users.sh`   | `/opt/glazecalc/`                      | the staging copy: installed by hand once, then `staging.sh` updates them from each commit it deploys; see "Staging" below                                                                                                                                                                                                                                                                                                                                                  |
 | `nginx/glazecalc-staging.conf`                           | `/etc/nginx/sites-available/`          | staging.glazecalcapp.com to 127.0.0.1:3001, once `enable-https.sh --with-staging` has added the name; then from each staging deploy                                                                                                                                                                                                                                                                                                                                        |
-| `aws/*.json`                                             | IAM, SSM, DLM                          | instance role, GitHub deploy roles (production and staging) and their one command document each, CLI user policy, snapshot policy                                                                                                                                                                                                                                                                                                                                          |
+| `aws/*.json`                                             | IAM, SSM, DLM                          | instance role (and the optional staging images policy, "Staging" below), GitHub deploy roles (production and staging) and their one command document each, CLI user policy, snapshot policy                                                                                                                                                                                                                                                                                |
+| `aws/mail*.json`                                         | IAM, S3, SES                           | the mail documents (aws/README.md, sections 14 and 15): the policies for whoever sets up sending and receiving, the app's sending user (only as no-reply@), the user Gmail sends through (only as the six addresses that receive mail), the mail bucket's policy, the forwarder function's role and the receipt rule                                                                                                                                                       |
+| `aws/mail-forwarder/`                                    | Lambda                                 | the function that forwards mail for those six addresses to the owner's inbox (aws/README.md, section 15)                                                                                                                                                                                                                                                                                                                                                                   |
 
 Settings come from SSM Parameter Store, never from the repository or user data:
 `/glazecalc/app-secret` (SecureString), `/glazecalc/mongo-password` (SecureString, the app's
@@ -854,7 +857,9 @@ the image (checking that its label names the same commit), writes the root-only 
 starts the app and waits for `/api/health` on 3001, checks that it built its indexes, loads the
 standard materials, then installs staging's nginx site from the commit. If the new version does not
 become healthy, the staging version that was running is started again (or staging is left stopped)
-and it says so. A master build from CI works too: `staging.sh sha-<sha>` (by hand only).
+and it says so. A master build from CI works too: `staging.sh sha-<sha>`. The staging role's command
+document accepts that tag as well, but the Deploy staging workflow only ever sends `staging-<sha>`,
+so a master build is staged by hand.
 
 Also:
 

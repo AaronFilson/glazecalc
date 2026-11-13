@@ -37,11 +37,15 @@ export interface Settings {
   readonly ownerInboxVersion: number;
   /**
    * The instances from before this setup, which the operator policy lets the
-   * CLI user stop or terminate (deploy/aws/README.md, step 0). Empty once they
-   * are gone, and the policy's OldServers statement goes with them.
+   * CLI user stop, start or terminate, and read the console output of
+   * (deploy/aws/README.md, step 0). Empty once they are gone, and the
+   * policy's OldServers statement goes with them.
    */
   readonly oldServers: readonly string[];
-  /** The SES reputation alarms (deploy/aws/README.md, section 14 gives no names). */
+  /**
+   * The SES reputation alarms. deploy/aws/README.md, section 14, gives these
+   * defaults but not the live names: check those before the import.
+   */
   readonly bounceAlarmName: string;
   readonly complaintAlarmName: string;
   /**
