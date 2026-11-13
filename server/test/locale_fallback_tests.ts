@@ -78,3 +78,39 @@ describe('the locale data for languages a browser lacks (scripts/locale-fallback
     });
   }
 });
+
+// The browser's own check (browserHas), which the tests above replace: Node's Intl has every language
+// the data covers, and writes each as the data does, so a browser like it is taken to have them all.
+describe('whether a browser has a language (lib/regions/locale-fallback.js)', () => {
+  beforeEach(() => fallback.setBrowserSupport(null));
+  afterEach(() => fallback.setBrowserSupport(null));
+
+  it('takes a browser that writes a language as Node does to have it, and falls back for none of it', () => {
+    for (const language of Object.keys(fallback.LOCALE_FALLBACK_DATA.languages)) {
+      for (const kind of ['numbers', 'dates', 'lists'] as const) {
+        expect(fallback.browserHas(language, kind), `${language} ${kind}`).to.equal(true);
+        expect(fallback.fallbackFor(language, kind), `${language} ${kind}`).to.equal(null);
+      }
+    }
+  });
+
+  it('takes a language the browser answers in another language to be one it lacks', () => {
+    expect(fallback.browserHas('xx', 'numbers')).to.equal(false);
+    expect(fallback.browserHas('xx', 'dates')).to.equal(false);
+    expect(fallback.browserHas('xx', 'lists')).to.equal(false);
+    expect(fallback.browserHas('de', 'numbers')).to.equal(true);
+  });
+
+  it('has nothing to fall back to for a tag that is not a locale, or a language it has no data for', () => {
+    expect(fallback.fallbackFor('not a locale!', 'numbers')).to.equal(null);
+    expect(fallback.fallbackFor('de-DE', 'dates')).to.equal(null);
+  });
+
+  it('says what a fallback format writes as: its locale, the Gregorian calendar and Western digits', () => {
+    fallback.setBrowserSupport(() => false);
+    const numbers = fallback.numberFormat('ne-NP').resolvedOptions();
+    expect([numbers.locale, numbers.numberingSystem]).to.eql(['ne-NP', 'latn']);
+    const dates = fallback.dateTimeFormat('ne-NP', { dateStyle: 'full' }).resolvedOptions();
+    expect([dates.locale, dates.calendar, dates.numberingSystem]).to.eql(['ne-NP', 'gregory', 'latn']);
+  });
+});
