@@ -296,6 +296,7 @@ export const MESSAGES = {
   'too-many-changes':
     'Too many changes were made to this account with access tokens. Please wait a while and try again; changes on the website still work.',
   'too-many-saves': 'Too many changes were saved to this account in a short time. Please wait a while and try again.',
+  'too-many-requests': 'Too many requests from this address. ' + WAIT,
   'too-many-mcp': 'Too many requests to the Glazecalc tools for AI assistants. ' + WAIT,
   'too-many-oauth': 'Too many requests to connect apps from this address. ' + WAIT,
   'too-many-registrations': 'Too many apps registered themselves. Please try again later.',

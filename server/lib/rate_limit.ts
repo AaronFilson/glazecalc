@@ -272,6 +272,25 @@ export const countTokenDelete = async (tokenId: string): Promise<boolean> => {
 };
 
 /**
+ * Every request to /api after its health check (server/app.ts), per address:
+ * a ceiling under the limits of each route, so that no one address keeps the
+ * server busy reading records. Far above what the site's pages make: opening
+ * the app reads each kind of record once, a blend of 66 tiles saves 66 times,
+ * and a class of thirty behind one school's address has room to spare. Read
+ * at each request, so the tests can lower it.
+ */
+export const API_LIMITS = { minute: 1200 };
+export const apiRequests = limiter(1, () => API_LIMITS.minute, 'too-many-requests');
+
+/**
+ * The service worker's copy of the app shell (GET /app-shell.html, read from
+ * disk) and the authorization server's metadata (RFC 8414), per address: each
+ * is fetched once in a while by a browser or an AI app, so 300 a minute only
+ * stops someone making the server do the work without end.
+ */
+export const siteDocuments = limiter(1, 300, 'too-many-requests');
+
+/**
  * Recipes opened by share link (GET /api/shared/recipe), per address: loose,
  * for a class opening one teacher's links behind a school's one address, but
  * not without end, since anyone may ask.
