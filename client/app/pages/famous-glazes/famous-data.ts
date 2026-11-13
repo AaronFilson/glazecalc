@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
+import type { GlazeVersion } from '../../../../lib/famous-versions';
 import type { Additive, Material } from '../../core/models';
 import { PAGE_LANGUAGE } from '../../i18n/language';
 
@@ -55,6 +56,12 @@ export interface FamousGlaze {
   } | null;
   sources: Array<{ id: string; citation: string; url?: string; isbn?: string; opened?: string }>;
   guides?: string[];
+  /**
+   * The glaze made from the materials sold in each region of the library (US, UK, EU, AU, JP), and from a
+   * lead-free version's own ('', its proposal), each line [the material's name, its percent], as the build
+   * works them out (scripts/famous-glazes.mjs, lib/famous-versions.js).
+   */
+  versions?: Record<string, GlazeVersion>;
 }
 
 /**

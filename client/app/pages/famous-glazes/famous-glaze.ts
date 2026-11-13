@@ -1,16 +1,13 @@
-import { OXIDE_GROUPS, calculateUMF, leadFreeTarget } from '../../../../lib/chemistry';
-import { suggestable } from '../../../../lib/recipe/library';
-import * as solveLib from '../../../../lib/recipe/solve';
+import { calculateUMF } from '../../../../lib/chemistry';
 import { Additive, Material, Recipe, RecipeMaterial } from '../../core/models';
 import { FamousGlaze, GlazeLine } from './famous-data';
 
-// What a famous glaze's page works out (docs/famous-glazes.md): the native recipe's unity formula, and a
-// version from the materials sold where the reader is, solved for that formula (or, for a lead glaze, for
-// its lead-free target) by the same solver as Target & Solve (lib/recipe/solve.js).
+// What a famous glaze's page shows of its chemistry (docs/famous-glazes.md): the native recipe's unity formula,
+// and its versions from the materials sold where the reader is (or, for a lead glaze, from its lead-free
+// version's own), which the build works out (scripts/famous-glazes.mjs, lib/famous-versions.js) and ships with
+// the glaze, so the page solves nothing.
 
 export * from './famous-data';
-
-const isFlux = (oxide: string): boolean => OXIDE_GROUPS[oxide] === 'R2O' || OXIDE_GROUPS[oxide] === 'RO';
 
 /** The native recipe's unity formula (its base, without the colorants), or null without a recipe. */
 export function nativeUnity(glaze: FamousGlaze): Record<string, number> | null {
@@ -18,50 +15,11 @@ export function nativeUnity(glaze: FamousGlaze): Record<string, number> | null {
   return calculateUMF(glaze.recipe.lines.map((line) => ({ material: line.record, amount: line.amount }))).umf;
 }
 
-/**
- * The unity formula the local version aims at: the native recipe's, or for a lead glaze its analysis with
- * the lead's share of the fluxes handed to others (lib/chemistry leadFreeTarget) for the lead-free
- * version's firing. Tin and other oxides a colorant gives are left to the additives.
- */
-export function targetUnity(glaze: FamousGlaze): Record<string, number> | null {
-  if (!glaze.lead) return nativeUnity(glaze);
-  if (!glaze.analysis || !glaze.leadFree) return null;
-  const additiveOxides = new Set(
-    glaze.leadFree.additives.flatMap((line) => (line.record.fields ?? []).map((field) => field.name))
-  );
-  const base = Object.fromEntries(
-    Object.entries(glaze.analysis.oxides).filter(([oxide]) => !additiveOxides.has(oxide))
-  );
-  const { moles } = solveLib.targetOf({ kind: 'analysis', oxides: base });
-  const target = leadFreeTarget(moles, { celsius: glaze.leadFree.celsius });
-  const fluxes = Object.entries(target).reduce((sum, [oxide, amount]) => (isFlux(oxide) ? sum + amount : sum), 0);
-  return Object.fromEntries(Object.entries(target).map(([oxide, amount]) => [oxide, amount / fluxes]));
-}
-
-/** The kinds of material a base glaze is made of; colorants and the like come as additives. */
-const BASE_KINDS = ['feldspar', 'clay', 'frit', 'boron', 'flux', 'silica', 'alumina'];
-
-/**
- * The standard materials a version may use where the reader buys (the library's region: US, UK, EU or
- * AU): sold there, current, no lead, not soluble, and base materials only. '' is the version's own
- * preferred materials (the lead-free proposal's), or none: the reader is asked where they buy.
- */
-export function offeredIn(glaze: FamousGlaze, library: string, standard: readonly Material[]): Material[] {
-  if (!library) return [...(glaze.leadFree?.prefer ?? [])];
-  return standard.filter(
-    (material) =>
-      BASE_KINDS.includes(material.category ?? '') &&
-      !(material as { soluble?: boolean }).soluble &&
-      suggestable(material as never, { region: library })
-  );
-}
-
 export interface LocalVersion {
-  /** The base, in percent, as text. */
-  materials: RecipeMaterial[];
+  /** The base, in percent, by material name. */
+  materials: Array<{ name: string; amount: number }>;
   additives: Additive[];
   verdict: 'close' | 'fair' | 'poor';
-  unity: Record<string, number>;
 }
 
 const asAdditive = (line: GlazeLine<Additive>): Additive => ({
@@ -70,27 +28,34 @@ const asAdditive = (line: GlazeLine<Additive>): Additive => ({
   unit: 'percent'
 });
 
-/** The glaze from the materials offered, solved for its target; null where it cannot be. */
-export function localVersion(glaze: FamousGlaze, offered: readonly Material[]): LocalVersion | null {
-  const target = targetUnity(glaze);
-  if (!target || !offered.length) return null;
-  try {
-    const solved = solveLib.solveTarget<RecipeMaterial>(
-      { kind: 'unity', oxides: target },
-      offered.map((material) => ({ material: material as RecipeMaterial, must: false }))
-    );
-    const additives = (glaze.lead ? (glaze.leadFree?.additives ?? []) : (glaze.recipe?.additives ?? [])).map(
-      asAdditive
-    );
-    return {
-      materials: solved.materials,
-      additives,
-      verdict: solved.report.closeness!.verdict,
-      unity: solved.unity
-    };
-  } catch {
-    return null;
+/**
+ * The version made from the materials sold in a region of the library (US, UK, EU, AU or JP), or with none
+ * chosen ('') from a lead-free version's own, as the build shipped it, with the glaze's colorants as
+ * additives; null where there is none.
+ */
+export function localVersion(glaze: FamousGlaze, library: string): LocalVersion | null {
+  const version = glaze.versions?.[library];
+  if (!version) return null;
+  return {
+    materials: version.lines.map(([name, amount]) => ({ name, amount })),
+    additives: (glaze.lead ? (glaze.leadFree?.additives ?? []) : (glaze.recipe?.additives ?? [])).map(asAdditive),
+    verdict: version.verdict
+  };
+}
+
+/**
+ * A version's base as a recipe's materials: each material's record, found by its name among the records given
+ * (the standard materials for a region's version, a lead-free version's own for its proposal), with its amount
+ * as the recipe page writes amounts. Null if any is not among them.
+ */
+export function versionMaterials(version: LocalVersion, records: readonly Material[]): RecipeMaterial[] | null {
+  const materials: RecipeMaterial[] = [];
+  for (const line of version.materials) {
+    const record = records.find((material) => material.name === line.name);
+    if (!record) return null;
+    materials.push({ ...structuredClone(record), amount: String(line.amount) });
   }
+  return materials;
 }
 
 /** The native recipe as a new recipe for the recipe page, not saved yet; null for a lead glaze or none. */
