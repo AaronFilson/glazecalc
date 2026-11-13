@@ -9,7 +9,7 @@ is the source: translations are made from it (see [the plan](i18n-plan.md)).
 | File                                      | What is in it                                                                                                |
 | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
 | `client/public/i18n/en.json`              | Text on every page: the menu, page titles, shared parts (lists, forms, buttons, field checks)                |
-| `client/public/i18n/<scope>/en.json`      | One part of the app: `site`, `account`, `library`, `notebook`, `recipe`, `guides`                            |
+| `client/public/i18n/<scope>/en.json`      | One part of the app: `site`, `account`, `library`, `notebook`, `recipe`, `guides`, `reference`, `famous`     |
 | `client/public/i18n/server/en.json`       | The server's messages, written from `server/lib/messages.ts` by `npm run i18n:sources`                       |
 | `client/public/i18n/chemistry/en.json`    | The chemistry library's errors and warnings, written from `lib/chemistry/messages.js` likewise               |
 | `client/public/i18n/safety/en.json`       | The words of who to call (`lib/regions/safety.js`), each under a key made from its English, written likewise |
@@ -138,7 +138,8 @@ A quotation keeps its temperatures as the source wrote them, not as `{{…}}`.
   letters, right to left by the browser's own rules, with Arabic's six plural forms and
   Arabic-Indic digits: a value or name that comes apart in Arabic text shows it. `/hi-XE/` shows
   it in Devanagari, for Hindi's fonts and taller lines, `/ta-XF/` in Tamil and `/kn-XG/` in Kannada
-  (letters stacked below the line; its `one` takes 0 as well as 1), and `/ml-XH/` in Malayalam (wide
-  letters, and long words that test a button or a column at a phone's width).
+  (letters stacked below the line; its `one` takes 0 as well as 1), `/ml-XH/` in Malayalam (wide
+  letters, and long words that test a button or a column at a phone's width), and `/am-XI/` in Ethiopic,
+  for Amharic's fonts and line height.
 - A right-to-left translation keeps → in a message as the English has it: the app writes ← on a
   right-to-left page (docs/i18n-plan.md, "Right to left, as built"). Units stay in Latin (°C, g).
