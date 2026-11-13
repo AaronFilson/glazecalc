@@ -707,6 +707,55 @@ describe('glaze chemistry', () => {
       near(boundedLeastSquares({ columns: [[1]], b: [2], lo: [0.5], hi: [Infinity], cost: [3] }), [0.5]);
     });
 
+    it('should give a number for a column of zeros, and not hold back a tiny column', () => {
+      // A column of zeros with a rebate (a price below nothing) came back NaN: 0 times Infinity.
+      const zeros = boundedLeastSquares({ columns: [[0, 0]], b: [1, 1], lo: [0], hi: [Infinity], cost: [-1] });
+      expect(zeros.every(Number.isFinite)).to.equal(true);
+      // With a pull, it goes where the pull and the price put it, as no row has a say: 2 - (-1)/1 = 3.
+      near(
+        boundedLeastSquares({
+          columns: [[0, 0]],
+          b: [1, 1],
+          lo: [0],
+          hi: [Infinity],
+          lambda: 1,
+          pullTo: [2],
+          cost: [-1]
+        }),
+        [3]
+      );
+      // Beside a column of zeros, the others are solved as ever.
+      near(
+        boundedLeastSquares({
+          columns: [
+            [1, 0],
+            [0, 0],
+            [0, 1]
+          ],
+          b: [2, 3],
+          lo: [0, 0, 0],
+          hi: [Infinity, 5, Infinity]
+        }),
+        [2, 0, 3]
+      );
+      // Tiny columns beside a large one: half a millionth of it, where the ridge for the large one (1e-13 of
+      // its square) held the small one at 98% of what it takes; a ten-millionth, where its slope was under
+      // the large one's tolerance and it did not move at all.
+      for (const tiny of [2e-6, 1e-7]) {
+        const x = boundedLeastSquares({
+          columns: [
+            [tiny, 0],
+            [0, 1]
+          ],
+          b: [tiny, 1],
+          lo: [0, 0],
+          hi: [Infinity, Infinity]
+        });
+        expect(x[0], String(tiny)).to.be.closeTo(1, 1e-4);
+        expect(x[1]).to.be.closeTo(1, 1e-9);
+      }
+    });
+
     it('should cope with near-duplicate columns, and match a slow method on random problems', () => {
       let seed = 11;
       const random = () => (seed = (seed * 1103515245 + 12345) % 2147483648) / 2147483648;
