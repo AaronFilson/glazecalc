@@ -1,5 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute, convertToParamMap } from '@angular/router';
+import { AuthService } from '../../core/auth.service';
 import { OPEN_PAGE } from '../../i18n/language';
 import { API, httpMock, settle, skippedHeadings, testProviders, text } from '../../testing/test-providers';
 import { ALLOW_AFTER_MS, ConnectPage, type ConnectRequest } from './connect-page';
@@ -195,6 +196,33 @@ describe('ConnectPage', () => {
     expect(all).toContain('It cannot change anything.');
     expect(root.querySelector('#connect-write')).toBeNull();
     expect(root.querySelector('.warning')).toBeNull();
+  });
+
+  it('names an app that gives no name as such, and says which account it would reach', async () => {
+    const { fixture } = await create({ ...CIMD, client: { ...CIMD.client, name: '' } });
+    expect(text(fixture, 'h2')).toBe('An app with no name');
+    TestBed.inject(AuthService).email.set('potter@example.com');
+    await fixture.whenStable();
+    expect(text(fixture)).toContain('Signed in as potter@example.com');
+  });
+
+  it('holds Allow back for a second after the page is shown, unless told otherwise', async () => {
+    TestBed.configureTestingModule({
+      providers: [
+        ...testProviders(),
+        { provide: ActivatedRoute, useValue: { snapshot: { paramMap: convertToParamMap({ uid: UID }) } } }
+      ]
+    });
+    const fixture = TestBed.createComponent(ConnectPage);
+    await fixture.whenStable();
+    httpMock().expectOne(ADDRESS).flush(CIMD);
+    await settle(fixture);
+    const allow = [...(fixture.nativeElement as HTMLElement).querySelectorAll('button')].find(
+      (b) => b.textContent?.trim() === 'Allow'
+    )!;
+    expect(allow.getAttribute('aria-disabled')).toBe('true');
+    allow.click();
+    httpMock().expectNone(ADDRESS);
   });
 
   it('warns when an app named by its address sends the answer to another host', async () => {

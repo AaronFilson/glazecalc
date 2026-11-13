@@ -1,14 +1,39 @@
+import { TestBed } from '@angular/core/testing';
+import { TranslocoService } from '@jsverse/transloco';
+import { testProviders } from '../testing/test-providers';
 import {
   fixed,
   forTyping,
   formatDate,
   formatLocale,
   formatTemperature,
+  money,
+  notANumber,
   parseNumber,
   percent,
   toPlain,
   upTo
 } from './format';
+
+describe('money, and what is said of typed text that is not a number', () => {
+  beforeEach(() => {
+    TestBed.configureTestingModule({ providers: testProviders() });
+    TestBed.inject(TranslocoService);
+  });
+  afterEach(() => formatLocale.set('en'));
+
+  it('writes money as the locale does, and in a currency it does not know as the figure and the code', () => {
+    formatLocale.set('en-US');
+    expect(money(2.5, 'USD')).toBe('$2.50');
+    expect(money(2.5, 'not a currency')).toBe('2.5 not a currency');
+  });
+
+  it('names the decimal mark Settings allow, with an example written with it', () => {
+    expect(notANumber('comma')).toBe('Enter a number, such as 12,5, with a comma for decimals.');
+    expect(notANumber('point')).toBe('Enter a number, such as 12.5, with a point for decimals.');
+    expect(notANumber('either')).toBe('Enter a number, such as 12.5.');
+  });
+});
 
 describe('numbers, dates and temperatures as the reader writes them', () => {
   afterEach(() => formatLocale.set('en'));

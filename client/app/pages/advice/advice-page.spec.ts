@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+import { OfflineRecords } from '../../core/offline-records';
 import { API, answer, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { AdvicePage } from './advice-page';
 
@@ -71,6 +72,17 @@ describe('AdvicePage, signed in', () => {
       .flush({});
     await settle(fixture);
     expect(text(fixture, '.my-advice')).toBe('Nothing saved yet.');
+  });
+
+  it('keeps Remove off while the copy saved on this device is shown, as removing advice needs the network', async () => {
+    const { fixture, root } = await create([{ _id: 'a1', title: 'Wax', content: 'Wax the foot.', tags: ['none'] }]);
+    TestBed.inject(OfflineRecords).showingCopy.set(new Date(2026, 9, 12, 14, 30));
+    await fixture.whenStable();
+    const remove = root.querySelector('button[aria-label="Remove Wax"]') as HTMLButtonElement;
+    expect(remove.getAttribute('aria-disabled')).toBe('true');
+    remove.click();
+    await settle(fixture);
+    expect(root.querySelector('.remove-confirm')).toBeNull();
   });
 
   it('says when my advice could not be fetched', async () => {

@@ -99,9 +99,13 @@ describe('AdditivePage', () => {
     httpMock().expectNone(API + '/additives/create');
     expect(fieldProblem(fixture, 'additive-name')).not.toBe('');
 
-    await type('additive-name', 'Mason 6600');
+    // With no oxide analysis, a name is still needed.
     (root.querySelector('#additive-no-chemistry') as HTMLInputElement).click();
     await settle(fixture);
+    await save();
+    httpMock().expectNone(API + '/additives/create');
+    expect(fieldProblem(fixture, 'additive-name')).not.toBe('');
+    await type('additive-name', 'Mason 6600');
     await save();
     httpMock()
       .expectOne(API + '/additives/create')

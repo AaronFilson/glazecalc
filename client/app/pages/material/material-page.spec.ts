@@ -333,6 +333,18 @@ describe('MaterialPage', () => {
       expect((fixture.nativeElement.querySelector('#material-name') as HTMLInputElement).value).toBe('My Talc');
     });
 
+    it('says why a formula of nothing cannot be saved, without calling the server', async () => {
+      const { fixture } = await create();
+      const { type, click, addOxide } = fill(fixture);
+      await type('material-name', 'Nothing');
+      await type('LOI', '0');
+      await addOxide('MgO');
+      await type('oxide-amount-0', '0');
+      await click('form button[type="submit"]');
+      httpMock().expectNone(API + '/materials/create');
+      expect(text(fixture, '.errors-section')).toContain('Error: Material Nothing has no oxides');
+    });
+
     it('moves one of my materials to the Trash once its Remove is confirmed', async () => {
       const mine: Material = {
         _id: 'm1',
