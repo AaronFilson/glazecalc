@@ -128,6 +128,16 @@ describe('Paste-in import: decimal marks', () => {
     expect(one('EPK,20,5', { mark: 'point' }).lines[0].amount).to.equal(20);
   });
 
+  it('never joins two cells into a decimal when a heading row named the columns', () => {
+    expect(lines(one('Material,Amount,Notes\nSilica,30,5\nKaolin,20,5', { locale: 'de' }))).to.eql([
+      ['Silica', 30, null, false],
+      ['Kaolin', 20, null, false]
+    ]);
+    expect(lines(one('Name,Percent,Grams\nSilica,30,300', { locale: 'fr' }))).to.eql([['Silica', 30, null, false]]);
+    // With no heading, as before.
+    expect(one('Silica,30,5', { locale: 'fr' }).lines[0].amount).to.equal(30.5);
+  });
+
   it('reads a decimal comma in a line of text as a decimal, not a column', () => {
     expect(lines(one('Custer Feldspar 25,5'))).to.eql([['Custer Feldspar', 25.5, null, false]]);
   });
