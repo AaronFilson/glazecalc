@@ -44,6 +44,20 @@ export interface Report {
 }
 
 export function placesFor(total: number): number;
+
+// The notes a new recipe's changes are written in, and a selection moved to
+// another batch total: the recipe tools' own (lead.js, shelf.js, solve.js);
+// index.js does not export them.
+
+/** A change to the recipe, for its notes: "China Clay 20 → 5.8", "Niter 10 → 0". */
+export function changed(name: string, from: Figure | string, to: Figure | string): RecipeMessage;
+/** A material new to the recipe, for its notes: "G-200 EU Feldspar 33, new". */
+export function added(name: string, amount: Figure | string): RecipeMessage;
+/** A material taken out of the recipe: "Niter 10 → 0". */
+export function removed(name: string, amount: number, places: number): RecipeMessage;
+/** A selection on another batch total: amounts and caps scaled by `scale`. */
+export function scaled(selection: Selection, scale: number): Selection;
+
 /**
  * selectMaterials, raw clay held to 20% of the batch (or the old recipe's share) where that keeps the
  * match about as near: the selection, and the lines it chose from (a held clay's naming the cap and why).

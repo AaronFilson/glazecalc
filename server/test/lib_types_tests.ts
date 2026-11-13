@@ -12,12 +12,6 @@ import { expect } from './support/app.ts';
 const LIB = path.resolve(import.meta.dirname, '..', '..', 'lib');
 const require = createRequire(import.meta.url);
 
-/** Exported for the other lib modules only, so not declared for the app. */
-const INTERNAL: Record<string, string[]> = {
-  'recipe/messages': ['say'],
-  'recipe/pool': ['added', 'changed', 'removed', 'scaled']
-};
-
 const declarations = (dir: string): string[] =>
   readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
     const file = path.join(dir, entry.name);
@@ -54,10 +48,7 @@ describe('lib types', () => {
       .replace(/\\/g, '/')
       .replace(/\.d\.ts$/, '');
     it(`lib/${name}.js exports what lib/${name}.d.ts declares`, () => {
-      const internal = INTERNAL[name] ?? [];
-      const exported = Object.keys(require(file.replace(/\.d\.ts$/, '.js')) as object)
-        .filter((key) => !internal.includes(key))
-        .sort();
+      const exported = Object.keys(require(file.replace(/\.d\.ts$/, '.js')) as object).sort();
       expect(exported).to.eql(declared(file));
     });
   }
