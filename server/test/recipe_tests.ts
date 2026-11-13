@@ -425,6 +425,15 @@ describe('Shared recipe tools', () => {
     expect(recipe.bariumIn([line(WHITING, 10), line(SILICA, 30)])).to.equal(null);
   });
 
+  it('has no unity formula without a flux, as calculateUMF says', () => {
+    for (const moles of [{ SiO2: 1, Al2O3: 0.1 }, {}] as Array<Record<string, number>>) {
+      expect(() => recipe.unityOf(moles), JSON.stringify(moles))
+        .to.throw()
+        .with.property('code', 'no-flux');
+    }
+    expect(recipe.unityOf({ CaO: 0.2, K2O: 0.05, SiO2: 1 })).to.deep.equal({ CaO: 0.8, K2O: 0.2, SiO2: 4 });
+  });
+
   it('checks a glaze with no alumina at all as low in alumina, but not an empty one', () => {
     const lines = [{ material: KAOLIN, amount: '10' }];
     const unity = { K2O: 0.2, Na2O: 0.1, CaO: 0.7, B2O3: 0.4, Al2O3: 0, SiO2: 3 };

@@ -156,6 +156,14 @@ describe('SolvePage', () => {
     expect(document.activeElement?.id).toBe('solve-oxide-CaO');
   });
 
+  it('says so when the materials chosen bring no flux at all, rather than giving a recipe with no unity formula', async () => {
+    const { fixture, root, type, click } = await create([KAOLIN._id!, SILICA._id!]);
+    await typeGlossy(type);
+    await click('#solve-run');
+    expect(text(fixture, '#solve-problem')).toBe('Recipe contains no flux oxides, so the UMF is undefined');
+    expect(root.querySelector('.solve-recipe')).toBeNull();
+  });
+
   it('says what nothing chosen supplies, and that the recipe is poor', async () => {
     const { fixture, type, click } = await create();
     await typeGlossy(type);
