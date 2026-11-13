@@ -10,7 +10,7 @@ GitHub: push to master ─► CI (tests, Docker check) ─► Publish image (amd
 GitHub: Actions → Deploy (manual, approved) ─OIDC─► AWS role ─SSM Run Command─► /opt/glazecalc/deploy.sh <tag>
           deploy.sh: backup.sh ─► new image, healthy, indexes built ─► nginx files from the same commit
         └─► Live checks: health, headers, every language's home page, pages in a browser, /mcp
-GitHub: Actions → Deploy staging <branch> (approved) ─► arm64 image :staging-<commit>
+GitHub: Actions → Deploy staging <branch> ─► arm64 image :staging-<commit> ─► (approved)
           ─OIDC─► staging role ─SSM Run Command─► /opt/glazecalc/staging.sh staging-<commit> ─► Live checks
 
 EC2 (Debian 13, t4g.micro):

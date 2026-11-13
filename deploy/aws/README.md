@@ -17,9 +17,13 @@ these commands.
   us-west-2), after `git clone https://github.com/AaronFilson/glazecalc.git && cd glazecalc`.
 - **Everything else:** the `copper-bell` CLI user, once the admin attaches
   [operator-policy.json](operator-policy.json) to its group (step 0). That policy lets it
-  create only resources tagged `app=glazecalc`, launch only t4g.micro or t4g.small, change DNS
-  only for glazecalcapp.com, and stop, start or terminate the two old servers and read their
-  console output.
+  create security groups, launch templates and Elastic IPs only with the tag `app=glazecalc`.
+  It may create these without the tag: t4g.micro or t4g.small instances (no other type),
+  snapshots of any volume, parameters under `/glazecalc/`, the backup bucket and objects in it,
+  alarms named `glazecalc-*`, Data Lifecycle Manager policies, budgets, and the service-linked
+  role `AWSServiceRoleForCloudWatchEvents` (for the alarms' EC2 actions). It may change DNS
+  records only for glazecalcapp.com and its subdomains, and stop, start or terminate the two old
+  servers and read their console output.
 
 Defaults chosen in these files, change them before running if you decide otherwise:
 region **us-west-2** (where the old instance is), image registry **GHCR**, MongoDB
@@ -110,7 +114,9 @@ declares the rule and the policy only when its setting `stagingImages` is `true`
 
 ## 4. Admin: instance role
 
-Session Manager access plus reading `/glazecalc/*` parameters and writing dumps.
+Session Manager access, reading `/glazecalc/*` parameters, and the dumps under `mongodump/` in the backup
+bucket: writing them (`backup.sh`), and listing and reading them to restore one
+([deploy/README.md](../README.md), "Restoring a backup").
 
 ```bash
 aws iam create-role --role-name glazecalc-instance \
