@@ -1522,6 +1522,20 @@ describe('glaze chemistry', () => {
       expect(codeOf(twice('56', 'abc'))).to.equal('invalid-oxide-amount');
       // A batch so large its sums overflow.
       expect(codeOf(() => calculateUMF({ Whiting: 1e308, Silica: 1e308 }))).to.equal('invalid-amount');
+      // An amount is a number or a plain decimal, as saved: not what Number() would also read.
+      for (const odd of ['1e1', '0x10', true, '12,5', 'Infinity']) {
+        expect(
+          codeOf(() => calculateUMF({ Whiting: odd as unknown as number, Silica: 30 })),
+          String(odd)
+        ).to.equal('invalid-amount');
+      }
+      const plain = calculateUMF({ Whiting: 20, Silica: 30 }).umf;
+      expect(calculateUMF({ Whiting: ' 20 ', Silica: '30.0' } as unknown as Record<string, number>).umf).to.deep.equal(
+        plain
+      );
+      expect(
+        calculateUMF({ Whiting: 20, Silica: 30, Kaolin: '' } as unknown as Record<string, number>).umf
+      ).to.deep.equal(plain);
     });
   });
 });
