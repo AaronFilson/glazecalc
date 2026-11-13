@@ -1,7 +1,7 @@
 import { Component, forwardRef, signal } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { Inline } from './guide-document';
-import { GuideInline, GuideRow, InlineContext } from './guide-inline';
+import { GuideInline, GuideRow, InlineContext, normalized } from './guide-inline';
 
 /** A guide as the directives see it: °C or °F, and the links it was asked to follow. */
 @Component({
@@ -83,5 +83,36 @@ describe('the text of a guide, drawn by its directives', () => {
     const { host, element } = await render();
     element.querySelector('a')!.click();
     expect(host.followed).toEqual(['/guides/firing']);
+  });
+
+  it('draws a line break, and puts a part whose kind changed in place of the old one', async () => {
+    const { fixture, host, element } = await render();
+    const paragraph = element.querySelector('p')!;
+    host.parts.set([
+      { kind: 'strong', content: [{ kind: 'text', text: 'Fire' }] },
+      { kind: 'break' },
+      { kind: 'text', text: 'slowly' }
+    ]);
+    await fixture.whenStable();
+    expect(paragraph.innerHTML).toBe('<b>Fire</b><br>slowly');
+    const kept = paragraph.childNodes[1];
+    // As many parts, but bold words now plain, and plain words now in italics.
+    host.parts.set([
+      { kind: 'text', text: 'Fire' },
+      { kind: 'break' },
+      { kind: 'em', content: [{ kind: 'text', text: 'slowly' }] }
+    ]);
+    await fixture.whenStable();
+    expect(paragraph.innerHTML).toBe('Fire<br><em>slowly</em>');
+    expect(paragraph.childNodes[1]).toBe(kept);
+  });
+});
+
+describe('normalized', () => {
+  it('joins words next to each other and drops empty ones, as a browser holds them once parsed', () => {
+    expect(normalized(['Fire ', '', 'to ', { tag: 'b', attributes: [], content: ['', 'cone', ' 6'] }, ''])).toEqual([
+      'Fire to ',
+      { tag: 'b', attributes: [], content: ['cone 6'] }
+    ]);
   });
 });
