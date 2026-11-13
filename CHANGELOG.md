@@ -1665,6 +1665,42 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
     count until its own loaded, or for good if that failed; both are forgotten when the session ends.
   - After a sign-in during which the browser could not open the offline copy's database, the account's own copy
     stayed locked at its later sign-ins until it was turned on again; the next sign-in now shows it.
+- **Found by the 1.0 security review of accounts and records** (each fixed with a test that fails without the fix):
+  - After a password reset, a passkey alone no longer signs in until a sign-in with the new password and a second step
+    (the sign-in page says so), and a passkey alone never cancels a request to turn two-step sign-in off. Someone who
+    knew only the password could add a passkey while two-step sign-in was off, keep signing in with it after the owner's
+    reset, and so stop `clear_mfa.ts --clear`.
+  - One account could hold the server's memory and fill its disk. A record now holds at most 1,000 items in a list,
+    100,000 characters in a text, 16 levels and 256 KB (nesting past MongoDB's 100 levels was a server error), and an
+    import body at most a million lists and objects. The record lists and Download my data are sent a record at a time,
+    and the data file is no longer indented. Changes made on the website are limited to 300 a minute and 10,000 a day
+    per account, and production's app is held to 512 MB with a 256 MB heap.
+  - The spreadsheet downloads let a formula through in a list (a recipe's notes, a material's analysis) and after a
+    minus (`-1+HYPERLINK(...)`).
+  - Password sign-in counted an IPv6 address with its /56; it now counts the /48.
+  - The import answered 500 for a preference named like something every object has (`toString`, `__proto__`), and a
+    crafted `/#//` link stopped the app from starting.
+- **Found by the 1.0 security review of the deploy and supply chain:**
+  - Deploy started on any successful run named Publish image on a branch named master, so a fork's pull request could
+    start a production deploy of an older image (still behind the reviewer's approval). It now starts only on this
+    repository's own run of `publish.yml`, and a typed tag is checked before it is used.
+  - Deploy staging accepted a pull request's ref (`refs/pull/<n>/head`), so a fork's commit could have been staged, with
+    its scripts run as root on the shared instance once approved. Pull request refs are refused, and only commits on
+    this repository's branches are staged.
+  - IndexNow runs, and keeps its last commit, only for a deployed commit on master, and reads that commit only as a full
+    SHA. The sitemap's addresses are decoded once.
+  - nginx passed on a client's X-Forwarded-Host and Forwarded headers. X-Forwarded-Host is now the Host and Forwarded is
+    dropped, in production and on staging.
+  - Docker and containerd, from Docker's own repository, were left out of the automatic security updates. They are in
+    them now; an existing instance gets the setting by hand (`deploy/README.md`).
+  - The mail forwarder passed on mail with a forged From as if from its sender. Mail that fails DMARC is now dropped
+    when the sender's domain asks for that, and otherwise arrives marked "[Failed DMARC]", with SES's results for the
+    original kept as `X-Original-Authentication-Results`.
+  - The nightly backup and a restore passed MongoDB's password on the command line; it now goes in a config file read
+    from the shell, or in mongosh's sign-in script.
+  - Smaller: the Dockerfile no longer pulls its frontend by tag, CI's MongoDB is pinned by digest as Compose's is,
+    Dependabot's npm updates wait a week, go-live takes only language codes, and the prerender's inline-script check
+    reads tags in any case.
 - **The tools CI installs apart are past their advisories:** the MCP conformance suite and Inspector take hono 4.13.16
   and @hono/node-server 2.1.6 (Dependabot's two open alerts, and five moderate ones for hono), and Lighthouse CI takes
   basic-ftp 6.2.4. A moderate advisory for the minimatch bundled inside aws-cdk-lib has no fix to take yet; the
