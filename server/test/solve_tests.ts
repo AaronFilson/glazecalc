@@ -225,6 +225,16 @@ describe('Target & Solve', () => {
     expect(refusal(() => recipe.solveTarget({ kind: 'unity', oxides: { Al2O3: 0.3, SiO2: 3 } }, shelf)).code).to.equal(
       'solve.noFlux'
     );
+    // A flux so slight that the unity formula is past any number (the MCP's schema takes it): no flux, as
+    // above, not the chemistry's "no oxides to aim for".
+    expect(refusal(() => recipe.solveTarget({ kind: 'unity', oxides: { CaO: 5e-324, SiO2: 3 } }, shelf)).code).to.equal(
+      'solve.noFlux'
+    );
+    // Match with what I have, when nothing on the shelf has any of the recipe's oxides, says what Target &
+    // Solve says, in a code with its English, not the chemistry's "no materials to work out".
+    expect(refusal(() => recipe.matchFromShelf(recipeOf([['Whiting', 100]]), shelfOf('Silica'))).code).to.equal(
+      'solve.noMatch'
+    );
     expect(refusal(() => recipe.solveTarget({ kind: 'unity', oxides: GLOSSY_UNITY }, [])).code).to.equal(
       'solve.noMaterials'
     );
