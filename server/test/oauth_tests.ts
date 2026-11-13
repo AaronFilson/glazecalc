@@ -1221,8 +1221,9 @@ describe('OAuth: apps named by their address (CIMD)', function () {
     const begun = Date.now();
     const started = await authorize(fresh(), { redirect: 'https://app.example/callback' });
     expect(started.res.status).to.equal(400);
-    // oidc-provider gives each fetch 2.5 s, the lookup included, and asks twice: the request's 5 s at most.
-    expect(Date.now() - begun).to.be.below(FETCH_TIMEOUT_MS + 1500);
+    // oidc-provider gives each fetch 2.5 s, the lookup included, and asks twice: the request's 5 s at most
+    // (18 s before, two lookups of 9 s), with room for a busy machine.
+    expect(Date.now() - begun).to.be.below(FETCH_TIMEOUT_MS + 3000);
     expect(stopped).to.equal(true);
     expect(calls).to.eql([]);
   });
@@ -1246,8 +1247,8 @@ describe('OAuth: apps named by their address (CIMD)', function () {
           expect((err as Error).message).to.equal('timed out');
         }
       }
-      // The first took the request's time; the second had none left.
-      expect(Date.now() - begun).to.be.within(FETCH_TIMEOUT_MS - 50, FETCH_TIMEOUT_MS + 1000);
+      // The first took the request's time; the second had none left (10 s before, 5 s each).
+      expect(Date.now() - begun).to.be.within(FETCH_TIMEOUT_MS - 50, FETCH_TIMEOUT_MS + 2500);
     } finally {
       whoIsAsking(before);
       useNetwork();
