@@ -488,28 +488,6 @@ export class Outbox {
     this.pendingKeys.set(new Set(sendable.map((entry) => `${entry.area}/${entry.id}`)));
   }
 
-  /** Removes the changes of these users (not a copy's other users'); true if no change is left at all. */
-  async remove(userIds: ReadonlySet<string>): Promise<boolean> {
-    const db = await this.open();
-    const tx = db.transaction(OUTBOX, 'readwrite');
-    const store = tx.objectStore(OUTBOX);
-    const all = await request<OutboxEntry[]>(store.getAll());
-    let left = 0;
-    for (const entry of all) {
-      if (userIds.has(entry.userId)) store.delete(entry.seq!);
-      else left++;
-    }
-    await done(tx);
-    this.setNote(left > 0);
-    this.count.set(0);
-    this.stuck.set(0);
-    this.sendable.set(0);
-    this.conflicts.set([]);
-    this.failures.set([]);
-    this.pendingKeys.set(new Set());
-    return left === 0;
-  }
-
   /** Sends the waiting changes, if the network and a sign-in are there. At most one run at a time, in all tabs. */
   flush(): Promise<void> {
     if (!this.browser || !this.noted()) return Promise.resolve();

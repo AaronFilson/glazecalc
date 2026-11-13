@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, inject, signal } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 import { API_BASE } from './api-base';
+import { AuthService } from './auth.service';
 import { said, type Said } from './tokens.service';
 
 /** How many records a connection created, changed and so on in the last 90 days. */
@@ -68,6 +69,11 @@ export class ConnectionsService {
   readonly list = signal<ConnectionRow[] | null>(null);
   /** The account's choice of when changes wait for approval, once loaded; null before. */
   readonly confirmChanges = signal<ConfirmChanges | null>(null);
+
+  constructor() {
+    // The next account to sign in on this tab never sees this one's apps, even while its own load.
+    inject(AuthService).onSessionEnd(() => this.clear());
+  }
 
   async load(): Promise<ConnectionRow[]> {
     const { connections, confirmChanges } = await firstValueFrom(

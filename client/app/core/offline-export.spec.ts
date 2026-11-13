@@ -2,7 +2,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
 import { provideEnglish } from '../testing/i18n';
 import { fetchProblem, isOffline } from './error-message';
-import { deviceExport } from './offline-export';
+import { deviceExport, saveJson } from './offline-export';
 import { retryDelay } from './outbox';
 
 describe('the offline copy as a file', () => {
@@ -50,6 +50,33 @@ describe('the offline copy as a file', () => {
     });
     // The server's bookkeeping stays out, as in the server's export.
     expect((file['records'] as { recipes: object[] }).recipes[0]).not.toHaveProperty('ownedBy');
+  });
+
+  it('keeps what is not a record as it is', () => {
+    const file = deviceExport('u1', { recipe: ['not a record', null] }, []);
+    expect(file).toMatchObject({ records: { recipes: ['not a record', null] } });
+  });
+
+  it('saves the file through a link, and lets its address go a minute later', () => {
+    vi.spyOn(URL, 'createObjectURL').mockReturnValue('blob:offline');
+    const revoke = vi.spyOn(URL, 'revokeObjectURL').mockImplementation(() => undefined);
+    let saved = '';
+    vi.spyOn(HTMLAnchorElement.prototype, 'click').mockImplementation(function (this: HTMLAnchorElement) {
+      saved = this.download;
+    });
+    vi.useFakeTimers({ toFake: ['setTimeout'] });
+    try {
+      saveJson({ format: 'glazecalc-export' }, 'glazecalc-offline-data.json');
+      expect(saved).toBe('glazecalc-offline-data.json');
+      expect(document.querySelector('a[download]')).toBeNull();
+      vi.advanceTimersByTime(59_000);
+      expect(revoke).not.toHaveBeenCalled();
+      vi.advanceTimersByTime(1_000);
+      expect(revoke).toHaveBeenCalledWith('blob:offline');
+    } finally {
+      vi.useRealTimers();
+      vi.restoreAllMocks();
+    }
   });
 });
 

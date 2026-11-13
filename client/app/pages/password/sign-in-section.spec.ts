@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import type { MfaSummary } from '../../../../lib/mfa';
+import { PASSKEY_NAME_MAX, type MfaSummary } from '../../../../lib/mfa';
+import { AuthService } from '../../core/auth.service';
 import { PASSKEYS, Passkeys } from '../auth/passkeys';
 import { API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { SignInSection, groupedKey } from './sign-in-section';
@@ -545,6 +546,156 @@ describe('SignInSection', () => {
     const fixture = await create(OFF, false);
     expect(text(fixture, '.no-passkeys')).toContain('This browser cannot make or use passkeys.');
     expect(button(fixture, 'Add a passkey')).toBeUndefined();
+  });
+
+  /** From the section with two-step sign-in off, through the app's setup, to the recovery codes shown. */
+  const toCodes = async (fixture: ComponentFixture<unknown>) => {
+    await toSetup(fixture);
+    await type(fixture, 'totp-code', '123456');
+    await press(fixture, 'Finish setting up');
+    httpMock()
+      .expectOne(API + '/mfa/totp')
+      .flush({ code: 'totp-added', msg: 'Your authenticator app is set up.', recoveryCodes: CODES });
+    await settle(fixture);
+    await reload(fixture, { ...ON, passkeys: [], codesLeft: 10 });
+  };
+
+  it('saves the recovery codes as a text file, titled with the account, and lets its address go after', async () => {
+    const fixture = await create(OFF);
+    TestBed.inject(AuthService).email.set('potter@example.com');
+    await toCodes(fixture);
+    const saved: Blob[] = [];
+    vi.spyOn(URL, 'createObjectURL').mockImplementation((blob) => {
+      saved.push(blob as Blob);
+      return 'blob:codes';
+    });
+    const revoke = vi.spyOn(URL, 'revokeObjectURL').mockImplementation(() => undefined);
+    let file = '';
+    vi.spyOn(HTMLAnchorElement.prototype, 'click').mockImplementation(function (this: HTMLAnchorElement) {
+      file = this.download;
+    });
+    vi.useFakeTimers({ toFake: ['setTimeout'] });
+    try {
+      button(fixture, 'Download as a text file')!.click();
+      expect(revoke).not.toHaveBeenCalled();
+      vi.advanceTimersByTime(1000);
+    } finally {
+      vi.useRealTimers();
+    }
+    expect(file).toBe('glazecalc-recovery-codes.txt');
+    expect(await saved[0]!.text()).toBe(
+      'Glazecalc recovery codes for potter@example.com\r\n\r\nabcde-12345\r\nfghjk-67890\r\n\r\n' +
+        'Each code works once. Keep this file somewhere safe.\r\n'
+    );
+    expect(revoke).toHaveBeenCalledWith('blob:codes');
+  });
+
+  it('copies the key and the codes, and says when the clipboard will not take them', async () => {
+    const writeText = vi.fn<(text: string) => Promise<void>>().mockResolvedValue(undefined);
+    Object.defineProperty(navigator, 'clipboard', { value: { writeText }, configurable: true });
+    try {
+      const fixture = await create(OFF);
+      await toSetup(fixture);
+      await press(fixture, 'Copy the key');
+      expect(writeText).toHaveBeenCalledWith('JBSWY3DPEHPK3PXPJBSWY3DP');
+      expect(text(fixture, '.totp-setup .copied')).toBe('Copied.');
+      await type(fixture, 'totp-code', '123456');
+      await press(fixture, 'Finish setting up');
+      httpMock()
+        .expectOne(API + '/mfa/totp')
+        .flush({ code: 'totp-added', msg: 'Your authenticator app is set up.', recoveryCodes: CODES });
+      await settle(fixture);
+      await reload(fixture, { ...ON, passkeys: [], codesLeft: 10 });
+      writeText.mockRejectedValueOnce(new DOMException('Write permission denied.', 'NotAllowedError'));
+      await press(fixture, 'Copy the codes');
+      expect(writeText).toHaveBeenLastCalledWith('abcde-12345\nfghjk-67890');
+      expect(text(fixture, '.recovery-codes-panel .copied')).toBe(
+        'Could not copy. Please select the text and copy it.'
+      );
+    } finally {
+      Reflect.deleteProperty(navigator, 'clipboard');
+    }
+  });
+
+  it('cancels setting up the app: the key goes, and the focus goes to the heading', async () => {
+    const fixture = await create(OFF);
+    await toSetup(fixture);
+    await press(fixture, 'Cancel');
+    expect(fixture.nativeElement.querySelector('.totp-setup')).toBeNull();
+    expect(fixture.nativeElement.querySelector('.totp-key')).toBeNull();
+    expect(text(fixture, '.mfa-status')).toContain('Two-step sign-in is off.');
+    expect(document.activeElement?.id).toBe('mfa-heading');
+  });
+
+  it('asks for the code at the end of setup, marks a wrong one, and starts again when the setup ran out', async () => {
+    const fixture = await create(OFF);
+    await toSetup(fixture);
+    await press(fixture, 'Finish setting up');
+    httpMock().expectNone(API + '/mfa/totp');
+    expect(fieldProblem(fixture, 'totp-code')).toBe('Enter the 6-digit code from your authenticator app.');
+
+    await type(fixture, 'totp-code', '000000');
+    await press(fixture, 'Finish setting up');
+    httpMock()
+      .expectOne(API + '/mfa/totp')
+      .flush({ code: 'code-wrong', msg: 'That code is not correct.' }, { status: 400, statusText: 'Bad Request' });
+    await settle(fixture);
+    expect(fieldProblem(fixture, 'totp-code')).toBe('That code is not correct.');
+    expect((fixture.nativeElement.querySelector('#totp-code') as HTMLInputElement).value).toBe('');
+
+    await type(fixture, 'totp-code', '123456');
+    await press(fixture, 'Finish setting up');
+    httpMock()
+      .expectOne(API + '/mfa/totp')
+      .flush(
+        { code: 'mfa-start-again', msg: 'That took too long. Please start again.' },
+        { status: 400, statusText: 'Bad Request' }
+      );
+    await settle(fixture);
+    expect(text(fixture, 'gc-notices')).toContain('That took too long. Please start again.');
+    expect(fixture.nativeElement.querySelector('.totp-setup')).toBeNull();
+  });
+
+  it('cancels a rename back to its button, and marks an empty name or one that could not be saved', async () => {
+    const fixture = await create(ON);
+    await press(fixture, 'Rename Laptop');
+    await press(fixture, 'Cancel');
+    expect(fixture.nativeElement.querySelector('.rename-form')).toBeNull();
+    expect(document.activeElement?.id).toBe('mfa-rename-pk1');
+
+    await press(fixture, 'Rename Laptop');
+    await type(fixture, 'rename-passkey', '   ');
+    await press(fixture, 'Save the name');
+    httpMock().expectNone(API + '/mfa/passkeys/pk1');
+    expect(fieldProblem(fixture, 'rename-passkey')).toBe(
+      `Give the passkey a name of 1 to ${PASSKEY_NAME_MAX} characters.`
+    );
+    await type(fixture, 'rename-passkey', 'Work laptop');
+    await press(fixture, 'Save the name');
+    httpMock()
+      .expectOne(API + '/mfa/passkeys/pk1')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(fieldProblem(fixture, 'rename-passkey')).toBe('Error: could not make the change. Please try again.');
+  });
+
+  it('makes one passkey when its button is pressed twice', async () => {
+    const fixture = await create(OFF);
+    await confirmForPasskey(fixture);
+    const add = button(fixture, 'Now add the passkey')!;
+    add.click();
+    add.click();
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/mfa/passkeys/options')
+      .flush({ options: { challenge: 'new' } });
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/mfa/passkeys')
+      .flush({ code: 'passkey-added', msg: 'The passkey was added.' });
+    await settle(fixture);
+    await reload(fixture, { ...OFF, on: true, passkeys: [{ id: 'pk1', name: 'Laptop', addedAt: '2026-10-14' }] });
+    expect(passkeys.register).toHaveBeenCalledTimes(1);
   });
 
   it('says so when it cannot load', async () => {

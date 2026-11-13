@@ -4,6 +4,7 @@ import { firstValueFrom } from 'rxjs';
 import type { IdentityProof } from '../../../lib/mfa';
 import { codedMessage } from '../i18n/coded';
 import { API_BASE } from './api-base';
+import { AuthService } from './auth.service';
 
 /** A personal access token as the account page shows it (server/routes/token_routes.ts TokenRow). */
 export interface TokenRow {
@@ -55,6 +56,11 @@ export class TokensService {
   readonly list = signal<TokenList | null>(null);
   /** The tokens that work now. */
   readonly working = computed(() => this.list()?.tokens.filter((token) => token.working) ?? []);
+
+  constructor() {
+    // The next account to sign in on this tab never sees this one's tokens, even while its own load.
+    inject(AuthService).onSessionEnd(() => this.clear());
+  }
 
   async load(): Promise<TokenList> {
     const list = await firstValueFrom(this.http.get<TokenList>(this.apiBase + '/tokens'));
