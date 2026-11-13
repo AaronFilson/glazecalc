@@ -98,7 +98,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   (a default the owner is to confirm), Stull regions, cautions on one side only and cone fit. `vary_material` adds
   each tile's flux ratio and, in its trend, the first tile with a new caution and the first whose cone fit changes.
   Both tools now declare an output schema. Assistants only: no change on the website.
-- **Latin American Spanish** (docs/translations/es-419.md): the app, the emails and all five guides, live at
+- **Latin American Spanish** (docs/translations/es-419.md): the app, the password emails and all five guides, live at
   `/es-419/…`, written for Mexico first, with the Southern Cone's forms in the style sheet's notes. Mexico, Argentina
   and Chile now read it (Spain keeps Spain's Spanish), and a browser asking for Spanish of the Americas (es-MX, es-AR …)
   gets it, as does a United States browser's Spanish (es-US); a bare es, es-ES and es-GQ keep Spain's, which stays
@@ -106,11 +106,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   from a sourced glossary in nine parts, reviewed in six groups, made consistent and back-translated blind in two
   halves. The reviews turned 16 places where "should" had become "must" back into advice, and rewrote a garbled
   sign-up notice.
-- **Brazilian Portuguese** (docs/translations/pt-BR.md): the app, the emails and all five guides, live at `/pt-BR/…`,
+- **Brazilian Portuguese** (docs/translations/pt-BR.md): the app, the password emails and all five guides, live at `/pt-BR/…`,
   by the same process, after the owner read its sign-up notice and approved the standard one. Brazil now reads it, and
   a browser asking for pt-BR gets it; Portugal, Angola and Mozambique keep Portugal's Portuguese. The language picker
   lists both under "Latin America".
-- **Swahili and Amharic** (docs/translations/sw.md, am.md; wave L2): the app, the emails, all five guides and the
+- **Swahili and Amharic** (docs/translations/sw.md, am.md; wave L2): the app, the password emails, all five guides and the
   reference pages (cone chart, list of materials, each material's page), live at `/sw/…` and `/am/…`, by the same
   process, with the safety text back-translated blind. Both carry the plain notice, as Irish and Maltese do: AI
   translates them less well than most, so the notice says so, points to the English, and a line of it stays on every
@@ -118,7 +118,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   0–9, Gregorian dates and the 24-hour clock. Kenya, which already listed Swahili, now offers it; the language picker
   has an "Africa" group for both.
 - **Afrikaans, Hausa, Yoruba, Zulu, Igbo, Somali and Quechua** (docs/translations/af.md, ha.md, yo.md, zu.md, ig.md,
-  so.md, qu.md; waves L3 and L4): the app, the emails, all five guides and the reference pages, live at `/af/…`,
+  so.md, qu.md; waves L3 and L4): the app, the password emails, all five guides and the reference pages, live at `/af/…`,
   `/ha/…`, `/yo/…`, `/zu/…`, `/ig/…`, `/so/…` and `/qu/…`, by the same process, with the safety text back-translated
   blind. Afrikaans carries the standard notice; the other six the plain notice. Quechua is Southern Quechua
   (Cusco-Collao) in Peru's official alphabet, with Spanish loans for the glaze terms, and had the owner's extra
@@ -158,7 +158,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   steps in `deploy/README.md`). Urdu text shows at once in the device's font while Nastaliq is on its way (a test
   holds the file back 3 s). The five new messages (`offline.*`) are in English only until the next wave. Records on
   the phone (stage 3) and offline editing (stage 4) are not part of this.
-- **Nepali and Sinhala** (docs/translations/ne.md, si.md): the app, the emails and all five guides, live at `/ne/…`
+- **Nepali and Sinhala** (docs/translations/ne.md, si.md): the app, the password emails and all five guides, live at `/ne/…`
   (Devanagari), written for Nepal, and `/si/…`, written for Sri Lanka, each with that country's law, poison lines and
   number grouping, and the standard notice (the owner's choice, 2026-10-30; Sinhala's plain notice is turned off, so
   no language of waves I2 to I4 has it). Nepali shows Devanagari digits by default, as CLDR has them (the owner kept
@@ -170,7 +170,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   rows, which added words the English does not have, are fixed. The home-safety guide keeps the blunt title "Don't
   poison your family" in both. With them every language Glazecalc knows is offered. Native reviewers are wanted (the
   Native check rows in each style sheet). The README counts 46 languages.
-- **Punjabi and Odia** (docs/translations/pa.md, or.md): the app, the emails and all five guides, live at `/pa/…`
+- **Punjabi and Odia** (docs/translations/pa.md, or.md): the app, the password emails and all five guides, live at `/pa/…`
   (Gurmukhi) and `/or/…`, written for India, with the standard notice (the owner's choice, 2026-10-30), under the same
   rules as India's other languages (the potters' loanword first, the Latin full stop and never the danda, 0–9 in the
   text; the page shows 0–9 by default, Gurmukhi or Odia digits only when chosen). Each was translated from a sourced
@@ -181,7 +181,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   The home-safety guide keeps the blunt title "Don't poison your family" in both (Punjabi's softened title is fixed
   in its style sheet). Native reviewers are wanted (the Native check rows in each style sheet). The README counts 44
   languages.
-- **Telugu, Gujarati and Malayalam** (docs/translations/te.md, gu.md, ml.md): the app, the emails and all five guides,
+- **Telugu, Gujarati and Malayalam** (docs/translations/te.md, gu.md, ml.md): the app, the password emails and all five guides,
   live at `/te/…`, `/gu/…` and `/ml/…`, written for India, with the standard notice, under the same rules as Tamil,
   Marathi and Kannada (the potters' loanword first, the Latin full stop, 0–9 in the text; the page shows 0–9 by
   default in all three). Each was translated from a sourced glossary (308 to 332 rows), reviewed in six groups, made
@@ -200,7 +200,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   two layout faults, now fixed for every language: the hidden "Skip to content" link, when its text took two lines
   on a phone, hung over the logo, and the firing card's "A range" box could not wrap and made the recipe page
   scroll sideways.
-- **Tamil, Marathi and Kannada** (docs/translations/ta.md, mr.md, kn.md): the app, the emails and all five guides, live
+- **Tamil, Marathi and Kannada** (docs/translations/ta.md, mr.md, kn.md): the app, the password emails and all five guides, live
   at `/ta/…`, `/mr/…` and `/kn/…`, written for India, with the standard notice. Each uses the studio potters' loanword
   first with the textbook term in brackets at its first use, ends sentences with the Latin full stop and writes 0–9;
   the page shows numbers as CLDR has them: Marathi in Devanagari digits, Tamil and Kannada in 0–9, Kannada grouped in
@@ -215,7 +215,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   (`lib/recipe/paste.js`), in the words of each language's glossary and recipe labels. Headings are compared in NFKC,
   without Arabic vowel marks or tatweel, with Urdu and Arabic letter forms taken as one, so a heading typed on either
   keyboard matches.
-- **Urdu and Bengali** (docs/translations/ur.md, bn.md): the app, the emails and all five guides, live at `/ur/…`
+- **Urdu and Bengali** (docs/translations/ur.md, bn.md): the app, the password emails and all five guides, live at `/ur/…`
   (right to left, in Nastaliq) and `/bn/…`, with the standard notice. Urdu is written for Pakistan: آپ, the potters'
   loanwords (گلیز, فرٹ), sentences ending with ۔, Urdu's own letters (ی ک ہ) and the digits 0–9, as Pakistan writes
   them. Bengali is written for Bangladesh, and West Bengal reads the same page: আপনি, পানি, sentences ending with the
@@ -283,7 +283,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   (docs/integrations/directories.md). The course prompt `glaze_course_lesson` may save with them too: a
   firing log of the test firing, a recipe's result in it, or a note `about` a recipe or firing log, each
   read back first and saved only on a yes.
-- **Arabic and Hindi** (docs/translations/ar.md, hi.md): the app, the emails and all five guides, live at
+- **Arabic and Hindi** (docs/translations/ar.md, hi.md): the app, the password emails and all five guides, live at
   `/ar/…` (right to left) and `/hi/…`. Arabic is Modern Standard Arabic for the Arab countries, its terms chosen from Arabic
   ceramics sources (Egyptian, Iraqi, Sudanese and Libyan university papers, suppliers, Oman's GHS guide), with all six
   plural forms and impersonal instructions; Hindi uses आप, the potters' loanwords with the formal term in brackets, and
@@ -1382,7 +1382,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - **The account page lists its sections at the top**, each a link to its heading, so the
     password, two-step sign-in and deleting are a tap away; and its buttons are plain, the filled
     one kept for the main action of a step under way.
-  - **The footer's 28 languages are one line**, "Language: English", that opens the list.
+  - **The footer's languages are one line**, "Language: English", that opens the list.
   - **On a phone**, every button and menu link is a finger's height (44px), and text in fields is
     16px, so iPhones no longer zoom into a field.
   - **Two-step sign-in** shows On or Off beside its heading, says "9 of 10 recovery codes left",
