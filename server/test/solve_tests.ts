@@ -160,6 +160,22 @@ describe('Target & Solve', () => {
     expect(mid.cautions.map((c) => c.check)).to.include('boron-high');
   });
 
+  it('gives a recipe that adds up to 100 exactly, as shown', () => {
+    // Each amount rounded on its own came to 100.1 (the matte) or 99.9 (the boron glaze).
+    const tenths = (solved: { materials: MaterialRecord[] }) =>
+      solved.materials.reduce((sum, m) => sum + Math.round(10 * Number(m.amount)), 0);
+    const four = shelfOf('Custer Spar', 'Whiting', 'EPK Kaolin', 'Silica');
+    for (const oxides of [
+      { K2O: 0.25, CaO: 0.75, Al2O3: 0.6, SiO2: 2.6 },
+      { Na2O: 0.3, CaO: 0.7, B2O3: 0.9, Al2O3: 0.3, SiO2: 2.6 },
+      GLOSSY_UNITY
+    ]) {
+      const solved = recipe.solveTarget({ kind: 'unity', oxides }, four);
+      expect(tenths(solved), JSON.stringify(solved.materials.map((m) => m.amount))).to.equal(1000);
+      for (const m of solved.materials) expect(m.amount).to.match(/^\d+(\.\d)?$/);
+    }
+  });
+
   it('does not hold the raw clay down with a material that has no oxides', () => {
     // A potter's own material saved with no oxides costs the match nothing: it was made half the batch
     // (Target & Solve 25%, Match with what I have 47%) to bring the raw clay to 20% of it.
