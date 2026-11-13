@@ -149,18 +149,18 @@ below had not passed and I had not approved.
 
 ## Where it ended up
 
-| Measure                          | 2017                  | At 1.0                                                        |
-| -------------------------------- | --------------------- | ------------------------------------------------------------- |
-| Automated tests                  | basic API route tests | over 3,800: server, Angular unit and browser, with axe checks |
-| Server statement coverage        | not measured          | 98%                                                           |
-| Angular statement coverage       | not measured          | 99%                                                           |
-| Standard materials and colorants | 53, from one book     | 219, each with a source and a status                          |
-| Languages                        | English               | 57, right to left included                                    |
-| Deploys                          | SSH and restart       | approved click, keyless, rolls back on a failed check         |
-| Security headers                 | not measured          | Mozilla HTTP Observatory A+ (120)                             |
-| Monthly cost                     | $15-17                | about $13                                                     |
-| Load, on a container its size    | not measured          | about 250 requests a second; 95th percentile 270 ms           |
-| Lighthouse (desktop)             | not measured          | performance 99; accessibility, best practices, SEO 100        |
+| Measure                          | 2017                  | At 1.0                                                                                     |
+| -------------------------------- | --------------------- | ------------------------------------------------------------------------------------------ |
+| Automated tests                  | basic API route tests | over 3,800: server, Angular unit and browser, with axe checks                              |
+| Server statement coverage        | not measured          | 98%                                                                                        |
+| Angular statement coverage       | not measured          | 99%                                                                                        |
+| Standard materials and colorants | 53, from one book     | 219, each with a source and a status                                                       |
+| Languages                        | English               | 57, right to left included                                                                 |
+| Deploys                          | SSH and restart       | approved click, keyless, rolls back on a failed check                                      |
+| Security headers                 | not measured          | Mozilla HTTP Observatory A+ (120)                                                          |
+| Monthly cost                     | $15-17                | about $13                                                                                  |
+| Load, on a container its size    | not measured          | about 250 requests a second at full CPU (a burst on the t4g.micro); 95th percentile 270 ms |
+| Lighthouse (desktop)             | not measured          | performance 99; accessibility, best practices, SEO 100                                     |
 
 ## What I would do next
 
