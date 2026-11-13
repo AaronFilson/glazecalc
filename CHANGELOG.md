@@ -1678,6 +1678,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - The spreadsheet downloads let a formula through in a list (a recipe's notes, a material's analysis) and after a
     minus (`-1+HYPERLINK(...)`).
   - Password sign-in counted an IPv6 address with its /56; it now counts the /48.
+  - Reading records had no limit (found by code scanning): every request to the API now counts against a ceiling of
+    1,200 a minute per address, under each route's own limits.
   - The import answered 500 for a preference named like something every object has (`toString`, `__proto__`), and a
     crafted `/#//` link stopped the app from starting.
 - **Found by the 1.0 security review of the deploy and supply chain:**
