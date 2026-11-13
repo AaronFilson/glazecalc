@@ -356,14 +356,55 @@ describe('OAuth: the authorization server', function () {
         { code_challenge: '', code_challenge_method: '' },
         { code_challenge_method: 'plain' }
       ];
+      // An app nobody is connected to is told on the page; one with a connection, at its own address.
+      const { session } = await person();
+      const connectedId = await registered();
+      await connect(connectedId, session);
       for (const extra of starts) {
-        const started = await authorize(clientId, { extra });
+        const shown = await authorize(clientId, { extra });
+        expect(shown.res.status).to.equal(400);
+        expect(shown.res.headers.get('location')).to.equal(null);
+        expect(await shown.res.text()).to.include('This app could not be connected');
+        const started = await authorize(connectedId, { extra });
         expect(started.res.status).to.equal(303);
         const back = new URL(started.res.headers.get('location')!);
         expect(back.origin + back.pathname).to.equal(REDIRECT);
         expect(back.searchParams.get('error')).to.equal('invalid_request');
         expect(back.searchParams.get('iss')).to.equal(SITE);
       }
+    });
+
+    // Anyone may register an app, or write a document, naming any address: a link to this site that
+    // failed at once would send the browser there. prompt=none can never work (there is no session to
+    // connect an app with silently), so it is shown here for every app.
+    it('shows errors at the start on the page, never at the address of an app nobody is connected to', async () => {
+      const elsewhere = 'https://elsewhere.example/landing';
+      const strangers = await registered({ client_name: 'Redirector', redirect_uris: [elsewhere] });
+      const shownHere = async (id: string, extra: Record<string, string>) => {
+        const { res } = await authorize(id, { redirect: elsewhere, extra });
+        const page = await res.text();
+        expect(res.status, JSON.stringify(extra)).to.equal(400);
+        expect(res.headers.get('location'), JSON.stringify(extra)).to.equal(null);
+        expect(page, JSON.stringify(extra)).to.include('This app could not be connected');
+        expect(page).to.not.include(elsewhere);
+      };
+      const modes: Record<string, string>[] = [{}, { response_mode: 'form_post' }, { response_mode: 'fragment' }];
+      for (const mode of modes) {
+        await shownHere(strangers, { prompt: 'none', ...mode });
+        await shownHere(strangers, { code_challenge: '', code_challenge_method: '', ...mode });
+      }
+      // A start that is fine goes on to the person's page as before.
+      expect((await authorize(strangers, { redirect: elsewhere })).uid).to.not.equal('');
+      // Once someone is connected to it, its errors go back to it; prompt=none still never does.
+      const { session } = await person();
+      await connect(strangers, session, { redirect: elsewhere });
+      const { res } = await authorize(strangers, {
+        redirect: elsewhere,
+        extra: { code_challenge: '', code_challenge_method: '' }
+      });
+      expect(res.status).to.equal(303);
+      expect(new URL(res.headers.get('location')!).searchParams.get('error')).to.equal('invalid_request');
+      await shownHere(strangers, { prompt: 'none' });
     });
 
     it('refuses a code with the wrong verifier, and any second use of a code', async () => {

@@ -87,7 +87,12 @@ assistant's grant must be a Glazecalc connection the person can see and revoke w
   `frame-ancestors 'none'`). `write` is false unless sent as true, and counts only when the app
   asked for `data:write`. There is no sign-in at the authorization server and no lasting session of
   its own: its session lasts 15 minutes, one left from an earlier yes is ended before the next, and
-  no request rides on an earlier grant (`loadExistingGrant` reads only the grant just made).
+  no request rides on an earlier grant (`loadExistingGrant` reads only the grant just made). An
+  error at `/oauth/authorize`, before the person's yes, goes to the app's address only for an app
+  someone has a working connection to, and never for `prompt=none`, which cannot work without a
+  session; otherwise it is shown on the page, whatever the response mode (2026-11, the 1.0 security
+  review: anyone may register an app, or write a document, naming any address, so a link to this
+  site that failed at once would send the browser there).
 - **A connection is its row.** Each yes makes a row in `access_tokens` (kind `oauth`,
   `server/models/access_token.ts`) beside the grant: the app's cleaned name, `clientId`,
   `clientSource` (`cimd` or `dcr`), `clientHost` (CIMD only), `redirectHost`, `grantId` and scopes.

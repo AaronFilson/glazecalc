@@ -354,6 +354,26 @@ const page = (title: string, text: string): string =>
 const escapeHtml = (text: string): string =>
   text.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c] ?? c);
 
+/** An error of the authorization server shown as the site's page, never sent to the app's address. */
+const showError = (
+  ctx: { type: string; body: unknown },
+  out: { error?: unknown; error_description?: unknown }
+): void => {
+  ctx.type = 'html';
+  const why = typeof out.error_description === 'string' ? out.error_description : String(out.error ?? '');
+  ctx.body = page('This app could not be connected', 'Glazecalc could not connect it: ' + escapeHtml(why) + '.');
+};
+
+/**
+ * Errors from asking to connect without a page (prompt=none): there is never a session to connect an app
+ * with silently, so these are all such a request ever gets.
+ */
+const SILENT_ERRORS = ['login_required', 'consent_required', 'interaction_required', 'account_selection_required'];
+
+/** Whether someone has a working connection to the app: one the person approved, not revoked or expired. */
+const connected = async (clientId: string): Promise<boolean> =>
+  Boolean(await AccessToken.exists({ kind: 'oauth', clientId, revokedAt: null, expiresAt: { $gt: new Date() } }));
+
 /**
  * What OAUTH_CIMD_AUTH changes in oidc-provider's settings; with it off,
  * nothing (every setting as before). public lets checkClientMetadata see a
@@ -478,11 +498,7 @@ const configuration = (mode: CimdAuthMode): Configuration => ({
   // A browser-based app may call the token endpoint from the origin of one of its https redirect URIs.
   clientBasedCORS: (_ctx, origin, client) =>
     origin.startsWith('https://') && (client.redirectUris ?? []).some((uri) => URL.parse(uri)?.origin === origin),
-  renderError: (ctx, out) => {
-    ctx.type = 'html';
-    const why = typeof out.error_description === 'string' ? out.error_description : String(out.error ?? '');
-    ctx.body = page('This app could not be connected', 'Glazecalc could not connect it: ' + escapeHtml(why) + '.');
-  },
+  renderError: (ctx, out) => showError(ctx, out),
   fetch: guardedFetch as unknown as Configuration['fetch'],
   fetchResponseBodyLimits: { 'client_id metadata document': MOST_BYTES },
   features: {
@@ -563,6 +579,25 @@ const serverFor = () => {
   // Koa's own logging is off; errors are logged here, without the request.
   provider.silent = true;
   provider.on('server_error', (_ctx, err) => log.error('OAuth server error', { err }));
+  // An error at the start of a connection, before the person has said yes, is sent to the app's address
+  // only for an app someone has a working connection to; otherwise it is shown here. Anyone may register
+  // an app, or write a document, naming any address: a link to this site that fails at once (prompt=none,
+  // a start without PKCE) would send the browser there. prompt=none never works here, so it is shown here
+  // whatever the app.
+  provider.on('authorization.error', (ctx, err) => {
+    ctx.state.startRefused = err;
+  });
+  provider.use(async (ctx, next) => {
+    await next();
+    const refused = ctx.state.startRefused as { error?: string; error_description?: string; statusCode?: number };
+    if (!refused || ctx.oidc?.route !== 'authorization') return;
+    const clientId = ctx.oidc.client?.clientId;
+    if (!SILENT_ERRORS.includes(refused.error ?? '') && clientId && (await connected(clientId))) return;
+    ctx.remove('Location');
+    // The status the error has, but never a redirect's (oidc-provider gives prompt=none's 303, to send it on).
+    ctx.status = (refused.statusCode ?? 0) >= 400 ? refused.statusCode! : 400;
+    showError(ctx, refused);
+  });
   // A code or refresh token exchanged by an app that signs: its keys belong to an app with a working connection.
   provider.on('grant.success', (ctx) => {
     const client = ctx.oidc.client;
