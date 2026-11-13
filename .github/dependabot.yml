@@ -5,6 +5,10 @@ updates:
     directory: /
     schedule:
       interval: weekly
+    # Each release is proposed once it is a week old, so a hijacked one is
+    # usually found and pulled before it gets here. Security updates do not wait.
+    cooldown:
+      default-days: 7
     open-pull-requests-limit: 10
     groups:
       # Angular packages must move together (ng update handles migrations).
@@ -27,18 +31,24 @@ updates:
     directory: /scripts/mcp-conformance
     schedule:
       interval: weekly
+    cooldown:
+      default-days: 7
 
   # Lighthouse CI, which CI installs apart too (scripts/lighthouse/).
   - package-ecosystem: npm
     directory: /scripts/lighthouse
     schedule:
       interval: weekly
+    cooldown:
+      default-days: 7
 
   # The AWS setup as CDK stacks, which the Infrastructure workflow installs apart (deploy/cdk/).
   - package-ecosystem: npm
     directory: /deploy/cdk
     schedule:
       interval: weekly
+    cooldown:
+      default-days: 7
     groups:
       # The CLI must read the cloud assembly the library writes, so they move together.
       cdk:
