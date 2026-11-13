@@ -198,6 +198,83 @@ describe('glaze chemistry', () => {
       expect(chemistry.expansion({})).to.equal(null);
     });
 
+    // The README's 4321 (its screenshot: Orthoclase, Silica, Whiting and China Clay), worked out here without the
+    // library: atomic weights from CIAAW 2024 above, and each record's oxides and LOI as stored.
+    it("should give the README's Leach 4321 as an independent calculation does, from CIAAW 2024 and the records", () => {
+      const weight = (element: string) => Number(CIAAW_2024[element].split(' ± ')[0]);
+      const molar = (oxide: string) =>
+        [...oxide.matchAll(/([A-Z][a-z]?)(\d*)/g)].reduce(
+          (sum, [, element, n]) => sum + weight(element) * Number(n || 1),
+          0
+        );
+      const records: StandardMaterial[] = standardData.load('materials');
+      const recipe = [
+        ['Orthoclase', 40],
+        ['Silica', 30],
+        ['Whiting', 20],
+        ['China Clay', 10]
+      ] as const;
+      const moles: Record<string, number> = {};
+      for (const [name, grams] of recipe) {
+        const record = records.find((r) => r.name === name)!;
+        // Moles of each fired oxide in one formula; the raw formula weighs its fired oxides over (1 - LOI).
+        expect(record.percentmole, name).to.equal('molecular');
+        const fired = record.fields.reduce((sum, f) => sum + Number(f.amount) * molar(f.name), 0);
+        const raw = fired / (1 - record.loi / 100);
+        for (const f of record.fields) moles[f.name] = (moles[f.name] ?? 0) + (grams / raw) * Number(f.amount);
+      }
+      const flux = moles.K2O + moles.CaO;
+      const mine: Record<string, number> = Object.fromEntries(Object.entries(moles).map(([o, m]) => [o, m / flux]));
+      const published = { K2O: 0.26448, CaO: 0.73552, Al2O3: 0.40705, SiO2: 3.70983 };
+      for (const [oxide, value] of Object.entries(published))
+        expect(mine[oxide].toFixed(5), oxide).to.equal(String(value));
+      expect((mine.SiO2 / mine.Al2O3).toFixed(4)).to.equal('9.1139');
+
+      const theirs = calculateUMF(
+        recipe.map(([name, grams]) => ({ material: records.find((r) => r.name === name)!, amount: grams }))
+      );
+      expect(Object.keys(theirs.umf).sort()).to.eql(Object.keys(mine).sort());
+      for (const oxide of Object.keys(mine)) expect(theirs.umf[oxide], oxide).to.be.closeTo(mine[oxide], 1e-12);
+      expect(theirs.siAlRatio).to.be.closeTo(mine.SiO2 / mine.Al2O3, 1e-12);
+    });
+
+    // Digitalfire's G1214M (https://digitalfire.com/article/g1214m+cone+5-7+20x5+glossy+transparent+glaze): its
+    // published fired analysis, as one material, gives its published unity formula and expansion, to its places.
+    it("should round-trip Digitalfire's G1214M: its analysis gives its unity formula and expansion, 7.15", () => {
+      const analysis = {
+        CaO: 14.84,
+        K2O: 2.13,
+        MgO: 0.09,
+        Na2O: 2.78,
+        TiO2: 0.31,
+        B2O3: 4.79,
+        Al2O3: 11.74,
+        SiO2: 63.08,
+        Fe2O3: 0.23,
+        MnO: 0.03
+      };
+      const published = {
+        CaO: 0.79,
+        K2O: 0.07,
+        MgO: 0.01,
+        Na2O: 0.13,
+        TiO2: 0.01,
+        B2O3: 0.21,
+        Al2O3: 0.34,
+        SiO2: 3.14,
+        Fe2O3: 0.0,
+        MnO: 0.0
+      };
+      const result = calculateUMF([{ material: { name: 'G1214M', analysis }, amount: 100 }]);
+      expect(Object.keys(result.umf).sort()).to.eql(Object.keys(published).sort());
+      for (const [oxide, value] of Object.entries(published)) {
+        expect(result.umf[oxide].toFixed(2), oxide).to.equal(value.toFixed(2));
+      }
+      expect(result.expansion).to.be.closeTo(7.149, 0.0005);
+      expect(result.expansion!.toFixed(2)).to.equal('7.15');
+      expect(result.warnings).to.eql([]);
+    });
+
     it('should report fired oxide weight percents that total 100', () => {
       const result = calculateUMF({
         'Potash Feldspar (theoretical)': 40,
