@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute, Router, convertToParamMap } from '@angular/router';
 import { of } from 'rxjs';
-import { AuthService } from '../../core/auth.service';
+import { AuthService, SIGN_IN_PROVIDERS } from '../../core/auth.service';
 import { LocaleService } from '../../core/locale.service';
 import { PreferencesService } from '../../core/preferences.service';
 import { API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
@@ -608,5 +608,153 @@ describe('AuthPage two-step sign-in', () => {
     expect(button(fixture, 'Sign in with a passkey')).toBeUndefined();
     expect(fixture.nativeElement.querySelector('#email').getAttribute('autocomplete')).toBe('username');
     expect(passkeys.autofillSupported).not.toHaveBeenCalled();
+  });
+
+  const type = async (
+    fixture: { nativeElement: HTMLElement; whenStable(): Promise<unknown> },
+    id: string,
+    value: string
+  ) => {
+    const field = fixture.nativeElement.querySelector('#' + id) as HTMLInputElement;
+    field.value = value;
+    field.dispatchEvent(new Event('input'));
+    await fixture.whenStable();
+  };
+
+  it('signs in from the form as a person does: typing, then pressing Sign in, once while it is on its way', async () => {
+    const { fixture, navigate } = await create('signin');
+    await type(fixture, 'email', 'a@b.com');
+    await type(fixture, 'password', 'password123');
+    (fixture.nativeElement.querySelector('#keep') as HTMLInputElement).click();
+    await fixture.whenStable();
+    const signIn = button(fixture, 'Sign in')!;
+    signIn.click();
+    signIn.click();
+    await settle(fixture);
+    const req = httpMock().expectOne(API + '/signin');
+    expect(req.request.headers.get('Authorization')).toBe('Basic ' + btoa('a@b.com:password123'));
+    expect(req.request.headers.get('X-Keep-Signed-In')).toBe('1');
+    req.flush({ email: 'a@b.com' });
+    await settle(fixture);
+    expect(navigate).toHaveBeenCalledWith('/home');
+  });
+
+  it('signs up from the form, with the password typed twice', async () => {
+    const { fixture, navigate } = await create('signup');
+    await type(fixture, 'email', 'new@b.com');
+    await type(fixture, 'password', 'password123');
+    await type(fixture, 'confirmation', 'password123');
+    button(fixture, 'Create account')!.click();
+    await settle(fixture);
+    const req = httpMock().expectOne(API + '/signup');
+    expect(req.request.body).toEqual({ email: 'new@b.com', password: 'password123' });
+    req.flush({ email: 'new@b.com' });
+    await settle(fixture);
+    expect(navigate).toHaveBeenCalledWith('/home');
+  });
+
+  it('goes back to the password from the second step with its Start over link, saying nothing went wrong', async () => {
+    const { fixture, page } = await create('signin');
+    await signInWithPassword(fixture, page);
+    button(fixture, 'Start over')!.click();
+    await settle(fixture);
+    expect(text(fixture, 'h1')).toBe('Sign in');
+    expect((fixture.nativeElement.querySelector('#email') as HTMLInputElement).value).toBe('a@b.com');
+    expect(fixture.nativeElement.querySelector('.errors-section')).toBeNull();
+    expect(document.activeElement?.id).toBe('password');
+  });
+
+  it('asks for a passkey once, however often its button is pressed', async () => {
+    const passkeys = fakePasskeys();
+    const { fixture, navigate } = await create('signin', passkeys);
+    const passkeyButton = button(fixture, 'Sign in with a passkey')!;
+    passkeyButton.click();
+    passkeyButton.click();
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/signin/passkey/options')
+      .flush({ options: { challenge: 'abc' } });
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/signin/passkey')
+      .flush({ code: 'signed-in', msg: 'Signed in.', email: 'a@b.com', kept: 0 });
+    await settle(fixture);
+    expect(passkeys.authenticate).toHaveBeenCalledTimes(1);
+    expect(navigate).toHaveBeenCalledWith('/home');
+  });
+
+  it('says nothing when the suggestions are turned down, and the passkey button stays', async () => {
+    const passkeys = fakePasskeys(true);
+    passkeys.authenticate.mockRejectedValueOnce(Object.assign(new Error('closed'), { name: 'NotAllowedError' }));
+    const { fixture } = await create('signin', passkeys);
+    httpMock()
+      .expectOne(API + '/signin/passkey/options')
+      .flush({ options: { challenge: 'auto' } });
+    await settle(fixture);
+    expect(passkeys.authenticate).toHaveBeenCalledWith({ challenge: 'auto' }, true);
+    expect(fixture.nativeElement.querySelector('.errors-section')).toBeNull();
+    expect(button(fixture, 'Sign in with a passkey')).toBeDefined();
+  });
+
+  it('lets the password go on when a passkey is picked from the suggestions just as it went off', async () => {
+    const passkeys = fakePasskeys(true);
+    let pick: (value: unknown) => void = () => {};
+    passkeys.authenticate.mockImplementationOnce(() => new Promise((resolve) => (pick = resolve)));
+    const { fixture, page, navigate } = await create('signin', passkeys);
+    httpMock()
+      .expectOne(API + '/signin/passkey/options')
+      .flush({ options: { challenge: 'auto' } });
+    await settle(fixture);
+    await type(fixture, 'email', 'a@b.com');
+    await type(fixture, 'password', 'password123');
+    button(fixture, 'Sign in')!.click();
+    await settle(fixture);
+    // The password is on its way when the passkey is picked: the passkey is not sent.
+    pick(PASSKEY_RESPONSE);
+    await settle(fixture);
+    httpMock().expectNone(API + '/signin/passkey');
+    httpMock()
+      .expectOne(API + '/signin')
+      .flush({ email: 'a@b.com' });
+    await settle(fixture);
+    expect(page['busy']()).toBe(false);
+    expect(navigate).toHaveBeenCalledWith('/home');
+  });
+});
+
+describe('AuthPage with the sign-in providers unknown', () => {
+  afterEach(() => httpMock().verify());
+
+  it('offers no provider buttons when it cannot tell which are on', async () => {
+    localStorage.clear();
+    TestBed.configureTestingModule({
+      providers: [
+        ...testProviders(),
+        { provide: ActivatedRoute, useValue: { data: of({ mode: 'signin' }) } },
+        { provide: SIGN_IN_PROVIDERS, useValue: () => Promise.reject(new Error('Unknown Error')) }
+      ]
+    });
+    const fixture = TestBed.createComponent(AuthPage);
+    await settle(fixture);
+    expect(fixture.nativeElement.querySelector('.provider-buttons')).toBeNull();
+    expect(fixture.nativeElement.querySelector('form')).not.toBeNull();
+  });
+});
+
+describe('AuthPage during a trial', () => {
+  afterEach(() => httpMock().verify());
+
+  it("says that signing in brings the trial's work into the account, with a way to make one instead", async () => {
+    localStorage.clear();
+    localStorage.setItem('session', 'trial');
+    localStorage.setItem('trial', JSON.stringify({ name: 'Blue Heron', expiresAt: '2099-01-01T00:00:00Z' }));
+    TestBed.configureTestingModule({
+      providers: [...testProviders(), { provide: ActivatedRoute, useValue: { data: of({ mode: 'signin' }) } }]
+    });
+    const fixture = TestBed.createComponent(AuthPage);
+    await settle(fixture);
+    expect(text(fixture, '.trial-note')).toContain('Signing in brings what you made as Blue Heron into it.');
+    expect(fixture.nativeElement.querySelector('.trial-note a')?.getAttribute('href')).toContain('/signup');
+    localStorage.clear();
   });
 });
