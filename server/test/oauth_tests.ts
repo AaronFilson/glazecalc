@@ -4,6 +4,7 @@
 // and no real network), PKCE, the one resource, the consent API, refresh
 // tokens that rotate, and a connection ending everywhere at once. Then the
 // MCP endpoint taking its tokens, and nothing else taking them.
+import dns from 'node:dns';
 import * as limits from '../lib/rate_limit.ts';
 import AccessToken, { OAUTH_REFRESH_DAYS, OAUTH_WRITE_DAYS, revokeOne } from '../models/access_token.ts';
 import Activity from '../models/activity.ts';
@@ -15,9 +16,12 @@ import {
   allowedClientIdUrl,
   countFetch,
   FETCH_LIMITS,
+  FETCH_TIMEOUT_MS,
+  guardedFetch,
   publicAddress,
   resetFetchCount,
   useNetwork,
+  whoIsAsking,
   type Network,
   type RawAnswer
 } from '../oauth/cimd.ts';
@@ -1139,6 +1143,111 @@ describe('OAuth: apps named by their address (CIMD)', function () {
     useNetwork(network({ 'app.example': [ADDRESS, '10.0.0.1'] }, { 'app.example': () => documentFor(url) }));
     expect((await authorize(url, { redirect: 'https://app.example/callback' })).res.status).to.equal(400);
     expect(calls).to.eql([]);
+  });
+
+  it('cuts a name lookup short with the fetch it is part of, and stops it', async () => {
+    let stopped = false;
+    useNetwork({
+      // A name whose server takes 9 s: before, the lookup ran its course outside the fetch's time.
+      lookup: (_hostname, signal) =>
+        new Promise((resolve) => {
+          signal?.addEventListener('abort', () => (stopped = true));
+          setTimeout(() => resolve([{ address: ADDRESS, family: 4 }]), 9000).unref();
+        }),
+      get: async () => {
+        calls.push('get');
+        return { status: 404, headers: {}, body: Buffer.from('') };
+      }
+    });
+    const begun = Date.now();
+    const started = await authorize(fresh(), { redirect: 'https://app.example/callback' });
+    expect(started.res.status).to.equal(400);
+    // oidc-provider gives each fetch 2.5 s, the lookup included, and asks twice: the request's 5 s at most.
+    expect(Date.now() - begun).to.be.below(FETCH_TIMEOUT_MS + 1500);
+    expect(stopped).to.equal(true);
+    expect(calls).to.eql([]);
+  });
+
+  it('gives every fetch one request makes one time between them', async function () {
+    this.timeout(20000);
+    // An app's server that never answers.
+    useNetwork({
+      lookup: async () => [{ address: ADDRESS, family: 4 }],
+      get: (_target, signal) =>
+        new Promise((_resolve, reject) => signal?.addEventListener('abort', () => reject(new Error('timed out'))))
+    });
+    const request = { address: '203.0.113.5' };
+    const before = whoIsAsking(() => request);
+    try {
+      const begun = Date.now();
+      for (const url of ['https://app.example/a.json', 'https://app.example/b.json']) {
+        try {
+          await guardedFetch(url, { redirect: 'manual' });
+        } catch (err) {
+          expect((err as Error).message).to.equal('timed out');
+        }
+      }
+      // The first took the request's time; the second had none left.
+      expect(Date.now() - begun).to.be.within(FETCH_TIMEOUT_MS - 50, FETCH_TIMEOUT_MS + 1000);
+    } finally {
+      whoIsAsking(before);
+      useNetwork();
+    }
+  });
+
+  it('resolves names with c-ares, A and AAAA, never getaddrinfo on the thread pool, and checks every address', async () => {
+    const resolver = dns.promises.Resolver.prototype;
+    const saved = { resolve4: resolver.resolve4, resolve6: resolver.resolve6, lookup: dns.promises.lookup };
+    const asked: string[] = [];
+    let looked = 0;
+    let six: string[] | null = null;
+    resolver.resolve4 = async function (hostname: string) {
+      asked.push('A ' + hostname);
+      return [ADDRESS];
+    } as typeof saved.resolve4;
+    resolver.resolve6 = async function (hostname: string) {
+      asked.push('AAAA ' + hostname);
+      if (six) return six;
+      throw Object.assign(new Error('no such records'), { code: dns.NOTFOUND });
+    } as typeof saved.resolve6;
+    dns.promises.lookup = (async () => {
+      looked++;
+      return [];
+    }) as unknown as typeof saved.lookup;
+    /** Why the fetch was refused. */
+    const refusal = async (url: string): Promise<string> => {
+      try {
+        await guardedFetch(url, { redirect: 'manual' });
+      } catch (err) {
+        return (err as Error).message;
+      }
+      throw new Error('It was fetched');
+    };
+    try {
+      // The real network's lookup; each case is refused before anything is fetched.
+      useNetwork();
+      const url = 'https://app.example/client.json';
+      // A private address among the AAAA records is refused, though the A record is public.
+      six = ['fd00::1'];
+      expect(await refusal(url)).to.equal('address not public');
+      expect(asked).to.eql(['A app.example', 'AAAA app.example']);
+      // A name with no records at all.
+      resolver.resolve4 = (async () => {
+        throw Object.assign(new Error('no such name'), { code: dns.NOTFOUND });
+      }) as typeof saved.resolve4;
+      six = null;
+      expect(await refusal(url)).to.equal('address not public');
+      // Any other failure fails the fetch.
+      resolver.resolve4 = (async () => {
+        throw Object.assign(new Error('timed out'), { code: dns.TIMEOUT });
+      }) as typeof saved.resolve4;
+      expect(await refusal(url)).to.equal('timed out');
+      expect(looked).to.equal(0);
+    } finally {
+      Object.assign(resolver, { resolve4: saved.resolve4, resolve6: saved.resolve6 });
+      dns.promises.lookup = saved.lookup;
+      useNetwork();
+    }
   });
 
   it('fetches only https on 443 by name, with a path and no query', async () => {

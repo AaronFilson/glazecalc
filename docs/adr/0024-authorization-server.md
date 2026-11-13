@@ -55,11 +55,15 @@ assistant's grant must be a Glazecalc connection the person can see and revoke w
 - **Apps name themselves two ways.** **CIMD** from any HTTPS host (`server/oauth/cimd.ts`),
   acknowledged as oidc-provider's experimental draft 02: every fetch the server makes goes through
   a guard that allows only `https`, port 443, a host name (no IP address, `localhost`, `.local` or
-  `.internal`), a path, and no query or credentials; resolves the name itself and refuses if any
-  address is loopback, private, link-local (the cloud's metadata service, 169.254.169.254), CGNAT,
-  unique-local, multicast, documentation, NAT64, 6to4 or otherwise special (IPv4-mapped IPv6
-  judged as IPv4); connects to the address it checked, with the name only for TLS and `Host` (no
-  DNS rebinding); follows no redirect; stops after 5 seconds or 5 kB; takes JSON only; and makes at
+  `.internal`), a path, and no query or credentials; resolves the name itself (with c-ares, its A
+  and AAAA records each asked once for 1.5 s, never with getaddrinfo, whose pool of four threads
+  also hashes passwords: 2026-11, the 1.0 security review) and refuses if any address is loopback,
+  private, link-local (the cloud's metadata service, 169.254.169.254), CGNAT, unique-local,
+  multicast, documentation, NAT64, 6to4 or otherwise special (IPv4-mapped IPv6 judged as IPv4);
+  connects to the address it checked, with the name only for TLS and `Host` (no DNS rebinding);
+  follows no redirect; stops after 5 seconds for all the fetches one request makes, lookups
+  included (oidc-provider asks twice for a document it could not fetch), or 5 kB; takes JSON only;
+  and makes at
   most 10 fetches a minute from one address, 10 for one host and 120 for everyone together (see Review fixes). oidc-provider checks that the document's
   `client_id` is its address and has no secret, and keeps it 1 to 24 hours. **DCR** is kept as the
   second way: 10 registrations an hour from one address and 500 a day from everyone; ids start

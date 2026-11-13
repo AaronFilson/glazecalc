@@ -539,9 +539,10 @@ const configuration = (mode: CimdAuthMode): Configuration => ({
  * The request the authorization server is answering: its path, for
  * whenGrantEnded, and its address (Express's req.ip, which trusts one proxy
  * hop; Koa's would take the first X-Forwarded-For, which anyone can write),
- * for the fetch limits (cimd.ts countFetch).
+ * for the fetch limits (cimd.ts countFetch); and when the time for its
+ * fetches is up (cimd.ts Asking).
  */
-const current = new AsyncLocalStorage<{ path: string; address: string | undefined }>();
+const current = new AsyncLocalStorage<{ path: string; address: string | undefined; fetchesUntil?: number }>();
 
 let made:
   { issuer: string; mode: CimdAuthMode; provider: Provider; handler: ReturnType<Provider['callback']> } | undefined;
@@ -572,8 +573,9 @@ const serverFor = () => {
 };
 
 whenReused((grantId) => revokeGrant(grantId, 'reused'));
-// Key-set fetches are counted by the address of the token request that asked for them.
-whoIsAsking(() => current.getStore()?.address);
+// Key-set fetches are counted by the address of the token request that asked for them, and a request's
+// fetches share one time.
+whoIsAsking(() => current.getStore());
 // An app named by its address reads from the document kept with its working connections first.
 whenClientDocumentWanted((clientId) =>
   keptClientDocument(clientId, (metadata) => getProvider().Client.validate(metadata), current.getStore()?.address)
