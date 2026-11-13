@@ -10,9 +10,9 @@ import {
   computed,
   effect,
   inject,
-  linkedSignal,
   signal,
-  untracked
+  untracked,
+  viewChild
 } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
@@ -34,9 +34,9 @@ import { UpdateService } from '../../core/update.service';
 import { RichText } from '../../i18n/rich-text';
 import { Busy } from '../../shared/busy';
 import { fixed, formatTemperature, formatTime, listOf, notANumber, upTo } from '../../shared/format';
-import { DatePipe, FixedPipe, PlainPipe } from '../../shared/format-pipes';
+import { FixedPipe } from '../../shared/format-pipes';
 import { NumberInput } from '../../shared/number-input';
-import { Check, FieldCheck, FieldChecks, required, reveal } from '../../shared/field-checks';
+import { Check, FieldCheck, FieldChecks, required } from '../../shared/field-checks';
 import {
   GUIDED_STEPS,
   LAYOUT_OPTIONS,
@@ -50,12 +50,11 @@ import { Notices, NoticesList } from '../../shared/notices';
 import { chosenRegion, findNamed, folded, hasLead } from '../../shared/library-info';
 import { firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
-import { PendingBadge } from '../../shared/pending-badge';
-import { Removal, RemoveButton } from '../../shared/remove-button';
+import { Removal } from '../../shared/remove-button';
 import { GRAMS_PER_POUND, WeightUnit, formatWeight } from '../../shared/weights';
 import { LibraryMaterial, modernMaterials } from './compare';
 import { Rebase, amountOf, isAmount, rebase, totalOf, unitOf } from './rebase';
-import { additiveAmount, evaluate, savedAnalysis } from './recipe-analysis';
+import { additiveAmount, evaluate } from './recipe-analysis';
 // Types apart from the components, which recipe-page.html defers (@defer), so their files can be left out until needed.
 import type { CompareChoice } from './recipe-compare';
 import { RecipeCompare } from './recipe-compare';
@@ -64,7 +63,6 @@ import { RecipeHazards, hazardSources } from './recipe-hazards';
 import { RecipeHelp } from './recipe-help';
 import { RecipeLibrary, libraryKey } from './recipe-library';
 import { RecipePrint } from './recipe-print';
-import { SharePanel } from './share-panel';
 import { Plan, oxideLabel, planSuggestion, suggestAmounts } from './suggest';
 import { BaseChoice, LeadMode, leadFreeBases, leadIn, recipeHasLead, replaceLead } from './lead';
 import { TryMaterial } from './pool';
@@ -77,17 +75,7 @@ import { OwnLimitsNote } from './own-limits-note';
 import { RecipeNumbers } from './recipe-numbers';
 import { SlurryCalculator } from './slurry-calculator';
 import { FiringBand, LIMIT_SETS, bandOf } from '../../../../lib/recipe/limits';
-import {
-  ATMOSPHERES,
-  ConeScale,
-  FiringBlock,
-  PROCESSES,
-  compareCones,
-  conesBetween,
-  firingBands,
-  inRange,
-  testedCones
-} from '../../../../lib/cones/firing';
+import { ConeScale, FiringBlock, firingBands } from '../../../../lib/cones/firing';
 import type { ConeResult } from '../../../../lib/cones/results';
 import { RecipeFiring } from './recipe-firing';
 import { RecipeFirings } from './recipe-firings';
@@ -95,7 +83,9 @@ import { RecipeConeCards, type ConePlace } from './recipe-cone-cards';
 import { recipeText } from './recipe-messages';
 import { coneFit } from '../../../../lib/recipe/cone-fit';
 import { recipeDrySg } from '../../../../lib/recipe/density';
-import { ATMOSPHERE_NAMES, Reader, coneText, firingLine, firingSummary } from './firing-text';
+import { Reader, firingSummary } from './firing-text';
+import { focusShown, focusWhenDrawn } from './focus';
+import { SavedRecipes } from './saved-recipes';
 
 const INCLUDE_KEY = 'includeAdditives';
 
@@ -171,44 +161,28 @@ interface PendingLeave {
   from: HTMLElement | null;
 }
 
-/** More saved recipes than this, and a filter is offered. */
-const SAVED_FILTER_FROM = 5;
-/** How many saved recipes are listed until all are asked for. */
-const SAVED_SHOWN = 8;
-
-/** The set with the id added, or taken out if it was there. */
-const toggled = (set: ReadonlySet<string>, id: string): ReadonlySet<string> => {
-  const next = new Set(set);
-  if (!next.delete(id)) next.add(id);
-  return next;
-};
-
 /** A phone-width screen (Bootstrap's md breakpoint), where the firing part folds once it is set. */
 const narrowScreen = (): boolean => typeof matchMedia === 'function' && matchMedia('(max-width: 767.98px)').matches;
 
 @Component({
   selector: 'gc-recipe-page',
   imports: [
-    DatePipe,
     FieldCheck,
     FixedPipe,
-    PlainPipe,
     FormsModule,
     NgTemplateOutlet,
     NoticesList,
     NumberInput,
     PageHeader,
-    PendingBadge,
     RecipeHelp,
     RecipeCompare,
     RecipeCost,
     RecipeHazards,
     RecipeLibrary,
     RecipePrint,
-    SharePanel,
-    RemoveButton,
     RichText,
     RouterLink,
+    SavedRecipes,
     SwapReport,
     TranslocoDirective,
     TryMaterials,
@@ -221,7 +195,7 @@ const narrowScreen = (): boolean => typeof matchMedia === 'function' && matchMed
     RecipeConeCards
   ],
   templateUrl: './recipe-page.html',
-  // The saved recipes (styles.scss has the rest of the page's).
+  // The firing part's fold, the tools and the form's layouts (styles.scss has the rest of the page's).
   styles: `
     /* The firing part folds on a phone: its summary is the one line shown. */
     .firing-fold > summary {
@@ -240,102 +214,6 @@ const narrowScreen = (): boolean => typeof matchMedia === 'function' && matchMed
       flex-wrap: wrap;
       gap: 0.25rem 1.25rem;
       margin: 0 0 1rem;
-    }
-    .saved-recipes-top {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.5rem 1rem;
-      margin-bottom: 0.5rem;
-    }
-    .saved-recipes-top h2 {
-      margin: 0;
-    }
-    .saved-count {
-      color: var(--gc-muted);
-      font-size: 1rem;
-      font-weight: 400;
-    }
-    .saved-filter {
-      width: auto;
-      flex: 0 1 16rem;
-    }
-    .saved-list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    .saved-recipe {
-      border-top: 1px solid var(--gc-border);
-      padding: 0.35rem 0;
-    }
-    .saved-recipe-top {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.4rem 0.75rem;
-    }
-    .saved-recipe-name {
-      display: inline-flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      gap: 0.25rem 0.75rem;
-      min-width: 0;
-    }
-    /* The name opens it: a link's look, a heading's weight, and a finger's height on a phone. */
-    .saved-recipe-open {
-      --bs-btn-padding-x: 0;
-      font-weight: 600;
-      text-align: start;
-      overflow-wrap: anywhere;
-    }
-    .saved-recipe-date {
-      color: var(--gc-muted);
-      font-size: 0.9rem;
-    }
-    .saved-recipe-actions,
-    .saved-recipe-more {
-      display: inline-flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.4rem;
-    }
-    .saved-recipe-actions {
-      margin-inline-start: auto;
-    }
-    /* Print, Compare, Share and Remove, on a line of their own under the name, Remove last. */
-    .saved-recipe-more {
-      flex-basis: 100%;
-      justify-content: flex-end;
-    }
-    .saved-open-mark {
-      background: var(--gc-success-bg);
-      border-radius: 999px;
-      color: var(--gc-success-text);
-      font-size: 0.8rem;
-      padding: 0.1rem 0.5rem;
-    }
-    .saved-recipe-details {
-      padding: 0.25rem 0 0.5rem;
-    }
-    .saved-show-all {
-      margin-top: 0.5rem;
-    }
-    .saved-firing {
-      color: var(--gc-muted);
-      font-size: 0.9rem;
-      flex-basis: 100%;
-    }
-    .saved-firing-filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .saved-firing-filters select {
-      width: auto;
-      flex: 0 1 14rem;
     }
 
     /* The form's layout (recipe-layout.ts): a small switch above the editor. */
@@ -500,7 +378,6 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
 
   protected readonly notices = new Notices();
   protected readonly saving = new Busy();
-  protected readonly savedAnalysis = savedAnalysis;
   protected readonly firstOf = firstOf;
   protected readonly additiveAmount = additiveAmount;
   protected readonly additiveUnits = ADDITIVE_UNITS;
@@ -531,90 +408,13 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     () => this.myMaterialsFailed() || this.myAdditivesFailed() || this.myRecipesFailed()
   );
   protected readonly myRecipes = signal<Recipe[]>([]);
-  protected readonly expanded = signal<ReadonlySet<string>>(new Set());
-  /** The saved recipes whose More (Print, Compare, Share, Remove) is open. */
-  protected readonly moreOpen = signal<ReadonlySet<string>>(new Set());
-  /** The saved recipe whose Share is open, under its More. */
-  protected readonly shareOpen = signal<string | null>(null);
-  /** A trial cannot share a recipe; its Share says why. */
-  protected readonly isTrial = computed(() => !!this.auth.trial());
-  /** Whether there are enough saved recipes to offer to filter them by title. */
-  protected readonly filterShown = computed(() => this.myRecipes().length > SAVED_FILTER_FROM);
-  /** What the list is filtered by: emptied when the filter box goes, so a list it no longer shows is not filtered. */
-  protected readonly recipeFilter = linkedSignal({ source: this.filterShown, computation: () => '' });
-  protected readonly showAllRecipes = signal(false);
+  /** The saved recipes, listed above the editor: each says what to do with it, and the focus goes back to its More. */
+  private readonly savedList = viewChild(SavedRecipes);
   /** How the reader fires, for the firing in words. */
   protected readonly reader = computed<Reader>(() => ({
     cones: this.locale.cones(),
     temperature: this.locale.temperature()
   }));
-  /** The cones the saved recipes' firings cover ("orton:6"), to filter by; offered once two recipes state one. */
-  protected readonly coneOptions = computed(() => {
-    const keys = new Map<string, { scale: ConeScale; cone: string }>();
-    for (const recipe of this.myRecipes()) {
-      const block = recipe.firedAt;
-      if (!block?.low) continue;
-      for (const cone of conesBetween(block.scale, block.low, block.high)) {
-        keys.set(block.scale + ':' + cone, { scale: block.scale, cone });
-      }
-    }
-    const order: ConeScale[] = ['orton', 'sk', 'temperature'];
-    return [...keys.entries()]
-      .sort(([, a], [, b]) => order.indexOf(a.scale) - order.indexOf(b.scale) || compareCones(a.scale, a.cone, b.cone))
-      .map(([key, { scale, cone }]) => ({ key, label: coneText(scale, cone, this.reader()) }));
-  });
-  /** The atmospheres and processes the saved recipes name, to filter by. */
-  protected readonly atmosphereOptions = computed(() => {
-    const named = new Set(
-      this.myRecipes().flatMap((r) => [...(r.firedAt?.atmospheres ?? []), ...(r.firedAt?.processes ?? [])])
-    );
-    return [...ATMOSPHERES, ...PROCESSES]
-      .filter((a) => named.has(a as never))
-      .map((a) => ({ key: a as string, label: translate(ATMOSPHERE_NAMES[a]) }));
-  });
-  protected readonly firingFiltersShown = computed(
-    () => this.myRecipes().filter((recipe) => recipe.firedAt?.low || recipe.firedAt?.atmospheres?.length).length > 1
-  );
-  protected readonly coneFilter = linkedSignal({ source: this.firingFiltersShown, computation: () => '' });
-  protected readonly atmosphereFilter = linkedSignal({ source: this.firingFiltersShown, computation: () => '' });
-  /** A filter is set: the list shows every match. */
-  private readonly filtering = computed(
-    () => !!(this.recipeFilter().trim() || this.coneFilter() || this.atmosphereFilter())
-  );
-  /**
-   * The saved recipes as listed: the newest first, those whose titles match the filter and whose firing
-   * takes in the cone chosen (a range matches any cone inside it, those tested at it first) and names the
-   * atmosphere chosen, the first few until all are asked for.
-   */
-  private readonly listedRecipes = computed(() => {
-    const filter = this.recipeFilter().trim().toLocaleLowerCase();
-    let listed = [...this.myRecipes()].reverse();
-    if (filter) listed = listed.filter((recipe) => recipe.title.toLocaleLowerCase().includes(filter));
-    const atmosphere = this.atmosphereFilter();
-    if (atmosphere) {
-      listed = listed.filter((r) =>
-        [...(r.firedAt?.atmospheres ?? []), ...(r.firedAt?.processes ?? [])].includes(atmosphere as never)
-      );
-    }
-    const coneKey = this.coneFilter();
-    if (coneKey) {
-      const [scale, cone] = coneKey.split(':') as [ConeScale, string];
-      listed = listed.filter((r) => inRange(r.firedAt, scale, cone));
-      const untested = (r: Recipe) => (testedCones(r.firedAt).includes(cone) ? 0 : 1);
-      listed = [...listed].sort((a, b) => untested(a) - untested(b));
-    }
-    return listed;
-  });
-  protected readonly shownRecipes = computed(() => {
-    const listed = this.listedRecipes();
-    return this.showAllRecipes() || this.filtering() ? listed : listed.slice(0, SAVED_SHOWN);
-  });
-  /** A saved recipe's firing on one line. */
-  protected savedFiring(recipe: Recipe): string {
-    return firingLine(recipe.firedAt, this.reader());
-  }
-  /** How many saved recipes are left out until all are asked for, or 0. */
-  protected readonly hiddenRecipes = computed(() => this.listedRecipes().length - this.shownRecipes().length);
   protected readonly removal = new Removal(this.recipes, this.myRecipes, this.notices, (recipe) => recipe.title);
 
   /** Whether the unity formula counts the colorants and additives too; saved with the recipe. */
@@ -986,9 +786,9 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       compared = comparing;
       const target = comparing ? 'compare-heading' : this.compareOpener;
       if (!comparing && target.startsWith('compare-') && target !== 'compare-draft') {
-        untracked(() => this.showMore(target.slice('compare-'.length)));
+        untracked(() => this.savedList()?.showMore(target.slice('compare-'.length)));
       }
-      untracked(() => this.focusWhenDrawn(target, comparing ? 'compare-heading' : null));
+      untracked(() => focusWhenDrawn(this.injector, target, comparing ? 'compare-heading' : null));
     });
     // The focus goes to the print options when they open, and back to the Print button that opened them.
     // Show the working opened it from its own button, in the unity formula's panel.
@@ -999,10 +799,10 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       if (printing === printed) return;
       const opener = printed === 'draft' && sheet === 'worked' ? 'worked-draft' : 'print-' + printed;
       const target = printing ? 'print-heading' : opener;
-      if (!printing && printed && printed !== 'draft') untracked(() => this.showMore(printed!));
+      if (!printing && printed && printed !== 'draft') untracked(() => this.savedList()?.showMore(printed!));
       printed = printing;
       sheet = untracked(this.printSheet);
-      untracked(() => this.focusWhenDrawn(target, printing ? 'print-heading' : null, null));
+      untracked(() => focusWhenDrawn(this.injector, target, printing ? 'print-heading' : null, null));
     });
   }
 
@@ -1899,7 +1699,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       this.suggestProblem.set(translate('recipe.page.cannotRerun'));
       return;
     }
-    this.focusWhenDrawn('swap-report-heading', 'swap-report-heading', null);
+    focusWhenDrawn(this.injector, 'swap-report-heading', 'swap-report-heading', null);
   }
 
   /**
@@ -2044,7 +1844,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       this.shelfOpen.set(false);
       this.suggestProblem.set('');
       this.notices.success(translate('recipe.firing.duplicateNote', { title: recipe.title }), 'duplicate');
-      afterNextRender(() => this.focusShown('firing-low'), { injector: this.injector });
+      afterNextRender(() => focusShown('firing-low'), { injector: this.injector });
     });
   }
 
@@ -2196,14 +1996,6 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     pane.hidden = false;
   }
 
-  /** Moves the focus to an element, opening a fold or step it is in. */
-  private focusShown(id: string): void {
-    const element = document.getElementById(id);
-    if (!element) return;
-    reveal(element);
-    element.focus();
-  }
-
   /** The workbench's peek bar on a phone: to the formula and limits beside (below) the recipe. */
   protected toFormula(): void {
     const heading = document.getElementById('unity-heading');
@@ -2236,41 +2028,6 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   }
 
   // The saved list.
-
-  /** A saved recipe's notes; "None." is saved for a recipe with none. */
-  protected savedNotes(recipe: Recipe): string {
-    const notes = firstOf(recipe.notes);
-    return !notes || notes === 'None.' ? translate('recipe.page.noNotes') : notes;
-  }
-
-  protected toggleExpanded(recipe: Recipe): void {
-    this.expanded.update((set) => toggled(set, recipe._id ?? ''));
-  }
-
-  protected toggleMore(recipe: Recipe): void {
-    this.moreOpen.update((set) => toggled(set, recipe._id ?? ''));
-    if (!this.moreOpen().has(recipe._id ?? '') && this.shareOpen() === recipe._id) this.shareOpen.set(null);
-  }
-
-  /** Opens or closes a saved recipe's Share; the focus goes to its heading when it opens. */
-  protected toggleShare(recipe: Recipe): void {
-    const id = recipe._id ?? '';
-    const opening = this.shareOpen() !== id;
-    this.shareOpen.set(opening ? id : null);
-    if (opening) {
-      this.focusWhenDrawn('share-heading-' + id, 'share-heading-' + id, null);
-    }
-  }
-
-  /** Lists a saved recipe and opens its More, so the focus can go back to its Print or Compare. */
-  private showMore(id: string): void {
-    // Opened from the address, it may be one of those the list leaves out until all are asked for.
-    if (!this.shownRecipes().some((recipe) => recipe._id === id)) {
-      this.recipeFilter.set('');
-      this.showAllRecipes.set(true);
-    }
-    if (!this.moreOpen().has(id)) this.moreOpen.update((set) => toggled(set, id));
-  }
 
   protected async remove(recipe: Recipe): Promise<void> {
     if (!(await this.removal.remove(recipe))) return;
@@ -2336,27 +2093,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     afterNextRender(() => document.getElementById(kind + '-amount-' + index)?.focus(), { injector: this.injector });
   }
 
-  /**
-   * Gives an element the focus once the page is drawn. Print, compare, share and the swap report are deferred
-   * (recipe-page.html, @defer): when one is asked for before its file is in, it draws a moment later, so the
-   * focus waits for `deferred` (the element it brings) for up to two seconds. Any other element is looked for
-   * once, as before; `fallback` takes the focus where the element is not there.
-   */
-  private focusWhenDrawn(id: string, deferred: string | null, fallback: string | null = 'recipe-name'): void {
-    const started = Date.now();
-    const attempt = () => {
-      const element = document.getElementById(id);
-      if (element) return this.focusShown(id);
-      if (id === deferred && Date.now() - started < 2000) {
-        setTimeout(attempt, 20);
-        return;
-      }
-      if (fallback) this.focusShown(fallback);
-    };
-    afterNextRender(attempt, { injector: this.injector });
-  }
-
   private focusTitle(): void {
-    afterNextRender(() => this.focusShown('recipe-name'), { injector: this.injector });
+    afterNextRender(() => focusShown('recipe-name'), { injector: this.injector });
   }
 }

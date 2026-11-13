@@ -7,15 +7,19 @@ const node = 'node:fs';
 const { readFileSync } = (await import(/* @vite-ignore */ node)) as {
   readFileSync: (path: string, encoding: 'utf8') => string;
 };
-// Without interpolations, attribute values and comments, whose braces are not blocks.
-const template = readFileSync('client/app/pages/recipe/recipe-page.html', 'utf8')
-  .replace(/<!--[\s\S]*?-->/g, '')
-  .replace(/\{\{[\s\S]*?\}\}/g, '')
-  .replace(/"[^"]*"/g, '""');
+/** A template without interpolations, attribute values and comments, whose braces are not blocks. */
+const template = (name: string): string =>
+  readFileSync('client/app/pages/recipe/' + name, 'utf8')
+    .replace(/<!--[\s\S]*?-->/g, '')
+    .replace(/\{\{[\s\S]*?\}\}/g, '')
+    .replace(/"[^"]*"/g, '""');
+const page = template('recipe-page.html');
+/** The saved recipes, which the page draws on every visit (saved-recipes.ts). */
+const saved = template('saved-recipes.html');
 const code = readFileSync('client/app/pages/recipe/recipe-page.ts', 'utf8');
 
-/** Whether every use of an element in the template is inside a @defer block's content. */
-function onlyDeferred(selector: string): boolean {
+/** Whether every use of an element in a template is inside a @defer block's content. */
+function onlyDeferred(template: string, selector: string): boolean {
   let depth = 0;
   const stack: boolean[] = [];
   let uses = 0;
@@ -35,17 +39,13 @@ function onlyDeferred(selector: string): boolean {
 
 describe('recipe page deferral', () => {
   it('uses print, compare, share, the swap report and the materials to try only inside @defer blocks', () => {
-    for (const selector of [
-      'gc-recipe-print',
-      'gc-recipe-compare',
-      'gc-share-panel',
-      'gc-swap-report',
-      'gc-try-materials'
-    ]) {
-      expect(onlyDeferred(selector), selector).toBe(true);
+    for (const selector of ['gc-recipe-print', 'gc-recipe-compare', 'gc-swap-report', 'gc-try-materials']) {
+      expect(onlyDeferred(page, selector), selector).toBe(true);
     }
+    // Share is in the saved recipes' list, drawn on every visit.
+    expect(onlyDeferred(saved, 'gc-share-panel'), 'gc-share-panel').toBe(true);
     // Help and the slurry calculator draw on every visit, so they stay in the page's own file.
-    expect(onlyDeferred('gc-recipe-help')).toBe(false);
+    expect(onlyDeferred(page, 'gc-recipe-help')).toBe(false);
   });
 
   it('imports their types apart from the components, which a deferred part needs', () => {

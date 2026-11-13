@@ -650,20 +650,24 @@ describe('RecipePage', () => {
       { _id: 'c', title: 'Low fire', materials: [], firedAt: { scale: 'orton', low: '06' } },
       { _id: 'd', title: 'No firing', materials: [] }
     ];
-    const { fixture, page } = await create(recipes);
-    const titles = () => page['shownRecipes']().map((r: Recipe) => r.title);
-    const options = [...fixture.nativeElement.querySelectorAll('#saved-cone-filter option')].map((o: Element) =>
-      o.textContent?.trim()
-    );
+    const { fixture } = await create(recipes);
+    const root = fixture.nativeElement as HTMLElement;
+    const titles = () => [...root.querySelectorAll('.saved-recipe-open')].map((b) => b.textContent?.trim());
+    const choose = async (id: string, value: string) => {
+      const select = root.querySelector('#' + id) as HTMLSelectElement;
+      select.value = value;
+      select.dispatchEvent(new Event('change'));
+      await fixture.whenStable();
+    };
+    const options = [...root.querySelectorAll('#saved-cone-filter option')].map((o) => o.textContent?.trim());
     expect(options).toEqual(['Any cone', 'cone 06', 'cone 5', 'cone 6', 'cone 7']);
-    page['coneFilter'].set('orton:6');
+    await choose('saved-cone-filter', 'orton:6');
     expect(titles()).toEqual(['Tested six', 'Ranged']);
-    page['coneFilter'].set('orton:06');
+    await choose('saved-cone-filter', 'orton:06');
     expect(titles()).toEqual(['Low fire']);
-    page['coneFilter'].set('');
-    page['atmosphereFilter'].set('reduction');
+    await choose('saved-cone-filter', '');
+    await choose('saved-atmosphere-filter', 'reduction');
     expect(titles()).toEqual(['Tested six']);
-    await fixture.whenStable();
     expect(text(fixture, '.saved-firing')).toBe('Tested at cone 6 · reduction');
   });
 

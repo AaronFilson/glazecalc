@@ -5,6 +5,7 @@ import { RouterTestingHarness } from '@angular/router/testing';
 import { Material } from '../../core/models';
 import { EXPIRING_KEYS } from '../../core/settings-expiry';
 import { answer, httpMock, settle, testProviders } from '../../testing/test-providers';
+import { focusShown } from './focus';
 import { LAYOUT_KEY, layoutFromParam, storeLayout, storedLayout } from './recipe-layout';
 import { RecipePage } from './recipe-page';
 
@@ -144,7 +145,7 @@ describe('RecipePage layouts', () => {
     const { fixture, page, element } = await create();
     page['chooseLayout']('workbench');
     await settle(fixture);
-    page['focusShown']('recipe-notes');
+    focusShown('recipe-notes');
     expect((element.querySelector('#details-fold') as HTMLDetailsElement).open).toBe(true);
     expect(document.activeElement?.id).toBe('recipe-notes');
   });
