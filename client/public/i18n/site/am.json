@@ -54,7 +54,7 @@
     "builtHeading": "እንዴት እንደተሠራ",
     "built": "Glazecalc በ2017 ተጀመረ፣ በ2026 እንደገና ተሠራ። አንድ ትንሽ የድረ ገጽ መተግበሪያ ነው፣ <source>የምንጭ ኮዱም በGitHub ላይ</source> በMIT License ስር ይገኛል።",
     "stackBrowser": "በአሳሹ ውስጥ Angular 22 (standalone components እና signals)፣ የግላዝ ኬሚስትሪው በትንሽ የጋራ ላይብረሪ ውስጥ።",
-    "stackServer": "በNode.js 24 እና Express 5 ላይ ያለ የTypeScript API፣ ከMongoDB 9 ጋር፣ ከ350 በላይ በሆኑ አውቶማቲክ ሙከራዎች የተፈተሸ።",
+    "stackServer": "በNode.js 24 እና Express 5 ላይ ያለ የTypeScript API፣ ከMongoDB 9 ጋር፣ ከ1,800 በላይ በሆኑ አውቶማቲክ ሙከራዎች የተፈተሸ።",
     "stackHosting": "በAmazon Web Services ላይ በDocker ውስጥ ይሠራል፣ ከnginx ጀርባ፣ ከLet's Encrypt በመጣ HTTPS።",
     "stackDeploy": "በGitHub Actions ይሰማራል፥ ምስሎች በእያንዳንዱ ለውጥ ይገነባሉ እና ይሞከራሉ፣ ስምሪቶችም ያለ የተቀመጡ ቁልፎች ወደ AWS ይገባሉ።",
     "creditsHeading": "ምስጋና",

@@ -54,7 +54,7 @@
     "builtHeading": "它是如何构建的",
     "built": "Glazecalc 始于 2017 年，并在 2026 年重建。它是一个小型 Web 应用，<source>源代码在 GitHub 上</source>，采用 MIT 许可证。",
     "stackBrowser": "浏览器端使用 Angular 22（独立组件和信号），釉化学计算放在一个小型共享库中。",
-    "stackServer": "服务器端是基于 Node.js 24 和 Express 5 的 TypeScript API，使用 MongoDB 9，由 350 多个自动化测试检查。",
+    "stackServer": "服务器端是基于 Node.js 24 和 Express 5 的 TypeScript API，使用 MongoDB 9，由 1,800 多个自动化测试检查。",
     "stackHosting": "在 Amazon Web Services 上的 Docker 中运行，前面是 nginx，HTTPS 由 Let’s Encrypt 提供。",
     "stackDeploy": "由 GitHub Actions 部署：每次变更都会构建并测试镜像，部署时无需保存密钥即可登录 AWS。",
     "creditsHeading": "致谢",

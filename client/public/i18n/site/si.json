@@ -54,7 +54,7 @@
     "builtHeading": "එය ගොඩනඟා ඇති ආකාරය",
     "built": "Glazecalc 2017 දී ආරම්භ වී 2026 දී නැවත ගොඩනඟන ලදී. එය කුඩා වෙබ් යෙදුමකි, සහ එහි <source>මූල කේතය GitHub හි</source> MIT License යටතේ ඇත.",
     "stackBrowser": "බ්‍රවුසරයේ Angular 22 (standalone components සහ signals), ග්ලේස් රසායනය කුඩා හවුල් පුස්තකාලයක ඇත.",
-    "stackServer": "Node.js 24 සහ Express 5 මත TypeScript API එකක්, MongoDB 9 සමඟ, ස්වයංක්‍රීය පරීක්ෂණ 350කට වඩා වැඩි ගණනකින් පරීක්ෂා කර ඇත.",
+    "stackServer": "Node.js 24 සහ Express 5 මත TypeScript API එකක්, MongoDB 9 සමඟ, ස්වයංක්‍රීය පරීක්ෂණ 1,800කට වඩා වැඩි ගණනකින් පරීක්ෂා කර ඇත.",
     "stackHosting": "Amazon Web Services මත Docker තුළ ක්‍රියාත්මක වේ, Let's Encrypt වෙතින් HTTPS සහිත nginx පිටුපස.",
     "stackDeploy": "GitHub Actions මගින් යොදවා ඇත: සෑම වෙනසකදීම ප්‍රතිබිම්බ ගොඩනඟා පරීක්ෂා කෙරේ, සහ යෙදවීම් AWS වෙත පුරනය වන්නේ ගබඩා කළ යතුරු නොමැතිවය.",
     "creditsHeading": "ණය පිළිගැනීම්",

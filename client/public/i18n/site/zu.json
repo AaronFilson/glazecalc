@@ -54,7 +54,7 @@
     "builtHeading": "Yakhiwe kanjani",
     "built": "I-Glazecalc yaqala ngo-2017 futhi yakhiwa kabusha ngo-2026. Iwuhlelo oluncane olulodwa lwewebhu, futhi <source>ikhodi yayo yomthombo iku-GitHub</source> ngaphansi kwe-MIT License.",
     "stackBrowser": "I-Angular 22 kusiphequluli (ama-standalone component nama-signal), nekhemistri ye-glaze emtatsheni omncane owabiwe.",
-    "stackServer": "I-API ye-TypeScript ku-Node.js 24 ne-Express 5, ne-MongoDB 9, ihlolwe ngokuhlolwa okuzenzakalelayo okungaphezu kuka-350.",
+    "stackServer": "I-API ye-TypeScript ku-Node.js 24 ne-Express 5, ne-MongoDB 9, ihlolwe ngokuhlolwa okuzenzakalelayo okungaphezu kuka-1,800.",
     "stackHosting": "Isebenza ku-Docker ku-Amazon Web Services, ngemva kwe-nginx ene-HTTPS evela ku-Let's Encrypt.",
     "stackDeploy": "Ifakwa yi-GitHub Actions: izithombe zakhiwa futhi zihlolwe kuzo zonke izinguquko, futhi ukufaka kungena ku-AWS ngaphandle kokhiye abagciniwe.",
     "creditsHeading": "Ukubonga",

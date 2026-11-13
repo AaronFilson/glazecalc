@@ -54,7 +54,7 @@
     "builtHeading": "Nasıl yapıldı",
     "built": "Glazecalc 2017’de başladı ve 2026’da yeniden yapıldı. Tek ve küçük bir web uygulamasıdır; <source>kaynak kodu GitHub’da</source>, MIT Lisansı altında yayımlanır.",
     "stackBrowser": "Tarayıcıda Angular 22 (bağımsız bileşenler ve sinyaller); sır kimyası küçük, ortak bir kod kütüphanesindedir.",
-    "stackServer": "Node.js 24 ve Express 5 üzerinde, MongoDB 9 kullanan bir TypeScript API’si; 350’den fazla otomatik testle denetlenir.",
+    "stackServer": "Node.js 24 ve Express 5 üzerinde, MongoDB 9 kullanan bir TypeScript API’si; 1.800’den fazla otomatik testle denetlenir.",
     "stackHosting": "Amazon Web Services üzerinde Docker’da çalışır; önünde Let's Encrypt’in sağladığı HTTPS ile nginx vardır.",
     "stackDeploy": "GitHub Actions ile yayına alınır: her değişiklikte imajlar oluşturulur ve test edilir; yayına alma işlemi, saklanmış anahtarlar olmadan AWS’de oturum açar.",
     "creditsHeading": "Teşekkürler",

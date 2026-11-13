@@ -54,7 +54,7 @@
     "builtHeading": "Conas a tógadh é",
     "built": "Thosaigh Glazecalc in 2017 agus atógadh é in 2026. Is feidhmchlár gréasáin beag amháin é, agus tá a <source>chód foinseach ar GitHub</source> faoin gCeadúnas MIT.",
     "stackBrowser": "Angular 22 sa bhrabhsálaí (standalone components agus signals), agus ceimic an ghlónra i leabharlann bheag chomhroinnte.",
-    "stackServer": "API TypeScript ar Node.js 24 agus Express 5, le MongoDB 9, seiceáilte ag níos mó ná 350 tástáil uathoibrithe.",
+    "stackServer": "API TypeScript ar Node.js 24 agus Express 5, le MongoDB 9, seiceáilte ag níos mó ná 1,800 tástáil uathoibrithe.",
     "stackHosting": "Ritheann sé in Docker ar Amazon Web Services, taobh thiar de nginx, le HTTPS ó Let’s Encrypt.",
     "stackDeploy": "Imscartha ag GitHub Actions: tógtar agus tástáiltear na híomhánna le gach athrú, agus síníonn gach imscaradh isteach in AWS gan eochracha stóráilte.",
     "creditsHeading": "Admhálacha",

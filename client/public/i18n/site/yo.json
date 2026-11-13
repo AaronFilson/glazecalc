@@ -54,7 +54,7 @@
     "builtHeading": "Bí a ṣe kọ́ ọ",
     "built": "Glazecalc bẹ̀rẹ̀ ní 2017, a sì tún un kọ́ ní 2026. Ó jẹ́ app wẹ́ẹ̀bù kékeré kan, <source>kóòdù orísun rẹ̀ sì wà lórí GitHub</source> lábẹ́ MIT License.",
     "stackBrowser": "Angular 22 nínú browser (standalone components àti signals), pẹ̀lú kẹ́mísírì glaze nínú library kékeré tí a ń pín.",
-    "stackServer": "API TypeScript lórí Node.js 24 àti Express 5, pẹ̀lú MongoDB 9, tí ó ju ìdánwò aládàáṣe 350 lọ ń ṣàyẹ̀wò.",
+    "stackServer": "API TypeScript lórí Node.js 24 àti Express 5, pẹ̀lú MongoDB 9, tí ó ju ìdánwò aládàáṣe 1,800 lọ ń ṣàyẹ̀wò.",
     "stackHosting": "Ó ń ṣiṣẹ́ nínú Docker lórí Amazon Web Services, lẹ́yìn nginx pẹ̀lú HTTPS láti Let's Encrypt.",
     "stackDeploy": "GitHub Actions ló ń gbé e jáde: a ń kọ́ àwọn image, a sì ń dán wọn wò ní gbogbo àyípadà, ìgbéjáde sì ń wọlé sí AWS láìsí kọ́kọ́rọ́ tí a fi pamọ́.",
     "creditsHeading": "Ọpẹ́",

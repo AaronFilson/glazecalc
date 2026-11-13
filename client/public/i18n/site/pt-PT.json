@@ -54,7 +54,7 @@
     "builtHeading": "Como é feito",
     "built": "O Glazecalc começou em 2017 e foi refeito em 2026. É uma pequena aplicação web, e o seu <source>código-fonte está no GitHub</source> sob a licença MIT.",
     "stackBrowser": "Angular 22 no navegador (componentes autónomos e signals), com a química dos vidrados numa pequena biblioteca partilhada.",
-    "stackServer": "Uma API em TypeScript sobre Node.js 24 e Express 5, com MongoDB 9, verificada por mais de 350 testes automáticos.",
+    "stackServer": "Uma API em TypeScript sobre Node.js 24 e Express 5, com MongoDB 9, verificada por mais de 1800 testes automáticos.",
     "stackHosting": "Corre em Docker na Amazon Web Services, atrás de nginx, com HTTPS da Let's Encrypt.",
     "stackDeploy": "Implementado pelo GitHub Actions: as imagens são criadas e testadas a cada alteração, e as implementações iniciam sessão na AWS sem chaves guardadas.",
     "creditsHeading": "Créditos",

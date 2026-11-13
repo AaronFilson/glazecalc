@@ -54,7 +54,7 @@
     "builtHeading": "Kuidas see on ehitatud",
     "built": "Glazecalc sai alguse 2017. aastal ja ehitati uuesti 2026. aastal. See on üks väike veebirakendus ja selle <source>lähtekood on GitHubis</source> MIT-litsentsi alusel.",
     "stackBrowser": "Brauseris Angular 22 (eraldiseisvad komponendid ja signaalid), glasuurikeemia on väikeses ühises teegis.",
-    "stackServer": "TypeScripti API Node.js 24 ja Express 5 peal, andmebaasiks MongoDB 9; seda kontrollib üle 350 automaattesti.",
+    "stackServer": "TypeScripti API Node.js 24 ja Express 5 peal, andmebaasiks MongoDB 9; seda kontrollib üle 1800 automaattesti.",
     "stackHosting": "Töötab Dockeris Amazon Web Servicesis, nginxi taga, HTTPS-iga (Let’s Encrypt).",
     "stackDeploy": "Juurutamine käib GitHub Actionsiga: iga muudatuse järel ehitatakse ja testitakse konteinerikujutised ning juurutamisel logitakse AWS-i sisse ilma salvestatud võtmeteta.",
     "creditsHeading": "Tänusõnad",

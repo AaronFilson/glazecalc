@@ -54,7 +54,7 @@
     "builtHeading": "Hoe dit gebou is",
     "built": "Glazecalc het in 2017 begin en is in 2026 herbou. Dit is een klein webtoepassing, en sy <source>bronkode is op GitHub</source> onder die MIT-lisensie.",
     "stackBrowser": "Angular 22 in die blaaier (selfstandige komponente en seine), met die glasuurchemie in 'n klein gedeelde biblioteek.",
-    "stackServer": "'n TypeScript-API op Node.js 24 en Express 5, met MongoDB 9, nagegaan deur meer as 350 outomatiese toetse.",
+    "stackServer": "'n TypeScript-API op Node.js 24 en Express 5, met MongoDB 9, nagegaan deur meer as 1 800 outomatiese toetse.",
     "stackHosting": "Loop in Docker op Amazon Web Services, agter nginx met HTTPS van Let's Encrypt.",
     "stackDeploy": "Ontplooi deur GitHub Actions: beelde word by elke verandering gebou en getoets, en ontplooiings meld sonder gestoorde sleutels by AWS aan.",
     "creditsHeading": "Erkennings",

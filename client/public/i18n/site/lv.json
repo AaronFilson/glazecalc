@@ -54,7 +54,7 @@
     "builtHeading": "Kā tā ir veidota",
     "built": "Lietotne Glazecalc tapa 2017. gadā un tika pārbūvēta 2026. gadā. Tā ir viena neliela tīmekļa lietotne, un tās <source>pirmkods ir pieejams vietnē GitHub</source> saskaņā ar MIT licenci.",
     "stackBrowser": "Angular 22 pārlūkprogrammā (standalone komponenti un signāli), glazūru ķīmija – nelielā kopīgā bibliotēkā.",
-    "stackServer": "TypeScript API uz Node.js 24 un Express 5 ar MongoDB 9, ko pārbauda vairāk nekā 350 automātisko testu.",
+    "stackServer": "TypeScript API uz Node.js 24 un Express 5 ar MongoDB 9, ko pārbauda vairāk nekā 1800 automātisko testu.",
     "stackHosting": "Darbojas Docker vidē Amazon Web Services platformā aiz nginx ar HTTPS no Let’s Encrypt.",
     "stackDeploy": "Izvietošanu veic GitHub Actions: pēc katras izmaiņas konteineru attēlus izveido un pārbauda, un izvietošanas laikā pierakstās AWS bez saglabātām atslēgām.",
     "creditsHeading": "Pateicības",

@@ -54,7 +54,7 @@
     "builtHeading": "Imaynatam rurasqa",
     "built": "Glazecalcqa 2017 watapim qallarirqan, 2026 watapitaq musuqmanta rurasqa karqan. Huk huch'uy web aplicaciónmi, <source>código fuentenqa GitHubpim kachkhan</source> MIT License nisqawan.",
     "stackBrowser": "Angular 22 navegadorpi (standalone components, signals), esmalte químicawan huk huch'uy rakinakusqa qillqa wasipi.",
-    "stackServer": "Huk TypeScript API Node.js 24, Express 5 nisqakunapi, MongoDB 9-wan, 350-manta aswan automático pruebakunawan qhawasqa.",
+    "stackServer": "Huk TypeScript API Node.js 24, Express 5 nisqakunapi, MongoDB 9-wan, 1,800-manta aswan automático pruebakunawan qhawasqa.",
     "stackHosting": "Amazon Web Services nisqapi Dockerpim purin, nginx qhipapi, Let's Encrypt HTTPS-wan.",
     "stackDeploy": "GitHub Actions nisqawan churasqa: sapa t'ikraypim imagenkuna rurakun pruebakunpas, churaykunataq mana waqaychasqa llavekunawan AWS-man yaykun.",
     "creditsHeading": "Riqsichiykuna",

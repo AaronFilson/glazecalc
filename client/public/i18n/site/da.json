@@ -54,7 +54,7 @@
     "builtHeading": "Sådan er den bygget",
     "built": "Glazecalc blev startet i 2017 og bygget om i 2026. Det er én lille webapplikation, og <source>kildekoden ligger på GitHub</source> under MIT-licensen.",
     "stackBrowser": "Angular 22 i browseren (standalone-komponenter og signals), med glasurkemien i et lille delt bibliotek.",
-    "stackServer": "Et TypeScript-API på Node.js 24 og Express 5 med MongoDB 9, kontrolleret af mere end 350 automatiske test.",
+    "stackServer": "Et TypeScript-API på Node.js 24 og Express 5 med MongoDB 9, kontrolleret af mere end 1.800 automatiske test.",
     "stackHosting": "Kører i Docker på Amazon Web Services bag nginx med HTTPS fra Let's Encrypt.",
     "stackDeploy": "Udrulles med GitHub Actions: images bygges og testes ved hver ændring, og udrulningerne logger ind på AWS uden gemte nøgler.",
     "creditsHeading": "Tak til",

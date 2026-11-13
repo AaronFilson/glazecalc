@@ -54,7 +54,7 @@
     "builtHeading": "Hogyan készült",
     "built": "A Glazecalc 2017-ben indult, és 2026-ban újraírták. Egyetlen kis webalkalmazás, a <source>forráskódja a GitHubon érhető el</source>, MIT-licenccel.",
     "stackBrowser": "A böngészőben Angular 22 (önálló komponensek és signalok), a mázkémia egy kis közös kódkönyvtárban.",
-    "stackServer": "TypeScript API (Node.js 24, Express 5) MongoDB 9 adatbázissal, több mint 350 automatizált teszttel ellenőrizve.",
+    "stackServer": "TypeScript API (Node.js 24, Express 5) MongoDB 9 adatbázissal, több mint 1800 automatizált teszttel ellenőrizve.",
     "stackHosting": "Dockerben fut az Amazon Web Services rendszerén, nginx mögött, HTTPS-sel (Let's Encrypt).",
     "stackDeploy": "A telepítést a GitHub Actions végzi: minden változtatásnál elkészülnek és tesztelésen mennek át a konténerképek, a telepítés pedig tárolt kulcsok nélkül jelentkezik be az AWS-be.",
     "creditsHeading": "Közreműködők",

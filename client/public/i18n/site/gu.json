@@ -54,7 +54,7 @@
     "builtHeading": "તે કેવી રીતે બન્યું છે",
     "built": "Glazecalc 2017માં શરૂ થયું અને 2026માં ફરી બનાવાયું. તે એક નાની વેબ ઍપ્લિકેશન છે, અને તેનો <source>સોર્સ કોડ GitHub પર છે</source>, MIT License હેઠળ.",
     "stackBrowser": "બ્રાઉઝરમાં Angular 22 (સ્ટૅન્ડઅલોન કૉમ્પોનન્ટ અને સિગ્નલ), ગ્લેઝ રસાયણશાસ્ત્ર એક નાની સહિયારી લાઇબ્રેરીમાં.",
-    "stackServer": "Node.js 24 અને Express 5 પર TypeScript API, MongoDB 9 સાથે, 350થી વધુ ઑટોમેટેડ ટેસ્ટથી ચકાસેલું.",
+    "stackServer": "Node.js 24 અને Express 5 પર TypeScript API, MongoDB 9 સાથે, 1,800થી વધુ ઑટોમેટેડ ટેસ્ટથી ચકાસેલું.",
     "stackHosting": "Amazon Web Servicesમાં Dockerમાં ચાલે છે, nginxની પાછળ, Let’s Encryptના HTTPS સાથે.",
     "stackDeploy": "GitHub Actions દ્વારા ડિપ્લૉય થાય છે: દરેક ફેરફારે ઇમેજ બને છે અને ટેસ્ટ થાય છે, અને ડિપ્લૉય સંગ્રહેલી કી વગર AWSમાં સાઇન ઇન કરે છે.",
     "creditsHeading": "શ્રેય",
