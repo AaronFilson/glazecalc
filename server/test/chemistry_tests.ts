@@ -3,6 +3,7 @@ import chemistry from '../../lib/chemistry/index.js';
 import type { ChemistryError, MaterialField, MaterialInput } from '../../lib/chemistry/index.js';
 import standardData from '../../data/index.js';
 import library from '../../lib/recipe/library.js';
+import paste from '../../lib/recipe/paste.js';
 
 const expect = chai.expect;
 const calculateUMF = chemistry.calculateUMF;
@@ -118,7 +119,12 @@ describe('glaze chemistry', () => {
     });
 
     it('should calculate a Leach 4321 celadon base', () => {
-      const result = calculateUMF({ 'Potash Feldspar': 40, Silica: 30, Whiting: 20, Kaolin: 10 });
+      const result = calculateUMF({
+        'Potash Feldspar (theoretical)': 40,
+        Silica: 30,
+        Whiting: 20,
+        'Kaolin (theoretical)': 10
+      });
       expect(result.umf.K2O).to.be.closeTo(0.2645, 0.0001);
       expect(result.umf.CaO).to.be.closeTo(0.7355, 0.0001);
       expect(result.umf.Al2O3).to.be.closeTo(0.4071, 0.0001);
@@ -130,7 +136,12 @@ describe('glaze chemistry', () => {
 
     it("should calculate the expansion as Digitalfire and Glazy do: Leach 4321's 7.49", () => {
       // Glazy's help works this glaze through to 7.49 (https://help.glazy.org/concepts/analyses).
-      const result = calculateUMF({ 'Potash Feldspar': 40, Silica: 30, Whiting: 20, Kaolin: 10 });
+      const result = calculateUMF({
+        'Potash Feldspar (theoretical)': 40,
+        Silica: 30,
+        Whiting: 20,
+        'Kaolin (theoretical)': 10
+      });
       expect(result.expansion).to.be.closeTo(7.49, 0.005);
       // Weight percent times each oxide's coefficient, on an analysis normalized to 100.
       expect(chemistry.expansion({ SiO2: 50, Na2O: 50 })).to.be.closeTo(50 * 0.035 + 50 * 0.387, 1e-9);
@@ -141,22 +152,42 @@ describe('glaze chemistry', () => {
     });
 
     it('should report fired oxide weight percents that total 100', () => {
-      const result = calculateUMF({ 'Potash Feldspar': 40, Silica: 30, Whiting: 20, Kaolin: 10 });
+      const result = calculateUMF({
+        'Potash Feldspar (theoretical)': 40,
+        Silica: 30,
+        Whiting: 20,
+        'Kaolin (theoretical)': 10
+      });
       const total = Object.keys(result.analysis).reduce((sum, oxide) => sum + result.analysis[oxide], 0);
       expect(total).to.be.closeTo(100, 1e-9);
       expect(result.analysis.SiO2).to.be.closeTo(67.43, 0.01);
     });
 
     it('should not depend on batch size', () => {
-      const small = calculateUMF({ 'Potash Feldspar': 40, Silica: 30, Whiting: 20, Kaolin: 10 });
-      const large = calculateUMF({ 'Potash Feldspar': 4000, Silica: 3000, Whiting: 2000, Kaolin: 1000 });
+      const small = calculateUMF({
+        'Potash Feldspar (theoretical)': 40,
+        Silica: 30,
+        Whiting: 20,
+        'Kaolin (theoretical)': 10
+      });
+      const large = calculateUMF({
+        'Potash Feldspar (theoretical)': 4000,
+        Silica: 3000,
+        Whiting: 2000,
+        'Kaolin (theoretical)': 1000
+      });
       Object.keys(small.umf).forEach((oxide) => {
         expect(large.umf[oxide]).to.be.closeTo(small.umf[oxide], 1e-9);
       });
     });
 
     it('should match material names regardless of case, spacing and aliases', () => {
-      const result = calculateUMF({ 'potash-feldspar': 40, FLINT: 30, whiting: 20, kaolin: 10 });
+      const result = calculateUMF({
+        'potash-feldspar (Theoretical)': 40,
+        FLINT: 30,
+        whiting: 20,
+        'KAOLIN-THEORETICAL': 10
+      });
       expect(result.umf.K2O).to.be.closeTo(0.2645, 0.0001);
     });
 
@@ -169,7 +200,7 @@ describe('glaze chemistry', () => {
         }
       ];
       const result = calculateUMF(
-        { 'My Feldspar': 40, Silica: 30, Whiting: 20, Kaolin: 10, RIO: 1 },
+        { 'My Feldspar': 40, Silica: 30, Whiting: 20, 'Kaolin (theoretical)': 10, 'Red Iron Oxide (theoretical)': 1 },
         { materials: userMaterials }
       );
       const feldsparMoles = {
@@ -210,7 +241,10 @@ describe('glaze chemistry', () => {
       ]);
       expect(slip.warningCodes.map((w) => w.code)).to.deep.equal(['trace-flux']);
       // A glaze, even one with much silica, is not.
-      expect(calculateUMF({ 'Potash Feldspar': 25, Whiting: 10, Kaolin: 15, Silica: 50 }).warnings).to.eql([]);
+      expect(
+        calculateUMF({ 'Potash Feldspar (theoretical)': 25, Whiting: 10, 'Kaolin (theoretical)': 15, Silica: 50 })
+          .warnings
+      ).to.eql([]);
     });
   });
 
@@ -540,6 +574,33 @@ describe('glaze chemistry', () => {
       }
     });
 
+    // One name, one material (the 1.0 chemistry review): calculateUMF reads a name from the chemistry's own
+    // formula materials (lib/chemistry/materials.js), and the calculator from this library. "Potash Feldspar" was
+    // K₂O•Al₂O₃•6SiO₂ on the start page and Potclays 3426 in the calculator.
+    it("should give each of the chemistry's formula materials the chemistry the library gives its name", () => {
+      const percents = (material: MaterialInput) =>
+        Object.fromEntries(
+          Object.entries(chemistry.molesPerGram(material)).map(([oxide, moles]) => [oxide, moles * MW[oxide] * 100])
+        );
+      for (const builtIn of chemistry.FORMULA_MATERIALS) {
+        const ours = percents(builtIn);
+        for (const name of [builtIn.name, ...(builtIn.aliases ?? [])]) {
+          const same = (other: string) => paste.compactName(other) === paste.compactName(name);
+          for (const record of all.filter((r) => [r.name, ...(r.aliases ?? [])].some(same))) {
+            const label = `${name} (${builtIn.name}) and ${record.name}`;
+            const theirs = percents(record);
+            expect(chemistry.materialWeights(record).loi, label + ': LOI').to.be.closeTo(
+              chemistry.materialWeights(builtIn).loi,
+              0.01
+            );
+            for (const oxide of new Set([...Object.keys(ours), ...Object.keys(theirs)])) {
+              expect(theirs[oxide] ?? 0, label + ': ' + oxide).to.be.closeTo(ours[oxide] ?? 0, 0.01);
+            }
+          }
+        }
+      }
+    });
+
     it('should store additive chemistry that agrees with its analysis and LOI', () => {
       for (const additive of additives.filter((a) => !a.noChemistry && !a.chemistryOf)) {
         const weights = chemistry.materialWeights(additive);
@@ -582,12 +643,12 @@ describe('glaze chemistry', () => {
         { material: byName['China Clay'], amount: 10 }
       ]);
       const theoretical = calculateUMF({
-        'Potash Feldspar': 40,
+        'Potash Feldspar (theoretical)': 40,
         Silica: 20,
         Whiting: 10,
         Dolomite: 20,
         Talc: 5,
-        Kaolin: 10
+        'Kaolin (theoretical)': 10
       });
       Object.keys(theoretical.umf).forEach((oxide) => {
         expect(fromData.umf[oxide], oxide).to.be.closeTo(theoretical.umf[oxide], 0.001);
@@ -1468,7 +1529,7 @@ describe('glaze chemistry', () => {
 
   describe('invalid input', () => {
     it('should reject a recipe with no flux', () => {
-      expect(() => calculateUMF({ Silica: 60, Kaolin: 40 })).to.throw(/no flux/);
+      expect(() => calculateUMF({ Silica: 60, 'Kaolin (theoretical)': 40 })).to.throw(/no flux/);
     });
 
     it('should reject unknown materials', () => {
