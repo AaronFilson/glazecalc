@@ -5,8 +5,9 @@
 // lets it reach only the public internet, never this machine, its network
 // or the cloud's metadata service (169.254.169.254):
 //
-//   - https only, on port 443, to a host name (not an IP address), with a
-//     path and no query, user name or password (allowedClientIdUrl);
+//   - https only, on port 443, to a host name (not an IP address, nor this
+//     site's own), with a path and no query, user name or password
+//     (allowedClientIdUrl);
 //   - the name is resolved here, and refused if any address it gives is
 //     loopback, private, link-local, CGNAT, unique-local, multicast or
 //     otherwise special (publicAddress); the connection then goes to the
@@ -43,6 +44,7 @@ import https from 'node:https';
 import net from 'node:net';
 import * as log from '../lib/log.ts';
 import { networkKey } from '../lib/rate_limit.ts';
+import { isOwnHost } from '../lib/site.ts';
 
 /**
  * How apps named by their address may authenticate at the token endpoint
@@ -128,7 +130,9 @@ export const publicAddress = (address: string): boolean => {
 /**
  * Whether an app may be named by this address: https, port 443, a host name
  * (never an IP address or localhost), a path beyond "/", and no query, user
- * name, password or fragment.
+ * name, password or fragment; and not on this site, one under it or one above
+ * it (site.ts isOwnHost): the server would fetch from itself, and a page of
+ * the site would stand for an app.
  */
 export const allowedClientIdUrl = (id: string): boolean => {
   const url = URL.parse(id);
@@ -140,7 +144,7 @@ export const allowedClientIdUrl = (id: string): boolean => {
   if (net.isIP(host) || !host.includes('.') || /^localhost$|\.localhost$|\.local$|\.internal$/i.test(host)) {
     return false;
   }
-  return true;
+  return !isOwnHost(host);
 };
 
 /** What the network side gives back: kept small so the tests can stand in for it. */

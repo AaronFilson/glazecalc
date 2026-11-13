@@ -1309,6 +1309,26 @@ describe('OAuth: apps named by their address (CIMD)', function () {
     }
   });
 
+  it('never takes an address on this site, one under it or one above it, for an app', async () => {
+    const own = new URL(SITE).host;
+    // Were it fetched, a document would be there.
+    useNetwork(
+      network(
+        { [own]: [ADDRESS], ['www.' + own]: [ADDRESS] },
+        {
+          [own]: (path) => documentFor(SITE + path),
+          ['www.' + own]: (path) => documentFor(`https://www.${own}${path}`)
+        }
+      )
+    );
+    for (const url of [`${SITE}/client.json`, `https://www.${own}/client.json`]) {
+      expect(allowedClientIdUrl(url), url).to.equal(false);
+      const started = await authorize(url, { redirect: 'https://app.example/callback' });
+      expect(started.res.status, url).to.equal(400);
+    }
+    expect(calls).to.eql([]);
+  });
+
   it('fetches only https on 443 by name, with a path and no query', async () => {
     useNetwork(network({ 'app.example': [ADDRESS] }, {}));
     for (const url of [

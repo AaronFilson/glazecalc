@@ -55,7 +55,8 @@ assistant's grant must be a Glazecalc connection the person can see and revoke w
 - **Apps name themselves two ways.** **CIMD** from any HTTPS host (`server/oauth/cimd.ts`),
   acknowledged as oidc-provider's experimental draft 02: every fetch the server makes goes through
   a guard that allows only `https`, port 443, a host name (no IP address, `localhost`, `.local` or
-  `.internal`), a path, and no query or credentials; resolves the name itself (with c-ares, its A
+  `.internal`, nor this site's own, one under it or above it, 2026-11), a path, and no query or
+  credentials; resolves the name itself (with c-ares, its A
   and AAAA records each asked once for 1.5 s, never with getaddrinfo, whose pool of four threads
   also hashes passwords: 2026-11, the 1.0 security review) and refuses if any address is loopback,
   private, link-local (the cloud's metadata service, 169.254.169.254), CGNAT, unique-local,

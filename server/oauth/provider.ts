@@ -147,18 +147,6 @@ const NEVER_SCHEMES = new Set([
   'view-source:'
 ]);
 
-/**
- * Whether a host is this site's own, one under it or one above it
- * (glazecalcapp.com and www.glazecalcapp.com; glazecalcapp.com from staging):
- * no app is given its answer there, where the consent page would show the
- * site's own name as the place the answer goes.
- */
-const isOwnHost = (hostname: string): boolean => {
-  const own = site.rpId();
-  const host = hostname.replace(/\.+$/, '');
-  return host === own || host.endsWith('.' + own) || own.endsWith('.' + host);
-};
-
 /** Whether a redirect URI goes back to the person's own computer (an app running there). */
 export const isLoopback = (uri: string): boolean => {
   const url = URL.parse(uri);
@@ -290,7 +278,8 @@ export const checkClientMetadata = (metadata: ClientMetadata, mode: CimdAuthMode
       isLoopback(uri as string) ||
       isAppScheme(uri as string);
     if (!ok) refuse('redirect_uris must be https, an app scheme, or http to 127.0.0.1, [::1] or localhost');
-    if (url!.protocol === 'https:' && isOwnHost(url!.hostname)) {
+    // Where the consent page would show the site's own name as the place the answer goes.
+    if (url!.protocol === 'https:' && site.isOwnHost(url!.hostname)) {
       refuse("redirect_uris must be the app's own addresses, not this site's");
     }
   }
