@@ -197,7 +197,7 @@ export const registerPrompts = (server: McpServer): void => {
           .string()
           .max(10)
           .optional()
-          .describe('Where the materials are bought, so suggestions are ones sold there: US, UK, EU or AU.'),
+          .describe('Where the materials are bought, so suggestions are ones sold there: US, UK, EU, AU or JP.'),
         language: languageArg
       })
     },
@@ -240,7 +240,7 @@ export const registerPrompts = (server: McpServer): void => {
         'Finds the discontinued or scarce materials in a recipe (Custer Spar, Gerstley Borate, Albany Slip...) and rewrites it with materials sold today.',
       argsSchema: z.object({
         recipe: recipeArg,
-        region: z.string().max(10).optional().describe('Where the materials are bought: US, UK, EU or AU.'),
+        region: z.string().max(10).optional().describe('Where the materials are bought: US, UK, EU, AU or JP.'),
         language: languageArg
       })
     },

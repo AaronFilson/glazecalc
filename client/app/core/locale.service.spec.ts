@@ -204,7 +204,7 @@ describe('LocaleService', () => {
     expect(chosenRegion()).toBe('US');
   });
 
-  it('fires by SK cones and reads density in Baumé in Japan, until chosen, and lists the US library', () => {
+  it("fires by SK cones and reads density in Baumé in Japan, until chosen, and lists Japan's library", () => {
     const preferences = TestBed.inject(PreferencesService);
     const locale = TestBed.inject(LocaleService);
     preferences.remember('region', 'JP');
@@ -215,7 +215,8 @@ describe('LocaleService', () => {
       'sk',
       'baume'
     ]);
-    expect(chosenRegion()).toBe('US');
+    // Japan's own, which lists the US set too (lib/recipe/library.js).
+    expect(chosenRegion()).toBe('JP');
     // Orton cones and temperature are a setting away.
     preferences.remember('cones', 'orton');
     TestBed.tick();

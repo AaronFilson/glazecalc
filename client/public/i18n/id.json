@@ -334,7 +334,8 @@
     "US": "AS",
     "UK": "Inggris Raya",
     "EU": "UE",
-    "AU": "AU dan NZ"
+    "AU": "AU dan NZ",
+    "JP": "Jepang"
   },
   "status": {
     "discontinued": "Dihentikan",

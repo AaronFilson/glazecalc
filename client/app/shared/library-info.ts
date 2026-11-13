@@ -5,7 +5,10 @@ import { textKey, textLanguage } from '../../../lib/regions/languages';
 import { LibraryInfo } from '../core/models';
 import { codedMessage } from '../i18n/coded';
 
-/** Regions the standard library can be narrowed to; records with no region are general. */
+/**
+ * Regions the standard library can be narrowed to; records with no region are general. Japan's
+ * lists the US set too (lib/recipe/library.js).
+ */
 const region = (value: string, name: string) => ({
   value,
   /** In the page's language. */
@@ -19,7 +22,8 @@ export const REGIONS: ReadonlyArray<{ value: string; label: string }> = [
   region('US', marker('libraryRegions.US')),
   region('UK', marker('libraryRegions.UK')),
   region('EU', marker('libraryRegions.EU')),
-  region('AU', marker('libraryRegions.AU'))
+  region('AU', marker('libraryRegions.AU')),
+  region('JP', marker('libraryRegions.JP'))
 ];
 
 const REGION_KEY = 'region';

@@ -204,7 +204,7 @@ Every feature, as a potter meets it.
 - **Your own colors:** light, dark or as the device is set, and six palettes named for glazes,
   each readable in both.
 - **A standard library of 182 materials and 37 colorants and additives,** from manufacturers'
-  data sheets (and, for ashes and historical native materials, published research), for the US, UK, EU, Australia, New Zealand and the other regions, each with its source and other names, and hazards where the data sheet gives them, and each material with its own public page in every language. Discontinued materials
+  data sheets (and, for ashes and historical native materials, published research), for the US, UK, EU, Australia, New Zealand, Japan and the other regions, each with its source and other names, and hazards where the data sheet gives them, and each material with its own public page in every language. Discontinued materials
   stay for old recipes, each pointing to its modern replacement. Count colorants in the unity
   formula or leave them out, to compare with other calculators.
 - **Your own materials,** from a chemical formula or a supplier's analysis, and colorants and

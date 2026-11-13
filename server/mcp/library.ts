@@ -2,6 +2,7 @@
 // additives every installation ships with, found by name or alias the way the
 // app finds them. Loaded once, on first use, and never changed.
 import standardData from '../../data/index.js';
+import recipe from '../../lib/recipe/index.js';
 import type { AdditiveRecord, MaterialRecord } from '../../lib/recipe/index.js';
 
 /** A standard record as stored, with the fields the tools show. */
@@ -96,6 +97,8 @@ export const findAdditive = (name: string): (LibraryRecord & AdditiveRecord) | u
 /**
  * Standard materials (and additives, with `additives`) whose name, alias or
  * maker matches every word of the query, those whose name starts with it first.
+ * With a region, those its library lists, as the app's lists filter them
+ * (inRegion: Japan's lists the US set too).
  */
 export const searchLibrary = (
   query: string,
@@ -115,7 +118,7 @@ export const searchLibrary = (
   const whole = nameKey(query);
   return pool
     .filter((record) => !category || record.category === category)
-    .filter((record) => !region || !record.region?.length || record.region.includes(region))
+    .filter((record) => recipe.inRegion(record, region ?? ''))
     .filter((record) => {
       const text = nameKey([record.name, ...(record.aliases ?? []), record.manufacturer ?? ''].join(' '));
       return words.every((word) => text.includes(word));

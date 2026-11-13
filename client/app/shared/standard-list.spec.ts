@@ -102,6 +102,29 @@ describe('StandardList', () => {
     expect(localStorage.getItem('region')).toBe('UK');
   });
 
+  it("offers Japan, whose library lists Japan's own materials and the US set, not the UK's", async () => {
+    const { fixture, names, set } = await create([
+      ...RECORDS,
+      record('Fukushima Feldspar (福島長石)', { category: 'feldspar', region: ['JP'] })
+    ]);
+    const options = [...fixture.nativeElement.querySelectorAll('.standard-tools select')]
+      .find((s: HTMLSelectElement) => [...s.options].some((o) => o.value === 'UK'))
+      .querySelectorAll('option');
+    expect([...options].map((o: HTMLOptionElement) => [o.value, o.textContent?.trim()])).toEqual([
+      ['', 'All regions'],
+      ['US', 'US'],
+      ['UK', 'UK'],
+      ['EU', 'EU'],
+      ['AU', 'AU and NZ'],
+      ['JP', 'Japan']
+    ]);
+    await set('Sold in', 'JP');
+    expect(names()).toEqual(['Custer Spar', 'Fukushima Feldspar (福島長石)', 'Silica', 'Stain (proprietary)']);
+    // The US's lists none of Japan's.
+    await set('Sold in', 'US');
+    expect(names()).toEqual(['Custer Spar', 'Silica', 'Stain (proprietary)']);
+  });
+
   it('shows the region chosen last as chosen, not just filtered by', async () => {
     localStorage.setItem('region', 'UK');
     const { fixture, names } = await create();

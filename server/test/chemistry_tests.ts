@@ -2,6 +2,7 @@ import * as chai from 'chai';
 import chemistry from '../../lib/chemistry/index.js';
 import type { ChemistryError, MaterialField, MaterialInput } from '../../lib/chemistry/index.js';
 import standardData from '../../data/index.js';
+import library from '../../lib/recipe/library.js';
 
 const expect = chai.expect;
 const calculateUMF = chemistry.calculateUMF;
@@ -477,12 +478,12 @@ describe('glaze chemistry', () => {
       }
     });
 
-    it('should name, for each old feldspar, a substitute sold in each region', () => {
+    it("should name, for each old feldspar, a substitute each region's library lists", () => {
       for (const record of old.filter((r) => r.category === 'feldspar')) {
-        for (const region of ['US', 'UK', 'EU', 'AU']) {
+        for (const region of ['US', 'UK', 'EU', 'AU', 'JP']) {
           const sold = (record.substitutes ?? [])
             .map((name) => current(name, materials))
-            .filter((sub) => sub && (!sub.region?.length || sub.region.includes(region)));
+            .filter((sub) => sub && library.inRegion(sub, region));
           expect(sold.length, record.name + ' in ' + region).to.be.greaterThan(0);
         }
       }

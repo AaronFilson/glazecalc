@@ -109,14 +109,37 @@ describe('LocalEquivalents', () => {
     }
   });
 
-  // Japan's materials (region JP) are not a library of their own: they are named by the country.
-  it('names a country that is not a library region by its own name, as Japan for its feldspars', async () => {
-    const { rows } = await create('US', [
+  // Japan's library lists its own materials and the US set (lib/recipe/library.js).
+  it("lists for a potter in Japan what neither Japan's nor the US's materials include, nearest of either first", async () => {
+    const { element, rows } = await create('JP', [
       feldspar('Fukushima Feldspar (福島長石)', ['JP'], 10.8, 3.8),
       feldspar('Mahavir Potash Feldspar', ['US'], 10.5, 3.5)
+    ]);
+    expect(element.querySelector('caption')?.textContent).toContain(
+      'Materials not sold in Japan, each with the closest sold there'
+    );
+    expect(element.querySelector('thead')?.textContent).toContain('Closest sold in Japan');
+    // The US's and Japan's are not listed; the EU's and the UK's are, against both.
+    const listed = rows().map((row) => row[0]);
+    expect(listed).not.toContain('Custer Spar (Discontinued 2023)');
+    expect(listed).not.toContain('Mahavir Potash Feldspar');
+    expect(listed).not.toContain('Fukushima Feldspar (福島長石)');
+    const kalifeldspat = rows().find((row) => row[0] === 'Kalifeldspat (Bodmer 537)')!;
+    expect(kalifeldspat[1]).toBe('EU');
+    expect(kalifeldspat[2]).toMatch(
+      /^Mahavir Potash Feldspar \(differs by .*\) ?Fukushima Feldspar \(福島長石\) \(differs/
+    );
+  });
+
+  it('names Japan as the filters do, and a country that is not a library region by its own name', async () => {
+    const { rows } = await create('US', [
+      feldspar('Fukushima Feldspar (福島長石)', ['JP'], 10.8, 3.8),
+      feldspar('Mahavir Potash Feldspar', ['US'], 10.5, 3.5),
+      feldspar('Canadian Spar', ['CA'], 10.6, 3.6)
     ]);
     const fukushima = rows().find((row) => row[0] === 'Fukushima Feldspar (福島長石)')!;
     expect(fukushima[1]).toBe('Japan');
     expect(fukushima[2]).toMatch(/^Mahavir Potash Feldspar \(differs by/);
+    expect(rows().find((row) => row[0] === 'Canadian Spar')![1]).toBe('Canada');
   });
 });

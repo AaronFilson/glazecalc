@@ -8,7 +8,10 @@ import suppliers from '../../lib/regions/suppliers.js';
 import workplace from '../../lib/regions/workplace.js';
 import safety from '../../lib/regions/safety.js';
 import numbers from '../../lib/recipe/numbers.js';
+import recipe from '../../lib/recipe/index.js';
+import type { MaterialRecord } from '../../lib/recipe/index.js';
 import type { SafetyLine } from '../../lib/regions/safety.js';
+import standardData from '../../data/index.js';
 import { expect } from './support/app.ts';
 
 // Who to call, by region: the data the home-safety guide shows. A wrong or
@@ -25,7 +28,7 @@ describe('regions', () => {
       expect(region.languages.length, region.name).to.be.above(0);
       expect(['C', 'F']).to.include(region.temperature);
       expect(['orton', 'temperature', 'sk']).to.include(region.cones);
-      expect(['US', 'UK', 'EU', 'AU']).to.include(region.library);
+      expect(['US', 'UK', 'EU', 'AU', 'JP']).to.include(region.library);
       // Each language-region pair is a locale the runtime knows how to format (es-419 in Mexico: es-MX).
       for (const language of region.languages) {
         const locale = regions.formatLocaleFor(language, region.code, 'auto');
@@ -324,7 +327,7 @@ describe('region facts', () => {
 describe('Japan', () => {
   const yearAgo = Date.now() - 366 * 24 * 60 * 60 * 1000;
 
-  it('fires by SK cones, reads density in Baumé, and lists the US library until its own materials exist', () => {
+  it('fires by SK cones, reads density in Baumé, and lists its own library', () => {
     expect(regions.regionFor('JP')).to.eql({
       code: 'JP',
       name: 'Japan',
@@ -333,10 +336,26 @@ describe('Japan', () => {
       temperature: 'C',
       cones: 'sk',
       density: 'baume',
-      library: 'US',
+      library: 'JP',
       currency: 'JPY'
     });
     expect(regions.formatLocaleFor('en', 'JP', 'auto')).to.equal('en-JP-u-ca-gregory-nu-latn');
+  });
+
+  // The owner's decision (2026-11-12): Japan's library has its own materials and the US set it listed
+  // before, so no Japanese potter loses one they could pick.
+  it("lists Japan's own materials and the US set, not the EU's, and swaps an old stone for Japan's own", () => {
+    const library = regions.regionFor('JP')!.library;
+    const materials = standardData.load('materials') as MaterialRecord[];
+    const listed = materials.filter((record) => recipe.inRegion(record, library)).map((record) => record.name);
+    expect(listed).to.include.members(['Fukushima Feldspar (福島長石)', 'Minspar 200', 'Silica']);
+    expect(listed).to.not.include('Feldspath potassique FP325 (Ceradel)');
+    for (const record of materials.filter((m) => m.region?.includes('US')))
+      expect(listed, record.name).to.include(record.name);
+    // Jingdezhen's porcelain stone names Cornwall stones first and Amakusa stone last: Japan's comes first there.
+    const find = (name: string) => materials.find((record) => record.name === name);
+    const stone = { ...find('Jingdezhen Porcelain Stone, Sanbaopeng')!, amount: '100' };
+    expect(recipe.modernMaterials([stone], find, library).swaps[0]!.to).to.equal('Amakusa Pottery Stone (天草陶石)');
   });
 
   it("gives 119, the poison centre's two public lines (acute cases only) and #8000 for children", () => {
@@ -569,8 +588,8 @@ describe('regions before Turkey', () => {
     // Changed once on purpose: the verification pass of 2026-10-19 changed Japan's #8000 note (who answers,
     // what it costs), its food note (the 2025 revision's dates) and JSOH's check date. Again on 2026-11-05:
     // Croatia lists Tapiker (the owner's browsing export, round 15). Again on 2026-11-08: Lithuania lists
-    // Keramikams.lt, Latvia Keramserviss, Croatia Artist Vito.
-    expect(hash).to.equal('73b0f4909176bddcad0bcfda0738a1437564139d98c3f0325c6968b034e28829');
+    // Keramikams.lt, Latvia Keramserviss, Croatia Artist Vito. Again on 2026-11-12: Japan's library is its own, JP (the owner's decision).
+    expect(hash).to.equal('6165aed0abaa7ce6551a8731a9457b8875191d1be3189e05f0fa34a115d1cf23');
   });
 });
 
@@ -595,7 +614,8 @@ describe('regions before Korea', () => {
     // Changed once on purpose (2026-10-19): Japan's, as above, and Türkiye's UZEM (free, for the public),
     // its silica and mask check dates. Again on 2026-11-05: Croatia lists Tapiker (round 15). Again on
     // 2026-11-08: Lithuania lists Keramikams.lt, Latvia Keramserviss, Croatia Artist Vito.
-    expect(hash).to.equal('ae516d85c00ba0651719e7f4ee177df0056170e6715f1f138041e924135ba58b');
+    // Again on 2026-11-12: Japan's library is its own, JP (the owner's decision).
+    expect(hash).to.equal('56f40e7086b67c1e251d6c0b887ddb529cc52adcec8fdeab6272224f57318bc2');
   });
 });
 
@@ -622,7 +642,8 @@ describe('regions before China', () => {
     // 2026-10-19: Japan's and Türkiye's, as above, and Taiwan's silica limit until 2027 (before).
     // Again on 2026-10-20: Taiwan's 112 note says plainly what 112 does when a mobile has no signal.
     // Again on 2026-11-05: Croatia lists Tapiker (round 15). Again on 2026-11-08: Lithuania lists Keramikams.lt, Latvia Keramserviss, Croatia Artist Vito.
-    expect(hash).to.equal('b60e42bf7aff3c5ee5bed00fb039cacd47442cb6ab6f83618cdadad01912d8a7');
+    // Again on 2026-11-12: Japan's library is its own, JP (the owner's decision).
+    expect(hash).to.equal('cecc977ccf0f5bb9bc5e2d5bec6a2ccca8a4e7036d293220e17d06846ce68249');
   });
 });
 
@@ -650,7 +671,8 @@ describe('regions before Vietnam', () => {
     // Hong Kong's food rules (none) and shop, Indonesia's in-force date, Thailand's and the Philippines'
     // shops, and the Philippines' silica limit. Again on 2026-10-20: Taiwan's 112 note. Again on 2026-11-05:
     // Croatia lists Tapiker (round 15). Again on 2026-11-08: Lithuania lists Keramikams.lt, Latvia Keramserviss, Croatia Artist Vito.
-    expect(hash).to.equal('157e980c9cc16e74f9c42f8c562ac60075190e715f00636380d7661fed43355f');
+    // Again on 2026-11-12: Japan's library is its own, JP (the owner's decision).
+    expect(hash).to.equal('ee7767ff4bca9fbfcd64f83358d597310a77b05d405c0be3f1e9b3b514e0efe3');
   });
 });
 
@@ -676,7 +698,8 @@ describe('regions after the verification pass of 2026-10-19', () => {
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
     // Changed on purpose on 2026-10-20: Taiwan's 112 note, and Vietnam's silica note reworded. Again on 2026-11-05: Croatia lists Tapiker (round 15).
     // Again on 2026-11-08: Lithuania lists Keramikams.lt, Latvia Keramserviss, Croatia Artist Vito.
-    expect(hash).to.equal('4339f3f576f712af5143df558c7d2c80a26c770ad441e9baa127633167186d4a');
+    // Again on 2026-11-12: Japan's library is its own, JP (the owner's decision).
+    expect(hash).to.equal('c529924f94a744de4475c6ab67543e638e9ad7e3c094c1b8092b68320945c6c9');
   });
 });
 

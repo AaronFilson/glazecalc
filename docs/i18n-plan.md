@@ -112,7 +112,8 @@ Everything is stored with the account (like the theme and lead today), with a co
 is right. Visitors keep theirs in the browser only.
 
 The library's region filter (`chosenRegion()`) follows the region setting. EU countries keep the EU material set and
-add local trade names as aliases; Ireland, whose shops sell the UK's materials, has the UK's.
+add local trade names as aliases; Ireland, whose shops sell the UK's materials, has the UK's. Japan has its own, which
+lists the US set too ([the Asia plan](asia-plan.md), decision 5).
 
 ## Phase 1: groundwork, in English (about 2–3 weeks)
 

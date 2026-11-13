@@ -334,7 +334,8 @@
     "US": "US",
     "UK": "UK",
     "EU": "EU",
-    "AU": "AU en NZ"
+    "AU": "AU en NZ",
+    "JP": "Japan"
   },
   "status": {
     "discontinued": "Niet meer leverbaar",

@@ -334,7 +334,8 @@
     "US": "ABD",
     "UK": "Birleşik Krallık",
     "EU": "AB",
-    "AU": "Avustralya ve Yeni Zelanda"
+    "AU": "Avustralya ve Yeni Zelanda",
+    "JP": "Japonya"
   },
   "status": {
     "discontinued": "Üretimi durduruldu",

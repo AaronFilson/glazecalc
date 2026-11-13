@@ -334,7 +334,8 @@
     "US": "VSA",
     "UK": "VK",
     "EU": "EU",
-    "AU": "AU en NS"
+    "AU": "AU en NS",
+    "JP": "Japan"
   },
   "status": {
     "discontinued": "Gestaak",

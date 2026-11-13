@@ -334,7 +334,8 @@
     "US": "US",
     "UK": "UK",
     "EU": "EU",
-    "AU": "AU and NZ"
+    "AU": "AU and NZ",
+    "JP": "Japan"
   },
   "status": {
     "discontinued": "Discontinued",
