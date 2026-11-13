@@ -223,7 +223,7 @@
         ],
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-724654236968-us-west-2",
-          "S3Key": "6641676ab9670fdf2b7c8ae8fd2d5f1cda482a162a7e16316e5d9d75542cd56b.zip"
+          "S3Key": "89ea9ec8fdd09d36bee893943d89835d289604b12f699db8bb737ec340385867.zip"
         },
         "Environment": {
           "Variables": {
@@ -260,7 +260,7 @@
       "DeletionPolicy": "RetainExceptOnCreate",
       "Metadata": {
         "aws:cdk:path": "glazecalc-mail-inbound/Forwarder/Resource",
-        "aws:asset:path": "asset.6641676ab9670fdf2b7c8ae8fd2d5f1cda482a162a7e16316e5d9d75542cd56b",
+        "aws:asset:path": "asset.89ea9ec8fdd09d36bee893943d89835d289604b12f699db8bb737ec340385867",
         "aws:asset:is-bundled": false,
         "aws:asset:property": "Code"
       }

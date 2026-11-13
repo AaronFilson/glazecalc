@@ -6,6 +6,10 @@
 //   From      "<original display name> via Glazecalc" <forwarder address>
 //   Reply-To  the original sender (replying goes to them, not to the forwarder);
 //             if the sender set a Reply-To of their own, that address is used
+//   renamed   SES's own Authentication-Results (its SPF, DKIM and DMARC checks
+//             of the original) to X-Original-Authentication-Results: the inbox
+//             checks the forwarded message itself, and would take it as its own
+//   Subject   "[Failed DMARC] " in front, when the original failed DMARC
 //   removed   Return-Path, Sender, DKIM-Signature and other headers that would
 //             not match the new sender, or that SES sets itself
 // Every other header, and the body, are passed on byte for byte.
@@ -14,6 +18,8 @@
 // character and back, so non-ASCII bytes in headers or the body survive.
 
 export const FORWARDED_HEADER = 'X-Glazecalc-Forwarded';
+export const ORIGINAL_RESULTS_HEADER = 'X-Original-Authentication-Results';
+export const FAILED_DMARC = '[Failed DMARC]';
 
 const DROP_HEADERS = new Set([
   'from',
@@ -28,6 +34,8 @@ const DROP_HEADERS = new Set([
   'dkim-filter',
   'x-google-dkim-signature',
   'authentication-results',
+  // Only the one made from SES's below: one the sender wrote could say anything.
+  ORIGINAL_RESULTS_HEADER.toLowerCase(),
   'received-spf',
   'return-receipt-to',
   'disposition-notification-to',
@@ -170,13 +178,59 @@ export function isLoop(raw, forwarderAddress) {
   return !!from && parseMailbox(from.value).address?.toLowerCase() === forwarderAddress.toLowerCase();
 }
 
-/** True if SES's scan marked the message as spam or as carrying a virus (receipt: an SES event record's receipt). */
-export function shouldDrop(receipt) {
-  return receipt?.spamVerdict?.status === 'FAIL' || receipt?.virusVerdict?.status === 'FAIL';
+/** True if SES's DMARC check of the message failed (receipt: an SES event record's receipt). */
+export function failsDmarc(receipt) {
+  return receipt?.dmarcVerdict?.status === 'FAIL';
 }
 
-/** The message to send to the owner, as a Buffer. */
-export function rewriteMessage(raw, forwarderAddress) {
+/**
+ * The DMARC policy of the sender's domain, which SES gives with a failed check: NONE, QUARANTINE or REJECT, or ''.
+ * SES's reference describes a string ("reject"), its own example an object ({ status: 'REJECT' }): either is read.
+ */
+function dmarcPolicy(receipt) {
+  const policy = receipt?.dmarcPolicy;
+  return String((typeof policy === 'object' ? policy?.status : policy) ?? '').toUpperCase();
+}
+
+/**
+ * Why the message is not forwarded, from SES's verdicts (receipt: an SES event record's receipt), or null: the scan
+ * marked it as spam or as carrying a virus, or it failed DMARC and the sender's domain asks that such mail be
+ * rejected or quarantined (the From is forged, then, or the domain's own mail is set up wrong).
+ */
+export function dropReason(receipt) {
+  if (receipt?.spamVerdict?.status === 'FAIL' || receipt?.virusVerdict?.status === 'FAIL') {
+    return 'spam or virus verdict FAIL';
+  }
+  const policy = dmarcPolicy(receipt);
+  if (failsDmarc(receipt) && (policy === 'REJECT' || policy === 'QUARANTINE')) {
+    return `DMARC FAIL, and the sender's domain asks for ${policy.toLowerCase()}`;
+  }
+  return null;
+}
+
+/**
+ * SES's own Authentication-Results: the first one, since SES adds it at the top, and only if it names SES. One
+ * further down came with the message, and could say anything.
+ */
+const sesResults = (parsed) => {
+  const first = header(parsed, 'authentication-results');
+  return first && /^amazonses\.com\s*(;|$)/i.test(first.value) ? first : null;
+};
+
+/** A header's raw text under another name. */
+const renamed = (h, name) => name + h.raw.slice(h.raw.indexOf(':'));
+
+/** A Subject header with "[Failed DMARC]" in front of what it says. */
+const failedDmarcSubject = (h) => {
+  const text = h.raw.slice(h.raw.indexOf(':') + 1).replace(/^[ \t]+/, '');
+  return `${h.name}: ${FAILED_DMARC}${text ? ' ' + text : ''}`;
+};
+
+/**
+ * The message to send to the owner, as a Buffer. failedDmarc: SES's DMARC check of it failed (failsDmarc), so its
+ * Subject says so.
+ */
+export function rewriteMessage(raw, forwarderAddress, { failedDmarc = false } = {}) {
   const parsed = parseMessage(raw);
   const { eol } = parsed;
   const fromHeader = header(parsed, 'from');
@@ -191,12 +245,18 @@ export function rewriteMessage(raw, forwarderAddress) {
     added.push(`Reply-To: ${formatMailbox(replyTo.address ? replyTo.name : sender.name, replyAddress, eol)}`);
   }
   added.push(`${FORWARDED_HEADER}: 1`);
+  if (failedDmarc && !header(parsed, 'subject')) added.push(`Subject: ${FAILED_DMARC}`);
 
+  const results = sesResults(parsed);
   const kept = parsed.headers
     .filter((h) => {
       const name = h.name.toLowerCase();
-      return !DROP_HEADERS.has(name) && !DROP_PREFIXES.some((p) => name.startsWith(p));
+      return h === results || (!DROP_HEADERS.has(name) && !DROP_PREFIXES.some((p) => name.startsWith(p)));
     })
-    .map((h) => h.raw);
+    .map((h) => {
+      if (h === results) return renamed(h, ORIGINAL_RESULTS_HEADER);
+      if (failedDmarc && h.name.toLowerCase() === 'subject') return failedDmarcSubject(h);
+      return h.raw;
+    });
   return Buffer.from(added.concat(kept).join(eol) + parsed.gap + parsed.body, 'latin1');
 }
