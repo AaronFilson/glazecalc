@@ -1258,6 +1258,25 @@ describe('glaze chemistry', () => {
       expect(thin.oxides.find((o) => o.oxide === 'Al2O3')!.verdict).to.equal('far');
     });
 
+    it('should order oxides that tie by name the same in every language the reader has', () => {
+      // TiO2 and ZrO2, neither in the target, tie on group and amount; in Estonian, localeCompare
+      // without a locale put ZrO2 first. Here every comparison without a locale is made Estonian.
+      const target = { CaO: 1, Al2O3: 0.4, SiO2: 3 };
+      const moles = { CaO: 1, Al2O3: 0.4, SiO2: 3, TiO2: 0.05, ZrO2: 0.05 };
+      const original = String.prototype.localeCompare;
+      const estonian = function (this: string, that: string, locales?: string | string[], options?: object) {
+        return original.call(this, that, locales ?? 'et', options);
+      };
+      String.prototype.localeCompare = estonian as typeof original;
+      let order: string[];
+      try {
+        order = chemistry.closeness(target, moles).oxides.map((o) => o.oxide);
+      } finally {
+        String.prototype.localeCompare = original;
+      }
+      expect(order.indexOf('TiO2')).to.be.below(order.indexOf('ZrO2'));
+    });
+
     describe('what it says of the materials', () => {
       // A cone 6 glaze matched from what is on the shelf, as Match with what I have does.
       const recipe: Array<[string, number]> = [
