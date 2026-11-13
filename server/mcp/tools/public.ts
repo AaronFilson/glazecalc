@@ -49,12 +49,13 @@ import { shelfMaterials } from '../shelf.ts';
 /** Whether the tool only reads and changes nothing anywhere: true for every tool here. */
 const READ_ONLY = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false } as const;
 
-const REGIONS = ['US', 'UK', 'EU', 'AU'] as const;
+/** The library's regions (lib/regions: each region's library); JP lists the US set too (lib/recipe/library.js). */
+const REGIONS = ['US', 'UK', 'EU', 'AU', 'JP'] as const;
 const regionArg = z
   .enum(REGIONS)
   .optional()
   .describe(
-    'Where the potter buys materials, so suggestions are ones sold there: US, UK, EU or AU. Leave it out for any.'
+    "Where the potter buys materials, so suggestions are ones sold there: US, UK, EU, AU or JP (Japan's list has the US materials too). Leave it out for any."
   );
 
 /** A library record, short, for a list. */

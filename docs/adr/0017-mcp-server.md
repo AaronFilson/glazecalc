@@ -81,7 +81,9 @@ an assistant to act for one person that is not their web session.
   Nothing a caller sends is stored by the app. nginx's access log, kept 14 days as for every page,
   records each request's IP address, time, request line (`POST /mcp`, never the body), status and
   user agent ([processing record](../processing-record.md), "Web server logs"); the privacy page and
-  the assistants page say so.
+  the assistants page say so. Server 1.5.0 (2026-11, backward compatible) adds `JP` to the `region`
+  that `search_materials` and `suggest_substitutes` take: Japan's library, which lists the Japanese
+  materials and the US set too, filtered as the app filters it (`inRegion`, `lib/recipe/library.js`).
 - **The guides, as a tool and as resources** (`server/mcp/guides.ts`, `server/mcp/tools/guides.ts`):
   `search_guides` searches the guides' sections in the language asked for (an app language, else
   English), and the English guides where that language finds nothing, saying so; each hit has the

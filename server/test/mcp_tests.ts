@@ -4,6 +4,7 @@
 import chemistry from '../../lib/chemistry/index.js';
 import standardData from '../../data/index.js';
 import recipe from '../../lib/recipe/index.js';
+import regions from '../../lib/regions/index.js';
 import {
   countFit,
   FITS_ANYONE_ALL_PER_MINUTE,
@@ -423,6 +424,22 @@ describe('MCP: the public tools', () => {
     expect(epk.material.oxides.SiO2).to.equal(45.7);
     const missing = await call('get_material', { name: 'Unobtainium' });
     expect(missing.isError).to.equal(true);
+  });
+
+  it("search_materials lists, in Japan's library, Japan's own materials and the US set, not the EU's", async () => {
+    const names = async (query: string, region: string) =>
+      (await data('search_materials', { query, region })).materials.map((m: { name: string }) => m.name);
+    // The library a potter in Japan has, from the region's data, as the app picks it.
+    const japan = regions.regionFor('JP')!.library;
+    expect(await names('fukushima', japan)).to.eql(['Fukushima Feldspar (福島長石)']);
+    expect(await names('mahavir', japan)).to.eql(['Mahavir Potash Feldspar']);
+    expect(await names('FP325', japan)).to.eql([]);
+    // The US library does not list Japan's.
+    expect(await names('fukushima', 'US')).to.eql([]);
+    const listed = ((await rpc('tools/list')).body!.result as { tools: Json[] }).tools;
+    const search = listed.find((t) => t.name === 'search_materials')!;
+    const region = (search.inputSchema as { properties: Record<string, { enum?: string[] }> }).properties.region!;
+    expect(region.enum).to.eql(['US', 'UK', 'EU', 'AU', 'JP']);
   });
 
   it('analyze_recipe gives the unity formula the app works out', async () => {
