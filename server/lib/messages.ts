@@ -75,6 +75,8 @@ export const MESSAGES = {
   'recovery-code-wrong': 'That recovery code is not correct, or it has already been used.',
   'passkey-failed': 'The passkey could not be checked. Please try again, or use another way to sign in.',
   'passkey-unknown': 'This passkey does not belong to any Glazecalc account. It may have been removed.',
+  'passkey-after-reset':
+    "This account's password was reset, so a passkey does not sign in on its own until you sign in once with the new password and then your passkey. Please enter your email and password first.",
 
   // Two-step sign-in: setting it up on the account page.
   'mfa-needs-confirmed-email': 'Please confirm your email before turning on two-step sign-in.',
@@ -169,6 +171,7 @@ export const MESSAGES = {
   'nothing-to-update': 'Nothing to update',
   'record-updated': `Successfully updated {label, select, ${ONE}}`,
   'record-invalid': `Invalid {label, select, ${ONE}}`,
+  'record-too-large': `This {label, select, ${ONE}} is too large to save: {limit, select, bytes {more than {most} KB in all} depth {lists within lists more than {most} deep} items {a list of more than {most} items} chars {a text of more than {most} characters} other {more than a record can hold}}.`,
   'record-deleted': `Successfully deleted {label, select, ${ONE}}`,
   'record-trashed': `Moved the {label, select, ${ONE}} to the Trash. It can be put back for 30 days.`,
   'record-undone': `Went back to the earlier version of the {label, select, ${ONE}}.`,
@@ -292,6 +295,7 @@ export const MESSAGES = {
     'This access token has moved too many records to the Trash in the last hour. Please try again later.',
   'too-many-changes':
     'Too many changes were made to this account with access tokens. Please wait a while and try again; changes on the website still work.',
+  'too-many-saves': 'Too many changes were saved to this account in a short time. Please wait a while and try again.',
   'too-many-mcp': 'Too many requests to the Glazecalc tools for AI assistants. ' + WAIT,
   'too-many-oauth': 'Too many requests to connect apps from this address. ' + WAIT,
   'too-many-registrations': 'Too many apps registered themselves. Please try again later.',

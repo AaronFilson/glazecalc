@@ -43,7 +43,7 @@ import { EXPORT_VERSION } from './export_data.ts';
 import { accountRecords, ACCOUNT_RECORDS_MOST, type RecordModel } from './guest_limits.ts';
 import * as log from './log.ts';
 import { say } from './messages.ts';
-import { missing, RECORD_FIELDS, type RecordKind } from './record_fields.ts';
+import { missing, RECORD_FIELDS, recordProblem, type RecordKind } from './record_fields.ts';
 import { saveVersion, titleOf } from './record_history.ts';
 import { revOf } from './record_rev.ts';
 import { setShelf } from './shelf.ts';
@@ -55,6 +55,28 @@ type Row = Record<string, unknown>;
 export const IMPORT_RECORDS_MOST = 20_000;
 /** The largest body the import routes take; nginx allows the same on these paths (deploy/nginx). */
 export const IMPORT_BODY_LIMIT = '20mb';
+/**
+ * The most lists and objects (each { or [) an import's body may hold, counted
+ * before it is read: each takes about 70 bytes of memory once read, so 20 MB
+ * of nothing else ({},{},...: 6.5 million) ran the server out of memory before
+ * any record was looked at. A file of 20 MB of real records holds well under
+ * half that: a recipe's line, or a material's oxide, is one.
+ */
+export const IMPORT_CONTAINERS_MOST = 1_000_000;
+
+/**
+ * For express.json's verify, which sees the body before it is parsed: refuses
+ * one with more than IMPORT_CONTAINERS_MOST lists and objects, as too large
+ * (413). A brace inside a text is counted too, which only ever counts more.
+ */
+export const fewEnoughContainers = (_req: unknown, _res: unknown, body: Buffer): void => {
+  let count = 0;
+  for (let i = 0; i < body.length; i++) {
+    const byte = body[i];
+    if (byte === 0x7b || byte === 0x5b) count++;
+  }
+  if (count > IMPORT_CONTAINERS_MOST) throw Object.assign(new Error('Too many lists and objects'), { status: 413 });
+};
 /** As PUT /api/prices (server/routes/user_routes.ts). */
 const PRICES_MOST = 1000;
 /** Problems listed when a file is refused. */
@@ -149,8 +171,12 @@ const pick = (source: Row, fields: string[]): Row =>
 const folded = (record: Row): string =>
   (titleOf(record) ?? '').normalize('NFKC').toLocaleLowerCase('en').replace(/\s+/g, ' ').trim();
 
-/** Upgrades a file of an earlier version, one version at a time. None yet: version 1 is the first. */
-const UPGRADES: Record<number, (file: Row) => Row> = {};
+/**
+ * Upgrades a file of an earlier version, one version at a time, by the version
+ * it upgrades from. None yet: version 1 is the first. A Map, so that nothing a
+ * file says can name anything else.
+ */
+const UPGRADES = new Map<number, (file: Row) => Row>();
 
 /** The value with ids, owners and empty values taken out, and keys in order, for comparing content. */
 const canonical = (value: unknown): unknown => {
@@ -198,6 +224,9 @@ const problemOf = async (kind: RecordKind, record: unknown, index: number): Prom
   const { fields, required } = RECORD_FIELDS[kind];
   const lacking = required.find((field) => missing(record[field]));
   if (lacking) return { kind, index, title, reason: 'missing', field: lacking };
+  // As large as the record routes take (RECORD_MOST), and before the schema looks at nesting of any depth.
+  const tooLarge = recordProblem(pick(record, fields));
+  if (tooLarge) return { kind, index, title, reason: 'invalid', field: tooLarge.field };
   try {
     await new MODELS[kind]({ ...pick(record, fields), ownedBy: 'x' }).validate();
   } catch (err) {
@@ -218,7 +247,7 @@ const readFile = (file: unknown): { file: Row; version: number } | Reply => {
   }
   if (version > EXPORT_VERSION) return { status: 422, body: say('import-newer') };
   let upgraded = file;
-  for (let v = version; v < EXPORT_VERSION; v++) upgraded = UPGRADES[v]?.(upgraded) ?? upgraded;
+  for (let v = version; v < EXPORT_VERSION; v++) upgraded = UPGRADES.get(v)?.(upgraded) ?? upgraded;
   return { file: upgraded, version };
 };
 
@@ -404,13 +433,18 @@ const fileShelf = (file: Row): string[] =>
     (key): key is string => typeof key === 'string' && key !== '' && key.length <= SHELF_KEY_LONGEST
   );
 
-/** The file's preferences that the account can take: known keys with one of their choices. */
+/**
+ * The file's preferences that the account can take: known keys with one of
+ * their choices. Known means PREFERENCES' own: `in` also finds what every
+ * object has (toString, constructor, __proto__), which then failed with a 500.
+ */
 const filePreferences = (file: Row): Row => {
   const given = isObject(file.preferences) ? file.preferences : {};
   return Object.fromEntries(
     Object.entries(given).filter(
       ([key, value]) =>
-        key in PREFERENCES && (PREFERENCES[key as keyof typeof PREFERENCES] as readonly unknown[]).includes(value)
+        Object.hasOwn(PREFERENCES, key) &&
+        (PREFERENCES[key as keyof typeof PREFERENCES] as readonly unknown[]).includes(value)
     )
   );
 };

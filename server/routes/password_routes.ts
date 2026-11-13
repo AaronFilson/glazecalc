@@ -13,8 +13,12 @@
 // (decision 5), and unlinks every Google, GitHub or Microsoft account (the owner's
 // decision of 2026-10-17, ADR 15): someone who got in may have linked their
 // own. Its notice says so, and that they can be linked again from the account
-// page. An ordinary change keeps them all. A 400 about one field names it:
-// { msg, field: 'password' }.
+// page. Passkeys stay, as the second step after the password, but until the
+// next sign-in with the new password and a second step a passkey alone no
+// longer signs in (mfa.resetAt): someone who got in with the old password may
+// have added one, and could otherwise still sign in, and stop the owner's
+// request to turn two-step sign-in off (server/clear_mfa.ts). An ordinary
+// change keeps them all. A 400 about one field names it: { msg, field: 'password' }.
 import crypto from 'node:crypto';
 import express from 'express';
 import * as accountMail from '../lib/account_mail.ts';
@@ -107,6 +111,8 @@ passwordRouter.post('/reset', limits.resetPassword, express.json(), async (req, 
   // Every provider link goes; an account made with a provider has the new password instead.
   const providers = [...new Set((user.identities ?? []).map((identity) => identity.provider))];
   user.identities = [];
+  // A passkey signs in on its own again once the new password and a second step have (server/routes/auth_routes.ts).
+  if (user.mfa?.passkeys?.length) user.mfa.resetAt = now;
   // One email says what the reset stopped: tokens, provider links and share links.
   await setPassword(user, body.password as string, { tokens, providers, shareLinks });
   return res.status(200).json(say('password-reset'));

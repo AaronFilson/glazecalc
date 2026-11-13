@@ -5,7 +5,6 @@
 // confirming a change with a fresh provider sign-in when the account has no
 // password, Microsoft's own rules (its tenant, an email never trusted), and
 // the account's data.
-import { exportAccount } from '../lib/export_data.ts';
 import * as oauth from '../lib/oauth.ts';
 import * as totp from '../lib/totp.ts';
 import AuthChallenge from '../models/auth_challenge.ts';
@@ -137,6 +136,31 @@ describe('signing in with Google, GitHub and Microsoft', () => {
       // Only a hash of the cookie is stored.
       expect(await OAuthLogin.exists({ keyHash: oauth.sha256(cookie) })).to.not.eql(null);
       expect(await OAuthLogin.exists({ keyHash: cookie })).to.eql(null);
+    });
+
+    // What code scanning asks of the cookie startOAuth sets (server/lib/session.ts; CodeQL's
+    // js/clear-text-cookie and js/client-exposed-cookie): in production it is never sent over plain
+    // http, no script reads it, and no other host can set it.
+    it('sets the cookie in production as __Host-, HttpOnly, Secure, Path=/ and SameSite=Lax, and clears it so', async () => {
+      const before = process.env.NODE_ENV;
+      process.env.NODE_ENV = 'production';
+      try {
+        const res = await api().get('/auth/google/start').redirects(0);
+        expect(res).to.have.status(303);
+        const set = ([] as string[]).concat(res.headers['set-cookie'] ?? []);
+        expect(set).to.have.length(1);
+        expect(set[0]).to.match(
+          /^__Host-glazecalc_oauth=[A-Za-z0-9_-]{43}; Max-Age=600; Path=\/; Expires=[^;]+; HttpOnly; Secure; SameSite=Lax$/
+        );
+        const ended = await api().post('/auth/finish').set('Cookie', '__Host-glazecalc_oauth=not-one-it-made');
+        expect(ended).to.have.status(400);
+        expect(ended.headers['set-cookie']).to.eql([
+          '__Host-glazecalc_oauth=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT; HttpOnly; Secure; SameSite=Lax'
+        ]);
+      } finally {
+        if (before === undefined) delete process.env.NODE_ENV;
+        else process.env.NODE_ENV = before;
+      }
     });
 
     it('asks GitHub for the email permission, with PKCE and a state', async () => {
@@ -1181,7 +1205,7 @@ describe('signing in with Google, GitHub and Microsoft', () => {
       const sub = subject();
       const { done } = await signInWith('github', { sub, email: uniqueEmail('data'), emailVerified: true });
       const user = (await User.findOne({ email: done.body.email }))!;
-      const exported = (await exportAccount(user._id))!;
+      const exported = (await api().get('/export').set(bearer(user.generateToken()))).body as Record<string, unknown>;
       const signIn = exported.signIn as { ownPassword: boolean; providers: Array<Record<string, unknown>> };
       expect(signIn.ownPassword).to.eql(false);
       expect(signIn.providers.map(({ provider, subject: s }) => ({ provider, s }))).to.eql([

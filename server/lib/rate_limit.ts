@@ -19,10 +19,11 @@ import { accessTokenIn, checkAccessToken, invalidToken } from './token_auth.ts';
 /**
  * The network an IPv6 address counts with where everyone's requests together
  * have a ceiling (the token endpoint, apps registering themselves, MCP
- * without a token, app documents and keys fetched): its /48. A /48 is often
- * free (a tunnel broker, many server plans) and holds 256 /56s, so a count by
- * /56 there would let one person fill the ceiling for everyone. Elsewhere the
- * limits keep express-rate-limit's /56, one home or office.
+ * without a token, app documents and keys fetched), and at password sign-in:
+ * its /48. A /48 is often free (a tunnel broker, many server plans) and holds
+ * 256 /56s, so a count by /56 there would let one person fill the ceiling for
+ * everyone, or guess 256 times as many passwords. Elsewhere the limits keep
+ * express-rate-limit's /56, one home or office.
  */
 export const NETWORK_BITS = 48;
 /** The key for a request's address: the address for IPv4, its /48 for IPv6. */
@@ -64,15 +65,16 @@ const limiter = (
  * Password sign-in (GET /api/signin): counts only the refused tries, so people
  * signing in from one shared address do not use up each other's; a right
  * password (signed in, or on to the second step) is not counted. signInAny
- * still bounds all of them.
+ * still bounds all of them. An IPv6 address counts with its /48 (NETWORK_BITS).
  */
-export const signIn = limiter(15, 20, 'too-many-sign-ins', { skipSuccessfulRequests: true });
+export const signIn = limiter(15, 20, 'too-many-sign-ins', { skipSuccessfulRequests: true, ipv6Subnet: NETWORK_BITS });
 /**
  * Every password sign-in, right or wrong, so that one address cannot make the
  * server check passwords without end (each check is slow on purpose,
- * server/lib/password.ts). Loose, for the many people behind one address.
+ * server/lib/password.ts). Loose, for the many people behind one address; an
+ * IPv6 one, as signIn, with its /48.
  */
-export const signInAny = limiter(15, 300, 'too-many-sign-ins');
+export const signInAny = limiter(15, 300, 'too-many-sign-ins', { ipv6Subnet: NETWORK_BITS });
 /**
  * Passkey-first sign-in (POST /api/signin/passkey): its own count, so password
  * guessing from a shared address does not stop passkey sign-in there, and only
@@ -219,6 +221,36 @@ export const tokenWriteDay = limiter(24 * 60, () => TOKEN_WRITE_LIMITS.day, 'too
   keyGenerator: (req) => writesKey(String(req.user?._id)),
   store: writesDayStore
 });
+
+/**
+ * Changes made with the web session to an account's records, a trial's
+ * included: the record routes' create, change, delete and undo, the Trash's
+ * put back and deletes, and a recipe's firing links (server/lib/record_routes.ts,
+ * server/routes/trash_routes.ts, server/lib/firing_links.ts), per account:
+ * 300 a minute and 10,000 a day. Far more than a person makes on the website
+ * (saving a blend of 66 tiles is 66 saves, a paste saves up to 30 recipes),
+ * and more than the offline outbox sends at once when it is back online (on a
+ * 429 it waits and tries again); few enough that one account cannot keep the
+ * server busy saving, or fill its disk in a day: a save can be 100 KB, and a
+ * change keeps the record's earlier version too. Before, only changes made
+ * with access tokens had a limit (TOKEN_WRITE_LIMITS), so a script holding a
+ * session had none. Read at each request, so the tests can lower them.
+ */
+export const SESSION_WRITE_LIMITS = { minute: 300, day: 10_000 } as const;
+const sessionWritesKey = (req: Request): string => 'session-writes:' + String(req.user?._id);
+const notSession = (req: Request): boolean => req.access?.via !== 'session';
+const sessionWritesMinute = limiter(1, () => SESSION_WRITE_LIMITS.minute, 'too-many-saves', {
+  skip: notSession,
+  keyGenerator: sessionWritesKey
+});
+const sessionWritesDay = limiter(24 * 60, () => SESSION_WRITE_LIMITS.day, 'too-many-saves', {
+  skip: notSession,
+  keyGenerator: (req) => sessionWritesKey(req) + ':day'
+});
+/** SESSION_WRITE_LIMITS, the minute's and the day's, for a route: after jwtAuth or requireScope, which say whose session it is. */
+export const sessionWrites = (req: Request, res: Response, next: NextFunction): void => {
+  void sessionWritesMinute(req, res, (err?: unknown) => (err ? next(err) : void sessionWritesDay(req, res, next)));
+};
 
 /**
  * Counts one change made through the MCP write tools against the account's

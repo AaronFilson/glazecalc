@@ -17,6 +17,11 @@
 //                        version, so a second undo undoes the first
 //   GET    /getStandard  the shared records from data/, for anyone (when `standard` is set)
 //
+// A create or change whose fields go over RECORD_MOST (server/lib/record_fields.ts:
+// a list's items, a text's characters, nesting, the JSON's bytes) is refused
+// with 400 record-too-large, naming the field; a token's is refused at once,
+// never kept waiting for an approval.
+//
 // Every record has a rev (a count of its changes, 0 when made) and an updatedAt
 // (server/lib/record_rev.ts). A change, delete or undo that sends If-Match:
 // "<rev>" is made only while the record is still at that rev: otherwise 409
@@ -28,7 +33,8 @@
 // can be undone; a removed record can be put back from the Trash
 // (server/routes/trash_routes.ts). The web session can use every route; an
 // access token those its scopes allow (server/lib/require_scope.ts), and what
-// it does is written to the activity log.
+// it does is written to the activity log. The session's changes count against
+// limits.sessionWrites per account, a token's against its own limits.
 //
 // When the account asks to confirm changes made with tokens (removals, or
 // every change; docs/adr/0025-confirm-before-changes.md), a token's create,
@@ -53,6 +59,8 @@ import { byOf, logActivity, moveToTrash, saveVersion, titleOf, tokenIdOf, TRASH_
 import { conflict, gone, revFilter, revOf, withBump } from './record_rev.ts';
 import requireScope from './require_scope.ts';
 import { fieldChanges, registerPreview } from './pending_changes.ts';
+import { mostOf, recordProblem } from './record_fields.ts';
+import { asDocumentJson, jsonArray, sendParts } from './stream_json.ts';
 import {
   confirmFirst,
   inputOf,
@@ -61,7 +69,8 @@ import {
   send,
   type Describe,
   type Op,
-  type OpInput
+  type OpInput,
+  type Reply
 } from './rest_changes.ts';
 import type { Area } from './scopes.ts';
 
@@ -122,15 +131,27 @@ export default function recordRoutes(
   const writing = requireScope(`${area}:write`);
   const jsonParser = express.json();
   const notFound = say('record-not-found', { label });
+  const documentJson = asDocumentJson(Model);
+
+  /** The refusal for fields over RECORD_MOST, or null when they are within it. */
+  const tooLarge = (sent: Body): Reply | null => {
+    const problem = recordProblem(sent);
+    if (!problem) return null;
+    const { limit, field } = problem;
+    return { status: 400, body: say('record-too-large', { label, limit, most: mostOf(limit) }, { field }) };
+  };
 
   const create: Op = async (who, { body, idemKey }) => {
     const source = recordIn(body, wrapper.create) ?? {};
     if (required.some((field) => missing(source[field]))) return { status: 400, body: MISSING };
+    const sent = pick(source, fields);
+    const refused = tooLarge(sent);
+    if (refused) return refused;
     const ownedBy = String(who.user._id);
     let saved;
     try {
       saved = await Model.create({
-        ...pick(source, fields),
+        ...sent,
         ownedBy,
         rev: 0,
         updatedAt: new Date(),
@@ -154,6 +175,8 @@ export default function recordRoutes(
     if (!source) return { status: 400, body: MISSING };
     const changes = pick(source, fields);
     if (!Object.keys(changes).length) return { status: 400, body: say('nothing-to-update') };
+    const refused = tooLarge(changes);
+    if (refused) return refused;
     try {
       // The record as it was, found and changed in one step, so the version kept is the one changed.
       const ownedBy = String(who.user._id);
@@ -268,29 +291,49 @@ export default function recordRoutes(
         base: { kind: 'record', area, id: String(req.params.id) }
       };
     };
+  /** Whether a create's or change's fields go over RECORD_MOST: then the Op refuses it at once, rather than it waiting. */
+  const overMost = (req: Request, wrapped?: string): boolean =>
+    recordProblem(pick(recordIn(req.body, wrapped) ?? {}, fields)) !== null;
+  const describeChange = about('pending-change', (req) => ({
+    fields: Object.keys(pick(recordIn(req.body, wrapper.change) ?? {}, fields)).join(', ')
+  }));
   const asking = {
     create: confirmFirst(area + '.create', {
       removal: false,
-      describe: async (req) => ({
-        summary: { code: 'pending-create', params: named(label, titleOf(recordIn(req.body, wrapper.create) ?? {})) }
-      })
+      describe: async (req) => {
+        if (overMost(req, wrapper.create)) return null;
+        const title = titleOf(recordIn(req.body, wrapper.create) ?? {});
+        return { summary: { code: 'pending-create', params: named(label, title) } };
+      }
     }),
     change: confirmFirst(area + '.change', {
       removal: false,
-      describe: about('pending-change', (req) => ({
-        fields: Object.keys(pick(recordIn(req.body, wrapper.change) ?? {}, fields)).join(', ')
-      }))
+      describe: async (req, who) => (overMost(req, wrapper.change) ? null : describeChange(req, who))
     }),
     remove: confirmFirst(area + '.delete', { removal: true, describe: about('pending-trash') }),
     undo: confirmFirst(area + '.undo', { removal: false, describe: about('pending-undo') })
   };
 
-  router.post('/create', writing, quota(Model, label), jsonParser, asking.create, async (req, res) => {
-    send(res, await create(whoIs(req), inputOf(req)));
-  });
+  router.post(
+    '/create',
+    writing,
+    limits.sessionWrites,
+    quota(Model, label),
+    jsonParser,
+    asking.create,
+    async (req, res) => {
+      send(res, await create(whoIs(req), inputOf(req)));
+    }
+  );
 
+  // Read lean and sent a record at a time (server/lib/stream_json.ts), as the documents would write them.
   router.get('/getAll', reading, async (req, res) => {
-    res.status(200).json(await Model.find({ ownedBy: userOf(req).id }).sort({ _id: 1 }));
+    const records = Model.find({ ownedBy: userOf(req).id })
+      .sort({ _id: 1 })
+      .lean<Body[]>()
+      .cursor();
+    res.status(200).type('json');
+    await sendParts(res, jsonArray(records, documentJson));
   });
 
   router.get('/getLatest', reading, async (req, res) => {
@@ -302,12 +345,12 @@ export default function recordRoutes(
     res.status(200).json(newest);
   });
 
-  router.put('/change/:id', writing, jsonParser, asking.change, async (req, res) => {
+  router.put('/change/:id', writing, limits.sessionWrites, jsonParser, asking.change, async (req, res) => {
     send(res, await change(whoIs(req), inputOf(req)));
   });
 
   // A removal that waits is counted against its token's removals when it is made (rest_changes.ts), not now.
-  router.delete('/delete/:id', writing, asking.remove, limits.tokenDeletes, async (req, res) => {
+  router.delete('/delete/:id', writing, limits.sessionWrites, asking.remove, limits.tokenDeletes, async (req, res) => {
     send(res, await remove(whoIs(req), inputOf(req)));
   });
 
@@ -330,7 +373,7 @@ export default function recordRoutes(
       .json(versions.map(({ _id, savedAt, by, record }) => ({ _id, savedAt, by, title: titleOf(record as Body) })));
   });
 
-  router.post('/undo/:id', writing, asking.undo, async (req, res) => {
+  router.post('/undo/:id', writing, limits.sessionWrites, asking.undo, async (req, res) => {
     send(res, await undo(whoIs(req), inputOf(req)));
   });
 
