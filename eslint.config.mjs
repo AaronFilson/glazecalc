@@ -16,7 +16,9 @@ export default tseslint.config(
       '.angular/',
       'db/',
       '.claude/',
-      'scratch/'
+      'scratch/',
+      // CDK's synthesized templates and the forwarder's copy (deploy/cdk).
+      'deploy/cdk/cdk.out/'
     ]
   },
 
@@ -64,6 +66,16 @@ export default tseslint.config(
   {
     files: ['server/test/**/*.ts'],
     languageOptions: { globals: { ...globals.mocha } }
+  },
+  // The AWS setup as CDK stacks: TypeScript run by Node as it is, as the
+  // server is (deploy/cdk/tsconfig.json); its tests use node:test.
+  {
+    files: ['deploy/cdk/**/*.ts'],
+    extends: [...tseslint.configs.recommended],
+    languageOptions: {
+      sourceType: 'module',
+      globals: { ...globals.node }
+    }
   },
   {
     // The shared chemistry module also runs in the browser bundle.

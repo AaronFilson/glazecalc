@@ -18,6 +18,8 @@ playwright-report/
 /.lighthouseci/
 /lighthouse-results/
 /numbers/
+# The CDK app's synthesized templates (deploy/cdk: cdk synth)
+/deploy/cdk/cdk.out/
 
 # Local settings loaded by the npm scripts; see .env.example
 .env
