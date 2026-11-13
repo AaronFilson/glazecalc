@@ -3381,6 +3381,37 @@ describe('RecipePage', () => {
         expect(materialsShown(root)).toEqual(['Custer Spar', 'Whiting', 'Silica']);
       });
 
+      it('says why it could not be worked out again in the compare view too, where it was asked', async () => {
+        const { fixture, router, root, page } = await startWith([WHITING, SILICA, CUSTER, G200], [MYSTERY]);
+        fill(page, [
+          [CUSTER, '40'],
+          [WHITING, '20'],
+          [SILICA, '40']
+        ]);
+        await settle(fixture);
+        click(fixture, 'Match with what I have');
+        await settle(fixture);
+        answer('/shelf', { shelf: ['G-200 EU Feldspar', 'Whiting', 'Silica'] });
+        await settle(fixture);
+        click(fixture, 'Match and compare');
+        await settle(fixture);
+        expect(router.url).toBe('/?compare=before,draft');
+
+        // From the report in the compare view, with a material that has no analysis.
+        const compare = root.querySelector('gc-recipe-compare') as HTMLElement;
+        const report = compare.querySelector('.swap-report') as HTMLElement;
+        click({ nativeElement: report }, 'Try other materials');
+        await settle(fixture);
+        await tryMaterial(fixture, report, 'Mystery spar');
+        click({ nativeElement: report }, 'Work it out again');
+        await settle(fixture);
+        const problem = root.querySelector('gc-recipe-compare .recipe-swap-problem');
+        expect(problem?.textContent?.trim()).toBe(
+          'It cannot be worked out that way: a material has no analysis to work from.'
+        );
+        expect(problem?.getAttribute('role')).toBe('alert');
+      });
+
       it('asks for the standard list again from the materials on hand', async () => {
         const fixture = TestBed.createComponent(RecipePage);
         TestBed.inject(Router).initialNavigation();

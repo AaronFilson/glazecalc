@@ -57,6 +57,9 @@
             [inRecipe]="swapKeys()"
             (rerun)="rerun($event)"
           />
+        } @else if (reportInCompare() && suggestProblem()) {
+          <!-- Worked out again from here and it could not go on: the recipe is back as it was, and this says why. -->
+          <p class="recipe-swap-problem" role="alert">{{ suggestProblem() }}</p>
         }
       </gc-recipe-compare>
     }
