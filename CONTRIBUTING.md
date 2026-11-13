@@ -23,7 +23,8 @@ language, or a potter would say it differently:
   in. Copy the words that read wrong and, if you know it, how a potter would say it. You can write in your own
   language. Tell us if it could mislead someone about safety; those are fixed first.
 - **A pull request:** translations are plain JSON and Markdown beside the English
-  (`client/public/i18n/<part>/<language>.json`, `client/public/i18n/guides/<guide>/<language>.md`).
+  (`client/public/i18n/<part>/<language>.json`, `client/public/i18n/guides/<guide>/<language>.md`, and the account
+  emails in `server/i18n/mail/<language>.json`).
   [docs/translations/README.md](docs/translations/README.md) gives the rules, and each language's glossary and style
   sheet is in `docs/translations/<language>.md`. `npm run check:i18n` checks a translation keeps the English's
   placeholders, numbers and links.
