@@ -222,12 +222,15 @@ export const finish = async (pending: PendingSignIn, hold: Hold): Promise<boolea
 };
 
 /**
- * A sign-in that passed a factor (the second step, or a passkey on its own), or
- * a change on the account page confirmed with one (server/routes/mfa_routes.ts,
- * confirmChange below), shows the owner still has a working factor, so it cancels a pending request
- * to turn two-step sign-in off (server/clear_mfa.ts, docs/mfa-plan.md item 15):
- * a later --clear is refused until --notify is run again. This also defeats a
- * clear request someone else made. One atomic $unset; the log line names no one.
+ * A sign-in that passed the second step, or a change on the account page
+ * confirmed with a factor (server/routes/mfa_routes.ts, confirmChange below),
+ * shows the owner still has the password and a working factor, so it cancels
+ * a pending request to turn two-step sign-in off (server/clear_mfa.ts,
+ * docs/mfa-plan.md item 15): a later --clear is refused until --notify is run
+ * again. This also defeats a clear request someone else made. A passkey on its
+ * own (passkey-first) does not cancel it: someone who had the password may have
+ * added the passkey, and could then keep the owner, who reset the password,
+ * from ever getting the account back. One atomic $unset; the log line names no one.
  */
 export const cancelClearRequest = async (userId: Types.ObjectId): Promise<void> => {
   const result = await User.updateOne(
@@ -239,6 +242,16 @@ export const cancelClearRequest = async (userId: Types.ObjectId): Promise<void> 
       code: 'MFA_CLEAR_CANCELLED'
     });
   }
+};
+
+/**
+ * After a password reset, a passkey alone does not sign in (mfa.resetAt,
+ * server/routes/password_routes.ts) until a sign-in with the password and a
+ * second step; this lets it again, once that sign-in passed. (A reset unlinks
+ * every provider, so the first step since one is always the password.)
+ */
+export const allowPasskeyFirst = async (userId: Types.ObjectId): Promise<void> => {
+  await User.updateOne({ _id: userId, 'mfa.resetAt': { $exists: true } }, { $unset: { 'mfa.resetAt': 1 } });
 };
 
 /** At most one "second step not finished" email per account in this long. */

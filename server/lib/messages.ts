@@ -75,6 +75,8 @@ export const MESSAGES = {
   'recovery-code-wrong': 'That recovery code is not correct, or it has already been used.',
   'passkey-failed': 'The passkey could not be checked. Please try again, or use another way to sign in.',
   'passkey-unknown': 'This passkey does not belong to any Glazecalc account. It may have been removed.',
+  'passkey-after-reset':
+    "This account's password was reset, so a passkey does not sign in on its own until you sign in once with the new password and then your passkey. Please enter your email and password first.",
 
   // Two-step sign-in: setting it up on the account page.
   'mfa-needs-confirmed-email': 'Please confirm your email before turning on two-step sign-in.',

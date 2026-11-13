@@ -130,6 +130,13 @@ export interface MfaFields {
    */
   clearRequestedAt?: Date;
   /**
+   * When the password was reset by email with a passkey on the account
+   * (server/routes/password_routes.ts), until the next sign-in with the
+   * password and a second step: meanwhile a passkey alone does not sign in
+   * (passkey-first), since someone who had the old password may have added it.
+   */
+  resetAt?: Date;
+  /**
    * When the owner was last emailed that someone entered the password but did
    * not finish the second step (server/lib/second_step.ts noticeUnfinished):
    * at most one such email a day.
@@ -292,6 +299,7 @@ const mfaSchema = new mongoose.Schema<MfaFields>(
     recoveryCodes: { type: [new mongoose.Schema({ hash: String, usedAt: Date }, { _id: false })], default: [] },
     recoveryMadeAt: Date,
     clearRequestedAt: Date,
+    resetAt: Date,
     unfinishedNoticeAt: Date,
     codeGuesses: {
       type: new mongoose.Schema(
