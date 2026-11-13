@@ -110,10 +110,13 @@ The details, with the decisions behind them:
 - **Privacy, written down:** the records GDPR and the UK GDPR ask of a small service, kept with the code: a
   [record of processing](docs/processing-record.md) (Article 30), a [breach plan](docs/breach-plan.md) (Articles 33
   and 34), and how [data-protection requests](docs/data-requests.md) are answered (Articles 12 to 22).
-- **AI assistants as first-class clients:** a stateless MCP endpoint sharing the app's recipe tools
+- **AI assistants as first-class clients:** a stateless MCP endpoint that serves the protocol's 2026-07-28 revision
+  (and the 2025 ones to older clients) and shares the app's recipe tools
   ([ADR 17](docs/adr/0017-mcp-server.md), [ADR 19](docs/adr/0019-shared-recipe-tools.md)), listed in the
   [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=com.glazecalcapp/glazecalc) and checked
-  in CI against the official conformance suite; Glazecalc's own OAuth authorization server
+  in CI against the official conformance suite; Glazecalc's own OAuth authorization server, built on the OpenID
+  Certified [oidc-provider](https://github.com/panva/node-oidc-provider) library rather than by hand, since PKCE,
+  refresh token rotation and resource indicators are each easy to get subtly wrong
   ([ADR 24](docs/adr/0024-authorization-server.md)); and changes from an app that wait for the person's yes, when
   they choose ([ADR 25](docs/adr/0025-confirm-before-changes.md)).
 - **A translation pipeline (i18n) for 57 languages, right to left (RTL) included:** Transloco with ICU messages and the language in the URL
