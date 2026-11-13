@@ -51,8 +51,8 @@
           <gc-swap-report
             [result]="result"
             [level]="2"
-            [mine]="myMaterials()"
-            [standard]="standardMaterials()"
+            [mine]="libraries.myMaterials()"
+            [standard]="libraries.standardMaterials()"
             [hideLead]="leadOff()"
             [inRecipe]="swaps.keys()"
             (rerun)="swaps.rerun($event)"
@@ -392,13 +392,13 @@
   <ng-template #fixPart>
     <gc-recipe-swaps
       [swaps]="swaps"
-      [mine]="myMaterials()"
-      [standard]="standardMaterials()"
-      [standardFailed]="standardMaterialsFailed()"
+      [mine]="libraries.myMaterials()"
+      [standard]="libraries.standardMaterials()"
+      [standardFailed]="libraries.standardMaterialsFailed()"
       [hideLead]="leadOff()"
       [inRecipe]="materialKeys()"
       [reportHere]="!views.reportInCompare()"
-      (retry)="loadStandardMaterials()"
+      (retry)="libraries.loadStandardMaterials()"
     />
   </ng-template>
   <ng-template #materialLibrary>
@@ -406,13 +406,13 @@
       [heading]="t('recipe.page.addMaterials')"
       noun="materials"
       filterFieldId="materials-filter"
-      [mine]="myMaterials()"
-      [standard]="standardMaterials()"
-      [standardFailed]="standardMaterialsFailed()"
+      [mine]="libraries.myMaterials()"
+      [standard]="libraries.standardMaterials()"
+      [standardFailed]="libraries.standardMaterialsFailed()"
       [inRecipe]="materialKeys()"
       [hideLead]="leadOff()"
       (pick)="edit.addMaterial($event)"
-      (retry)="loadStandardMaterials()"
+      (retry)="libraries.loadStandardMaterials()"
     />
   </ng-template>
   <ng-template #additivesPart>
@@ -424,13 +424,13 @@
       noun="additives"
       filterFieldId="additives-filter"
       mineLink="/additive"
-      [mine]="myAdditives()"
-      [standard]="standardAdditives()"
-      [standardFailed]="standardAdditivesFailed()"
+      [mine]="libraries.myAdditives()"
+      [standard]="libraries.standardAdditives()"
+      [standardFailed]="libraries.standardAdditivesFailed()"
       [inRecipe]="additiveKeys()"
       [hideLead]="leadOff()"
       (pick)="edit.addAdditive($event)"
-      (retry)="loadStandardAdditives()"
+      (retry)="libraries.loadStandardAdditives()"
     />
   </ng-template>
   <ng-template #hazardsCost>

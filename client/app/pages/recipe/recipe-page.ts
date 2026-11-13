@@ -4,7 +4,6 @@ import {
   DestroyRef,
   Injector,
   OnInit,
-  WritableSignal,
   afterEveryRender,
   afterNextRender,
   computed,
@@ -19,12 +18,11 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { TranslocoDirective, TranslocoService, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { map } from 'rxjs';
-import { MaterialInput } from '../../../../lib/chemistry';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { AsksBeforeLeaving } from '../../core/leave.guard';
-import { Additive, Firing, FiringLink, Material, Recipe, RecipeMaterial } from '../../core/models';
+import { Additive, Firing, FiringLink, Recipe, RecipeMaterial } from '../../core/models';
 import { PreferencesService } from '../../core/preferences.service';
 import { LocaleService } from '../../core/locale.service';
 import { PendingRecipeService } from '../../core/pending-recipe.service';
@@ -44,7 +42,6 @@ import {
 } from './recipe-layout';
 import { localDate } from '../../shared/dates';
 import { Notices, NoticesList } from '../../shared/notices';
-import { folded } from '../../shared/library-info';
 import { firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
 import { Removal } from '../../shared/remove-button';
@@ -74,6 +71,7 @@ import { recipeDrySg } from '../../../../lib/recipe/density';
 import { Reader, firingSummary } from './firing-text';
 import { focusShown } from './focus';
 import { RecipeSwaps, SwapKind, SwapUndo } from './recipe-swaps';
+import { RecipeLibraries, fetchList } from './recipe-libraries';
 import { RecipeLines } from './recipe-lines';
 import { RecipeSwapsPanel } from './recipe-swaps-panel';
 import { RecipeAdditivesTable } from './recipe-additives-table';
@@ -175,10 +173,10 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   /** Lead is off in Settings: materials with lead are not listed to add, or suggested. */
   protected readonly leadOff = computed(() => this.preferences.lead() === 'off');
   private readonly recipes = this.resources.for<Recipe>('recipe');
-  private readonly materials = this.resources.for<Material>('materials');
-  private readonly additives = this.resources.for<Additive>('additives');
 
   protected readonly notices = new Notices();
+  /** The lists to add from: the potter's own materials and additives, and the standard ones (recipe-libraries.ts). */
+  protected readonly libraries = new RecipeLibraries(this.notices);
   protected readonly saving = new Busy();
   protected readonly firstOf = firstOf;
   protected readonly additiveAmount = additiveAmount;
@@ -192,21 +190,10 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   /** The materials' names, for the limits' cone check (ash, Gerstley borate). */
   protected readonly materialNames = computed(() => this.lines().map((line) => line.name));
 
-  // The lists to add from, and the saved recipes.
-  protected readonly myMaterials = signal<Material[]>([]);
-  protected readonly standardMaterials = signal<Material[]>([]);
-  protected readonly myAdditives = signal<Additive[]>([]);
-  protected readonly standardAdditives = signal<Additive[]>([]);
-  /** The standard lists could not be fetched: the lists say so, and offer to try again. */
-  protected readonly standardMaterialsFailed = signal(false);
-  protected readonly standardAdditivesFailed = signal(false);
-  /** The account's own lists that could not be fetched: the page offers to try again. */
-  protected readonly myMaterialsFailed = signal(false);
-  protected readonly myAdditivesFailed = signal(false);
+  // The saved recipes.
+  /** The saved recipes could not be fetched: the page offers to try again, with the potter's own lists. */
   protected readonly myRecipesFailed = signal(false);
-  protected readonly ownFailed = computed(
-    () => this.myMaterialsFailed() || this.myAdditivesFailed() || this.myRecipesFailed()
-  );
+  protected readonly ownFailed = computed(() => this.libraries.mineFailed() || this.myRecipesFailed());
   protected readonly myRecipes = signal<Recipe[]>([]);
   /** The saved recipes, listed above the editor: each says what to do with it, and the focus goes back to its More. */
   private readonly savedList = viewChild(SavedRecipes);
@@ -348,7 +335,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   protected readonly evaluation = computed(() =>
     evaluate(this.lines(), this.additiveLines(), {
       includeAdditives: this.includeAdditives(),
-      chemistryOf: (name) => this.findByName(name)
+      chemistryOf: (name) => this.libraries.findByName(name)
     })
   );
   /** The dry materials' SG estimated from the recipe (lib/recipe/density.js), for the SG calculator. */
@@ -398,13 +385,13 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     ...(this.firings().length ? { firings: this.firings() } : {}),
     ...(this.coneResults().length ? { coneResults: this.coneResults() } : {})
   }));
-  protected readonly chemistryOf = (name: string) => this.findByName(name);
+  protected readonly chemistryOf = (name: string) => this.libraries.findByName(name);
   /** What the recipe's hazards are read from: the library's current records for its standard materials. */
   protected readonly hazardSources = computed(() =>
     hazardSources(
       [...this.lines(), ...this.additiveLines()],
-      [...this.standardMaterials(), ...this.standardAdditives()],
-      [...this.myMaterials(), ...this.myAdditives()]
+      [...this.libraries.standardMaterials(), ...this.libraries.standardAdditives()],
+      [...this.libraries.myMaterials(), ...this.libraries.myAdditives()]
     )
   );
   /** The recipe being edited as it was before Try modern materials, to compare with. */
@@ -421,10 +408,10 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     recipes: this.myRecipes,
     recipesLoaded: this.recipesLoaded,
     beforeSwap: this.beforeSwap,
-    myMaterials: this.myMaterials,
-    standardMaterials: this.standardMaterials,
-    myAdditives: this.myAdditives,
-    standardAdditives: this.standardAdditives,
+    myMaterials: this.libraries.myMaterials,
+    standardMaterials: this.libraries.standardMaterials,
+    myAdditives: this.libraries.myAdditives,
+    standardAdditives: this.libraries.standardAdditives,
     saveProblem: this.saveProblem,
     unreadableField: () => this.unreadableField(),
     report: (field, problem) => this.checks.report(field, problem),
@@ -436,9 +423,9 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     additiveLines: this.additiveLines,
     firing: this.firing,
     firedAt: this.firedAt,
-    myMaterials: this.myMaterials,
-    standardMaterials: this.standardMaterials,
-    standardAdditives: this.standardAdditives,
+    myMaterials: this.libraries.myMaterials,
+    standardMaterials: this.libraries.standardMaterials,
+    standardAdditives: this.libraries.standardAdditives,
     leadOff: this.leadOff,
     undo: this.swapUndo,
     unreadable: () => {
@@ -459,10 +446,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   }
 
   ngOnInit(): void {
-    this.loadMyMaterials();
-    this.loadStandardMaterials();
-    this.loadMyAdditives();
-    this.loadStandardAdditives();
+    this.libraries.load();
     this.loadMyRecipes();
     const handed = this.pendingRecipe.take();
     if (handed) this.openHanded(handed);
@@ -485,35 +469,17 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
 
   /** Asks again for each of the account's own lists that could not be fetched. */
   protected readonly retryOwn = (): void => {
-    if (this.myMaterialsFailed()) this.loadMyMaterials();
-    if (this.myAdditivesFailed()) this.loadMyAdditives();
+    this.libraries.retryMine();
     if (this.myRecipesFailed()) this.loadMyRecipes();
   };
-
-  private loadMyMaterials(): void {
-    void this.load(
-      this.materials.getAll(),
-      this.myMaterials,
-      marker('recipe.page.fetchMaterials'),
-      this.myMaterialsFailed
-    );
-  }
-
-  private loadMyAdditives(): void {
-    void this.load(
-      this.additives.getAll(),
-      this.myAdditives,
-      marker('recipe.page.fetchAdditives'),
-      this.myAdditivesFailed
-    );
-  }
 
   /**
    * The saved recipes. Only once they have arrived is the account known to have none, so a failed
    * fetch does not open the first-run help or say the list is empty; it offers to try again.
    */
   private loadMyRecipes(): void {
-    void this.load(
+    void fetchList(
+      this.notices,
       this.recipes.getAll(),
       this.myRecipes,
       marker('recipe.page.fetchRecipes'),
@@ -993,20 +959,6 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     }
   }
 
-  /** A material or additive by its name or one of its aliases, for one that borrows another's chemistry. */
-  private findByName(name: string): MaterialInput | undefined {
-    const wanted = folded(name.trim());
-    const records = [
-      ...this.standardAdditives(),
-      ...this.myAdditives(),
-      ...this.standardMaterials(),
-      ...this.myMaterials()
-    ];
-    return records.find(
-      (record) => folded(record.name) === wanted || (record.aliases ?? []).some((alias) => folded(alias) === wanted)
-    );
-  }
-
   // The saved list.
 
   protected async remove(recipe: Recipe): Promise<void> {
@@ -1022,50 +974,6 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     const undo = this.swapUndo();
     if (undo && undo.savedId === recipe._id) {
       this.swapUndo.set({ ...undo, savedId: null, savedSnapshot: '', savedAt: null });
-    }
-  }
-
-  protected loadStandardMaterials(): void {
-    void this.load(
-      this.materials.getStandard(),
-      this.standardMaterials,
-      marker('recipe.page.fetchStandardMaterials'),
-      this.standardMaterialsFailed
-    );
-  }
-
-  protected loadStandardAdditives(): void {
-    void this.load(
-      this.additives.getStandard(),
-      this.standardAdditives,
-      marker('recipe.page.fetchStandardAdditives'),
-      this.standardAdditivesFailed
-    );
-  }
-
-  /**
-   * Fills the list, or says it could not: failure is the key of the message.
-   * A list that can be asked for again keeps whether it failed, and says so once;
-   * fetched on a later try, its message goes. Whether the list arrived.
-   */
-  private async load<T>(
-    request: Promise<T[]>,
-    target: { set(value: T[]): void },
-    failure: string,
-    failed?: WritableSignal<boolean>
-  ): Promise<boolean> {
-    try {
-      target.set(await request);
-      if (failed?.()) {
-        const message = translate(failure);
-        this.notices.errors.update((list) => list.filter((text) => text !== message));
-      }
-      failed?.set(false);
-      return true;
-    } catch {
-      if (!failed?.()) this.notices.error(translate(failure));
-      failed?.set(true);
-      return false;
     }
   }
 

@@ -675,7 +675,7 @@ describe('RecipePage', () => {
     const { page } = await create();
     fill(page, [[WHITING, '5']]);
     expect((WHITING as { amount?: string }).amount).toBeUndefined();
-    expect(page['standardMaterials']()[0]).toBe(WHITING);
+    expect(page['libraries'].standardMaterials()[0]).toBe(WHITING);
   });
 
   it('says why there is no unity formula instead of showing an error', async () => {
@@ -1384,7 +1384,7 @@ describe('RecipePage', () => {
     answer('/materials/getStandard', [WHITING]);
     await settle(fixture);
     expect(library().textContent).toContain('Whiting');
-    expect(page['standardMaterialsFailed']()).toBe(false);
+    expect(page['libraries'].standardMaterialsFailed()).toBe(false);
   });
 
   it('reports lists that fail to load', async () => {
