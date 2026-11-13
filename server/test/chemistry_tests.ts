@@ -1161,6 +1161,41 @@ describe('glaze chemistry', () => {
       }
     });
 
+    it('should say what each material supplies in one order every browser agrees on', () => {
+      // Shares compared by their difference rounded were not a total order (0.92 tied 0.94 and 0.94
+      // tied 0.97, but 0.92 did not tie 0.97), so Safari could name them in another order than Chrome.
+      // Now: largest first in bands of 5%, then the oxide the glaze has most of, then by name.
+      const target = chemistry.oxideMoles(
+        (
+          [
+            ['Potash Feldspar (Potclays 3426)', 8.1],
+            ['Nepheline Syenite A270', 16.2],
+            ['Mondré & Manz Frit M 1233', 2.3],
+            ['Vibrantz Frit 90368', 4.9]
+          ] as Array<[string, number]>
+        ).map(([name, amount]) => ({ material: library.get(name)!, amount }))
+      );
+      const lines = [
+        'Lead, Red',
+        'Low Expansion Frit (Potterycrafts P2960)',
+        'Kaolin 233 (Carl Jäger)',
+        'Fusion Frit F-2',
+        'Dolomite',
+        'Cornwall Stone',
+        'Ferro Frit 4113'
+      ].map((name) => offer(name));
+      const result = chemistry.selectMaterials(lines, target);
+      const band = (share: number) => Math.round(20 * share);
+      let pairs = 0;
+      for (const { supplies } of result.contributions) {
+        supplies.slice(1).forEach((part, k) => {
+          expect(band(part.share)).to.be.at.most(band(supplies[k].share));
+          pairs++;
+        });
+      }
+      expect(pairs).to.be.above(2);
+    });
+
     it('should make up a flux nothing offered supplies from the others, keeping the formula near', () => {
       // Lithium carbonate's lithia, with no lithium on hand: a fifth of the fluxes.
       const lithium = molesOf([
