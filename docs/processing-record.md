@@ -8,7 +8,7 @@ files behind each line; change both together. Last reviewed **19 October 2026**.
 
 | Item                     | Entry                                                                                                                                   |
 | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Controller               | Aaron Filson, the owner of Glazecalc, a free, open-source, non-profit project run from the United States                                |
+| Controller               | Aaron Filson, the owner of Glazecalc, a free, open-source, non-commercial project run from the United States                            |
 | Contact                  | `privacy@glazecalcapp.com` (forwarded to the owner, [deploy/aws/README.md](../deploy/aws/README.md) section 15); GitHub issues (public) |
 | EU and UK representative | None appointed (owner's decision of 13 October 2026, [eu-data-plan.md](eu-data-plan.md))                                                |
 | Data protection officer  | Not required (no large-scale monitoring, no special categories)                                                                         |

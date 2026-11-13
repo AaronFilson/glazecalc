@@ -93,7 +93,7 @@ Items 4–6, 8–11, 13, 15, 18, 19 and 21 are built first. They go out in the n
 1. **Move to eu-west-1 or not.** Not legally required. It costs about +$0.75 a month and 2–3 days of work. US users' API calls get about 0.1 s slower.
    _Recommendation:_ move, after the export is built, if an EU storage statement matters to European potters. Word it as everyone's data in Ireland, run by a US operator on a US company's cloud. If US latency matters more, stay in Oregon and disclose it plainly (option d). Do not offer a per-user choice unless users ask.
 2. **EU and UK representatives.** Required on the EDPB's and ICO's reading. About €420 a year (EU) plus about €378 (UK) from Prighter, or about €1,000 a year elsewhere. The enforcement risk of skipping them is very low.
-   _Recommendation:_ ask two providers for non-profit pricing, and whether they bundle the DSA representative. Appoint both if the total stays near €800 a year. If not, write down the decision and the reasoning, and keep the private contact address answered promptly.
+   _Recommendation:_ ask two providers for pricing for a free, non-commercial project, and whether they bundle the DSA representative. Appoint both if the total stays near €800 a year. If not, write down the decision and the reasoning, and keep the private contact address answered promptly.
 3. **Keep me signed in.** Either a 7-day cookie for everyone, as today, or an opt-in box.
    _Recommendation:_ add the unticked box. It is small work and settles the one storage use the authorities disagree on.
 4. **Inactive-account deletion.** Needs a period, and a `lastSeenAt` field first.

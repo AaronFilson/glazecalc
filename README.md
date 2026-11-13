@@ -4,7 +4,7 @@
 (UMF): the fluxes, alumina and silica it becomes in the kiln, and their ratio. Keep your recipes,
 materials, colorants, firing logs and notes together in one private notebook.
 
-**[glazecalcapp.com](https://glazecalcapp.com)**: try it without an account. A non-profit project by
+**[glazecalcapp.com](https://glazecalcapp.com)**: try it without an account. A free, non-commercial project by
 Aaron Filson, in 57 languages, and usable from AI assistants through its MCP server.
 
 [![CI](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)

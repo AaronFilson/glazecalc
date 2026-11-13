@@ -13,7 +13,7 @@ who had only the password could add a passkey while two-step sign-in was off and
 
 An account is a password and an email address. Someone who learns the password, from another
 site's breach or a phishing page, has the account. Potters keep years of recipes in Glazecalc, so
-people asked for a second step. The site is a non-profit on one small instance
+people asked for a second step. The site is free and non-commercial, on one small instance
 ([ADR 1](0001-one-ec2-instance.md)): whatever it adds must cost nothing to run, need no outside
 service and keep the privacy notice's promise of one cookie.
 

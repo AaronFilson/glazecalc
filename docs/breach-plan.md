@@ -61,7 +61,7 @@ Fill in and paste into each form, or send by email where an authority accepts it
 
 > **Personal data breach notification (GDPR Art. 33)**
 >
-> **Controller:** Aaron Filson, owner of Glazecalc (https://glazecalcapp.com), a free, non-profit, open-source glaze
+> **Controller:** Aaron Filson, owner of Glazecalc (https://glazecalcapp.com), a free, non-commercial, open-source glaze
 > calculator, run from the United States. No EU or UK establishment or representative.
 > **Contact:** privacy@glazecalcapp.com
 >
