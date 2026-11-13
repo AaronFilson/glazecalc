@@ -7,7 +7,8 @@ How the production setup fits together. The plan and reasoning are in
 ```
 GitHub: push to master ─► CI (tests, Docker check) ─► Publish image (amd64 + arm64)
                                                         └─► ghcr.io/aaronfilson/glazecalc:sha-<commit>, :latest
-GitHub: Actions → Deploy (manual, approved) ─OIDC─► AWS role ─SSM Run Command─► /opt/glazecalc/deploy.sh <tag>
+GitHub: Publish image on master ─► Deploy (or Actions → Deploy <tag> by hand) ─► (approved)
+          ─OIDC─► AWS role ─SSM Run Command─► /opt/glazecalc/deploy.sh <tag>
           deploy.sh: backup.sh ─► new image, healthy, indexes built ─► nginx files from the same commit
         └─► Live checks: health, headers, every language's home page, pages in a browser, /mcp
 GitHub: Actions → Deploy staging <branch> ─► arm64 image :staging-<commit> ─► (approved)
