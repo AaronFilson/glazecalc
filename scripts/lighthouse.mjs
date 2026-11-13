@@ -16,10 +16,11 @@
 // it is installed apart, at the exact version and with the lockfile in
 // scripts/lighthouse/, by npm ci there with no install scripts, which this does
 // when it is missing. CI runs that step itself. Its package.json overrides
-// basic-ftp with 6.2.3, past get-uri's ^5: every 5.x has a high advisory (a CPU
-// denial of service in its listing parser, GHSA-c475-qrg2-pj4r), and get-uri
-// takes it only for ftp:// addresses, which nothing here fetches. Drop the
-// override once get-uri asks for 6.2.1 or later.
+// basic-ftp with 6.2.4, past get-uri's ^5: every 5.x has a high advisory (a CPU
+// denial of service in its listing parser, GHSA-c475-qrg2-pj4r) and 6.2.3 a
+// moderate one (its MLSD parser, GHSA-5pm8-86m8-9m6r). get-uri takes it only
+// for ftp:// addresses, which nothing here fetches. Drop the override once
+// get-uri asks for 6.2.4 or later.
 import { spawn } from 'node:child_process';
 import { existsSync, rmSync } from 'node:fs';
 import path from 'node:path';
