@@ -1,4 +1,4 @@
-import { Location, NgTemplateOutlet } from '@angular/common';
+import { NgTemplateOutlet } from '@angular/common';
 import {
   Component,
   DestroyRef,
@@ -11,7 +11,6 @@ import {
   effect,
   inject,
   signal,
-  untracked,
   viewChild
 } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
@@ -53,14 +52,13 @@ import { Removal } from '../../shared/remove-button';
 import { GRAMS_PER_POUND, WeightUnit, formatWeight } from '../../shared/weights';
 import { Rebase, amountOf, isAmount, rebase, totalOf, unitOf } from './rebase';
 import { additiveAmount, evaluate } from './recipe-analysis';
-// Types apart from the components, which recipe-page.html defers (@defer), so their files can be left out until needed.
-import type { CompareChoice } from './recipe-compare';
 import { RecipeCompare } from './recipe-compare';
 import { RecipeCost } from './recipe-cost';
 import { RecipeHazards, hazardSources } from './recipe-hazards';
 import { RecipeHelp } from './recipe-help';
 import { RecipeLibrary, libraryKey } from './recipe-library';
 import { RecipePrint } from './recipe-print';
+// A type apart from the report, which recipe-page.html defers (@defer), so its file can be left out until needed.
 import type { SwapResult } from './swap-report';
 import { SwapReport } from './swap-report';
 import { UnityFormula, silicaAluminaRatio, unityColumns } from './unity-formula';
@@ -76,9 +74,10 @@ import { recipeText } from './recipe-messages';
 import { coneFit } from '../../../../lib/recipe/cone-fit';
 import { recipeDrySg } from '../../../../lib/recipe/density';
 import { Reader, firingSummary } from './firing-text';
-import { focusShown, focusWhenDrawn } from './focus';
+import { focusShown } from './focus';
 import { RecipeSwaps, SwapKind, SwapUndo } from './recipe-swaps';
 import { RecipeSwapsPanel } from './recipe-swaps-panel';
+import { RecipeViews } from './recipe-views';
 import { SavedRecipes } from './saved-recipes';
 
 const INCLUDE_KEY = 'includeAdditives';
@@ -345,7 +344,6 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   private readonly injector = inject(Injector);
   private readonly route = inject(ActivatedRoute);
   private readonly router = inject(Router);
-  private readonly location = inject(Location);
   private readonly preferences = inject(PreferencesService);
   private readonly locale = inject(LocaleService);
   private readonly pendingRecipe = inject(PendingRecipeService);
@@ -581,15 +579,6 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     return this.hasContent() ? translate('recipe.page.notSavedYet') : '';
   });
 
-  // Printing: ?print=draft prints the recipe being edited, ?print=<id> a saved one.
-  private readonly printParam = toSignal(this.route.queryParamMap.pipe(map((params) => params.get('print'))), {
-    initialValue: null
-  });
-  /** ?sheet=worked opens the print view on the worked calculation (Show the working). */
-  protected readonly printSheet = toSignal(
-    this.route.queryParamMap.pipe(map((params) => (params.get('sheet') === 'worked' ? ('worked' as const) : null))),
-    { initialValue: null }
-  );
   private readonly recipesLoaded = signal(false);
   /** The recipe being edited, as it would be saved. */
   private readonly draft = computed<Recipe>(() => ({
@@ -606,19 +595,6 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     ...(this.firings().length ? { firings: this.firings() } : {}),
     ...(this.coneResults().length ? { coneResults: this.coneResults() } : {})
   }));
-  /** The recipe in the print view, while it is open. */
-  protected readonly printRecipe = computed<Recipe | null>(() => {
-    const wanted = this.printParam();
-    if (!wanted) return null;
-    if (wanted === 'draft') return this.lines().length ? this.draft() : null;
-    return this.myRecipes().find((recipe) => recipe._id === wanted) ?? null;
-  });
-  /** Asked to print a saved recipe, before the saved recipes are in. */
-  protected readonly printWaiting = computed(
-    () => !!this.printParam() && this.printParam() !== 'draft' && !this.recipesLoaded()
-  );
-  /** Whether this page opened the print or compare view, so closing it can go back in the history. */
-  private viewOpenedHere = false;
   protected readonly chemistryOf = (name: string) => this.findByName(name);
   /** What the recipe's hazards are read from: the library's current records for its standard materials. */
   protected readonly hazardSources = computed(() =>
@@ -628,59 +604,29 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       [...this.myMaterials(), ...this.myAdditives()]
     )
   );
-  /** The same for the recipe being printed. */
-  protected readonly printHazards = computed(() => {
-    const recipe = this.printRecipe();
-    return recipe
-      ? hazardSources(
-          [...(recipe.materials ?? []), ...(recipe.additives ?? [])],
-          [...this.standardMaterials(), ...this.standardAdditives()],
-          [...this.myMaterials(), ...this.myAdditives()]
-        )
-      : [];
-  });
-
-  // Comparing: ?compare=<first>,<second>, each 'draft' (the recipe being edited),
-  // 'before' (it before Try modern materials) or a saved recipe's id.
-  private readonly compareParam = toSignal(this.route.queryParamMap.pipe(map((params) => params.get('compare'))), {
-    initialValue: null
-  });
   /** The recipe being edited as it was before Try modern materials, to compare with. */
   private readonly beforeSwap = signal<Recipe | null>(null);
-  protected readonly compareKeys = computed(() => {
-    const param = this.compareParam();
-    if (param === null) return null;
-    const [left = '', right = ''] = param.split(',');
-    return { left, right };
-  });
-  protected readonly compareLeft = computed(() => this.recipeFor(this.compareKeys()?.left));
-  protected readonly compareRight = computed(() => this.recipeFor(this.compareKeys()?.right));
-  /** Whether the compare view is open: asked for, and at least one of the two is there. */
-  protected readonly comparing = computed(() => !!this.compareKeys() && !!(this.compareLeft() || this.compareRight()));
-  protected readonly compareWaiting = computed(() => !!this.compareKeys() && !this.recipesLoaded());
-  protected readonly compareChoices = computed<CompareChoice[]>(() => {
-    const before = this.beforeSwap();
-    return [
-      ...(this.lines().length
-        ? [
-            {
-              key: 'draft',
-              label: translate('recipe.page.beingEdited', {
-                title: this.title().trim() || translate('recipe.page.untitled')
-              })
-            }
-          ]
-        : []),
-      ...(before ? [{ key: 'before', label: translate('recipe.page.beforeSwap', { title: before.title }) }] : []),
-      ...this.myRecipes().map((recipe) => ({ key: recipe._id ?? '', label: recipe.title }))
-    ];
-  });
-  /** The button that opened the compare view, for the focus to go back to. */
-  private compareOpener = '';
   /** What Undo the swap puts back: the recipe as it was, and whether (and as what) it was saved. */
   protected readonly swapUndo = signal<SwapUndo | null>(null);
-  /** The report goes with the compare view while it shows the new recipe, and under Materials otherwise. */
-  protected readonly reportInCompare = computed(() => this.comparing() && this.compareKeys()?.right === 'draft');
+
+  /** The print and compare views, which the address opens (recipe-views.ts). */
+  protected readonly views = new RecipeViews({
+    lines: this.lines,
+    title: this.title,
+    draft: this.draft,
+    savedId: this.savedId,
+    recipes: this.myRecipes,
+    recipesLoaded: this.recipesLoaded,
+    beforeSwap: this.beforeSwap,
+    myMaterials: this.myMaterials,
+    standardMaterials: this.standardMaterials,
+    myAdditives: this.myAdditives,
+    standardAdditives: this.standardAdditives,
+    saveProblem: this.saveProblem,
+    unreadableField: () => this.unreadableField(),
+    report: (field, problem) => this.checks.report(field, problem),
+    showMore: (id) => this.savedList()?.showMore(id)
+  });
   /** Try modern materials, Suggest amounts, Replace lead and Match with what I have (recipe-swaps.ts). */
   protected readonly swaps = new RecipeSwaps({
     lines: this.lines,
@@ -707,40 +653,6 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     const updates = inject(UpdateService);
     effect(() => updates.holdWhile(this.unsaved()));
     inject(DestroyRef).onDestroy(() => updates.holdWhile(false));
-    // Asked to print what is not there (an empty page after a reload, a recipe removed elsewhere): show the editor.
-    effect(() => {
-      if (this.printParam() && !this.printRecipe() && !this.printWaiting()) untracked(() => this.leavePrint());
-    });
-    // Asked to compare two recipes neither of which is there: show the editor.
-    effect(() => {
-      if (this.compareKeys() && !this.comparing() && !this.compareWaiting()) untracked(() => this.leaveCompare());
-    });
-    // The focus goes to the compare options when they open, and back to the button that opened them.
-    let compared = false;
-    effect(() => {
-      const comparing = this.comparing();
-      if (comparing === compared) return;
-      compared = comparing;
-      const target = comparing ? 'compare-heading' : this.compareOpener;
-      if (!comparing && target.startsWith('compare-') && target !== 'compare-draft') {
-        untracked(() => this.savedList()?.showMore(target.slice('compare-'.length)));
-      }
-      untracked(() => focusWhenDrawn(this.injector, target, comparing ? 'compare-heading' : null));
-    });
-    // The focus goes to the print options when they open, and back to the Print button that opened them.
-    // Show the working opened it from its own button, in the unity formula's panel.
-    let printed: string | null = null;
-    let sheet: string | null = null;
-    effect(() => {
-      const printing = this.printRecipe() ? this.printParam() : null;
-      if (printing === printed) return;
-      const opener = printed === 'draft' && sheet === 'worked' ? 'worked-draft' : 'print-' + printed;
-      const target = printing ? 'print-heading' : opener;
-      if (!printing && printed && printed !== 'draft') untracked(() => this.savedList()?.showMore(printed!));
-      printed = printing;
-      sheet = untracked(this.printSheet);
-      untracked(() => focusWhenDrawn(this.injector, target, printing ? 'print-heading' : null, null));
-    });
   }
 
   ngOnInit(): void {
@@ -1151,117 +1063,6 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     return additive >= 0 ? 'additive-amount-' + additive : null;
   }
 
-  // Printing.
-
-  /** Opens the print view for the recipe being edited, saved or not; on the worked calculation for Show the working. */
-  protected printDraft(sheet?: 'worked'): void {
-    this.saveProblem.set('');
-    if (!this.lines().length) {
-      this.saveProblem.set(translate('recipe.page.addMaterialToPrint'));
-      return;
-    }
-    // It would print as 0 g. (Blank amounts are fine to print; they count as 0.)
-    const unreadable = this.unreadableField();
-    if (unreadable) {
-      this.checks.report(unreadable, notANumber());
-      return;
-    }
-    this.openPrint('draft', sheet);
-  }
-
-  /** Opens the print view: for 'draft', or a saved recipe's id. Back in the browser closes it. */
-  protected openPrint(what: string, sheet?: 'worked'): void {
-    this.viewOpenedHere = true;
-    void this.router.navigate([], {
-      relativeTo: this.route,
-      queryParams: { print: what, sheet: sheet ?? null },
-      queryParamsHandling: 'merge'
-    });
-  }
-
-  protected closePrint(): void {
-    if (!this.viewOpenedHere) return this.leavePrint();
-    this.viewOpenedHere = false;
-    this.location.back();
-  }
-
-  private leavePrint(): void {
-    void this.router.navigate([], {
-      relativeTo: this.route,
-      queryParams: { print: null, sheet: null },
-      queryParamsHandling: 'merge',
-      replaceUrl: true
-    });
-  }
-
-  // Comparing (issue #6).
-
-  /** Compares the recipe being edited with a saved one (the first other, to start with). */
-  protected compareDraft(): void {
-    this.saveProblem.set('');
-    if (!this.lines().length) {
-      this.saveProblem.set(translate('recipe.page.addMaterialToCompare'));
-      return;
-    }
-    const unreadable = this.unreadableField();
-    if (unreadable) {
-      this.checks.report(unreadable, notANumber());
-      return;
-    }
-    const other = this.myRecipes().find((recipe) => recipe._id !== this.savedId());
-    this.openCompare('draft', other?._id ?? '', 'compare-draft');
-  }
-
-  /** Compares a saved recipe with the one being edited, or with another saved one. */
-  protected compareSaved(recipe: Recipe): void {
-    const id = recipe._id ?? '';
-    const other =
-      this.lines().length && this.savedId() !== id ? 'draft' : (this.myRecipes().find((r) => r._id !== id)?._id ?? '');
-    this.openCompare(id, other, 'compare-' + id);
-  }
-
-  protected chooseCompared(choice: { side: 'left' | 'right'; key: string }): void {
-    const keys = { left: '', right: '', ...this.compareKeys(), [choice.side]: choice.key };
-    void this.router.navigate([], {
-      relativeTo: this.route,
-      queryParams: { compare: keys.left + ',' + keys.right },
-      queryParamsHandling: 'merge',
-      replaceUrl: true
-    });
-  }
-
-  protected closeCompare(): void {
-    if (!this.viewOpenedHere) return this.leaveCompare();
-    this.viewOpenedHere = false;
-    this.location.back();
-  }
-
-  private openCompare(left: string, right: string, opener: string): void {
-    this.viewOpenedHere = true;
-    this.compareOpener = opener;
-    void this.router.navigate([], {
-      relativeTo: this.route,
-      queryParams: { compare: left + ',' + right },
-      queryParamsHandling: 'merge'
-    });
-  }
-
-  private leaveCompare(): void {
-    void this.router.navigate([], {
-      relativeTo: this.route,
-      queryParams: { compare: null },
-      queryParamsHandling: 'merge',
-      replaceUrl: true
-    });
-  }
-
-  private recipeFor(key: string | undefined): Recipe | null {
-    if (!key) return null;
-    if (key === 'draft') return this.lines().length ? this.draft() : null;
-    if (key === 'before') return this.beforeSwap();
-    return this.myRecipes().find((recipe) => recipe._id === key) ?? null;
-  }
-
   // Swaps (recipe-swaps.ts): a new recipe in place of the one on the page, and the one before put back.
 
   /**
@@ -1301,7 +1102,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     this.scaleMessage.set(null);
     this.saveProblem.set('');
     this.announcement.set(announcement);
-    if (compare) this.openCompare(before, 'draft', opener);
+    if (compare) this.views.openCompare(before, 'draft', opener);
   }
 
   /** The page as it was before a swap: the recipe, and whether (and as what) it was saved. */

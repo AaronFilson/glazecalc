@@ -55,7 +55,7 @@ describe('recipe page deferral', () => {
   });
 
   it('imports their types apart from the components, which a deferred part needs', () => {
-    expect(code('recipe-page.ts')).toContain("import type { CompareChoice } from './recipe-compare';");
+    expect(code('recipe-views.ts')).toContain("import type { CompareChoice } from './recipe-compare';");
     expect(code('recipe-page.ts')).toContain("import type { SwapResult } from './swap-report';");
     expect(code('recipe-swaps.ts')).toContain("import type { Run, SwapResult } from './swap-report';");
   });

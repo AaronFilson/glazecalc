@@ -19,35 +19,35 @@
     page is idle (@defer, prefetch on idle), so the page itself starts sooner; each draws when asked for, as before,
     and says it is coming if its file is not in yet.
   -->
-  @defer (when printRecipe(); prefetch on idle) {
-    @if (printRecipe(); as recipe) {
+  @defer (when views.printRecipe(); prefetch on idle) {
+    @if (views.printRecipe(); as recipe) {
       <gc-recipe-print
         [recipe]="recipe"
         [chemistryOf]="chemistryOf"
-        [hazards]="printHazards()"
-        [startMode]="printSheet()"
-        (back)="closePrint()"
+        [hazards]="views.printHazards()"
+        [startMode]="views.printSheet()"
+        (back)="views.closePrint()"
       />
     }
   } @loading {
     <p class="muted" role="status">{{ t('recipe.page.gettingPrint') }}</p>
   }
-  @if (!printRecipe() && printWaiting()) {
+  @if (!views.printRecipe() && views.printWaiting()) {
     <p class="muted" role="status">{{ t('recipe.page.gettingPrint') }}</p>
   }
-  @defer (when comparing(); prefetch on idle) {
-    @if (!printRecipe() && !printWaiting() && comparing()) {
+  @defer (when views.comparing(); prefetch on idle) {
+    @if (!views.printRecipe() && !views.printWaiting() && views.comparing()) {
       <gc-recipe-compare
-        [left]="compareLeft()"
-        [right]="compareRight()"
-        [leftKey]="compareKeys()?.left ?? ''"
-        [rightKey]="compareKeys()?.right ?? ''"
-        [choices]="compareChoices()"
+        [left]="views.compareLeft()"
+        [right]="views.compareRight()"
+        [leftKey]="views.compareKeys()?.left ?? ''"
+        [rightKey]="views.compareKeys()?.right ?? ''"
+        [choices]="views.compareChoices()"
         [chemistryOf]="chemistryOf"
-        (choose)="chooseCompared($event)"
-        (back)="closeCompare()"
+        (choose)="views.chooseCompared($event)"
+        (back)="views.closeCompare()"
       >
-        @if (reportInCompare() && swaps.result(); as result) {
+        @if (views.reportInCompare() && swaps.result(); as result) {
           <gc-swap-report
             [result]="result"
             [level]="2"
@@ -57,7 +57,7 @@
             [inRecipe]="swaps.keys()"
             (rerun)="swaps.rerun($event)"
           />
-        } @else if (reportInCompare() && swaps.problem()) {
+        } @else if (views.reportInCompare() && swaps.problem()) {
           <!-- Worked out again from here and it could not go on: the recipe is back as it was, and this says why. -->
           <p class="recipe-swap-problem" role="alert">{{ swaps.problem() }}</p>
         }
@@ -66,11 +66,11 @@
   } @loading {
     <p class="muted" role="status">{{ t('recipe.page.gettingCompare') }}</p>
   }
-  @if (!printRecipe() && !printWaiting() && !comparing() && compareWaiting()) {
+  @if (!views.printRecipe() && !views.printWaiting() && !views.comparing() && views.compareWaiting()) {
     <p class="muted" role="status">{{ t('recipe.page.gettingCompare') }}</p>
   }
   <!-- Hidden, not removed, while printing or comparing: what is being edited stays just as it was. -->
-  <div [hidden]="printRecipe() || printWaiting() || comparing() || compareWaiting()">
+  <div [hidden]="views.open()">
     <gc-page-header [title]="t('recipe.page.title')" [lead]="t('recipe.page.lead')" />
     <gc-recipe-help [empty]="recipesLoaded() ? !myRecipes().length : null" />
     <gc-notices [notices]="notices" />
@@ -92,8 +92,8 @@
         [openId]="savedId()"
         [removal]="removal"
         (openRecipe)="open($event)"
-        (printRecipe)="openPrint($event)"
-        (compareRecipe)="compareSaved($event)"
+        (printRecipe)="views.openPrint($event)"
+        (compareRecipe)="views.compareSaved($event)"
         (duplicateRecipe)="duplicateForCone($event)"
         (removeRecipe)="remove($event)"
       />
@@ -503,7 +503,7 @@
       [standardFailed]="standardMaterialsFailed()"
       [hideLead]="leadOff()"
       [inRecipe]="materialKeys()"
-      [reportHere]="!reportInCompare()"
+      [reportHere]="!views.reportInCompare()"
       (retry)="loadStandardMaterials()"
     />
   </ng-template>
@@ -640,10 +640,10 @@
         {{ t('recipe.page.saveAsCopy') }}
       </button>
     }
-    <button id="print-draft" type="button" class="btn btn-light border" (click)="printDraft()">
+    <button id="print-draft" type="button" class="btn btn-light border" (click)="views.printDraft()">
       {{ t('recipe.page.print') }}
     </button>
-    <button id="compare-draft" type="button" class="btn btn-light border" (click)="compareDraft()">
+    <button id="compare-draft" type="button" class="btn btn-light border" (click)="views.compareDraft()">
       {{ t('recipe.page.compare') }}
     </button>
   </ng-template>
@@ -667,7 +667,12 @@
       @if (evaluation().analysis; as analysis) {
         <gc-unity-formula [analysis]="analysis" />
         <p class="unity-working">
-          <button id="worked-draft" type="button" class="btn btn-light border btn-sm" (click)="printDraft('worked')">
+          <button
+            id="worked-draft"
+            type="button"
+            class="btn btn-light border btn-sm"
+            (click)="views.printDraft('worked')"
+          >
             {{ t('recipe.page.showWorking') }}
           </button>
         </p>

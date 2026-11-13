@@ -1900,7 +1900,7 @@ describe('RecipePage', () => {
       page['title'].set('My celadon');
       fill(page, [[WHITING, '20']]);
       // The compare view hides the editor; the question still shows.
-      page['compareDraft']();
+      page['views'].compareDraft();
       await settle(harness.fixture);
       const root = harness.routeNativeElement!;
       expect(root.querySelector('.recipe-editor')!.closest('[hidden]')).not.toBeNull();
@@ -2262,7 +2262,7 @@ describe('RecipePage', () => {
       expect(document.activeElement?.id).toBe('compare-heading');
 
       // Another choice replaces the address, so Back still leaves the comparison.
-      page['chooseCompared']({ side: 'right', key: 'draft' });
+      page['views'].chooseCompared({ side: 'right', key: 'draft' });
       await settle(fixture);
       expect(router.url).toBe('/?compare=draft,draft');
       click(fixture, 'Back to the recipe');
@@ -2333,7 +2333,7 @@ describe('RecipePage', () => {
       await settle(fixture);
       click(fixture, 'Try modern materials and compare');
       await settle(fixture);
-      page['closeCompare']();
+      page['views'].closeCompare();
       await settle(fixture);
       const removing = page['remove'](OLD);
       httpMock()
@@ -2365,9 +2365,9 @@ describe('RecipePage', () => {
       await settle(fixture);
       click(fixture, 'Try modern materials and compare');
       await settle(fixture);
-      page['closeCompare']();
+      page['views'].closeCompare();
       await settle(fixture);
-      const labels = () => page['compareChoices']().map((choice: { label: string }) => choice.label);
+      const labels = () => page['views'].compareChoices().map((choice: { label: string }) => choice.label);
       expect(labels()).toContain('Before the swap: Celadon A');
       page['startNew']();
       page['discardAndLeave']();
