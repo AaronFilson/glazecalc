@@ -45,12 +45,15 @@ A glaze is on the site only when it is `published: true`, it is not the fixture,
   test tiles before using it (owner's decision).
 
 `scripts/famous-glazes.mjs` (run by `npm run build`, `watch` and `dev`) writes the published glazes, with every
-material resolved to its full record, to one file per language, `dist/i18n-generated/famous-glazes/<language>.json`,
-served as `/i18n/famous-glazes/<language>.json`. Each file keeps every piece of the glazes' prose in English and that
-language only (`glazeIn`), so the page shows the language's words or the English, marked as such. A page loads the
-file of its own language (`PAGE_LANGUAGE`), and the prerender reads it the same way. Every prerendered page carries
-the file it loads, so one file with all the languages made the pages too big for the prerender's limit. The script
-**stops the build** if a glaze is marked published but fails the bar.
+material resolved to its full record and the glaze's **versions** (below), to one file per language,
+`dist/i18n-generated/famous-glazes/<language>.json`, served as `/i18n/famous-glazes/<language>.json`. Each file keeps
+every piece of the glazes' prose in English and that language only (`glazeIn`), so the page shows the language's
+words or the English, marked as such. A page loads the file of its own language (`PAGE_LANGUAGE`), and the prerender
+reads it the same way. Every prerendered page carries the file it loads, so one file with all the languages made the
+pages too big for the prerender's limit. The script **stops the build** if a glaze is marked published but fails the
+bar, and then if any of its versions cannot be made (nothing to aim at, no materials offered, or the solver's
+refusal) or its search would be cut short, naming the glaze, the materials and why. So a glaze known only by an
+analysis and without lead, which no version aims at yet, cannot be published until one does.
 
 ## Pages and addresses
 
@@ -68,15 +71,22 @@ the file it loads, so one file with all the languages made the pages too big for
 1. **About.** The summary, the native name (marked with its `lang`), where, when, and the firing.
 2. **The traditional recipe**, with its unity formula and the recipe page's limits panel (`gc-recipe-limits`). For a
    lead glaze this section is replaced by the **historic analysis** and a "history only" notice.
-3. **With your local materials** (the lead-free version, for a lead glaze). The target is the native recipe's unity
-   formula. For a lead glaze it is the analysis with the colorants' oxides left out and the lead's share of the fluxes
-   handed to other fluxes, with boron by Katz's rule for the version's firing (`leadFreeTarget`). The reader's region
-   comes from Settings (`regionFor(region).library`) or the library filter, and can be changed on the page. The
-   offered materials are the standard library's base materials sold there that are not lead, not soluble and still
-   current (`suggestable`). The solver is the same one Target & Solve uses (`lib/recipe/solve.js solveTarget`). The
-   recipe's colorants are kept as additives. With no region chosen, a lead-free version uses its proposal's own
-   materials (`prefer`). The standard materials are loaded in the browser only, so the build's render leaves the
-   version out.
+3. **With your local materials** (the lead-free version, for a lead glaze). The **build** works out a version from
+   each region's materials (US, UK, EU, AU, JP) and, for a lead glaze, one from its proposal's own (`prefer`), with
+   `lib/famous-versions.js`, and ships them in the glaze's file as `versions`: by region, `''` for the proposal, each
+   line `[material name, percent]` with the closeness verdict the page shows. The page shows the one for the reader's
+   region and solves nothing. The target is the native recipe's unity formula. For a lead glaze it is the analysis
+   with the colorants' oxides left out and the lead's share of the fluxes handed to other fluxes, with boron by
+   Katz's rule for the version's firing (`leadFreeTarget`). The offered materials are the standard library's base
+   materials sold there that are not lead, not soluble and still current (`suggestable`), in the order of
+   `data/materials.ndjson`, which settles the solver's ties as the app's bundle did. The solver is the same one Target
+   & Solve uses (`lib/recipe/solve.js solveTarget`), on a meter that never cuts. Until 2026-11-13 the browser solved
+   each version within about a second's work (`WORK`, [ADR 12](adr/0012-choosing-materials.md)), which a heavier glaze
+   could have outgrown and come out different. The recipe's colorants are kept as additives. The reader's region
+   comes from Settings (`regionFor(region).library`) or the library filter, and can be changed on the page; with no
+   region chosen, a lead-free version shows its proposal. The region is the browser's choice, so the build's render
+   leaves the version out, and the browser shows it once it has adopted that HTML (`FIRST_RENDER`). Opening a
+   region's lead-free version reads the standard materials in only then, for the records the recipe takes.
 4. **Try it.** The main button opens the recipe (or the lead-free version) on the recipe page, starting a trial
    first for a visitor, as a material page does. Below it is sign-up with `?next=` back to this page.
 5. **Safety**, with links to the guides, and **Sources**, each with the date it was read.
@@ -97,10 +107,15 @@ are in its data file per language, so its pages are indexed in each language tha
 - **Server** (`server/test/famous_glazes_tests.ts`): every file is sound. Published glazes meet the bar, and the
   build refuses a failing one. The drafts stay off the site. The fixture is never published. The lead rules hold,
   including `tested`. Materials resolve. Pages exist only while published, unpublished addresses get 404 and stay
-  out of the sitemap, the hreflang and canonical rules apply, and page dates are set.
-- **Client** (`famous-glazes.spec.ts`): the unity formula, the regional solve, the lead-free target (no PbO, no
-  SnO2, with boron), opening the recipe, the route, the page (recipe, limits, sources, sign-up `next`, the history
-  notice, the "not yet test-fired" label) and the index.
+  out of the sitemap, the hreflang and canonical rules apply, and page dates are set. Every published glaze has a
+  version for each region (and İznik its proposal), the same in every language's file. Each is the one a fresh
+  search makes the way the page made it in the browser, with no bound, and the one the browser's bounded search made
+  wherever that was not cut short (all 16 on 2026-11-13). The build stops for a version cut short or one it cannot
+  make. The lead-free target has no PbO or SnO2, and has boron.
+- **Client** (`famous-glazes.spec.ts`): the unity formula, the shipped versions shown for the region chosen and kept
+  out of the first render, opening the recipe (a region's lead-free version with the standard records, the
+  proposal's with its own), the route, the page (recipe, limits, sources, sign-up `next`, the history notice, the
+  "not yet test-fired" label) and the index.
 - **e2e** (`e2e/famous-glazes.spec.js`): the published İznik page renders, with its label and its lead-free
   version. An unpublished glaze, the fixture and an unknown slug get 404. The fixture page renders from a stubbed
   `en.json`.
