@@ -397,6 +397,13 @@ describe('Shared recipe tools', () => {
     // Not news when the old recipe had none either.
     const old = recipe.pastLimits({ lines, unity, old: unity, celsius: 1222 }).map((c) => c.check);
     expect(old).not.to.include('alumina-low');
+    // Nor when it had as little (or a little less, to 10%); much less than it had is news.
+    const thin = { ...unity, Al2O3: 0.15 };
+    const was = (u: Record<string, number>) =>
+      recipe.pastLimits({ lines, unity: u, old: thin, celsius: 1222 }).map((c) => c.check);
+    expect(was(thin)).not.to.include('alumina-low');
+    expect(was({ ...thin, Al2O3: 0.14 })).not.to.include('alumina-low');
+    expect(was({ ...thin, Al2O3: 0.1 })).to.include('alumina-low');
   });
 
   it('only cautions with Hesselberth & Roy’s set, which gives no figure for a likely fault, as its table does', () => {
