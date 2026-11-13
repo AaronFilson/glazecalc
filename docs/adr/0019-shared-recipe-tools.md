@@ -3,6 +3,11 @@
 Accepted, 2026-10-16. Item 6 of [the integrations plan](../integrations-plan.md), ahead of the
 public MCP tools (its Phase 2), which call these from the server.
 
+Amended, 2026-11-12: the declarations are no longer kept in step by hand alone. `npm run typecheck`, in CI,
+checks the library's JavaScript against them (`lib/tsconfig.json`), and `server/test/lib_types_tests.ts` checks
+that each module exports what its declaration says and that every declaration is correct TypeScript. The first
+run found five exports the code used that no declaration had.
+
 ## Context
 
 [ADR 4](0004-shared-chemistry.md) put the arithmetic (unity formulas, fitting amounts) in
