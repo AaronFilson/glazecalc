@@ -159,6 +159,46 @@ describe('Paste-in import: decimal marks', () => {
     expect(recipe.ambiguousNumbers('Custer 12,5\nSilica 40\nWhiting 1250')).to.eql([]);
   });
 
+  it('reads thousands set apart by a space as one number where the language writes them so, and marks them elsewhere', () => {
+    // French sets thousands apart with a narrow no-break space, Russian with a no-break space: one number, with any space.
+    for (const space of [' ', '\u00a0', '\u202f']) {
+      expect(lines(one(`Silica 1${space}500 g\nWhiting 300 g`, { locale: 'fr' })), JSON.stringify(space)).to.eql([
+        ['Silica', 1500, 'g', false],
+        ['Whiting', 300, 'g', false]
+      ]);
+    }
+    expect(one('Silice 1\u00a0250,5', { locale: 'ru' }).lines[0]).to.include({ name: 'Silice', amount: 1250.5 });
+    expect(lines(one('1 500 g Silica', { locale: 'fr' }))).to.eql([['Silica', 1500, 'g', false]]);
+    expect(one('Silica 1 500', { locale: 'sv' }).lines[0].spaced).to.equal(undefined);
+    // English writes 1,500: read as before, the 1 ending the name, and marked so the page asks.
+    const english = one('Silica 1\u202f500 g\nWhiting 300 g');
+    expect(lines(english)).to.eql([
+      ['Silica 1', 500, 'g', false],
+      ['Whiting', 300, 'g', false]
+    ]);
+    expect(english.lines.map((l) => l.spaced)).to.eql(['1 500', undefined]);
+    expect(one('1 500 g Silica').lines[0].spaced).to.equal('1 500');
+    // Read as one number when the reader chooses it.
+    expect(lines(one('Silica 1 500 g\nWhiting 12 500', { spaced: 'group' }))).to.eql([
+      ['Silica', 1500, 'g', false],
+      ['Whiting', 12500, null, false]
+    ]);
+    expect(one('Silica 1 500', { spaced: 'group' }).lines[0].spaced).to.equal('1 500');
+    // Not thousands set apart: a group of other than three digits, a four-figure number in the name.
+    expect(one('Silica 2 30', { locale: 'fr' }).lines[0]).to.include({ name: 'Silica 2', amount: 30 });
+    expect(one('Frit 3134 500', { locale: 'fr' }).lines[0]).to.include({ name: 'Frit 3134', amount: 500 });
+    expect(one('Frit 3134 500').lines[0].spaced).to.equal(undefined);
+    // A cell holds only its amount: a space there sets thousands apart in any language; tabs stay columns.
+    expect(lines(one('Silica\t1 500\nWhiting\t300'))).to.eql([
+      ['Silica', 1500, null, false],
+      ['Whiting', 300, null, false]
+    ]);
+    expect(lines(one('Silice\t1\t500\nCraie\t2\t300', { locale: 'fr' }))).to.eql([
+      ['Silice', 1, null, false],
+      ['Craie', 2, null, false]
+    ]);
+  });
+
   it('reads Arabic-Indic digits and the Arabic decimal mark', () => {
     expect(one('Silica ٢٥٫٥').lines[0].amount).to.equal(25.5);
   });

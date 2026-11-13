@@ -18,6 +18,11 @@ export interface PastedLine {
   unit: PastedUnit;
   /** Marked "+", or under a heading such as "Additions". */
   addition: boolean;
+  /**
+   * The amount as pasted when its thousands are set apart by a space ("1 500") and the reader's language does
+   * not write them so: read as `PasteOptions.spaced` says, so the page asks. Absent otherwise.
+   */
+  spaced?: string;
 }
 
 /** A line set aside: a total, or a row of column headings. */
@@ -44,6 +49,12 @@ export interface PasteOptions {
   known?: (text: string) => boolean;
   /** How to read a number that could be a decimal or digit groups ("1,500" as 1.5 or 1500), when the paste does not decide it; the locale reads it by default. */
   reading?: 'decimal' | 'group';
+  /**
+   * How to read an amount with its thousands set apart by a space ("Silica 1 500"): one number ('group'), or
+   * the first group as the end of the name ('apart'). By default 'group' where the locale writes thousands
+   * so (French, Russian), else 'apart', and each such line is marked `spaced`.
+   */
+  spaced?: 'group' | 'apart';
 }
 
 /** The most a paste can be: characters, lines, and characters in a line that can be a material. */

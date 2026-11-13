@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { Additive, Material, Recipe } from '../../core/models';
 import { API, answer, httpMock, settle, skippedHeadings, testProviders, text } from '../../testing/test-providers';
+import { formatLocale } from '../../shared/format';
 import { ImportPage } from './import-page';
 
 const material = (
@@ -318,6 +319,34 @@ describe('ImportPage', () => {
     // A paste with nothing to ask shows no choice.
     await paste('Test\nCuster 50\nWhiting 22,5');
     expect(root.querySelector('.import-ambiguous')).toBeNull();
+  });
+
+  it('asks how to read thousands set apart by a space, unless the reader’s language writes them so', async () => {
+    const { fixture, root, page, paste, chosenNames } = await create();
+    const amounts = () => page['drafts']()[0].lines.map((l: { amount: string }) => l.amount);
+    const buttons = () => [...root.querySelectorAll<HTMLButtonElement>('.import-spaced button')];
+    await paste('Test\nCuster 500\nSilica 1\u202f500');
+    // English writes 1,500: read as before, the 1 ending the name, and asked.
+    expect(amounts()).toEqual(['500', '500']);
+    expect(text(fixture, '.import-spaced p')).toContain(
+      'can be read two ways, such as “1 500”: as 1,500, with a space setting the thousands apart, or as 1 and 500, apart.'
+    );
+    expect(buttons().map((b) => b.textContent?.trim())).toEqual(['Read 1 500 as 1,500', 'Read 1 and 500 apart']);
+    expect(buttons().map((b) => b.getAttribute('aria-pressed'))).toEqual(['false', 'true']);
+    buttons()[0].click();
+    await settle(fixture);
+    expect(amounts()).toEqual(['500', '1500']);
+    expect(chosenNames()).toEqual(['Custer Spar', 'Silica']);
+    expect(buttons().map((b) => b.getAttribute('aria-pressed'))).toEqual(['true', 'false']);
+    // French writes 1 500: one number, with nothing to ask.
+    formatLocale.set('fr');
+    try {
+      await paste('Test\nCuster 500\nSilica 1\u202f500');
+      expect(amounts()).toEqual(['500', '1500']);
+      expect(root.querySelector('.import-spaced')).toBeNull();
+    } finally {
+      formatLocale.set('en');
+    }
   });
 
   it('limits the box, and says so when the paste is too long instead of reading part of it', async () => {
