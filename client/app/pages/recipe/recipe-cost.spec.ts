@@ -226,6 +226,39 @@ describe('RecipeCost', () => {
     httpMock().expectNone((req) => req.method === 'PATCH');
   });
 
+  it('keeps a price typed while the one before it is saved, and saves it in turn', async () => {
+    const { fixture, root } = await create([{ key: 'potash', perKg: 2 }]);
+    const price = root.querySelector('#price-1') as HTMLInputElement;
+    price.focus();
+    price.value = '3';
+    price.dispatchEvent(new Event('input'));
+    // Enter commits it, and it is saved...
+    price.dispatchEvent(new Event('change'));
+    await fixture.whenStable();
+    const first = httpMock().expectOne(API + '/prices');
+    expect(first.request.body).toEqual({ set: [{ key: 'whiting', perKg: 3 }] });
+    // ...while the next price is typed, before the server answers.
+    price.value = '3.5';
+    price.dispatchEvent(new Event('input'));
+    await fixture.whenStable();
+    first.flush({
+      prices: [
+        { key: 'potash', perKg: 2 },
+        { key: 'whiting', perKg: 3 }
+      ]
+    });
+    await settle(fixture);
+    expect(price.value).toBe('3.5');
+    price.dispatchEvent(new Event('change'));
+    await settle(fixture);
+    const second = httpMock().expectOne(API + '/prices');
+    expect(second.request.body).toEqual({ set: [{ key: 'whiting', perKg: 3.5 }] });
+    second.flush({});
+    await settle(fixture);
+    // 400 g of whiting at 3.50 a kilogram.
+    expect(rows(root)[1]).toEqual(['Whiting', '3.5', '$1.40']);
+  });
+
   it('says how many of a trial’s prices were not copied for being in another currency', async () => {
     const { fixture } = await create([]);
     expect(fixture.nativeElement.querySelector('.recipe-cost-skipped')).toBeNull();

@@ -342,6 +342,8 @@ export class RecipeCost {
     const saved = await this.prices.set(key, value === null ? null : value / KG_PER_UNIT[this.unit()], this.currency());
     if (saved) {
       this.typed.update((typed) => {
+        // A price typed since, while this one was on its way, stays to be saved in its turn.
+        if (typed[key] !== text) return typed;
         const rest = { ...typed };
         delete rest[key];
         return rest;
