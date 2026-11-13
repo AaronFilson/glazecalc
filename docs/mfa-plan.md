@@ -8,6 +8,11 @@ This plan adds optional two-step sign-in (MFA) for accounts: passkeys (WebAuthn)
 
 ## Status (14 October 2026)
 
+**Since then:** two-step sign-in is in production ([ADR 0014](adr/0014-two-step-sign-in.md)), and staging runs,
+deployed by the Deploy staging workflow ([deploy/README.md](../deploy/README.md), "Staging"). Item 19 is done in 31 of
+the 56 translations; the others send these emails in English. Item 18 is not built. The rest of this section is as it
+stood on 14 October.
+
 **Phase 1 is built** on branch `mfa`: the contract commit, streams A (factors on the server), B (the sign-in flow and `clear_mfa.ts`), C (the client) and D (mail, operations, docs), merged in that order, then the integration follow-ups:
 
 - A 401 from `/signin/*` (a wrong second step, an unknown passkey) is the sign-in page's to show, like `/signin`'s own: it no longer ends a trial on the browser or sends it to the start page (`client/app/core/session-expired.interceptor.ts`).
