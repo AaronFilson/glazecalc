@@ -70,7 +70,24 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   historical records, Jingdezhen porcelain stones (Sanbaopeng, Nangang) and Longquan zijin soil. A material's source
   can now be of kind `research` (a published study). Commercial colemanite has a second note with Eti Maden's ground
   colemanite specification (limits, not a typical analysis).
+- **Shops in eight more countries** (`lib/regions/suppliers.js`), each read on its own pages as saved in the owner's
+  browsing exports of 2026-11-05 and 2026-11-08: Mexico (CeramiColor), South Africa (Potters Supplies in Randvaal,
+  Cape Pottery Supplies in Somerset West), Croatia (Tapiker, and Artist Vito in Split), Brazil (Arte Brasil Cerâmica),
+  Argentina (Cezart Cerámica, Arte y Fuego in Ituzaingó, Crecer Poles in Buenos Aires), Chile (La Casa del Ceramista,
+  Santiago), Latvia (Keramserviss, Ādaži) and Lithuania (Keramikams.lt, Panevėžys: feldspars, quartz, kaolin, chalk
+  and nepheline syenite in 1 kg packs). Keramserviss sells oxides, kaolin and bentonite, but no feldspar or silica was
+  seen, so the German shop that delivers to Latvia is still listed. A country's list now shows the shops elsewhere that
+  deliver there after its own, not only when it has none, and Malta lists Scarva (Northern Ireland), whose postage
+  page names it. Shops, a country's own or ones that deliver there, are listed for 47 of the 72 regions.
 - **Egypt's shop**: Clay Supply in Fustat (Old Cairo), whose own site lists a kaolin, glazes, oxides and kilns.
+- **The teaching pack in every language** (2026-11-07): /guides/teaching-glaze-calculation in the 55 other languages,
+  translated and reviewed as the other guides were, its safety text back-translated blind. The reviews caught the fix
+  for pinholes, a hold at peak temperature, written as one at the end of the firing in 14 of them.
+  `PARTLY_TRANSLATED_PAGES` is empty, so every copy is offered to search engines as the other guides are. A sum written
+  out in a guide ("28.085 + 2 × 15.999 = 60.083 g") reads left to right on a right-to-left page, and the translations
+  check takes a weight such as 100.086 g for a number, so a language with a decimal comma writes it its own way. The
+  guide now says "Alumina rises down the grid, and silica rises across it" in every language (Thai had it falling), and
+  gives the usual cause of pinholes as a "Gas bubble that did not heal over" (round 17).
 - **Teaching glaze calculation** (/guides/teaching-glaze-calculation): a seventh guide, a teaching pack of six
   sessions in the order of the Ibaraki Prefectural Industrial Technology Center's published glaze study group
   (cited; Glazecalc is not connected with it): materials and triaxial tiles, the chemistry, reading a unity formula,
@@ -80,6 +97,14 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   oxidation and reduction columns. In English and Japanese (the Japanese awaits a native potter's review). A new list,
   `PARTLY_TRANSLATED_PAGES` in lib/pages.js, offers it to search engines in those two alone; every other language
   shows the English with the usual notice, canonical to the English and noindex, until it is translated.
+- **A breadcrumb trail on the guides and reference pages** (`client/app/shared/structured-data.ts`,
+  `client/app/shared/breadcrumb.ts`). Each guide's structured data adds a BreadcrumbList (Glazecalc, Guides, the guide,
+  named and addressed in the page's language) in one graph with its Article, as the reference pages had, for search
+  results to show in place of the address (round 15). From round 17 the same trail is drawn above the title of the
+  guides list and each guide, the materials list and each material, the famous glazes and the cone chart, to the W3C
+  breadcrumb pattern: a labelled navigation list, a link for each step but the current page, and separators drawn by
+  the stylesheet, which a screen reader skips and which turn round on a right-to-left page. Both come from one list of
+  steps, so what a visitor sees and what search engines read cannot differ. In every language.
 - **Each standard material's page in every live language** (docs/prerender-compression-and-material-pages-plan.md,
   Part B). The 170 material pages are prerendered and offered to search engines in all 57 languages: canonical to
   themselves, with hreflang and x-default, in each language's sitemap and with structured data in the language. A
@@ -89,6 +114,36 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   starting a trial without asking for a visitor not signed in; below it, "Create a free account" comes back to the page
   after sign-up and after the confirmation email, which is now written in the language of the page the sign-up was
   for; and the beginner guides are linked.
+- **Two more layouts for the recipe form, Workbench and Guided steps** (`client/app/pages/recipe/recipe-layout.ts`),
+  chosen above the form beside Standard, which stays the default. Each arranges the same parts of the one recipe page,
+  so the chemistry and the saving are the same code. Workbench puts Save and More beside the recipe's title and the
+  unity formula and limits in a side panel that stays in view on a wide screen; on a narrower one the panel follows the
+  recipe, and a bar kept at the top shows the formula in a line, with a button to the panel. The fixes and swaps and
+  the details (date, notes, firing, cost, hazards) are folded. Guided steps shows one step at a time, Recipe, Amounts
+  (the materials, then the additives), Check and Save, numbered in the reader's digits, with Back and Next. A field
+  with a problem opens the fold or step that holds it. The choice is kept in the browser (`recipeLayout`, listed on the
+  privacy page), and `?layout=a`, `b` or `today` picks one for a visit. In every language.
+- **Settings kept in a browser stay until you clear them** (`client/app/core/settings-expiry.ts`;
+  docs/eu-data-plan.md, item 23). Every visit counts as use, and nothing is removed on its own (the owner's rule,
+  2026-11-03). Opening Glazecalc in the same browser after 11 months or more away shows a notice that the settings
+  there, such as the theme and the language, are kept while it is used, with "Clear my settings", which removes them and
+  reloads with the defaults; settings kept with the account are not touched, nor are the sign-in, the trial or the
+  offline copy. A closed translation notice shows again only when its wording changes enough to raise its version. The
+  privacy page says so for each setting it lists, with a row for the record of dates (`settingsDates`). In every
+  language.
+- **Import my data** (account page; `server/routes/import_routes.ts`, `server/lib/import_data.ts`; docs/eu-data-plan.md,
+  item 25): the records of a Download my data file (JSON) brought into the account, from another account or a copy
+  kept. It shows first what the file holds: for each kind of record, how many are new, already there (skipped) or
+  named like one of the account's with other content, and for each of those the person chooses Keep both, Skip or
+  Replace mine, one by one or for all; a replaced record keeps its old version in its history. Settings, prices and
+  materials on hand come in only when ticked; the account, its email, sign-in methods, tokens, share links, history
+  and Trash never do. Ids in the file are never trusted: each record gets a new one, and the links between records are
+  rewritten to them. The whole file is checked before anything is written, and one bad record refuses it with a list
+  of what is wrong. "Undo this import", for 24 hours, removes what it added and puts back what it replaced; an
+  `ImportRun` (`server/models/import_run.ts`) lists the ids before the first record is written, so an import that
+  fails part way is taken back the same way, as MongoDB here runs without transactions. For the web session of an
+  account only, never a trial, token or AI app: one import at a time, 5 an hour, up to 20 MB and 20,000 records a file
+  (Express and nginx take the larger body on these routes alone). In every language.
 - **The teaching companion, round 12** (docs/adr/0017-mcp-server.md; MCP server 1.4.0). A new prompt, `teach_me`: a
   short lesson on any glaze topic at the learner's level (new, some, experienced), with up to two guide sections
   attached, one small experiment with one tool, and John Britt's videos linked by his titles with credit only when the
@@ -98,6 +153,16 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   (a default the owner is to confirm), Stull regions, cautions on one side only and cone fit. `vary_material` adds
   each tile's flux ratio and, in its trend, the first tile with a new caution and the first whose cone fit changes.
   Both tools now declare an output schema. Assistants only: no change on the website.
+- **Nigeria, Uganda, Ecuador, Colombia, Costa Rica, Uruguay, Paraguay, Guatemala, Rwanda, Zimbabwe, Botswana, Côte
+  d'Ivoire and Cameroon as regions** (round 11, 2026-11-02), each in the languages it reads, all already offered: who
+  to call, each number read on an official page (Guatemala has no single one, so CONRED's two fire and rescue numbers
+  are given), Colombia's national toxicology line (018000 916012, free, day and night, for the public too), the only
+  poison line among them, the health ministries but Guatemala's, Zimbabwe's and Côte d'Ivoire's, whose sites could not
+  be confirmed, and each currency. All fire by temperature and list the US materials until you choose otherwise; no
+  silica limit, food rule or shop is shown for them. Nigeria is the first region for Hausa, Yoruba and Igbo, so their
+  pages are written for it, and Ecuador the first for Quechua; Uganda reads Swahili beside English, and Rwanda, Côte
+  d'Ivoire and Cameroon French. Tanzania, Ethiopia, Peru, Bolivia and seven more wait, as a region must show an
+  emergency number read on an official page. The new safety text is in every language. That makes 72 regions.
 - **Latin American Spanish** (docs/translations/es-419.md): the app, the password emails and all five guides, live at
   `/es-419/…`, written for Mexico first, with the Southern Cone's forms in the style sheet's notes. Mexico, Argentina
   and Chile now read it (Spain keeps Spain's Spanish), and a browser asking for Spanish of the Americas (es-MX, es-AR …)
@@ -143,6 +208,29 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   notice. The cone charts' three notes, which carry the advice to set a witness cone, and the "Theoretical formula"
   label are new keys in `records/en.json` for the translation waves. `npm run check:i18n` wants `reference/` and
   `records/` complete in each language the pages are shown in.
+- **Offline mode, stages 3 and 4: your records, and changes made offline** (docs/adr/0028-service-worker.md, amended
+  2026-11-02 and 2026-11-03). An account (never a trial) can turn on "Keep my records on this device" on the account
+  page, on each device, off by default. Its recipes, materials, additives, firing logs, notes, settings and prices are
+  then kept in the browser's IndexedDB (`client/app/core/offline-records.ts`), fetched in full when it is turned on and
+  at most once a day after, and shown from that copy only when the network fails, under a banner with the date it was
+  saved. A change made with no network waits on the device (`client/app/core/outbox.ts`) and the page goes on at
+  once, a new record with a temporary id; each such record says "Waiting to save", and the banner counts them. Once
+  the network is back the changes are sent in order (on Chromium, Background Sync wakes the page), each with an
+  `Idempotency-Key`, so one sent twice is made once (`server/models/idempotency.ts`), and a change or removal with
+  `If-Match` and the version it was made from. Every record an account owns now has that version (`rev`), and every
+  route that changes, removes or undoes one takes `If-Match`: a record that has moved on is answered 409
+  `record-conflict` with the record as it is now, or 404 `record-gone`; without it the last write wins, as before, so
+  tokens and assistants work as they did (the MCP update tools take a `rev` too). A note changed in both places keeps
+  both texts; for any other record the person chooses (`client/app/core/outbox-conflict.dialog.ts`): Save mine as a
+  copy (the default), Keep mine or Keep theirs, or Save as new or Discard my changes when it is gone. Signing out asks
+  whether to keep the copy and the waiting changes on the device (Keep is the default) or delete them; another account
+  signing in there never sees or sends them, and they come back when their account signs in again. The account page
+  clears them (Clear offline data), sets how long they are kept while Glazecalc is not opened there (until deleted, by
+  default, or 1 week to 1 year), and on an iPhone or iPad, outside the Home Screen app, says that Safari may remove
+  them after 7 days without use. An account deleted elsewhere is offered an export of its copy before anything is
+  cleared. The Trash, the shelf and the token pages say "Not available offline"; undo, sharing,
+  firing links and import still need the network. In every language, with the privacy page's rows for the copy and
+  the waiting changes.
 - **Offline mode, stages 0 to 2** (docs/adr/0028-service-worker.md; the owner's choices, 2026-10-31). The app, the
   guides, the safety pages, the cone chart and the materials open with no network, on a phone that has opened the
   site before: Angular's service worker keeps the app and an offline page (`app-shell.html`, with one style nonce for
