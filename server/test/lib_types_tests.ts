@@ -43,6 +43,26 @@ describe('lib types', () => {
     expect(files.length).to.be.greaterThan(30);
   });
 
+  it('has declarations that are correct TypeScript, the ones no module of lib reads included', () => {
+    // lib/tsconfig.json checks only the .d.ts files its JavaScript reaches, and the server's and the
+    // client's checks skip declaration files, so entry points such as recipe/index.d.ts were checked by
+    // nothing. This checks every one, with the library's own settings.
+    const checked = ts.createProgram(files, {
+      noEmit: true,
+      target: ts.ScriptTarget.ES2024,
+      lib: ['lib.es2024.d.ts'],
+      module: ts.ModuleKind.NodeNext,
+      moduleResolution: ts.ModuleResolutionKind.NodeNext,
+      types: ['node'],
+      skipLibCheck: false
+    });
+    const problems = ts.getPreEmitDiagnostics(checked).map((diagnostic) => {
+      const where = diagnostic.file ? path.relative(LIB, diagnostic.file.fileName) + ': ' : '';
+      return where + ts.flattenDiagnosticMessageText(diagnostic.messageText, '\n');
+    });
+    expect(problems).to.eql([]);
+  });
+
   for (const file of files) {
     const name = path
       .relative(LIB, file)
