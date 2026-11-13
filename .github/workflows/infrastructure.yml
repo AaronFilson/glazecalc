@@ -50,10 +50,11 @@ jobs:
 
       # High and critical fail the run. One moderate advisory has no fix to take:
       # minimatch before 11.0.1 (GHSA-g3hv-75wg-m249, slow matching of crafted
-      # patterns) is bundled inside aws-cdk-lib, which still bundles ^10.2.6 at
-      # 2.276.0, and an override cannot reach a bundled package. The only pattern
-      # it matches here is the mail forwarder asset's own exclude: ['test']
-      # (lib/inbound-stack.ts). It goes when aws-cdk-lib bundles 11.0.1 or later.
+      # patterns) is bundled inside aws-cdk-lib (2.275.0 here; the newest release,
+      # 2.276.0, still bundles ^10.2.6), and an override cannot reach a bundled
+      # package. The only pattern it matches here is the mail forwarder asset's own
+      # exclude: ['test'] (lib/inbound-stack.ts). It goes when aws-cdk-lib bundles
+      # 11.0.1 or later.
       - name: Check for known vulnerabilities
         run: npm audit --audit-level=high
 
