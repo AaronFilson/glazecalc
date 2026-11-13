@@ -4,6 +4,7 @@ import { IntlMessageFormat } from 'intl-messageformat';
 import chemistry from '../../lib/chemistry/index.js';
 import recipe from '../../lib/recipe/index.js';
 import type { MaterialRecord, RecipeMessage } from '../../lib/recipe/index.js';
+import famous from '../../lib/famous-glazes.js';
 import standardData from '../../data/index.js';
 
 // Target & Solve (lib/recipe/solve.js, docs/adr/0026): a recipe from the
@@ -223,5 +224,140 @@ describe('Target & Solve', () => {
       together: true
     });
     expect(recipe.parseTarget('nothing here').oxides).to.deep.equal({});
+  });
+});
+
+// A list of many materials and a target with many oxides took minutes, holding the server for everyone,
+// or the page, all that time: the work one search may do is bounded now (lib/chemistry/fit.js WORK). The
+// worst cases found, each with what it took before on a 2015 laptop (each about a second now). The work
+// is counted, not timed, so the bound holds anywhere; the time limits leave room for a slower machine.
+describe('Target & Solve, Match with what I have and Suggest amounts: the work bounded', function () {
+  this.timeout(60000);
+  const MANY_OXIDES = {
+    K2O: 0.2,
+    Na2O: 0.1,
+    CaO: 0.5,
+    MgO: 0.1,
+    ZnO: 0.05,
+    BaO: 0.05,
+    Al2O3: 0.4,
+    B2O3: 0.3,
+    SiO2: 3.2,
+    TiO2: 0.1,
+    Fe2O3: 0.05,
+    Li2O: 0.05,
+    SrO: 0.05
+  };
+  const SECONDS = 5;
+  const offered = (from: number, to: number) => LIBRARY.slice(from, to).map((material) => ({ material, must: false }));
+  const timed = <T>(run: () => T): { result: T; seconds: number } => {
+    const start = performance.now();
+    const result = run();
+    return { result, seconds: (performance.now() - start) / 1000 };
+  };
+
+  it('solves 80 materials for a 13-oxide target within the work allowed, with the best found (93 s before)', () => {
+    const meter = chemistry.newMeter();
+    const { result: solved, seconds } = timed(() =>
+      recipe.solveTarget({ kind: 'unity', oxides: MANY_OXIDES }, offered(0, 80), { meter })
+    );
+    expect(seconds).to.be.below(SECONDS);
+    // The steps that refine stop at the bound; what has to be done after it is a part of it at most.
+    expect(meter.used).to.be.at.most(2 * chemistry.WORK);
+    expect(solved.report.cutShort).to.equal(true);
+    // Still a recipe: in percent, from no more materials than the target has oxides.
+    expect(total(solved)).to.be.closeTo(100, 0.5);
+    expect(solved.materials.length).to.be.within(1, Object.keys(MANY_OXIDES).length);
+    expect(solved.report.closeness!.verdict).to.be.oneOf(['close', 'fair', 'poor']);
+  });
+
+  it('matches a 13-oxide recipe from 100 materials within the work allowed (80 s before)', () => {
+    const analysis = { SiO2: 55, Al2O3: 12, B2O3: 8, CaO: 6, MgO: 2, K2O: 3, Na2O: 3, ZnO: 3 };
+    const line = {
+      name: 'Frit-like',
+      percentmole: 'percent',
+      loi: 0,
+      amount: '100',
+      fields: Object.entries({ ...analysis, BaO: 2, SrO: 2, Li2O: 1, TiO2: 2, Fe2O3: 1 }).map(([name, amount]) => ({
+        name,
+        amount
+      }))
+    } as unknown as MaterialRecord;
+    const meter = chemistry.newMeter();
+    const { result: match, seconds } = timed(() => recipe.matchFromShelf([line], offered(0, 100), { meter }));
+    expect(seconds).to.be.below(SECONDS);
+    expect(meter.used).to.be.at.most(2 * chemistry.WORK);
+    expect(match.report.cutShort).to.equal(true);
+    expect(match.materials.length).to.be.within(1, 13);
+  });
+
+  it('suggests amounts for 40 lines, the plan and the suggestion on one meter (19 s before)', () => {
+    const lookUp = (name: string) =>
+      LIBRARY.find((m) => m.name === name || (m as { aliases?: string[] }).aliases?.includes(name));
+    const lines = LIBRARY.slice(100, 140).map((m) => ({ ...m, amount: '2.5' }));
+    const meter = chemistry.newMeter();
+    const { result: suggestion, seconds } = timed(() => {
+      const plan = recipe.planSuggestion(lines, lookUp, LIBRARY, '', { meter });
+      expect(plan.swaps).to.not.eql([]);
+      return recipe.suggestAmounts(lines, lookUp, [], '', { meter });
+    });
+    expect(seconds).to.be.below(SECONDS);
+    expect(meter.used).to.be.at.most(2 * chemistry.WORK);
+    expect(suggestion.materials.length).to.be.above(0);
+  });
+
+  it('leaves a shelf as potters have one alone: a small part of the work, nothing cut', () => {
+    const meter = chemistry.newMeter();
+    const shelf = shelfOf('Custer Spar', 'Nepheline Syenite', 'Whiting', 'Dolomite', 'Talc', 'EPK Kaolin', 'Silica');
+    const solved = recipe.solveTarget({ kind: 'unity', oxides: GLOSSY_UNITY }, shelf, { meter });
+    expect(solved.report).to.not.have.property('cutShort');
+    expect(meter.used).to.be.below(chemistry.WORK / 100);
+  });
+
+  it('leaves the largest searches the app makes itself, the famous glazes’ versions, well within it', () => {
+    // As a famous glaze's page makes its version (client/app/pages/famous-glazes/famous-glaze.ts): for the
+    // native recipe's unity formula, or a lead glaze's analysis with the lead handed to other fluxes, from
+    // the base materials of a region's library that do not dissolve. Shino from the EU's 66 is the largest.
+    const BASE_KINDS = ['feldspar', 'clay', 'frit', 'boron', 'flux', 'silica', 'alumina'];
+    const isFlux = (oxide: string) => ['R2O', 'RO'].includes(chemistry.OXIDE_GROUPS[oxide]!);
+    type Line = { record: MaterialRecord; amount: number };
+    let largest = 0;
+    for (const glaze of famous.publishedGlazes().map(famous.resolveGlaze)) {
+      let target: Record<string, number>;
+      if (!glaze.lead) {
+        target = chemistry.calculateUMF(
+          glaze.recipe.lines.map((l: Line) => ({ material: l.record, amount: l.amount }))
+        ).umf;
+      } else {
+        const colorants = new Set(
+          glaze.leadFree.additives.flatMap((l: Line) => (l.record.fields ?? []).map((field) => field.name))
+        );
+        const base = Object.fromEntries(
+          Object.entries(glaze.analysis.oxides as Record<string, number>).filter(([oxide]) => !colorants.has(oxide))
+        );
+        const { moles } = recipe.targetOf({ kind: 'analysis', oxides: base });
+        const leadFree = chemistry.leadFreeTarget(moles, { celsius: glaze.leadFree.celsius });
+        const fluxes = Object.entries(leadFree).reduce((sum, [oxide, value]) => (isFlux(oxide) ? sum + value : sum), 0);
+        target = Object.fromEntries(Object.entries(leadFree).map(([oxide, value]) => [oxide, value / fluxes]));
+      }
+      for (const region of ['US', 'UK', 'EU', 'AU', 'JP']) {
+        const offered = LIBRARY.filter(
+          (m) =>
+            BASE_KINDS.includes(m.category ?? '') &&
+            !(m as { soluble?: boolean }).soluble &&
+            recipe.suggestable(m, { region })
+        );
+        const meter = chemistry.newMeter();
+        const solved = recipe.solveTarget(
+          { kind: 'unity', oxides: target },
+          offered.map((material) => ({ material, must: false })),
+          { meter }
+        );
+        expect(solved.report.cutShort, glaze.slug + ' ' + region).to.equal(undefined);
+        largest = Math.max(largest, meter.used);
+      }
+    }
+    // Room to spare: more materials sold in a region, or a harder glaze, should not change a page.
+    expect(largest).to.be.below(0.7 * chemistry.WORK);
   });
 });

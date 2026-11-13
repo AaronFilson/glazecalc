@@ -24,13 +24,14 @@ import Recipe from '../../models/recipe.ts';
 import Trash from '../../models/trash.ts';
 import {
   type Caller,
-  countFit,
   firingArg,
   firingOf,
+  fitFor,
   guarded,
   languageArg,
   languageOf,
   linesArg,
+  MOST_MATERIALS,
   ok,
   resolveLines,
   ToolProblem,
@@ -382,9 +383,15 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
             else if (lines) resolved = resolveLines(lines, await ownMaterials());
             else throw new ToolProblem('Give a recipeId or the lines of a recipe.');
             const { materials } = await shelfOf();
+            if (materials.length > MOST_MATERIALS)
+              throw new ToolProblem(
+                `Too many materials to fit at once: your shelf has ${materials.length}, and this works from at most ${MOST_MATERIALS}. Narrow the list: name the library materials to try, at most ${MOST_MATERIALS}, to match_from_materials as "have".`
+              );
             const shelf: TryMaterial[] = materials.map((material) => ({ material, must: false }));
-            countFit(caller);
-            return ok(matchOut(recipe.matchFromShelf(resolved, shelf, { uncapped: allowMore ?? [] }), lang));
+            const match = fitFor(caller, (meter) =>
+              recipe.matchFromShelf(resolved, shelf, { uncapped: allowMore ?? [], meter })
+            );
+            return ok(matchOut(match, lang));
           }, lang);
         }
       );

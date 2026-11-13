@@ -1,5 +1,6 @@
 // Types for lib/recipe/solve.js (see index.d.ts).
 
+import type { Meter } from '../chemistry';
 import type { FiringBand, LimitSet } from './limits';
 import type { MaterialRecord, TryMaterial } from './library';
 import type { Caution } from './messages';
@@ -52,12 +53,13 @@ export function solveCautions(
 
 /**
  * A recipe in percent from the materials offered whose unity formula comes as near the target as they
- * allow; throws a RecipeError as targetOf does, 'solve.noMaterials' or 'solve.noMatch'.
+ * allow; throws a RecipeError as targetOf does, 'solve.noMaterials' or 'solve.noMatch'. `meter` bounds
+ * its work (lib/chemistry newMeter), a new one if not given.
  */
 export function solveTarget<M extends MaterialRecord>(
   target: SolveTarget,
   offered: TryMaterial<M>[],
-  options?: SolveFiring & { avoid?: string[]; uncapped?: string[] }
+  options?: SolveFiring & { avoid?: string[]; uncapped?: string[]; meter?: Meter }
 ): Solved<M>;
 
 /** The oxides in text pasted from another app, the formula-like names not known, and whether KNaO was given. */

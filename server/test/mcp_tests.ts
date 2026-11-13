@@ -6,11 +6,15 @@ import standardData from '../../data/index.js';
 import recipe from '../../lib/recipe/index.js';
 import regions from '../../lib/regions/index.js';
 import {
+  chargeFit,
   countFit,
+  CUT_SHORT,
+  FIT_WORK_ANYONE_ALL_PER_MINUTE,
   FITS_ANYONE_ALL_PER_MINUTE,
   FITS_PER_MINUTE,
   guarded,
   MOST_LINES,
+  MOST_MATERIALS,
   resetFits,
   ToolProblem,
   UNEXPECTED
@@ -2437,6 +2441,97 @@ describe('MCP: limits', () => {
     expect(() => countFit({ key: 'user:1', userId: '1' }, now)).to.not.throw();
     expect(() => countFit({ key: 'ip:203.0.113.9' }, now + 61 * 1000)).to.not.throw();
     resetFits();
+  });
+
+  it('does at most ten of the largest fits’ work a minute for everyone without a token together', async () => {
+    expect(FIT_WORK_ANYONE_ALL_PER_MINUTE).to.equal(10 * chemistry.WORK);
+    resetFits();
+    process.env.RATE_LIMITS = 'on';
+    const now = Date.now();
+    // Ten fits as large as they may be, each from its own address, and the count of fits far from its ceiling.
+    for (let i = 0; i < 10; i++) {
+      const caller = { key: 'ip:198.51.100.' + i };
+      countFit(caller, now);
+      chargeFit(caller, chemistry.WORK, now);
+    }
+    expect(() => countFit({ key: 'ip:203.0.113.9' }, now)).to.throw(ToolProblem, 'without a Glazecalc account');
+    // An account's fits are not counted there, and the next minute starts again.
+    expect(() => countFit({ key: 'user:1', userId: '1' }, now)).to.not.throw();
+    expect(() => countFit({ key: 'ip:203.0.113.9' }, now + 61 * 1000)).to.not.throw();
+
+    // A tool's fit is charged what it did: with all but one unit charged already, one fit fills it.
+    resetFits();
+    chargeFit({ key: 'ip:198.51.100.1' }, FIT_WORK_ANYONE_ALL_PER_MINUTE - 1);
+    const have = ['Minspar 200', 'Whiting', 'EPK', 'Silica'];
+    await data('match_from_materials', { lines: LINES, have }, { 'x-forwarded-for': '192.0.2.77' });
+    expect(() => countFit({ key: 'ip:203.0.113.9' })).to.throw(ToolProblem, 'without a Glazecalc account');
+    resetFits();
+  });
+
+  // A list of many materials and a target with many oxides held the server for seconds to minutes
+  // (60 of the library's materials and 13 oxides: 7 s; 80: 93 s), anyone's for the asking.
+  it('answers the worst fit in about a second, never holding the server longer, and says it stopped short', async function () {
+    this.timeout(60000);
+    resetFits();
+    const materials = (standardData.load('materials') as Array<{ name: string }>)
+      .slice(0, MOST_MATERIALS)
+      .map((m) => m.name);
+    const target = {
+      kind: 'unity',
+      oxides: {
+        K2O: 0.2,
+        Na2O: 0.1,
+        CaO: 0.5,
+        MgO: 0.1,
+        ZnO: 0.05,
+        BaO: 0.05,
+        Al2O3: 0.4,
+        B2O3: 0.3,
+        SiO2: 3.2,
+        TiO2: 0.1,
+        Fe2O3: 0.05,
+        Li2O: 0.05,
+        SrO: 0.05
+      }
+    };
+    const started = Date.now();
+    const solving = data('solve_target', { target, materials });
+    // The tests share the server's event loop: a timer due as the call goes out fires once the loop is free.
+    const free = await new Promise<number>((resolve) => setTimeout(() => resolve(Date.now() - started), 50));
+    const solved = await solving;
+    expect(free).to.be.below(3000);
+    expect(solved.cutShort).to.equal(true);
+    expect(solved.closeness.summary).to.include(CUT_SHORT);
+    expect(solved.recipe.length).to.be.within(1, 13);
+  });
+
+  it(`takes at most ${MOST_MATERIALS} materials to fit at once, named or on the shelf`, async () => {
+    resetFits();
+    const names = (standardData.load('materials') as Array<{ name: string }>)
+      .slice(0, MOST_MATERIALS + 1)
+      .map((m) => m.name);
+    const unity = { kind: 'unity', oxides: { K2O: 0.3, CaO: 0.7, Al2O3: 0.4, SiO2: 3.2 } };
+    expect((await call('match_from_materials', { lines: LINES, have: names })).isError).to.equal(true);
+    expect((await call('solve_target', { target: unity, materials: names })).isError).to.equal(true);
+    expect((await call('solve_target', { target: unity, materials: names.slice(1) })).isError).to.not.equal(true);
+    // A shelf with more: named in words, with how to narrow it, and no fit counted.
+    const { user, token } = await makeUser();
+    await api()
+      .put('/shelf')
+      .set('Authorization', 'Bearer ' + token)
+      .send({ shelf: names.map((name) => 'name:' + name) });
+    const headers = bearer(await makeToken(user));
+    process.env.RATE_LIMITS = 'on';
+    const onHand = await call('solve_target', { target: unity, onHand: true }, headers);
+    expect(onHand.isError).to.equal(true);
+    expect(onHand.content[0]!.text).to.match(/^Too many materials to fit at once: 61, .* at most 60\. Narrow the list/);
+    const shelf = await call('match_with_what_i_have', { lines: LINES }, headers);
+    expect(shelf.isError).to.equal(true);
+    expect(shelf.content[0]!.text).to.match(/^Too many materials to fit at once: your shelf has 61, .* at most 60\./);
+    for (let i = 0; i < FITS_PER_MINUTE; i++)
+      expect((await call('match_from_materials', { lines: LINES, have: ['Whiting'] }, headers)).isError).to.not.equal(
+        true
+      );
   });
 
   it(`works out at most ${FITS_PER_MINUTE} substitutions or matches a minute for one caller`, async () => {

@@ -4,6 +4,8 @@ Accepted, 2026-10-08. Replaces the solver and the ranking in [ADR 10](0010-sugge
 and the frit choice and fixed extras in [ADR 11](0011-replacing-lead.md). Amended 2026-10-20: a
 match says how near it comes, holds raw clay where its own check wants it, and makes up a flux
 nothing offered supplies (see [Amended: how near a match comes](#amended-how-near-a-match-comes)).
+Amended 2026-11-13: a search does at most a set amount of work (see
+[Amended: the work a search may do](#amended-the-work-a-search-may-do)).
 
 ## Context
 
@@ -212,3 +214,42 @@ The engine's objective, weights and selection were not at fault here. Its answer
 - Holding raw clay can run the selection twice; a match still takes about 10 to 25 ms.
 - The closeness verdicts and the 0.5 the clay hold may cost are judgment, like the other thresholds
   here. The sentences are English, as the MCP tools' other notes are.
+
+## Amended: the work a search may do
+
+2026-11-13, from the 1.0 security review.
+
+**What happened.** The time a search takes grows fast with the materials offered and the oxides
+aimed for. For each material not used, the report chooses again with it a must; swaps try every
+material chosen against every other; and a target many materials can make spreads stage A's
+match over dozens of them (78 of 100), each one dropped in turn. With a 13-oxide target, 60 of
+the library's materials took 7 seconds, 80 took 93, and a 40-line recipe's suggestion 30, all on
+the one thread the server answers everyone with (or the page's). The MCP tools are open to anyone.
+
+**Decision.**
+
+- **A meter.** The solver counts its multiply-adds (`lsq.js`), and a search may do at most `WORK`
+  of them (`fit.js`, 1.5 x 10^8: about a second on a 2015 laptop). The steps that only refine
+  what is found stop once it is spent, keeping what they have: dropping and swapping (B), adding
+  back (`closer`), trying unused materials for the report (the likeliest first), and putting
+  amounts back at their starts (`fitAmounts`). The potter's limit on new materials and each line's
+  least are kept all the same. A search cut short with more in use than the target has oxides
+  keeps the musts and those the match uses most, up to that many, before C. The selection says
+  `cutShort`; the MCP tools say so in words. Counted, not timed, so the same request gives the same
+  answer on the server and in the browser, however busy either is.
+- **Less work for the same answer.** A^T A is worked out once for each problem rather than for
+  each of its thousands of solves, and `fitAmounts` tries amounts back at their starts one at a time
+  until one is allowed, rather than every one each round. Results are unchanged, bit for bit: over
+  1,200 random matches, solves, suggestions, fits and lead rebuilds, and every famous glaze's version.
+- **Where it is set.** One meter for a match or a solve, its clay hold included
+  (`selectHoldingClay`), and for a suggestion's plan and amounts together. The largest search the
+  app makes itself, a famous glaze's version from a region's base materials (shino from the EU's 66),
+  takes about half of `WORK`; a test holds it under 0.7. The recipes and shelves in the tests take
+  under a hundredth.
+
+**Consequences.**
+
+- A worst case now takes about a second; the event loop is free again after it.
+- A search past the bound gives a good recipe, not always the nearest or the simplest: the MCP
+  tools ask for a shorter list, and take at most 60 materials ([ADR 17](0017-mcp-server.md)).
+  The page does not say yet when a search was cut short; the lists potters make stay well within it.

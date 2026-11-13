@@ -41,6 +41,11 @@ export interface Report {
   best: number;
   /** And oxide by oxide, in the unity formula, when the target was given. */
   closeness?: Closeness;
+  /**
+   * Present when the work allowed ran out before every choice was tried
+   * (lib/chemistry/fit.js WORK): the best found by then.
+   */
+  cutShort?: true;
 }
 
 export function placesFor(total: number): number;
