@@ -335,9 +335,15 @@ describe('Shared recipe tools', () => {
     // The band wins over a temperature: SK 8 is mid fire though JIS says 1250 °C.
     expect(checks({ band: 'mid', celsius: 1250, limitSet: recipe.HESSELBERTH_ROY_LIMITS })).to.include('boron-high');
     // A low band with no temperature skips Katz's "too little boron", which needs one.
-    const lean = { ...unity, B2O3: 0 };
+    const lean = { ...unity, K2O: 0.2, Na2O: 0.1, B2O3: 0 };
     expect(recipe.pastLimits({ lines, unity: lean, band: 'low' }).map((c) => c.check)).to.not.include('boron-short');
     expect(recipe.pastLimits({ lines, unity: lean, celsius: 1060 }).map((c) => c.check)).to.include('boron-short');
+    // Nor for a lead or alkaline glaze, which melts without boron (Katz's rule is for neither, as in cone-fit).
+    const short = (u: Record<string, number>) =>
+      recipe.pastLimits({ lines, unity: u, celsius: 1060 }).map((c) => c.check);
+    expect(short({ ...lean, PbO: 0.06 })).to.not.include('boron-short');
+    expect(short({ ...lean, PbO: 0.05 })).to.include('boron-short');
+    expect(short({ ...lean, K2O: 0.25, Na2O: 0.2 })).to.not.include('boron-short');
   });
 
   it('gives a row per limit, with the sums added up and the side a value is past', () => {
