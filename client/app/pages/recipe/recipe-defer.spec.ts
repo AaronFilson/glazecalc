@@ -16,7 +16,9 @@ const template = (name: string): string =>
 const page = template('recipe-page.html');
 /** The saved recipes, which the page draws on every visit (saved-recipes.ts). */
 const saved = template('saved-recipes.html');
-const code = readFileSync('client/app/pages/recipe/recipe-page.ts', 'utf8');
+/** The swaps under the recipe's materials (recipe-swaps-panel.ts). */
+const swaps = template('recipe-swaps-panel.html');
+const code = (name: string): string => readFileSync('client/app/pages/recipe/' + name, 'utf8');
 
 /** Whether every use of an element in a template is inside a @defer block's content. */
 function onlyDeferred(template: string, selector: string): boolean {
@@ -39,8 +41,12 @@ function onlyDeferred(template: string, selector: string): boolean {
 
 describe('recipe page deferral', () => {
   it('uses print, compare, share, the swap report and the materials to try only inside @defer blocks', () => {
-    for (const selector of ['gc-recipe-print', 'gc-recipe-compare', 'gc-swap-report', 'gc-try-materials']) {
+    for (const selector of ['gc-recipe-print', 'gc-recipe-compare', 'gc-swap-report']) {
       expect(onlyDeferred(page, selector), selector).toBe(true);
+    }
+    // The swap's report under the materials, and the materials to try, are in the swaps' part.
+    for (const selector of ['gc-swap-report', 'gc-try-materials']) {
+      expect(onlyDeferred(swaps, selector), selector + ' in the swaps').toBe(true);
     }
     // Share is in the saved recipes' list, drawn on every visit.
     expect(onlyDeferred(saved, 'gc-share-panel'), 'gc-share-panel').toBe(true);
@@ -49,8 +55,9 @@ describe('recipe page deferral', () => {
   });
 
   it('imports their types apart from the components, which a deferred part needs', () => {
-    expect(code).toContain("import type { CompareChoice } from './recipe-compare';");
-    expect(code).toContain("import type { Run, SwapResult } from './swap-report';");
+    expect(code('recipe-page.ts')).toContain("import type { CompareChoice } from './recipe-compare';");
+    expect(code('recipe-page.ts')).toContain("import type { SwapResult } from './swap-report';");
+    expect(code('recipe-swaps.ts')).toContain("import type { Run, SwapResult } from './swap-report';");
   });
 });
 

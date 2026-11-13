@@ -2227,6 +2227,12 @@ describe('RecipePage', () => {
       notes: ['None.']
     };
 
+    /** The materials on hand that Match with what I have lists, by name. */
+    const onHand = (fixture: { nativeElement: HTMLElement }) =>
+      [...fixture.nativeElement.querySelectorAll('.recipe-shelf .try-list .try-name')].map((name) =>
+        name.textContent?.trim()
+      );
+
     const start = async (recipes: Recipe[] = [OLD]) => {
       const fixture = TestBed.createComponent(RecipePage);
       const router = TestBed.inject(Router);
@@ -2325,7 +2331,7 @@ describe('RecipePage', () => {
       const { fixture, page } = await start();
       page['open'](OLD);
       await settle(fixture);
-      page['tryModernMaterials']();
+      click(fixture, 'Try modern materials and compare');
       await settle(fixture);
       page['closeCompare']();
       await settle(fixture);
@@ -2334,7 +2340,7 @@ describe('RecipePage', () => {
         .expectOne({ method: 'DELETE', url: API + '/recipe/delete/r1' })
         .flush({});
       await removing;
-      page['undoSwap']();
+      click(fixture, 'Undo the swap');
       await settle(fixture);
       expect(page['title']()).toBe('Old celadon');
       expect(page['savedId']()).toBeNull();
@@ -2356,7 +2362,8 @@ describe('RecipePage', () => {
         [WHITING, '20'],
         [SILICA, '40']
       ]);
-      page['tryModernMaterials']();
+      await settle(fixture);
+      click(fixture, 'Try modern materials and compare');
       await settle(fixture);
       page['closeCompare']();
       await settle(fixture);
@@ -2403,7 +2410,7 @@ describe('RecipePage', () => {
       const note = text(fixture, '.recipe-swap');
       expect(note).toContain('Lead Bisilicate Frit is what is used now, but it is not like for like');
       expect(note).toContain('Lead Bisilicate Frit still contains lead.');
-      page['tryModernMaterials']();
+      click(fixture, 'Try modern materials and compare');
       await settle(fixture);
       expect(page['notes']()).toBe(
         'Swapped one for one: Litharge became Lead Bisilicate Frit (work its amount out again).'
@@ -2670,7 +2677,9 @@ describe('RecipePage', () => {
       expect(document.activeElement?.id).toBe('lead-heading');
       expect((fixture.nativeElement.querySelector('#lead-cone') as HTMLSelectElement).value).toBe('04');
       expect(text(fixture, 'label[for="lead-base-0"]')).toBe('Borosilicate frit (15% boron, B₂O₃)');
-      page['chooseCone']('06');
+      const cone = fixture.nativeElement.querySelector('#lead-cone') as HTMLSelectElement;
+      cone.value = '06';
+      cone.dispatchEvent(new Event('change'));
       await settle(fixture);
 
       click(fixture, 'Replace lead and compare');
@@ -2704,7 +2713,7 @@ describe('RecipePage', () => {
         [SILICA, '40']
       ]);
       await settle(fixture);
-      page['tryModernMaterials']();
+      click(fixture, 'Try modern materials and compare');
       await settle(fixture);
       expect(router.url).toBe('/?compare=before,draft');
       expect(text(fixture, '#compare-title')).toBe('Untitled recipe and Untitled recipe with modern materials');
@@ -2800,10 +2809,7 @@ describe('RecipePage', () => {
       // On hand: whiting, the feldspar, and one of the potter's own that this page does not have.
       answer('/shelf', { shelf: ['Whiting', 'mine-1', 'G-200 EU Feldspar'] });
       await settle(fixture);
-      expect(page['shelfTries']().map((tried: { material: Material }) => tried.material.name)).toEqual([
-        'Whiting',
-        'G-200 EU Feldspar'
-      ]);
+      expect(onHand(fixture)).toEqual(['Whiting', 'G-200 EU Feldspar']);
       click(fixture, 'Add the materials in this recipe');
       const put = httpMock().expectOne(API + '/shelf');
       expect(put.request.body).toEqual({ shelf: ['Whiting', 'mine-1', 'G-200 EU Feldspar', 'Custer Spar', 'Silica'] });
@@ -2845,9 +2851,7 @@ describe('RecipePage', () => {
       answer('/shelf', { shelf: ['Lead bisilicate', 'G-200 EU Feldspar', 'Whiting', 'Silica'] });
       await settle(fixture);
       expect(text(fixture, '.recipe-shelf-lead')).toBe('1 with lead is not used: lead is off in Settings.');
-      expect(page['shelfTries']().map((tried: { material: Material }) => tried.material.name)).not.toContain(
-        'Lead bisilicate'
-      );
+      expect(onHand(fixture)).not.toContain('Lead bisilicate');
 
       // Still on hand, for when lead is on: a change keeps it.
       (
