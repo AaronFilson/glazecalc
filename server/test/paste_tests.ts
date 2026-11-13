@@ -550,6 +550,8 @@ describe('Paste-in import: finding the material', () => {
     expect(matched('G200')).to.eql(['alias', 'G-200 Feldspar']);
     expect(matched('Feldspar, potash')).to.eql(['alias', 'Potash Feldspar (Potterycrafts P3296)']);
     expect(matched('Kalifeldspat K 11')).to.eql(['alias', 'Norflux Potash Feldspar (Sibelco, K 11 / LIS D75)']);
+    // It offered barium, lithium and strontium carbonate, whiting and potassium bichromate, but not Pearl Ash.
+    expect(matched('Potassium carbonate')).to.eql(['alias', 'Pearl Ash']);
   });
 
   it('takes a close name when one stands out', () => {
