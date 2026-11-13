@@ -151,6 +151,31 @@ describe('the page of a standard material', () => {
     return { fixture, page: fixture.nativeElement as HTMLElement };
   };
 
+  it('links the materials it is like or replaces that have a page of their own, and names the others', async () => {
+    const { page } = await render({
+      ...named('Minspar 200'),
+      substitutes: ['Custer Spar', 'Chromium Oxide'],
+      replaces: ['Kona F-4 Feldspar', 'Old Hill Spar']
+    });
+    const said = (term: string) => {
+      const dt = [...page.querySelectorAll('.facts dt')].find((one) => one.textContent?.trim() === term)!;
+      const dd = dt.nextElementSibling!;
+      return {
+        // As the line reads: each name followed straight by its comma.
+        text: dd.textContent?.replace(/\s+/g, ' ').trim(),
+        links: [...dd.querySelectorAll('a')].map((a) => a.getAttribute('href'))
+      };
+    };
+    expect(said('Similar materials')).toEqual({
+      text: 'Custer Spar, Chromium Oxide',
+      links: ['/materials/custer-spar']
+    });
+    expect(said('Replaces')).toEqual({
+      text: 'Kona F-4 Feldspar, Old Hill Spar',
+      links: ['/materials/kona-f-4-feldspar']
+    });
+  });
+
   it('says so where a record has no hazard statement, or an analysis Glazecalc cannot work out', async () => {
     const { page } = await render({ ...named('Silica'), hazards: undefined, loi: 120 });
     const section = (id: string) => page.querySelector('#' + id)!.closest('section')!.textContent;

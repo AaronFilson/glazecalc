@@ -94,10 +94,10 @@ export const hasFlux = (material: Material): boolean =>
               @if (item.path) {
                 <a [routerLink]="item.path">{{ item.name }}</a>
               } @else {
-                {{ item.name }}
+                <span>{{ item.name }}</span>
               }
               @if (!last) {
-                {{ ', ' }}
+                <span>, </span>
               }
             }
           </dd>
@@ -109,10 +109,10 @@ export const hasFlux = (material: Material): boolean =>
               @if (item.path) {
                 <a [routerLink]="item.path">{{ item.name }}</a>
               } @else {
-                {{ item.name }}
+                <span>{{ item.name }}</span>
               }
               @if (!last) {
-                {{ ', ' }}
+                <span>, </span>
               }
             }
           </dd>
