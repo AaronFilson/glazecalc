@@ -1547,5 +1547,61 @@ describe('glaze chemistry', () => {
         calculateUMF({ Whiting: 20, Silica: 30, Kaolin: '' } as unknown as Record<string, number>).umf
       ).to.deep.equal(plain);
     });
+
+    it('should refuse an LOI or molecular weight that is given but not a number, and say when the two disagree', () => {
+      const codeOf = (work: () => unknown): string | undefined => {
+        try {
+          work();
+        } catch (e) {
+          return (e as ChemistryError).code;
+        }
+        return undefined;
+      };
+      const whiting = { name: 'My whiting', percentmole: 'molecular', fields: [{ name: 'CaO', amount: '1' }] };
+      const weights = (extra: object) => chemistry.materialWeights({ ...whiting, ...extra } as MaterialInput);
+      for (const odd of ['43,97', Infinity, NaN, 'abc', true]) {
+        expect(
+          codeOf(() => weights({ loi: odd })),
+          String(odd)
+        ).to.equal('invalid-loi');
+        expect(
+          codeOf(() => weights({ molecularweight: odd })),
+          String(odd)
+        ).to.equal('invalid-molecular-weight');
+      }
+      // In percent too, where the LOI is all there is.
+      expect(
+        codeOf(() =>
+          chemistry.materialWeights({
+            ...whiting,
+            percentmole: 'percent',
+            fields: [{ name: 'CaO', amount: '56' }],
+            loi: '43,97'
+          })
+        )
+      ).to.equal('invalid-loi');
+      // Left out (absent, null or blank) is still left out; given, either one sets the LOI.
+      for (const blank of [undefined, null, '', '  ']) expect(weights({ loi: blank }).loi).to.equal(0);
+      expect(weights({ loi: '43.97' }).loi).to.equal(43.97);
+      expect(weights({ molecularweight: '100.09' }).loi).to.be.closeTo(43.97, 0.01);
+      // Both, agreeing to half a point: no warning. Further apart: the LOI is used, with a warning.
+      expect(weights({ loi: 43.6, molecularweight: 100.09 }).warningCodes).to.deep.equal([]);
+      const apart = weights({ loi: 30, molecularweight: 100.09 });
+      expect(apart.loi).to.equal(30);
+      expect(apart.warningCodes.map((w) => w.code)).to.deep.equal(['loi-molecular-weight']);
+      expect(apart.warnings[0]).to.equal(
+        'The LOI of My whiting (30.00%) does not match its molecular weight, which gives 43.97%; the LOI was used.'
+      );
+      // Every standard material's LOI and molecular weight agree.
+      const standard = [...standardData.load('materials'), ...standardData.load('additives')];
+      for (const record of standard as unknown as Array<MaterialInput & { noChemistry?: boolean }>) {
+        if (record.fields?.length && !record.noChemistry) {
+          expect(
+            chemistry.materialWeights(record).warningCodes.map((w) => w.code),
+            record.name
+          ).to.not.include('loi-molecular-weight');
+        }
+      }
+    });
   });
 });

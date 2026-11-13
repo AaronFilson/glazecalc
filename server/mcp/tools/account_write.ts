@@ -559,6 +559,7 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
       };
       let warnings: Array<ReturnType<typeof warningOut>> = [];
       if (analysis || loi !== undefined) {
+        // Without the stored molecular weight: it was worked out from the old LOI, and the LOI given is the one to use.
         const { warningCodes, ...worked } = materialFields(
           name ?? found.name,
           analysis
@@ -567,8 +568,7 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
                 fields: found.fields as Array<{ name: string; amount: string | number }>,
                 percentmole: found.percentmole,
                 loi: loi ?? found.loi
-              },
-          analysis ? undefined : found.molecularweight
+              }
         );
         Object.assign(changes, worked);
         warnings = warningCodes.map((w) => warningOut(w, lang));
