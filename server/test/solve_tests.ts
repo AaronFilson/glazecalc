@@ -87,7 +87,7 @@ describe('Target & Solve', () => {
   it('chooses the fewest that come near from a fuller shelf, and from a fired analysis as well', () => {
     const shelf = shelfOf(
       'Custer Spar',
-      'Nepheline Syenite',
+      'Nepheline Syenite (typical)',
       'Whiting',
       'Dolomite',
       'Talc',
@@ -155,21 +155,28 @@ describe('Target & Solve', () => {
     expect(held.cautions.map((c) => c.check)).to.not.include('clay-high');
     // Cautions follow the firing: too much boron for cone 6 is said at mid fire.
     const boron = { kind: 'unity' as const, oxides: { Na2O: 0.3, CaO: 0.7, B2O3: 0.9, Al2O3: 0.3, SiO2: 2.6 } };
-    const shelf = shelfOf('Ferro Frit 3134', 'Ferro Frit 3124', 'Nepheline Syenite', 'Whiting', 'EPK Kaolin', 'Silica');
+    const shelf = shelfOf(
+      'Ferro Frit 3134',
+      'Ferro Frit 3124',
+      'Nepheline Syenite (typical)',
+      'Whiting',
+      'EPK Kaolin',
+      'Silica'
+    );
     const mid = recipe.solveTarget(boron, shelf, { band: 'mid' });
     expect(mid.cautions.map((c) => c.check)).to.include('boron-high');
   });
 
   it('leaves out what it is told to, and keeps a must', () => {
-    const shelf = shelfOf('Custer Spar', 'Nepheline Syenite', 'Whiting', 'EPK Kaolin', 'Silica');
+    const shelf = shelfOf('Custer Spar', 'Nepheline Syenite (typical)', 'Whiting', 'EPK Kaolin', 'Silica');
     const without = recipe.solveTarget({ kind: 'unity', oxides: GLOSSY_UNITY }, shelf, { avoid: ['Custer Spar'] });
     expect(amountIn(without, 'Custer Spar')).to.equal(0);
-    expect(amountIn(without, 'Nepheline Syenite')).to.be.above(10);
+    expect(amountIn(without, 'Nepheline Syenite (typical)')).to.be.above(10);
     const must = recipe.solveTarget({ kind: 'unity', oxides: GLOSSY_UNITY }, [
       ...shelfOf('Custer Spar', 'Whiting', 'EPK Kaolin', 'Silica'),
-      { material: find('Nepheline Syenite'), must: true }
+      { material: find('Nepheline Syenite (typical)'), must: true }
     ]);
-    expect(amountIn(must, 'Nepheline Syenite')).to.be.at.least(1);
+    expect(amountIn(must, 'Nepheline Syenite (typical)')).to.be.at.least(1);
   });
 
   it('refuses what it cannot solve, in codes with their English', () => {
@@ -308,7 +315,15 @@ describe('Target & Solve, Match with what I have and Suggest amounts: the work b
 
   it('leaves a shelf as potters have one alone: a small part of the work, nothing cut', () => {
     const meter = chemistry.newMeter();
-    const shelf = shelfOf('Custer Spar', 'Nepheline Syenite', 'Whiting', 'Dolomite', 'Talc', 'EPK Kaolin', 'Silica');
+    const shelf = shelfOf(
+      'Custer Spar',
+      'Nepheline Syenite (typical)',
+      'Whiting',
+      'Dolomite',
+      'Talc',
+      'EPK Kaolin',
+      'Silica'
+    );
     const solved = recipe.solveTarget({ kind: 'unity', oxides: GLOSSY_UNITY }, shelf, { meter });
     expect(solved.report).to.not.have.property('cutShort');
     expect(meter.used).to.be.below(chemistry.WORK / 100);

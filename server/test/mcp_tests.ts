@@ -858,7 +858,7 @@ describe('MCP: the public tools', () => {
 
   // The staging session's recipe and shelf: an assistant read the solver's score as a wide miss.
   const GERSTLEY = [
-    { material: 'Nepheline Syenite', amount: 40 },
+    { material: 'Nepheline Syenite (typical)', amount: 40 },
     { material: 'Silica', amount: 25 },
     { material: 'Gerstley Borate', amount: 15 },
     { material: 'EPK', amount: 20 }
@@ -907,7 +907,7 @@ describe('MCP: the public tools', () => {
   it('match_from_materials holds raw clay to 20% where that costs little, and allowMore lifts it', async () => {
     resetFits();
     const lines = [
-      { material: 'Nepheline Syenite', amount: 35 },
+      { material: 'Nepheline Syenite (typical)', amount: 35 },
       { material: 'Silica', amount: 25 },
       { material: 'Whiting', amount: 10 },
       { material: 'EPK', amount: 15 },

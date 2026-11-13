@@ -1122,7 +1122,7 @@ describe('glaze chemistry', () => {
     // The staging case behind ADR 12's note on closeness: nepheline syenite and
     // Gerstley Borate replaced from a shelf with Custer Spar and Frit 3134.
     const GERSTLEY = molesOf([
-      ['Nepheline Syenite', 40],
+      ['Nepheline Syenite (typical)', 40],
       ['Silica', 25],
       ['Gerstley Borate', 15],
       ['EPK Kaolin', 20]

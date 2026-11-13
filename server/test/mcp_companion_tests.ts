@@ -727,7 +727,7 @@ describe('MCP: the round 12 companion additions', () => {
         { material: 'Custer Spar', amount: 20 }
       ],
       b: [
-        { material: 'Nepheline Syenite', amount: 60 },
+        { material: 'Nepheline Syenite (typical)', amount: 60 },
         { material: 'Whiting', amount: 10 },
         { material: 'EPK', amount: 10 },
         { material: 'Silica', amount: 20 }
