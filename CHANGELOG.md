@@ -923,7 +923,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   Orton numbers are never turned into each other. The new guide section is translated into every
   language.
 - **Japan as a region** (in Japanese or English). It fires by SK cones and reads glaze density in
-  degrees Baumé until you choose otherwise, and lists the US materials until Japan's own are added.
+  degrees Baumé until you choose otherwise, and listed the US materials until Japan's own were added (its own
+  library since: Changed, below).
   The guides give, each from an official page with its date:
   - **Who to call:** 119, and the Japan Poison Information Center's two public lines (Osaka and
     Tsukuba, 24 hours, free), which take only acute poisoning that has happened, not long-term
@@ -1251,6 +1252,14 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **Japan has its own material library,** which lists the nine Japanese materials (Amakusa pottery stone, the
+  Fukushima, Kamado, Tsushima and Masuda feldspars, Korean kaolin and three synthetic ashes) and the US set beside
+  them, so a potter in Japan keeps every material they could pick before (`inRegion`, `lib/recipe/library.js`). Japan
+  used the US library, chosen before it had materials of its own, so the Japanese ones showed only under All regions
+  and were never suggested. "Japan" is now a choice in the library's region filter, in every language, and the library
+  a potter in Japan follows. Swaps take Japan's own substitute first (Amakusa stone for Jingdezhen porcelain stone),
+  then one from the US set, and the local-equivalents guide names Japan in every language. The MCP server (1.5.0)
+  takes `region: "JP"` in `search_materials` and `suggest_substitutes`, and its search filters as the app does.
 - **Over 1,550 Angular unit tests, from 1,188, and 99% of the app's statements run by them, from 92%,** across the
   recipe pages, the account and its offline copy, sign-in, the app's frame and every other page, driven through
   each page's own fields and buttons. The client's coverage now counts the app's own code (`client/`), templates
