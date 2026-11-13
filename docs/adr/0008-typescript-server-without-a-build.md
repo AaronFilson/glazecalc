@@ -18,7 +18,7 @@ traces point at generated code unless source maps are wired up.
   file. There is no compiled output; the Docker image runs `node server/main.ts`, and the tests
   run the same files under Mocha.
 - `tsc -p server` checks the types (strict) without emitting anything: `npm run typecheck`, a CI
-  step before the tests.
+  step.
 - `erasableSyntaxOnly` limits the code to TypeScript that can simply be erased (no enums,
   namespaces or parameter properties), which is what Node supports, and `verbatimModuleSyntax`
   makes type-only imports explicit. Imports name their `.ts` files.

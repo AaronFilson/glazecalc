@@ -1,7 +1,8 @@
 # Architecture decision records
 
 Short records of the decisions that shaped Glazecalc: what was decided, why, and what it costs.
-Each one is written once; a later change gets a new record that replaces the old one.
+Each one records a decision on its date. A later change is added to the record as a dated amendment, or gets a new
+record that says what it replaces.
 
 | No.                                               | Decision                                                                | Date       |
 | ------------------------------------------------- | ----------------------------------------------------------------------- | ---------- |
@@ -34,5 +35,5 @@ Each one is written once; a later change gets a new record that replaces the old
 | [0028](0028-service-worker.md)                    | Offline: Angular's service worker keeps the app, the app the language   | 2026-10-31 |
 | [0029](0029-infrastructure-as-code-with-cdk.md)   | The AWS setup as code, with AWS CDK in TypeScript                       | 2026-11-12 |
 
-0018 is kept for the in-app assistant's privacy notice, in
+0018 is kept for the privacy notice on connecting an AI assistant, item 39 of
 [the integrations plan](../integrations-plan.md). The next new record takes 0030.

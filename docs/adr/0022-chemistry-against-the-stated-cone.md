@@ -1,7 +1,8 @@
 # 22. The chemistry is checked against the stated cone, by boron and one other signal
 
 Accepted, 2026-10-19. From the research report "Chemistry against the stated cone" (2026-10-19,
-kept out of the repository in `reports/`) and the owner's decisions of 2026-10-19.
+kept out of the repository in `reports/`) and the owner's decisions of 2026-10-19. Amended
+2026-10-20: nothing past cone 10 is judged (see "Nothing past cone 10", below).
 
 ## Context
 

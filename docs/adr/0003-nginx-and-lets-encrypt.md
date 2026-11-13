@@ -2,6 +2,11 @@
 
 Accepted, 2026-10-05.
 
+Amended, 2026-10-16: a page has three content security policies and must pass all three. nginx sends a full one on
+every reply (`default-src 'self'`, `deploy/nginx/glazecalc-proxy.conf`); the app's own header, since 2026-10-13,
+allows Angular's inline styles only with a fresh nonce for each reply (`server/app.ts`); and the build's still allows
+the inline scripts only by their hashes.
+
 ## Context
 
 The site needs HTTPS, security headers, and something in front of Node that handles slow clients,

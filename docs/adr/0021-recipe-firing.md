@@ -1,7 +1,10 @@
 # 21. A recipe states its firing: the cone as given, the range claimed, the cones tested
 
 Accepted, 2026-10-17. From the research report "Recipe cone field" (2026-10-17, kept out of the
-repository in `reports/`) and the owner's decisions on its open questions.
+repository in `reports/`) and the owner's decisions on its open questions. Amended 2026-10-19 (SK
+and Orton by Kyoto's same-kiln columns; result cards), 2026-10-20 (higher cones) and 2026-11-08 (a
+cone counts as tested only when ticked), each marked below. The chemistry-against-cone check it
+left for later is [ADR 22](0022-chemistry-against-the-stated-cone.md).
 
 ## Context
 
@@ -239,5 +242,6 @@ panel. Recipes so far say their firing only in the notes, if at all.
   measured cross-scale equivalent: the page shows nothing rather than a guess or a nominal figure.
 - From cone 12 up no limits are checked by band, in any set, until a published limit set for
   those firings is found and added.
-- Not done yet: chemistry-against-cone warnings ("stated cone 6, fluxes look like cone 10") and test
-  plans (the report's phases 2 and 3); result cards are done (above), without photos.
+- Of the report's phases 2 and 3, the chemistry-against-cone warnings ("stated cone 6, fluxes look
+  like cone 10") are done ([ADR 22](0022-chemistry-against-the-stated-cone.md)) and test plans are
+  not; result cards are done (above), without photos.

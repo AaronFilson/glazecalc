@@ -1,6 +1,7 @@
 # 28. Offline: Angular's service worker keeps the app, and the app keeps the reader's language
 
-Accepted, 2026-10-31.
+Accepted, 2026-10-31. Amended in November 2026: the reader's own records on the device (stage 3, 2026-11-02),
+then changes made offline (stage 4, 2026-11-03, with follow-ups on 2026-11-08), both under Consequences below.
 
 ## Context
 
@@ -89,8 +90,8 @@ in `deploy/README.md`.
 - The cached set is about 2 MB for the app, 0.1 to 0.5 MB for a language and English; the browser test fails above
   3 MB. First visit costs the downloads of the `app` group in the background after the page is stable.
 - A signed-in person offline gets the calculator, the guides, the safety pages, the cone chart and the materials;
-  their own records are on the phone only if they turned on "Keep my records on this phone" (stage 3, below), and
-  saving waits for a network (stage 4, not planned).
+  their own records are on the phone only if they turned on "Keep my records on this device" (stage 3, below), and
+  then the changes they make offline wait there until the network is back (stage 4, below).
 
 **Stage 3: the user's records (November 2026).** An account (never a trial) can turn on one switch on the account
 page, per device, off by default. `core/offline-records.ts` then keeps the answers of `/api/{recipe,materials,
@@ -110,6 +111,22 @@ end, email change, delete), when the switch is turned off, when another tab remo
 start when there is no session note (a delete another tab blocked). A copy of another user or schema is dropped.
 No app-level encryption: the browser keeps sites apart and the device encrypts its disk; a key the page holds
 would sit on the same device.
+
+**Stage 4: changes made offline (2026-11-03, with follow-ups on 2026-11-08).** It replaces three things in stage 3
+above. The copy is no longer read-only: while records are kept on the device, a change to a record or a setting
+that cannot reach the server waits in the same database (`core/outbox.ts`, the `outbox` store) and is answered at
+once, a new record with a temporary id; undo, sharing, the Trash, a recipe's firing links, tokens, import and the
+shelf still need the network. The changes are sent in order once the network is back, each with an
+`Idempotency-Key` and, for a change or a removal, `If-Match` with the record's version, new records' ids put in;
+where the browser has Background Sync (Chromium), the worker tells the open pages to send (`scripts/outbox-sync.js`,
+added to `ngsw-worker.js` by `scripts/service-worker.mjs`). A note changed elsewhere meanwhile is merged, both
+texts kept where both changed; for another record the person chooses (`core/outbox-conflict.dialog.ts`): Save mine
+as a copy, Keep mine or Keep theirs, or, when it is gone, Save as new or Discard my changes. The copy is no longer
+deleted at every session end: signing out asks whether to keep it and the waiting changes on the device (the
+default) or delete them, a sign-in that runs out deletes nothing, and deleting the account deletes them. And each
+account's copy is its own (the `copies` store, keyed `<userId>/<name>`): another account's is kept locked, never
+shown or sent, until it signs in again. The account page clears them, and the person chooses how long they are kept
+while Glazecalc is not opened on the device (until deleted, or 7, 30, 90 or 365 days).
 
 - A signed-out visitor offline who opens `/recipe` is sent to the sign-in page, which needs the network: the
   calculator offline is for a session already on the device (an account or a trial).

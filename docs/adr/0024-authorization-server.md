@@ -5,7 +5,11 @@ and 38 (the server side; the consent page and the notice email are a later branc
 owner's decisions of 2026-10-19: changing records (`data:write`) is opt-in on the consent page,
 unticked, reached by stepping up, and a connection that may change records lasts 90 days from the
 yes, never renewed. Builds on [ADR 17](0017-mcp-server.md), whose endpoint, tools and limits are
-unchanged.
+unchanged. Amended 2026-10-20 ([An outside report](#an-outside-report), and
+[Amended: sign-in when a tool needs it](#amended-sign-in-when-a-tool-needs-it), which lists every
+tool to callers without a token) and 2026-10-21
+([Amended: ChatGPT's document, private_key_jwt, shared addresses](#amended-chatgpts-document-private_key_jwt-shared-addresses),
+which changes ADR 17's limits).
 
 ## Context
 
