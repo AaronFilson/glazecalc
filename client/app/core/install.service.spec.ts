@@ -60,4 +60,13 @@ describe('InstallService', () => {
     window.dispatchEvent(offerEvent());
     expect(install.available()).toBe(false);
   });
+
+  it('stops listening to the window when the app is torn down', () => {
+    standalone(false);
+    TestBed.inject(InstallService);
+    TestBed.resetTestingModule();
+    const event = offerEvent();
+    window.dispatchEvent(event);
+    expect(event.defaultPrevented).toBe(false);
+  });
 });

@@ -1,5 +1,5 @@
 import { isPlatformBrowser } from '@angular/common';
-import { Injectable, PLATFORM_ID, computed, inject, signal } from '@angular/core';
+import { DestroyRef, Injectable, PLATFORM_ID, computed, inject, signal } from '@angular/core';
 
 /** What Chrome on Android offers before it shows its own install prompt (not yet in TypeScript's DOM types). */
 interface BeforeInstallPromptEvent extends Event {
@@ -22,12 +22,19 @@ export class InstallService {
   constructor() {
     if (!isPlatformBrowser(inject(PLATFORM_ID))) return;
     this.installed.set(this.isInstalledApp());
-    window.addEventListener('beforeinstallprompt', (event) => {
+    const offered = (event: Event) => {
       // Keeps it for the menu, instead of the browser's own bar.
       event.preventDefault();
       this.offer.set(event as BeforeInstallPromptEvent);
+    };
+    const installed = () => this.offer.set(null);
+    window.addEventListener('beforeinstallprompt', offered);
+    window.addEventListener('appinstalled', installed);
+    // Torn down (the app, or a test's injector): the window is no longer listened to.
+    inject(DestroyRef).onDestroy(() => {
+      window.removeEventListener('beforeinstallprompt', offered);
+      window.removeEventListener('appinstalled', installed);
     });
-    window.addEventListener('appinstalled', () => this.offer.set(null));
   }
 
   /** Asks the browser to show its install question. The offer is used up whatever the answer. */

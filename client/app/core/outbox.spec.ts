@@ -5,7 +5,7 @@ import { TestBed } from '@angular/core/testing';
 import { provideRouter } from '@angular/router';
 import { IDBFactory } from 'fake-indexeddb';
 import { firstValueFrom } from 'rxjs';
-import { API, httpMock, waitFor } from '../testing/test-providers';
+import { API, httpMock, unhandledRejectionsDuring, waitFor } from '../testing/test-providers';
 import { provideEnglish } from '../testing/i18n';
 import { API_BASE } from './api-base';
 import { AuthService, SIGN_IN_PROVIDERS } from './auth.service';
@@ -740,6 +740,36 @@ describe('the outbox: changes made while offline', () => {
     await waitFor(async () => expect(await outbox.entries()).toEqual([]));
   });
 
+  it('stops trying again when the app is torn down', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    const outbox = TestBed.inject(Outbox);
+    await turnOn(records);
+    offline(true);
+    await change('notes', 'n1', { content: 'x' });
+    vi.restoreAllMocks();
+    const timers = vi.spyOn(globalThis, 'setTimeout');
+    const tries = () => timers.mock.calls.filter(([, delay]) => (delay ?? 0) >= 30_000);
+    const busy = outbox.flush();
+    (await nextRequest(API + '/notes/change/n1')).flush(null, { status: 503, statusText: 'Unavailable' });
+    await busy;
+    expect(tries().map(([, delay]) => delay)).toEqual([30_000]);
+    const retry = timers.mock.calls.indexOf(tries()[0]!);
+    // Sent again before then, and the app is torn down while it is on its way.
+    void outbox.flush();
+    const sending = await nextRequest(API + '/notes/change/n1');
+    const cleared = vi.spyOn(globalThis, 'clearTimeout');
+    const errors = await unhandledRejectionsDuring(() => {
+      TestBed.resetTestingModule();
+      expect(cleared).toHaveBeenCalledWith(timers.mock.results[retry]!.value);
+      // The server is busy again: no other try is set. Had the first one's time come all the same, nothing is tried.
+      sending.flush(null, { status: 503, statusText: 'Unavailable' });
+      (timers.mock.calls[retry]![0] as () => void)();
+    });
+    expect(errors).toEqual([]);
+    expect(tries()).toHaveLength(1);
+  });
+
   it('sends in one tab at a time, under a Web Lock where the browser has them', async () => {
     setUp();
     const records = TestBed.inject(OfflineRecords);
@@ -997,6 +1027,18 @@ describe('the outbox: conflicts', () => {
     expect(outbox.pendingFor('recipe', 'r1')).toBe(false);
     return { records, outbox, seq: outbox.conflicts()[0].seq! };
   }
+
+  it('a choice made as the app is torn down is kept, with nothing fetched or sent after it', async () => {
+    const { outbox, seq } = await conflictOnRecipe();
+    const errors = await unhandledRejectionsDuring(async () => {
+      const resolved = outbox.resolve(seq, 'theirs');
+      TestBed.resetTestingModule();
+      await resolved;
+    });
+    expect(errors).toEqual([]);
+    // The next start finds it made: the change is gone, and nothing waits.
+    expect(await restart().outbox.entries()).toEqual([]);
+  });
 
   it('Save mine as a copy makes a new recipe named "(offline copy)" from the edited one and leaves the server\'s alone', async () => {
     const { records, outbox, seq } = await conflictOnRecipe();

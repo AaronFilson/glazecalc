@@ -191,6 +191,19 @@ describe('LocaleService', () => {
     expect(preferences.cones()).toBe('sk');
   });
 
+  it('leaves the library the region it keeps on this browser when torn down, not the one the visit followed', () => {
+    // A region chosen in the library itself, then a different one in Settings.
+    localStorage.setItem('region', 'US');
+    const preferences = TestBed.inject(PreferencesService);
+    TestBed.inject(LocaleService);
+    preferences.remember('region', 'DE');
+    TestBed.tick();
+    expect(chosenRegion()).toBe('EU');
+    // The next app (the next test's) starts from the browser's choice, as a new visit would.
+    TestBed.resetTestingModule();
+    expect(chosenRegion()).toBe('US');
+  });
+
   it('fires by SK cones and reads density in Baumé in Japan, until chosen, and lists the US library', () => {
     const preferences = TestBed.inject(PreferencesService);
     const locale = TestBed.inject(LocaleService);

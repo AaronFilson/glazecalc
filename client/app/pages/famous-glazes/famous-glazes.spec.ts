@@ -18,6 +18,7 @@ import { Additive, Material } from '../../core/models';
 import { PendingRecipeService } from '../../core/pending-recipe.service';
 import { signedInGuard } from '../../core/signed-in.guard';
 import { PAGE_LANGUAGE } from '../../i18n/language';
+import { saveRegion } from '../../shared/library-info';
 import { API, httpMock, settle, skippedHeadings, testProviders } from '../../testing/test-providers';
 import { STANDARD_MATERIALS } from '../materials/standard-materials';
 import { FamousGlazePage } from './famous-glaze-page';
@@ -234,6 +235,9 @@ describe("a famous glaze's page", () => {
   const setUp = (glaze: FamousGlaze, language = 'en', routes: Routes = []) => {
     // A session another spec left in localStorage would hide the sign-up link.
     localStorage.clear();
+    // And a region another spec chose (the signal outlives the spec file in this worker) would change which
+    // materials the recipe is made from: these tests are for a reader who has chosen none.
+    saveRegion('');
     TestBed.resetTestingModule();
     TestBed.configureTestingModule({
       providers: [
