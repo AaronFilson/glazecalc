@@ -5,7 +5,7 @@ import { reveal } from '../../shared/field-checks';
 
 /**
  * A style for a part of the editor in a file of its own: what gets the focus in the workbench scrolls clear
- * of the peek bar above it (WCAG 2.4.11), as recipe-page.ts has it for the rest of the editor.
+ * of the peek bar above it (WCAG 2.4.11), as recipe-page.css has it for the rest of the editor.
  */
 export const CLEAR_OF_PEEK = `
   :host-context(.layout-workbench) :is(input, select, textarea, button, a, summary, [tabindex]) {
