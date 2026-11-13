@@ -1183,6 +1183,29 @@ describe('confirm before changes: what the page shows of a line’s chemistry an
     expect(lines.after.split('\n').slice(1)).to.deep.equal(['Silica 30', 'Whiting 20', 'EPK Kaolin 20']);
   });
 
+  it('names the material a shelf change takes off, however the body names it', async () => {
+    await api()
+      .put('/shelf')
+      .set('Authorization', bearer(mine.token))
+      .send({ shelf: ['name:Silica', 'name:Whiting'] });
+    await setting(mine.token, 'removals');
+    // A key, and another material's name: the key is what is taken off, so the page names that.
+    const asked = await api()
+      .post('/shelf/remove')
+      .set('Authorization', bearer(write))
+      .send({ name: 'Red Iron Oxide', key: 'name:Silica' });
+    expect(asked).to.have.status(202);
+    expect((await pageOf(asked.body.pendingId)).summary.msg).to.equal('Take off the materials on hand: Silica.');
+    const approved = await api()
+      .post('/pending-changes/' + asked.body.pendingId + '/approve')
+      .set('Authorization', bearer(mine.token));
+    expect(approved.body.status).to.equal('done');
+    expect((await User.findById(mine.user._id, { shelf: 1 }).lean())!.shelf).to.deep.equal(['name:Whiting']);
+    // By name alone, as the library has it.
+    const named = await api().post('/shelf/remove').set('Authorization', bearer(write)).send({ name: 'whiting' });
+    expect((await pageOf(named.body.pendingId)).summary.msg).to.equal('Take off the materials on hand: Whiting.');
+  });
+
   it('shows what an undo would put back: a record’s fields, and the shelf by name', async () => {
     const noteId = (await newNote(mine.token)).body._id as string;
     await api()

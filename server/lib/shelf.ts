@@ -101,22 +101,30 @@ export const removeKeys = async (userId: string, keys: string[]): Promise<{ shel
   return { shelf: done?.shelf ?? [], changed: true };
 };
 
+/** The names of the materials shelf keys stand for: the account's own, else the library's; a key found in neither as it is. */
+export const namesOfKeys = async (userId: string, keys: string[]): Promise<string[]> => {
+  const own = await Material.find({ ownedBy: userId }, { name: 1 }).lean();
+  const ownById = new Map(own.map((m) => [String(m._id), m.name]));
+  return keys.map((key) =>
+    key.startsWith('name:')
+      ? (findMaterial(key.slice(5))?.name ?? key.slice(5))
+      : (ownById.get(key) ?? findById(key)?.name ?? key)
+  );
+};
+
 /**
  * What an Undo would put back, for its page (server/lib/pending_changes.ts):
  * the shelf as it is and as it was before its last change, by the materials'
- * names (the account's own, else the library's; a key found in neither as it
- * is). Nothing when there is nothing to put back.
+ * names. Nothing when there is nothing to put back.
  */
 export const shelfUndoPreview = async (userId: string): Promise<FieldChange[]> => {
   const user = await User.findById(userId, { shelf: 1, shelfPrevious: 1 }).lean();
   if (!user?.shelfPrevious) return [];
-  const own = await Material.find({ ownedBy: userId }, { name: 1 }).lean();
-  const ownById = new Map(own.map((m) => [String(m._id), m.name]));
-  const nameOf = (key: string): string =>
-    key.startsWith('name:')
-      ? (findMaterial(key.slice(5))?.name ?? key.slice(5))
-      : (ownById.get(key) ?? findById(key)?.name ?? key);
-  return fieldChanges({ shelf: user.shelfPrevious.map(nameOf) }, { shelf: (user.shelf ?? []).map(nameOf) });
+  const [before, after] = await Promise.all([
+    namesOfKeys(userId, user.shelf ?? []),
+    namesOfKeys(userId, user.shelfPrevious)
+  ]);
+  return fieldChanges({ shelf: after }, { shelf: before });
 };
 
 /**
