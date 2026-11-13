@@ -4,6 +4,22 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ## 1.0.0 (2026-11-12)
 
+The 2017 app, put back online in October, has grown into a glaze chemistry workbench in 57 languages that AI
+assistants can use too. In short, with every change in the sections below:
+
+- **For potters:** chemistry for the firing a recipe states, results by cone and a Stull chart; Target & Solve, blends
+  for test tiles, specific gravity, cost per batch and a mix ticket with hazards; share links, the Trash with Undo,
+  offline mode and dictated studio notes; public pages for each standard material, a cone chart, famous glazes, guides.
+- **Languages and regions:** Arabic and Urdu right to left, each language at its own addresses, and regions that set
+  the numbers, digits, cones, standard materials, shops and who to call.
+- **Accounts:** sign-in with Google, GitHub or Microsoft, and two-step sign-in with passkeys, authenticator apps and
+  recovery codes.
+- **AI assistants:** Glazecalc's tools over MCP, in the MCP Registry, with access tokens, an OAuth authorization server
+  with a consent page, connected apps a person can review and revoke, and, if they choose, changes that wait for a yes.
+- **Engineering:** over 3,800 tests in CI on every pull request, with the README's numbers checked against each run;
+  CodeQL; an SBOM and signed SLSA provenance on every image; an A+ (120) from Mozilla's HTTP Observatory; the AWS setup
+  as CDK stacks; a load test; and Lighthouse in CI. Fixed lists what the 1.0 tests and security review found.
+
 ### Added
 
 - **The AWS setup as code** (`deploy/cdk/`, [ADR 29](docs/adr/0029-infrastructure-as-code-with-cdk.md)): AWS CDK stacks
@@ -51,11 +67,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   trial recipe and a sign-up that comes back to the page. Nothing is published until it meets the publish bar (three
   opened sources, every material in the standard library, no open gaps). İznik is the first: a lead glaze, so it is
   shown as history, with a lead-free version labelled "Calculated, not yet test-fired." Shino (Kamado feldspar alone; no
-  firing temperature is documented, and the page says so) and Oribe followed in round 15, from Japanese sources, in
+  firing temperature is documented, and the page says so) and Oribe followed, from Japanese sources, in
   all 57 languages, their local versions labelled "Calculated, not yet test-fired." Oribe's recipe is the Mie
   Prefecture ceramics testing station's 1976 Oribe for reduction (Kamado feldspar 65, limestone 19, kaolin 15, silica
-  1, copper oxide 5, calcined talc 5; 1250–1280 °C), and its page says that classic Oribe is fired in oxidation
-  (round 17).
+  1, copper oxide 5, calcined talc 5; 1250–1280 °C), and its page says that classic Oribe is fired in oxidation.
   The index is hidden until a glaze is published. The glazes' names and prose are kept per language in the data file,
   and the build writes one file per language (`/i18n/famous-glazes/<code>.json`) so each page stays under the
   prerender's limit. Titles stay short; the search terms go in the description.
@@ -90,7 +105,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   out in a guide ("28.085 + 2 × 15.999 = 60.083 g") reads left to right on a right-to-left page, and the translations
   check takes a weight such as 100.086 g for a number, so a language with a decimal comma writes it its own way. The
   guide now says "Alumina rises down the grid, and silica rises across it" in every language (Thai had it falling), and
-  gives the usual cause of pinholes as a "Gas bubble that did not heal over" (round 17).
+  gives the usual cause of pinholes as a "Gas bubble that did not heal over".
 - **Teaching glaze calculation** (/guides/teaching-glaze-calculation): a seventh guide, a teaching pack of six
   sessions in the order of the Ibaraki Prefectural Industrial Technology Center's published glaze study group
   (cited; Glazecalc is not connected with it): materials and triaxial tiles, the chemistry, reading a unity formula,
@@ -104,7 +119,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - **A breadcrumb trail on the guides and reference pages** (`client/app/shared/structured-data.ts`,
   `client/app/shared/breadcrumb.ts`). Each guide's structured data adds a BreadcrumbList (Glazecalc, Guides, the guide,
   named and addressed in the page's language) in one graph with its Article, as the reference pages had, for search
-  results to show in place of the address (round 15). From round 17 the same trail is drawn above the title of the
+  results to show in place of the address. The same trail is also drawn above the title of the
   guides list and each guide, the materials list and each material, the famous glazes and the cone chart, to the W3C
   breadcrumb pattern: a labelled navigation list, a link for each step but the current page, and separators drawn by
   the stylesheet, which a screen reader skips and which turn round on a right-to-left page. Both come from one list of
@@ -164,7 +179,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   content's hash, so a changed heading is a new address that link previews fetch again. The images are checked in
   (`npm run og-images`, through Docker on Windows and macOS); a server test checks their sizes and names, and the Live
   checks fetch the English and German ones.
-- **The teaching companion, round 12** (docs/adr/0017-mcp-server.md; MCP server 1.4.0). A new prompt, `teach_me`: a
+- **The teaching companion, continued** (docs/adr/0017-mcp-server.md; MCP server 1.4.0). A new prompt, `teach_me`: a
   short lesson on any glaze topic at the learner's level (new, some, experienced), with up to two guide sections
   attached, one small experiment with one tool, and John Britt's videos linked by his titles with credit only when the
   topic matches a unit of the course companion (`matchTopic`); otherwise no video is named. `compare_recipes` also
@@ -174,7 +189,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   each tile's flux ratio and, in its trend, the first tile with a new caution and the first whose cone fit changes.
   Both tools now declare an output schema. Assistants only: no change on the website.
 - **Nigeria, Uganda, Ecuador, Colombia, Costa Rica, Uruguay, Paraguay, Guatemala, Rwanda, Zimbabwe, Botswana, Côte
-  d'Ivoire and Cameroon as regions** (round 11, 2026-11-02), each in the languages it reads, all already offered: who
+  d'Ivoire and Cameroon as regions** (2026-11-02), each in the languages it reads, all already offered: who
   to call, each number read on an official page (Guatemala has no single one, so CONRED's two fire and rescue numbers
   are given), Colombia's national toxicology line (018000 916012, free, day and night, for the public too), the only
   poison line among them, the health ministries but Guatemala's, Zimbabwe's and Côte d'Ivoire's, whose sites could not
@@ -214,12 +229,12 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   already offered: who to call, each read on an official page (Brazil's and Argentina's national poison lines, South
   Africa's Poisons Information Helpline with its own hours), the health ministries, each currency, and Orton cones
   in °C for Mexico, Brazil and South Africa. No silica limit or food rule is shown for them; all but Kenya and Ghana
-  have shops listed since rounds 15 and 17 (above). Brazilian Portuguese, Latin American Spanish, Quechua, Swahili,
+  have since had shops listed (above). Brazilian Portuguese, Latin American Spanish, Quechua, Swahili,
   Amharic, Afrikaans, Hausa, Yoruba, Zulu, Igbo and Somali were known but not offered, ahead of their waves (all live
   since: above); the language picker has a "Latin America" group for the first three. Peru and Ethiopia wait for an
   emergency number confirmed on an official page; Colombia and Nigeria became regions on 2026-11-02 (above).
 - **The cone chart, the list of standard materials and each material's page can be translated**, language by
-  language (round 10, stream B, first part; no language was switched on with it, and every language is since: above).
+  language (no language was switched on with it, and every language is since: above).
   A language in `REFERENCE_LANGUAGES` (lib/regions/languages.js, the `reference: true` flag) gets `/<code>/cones` and
   `/<code>/materials` prerendered, in the sitemap and with hreflang among those languages alone; the others keep the
   English with the notice, noindex and no hreflang. A material's page was drawn in the browser in every language but
@@ -266,7 +281,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   it, and never a popup. `safety-worker.js` is the kill switch (`KILL_SWITCH` in `scripts/service-worker.mjs`,
   steps in `deploy/README.md`). Urdu text shows at once in the device's font while Nastaliq is on its way (a test
   holds the file back 3 s). The five new messages (`offline.*`), in English at first, are in every language. Records
-  on the phone (stage 3) and offline editing (stage 4) came later (above).
+  on the phone and offline editing came later (above).
 - **Nepali and Sinhala** (docs/translations/ne.md, si.md): the app, the password emails and all five guides, live at `/ne/…`
   (Devanagari), written for Nepal, and `/si/…`, written for Sri Lanka, each with that country's law, poison lines and
   number grouping, and the standard notice (the owner's choice, 2026-10-30; Sinhala's plain notice is turned off, so
@@ -1316,7 +1331,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   basics guide in the Indic scripts came to just over 100 kB. The CI, publish and staging time-outs are raised.
 - **The firing guide**: the cone chart gives Orton's slow-rate figures for cones 018, 015, 07 and 02 (a dash now
   means Orton gives none), and says most low-fire glazes sold are made for cone 06 or 05.
-- **Round 14 translation catch-up**: all 56 other languages translated the round's English (famous glazes, the dry SG
+- **A translation catch-up**: all 56 other languages translated the new English (famous glazes, the dry SG
   estimate and guide section, the Stull chart, the teaching guide's card, the new materials' notes and hazards, the
   changed guide sections) in five language groups, each language back-translated blind and the differences fixed
   (docs/translations/process/README.md).
@@ -1766,7 +1781,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   zile" and "1 zi". The mailer gives those emails the number and its noun together, chosen by
   Romanian's plural forms; the texts had "{days} zile" and "{hours} ore", wrong from 20 on, and
   "{days} de zile", wrong below 20.
-- **English made plain where round 5's translators found it unclear** (each translated again in
+- **English made plain where the translators found it unclear** (each translated again in
   the next wave): the privacy notice says access tokens and connections are kept until they expire
   and then for 30 days more, not "up to" 30; Taiwan's emergency note says plainly what 112 does
   when a mobile phone has no signal; the firing guide's kiln-watch line says to stay nearby and
