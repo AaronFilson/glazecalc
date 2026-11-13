@@ -344,6 +344,13 @@ describe('Shared recipe tools', () => {
     expect(short({ ...lean, PbO: 0.06 })).to.not.include('boron-short');
     expect(short({ ...lean, PbO: 0.05 })).to.include('boron-short');
     expect(short({ ...lean, K2O: 0.25, Na2O: 0.2 })).to.not.include('boron-short');
+    // A firing of null (or NaN) is not known, not 0 °C: the same as none.
+    for (const celsius of [null, NaN, Infinity]) {
+      const unknown = recipe.pastLimits({ lines, unity: lean, celsius: celsius as unknown as number });
+      expect(unknown, String(celsius)).to.deep.equal(recipe.pastLimits({ lines, unity: lean }));
+      expect(recipe.bandOf(recipe.GLAZECALC_LIMITS, celsius as unknown as number), String(celsius)).to.equal(undefined);
+    }
+    expect(Number.isNaN(chemistry.boronFor(null as unknown as number))).to.equal(true);
   });
 
   it('gives a row per limit, with the sums added up and the side a value is past', () => {
