@@ -767,19 +767,19 @@ describe('the records kept on this device', () => {
     expect(iosEvictionRisk({ userAgent: 'Mozilla/5.0 (Windows NT 10.0) Chrome/120' }, false)).toBe(false);
   });
 
-  it('shows the iOS notice when the copy is turned on there, and not on other browsers', async () => {
+  it('shows the iOS notice when the copy is turned on there', async () => {
+    setUp();
+    vi.spyOn(navigator, 'userAgent', 'get').mockReturnValue('Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)');
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    expect(records.iosNotice()).toBe(true);
+  });
+
+  it('does not show the iOS notice on other browsers', async () => {
     setUp();
     const records = TestBed.inject(OfflineRecords);
     await turnOn(records);
     expect(records.iosNotice()).toBe(false);
-
-    TestBed.resetTestingModule();
-    localStorage.clear();
-    setUp();
-    vi.spyOn(navigator, 'userAgent', 'get').mockReturnValue('Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)');
-    const ios = TestBed.inject(OfflineRecords);
-    await turnOn(ios);
-    expect(ios.iosNotice()).toBe(true);
   });
 
   it('deletes the copy when the account is deleted', async () => {
