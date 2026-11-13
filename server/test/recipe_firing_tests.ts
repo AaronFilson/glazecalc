@@ -10,6 +10,8 @@ import { api, expect, makeUser, sessionToken } from './support/app.ts';
 
 // A recipe's firing block (docs/adr/0021-recipe-firing.md): the cone as stated,
 // in order, its range and tested cones, its bands, and reading it from a paste.
+const { min: FIRING_LIMITS_MIN, max: FIRING_LIMITS_MAX } = firing.FIRING_LIMITS.celsius;
+
 describe('recipe firing (lib/cones/firing.js)', () => {
   it('puts Orton cones in true order: 022 … 01 below 1 … 42, 06 far below 6, half cones between', () => {
     const sorted = ['6', '06', '10', '022', '01', '1', '5.5', '42', '014'].sort((a, b) =>
@@ -210,6 +212,18 @@ describe('recipe firing (lib/cones/firing.js)', () => {
     // The edge falls between cone 11 and cone 12 of the chart, so 11 is high and 12 top.
     expect(firing.approxCelsius('orton', '11')!.celsius).to.be.below(1320);
     expect(firing.approxCelsius('orton', '12')!.celsius).to.be.at.least(1320);
+  });
+
+  it('draws its band edges where lib/recipe/limits.js does: every temperature from 500 to 1600 °C in the same band', () => {
+    // The edges are written in both (LOW_BELOW, MID_BELOW and HIGH_BELOW here; FIRING and the sets' bands there).
+    for (let celsius = FIRING_LIMITS_MIN; celsius <= FIRING_LIMITS_MAX; celsius++) {
+      const band = firing.coneBand('temperature', String(celsius))!;
+      expect(band, `${celsius} °C`).to.equal(recipeLib.bandOf(recipeLib.HESSELBERTH_ROY_LIMITS, celsius));
+      // The app's own set has no high band: it reads high fire as mid, as it reads the temperature.
+      expect(recipeLib.bandIn(recipeLib.GLAZECALC_LIMITS, band), `${celsius} °C, Glazecalc`).to.equal(
+        recipeLib.bandOf(recipeLib.GLAZECALC_LIMITS, celsius)
+      );
+    }
   });
 
   it('matches SK and Orton by Kyoto’s same-kiln columns (100 °C an hour), not Orton’s chart at another rate', () => {
