@@ -4,19 +4,14 @@ import path from 'node:path';
 import ts from 'typescript';
 import { expect } from './support/app.ts';
 
-// lib/ is CommonJS with a hand-written .d.ts beside each module, and nothing
-// else compares the two: TypeScript reads only the .d.ts. So a renamed or
-// removed export would pass the type check and fail when the page runs. This
-// compares the values each .d.ts declares (functions, constants, classes; not
-// types) with what its .js exports.
+// lib/ is CommonJS with a hand-written .d.ts beside each module. Its type check
+// (lib/tsconfig.json) holds each module's use of another to that one's .d.ts,
+// but a module's own exports are compared with nothing: TypeScript reads only
+// the .d.ts. So a renamed or removed export would pass the type check and fail
+// when the page runs. This compares the values each .d.ts declares (functions,
+// constants, classes; not types) with what its .js exports.
 const LIB = path.resolve(import.meta.dirname, '..', '..', 'lib');
 const require = createRequire(import.meta.url);
-
-/** Exported for the other lib modules only, so not declared for the app. */
-const INTERNAL: Record<string, string[]> = {
-  'recipe/messages': ['say'],
-  'recipe/pool': ['added', 'changed', 'removed', 'scaled']
-};
 
 const declarations = (dir: string): string[] =>
   readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
@@ -54,10 +49,7 @@ describe('lib types', () => {
       .replace(/\\/g, '/')
       .replace(/\.d\.ts$/, '');
     it(`lib/${name}.js exports what lib/${name}.d.ts declares`, () => {
-      const internal = INTERNAL[name] ?? [];
-      const exported = Object.keys(require(file.replace(/\.d\.ts$/, '.js')) as object)
-        .filter((key) => !internal.includes(key))
-        .sort();
+      const exported = Object.keys(require(file.replace(/\.d\.ts$/, '.js')) as object).sort();
       expect(exported).to.eql(declared(file));
     });
   }

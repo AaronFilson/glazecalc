@@ -205,6 +205,8 @@ export class RecipeError extends Error {
   params?: RecipeMessage['params'];
 }
 
+/** A message: its code, and its values. The recipe tools' own; index.js does not export it. */
+export function say(code: RecipeMessageCode, params?: RecipeMessage['params']): RecipeMessage;
 export function figure(value: number, places: number): Figure;
 export function upTo(value: number, places: number): Figure;
 /** A saved plain number ("12.50") as a figure keeping its decimals; other text as it is. */

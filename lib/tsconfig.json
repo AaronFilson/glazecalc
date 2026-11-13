@@ -1,0 +1,24 @@
+{
+  // The chemistry library is plain JavaScript (CommonJS) with hand-written
+  // declarations (.d.ts) beside it, which the server and the client import.
+  // tsc checks the JavaScript against them: npm run typecheck. A require of
+  // another file of lib finds its .d.ts first, so each use of another module
+  // is checked against what that module declares, and those declarations are
+  // checked too (skipLibCheck is off here; the server's and the client's
+  // checks skip declaration files). Only the .js files are listed: were the
+  // .d.ts files listed as well, tsc would leave out every .js that has one.
+  // Not strict: that would ask for a type on every parameter first.
+  "compilerOptions": {
+    "target": "es2024",
+    "lib": ["es2024"],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "types": ["node"],
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "strict": false,
+    "skipLibCheck": false
+  },
+  "include": ["**/*.js"]
+}

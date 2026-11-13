@@ -12,7 +12,7 @@
     "prestart": "npm run build",
     "start": "node --env-file-if-exists=.env server/main.ts",
     "lint": "eslint .",
-    "typecheck": "tsc -p server",
+    "typecheck": "tsc -p server && tsc -p lib",
     "check:i18n": "node scripts/i18n-check.mjs",
     "i18n:sources": "node scripts/i18n-sources.mjs",
     "og-images": "node scripts/og-images-linux.mjs",

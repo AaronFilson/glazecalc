@@ -45,7 +45,8 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Type-check the server
+      # The server's TypeScript, and the chemistry library's JavaScript against its declarations (lib/tsconfig.json).
+      - name: Type-check the server and the chemistry library
         run: npm run typecheck
 
       - name: Messages (every key has its English; translations match it)
