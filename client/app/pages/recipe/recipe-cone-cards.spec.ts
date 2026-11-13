@@ -303,4 +303,27 @@ describe('ConeSummaries', () => {
     expect(terms[1]).toContain('outside the stated firing');
     expect(text(fixture, 'dl')).toContain('Satin');
   });
+
+  it('heads the summaries at the level the page asks for, the shared page’s second, by the id it gives', async () => {
+    const fixture = TestBed.createComponent(ConeSummaries);
+    fixture.componentRef.setInput('reader', { cones: 'orton', temperature: 'C' });
+    fixture.componentRef.setInput('block', { scale: 'orton', low: '6' });
+    fixture.componentRef.setInput('results', [{ cone: '6', summary: 'Satin' }]);
+    fixture.componentRef.setInput('level', 2);
+    fixture.componentRef.setInput('headingId', 'shared-cone-results');
+    await fixture.whenStable();
+    const root = fixture.nativeElement as HTMLElement;
+    expect(root.querySelector('h3')).toBeNull();
+    expect(root.querySelector('h2')?.id).toBe('shared-cone-results');
+    expect(root.querySelector('section')?.getAttribute('aria-labelledby')).toBe('shared-cone-results');
+    expect(text(fixture, 'h2')).toBe('Results by cone');
+  });
+
+  it('shows nothing without a summary at a cone', async () => {
+    const fixture = TestBed.createComponent(ConeSummaries);
+    fixture.componentRef.setInput('reader', { cones: 'orton', temperature: 'C' });
+    fixture.componentRef.setInput('block', { scale: 'orton', low: '6' });
+    await fixture.whenStable();
+    expect(fixture.nativeElement.querySelector('section')).toBeNull();
+  });
 });

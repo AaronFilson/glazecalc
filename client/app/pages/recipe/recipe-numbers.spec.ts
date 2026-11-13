@@ -224,6 +224,19 @@ describe('StullChart', () => {
     const none = await create(null);
     expect(text(none.fixture, 'figcaption')).toContain('There is no point to plot');
   });
+
+  it("in a guide, draws the chart alone and describes it in the guides' own words", async () => {
+    const fixture = TestBed.createComponent(StullChart);
+    fixture.componentRef.setInput('guide', true);
+    await fixture.whenStable();
+    const root = fixture.nativeElement as HTMLElement;
+    const svg = root.querySelector('svg')!;
+    const [titleId, descId] = svg.getAttribute('aria-labelledby')!.split(' ');
+    expect(svg.querySelector('#' + titleId)?.textContent).toContain('Stull chart');
+    expect(svg.querySelector('#' + descId)?.textContent?.trim()).toMatch(/^Silica \(SiO₂\) across, from about 1 to 7/);
+    expect(text(fixture, 'figcaption')).not.toContain('There is no point to plot');
+    expect(root.querySelector('circle')).toBeNull();
+  });
 });
 
 describe('SlurryCalculator', () => {
