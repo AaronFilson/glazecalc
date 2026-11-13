@@ -242,7 +242,9 @@ the one thread the server answers everyone with (or the page's). The MCP tools a
   until one is allowed, rather than every one each round. Results are unchanged, bit for bit: over
   1,200 random matches, solves, suggestions, fits and lead rebuilds, and every famous glaze's version.
 - **Where it is set.** One meter for a match or a solve, its clay hold included
-  (`selectHoldingClay`), and for a suggestion's plan and amounts together. The largest search the
+  (`selectHoldingClay`), and for a suggestion's plan and amounts together. When the work runs out
+  in the clay hold's choosing and the free one is kept, the selection still says `cutShort`: the
+  hold may have lost for being cut, not for the clay. The largest search the
   app makes itself, a famous glaze's version from a region's base materials (shino from the EU's 66),
   takes about half of `WORK`; a test holds it under 0.7. The recipes and shelves in the tests take
   under a hundredth.

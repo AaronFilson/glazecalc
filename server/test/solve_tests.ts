@@ -314,6 +314,23 @@ describe('Target & Solve, Match with what I have and Suggest amounts: the work b
     expect(meter.used).to.be.below(chemistry.WORK / 100);
   });
 
+  it('says it was cut short when the work runs out holding the clay, even if the free choosing is kept', () => {
+    // Raw kaolin is the only alumina here, so the free choosing (28% EPK) is kept; the work allowed is
+    // what the free choosing takes and a little more, so it runs out in the held one.
+    const target = { kind: 'unity' as const, oxides: { K2O: 0.25, CaO: 0.75, Al2O3: 0.6, SiO2: 2.5 } };
+    const shelf = shelfOf('Custer Spar', 'Whiting', 'EPK Kaolin', 'Silica');
+    const { moles } = recipe.targetOf(target);
+    const lines = shelf.map((tried) => ({ material: { ...tried.material, amount: '' }, start: 0, least: 1 }));
+    const alone = chemistry.newMeter();
+    chemistry.selectMaterials(lines, moles, { meter: alone });
+    const meter = chemistry.newMeter(alone.used + 1);
+    const chosen = recipe.selectHoldingClay(lines, moles, { batch: 100, meter });
+    expect(meter.cut).to.equal(true);
+    expect(chosen.selection.cutShort).to.equal(true);
+    const solved = recipe.solveTarget(target, shelf, { meter: chemistry.newMeter(alone.used + 1) });
+    expect(solved.report.cutShort).to.equal(true);
+  });
+
   it('leaves the largest searches the app makes itself, the famous glazes’ versions, well within it', () => {
     // As a famous glaze's page makes its version (client/app/pages/famous-glazes/famous-glaze.ts): for the
     // native recipe's unity formula, or a lead glaze's analysis with the lead handed to other fluxes, from
