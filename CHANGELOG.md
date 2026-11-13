@@ -94,9 +94,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   recipe to formula, formula to recipe with Solve for a target, and the clay body and defects. Each session has aims,
   what to prepare, a worked example with 福島長石, whiting, EPK kaolin and silica from the standard library, the steps
   in Glazecalc, a worksheet and Check questions; it ends with a 42-glaze triaxial map and a 24-glaze Seger grid with
-  oxidation and reduction columns. In English and Japanese (the Japanese awaits a native potter's review). A new list,
-  `PARTLY_TRANSLATED_PAGES` in lib/pages.js, offers it to search engines in those two alone; every other language
-  shows the English with the usual notice, canonical to the English and noindex, until it is translated.
+  oxidation and reduction columns. In English and Japanese first (the Japanese awaits a native potter's review), and
+  from 2026-11-07 in every language (above). Until then a new list, `PARTLY_TRANSLATED_PAGES` in lib/pages.js,
+  offered it to search engines in those two alone, every other language showing the English with the usual notice,
+  canonical to the English and noindex; the list is now empty.
 - **A breadcrumb trail on the guides and reference pages** (`client/app/shared/structured-data.ts`,
   `client/app/shared/breadcrumb.ts`). Each guide's structured data adds a BreadcrumbList (Glazecalc, Guides, the guide,
   named and addressed in the page's language) in one graph with its Article, as the reference pages had, for search
@@ -106,7 +107,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   the stylesheet, which a screen reader skips and which turn round on a right-to-left page. Both come from one list of
   steps, so what a visitor sees and what search engines read cannot differ. In every language.
 - **Each standard material's page in every live language** (docs/prerender-compression-and-material-pages-plan.md,
-  Part B). The 170 material pages are prerendered and offered to search engines in all 57 languages: canonical to
+  Part B). The 182 material pages are prerendered and offered to search engines in all 57 languages: canonical to
   themselves, with hreflang and x-default, in each language's sitemap and with structured data in the language. A
   material whose notes or hazards are not all translated in a language stays noindex there, canonical to the English
   (none is today). `/sitemap.xml` is now a sitemap index of one sitemap per language (`/sitemaps/de.xml`), and IndexNow
@@ -188,15 +189,16 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   blind. Afrikaans carries the standard notice; the other six the plain notice. Quechua is Southern Quechua
   (Cusco-Collao) in Peru's official alphabet, with Spanish loans for the glaze terms, and had the owner's extra
   review. South Africa, which already listed Afrikaans and Zulu, now offers them; the picker's "Africa" group lists
-  the six and "Latin America" Quechua. Nigeria, Peru, Bolivia and Ecuador are not regions yet. The README counts 57
-  languages.
+  the six and "Latin America" Quechua. Nigeria and Ecuador became regions on 2026-11-02 (above); Peru and Bolivia are
+  not regions yet. The README counts 57 languages.
 - **Mexico, Brazil, Argentina, Chile, South Africa, Kenya and Ghana as regions**, in English and the languages
   already offered: who to call, each read on an official page (Brazil's and Argentina's national poison lines, South
   Africa's Poisons Information Helpline with its own hours), the health ministries, each currency, and Orton cones
-  in °C for Mexico, Brazil and South Africa. No silica limit, food rule or shop is shown for them yet. Brazilian
-  Portuguese, Latin American Spanish, Quechua, Swahili, Amharic, Afrikaans, Hausa, Yoruba, Zulu, Igbo and Somali are
-  known but not offered, ahead of their waves; the language picker has a "Latin America" group for the first three.
-  Colombia, Peru, Nigeria and Ethiopia wait for an emergency number confirmed on an official page.
+  in °C for Mexico, Brazil and South Africa. No silica limit or food rule is shown for them; all but Kenya and Ghana
+  have shops listed since rounds 15 and 17 (above). Brazilian Portuguese, Latin American Spanish, Quechua, Swahili,
+  Amharic, Afrikaans, Hausa, Yoruba, Zulu, Igbo and Somali were known but not offered, ahead of their waves (all live
+  since: above); the language picker has a "Latin America" group for the first three. Peru and Ethiopia wait for an
+  emergency number confirmed on an official page; Colombia and Nigeria became regions on 2026-11-02 (above).
 - **The cone chart, the list of standard materials and each material's page can be translated**, language by
   language (round 10, stream B, first part; nothing visible changes yet: no language is switched on). A language in
   `REFERENCE_LANGUAGES` (lib/regions/languages.js, the `reference: true` flag) gets `/<code>/cones` and
@@ -244,8 +246,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   page's version at the next open if ignored. A menu button, "Install app", appears where Chrome or Edge offers
   it, and never a popup. `safety-worker.js` is the kill switch (`KILL_SWITCH` in `scripts/service-worker.mjs`,
   steps in `deploy/README.md`). Urdu text shows at once in the device's font while Nastaliq is on its way (a test
-  holds the file back 3 s). The five new messages (`offline.*`) are in English only until the next wave. Records on
-  the phone (stage 3) and offline editing (stage 4) are not part of this.
+  holds the file back 3 s). The five new messages (`offline.*`), in English at first, are in every language. Records
+  on the phone (stage 3) and offline editing (stage 4) came later (above).
 - **Nepali and Sinhala** (docs/translations/ne.md, si.md): the app, the password emails and all five guides, live at `/ne/…`
   (Devanagari), written for Nepal, and `/si/…`, written for Sri Lanka, each with that country's law, poison lines and
   number grouping, and the standard notice (the owner's choice, 2026-10-30; Sinhala's plain notice is turned off, so
@@ -1263,7 +1265,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   carry `x-default`, as each page's head does.
 - **Page descriptions use the words potters search for**, in 30 languages first and then all; titles are unchanged
   (the owner's rule).
-- **About 11,457 prerendered pages** (every material in every language, the famous glazes, the teaching guide), a
+- **About 11,571 prerendered pages** (every material in every language, the famous glazes, the teaching guide), a
   build of about 4 minutes. A page may now be up to 120 kB gzipped (was 100 kB), as the fully translated glazing
   basics guide in the Indic scripts came to just over 100 kB. The CI, publish and staging time-outs are raised.
 - **The firing guide**: the cone chart gives Orton's slow-rate figures for cones 018, 015, 07 and 02 (a dash now
