@@ -5,7 +5,6 @@
 // confirming a change with a fresh provider sign-in when the account has no
 // password, Microsoft's own rules (its tenant, an email never trusted), and
 // the account's data.
-import { exportAccount } from '../lib/export_data.ts';
 import * as oauth from '../lib/oauth.ts';
 import * as totp from '../lib/totp.ts';
 import AuthChallenge from '../models/auth_challenge.ts';
@@ -1181,7 +1180,7 @@ describe('signing in with Google, GitHub and Microsoft', () => {
       const sub = subject();
       const { done } = await signInWith('github', { sub, email: uniqueEmail('data'), emailVerified: true });
       const user = (await User.findOne({ email: done.body.email }))!;
-      const exported = (await exportAccount(user._id))!;
+      const exported = (await api().get('/export').set(bearer(user.generateToken()))).body as Record<string, unknown>;
       const signIn = exported.signIn as { ownPassword: boolean; providers: Array<Record<string, unknown>> };
       expect(signIn.ownPassword).to.eql(false);
       expect(signIn.providers.map(({ provider, subject: s }) => ({ provider, s }))).to.eql([

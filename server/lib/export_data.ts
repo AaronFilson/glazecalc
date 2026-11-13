@@ -1,11 +1,16 @@
 // Everything an account holds, as a download: "Download my data". Only fields
 // named here are written, so the password hash, the token version and reset
 // links can never end up in a file, and every query is limited to the user.
+// Each file is written a record at a time as it is read
+// (server/lib/stream_json.ts), so however much the account keeps, the server
+// holds little of it at once; the JSON is not indented, which made it up to
+// five times larger.
 import type { Types } from 'mongoose';
 import firing from '../../lib/cones/firing.js';
 import type { FiringBlock } from '../../lib/cones/firing.js';
 import { OWNED_KINDS } from './account_data.ts';
 import { left as recoveryCodesLeft } from './recovery_codes.ts';
+import { jsonArray } from './stream_json.ts';
 import AccessToken from '../models/access_token.ts';
 import Activity from '../models/activity.ts';
 import RecordVersion from '../models/record_version.ts';
@@ -21,14 +26,15 @@ export const EXPORT_VERSION = 1;
 /** A record without the database's own bookkeeping. */
 const bare = ({ ownedBy: _owner, __v: _version, ...record }: Row): Row => record;
 
-/** The user's records of one kind, oldest first, without the database's own bookkeeping. */
-export const recordsOf = async (kind: string, userId: Id): Promise<Row[]> => {
-  const found = await OWNED_KINDS[kind]
+/** The user's records of one kind, oldest first, without the database's own bookkeeping, one at a time. */
+export async function* recordsOf(kind: string, userId: Id): AsyncGenerator<Row> {
+  const found = OWNED_KINDS[kind]
     .find({ ownedBy: String(userId) })
     .sort({ _id: 1 })
-    .lean();
-  return found.map(bare);
-};
+    .lean<Row[]>()
+    .cursor();
+  for await (const record of found) yield bare(record);
+}
 
 /**
  * How the account signs in, in names and dates only: never the authenticator
@@ -59,52 +65,34 @@ const signInOf = (user: Pick<UserFields, 'mfa' | 'identities' | 'passwordless'>)
 };
 
 /** Earlier versions of the user's records, kept for Undo, oldest first. */
-const versionsOf = async (userId: Id): Promise<Row[]> =>
-  (
-    await RecordVersion.find({ ownedBy: String(userId) })
-      .sort({ savedAt: 1, _id: 1 })
-      .lean()
-  ).map(({ fromCollection, recordId, savedAt, by, record }) => ({
-    fromCollection,
-    recordId,
-    savedAt,
-    by,
-    record: bare((record ?? {}) as Row)
-  }));
+async function* versionsOf(userId: Id): AsyncGenerator<Row> {
+  const found = RecordVersion.find({ ownedBy: String(userId) })
+    .sort({ savedAt: 1, _id: 1 })
+    .lean()
+    .cursor();
+  for await (const { fromCollection, recordId, savedAt, by, record } of found) {
+    yield { fromCollection, recordId, savedAt, by, record: bare((record ?? {}) as Row) };
+  }
+}
 
 /** What access tokens and connected apps did, oldest first. */
-const activityOf = async (userId: Id): Promise<Row[]> =>
-  (
-    await Activity.find({ ownedBy: String(userId) })
-      .sort({ at: 1, _id: 1 })
-      .lean()
-  ).map(({ at, via, client, action, fromCollection, recordId, title }) => ({
-    at,
-    via,
-    client,
-    action,
-    fromCollection,
-    recordId,
-    title
-  }));
+async function* activityOf(userId: Id): AsyncGenerator<Row> {
+  const found = Activity.find({ ownedBy: String(userId) })
+    .sort({ at: 1, _id: 1 })
+    .lean()
+    .cursor();
+  for await (const { at, via, client, action, fromCollection, recordId, title } of found) {
+    yield { at, via, client, action, fromCollection, recordId, title };
+  }
+}
 
 /** The account's access tokens and connected apps, in names and dates only: never a token's hash. */
-const accessTokensOf = async (userId: Id): Promise<Row[]> =>
-  (await AccessToken.find({ userId }).sort({ createdAt: 1, _id: 1 }).lean()).map(
-    ({
-      kind,
-      name,
-      clientId,
-      clientHost,
-      redirectHost,
-      hint,
-      scopes,
-      createdAt,
-      expiresAt,
-      lastUsedAt,
-      revokedAt,
-      revokedWhy
-    }) => ({
+async function* accessTokensOf(userId: Id): AsyncGenerator<Row> {
+  const found = AccessToken.find({ userId }).sort({ createdAt: 1, _id: 1 }).lean().cursor();
+  for await (const token of found) {
+    const { kind, name, clientId, clientHost, redirectHost, hint, scopes } = token;
+    const { createdAt, expiresAt, lastUsedAt, revokedAt, revokedWhy } = token;
+    yield {
       kind,
       name,
       ...(clientId && { clientId }),
@@ -117,22 +105,28 @@ const accessTokensOf = async (userId: Id): Promise<Row[]> =>
       lastUsedAt,
       revokedAt,
       revokedWhy
-    })
-  );
+    };
+  }
+}
 
 /**
  * The recipes shared by link: which, since when, and whether the notes show.
  * Never the link: only its hash is kept, and that is left out too.
  */
-const shareLinksOf = async (userId: Id): Promise<Row[]> =>
-  (
-    await ShareLink.find({ ownedBy: String(userId) })
-      .sort({ createdAt: 1, _id: 1 })
-      .lean()
-  ).map(({ recipeId, createdAt, includeNotes }) => ({ recipeId, createdAt, includeNotes }));
+async function* shareLinksOf(userId: Id): AsyncGenerator<Row> {
+  const found = ShareLink.find({ ownedBy: String(userId) })
+    .sort({ createdAt: 1, _id: 1 })
+    .lean()
+    .cursor();
+  for await (const { recipeId, createdAt, includeNotes } of found) yield { recipeId, createdAt, includeNotes };
+}
 
-/** The whole export: the account, its preferences, shelf and prices, and every kind of record. */
-export const exportAccount = async (userId: Id, now = new Date()): Promise<Row | null> => {
+/**
+ * The whole export, as JSON text a part at a time: the account, its
+ * preferences, shelf and prices, every kind of record, and the rest (each
+ * list read as it is written); null when there is no such account.
+ */
+export const exportJson = async (userId: Id, now = new Date()): Promise<AsyncIterable<string> | null> => {
   const user = await User.findById(userId, {
     email: 1,
     displayname: 1,
@@ -149,15 +143,7 @@ export const exportAccount = async (userId: Id, now = new Date()): Promise<Row |
     passwordless: 1
   }).lean();
   if (!user) return null;
-  const kinds = Object.keys(OWNED_KINDS);
-  const [lists, versions, activity, accessTokens, shareLinks] = await Promise.all([
-    Promise.all(kinds.map((kind) => recordsOf(kind, userId))),
-    versionsOf(userId),
-    activityOf(userId),
-    accessTokensOf(userId),
-    shareLinksOf(userId)
-  ]);
-  return {
+  const head = JSON.stringify({
     format: 'glazecalc-export',
     version: EXPORT_VERSION,
     exportedAt: now.toISOString(),
@@ -175,13 +161,25 @@ export const exportAccount = async (userId: Id, now = new Date()): Promise<Row |
     ...(user.shelfPrevious && { shelfPrevious: user.shelfPrevious }),
     // Per kilogram, in the account's currency (preferences.currency, or the region's when '').
     prices: (user.prices ?? []).map(({ key, perKg }) => ({ key, perKg })),
-    signIn: signInOf(user),
-    records: Object.fromEntries(kinds.map((kind, i) => [kind, lists[i]])),
-    versions,
-    activity,
-    accessTokens,
-    shareLinks
-  };
+    signIn: signInOf(user)
+  });
+  return (async function* () {
+    // The head without its closing brace; then every kind of record, and the rest.
+    yield head.slice(0, -1) + ',"records":{';
+    for (const [i, kind] of Object.keys(OWNED_KINDS).entries()) {
+      yield (i ? ',' : '') + JSON.stringify(kind) + ':';
+      yield* jsonArray(recordsOf(kind, userId));
+    }
+    yield '},"versions":';
+    yield* jsonArray(versionsOf(userId));
+    yield ',"activity":';
+    yield* jsonArray(activityOf(userId));
+    yield ',"accessTokens":';
+    yield* jsonArray(accessTokensOf(userId));
+    yield ',"shareLinks":';
+    yield* jsonArray(shareLinksOf(userId));
+    yield '}';
+  })();
 };
 
 // CSV, as RFC 4180 writes it, for spreadsheets. A text cell that starts like a
@@ -192,9 +190,11 @@ const cell = (value: unknown): string => {
   return /[",\r\n]/.test(text) ? '"' + text.replace(/"/g, '""') + '"' : text;
 };
 
-/** A header and rows as CSV with a byte-order mark, so Excel reads it as UTF-8. */
-const csv = (header: string[], rows: unknown[][]): string =>
-  '﻿' + [header, ...rows].map((row) => row.map(cell).join(',')).join('\r\n') + '\r\n';
+/** A header and rows as CSV with a byte-order mark, so Excel reads it as UTF-8, a row at a time. */
+async function* csv(header: string[], rows: AsyncIterable<unknown[]>): AsyncGenerator<string> {
+  yield '﻿' + header.map(cell).join(',') + '\r\n';
+  for await (const row of rows) yield row.map(cell).join(',') + '\r\n';
+}
 
 interface Line {
   name?: string;
@@ -202,10 +202,9 @@ interface Line {
   unit?: string;
 }
 
-/** Recipes, a row for each material and additive in them. */
-export const recipesCsv = async (userId: Id): Promise<string> => {
-  const rows: unknown[][] = [];
-  for (const recipe of await recordsOf('recipes', userId)) {
+/** A row for each material and additive in each recipe. */
+async function* recipeRows(userId: Id): AsyncGenerator<unknown[]> {
+  for await (const recipe of recordsOf('recipes', userId)) {
     const lines = [
       ...((recipe.materials as Line[]) ?? []).map((line) => ['Material', line]),
       ...((recipe.additives as Line[]) ?? []).map((line) => ['Additive', line])
@@ -217,7 +216,7 @@ export const recipesCsv = async (userId: Id): Promise<string> => {
     const cone = firing.glazyConeCell(recipe.firedAt as FiringBlock | undefined);
     const food = recipe.foodSurface === true ? 'yes' : '';
     for (const [type, line] of lines) {
-      rows.push([
+      yield [
         recipe.title,
         recipe.date,
         recipe.notes,
@@ -228,10 +227,14 @@ export const recipesCsv = async (userId: Id): Promise<string> => {
         cone,
         glazy.atmospheres,
         food
-      ]);
+      ];
     }
   }
-  return csv(
+}
+
+/** Recipes, a row for each material and additive in them. */
+export const recipesCsv = (userId: Id): AsyncIterable<string> =>
+  csv(
     [
       'Recipe',
       'Date',
@@ -244,30 +247,35 @@ export const recipesCsv = async (userId: Id): Promise<string> => {
       'Atmospheres',
       'Food surface'
     ],
-    rows
+    recipeRows(userId)
   );
-};
 
 interface Oxide {
   name?: string;
   amount?: string | number;
 }
 
+/** A row for each material. */
+async function* materialRows(userId: Id): AsyncGenerator<unknown[]> {
+  for await (const material of recordsOf('materials', userId)) {
+    yield [
+      material.name,
+      material.rawformula,
+      material.relatedTo,
+      material.notes,
+      ((material.fields as Oxide[]) ?? []).map((oxide) => `${oxide.name} ${oxide.amount}`),
+      material.percentmole,
+      material.loi,
+      material.molecularweight,
+      material.equivalent,
+      material.formulaweight
+    ];
+  }
+}
+
 /** Materials, a row each, with the analysis as "CaO 1; SiO2 2". */
-export const materialsCsv = async (userId: Id): Promise<string> => {
-  const rows = (await recordsOf('materials', userId)).map((material) => [
-    material.name,
-    material.rawformula,
-    material.relatedTo,
-    material.notes,
-    ((material.fields as Oxide[]) ?? []).map((oxide) => `${oxide.name} ${oxide.amount}`),
-    material.percentmole,
-    material.loi,
-    material.molecularweight,
-    material.equivalent,
-    material.formulaweight
-  ]);
-  return csv(
+export const materialsCsv = (userId: Id): AsyncIterable<string> =>
+  csv(
     [
       'Name',
       'Formula',
@@ -280,6 +288,5 @@ export const materialsCsv = async (userId: Id): Promise<string> => {
       'Equivalent weight',
       'Formula weight'
     ],
-    rows
+    materialRows(userId)
   );
-};

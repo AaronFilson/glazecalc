@@ -1,7 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { deleteAccount } from '../lib/account_data.ts';
-import { exportAccount } from '../lib/export_data.ts';
 import { forgetStandards, hashOf } from '../lib/share_links.ts';
 import * as mail from './support/mail.ts';
 import AccessToken from '../models/access_token.ts';
@@ -557,9 +556,9 @@ describe('share links', () => {
 
   it('go with the account, and its download lists them without the link', async () => {
     const { secret } = await share({ includeNotes: true });
-    const data = await exportAccount(alice.user._id);
-    expect(data?.shareLinks).to.have.length(1);
-    const [link] = data!.shareLinks as Array<Record<string, unknown>>;
+    const data = (await as(alice.token).get('/export')).body as Record<string, unknown>;
+    expect(data.shareLinks).to.have.length(1);
+    const [link] = data.shareLinks as Array<Record<string, unknown>>;
     expect(link).to.have.all.keys('recipeId', 'createdAt', 'includeNotes');
     expect(JSON.stringify(data)).not.to.include(hashOf(secret));
     await deleteAccount(alice.user._id);

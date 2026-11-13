@@ -59,6 +59,7 @@ import { conflict, gone, revFilter, revOf, withBump } from './record_rev.ts';
 import requireScope from './require_scope.ts';
 import { fieldChanges, registerPreview } from './pending_changes.ts';
 import { mostOf, recordProblem } from './record_fields.ts';
+import { asDocumentJson, jsonArray, sendParts } from './stream_json.ts';
 import {
   confirmFirst,
   inputOf,
@@ -129,6 +130,7 @@ export default function recordRoutes(
   const writing = requireScope(`${area}:write`);
   const jsonParser = express.json();
   const notFound = say('record-not-found', { label });
+  const documentJson = asDocumentJson(Model);
 
   /** The refusal for fields over RECORD_MOST, or null when they are within it. */
   const tooLarge = (sent: Body): Reply | null => {
@@ -315,8 +317,14 @@ export default function recordRoutes(
     send(res, await create(whoIs(req), inputOf(req)));
   });
 
+  // Read lean and sent a record at a time (server/lib/stream_json.ts), as the documents would write them.
   router.get('/getAll', reading, async (req, res) => {
-    res.status(200).json(await Model.find({ ownedBy: userOf(req).id }).sort({ _id: 1 }));
+    const records = Model.find({ ownedBy: userOf(req).id })
+      .sort({ _id: 1 })
+      .lean<Body[]>()
+      .cursor();
+    res.status(200).type('json');
+    await sendParts(res, jsonArray(records, documentJson));
   });
 
   router.get('/getLatest', reading, async (req, res) => {
