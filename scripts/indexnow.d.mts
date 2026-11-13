@@ -15,6 +15,8 @@ export function payload(
   site: string,
   urls: string[]
 ): { host: string; key: string; keyLocation: string; urlList: string[] };
+/** The files changed between two commits, by git; `from` (the last commit sent) only as a full SHA. */
+export function gitChangedFiles(from: string, to: string): string[];
 /** Sends the site's changed pages; resolves to a line saying what happened, and never rejects. */
 export function ping(options: {
   site: string;

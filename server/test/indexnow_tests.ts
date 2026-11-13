@@ -1,3 +1,4 @@
+import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import { expect } from 'chai';
@@ -7,6 +8,7 @@ import {
   ENDPOINT,
   MAX_URLS,
   changesContent,
+  gitChangedFiles,
   isSitemapIndex,
   payload,
   ping,
@@ -71,6 +73,15 @@ describe('IndexNow', () => {
     expect(urls).not.to.include(SITE + '/recipe');
   });
 
+  it('reads each escaped character once, &amp; last', () => {
+    expect(sitemapUrls('<loc>https://glazecalcapp.com/a?b=1&amp;c=2&amp;lt;3</loc>')).to.deep.equal([
+      'https://glazecalcapp.com/a?b=1&c=2&lt;3'
+    ]);
+    expect(sitemapUrls('<loc>https://glazecalcapp.com/&lt;&gt;&quot;</loc>')).to.deep.equal([
+      'https://glazecalcapp.com/<>"'
+    ]);
+  });
+
   it('reads the sitemap index, and each sitemap it names', () => {
     const index = sitemapIndex(SITE, ['en', 'de'], {});
     expect(isSitemapIndex(index)).to.equal(true);
@@ -119,6 +130,15 @@ describe('IndexNow', () => {
     };
     await ping({ site: SITE, from: 'gone', to: 'b', changedFiles: failing, fetch: unknown.get });
     expect(unknown.posted.length).to.be.at.least(1);
+  });
+
+  it('gives git the last commit sent only as a full SHA, and both commits as revisions', () => {
+    // The last commit sent comes from the job's cache: never an option such as --output=<file>.
+    for (const from of ['--output=/tmp/indexnow', 'HEAD~1', 'ABCDEF' + '0'.repeat(34), '']) {
+      expect(() => gitChangedFiles(from, 'HEAD'), from).to.throw(/not a full SHA/);
+    }
+    const head = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
+    expect(gitChangedFiles(head, head)).to.deep.equal([]);
   });
 
   it('refuses any site but production, staging first', async () => {
