@@ -400,6 +400,31 @@ describe('Shared recipe tools', () => {
     expect(recipe.pastSide(2.494, { min: 2.5 })).to.equal('below');
   });
 
+  it('cautions of barium, which can leach, from 0.2 in the unity formula and likely from 0.4, at any firing', () => {
+    const lines = [{ material: KAOLIN, amount: '10' }];
+    const unity = { K2O: 0.1, Na2O: 0.1, CaO: 0.5, Al2O3: 0.3, B2O3: 0.2, SiO2: 3 };
+    const barium = (baO: number, celsius?: number, old?: Record<string, number>) =>
+      recipe.pastLimits({ lines, unity: { ...unity, BaO: baO }, celsius, old }).find((c) => c.check === 'barium');
+    expect(barium(0.19, 1222)).to.equal(undefined);
+    expect(barium(0.2, 1222)).to.include({ severity: 'caution', quantity: 'BaO', limit: 0.2, direction: 'above' });
+    expect(barium(0.4, 1060)).to.include({ severity: 'likely' });
+    expect(barium(0.3)).to.include({ severity: 'caution' });
+    expect(words(barium(0.4)!)).to.match(/barium oxide \(BaO\) 0\.40 .*leach.*food/);
+    expect(words(barium(0.3)!)).to.match(/leach.*food/);
+    // Not news when the old recipe had as much.
+    expect(barium(0.3, 1222, { ...unity, BaO: 0.3 })).to.equal(undefined);
+    // For the warning beside lead's: BaO in the unity formula of the lines, as leadIn reads them.
+    const BARIUM_CARBONATE = material('Barium carbonate', [['BaO', 1]], 22.3);
+    const bariumIn = (grams: number) =>
+      recipe.bariumIn([line(BARIUM_CARBONATE, grams), line(WHITING, 10), line(SILICA, 30)]);
+    // 10 g of whiting is 0.0999 mol CaO; barium carbonate is 197.3 g a mole.
+    expect(bariumIn(4.8)).to.equal(null);
+    expect(bariumIn(5)).to.deep.include({ likely: false });
+    expect(bariumIn(5)!.unity).to.be.closeTo(0.2, 0.01);
+    expect(bariumIn(13.2)).to.deep.include({ likely: true });
+    expect(recipe.bariumIn([line(WHITING, 10), line(SILICA, 30)])).to.equal(null);
+  });
+
   it('checks a glaze with no alumina at all as low in alumina, but not an empty one', () => {
     const lines = [{ material: KAOLIN, amount: '10' }];
     const unity = { K2O: 0.2, Na2O: 0.1, CaO: 0.7, B2O3: 0.4, Al2O3: 0, SiO2: 3 };

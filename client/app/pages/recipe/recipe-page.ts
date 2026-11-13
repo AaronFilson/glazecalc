@@ -420,6 +420,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   protected readonly swaps = new RecipeSwaps({
     lines: this.lines,
     additiveLines: this.additiveLines,
+    chemistryOf: (name) => this.libraries.findByName(name),
     firing: this.firing,
     firedAt: this.firedAt,
     myMaterials: this.libraries.myMaterials,

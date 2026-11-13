@@ -140,6 +140,57 @@ describe('SharedPage', () => {
     expect(root.querySelector('.shared-lead')).not.toBeNull();
   });
 
+  it('gives the lead caution for lead in an additive too, counted or not', async () => {
+    const leadAdditive = {
+      name: 'Lead bisilicate',
+      percentmole: 'percent' as const,
+      loi: 0,
+      fields: [
+        { name: 'PbO', amount: 65 },
+        { name: 'SiO2', amount: 35 }
+      ],
+      amount: '10'
+    };
+    for (const includeAdditives of [true, false]) {
+      const { fixture } = await open('#' + SECRET, (req) =>
+        req.flush({ ...SHARED, includeAdditives, additives: [...(SHARED.additives ?? []), leadAdditive] })
+      );
+      expect(text(fixture, '.shared-lead'), String(includeAdditives)).toContain('Contains lead:');
+      fixture.destroy();
+    }
+  });
+
+  it('gives a barium caution beside lead’s from BaO 0.2 in the unity formula, likely to leach from 0.4', async () => {
+    const BARIUM: Material = {
+      name: 'Barium carbonate',
+      percentmole: 'molecular',
+      loi: 22.3,
+      fields: [{ name: 'BaO', amount: 1 }]
+    };
+    const caution = async (grams: number, asAdditive = false) => {
+      const barium = { ...BARIUM, amount: String(grams) };
+      const { fixture, root } = await open('#' + SECRET, (req) =>
+        req.flush({
+          ...SHARED,
+          materials: [{ ...WHITING, amount: '10' }, { ...SILICA, amount: '30' }, ...(asAdditive ? [] : [barium])],
+          additives: asAdditive ? [{ ...barium, unit: 'grams' }] : [],
+          includeAdditives: false
+        })
+      );
+      const note = root.querySelector('.shared-barium') ? text(fixture, '.shared-barium') : null;
+      fixture.destroy();
+      return note;
+    };
+    // 10 g of whiting is 0.1 mol CaO; barium carbonate is 197 g a mole.
+    expect(await caution(4.8)).toBeNull();
+    expect(await caution(5)).toMatch(
+      /^Contains barium: BaO 0\.20 in the unity formula\. Barium can leach .* food or drink\.$/
+    );
+    expect(await caution(13.2)).toMatch(/^Contains barium: BaO 0\.40 .*likely to leach barium/);
+    // An additive counts, as for lead.
+    expect(await caution(13.2, true)).toMatch(/likely to leach/);
+  });
+
   it('gives no lead caution for a recipe without lead', async () => {
     const { root } = await open('#' + SECRET, (req) => req.flush(SHARED));
     expect(root.querySelector('.shared-lead')).toBeNull();

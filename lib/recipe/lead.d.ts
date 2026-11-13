@@ -48,3 +48,5 @@ export function replaceLead<M extends MaterialRecord>(
   options: { base: string; celsius: number; mode: LeadMode } & LeadExtras<M>
 ): Replacement<M>;
 export function leadIn(lines: MaterialRecord[]): { unity: number; percent: number };
+/** BaO in the unity formula, from the barium caution's figure; null under it. */
+export function bariumIn(lines: MaterialRecord[]): { unity: number; likely: boolean } | null;

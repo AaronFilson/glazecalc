@@ -1444,8 +1444,9 @@ button.library-item:focus-visible {
   }
 }
 
-// A recipe with lead: warned in the danger color, with Replace lead.
-.recipe-lead {
+// A recipe with lead: warned in the danger color, with Replace lead; barium likewise, beside it.
+.recipe-lead,
+.recipe-barium {
   border-inline-start-color: var(--gc-danger-text);
 }
 
