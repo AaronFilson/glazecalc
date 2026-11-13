@@ -197,6 +197,8 @@ export function boundedLeastSquares(problem: {
   lambda?: number;
   pullTo?: number[];
   cost?: number[];
+  /** A^T A and A^T b (lsq.js normalEquations), when worked out already for many solves of one problem. */
+  normal?: { gram: number[][]; atb: number[] };
   /** Counts the solve's work, when given. */
   meter?: Meter;
 }): number[];
@@ -232,8 +234,8 @@ export interface Selection {
     members?: number[];
   }>;
   countCost: number;
-  /** Whether the work allowed ran out first: the best found by then (see lib/chemistry/select.js); always given. */
-  cutShort?: boolean;
+  /** Whether the work allowed ran out first: the best found by then (see lib/chemistry/select.js). */
+  cutShort: boolean;
 }
 
 /** The fewest materials from the lines that bring the target close (see lib/chemistry/select.js). */
