@@ -120,7 +120,7 @@ The details, with the decisions behind them:
 - **Works offline once visited, as a PWA:** Angular's service worker keeps the app, and the app keeps the
   reader's language and the guides in Cache Storage ([ADR 28](docs/adr/0028-service-worker.md)).
 - **Public pages prerendered at build (SSG)** in every language and hydrated in place (Angular hydration), with hreflang and
-  a sitemap per language under one index, about 11,457 pages, each reply compressed in Node with a
+  a sitemap per language under one index, about 11,500 pages, each reply compressed in Node with a
   fresh nonce ([ADR 16](docs/adr/0016-prerendered-public-pages.md)).
 - **Trials as real accounts:** a generated name, a placeholder email on the reserved `.invalid`
   domain so every email stays unique, conversion to an account in place (or into an existing
@@ -176,7 +176,7 @@ Every feature, as a potter meets it.
   a glaze, safe mixing and ventilation, pottery at home with children and pets, and firing a
   basic kiln with cones, kiln sitters and manual switches; and, in English, a companion to John
   Britt's free online Glaze Course that links his videos unit by unit with exercises to try; and,
-  in English and Japanese, a six-session pack for teaching glaze calculation.
+  in every language, a six-session pack for teaching glaze calculation.
 - **Famous glazes,** each a public page with its traditional recipe or historic analysis and a
   version from the materials sold where you live (İznik first, as history, with a lead-free
   version not yet test-fired).
@@ -191,9 +191,9 @@ Every feature, as a potter meets it.
   page on Letter or A4; weights in grams, or in pounds and ounces as set in your account.
 - **Your region and your numbers:** where you work sets numbers and dates as you write them
   (12,5 or 12.5 typed either way), °C or °F, Orton cones, SK cones (JIS R 8101) or firing by temperature, the standard
-  materials sold there, and in the guides: who to call in an emergency for 72 countries, and for
-  41 of them shops that sell glaze materials, the closest materials sold there to those a recipe
-  names and the workplace limit for silica dust, with food-contact limits for glazed ware for 42;
+  materials sold there, and in the guides: who to call in an emergency for 72 countries, the
+  closest materials sold there to those a recipe names, shops that sell glaze materials for 47 of
+  them, the workplace limit for silica dust for 41 and food-contact limits for glazed ware for 42;
   each checked on an official or the shop's own page.
 - **Translated into 57 languages:** an official language of every country of the EU (Bulgarian, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Irish, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish, and Swedish), Japanese, Turkish, Traditional Chinese, Korean, Simplified Chinese, Thai, Vietnamese, Indonesian, Arabic and Urdu (right to left), Hindi, Bengali, Tamil, Marathi, Kannada, Telugu, Gujarati, Malayalam, Punjabi, Odia, Nepali, Sinhala, Latin American Spanish, Brazilian Portuguese, Swahili, Amharic, Afrikaans, Hausa, Yoruba, Zulu, Igbo, Somali and Quechua, each at its own addresses (`/de/recipe`).
 
@@ -204,7 +204,7 @@ Every feature, as a potter meets it.
 - **Your own colors:** light, dark or as the device is set, and six palettes named for glazes,
   each readable in both.
 - **A standard library of 182 materials and 37 colorants and additives,** from manufacturers'
-  data sheets (and, for ashes and historical native materials, published research), for the US, UK, EU, Australia, New Zealand and the other regions, each with its source and other names, and hazards where the data sheet gives them, each with its own public page in every language. Discontinued materials
+  data sheets (and, for ashes and historical native materials, published research), for the US, UK, EU, Australia, New Zealand and the other regions, each with its source and other names, and hazards where the data sheet gives them, and each material with its own public page in every language. Discontinued materials
   stay for old recipes, each pointing to its modern replacement. Count colorants in the unity
   formula or leave them out, to compare with other calculators.
 - **Your own materials,** from a chemical formula or a supplier's analysis, and colorants and
@@ -365,8 +365,8 @@ the code and the workflows in a workflow of its own (`.github/workflows/codeql.y
       main.ts           starts it: connects to MongoDB, listens, shuts down cleanly
       app.ts            the Express app: the API under /api, the built client for the rest,
                         and the sitemap (/sitemap.xml), written for each language
-      routes/           accounts, password reset, trials, and records.ts: the seven kinds of
-                        record a user keeps, served by one route factory
+      routes/           accounts, password reset, trials, and records.ts: the six kinds of
+                        record a user keeps, served by one route factory, and the Trash
       lib/              sign-in tokens, the record routes, trial limits and cleanup, email, logging
       mcp/              the MCP server for AI assistants (/mcp): its tools, prompts and guides
       models/           Mongoose schemas

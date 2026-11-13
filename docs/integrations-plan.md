@@ -15,7 +15,7 @@ Effort is in working days for one person who knows the codebase. Figures come fr
 
 ## Phase 1: Sign in with Google, GitHub and Microsoft (6–9 days)
 
-Google and GitHub are built ([ADR 0015](adr/0015-provider-sign-in.md)), on `fetch` and `node:crypto` rather than `openid-client`, with the cookie as `__Host-glazecalc_oauth` on `Path=/` in production. Still to do: Microsoft (decision 1), and a fresh provider re-authentication in place of the password for accounts that have none (item 13).
+Google and GitHub are built ([ADR 0015](adr/0015-provider-sign-in.md)), on `fetch` and `node:crypto` rather than `openid-client`, with the cookie as `__Host-glazecalc_oauth` on `Path=/` in production. Microsoft followed (decision 1, [ADR 0023](adr/0023-microsoft-sign-in.md)), and so did a fresh provider re-authentication in place of the password for accounts that have none (item 13, ADR 0015).
 
 9. **Provider table and flow** on `openid-client` 6: start, then callback, with PKCE, `state`, `nonce` and one callback URL per provider. M–L (2–3 d). New `server/lib/oauth.ts`, `server/routes/oauth_routes.ts`, `server/models/oauth_login.ts` (TTL).
 10. **`SameSite=Lax` transaction cookie** `glazecalc_oauth` on `Path=/api/auth`, 10 minutes. Record the trial id at start, and use the query response mode (no `form_post`). S. `oauth_routes.ts`, `server/lib/session.ts`.
@@ -59,7 +59,8 @@ Built in round 5 (October 2026), items 33–38 and the English of 39: the author
 each connection filled, with Put back and Put all back; revoke one or all), the write tools with the REST shelf and its
 one Undo, and the ChatGPT step-up. Dynamic Client Registration is kept as the second way for apps to name themselves, though the
 MCP authorization specification of 2026-07-28 calls it deprecated (still MAY) and prefers Client ID Metadata
-Documents (SHOULD). Still to do: the notice's other languages (39) and the real-client checks on staging (40).
+Documents (SHOULD). The notice's other languages (39) followed with round 5's translations; its ADR, 0018, was not
+written. Still to do: the real-client checks on staging (40).
 
 33. **`oidc-provider`** in Express: CIMD with an SSRF guard, DCR (rate-limited and expiring), PKCE S256, resource indicators (`aud` = `/mcp`), rotating refresh tokens, and RFC 9207 `iss` if supported; a MongoDB adapter. L (4–6 d). New `server/oauth/`; `server/app.ts`.
 34. **Session-scoped AS cookies.** Login runs through `/connect`, which uses same-site `/api` calls with the existing session; no persistent AS session. S–M. `server/oauth/interactions.ts`.

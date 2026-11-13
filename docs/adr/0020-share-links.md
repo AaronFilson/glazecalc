@@ -1,9 +1,8 @@
 # 20. A recipe is shared by an unguessable, read-only link
 
-Accepted, 2026-10-16. Item 10 of the top ten in
-[Features for industry and advanced users](../../reports/Features%20for%20industry%20and%20advanced%20users.md):
-a read-only share link and a worked-calculation view, for teachers handing out recipes, without
-class accounts.
+Accepted, 2026-10-16. Item 10 of the top ten in the owner's research report "Features for industry
+and advanced users" (kept out of the repository in `reports/`): a read-only share link and a
+worked-calculation view, for teachers handing out recipes, without class accounts.
 
 ## Context
 

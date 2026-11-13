@@ -205,10 +205,10 @@ The engine's objective, weights and selection were not at fault here. Its answer
 
 - An assistant can now judge a match by what it is: for the staging case, "fair", with silica,
   alumina and magnesia close, boron, calcium and potash and soda together off, and "These materials
-  cannot come much nearer." Tests pin it and five other substitutions (`server/test/
-substitution_tests.ts`): Gerstley Borate for Frit 3134 in a cone 6 clear, Custer Spar for G-200 EU
-  and Minspar 200, a cone 10 celadon base with wollastonite for whiting, and lithia and boron with
-  nothing to supply them.
+  cannot come much nearer." Tests pin it and five other substitutions
+  (`server/test/substitution_tests.ts`): Gerstley Borate for Frit 3134 in a cone 6 clear, Custer
+  Spar for G-200 EU and Minspar 200, a cone 10 celadon base with wollastonite for whiting, and
+  lithia and boron with nothing to supply them.
 - Holding raw clay can run the selection twice; a match still takes about 10 to 25 ms.
 - The closeness verdicts and the 0.5 the clay hold may cost are judgment, like the other thresholds
   here. The sentences are English, as the MCP tools' other notes are.

@@ -55,7 +55,7 @@ them with recipes made from today's.
 
 ## Consequences
 
-- The library is now 167 materials and 37 additives. The pages filter by name or alias, kind and
+- The library was then 167 materials and 37 additives. The pages filter by name or alias, kind and
   region, and remember the region chosen.
 - Data sheets change and suppliers come and go, so each record's source and date show how old it
   is. Updating an entry means finding a newer sheet, not copying another tool.

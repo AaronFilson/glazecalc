@@ -123,7 +123,7 @@ Tests:
 
    No conversion anywhere.
 
-5. **Translate the new section** into the 24 live languages with the wave scripts, as Phase 4's new text was.
+5. **Translate the new section** into the 24 live languages with the wave scripts, as Phase 4's new text was. _Done 2026-10-14: in every live language, back-translated blind; every language's firing guide has it (`#sk-cones`)._
 6. _Done 2026-10-14: all 42 rows match the PDF._ **Before it goes live:** a person opens Yuko Trading's PDF table in a browser and checks every figure against the data file. Optionally, ask Yuko Trading who makes the cones now.
 
 Tests:

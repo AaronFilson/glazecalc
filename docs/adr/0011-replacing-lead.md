@@ -56,4 +56,4 @@ No other glaze program found hides or blocks lead.
   says when it rises, since crazing is the commonest failure of a converted glaze.
 - The split of lead's share (0.3, 0.6, 0.1) and the base frit limits are judgment from the limit
   formulas in the research, not a published rule; they live in `lib/chemistry/lead.js` and
-  `client/app/pages/recipe/lead.ts`, with tests.
+  `lib/recipe/lead.js` (the recipe page's `lead.ts` until [ADR 19](0019-shared-recipe-tools.md)), with tests.
