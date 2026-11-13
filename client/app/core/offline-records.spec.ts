@@ -5,7 +5,7 @@ import { TestBed } from '@angular/core/testing';
 import { provideRouter } from '@angular/router';
 import { IDBFactory } from 'fake-indexeddb';
 import { firstValueFrom } from 'rxjs';
-import { API, httpMock, waitFor } from '../testing/test-providers';
+import { API, httpMock, unhandledRejectionsDuring, waitFor } from '../testing/test-providers';
 import { provideEnglish } from '../testing/i18n';
 import { API_BASE } from './api-base';
 import { AuthService, SIGN_IN_PROVIDERS } from './auth.service';
@@ -508,6 +508,29 @@ describe('the records kept on this device', () => {
     expect((await records.read('recipe'))?.body).toEqual(RECIPES);
   });
 
+  it('a sign-in answered as the app is torn down locks nothing away, with no errors after', async () => {
+    setUp();
+    const first = TestBed.inject(OfflineRecords);
+    await turnOn(first);
+    await waitFor(async () => expect(await first.read('recipe')).not.toBeNull());
+    restart();
+    const signIn = TestBed.inject(AuthService).signIn('b@b.c', 'password123');
+    await answerNext(API + '/signin', { msg: 'Signed in.', email: 'b@b.c', kept: 0 });
+    await signIn;
+    let verify!: TestRequest;
+    await waitFor(() => {
+      verify = httpMock().expectOne(API + '/verify');
+    });
+    const errors = await unhandledRejectionsDuring(() => {
+      verify.flush({ id: 'u2', email: 'b@b.c' });
+      TestBed.resetTestingModule();
+    });
+    expect(errors).toEqual([]);
+    // The first user's copy is still the one kept here: the next start shows it.
+    expect(localStorage.getItem(RECORDS_FLAG)).toBe('1');
+    expect((await restart().read('recipe'))?.body).toEqual(RECIPES);
+  });
+
   it("turned on where the browser won't keep anything, it switches back off and says so", async () => {
     setUp();
     const records = TestBed.inject(OfflineRecords);
@@ -547,6 +570,70 @@ describe('the records kept on this device', () => {
     httpMock().verify();
     expect(records.enabled()).toBe(true);
     expect(localStorage.getItem(RECORDS_FLAG)).toBe('1');
+  });
+
+  it('drops the work still on its way when the app is torn down, with no errors after', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    const errors = await unhandledRejectionsDuring(() => {
+      void records.setEnabled(true);
+      httpMock()
+        .expectOne(API + '/verify')
+        .flush({ id: 'u1', email: 'a@b.c' });
+      // The app goes while the copy is being turned on.
+      TestBed.resetTestingModule();
+    });
+    expect(errors).toEqual([]);
+  });
+
+  it('an app torn down as it opens asks nothing and changes nothing', async () => {
+    setUp();
+    const first = TestBed.inject(OfflineRecords);
+    await turnOn(first);
+    await waitFor(async () => expect(await first.read('recipe')).not.toBeNull());
+    TestBed.resetTestingModule();
+    // The account was deleted elsewhere: this start would ask what to do with its copy.
+    localStorage.removeItem('session');
+    localStorage.setItem(OFFLINE_GONE, 'u1');
+    setUp(null);
+    let ask!: OfflineAsk;
+    const errors = await unhandledRejectionsDuring(() => {
+      TestBed.inject(OfflineRecords);
+      ask = TestBed.inject(OfflineAsk);
+      TestBed.resetTestingModule();
+    });
+    expect(errors).toEqual([]);
+    expect(ask.open()).toBeNull();
+    expect(localStorage.getItem(OFFLINE_GONE)).toBe('u1');
+    expect(localStorage.getItem(RECORDS_FLAG)).toBe('1');
+  });
+
+  it('cleared as the app is torn down: the copy goes at once, and the next start deletes the database', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    await waitFor(async () => expect(await records.read('prices')).not.toBeNull());
+    const errors = await unhandledRejectionsDuring(async () => {
+      const clearing = records.clear();
+      TestBed.resetTestingModule();
+      await clearing;
+    });
+    expect(errors).toEqual([]);
+    expect(localStorage.getItem(RECORDS_FLAG)).toBeNull();
+    expect(await databases()).toContain(RECORDS_DB);
+    restart();
+    await waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
+  });
+
+  it('an export cut short by the app being torn down saves no file', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    const file = vi.spyOn(URL, 'createObjectURL').mockReturnValue('blob:offline');
+    const exporting = records.exportCopy('u1');
+    TestBed.resetTestingModule();
+    await exporting;
+    expect(file).not.toHaveBeenCalled();
   });
 
   it('fetches in full at most once a day', async () => {
@@ -855,6 +942,22 @@ describe('the records kept on this device', () => {
     await answerAsk('clear');
     await waitFor(async () => expect(await databases()).not.toContain(RECORDS_DB));
     expect(localStorage.getItem(OFFLINE_GONE)).toBeNull();
+  });
+
+  it('an account deleted elsewhere as the app is torn down asks nothing, with no errors after', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    await waitFor(async () => expect(await records.read('recipe')).not.toBeNull());
+    const auth = TestBed.inject(AuthService);
+    const ask = TestBed.inject(OfflineAsk);
+    const errors = await unhandledRejectionsDuring(() => {
+      auth.sessionEnded(true);
+      TestBed.resetTestingModule();
+    });
+    expect(errors).toEqual([]);
+    expect(ask.open()).toBeNull();
+    expect(await databases()).toContain(RECORDS_DB);
   });
 
   it('a session that only ran out never asks about a deleted account', async () => {
