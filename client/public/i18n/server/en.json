@@ -115,6 +115,7 @@
   "nothing-to-update": "Nothing to update",
   "record-updated": "Successfully updated {label, select, additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}}",
   "record-invalid": "Invalid {label, select, additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}}",
+  "record-too-large": "This {label, select, additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}} is too large to save: {limit, select, bytes {more than {most} KB in all} depth {lists within lists more than {most} deep} items {a list of more than {most} items} chars {a text of more than {most} characters} other {more than a record can hold}}.",
   "record-deleted": "Successfully deleted {label, select, additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}}",
   "record-trashed": "Moved the {label, select, additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}} to the Trash. It can be put back for 30 days.",
   "record-undone": "Went back to the earlier version of the {label, select, additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}}.",

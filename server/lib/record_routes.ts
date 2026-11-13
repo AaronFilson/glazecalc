@@ -17,6 +17,11 @@
 //                        version, so a second undo undoes the first
 //   GET    /getStandard  the shared records from data/, for anyone (when `standard` is set)
 //
+// A create or change whose fields go over RECORD_MOST (server/lib/record_fields.ts:
+// a list's items, a text's characters, nesting, the JSON's bytes) is refused
+// with 400 record-too-large, naming the field; a token's is refused at once,
+// never kept waiting for an approval.
+//
 // Every record has a rev (a count of its changes, 0 when made) and an updatedAt
 // (server/lib/record_rev.ts). A change, delete or undo that sends If-Match:
 // "<rev>" is made only while the record is still at that rev: otherwise 409
@@ -53,6 +58,7 @@ import { byOf, logActivity, moveToTrash, saveVersion, titleOf, tokenIdOf, TRASH_
 import { conflict, gone, revFilter, revOf, withBump } from './record_rev.ts';
 import requireScope from './require_scope.ts';
 import { fieldChanges, registerPreview } from './pending_changes.ts';
+import { mostOf, recordProblem } from './record_fields.ts';
 import {
   confirmFirst,
   inputOf,
@@ -61,7 +67,8 @@ import {
   send,
   type Describe,
   type Op,
-  type OpInput
+  type OpInput,
+  type Reply
 } from './rest_changes.ts';
 import type { Area } from './scopes.ts';
 
@@ -123,14 +130,25 @@ export default function recordRoutes(
   const jsonParser = express.json();
   const notFound = say('record-not-found', { label });
 
+  /** The refusal for fields over RECORD_MOST, or null when they are within it. */
+  const tooLarge = (sent: Body): Reply | null => {
+    const problem = recordProblem(sent);
+    if (!problem) return null;
+    const { limit, field } = problem;
+    return { status: 400, body: say('record-too-large', { label, limit, most: mostOf(limit) }, { field }) };
+  };
+
   const create: Op = async (who, { body, idemKey }) => {
     const source = recordIn(body, wrapper.create) ?? {};
     if (required.some((field) => missing(source[field]))) return { status: 400, body: MISSING };
+    const sent = pick(source, fields);
+    const refused = tooLarge(sent);
+    if (refused) return refused;
     const ownedBy = String(who.user._id);
     let saved;
     try {
       saved = await Model.create({
-        ...pick(source, fields),
+        ...sent,
         ownedBy,
         rev: 0,
         updatedAt: new Date(),
@@ -154,6 +172,8 @@ export default function recordRoutes(
     if (!source) return { status: 400, body: MISSING };
     const changes = pick(source, fields);
     if (!Object.keys(changes).length) return { status: 400, body: say('nothing-to-update') };
+    const refused = tooLarge(changes);
+    if (refused) return refused;
     try {
       // The record as it was, found and changed in one step, so the version kept is the one changed.
       const ownedBy = String(who.user._id);
@@ -268,18 +288,24 @@ export default function recordRoutes(
         base: { kind: 'record', area, id: String(req.params.id) }
       };
     };
+  /** Whether a create's or change's fields go over RECORD_MOST: then the Op refuses it at once, rather than it waiting. */
+  const overMost = (req: Request, wrapped?: string): boolean =>
+    recordProblem(pick(recordIn(req.body, wrapped) ?? {}, fields)) !== null;
+  const describeChange = about('pending-change', (req) => ({
+    fields: Object.keys(pick(recordIn(req.body, wrapper.change) ?? {}, fields)).join(', ')
+  }));
   const asking = {
     create: confirmFirst(area + '.create', {
       removal: false,
-      describe: async (req) => ({
-        summary: { code: 'pending-create', params: named(label, titleOf(recordIn(req.body, wrapper.create) ?? {})) }
-      })
+      describe: async (req) => {
+        if (overMost(req, wrapper.create)) return null;
+        const title = titleOf(recordIn(req.body, wrapper.create) ?? {});
+        return { summary: { code: 'pending-create', params: named(label, title) } };
+      }
     }),
     change: confirmFirst(area + '.change', {
       removal: false,
-      describe: about('pending-change', (req) => ({
-        fields: Object.keys(pick(recordIn(req.body, wrapper.change) ?? {}, fields)).join(', ')
-      }))
+      describe: async (req, who) => (overMost(req, wrapper.change) ? null : describeChange(req, who))
     }),
     remove: confirmFirst(area + '.delete', { removal: true, describe: about('pending-trash') }),
     undo: confirmFirst(area + '.undo', { removal: false, describe: about('pending-undo') })

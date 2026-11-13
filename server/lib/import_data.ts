@@ -43,7 +43,7 @@ import { EXPORT_VERSION } from './export_data.ts';
 import { accountRecords, ACCOUNT_RECORDS_MOST, type RecordModel } from './guest_limits.ts';
 import * as log from './log.ts';
 import { say } from './messages.ts';
-import { missing, RECORD_FIELDS, type RecordKind } from './record_fields.ts';
+import { missing, RECORD_FIELDS, recordProblem, type RecordKind } from './record_fields.ts';
 import { saveVersion, titleOf } from './record_history.ts';
 import { revOf } from './record_rev.ts';
 import { setShelf } from './shelf.ts';
@@ -198,6 +198,9 @@ const problemOf = async (kind: RecordKind, record: unknown, index: number): Prom
   const { fields, required } = RECORD_FIELDS[kind];
   const lacking = required.find((field) => missing(record[field]));
   if (lacking) return { kind, index, title, reason: 'missing', field: lacking };
+  // As large as the record routes take (RECORD_MOST), and before the schema looks at nesting of any depth.
+  const tooLarge = recordProblem(pick(record, fields));
+  if (tooLarge) return { kind, index, title, reason: 'invalid', field: tooLarge.field };
   try {
     await new MODELS[kind]({ ...pick(record, fields), ownedBy: 'x' }).validate();
   } catch (err) {

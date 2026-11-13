@@ -1,5 +1,6 @@
 import type { RecordModel } from '../lib/guest_limits.ts';
 import { forgetRunning, IMPORT_RECORDS_MOST } from '../lib/import_data.ts';
+import { RECORD_MOST } from '../lib/record_fields.ts';
 import Firing from '../models/firing.ts';
 import ImportRun from '../models/import_run.ts';
 import Material from '../models/material.ts';
@@ -281,6 +282,36 @@ describe('import API', () => {
     });
     expect((await post('/import', bob.token, { file })).status).to.equal(422);
     expect(await Material.countDocuments({ ownedBy: String(bob.user._id) })).to.equal(0);
+  });
+
+  it('refuses a record larger than the record routes take, and nesting of any depth, as problems in the file', async () => {
+    const file = (await exportOf(alice.token)) as { records: { recipes: Row[] } };
+    // Each text within the limit, the three together over the record's bytes.
+    const long = 'x'.repeat(RECORD_MOST.chars);
+    file.records.recipes.push({ title: 'Too long in all', materials: [], notes: [long, long, long] });
+    file.records.recipes.push({
+      title: 'Too many lines',
+      materials: Array.from({ length: RECORD_MOST.items + 1 }, () => ({}))
+    });
+    const res = await post('/import/preview', bob.token, { file });
+    expect(res).to.have.status(422);
+    expect(res.body.problems).to.eql([
+      { kind: 'recipes', index: 1, title: 'Too long in all', reason: 'invalid', field: 'notes' },
+      { kind: 'recipes', index: 2, title: 'Too many lines', reason: 'invalid', field: 'materials' }
+    ]);
+    for (const depth of [200, 5000, 40000]) {
+      const lists = '['.repeat(depth) + ']'.repeat(depth);
+      const deep = `{"file":{"format":"glazecalc-export","version":1,"records":{"recipes":[{"title":"t","materials":[${lists}]}]}}}`;
+      const answer = await api()
+        .post('/import/preview')
+        .set('Authorization', 'Bearer ' + bob.token)
+        .set('Content-Type', 'application/json')
+        .send(deep);
+      expect(answer, 'depth ' + depth).to.have.status(422);
+      expect(answer.body.problems).to.eql([
+        { kind: 'recipes', index: 0, title: 't', reason: 'invalid', field: 'materials' }
+      ]);
+    }
   });
 
   it('refuses what is not an export, a newer version, and too many records', async () => {

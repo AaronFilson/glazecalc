@@ -171,6 +171,7 @@ export const MESSAGES = {
   'nothing-to-update': 'Nothing to update',
   'record-updated': `Successfully updated {label, select, ${ONE}}`,
   'record-invalid': `Invalid {label, select, ${ONE}}`,
+  'record-too-large': `This {label, select, ${ONE}} is too large to save: {limit, select, bytes {more than {most} KB in all} depth {lists within lists more than {most} deep} items {a list of more than {most} items} chars {a text of more than {most} characters} other {more than a record can hold}}.`,
   'record-deleted': `Successfully deleted {label, select, ${ONE}}`,
   'record-trashed': `Moved the {label, select, ${ONE}} to the Trash. It can be put back for 30 days.`,
   'record-undone': `Went back to the earlier version of the {label, select, ${ONE}}.`,
