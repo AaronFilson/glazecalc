@@ -209,6 +209,37 @@ describe('Paste-in import: decimal marks', () => {
     ]);
   });
 
+  it('reads the endings numbers are written with: a full stop, ٪ and ٬, a percent sign first, units in CJK', () => {
+    // A full stop after the amount, as at the end of a sentence, keeps the recipe whole.
+    expect(lines(one('Silica 30.\nWhiting 20.\nKaolin 50.'))).to.eql([
+      ['Silica', 30, null, false],
+      ['Whiting', 20, null, false],
+      ['Kaolin', 50, null, false]
+    ]);
+    expect(one('Silica 22.5.').lines[0].amount).to.equal(22.5);
+    // The Arabic percent sign and thousands separator.
+    expect(lines(one('Silica ٣٠٪\nKaolin ١٬٥٠٠'))).to.eql([
+      ['Silica', 30, '%', false],
+      ['Kaolin', 1500, null, false]
+    ]);
+    // The percent sign before the number, as Turkish writes it.
+    expect(lines(one('Silica %20\nKaolin % 30', { locale: 'tr' }))).to.eql([
+      ['Silica', 20, '%', false],
+      ['Kaolin', 30, '%', false]
+    ]);
+    // Grams, kilograms and parts in Chinese, Japanese and Korean.
+    expect(lines(one('Silica 30克\nKaolin 1 公斤\nWhiting 2千克\nFeldspar 40公克'))).to.eql([
+      ['Silica', 30, 'g', false],
+      ['Kaolin', 1000, 'g', false],
+      ['Whiting', 2000, 'g', false],
+      ['Feldspar', 40, 'g', false]
+    ]);
+    expect(lines(one('Silica 30部\nKaolin 20 그램'))).to.eql([
+      ['Silica', 30, 'parts', false],
+      ['Kaolin', 20, 'g', false]
+    ]);
+  });
+
   it('reads Arabic-Indic digits and the Arabic decimal mark', () => {
     expect(one('Silica ٢٥٫٥').lines[0].amount).to.equal(25.5);
   });
