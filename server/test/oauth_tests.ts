@@ -955,7 +955,8 @@ describe('OAuth: the authorization server', function () {
     it('never takes it anywhere under /api', async () => {
       const { session } = await person();
       const { tokens } = await connect(clientId, session);
-      for (const path of ['/recipe/getAll', '/notes/getAll', '/tokens', '/usersettings', '/export']) {
+      const waiting = '/pending-changes/' + 'x'.repeat(22);
+      for (const path of ['/recipe/getAll', '/notes/getAll', '/tokens', '/usersettings', '/export', waiting]) {
         const res = await api()
           .get(path)
           .set('Authorization', 'Bearer ' + tokens.access_token);
@@ -967,6 +968,23 @@ describe('OAuth: the authorization server', function () {
         .get('/recipe/getAll')
         .set('Authorization', 'Bearer ' + 'a'.repeat(43));
       expect(made.status).to.equal(401);
+    });
+
+    it('never tells it at /api what came of a change it asked for: it asks the MCP endpoint', async () => {
+      const { session, user } = await person();
+      const { tokens } = await connect(clientId, session, { scope: 'data:read data:write', write: true });
+      await User.updateOne({ _id: user._id }, { $set: { confirmChanges: 'all' } });
+      const asked = await rpc(
+        'tools/call',
+        { name: 'add_notebook_entry', arguments: { content: 'Glazed' } },
+        tokens.access_token
+      );
+      const id = /\/confirm\/([A-Za-z0-9_-]+)/.exec(asked.body.result.content[0].text as string)![1]!;
+      const polled = await api()
+        .get('/pending-changes/' + id)
+        .set('Authorization', 'Bearer ' + tokens.access_token);
+      expect(polled.status).to.equal(403);
+      expect(polled.body.code).to.equal('token-not-here');
     });
 
     it('asks a read-only app to step up before it changes anything (403 insufficient_scope)', async () => {
