@@ -35,10 +35,10 @@ For anyone reading the code; the [highlights](#highlights) below give the detail
 
 - **Stack:** Angular 22 (standalone components, signals, zoneless), TypeScript on Node 24 with Express 5 and
   Mongoose 9, MongoDB 9, Docker, and AWS (EC2, SSM, SES, S3, CloudWatch).
-- **Tested in CI on every pull request:** over 1,800 server tests (98% of statements), over 1,550 Angular unit tests
-  (99% of statements) and over 450 Playwright browser tests, with axe checks against WCAG 2.2 AA. Also the official
-  MCP conformance suite, CodeQL on the code and the workflows, and Lighthouse on desktop: performance 99;
-  accessibility, best practices and SEO 100. CI checks these numbers too.
+- **Tested in CI on every pull request:** over 1,800 server tests (98% of statements, 88% of branches), over 1,550
+  Angular unit tests (99% of statements, 91% of branches) and over 450 Playwright browser tests, with axe checks
+  against WCAG 2.2 AA. Also the official MCP conformance suite, CodeQL on the code and the workflows, and Lighthouse
+  on desktop: performance 99; accessibility, best practices and SEO 100. CI checks these numbers too.
 - **Security:** sign-in with OAuth 2.0 and OpenID Connect (Google, GitHub, Microsoft) or a password; MFA with WebAuthn
   passkeys, TOTP and recovery codes; JWTs in httpOnly cookies with CSRF protection; a layered content security
   policy and a Permissions-Policy, graded A+ by Mozilla's HTTP Observatory; keyless CI/CD with no stored AWS keys,
@@ -65,12 +65,12 @@ The details, with the decisions behind them:
   and put back online. The
   [case study](docs/case-study.md) tells how.
 - **Tested at three levels, in CI on every pull request and push to master:** over 1,800 server tests (98% of
-  statements) run against the app in-process; over 1,550 Angular unit tests (99% of statements); over 450 Playwright
-  browser tests, including [axe](https://github.com/dequelabs/axe-core) accessibility checks against WCAG 2.2 AA of
-  every page in light and dark mode, every page in a pseudo-locale to find text not marked for translation, and
-  every page in each language at a phone's width. CodeQL scans the code and the workflows
-  ([its settings](.github/codeql/codeql-config.yml)), and CI checks the numbers in this README against each run
-  ([scripts/readme-numbers.mjs](scripts/readme-numbers.mjs)).
+  statements, 88% of branches) run against the app in-process; over 1,550 Angular unit tests (99% of statements,
+  91% of branches); over 450 Playwright browser tests, including [axe](https://github.com/dequelabs/axe-core)
+  accessibility checks against WCAG 2.2 AA of every page in light and dark mode, every page in a pseudo-locale to
+  find text not marked for translation, and every page in each language at a phone's width. CodeQL scans the code
+  and the workflows ([its settings](.github/codeql/codeql-config.yml)), and CI checks the numbers in this README
+  against each run ([scripts/readme-numbers.mjs](scripts/readme-numbers.mjs)).
 - **One glaze chemistry library** for the browser and the tests, checked against values worked
   out by hand ([ADR 4](docs/adr/0004-shared-chemistry.md)). It is plain JavaScript with hand-written
   declarations for the app and the server, and CI type-checks the JavaScript against them
