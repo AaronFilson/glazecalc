@@ -691,6 +691,15 @@ describe('MCP: the public tools', () => {
     const same = await data('specific_gravity_water', { sg: 1.45, litres: 10, target: 1.45 });
     expect(same.waterToAddLitres).to.equal(0);
     expect(same.note).to.match(/already/);
+    // The recipe page's figure (lib/recipe/slurry.js), rounded to centilitres.
+    for (const [litres, sg, target] of [
+      [10, 1.6, 1.45],
+      [3.5, 1.38, 1.47],
+      [250, 1.52, 1.5]
+    ] as const) {
+      const answer = await data('specific_gravity_water', { sg, litres, target });
+      expect(answer.waterToAddLitres).to.equal(Math.round(recipe.waterToReach(litres, sg, target, null)! * 100) / 100);
+    }
     expect((await call('specific_gravity_water', { sg: 1.4, gramsPer100ml: 140 })).isError).to.equal(true);
     expect((await call('specific_gravity_water', {})).isError).to.equal(true);
     expect((await call('specific_gravity_water', { sg: 2.4, drySg: 2.2 })).isError).to.equal(true);
