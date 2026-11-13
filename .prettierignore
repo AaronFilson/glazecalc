@@ -9,6 +9,10 @@ test-results-linux/
 .angular/
 db/
 package-lock.json
+# The CDK app's synthesized templates, and the tests' copies of them, which
+# the tests write as JSON.stringify does (deploy/cdk: npm run test:update).
+/deploy/cdk/cdk.out/
+/deploy/cdk/test/snapshots/
 # Local working folders, not part of the project.
 .claude/
 scratch/

@@ -1,0 +1,26 @@
+{
+  "name": "glazecalc-cdk",
+  "private": true,
+  "description": "glazecalc's AWS setup as AWS CDK stacks (README.md), at exact versions with a lockfile; installed apart from the app with npm ci.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "synth": "cdk synth --quiet",
+    "test": "node --test \"test/*.test.ts\"",
+    "test:update": "node test/update-snapshots.ts",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.275.0",
+    "cdk-nag": "3.0.2",
+    "constructs": "10.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "aws-cdk": "2.1146.1",
+    "typescript": "6.0.3"
+  }
+}

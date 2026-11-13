@@ -1,0 +1,176 @@
+{
+  "Description": "glazecalc: SES sending, the alerts topic and reputation alarms, the app's SMTP user",
+  "Resources": {
+    "Domain66AC69E0": {
+      "Type": "AWS::SES::EmailIdentity",
+      "Properties": {
+        "DkimSigningAttributes": {
+          "NextSigningKeyLength": "RSA_2048_BIT"
+        },
+        "EmailIdentity": "glazecalcapp.com",
+        "MailFromAttributes": {
+          "BehaviorOnMxFailure": "USE_DEFAULT_VALUE",
+          "MailFromDomain": "mail.glazecalcapp.com"
+        },
+        "Tags": [
+          {
+            "Key": "app",
+            "Value": "glazecalc"
+          }
+        ]
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-mail/Domain/Resource"
+      }
+    },
+    "Alerts91F83244": {
+      "Type": "AWS::SNS::Topic",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "app",
+            "Value": "glazecalc"
+          }
+        ],
+        "TopicName": "glazecalc-alerts"
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-mail/Alerts/Resource"
+      }
+    },
+    "BounceRateAlarmDE93A3B6": {
+      "Type": "AWS::CloudWatch::Alarm",
+      "Properties": {
+        "AlarmActions": [
+          {
+            "Ref": "Alerts91F83244"
+          }
+        ],
+        "AlarmName": "glazecalc-ses-bounce-rate",
+        "ComparisonOperator": "GreaterThanThreshold",
+        "EvaluationPeriods": 1,
+        "MetricName": "Reputation.BounceRate",
+        "Namespace": "AWS/SES",
+        "OKActions": [
+          {
+            "Ref": "Alerts91F83244"
+          }
+        ],
+        "Period": 900,
+        "Statistic": "Maximum",
+        "Threshold": 0.04,
+        "TreatMissingData": "notBreaching"
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-mail/BounceRateAlarm/Resource"
+      }
+    },
+    "ComplaintRateAlarm48BDFF06": {
+      "Type": "AWS::CloudWatch::Alarm",
+      "Properties": {
+        "AlarmActions": [
+          {
+            "Ref": "Alerts91F83244"
+          }
+        ],
+        "AlarmName": "glazecalc-ses-complaint-rate",
+        "ComparisonOperator": "GreaterThanThreshold",
+        "EvaluationPeriods": 1,
+        "MetricName": "Reputation.ComplaintRate",
+        "Namespace": "AWS/SES",
+        "OKActions": [
+          {
+            "Ref": "Alerts91F83244"
+          }
+        ],
+        "Period": 900,
+        "Statistic": "Maximum",
+        "Threshold": 0.0008,
+        "TreatMissingData": "notBreaching"
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-mail/ComplaintRateAlarm/Resource"
+      }
+    },
+    "Mailer30915986": {
+      "Type": "AWS::IAM::User",
+      "Properties": {
+        "Policies": [
+          {
+            "PolicyDocument": {
+              "Statement": [
+                {
+                  "Action": "ses:SendRawEmail",
+                  "Condition": {
+                    "StringEquals": {
+                      "ses:FromAddress": "no-reply@glazecalcapp.com"
+                    }
+                  },
+                  "Effect": "Allow",
+                  "Resource": "arn:aws:ses:us-west-2:724654236968:identity/*",
+                  "Sid": "SendOnlyAsNoReplyThroughSmtp"
+                }
+              ],
+              "Version": "2012-10-17"
+            },
+            "PolicyName": "send-as-no-reply"
+          }
+        ],
+        "Tags": [
+          {
+            "Key": "app",
+            "Value": "glazecalc"
+          }
+        ],
+        "UserName": "glazecalc-mailer"
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-mail/Mailer/Resource"
+      }
+    }
+  },
+  "Parameters": {
+    "BootstrapVersion": {
+      "Type": "AWS::SSM::Parameter::Value<String>",
+      "Default": "/cdk-bootstrap/hnb659fds/version",
+      "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]"
+    }
+  },
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  {
+                    "Ref": "BootstrapVersion"
+                  }
+                ]
+              }
+            ]
+          },
+          "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI."
+        }
+      ]
+    }
+  }
+}

@@ -34,6 +34,20 @@ updates:
     schedule:
       interval: weekly
 
+  # The AWS setup as CDK stacks, which the Infrastructure workflow installs apart (deploy/cdk/).
+  - package-ecosystem: npm
+    directory: /deploy/cdk
+    schedule:
+      interval: weekly
+    groups:
+      # The CLI must read the cloud assembly the library writes, so they move together.
+      cdk:
+        patterns: ['aws-cdk', 'aws-cdk-lib', 'constructs', 'cdk-nag']
+    ignore:
+      # The types follow the Node release the app runs on (24 LTS), moved with it.
+      - dependency-name: '@types/node'
+        update-types: ['version-update:semver-major']
+
   - package-ecosystem: github-actions
     directory: /
     schedule:
