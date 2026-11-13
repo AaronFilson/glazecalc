@@ -1680,6 +1680,31 @@ assistants can use too. In short, with every change in the sections below:
     count until its own loaded, or for good if that failed; both are forgotten when the session ends.
   - After a sign-in during which the browser could not open the offline copy's database, the account's own copy
     stayed locked at its later sign-ins until it was turned on again; the next sign-in now shows it.
+- **Found by the 1.0 security review of the tools for AI assistants and the OAuth server** (each fixed with a test that
+  fails without the fix):
+  - The tools that fit amounts could hold the server for everyone, with no account: `solve_target` with 60 of the
+    library's materials and a 13-oxide target took 7 seconds, with 80 it took 93 seconds, and `suggest_substitutes` took
+    30 seconds on a 40-line recipe. A search now does at most about a second's work (`lib/chemistry/fit.js` `WORK`,
+    counted, not timed, so the page and the server answer alike) and past it gives the best it found and says so
+    (`cutShort`). The same answers come sooner, bit for bit, the famous glazes' versions included (shino from the EU's
+    library: 5 s to 0.7 s). `match_from_materials` and `solve_target` take at most 60 materials (they took 100), a
+    larger shelf is refused in words, and everyone without an account together may have at most ten such searches' work
+    done a minute.
+  - The approval page showed a recipe's lines by name and amount only, so a change that kept "Custer Spar 30" but gave it
+    the analysis of lead oxide looked like no change. A line whose chemistry changes now shows its oxides before and
+    after, a new line given by its own analysis shows them, and an undo of a record or of the shelf shows what it puts
+    back.
+  - An app's address (CIMD) was looked up on the four threads that also check passwords, and outside the fetch's time
+    limits: a name whose server never answered held a thread, and one authorization 18 seconds. Names are now looked up
+    with c-ares within the fetch's time, and every fetch one request makes shares 5 seconds.
+  - A token's request to take a material off the shelf could name one material for approval and take off another; the
+    approval now names the one it changes.
+  - `/oauth/authorize` sent a browser straight on to any address a self-registered app gave, with `prompt=none` or a
+    start without PKCE. Those errors, and any other before the person's yes, are shown on the site's page unless someone
+    has a working connection to the app.
+  - Smaller: a connected app's token is refused at `GET /api/pending-changes/:id` (it asks the MCP endpoint), "ask
+    before removals" now asks before undoing the shelf's last change, and an app can no longer be named by an address on
+    this site.
 - **Found by the 1.0 security review of accounts and records** (each fixed with a test that fails without the fix):
   - After a password reset, a passkey alone no longer signs in until a sign-in with the new password and a second step
     (the sign-in page says so), and a passkey alone never cancels a request to turn two-step sign-in off. Someone who
