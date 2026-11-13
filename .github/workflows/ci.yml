@@ -66,7 +66,9 @@ jobs:
 
     services:
       mongodb:
-        image: mongo:9.0
+        # The image compose.yaml and deploy/compose.prod.yaml pin, by the same
+        # digest: Dependabot updates theirs, not this one, so move it with them.
+        image: mongo:9.0@sha256:452bdaf2127b8ff851e31410a267809b9829eded219979f2210e7c7efb85a058
         # For Linux 6.19 through 7.0.13, as compose.yaml says.
         env:
           GLIBC_TUNABLES: glibc.pthread.rseq=1
@@ -305,7 +307,8 @@ jobs:
 
     services:
       mongodb:
-        image: mongo:9.0
+        # As the server job: compose.yaml's image, by digest.
+        image: mongo:9.0@sha256:452bdaf2127b8ff851e31410a267809b9829eded219979f2210e7c7efb85a058
         # For Linux 6.19 through 7.0.13, as compose.yaml says.
         env:
           GLIBC_TUNABLES: glibc.pthread.rseq=1

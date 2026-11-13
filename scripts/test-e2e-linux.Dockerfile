@@ -3,6 +3,13 @@
 # fonts), with Node 24. CI and npm run test:e2e:linux both run the tests in it,
 # so a page lays out the same in both; a new image comes only with a new
 # Playwright or a change here. scripts/test-e2e-linux.sh builds it once for each.
+#
+# Both images below are taken by tag, unlike the app's (Dockerfile) and
+# MongoDB's (compose.yaml), which are pinned by digest: the Playwright image's
+# tag follows package.json's version, which one digest written here cannot,
+# and Dependabot's Docker updates read only the Dockerfile at the root, so a
+# digest for node:24 would stay as it was. Neither is deployed: they only run
+# the browser tests.
 ARG PLAYWRIGHT
 FROM node:24 AS node
 
