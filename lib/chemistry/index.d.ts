@@ -263,6 +263,10 @@ export interface Closeness {
   oxides: OxideCloseness[];
 }
 
+/**
+ * Throws a ChemistryError 'no-flux' for a target with no fluxes, as calculateUMF does: it has no unity formula
+ * to come near. Moles with no fluxes, against a target that has them, are 'poor'.
+ */
 export function closeness(target: Record<string, number>, moles: Record<string, number>): Closeness;
 
 /** The chemistry's messages by code, in English (lib/chemistry/messages.js). */

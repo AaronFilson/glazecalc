@@ -1341,6 +1341,16 @@ describe('glaze chemistry', () => {
       expect(thin.oxides.find((o) => o.oxide === 'Al2O3')!.verdict).to.equal('far');
     });
 
+    it('should not call two formulas with no fluxes close: a target with none has no unity formula', () => {
+      // Silica and kaolin against silica and alumina: no rows to compare, and every row of none was "close".
+      expect(() => chemistry.closeness({ SiO2: 1, Al2O3: 0.2 }, { SiO2: 3, Al2O3: 0.1 }))
+        .to.throw(/no flux/)
+        .with.property('code', 'no-flux');
+      // A match with no fluxes, against a target that has them, is poor, however small the target's fluxes.
+      const fluxless = chemistry.closeness({ CaO: 0.01, SiO2: 0.03, Al2O3: 0.003 }, { SiO2: 3, Al2O3: 0.3 });
+      expect(fluxless.verdict).to.equal('poor');
+    });
+
     it('should order oxides that tie by name the same in every language the reader has', () => {
       // TiO2 and ZrO2, neither in the target, tie on group and amount; in Estonian, localeCompare
       // without a locale put ZrO2 first. Here every comparison without a locale is made Estonian.
