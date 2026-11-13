@@ -371,6 +371,38 @@ describe('recipe firing (lib/cones/firing.js)', () => {
       expect(firing.conesFromLog(log, 'orton', { decimalComma: true })).to.eql(['4.5', '6.5']);
     });
 
+    it('reads long runs of spaces in linear time, and only the first 300 characters of a long note', () => {
+      const timed = (run: () => unknown): number => {
+        const start = process.hrtime.bigint();
+        run();
+        return Number(process.hrtime.bigint() - start) / 1e6;
+      };
+      const spaces = ' '.repeat(49900);
+      // Each took seconds before (quadratic backtracking in the SK, SK list and temperature patterns).
+      for (const text of ['sk' + spaces + 'x', 'sk 8' + spaces + 'x', '1240 deg' + spaces + 'x']) {
+        expect(
+          timed(() => firing.readFiring(text)),
+          text.slice(0, 8)
+        ).to.be.below(250);
+        expect(
+          timed(() => firing.firingFromLines(['Silica 20', text])),
+          text.slice(0, 8)
+        ).to.be.below(250);
+        const note = 'Silica 20\nWhiting 30\n' + text;
+        expect(
+          timed(() => paste.parsePaste(note)),
+          text.slice(0, 8)
+        ).to.be.below(250);
+      }
+      // The same firings as before on ordinary text, spaced out or not.
+      expect(firing.readFiring('SK  -  8')).to.include({ scale: 'sk', low: '8' });
+      expect(firing.readFiring('sk- 8, sk -10')).to.include({ scale: 'sk', low: '8', high: '10' });
+      expect(firing.readFiring('1240 degrees  C')).to.include({ scale: 'temperature', low: '1240' });
+      expect(firing.readFiring('1240 deg C')).to.include({ scale: 'temperature', low: '1240' });
+      // A long note's firing is read from its start.
+      expect(firing.readFiring('Cone 6 ox, ' + 'a'.repeat(400))).to.include({ scale: 'orton', low: '6' });
+    });
+
     it('tells a clear firing line from a bare number or a weak word', () => {
       for (const line of ['Cone 6', 'C/6', '^6', 'SK8', '1240°C', 'ox/red', '6 ox', 'wood fired']) {
         expect(firing.isFiringLine(line), line).to.equal(true);
