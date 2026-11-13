@@ -1497,6 +1497,20 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **Found by the 1.0 tests** (each fixed with a test that fails without the fix):
+  - The share link's "Show the recipe's notes too" box, clicked while a link was being made, stayed ticked though the
+    link was made without the notes; it now ignores the click until the link is made.
+  - Replace lead, Match with what I have and working a swap out again said why they could not go on only in the box
+    for discontinued materials, so on most recipes the button did nothing visible; the reason now shows either way,
+    and in the compare view too.
+  - A price typed while the one before it was being saved was wiped when that save came back, and never saved.
+  - "Use it in a recipe" on a material's page and "Open this recipe" on a famous glaze's page passed through the
+    sign-in page while a trial started, leaving it in the tab's history.
+  - Similar materials and Replaces on a material's page had a space before each comma.
+  - The offline copy's "keep for" list showed a time it could not save, until the next visit showed the old one.
+  - After signing out, the next account to sign in on the same tab saw the last one's connected apps and token
+    count until its own loaded, or for good if that failed; both are forgotten when the session ends.
+
 - **Numbers and dates in a language the browser lacks**: Google Chrome 156 and Playwright's Chromium have no Intl
   data for Nepali, Sinhala or Odia and only part of Punjabi's, so live Odia and Punjabi pages showed English dates
   ("October 3, 2026", or "2026 M10 3" in Punjabi) and Punjabi numbers grouped 1,234,567.5, and Nepali's Devanagari
@@ -1645,6 +1659,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - Praseodymium oxide is Pr₆O₁₁, the form sold for stains, not PrO₂.
 
 ### Removed
+
+- `Outbox.remove()`, which nothing called: clearing the offline copy deletes its waiting changes itself.
 
 - `.git-blame-ignore-revs`: the reformat it named was squashed into the 0.3.0 merge.
 
