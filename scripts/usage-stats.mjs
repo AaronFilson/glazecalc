@@ -45,8 +45,9 @@ export async function usage(db, now = new Date()) {
     accounts: await count('users', accounts),
     accountsNewThisMonth: await count('users', { ...accounts, _id: { $gte: idAt(monthAgo) } }),
     trialsNow: await count('users', { guest: true }),
-    countries: await distinct('region'),
-    languages: await distinct('language'),
+    // Preferences, as the User model keeps them (server/models/user.ts).
+    countries: await distinct('preferences.region'),
+    languages: await distinct('preferences.language'),
     recipes: await count('recipes', own),
     recipesNewThisMonth: await count('recipes', { ...own, _id: { $gte: idAt(monthAgo) } }),
     ownMaterials: await count('materials', own),

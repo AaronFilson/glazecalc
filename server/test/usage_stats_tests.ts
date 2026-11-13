@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 import { expect } from 'chai';
 import { summary, usage } from '../../scripts/usage-stats.mjs';
+import User from '../models/user.ts';
 
 // Usage at a glance (scripts/usage-stats.mjs): totals for the README, and nothing about a person.
 const DAY = 24 * 60 * 60 * 1000;
@@ -18,11 +19,14 @@ describe('usage at a glance (scripts/usage-stats.mjs)', () => {
       payload: JSON.stringify({ clientId, accountId: 'someone' })
     });
 
+    // As the User model keeps them: the region and the language are preferences (server/models/user.ts).
+    expect(User.schema.path('preferences.region')).to.not.equal(undefined);
+    expect(User.schema.path('preferences.language')).to.not.equal(undefined);
     await db.collection('users').insertMany([
-      { _id: longAgo(90), email: 'potter@example.com', region: 'US', language: 'en' },
-      { email: 'another@example.com', region: 'DE', language: 'de' },
-      { email: 'unset@example.com', region: '', language: 'en' },
-      { email: 'speckled-quiet-kilns@glazecalc.invalid', guest: true, region: 'JP', language: 'ja' }
+      { _id: longAgo(90), email: 'potter@example.com', preferences: { region: 'US', language: 'en' } },
+      { email: 'another@example.com', preferences: { region: 'DE', language: 'de' } },
+      { email: 'unset@example.com', preferences: { region: '', language: 'en' } },
+      { email: 'speckled-quiet-kilns@glazecalc.invalid', guest: true, preferences: { region: 'JP', language: 'ja' } }
     ]);
     await db
       .collection('recipes')
