@@ -19,10 +19,11 @@ import { accessTokenIn, checkAccessToken, invalidToken } from './token_auth.ts';
 /**
  * The network an IPv6 address counts with where everyone's requests together
  * have a ceiling (the token endpoint, apps registering themselves, MCP
- * without a token, app documents and keys fetched): its /48. A /48 is often
- * free (a tunnel broker, many server plans) and holds 256 /56s, so a count by
- * /56 there would let one person fill the ceiling for everyone. Elsewhere the
- * limits keep express-rate-limit's /56, one home or office.
+ * without a token, app documents and keys fetched), and at password sign-in:
+ * its /48. A /48 is often free (a tunnel broker, many server plans) and holds
+ * 256 /56s, so a count by /56 there would let one person fill the ceiling for
+ * everyone, or guess 256 times as many passwords. Elsewhere the limits keep
+ * express-rate-limit's /56, one home or office.
  */
 export const NETWORK_BITS = 48;
 /** The key for a request's address: the address for IPv4, its /48 for IPv6. */
@@ -64,15 +65,16 @@ const limiter = (
  * Password sign-in (GET /api/signin): counts only the refused tries, so people
  * signing in from one shared address do not use up each other's; a right
  * password (signed in, or on to the second step) is not counted. signInAny
- * still bounds all of them.
+ * still bounds all of them. An IPv6 address counts with its /48 (NETWORK_BITS).
  */
-export const signIn = limiter(15, 20, 'too-many-sign-ins', { skipSuccessfulRequests: true });
+export const signIn = limiter(15, 20, 'too-many-sign-ins', { skipSuccessfulRequests: true, ipv6Subnet: NETWORK_BITS });
 /**
  * Every password sign-in, right or wrong, so that one address cannot make the
  * server check passwords without end (each check is slow on purpose,
- * server/lib/password.ts). Loose, for the many people behind one address.
+ * server/lib/password.ts). Loose, for the many people behind one address; an
+ * IPv6 one, as signIn, with its /48.
  */
-export const signInAny = limiter(15, 300, 'too-many-sign-ins');
+export const signInAny = limiter(15, 300, 'too-many-sign-ins', { ipv6Subnet: NETWORK_BITS });
 /**
  * Passkey-first sign-in (POST /api/signin/passkey): its own count, so password
  * guessing from a shared address does not stop passkey sign-in there, and only
