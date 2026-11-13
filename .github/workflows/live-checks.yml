@@ -45,7 +45,12 @@ jobs:
       LIVE_URL: ${{ inputs.url || 'https://glazecalcapp.com' }}
     steps:
       # The deployed commit's own checks, which expect what it serves; one from
-      # before the checks existed is checked with this workflow's.
+      # before the checks existed is checked with this workflow's. That runs the
+      # commit's code (npm ci, the checks) with the default branch's cache
+      # access, which code scanning reports as cache poisoning (two alerts,
+      # dismissed as by design): only people with write access can start these
+      # runs, and the commit is a published master commit (deploy.yml checks its
+      # 40 hex) or one on a branch of this repository (staging.yml).
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ inputs.ref }}
