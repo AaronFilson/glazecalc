@@ -1,5 +1,5 @@
 import type { RecordModel } from '../lib/guest_limits.ts';
-import { forgetRunning, IMPORT_RECORDS_MOST } from '../lib/import_data.ts';
+import { forgetRunning, IMPORT_CONTAINERS_MOST, IMPORT_RECORDS_MOST } from '../lib/import_data.ts';
 import { RECORD_MOST } from '../lib/record_fields.ts';
 import Firing from '../models/firing.ts';
 import ImportRun from '../models/import_run.ts';
@@ -434,6 +434,22 @@ describe('import API', () => {
           .send({ pad: fine })
       ).status
     ).to.equal(413);
+  });
+
+  it('refuses, before reading it, a body with more lists and objects than a real file holds', async () => {
+    // 20 MB of empty objects ran the server out of memory as it read them: this is more than the limit, in 3 MB.
+    const many = '{},'.repeat(IMPORT_CONTAINERS_MOST) + '{}';
+    const body = `{"file":{"format":"glazecalc-export","version":1,"records":{"recipes":[{"title":"x","materials":[${many}]}]}}}`;
+    for (const path of ['/import/preview', '/import']) {
+      const res = await api()
+        .post(path)
+        .set('Authorization', 'Bearer ' + bob.token)
+        .set('Content-Type', 'application/json')
+        .send(body);
+      expect(res, path).to.have.status(413);
+      expect(res.body.code).to.equal('too-large');
+    }
+    expect(await Recipe.countDocuments({ ownedBy: String(bob.user._id) })).to.equal(0);
   });
 
   it('counts imports per account', async () => {

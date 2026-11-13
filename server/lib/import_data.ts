@@ -55,6 +55,28 @@ type Row = Record<string, unknown>;
 export const IMPORT_RECORDS_MOST = 20_000;
 /** The largest body the import routes take; nginx allows the same on these paths (deploy/nginx). */
 export const IMPORT_BODY_LIMIT = '20mb';
+/**
+ * The most lists and objects (each { or [) an import's body may hold, counted
+ * before it is read: each takes about 70 bytes of memory once read, so 20 MB
+ * of nothing else ({},{},...: 6.5 million) ran the server out of memory before
+ * any record was looked at. A file of 20 MB of real records holds well under
+ * half that: a recipe's line, or a material's oxide, is one.
+ */
+export const IMPORT_CONTAINERS_MOST = 1_000_000;
+
+/**
+ * For express.json's verify, which sees the body before it is parsed: refuses
+ * one with more than IMPORT_CONTAINERS_MOST lists and objects, as too large
+ * (413). A brace inside a text is counted too, which only ever counts more.
+ */
+export const fewEnoughContainers = (_req: unknown, _res: unknown, body: Buffer): void => {
+  let count = 0;
+  for (let i = 0; i < body.length; i++) {
+    const byte = body[i];
+    if (byte === 0x7b || byte === 0x5b) count++;
+  }
+  if (count > IMPORT_CONTAINERS_MOST) throw Object.assign(new Error('Too many lists and objects'), { status: 413 });
+};
 /** As PUT /api/prices (server/routes/user_routes.ts). */
 const PRICES_MOST = 1000;
 /** Problems listed when a file is refused. */

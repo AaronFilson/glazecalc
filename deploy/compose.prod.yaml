@@ -35,9 +35,9 @@ services:
     # (NODE_OPTIONS below: about what Node takes for itself on 1 GB, written
     # here so that a larger instance does not raise it unseen), and the
     # container at 512 MB. In use the process is about 120 to 220 MB; the
-    # largest import (a 20 MB file of 20,000 records) peaks at about 440 MB
-    # with this heap (measured 2026-11-13), the swap file covering the rest at
-    # that moment. An app that outgrows its heap stops and is started again
+    # largest import (a 20 MB file of 20,000 records) peaks at 440 to 480 MB
+    # with this heap (measured on a laptop, 2026-11-13), the swap file covering
+    # the rest at that moment. An app that outgrows its heap stops and is started again
     # (restart, above), rather than pushing MongoDB into swap or out of memory.
     # Staging has its own, smaller limits (compose.staging.yaml).
     mem_limit: 512m

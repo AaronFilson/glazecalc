@@ -26,7 +26,7 @@ const memoryOf = (file: string) => {
 describe('memory on the instance', () => {
   it("caps production's app below what MongoDB and the system need, with room beside its heap", () => {
     const prod = memoryOf('compose.prod.yaml');
-    // The largest import peaks at about 440 MB with a 256 MB heap: room for that beside the heap.
+    // The largest import peaks at 440 to 480 MB with a 256 MB heap: room for that beside the heap.
     expect(prod.heap).to.be.at.least(256);
     expect(prod.limit - prod.heap).to.be.at.least(192);
     // MongoDB's cache, its working memory, the system and nginx: at least 400 MB left at the app's worst.
