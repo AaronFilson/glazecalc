@@ -306,6 +306,26 @@ describe('Target & Solve, Match with what I have and Suggest amounts: the work b
     expect(suggestion.materials.length).to.be.above(0);
   });
 
+  it('stops ranking what could bring a short oxide back once the work is spent', () => {
+    const lines = recipeOf([
+      ['Lepidolite', 7.62],
+      ['Ferro Frit 9146 (zircon white)', 7.85],
+      ['Silica', 40],
+      ['Whiting', 20]
+    ]);
+    const lookUp = (name: string) => LIBRARY.find((m) => m.name === name);
+    const whole = chemistry.newMeter();
+    const full = recipe.planSuggestion(lines, lookUp, LIBRARY, '', { meter: whole });
+    expect(full.shortfalls.length).to.be.above(0);
+    const meter = chemistry.newMeter(1);
+    const plan = recipe.planSuggestion(lines, lookUp, LIBRARY, '', { meter });
+    expect(meter.cut).to.equal(true);
+    expect(meter.used).to.be.below(whole.used / 4);
+    // The same oxides, with the materials that could bring them back still offered.
+    expect(plan.shortfalls.map((s) => s.oxide)).to.eql(full.shortfalls.map((s) => s.oxide));
+    for (const shortfall of plan.shortfalls) expect(shortfall.choices.length).to.be.above(0);
+  });
+
   it('leaves a shelf as potters have one alone: a small part of the work, nothing cut', () => {
     const meter = chemistry.newMeter();
     const shelf = shelfOf('Custer Spar', 'Nepheline Syenite', 'Whiting', 'Dolomite', 'Talc', 'EPK Kaolin', 'Silica');

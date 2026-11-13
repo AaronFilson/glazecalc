@@ -92,7 +92,8 @@ an assistant to act for one person that is not their web session.
   `solve_target` 60 with those on hand (both took 100); with more on the shelf, `solve_target`'s
   `onHand` and `match_with_what_i_have` say so and work nothing out (`MOST_MATERIALS`,
   `server/mcp/common.ts`). `suggest_substitutes` works out its plan inside the fit it counts, so a
-  caller over the limit gets no work done. The fits of everyone without a token together may also
+  caller over the limit gets no work done; the plan and the amounts each have their own meter, as on
+  the page, and both are charged to the fit. The fits of everyone without a token together may also
   do at most ten fits' `WORK` a minute (`FIT_WORK_ANYONE_ALL_PER_MINUTE`), besides the 200 fits.
 - **The guides, as a tool and as resources** (`server/mcp/guides.ts`, `server/mcp/tools/guides.ts`):
   `search_guides` searches the guides' sections in the language asked for (an app language, else

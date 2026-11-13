@@ -16,9 +16,11 @@ import {
   MOST_LINES,
   MOST_MATERIALS,
   resetFits,
+  resolveLines,
   ToolProblem,
   UNEXPECTED
 } from '../mcp/common.ts';
+import type { MaterialRecord } from '../../lib/recipe/index.js';
 import {
   CEILINGS,
   countTokenDelete,
@@ -34,7 +36,7 @@ import RecordVersion from '../models/record_version.ts';
 import ShareLink from '../models/share_link.ts';
 import Trash, { TRASH_MAX_ACCOUNT } from '../models/trash.ts';
 import { GUIDE_IDS, termsOf } from '../mcp/guides.ts';
-import { findMaterial } from '../mcp/library.ts';
+import { findMaterial, standardMaterials } from '../mcp/library.ts';
 import { MOST_STREAMS, sdkSubscribers, streamsOpen } from '../mcp/index.ts';
 import { SERVER_INFO } from '../mcp/server.ts';
 import { PLACES } from '../mcp/words.ts';
@@ -844,6 +846,40 @@ describe('MCP: the public tools', () => {
       ]
     });
     expect(modern.swaps).to.eql([]);
+  });
+
+  it('suggest_substitutes gives the amounts the page gives, even when the plan takes much of the work', async function () {
+    this.timeout(60000);
+    resetFits();
+    // Two old materials leave eight oxides short, and 38 materials given by analysis make every fit
+    // the plan ranks with large: the plan alone takes about two thirds of the work allowed.
+    const frac = (x: number) => x - Math.floor(x);
+    const mixes = Array.from({ length: 38 }, (_, k) => {
+      const ti = +(30 + 30 * frac((k + 1) * 0.618034)).toFixed(2);
+      const sn = +(10 + 30 * frac((k + 1) * 0.414214)).toFixed(2);
+      return {
+        material: 'Opacifier mix ' + (k + 1),
+        amount: +(0.2 + frac((k + 1) * 0.754878)).toFixed(2),
+        analysis: { TiO2: ti, SnO2: sn, CeO2: +(100 - ti - sn).toFixed(2) }
+      };
+    });
+    const lines = [
+      { material: 'Lepidolite', amount: 7.62 },
+      { material: 'Ferro Frit 9146 (zircon white)', amount: 7.85 },
+      ...mixes
+    ];
+    const result = await data('suggest_substitutes', { lines });
+    // As the page works it out: the plan, then the amounts for the first choice of each, each on its own meter.
+    const records = resolveLines(lines);
+    const plan = recipe.planSuggestion<MaterialRecord>(records, findMaterial, standardMaterials(), '');
+    const bringIn = plan.shortfalls
+      .map((s) => (s.choices[0] ? findMaterial(s.choices[0].name) : undefined))
+      .filter((m): m is NonNullable<typeof m> => Boolean(m))
+      .filter((m, i, all) => all.findIndex((other) => other.name === m.name) === i);
+    const page = recipe.suggestAmounts<MaterialRecord>(records, findMaterial, bringIn, '');
+    expect(result.recipe).to.deep.equal(
+      page.materials.map((m) => ({ material: m.name, amount: Number(m.amount ?? 0) }))
+    );
   });
 
   it('match_from_materials remakes a recipe from what is given', async () => {

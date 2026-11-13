@@ -42,7 +42,10 @@ export interface Suggestion<M extends MaterialRecord = MaterialRecord> {
   cautions: Caution[];
 }
 
-/** The swaps, and what to ask first; `meter` counts its work (lib/chemistry newMeter), a new one if not given. */
+/**
+ * The swaps, and what to ask first; `meter` counts its work (lib/chemistry newMeter), a new one if not given,
+ * and once it is spent the ranking of choices stops (those not ranked follow, in the order given).
+ */
 export function planSuggestion<M extends MaterialRecord>(
   lines: M[],
   find: (name: string) => M | undefined,
