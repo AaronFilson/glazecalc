@@ -165,6 +165,34 @@ below had not passed and I had not approved.
 | Load, on a container its size    | not measured          | about 250 requests a second at full CPU (a burst on the t4g.micro); 95th percentile 270 ms |
 | Lighthouse (desktop)             | not measured          | performance 99; accessibility, best practices, SEO 100                                     |
 
+## Limits, and what growing past them would take
+
+Production had to be cheap ([ADR 1](adr/0001-one-ec2-instance.md)), and that sets its limits:
+
+- **One `t4g.micro`, about $13 a month:** 2 vCPUs and 1 GB for the app, MongoDB, nginx and, at
+  times, the staging copy. The CPU runs at full speed only while its credits last, then at 10% of
+  each vCPU; with `standard` credits a busy spell slows it down instead of adding to the bill.
+- **MongoDB on the same instance, standalone:** no replica set, so no failover and no
+  transactions. A failure or a reboot of the instance is downtime.
+- **Backups, but no timed restore:** a `mongodump` to S3 each night at 10:30 UTC and before each
+  deploy, and an EBS snapshot each day, so up to about a day of changes could be lost. A restore
+  (`deploy/restore.sh`) has not been timed, so there is no measured recovery time.
+- **Limits in one process:** the rate limits, the MCP tools' and the authorization server's counts,
+  and the rule of one import at a time per account live in the app's memory
+  (`server/lib/rate_limit.ts`). A second instance would count apart, so each limit would allow its
+  number on each. The authorization server's grants, tokens and consent steps are in MongoDB, with
+  cookies signed by a key made from `APP_SECRET`, so those would carry over.
+
+Growing past these limits would take:
+
+- a larger instance: ADR 1 names `t4g.small` (2 GB) as the step up;
+- for a second instance, a load balancer, which alone costs more than this whole setup (ADR 1;
+  about $16-22 a month by [ADR 3](adr/0003-nginx-and-lets-encrypt.md)), and a store the instances
+  share for what is now kept in memory;
+- for failover, a MongoDB replica set on more than one machine;
+- a CDN for the prerendered pages, which today get a fresh nonce from the server in each reply
+  ([ADR 16](adr/0016-prerendered-public-pages.md)).
+
 ## What I would do next
 
 - Give the recipe form a fuller redesign.
