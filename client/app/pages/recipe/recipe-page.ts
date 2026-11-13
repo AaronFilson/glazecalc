@@ -178,7 +178,6 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   /** The lists to add from: the potter's own materials and additives, and the standard ones (recipe-libraries.ts). */
   protected readonly libraries = new RecipeLibraries(this.notices);
   protected readonly saving = new Busy();
-  protected readonly firstOf = firstOf;
   protected readonly additiveAmount = additiveAmount;
 
   // The recipe being edited.
