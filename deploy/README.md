@@ -101,6 +101,10 @@ Day to day:
   branch's name; see "Staging" below.
 - **Rate limits** (sign-in, sign-up, resets, second steps; `server/lib/rate_limit.ts`) count per
   client address or per account in the app's memory, so every deploy or restart starts them again.
+- **Memory:** the app's container is held to 512 MB and its Node heap to 256 MB (`compose.prod.yaml`
+  says why), so it cannot take what MongoDB and nginx need on the 1 GB instance; an app that
+  outgrows its heap stops and Docker starts it again. `sudo docker stats --no-stream` shows each
+  container's memory against its limit.
 - **Session cookie:** in production it is `__Host-glazecalc_session` (Secure, `Path=/`, no
   `Domain`), so no subdomain can set one the site would read. The older `glazecalc_session` is
   not read in production (one set for the whole domain by a subdomain or a hostile network would
