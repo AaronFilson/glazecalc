@@ -1123,6 +1123,44 @@ describe('glaze chemistry', () => {
       expect(share(shared, 0) + share(shared, 1)).to.be.at.most(0.44 + 1e-6);
     });
 
+    it('should keep every material used at its least, not only the last one raised to it', () => {
+      // Raising Bone Ash to its least once took Godfrey Spar, raised before it, to 0.74 (least 9.17).
+      const leasts: Array<[string, number, object?]> = [
+        ['Standard Porcelain China Clay', 4.4988, { start: 5.6 }],
+        ['Godfrey Spar', 9.1696],
+        ['Eckalite 2 Kaolin', 8.6795],
+        ['Bone Ash', 14.1091],
+        ['Nepheline Syenite (Norwegian, UK)', 10.1633, { avoid: true }],
+        ['Litharge', 4.763],
+        ['Hymod AT Ball Clay', 13.4878],
+        ['Potash Feldspar (Valentine Clays)', 6.2934],
+        ['Talc', 12.9392, { must: true }],
+        ['Lead Bisilicate Frit 10.05 (Keramikos)', 14.0001],
+        ['China Clay', 14.635],
+        ['FFP 45 Feldspar', 12.798],
+        ['Grolleg China Clay', 1.067]
+      ];
+      const lines = leasts.map(([name, least, extra]) => ({ ...offer(name, extra), least }));
+      const target = {
+        SiO2: 0.78733,
+        Al2O3: 0.13688,
+        Fe2O3: 0.00782,
+        K2O: 0.04947,
+        TiO2: 0.00219,
+        Na2O: 0.01333,
+        CaO: 0.12833,
+        MgO: 0.00696,
+        B2O3: 0.18208,
+        PbO: 0.07001,
+        MnO: 0.00043
+      };
+      const result = chemistry.selectMaterials(lines, target);
+      expect(result.chosen.length).to.be.above(1);
+      for (const i of result.chosen) {
+        expect(result.amounts[i], lines[i].material.name).to.be.at.least(lines[i].least * (1 - 1e-6));
+      }
+    });
+
     it('should make up a flux nothing offered supplies from the others, keeping the formula near', () => {
       // Lithium carbonate's lithia, with no lithium on hand: a fifth of the fluxes.
       const lithium = molesOf([
