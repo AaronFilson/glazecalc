@@ -62,6 +62,7 @@ export const shareAddress = (secret: string, origin = globalThis.location?.origi
             [id]="'share-notes-' + recipeId()"
             [checked]="includeNotes()"
             [attr.aria-disabled]="busy.active() || null"
+            (click)="keepWhileBusy($event)"
             (change)="setIncludeNotes($any($event.target).checked)"
           />
           <label class="form-check-label" [for]="'share-notes-' + recipeId()">{{ t('recipe.share.notes') }}</label>
@@ -191,6 +192,14 @@ export class SharePanel implements OnInit {
         this.problem.set(errorMessage(err, translate('recipe.share.failed')));
       }
     });
+  }
+
+  /**
+   * The notes box is aria-disabled while a request is on its way, not disabled, so it can still be clicked:
+   * the click is undone, and the box keeps saying what the next link or the shared page will do.
+   */
+  protected keepWhileBusy(event: Event): void {
+    if (this.busy.active()) event.preventDefault();
   }
 
   /** Whether the shared page shows the notes: saved at once for a link there is, or used for the next one made. */

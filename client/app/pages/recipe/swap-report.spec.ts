@@ -106,6 +106,107 @@ describe('SwapReport', () => {
     button('Allow them again')!.click();
     expect(reruns).toEqual([{ avoid: [] }]);
   });
+
+  it('says when the materials could come nearer, and when four new ones at most cost some of the match', async () => {
+    const { fixture } = await create({
+      run: { ...RUN, kind: 'shelf' },
+      report: { ...REPORT, miss: 3, best: 1, countCost: 0.2 },
+      cautions: []
+    });
+    expect(text(fixture, '.swap-report')).toContain(
+      "These materials could come nearer to the old recipe's fired oxides: see what would help, below."
+    );
+    expect(text(fixture, '.swap-report')).toContain('It uses at most four new materials');
+  });
+
+  it('gives only what to watch for when there is no report of how it was made', async () => {
+    const { fixture } = await create({ run: RUN, report: null, cautions: ['Test it on a tile first.'] });
+    expect(fixture.nativeElement.querySelector('.swap-uses')).toBeNull();
+    expect(text(fixture, '.swap-report')).not.toContain('come close');
+    expect(text(fixture, '.swap-cautions')).toBe('Test it on a tile first.');
+  });
+
+  it('adds a material it had left out, and uses one instead of another, each as a must', async () => {
+    const { reruns, button, described } = await create({
+      run: {
+        ...RUN,
+        avoid: ['Redart', 'Whiting'],
+        tries: [
+          { material: material('Redart'), must: false },
+          { material: material('Minspar 200'), must: false }
+        ]
+      },
+      report: REPORT,
+      cautions: []
+    });
+    button('Add it')!.click();
+    described('Use it instead', 'Minspar 200')!.click();
+    // Redart is tried once, as a must, and no longer left out.
+    expect(reruns[0].tries?.map((t) => [t.material.name, t.must])).toEqual([
+      ['Minspar 200', false],
+      ['Redart', true]
+    ]);
+    expect(reruns[0].avoid).toEqual(['Whiting']);
+    // Minspar 200 in place of G-200, which is left out.
+    expect(reruns[1].tries?.map((t) => [t.material.name, t.must])).toEqual([
+      ['Redart', false],
+      ['Minspar 200', true]
+    ]);
+    expect(reruns[1].avoid).toEqual(['Redart', 'Whiting', 'G-200 EU Feldspar']);
+  });
+
+  it('asks for nothing when what it would add is in neither list', async () => {
+    const { reruns, button, described } = await create({
+      run: RUN,
+      report: {
+        ...REPORT,
+        couldHelp: [{ name: 'Gone clay', helps: 0.2 }],
+        alike: [{ used: 'G-200 EU Feldspar', other: 'Gone spar' }]
+      },
+      cautions: []
+    });
+    button('Add it')!.click();
+    described('Use it instead', 'Gone spar')!.click();
+    expect(reruns).toEqual([]);
+  });
+
+  it('works it out again with other materials to try, starting from those it was given', async () => {
+    const { fixture, reruns, button } = await create({
+      run: { ...RUN, avoid: ['Whiting', 'Redart'], tries: [{ material: material('Redart'), must: true }] },
+      report: REPORT,
+      cautions: []
+    });
+    const root = fixture.nativeElement as HTMLElement;
+    const toggle = button('Try other materials')!;
+    expect(toggle.getAttribute('aria-expanded')).toBe('false');
+    toggle.click();
+    await fixture.whenStable();
+    expect(toggle.getAttribute('aria-expanded')).toBe('true');
+    expect(text(fixture, '.try-list')).toContain('Redart');
+    // Whiting from the standard list.
+    const whiting = [...root.querySelectorAll('.library-item')].find(
+      (item) => item.querySelector('bdi')?.textContent?.trim() === 'Whiting'
+    ) as HTMLButtonElement;
+    whiting.click();
+    await fixture.whenStable();
+    button('Work it out again')!.click();
+    await fixture.whenStable();
+    expect(reruns.length).toBe(1);
+    expect(reruns[0].tries?.map((t) => [t.material.name, t.must])).toEqual([
+      ['Redart', true],
+      ['Whiting', false]
+    ]);
+    // What is tried is no longer left out.
+    expect(reruns[0].avoid).toEqual([]);
+    expect(root.querySelector('gc-try-materials')).toBeNull();
+
+    // Closed without working it out, nothing is asked.
+    toggle.click();
+    await fixture.whenStable();
+    toggle.click();
+    await fixture.whenStable();
+    expect(reruns.length).toBe(1);
+  });
 });
 
 describe('TryMaterials', () => {
@@ -136,5 +237,42 @@ describe('TryMaterials', () => {
     expect(fixture.componentInstance.tries()[0].must).toBe(true);
     await click('Remove Whiting from the materials to try');
     expect(fixture.componentInstance.tries().map((t) => t.material.name)).toEqual(['Redart']);
+  });
+
+  it("tries a name once, though the potter's own list has one by the same name as the standard list", async () => {
+    const fixture = TestBed.createComponent(TryMaterials);
+    fixture.componentRef.setInput('mine', [{ ...material('Whiting'), _id: 'my-whiting' }]);
+    fixture.componentRef.setInput('standard', STANDARD);
+    await fixture.whenStable();
+    const root = fixture.nativeElement as HTMLElement;
+    const add = async (name: string) => {
+      const item = [...root.querySelectorAll('button.library-item')].find(
+        (b) => b.querySelector('bdi')?.textContent?.trim() === name
+      ) as HTMLButtonElement;
+      item.click();
+      await fixture.whenStable();
+    };
+    const tab = async (label: RegExp) => {
+      ([...root.querySelectorAll('.library-tab')].find((b) => label.test(b.textContent ?? '')) as HTMLElement).click();
+      await fixture.whenStable();
+    };
+    // The potter's own list opens first.
+    await add('Whiting');
+    await tab(/Standard/);
+    await add('Whiting');
+    expect(fixture.componentInstance.tries().map((t) => t.material._id)).toEqual(['my-whiting']);
+  });
+
+  it('asks for the standard list again when it could not be fetched', async () => {
+    const fixture = TestBed.createComponent(TryMaterials);
+    fixture.componentRef.setInput('mine', []);
+    fixture.componentRef.setInput('standard', []);
+    fixture.componentRef.setInput('standardFailed', true);
+    await fixture.whenStable();
+    const retries = vi.fn();
+    fixture.componentInstance.retry.subscribe(retries);
+    expect(text(fixture, '.library-empty')).toBe('The list could not be fetched. Try again');
+    (fixture.nativeElement.querySelector('.library-empty a, .library-empty button') as HTMLElement).click();
+    expect(retries).toHaveBeenCalledOnce();
   });
 });
