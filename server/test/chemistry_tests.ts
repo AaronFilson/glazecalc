@@ -870,6 +870,40 @@ describe('glaze chemistry', () => {
       expect(amounts[3] + amounts[4]).to.be.at.most(5 + 1e-6);
     });
 
+    it('should keep a cap on an amount and a cap on a share together', () => {
+      // Clay Ceram is the group's one member and, outside the share, gets its rebate: set one at a time,
+      // the two prices pulled against each other, and after ten rounds the group's 12.46 came back at 40.
+      const pool = [
+        { material: library.get('Ferro Frit 4113')!, start: 0, least: 15.6838, group: 's' },
+        { material: library.get('Niter')!, start: 0 },
+        { material: library.get('Eckalite 2 Kaolin')!, start: 0, least: 1.219, group: 's' },
+        { material: library.get('Lead, Red')!, start: 0 },
+        { material: library.get('Clay Ceram (Unimin, Granville)')!, start: 0, least: 1.219, group: 'g' }
+      ];
+      const target = {
+        K2O: 0.059929,
+        SiO2: 0.739948,
+        Al2O3: 0.193607,
+        Fe2O3: 0.002237,
+        TiO2: 0.005106,
+        Na2O: 0.03768,
+        PbO: 0.1164,
+        MgO: 0.001891,
+        B2O3: 0.069023,
+        CaO: 0.084026
+      };
+      const options = { groups: { g: 12.4568 }, shares: { s: 0.3401 } };
+      for (const { amounts } of [
+        chemistry.bestFit(pool, target, options),
+        chemistry.fitAmounts(pool, target, options)
+      ]) {
+        const batch = amounts.reduce((sum, amount) => sum + amount, 0);
+        expect(amounts[4], 'the group').to.be.at.most(12.4568 * (1 + 1e-6));
+        expect((amounts[0] + amounts[2]) / batch, 'the share').to.be.at.most(0.3401 * (1 + 1e-6));
+        pool.forEach((line, i) => expect(amounts[i]).to.be.at.least((line.least ?? 0) * (1 - 1e-9)));
+      }
+    });
+
     it('should say when there is nothing to work out', () => {
       expect(() => chemistry.fitAmounts([], { CaO: 1 })).to.throw(/no materials/);
       expect(() => chemistry.fitAmounts([{ material: library.get('Silica')!, start: 1 }], {})).to.throw(/no oxides/);
