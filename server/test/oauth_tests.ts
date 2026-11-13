@@ -4,6 +4,7 @@
 // and no real network), PKCE, the one resource, the consent API, refresh
 // tokens that rotate, and a connection ending everywhere at once. Then the
 // MCP endpoint taking its tokens, and nothing else taking them.
+import dns from 'node:dns';
 import * as limits from '../lib/rate_limit.ts';
 import AccessToken, { OAUTH_REFRESH_DAYS, OAUTH_WRITE_DAYS, revokeOne } from '../models/access_token.ts';
 import Activity from '../models/activity.ts';
@@ -15,9 +16,12 @@ import {
   allowedClientIdUrl,
   countFetch,
   FETCH_LIMITS,
+  FETCH_TIMEOUT_MS,
+  guardedFetch,
   publicAddress,
   resetFetchCount,
   useNetwork,
+  whoIsAsking,
   type Network,
   type RawAnswer
 } from '../oauth/cimd.ts';
@@ -352,14 +356,55 @@ describe('OAuth: the authorization server', function () {
         { code_challenge: '', code_challenge_method: '' },
         { code_challenge_method: 'plain' }
       ];
+      // An app nobody is connected to is told on the page; one with a connection, at its own address.
+      const { session } = await person();
+      const connectedId = await registered();
+      await connect(connectedId, session);
       for (const extra of starts) {
-        const started = await authorize(clientId, { extra });
+        const shown = await authorize(clientId, { extra });
+        expect(shown.res.status).to.equal(400);
+        expect(shown.res.headers.get('location')).to.equal(null);
+        expect(await shown.res.text()).to.include('This app could not be connected');
+        const started = await authorize(connectedId, { extra });
         expect(started.res.status).to.equal(303);
         const back = new URL(started.res.headers.get('location')!);
         expect(back.origin + back.pathname).to.equal(REDIRECT);
         expect(back.searchParams.get('error')).to.equal('invalid_request');
         expect(back.searchParams.get('iss')).to.equal(SITE);
       }
+    });
+
+    // Anyone may register an app, or write a document, naming any address: a link to this site that
+    // failed at once would send the browser there. prompt=none can never work (there is no session to
+    // connect an app with silently), so it is shown here for every app.
+    it('shows errors at the start on the page, never at the address of an app nobody is connected to', async () => {
+      const elsewhere = 'https://elsewhere.example/landing';
+      const strangers = await registered({ client_name: 'Redirector', redirect_uris: [elsewhere] });
+      const shownHere = async (id: string, extra: Record<string, string>) => {
+        const { res } = await authorize(id, { redirect: elsewhere, extra });
+        const page = await res.text();
+        expect(res.status, JSON.stringify(extra)).to.equal(400);
+        expect(res.headers.get('location'), JSON.stringify(extra)).to.equal(null);
+        expect(page, JSON.stringify(extra)).to.include('This app could not be connected');
+        expect(page).to.not.include(elsewhere);
+      };
+      const modes: Record<string, string>[] = [{}, { response_mode: 'form_post' }, { response_mode: 'fragment' }];
+      for (const mode of modes) {
+        await shownHere(strangers, { prompt: 'none', ...mode });
+        await shownHere(strangers, { code_challenge: '', code_challenge_method: '', ...mode });
+      }
+      // A start that is fine goes on to the person's page as before.
+      expect((await authorize(strangers, { redirect: elsewhere })).uid).to.not.equal('');
+      // Once someone is connected to it, its errors go back to it; prompt=none still never does.
+      const { session } = await person();
+      await connect(strangers, session, { redirect: elsewhere });
+      const { res } = await authorize(strangers, {
+        redirect: elsewhere,
+        extra: { code_challenge: '', code_challenge_method: '' }
+      });
+      expect(res.status).to.equal(303);
+      expect(new URL(res.headers.get('location')!).searchParams.get('error')).to.equal('invalid_request');
+      await shownHere(strangers, { prompt: 'none' });
     });
 
     it('refuses a code with the wrong verifier, and any second use of a code', async () => {
@@ -910,7 +955,8 @@ describe('OAuth: the authorization server', function () {
     it('never takes it anywhere under /api', async () => {
       const { session } = await person();
       const { tokens } = await connect(clientId, session);
-      for (const path of ['/recipe/getAll', '/notes/getAll', '/tokens', '/usersettings', '/export']) {
+      const waiting = '/pending-changes/' + 'x'.repeat(22);
+      for (const path of ['/recipe/getAll', '/notes/getAll', '/tokens', '/usersettings', '/export', waiting]) {
         const res = await api()
           .get(path)
           .set('Authorization', 'Bearer ' + tokens.access_token);
@@ -922,6 +968,23 @@ describe('OAuth: the authorization server', function () {
         .get('/recipe/getAll')
         .set('Authorization', 'Bearer ' + 'a'.repeat(43));
       expect(made.status).to.equal(401);
+    });
+
+    it('never tells it at /api what came of a change it asked for: it asks the MCP endpoint', async () => {
+      const { session, user } = await person();
+      const { tokens } = await connect(clientId, session, { scope: 'data:read data:write', write: true });
+      await User.updateOne({ _id: user._id }, { $set: { confirmChanges: 'all' } });
+      const asked = await rpc(
+        'tools/call',
+        { name: 'add_notebook_entry', arguments: { content: 'Glazed' } },
+        tokens.access_token
+      );
+      const id = /\/confirm\/([A-Za-z0-9_-]+)/.exec(asked.body.result.content[0].text as string)![1]!;
+      const polled = await api()
+        .get('/pending-changes/' + id)
+        .set('Authorization', 'Bearer ' + tokens.access_token);
+      expect(polled.status).to.equal(403);
+      expect(polled.body.code).to.equal('token-not-here');
     });
 
     it('asks a read-only app to step up before it changes anything (403 insufficient_scope)', async () => {
@@ -1138,6 +1201,132 @@ describe('OAuth: apps named by their address (CIMD)', function () {
     const url = fresh();
     useNetwork(network({ 'app.example': [ADDRESS, '10.0.0.1'] }, { 'app.example': () => documentFor(url) }));
     expect((await authorize(url, { redirect: 'https://app.example/callback' })).res.status).to.equal(400);
+    expect(calls).to.eql([]);
+  });
+
+  it('cuts a name lookup short with the fetch it is part of, and stops it', async () => {
+    let stopped = false;
+    useNetwork({
+      // A name whose server takes 9 s: before, the lookup ran its course outside the fetch's time.
+      lookup: (_hostname, signal) =>
+        new Promise((resolve) => {
+          signal?.addEventListener('abort', () => (stopped = true));
+          setTimeout(() => resolve([{ address: ADDRESS, family: 4 }]), 9000).unref();
+        }),
+      get: async () => {
+        calls.push('get');
+        return { status: 404, headers: {}, body: Buffer.from('') };
+      }
+    });
+    const begun = Date.now();
+    const started = await authorize(fresh(), { redirect: 'https://app.example/callback' });
+    expect(started.res.status).to.equal(400);
+    // oidc-provider gives each fetch 2.5 s, the lookup included, and asks twice: the request's 5 s at most
+    // (18 s before, two lookups of 9 s), with room for a busy machine.
+    expect(Date.now() - begun).to.be.below(FETCH_TIMEOUT_MS + 3000);
+    expect(stopped).to.equal(true);
+    expect(calls).to.eql([]);
+  });
+
+  it('gives every fetch one request makes one time between them', async function () {
+    this.timeout(20000);
+    // An app's server that never answers.
+    useNetwork({
+      lookup: async () => [{ address: ADDRESS, family: 4 }],
+      get: (_target, signal) =>
+        new Promise((_resolve, reject) => signal?.addEventListener('abort', () => reject(new Error('timed out'))))
+    });
+    const request = { address: '203.0.113.5' };
+    const before = whoIsAsking(() => request);
+    try {
+      const begun = Date.now();
+      for (const url of ['https://app.example/a.json', 'https://app.example/b.json']) {
+        try {
+          await guardedFetch(url, { redirect: 'manual' });
+        } catch (err) {
+          expect((err as Error).message).to.equal('timed out');
+        }
+      }
+      // The first took the request's time; the second had none left (10 s before, 5 s each).
+      expect(Date.now() - begun).to.be.within(FETCH_TIMEOUT_MS - 50, FETCH_TIMEOUT_MS + 2500);
+    } finally {
+      whoIsAsking(before);
+      useNetwork();
+    }
+  });
+
+  it('resolves names with c-ares, A and AAAA, never getaddrinfo on the thread pool, and checks every address', async () => {
+    const resolver = dns.promises.Resolver.prototype;
+    const saved = { resolve4: resolver.resolve4, resolve6: resolver.resolve6, lookup: dns.promises.lookup };
+    const asked: string[] = [];
+    let looked = 0;
+    let six: string[] | null = null;
+    resolver.resolve4 = async function (hostname: string) {
+      asked.push('A ' + hostname);
+      return [ADDRESS];
+    } as typeof saved.resolve4;
+    resolver.resolve6 = async function (hostname: string) {
+      asked.push('AAAA ' + hostname);
+      if (six) return six;
+      throw Object.assign(new Error('no such records'), { code: dns.NOTFOUND });
+    } as typeof saved.resolve6;
+    dns.promises.lookup = (async () => {
+      looked++;
+      return [];
+    }) as unknown as typeof saved.lookup;
+    /** Why the fetch was refused. */
+    const refusal = async (url: string): Promise<string> => {
+      try {
+        await guardedFetch(url, { redirect: 'manual' });
+      } catch (err) {
+        return (err as Error).message;
+      }
+      throw new Error('It was fetched');
+    };
+    try {
+      // The real network's lookup; each case is refused before anything is fetched.
+      useNetwork();
+      const url = 'https://app.example/client.json';
+      // A private address among the AAAA records is refused, though the A record is public.
+      six = ['fd00::1'];
+      expect(await refusal(url)).to.equal('address not public');
+      expect(asked).to.eql(['A app.example', 'AAAA app.example']);
+      // A name with no records at all.
+      resolver.resolve4 = (async () => {
+        throw Object.assign(new Error('no such name'), { code: dns.NOTFOUND });
+      }) as typeof saved.resolve4;
+      six = null;
+      expect(await refusal(url)).to.equal('address not public');
+      // Any other failure fails the fetch.
+      resolver.resolve4 = (async () => {
+        throw Object.assign(new Error('timed out'), { code: dns.TIMEOUT });
+      }) as typeof saved.resolve4;
+      expect(await refusal(url)).to.equal('timed out');
+      expect(looked).to.equal(0);
+    } finally {
+      Object.assign(resolver, { resolve4: saved.resolve4, resolve6: saved.resolve6 });
+      dns.promises.lookup = saved.lookup;
+      useNetwork();
+    }
+  });
+
+  it('never takes an address on this site, one under it or one above it, for an app', async () => {
+    const own = new URL(SITE).host;
+    // Were it fetched, a document would be there.
+    useNetwork(
+      network(
+        { [own]: [ADDRESS], ['www.' + own]: [ADDRESS] },
+        {
+          [own]: (path) => documentFor(SITE + path),
+          ['www.' + own]: (path) => documentFor(`https://www.${own}${path}`)
+        }
+      )
+    );
+    for (const url of [`${SITE}/client.json`, `https://www.${own}/client.json`]) {
+      expect(allowedClientIdUrl(url), url).to.equal(false);
+      const started = await authorize(url, { redirect: 'https://app.example/callback' });
+      expect(started.res.status, url).to.equal(400);
+    }
     expect(calls).to.eql([]);
   });
 

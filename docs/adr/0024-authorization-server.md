@@ -55,11 +55,16 @@ assistant's grant must be a Glazecalc connection the person can see and revoke w
 - **Apps name themselves two ways.** **CIMD** from any HTTPS host (`server/oauth/cimd.ts`),
   acknowledged as oidc-provider's experimental draft 02: every fetch the server makes goes through
   a guard that allows only `https`, port 443, a host name (no IP address, `localhost`, `.local` or
-  `.internal`), a path, and no query or credentials; resolves the name itself and refuses if any
-  address is loopback, private, link-local (the cloud's metadata service, 169.254.169.254), CGNAT,
-  unique-local, multicast, documentation, NAT64, 6to4 or otherwise special (IPv4-mapped IPv6
-  judged as IPv4); connects to the address it checked, with the name only for TLS and `Host` (no
-  DNS rebinding); follows no redirect; stops after 5 seconds or 5 kB; takes JSON only; and makes at
+  `.internal`, nor this site's own, one under it or above it, 2026-11), a path, and no query or
+  credentials; resolves the name itself (with c-ares, its A
+  and AAAA records each asked once for 1.5 s, never with getaddrinfo, whose pool of four threads
+  also hashes passwords: 2026-11, the 1.0 security review) and refuses if any address is loopback,
+  private, link-local (the cloud's metadata service, 169.254.169.254), CGNAT, unique-local,
+  multicast, documentation, NAT64, 6to4 or otherwise special (IPv4-mapped IPv6 judged as IPv4);
+  connects to the address it checked, with the name only for TLS and `Host` (no DNS rebinding);
+  follows no redirect; stops after 5 seconds for all the fetches one request makes, lookups
+  included (oidc-provider asks twice for a document it could not fetch), or 5 kB; takes JSON only;
+  and makes at
   most 10 fetches a minute from one address, 10 for one host and 120 for everyone together (see Review fixes). oidc-provider checks that the document's
   `client_id` is its address and has no secret, and keeps it 1 to 24 hours. **DCR** is kept as the
   second way: 10 registrations an hour from one address and 500 a day from everyone; ids start
@@ -83,7 +88,12 @@ assistant's grant must be a Glazecalc connection the person can see and revoke w
   `frame-ancestors 'none'`). `write` is false unless sent as true, and counts only when the app
   asked for `data:write`. There is no sign-in at the authorization server and no lasting session of
   its own: its session lasts 15 minutes, one left from an earlier yes is ended before the next, and
-  no request rides on an earlier grant (`loadExistingGrant` reads only the grant just made).
+  no request rides on an earlier grant (`loadExistingGrant` reads only the grant just made). An
+  error at `/oauth/authorize`, before the person's yes, goes to the app's address only for an app
+  someone has a working connection to, and never for `prompt=none`, which cannot work without a
+  session; otherwise it is shown on the page, whatever the response mode (2026-11, the 1.0 security
+  review: anyone may register an app, or write a document, naming any address, so a link to this
+  site that failed at once would send the browser there).
 - **A connection is its row.** Each yes makes a row in `access_tokens` (kind `oauth`,
   `server/models/access_token.ts`) beside the grant: the app's cleaned name, `clientId`,
   `clientSource` (`cimd` or `dcr`), `clientHost` (CIMD only), `redirectHost`, `grantId` and scopes.

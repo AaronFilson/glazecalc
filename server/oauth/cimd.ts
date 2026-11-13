@@ -5,14 +5,22 @@
 // lets it reach only the public internet, never this machine, its network
 // or the cloud's metadata service (169.254.169.254):
 //
-//   - https only, on port 443, to a host name (not an IP address), with a
-//     path and no query, user name or password (allowedClientIdUrl);
+//   - https only, on port 443, to a host name (not an IP address, nor this
+//     site's own), with a path and no query, user name or password
+//     (allowedClientIdUrl);
 //   - the name is resolved here, and refused if any address it gives is
 //     loopback, private, link-local, CGNAT, unique-local, multicast or
 //     otherwise special (publicAddress); the connection then goes to the
 //     address checked, with the name only for TLS (SNI) and the Host header,
-//     so a second lookup cannot point it elsewhere (DNS rebinding);
-//   - no redirects followed; at most 5 seconds; at most 5 kB; JSON only;
+//     so a second lookup cannot point it elsewhere (DNS rebinding). The name
+//     is resolved by c-ares (dns.Resolver: its A and AAAA records at once,
+//     each asked once, for LOOKUP_TIMEOUT_MS), never by getaddrinfo
+//     (dns.lookup), which runs on libuv's pool of four threads, the pool that
+//     also hashes passwords and reads files: four names whose servers never
+//     answer would hold all of it. The lookup is part of the fetch, within its
+//     time;
+//   - no redirects followed; at most 5 seconds for every fetch one request
+//     makes, lookups included (Asking); at most 5 kB; JSON only;
 //   - at most FETCH_LIMITS a minute: from one address (a /48 for IPv6), for
 //     one host, and for everyone together (countFetch).
 //
@@ -36,6 +44,7 @@ import https from 'node:https';
 import net from 'node:net';
 import * as log from '../lib/log.ts';
 import { networkKey } from '../lib/rate_limit.ts';
+import { isOwnHost } from '../lib/site.ts';
 
 /**
  * How apps named by their address may authenticate at the token endpoint
@@ -54,6 +63,8 @@ export const cimdAuthMode = (): CimdAuthMode => {
 };
 
 export const FETCH_TIMEOUT_MS = 5000;
+/** How long one query of a name's addresses (its A or AAAA records) may take; each is asked once. */
+export const LOOKUP_TIMEOUT_MS = 1500;
 export const MOST_BYTES = 5 * 1024;
 /** Fetches a minute: from one address, for one host named, and for everyone together. */
 export const FETCH_LIMITS = { address: 10, host: 10, everyone: 120 } as const;
@@ -119,7 +130,9 @@ export const publicAddress = (address: string): boolean => {
 /**
  * Whether an app may be named by this address: https, port 443, a host name
  * (never an IP address or localhost), a path beyond "/", and no query, user
- * name, password or fragment.
+ * name, password or fragment; and not on this site, one under it or one above
+ * it (site.ts isOwnHost): the server would fetch from itself, and a page of
+ * the site would stand for an app.
  */
 export const allowedClientIdUrl = (id: string): boolean => {
   const url = URL.parse(id);
@@ -131,7 +144,7 @@ export const allowedClientIdUrl = (id: string): boolean => {
   if (net.isIP(host) || !host.includes('.') || /^localhost$|\.localhost$|\.local$|\.internal$/i.test(host)) {
     return false;
   }
-  return true;
+  return !isOwnHost(host);
 };
 
 /** What the network side gives back: kept small so the tests can stand in for it. */
@@ -143,7 +156,8 @@ export interface RawAnswer {
 
 /** The two network steps, which the tests replace (useNetwork) so that nothing leaves the machine. */
 export interface Network {
-  lookup: (hostname: string) => Promise<{ address: string; family: number }[]>;
+  /** Every address the name has; given the fetch's signal, which may stop it early. */
+  lookup: (hostname: string, signal?: AbortSignal) => Promise<{ address: string; family: number }[]>;
   /** One GET to the checked address, with the name for TLS and Host. Rejects past the time or size limits. */
   get: (
     target: { address: string; family: number; hostname: string; path: string },
@@ -151,8 +165,29 @@ export interface Network {
   ) => Promise<RawAnswer>;
 }
 
+/** A name's records of one kind: none when it has none of them, or no such name; any other failure fails. */
+const recordsOf = (asked: Promise<string[]>): Promise<string[]> =>
+  asked.catch((err: NodeJS.ErrnoException) => {
+    if (err.code === dns.NODATA || err.code === dns.NOTFOUND) return [];
+    throw err;
+  });
+
 const realNetwork: Network = {
-  lookup: (hostname) => dns.promises.lookup(hostname, { all: true, verbatim: true }),
+  // c-ares, on the event loop, never the thread pool (see the top of this file); stopped with the fetch.
+  lookup: async (hostname, signal) => {
+    const resolver = new dns.promises.Resolver({ timeout: LOOKUP_TIMEOUT_MS, tries: 1 });
+    const stop = () => resolver.cancel();
+    signal?.addEventListener('abort', stop, { once: true });
+    try {
+      const [v4, v6] = await Promise.all([
+        recordsOf(resolver.resolve4(hostname)),
+        recordsOf(resolver.resolve6(hostname))
+      ]);
+      return [...v4.map((address) => ({ address, family: 4 })), ...v6.map((address) => ({ address, family: 6 }))];
+    } finally {
+      signal?.removeEventListener('abort', stop);
+    }
+  },
   get: ({ address, family, hostname, path }, signal) =>
     new Promise<RawAnswer>((resolve, reject) => {
       const request = https.request(
@@ -262,6 +297,23 @@ export interface FetchFor {
 /** The key for an address: a /48 for IPv6 (rate_limit.ts NETWORK_BITS), so one network counts once. */
 export const addressKey = networkKey;
 
+/**
+ * The request being answered: its address, for the key-set budget, and when the time for its fetches is
+ * up, set by its first fetch, so that every fetch it makes shares FETCH_TIMEOUT_MS (oidc-provider asks
+ * again for a document it could not fetch, and each ask had its own time).
+ */
+export interface Asking {
+  address: string | undefined;
+  fetchesUntil?: number;
+}
+let asking = (): Asking | undefined => undefined;
+/** Sets where the request being answered comes from (server/oauth/provider.ts); gives back the one it replaces. */
+export const whoIsAsking = (request: () => Asking | undefined): (() => Asking | undefined) => {
+  const before = asking;
+  asking = request;
+  return before;
+};
+
 const recent = (key: string, now: number): number[] => {
   const times = (fetchTimes.get(key) ?? []).filter((time) => now - time < 60 * 1000);
   if (times.length) fetchTimes.set(key, times);
@@ -295,13 +347,28 @@ export const resetFetchCount = (): void => {
   keySets.clear();
 };
 
+/** What `work` gives, or the signal's reason as soon as it aborts, whichever comes first. */
+const untilAborted = <T>(work: Promise<T>, signal: AbortSignal): Promise<T> =>
+  new Promise<T>((resolve, reject) => {
+    if (signal.aborted) return reject(signal.reason as Error);
+    const stop = () => reject(signal.reason as Error);
+    signal.addEventListener('abort', stop, { once: true });
+    void work.then(resolve, reject).finally(() => signal.removeEventListener('abort', stop));
+  });
+
 /** One GET of an allowed address, through the guard: resolved here, every address public, the checked one used. */
 const fetchRaw = async (url: string, init: RequestInit): Promise<RawAnswer> => {
   const target = new URL(url);
   const hostname = target.hostname;
-  const signals = [AbortSignal.timeout(FETCH_TIMEOUT_MS), ...(init.signal ? [init.signal] : [])];
+  // One time for the lookup and the GET together, and for every fetch of the request (Asking): ours, and
+  // oidc-provider's (2.5 s) when it asks.
+  const request = asking();
+  const until = request ? (request.fetchesUntil ??= Date.now() + FETCH_TIMEOUT_MS) : Date.now() + FETCH_TIMEOUT_MS;
+  const left = until - Date.now();
+  if (left <= 0) throw new Error('timed out');
+  const signals = [AbortSignal.timeout(left), ...(init.signal ? [init.signal] : [])];
   const signal = AbortSignal.any(signals);
-  const addresses = await network.lookup(hostname);
+  const addresses = await untilAborted(network.lookup(hostname, signal), signal);
   // Every address the name gives must be public, so that which one is used cannot matter.
   if (!addresses.length || !addresses.every((entry) => publicAddress(entry.address))) {
     throw new Error('address not public');
@@ -461,12 +528,6 @@ export const useKeySetClock = (replacement?: () => number): void => {
   clock = replacement ?? (() => Date.now());
 };
 
-let askingAddress = (): string | undefined => undefined;
-/** Sets where the address of the request being answered comes from (server/oauth/provider.ts), for the budget. */
-export const whoIsAsking = (address: () => string | undefined): void => {
-  askingAddress = address;
-};
-
 /**
  * The site a host belongs to, for the key-set budget: its last two labels
  * (a1.evil.example and a2.evil.example are both evil.example). Never finer
@@ -556,7 +617,7 @@ const fetchKeySet = async (url: string, init: RequestInit): Promise<Response> =>
     });
     return keySetResponse(kept.body, JWKS_CACHE_SECONDS.min);
   };
-  if (!countKeySetFetch({ host: new URL(url).hostname, address: askingAddress(), proven }, now)) {
+  if (!countKeySetFetch({ host: new URL(url).hostname, address: asking()?.address, proven }, now)) {
     const stale = lastGood('over the limit');
     if (stale) return stale;
     throw new Error('key set fetches over the limit');

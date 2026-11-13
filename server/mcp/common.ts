@@ -3,6 +3,7 @@
 // limit on the tools that fit amounts (docs/integrations-plan.md, item 23).
 import * as z from 'zod';
 import chemistry from '../../lib/chemistry/index.js';
+import type { Meter } from '../../lib/chemistry/index.js';
 import firingLib from '../../lib/cones/firing.js';
 import type { Band, FiringBlock } from '../../lib/cones/firing.js';
 import recipe from '../../lib/recipe/index.js';
@@ -14,6 +15,14 @@ import { cautionText, chemistryText, languageOf, recipeText } from './words.ts';
 
 /** At most this many lines in a recipe sent to a tool. */
 export const MOST_LINES = 40;
+
+/**
+ * At most this many materials for one fit to choose from (match_from_materials' have, solve_target's
+ * materials with the shelf, match_with_what_i_have's shelf): a studio's shelf, with room to spare.
+ * The work a fit may do is bounded too (lib/chemistry/fit.js WORK), but its first match over every
+ * material offered is not, and grows with them.
+ */
+export const MOST_MATERIALS = 60;
 
 /** Who is calling, for the limits: 'user:<id>' with a token, 'ip:<address>' without. */
 export interface Caller {
@@ -228,17 +237,22 @@ export { languageOf };
 // address without a token, an IPv6 one with its /48), on top of the request limits
 // (server/lib/rate_limit.ts); and FITS_ANYONE_ALL_PER_MINUTE for every caller
 // without a token together, so the server's work stays bounded however many
-// addresses ask. Kept in memory, as those are.
+// addresses ask. One fit may do up to WORK (lib/chemistry/fit.js), about a
+// second of the event loop, so those callers' fits together may also do at most
+// FIT_WORK_ANYONE_ALL_PER_MINUTE, ten such fits a minute: a fit as an assistant
+// asks for one does a hundredth of that or less, so it is the count that stops
+// them. Kept in memory, as those are.
 export const FITS_PER_MINUTE = 10;
 export const FITS_ANYONE_ALL_PER_MINUTE = 200;
+export const FIT_WORK_ANYONE_ALL_PER_MINUTE = 10 * chemistry.WORK;
 const ANYONE_ALL = 'anyone-all';
-const fits = new Map<string, { start: number; count: number }>();
+const fits = new Map<string, { start: number; count: number; work: number }>();
 
 /** Whether one more fit for this key would be over `limit`; counts it when not. */
 const overFits = (key: string, limit: number, now: number): boolean => {
   const seen = fits.get(key);
   if (!seen || now - seen.start >= 60 * 1000) {
-    fits.set(key, { start: now, count: 1 });
+    fits.set(key, { start: now, count: 1, work: 0 });
     // Old windows go as new ones start, so the map stays small.
     if (fits.size > 10000) for (const [old, value] of fits) if (now - value.start >= 60 * 1000) fits.delete(old);
     return false;
@@ -259,15 +273,47 @@ const tooManyFits = (limit: number, forYou: boolean) =>
 export const countFit = (caller: Caller, now = Date.now()): void => {
   if (process.env.RATE_LIMITS === 'off') return;
   if (!caller.userId) {
-    // The ceiling for everyone without a token first: a caller turned away there uses none of its own count.
+    // The ceilings for everyone without a token first: a caller turned away there uses none of its own count.
     const all = fits.get(ANYONE_ALL);
-    if (all && now - all.start < 60 * 1000 && all.count >= FITS_ANYONE_ALL_PER_MINUTE) {
+    if (
+      all &&
+      now - all.start < 60 * 1000 &&
+      (all.count >= FITS_ANYONE_ALL_PER_MINUTE || all.work >= FIT_WORK_ANYONE_ALL_PER_MINUTE)
+    ) {
       throw tooManyFits(FITS_ANYONE_ALL_PER_MINUTE, false);
     }
   }
   if (overFits(caller.key, FITS_PER_MINUTE, now)) throw tooManyFits(FITS_PER_MINUTE, true);
   if (!caller.userId) overFits(ANYONE_ALL, Number.POSITIVE_INFINITY, now);
 };
+
+/** Adds the work a fit did (its meter's) to what every caller without a token has had done this minute. */
+export const chargeFit = (caller: Caller, work: number, now = Date.now()): void => {
+  if (process.env.RATE_LIMITS === 'off' || caller.userId) return;
+  const all = fits.get(ANYONE_ALL);
+  if (all && now - all.start < 60 * 1000) all.work += work;
+  else fits.set(ANYONE_ALL, { start: now, count: 0, work });
+};
+
+/**
+ * Runs a fit for the caller: counted first (countFit), with a meter that
+ * bounds its work (lib/chemistry newMeter, at most WORK), and that work
+ * charged after (chargeFit), whether it worked out or not.
+ */
+export const fitFor = <T>(caller: Caller, work: (meter: Meter) => T): T => {
+  countFit(caller);
+  const meter = chemistry.newMeter();
+  try {
+    return work(meter);
+  } finally {
+    chargeFit(caller, meter.used);
+  }
+};
+
+/** What a match, suggestion or solved recipe says when the work ran out before every choice was tried. */
+export const CUT_SHORT =
+  'Too many materials to try every choice at once: this is the best found within the work one request may do. ' +
+  'Narrowing the list to the materials that matter most may give a nearer or simpler recipe.';
 
 /** Forgets the fit counts (the tests). */
 export const resetFits = (): void => fits.clear();

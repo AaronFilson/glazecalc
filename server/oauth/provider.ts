@@ -147,18 +147,6 @@ const NEVER_SCHEMES = new Set([
   'view-source:'
 ]);
 
-/**
- * Whether a host is this site's own, one under it or one above it
- * (glazecalcapp.com and www.glazecalcapp.com; glazecalcapp.com from staging):
- * no app is given its answer there, where the consent page would show the
- * site's own name as the place the answer goes.
- */
-const isOwnHost = (hostname: string): boolean => {
-  const own = site.rpId();
-  const host = hostname.replace(/\.+$/, '');
-  return host === own || host.endsWith('.' + own) || own.endsWith('.' + host);
-};
-
 /** Whether a redirect URI goes back to the person's own computer (an app running there). */
 export const isLoopback = (uri: string): boolean => {
   const url = URL.parse(uri);
@@ -290,7 +278,8 @@ export const checkClientMetadata = (metadata: ClientMetadata, mode: CimdAuthMode
       isLoopback(uri as string) ||
       isAppScheme(uri as string);
     if (!ok) refuse('redirect_uris must be https, an app scheme, or http to 127.0.0.1, [::1] or localhost');
-    if (url!.protocol === 'https:' && isOwnHost(url!.hostname)) {
+    // Where the consent page would show the site's own name as the place the answer goes.
+    if (url!.protocol === 'https:' && site.isOwnHost(url!.hostname)) {
       refuse("redirect_uris must be the app's own addresses, not this site's");
     }
   }
@@ -353,6 +342,26 @@ const page = (title: string, text: string): string =>
 
 const escapeHtml = (text: string): string =>
   text.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c] ?? c);
+
+/** An error of the authorization server shown as the site's page, never sent to the app's address. */
+const showError = (
+  ctx: { type: string; body: unknown },
+  out: { error?: unknown; error_description?: unknown }
+): void => {
+  ctx.type = 'html';
+  const why = typeof out.error_description === 'string' ? out.error_description : String(out.error ?? '');
+  ctx.body = page('This app could not be connected', 'Glazecalc could not connect it: ' + escapeHtml(why) + '.');
+};
+
+/**
+ * Errors from asking to connect without a page (prompt=none): there is never a session to connect an app
+ * with silently, so these are all such a request ever gets.
+ */
+const SILENT_ERRORS = ['login_required', 'consent_required', 'interaction_required', 'account_selection_required'];
+
+/** Whether someone has a working connection to the app: one the person approved, not revoked or expired. */
+const connected = async (clientId: string): Promise<boolean> =>
+  Boolean(await AccessToken.exists({ kind: 'oauth', clientId, revokedAt: null, expiresAt: { $gt: new Date() } }));
 
 /**
  * What OAUTH_CIMD_AUTH changes in oidc-provider's settings; with it off,
@@ -478,11 +487,7 @@ const configuration = (mode: CimdAuthMode): Configuration => ({
   // A browser-based app may call the token endpoint from the origin of one of its https redirect URIs.
   clientBasedCORS: (_ctx, origin, client) =>
     origin.startsWith('https://') && (client.redirectUris ?? []).some((uri) => URL.parse(uri)?.origin === origin),
-  renderError: (ctx, out) => {
-    ctx.type = 'html';
-    const why = typeof out.error_description === 'string' ? out.error_description : String(out.error ?? '');
-    ctx.body = page('This app could not be connected', 'Glazecalc could not connect it: ' + escapeHtml(why) + '.');
-  },
+  renderError: (ctx, out) => showError(ctx, out),
   fetch: guardedFetch as unknown as Configuration['fetch'],
   fetchResponseBodyLimits: { 'client_id metadata document': MOST_BYTES },
   features: {
@@ -539,9 +544,10 @@ const configuration = (mode: CimdAuthMode): Configuration => ({
  * The request the authorization server is answering: its path, for
  * whenGrantEnded, and its address (Express's req.ip, which trusts one proxy
  * hop; Koa's would take the first X-Forwarded-For, which anyone can write),
- * for the fetch limits (cimd.ts countFetch).
+ * for the fetch limits (cimd.ts countFetch); and when the time for its
+ * fetches is up (cimd.ts Asking).
  */
-const current = new AsyncLocalStorage<{ path: string; address: string | undefined }>();
+const current = new AsyncLocalStorage<{ path: string; address: string | undefined; fetchesUntil?: number }>();
 
 let made:
   { issuer: string; mode: CimdAuthMode; provider: Provider; handler: ReturnType<Provider['callback']> } | undefined;
@@ -562,6 +568,25 @@ const serverFor = () => {
   // Koa's own logging is off; errors are logged here, without the request.
   provider.silent = true;
   provider.on('server_error', (_ctx, err) => log.error('OAuth server error', { err }));
+  // An error at the start of a connection, before the person has said yes, is sent to the app's address
+  // only for an app someone has a working connection to; otherwise it is shown here. Anyone may register
+  // an app, or write a document, naming any address: a link to this site that fails at once (prompt=none,
+  // a start without PKCE) would send the browser there. prompt=none never works here, so it is shown here
+  // whatever the app.
+  provider.on('authorization.error', (ctx, err) => {
+    ctx.state.startRefused = err;
+  });
+  provider.use(async (ctx, next) => {
+    await next();
+    const refused = ctx.state.startRefused as { error?: string; error_description?: string; statusCode?: number };
+    if (!refused || ctx.oidc?.route !== 'authorization') return;
+    const clientId = ctx.oidc.client?.clientId;
+    if (!SILENT_ERRORS.includes(refused.error ?? '') && clientId && (await connected(clientId))) return;
+    ctx.remove('Location');
+    // The status the error has, but never a redirect's (oidc-provider gives prompt=none's 303, to send it on).
+    ctx.status = (refused.statusCode ?? 0) >= 400 ? refused.statusCode! : 400;
+    showError(ctx, refused);
+  });
   // A code or refresh token exchanged by an app that signs: its keys belong to an app with a working connection.
   provider.on('grant.success', (ctx) => {
     const client = ctx.oidc.client;
@@ -572,8 +597,9 @@ const serverFor = () => {
 };
 
 whenReused((grantId) => revokeGrant(grantId, 'reused'));
-// Key-set fetches are counted by the address of the token request that asked for them.
-whoIsAsking(() => current.getStore()?.address);
+// Key-set fetches are counted by the address of the token request that asked for them, and a request's
+// fetches share one time.
+whoIsAsking(() => current.getStore());
 // An app named by its address reads from the document kept with its working connections first.
 whenClientDocumentWanted((clientId) =>
   keptClientDocument(clientId, (metadata) => getProvider().Client.validate(metadata), current.getStore()?.address)

@@ -19,15 +19,17 @@ import {
   type Caller,
   cautionOut,
   coneOf,
-  countFit,
+  CUT_SHORT,
   firingArg,
   type Firing,
   firingOf,
+  fitFor,
   guarded,
   type Line,
   languageArg,
   languageOf,
   linesArg,
+  MOST_MATERIALS,
   ok,
   resolveLines,
   ToolProblem,
@@ -319,7 +321,8 @@ const closenessOut = (report: Report) => {
     report.unreachable.length ? `Nothing given supplies ${listed(report.unreachable)}.` : '',
     report.miss - report.best < COULD_BE_NEARER
       ? 'These materials cannot come much nearer.'
-      : 'These materials could come nearer: see couldHelp and capped.'
+      : 'These materials could come nearer: see couldHelp and capped.',
+    report.cutShort ? CUT_SHORT : ''
   ];
   return {
     verdict: found.verdict,
@@ -354,7 +357,9 @@ const reportOut = (report: Report, language: string) => ({
   })),
   unreachable: report.unreachable,
   miss: rounded(report.miss, 4),
-  best: rounded(report.best, 4)
+  best: rounded(report.best, 4),
+  // The work ran out before every choice was tried (closeness.summary says so too).
+  ...(report.cutShort && { cutShort: true })
 });
 
 /** Library names to lift a cap from, as the library has them; a ToolProblem names any not in it. */
@@ -613,24 +618,30 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
         const resolved = resolveLines(lines);
         const uncapped = allowedMore(allowMore);
         const options = { allowLead: allowLead ?? false };
-        const plan = recipe.planSuggestion<MaterialRecord>(
-          resolved,
-          findMaterial,
-          standardMaterials(),
-          region ?? '',
-          options
-        );
-        if (!plan.swaps.length) return ok({ swaps: [], note: 'Nothing in this recipe is discontinued or scarce.' });
-        countFit(caller);
-        // The best choice for each oxide left short, as the app offers first.
-        const bringIn = plan.shortfalls
-          .map((shortfall) => (shortfall.choices[0] ? findMaterial(shortfall.choices[0].name) : undefined))
-          .filter((material): material is LibraryRecord => Boolean(material))
-          // One material can be the best choice for two oxides: it comes in once.
-          .filter((material, i, all) => all.findIndex((other) => other.name === material.name) === i);
-        const suggestion = recipe.suggestAmounts<MaterialRecord>(resolved, findMaterial, bringIn, region ?? '', {
-          ...options,
-          uncapped
+        // Nothing to swap is said without working anything out, and is not counted as a fit.
+        if (!recipe.modernMaterials<MaterialRecord>(resolved, findMaterial, region ?? '', options).swaps.length)
+          return ok({ swaps: [], note: 'Nothing in this recipe is discontinued or scarce.' });
+        // The plan and the suggestion are one fit, with one meter for both.
+        const { plan, suggestion } = fitFor(caller, (meter) => {
+          const plan = recipe.planSuggestion<MaterialRecord>(
+            resolved,
+            findMaterial,
+            standardMaterials(),
+            region ?? '',
+            { ...options, meter }
+          );
+          // The best choice for each oxide left short, as the app offers first.
+          const bringIn = plan.shortfalls
+            .map((shortfall) => (shortfall.choices[0] ? findMaterial(shortfall.choices[0].name) : undefined))
+            .filter((material): material is LibraryRecord => Boolean(material))
+            // One material can be the best choice for two oxides: it comes in once.
+            .filter((material, i, all) => all.findIndex((other) => other.name === material.name) === i);
+          const suggestion = recipe.suggestAmounts<MaterialRecord>(resolved, findMaterial, bringIn, region ?? '', {
+            ...options,
+            uncapped,
+            meter
+          });
+          return { plan, suggestion };
         });
         return ok({
           swaps: plan.swaps,
@@ -665,8 +676,8 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
         have: z
           .array(z.string().min(1).max(200))
           .min(1)
-          .max(100)
-          .describe('The library names of the materials on hand.'),
+          .max(MOST_MATERIALS)
+          .describe(`The library names of the materials on hand, at most ${MOST_MATERIALS}.`),
         mustUse: z
           .array(z.string().min(1).max(200))
           .max(20)
@@ -690,8 +701,7 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           return { material, must: must.has(material.name) };
         });
         const uncapped = allowedMore(allowMore);
-        countFit(caller);
-        const match = recipe.matchFromShelf(resolved, shelf, { uncapped });
+        const match = fitFor(caller, (meter) => recipe.matchFromShelf(resolved, shelf, { uncapped, meter }));
         return ok(matchOut(match, lang));
       }, lang);
     }
@@ -720,9 +730,11 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           .describe('The unity formula or oxide analysis to aim for.'),
         materials: z
           .array(z.string().min(1).max(200))
-          .max(100)
+          .max(MOST_MATERIALS)
           .optional()
-          .describe('The library names of the materials to make it from. Use search_materials to find the names.'),
+          .describe(
+            `The library names of the materials to make it from, at most ${MOST_MATERIALS} with any on hand. Use search_materials to find the names.`
+          ),
         onHand: z
           .boolean()
           .optional()
@@ -759,16 +771,21 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           throw new ToolProblem(
             onHand ? 'There are no materials on hand. Name the materials instead.' : 'Name the materials to use.'
           );
+        if (unique.length > MOST_MATERIALS)
+          throw new ToolProblem(
+            `Too many materials to fit at once: ${unique.length}, with those on hand, and solve_target takes at most ${MOST_MATERIALS}. Narrow the list: name the materials to use, without onHand.`
+          );
         const must = new Set((mustUse ?? []).map((name) => findMaterial(name)?.name ?? name));
         const missingMust = [...must].filter((name) => !unique.some((m) => m.name === name));
         if (missingMust.length) throw new ToolProblem(`mustUse names materials not given: ${missingMust.join(', ')}.`);
         const uncapped = allowedMore(allowMore);
         const at = firingOf(firing);
-        countFit(caller);
-        const solved = recipe.solveTarget(
-          { kind: target.kind, oxides: target.oxides },
-          unique.map((material) => ({ material, must: must.has(material.name) })),
-          { uncapped, celsius: at.celsius, band: at.band }
+        const solved = fitFor(caller, (meter) =>
+          recipe.solveTarget(
+            { kind: target.kind, oxides: target.oxides },
+            unique.map((material) => ({ material, must: must.has(material.name) })),
+            { uncapped, celsius: at.celsius, band: at.band, meter }
+          )
         );
         return ok(solvedOut(solved, lang, at.band === 'top'));
       }, lang);
@@ -791,7 +808,8 @@ const solvedClosenessOut = (report: Report) => {
     report.unreachable.length ? `Nothing given supplies ${listed(report.unreachable)}.` : '',
     report.miss - report.best < COULD_BE_NEARER
       ? 'These materials cannot come much nearer.'
-      : 'These materials could come nearer: see couldHelp and capped.'
+      : 'These materials could come nearer: see couldHelp and capped.',
+    report.cutShort ? CUT_SHORT : ''
   ];
   return {
     verdict: found.verdict,
@@ -809,7 +827,7 @@ const solvedClosenessOut = (report: Report) => {
 
 /** A solved recipe, as solve_target answers it. */
 const solvedOut = (solved: ReturnType<typeof recipe.solveTarget>, language: string, top: boolean) => {
-  const { uses, couldHelp, capped, unreachable, miss, best } = reportOut(solved.report, language);
+  const { uses, couldHelp, capped, unreachable, miss, best, cutShort } = reportOut(solved.report, language);
   return {
     recipe: solved.materials.map((material) => ({ material: material.name, percent: Number(material.amount) })),
     unityFormula: roundAll(solved.unity),
@@ -824,6 +842,7 @@ const solvedOut = (solved: ReturnType<typeof recipe.solveTarget>, language: stri
     unreachable,
     miss,
     best,
+    ...(cutShort && { cutShort }),
     cautions: solved.cautions.map((caution) => cautionOut(caution, language)),
     ...(top && { limitsNote: TOP_NOTE }),
     note: 'A calculation from the fired oxides, not a test: mix a small batch and test-fire it first.'

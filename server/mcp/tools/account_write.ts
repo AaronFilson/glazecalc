@@ -24,8 +24,8 @@
 // (TOKEN_DELETES_PER_HOUR), on top of the endpoint's request limits.
 //
 // Confirm before changes (docs/adr/0025-confirm-before-changes.md): when the
-// account asks to approve every change, or removals (move_to_trash and
-// remove_from_shelf), a change waits (server/lib/pending_changes.ts) and
+// account asks to approve every change, or removals (move_to_trash,
+// remove_from_shelf and undo_shelf_change), a change waits (server/lib/pending_changes.ts) and
 // nothing is changed until the person approves it on the Glazecalc website,
 // signed in (owner decision, 2026-10-19: what this guards against is an
 // assistant that misbehaves, so the assistant's own client never approves):
@@ -91,7 +91,7 @@ import Note from '../../models/note.ts';
 import { PENDING_MINUTES } from '../../models/pending_change.ts';
 import Recipe from '../../models/recipe.ts';
 import { TRASH_DAYS } from '../../models/trash.ts';
-import { addKeys, removeKeys, shelfKeys, shelfOf, undoShelf } from '../../lib/shelf.ts';
+import { addKeys, removeKeys, shelfKeys, shelfOf, shelfUndoPreview, undoShelf } from '../../lib/shelf.ts';
 import User, { SHELF_KEY_LONGEST, SHELF_MOST } from '../../models/user.ts';
 import { WRITE_PAT_MOST_DAYS } from '../../models/access_token.ts';
 import {
@@ -690,39 +690,70 @@ export const WRITE_TOOLS: ReadonlySet<string> = new Set<WriteTool>([
   'move_to_trash',
   ...DICTATION_TOOLS
 ]);
-/** The tools that remove something: what the setting 'removals' asks about. */
-export const REMOVAL_TOOLS: readonly WriteTool[] = ['move_to_trash', 'remove_from_shelf'];
+/**
+ * The tools that remove something: what the setting 'removals' asks about. Undoing the shelf's last change
+ * takes off what that change put on, so it is one too.
+ */
+export const REMOVAL_TOOLS: readonly WriteTool[] = ['move_to_trash', 'remove_from_shelf', 'undo_shelf_change'];
 
 // What a waiting change sets, field by field, for its page (server/lib/pending_changes.ts detailsOf):
 // the record's fields as they are now and as the tool would set them.
 const notesOf = (notes: unknown) => (notes === undefined ? undefined : [notes]);
-registerPreview('mcp', 'create_recipe', (given) => {
+
+/**
+ * A recipe's lines as create_recipe and update_recipe would save them, for the page to compare with the
+ * recipe's own: the account's material of that name, else the library's, else the analysis given (a name
+ * found nowhere stays as given; the tool refuses it). A line found by its name is `known`: its oxides
+ * are shown only where they differ from the recipe's line of that name; one given by its analysis shows
+ * them whenever they do, and when it is new.
+ */
+const linesAsSaved = async (lines: z.infer<typeof linesArg>, userId: string) => {
+  const own = await Material.find({ ownedBy: userId }).lean();
+  const byName = new Map(own.map((m) => [nameKey(m.name), m]));
+  const known = new Set<object>();
+  const rows = lines.map((line) => {
+    if (line.analysis) return { ...line, name: line.material, amount: String(line.amount), loi: line.loi ?? 0 };
+    const found = byName.get(nameKey(line.material)) ?? findMaterial(line.material);
+    if (!found) return { name: line.material, amount: String(line.amount) };
+    const row = { ...found, amount: String(line.amount) };
+    known.add(row);
+    return row;
+  });
+  return { rows, known: (row: object) => known.has(row) };
+};
+
+registerPreview('mcp', 'create_recipe', async (given, _current, userId) => {
   const args = given as Partial<CreateRecipeArgs>;
+  const lines = args.lines && (await linesAsSaved(args.lines, userId));
   return fieldChanges(
     {
       title: args.title,
-      materials: args.lines,
+      materials: lines?.rows,
       additives: args.colorants,
       notes: notesOf(args.notes),
       firing: args.firing,
       foodSurface: args.foodSurface
     },
-    null
+    null,
+    { known: lines?.known }
   );
 });
-registerPreview('mcp', 'update_recipe', (given, current) => {
+registerPreview('mcp', 'update_recipe', async (given, current, userId) => {
   const args = given as Partial<UpdateRecipeArgs>;
+  const lines = args.lines && (await linesAsSaved(args.lines, userId));
   return fieldChanges(
     {
       title: args.title,
-      materials: args.lines,
+      materials: lines?.rows,
       notes: notesOf(args.notes),
       firing: args.firing,
       foodSurface: args.foodSurface
     },
-    current ?? {}
+    current ?? {},
+    { known: lines?.known }
   );
 });
+registerPreview('mcp', 'undo_shelf_change', (_given, _current, userId) => shelfUndoPreview(userId));
 registerPreview('mcp', 'add_notebook_entry', (given) => {
   const args = given as Partial<NotebookArgs>;
   return fieldChanges({ title: args.title, content: args.content, about: args.about }, null);

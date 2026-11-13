@@ -116,8 +116,25 @@ export interface FitLine {
 }
 
 /**
+ * The work a search has done, in the solver's multiply-adds, the most it may
+ * do, and whether a step stopped because it got there (see lib/chemistry/fit.js WORK).
+ */
+export interface Meter {
+  used: number;
+  most: number;
+  cut: boolean;
+}
+
+/** The most work one search may do, unless its meter says otherwise (see lib/chemistry/fit.js). */
+export const WORK: number;
+
+/** A meter for one search, or for several to share: at most `most` work (WORK if not given). */
+export function newMeter(most?: number): Meter;
+
+/**
  * How near the oxides should come, and shared caps (see lib/chemistry/fit.js):
- * groups on an amount, shares on a share (0 to 1) of the batch.
+ * groups on an amount, shares on a share (0 to 1) of the batch; and the
+ * meter of the search a fit is part of.
  */
 export interface FitOptions {
   near?: Record<string, number>;
@@ -125,6 +142,7 @@ export interface FitOptions {
   fluxTotal?: number;
   groups?: Record<string, number>;
   shares?: Record<string, number>;
+  meter?: Meter;
 }
 
 export function fitAmounts(
@@ -179,6 +197,8 @@ export function boundedLeastSquares(problem: {
   lambda?: number;
   pullTo?: number[];
   cost?: number[];
+  /** Counts the solve's work, when given. */
+  meter?: Meter;
 }): number[];
 
 /** A line offered to selectMaterials: the recipe's own (start > 0) or a material to try. */
@@ -212,6 +232,8 @@ export interface Selection {
     members?: number[];
   }>;
   countCost: number;
+  /** Whether the work allowed ran out first: the best found by then (see lib/chemistry/select.js); always given. */
+  cutShort?: boolean;
 }
 
 /** The fewest materials from the lines that bring the target close (see lib/chemistry/select.js). */

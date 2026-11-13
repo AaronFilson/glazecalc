@@ -1,5 +1,6 @@
 // Types for lib/recipe/shelf.js (see index.d.ts).
 
+import type { Meter } from '../chemistry';
 import type { AdditiveRecord, MaterialRecord, TryMaterial } from './library';
 import type { Caution, RecipeMessage } from './messages';
 import type { Report } from './pool';
@@ -14,10 +15,10 @@ export interface ShelfMatch<M extends MaterialRecord = MaterialRecord> {
 /**
  * The recipe made from the materials on the shelf only, raw clay held within 20% of the batch (or the
  * recipe's own share) where the match allows, but for clays named in `uncapped`; throws a RecipeError
- * ('shelf.empty') if there are none.
+ * ('shelf.empty') if there are none. `meter` bounds its work (lib/chemistry newMeter), a new one if not given.
  */
 export function matchFromShelf<M extends MaterialRecord>(
   lines: M[],
   shelf: TryMaterial<M>[],
-  options?: { avoid?: string[]; additives?: AdditiveRecord[]; uncapped?: string[] }
+  options?: { avoid?: string[]; additives?: AdditiveRecord[]; uncapped?: string[]; meter?: Meter }
 ): ShelfMatch<M>;
