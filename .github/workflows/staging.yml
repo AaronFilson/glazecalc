@@ -48,6 +48,20 @@ jobs:
       sha: ${{ steps.commit.outputs.sha }}
       tag: ${{ steps.commit.outputs.tag }}
     steps:
+      # A pull request's ref (refs/pull/<n>/head or /merge) is refused before
+      # anything is fetched: GitHub serves a fork's pull requests under this
+      # repository too, and the checkout would keep one as a branch of its own
+      # (refs/remotes/pull/), which the check below must never count.
+      - name: Not a pull request
+        env:
+          REF: ${{ inputs.ref }}
+        run: |
+          shopt -s nocasematch
+          if [[ "$REF" == refs/pull/* ]]; then
+            echo "$REF is a pull request; staging takes a branch of this repository, or a commit on one."
+            exit 1
+          fi
+
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ inputs.ref }}
@@ -57,12 +71,14 @@ jobs:
 
       # staging.sh runs this commit's scripts as root on the instance production
       # shares, so only commits on this repository's own branches, which only
-      # people who can push here make: never a fork's pull request
-      # (refs/pull/*), whose commits GitHub serves under this repository too.
+      # people who can push here make: those under refs/remotes/origin/, where
+      # the checkout puts every branch here. Never a fork's pull request, whose
+      # commits GitHub serves under this repository too: given by its ref it is
+      # refused above, and a bare commit of one is on no branch here.
       - name: The commit
         id: commit
         run: |
-          if [ -z "$(git branch -r --contains HEAD)" ]; then
+          if ! git for-each-ref --contains HEAD --format='%(refname)' refs/remotes/origin/ | grep -q .; then
             echo "$(git rev-parse HEAD) is on no branch of this repository; staging runs only those."
             exit 1
           fi
