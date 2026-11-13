@@ -130,8 +130,9 @@ while Glazecalc is not opened on the device (until deleted, or 7, 30, 90 or 365 
 
 - A signed-out visitor offline who opens `/recipe` is sent to the sign-in page, which needs the network: the
   calculator offline is for a session already on the device (an account or a trial).
-- Messages for the new notices are in English only (`offline.*` in `client/public/i18n/en.json`); other languages
-  show them in English until a translation wave adds them.
+- Messages for the new notices (`offline.*` in `client/public/i18n/en.json`) were in English at first; every
+  language has them since: the five of stages 0 to 2 from 2026-10-31, stage 3's from 2026-11-02, stage 4's from
+  2026-11-03 and its follow-ups' from 2026-11-08.
 
 ## Alternatives considered
 
