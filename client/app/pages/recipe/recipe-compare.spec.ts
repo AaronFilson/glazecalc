@@ -147,4 +147,31 @@ describe('RecipeCompare', () => {
     const { fixture } = await create(OLD, { title: 'Just silica', materials: [{ ...SILICA, amount: '10' }] });
     expect(text(fixture, '.compare-problem')).toContain('Just silica has no unity formula');
   });
+
+  it('says what a unity formula left out, naming the recipe it is in', async () => {
+    const ochre: Additive = {
+      name: 'Odd ochre',
+      percentmole: 'percent',
+      loi: 0,
+      fields: [{ name: 'Fe', amount: '100' }],
+      amount: '3',
+      unit: 'percent'
+    };
+    // The old recipe counts its colorants; the new one does not.
+    const { fixture } = await create({ ...OLD, additives: [ochre] }, { ...NEW, additives: [ochre] });
+    expect([...fixture.nativeElement.querySelectorAll('.compare-warning')].map((p: Element) => p.textContent)).toEqual([
+      'Old matte: Odd ochre has no oxide analysis the unity formula can use, so it is left out.'
+    ]);
+  });
+
+  it('prints the comparison', async () => {
+    const { root } = await create();
+    const print = vi.spyOn(window, 'print').mockImplementation(() => undefined);
+    try {
+      [...root.querySelectorAll('button')].find((b) => b.textContent?.trim() === 'Print')!.click();
+      expect(print).toHaveBeenCalledOnce();
+    } finally {
+      print.mockRestore();
+    }
+  });
 });

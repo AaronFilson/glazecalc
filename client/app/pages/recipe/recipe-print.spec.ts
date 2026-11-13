@@ -459,6 +459,80 @@ describe('RecipePrint', () => {
     expect(text(fixture, '.print-chemistry p')).toContain('no flux');
   });
 
+  it('starts from the batch size typed last on this browser, and goes back to the whole recipe when asked', async () => {
+    localStorage.setItem('printBatch', JSON.stringify({ text: '2000', unit: 'g' }));
+    localStorage.setItem('printMode', 'batch');
+    const { fixture, root } = await create();
+    expect((root.querySelector('#print-batch-size') as HTMLInputElement).value).toBe('2000');
+    expect(text(fixture, '.print-batch-summary')).toBe(
+      'Batch: 2000 g of base materials and 40 g of colorants and additives, 2040 g in all.'
+    );
+    expect(root.querySelector('.print-batch-list')).not.toBeNull();
+    await choose(fixture, root, 'print-full');
+    expect(root.querySelector('.print-batch-list')).toBeNull();
+    expect(root.querySelector('.print-chemistry')).not.toBeNull();
+    expect(localStorage.getItem('printMode')).toBe('full');
+  });
+
+  it('opens on the whole recipe for 1000 g when this browser will not give back its last choices', async () => {
+    localStorage.setItem('printMode', 'batch');
+    const getItem = Storage.prototype.getItem;
+    const blocked = vi.spyOn(Storage.prototype, 'getItem').mockImplementation(function (this: Storage, key: string) {
+      if (key === 'printMode' || key === 'printBatch') throw new Error('Storage is blocked');
+      return getItem.call(this, key);
+    });
+    try {
+      const { fixture, root } = await create();
+      expect((root.querySelector('#print-full') as HTMLInputElement).checked).toBe(true);
+      expect((root.querySelector('#print-batch-size') as HTMLInputElement).value).toBe('1000');
+      expect(text(fixture, '.print-batch-summary')).toMatch(/^Batch: 1000 g of base materials/);
+    } finally {
+      blocked.mockRestore();
+    }
+  });
+
+  it('gives no weights on the whole recipe while an amount is not a number, and says which', async () => {
+    const { root } = await create({
+      ...RECIPE,
+      materials: [
+        { ...WHITING, amount: '12,5' },
+        { ...SILICA, amount: '50' }
+      ]
+    });
+    expect([...root.querySelectorAll('.print-unreadable p')].map((p) => p.textContent)).toEqual([
+      'The amount for Whiting is not a number ("12,5").',
+      'So there are no weights to print. Fix it in the recipe first.'
+    ]);
+    expect(rows(root, '.print-table thead tr')[0]).toEqual(['Material', 'Amount', '% of base']);
+    expect(root.querySelector('.print-batch-summary')).toBeNull();
+  });
+
+  it('says when the prices for the cost cannot be fetched', async () => {
+    const { fixture, root } = await create();
+    (root.querySelector('#print-show-cost') as HTMLInputElement).click();
+    await fixture.whenStable();
+    httpMock()
+      .expectOne(API + '/prices')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(text(fixture, '.print-problem')).toBe('Your prices could not be fetched. Please try again.');
+    expect(root.querySelector('.print-cost')).toBeNull();
+  });
+
+  it('gives no cost without a batch size to cost', async () => {
+    localStorage.setItem('currency', 'USD');
+    const { fixture, root } = await create();
+    (root.querySelector('#print-show-cost') as HTMLInputElement).click();
+    await fixture.whenStable();
+    httpMock()
+      .expectOne(API + '/prices')
+      .flush({ prices: [{ key: 'w', perKg: 1 }] });
+    await settle(fixture);
+    expect(text(fixture, '.print-cost')).toMatch(/^Priced materials cost \$0\.20\./);
+    await typeBatch(fixture, root, '');
+    expect(root.querySelector('.print-cost')).toBeNull();
+  });
+
   it('shows the batch cost only when ticked, fetching no prices until then, and names what has no price', async () => {
     localStorage.setItem('currency', 'USD');
     const { fixture, root } = await create();

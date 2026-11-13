@@ -90,4 +90,107 @@ describe('SharePanel', () => {
     const { fixture } = await create(null, true);
     expect(text(fixture)).toContain('Sharing a recipe by link needs an account.');
   });
+
+  it('copies the link just made, or leaves it selected to copy by hand when the browser will not', async () => {
+    const { fixture, root, click } = await create({ shared: false });
+    await click('Make a link');
+    httpMock()
+      .expectOne((req) => req.method === 'POST' && req.url === URL)
+      .flush({ secret: SECRET, createdAt: '2026-10-16T10:00:00Z', includeNotes: false });
+    await settle(fixture);
+    // The box takes the whole link when it gets the focus.
+    const address = root.querySelector('#share-address-r1') as HTMLInputElement;
+    address.focus();
+    expect([address.selectionStart, address.selectionEnd]).toEqual([0, address.value.length]);
+
+    const before = Object.getOwnPropertyDescriptor(navigator, 'clipboard');
+    const writeText = vi.fn().mockResolvedValue(undefined);
+    Object.defineProperty(navigator, 'clipboard', { value: { writeText }, configurable: true });
+    try {
+      await click('Copy');
+      expect(writeText).toHaveBeenCalledWith(location.origin + '/shared#' + SECRET);
+      expect(text(fixture, '.share-status')).toBe('The link is copied.');
+      writeText.mockRejectedValue(new Error('Not allowed'));
+      await click('Copy');
+      expect(text(fixture, '.share-status')).toBe(
+        'The link could not be copied for you. It is selected: copy it from the box.'
+      );
+    } finally {
+      if (before) Object.defineProperty(navigator, 'clipboard', before);
+      else delete (navigator as { clipboard?: unknown }).clipboard;
+    }
+  });
+
+  it('says when it cannot tell whether the recipe is shared, offering nothing to press', async () => {
+    const fixture = TestBed.createComponent(SharePanel);
+    fixture.componentRef.setInput('recipeId', 'r1');
+    await fixture.whenStable();
+    httpMock().expectOne(URL).flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(text(fixture, '.share-problem')).toBe('That did not work. Please try again.');
+    expect(text(fixture)).not.toContain('Checking whether the recipe is shared');
+    expect(fixture.nativeElement.querySelector('button')).toBeNull();
+  });
+
+  it('says when a link could not be made or stopped, and keeps the recipe as it was', async () => {
+    const { fixture, root, click } = await create({
+      shared: true,
+      createdAt: '2026-10-06T10:00:00Z',
+      includeNotes: false
+    });
+    await click('Make a new link');
+    httpMock()
+      .expectOne((req) => req.method === 'POST' && req.url === URL)
+      .flush({ msg: 'Please try again later.' }, { status: 503, statusText: 'Unavailable' });
+    await settle(fixture);
+    expect(text(fixture, '.share-problem')).toBe('Please try again later.');
+    expect(root.querySelector('#share-address-r1')).toBeNull();
+    expect(text(fixture)).toContain('Shared by link since');
+
+    await click('Stop sharing');
+    httpMock()
+      .expectOne((req) => req.method === 'DELETE' && req.url === URL)
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(text(fixture, '.share-problem')).toBe('That did not work. Please try again.');
+    expect(text(fixture)).toContain('Stop sharing');
+  });
+
+  it('puts the notes box back when its change cannot be saved', async () => {
+    const { fixture, root } = await create({ shared: true, createdAt: '2026-10-06T10:00:00Z', includeNotes: false });
+    const notes = root.querySelector('#share-notes-r1') as HTMLInputElement;
+    notes.click();
+    await settle(fixture);
+    httpMock()
+      .expectOne((req) => req.method === 'PUT' && req.url === URL)
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(notes.checked).toBe(false);
+    expect(text(fixture, '.share-problem')).toBe('That did not work. Please try again.');
+  });
+
+  it('keeps the notes box as it is while a link is being made, and takes a click again once it is', async () => {
+    const { fixture, root, click } = await create({ shared: false });
+    await click('Make a link');
+    const notes = root.querySelector('#share-notes-r1') as HTMLInputElement;
+    expect(notes.getAttribute('aria-disabled')).toBe('true');
+    notes.click();
+    await settle(fixture);
+    // Unticked, as the link being made: it is made without the notes.
+    expect(notes.checked).toBe(false);
+    const made = httpMock().expectOne((req) => req.method === 'POST' && req.url === URL);
+    expect(made.request.body).toEqual({ includeNotes: false });
+    made.flush({ secret: SECRET, createdAt: '2026-10-16T10:00:00Z', includeNotes: false });
+    await settle(fixture);
+    expect(notes.checked).toBe(false);
+
+    notes.click();
+    await settle(fixture);
+    const put = httpMock().expectOne((req) => req.method === 'PUT' && req.url === URL);
+    expect(put.request.body).toEqual({ includeNotes: true });
+    put.flush({ includeNotes: true });
+    await settle(fixture);
+    expect(notes.checked).toBe(true);
+    expect(text(fixture, '.share-status')).toBe('The shared recipe shows its notes now.');
+  });
 });
