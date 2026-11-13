@@ -251,6 +251,29 @@ describe('import API', () => {
     expect(user!.shelf ?? []).to.eql([]);
   });
 
+  it('takes only the preferences it knows, never a name every object has', async () => {
+    const names = ['toString', 'constructor', '__proto__', 'hasOwnProperty', 'valueOf'];
+    // Written as JSON, so that __proto__ is a key of its own, as a file can have it.
+    const preferences = '{' + names.map((name) => `"${name}":"dark"`).join(',') + ',"theme":"dark"}';
+    const file = { ...(await exportOf(alice.token)), preferences: '§' };
+    const body = JSON.stringify({ file, include: { preferences: true } }).replace('"§"', preferences);
+    const send = (path: string) =>
+      api()
+        .post(path)
+        .set('Authorization', 'Bearer ' + bob.token)
+        .set('Content-Type', 'application/json')
+        .send(body);
+    const preview = await send('/import/preview');
+    expect(preview, JSON.stringify(preview.body)).to.have.status(200);
+    expect(preview.body.preferences).to.equal(1);
+    const done = await send('/import');
+    expect(done, JSON.stringify(done.body)).to.have.status(200);
+    expect(done.body.preferences).to.equal(true);
+    const user = await User.findById(bob.user._id).lean();
+    expect(Object.keys(user!.preferences ?? {})).to.eql(['theme']);
+    expect(user!.preferences).to.include({ theme: 'dark' });
+  });
+
   it('refuses a file with a bad record, listing it, and writes nothing', async () => {
     const file = (await exportOf(alice.token)) as { records: { recipes: Row[]; materials: Row[] } };
     file.records.recipes.push({ title: 'No materials' });

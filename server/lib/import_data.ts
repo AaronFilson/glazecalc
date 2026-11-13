@@ -149,8 +149,12 @@ const pick = (source: Row, fields: string[]): Row =>
 const folded = (record: Row): string =>
   (titleOf(record) ?? '').normalize('NFKC').toLocaleLowerCase('en').replace(/\s+/g, ' ').trim();
 
-/** Upgrades a file of an earlier version, one version at a time. None yet: version 1 is the first. */
-const UPGRADES: Record<number, (file: Row) => Row> = {};
+/**
+ * Upgrades a file of an earlier version, one version at a time, by the version
+ * it upgrades from. None yet: version 1 is the first. A Map, so that nothing a
+ * file says can name anything else.
+ */
+const UPGRADES = new Map<number, (file: Row) => Row>();
 
 /** The value with ids, owners and empty values taken out, and keys in order, for comparing content. */
 const canonical = (value: unknown): unknown => {
@@ -221,7 +225,7 @@ const readFile = (file: unknown): { file: Row; version: number } | Reply => {
   }
   if (version > EXPORT_VERSION) return { status: 422, body: say('import-newer') };
   let upgraded = file;
-  for (let v = version; v < EXPORT_VERSION; v++) upgraded = UPGRADES[v]?.(upgraded) ?? upgraded;
+  for (let v = version; v < EXPORT_VERSION; v++) upgraded = UPGRADES.get(v)?.(upgraded) ?? upgraded;
   return { file: upgraded, version };
 };
 
@@ -407,13 +411,18 @@ const fileShelf = (file: Row): string[] =>
     (key): key is string => typeof key === 'string' && key !== '' && key.length <= SHELF_KEY_LONGEST
   );
 
-/** The file's preferences that the account can take: known keys with one of their choices. */
+/**
+ * The file's preferences that the account can take: known keys with one of
+ * their choices. Known means PREFERENCES' own: `in` also finds what every
+ * object has (toString, constructor, __proto__), which then failed with a 500.
+ */
 const filePreferences = (file: Row): Row => {
   const given = isObject(file.preferences) ? file.preferences : {};
   return Object.fromEntries(
     Object.entries(given).filter(
       ([key, value]) =>
-        key in PREFERENCES && (PREFERENCES[key as keyof typeof PREFERENCES] as readonly unknown[]).includes(value)
+        Object.hasOwn(PREFERENCES, key) &&
+        (PREFERENCES[key as keyof typeof PREFERENCES] as readonly unknown[]).includes(value)
     )
   );
 };
