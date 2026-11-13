@@ -3,8 +3,10 @@
 // a person leaves the database: every figure is a count, and the countries and languages are counted,
 // not listed. For the README and the case study.
 //
-//   node scripts/usage-stats.mjs                          against MONGODB_URI (or the local database)
-//   docker compose exec app node scripts/usage-stats.mjs  on the live instance; the image has this script
+//   node scripts/usage-stats.mjs   against MONGODB_URI (or the local database)
+//
+// On the live instance, whose image has this script (from 1.0.0) and whose app.env has MONGODB_URI:
+//   cd /opt/glazecalc && sudo docker compose -f compose.prod.yaml exec -T app node scripts/usage-stats.mjs
 //
 // Calls to the MCP endpoint are not in the database (it keeps no sessions). On the instance, nginx's
 // access log has them, for as many days as logrotate keeps:
