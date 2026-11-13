@@ -120,10 +120,11 @@ name it as co-author. I used it the way I would lead a fast, capable engineer. I
 build and how it should behave, it wrote the code, and nothing reached production that the checks
 below had not passed and I had not approved.
 
-- **Decisions first, in writing.** A plan or a decision record came before the code for anything
-  that shaped the app, each saying what was decided, why, and what it costs
-  ([docs/adr](adr/README.md)). Where a choice was mine, the record says so in my words, as ADR 25
-  does: "The reason for a confirm is to keep bad AI from going wild."
+- **Plans first, in writing.** Most larger features were planned before the code, among them the
+  deploy, sign-in and AI access, search and two-step sign-in (`docs/*-plan.md`). A decision record
+  keeps each decision that shaped the app, written as it landed: what was decided, why, and what it
+  costs ([docs/adr](adr/README.md)). Where a choice was mine, the record says so in my words, as
+  ADR 25 does: "The reason for a confirm is to keep bad AI from going wild."
 - **Checks that do not trust the author.** Every change runs the same gates whoever wrote it: the
   server, Angular and browser suites with their accessibility checks (the README gives their size
   and coverage, and CI checks those numbers), the MCP conformance suite, CodeQL, Lighthouse and the

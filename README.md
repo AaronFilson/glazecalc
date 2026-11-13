@@ -49,10 +49,11 @@ For anyone reading the code; the [highlights](#highlights) below give the detail
   and hydrated; offline once visited (PWA); one $13-a-month Graviton instance, with automatic rollback. A load test
   on a container that size, at full CPU, serves about 250 requests a second, with a 95th percentile of 270 ms; the
   instance runs at full CPU only while its CPU credits last.
-- **How it is built:** with Claude Code as a directed coding agent. Decisions are written down first, in
-  [decision records](docs/adr/README.md); every change goes through the checks above; production deploys wait for
-  approval. The [case study](docs/case-study.md) tells how the 2017 app was revived, how the agent was directed,
-  and what the checks caught.
+- **How it is built:** with Claude Code as a directed coding agent; commits made with it carry a
+  `Co-Authored-By: Claude` trailer. Most larger features were planned in writing first (`docs/*-plan.md`), and a
+  [decision record](docs/adr/README.md) keeps each decision that shaped the app, written as it landed; every change
+  goes through the checks above; production deploys wait for approval. The [case study](docs/case-study.md) tells
+  how the 2017 app was revived, how the agent was directed, and what the checks caught.
 
 ## Highlights
 
