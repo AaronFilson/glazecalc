@@ -28,7 +28,7 @@ const recipeRoutes = recordRoutes(Recipe, {
 });
 addFiringLinkRoutes(recipeRoutes);
 
-const records: Record<string, Router> = {
+const records = {
   additives: recordRoutes(Additive, {
     label: 'additive',
     area: 'additives',
@@ -60,6 +60,6 @@ const records: Record<string, Router> = {
   recipe: recipeRoutes,
   // The Trash has routes of its own.
   trash: trashRouter
-};
+} satisfies Record<string, Router>;
 
 export default records;
