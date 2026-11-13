@@ -172,11 +172,12 @@ const folded = (record: Row): string =>
   (titleOf(record) ?? '').normalize('NFKC').toLocaleLowerCase('en').replace(/\s+/g, ' ').trim();
 
 /**
- * Upgrades a file of an earlier version, one version at a time, by the version
- * it upgrades from. None yet: version 1 is the first. A Map, so that nothing a
- * file says can name anything else.
+ * Upgrades a file of an earlier version, in order: the first takes a file of
+ * version 1 to version 2, the next 2 to 3, and so on. None yet: version 1 is
+ * the first. A list applied from the file's version on, so that nothing a file
+ * says is ever looked up by name or number.
  */
-const UPGRADES = new Map<number, (file: Row) => Row>();
+const UPGRADES: readonly ((file: Row) => Row)[] = [];
 
 /** The value with ids, owners and empty values taken out, and keys in order, for comparing content. */
 const canonical = (value: unknown): unknown => {
@@ -246,8 +247,7 @@ const readFile = (file: unknown): { file: Row; version: number } | Reply => {
     return { status: 400, body: say('import-not-export') };
   }
   if (version > EXPORT_VERSION) return { status: 422, body: say('import-newer') };
-  let upgraded = file;
-  for (let v = version; v < EXPORT_VERSION; v++) upgraded = UPGRADES.get(v)?.(upgraded) ?? upgraded;
+  const upgraded = UPGRADES.slice(version - 1).reduce((older, upgrade) => upgrade(older), file);
   return { file: upgraded, version };
 };
 
