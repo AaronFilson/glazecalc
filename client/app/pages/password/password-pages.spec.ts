@@ -54,6 +54,33 @@ describe('ForgotPage', () => {
     expect(fixture.nativeElement.querySelector('form')).not.toBeNull();
     expect(page['busy']()).toBe(false);
   });
+
+  it('sends the link from its form: the address checked first, and the one the server refuses marked', async () => {
+    const { fixture } = await create();
+    const root = fixture.nativeElement as HTMLElement;
+    const send = () => (root.querySelector('button[type="submit"]') as HTMLButtonElement).click();
+    send();
+    await settle(fixture);
+    httpMock().expectNone(API + '/password/forgot');
+    expect(fieldProblem(fixture, 'email')).not.toBe('');
+
+    const field = root.querySelector('#email') as HTMLInputElement;
+    field.value = 'a@b.com';
+    field.dispatchEvent(new Event('input'));
+    await fixture.whenStable();
+    // Pressed twice: sent once.
+    send();
+    send();
+    httpMock()
+      .expectOne(API + '/password/forgot')
+      .flush(
+        { msg: 'We cannot send email to that address.', field: 'email' },
+        { status: 400, statusText: 'Bad Request' }
+      );
+    await settle(fixture);
+    expect(fieldProblem(fixture, 'email')).toBe('We cannot send email to that address.');
+    expect(root.querySelector('form')).not.toBeNull();
+  });
 });
 
 describe('ResetPage', () => {
@@ -136,6 +163,28 @@ describe('ResetPage', () => {
     expect(replaceState).not.toHaveBeenCalled();
     expect(text(fixture, '.help-text')).toContain('this one is incomplete');
     expect(fixture.nativeElement.querySelector('form')).toBeNull();
+  });
+
+  it('saves the new password from its form, and marks the field the server refuses', async () => {
+    const { fixture } = await create('tok123');
+    const root = fixture.nativeElement as HTMLElement;
+    for (const id of ['password', 'confirmation']) {
+      const field = root.querySelector('#' + id) as HTMLInputElement;
+      field.value = 'password';
+      field.dispatchEvent(new Event('input'));
+    }
+    await fixture.whenStable();
+    (root.querySelector('button[type="submit"]') as HTMLButtonElement).click();
+    await settle(fixture);
+    const req = httpMock().expectOne(API + '/password/reset');
+    expect(req.request.body).toEqual({ token: 'tok123', password: 'password' });
+    req.flush(
+      { msg: 'That password is one of the most common. Please choose another.', field: 'password' },
+      { status: 400, statusText: 'Bad Request' }
+    );
+    await settle(fixture);
+    expect(fieldProblem(fixture, 'password')).toBe('That password is one of the most common. Please choose another.');
+    expect(root.querySelector('.errors-section')).toBeNull();
   });
 });
 
