@@ -4,6 +4,11 @@ Every AWS step, in order, as commands to review and run. Production was set up w
 October 2026; they are kept to rebuild it or to set up another instance.
 Background and reasoning: [docs/ec2-deploy-plan.md](../../docs/ec2-deploy-plan.md).
 
+The same resources are declared as AWS CDK stacks in [deploy/cdk](../cdk/README.md)
+([ADR 29](../../docs/adr/0029-infrastructure-as-code-with-cdk.md)), whose tests keep them equal to the JSON
+documents here. Once a stack's live resources are imported there, change them through the CDK app, not with
+these commands.
+
 **Who runs what:**
 
 - **Admin (once):** the steps marked _Admin_ create IAM roles, which a limited user must not be

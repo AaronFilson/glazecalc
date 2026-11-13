@@ -6,6 +6,12 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **The AWS setup as code** (`deploy/cdk/`, [ADR 29](docs/adr/0029-infrastructure-as-code-with-cdk.md)): AWS CDK stacks
+  in TypeScript declare what `deploy/aws/` made by hand, with the same names and permissions: GitHub's deploy roles and
+  their SSM documents, the operator policy, the instance with its role, network, backups, snapshots and alarms, and
+  SES sending and receiving. Tests hold every policy to its JSON document there and snapshot each template, cdk-nag's
+  AWS Solutions rules check them, and the Infrastructure workflow runs both on changes under `deploy/`. Nothing is
+  deployed from it yet: its README brings the live resources under it with `cdk import`, one stack at a time.
 - **A supply chain that can be checked:** the production image is published with an SBOM and SLSA build provenance
   (BuildKit's, in full), and its provenance is signed through GitHub (`actions/attest-build-provenance`), so
   `gh attestation verify oci://ghcr.io/aaronfilson/glazecalc:latest --owner AaronFilson` checks where and how it was

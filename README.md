@@ -369,7 +369,8 @@ the code and the workflows in a workflow of its own (`.github/workflows/codeql.y
     Dockerfile, compose.yaml
                       the production image, and the app plus MongoDB in containers
     deploy/           production on EC2: Compose file, nginx, cloud-init, deploy and backup
-                      scripts, AWS policies and setup commands
+                      scripts, AWS policies and setup commands, and the same AWS setup as
+                      CDK stacks (deploy/cdk/)
     docs/             decision records (adr/), the case study, the translation plan and guides
                       (translating.md, translations/), setup notes
     .github/          CI, CodeQL, image publishing and deploy workflows, issue forms, Dependabot
@@ -386,7 +387,10 @@ MongoDB 9, keeping the data in a named volume:
 
 The app is published on 127.0.0.1:3000 only; put a reverse proxy in front for public access,
 because ports Docker publishes bypass ufw. Production on AWS is described step by step in
-[deploy/README.md](deploy/README.md) and [deploy/aws/README.md](deploy/aws/README.md). On Windows,
+[deploy/README.md](deploy/README.md) and [deploy/aws/README.md](deploy/aws/README.md). The same AWS
+resources are declared as AWS CDK stacks in [deploy/cdk](deploy/cdk/README.md), checked by cdk-nag
+and tests in CI, with the steps to bring the live ones under them with `cdk import`
+([ADR 29](docs/adr/0029-infrastructure-as-code-with-cdk.md)). On Windows,
 Docker Engine runs inside WSL: [docs/wsl-local-deploy-debian.md](docs/wsl-local-deploy-debian.md)
 has notes from setting it up in WSL Debian.
 
