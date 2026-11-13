@@ -926,4 +926,47 @@ describe('the unity formula worked step by step (workedCalculation)', () => {
       .to.throw()
       .with.property('code', 'no-flux');
   });
+
+  it('takes a material by name, and refuses the amounts calculateUMF refuses, as it does', () => {
+    // By name from the built-in materials, as calculateUMF finds them.
+    const byName = [
+      { material: 'Whiting', amount: 20 },
+      { material: 'silica', amount: '30' }
+    ];
+    const worked = recipe.workedCalculation(byName);
+    const umf = chemistry.calculateUMF(byName).umf;
+    expect(worked.materials.map((m) => m.name)).to.eql(['Whiting', 'Silica']);
+    for (const total of worked.oxides) expect(total.unity).to.be.closeTo(umf[total.oxide], 1e-12);
+    const codeOf = (run: () => unknown) => {
+      try {
+        run();
+      } catch (error) {
+        return (error as { code?: string }).code;
+      }
+      return undefined;
+    };
+    expect(codeOf(() => recipe.workedCalculation([{ material: 'Unobtainium', amount: 10 }]))).to.equal(
+      'unknown-material'
+    );
+    // Each amount calculateUMF refuses, refused the same way; a blank one counts as 0, as there.
+    for (const amount of ['abc', '-3', -3, '1e1', '0x10', true, NaN, Infinity]) {
+      const lines = [
+        { material: 'Whiting', amount: amount as unknown as string },
+        { material: 'Silica', amount: 30 }
+      ];
+      expect(
+        codeOf(() => recipe.workedCalculation(lines)),
+        String(amount)
+      ).to.equal('invalid-amount');
+      expect(
+        codeOf(() => chemistry.calculateUMF(lines)),
+        String(amount)
+      ).to.equal('invalid-amount');
+    }
+    const blank = recipe.workedCalculation([
+      { material: 'Whiting', amount: 20 },
+      { material: 'Silica', amount: '' }
+    ]);
+    expect(blank.materials.map((m) => m.name)).to.eql(['Whiting']);
+  });
 });
