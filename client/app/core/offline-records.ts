@@ -142,6 +142,11 @@ export class OfflineRecords {
   /** A sign-in just started and /verify has not named the user: the copy may be another person's, so it is not read. */
   private held = false;
   /**
+   * The copy is being turned on (setEnabled) and is not written yet: the user's own is about to be, so checkOwner
+   * leaves it rather than switch to it a second time.
+   */
+  private turningOn = false;
+  /**
    * The copies the page on screen shows in place of the server's answers, and when each was saved. Emptied as each
    * navigation starts (pageStarted): the next page's own requests fill it again if the network is still gone.
    */
@@ -336,8 +341,15 @@ export class OfflineRecords {
       return false;
     }
     this.enabled.set(true);
-    await this.learnUser();
-    if (this.user && !(await this.writeMeta())) {
+    this.turningOn = true;
+    let written: boolean;
+    try {
+      await this.learnUser();
+      written = !this.user || (await this.writeMeta());
+    } finally {
+      this.turningOn = false;
+    }
+    if (!written) {
       await this.clear();
       this.notKept.set(true);
       return false;
@@ -691,8 +703,10 @@ export class OfflineRecords {
    * they kept one here before, is shown again; the same person's queue is sent.
    */
   private async checkOwner(user: SignedInUser): Promise<void> {
+    // Named while the copy is being turned on: setEnabled writes the user's own copy itself.
+    const turningOn = this.turningOn;
     try {
-      if (this.storesAnything() && this.user === user && (await this.currentId()) !== user.id)
+      if (!turningOn && this.storesAnything() && this.user === user && (await this.currentId()) !== user.id)
         await this.switchTo(user);
     } finally {
       if (this.user === user) this.held = false;

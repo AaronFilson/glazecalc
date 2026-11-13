@@ -537,6 +537,18 @@ describe('the records kept on this device', () => {
     httpMock().expectNone(API + '/recipe/getAll');
   });
 
+  it('turned on, fetches each copy once and leaves nothing waiting', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    await waitFor(async () => expect(await records.read('prices')).not.toBeNull());
+    // What turning it on set going has finished: nothing is fetched a second time.
+    await new Promise((resolve) => setTimeout(resolve, 100));
+    httpMock().verify();
+    expect(records.enabled()).toBe(true);
+    expect(localStorage.getItem(RECORDS_FLAG)).toBe('1');
+  });
+
   it('fetches in full at most once a day', async () => {
     setUp();
     const records = TestBed.inject(OfflineRecords);
