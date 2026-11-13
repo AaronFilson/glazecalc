@@ -1,14 +1,25 @@
+import { Component } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
-import { ActivatedRoute, ActivatedRouteSnapshot, Router, convertToParamMap, provideRouter } from '@angular/router';
+import {
+  ActivatedRoute,
+  ActivatedRouteSnapshot,
+  NavigationEnd,
+  Router,
+  Routes,
+  convertToParamMap,
+  provideRouter
+} from '@angular/router';
 import { TranslocoService } from '@jsverse/transloco';
-import { of } from 'rxjs';
+import { filter, of } from 'rxjs';
 import { textKey } from '../../../../lib/regions/languages';
 import { ORTON, SK } from '../../../../lib/cones';
 import { AuthService } from '../../core/auth.service';
+import { Material } from '../../core/models';
 import { PendingRecipeService } from '../../core/pending-recipe.service';
+import { signedInGuard } from '../../core/signed-in.guard';
 import { useCodedMessages } from '../../i18n/coded';
 import { PAGE_LANGUAGE } from '../../i18n/language';
-import { httpMock, skippedHeadings, testProviders } from '../../testing/test-providers';
+import { API, httpMock, settle, skippedHeadings, testProviders } from '../../testing/test-providers';
 import { ConesPage } from './cones-page';
 import { MaterialInfoPage, analysisOf, hasFlux } from './material-info-page';
 import {
@@ -119,21 +130,59 @@ describe('the page of a standard material', () => {
   beforeEach(() => localStorage.clear());
 
   /** A page of the material, as its route opens it; a test may open more than one. */
-  const render = async (name: string, language = 'en', translated: readonly string[] = ['en']) => {
+  const render = async (
+    name: string | Material,
+    language = 'en',
+    translated: readonly string[] = ['en'],
+    routes: Routes = []
+  ) => {
     TestBed.resetTestingModule();
     TestBed.configureTestingModule({
       providers: [
         ...testProviders(),
-        provideRouter([]),
+        provideRouter(routes),
         { provide: PAGE_LANGUAGE, useValue: language },
         { provide: REFERENCE_LANGUAGE_LIST, useValue: translated },
-        { provide: ActivatedRoute, useValue: { data: of({ material: named(name) }) } }
+        { provide: ActivatedRoute, useValue: { data: of({ material: typeof name === 'string' ? named(name) : name }) } }
       ]
     });
     const fixture = TestBed.createComponent(MaterialInfoPage);
     await fixture.whenStable();
     return { fixture, page: fixture.nativeElement as HTMLElement };
   };
+
+  it('links the materials it is like or replaces that have a page of their own, and names the others', async () => {
+    const { page } = await render({
+      ...named('Minspar 200'),
+      substitutes: ['Custer Spar', 'Chromium Oxide'],
+      replaces: ['Kona F-4 Feldspar', 'Old Hill Spar']
+    });
+    const said = (term: string) => {
+      const dt = [...page.querySelectorAll('.facts dt')].find((one) => one.textContent?.trim() === term)!;
+      const dd = dt.nextElementSibling!;
+      return {
+        // As the line reads: each name followed straight by its comma.
+        text: dd.textContent?.replace(/\s+/g, ' ').trim(),
+        links: [...dd.querySelectorAll('a')].map((a) => a.getAttribute('href'))
+      };
+    };
+    expect(said('Similar materials')).toEqual({
+      text: 'Custer Spar, Chromium Oxide',
+      links: ['/materials/custer-spar']
+    });
+    expect(said('Replaces')).toEqual({
+      text: 'Kona F-4 Feldspar, Old Hill Spar',
+      links: ['/materials/kona-f-4-feldspar']
+    });
+  });
+
+  it('says so where a record has no hazard statement, or an analysis Glazecalc cannot work out', async () => {
+    const { page } = await render({ ...named('Silica'), hazards: undefined, loi: 120 });
+    const section = (id: string) => page.querySelector('#' + id)!.closest('section')!.textContent;
+    expect(section('hazards')).toContain('The library has no hazard statement for this material.');
+    expect(section('analysis')).toContain('Glazecalc could not work out an analysis for this material.');
+    expect(analysisOf({ ...named('Silica'), loi: 120 }).weights).toBeNull();
+  });
 
   it('says what the record says, shows the analysis and unity, and the hazards with links to the safety guides', async () => {
     const { fixture, page } = await render('Ferro Frit 3134');
@@ -313,6 +362,44 @@ describe('the page of a standard material', () => {
       // The recipe page's guard asks for a sign-in, with the recipe waiting.
       expect(failing.navigate).toHaveBeenCalledWith('/recipe');
       expect(TestBed.inject(PendingRecipeService).take()?.materials?.[0]?.name).toBe('Silica');
+    });
+
+    it('takes a visitor to the recipe page in their trial without passing the sign-in page', async () => {
+      @Component({ selector: 'gc-test-recipe', template: '' })
+      class Stand {}
+      const { page } = await render(
+        'Silica',
+        'en',
+        ['en'],
+        [
+          { path: 'recipe', canActivate: [signedInGuard], component: Stand },
+          { path: 'signin', component: Stand }
+        ]
+      );
+      const shown: string[] = [];
+      TestBed.inject(Router)
+        .events.pipe(filter((event) => event instanceof NavigationEnd))
+        .subscribe((event) => shown.push(event.urlAfterRedirects));
+      await click(page);
+      // While the trial starts, the page stays as it is.
+      expect(shown).toEqual([]);
+      httpMock()
+        .expectOne({ method: 'POST', url: API + '/guest' })
+        .flush({ guest: true, name: 'quiet kilns', expiresAt: '2099-01-01T00:00:00.000Z' });
+      await settle();
+      await settle();
+      expect(shown).toEqual(['/recipe']);
+    });
+
+    it('opens the recipe once when pressed twice', async () => {
+      const { page, startTrial, navigate } = await opened(false);
+      const button = page.querySelector<HTMLAnchorElement>('#material-try')!;
+      button.click();
+      button.click();
+      await settle();
+      expect(startTrial).toHaveBeenCalledTimes(1);
+      expect(navigate).toHaveBeenCalledTimes(1);
+      expect(navigate).toHaveBeenCalledWith('/recipe');
     });
 
     it('leaves a click for a new tab to the link', async () => {

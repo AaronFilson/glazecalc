@@ -198,6 +198,20 @@ describe('FieldChecks', () => {
     }
   });
 
+  it('waits for an input method to finish before checking a marked field again', async () => {
+    const { fixture, input, type, leave } = await create();
+    await type('email', 'potter');
+    await leave('email');
+    // Still composing (Japanese, say): the value is not the reader's yet, and the mark stays.
+    input('email').value = 'potter@clay.org';
+    input('email').dispatchEvent(new InputEvent('input', { isComposing: true }));
+    await Promise.resolve();
+    await fixture.whenStable();
+    expect(fieldProblem(fixture, 'email')).toBe('Enter an email address like name@example.com.');
+    await type('email', 'potter@clay.org');
+    expect(fieldProblem(fixture, 'email')).toBe('');
+  });
+
   it('takes the message away with a field that leaves the page', async () => {
     const { fixture, form } = await create();
     form.checks.validate();

@@ -335,6 +335,81 @@ describe('ImportPage', () => {
     expect(root.querySelectorAll('.import-recipe').length).toBe(1);
   });
 
+  it('reads a name with a number in it, such as Leach 4321, as the title over its materials', async () => {
+    const { root, paste, chosenNames } = await create();
+    await paste('Leach 4321\nCuster 40\nWhiting 20\nSilica 30\nEPK 10');
+    expect((root.querySelector('#import-title-0') as HTMLInputElement).value).toBe('Leach 4321');
+    expect(chosenNames()).toEqual(['Custer Spar', 'Whiting', 'Silica', 'EPK Kaolin']);
+  });
+
+  it('reads a number as a whole thousand again when asked', async () => {
+    const { root, page, paste } = await create();
+    await paste('Test\nCuster 50\nWhiting 22,5\nSilica 1,500');
+    const press = async (label: string) => {
+      [...root.querySelectorAll<HTMLButtonElement>('.import-ambiguous button')]
+        .find((b) => b.textContent?.trim() === label)!
+        .click();
+      await settle();
+    };
+    await press('Read 1,500 as 1.5');
+    await press('Read 1,500 as 1,500');
+    expect(page['drafts']()[0].lines.map((l: { amount: string }) => l.amount)).toEqual(['50', '22.5', '1500']);
+  });
+
+  it('counts a line as an addition once its box is ticked', async () => {
+    const { fixture, root, paste } = await create();
+    await paste('Test\nWhiting 20\nSilica 80\nCuster 5');
+    expect(text(fixture, '.import-totals')).toBe('Base materials add up to 105');
+    (root.querySelector('#import-add-0-2') as HTMLInputElement).click();
+    await settle(fixture);
+    expect(text(fixture, '.import-totals')).toBe('Base materials add up to 100 · 1 addition');
+  });
+
+  it('asks for a base material with an amount, and for a recipe to be chosen, before saving', async () => {
+    const { fixture, root, paste, save } = await create();
+    await paste('Iron wash\nRed iron oxide 2');
+    await save();
+    httpMock().expectNone(API + '/recipe/create');
+    expect(text(fixture, '.import-problems')).toBe('Keep at least one base material with an amount.');
+    (root.querySelector('#import-include-0') as HTMLInputElement).click();
+    await settle(fixture);
+    await save();
+    expect(text(fixture, '.import-save-problem')).toBe('Choose at least one recipe to save.');
+  });
+
+  it('shows the first 30 recipes of a longer paste, and says the rest come once these are saved', async () => {
+    const { fixture, root, paste } = await create();
+    await paste(Array.from({ length: 31 }, (_, i) => `Glaze ${i + 1}\nWhiting 20\nSilica 80`).join('\n\n'));
+    expect(root.querySelectorAll('.import-recipe')).toHaveLength(30);
+    expect(text(fixture)).toContain('Only the first 30 recipes are shown. Paste the rest once these are saved.');
+  });
+
+  it('waits for the lists before reading, and reads against those that came when one could not be fetched', async () => {
+    const fixture = TestBed.createComponent(ImportPage);
+    await fixture.whenStable();
+    const root = fixture.nativeElement as HTMLElement;
+    const box = root.querySelector('#paste-text') as HTMLTextAreaElement;
+    box.value = 'Test\nWhiting 20\nSilica 80';
+    box.dispatchEvent(new Event('input'));
+    await settle(fixture);
+    const read = root.querySelector('.import-actions button') as HTMLButtonElement;
+    read.click();
+    await settle(fixture);
+    expect(root.querySelector('.import-recipe')).toBeNull();
+
+    httpMock()
+      .expectOne(API + '/materials/getAll')
+      .flush(null, { status: 500, statusText: 'Server Error' });
+    answer('/materials/getStandard', [WHITING, SILICA]);
+    answer('/additives/getAll', []);
+    answer('/additives/getStandard', []);
+    await settle(fixture);
+    expect(text(fixture, '.errors-section')).not.toBe('');
+    read.click();
+    await settle(fixture);
+    expect(root.querySelectorAll('.import-recipe')).toHaveLength(1);
+  });
+
   it('says when nothing could be read', async () => {
     const { fixture, paste } = await create();
     await paste('Hello there');

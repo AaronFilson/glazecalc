@@ -13,9 +13,9 @@ const TOKEN = 'YOUR_TOKEN';
  * Code, VS Code, Cursor and Gemini CLI, with and without an access token, and
  * the studio notes skill to download (docs/adr/0027-dictation-skill.md). The
  * setups are code, the same in every language, so they are not messages.
- * Translated into every language, but not a public page: it is not
- * prerendered or in the sitemap, and search engines are told not to index it
- * (server/lib/pages.ts, isAppOnlyPage). Making it public is the owner's call.
+ * Translated into every language, and a public page since round 4 (the owner,
+ * 2026-10-19): prerendered, in the sitemap, and linked from the footer
+ * (app.routes.ts).
  */
 @Component({
   selector: 'gc-assistants-page',

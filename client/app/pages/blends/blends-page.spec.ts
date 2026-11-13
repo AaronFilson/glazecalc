@@ -391,5 +391,79 @@ describe('BlendsPage', () => {
       expect(box.getAttribute('role')).toBe('region');
       expect(box.querySelector('table')).not.toBeNull();
     });
+
+    it('marks a tile with no unity formula, and saving stops there, saying why', async () => {
+      // A wash of a material with no analysis: its tile has nothing to work out.
+      const WASH: Recipe = { _id: 'was', title: 'Wash', materials: [{ ...material('Mystery', [], 0), amount: '100' }] };
+      const { fixture, root, pick } = await create([CELADON, WASH], { recipe: 'cel' });
+      await pick('blend-corner-1', 'Wash');
+      await pick('blend-steps', '2');
+      await open(fixture);
+      expect(cells(root)[1]!.slice(0, 4)).toEqual(['2', '–', '–', '–']);
+      (root.querySelectorAll('.blend-save-fields button')[0] as HTMLButtonElement).click();
+      await settle(fixture);
+      (root.querySelector('.blend-save button') as HTMLButtonElement).click();
+      await settle(fixture);
+      httpMock()
+        .expectOne({ method: 'POST', url: API + '/recipe/create' })
+        .flush({ _id: 'one' });
+      await settle(fixture);
+      expect(text(fixture, '.blend-save .blend-problem')).toMatch(
+        /^Saved tiles: 1\. Not saved: 2\. Tile 2 was not saved: /
+      );
+    });
+  });
+
+  describe('the name of the saved tiles', () => {
+    const typeName = async (fixture: { nativeElement: HTMLElement } & Parameters<typeof settle>[0], name: string) => {
+      const field = (fixture.nativeElement as HTMLElement).querySelector('#blend-name') as HTMLInputElement;
+      field.value = name;
+      field.dispatchEvent(new Event('input'));
+      await settle(fixture);
+      return field;
+    };
+
+    it('stays as the potter typed it when a corner changes, and is asked for when left empty', async () => {
+      const { fixture, root, pick } = await create(undefined, { recipe: 'cel' });
+      await pick('blend-corner-1', 'Shino');
+      const field = root.querySelector('#blend-name') as HTMLInputElement;
+      expect(field.value).toBe('Celadon / Shino blend');
+      await typeName(fixture, 'Green line');
+      await pick('blend-corner-1', 'Matte');
+      expect(field.value).toBe('Green line');
+
+      (root.querySelectorAll('.blend-save-fields button')[0] as HTMLButtonElement).click();
+      await settle(fixture);
+      await typeName(fixture, '  ');
+      (root.querySelector('.blend-save button') as HTMLButtonElement).click();
+      await settle(fixture);
+      httpMock().expectNone(API + '/recipe/create');
+      expect(text(fixture, '.blend-save .blend-problem')).toBe('Give the saved tiles a name.');
+      expect(document.activeElement).toBe(field);
+    });
+
+    it('takes every tile off with Choose none', async () => {
+      const { fixture, root, pick, tiles } = await create(undefined, { recipe: 'cel' });
+      await pick('blend-corner-1', 'Shino');
+      const [all, none] = [...root.querySelectorAll<HTMLButtonElement>('.blend-save-fields button')];
+      all!.click();
+      await settle(fixture);
+      expect(tiles().every((tile) => tile.classList.contains('is-chosen'))).toBe(true);
+      expect(none!.textContent?.trim()).toBe('Choose none');
+      none!.click();
+      await settle(fixture);
+      expect(tiles().some((tile) => tile.classList.contains('is-chosen'))).toBe(false);
+    });
+  });
+
+  it('says when the recipes could not be fetched', async () => {
+    setup();
+    const fixture = TestBed.createComponent(BlendsPage);
+    await fixture.whenStable();
+    httpMock()
+      .expectOne(API + '/recipe/getAll')
+      .flush(null, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(text(fixture, '.errors-section')).toContain('There was an error in getting your recipes.');
   });
 });

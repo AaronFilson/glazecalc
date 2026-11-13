@@ -9,8 +9,10 @@ import { ADDITIVE_OXIDES, FIRED_OXIDES, FIRING_FIELDS, fieldsText, firingFieldLa
 import { TranslocoService } from '@jsverse/transloco';
 import { textKey } from '../../../lib/regions/languages';
 import { useCodedMessages } from '../i18n/coded';
-import { byNameIn, findNamed, matchesWords, standardText } from './library-info';
+import { Outbox } from '../core/outbox';
+import { byNameIn, chosenRegion, findNamed, matchesWords, readRegion, saveRegion, standardText } from './library-info';
 import { PageHeader } from './page-header';
+import { PendingBadge } from './pending-badge';
 
 describe('Notices', () => {
   beforeEach(() => TestBed.configureTestingModule({ providers: testProviders() }));
@@ -69,6 +71,41 @@ describe('Notices', () => {
     fixture.debugElement.query(By.css('.errors-section button')).nativeElement.click();
     await fixture.whenStable();
     expect(fixture.nativeElement.querySelector('.errors-section')).toBeNull();
+  });
+});
+
+describe('PendingBadge', () => {
+  beforeEach(() => TestBed.configureTestingModule({ providers: testProviders() }));
+
+  it('says a change made offline waits to be saved, beside its own record only', async () => {
+    vi.spyOn(TestBed.inject(Outbox), 'pendingFor').mockImplementation((area, id) => area === 'notes' && id === 'n1');
+    const fixture = TestBed.createComponent(PendingBadge);
+    fixture.componentRef.setInput('area', 'notes');
+    fixture.componentRef.setInput('id', 'n1');
+    await fixture.whenStable();
+    expect(text(fixture, '.pending-badge')).toBe('Waiting to save');
+    fixture.componentRef.setInput('id', 'n2');
+    await fixture.whenStable();
+    expect(fixture.nativeElement.querySelector('.pending-badge')).toBeNull();
+  });
+});
+
+describe('the region chosen in a list of standard records', () => {
+  afterEach(() => saveRegion(''));
+
+  it('is kept for the next list, forgotten when All regions is chosen, and none where storage is blocked', () => {
+    saveRegion('UK');
+    expect(localStorage.getItem('region')).toBe('UK');
+    expect(readRegion()).toBe('UK');
+    expect(chosenRegion()).toBe('UK');
+    saveRegion('');
+    expect(localStorage.getItem('region')).toBeNull();
+    expect(chosenRegion()).toBe('');
+    const blocked = vi.spyOn(Storage.prototype, 'getItem').mockImplementation(() => {
+      throw new DOMException('The storage is blocked.', 'SecurityError');
+    });
+    expect(readRegion()).toBe('');
+    blocked.mockRestore();
   });
 });
 

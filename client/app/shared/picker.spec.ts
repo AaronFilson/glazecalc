@@ -272,9 +272,25 @@ describe('Picker', () => {
     expect(document.activeElement).toBe(field);
   });
 
+  it('stays open on a second click in the field, and keeps the page keys while nothing is listed', async () => {
+    const { fixture, field, list, open, active } = await create();
+    await open();
+    await open();
+    expect(list()).not.toBeNull();
+    await type(fixture, field, 'zzz');
+    // Nothing to move through, and nothing to page: the keys do nothing.
+    expect(await press(fixture, field, 'ArrowDown')).toBe(true);
+    expect(active()).toBeUndefined();
+    expect(await press(fixture, field, 'PageDown')).toBe(false);
+  });
+
   it('opens and closes from its button, with the focus in the field', async () => {
     const { fixture, root, field, list } = await create();
     const toggle = root.querySelector('button')!;
+    // A press on the button leaves the focus where it is.
+    const down = new MouseEvent('mousedown', { bubbles: true, cancelable: true });
+    toggle.dispatchEvent(down);
+    expect(down.defaultPrevented).toBe(true);
     toggle.click();
     await fixture.whenStable();
     expect(list()).not.toBeNull();

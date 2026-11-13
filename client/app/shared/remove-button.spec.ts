@@ -131,6 +131,19 @@ describe('RemoveButton', () => {
     expect(document.activeElement).toBe(button('c', 'Remove Tenmoku'));
   });
 
+  it('keeps the question while the record is on its way out, even when Cancel is pressed', async () => {
+    const { host, root, press, afterRemoval } = await create();
+    await press('b', 'Remove Celadon');
+    await press('b', 'Yes, remove');
+    await press('b', 'Cancel');
+    expect(root.querySelector('#thing-b .remove-confirm')).not.toBeNull();
+    httpMock()
+      .expectOne({ method: 'DELETE', url: API + '/things/delete/b' })
+      .flush({});
+    await afterRemoval();
+    expect(host.things().map((t) => t.name)).toEqual(['Shino', 'Tenmoku']);
+  });
+
   it('removes several at once, each message replacing the last', async () => {
     const { host, press, afterRemoval } = await create();
     await press('b', 'Remove Celadon');

@@ -4,13 +4,14 @@ import { TestBed } from '@angular/core/testing';
 import { Router, provideRouter } from '@angular/router';
 import { App } from '../app';
 import { firstValueFrom } from 'rxjs';
-import { API, httpMock, settle, testProviders } from '../testing/test-providers';
+import { API, httpMock, settle, testProviders, waitFor } from '../testing/test-providers';
 import { FileLoader } from './loader';
 import { LIVE_LANGUAGES, languageFor } from '../../../lib/regions/languages';
 import { OFFERED_LANGUAGES, OPEN_PAGE, PAGE_LANGUAGE } from './language';
 import { ownLanguagePage } from './own-language';
 import { RichText } from './rich-text';
-import { READ_ENGLISH, TranslationNotice } from './translation-notice';
+import { pseudoTranslation } from './pseudo';
+import { READ_ENGLISH, TranslationNotice, readsEnglish } from './translation-notice';
 
 // Choosing a language, landing in it, and the notice on translated pages
 // (docs/i18n-plan.md). Only English is offered so far, so these use the
@@ -30,6 +31,20 @@ describe('a reader’s own language', () => {
     expect(ownLanguagePage('en', at('/recipe'))).toBeNull();
     expect(ownLanguagePage(null, at('/recipe'))).toBeNull();
     expect(ownLanguagePage('xx', at('/recipe'))).toBeNull();
+    expect(ownLanguagePage('de', at('/recipe', '?id=r1', '#notes'))).toBe('/de/recipe?id=r1#notes');
+  });
+
+  it('leaves a reader on a page in another language, and one who asked for the English in this tab', () => {
+    expect(ownLanguagePage('de', at('/fr/recipe'))).toBeNull();
+    sessionStorage.setItem(READ_ENGLISH, '1');
+    expect(ownLanguagePage('de', at('/recipe'))).toBeNull();
+    // A tab whose storage cannot be read has not asked.
+    const blocked = {
+      getItem: () => {
+        throw new Error('Blocked');
+      }
+    };
+    expect(readsEnglish(blocked)).toBe(false);
   });
 });
 
@@ -90,6 +105,18 @@ describe('the translation notice', () => {
     TestBed.inject(Location).replaceState('/other?compare=draft,abc#glazes');
     await fixture.whenStable();
     expect(english.getAttribute('href')).toBe('/other?compare=draft,abc#glazes');
+  });
+
+  it('is closed for the account too when signed in', async () => {
+    localStorage.setItem('session', 'account');
+    const { fixture, element } = await create('en-XA');
+    (element.querySelector('aside button') as HTMLButtonElement).click();
+    await fixture.whenStable();
+    const save = httpMock().expectOne({ method: 'PUT', url: API + '/preferences' });
+    expect(save.request.body).toEqual({ notice: 'hidden' });
+    save.flush({});
+    await settle(fixture);
+    expect(element.querySelector('aside')).toBeNull();
   });
 
   it('can be closed, and on a safety guide a line of it stays', async () => {
@@ -275,6 +302,15 @@ describe('loading translation files', () => {
     const english = firstValueFrom(loader.getTranslation('recipe/en'));
     httpMock().expectOne('/i18n/recipe/en.json').flush({ title: 'Recipe' });
     expect(await english).toEqual({ title: 'Recipe' });
+  });
+
+  it("makes a pseudo-locale's messages from the English file", async () => {
+    const result = firstValueFrom(TestBed.inject(FileLoader).getTranslation('en-XA'));
+    // The pseudo-locale's code comes first, then the English it is made from.
+    const english = await waitFor(() => httpMock().expectOne('/i18n/en.json'));
+    english.flush({ save: 'Save recipe' });
+    expect(await result).toEqual(pseudoTranslation({ save: 'Save recipe' }, 'en-XA'));
+    expect((await result)['save']).not.toBe('Save recipe');
   });
 
   it('still fails on other errors, which Transloco retries', async () => {

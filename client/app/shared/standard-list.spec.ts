@@ -125,6 +125,16 @@ describe('StandardList', () => {
     expect(text(fixture, 'tbody')).not.toContain('Use instead');
   });
 
+  it('names who makes a record, says an additive is counted as the material it borrows from, and when nothing matches', async () => {
+    const gum: Additive = { _id: 'g', name: 'Gum', fields: [], chemistryOf: 'Bentonite' };
+    const { fixture, names, set } = await create([record('Ferro Frit 3134', { manufacturer: 'Vibrantz' }), gum]);
+    expect(text(fixture, 'tbody')).toContain('Made by: Vibrantz');
+    const gumRow = [...fixture.nativeElement.querySelectorAll('tbody tr')][1] as HTMLElement;
+    expect(gumRow.querySelector('.standard-analysis')?.textContent?.trim()).toBe('Counted as Bentonite');
+    await set('Filter', 'zirconium');
+    expect(names()).toEqual(['Nothing matches. Try another name, kind or region.']);
+  });
+
   it('marks what is no longer current, says what to use, and links the source', async () => {
     const { fixture } = await create();
     const custer = [...fixture.nativeElement.querySelectorAll('tbody tr')][0] as HTMLElement;
