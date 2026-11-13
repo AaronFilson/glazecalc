@@ -2,9 +2,11 @@
 // record created, changed, undone and moved to the Trash with one, each change
 // kept as a version and written to the activity log; and the safeguards: the
 // scope on every write route, the owner, revocation, the limits on changes,
-// and the account's limit on versions.
+// and the account's limit on versions; and the web session's own limit on
+// changes.
 import { Types } from 'mongoose';
-import { TOKEN_LIMITS, TOKEN_WRITE_LIMITS } from '../lib/rate_limit.ts';
+import blends from '../../lib/recipe/blends.js';
+import { SESSION_WRITE_LIMITS, TOKEN_LIMITS, TOKEN_WRITE_LIMITS } from '../lib/rate_limit.ts';
 import { keepAccountVersionsWithin, saveVersion } from '../lib/record_history.ts';
 import AccessToken from '../models/access_token.ts';
 import Activity from '../models/activity.ts';
@@ -429,5 +431,76 @@ describe('access tokens that write: the shelf', () => {
     expect((await shelf(other.token)).body).to.eql({ shelf: ['name:Silica'] });
     expect((await post(write, 'remove', { key: 'name:Silica' })).body.changed).to.equal(false);
     expect((await shelf(other.token)).body).to.eql({ shelf: ['name:Silica'] });
+  });
+});
+
+// The web session's own limit on changes (SESSION_WRITE_LIMITS): before it, only
+// changes made with access tokens had one.
+describe("the web session's changes, per account", () => {
+  let user: UserDocument;
+  let session: string;
+  const limits = SESSION_WRITE_LIMITS as { minute: number; day: number };
+  const was = { ...limits };
+  beforeEach(async () => {
+    ({ user, token: session } = await makeUser());
+    process.env.RATE_LIMITS = 'on';
+  });
+  afterEach(() => {
+    process.env.RATE_LIMITS = 'off';
+    Object.assign(limits, was);
+  });
+
+  it('leaves room for the most the website saves at once: a blend of the most tiles', () => {
+    const tiles = Math.max(
+      ...(['line', 'biaxial', 'triaxial'] as const).map(
+        (kind) => blends.blendTiles(kind, blends.BLEND_STEPS[kind].max)!.tiles.length
+      )
+    );
+    expect(tiles).to.equal(66);
+    expect(SESSION_WRITE_LIMITS.minute).to.be.at.least(4 * tiles);
+    expect(SESSION_WRITE_LIMITS.day).to.be.above(SESSION_WRITE_LIMITS.minute * 10);
+  });
+
+  it('counts every change to records, the Trash and firing links in one count a minute, then answers 429', async () => {
+    limits.minute = 10;
+    const recipe = (await create('recipe', session)).body._id as string;
+    const log = (await create('firing', session)).body._id as string;
+    const note = (await create('notes', session)).body._id as string;
+    expect(await change('recipe', recipe, session)).to.have.status(200);
+    expect(await undo('recipe', recipe, session)).to.have.status(200);
+    const link = () =>
+      api().post(`/recipe/firings/${recipe}`).set('Authorization', bearer(session)).send({ firing: log });
+    expect(await link()).to.have.status(200);
+    expect(await api().delete(`/recipe/firings/${recipe}/${log}`).set('Authorization', bearer(session))).to.have.status(
+      200
+    );
+    const trashed = await remove('notes', note, session);
+    expect(trashed).to.have.status(200);
+    const trash = (path: string) => api().post(path).set('Authorization', bearer(session));
+    expect(await trash('/trash/restore/' + String(trashed.body.trashId))).to.have.status(200);
+    expect(await api().delete('/trash/empty').set('Authorization', bearer(session))).to.have.status(200);
+    // That is 10: each of these is the 11th.
+    for (const over of [
+      await create('advice', session),
+      await change('recipe', recipe, session),
+      await link(),
+      await api().delete('/trash/empty').set('Authorization', bearer(session))
+    ]) {
+      expect(over).to.have.status(429);
+      expect(over.body.code).to.equal('too-many-saves');
+    }
+    // Reading goes on, another account saves, and a token's changes have limits of their own.
+    expect(await api().get('/recipe/getAll').set('Authorization', bearer(session))).to.have.status(200);
+    expect(await create('notes', (await makeUser()).token)).to.have.status(200);
+    expect(await create('notes', await makeToken(user, { scopes: ['data:write'] }))).to.have.status(200);
+  });
+
+  it('counts a day too', async () => {
+    limits.minute = 100;
+    limits.day = 5;
+    for (let i = 0; i < 5; i++) expect(await create('notes', session)).to.have.status(200);
+    const over = await create('notes', session);
+    expect(over).to.have.status(429);
+    expect(over.body.code).to.equal('too-many-saves');
   });
 });

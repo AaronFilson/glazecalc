@@ -33,7 +33,8 @@
 // can be undone; a removed record can be put back from the Trash
 // (server/routes/trash_routes.ts). The web session can use every route; an
 // access token those its scopes allow (server/lib/require_scope.ts), and what
-// it does is written to the activity log.
+// it does is written to the activity log. The session's changes count against
+// limits.sessionWrites per account, a token's against its own limits.
 //
 // When the account asks to confirm changes made with tokens (removals, or
 // every change; docs/adr/0025-confirm-before-changes.md), a token's create,
@@ -313,9 +314,17 @@ export default function recordRoutes(
     undo: confirmFirst(area + '.undo', { removal: false, describe: about('pending-undo') })
   };
 
-  router.post('/create', writing, quota(Model, label), jsonParser, asking.create, async (req, res) => {
-    send(res, await create(whoIs(req), inputOf(req)));
-  });
+  router.post(
+    '/create',
+    writing,
+    limits.sessionWrites,
+    quota(Model, label),
+    jsonParser,
+    asking.create,
+    async (req, res) => {
+      send(res, await create(whoIs(req), inputOf(req)));
+    }
+  );
 
   // Read lean and sent a record at a time (server/lib/stream_json.ts), as the documents would write them.
   router.get('/getAll', reading, async (req, res) => {
@@ -336,12 +345,12 @@ export default function recordRoutes(
     res.status(200).json(newest);
   });
 
-  router.put('/change/:id', writing, jsonParser, asking.change, async (req, res) => {
+  router.put('/change/:id', writing, limits.sessionWrites, jsonParser, asking.change, async (req, res) => {
     send(res, await change(whoIs(req), inputOf(req)));
   });
 
   // A removal that waits is counted against its token's removals when it is made (rest_changes.ts), not now.
-  router.delete('/delete/:id', writing, asking.remove, limits.tokenDeletes, async (req, res) => {
+  router.delete('/delete/:id', writing, limits.sessionWrites, asking.remove, limits.tokenDeletes, async (req, res) => {
     send(res, await remove(whoIs(req), inputOf(req)));
   });
 
@@ -364,7 +373,7 @@ export default function recordRoutes(
       .json(versions.map(({ _id, savedAt, by, record }) => ({ _id, savedAt, by, title: titleOf(record as Body) })));
   });
 
-  router.post('/undo/:id', writing, asking.undo, async (req, res) => {
+  router.post('/undo/:id', writing, limits.sessionWrites, asking.undo, async (req, res) => {
     send(res, await undo(whoIs(req), inputOf(req)));
   });
 

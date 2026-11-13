@@ -19,6 +19,7 @@ import mongoose from 'mongoose';
 import { pullFiringLinks } from '../lib/firing_links.ts';
 import jwtAuth, { userOf } from '../lib/jwt_auth.ts';
 import { say } from '../lib/messages.ts';
+import * as limits from '../lib/rate_limit.ts';
 import { logActivity } from '../lib/record_history.ts';
 import requireScope from '../lib/require_scope.ts';
 import { confirmFirst, inputOf, named, registerOp, send, type Op } from '../lib/rest_changes.ts';
@@ -85,11 +86,11 @@ const askToRestore = confirmFirst('trash.restore', {
   }
 });
 
-trashRouter.post('/restore/:id', requireScope('trash:write'), askToRestore, async (req, res) => {
+trashRouter.post('/restore/:id', requireScope('trash:write'), limits.sessionWrites, askToRestore, async (req, res) => {
   send(res, await restore({ user: userOf(req), access: req.access }, inputOf(req)));
 });
 
-trashRouter.delete('/delete/:id', jwtAuth, async (req, res) => {
+trashRouter.delete('/delete/:id', jwtAuth, limits.sessionWrites, async (req, res) => {
   if (!validId(req.params.id)) return res.status(400).json(say('invalid-id'));
   const ownedBy = userOf(req).id as string;
   const entry = await Trash.findOneAndDelete({ _id: req.params.id, ownedBy }).select({ record: 0 }).lean();
@@ -100,7 +101,7 @@ trashRouter.delete('/delete/:id', jwtAuth, async (req, res) => {
   return res.status(200).json(say('record-deleted', { label: LABELS[entry.fromCollection] ?? 'trash' }));
 });
 
-trashRouter.delete('/empty', jwtAuth, async (req, res) => {
+trashRouter.delete('/empty', jwtAuth, limits.sessionWrites, async (req, res) => {
   const ownedBy = userOf(req).id as string;
   const entries = await Trash.find({ ownedBy }).select({ recordId: 1, fromCollection: 1 }).lean();
   const ids = entries.flatMap((entry) => (entry.recordId ? [entry.recordId] : []));

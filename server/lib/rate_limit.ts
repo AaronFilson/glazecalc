@@ -221,6 +221,36 @@ export const tokenWriteDay = limiter(24 * 60, () => TOKEN_WRITE_LIMITS.day, 'too
 });
 
 /**
+ * Changes made with the web session to an account's records, a trial's
+ * included: the record routes' create, change, delete and undo, the Trash's
+ * put back and deletes, and a recipe's firing links (server/lib/record_routes.ts,
+ * server/routes/trash_routes.ts, server/lib/firing_links.ts), per account:
+ * 300 a minute and 10,000 a day. Far more than a person makes on the website
+ * (saving a blend of 66 tiles is 66 saves, a paste saves up to 30 recipes),
+ * and more than the offline outbox sends at once when it is back online (on a
+ * 429 it waits and tries again); few enough that one account cannot keep the
+ * server busy saving, or fill its disk in a day: a save can be 100 KB, and a
+ * change keeps the record's earlier version too. Before, only changes made
+ * with access tokens had a limit (TOKEN_WRITE_LIMITS), so a script holding a
+ * session had none. Read at each request, so the tests can lower them.
+ */
+export const SESSION_WRITE_LIMITS = { minute: 300, day: 10_000 } as const;
+const sessionWritesKey = (req: Request): string => 'session-writes:' + String(req.user?._id);
+const notSession = (req: Request): boolean => req.access?.via !== 'session';
+const sessionWritesMinute = limiter(1, () => SESSION_WRITE_LIMITS.minute, 'too-many-saves', {
+  skip: notSession,
+  keyGenerator: sessionWritesKey
+});
+const sessionWritesDay = limiter(24 * 60, () => SESSION_WRITE_LIMITS.day, 'too-many-saves', {
+  skip: notSession,
+  keyGenerator: (req) => sessionWritesKey(req) + ':day'
+});
+/** SESSION_WRITE_LIMITS, the minute's and the day's, for a route: after jwtAuth or requireScope, which say whose session it is. */
+export const sessionWrites = (req: Request, res: Response, next: NextFunction): void => {
+  void sessionWritesMinute(req, res, (err?: unknown) => (err ? next(err) : void sessionWritesDay(req, res, next)));
+};
+
+/**
  * Counts one change made through the MCP write tools against the account's
  * TOKEN_WRITE_LIMITS, in the same counts as the record routes; resolves false
  * once over, and the change is then not made. As a limiter does, a refused
