@@ -113,8 +113,8 @@ describe('RecipePage', () => {
   /** Adds materials with amounts, as picking from the list and typing would. */
   const fill = (page: Page, lines: Array<[Material, string]>) => {
     for (const [m, amount] of lines) {
-      page['addMaterial'](m);
-      page['setAmount'](page['lines']().length - 1, amount);
+      page['edit'].addMaterial(m);
+      page['edit'].setAmount(page['lines']().length - 1, amount);
     }
   };
 
@@ -184,7 +184,7 @@ describe('RecipePage', () => {
       [{ ...WHITING, ownedBy: 'Standard', hazards: 'An old sheet.' }, '20'],
       [{ ...SILICA, ownedBy: 'Standard' }, '80']
     ]);
-    page['addAdditive'](IRON);
+    page['edit'].addAdditive(IRON);
     await fixture.whenStable();
     expect([...root.querySelectorAll('.recipe-hazards li')].map((li) => li.textContent?.trim())).toEqual([
       'Whiting: Fine dust; avoid breathing it.',
@@ -224,7 +224,7 @@ describe('RecipePage', () => {
     // The one-line summary for phones.
     expect(text(fixture, '.unity-inline')).toContain('CaO 1.000');
 
-    page['setAmount'](1, '60');
+    page['edit'].setAmount(1, '60');
     await fixture.whenStable();
     expect(text(fixture, '.unity-result')).toContain('SiO₂ : ' + (60 / 60.083 / (20 / 100.08)).toFixed(3));
   });
@@ -235,8 +235,8 @@ describe('RecipePage', () => {
       [WHITING, '20'],
       [SILICA, '30']
     ]);
-    page['addAdditive'](COBALT);
-    page['setAdditiveAmount'](0, '2');
+    page['edit'].addAdditive(COBALT);
+    page['edit'].setAdditiveAmount(0, '2');
     await fixture.whenStable();
     // Left out by default, as many calculators do.
     expect(page['evaluation']().analysis.uList.CoO).toBeUndefined();
@@ -253,8 +253,8 @@ describe('RecipePage', () => {
     expect(text(fixture, '.unity-result')).toContain('Counted in the unity formula');
 
     // In parts, the amount is a weight in the base's own unit.
-    page['setAdditiveUnit'](0, 'parts');
-    page['setAdditiveAmount'](0, '1');
+    page['edit'].setAdditiveUnit(0, 'parts');
+    page['edit'].setAdditiveAmount(0, '1');
     expect(page['evaluation']().analysis.uList.CoO / page['evaluation']().analysis.uList.CaO).toBeCloseTo(
       cobalt / calcium,
       6
@@ -270,8 +270,8 @@ describe('RecipePage', () => {
       [standard(WHITING), '100'],
       [standard(SILICA), '100']
     ]);
-    page['addAdditive']({ ...BENTONITE, ownedBy: 'Standard' });
-    page['setAdditiveAmount'](0, '2');
+    page['edit'].addAdditive({ ...BENTONITE, ownedBy: 'Standard' });
+    page['edit'].setAdditiveAmount(0, '2');
     const estimate = page['drySgEstimate']();
     // 2% of a 200 g base is 4 g of bentonite: left out, 4 of 204 g.
     expect(estimate.parts.find((part: { name: string }) => part.name === 'Bentonite').grams).toBeCloseTo(4, 9);
@@ -650,20 +650,24 @@ describe('RecipePage', () => {
       { _id: 'c', title: 'Low fire', materials: [], firedAt: { scale: 'orton', low: '06' } },
       { _id: 'd', title: 'No firing', materials: [] }
     ];
-    const { fixture, page } = await create(recipes);
-    const titles = () => page['shownRecipes']().map((r: Recipe) => r.title);
-    const options = [...fixture.nativeElement.querySelectorAll('#saved-cone-filter option')].map((o: Element) =>
-      o.textContent?.trim()
-    );
+    const { fixture } = await create(recipes);
+    const root = fixture.nativeElement as HTMLElement;
+    const titles = () => [...root.querySelectorAll('.saved-recipe-open')].map((b) => b.textContent?.trim());
+    const choose = async (id: string, value: string) => {
+      const select = root.querySelector('#' + id) as HTMLSelectElement;
+      select.value = value;
+      select.dispatchEvent(new Event('change'));
+      await fixture.whenStable();
+    };
+    const options = [...root.querySelectorAll('#saved-cone-filter option')].map((o) => o.textContent?.trim());
     expect(options).toEqual(['Any cone', 'cone 06', 'cone 5', 'cone 6', 'cone 7']);
-    page['coneFilter'].set('orton:6');
+    await choose('saved-cone-filter', 'orton:6');
     expect(titles()).toEqual(['Tested six', 'Ranged']);
-    page['coneFilter'].set('orton:06');
+    await choose('saved-cone-filter', 'orton:06');
     expect(titles()).toEqual(['Low fire']);
-    page['coneFilter'].set('');
-    page['atmosphereFilter'].set('reduction');
+    await choose('saved-cone-filter', '');
+    await choose('saved-atmosphere-filter', 'reduction');
     expect(titles()).toEqual(['Tested six']);
-    await fixture.whenStable();
     expect(text(fixture, '.saved-firing')).toBe('Tested at cone 6 · reduction');
   });
 
@@ -671,7 +675,7 @@ describe('RecipePage', () => {
     const { page } = await create();
     fill(page, [[WHITING, '5']]);
     expect((WHITING as { amount?: string }).amount).toBeUndefined();
-    expect(page['standardMaterials']()[0]).toBe(WHITING);
+    expect(page['libraries'].standardMaterials()[0]).toBe(WHITING);
   });
 
   it('says why there is no unity formula instead of showing an error', async () => {
@@ -680,7 +684,7 @@ describe('RecipePage', () => {
     await fixture.whenStable();
     expect(text(fixture, '.unity-problem')).toContain('no flux');
 
-    page['setAmount'](0, 'lots');
+    page['edit'].setAmount(0, 'lots');
     await fixture.whenStable();
     expect(text(fixture, '.unity-problem')).toContain('Invalid amount for material Silica');
     expect(page['notices'].errors()).toEqual([]);
@@ -698,7 +702,7 @@ describe('RecipePage', () => {
     );
     expect(warnings.length).toBeGreaterThan(0);
     expect(new Set(warnings).size).toBe(warnings.length);
-    page['removeMaterial'](1);
+    page['edit'].removeMaterial(1);
     await fixture.whenStable();
     expect(fixture.nativeElement.querySelector('.unity-warnings')).toBeNull();
   });
@@ -709,11 +713,11 @@ describe('RecipePage', () => {
       [WHITING, '3'],
       [SILICA, '2']
     ]);
-    page['addAdditive'](IRON);
-    page['setAdditiveAmount'](0, '2');
-    page['addAdditive'](RUTILE);
-    page['setAdditiveAmount'](1, '1');
-    page['setAdditiveUnit'](1, 'parts');
+    page['edit'].addAdditive(IRON);
+    page['edit'].setAdditiveAmount(0, '2');
+    page['edit'].addAdditive(RUTILE);
+    page['edit'].setAdditiveAmount(1, '1');
+    page['edit'].setAdditiveUnit(1, 'parts');
     // Colorants start as a percent of the base, as most recipes give them.
     expect(page['additiveLines']()[0].unit).toBe('percent');
     const amounts = () => [
@@ -721,25 +725,25 @@ describe('RecipePage', () => {
       ...page['additiveLines']().map((a: { amount: string }) => a.amount)
     ];
 
-    page['scale']({ to: 'percent' });
+    page['edit'].scale({ to: 'percent' });
     expect(amounts()).toEqual(['60', '40', '2', '20']);
-    page['scale']({ to: 'parts' });
+    page['edit'].scale({ to: 'parts' });
     expect(amounts()).toEqual(['3', '2', '2', '1']);
-    page['setBatchText']('500');
-    page['scaleToBatch']();
+    page['edit'].setBatchText('500');
+    page['edit'].scaleToBatch();
     expect(amounts()).toEqual(['300', '200', '2', '100']);
     await fixture.whenStable();
     expect(text(fixture, '.recipe-scale-note')).toBe('Now in grams for the batch.');
     expect(additivesShown(fixture)).toEqual(['Iron oxide : 2%', 'Rutile : 100 parts']);
 
-    page['setBatchText']('');
-    page['scaleToBatch']();
+    page['edit'].setBatchText('');
+    page['edit'].scaleToBatch();
     await fixture.whenStable();
     expect(text(fixture, '.recipe-scale-note')).toBe('Please enter the weight of the batch, in grams.');
 
     // An amount it cannot read stops it, rather than changing the proportions around it.
-    page['setAmount'](1, '12,5');
-    page['scale']({ to: 'percent' });
+    page['edit'].setAmount(1, '12,5');
+    page['edit'].scale({ to: 'percent' });
     expect(amounts()).toEqual(['300', '12,5', '2', '100']);
     await fixture.whenStable();
     expect(text(fixture, '.recipe-scale-note')).toBe(
@@ -756,11 +760,11 @@ describe('RecipePage', () => {
       [WHITING, '3'],
       [SILICA, '2']
     ]);
-    page['addAdditive'](IRON);
-    page['setAdditiveAmount'](0, '2');
-    page['addAdditive'](RUTILE);
-    page['setAdditiveAmount'](1, '0.5');
-    page['setAdditiveUnit'](1, 'grams');
+    page['edit'].addAdditive(IRON);
+    page['edit'].setAdditiveAmount(0, '2');
+    page['edit'].addAdditive(RUTILE);
+    page['edit'].setAdditiveAmount(1, '0.5');
+    page['edit'].setAdditiveUnit(1, 'grams');
     const amounts = () => [
       ...page['lines']().map((l: { amount: string }) => l.amount),
       ...page['additiveLines']().map((a: { amount: string }) => a.amount)
@@ -772,14 +776,14 @@ describe('RecipePage', () => {
     click(fixture, 'Scale to a batch');
     await fixture.whenStable();
     expect(text(fixture, 'label[for="batch-weight"]')).toBe('Batch weight (lb)');
-    expect(page['batchText']()).toBe('1');
-    page['setBatchText']('');
-    page['scaleToBatch']();
+    expect(page['edit'].batchText()).toBe('1');
+    page['edit'].setBatchText('');
+    page['edit'].scaleToBatch();
     await fixture.whenStable();
     expect(text(fixture, '.recipe-scale-note')).toBe('Please enter the weight of the batch in pounds, such as 2.5.');
 
-    page['setBatchText']('2.5');
-    page['scaleToBatch']();
+    page['edit'].setBatchText('2.5');
+    page['edit'].scaleToBatch();
     await fixture.whenStable();
     // Pounds: 1.5 lb whiting and 1 lb silica; the iron stays 2% of the base, and the rutile scales with it.
     expect(amounts()).toEqual(['1.5', '1', '2', '0.25']);
@@ -793,20 +797,20 @@ describe('RecipePage', () => {
     // Materials, the total, then the colorants: 2% of 2.5 lb is 0.8 oz.
     expect(weights()).toEqual(['1 lb 8 oz', '1 lb', '2 lb 8 oz', '0.8 oz', '4 oz']);
     // They follow the amounts.
-    page['setAdditiveAmount'](0, '4');
+    page['edit'].setAdditiveAmount(0, '4');
     await fixture.whenStable();
     expect(weights()[3]).toBe('1.6 oz');
 
     // Another scale is not in pounds.
-    page['scale']({ to: 'percent' });
+    page['edit'].scale({ to: 'percent' });
     await fixture.whenStable();
     expect(weights()).toEqual([]);
 
     // Typed in pounds, so in grams it starts from the gram default.
     preferences.remember('weightUnit', 'g');
-    expect(page['batchText']()).toBe('500');
+    expect(page['edit'].batchText()).toBe('500');
     preferences.remember('weightUnit', 'lb');
-    expect(page['batchText']()).toBe('2.5');
+    expect(page['edit'].batchText()).toBe('2.5');
   });
 
   it("chooses and saves each colorant's unit; recipes saved without one read as percent", async () => {
@@ -877,14 +881,14 @@ describe('RecipePage', () => {
     formatLocale.set('de-DE');
     try {
       fill(page, [[WHITING, '10']]);
-      page['addAdditive'](IRON);
-      page['setAdditiveAmount'](0, '0.5');
-      page['addAdditive'](RUTILE);
-      page['setAdditiveAmount'](1, '1.5');
-      page['setAdditiveUnit'](1, 'parts');
-      page['addAdditive'](COBALT);
-      page['setAdditiveAmount'](2, '1');
-      page['setAdditiveUnit'](2, 'parts');
+      page['edit'].addAdditive(IRON);
+      page['edit'].setAdditiveAmount(0, '0.5');
+      page['edit'].addAdditive(RUTILE);
+      page['edit'].setAdditiveAmount(1, '1.5');
+      page['edit'].setAdditiveUnit(1, 'parts');
+      page['edit'].addAdditive(COBALT);
+      page['edit'].setAdditiveAmount(2, '1');
+      page['edit'].setAdditiveUnit(2, 'parts');
       await fixture.whenStable();
       expect(additivesShown(fixture)).toEqual(['Iron oxide : 0,5%', 'Rutile : 1,5 parts', 'Cobalt Oxide : 1 part']);
     } finally {
@@ -899,8 +903,8 @@ describe('RecipePage', () => {
       [WHITING, '10'],
       [DOLOMITE, '20']
     ]);
-    page['addAdditive'](IRON);
-    page['setAdditiveAmount'](0, '2');
+    page['edit'].addAdditive(IRON);
+    page['edit'].setAdditiveAmount(0, '2');
     expect(page['status']()).toBe('Not saved yet');
 
     const saving = page['save']();
@@ -927,7 +931,7 @@ describe('RecipePage', () => {
     // The editor's heading is the recipe's title.
     expect(text(fixture, '#editor-heading')).toBe('Matte');
 
-    page['setAmount'](1, '25');
+    page['edit'].setAmount(1, '25');
     expect(page['status']()).toBe('Changes not saved yet');
     const again = page['save']();
     const change = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r1' });
@@ -990,7 +994,7 @@ describe('RecipePage', () => {
     expect(page['additiveLines']()[0].amount).toBe('1.5');
     expect(page['dirty']()).toBe(false);
 
-    page['setAmount'](0, '25');
+    page['edit'].setAmount(0, '25');
     page['open'](second);
     await fixture.whenStable();
     expect(page['title']()).toBe('Celadon');
@@ -1021,17 +1025,17 @@ describe('RecipePage', () => {
     expect(fieldProblem(fixture, 'recipe-name')).toBe('Give the recipe a title.');
     expect(document.activeElement?.id).toBe('recipe-name');
     page['title'].set('Matte');
-    page['addMaterial'](WHITING);
+    page['edit'].addMaterial(WHITING);
     await tryToSave('');
     expect(fieldProblem(fixture, 'recipe-name')).toBe('');
     expect(fieldProblem(fixture, 'material-amount-0')).toBe('Enter an amount (0 is fine).');
     expect(document.activeElement?.id).toBe('material-amount-0');
-    page['setAmount'](0, '-2');
+    page['edit'].setAmount(0, '-2');
     await tryToSave('');
     expect(fieldProblem(fixture, 'material-amount-0')).toBe('Enter a number, such as 12.5.');
-    page['setAmount'](0, '0');
-    page['addMaterial'](SILICA);
-    page['setAmount'](1, '30');
+    page['edit'].setAmount(0, '0');
+    page['edit'].addMaterial(SILICA);
+    page['edit'].setAmount(1, '30');
     await tryToSave('Not saved: Recipe contains no flux oxides, so the UMF is undefined');
     httpMock().expectNone(API + '/recipe/create');
   });
@@ -1047,7 +1051,7 @@ describe('RecipePage', () => {
       await fixture.whenStable();
       return event;
     };
-    page['addMaterial'](WHITING);
+    page['edit'].addMaterial(WHITING);
     await fixture.whenStable();
     // Empty: it stays, marked, and nothing is sent.
     const empty = await enter('material-amount-0');
@@ -1055,7 +1059,7 @@ describe('RecipePage', () => {
     expect(document.activeElement?.id).toBe('material-amount-0');
     expect(fieldProblem(fixture, 'material-amount-0')).toBe('Enter an amount (0 is fine).');
     // An Enter that ends a composition is left to it.
-    page['setAmount'](0, '20');
+    page['edit'].setAmount(0, '20');
     await fixture.whenStable();
     const composing = await enter('material-amount-0', { isComposing: true });
     expect(composing.defaultPrevented).toBe(false);
@@ -1064,8 +1068,8 @@ describe('RecipePage', () => {
     expect(document.activeElement?.id).toBe('materials-filter');
     expect(fieldProblem(fixture, 'material-amount-0')).toBe('');
     // An additive's amount goes back to the additives' list.
-    page['addAdditive'](IRON);
-    page['setAdditiveAmount'](0, '2');
+    page['edit'].addAdditive(IRON);
+    page['edit'].setAdditiveAmount(0, '2');
     await fixture.whenStable();
     await enter('additive-amount-0');
     expect(document.activeElement?.id).toBe('additives-filter');
@@ -1139,7 +1143,7 @@ describe('RecipePage', () => {
     page['title'].set('Matte');
     fill(page, [[WHITING, '10']]);
     const saving = page['saveAndNext']();
-    page['setAmount'](0, '12');
+    page['edit'].setAmount(0, '12');
     const req = httpMock().expectOne(API + '/recipe/create');
     expect(req.request.body.materials[0].amount).toBe('10');
     req.flush({ _id: 'r1', title: 'Matte', materials: [] });
@@ -1183,11 +1187,11 @@ describe('RecipePage', () => {
       [SILICA, '2']
     ]);
     await fixture.whenStable();
-    page['removeMaterial'](1);
+    page['edit'].removeMaterial(1);
     await fixture.whenStable();
     expect(document.activeElement?.id).toBe('material-remove-0');
     expect(text(fixture, ':scope > p.visually-hidden[role=status]')).toBe('Silica taken out of the recipe.');
-    page['removeMaterial'](0);
+    page['edit'].removeMaterial(0);
     await fixture.whenStable();
     expect(document.activeElement?.id).toBe('materials-heading');
   });
@@ -1380,7 +1384,7 @@ describe('RecipePage', () => {
     answer('/materials/getStandard', [WHITING]);
     await settle(fixture);
     expect(library().textContent).toContain('Whiting');
-    expect(page['standardMaterialsFailed']()).toBe(false);
+    expect(page['libraries'].standardMaterialsFailed()).toBe(false);
   });
 
   it('reports lists that fail to load', async () => {
@@ -1525,8 +1529,8 @@ describe('RecipePage', () => {
       [WHITING, '20'],
       [SILICA, '30']
     ]);
-    page['addAdditive'](IRON);
-    page['setAdditiveAmount'](0, '2');
+    page['edit'].addAdditive(IRON);
+    page['edit'].setAdditiveAmount(0, '2');
     await fixture.whenStable();
     const root = fixture.nativeElement as HTMLElement;
     const materials = () => [...root.querySelectorAll('.recipe-materials tbody bdi')].map((b) => b.textContent);
@@ -1896,7 +1900,7 @@ describe('RecipePage', () => {
       page['title'].set('My celadon');
       fill(page, [[WHITING, '20']]);
       // The compare view hides the editor; the question still shows.
-      page['compareDraft']();
+      page['views'].compareDraft();
       await settle(harness.fixture);
       const root = harness.routeNativeElement!;
       expect(root.querySelector('.recipe-editor')!.closest('[hidden]')).not.toBeNull();
@@ -2223,6 +2227,12 @@ describe('RecipePage', () => {
       notes: ['None.']
     };
 
+    /** The materials on hand that Match with what I have lists, by name. */
+    const onHand = (fixture: { nativeElement: HTMLElement }) =>
+      [...fixture.nativeElement.querySelectorAll('.recipe-shelf .try-list .try-name')].map((name) =>
+        name.textContent?.trim()
+      );
+
     const start = async (recipes: Recipe[] = [OLD]) => {
       const fixture = TestBed.createComponent(RecipePage);
       const router = TestBed.inject(Router);
@@ -2252,7 +2262,7 @@ describe('RecipePage', () => {
       expect(document.activeElement?.id).toBe('compare-heading');
 
       // Another choice replaces the address, so Back still leaves the comparison.
-      page['chooseCompared']({ side: 'right', key: 'draft' });
+      page['views'].chooseCompared({ side: 'right', key: 'draft' });
       await settle(fixture);
       expect(router.url).toBe('/?compare=draft,draft');
       click(fixture, 'Back to the recipe');
@@ -2321,16 +2331,16 @@ describe('RecipePage', () => {
       const { fixture, page } = await start();
       page['open'](OLD);
       await settle(fixture);
-      page['tryModernMaterials']();
+      click(fixture, 'Try modern materials and compare');
       await settle(fixture);
-      page['closeCompare']();
+      page['views'].closeCompare();
       await settle(fixture);
       const removing = page['remove'](OLD);
       httpMock()
         .expectOne({ method: 'DELETE', url: API + '/recipe/delete/r1' })
         .flush({});
       await removing;
-      page['undoSwap']();
+      click(fixture, 'Undo the swap');
       await settle(fixture);
       expect(page['title']()).toBe('Old celadon');
       expect(page['savedId']()).toBeNull();
@@ -2352,11 +2362,12 @@ describe('RecipePage', () => {
         [WHITING, '20'],
         [SILICA, '40']
       ]);
-      page['tryModernMaterials']();
       await settle(fixture);
-      page['closeCompare']();
+      click(fixture, 'Try modern materials and compare');
       await settle(fixture);
-      const labels = () => page['compareChoices']().map((choice: { label: string }) => choice.label);
+      page['views'].closeCompare();
+      await settle(fixture);
+      const labels = () => page['views'].compareChoices().map((choice: { label: string }) => choice.label);
       expect(labels()).toContain('Before the swap: Celadon A');
       page['startNew']();
       page['discardAndLeave']();
@@ -2399,7 +2410,7 @@ describe('RecipePage', () => {
       const note = text(fixture, '.recipe-swap');
       expect(note).toContain('Lead Bisilicate Frit is what is used now, but it is not like for like');
       expect(note).toContain('Lead Bisilicate Frit still contains lead.');
-      page['tryModernMaterials']();
+      click(fixture, 'Try modern materials and compare');
       await settle(fixture);
       expect(page['notes']()).toBe(
         'Swapped one for one: Litharge became Lead Bisilicate Frit (work its amount out again).'
@@ -2666,7 +2677,9 @@ describe('RecipePage', () => {
       expect(document.activeElement?.id).toBe('lead-heading');
       expect((fixture.nativeElement.querySelector('#lead-cone') as HTMLSelectElement).value).toBe('04');
       expect(text(fixture, 'label[for="lead-base-0"]')).toBe('Borosilicate frit (15% boron, B₂O₃)');
-      page['chooseCone']('06');
+      const cone = fixture.nativeElement.querySelector('#lead-cone') as HTMLSelectElement;
+      cone.value = '06';
+      cone.dispatchEvent(new Event('change'));
       await settle(fixture);
 
       click(fixture, 'Replace lead and compare');
@@ -2700,7 +2713,7 @@ describe('RecipePage', () => {
         [SILICA, '40']
       ]);
       await settle(fixture);
-      page['tryModernMaterials']();
+      click(fixture, 'Try modern materials and compare');
       await settle(fixture);
       expect(router.url).toBe('/?compare=before,draft');
       expect(text(fixture, '#compare-title')).toBe('Untitled recipe and Untitled recipe with modern materials');
@@ -2796,10 +2809,7 @@ describe('RecipePage', () => {
       // On hand: whiting, the feldspar, and one of the potter's own that this page does not have.
       answer('/shelf', { shelf: ['Whiting', 'mine-1', 'G-200 EU Feldspar'] });
       await settle(fixture);
-      expect(page['shelfTries']().map((tried: { material: Material }) => tried.material.name)).toEqual([
-        'Whiting',
-        'G-200 EU Feldspar'
-      ]);
+      expect(onHand(fixture)).toEqual(['Whiting', 'G-200 EU Feldspar']);
       click(fixture, 'Add the materials in this recipe');
       const put = httpMock().expectOne(API + '/shelf');
       expect(put.request.body).toEqual({ shelf: ['Whiting', 'mine-1', 'G-200 EU Feldspar', 'Custer Spar', 'Silica'] });
@@ -2841,9 +2851,7 @@ describe('RecipePage', () => {
       answer('/shelf', { shelf: ['Lead bisilicate', 'G-200 EU Feldspar', 'Whiting', 'Silica'] });
       await settle(fixture);
       expect(text(fixture, '.recipe-shelf-lead')).toBe('1 with lead is not used: lead is off in Settings.');
-      expect(page['shelfTries']().map((tried: { material: Material }) => tried.material.name)).not.toContain(
-        'Lead bisilicate'
-      );
+      expect(onHand(fixture)).not.toContain('Lead bisilicate');
 
       // Still on hand, for when lead is on: a change keeps it.
       (
@@ -2909,8 +2917,8 @@ describe('RecipePage', () => {
       await fixture.whenStable();
       expect(text(fixture, '.recipe-save-problem')).toBe('Please add at least one material to compare.');
       fill(page, [[WHITING, '20']]);
-      page['addAdditive'](RUTILE);
-      page['setAdditiveAmount'](0, '2 %');
+      page['edit'].addAdditive(RUTILE);
+      page['edit'].setAdditiveAmount(0, '2 %');
       await fixture.whenStable();
       click(fixture, 'Compare');
       await fixture.whenStable();

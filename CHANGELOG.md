@@ -1133,6 +1133,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **The recipe page is in parts** a person can hold: `recipe-page.ts` went from 2,362 lines to 982 and its template
+  from 1,279 to 546. The saved list, the swaps (modern materials, Suggest amounts, Replace lead, Match with what I
+  have and Undo), the print and compare views, the materials and colorants tables and the lists to add from are
+  components and classes of their own beside it, behind the recipe area's tests (99% of statements), with the same
+  page for anyone using it.
 - **The chemistry library's JavaScript is type-checked against its declarations** (`lib/tsconfig.json`, in
   `npm run typecheck` and so in CI; not strict yet): each module's use of another is checked against the `.d.ts` the
   app and the server read. It found drift: `say` (`lib/recipe/messages.js`) and `added`, `changed`, `removed` and
