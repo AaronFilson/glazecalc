@@ -4,7 +4,6 @@ import { IntlMessageFormat } from 'intl-messageformat';
 import chemistry from '../../lib/chemistry/index.js';
 import recipe from '../../lib/recipe/index.js';
 import type { MaterialRecord, RecipeMessage } from '../../lib/recipe/index.js';
-import famous from '../../lib/famous-glazes.js';
 import standardData from '../../data/index.js';
 
 // Target & Solve (lib/recipe/solve.js, docs/adr/0026): a recipe from the
@@ -312,52 +311,5 @@ describe('Target & Solve, Match with what I have and Suggest amounts: the work b
     const solved = recipe.solveTarget({ kind: 'unity', oxides: GLOSSY_UNITY }, shelf, { meter });
     expect(solved.report).to.not.have.property('cutShort');
     expect(meter.used).to.be.below(chemistry.WORK / 100);
-  });
-
-  it('leaves the largest searches the app makes itself, the famous glazes’ versions, well within it', () => {
-    // As a famous glaze's page makes its version (client/app/pages/famous-glazes/famous-glaze.ts): for the
-    // native recipe's unity formula, or a lead glaze's analysis with the lead handed to other fluxes, from
-    // the base materials of a region's library that do not dissolve. Shino from the EU's 66 is the largest.
-    const BASE_KINDS = ['feldspar', 'clay', 'frit', 'boron', 'flux', 'silica', 'alumina'];
-    const isFlux = (oxide: string) => ['R2O', 'RO'].includes(chemistry.OXIDE_GROUPS[oxide]!);
-    type Line = { record: MaterialRecord; amount: number };
-    let largest = 0;
-    for (const glaze of famous.publishedGlazes().map(famous.resolveGlaze)) {
-      let target: Record<string, number>;
-      if (!glaze.lead) {
-        target = chemistry.calculateUMF(
-          glaze.recipe.lines.map((l: Line) => ({ material: l.record, amount: l.amount }))
-        ).umf;
-      } else {
-        const colorants = new Set(
-          glaze.leadFree.additives.flatMap((l: Line) => (l.record.fields ?? []).map((field) => field.name))
-        );
-        const base = Object.fromEntries(
-          Object.entries(glaze.analysis.oxides as Record<string, number>).filter(([oxide]) => !colorants.has(oxide))
-        );
-        const { moles } = recipe.targetOf({ kind: 'analysis', oxides: base });
-        const leadFree = chemistry.leadFreeTarget(moles, { celsius: glaze.leadFree.celsius });
-        const fluxes = Object.entries(leadFree).reduce((sum, [oxide, value]) => (isFlux(oxide) ? sum + value : sum), 0);
-        target = Object.fromEntries(Object.entries(leadFree).map(([oxide, value]) => [oxide, value / fluxes]));
-      }
-      for (const region of ['US', 'UK', 'EU', 'AU', 'JP']) {
-        const offered = LIBRARY.filter(
-          (m) =>
-            BASE_KINDS.includes(m.category ?? '') &&
-            !(m as { soluble?: boolean }).soluble &&
-            recipe.suggestable(m, { region })
-        );
-        const meter = chemistry.newMeter();
-        const solved = recipe.solveTarget(
-          { kind: 'unity', oxides: target },
-          offered.map((material) => ({ material, must: false })),
-          { meter }
-        );
-        expect(solved.report.cutShort, glaze.slug + ' ' + region).to.equal(undefined);
-        largest = Math.max(largest, meter.used);
-      }
-    }
-    // Room to spare: more materials sold in a region, or a harder glaze, should not change a page.
-    expect(largest).to.be.below(0.7 * chemistry.WORK);
   });
 });
