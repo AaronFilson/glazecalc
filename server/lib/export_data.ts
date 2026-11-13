@@ -182,11 +182,14 @@ export const exportJson = async (userId: Id, now = new Date()): Promise<AsyncIte
   })();
 };
 
-// CSV, as RFC 4180 writes it, for spreadsheets. A text cell that starts like a
-// formula gets a leading apostrophe, so a spreadsheet shows it as text.
+// CSV, as RFC 4180 writes it, for spreadsheets. A cell that starts like a
+// formula gets a leading apostrophe, so a spreadsheet shows it as text: any
+// cell but a number, a list's once it is joined, and one that starts with a
+// minus unless all of it is a number (-1+HYPERLINK(...) runs; -2 is minus two).
+const PLAIN_NUMBER = /^-?(\d+\.?\d*|\.\d+)(e[+-]?\d+)?$/i;
 const cell = (value: unknown): string => {
   let text = Array.isArray(value) ? value.join('; ') : value == null ? '' : String(value);
-  if (typeof value === 'string' && /^[=+@\t\r]|^-(?![\d.])/.test(text)) text = "'" + text;
+  if (typeof value !== 'number' && /^[=+\-@\t\r]/.test(text) && !PLAIN_NUMBER.test(text)) text = "'" + text;
   return /[",\r\n]/.test(text) ? '"' + text.replace(/"/g, '""') + '"' : text;
 };
 
