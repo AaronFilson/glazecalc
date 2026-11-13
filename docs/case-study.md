@@ -73,7 +73,7 @@ themselves; and light, dark and six palettes named for glazes.
   potters' book, and many of them can no longer be bought: Custer Spar closed in 2023, and Gerstley
   Borate is running out. Each standard material now has a source, the manufacturer's data sheet
   first, and says whether it is current, discontinued (and since when) or hard to get. With the
-  colorants there are 204, from the US, UK, EU, Australia and New Zealand. A recipe that uses one
+  colorants there are 219, from the US, UK, EU, Australia, New Zealand and Japan. A recipe that uses one
   that is gone names what is used now, and can swap it in and compare the two. The hard part was not overclaiming: a swap counts as
   like for like only when the two give much the same oxides gram for gram. Niter to a frit does
   not, so the app says to work the amount out again, and it says so when a replacement still has
