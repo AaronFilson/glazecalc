@@ -88,6 +88,11 @@ export function readsDecimalComma(mark?: 'either' | 'comma' | 'point', locale?: 
 /** An SK cone as the chart writes it ("6" is SK 6a), or null when the chart has none. */
 export function skCone(token: string): string | null;
 export function readFiring(line: string, options?: ReadOptions): ReadFiring | null;
+/**
+ * One cone of a scale as typed ("6", "06", "5½", "Cone 6", "^6", "Δ6", "C/6"; SK "6" or "SK 8"), as stored
+ * ('6a' for SK "6"), or null: never a range, a firing word or another scale's cone.
+ */
+export function readCone(text: string, scale?: 'orton' | 'sk'): string | null;
 /** Whether a line is nothing but a firing, and clearly one (not a bare number or a weak word alone). */
 export function isFiringLine(line: string, options?: ReadOptions): boolean;
 export function firingFromLines(

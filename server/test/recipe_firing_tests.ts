@@ -496,6 +496,22 @@ describe('recipe firing (lib/cones/firing.js)', () => {
       expect(recipe!.notes).to.eql(['Fire to cone 6', 'Bisque to cone 04']);
     });
 
+    it('reads one cone as typed, for the assistants: bare or as paste-in writes it, never a range or another scale’s', () => {
+      for (const text of ['6', 'Cone 6', '^6', 'Δ6', 'C/6', 'c6', 'Δ٦', '６']) {
+        expect(firing.readCone(text), text).to.equal('6');
+      }
+      expect(firing.readCone('5½')).to.equal('5.5');
+      expect(firing.readCone('05 1/2')).to.equal('05.5');
+      expect(firing.readCone('06')).to.equal('06');
+      expect(firing.readCone('6', 'sk')).to.equal('6a');
+      expect(firing.readCone('SK 8', 'sk')).to.equal('8');
+      expect(firing.readCone('cone 6', 'sk')).to.equal('6a');
+      for (const text of ['SK 8', '6a', '^6-7', 'Δ6 ox', 'cone 4,5', '43', '', 'Bisque to cone 04']) {
+        expect(firing.readCone(text), text).to.equal(null);
+      }
+      expect(firing.readCone('^6', 'sk')).to.equal(null);
+    });
+
     it('tells a clear firing line from a bare number or a weak word', () => {
       for (const line of ['Cone 6', 'C/6', '^6', 'SK8', '1240°C', 'ox/red', '6 ox', 'wood fired']) {
         expect(firing.isFiringLine(line), line).to.equal(true);

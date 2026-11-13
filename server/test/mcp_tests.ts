@@ -558,6 +558,21 @@ describe('MCP: the public tools', () => {
     // "5½" is read as the half cone; "cone 6" as cone 6.
     expect((await data('check_limits', { lines, firing: { cone: '5½' } })).celsius).to.equal(1209);
     expect((await data('check_limits', { lines, firing: { cone: 'cone 6' } })).celsius).to.equal(1222);
+    // And as paste-in and the recipe page read a cone (lib/cones/firing.js): "^6", "Δ6", "C/6", other digits.
+    for (const cone of ['^6', 'Δ6', '∆ 6', 'C/6', 'c6', 'Cone ٦', '６']) {
+      expect((await data('check_limits', { lines, firing: { cone } })).celsius, cone).to.equal(1222);
+    }
+    expect((await data('convert_cone_temperature', { cone: '^05½' })).cone).to.equal('05.5');
+    expect((await data('check_limits', { lines, firing: { cone: 'SK-8', chart: 'sk' } })).celsius).to.equal(1198);
+    // One cone of the chart asked for: never a range, a firing word, or another chart's cone read as this one's.
+    for (const cone of ['^6-7', 'Δ6 ox', 'cone 4,5', 'SK 8']) {
+      expect((await call('check_limits', { lines, firing: { cone } })).isError, cone).to.equal(true);
+    }
+    for (const cone of ['SK 8', 'SK8', '6a']) {
+      const skAsOrton = await call('convert_cone_temperature', { cone });
+      expect(skAsOrton.content[0]!.text, cone).to.include('give chart "sk"');
+    }
+    expect((await call('check_limits', { lines, firing: { cone: '^6', chart: 'sk' } })).isError).to.equal(true);
     // A temperature that hot is 'top' too, up to 1600 °C (2912 °F).
     expect((await data('check_limits', { lines, firing: { celsius: 1450 } })).band).to.equal('top');
     expect((await data('check_limits', { lines, firing: { fahrenheit: 2900 } })).band).to.equal('top');
