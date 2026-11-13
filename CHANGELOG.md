@@ -1126,6 +1126,14 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **The chemistry library's JavaScript is type-checked against its declarations** (`lib/tsconfig.json`, in
+  `npm run typecheck` and so in CI; not strict yet): each module's use of another is checked against the `.d.ts` the
+  app and the server read. It found drift: `say` (`lib/recipe/messages.js`) and `added`, `changed`, `removed` and
+  `scaled` (`lib/recipe/pool.js`), which the recipe tools share, were not declared, so nothing checked their uses.
+  They are declared now; `lib/recipe/index.d.ts` still promises only what `index.js` exports, and the test that
+  compares each module's exports with its declarations no longer leaves them out. The rest needed only types
+  TypeScript could not work out for itself (an object built up step by step, a table of rows), written as JSDoc
+  comments: the code does what it did.
 - **The account emails' words are data,** one file a language (`server/i18n/mail/<language>.json`), as the app's
   own messages are. `server/lib/account_mail.ts` went from 8,422 lines to about 700, and every export it had is
   the same, checked value for value; a language without an email still gets the English.

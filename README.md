@@ -69,7 +69,10 @@ The details, with the decisions behind them:
   ([its settings](.github/codeql/codeql-config.yml)), and CI checks the numbers in this README against each run
   ([scripts/readme-numbers.mjs](scripts/readme-numbers.mjs)).
 - **One glaze chemistry library** for the browser and the tests, checked against values worked
-  out by hand ([ADR 4](docs/adr/0004-shared-chemistry.md)).
+  out by hand ([ADR 4](docs/adr/0004-shared-chemistry.md)). It is plain JavaScript with hand-written
+  declarations for the app and the server, and CI type-checks the JavaScript against them
+  ([lib/tsconfig.json](lib/tsconfig.json)). Its first run found five helpers the recipe tools share
+  that the declarations had left out; they are declared now.
 - **Keyless CI/CD with approval:** GitHub Actions gets short-lived AWS credentials through
   OIDC, for a role that can only run one SSM command document on this app's instance. There is
   no SSH, there are no stored AWS keys, and a failed health check means an automatic rollback
@@ -302,7 +305,8 @@ The Angular CLI, TypeScript, ESLint and the test runners are installed into the 
                      totals for the README: accounts, what they keep, connected apps, countries;
                      counts only (on the instance: docker compose exec app node scripts/usage-stats.mjs)
     npm run lint     checks the code with ESLint
-    npm run typecheck  checks the server's TypeScript (Node runs it without compiling)
+    npm run typecheck  checks the server's TypeScript (Node runs it without compiling), and the
+                     chemistry library's JavaScript against its declarations (lib/tsconfig.json)
     npm run format   formats files with Prettier (npm run format -- .)
 
 `npm run seed` replaces standard records with the same id, so it is safe to run again after the
