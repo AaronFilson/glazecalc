@@ -11,8 +11,8 @@ export interface Region {
   cones: 'orton' | 'temperature' | 'sk';
   /** How glaze density is read: specific gravity, or degrees Baumé. */
   density: 'sg' | 'baume';
-  /** The standard library's region filter. */
-  library: 'US' | 'UK' | 'EU' | 'AU';
+  /** The standard library's region filter (Japan's lists the US set too: lib/recipe/library.js inRegion). */
+  library: 'US' | 'UK' | 'EU' | 'AU' | 'JP';
   /** The money materials are priced in there, ISO 4217: the default for an account's currency. */
   currency: string;
 }

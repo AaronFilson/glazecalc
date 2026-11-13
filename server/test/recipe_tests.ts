@@ -668,6 +668,42 @@ describe('Shared recipe tools', () => {
     for (const change of suggestion.changes) expect(english(change)).to.be.a('string').and.not.equal('');
   });
 
+  // A region's library: what is sold there, and in the markets it lists too (Japan's lists the US set).
+  it("lists in a region's library what is sold there, Japan's the US set too, and general records everywhere", () => {
+    const sold = (...region: string[]) => material(region.join(' ') || 'General', [['SiO2', 1]], 0, { region });
+    const records = [sold('JP'), sold('US'), sold('EU'), sold('UK', 'AU'), sold()];
+    const listed = (region: string) => records.filter((record) => recipe.inRegion(record, region)).map((r) => r.name);
+    expect(listed('JP')).to.eql(['JP', 'US', 'General']);
+    // The US's lists none of Japan's, and the others only their own.
+    expect(listed('US')).to.eql(['US', 'General']);
+    expect(listed('EU')).to.eql(['EU', 'General']);
+    expect(listed('AU')).to.eql(['UK AU', 'General']);
+    // No region: every one. A region no library has, whatever its name, lists the general ones.
+    expect(listed('')).to.have.length(records.length);
+    expect(listed('toString')).to.eql(['General']);
+    // Suggestions follow it.
+    expect(recipe.suggestable(sold('US'), { region: 'JP' })).to.equal(true);
+    expect(recipe.suggestable(sold('EU'), { region: 'JP' })).to.equal(false);
+  });
+
+  it('swaps an old material for one sold in the region first, then one its library lists, then any', () => {
+    const old = material('Old Spar', [['SiO2', 1]], 0, {
+      status: 'discontinued',
+      substitutes: ['Euro Spar', 'American Spar', 'Japanese Spar']
+    });
+    const euro = material('Euro Spar', [['SiO2', 1]], 0, { region: ['EU'] });
+    const american = material('American Spar', [['SiO2', 1]], 0, { region: ['US'] });
+    const japanese = material('Japanese Spar', [['SiO2', 1]], 0, { region: ['JP'] });
+    const swapIn = (records: MaterialRecord[], region: string) =>
+      recipe.modernMaterials([line(old, 40)], (name) => records.find((r) => r.name === name), region).swaps[0]!.to;
+    // Japan's own first; with none, the US one its library lists, before the EU's listed first.
+    expect(swapIn([old, euro, american, japanese], 'JP')).to.equal('Japanese Spar');
+    expect(swapIn([old, euro, american], 'JP')).to.equal('American Spar');
+    expect(swapIn([old, euro, american, japanese], 'US')).to.equal('American Spar');
+    // Nothing the library lists: the first, as before.
+    expect(swapIn([old, euro, japanese], 'UK')).to.equal('Euro Spar');
+  });
+
   it('rebuilds a lead glaze on a lead-free base frit from the standard library', () => {
     const library = standardData.load('materials') as MaterialRecord[];
     const find = (name: string) => library.find((m) => m.name === name);

@@ -125,6 +125,8 @@ describe('trying modern materials', () => {
   it('prefers a substitute sold in the region chosen', () => {
     expect(modernMaterials(recipe, find, 'US').swaps[0].to).toBe('G-200 EU Feldspar');
     expect(modernMaterials(recipe, find, 'UK').swaps[0].to).toBe('Potash feldspar (UK)');
+    // Japan's library lists the US set too: with none of Japan's own, the US one, not the first listed.
+    expect(modernMaterials(recipe, find, 'JP').swaps[0].to).toBe('G-200 EU Feldspar');
   });
 
   it('keeps an old colorant whose substitute is an additive, and says where it went', () => {

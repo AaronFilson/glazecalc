@@ -13,16 +13,16 @@ type Standard = Material & LibraryInfo;
 /** Kinds of material a recipe names that one sold elsewhere can stand in for, in this order. */
 const KINDS = ['feldspar', 'clay', 'frit', 'boron', 'flux', 'silica', 'alumina'];
 /** The library's regions (shared/library-info.ts). */
-const LIBRARY_REGIONS = ['US', 'UK', 'EU', 'AU'];
+const LIBRARY_REGIONS = ['US', 'UK', 'EU', 'AU', 'JP'];
 /** The closest ones shown for each. */
 const SHOWN = 2;
 
 /**
  * The library's materials not sold where the reader buys (the region's
- * library: US, UK, EU or AU), each with the closest of its kind sold there,
- * by the library's own analyses (gramsApart): within 15 g per 100 g, one can
- * usually stand in for the other as a start. Names are the library's, which
- * carry the makers' and shops' own codes.
+ * library: US, UK, EU, AU or JP, which lists the US set too), each with the
+ * closest of its kind sold there, by the library's own analyses (gramsApart):
+ * within 15 g per 100 g, one can usually stand in for the other as a start.
+ * Names are the library's, which carry the makers' and shops' own codes.
  */
 @Component({
   selector: 'gc-local-equivalents',
@@ -105,7 +105,7 @@ export class LocalEquivalents {
   private readonly byName = byNameIn(this.choice.language);
   protected readonly region = this.choice.region;
   protected readonly regionName = this.choice.name;
-  /** The library's region for where the reader buys: US, UK, EU or AU. */
+  /** The library's region for where the reader buys: US, UK, EU, AU or JP. */
   protected readonly library = computed(() => regionFor(this.region())?.library ?? '');
   private readonly countries = new Intl.DisplayNames([this.choice.language], { type: 'region' });
 
@@ -149,7 +149,7 @@ export class LocalEquivalents {
     })).filter((group) => group.rows.length);
   });
 
-  /** A library region as the filters name it (US, UK, EU, AU and NZ); another country by its name. */
+  /** A library region as the filters name it (US, UK, EU, AU and NZ, Japan); another country by its name. */
   private regionLabel(code: string): string {
     return LIBRARY_REGIONS.includes(code) ? translate('libraryRegions.' + code) : (this.countries.of(code) ?? code);
   }
