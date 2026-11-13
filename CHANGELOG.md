@@ -1133,6 +1133,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **Over 1,550 Angular unit tests, from 1,188, and 99% of the app's statements run by them, from 92%,** across the
+  recipe pages, the account and its offline copy, sign-in, the app's frame and every other page, driven through
+  each page's own fields and buttons. The client's coverage now counts the app's own code (`client/`), templates
+  included; the shared library in `lib/` counts with the server's tests, where its own are. Every test has 15
+  seconds (`vitest-base.config.mts`) and the famous glazes' solver 60, as coverage slows them.
 - **The recipe page is in parts** a person can hold: `recipe-page.ts` went from 2,362 lines to 982 and its template
   from 1,279 to 546. The saved list, the swaps (modern materials, Suggest amounts, Replace lead, Match with what I
   have and Undo), the print and compare views, the materials and colorants tables and the lists to add from are
