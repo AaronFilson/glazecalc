@@ -1138,9 +1138,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   each page's own fields and buttons. The client's coverage now counts the app's own code (`client/`), templates
   included; the shared library in `lib/` counts with the server's tests, where its own are. Every test has 15
   seconds (`vitest-base.config.mts`) and the famous glazes' solver 60, as coverage slows them. Runs give the same
-  result each time: the offline copy, the outbox and the install offer stop their work when a test's app is torn
-  down, so nothing reaches the next test; a failed check of the fake API no longer fails the spec files after it;
-  the region a test chose ends with it; and the connect page's Allow hold is timed by the test's own clock.
+  result each time: turning the offline copy on no longer switches to it a second time when the site hears who is
+  signed in, a race that could fetch every record twice and that sometimes failed the offline tests; the offline
+  copy, the outbox and the install offer stop their work when a test's app is torn down, so nothing reaches the next
+  test; a failed check of the fake API no longer fails the spec files after it; the region a test chose ends with
+  it; and the connect page's Allow hold is timed by the test's own clock.
 - **The recipe page is in parts** a person can hold: `recipe-page.ts` went from 2,362 lines to 982 and its template
   from 1,279 to 546. The saved list, the swaps (modern materials, Suggest amounts, Replace lead, Match with what I
   have and Undo), the print and compare views, the materials and colorants tables and the lists to add from are
@@ -1518,8 +1520,6 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - The offline copy's "keep for" list showed a time it could not save, until the next visit showed the old one.
   - After signing out, the next account to sign in on the same tab saw the last one's connected apps and token
     count until its own loaded, or for good if that failed; both are forgotten when the session ends.
-  - Turning the offline copy on before the site had heard who was signed in switched to the copy a second time
-    while it was being written, which could fetch every record again.
   - After a sign-in during which the browser could not open the offline copy's database, the account's own copy
     stayed locked at its later sign-ins until it was turned on again; the next sign-in now shows it.
 - **The tools CI installs apart are past their advisories:** the MCP conformance suite and Inspector take hono 4.13.16
