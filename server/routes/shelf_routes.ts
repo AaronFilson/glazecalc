@@ -15,8 +15,9 @@
 //                                  is User.shelfPrevious (exported and deleted with the account).
 //
 // When the account asks to confirm changes made with tokens (docs/adr/0025-confirm-before-changes.md), a
-// token's remove (a removal), or any of the three (every change), waits for the person's approval and is
-// answered 202 (server/lib/rest_changes.ts); 'shelf.add', 'shelf.remove' and 'shelf.undo' run the same code.
+// token's remove or undo (removals: an undo takes off what the last change put on), or any of the three
+// (every change), waits for the person's approval and is answered 202 (server/lib/rest_changes.ts);
+// 'shelf.add', 'shelf.remove' and 'shelf.undo' run the same code.
 import express, { type Request } from 'express';
 import jwtAuth, { userOf } from '../lib/jwt_auth.ts';
 import { say } from '../lib/messages.ts';
@@ -132,9 +133,10 @@ const naming =
 const asking = {
   add: confirmFirst('shelf.add', { removal: false, describe: naming('pending-shelf-add') }),
   remove: confirmFirst('shelf.remove', { removal: true, describe: naming('pending-shelf-remove') }),
-  // An undo must put back the shelf the person saw when they approved it.
+  // An undo must put back the shelf the person saw when they approved it. It takes off what the last change
+  // put on, so it is a removal, as remove is.
   undo: confirmFirst('shelf.undo', {
-    removal: false,
+    removal: true,
     describe: async () => ({ summary: { code: 'pending-shelf-undo', params: {} }, base: { kind: 'shelf' } })
   })
 };

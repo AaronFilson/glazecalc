@@ -24,8 +24,8 @@
 // (TOKEN_DELETES_PER_HOUR), on top of the endpoint's request limits.
 //
 // Confirm before changes (docs/adr/0025-confirm-before-changes.md): when the
-// account asks to approve every change, or removals (move_to_trash and
-// remove_from_shelf), a change waits (server/lib/pending_changes.ts) and
+// account asks to approve every change, or removals (move_to_trash,
+// remove_from_shelf and undo_shelf_change), a change waits (server/lib/pending_changes.ts) and
 // nothing is changed until the person approves it on the Glazecalc website,
 // signed in (owner decision, 2026-10-19: what this guards against is an
 // assistant that misbehaves, so the assistant's own client never approves):
@@ -690,8 +690,11 @@ export const WRITE_TOOLS: ReadonlySet<string> = new Set<WriteTool>([
   'move_to_trash',
   ...DICTATION_TOOLS
 ]);
-/** The tools that remove something: what the setting 'removals' asks about. */
-export const REMOVAL_TOOLS: readonly WriteTool[] = ['move_to_trash', 'remove_from_shelf'];
+/**
+ * The tools that remove something: what the setting 'removals' asks about. Undoing the shelf's last change
+ * takes off what that change put on, so it is one too.
+ */
+export const REMOVAL_TOOLS: readonly WriteTool[] = ['move_to_trash', 'remove_from_shelf', 'undo_shelf_change'];
 
 // What a waiting change sets, field by field, for its page (server/lib/pending_changes.ts detailsOf):
 // the record's fields as they are now and as the tool would set them.

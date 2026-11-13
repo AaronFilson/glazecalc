@@ -34,9 +34,11 @@ not at all; scripts on the REST routes have no client to ask through.
 
 - **The setting**, `User.confirmChanges`: `off` (the default; an account without the field),
   `removals` (moving a record to the Trash: `move_to_trash` and `DELETE /api/<kind>/delete/:id`;
-  taking materials off the shelf: `remove_from_shelf` and `POST /api/shelf/remove`), or `all`
-  (every write tool, `undo_shelf_change` included, and every token write on the record routes, the
-  Trash's put back and the shelf). Set on Connected apps with the web session only
+  taking materials off the shelf: `remove_from_shelf` and `POST /api/shelf/remove`, and undoing the
+  shelf's last change, which takes off what it put on: `undo_shelf_change` and
+  `POST /api/shelf/undo`, since 2026-11, the 1.0 security review), or `all` (every write tool, and
+  every token write on the record routes, the Trash's put back and the shelf). Set on Connected apps
+  with the web session only
   (`PUT /api/connections/confirm-setting`); a choice that asks less sends the owner a notice
   email. `get_my_settings` shows it, read only. When it cannot be read (the database fails, the
   value is unknown), changes wait: fail closed.

@@ -1206,6 +1206,27 @@ describe('confirm before changes: what the page shows of a line’s chemistry an
     expect((await pageOf(named.body.pendingId)).summary.msg).to.equal('Take off the materials on hand: Whiting.');
   });
 
+  it('asks before undoing the shelf with "removals": it takes off what the last change put on', async () => {
+    await api()
+      .put('/shelf')
+      .set('Authorization', bearer(mine.token))
+      .send({ shelf: ['name:Silica'] });
+    await api()
+      .put('/shelf')
+      .set('Authorization', bearer(mine.token))
+      .send({ shelf: ['name:Silica', 'name:Whiting'] });
+    await setting(mine.token, 'removals');
+    const rest = await api().post('/shelf/undo').set('Authorization', bearer(write));
+    expect(rest).to.have.status(202);
+    expect((await pageOf(rest.body.pendingId)).removal).to.equal(true);
+    const tool = await callTool(write, 'undo_shelf_change', {});
+    expect(textOf(tool.body)).to.match(/^Nothing changed yet\. Ask the person to approve it at /);
+    expect((await User.findById(mine.user._id, { shelf: 1 }).lean())!.shelf).to.deep.equal([
+      'name:Silica',
+      'name:Whiting'
+    ]);
+  });
+
   it('shows what an undo would put back: a record’s fields, and the shelf by name', async () => {
     const noteId = (await newNote(mine.token)).body._id as string;
     await api()
