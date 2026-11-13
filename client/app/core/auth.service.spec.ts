@@ -1,7 +1,7 @@
 import { signal } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { API, httpMock, testProviders } from '../testing/test-providers';
-import { AuthService } from './auth.service';
+import { AuthService, SIGN_IN_PROVIDERS } from './auth.service';
 import { FIRST_RENDER } from './first-render';
 
 // The sign-in is an httpOnly cookie the server sets; the service keeps only a
@@ -233,6 +233,88 @@ describe('AuthService', () => {
     // A failed request still leaves the browser signed out.
     await done;
     expect(auth.hasSession()).toBe(false);
+  });
+
+  it('asks the server which sign-in providers are on, unless a test says', async () => {
+    TestBed.configureTestingModule({
+      providers: testProviders().filter((provider) => (provider as { provide?: unknown }).provide !== SIGN_IN_PROVIDERS)
+    });
+    const providers = TestBed.inject(SIGN_IN_PROVIDERS);
+    const asking = providers();
+    httpMock()
+      .expectOne(API + '/auth/providers')
+      .flush({ providers: ['google', 'microsoft'] });
+    expect(await asking).toEqual(['google', 'microsoft']);
+    // An answer that lists none.
+    const again = providers();
+    httpMock()
+      .expectOne(API + '/auth/providers')
+      .flush({});
+    expect(await again).toEqual([]);
+  });
+
+  it('drops a fresh sign-in with a provider when it runs out', async () => {
+    setup();
+    auth.holdReauth({ grant: 'fresh-grant', provider: 'google', expiresAt: Date.now() + 5 });
+    expect(auth.reauth()?.grant).toBe('fresh-grant');
+    await new Promise((resolve) => setTimeout(resolve, 20));
+    expect(auth.reauth()).toBeNull();
+  });
+
+  it('deletes nothing when the server says nobody is signed in', async () => {
+    localStorage.setItem('session', 'account');
+    setup();
+    const deleting = auth.deleteAccount('password123');
+    httpMock()
+      .expectOne(API + '/verify')
+      .flush({ msg: 'No user' });
+    await expect(deleting).rejects.toThrow('Not signed in');
+    httpMock().expectNone((req) => req.method === 'DELETE');
+  });
+  it('discards a trial and everything made in it, and refuses to for an account', async () => {
+    localStorage.setItem('session', 'trial');
+    localStorage.setItem('trial', JSON.stringify({ name: 'Blue Heron', expiresAt: '2099-01-01T00:00:00Z' }));
+    setup();
+    const discarding = auth.discardTrial();
+    httpMock()
+      .expectOne(API + '/verify')
+      .flush({ id: 'g1', guest: true });
+    await new Promise((resolve) => setTimeout(resolve));
+    httpMock()
+      .expectOne({ method: 'DELETE', url: API + '/deleteuser/g1' })
+      .flush({});
+    await discarding;
+    expect(auth.hasSession()).toBe(false);
+    expect(auth.trial()).toBeNull();
+    expect(localStorage.getItem('trial')).toBeNull();
+
+    localStorage.setItem('session', 'account');
+    TestBed.resetTestingModule();
+    setup();
+    const refusing = auth.discardTrial();
+    httpMock()
+      .expectOne(API + '/verify')
+      .flush({ id: 'u1' });
+    await expect(refusing).rejects.toThrow('Not a trial');
+    httpMock().expectNone((req) => req.method === 'DELETE');
+  });
+
+  it('ends a trial the server stops accepting, and says so once the first render is over', () => {
+    localStorage.setItem('session', 'trial');
+    localStorage.setItem('trial', JSON.stringify({ name: 'Blue Heron', expiresAt: '2099-01-01T00:00:00Z' }));
+    setup();
+    expect(auth.shownTrialEnded()).toBe(false);
+    auth.sessionEnded();
+    expect(auth.trialEnded()).toBe(true);
+    expect(auth.shownTrialEnded()).toBe(true);
+    expect(auth.hasSession()).toBe(false);
+  });
+
+  it('forgets a trial left over without its session', () => {
+    localStorage.setItem('trial', JSON.stringify({ name: 'Blue Heron', expiresAt: '2099-01-01T00:00:00Z' }));
+    setup();
+    expect(auth.trial()).toBeNull();
+    expect(localStorage.getItem('trial')).toBeNull();
   });
 });
 

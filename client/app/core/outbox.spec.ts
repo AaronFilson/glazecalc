@@ -719,6 +719,27 @@ describe('the outbox: changes made while offline', () => {
     expect((await outbox.entries()).map((e) => e.id)).toEqual(['n1']);
   });
 
+  it('sends a change again by itself 30 seconds after the server was too busy for it', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    const outbox = TestBed.inject(Outbox);
+    await turnOn(records);
+    offline(true);
+    await change('notes', 'n1', { content: 'x' });
+    vi.restoreAllMocks();
+    const timers = vi.spyOn(globalThis, 'setTimeout');
+    const busy = outbox.flush();
+    (await nextRequest(API + '/notes/change/n1')).flush(null, { status: 503, statusText: 'Unavailable' });
+    await busy;
+    const retry = timers.mock.calls.find(([, delay]) => delay === 30_000);
+    expect(retry).toBeDefined();
+    // The 30 seconds pass.
+    (retry![0] as () => void)();
+    (await nextRequest(API + '/notes/change/n1')).flush({ code: 'record-updated', rev: 2 });
+    await answerNext(records.addressOf('notes'), []);
+    await waitFor(async () => expect(await outbox.entries()).toEqual([]));
+  });
+
   it('sends in one tab at a time, under a Web Lock where the browser has them', async () => {
     setUp();
     const records = TestBed.inject(OfflineRecords);

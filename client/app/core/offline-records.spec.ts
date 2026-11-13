@@ -525,6 +525,18 @@ describe('the records kept on this device', () => {
     httpMock().expectNone(API + '/recipe/getAll');
   });
 
+  it('fetches nothing for the copy while it is off, or while the browser is offline', async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await records.refresh(true);
+    httpMock().expectNone(API + '/recipe/getAll');
+    await turnOn(records);
+    await waitFor(async () => expect(await records.read('prices')).not.toBeNull());
+    vi.spyOn(navigator, 'onLine', 'get').mockReturnValue(false);
+    await records.refresh(true);
+    httpMock().expectNone(API + '/recipe/getAll');
+  });
+
   it('fetches in full at most once a day', async () => {
     setUp();
     const records = TestBed.inject(OfflineRecords);
@@ -897,6 +909,7 @@ describe('the records kept on this device', () => {
       expect(await turnOn(records)).toBe(true);
       expect(persist).toHaveBeenCalledTimes(1);
       expect(records.notKept()).toBe(false);
+      await waitFor(async () => expect(await records.read('prices')).not.toBeNull());
     } finally {
       Reflect.deleteProperty(navigator, 'storage');
     }
@@ -1022,6 +1035,33 @@ describe('the records kept on this device', () => {
     expect(localStorage.getItem(OFFLINE_GONE)).toBe('u1');
     expect(await databases()).toContain(RECORDS_DB);
     expect(await TestBed.inject(Outbox).mine('u1')).toHaveLength(1);
+  });
+
+  it("stops asking about a deleted account once another account's copy is the one kept here", async () => {
+    setUp();
+    const records = TestBed.inject(OfflineRecords);
+    await turnOn(records);
+    // The account is deleted elsewhere; the person decides later.
+    TestBed.inject(AuthService).sessionEnded(true);
+    await answerAsk('later');
+    await waitFor(() => expect(localStorage.getItem(OFFLINE_GONE)).toBe('u1'));
+    // Someone else signs in here, keeps a copy of their own, and signs out keeping it.
+    await signInAs('b@b.c', 'u2');
+    await waitFor(() => expect(localStorage.getItem(RECORDS_FLAG)).toBe(RECORDS_LOCKED));
+    const on = records.setEnabled(true);
+    for (const key of RECORD_KEYS) await answerNext(records.addressOf(key), []);
+    expect(await on).toBe(true);
+    const out = TestBed.inject(AuthService).signOut();
+    httpMock()
+      .expectOne(API + '/signout')
+      .flush({});
+    await out;
+
+    // The site opens again, nobody signed in: the copy here is the other account's.
+    restart();
+    await waitFor(() => expect(localStorage.getItem(OFFLINE_GONE)).toBeNull());
+    expect(TestBed.inject(OfflineAsk).open()).toBeNull();
+    expect(await databases()).toContain(RECORDS_DB);
   });
 
   it("removes an account's locked copy when it signs in again after the time it chose, and says so", async () => {

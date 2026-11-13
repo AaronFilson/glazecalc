@@ -235,6 +235,35 @@ describe('PreferencesService', () => {
     TestBed.inject(PreferencesService).remember('notice', 'hidden');
     expect(Object.keys(localStorage).sort()).toEqual(['notice', 'visitor.notice']);
   });
+
+  it('takes no answer for a sign-in that ended while it was on its way', async () => {
+    const preferences = TestBed.inject(PreferencesService);
+    const loading = preferences.load();
+    TestBed.inject(AuthService).sessionVersion.update((version) => version + 1);
+    httpMock()
+      .expectOne(API + '/preferences')
+      .flush({ weightUnit: 'lb' });
+    await loading;
+    expect(preferences.weightUnit()).toBe('g');
+  });
+
+  it('works from the defaults where this browser will not read its storage', async () => {
+    vi.spyOn(Storage.prototype, 'getItem').mockImplementation(() => {
+      throw new DOMException('The operation is insecure.', 'SecurityError');
+    });
+    try {
+      const preferences = TestBed.inject(PreferencesService);
+      expect(preferences.weightUnit()).toBe('g');
+      const saving = preferences.set('weightUnit', 'lb');
+      httpMock()
+        .expectOne(API + '/preferences')
+        .flush({ weightUnit: 'lb' });
+      await saving;
+      expect(preferences.weightUnit()).toBe('lb');
+    } finally {
+      vi.restoreAllMocks();
+    }
+  });
 });
 
 describe('PreferencesService during the first render', () => {

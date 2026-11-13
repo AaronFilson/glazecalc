@@ -1,3 +1,4 @@
+import { PLATFORM_ID } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { API, answer, httpMock, settle, testProviders } from '../testing/test-providers';
 import { PreferencesService } from './preferences.service';
@@ -79,6 +80,35 @@ describe('theme', () => {
       httpMock().expectNone(API + '/verify');
       httpMock().expectNone(API + '/preferences');
       expect(root().getAttribute('data-bs-theme')).toMatch(/^(light|dark)$/);
+    });
+
+    it('follows the device as it switches between light and dark', () => {
+      let dark = false;
+      let switched: () => void = () => {};
+      vi.stubGlobal('matchMedia', () => ({
+        get matches() {
+          return dark;
+        },
+        addEventListener: (_type: string, then: () => void) => (switched = then)
+      }));
+      try {
+        TestBed.runInInjectionContext(() => watchTheme());
+        TestBed.tick();
+        expect(root().getAttribute('data-bs-theme')).toBe('light');
+        dark = true;
+        switched();
+        TestBed.tick();
+        expect(root().getAttribute('data-bs-theme')).toBe('dark');
+      } finally {
+        vi.unstubAllGlobals();
+      }
+    });
+
+    it('leaves the colors to the page itself during the prerender', () => {
+      TestBed.overrideProvider(PLATFORM_ID, { useValue: 'server' });
+      TestBed.runInInjectionContext(() => watchTheme());
+      TestBed.tick();
+      expect(attributes()).toEqual([null, null, null]);
     });
   });
 });

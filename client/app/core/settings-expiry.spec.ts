@@ -117,4 +117,29 @@ describe('settings expiry', () => {
     expect(checkSettingsExpiry(broken, START)).toBe('none');
     expect(dates(broken).used).toBe(START);
   });
+
+  it("writes and removes nothing where reading this browser's storage is refused", () => {
+    vi.spyOn(globalThis, 'localStorage', 'get').mockImplementation(() => {
+      throw new DOMException('The operation is insecure.', 'SecurityError');
+    });
+    try {
+      expect(checkSettingsExpiry()).toBe('none');
+      expect(() => clearSettings()).not.toThrow();
+      expect(() => noteNoticeClosed()).not.toThrow();
+    } finally {
+      vi.restoreAllMocks();
+    }
+  });
+
+  it('treats storage it cannot read as holding no settings', () => {
+    const blocked = {
+      getItem: () => {
+        throw new DOMException('The operation is insecure.', 'SecurityError');
+      },
+      setItem: vi.fn(),
+      removeItem: vi.fn()
+    };
+    expect(checkSettingsExpiry(blocked, START)).toBe('none');
+    expect(blocked.setItem).not.toHaveBeenCalled();
+  });
 });

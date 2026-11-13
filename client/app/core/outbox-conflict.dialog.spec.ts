@@ -75,6 +75,8 @@ describe('OutboxConflictDialog', () => {
     await waitFor(() => expect(document.activeElement).toBe(buttons(root)[0]));
     buttons(root)[1].click();
     expect(outbox.resolve).toHaveBeenCalledWith(1, 'discard');
+    buttons(root)[0].click();
+    expect(outbox.resolve).toHaveBeenCalledWith(1, 'saveNew');
     fixture.nativeElement.remove();
   });
 
@@ -90,6 +92,11 @@ describe('OutboxConflictDialog', () => {
     dialog.dispatchEvent(new KeyboardEvent('keydown', { key: 'Tab', bubbles: true, cancelable: true }));
     expect(document.activeElement).toBe(buttons(root)[0]);
     dialog.dispatchEvent(new KeyboardEvent('keydown', { key: 'Tab', shiftKey: true, bubbles: true, cancelable: true }));
+    expect(document.activeElement).toBe(last);
+    // Any other key is the button's own.
+    const enter = new KeyboardEvent('keydown', { key: 'Enter', bubbles: true, cancelable: true });
+    dialog.dispatchEvent(enter);
+    expect(enter.defaultPrevented).toBe(false);
     expect(document.activeElement).toBe(last);
 
     dialog.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true, cancelable: true }));
@@ -118,5 +125,14 @@ describe('OutboxFailedList', () => {
     buttons(root)[1].click();
     expect(outbox.discardFailed).toHaveBeenCalledWith(1);
     Reflect.deleteProperty(navigator, 'clipboard');
+  });
+
+  it('says when a change depends on a record that could not be saved', async () => {
+    stub([], [entry({ seq: 2, state: 'failed', error: 'depends-on-failed', body: { recipe: { title: 'Glaze B' } } })]);
+    const fixture = TestBed.createComponent(OutboxFailedList);
+    await fixture.whenStable();
+    const said = (fixture.nativeElement as HTMLElement).querySelector('[role="status"]')?.textContent ?? '';
+    expect(said).toContain('A change to Glaze B could not be saved.');
+    expect(said).toContain('It depends on a record that could not be saved.');
   });
 });

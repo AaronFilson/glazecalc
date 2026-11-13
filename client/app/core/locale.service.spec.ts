@@ -276,6 +276,9 @@ describe('LocaleService during the first render', () => {
 
   it('switches to the browser’s own settings afterwards', () => {
     const { state, locale } = firstRender('de');
+    // Checked while the first render stands: still the language's own region.
+    TestBed.tick();
+    expect(locale.region()).toBe('DE');
     state.set(false);
     TestBed.tick();
     expect([locale.region(), locale.locale(), locale.temperature(), formatLocale()]).toEqual([
