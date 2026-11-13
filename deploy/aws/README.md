@@ -18,13 +18,18 @@ these commands.
 - **Everything else:** the `copper-bell` CLI user, once the admin attaches
   [operator-policy.json](operator-policy.json) to its group (step 0). That policy lets it
   create only resources tagged `app=glazecalc`, launch only t4g.micro or t4g.small, change DNS
-  only for glazecalcapp.com, and stop or terminate the two old servers.
+  only for glazecalcapp.com, and stop, start or terminate the two old servers and read their
+  console output.
 
 Defaults chosen in these files, change them before running if you decide otherwise:
 region **us-west-2** (where the old instance is), image registry **GHCR**, MongoDB
 **self-hosted** in Docker, instance **t4g.micro** (arm64, 1 GB; resize to t4g.small with a
-stop, `modify-instance-attribute --instance-type`, start if memory gets tight). The account ID 724654236968 and the
-region appear in `instance-policy.json` and `deploy-policy.json` as well.
+stop, `modify-instance-attribute --instance-type`, start if memory gets tight). The account ID 724654236968 is
+in every JSON document here as well, except the command documents (`deploy-document.json`,
+`staging-deploy-document.json`), `instance-trust.json` and `dlm-policy.json`. The region is in those documents
+too, except `github-oidc-trust.json`, `github-oidc-trust-staging.json`, `mail-forwarder-trust.json` and
+`staging-images-policy.json`. `setup-github-deploy.sh` and `create-inbound.sh` name both, and `create-mailer.sh`
+the region.
 
 ```bash
 REGION=us-west-2
@@ -95,6 +100,14 @@ aws s3api put-bucket-lifecycle-configuration --bucket "$BUCKET" --lifecycle-conf
 beside it (`<dump>.deletions.archive.gz`), which the same rule expires; see "Restoring a backup"
 in [deploy/README.md](../README.md).
 
+Optional, for staging: the S3 route for staging images ([deploy/README.md](../README.md), "Staging", step 8)
+adds a second rule, `expire-staging-images` (uploads under `staging-images/` deleted after 7 days), and an
+inline policy on the instance role (section 4), `glazecalc-staging-images`
+([staging-images-policy.json](staging-images-policy.json)), which lets the instance read them. The command
+above replaces every rule, so it would drop the second one; step 8's command keeps both. The CDK stack
+declares the rule and the policy only when its setting `stagingImages` is `true`
+([deploy/cdk/README.md](../cdk/README.md#settings)).
+
 ## 4. Admin: instance role
 
 Session Manager access plus reading `/glazecalc/*` parameters and writing dumps.
@@ -120,8 +133,9 @@ or `sha-<40 hex characters>`, so even an approved workflow run cannot run other 
 **Staging** (the Deploy staging workflow, deploy/README.md, "Staging"): a second role, which only
 runs in the repository's `staging` environment can assume, and which may only run the
 `glazecalc-staging-deploy` document. That runs `staging.sh` with a tag AWS checks to be
-`staging-<40 hex>` or `sha-<40 hex>`; the role cannot run production's document or any other
-command. But `staging.sh` runs as root on the instance production shares, and takes its own
+`staging-<40 hex>` or `sha-<40 hex>` (a master build from CI), so the role may stage either, but
+the workflow only ever sends `staging-<commit>`. The role cannot run production's document or
+any other command. But `staging.sh` runs as root on the instance production shares, and takes its own
 scripts from the commit it stages: approving a staging run trusts that branch's `deploy/` as
 much as running it by hand would. The workflow stages only commits on this repository's branches
 (never a fork's pull request), and only after the `staging` environment's reviewer approves. The
@@ -349,6 +363,10 @@ done
 # 15 minutes, missing data not breaching, alarm and OK actions to glazecalc-alerts.
 ```
 
+The repository does not record the alarms' names. The CDK stack takes them from its settings
+`bounceAlarmName` and `complaintAlarmName` ([deploy/cdk/README.md](../cdk/README.md#settings)), by default
+`glazecalc-ses-bounce-rate` and `glazecalc-ses-complaint-rate`; its import steps check the live names first.
+
 Deleted accounts and the suppression list (Admin, once a month): an address that bounced or
 complained stays on the account-level suppression list until it is removed, after its account is
 deleted too. The app cannot remove it: it sends over SMTP and has no SES API access, and the
@@ -447,13 +465,14 @@ In this order. The script shows each command and asks before every change.
    ```bash
    OWNER_INBOX=<your inbox address> bash deploy/aws/create-inbound.sh
    ```
-   It does these, asking before each: the bucket (public access blocked, 30-day expiry), its policy (SES
-   may store mail only for this account and this receipt rule), the forwarder's role and function, SES's
-   permission to call it, the receipt rule set and rule (six recipients, scanning on, S3 then Lambda), the
-   IAM user `glazecalc-mail-send`, the activation of the rule set, and last, behind its own confirmation
-   (type `mx`), the DNS record `glazecalcapp.com MX 10 inbound-smtp.us-west-2.amazonaws.com`. Running it
-   again skips what exists and updates the rest. SES allows one active receipt rule set per region; the
-   script says if another one is already active, and activating replaces it.
+   It does these, asking before each: the bucket (public access blocked; messages deleted after 30 days and
+   incomplete multipart uploads aborted after 1 day), its policy (SES may store mail only for this account
+   and this receipt rule), the forwarder's role and function, SES's permission to call it, the receipt rule
+   set and rule (six recipients, scanning on, S3 then Lambda), the IAM user `glazecalc-mail-send`, the
+   activation of the rule set, and last, behind its own confirmation (type `mx`), the DNS record
+   `glazecalcapp.com MX 10 inbound-smtp.us-west-2.amazonaws.com`. Running it again skips what exists and
+   updates the rest. SES allows one active receipt rule set per region; the script says if another one is
+   already active, and activating replaces it.
 4. **Test** (below), then the Gmail steps.
 5. **Publish the security contact** (last section).
 

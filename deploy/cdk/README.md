@@ -72,7 +72,7 @@ or name stops the synth (`lib/settings.ts`).
 | `stagingImages`                         | `false`                                                     | `true` if the optional S3 route for staging images was set up (deploy/README.md, Staging, step 8).                                              |
 | `ownerInboxVersion`                     | `1`                                                         | The version of the String parameter `/glazecalc/owner-inbox` the forwarder is deployed with. See "Changing the inbox" below.                    |
 | `oldServers`                            | `i-07a925b2d7d19f991`, `i-052d3dcd53fa88288`                | The servers from before this setup, which the operator may stop or terminate; an empty list (`-c oldServers=`) drops that statement.            |
-| `bounceAlarmName`, `complaintAlarmName` | `glazecalc-ses-bounce-rate`, `glazecalc-ses-complaint-rate` | The SES reputation alarms. Section 14 gives no names: check the live ones before the import.                                                    |
+| `bounceAlarmName`, `complaintAlarmName` | `glazecalc-ses-bounce-rate`, `glazecalc-ses-complaint-rate` | The SES reputation alarms. Section 14 does not record the live names: check them before the import.                                             |
 | `import`                                | `false`                                                     | The stacks as they are live today, for `cdk import` (below).                                                                                    |
 
 `cdk.json` also holds the CDK feature flags, each at the value AWS recommends for a new app except three:
