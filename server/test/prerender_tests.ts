@@ -187,6 +187,16 @@ describe('prerender checks', () => {
     expect(textOf(html)).to.equal('One three');
     expect(inlineScripts(html)).to.eql(['window.theme = 1;', 'var two;']);
   });
+
+  it('finds an inline script however its tags are written, as a browser runs it', () => {
+    expect(
+      inlineScripts('<SCRIPT>one()</SCRIPT><script >two()</script ><Script type="module">three()</sCrIpT\n>')
+    ).to.eql(['one()', 'two()', 'three()']);
+    expect(inlineScripts('<SCRIPT SRC="/main.js"></SCRIPT><script TYPE="application/json">{}</script>')).to.eql([]);
+    expect(problemsWith(page(`<p>${WORDS}</p>`, '<SCRIPT>alert(1)</script >'), START)).to.eql([
+      'it has an inline script the policy does not know'
+    ]);
+  });
 });
 
 describe('font preloads', () => {
