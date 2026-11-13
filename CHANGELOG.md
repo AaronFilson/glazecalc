@@ -1522,6 +1522,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
     while it was being written, which could fetch every record again.
   - After a sign-in during which the browser could not open the offline copy's database, the account's own copy
     stayed locked at its later sign-ins until it was turned on again; the next sign-in now shows it.
+- **The tools CI installs apart are past their advisories:** the MCP conformance suite and Inspector take hono 4.13.16
+  and @hono/node-server 2.1.6 (Dependabot's two open alerts, and five moderate ones for hono), and Lighthouse CI takes
+  basic-ftp 6.2.4. A moderate advisory for the minimatch bundled inside aws-cdk-lib has no fix to take yet; the
+  Infrastructure workflow says why it does not reach this setup.
 
 - **Numbers and dates in a language the browser lacks**: Google Chrome 156 and Playwright's Chromium have no Intl
   data for Nepali, Sinhala or Odia and only part of Punjabi's, so live Odia and Punjabi pages showed English dates
