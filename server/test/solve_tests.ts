@@ -160,6 +160,28 @@ describe('Target & Solve', () => {
     expect(mid.cautions.map((c) => c.check)).to.include('boron-high');
   });
 
+  it('does not hold the raw clay down with a material that has no oxides', () => {
+    // A potter's own material saved with no oxides costs the match nothing: it was made half the batch
+    // (Target & Solve 25%, Match with what I have 47%) to bring the raw clay to 20% of it.
+    const nothing = { name: 'My placeholder', percentmole: 'percent', loi: 0, fields: [] } as MaterialRecord;
+    const target = { kind: 'unity' as const, oxides: { K2O: 0.25, CaO: 0.75, Al2O3: 0.6, SiO2: 2.6 } };
+    const shelf = shelfOf('Custer Spar', 'Whiting', 'EPK Kaolin', 'Silica');
+    const without = recipe.solveTarget(target, shelf);
+    const withIt = recipe.solveTarget(target, [...shelf, { material: nothing, must: false }]);
+    expect(amountIn(withIt, 'My placeholder')).to.equal(0);
+    expect(withIt.materials).to.deep.equal(without.materials);
+    const old = recipeOf([
+      ['Custer Spar', 30],
+      ['Whiting', 20],
+      ['Calcined Kaolin (theoretical)', 20],
+      ['EPK Kaolin', 15],
+      ['Silica', 15]
+    ]);
+    const match = recipe.matchFromShelf(old, [...shelf, { material: nothing, must: false }]);
+    expect(amountIn(match, 'My placeholder')).to.equal(0);
+    expect(match.materials).to.deep.equal(recipe.matchFromShelf(old, shelf).materials);
+  });
+
   it('leaves out what it is told to, and keeps a must', () => {
     const shelf = shelfOf('Custer Spar', 'Nepheline Syenite', 'Whiting', 'EPK Kaolin', 'Silica');
     const without = recipe.solveTarget({ kind: 'unity', oxides: GLOSSY_UNITY }, shelf, { avoid: ['Custer Spar'] });
