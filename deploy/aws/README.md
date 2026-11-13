@@ -429,8 +429,16 @@ for spam and viruses, stores each message in a private S3 bucket (deleted after 
 small Lambda function ([mail-forwarder](mail-forwarder/)) sends it on. The forwarded message comes from
 `"<sender's name> via Glazecalc" <forwarder@glazecalcapp.com>` (SES only sends as our own domain),
 with Reply-To set to the original sender (or to the Reply-To the sender set), so a plain reply goes to
-them. Mail the scan marks as spam or as carrying a virus is dropped. `no-reply@glazecalcapp.com`, the
+them. Mail the scan marks as spam or as carrying a virus is dropped, and so is mail that fails DMARC
+when the sender's domain asks for such mail to be rejected or quarantined (its From is forged, most
+likely); other mail that fails DMARC arrives with `[Failed DMARC]` before its subject. A forwarded
+message keeps SES's own SPF, DKIM and DMARC results for the original, as
+`X-Original-Authentication-Results`. `no-reply@glazecalcapp.com`, the
 app's sender, stays undeliverable, and there is no catch-all: any other address is refused.
+
+The DMARC handling and that header reach the live function when its code is next updated: run the
+script again (below, "Changing the inbox or the function") or deploy the CDK's `glazecalc-mail-inbound`
+stack ([deploy/cdk/README.md](../cdk/README.md)). Until then it drops spam and viruses only.
 
 The owner's inbox address is kept only in the Lambda function's environment (the script takes it from
 `OWNER_INBOX` when you run it). It is in no file in this repository.
@@ -489,13 +497,14 @@ Send a message from some other mail account (not the inbox it forwards to) to ea
 - Each should arrive within a minute, from `<your name> via Glazecalc`, with the text intact and any
   attachment (try a small PDF).
 - Press Reply: the To address should be the account you sent from, not `forwarder@`.
-- In one message's source: `dkim=pass` and `dmarc=pass` for glazecalcapp.com, and no `DKIM-Signature` of the
-  original sender.
+- In one message's source: `dkim=pass` and `dmarc=pass` for glazecalcapp.com, no `DKIM-Signature` of the
+  original sender, and the original's results from SES in `X-Original-Authentication-Results`.
 - Send to `nobody@glazecalcapp.com` and to `no-reply@glazecalcapp.com`: both should bounce.
 - `nslookup -type=MX glazecalcapp.com` shows the new record.
 - Nothing arrives? Read the function's log: `aws logs tail /aws/lambda/glazecalc-mail-forwarder --since 15m`,
   and list the stored messages: `aws s3 ls s3://glazecalc-mail-724654236968/inbound/`. A message the scan
-  marked as spam is stored, but the log says "Dropped"; look at the object if you suspect a false positive.
+  marked as spam, or one dropped for DMARC, is stored, but the log says "Dropped" with its id and why; look at
+  the object if you suspect a false positive.
   A message too large for SES to send on fails and stays in the bucket for 30 days.
 
 ### Send mail as these addresses (Gmail)

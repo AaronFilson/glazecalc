@@ -24,21 +24,29 @@ const EMAILS = wave.SCRATCH + 'emails/';
 const dry = process.argv.includes('--dry');
 const codes = process.argv.slice(2).filter((a) => a !== '--dry');
 if (!codes.length) throw new Error('which languages?');
+// A code as languages.js writes one (en, pt-BR, zh-Hant, es-419, en-XA), and nothing else: it goes into the
+// patterns and file names below.
+for (const code of codes) {
+  if (!/^[a-z]{2,3}(-([A-Z][a-z]{3}|[A-Z]{2}|\d{3}))?$/.test(code))
+    throw new Error(code + ': not a language code (such as ga, pt-BR or zh-Hant)');
+}
+const escapeRegExp = (text) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const write = (file, text) => (dry ? console.log('would write', file) : writeFileSync(file, text));
 
 // 1. live
 const languagesFile = ROOT + 'lib/regions/languages.js';
 let languages = readFileSync(languagesFile, 'utf8');
 for (const code of codes) {
-  const line = new RegExp(`^(  language\\('${code}', '[^']+', '[^']+')\\),$`, 'm');
+  const name = escapeRegExp(code);
+  const line = new RegExp(`^(  language\\('${name}', '[^']+', '[^']+')\\),$`, 'm');
   // A language with options of its own (Irish, Maltese: { plainNotice: true }) gets live first among them.
   const withOptions = new RegExp(
-    `^(  language\\('${code}', '[^']+', '[^']+', \\{ )(?!live: true)([^}\\n]*\\}\\)),$`,
+    `^(  language\\('${name}', '[^']+', '[^']+', \\{ )(?!live: true)([^}\\n]*\\}\\)),$`,
     'm'
   );
   if (line.test(languages)) languages = languages.replace(line, '$1, { live: true }),');
   else if (withOptions.test(languages)) languages = languages.replace(withOptions, '$1live: true, $2,');
-  else if (!new RegExp(`^  language\\('${code}', [^\\n]*live: true`, 'm').test(languages))
+  else if (!new RegExp(`^  language\\('${name}', [^\\n]*live: true`, 'm').test(languages))
     throw new Error(code + ': not in languages.js');
 }
 write(languagesFile, languages);

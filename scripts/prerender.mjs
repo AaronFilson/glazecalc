@@ -147,10 +147,13 @@ export const startDocument = (indexHtml) => {
   return indexHtml.replace('<gc-root>', `<gc-root ngCspNonce="${NONCE_PLACEHOLDER}">`);
 };
 
-/** The inline scripts that run (not JSON data), as written. */
+/**
+ * The inline scripts that run (not JSON data), as written. Tags in any case, and an end tag as a browser reads one
+ * (</script >, </SCRIPT>), so no script that runs is missed.
+ */
 export const inlineScripts = (html) =>
-  [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)]
-    .filter(([, attributes]) => !/\bsrc=/.test(attributes) && !/\btype="application\/(ld\+)?json"/.test(attributes))
+  [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script\b[^>]*>/gi)]
+    .filter(([, attributes]) => !/\bsrc=/i.test(attributes) && !/\btype="application\/(ld\+)?json"/i.test(attributes))
     .map(([, , body]) => body);
 
 /** The font families the text is set in (styles.scss, --gc-font), in the order a browser tries them. */

@@ -454,6 +454,26 @@ Afterwards:
   check the parameters against the provider's console. `OAUTH_FAILED` lines are single sign-ins
   that did not work (a code reused, the provider slow), worth a look only in numbers.
 
+## Security updates
+
+`unattended-upgrades` installs Debian's security updates each day, and reboots at 11:30 UTC when
+one needs it (`cloud-init.yaml`). Docker Engine and containerd come from Docker's own repository,
+which Debian's list of origins leaves out, so `cloud-init.yaml` adds it
+(`/etc/apt/apt.conf.d/51glazecalc-docker`) and they update the same way. An update to Docker
+restarts it, and the app with it (`glazecalc.service` requires `docker.service`): about a minute.
+cloud-init runs only at first boot, so an instance made before that file was added gets it by
+hand, once, in Session Manager:
+
+```bash
+sudo tee /etc/apt/apt.conf.d/51glazecalc-docker > /dev/null <<'EOF'
+Unattended-Upgrade::Origins-Pattern {
+  "origin=Docker,codename=${distro_codename},label=Docker CE";
+};
+EOF
+# The allowed origins now include Docker's:
+sudo unattended-upgrade --dry-run --debug 2>&1 | grep -m1 'Allowed origins'
+```
+
 ## How long logs are kept
 
 | Log                                                     | Kept                                              | Set in                             |

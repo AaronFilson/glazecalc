@@ -28,7 +28,8 @@ const CONTENT = /^(client\/|docs\/guides\/|lib\/|data\/|server\/lib\/pages\.ts$)
 export const changesContent = (files) => files.some((file) => CONTENT.test(file));
 
 /**
- * The addresses of a sitemap, each <loc> once.
+ * The addresses of a sitemap, each <loc> once. &amp; is read last, so an escaped entity (&amp;lt;) becomes the text
+ * it stands for (&lt;), not read a second time.
  * @param {string} xml
  * @returns {string[]}
  */
@@ -36,10 +37,10 @@ export const sitemapUrls = (xml) => [
   ...new Set(
     [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(([, loc]) =>
       loc
-        .replace(/&amp;/g, '&')
         .replace(/&lt;/g, '<')
         .replace(/&gt;/g, '>')
         .replace(/&quot;/g, '"')
+        .replace(/&amp;/g, '&')
     )
   )
 ];
@@ -132,9 +133,19 @@ export async function ping({ site, to, from, changedFiles = gitChangedFiles, fet
   }
 }
 
-/** The files changed between two commits, by git. */
-function gitChangedFiles(from, to) {
-  return execFileSync('git', ['diff', '--name-only', from, to], { encoding: 'utf8' }).split('\n').filter(Boolean);
+/**
+ * The files changed between two commits, by git. The last commit sent comes back from the job's cache, so it is taken
+ * only as a full SHA (anything else throws, and every address is sent), and git reads both commits as revisions,
+ * never as options.
+ * @param {string} from
+ * @param {string} to
+ * @returns {string[]}
+ */
+export function gitChangedFiles(from, to) {
+  if (!/^[0-9a-f]{40}$/.test(from)) throw new Error(`the last commit sent (${from}) is not a full SHA`);
+  return execFileSync('git', ['diff', '--name-only', '--end-of-options', from, to], { encoding: 'utf8' })
+    .split('\n')
+    .filter(Boolean);
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {

@@ -106,6 +106,39 @@ describe('nginx access log', () => {
   });
 });
 
+// What nginx tells the app about a request (deploy/nginx). The app trusts one
+// hop (server/app.ts, trust proxy), so every forwarding header it may read is
+// set here and no client's gets through: X-Forwarded-Host is the Host, and an
+// RFC 7239 Forwarded is dropped (an empty value is not passed on). A location
+// with its own proxy_set_header inherits none, so each proxied one is checked.
+describe('nginx proxy headers', () => {
+  /** Each proxied location's proxy_set_header lines, as name and value. */
+  const proxiedIn = (file: string): Array<Record<string, string>> => {
+    const text = fs.readFileSync(path.join(NGINX, file), 'utf8');
+    const locations = [...text.matchAll(/^\s*location [^{]*\{([^}]*)\}/gm)]
+      .map((m) => m[1]!)
+      .filter((body) => /^\s*proxy_pass /m.test(body));
+    expect(locations, file).to.have.length(3);
+    return locations.map((body) =>
+      Object.fromEntries([...body.matchAll(/^\s*proxy_set_header (\S+) (.+);$/gm)].map((m) => [m[1]!, m[2]!]))
+    );
+  };
+
+  it("sets the Host, the client's address and scheme, and X-Forwarded-Host, and drops Forwarded, everywhere", () => {
+    const expected = {
+      Host: '$host',
+      'X-Real-IP': '$remote_addr',
+      'X-Forwarded-For': '$proxy_add_x_forwarded_for',
+      'X-Forwarded-Proto': '$scheme',
+      'X-Forwarded-Host': '$host',
+      Forwarded: '""'
+    };
+    for (const file of ['glazecalc-proxy.conf', 'glazecalc-staging.conf']) {
+      for (const headers of proxiedIn(file)) expect(headers, file).to.eql(expected);
+    }
+  });
+});
+
 // What nginx compresses besides HTML: the sitemap (application/xml, about 1 MB)
 // among them, the same in production and on staging.
 describe('nginx compression', () => {

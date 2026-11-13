@@ -32,6 +32,16 @@ write_files:
       APT::Periodic::Update-Package-Lists "1";
       APT::Periodic::Unattended-Upgrade "1";
 
+  # Docker Engine and containerd come from Docker's own repository
+  # (setup-instance.sh), which Debian's list of origins to update from leaves
+  # out: this adds it, so they update the same way. An update restarts Docker,
+  # and the app with it, for about a minute. Added to the list, not replacing it.
+  - path: /etc/apt/apt.conf.d/51glazecalc-docker
+    content: |
+      Unattended-Upgrade::Origins-Pattern {
+        "origin=Docker,codename=${distro_codename},label=Docker CE";
+      };
+
   # Kernel and similar updates only take effect after a reboot. When one needs
   # it, reboot at 11:30 UTC: after the 10:00 snapshot and the 10:30 (+20 min)
   # backup. glazecalc.service brings the app back; about a minute of downtime.

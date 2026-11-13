@@ -42,8 +42,18 @@ permissions: {}
 jobs:
   deploy:
     # After Publish image: only when it published (a run after a failed CI is
-    # skipped). The group is on the job, so a run skipped here never holds a place.
-    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    # skipped), and only this repository's own run of publish.yml, which CI's
+    # end starts (workflow_run). A fork's pull request runs the fork's workflow
+    # files here, so from a branch named master it could add one named Publish
+    # image, with a title naming an older commit: that run comes from the fork,
+    # by pull_request, and starts nothing. The group is on the job, so a run
+    # skipped here never holds a place.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'workflow_run' &&
+      github.event.workflow_run.head_repository.full_name == github.repository &&
+      github.event.workflow_run.path == '.github/workflows/publish.yml')
     concurrency:
       group: deploy-production
       cancel-in-progress: false
@@ -64,7 +74,9 @@ jobs:
       # The tag to deploy, and its commit for the Live checks ("latest" is
       # master's newest). After Publish image, the commit it built is the one in
       # its run's title: a run started by another's end carries master's newest
-      # commit as its own, which may be later than the one built.
+      # commit as its own, which may be later than the one built. The tag is
+      # checked before anything goes into $GITHUB_OUTPUT, where a line break in
+      # a typed one could set another output (ref, which the jobs after check out).
       - name: The image
         id: image
         env:
@@ -81,6 +93,10 @@ jobs:
             tag=sha-${BASH_REMATCH[1]}
           else
             tag=${GIVEN:-sha-$THIS}
+          fi
+          if [[ ! "$tag" =~ ^(latest|sha-[0-9a-f]{40})$ ]]; then
+            printf 'The tag %q is neither latest nor sha-<full commit SHA>; nothing deployed.\n' "$tag"
+            exit 1
           fi
           echo "tag=$tag" >> "$GITHUB_OUTPUT"
           if [ "$tag" = latest ]; then echo "ref=master" >> "$GITHUB_OUTPUT"; else echo "ref=${tag#sha-}" >> "$GITHUB_OUTPUT"; fi
@@ -139,10 +155,21 @@ jobs:
           key: indexnow-${{ github.run_id }}
           restore-keys: indexnow-
 
+      # Only a commit on master is sent, checked before any of its code runs
+      # (the script is the deployed commit's; fetch-depth 0 fetched every
+      # branch, master among them). That is why the cache is safe to trust: it
+      # is written only after this check, by master's own code, in runs of
+      # master's Deploy (a run from another branch writes that branch's cache,
+      # which master's never reads), and holds only a commit, which
+      # scripts/indexnow.mjs takes only as a full SHA, and as a revision.
       - name: Send the changed pages
         env:
           TO: ${{ needs.deploy.outputs.ref }}
         run: |
+          if ! git merge-base --is-ancestor "$TO" origin/master; then
+            echo "$TO is not on master: nothing sent, and the last commit sent stays as it was."
+            exit 0
+          fi
           from=$(cat .indexnow-last 2>/dev/null || true)
           node scripts/indexnow.mjs https://glazecalcapp.com "$TO" "$from"
           git rev-parse HEAD > .indexnow-last
