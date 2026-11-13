@@ -172,14 +172,77 @@ describe('SharedPage', () => {
     expect(text(bare.fixture, 'h1')).toBe('This recipe is not shared');
   });
 
-  it('offers to try again when the server cannot answer', async () => {
-    const { fixture } = await open('#' + SECRET, (req) =>
+  it('offers to try again when the server cannot answer, and opens the recipe when it can', async () => {
+    const { fixture, root } = await open('#' + SECRET, (req) =>
       req.flush(
         { code: 'too-many-shared-views', msg: 'Too many shared recipes.' },
         { status: 429, statusText: 'Too Many Requests' }
       )
     );
     expect(text(fixture, '.shared-problem')).toBe('Too many shared recipes.');
-    expect(text(fixture)).toContain('Try again');
+    const again = [...root.querySelectorAll('button')].find((b) => b.textContent?.trim() === 'Try again')!;
+    again.click();
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/shared/recipe')
+      .flush(SHARED);
+    await settle(fixture);
+    expect(text(fixture, 'h1')).toBe('Class clear');
+  });
+
+  it('gives the cone it was tested at, the note for a food surface, and each material’s formula', async () => {
+    const { fixture } = await open('#' + SECRET, (req) =>
+      req.flush({
+        ...SHARED,
+        materials: [{ ...WHITING, amount: '20', rawformula: 'CaCO3' }, SHARED.materials[1]],
+        foodSurface: true,
+        firedAt: { scale: 'orton', low: '6', tested: ['6'], atmospheres: ['oxidation'] }
+      })
+    );
+    expect(text(fixture, '.shared-firing-tested')).toMatch(/^Tested at .*6/);
+    expect(text(fixture, '.shared-liner')).toContain(
+      'Food safety depends on firing this glaze to the cone it was tested at'
+    );
+    expect(text(fixture, '.shared-formula')).toBe('CaCO₃');
+  });
+
+  it('moves between the recipe and the working, and prints the sheet', async () => {
+    const { fixture, root } = await open('#' + SECRET, (req) => req.flush(SHARED));
+    const press = async (label: string) => {
+      [...root.querySelectorAll('button')].find((b) => b.textContent?.trim() === label)!.click();
+      await settle(fixture);
+    };
+    await press('Show the working');
+    expect(root.querySelector('gc-worked-calculation')).not.toBeNull();
+    (root.querySelector('#shared-view-recipe') as HTMLButtonElement).click();
+    await settle(fixture);
+    expect(root.querySelector('gc-worked-calculation')).toBeNull();
+    expect(root.querySelector('#shared-view-recipe')?.getAttribute('aria-pressed')).toBe('true');
+    const print = vi.spyOn(window, 'print').mockImplementation(() => undefined);
+    await press('Print');
+    expect(print).toHaveBeenCalledTimes(1);
+    print.mockRestore();
+  });
+
+  it('says there is no unity formula for a recipe with no amounts', async () => {
+    const { fixture } = await open('#' + SECRET, (req) =>
+      req.flush({ ...SHARED, materials: SHARED.materials.map((line) => ({ ...line, amount: '' })), additives: [] })
+    );
+    expect(text(fixture, '.shared-chemistry')).toContain('There is no unity formula: the materials have no amounts.');
+  });
+
+  it('borrows chemistry for an additive by another name of the material', async () => {
+    const { fixture } = await open('#' + SECRET, (req) =>
+      req.flush({
+        ...SHARED,
+        additives: [{ ...SHARED.additives![0]!, chemistryOf: 'bentone' }],
+        borrowed: [{ ...BENTONITE, aliases: ['Bentone'] }]
+      })
+    );
+    const page = evaluate(SHARED.materials, SHARED.additives, {
+      includeAdditives: true,
+      chemistryOf: (name) => (name === 'Bentonite' ? BENTONITE : undefined)
+    }).analysis!;
+    expect(text(fixture, '.shared-chemistry')).toContain('SiO₂ : ' + page.uList['SiO2'].toFixed(3));
   });
 });
