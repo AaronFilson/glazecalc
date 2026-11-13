@@ -306,7 +306,7 @@ The Angular CLI, TypeScript, ESLint and the test runners are installed into the 
     npm run seed     loads the standard materials, additives and advice into MONGODB_URI
     node scripts/usage-stats.mjs
                      totals for the README: accounts, what they keep, connected apps, countries;
-                     counts only (on the instance: docker compose exec app node scripts/usage-stats.mjs)
+                     counts only (on the instance: see the script's header)
     npm run lint     checks the code with ESLint
     npm run typecheck  checks the server's TypeScript (Node runs it without compiling), and the
                      chemistry library's JavaScript against its declarations (lib/tsconfig.json)
