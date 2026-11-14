@@ -37,3 +37,8 @@ export function isRawClay(material: MaterialRecord): boolean;
 export function rawClayHigh(clay: number, clayWas?: number): boolean;
 /** Raw (not calcined) clay as a percent of the batch. */
 export function rawClayPercent(lines: Array<Omit<MaterialRecord, 'amount'> & { amount?: string | number }>): number;
+/**
+ * How serious BaO in the unity formula is, compared at the two decimals shown: null to 0.10, 'likely'
+ * from 0.40, 'caution' between (CHECK_LIMITS.barium; Digitalfire, https://digitalfire.com/glossary/123).
+ */
+export function bariumSeverity(barium: number): 'caution' | 'likely' | null;
