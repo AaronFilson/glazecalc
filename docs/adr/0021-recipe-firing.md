@@ -140,11 +140,14 @@ panel. Recipes so far say their firing only in the notes, if at all.
   column, and an Orton cone the SK cone nearest it in Kyoto's SK column, each within 15 °C or none
   (`KYOTO_SK` and `KYOTO_ORTON` in `lib/cones/firing.js`; the table labels Orton 4 to 6 "4a" to
   "6a" and the figure sits in the Orton column). So SK 7 to 14 are Orton 4, 5, 6, 7, 8, 10, 11 and
-  12; Orton 4, 5, 6, 7, 8, 10, 11 and 12 are SK 7, 9, 9, 10, 11, 12, 13 and 14; Orton 9, half
-  cones and cones outside 4 to 12 have none. (Orton 5 and 6 are 4 °C apart in the table, so both
-  are SK 9, and SK 8 is Orton 5: the match is approximate in both directions.) SK 12 for Orton 10
-  is still the institute's own statement. What is shown as a temperature is unchanged (SK 8 and
-  10 only), as are the bands. Conversions stay display only and say they are approximate.
+  12; Orton 4, 5, 6, 7, 8, 10, 11 and 12 are SK 7, 8, 9, 10, 11, 12, 13 and 14; Orton 9, half
+  cones and cones outside 4 to 12 have none. SK 12 for Orton 10 is still the institute's own
+  statement. What is shown as a temperature is unchanged (SK 8 and 10 only), as are the bands.
+  Conversions stay display only and say they are approximate. (Amended 2026-11-13: the two columns
+  are matched one to one, nearest pairs first (`KYOTO_MATCH`), so a cone taken across and back is
+  the cone it was, and a recipe at one cone matches the other's equivalent both ways round. Orton 5
+  was SK 9, the SK cone nearest it (4 °C, against 9 for SK 8), while SK 9 was Orton 6 (0 °C) and
+  SK 8 was Orton 5: cone 5 went across as SK 9 and came back as cone 6. Orton 5 is now SK 8.)
 - **Result cards (amended 2026-10-19).** A recipe keeps the potter's summary of how it came out
   for each **cone and atmosphere** (owner's decision: cone 6 oxidation and cone 6 reduction are
   separate cards), as `coneResults: [{ cone, atmosphere?, summary }]` (`lib/cones/results.js`):
