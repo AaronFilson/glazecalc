@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import chemistry from '../../lib/chemistry/index.js';
 import * as famous from '../../lib/famous-glazes.js';
 import type { FamousGlaze } from '../../lib/famous-glazes.js';
 import { FAMOUS_GLAZE_PAGES, famousTranslatedIn } from '../../lib/pages.js';
@@ -127,6 +128,35 @@ describe('famous glazes: the data', () => {
     expect(famous.glazeProblems({ ...copy(fixture), records: [] } as unknown as FamousGlaze).join()).to.match(
       /no records/
     );
+  });
+
+  it('gives no colorant-flux or silica-high warning on any glaze: its recipe, with its colorants, or its analysis', () => {
+    const quiet = (lines: Array<{ material: unknown; amount: number | string }>, label: string) => {
+      const codes = chemistry.calculateUMF(lines as never).warningCodes.map((w) => w.code);
+      expect(codes, label).to.not.include.members(['colorant-flux', 'silica-high']);
+    };
+    type Line = { record: { fields?: unknown[]; noChemistry?: boolean } | undefined; amount: number | string };
+    for (const glaze of [...glazes, fixture]) {
+      const resolved = famous.resolveGlaze(glaze) as {
+        recipe: { lines: Line[]; additives: Line[] } | null;
+        analysis: { oxides: Record<string, number> } | null;
+      };
+      if (resolved.recipe) {
+        const base = resolved.recipe.lines.map((line) => ({ material: line.record, amount: line.amount }));
+        quiet(base, glaze.slug);
+        const total = base.reduce((sum, line) => sum + Number(line.amount), 0);
+        const colorants = resolved.recipe.additives
+          .filter((line) => line.record?.fields?.length && !line.record.noChemistry)
+          .map((line) => ({ material: line.record, amount: (Number(line.amount) * total) / 100 }));
+        quiet([...base, ...colorants], glaze.slug + ' with its colorants');
+      }
+      if (resolved.analysis) {
+        const analysis = Object.fromEntries(
+          Object.entries(resolved.analysis.oxides).filter(([oxide]) => oxide in chemistry.OXIDE_GROUPS)
+        );
+        quiet([{ material: { name: glaze.slug, analysis }, amount: 100 }], glaze.slug + ' analysis');
+      }
+    }
   });
 
   it('resolves each material to its full record for the page', () => {

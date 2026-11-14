@@ -212,6 +212,34 @@ describe('glaze chemistry', () => {
       // A glaze, even one with much silica, is not.
       expect(calculateUMF({ 'Potash Feldspar': 25, Whiting: 10, Kaolin: 15, Silica: 50 }).warnings).to.eql([]);
     });
+
+    it('should keep colorant oxides as fluxes, and warn when they are most of the flux or silica runs past 10', () => {
+      const codes = (recipe: Record<string, number>) => calculateUMF(recipe).warningCodes.map((w) => w.code);
+      // Silica and kaolin with 5% cobalt carbonate: cobalt is all the flux, and the silica is over 30.
+      const cobalt = calculateUMF({ Silica: 70, Kaolin: 25, 'Cobalt Carbonate': 5 });
+      expect(cobalt.umf.CoO).to.be.closeTo(1, 1e-9);
+      expect(cobalt.umf.SiO2).to.be.above(30);
+      expect(cobalt.warningCodes.map((w) => w.code)).to.deep.equal(['colorant-flux', 'silica-high']);
+      expect(cobalt.warnings[0]).to.equal(
+        'Colorant oxides (CoO) are most of the flux, so the unity formula is scaled to them and says little about how the glaze melts.'
+      );
+      expect(cobalt.warnings[1]).to.equal(
+        'The unity formula has 32.32 SiO₂, more than a glaze can melt: there is too little flux, or this is not a glaze.'
+      );
+      // Most of the flux: 10 g of whiting is 0.0999 mol CaO; cobalt carbonate is 118.9 g a mole.
+      expect(codes({ Whiting: 10, 'Cobalt Carbonate': 9.7, Silica: 30, Kaolin: 10 })).to.deep.equal([]);
+      expect(codes({ Whiting: 10, 'Cobalt Carbonate': 14.5, Silica: 30, Kaolin: 10 })).to.deep.equal(['colorant-flux']);
+      // Silica past 10: 59 g of silica is 9.8 on 10 g of whiting, 61 g is 10.2.
+      expect(codes({ Whiting: 10, Silica: 59 })).to.deep.equal([]);
+      expect(codes({ Whiting: 10, Silica: 61 })).to.deep.equal(['silica-high']);
+      // Where the flux is only a trace, that is the warning: the unity formula means nothing anyway.
+      expect(codes({ Silica: 99.5, Whiting: 0.5 })).to.deep.equal(['trace-flux']);
+      // Never on the examples: the README's Leach 4321 (the landing page's) and a copper glaze.
+      expect(codes({ 'Potash Feldspar': 40, Silica: 30, Whiting: 20, Kaolin: 10 })).to.deep.equal([]);
+      expect(
+        codes({ 'Potash Feldspar': 40, Silica: 30, Whiting: 20, Kaolin: 10, 'Copper Carbonate': 5 })
+      ).to.deep.equal([]);
+    });
   });
 
   describe('app material format', () => {
