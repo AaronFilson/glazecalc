@@ -175,6 +175,49 @@ describe('Shared recipe tools', () => {
     expect(cautions.map((caution) => caution.check)).to.include('clay-low');
   });
 
+  it('knows a potter’s own raw clay and whiting, which have no category, by their analysis', () => {
+    const library = standardData.load('materials') as MaterialRecord[];
+    const epk = library.find((m) => m.name === 'EPK Kaolin')!;
+    const whiting = library.find((m) => m.name === 'Whiting')!;
+    // A potter's own, typed in from the data sheet: no category, no ownedBy 'Standard'.
+    const own = (record: MaterialRecord, name: string): MaterialRecord => ({
+      name,
+      percentmole: record.percentmole,
+      loi: record.loi,
+      fields: record.fields
+    });
+    const myEpk = own(epk, 'My EPK');
+    const myWhiting = own(whiting, 'Calcium carbonate from the feed store');
+    expect(recipe.isRawClay(myEpk)).to.equal(true);
+    const unity = { K2O: 0.2, CaO: 0.8, Al2O3: 0.3, B2O3: 0.6, SiO2: 3 };
+    const checks = (clay: MaterialRecord, flux: MaterialRecord, amounts: [number, number, number]) => {
+      const lines = [
+        { material: clay, amount: String(amounts[0]) },
+        { material: flux, amount: String(amounts[1]) },
+        { material: SILICA, amount: String(amounts[2]) }
+      ];
+      return {
+        clay: recipe.rawClayPercent(lines.map((line) => ({ ...line.material, amount: line.amount }))),
+        checks: recipe.pastLimits({ lines, unity, celsius: 1060 }).map((c) => [c.check, c.severity, c.value])
+      };
+    };
+    // My EPK and my whiting behave as the library's: too much clay, too little, and raw whiting at low fire.
+    for (const amounts of [
+      [30, 10, 60],
+      [3, 10, 87],
+      [15, 12, 73]
+    ] as Array<[number, number, number]>) {
+      expect(checks(myEpk, myWhiting, amounts), String(amounts)).to.deep.equal(checks(epk, whiting, amounts));
+    }
+    expect(checks(myEpk, myWhiting, [30, 10, 60]).checks.map((c) => c[0])).to.include.members(['clay-high', 'whiting']);
+    // Calcined clay (no LOI) and wollastonite (calcium, no LOI) are neither.
+    expect(recipe.isRawClay({ ...myEpk, name: 'My calcined kaolin', loi: 0 })).to.equal(false);
+    const wollastonite = { name: 'My wollastonite', percentmole: 'molecular' as const, loi: 0, fields: whiting.fields };
+    expect(checks(myEpk, wollastonite, [15, 12, 73]).checks.map((c) => c[0])).to.not.include('whiting');
+    // A library record keeps its category: kaolin's analysis filed as something else is not raw clay.
+    expect(recipe.isRawClay({ ...myEpk, category: 'feldspar' })).to.equal(false);
+  });
+
   it('does not warn of what the old recipe already had', () => {
     const unity = { K2O: 0.6, Na2O: 0.1, CaO: 0.3, Al2O3: 0.3, SiO2: 3 };
     const lines = [{ material: KAOLIN, amount: '10' }];
