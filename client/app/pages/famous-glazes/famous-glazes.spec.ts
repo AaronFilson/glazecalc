@@ -44,8 +44,8 @@ import {
 } from './famous-route';
 
 // Famous glazes' pages, from the tests' fixture glaze (data/famous-glazes/fixtures) and İznik, each as
-// scripts/famous-glazes.mjs writes it: every material its full record, and some of its versions as the
-// build worked them out on 2026-11-13 (lib/famous-versions.js; the server's tests hold the build to them).
+// scripts/famous-glazes.mjs writes it: every material its full record, and some of its versions as
+// lib/famous-versions.js worked them out on 2026-11-13 (the server's tests check the ones the build ships).
 
 const standard = (name: string) => STANDARD_MATERIALS.find((material) => material.name === name)!;
 const additive = (name: string, oxide: string): Additive => ({ name, fields: [{ name: oxide, amount: '100' }] });
