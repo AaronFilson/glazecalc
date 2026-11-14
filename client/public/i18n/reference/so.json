@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc wuxuu hayaa falanqaynta walaxda {name} oo ah boqolkiiba miisaanka walaxda ceeriin. Qaybta UMF waa moles-ka oksaydh kasta ee ku jira xaddiga walaxda {name} ee haysta 1.0 mole oo flux ah, taasina waa sida Glazecalc ugu daro UMF-ta habka.",
     "analysisMolecular": "Glazecalc wuxuu hayaa falanqaynta walaxda {name} oo ah moles-ka oksaydh kasta oo la gubay qaacido kasta. Qaybta UMF waa moles-ka oksaydh kasta ee ku jira xaddiga walaxda {name} ee haysta 1.0 mole oo flux ah, taasina waa sida Glazecalc ugu daro UMF-ta habka.",
     "noFlux": "Walaxda {name} ma laha oksaydh flux ah, sidaas darteed qaybteeda UMF waa qaacido kasta sida loo qoray.",
+    "noFluxAnalysis": "Walaxda {name} ma laha oksaydh flux ah, sidaas darteed qaybteeda UMF waa 100 g kasta, xaddiga falanqaynteeda loo bixiyay.",
     "tableCaption": "Oksaydhyada ku jira walaxda {name}",
     "oxide": "Oksaydh",
     "amountPercent": "Miisaan %",

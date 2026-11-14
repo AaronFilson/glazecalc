@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalcqa material {name} sutiyuqpa análisisninta mana ruphachisqa materialpa llasayninpi porcentaje hina hap''in. Fórmula unitariaman yapayninqa sapa óxidopa molninkunam, chay materialpa 1.0 mol fundenteta hap''iq kaqninpi; chaywanmi Glazecalc esmalte ruranapa fórmula unitarianman yapan.",
     "analysisMolecular": "Glazecalcqa material {name} sutiyuqpa análisisninta sapa ruphachisqa óxidopa molninkuna hina, sapa fórmulapaq hap''in. Fórmula unitariaman yapayninqa sapa óxidopa molninkunam, chay materialpa 1.0 mol fundenteta hap''iq kaqninpi; chaywanmi Glazecalc esmalte ruranapa fórmula unitarianman yapan.",
     "noFlux": "Material {name} sutiyuqqa manam fundente óxidoyuqchu, chaymi fórmula unitariaman yapayninqa qillqasqa fórmulapaqmi.",
+    "noFluxAnalysis": "Material {name} sutiyuqqa manam fundente óxidoyuqchu, chaymi fórmula unitariaman yapayninqa 100 g-paq, análisisnin qusqa kaq cantidadpaqmi.",
     "tableCaption": "Material {name} sutiyuqpi óxidokuna",
     "oxide": "Óxido",
     "amountPercent": "Llasay %",

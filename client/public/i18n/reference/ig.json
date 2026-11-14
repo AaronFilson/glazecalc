@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc nwere nyocha {name} dịka pasent ịdị arọ nke ihe ahụ a na-agbabeghị ọkụ. Ntinye unity bụ moles nke oxide ọ bụla n''ọnụ ọgụgụ {name} nke nwere 1.0 mole nke flux; otu a ka Glazecalc si agbakwunye ya n''unity formula nke usoro.",
     "analysisMolecular": "Glazecalc nwere nyocha {name} dịka moles nke oxide ọ bụla a gbara ọkụ n''otu formula. Ntinye unity bụ moles nke oxide ọ bụla n''ọnụ ọgụgụ {name} nke nwere 1.0 mole nke flux; otu a ka Glazecalc si agbakwunye ya n''unity formula nke usoro.",
     "noFlux": "{name} enweghị flux oxide, ya mere ntinye unity ya bụ kwa formula dịka e dere ya.",
+    "noFluxAnalysis": "{name} enweghị flux oxide, ya mere ntinye unity ya bụ kwa 100 g, ọnụ ọgụgụ e nyere nyocha ya maka ya.",
     "tableCaption": "Oxide dị na {name}",
     "oxide": "Oxide",
     "amountPercent": "Ịdị arọ %",

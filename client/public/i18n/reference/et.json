@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalcil on selle tooraine ({name}) analüüs massiprotsentidena tooraine massist. Panus Segeri valemisse on iga oksiidi moolide arv sellises koguses seda toorainet, milles on 1,0 mooli sulandajat; nii liidab Glazecalc selle retsepti Segeri valemisse.",
     "analysisMolecular": "Glazecalcil on selle tooraine ({name}) analüüs põletatud oksiidide moolidena valemi kohta. Panus Segeri valemisse on iga oksiidi moolide arv sellises koguses seda toorainet, milles on 1,0 mooli sulandajat; nii liidab Glazecalc selle retsepti Segeri valemisse.",
     "noFlux": "{name} ei sisalda sulandajaoksiidi, seetõttu on panus Segeri valemisse antud valemi kohta nii, nagu see on kirjutatud.",
+    "noFluxAnalysis": "{name} ei sisalda sulandajaoksiidi, seetõttu on panus Segeri valemisse antud 100 g kohta, mis on kogus, mille kohta selle analüüs on antud.",
     "tableCaption": "Oksiidid tooraines {name}",
     "oxide": "Oksiid",
     "amountPercent": "Massi %",

@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc dispose de l’analyse de la matière {name} en pourcentage de la masse de la matière première. L’apport à la formule de Seger correspond aux moles de chaque oxyde dans la quantité de la matière {name} qui contient 1,0 mole de fondant ; c’est ainsi que Glazecalc l’ajoute à la formule de Seger d’une recette.",
     "analysisMolecular": "Glazecalc dispose de l’analyse de la matière {name} en moles de chaque oxyde après cuisson, par formule. L’apport à la formule de Seger correspond aux moles de chaque oxyde dans la quantité de la matière {name} qui contient 1,0 mole de fondant ; c’est ainsi que Glazecalc l’ajoute à la formule de Seger d’une recette.",
     "noFlux": "La matière {name} ne contient aucun oxyde fondant ; son apport à la formule de Seger est donc donné par formule, telle qu’elle est écrite.",
+    "noFluxAnalysis": "La matière {name} ne contient aucun oxyde fondant ; son apport à la formule de Seger est donc donné pour 100 g, la quantité pour laquelle son analyse est donnée.",
     "tableCaption": "Oxydes de la matière {name}",
     "oxide": "Oxyde",
     "amountPercent": "% en poids",

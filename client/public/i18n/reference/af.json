@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc het die ontleding van {name} as gewigspersentasie van die rou grondstof. Die UMF-bydrae is die mol van elke oksied in die hoeveelheid {name} wat 1,0 mol vloeimiddel bevat; so voeg Glazecalc dit by ''n resep se Seger-formule (UMF).",
     "analysisMolecular": "Glazecalc het die ontleding van {name} as mol van elke gebakte oksied per formule. Die UMF-bydrae is die mol van elke oksied in die hoeveelheid {name} wat 1,0 mol vloeimiddel bevat; so voeg Glazecalc dit by ''n resep se Seger-formule (UMF).",
     "noFlux": "{name} het geen vloeimiddeloksied nie, dus is sy UMF-bydrae per formule soos geskryf.",
+    "noFluxAnalysis": "{name} het geen vloeimiddeloksied nie, dus is sy UMF-bydrae per 100 g, die hoeveelheid waarvoor sy ontleding gegee word.",
     "tableCaption": "Oksiede in {name}",
     "oxide": "Oksied",
     "amountPercent": "Gewig-%",

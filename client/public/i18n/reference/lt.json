@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc turi žaliavos {name} analizę kaip žaliavos masės procentus. Indėlis į Segerio formulę – tai kiekvieno oksido moliai tokiame žaliavos {name} kiekyje, kuriame yra 1,0 mol fliuso. Taip Glazecalc įtraukia ją į recepto Segerio formulę.",
     "analysisMolecular": "Glazecalc turi žaliavos {name} analizę kaip kiekvieno išdegusio oksido molius vienoje formulėje. Indėlis į Segerio formulę – tai kiekvieno oksido moliai tokiame žaliavos {name} kiekyje, kuriame yra 1,0 mol fliuso. Taip Glazecalc įtraukia ją į recepto Segerio formulę.",
     "noFlux": "Žaliavoje {name} nėra fliuso oksido, todėl jos indėlis į Segerio formulę skaičiuojamas vienai formulei, kaip parašyta.",
+    "noFluxAnalysis": "Žaliavoje {name} nėra fliuso oksido, todėl jos indėlis į Segerio formulę skaičiuojamas 100 g kiekiui, kuriam pateikta jos analizė.",
     "tableCaption": "Oksidai žaliavoje {name}",
     "oxide": "Oksidas",
     "amountPercent": "Masė %",

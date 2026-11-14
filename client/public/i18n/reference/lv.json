@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc ir šīs izejvielas ({name}) analīze masas procentos no neapstrādātās izejvielas. Devums Zēgera formulā ir katra oksīda molu skaits tādā šīs izejvielas daudzumā, kurā ir 1,0 mols kušņa; šādi Glazecalc to pievieno receptes Zēgera formulai.",
     "analysisMolecular": "Glazecalc ir šīs izejvielas ({name}) analīze kā apdedzināto oksīdu molu skaits uz formulu. Devums Zēgera formulā ir katra oksīda molu skaits tādā šīs izejvielas daudzumā, kurā ir 1,0 mols kušņa; šādi Glazecalc to pievieno receptes Zēgera formulai.",
     "noFlux": "{name} nesatur kušņa oksīdu, tāpēc devums Zēgera formulā ir norādīts uz formulu, kā tā uzrakstīta.",
+    "noFluxAnalysis": "{name} nesatur kušņa oksīdu, tāpēc devums Zēgera formulā ir norādīts uz 100 g – daudzumu, uz kuru attiecas tās analīze.",
     "tableCaption": "Oksīdi izejvielā {name}",
     "oxide": "Oksīds",
     "amountPercent": "Masa, %",

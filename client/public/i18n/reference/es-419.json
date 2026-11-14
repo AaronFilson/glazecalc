@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc tiene el análisis de {name} como porcentaje en peso de la materia prima. El aporte a la fórmula unitaria son los moles de cada óxido en la cantidad de {name} que contiene 1.0 mol de fundente, y así lo suma Glazecalc a la fórmula unitaria de una receta.",
     "analysisMolecular": "Glazecalc tiene el análisis de {name} como moles de cada óxido cocido por fórmula. El aporte a la fórmula unitaria son los moles de cada óxido en la cantidad de {name} que contiene 1.0 mol de fundente, y así lo suma Glazecalc a la fórmula unitaria de una receta.",
     "noFlux": "{name} no tiene ningún óxido fundente, así que su aporte a la fórmula unitaria es por fórmula, tal como está escrita.",
+    "noFluxAnalysis": "{name} no tiene ningún óxido fundente, así que su aporte a la fórmula unitaria es por 100 g, la cantidad para la que se da su análisis.",
     "tableCaption": "Óxidos en {name}",
     "oxide": "Óxido",
     "amountPercent": "% en peso",

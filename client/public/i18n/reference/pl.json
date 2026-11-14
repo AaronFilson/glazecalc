@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc zna skład surowca {name} jako procent masowy surowca przed wypałem. Udział we wzorze Segera to liczba moli każdego tlenku w takiej ilości surowca {name}, która zawiera 1,0 mola topnika; w ten sposób Glazecalc dodaje go do wzoru Segera receptury.",
     "analysisMolecular": "Glazecalc zna skład surowca {name} jako mole każdego tlenku po wypale na jeden wzór. Udział we wzorze Segera to liczba moli każdego tlenku w takiej ilości surowca {name}, która zawiera 1,0 mola topnika; w ten sposób Glazecalc dodaje go do wzoru Segera receptury.",
     "noFlux": "Surowiec {name} nie zawiera tlenku topnikowego, więc jego udział we wzorze Segera podano na jeden wzór w zapisanej postaci.",
+    "noFluxAnalysis": "Surowiec {name} nie zawiera tlenku topnikowego, więc jego udział we wzorze Segera podano na 100 g, czyli ilość, dla której podano jego skład.",
     "tableCaption": "Tlenki w surowcu {name}",
     "oxide": "Tlenek",
     "amountPercent": "% masowy",

@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc has the analysis of {name} as weight percent of the raw material. The unity contribution is the moles of each oxide in the amount of {name} that holds 1.0 mole of flux, which is how Glazecalc adds it into a recipe's unity formula.",
     "analysisMolecular": "Glazecalc has the analysis of {name} as moles of each fired oxide per formula. The unity contribution is the moles of each oxide in the amount of {name} that holds 1.0 mole of flux, which is how Glazecalc adds it into a recipe's unity formula.",
     "noFlux": "{name} has no flux oxide, so its unity contribution is per formula as written.",
+    "noFluxAnalysis": "{name} has no flux oxide, so its unity contribution is per 100 g, the amount its analysis is given for.",
     "tableCaption": "Oxides in {name}",
     "oxide": "Oxide",
     "amountPercent": "Weight %",

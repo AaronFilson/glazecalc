@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc má rozbor suroviny {name} v hmotnostních procentech suroviny. Příspěvek do Segerova vzorce je počet molů každého oxidu v takovém množství suroviny {name}, které obsahuje 1,0 molu taviva; tak ji Glazecalc přidává do Segerova vzorce receptu.",
     "analysisMolecular": "Glazecalc má rozbor suroviny {name} v molech každého vypáleného oxidu na vzorec. Příspěvek do Segerova vzorce je počet molů každého oxidu v takovém množství suroviny {name}, které obsahuje 1,0 molu taviva; tak ji Glazecalc přidává do Segerova vzorce receptu.",
     "noFlux": "Surovina {name} neobsahuje žádný oxid taviva, proto je její příspěvek do Segerova vzorce uveden na vzorec tak, jak je zapsán.",
+    "noFluxAnalysis": "Surovina {name} neobsahuje žádný oxid taviva, proto je její příspěvek do Segerova vzorce uveden na 100 g, tedy množství, pro které je uveden její rozbor.",
     "tableCaption": "Oxidy v surovině {name}",
     "oxide": "Oxid",
     "amountPercent": "Hmotn. %",

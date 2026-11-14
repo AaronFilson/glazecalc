@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc kennt die Analyse von {name} als Gewichtsprozent des Rohstoffs. Der Beitrag zur Segerformel sind die Mol jedes Oxids in der Menge von {name}, die 1,0 Mol Flussmittel enthält; so addiert Glazecalc ihn in die Segerformel eines Rezepts.",
     "analysisMolecular": "Glazecalc kennt die Analyse von {name} als Mol jedes gebrannten Oxids je Formel. Der Beitrag zur Segerformel sind die Mol jedes Oxids in der Menge von {name}, die 1,0 Mol Flussmittel enthält; so addiert Glazecalc ihn in die Segerformel eines Rezepts.",
     "noFlux": "{name} enthält kein Flussmittel-Oxid; sein Beitrag zur Segerformel gilt daher je Formel wie angegeben.",
+    "noFluxAnalysis": "{name} enthält kein Flussmittel-Oxid; sein Beitrag zur Segerformel gilt daher je 100 g, die Menge, für die seine Analyse angegeben ist.",
     "tableCaption": "Oxide in {name}",
     "oxide": "Oxid",
     "amountPercent": "Gewichts-%",

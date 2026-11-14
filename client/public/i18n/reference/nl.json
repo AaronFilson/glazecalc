@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc heeft de analyse van {name} in gewichtsprocent van de ongebakken grondstof. De bijdrage aan de Segerformule is het aantal mol van elk oxide in de hoeveelheid {name} die 1,0 mol smeltmiddel bevat; zo telt Glazecalc de grondstof op in de Segerformule van een recept.",
     "analysisMolecular": "Glazecalc heeft de analyse van {name} in mol van elk gebakken oxide per formule. De bijdrage aan de Segerformule is het aantal mol van elk oxide in de hoeveelheid {name} die 1,0 mol smeltmiddel bevat; zo telt Glazecalc de grondstof op in de Segerformule van een recept.",
     "noFlux": "{name} bevat geen smeltmiddeloxide, dus de bijdrage aan de Segerformule is per formule, zoals die geschreven is.",
+    "noFluxAnalysis": "{name} bevat geen smeltmiddeloxide, dus de bijdrage aan de Segerformule is per 100 g, de hoeveelheid waarvoor de analyse gegeven is.",
     "tableCaption": "Oxiden in {name}",
     "oxide": "Oxide",
     "amountPercent": "Gewichtsprocent",
