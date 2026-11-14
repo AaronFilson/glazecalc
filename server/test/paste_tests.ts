@@ -1071,28 +1071,45 @@ describe('Paste-in import: finding the material', () => {
     expect(twoAliases.candidates.map((r) => r.name)).to.eql(['One', 'Two']);
   });
 
-  it('prepares each record’s name once for a paste’s names, not once a line, with the same matches', () => {
+  it('prepares each record’s name once for a paste’s names, not once a line, and keeps none after it', () => {
     const typed = ['Custer Feldspar', 'Silca', 'Whitting', 'EPK kaolin clay', 'Neph Sy 270', 'Gerstly borate'];
     const names = Array.from({ length: 300 }, (_, i) => typed[i % typed.length] + (i % 7 ? '' : ' x'));
-    const first = names.map((name) => recipe.matchName(name, LIBRARY));
-    // Counted, not timed: the second time, no name is normalized again. Before, each line normalized every
-    // record's names and aliases several times over (about 14 ms a name).
+    // Counted, not timed, so a busy machine cannot fail it.
     const normalize = String.prototype.normalize;
     let normalized = 0;
-    String.prototype.normalize = function (this: string, form?: 'NFC' | 'NFD' | 'NFKC' | 'NFKD') {
-      normalized++;
-      return normalize.call(this, form);
+    const counted = <T>(run: () => T): T => {
+      normalized = 0;
+      String.prototype.normalize = function (this: string, form?: 'NFC' | 'NFD' | 'NFKC' | 'NFKD') {
+        normalized++;
+        return normalize.call(this, form);
+      };
+      try {
+        return run();
+      } finally {
+        String.prototype.normalize = normalize;
+      }
     };
-    let again: ReturnType<typeof recipe.matchName>[];
-    try {
-      again = names.map((name) => recipe.matchName(name, LIBRARY));
-    } finally {
-      String.prototype.normalize = normalize;
-    }
+    // One matcher for the paste: each record's names and each pasted name worked out once, so the paste's 300
+    // names cost about what the library's names do. Before, each line normalized every record's names and aliases
+    // several times over (3.4 million times for these 300, about 14 ms a name).
+    const match = recipe.nameMatcher();
+    const first = counted(() => names.map((name) => match(name, LIBRARY)));
+    const texts = new Set([...LIBRARY.flatMap((r) => [r.name, ...(r.aliases ?? [])]), ...names]).size;
+    expect(normalized)
+      .to.be.above(0)
+      .and.at.most(3 * texts);
+    // Matching them again with it works nothing out again.
+    const again = counted(() => names.map((name) => match(name, LIBRARY)));
     expect(normalized).to.equal(0);
     expect(again.map((m) => [m.how, m.record?.name, m.candidates.length])).to.eql(
       first.map((m) => [m.how, m.record?.name, m.candidates.length])
     );
+    // Nothing is kept outside a matcher: another, or matchName, works the library's names out again, so a
+    // server keeps no one's pasted names between requests.
+    counted(() => recipe.nameMatcher()('Silca', LIBRARY));
+    expect(normalized).to.be.above(LIBRARY.length);
+    counted(() => recipe.matchName('Silca', LIBRARY));
+    expect(normalized).to.be.above(LIBRARY.length);
     expect(matched('Silca')).to.eql(['close', 'Silica']);
   });
 

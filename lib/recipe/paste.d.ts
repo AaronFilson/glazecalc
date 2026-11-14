@@ -109,6 +109,18 @@ export function matchName<T extends { name: string; aliases?: string[] }>(
   records: readonly T[],
   limit?: number
 ): NameMatch<T>;
+
+/** matchName, with each name it compares prepared once for as long as it is kept (one for a paste). */
+export type NameMatcher = <T extends { name: string; aliases?: string[] }>(
+  name: string,
+  records: readonly T[],
+  limit?: number
+) => NameMatch<T>;
+/**
+ * A matcher that prepares each name it compares once, so a paste's lines are matched against records prepared
+ * once, not once a line; it keeps them only as long as it is kept.
+ */
+export function nameMatcher(): NameMatcher;
 /** How close a pasted name is to a record's name, 0 to about 1. */
 export function likeness(pasted: string, recordName: string): number;
 /** A name as compared exactly: NFKC, lower case, spaces as one. */

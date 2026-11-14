@@ -9,12 +9,12 @@ import {
   ambiguousNumbers,
   foldedName,
   importAmounts,
-  matchName,
+  nameMatcher,
   parsePaste,
   pasteTooLong,
   spacedReading
 } from '../../../../lib/recipe/paste';
-import type { MatchHow, PastedRecipe } from '../../../../lib/recipe/paste';
+import type { MatchHow, NameMatcher, PastedRecipe } from '../../../../lib/recipe/paste';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Additive, AdditiveUnit, Material, Recipe } from '../../core/models';
@@ -700,6 +700,8 @@ export class ImportPage implements OnInit {
     const choices = this.choices();
     const records = choices.map((c) => c.record);
     const names = new Set(choices.flatMap((c) => [c.record.name, ...(c.record.aliases ?? [])]).map(foldedName));
+    // One matcher for this reading: each record's names are worked out once for all the lines, and dropped after.
+    const match = nameMatcher();
     const read = parsePaste(this.text(), {
       mark: typedDecimalMark(),
       locale: formatLocale(),
@@ -708,7 +710,7 @@ export class ImportPage implements OnInit {
       joined: this.joining() ?? undefined,
       isName: (text) => names.has(foldedName(text)),
       // A line that is like any material, even only closely, is never taken for a title ("Leach 4321").
-      known: (text) => matchName(text, records).how !== 'none'
+      known: (text) => match(text, records).how !== 'none'
     }).filter((recipe) => recipe.lines.length);
     const unsure = ambiguousNumbers(this.text(), typedDecimalMark());
     this.ambiguous.set(unsure);
@@ -727,7 +729,7 @@ export class ImportPage implements OnInit {
     );
     this.joined.set([...new Set(read.flatMap((recipe) => recipe.lines.flatMap((line) => line.joined ?? [])))]);
     this.tooMany.set(read.length > MOST_RECIPES);
-    const drafts = read.slice(0, MOST_RECIPES).map((recipe) => this.draftOf(recipe, choices));
+    const drafts = read.slice(0, MOST_RECIPES).map((recipe) => this.draftOf(recipe, choices, match));
     this.drafts.set(drafts);
     this.triedSave.set(false);
     this.saveProblem.set('');
@@ -745,7 +747,7 @@ export class ImportPage implements OnInit {
     }
   }
 
-  private draftOf(recipe: PastedRecipe, choices: Choice[]): Draft {
+  private draftOf(recipe: PastedRecipe, choices: Choice[], matchName: NameMatcher): Draft {
     const keyOf = new Map<object, string>(choices.map((c) => [c.record, c.key]));
     const materialsFirst = [
       ...choices.filter((c) => c.kind === 'material'),
