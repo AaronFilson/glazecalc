@@ -218,6 +218,47 @@ describe('Shared recipe tools', () => {
     expect(recipe.isRawClay({ ...myEpk, category: 'feldspar' })).to.equal(false);
   });
 
+  it('knows a potter’s own dolomite by its analysis, as raw calcium at low fire', () => {
+    const library = standardData.load('materials') as MaterialRecord[];
+    const dolomite = library.find((m) => m.name === 'Dolomite')!;
+    const own = (name: string, loi: number, oxides: Record<string, number>): MaterialRecord => ({
+      name,
+      percentmole: 'percent',
+      loi,
+      fields: Object.entries(oxides).map(([oxide, amount]) => ({ name: oxide, amount }))
+    });
+    // Typed in from a data sheet, and the library's own copied under another name: no category.
+    const local = own('Local dolomite', 47, { CaO: 30.4, MgO: 21.7 });
+    const copied: MaterialRecord = {
+      name: 'Dolomite from the garden centre',
+      percentmole: dolomite.percentmole,
+      loi: dolomite.loi,
+      fields: dolomite.fields
+    };
+    const unity = { K2O: 0.2, CaO: 0.8, Al2O3: 0.3, B2O3: 0.6, SiO2: 3 };
+    const whiting = (material: MaterialRecord, amount: number) =>
+      recipe
+        .pastLimits({
+          lines: [
+            { material, amount: String(amount) },
+            { material: SILICA, amount: String(100 - amount) }
+          ],
+          unity,
+          celsius: 1060
+        })
+        .filter((c) => c.check === 'whiting')
+        .map((c) => [c.severity, c.value]);
+    // Raw dolomite barely melts at cone 04 and gives off gas, as whiting does: as the library's Dolomite.
+    for (const amount of [3, 8, 20]) {
+      expect(whiting(local, amount), String(amount)).to.deep.equal(whiting(dolomite, amount));
+      expect(whiting(copied, amount), String(amount)).to.deep.equal(whiting(dolomite, amount));
+    }
+    expect(whiting(local, 20)).to.deep.equal([['likely', 20]]);
+    // Magnesite (MgO alone, LOI 52%) and talc (LOI 5.5%) are not raw calcium.
+    expect(whiting(own('My magnesite', 52.2, { MgO: 47.8 }), 20)).to.deep.equal([]);
+    expect(whiting(own('My talc', 5.5, { SiO2: 61, MgO: 31, CaO: 0.5 }), 20)).to.deep.equal([]);
+  });
+
   it('does not warn of what the old recipe already had', () => {
     const unity = { K2O: 0.6, Na2O: 0.1, CaO: 0.3, Al2O3: 0.3, SiO2: 3 };
     const lines = [{ material: KAOLIN, amount: '10' }];
