@@ -1494,6 +1494,60 @@ describe('glaze chemistry', () => {
       expect(capped.filter((c) => c.broken)).to.deep.equal([]);
     });
 
+    it("should answer from the recipe's own, cut short, where the limit on new materials leaves none (budget-cut case 30)", () => {
+      // With the work all but spent, stage A had taken up one new material; the limit (none new) dropped it,
+      // and the choosing threw "no materials" with the recipe's own two on hand.
+      const CLAYS = [
+        'Wilco UPF Kaolin',
+        'Glomax LL Calcined Kaolin',
+        'Hawthorn Bond Fireclay',
+        'Caolín Nacional Superfino (Prodesco)'
+      ];
+      const lines = [
+        own('Boric Acid', 32.2),
+        { ...own('Sibelco V161 Ball Clay', 9.9), group: 'clay' },
+        ...[
+          'Bone Ash',
+          'Wilco UPF Kaolin',
+          'Glomax LL Calcined Kaolin',
+          'Feldspath mixte 64 (Ceradel)',
+          'Reimbold & Strick Frit A 3021',
+          'Strontium Carbonate',
+          'Orthoclase',
+          'Cornwall Stone',
+          'Chestnut Wood Ash, washed (栗灰)',
+          'Hawthorn Bond Fireclay',
+          'Tsushima Feldspar (対馬長石)',
+          'Kamado Feldspar (釜戸長石)',
+          'Amakusa Pottery Stone (天草陶石)',
+          'Low Expansion Frit (Potterycrafts P2960)',
+          'Ferro Frit 3195',
+          'Petalite',
+          'Calcium Borate Frit 32.21 (Keramikos)',
+          'Zinc Frit 32.22 (Keramikos)',
+          'Caolín Nacional Superfino (Prodesco)',
+          'Flint'
+        ].map((name) => offer(name, { least: 0.79, ...(CLAYS.includes(name) ? { group: 'clay' } : {}) }))
+      ];
+      const target = {
+        B2O3: 0.27831707772526826,
+        SiO2: 0.5101642727560207,
+        TiO2: 0.0017354285356539158,
+        Al2O3: 0.08458557683820286,
+        Fe2O3: 0.0007562919962176007,
+        Na2O: 0.021067135642717696,
+        K2O: 0.037115027336907476,
+        CaO: 0.0005809868573568485,
+        MgO: 0.0008123263199682413
+      };
+      for (const most of [0, 1e-5 * chemistry.WORK]) {
+        const meter = chemistry.newMeter(most);
+        const cut = chemistry.selectMaterials(lines, target, { extras: 0, shares: { clay: 0.2 }, meter });
+        expect(cut.cutShort).to.equal(true);
+        expect(cut.chosen).to.deep.equal([0, 1]);
+      }
+    });
+
     it("should say what lifting a cap alone would give, keeping every other line's least", () => {
       // Zinc capped at 5 g, and the clay held at 10 g or more, as Replace lead holds it.
       const target = molesOf([
