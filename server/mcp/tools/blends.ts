@@ -105,7 +105,10 @@ export const registerBlendTools = (server: McpServer): void => {
             shares: Object.fromEntries(tile.shares.map((share, i) => [LETTERS[i], rounded(share, 4)]))
           };
           if (!mixed) return { ...base, problem: 'No recipe could be worked out for this tile.' };
-          const lines: RecipeLine[] = mixed.materials.map(({ line, amount }) => ({ ...line, amount: String(amount) }));
+          const lines: RecipeLine[] = mixed.materials.map(({ line, amount }) => ({
+            ...line,
+            amount: recipe.plainAmount(amount)
+          }));
           const percent = mixed.materials.map(({ line, amount }) => ({
             material: line.name,
             percent: rounded(amount, 2)

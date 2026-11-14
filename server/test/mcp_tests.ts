@@ -473,6 +473,22 @@ describe('MCP: the public tools', () => {
     expect(unknown.content[0]!.text).to.include('Custer Feldspar').and.include('Custer Spar');
   });
 
+  it('reads a trace of a material as the amount it is, in a recipe, a blend and a range', async () => {
+    // String(0.0000001) is "1e-7", which the chemistry refuses: analyze_recipe said "Invalid amount".
+    const traced = [...LINES, { material: 'Talc', amount: 0.0000001 }];
+    const trace = await data('analyze_recipe', { lines: traced });
+    expect(trace.unityFormula).to.eql((await data('analyze_recipe', { lines: LINES })).unityFormula);
+    // A tile with 1e-6 % of talc or less had no unity formula: here all but the last.
+    const blend = await data('blend_recipes', {
+      a: [...LINES, { material: 'Talc', amount: 0.000001 }],
+      b: LINES,
+      steps: 11
+    });
+    expect(blend.tiles.filter((tile: Json) => tile.problem).map((tile: Json) => tile.number)).to.eql([]);
+    const vary = await data('vary_material', { recipe: traced, material: 'Whiting', to: 10, steps: 3 });
+    expect(vary.tiles.filter((tile: Json) => tile.problem).map((tile: Json) => tile.number)).to.eql([]);
+  });
+
   it(`takes at most ${MOST_LINES} lines`, async () => {
     const lines = Array.from({ length: MOST_LINES + 1 }, () => ({ material: 'Silica', amount: 1 }));
     const answer = await rpc('tools/call', { name: 'analyze_recipe', arguments: { lines } });

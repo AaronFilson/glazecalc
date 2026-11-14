@@ -431,7 +431,10 @@ export const registerCompanionTools = (server: McpServer, caller?: Caller): void
         const records = new Map<string, RecipeLine>([varied!, ...base].map((line) => [line.name, line]));
         let limits: { id: string; band: unknown } | undefined;
         const tiles = made.tiles.map((tile, i): Tile => {
-          const lines = tile.lines.map((line) => ({ ...records.get(line.name)!, amount: String(line.amount) }));
+          const lines = tile.lines.map((line) => ({
+            ...records.get(line.name)!,
+            amount: recipe.plainAmount(line.amount)
+          }));
           const total = tile.lines.reduce((sum, line) => sum + line.amount, 0);
           const worked = tileChemistry(lines, percentOf(lines), at, limitSet, lang);
           limits ??= worked.limits;

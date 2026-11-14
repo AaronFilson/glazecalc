@@ -392,6 +392,34 @@ describe('BlendsPage', () => {
       expect(box.querySelector('table')).not.toBeNull();
     });
 
+    it('works out and saves a tile with a trace of a material, written plainly', async () => {
+      // A millionth of a percent of whiting in A: half of that in tile 2 is 5e-7 as String writes it, which nothing
+      // reads as an amount, so the tile had no figures and could not be saved.
+      const TRACE: Recipe = {
+        _id: 'tra',
+        title: 'Trace',
+        materials: [
+          { ...SPAR, amount: '70' },
+          { ...SILICA, amount: '29.999999' },
+          { ...WHITING, amount: '0.000001' }
+        ]
+      };
+      const { fixture, root, pick } = await create([TRACE, MATTE], { recipe: 'tra' });
+      await pick('blend-corner-1', 'Matte');
+      await pick('blend-steps', '3');
+      await open(fixture);
+      for (const row of cells(root)) expect(row[1]).toMatch(/^\d+\.\d\d$/);
+      (root.querySelectorAll('.blend-tile input')[1] as HTMLInputElement).click();
+      await settle(fixture);
+      (root.querySelector('.blend-save button') as HTMLButtonElement).click();
+      await settle(fixture);
+      const req = httpMock().expectOne({ method: 'POST', url: API + '/recipe/create' });
+      expect((req.request.body as Recipe).materials.find((m) => m.name === 'Whiting')?.amount).toBe('0.0000005');
+      req.flush({ ...(req.request.body as Recipe), _id: 'new' });
+      await settle(fixture);
+      expect(text(fixture, '.server-msg')).toContain('Saved 1 tile as a recipe.');
+    });
+
     it('marks a tile with no unity formula, and saving stops there, saying why', async () => {
       // A wash of a material with no analysis: its tile has nothing to work out.
       const WASH: Recipe = { _id: 'was', title: 'Wash', materials: [{ ...material('Mystery', [], 0), amount: '100' }] };
