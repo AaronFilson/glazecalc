@@ -374,7 +374,11 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
   /** A material's oxides, LOI and weights as the Materials page saves them, from a weight-percent analysis. */
   const materialFields = (
     name: string,
-    input: { fields: Array<{ name: string; amount: string | number }>; percentmole: string; loi?: number | null },
+    input: {
+      fields: Array<{ name: string; amount: string | number }>;
+      percentmole: 'percent' | 'molecular';
+      loi?: number | null;
+    },
     molecularweight?: number | null
   ) => {
     const weights = chemistry.materialWeights({ name, ...input, molecularweight });

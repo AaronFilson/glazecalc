@@ -13,7 +13,8 @@ const materialSchema = new mongoose.Schema({
   ownedBy: { type: String, required: true },
   relatedTo: { type: [String] },
   name: { type: String, required: true },
-  percentmole: { type: String, required: true },
+  // How the fields' amounts are given; stored in lower case, so 'Percent' is kept as 'percent'.
+  percentmole: { type: String, required: true, trim: true, lowercase: true, enum: ['percent', 'molecular'] },
   rawformula: String,
   // Counts the changes made (server/lib/record_rev.ts); a client's If-Match names the one it saw.
   rev: { type: Number, default: 0 },

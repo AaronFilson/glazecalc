@@ -236,7 +236,7 @@ describe('export API', () => {
       formulaweight: 1,
       loi: -1,
       molecularweight: 1,
-      percentmole: 'x'
+      percentmole: 'percent'
     });
     const rows = async (path: string) =>
       text(await get(path, carol.token))
@@ -253,7 +253,7 @@ describe('export API', () => {
       `${recipe},Material,'\tTab,-.5,,,,`
     ]);
     // The lists (related to, notes, the analysis) are checked once joined; a number field stays a number.
-    expect(await rows('/export/materials.csv')).to.eql(["M,'-SiO2,'+3+3,'=2+2,'=1+1 1,x,-1,1,1,1"]);
+    expect(await rows('/export/materials.csv')).to.eql(["M,'-SiO2,'+3+3,'=2+2,'=1+1 1,percent,-1,1,1,1"]);
   });
 
   it('lets a trial export too, with the trial in place of an address', async () => {

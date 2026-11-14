@@ -1518,6 +1518,16 @@ describe('glaze chemistry', () => {
             { name: 'CaO', amount: second }
           ]
         });
+      // Oxides in percent or moles, in any case, and nothing else: "Percent" is percent, not moles.
+      const given = (percentmole: string) => () =>
+        chemistry.materialWeights({ name: 'Odd', percentmole, fields: [{ name: 'CaO', amount: '56' }] });
+      expect(codeOf(given('weight'))).to.equal('unknown-percentmole');
+      expect(codeOf(given('percent'))).to.equal(undefined);
+      expect(codeOf(given('molecular'))).to.equal(undefined);
+      expect(given('Percent')()).to.deep.equal(given('percent')());
+      expect(given(' MOLECULAR ')()).to.deep.equal(given('molecular')());
+      // None, as an additive saved before it had one, is moles as ever: absent, null or blank alike.
+      expect(given('')()).to.deep.equal(given('molecular')());
       expect(codeOf(twice('abc', '56'))).to.equal('invalid-oxide-amount');
       expect(codeOf(twice('56', 'abc'))).to.equal('invalid-oxide-amount');
       // A batch so large its sums overflow.
