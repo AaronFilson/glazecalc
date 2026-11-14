@@ -29,7 +29,7 @@ import {
   materialTranslatedIn
 } from '../../lib/pages.js';
 import languages from '../../lib/regions/languages.js';
-import { materialSlug } from '../../lib/material-slug.js';
+import materialSlugs, { materialSlug } from '../../lib/material-slug.js';
 import { OG_IMAGES } from '../../lib/og-images.js';
 import { pageSources } from '../../lib/page-dates.js';
 import { allPageDates, newestDates, newestOf } from '../../scripts/page-dates.mjs';
@@ -972,6 +972,33 @@ describe('pages in each language', () => {
     }
     for (const from of ['/de/guides', '/pt-PT/guides', '/deutsch', '/enamel', '/xx/guides']) {
       expect((await redirectOf(from)).status, from).not.to.equal(301);
+    }
+  });
+
+  it('sends a renamed standard material’s old page to its page now, in every language', async () => {
+    for (const [from, to] of [
+      ['/materials/nepheline-syenite', '/materials/nepheline-syenite-typical'],
+      ['/de/materials/nepheline-syenite', '/de/materials/nepheline-syenite-typical'],
+      ['/zh-Hans/materials/nepheline-syenite?x=1', '/zh-Hans/materials/nepheline-syenite-typical?x=1']
+    ]) {
+      const res = await redirectOf(from!);
+      expect(res.status, from).to.equal(301);
+      expect(res.location, from).to.equal(to);
+    }
+    // Its page now, another material's, and a former name under another path stay where they are.
+    for (const from of [
+      '/materials/nepheline-syenite-typical',
+      '/materials/silica',
+      '/guides/nepheline-syenite',
+      '/materials/nepheline-syenite/x'
+    ]) {
+      expect((await redirectOf(from)).status, from).not.to.equal(301);
+    }
+    // Every former address leads to a standard material's page that exists.
+    const slugs = new Set(MATERIAL_PAGES.map((page) => page.split('/').pop()));
+    for (const [former, now] of Object.entries(materialSlugs.FORMER_SLUGS)) {
+      expect(slugs.has(now), now).to.equal(true);
+      expect(slugs.has(former), former).to.equal(false);
     }
   });
 
