@@ -1140,6 +1140,41 @@ describe('MCP: blend_recipes', () => {
     expect(result).to.not.have.property('differences');
   });
 
+  it('keeps two corners’ own analyses under one name apart, so each tile is the corners it mixes', async () => {
+    // Two wood ashes, analysed apart and given under the same name.
+    const a = [
+      { material: 'Wood ash', amount: 40, analysis: { CaO: 50, SiO2: 10, MgO: 5 }, loi: 30 },
+      { material: 'Silica', amount: 30 },
+      { material: 'EPK', amount: 30 }
+    ];
+    const b = [
+      { material: 'Wood ash', amount: 40, analysis: { K2O: 12, SiO2: 55, Al2O3: 10, CaO: 15 }, loi: 5 },
+      { material: 'Silica', amount: 30 },
+      { material: 'EPK', amount: 30 }
+    ];
+    const result = await data('blend_recipes', { a, b, steps: 3 });
+    const both = [{ ...a[0]!, amount: 20 }, a[1], a[2], { ...b[0]!, amount: 20 }];
+    const [onlyA, half, onlyB] = await Promise.all(
+      [a, both, b].map(async (lines) => (await data('analyze_recipe', { lines })).unityFormula)
+    );
+    // The middle tile has both ashes, 20 each. They were one line with A's chemistry, and all B was A's ash too.
+    expect(result.tiles[1].recipe).to.eql([
+      { material: 'Wood ash', percent: 20 },
+      { material: 'Silica', percent: 30 },
+      { material: 'EPK Kaolin', percent: 30 },
+      { material: 'Wood ash', percent: 20 }
+    ]);
+    for (const [i, unity] of [onlyA, half, onlyB].entries()) {
+      const tile = result.tiles[i].unity;
+      expect([tile.SiO2, tile.Al2O3, tile.fluxes.CaO, tile.fluxes.K2O], 'tile ' + (i + 1)).to.eql([
+        unity.SiO2,
+        unity.Al2O3,
+        unity.CaO,
+        unity.K2O
+      ]);
+    }
+  });
+
   it('a triaxial blend of n rows has n(n+1)/2 tiles with three shares each', async () => {
     const result = await data('blend_recipes', { a: GLOSSY, b: MATTE, c: BORON, steps: 4 });
     expect(result).to.include({ kind: 'triaxial', tileCount: 10 });

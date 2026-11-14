@@ -426,7 +426,9 @@ export const registerCompanionTools = (server: McpServer, caller?: Caller): void
             `${gives!.name} would run out: the base has ${only}, so ${varied!.name} can replace at most ${only}, and ${made.tooMuch} was asked for. Lower to.`
           );
         }
-        const records = new Map<string, RecipeLine>([...base, varied!].map((line) => [line.name, line]));
+        // A material the base has keeps the base's own line (an analysis given under a library name, say): the
+        // amount varied goes on that line, so the library's record is only for a material the base lacks.
+        const records = new Map<string, RecipeLine>([varied!, ...base].map((line) => [line.name, line]));
         let limits: { id: string; band: unknown } | undefined;
         const tiles = made.tiles.map((tile, i): Tile => {
           const lines = tile.lines.map((line) => ({ ...records.get(line.name)!, amount: String(line.amount) }));
