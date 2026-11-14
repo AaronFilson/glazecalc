@@ -393,7 +393,7 @@ describe('Target & Solve, Match with what I have and Suggest amounts: the work b
     expect(solved.report.closeness!.verdict).to.not.equal('poor');
   });
 
-  it('matches a 13-oxide recipe from 100 materials within the work allowed (80 s before)', () => {
+  it('matches a 13-oxide recipe from 100 materials within the work allowed, and finishes (80 s before)', () => {
     const analysis = { SiO2: 55, Al2O3: 12, B2O3: 8, CaO: 6, MgO: 2, K2O: 3, Na2O: 3, ZnO: 3 };
     const line = {
       name: 'Frit-like',
@@ -408,8 +408,45 @@ describe('Target & Solve, Match with what I have and Suggest amounts: the work b
     const meter = chemistry.newMeter();
     const match = recipe.matchFromShelf([line], offered(0, 100), { meter });
     expect(meter.used).to.be.at.most(ALLOWED);
-    expect(match.report.cutShort).to.equal(true);
+    // Screened to the 40 that matter (lib/chemistry/select.js SCREEN), the search finishes: it was cut short.
+    expect(match.report).to.not.have.property('cutShort');
+    expect(match.report.closeness!.verdict).to.equal('close');
     expect(match.materials.length).to.be.within(1, 13);
+  });
+
+  it('solves a target made from 4 of 250 materials close, the pool screened first (poor and cut short before)', () => {
+    // The library, and copies of it under other names, to 250: the first match over all of them took the
+    // work allowed before it settled, and the search cut there missed by 100 (more work gave the same).
+    const usable = LIBRARY.filter(
+      (m) =>
+        !m.fluorine &&
+        !m.soluble &&
+        !(m as { noChemistry?: boolean }).noChemistry &&
+        !(m as { chemistryOf?: string }).chemistryOf &&
+        m.fields?.length
+    );
+    const pool = Array.from({ length: 250 }, (_, i) => {
+      const m = usable[i % usable.length]!;
+      return {
+        material: i < usable.length ? m : { ...m, name: `${m.name} #${Math.floor(i / usable.length)}` },
+        must: false
+      };
+    });
+    const target = recipe.unityOf(
+      recipe.molesOf(
+        recipeOf([
+          ['Fusion Frit F-69', 20],
+          ['Ferro Frit 3134', 30],
+          ['Feldspath potassique ICE 10 (Imerys Spain)', 25],
+          ['Vibrantz Frit 90255', 25]
+        ])
+      )
+    );
+    const meter = chemistry.newMeter();
+    const solved = recipe.solveTarget({ kind: 'unity', oxides: target }, pool, { meter });
+    expect(meter.used).to.be.at.most(chemistry.WORK);
+    expect(solved.report).to.not.have.property('cutShort');
+    expect(solved.report.closeness!.verdict).to.equal('close');
   });
 
   it('suggests amounts for 40 lines, the plan and the suggestion on one meter (19 s before)', () => {

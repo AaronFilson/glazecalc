@@ -348,3 +348,27 @@ the choosing had raised a member to its least, which alone broke its cap, for th
   about as long as before (2.4 ms on average, against 2.3).
 - The page and the MCP tools say when a cap could not be held. The page's sentence is English until
   it is translated.
+
+## Amended: a large pool screened first
+
+2026-11-13, from the second 1.0 chemistry review.
+
+**What happened.** The page and the MCP tools take a whole shelf, up to 500 materials, and the work
+a search may do is bounded. Over hundreds of materials, stage A's one match took all of it before it
+settled, and the search cut there came out poor: targets made exactly from 4 of 250 materials missed
+by 22 to 101, and ten times the work gave the same. The worst search went to 1.82 times `WORK`.
+
+**Decision.** A pool of more than 60 materials (`SCREEN`) is screened before stage A, without solving
+anything: the musts and the recipe's own; for each oxide aimed at, the three richest in it, no two of
+them alike (a last resort counted half as rich, so whiting and not fluorspar stands for the calcium);
+then those whose oxides point most nearly the target's way, 40 in all. A pool of 60 or fewer is chosen
+from whole, as before. Keeping 40 did better than 60: of 16 such targets from 250 and 500 materials,
+none came out poor and one fair (keeping 60, two poor and two fair), and half finished within the work.
+
+**Consequences.**
+
+- The whole library offered as a shelf (178 materials) gives a close match in an eighth of `WORK`, without
+  fluorspar; the worst search found takes 1.04 times `WORK`.
+- The screen does not depend on the meter, so a search that is not cut gives the same answer bounded
+  or not. The EU's 66 base materials are screened too: Oribe's EU version uses five materials rather
+  than six, still close, and Shino's comes close where it was fair. The build makes them anew.

@@ -20,8 +20,9 @@ export const MOST_LINES = 40;
 /**
  * At most this many materials for one fit to choose from (match_from_materials' have, solve_target's
  * materials with the shelf): as many as a shelf holds (SHELF_MOST), so a shelf is never too large.
- * The work a fit may do is bounded however many there are (lib/chemistry/fit.js WORK): the first
- * match over every material offered stops with the rest once it is spent.
+ * The work a fit may do is bounded however many there are (lib/chemistry/fit.js WORK), and more than
+ * 60 are screened to the 40 or so that matter before the choosing (lib/chemistry/select.js SCREEN), so
+ * a whole shelf's search finishes within it, or comes near.
  */
 export const MOST_MATERIALS = SHELF_MOST;
 
