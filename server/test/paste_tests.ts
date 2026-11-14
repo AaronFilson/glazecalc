@@ -138,6 +138,53 @@ describe('Paste-in import: decimal marks', () => {
     expect(one('Silica,30,5', { locale: 'fr' }).lines[0].amount).to.equal(30.5);
   });
 
+  it('marks two cells that can be one number or two columns with no heading row, and reads them as chosen', () => {
+    // A German reader with no heading: "30,5" is 30.5 or two columns, 30 and 5. One number, as before, and marked so
+    // the page asks.
+    const paste = 'Silica,30,5\nKaolin,20,5\nWhiting,49';
+    const german = one(paste, { locale: 'de' });
+    expect(lines(german)).to.eql([
+      ['Silica', 30.5, null, false],
+      ['Kaolin', 20.5, null, false],
+      ['Whiting', 49, null, false]
+    ]);
+    expect(german.lines.map((l) => l.joined)).to.eql(['30,5', '20,5', undefined]);
+    // Two columns when the reader chooses it, still marked; one number when they choose that.
+    const apart = one(paste, { locale: 'de', joined: 'columns' });
+    expect(lines(apart)).to.eql([
+      ['Silica', 30, null, false],
+      ['Kaolin', 20, null, false],
+      ['Whiting', 49, null, false]
+    ]);
+    expect(apart.lines.map((l) => l.joined)).to.eql(['30,5', '20,5', undefined]);
+    expect(one(paste, { locale: 'de', joined: 'decimal' }).lines.map((l) => l.amount)).to.eql([30.5, 20.5, 49]);
+    expect(one('+ Tin oxide,2,5', { locale: 'de', joined: 'columns' }).lines[0]).to.include({
+      name: 'Tin oxide',
+      amount: 2,
+      addition: true,
+      joined: '2,5'
+    });
+    // A chosen comma mark is asked too; a reader who writes decimal points reads two columns, with nothing to ask.
+    expect(one('Silica,30,5', { mark: 'comma' }).lines[0]).to.include({ amount: 30.5, joined: '30,5' });
+    expect(one('Silica,30,5', { locale: 'en' }).lines[0])
+      .to.include({ amount: 30 })
+      .and.not.have.property('joined');
+    expect(one('Silica,30,5', { locale: 'de', mark: 'point' }).lines[0]).not.to.have.property('joined');
+    // One number is a decimal, as the page shows it, whatever the other numbers say (1,250 read as thousands here).
+    const thousands = one('Feldspar 1,250\nSilica,1,500', { locale: 'de', reading: 'group' });
+    expect(thousands.lines.map((l) => [l.amount, l.joined])).to.eql([
+      [1250, undefined],
+      [1.5, '1,500']
+    ]);
+    // Never two ways where it is not: under a heading row, or with a space or a quote beside the comma.
+    expect(one('Material,Amount,Notes\nSilica,30,5', { locale: 'de' }).lines[0]).not.to.have.property('joined');
+    for (const row of ['Silica, 30, 5', 'Silica,30 ,5', '"Silica","30","5"', 'Silica,"30",5', 'Silica,30,"5"']) {
+      expect(one(row, { locale: 'de' }).lines[0], row)
+        .to.include({ amount: 30 })
+        .and.not.have.property('joined');
+    }
+  });
+
   it('reads a decimal comma in a line of text as a decimal, not a column', () => {
     expect(lines(one('Custer Feldspar 25,5'))).to.eql([['Custer Feldspar', 25.5, null, false]]);
   });

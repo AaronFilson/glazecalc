@@ -349,6 +349,49 @@ describe('ImportPage', () => {
     }
   });
 
+  it('asks whether a comma row\u2019s last two cells are one number or two columns, where commas mark decimals', async () => {
+    const { fixture, root, page, paste, chosenNames } = await create();
+    const amounts = () => page['drafts']()[0].lines.map((l: { amount: string }) => l.amount);
+    const buttons = () => [...root.querySelectorAll<HTMLButtonElement>('.import-joined button')];
+    // German writes 30,5 for 30.5, so with no heading row "Silica,30,5" is 30.5 or 30 and 5: one number, and asked.
+    formatLocale.set('de');
+    try {
+      await paste('Test\nCuster,50\nSilica,30,5\nWhiting,20,5');
+      expect(amounts()).toEqual(['50', '30.5', '20.5']);
+      expect(text(fixture, '.import-joined p')).toContain(
+        'Some numbers in this paste can be read two ways, such as \u201c30,5\u201d: as one number with a decimal comma, 30,5, or as two columns, 30 and 5.'
+      );
+      expect(buttons().map((b) => b.textContent?.trim())).toEqual([
+        'Read 30,5 as one number, 30,5',
+        'Read 30 and 5 as two columns'
+      ]);
+      expect(buttons().map((b) => b.getAttribute('aria-pressed'))).toEqual(['true', 'false']);
+      buttons()[1].click();
+      await settle(fixture);
+      expect(amounts()).toEqual(['50', '30', '20']);
+      expect(chosenNames()).toEqual(['Custer Spar', 'Silica', 'Whiting']);
+      expect(buttons().map((b) => b.getAttribute('aria-pressed'))).toEqual(['false', 'true']);
+      buttons()[0].click();
+      await settle(fixture);
+      expect(amounts()).toEqual(['50', '30.5', '20.5']);
+      // A paste typed again is read as one number until the reader chooses.
+      buttons()[1].click();
+      await settle(fixture);
+      await paste('Test\nCuster,50\nSilica,30,5');
+      expect(amounts()).toEqual(['50', '30.5']);
+      // Under a heading row that names the columns, each cell is its column: nothing to ask.
+      await paste('Material,Amount,Notes\nCuster,50,1\nSilica,30,5');
+      expect(amounts()).toEqual(['50', '30']);
+      expect(root.querySelector('.import-joined')).toBeNull();
+    } finally {
+      formatLocale.set('en');
+    }
+    // English writes decimal points: two columns, with nothing to ask.
+    await paste('Test\nCuster,50\nSilica,30,5');
+    expect(amounts()).toEqual(['50', '30']);
+    expect(root.querySelector('.import-joined')).toBeNull();
+  });
+
   it('limits the box, and says so when the paste is too long instead of reading part of it', async () => {
     const { fixture, root, paste } = await create();
     expect((root.querySelector('#paste-text') as HTMLTextAreaElement).getAttribute('maxlength')).toBe('50000');

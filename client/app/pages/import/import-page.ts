@@ -196,6 +196,39 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
           </div>
         </section>
       }
+      @if (joined().length) {
+        <section class="panel import-ambiguous import-joined" role="group" aria-labelledby="import-joined-text">
+          <p id="import-joined-text" class="import-ambiguous-text">
+            {{
+              t('recipe.import.joined', {
+                count: joined().length,
+                example: joined()[0],
+                value: asDecimal(joined()[0]),
+                first: joinedApart(joined()[0]).first,
+                last: joinedApart(joined()[0]).last
+              })
+            }}
+          </p>
+          <div class="import-actions">
+            <button
+              type="button"
+              class="btn btn-light border"
+              [attr.aria-pressed]="joiningNow() === 'decimal'"
+              (click)="joinAs('decimal')"
+            >
+              {{ t('recipe.import.readAsOneNumber', { example: joined()[0], value: asDecimal(joined()[0]) }) }}
+            </button>
+            <button
+              type="button"
+              class="btn btn-light border"
+              [attr.aria-pressed]="joiningNow() === 'columns'"
+              (click)="joinAs('columns')"
+            >
+              {{ t('recipe.import.readAsColumns', joinedApart(joined()[0])) }}
+            </button>
+          </div>
+        </section>
+      }
       @if (tooMany()) {
         <p class="muted">{{ t('recipe.import.tooMany', { max: mostRecipes }) }}</p>
       }
@@ -502,6 +535,14 @@ export class ImportPage implements OnInit {
   /** How the person chose to read them; null until they do, when the first group ends the name. */
   private readonly spacing = signal<'group' | 'apart' | null>(null);
   protected readonly spacingNow = computed(() => this.spacing() ?? 'apart');
+  /**
+   * The last two cells of comma-separated rows ("30,5" of "Silica,30,5") where the reader writes decimal commas and
+   * no heading row named the columns: one number, or two columns. Shown with a choice.
+   */
+  protected readonly joined = signal<string[]>([]);
+  /** How the person chose to read them; null until they do, when each is one number. */
+  private readonly joining = signal<'decimal' | 'columns' | null>(null);
+  protected readonly joiningNow = computed(() => this.joining() ?? 'decimal');
   /** Which limit the text is over, once Read has been pressed. */
   protected readonly tooLong = signal<'chars' | 'lines' | null>(null);
   /** Read, and nothing found. */
@@ -575,6 +616,7 @@ export class ImportPage implements OnInit {
     this.text.set(value);
     this.reading.set(null);
     this.spacing.set(null);
+    this.joining.set(null);
   }
 
   protected asDecimal = (token: string): number => Number(token.replace(',', '.'));
@@ -587,9 +629,21 @@ export class ImportPage implements OnInit {
     last: token.slice(token.lastIndexOf(' ') + 1)
   });
 
+  /** "30,5" read as two columns: "30" and "5". */
+  protected joinedApart = (token: string): { first: string; last: string } => ({
+    first: token.slice(0, token.indexOf(',')),
+    last: token.slice(token.indexOf(',') + 1)
+  });
+
   /** Reads the paste again with the person's choice for amounts with their thousands set apart by a space. */
   protected spaceAs(spacing: 'group' | 'apart'): void {
     this.spacing.set(spacing);
+    this.readPaste();
+  }
+
+  /** Reads the paste again with the person's choice for the rows whose last two cells can be one number. */
+  protected joinAs(joining: 'decimal' | 'columns'): void {
+    this.joining.set(joining);
     this.readPaste();
   }
 
@@ -609,6 +663,7 @@ export class ImportPage implements OnInit {
       this.drafts.set([]);
       this.ambiguous.set([]);
       this.spaced.set([]);
+      this.joined.set([]);
       this.readEmpty.set(false);
       this.readStatus.set(translate('recipe.import.tooLong', { reason: over, ...PASTE_LIMITS }));
       return;
@@ -621,6 +676,7 @@ export class ImportPage implements OnInit {
       locale: formatLocale(),
       reading: this.reading() ?? undefined,
       spaced: this.spacing() ?? undefined,
+      joined: this.joining() ?? undefined,
       isName: (text) => names.has(foldedName(text)),
       // A line that is like any material, even only closely, is never taken for a title ("Leach 4321").
       known: (text) => matchName(text, records).how !== 'none'
@@ -636,6 +692,7 @@ export class ImportPage implements OnInit {
               : 'group'))
     );
     this.spaced.set([...new Set(read.flatMap((recipe) => recipe.lines.flatMap((line) => line.spaced ?? [])))]);
+    this.joined.set([...new Set(read.flatMap((recipe) => recipe.lines.flatMap((line) => line.joined ?? [])))]);
     this.tooMany.set(read.length > MOST_RECIPES);
     const drafts = read.slice(0, MOST_RECIPES).map((recipe) => this.draftOf(recipe, choices));
     this.drafts.set(drafts);

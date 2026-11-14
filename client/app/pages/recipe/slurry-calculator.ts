@@ -363,7 +363,7 @@ export class SlurryCalculator {
           volume: this.volumeText(litres + water)
         };
         lines.push(
-          Math.abs(water) < 0.0005 * litres
+          slurry.reachedAlready(water, litres)
             ? translate('recipe.slurry.already', params)
             : water > 0
               ? translate('recipe.slurry.add', params)
