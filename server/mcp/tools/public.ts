@@ -294,6 +294,15 @@ const COULD_BE_NEARER = 0.5;
 /** How near the fit tries to bring each oxide (lib/chemistry/fit.js), as the closeness sentences say it. */
 const NEAR = '0.02, or 5% of a large amount such as silica (0.06 for soda and potash apart)';
 
+/** A sentence for each cap the recipe could not keep (report.capped, broken). */
+const notHeld = (report: Report): string[] =>
+  report.capped
+    .filter((c) => c.broken)
+    .map(
+      (c) =>
+        `${listed(c.members)} could not be held to the ${rounded(c.most, 1)}% of the batch suggested: the recipe has ${rounded(c.wouldBe, 1)}%.`
+    );
+
 /** Formulas as a list: "Na2O, K2O and B2O3". */
 const listed = (names: string[]): string =>
   names.length > 1 ? names.slice(0, -1).join(', ') + ' and ' + names[names.length - 1] : (names[0] ?? '');
@@ -322,6 +331,7 @@ const closenessOut = (report: Report) => {
     report.miss - report.best < COULD_BE_NEARER
       ? 'These materials cannot come much nearer.'
       : 'These materials could come nearer: see couldHelp and capped.',
+    ...notHeld(report),
     report.cutShort ? CUT_SHORT : ''
   ];
   return {
@@ -348,12 +358,14 @@ const reportOut = (report: Report, language: string) => ({
     needed: use.needed
   })),
   couldHelp: report.couldHelp.map((c) => ({ material: c.name, helps: rounded(c.helps, 3) })),
-  // Caps that cost match, as percents of the batch: allowMore lifts one.
+  // Caps that cost match, as percents of the batch: allowMore lifts one. One the recipe could not keep
+  // is broken, with what its materials come to (wouldBe).
   capped: report.capped.map((c) => ({
     materials: c.members,
     most: rounded(c.most, 1),
     wouldBe: rounded(c.wouldBe, 1),
-    ...(c.why && { why: recipeText(c.why, language) })
+    ...(c.why && { why: recipeText(c.why, language) }),
+    ...(c.broken && { broken: true })
   })),
   unreachable: report.unreachable,
   miss: rounded(report.miss, 4),
@@ -821,6 +833,7 @@ const solvedClosenessOut = (report: Report) => {
     report.miss - report.best < COULD_BE_NEARER
       ? 'These materials cannot come much nearer.'
       : 'These materials could come nearer: see couldHelp and capped.',
+    ...notHeld(report),
     report.cutShort ? CUT_SHORT : ''
   ];
   return {

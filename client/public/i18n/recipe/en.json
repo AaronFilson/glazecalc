@@ -497,6 +497,7 @@
     "unreachable": "Nothing on offer has {list}. Add a material with it to try, below, to bring it back.",
     "capped": "A closer match needs {wouldBe}% {list}, more than the {most}% suggested.",
     "cappedWhy": "A closer match needs {wouldBe}% {list}, more than the {most}% suggested: {why}.",
+    "cappedBroken": "{list} could not be held to the {most}% suggested: the recipe has {now}%.",
     "allowMore": "Allow more",
     "allowMoreOf": "Allow more {list}",
     "couldHelp": "Not used, but would bring it a little closer:",

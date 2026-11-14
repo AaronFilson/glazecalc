@@ -23,7 +23,10 @@ export interface Report {
   couldHelp: Array<{ name: string; helps: number }>;
   /** Near-identical pairs: the one used, and another that could stand in for it. */
   alike: Array<{ used: string; other: string }>;
-  /** Caps that cost match, as percents of the batch; a shared cap names its group and all its members. */
+  /**
+   * Caps that cost match, as percents of the batch; a shared cap names its group and all its members.
+   * A shared cap the recipe could not keep is broken, its wouldBe what the members come to.
+   */
   capped: Array<{
     name: string;
     most: number;
@@ -31,6 +34,7 @@ export interface Report {
     group?: string;
     members: string[];
     why?: RecipeMessage;
+    broken?: true;
   }>;
   /** Oxides the old recipe has that nothing offered supplies. */
   unreachable: string[];

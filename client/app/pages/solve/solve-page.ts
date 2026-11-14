@@ -357,18 +357,24 @@ interface Result {
         @for (cap of r.solved.report.capped; track cap.name) {
           <p>
             {{
-              cap.why
-                ? t('recipe.swapReport.cappedWhy', {
-                    wouldBe: fixed(cap.wouldBe, 0),
+              cap.broken
+                ? t('recipe.swapReport.cappedBroken', {
+                    now: fixed(cap.wouldBe, 1),
                     list: listOf(cap.members),
-                    most: fixed(cap.most, 0),
-                    why: cap.why
+                    most: fixed(cap.most, 1)
                   })
-                : t('recipe.swapReport.capped', {
-                    wouldBe: fixed(cap.wouldBe, 0),
-                    list: listOf(cap.members),
-                    most: fixed(cap.most, 0)
-                  })
+                : cap.why
+                  ? t('recipe.swapReport.cappedWhy', {
+                      wouldBe: fixed(cap.wouldBe, 0),
+                      list: listOf(cap.members),
+                      most: fixed(cap.most, 0),
+                      why: cap.why
+                    })
+                  : t('recipe.swapReport.capped', {
+                      wouldBe: fixed(cap.wouldBe, 0),
+                      list: listOf(cap.members),
+                      most: fixed(cap.most, 0)
+                    })
             }}
             <button
               type="button"
