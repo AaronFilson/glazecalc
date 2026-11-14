@@ -1,7 +1,7 @@
 // Types for lib/recipe/pool.js (see index.d.ts).
 
 import type { Closeness, FitOptions, SelectLine, Selection } from '../chemistry';
-import type { MaterialRecord } from './library';
+import type { MaterialRecord, TryMaterial } from './library';
 import type { Figure, RecipeMessage } from './messages';
 
 /** What one chosen material does. */
@@ -53,6 +53,12 @@ export interface Report {
 }
 
 export function placesFor(total: number): number;
+
+/**
+ * Whether a material offered is a last resort for the choosing (SelectLine lastResort): a fluorine or
+ * soluble material not marked "must use".
+ */
+export function lastResort(tried: TryMaterial): boolean;
 
 // The notes a new recipe's changes are written in, and a selection moved to
 // another batch total: the recipe tools' own (lead.js, shelf.js, solve.js);

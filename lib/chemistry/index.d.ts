@@ -215,6 +215,8 @@ export function boundedLeastSquares(problem: {
 export interface SelectLine extends FitLine {
   must?: boolean;
   avoid?: boolean;
+  /** Used only where nothing else comes as near: a fluorine or soluble material Solve or Match brings in. */
+  lastResort?: boolean;
 }
 
 export interface Selection {

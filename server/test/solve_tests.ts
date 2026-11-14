@@ -216,6 +216,51 @@ describe('Target & Solve', () => {
     expect(amountIn(must, 'Nepheline Syenite (typical)')).to.be.at.least(1);
   });
 
+  it('brings calcium from whiting, not fluorspar, and fluorine or soluble materials only where nothing else will do', () => {
+    // Leach 4321: offered with whiting, fluorspar brought all the calcium (16.4%), and no whiting.
+    const leach = recipeOf([
+      ['Custer Spar', 40],
+      ['Silica', 30],
+      ['Whiting', 20],
+      ['EPK Kaolin', 10]
+    ]);
+    const target = { kind: 'unity' as const, oxides: recipe.unityOf(recipe.molesOf(leach)) };
+    for (const shelf of [
+      shelfOf('Custer Spar', 'Silica', 'Whiting', 'EPK Kaolin', 'Fluorspar'),
+      shelfOf('Fluorspar', 'Custer Spar', 'Silica', 'Whiting', 'EPK Kaolin', 'Cryolite')
+    ]) {
+      const solved = recipe.solveTarget(target, shelf);
+      expect(amountIn(solved, 'Fluorspar')).to.equal(0);
+      expect(amountIn(solved, 'Cryolite')).to.equal(0);
+      expect(amountIn(solved, 'Whiting')).to.be.closeTo(20, 0.5);
+      expect(solved.report.closeness!.verdict).to.equal('close');
+    }
+    // With nothing else to bring the calcium, fluorspar does; and marked "must use", it is used.
+    expect(
+      amountIn(recipe.solveTarget(target, shelfOf('Custer Spar', 'Silica', 'EPK Kaolin', 'Fluorspar')), 'Fluorspar')
+    ).to.be.above(10);
+    const must = recipe.solveTarget(target, [
+      ...shelfOf('Custer Spar', 'Silica', 'Whiting', 'EPK Kaolin'),
+      { material: find('Fluorspar'), must: true }
+    ]);
+    expect(amountIn(must, 'Fluorspar')).to.be.at.least(1);
+    // Match with what I have the same, but for the recipe's own: a recipe with fluorspar keeps it.
+    const match = recipe.matchFromShelf(leach, shelfOf('Custer Spar', 'Silica', 'Whiting', 'EPK Kaolin', 'Fluorspar'));
+    expect(match.materials.map((m) => [m.name, m.amount])).to.deep.equal(leach.map((m) => [m.name, m.amount]));
+    const own = recipeOf([
+      ['Custer Spar', 40],
+      ['Silica', 30],
+      ['Fluorspar', 15],
+      ['EPK Kaolin', 10]
+    ]);
+    expect(
+      amountIn(
+        recipe.matchFromShelf(own, shelfOf('Custer Spar', 'Silica', 'Whiting', 'EPK Kaolin', 'Fluorspar')),
+        'Fluorspar'
+      )
+    ).to.equal(15);
+  });
+
   it('refuses what it cannot solve, in codes with their English', () => {
     const shelf = shelfOf('Custer Spar', 'Whiting', 'EPK Kaolin', 'Silica');
     expect(refusal(() => recipe.solveTarget({ kind: 'unity', oxides: { Xx2O: 1, SiO2: 3 } }, shelf))).to.deep.equal({
