@@ -932,6 +932,49 @@ describe('Shared recipe tools', () => {
     for (const caution of replaced.cautions) expect(words(caution)).to.not.match(/\{|undefined/);
   });
 
+  it('keeps the colour with a raw clay still sold, a kaolin or ball clay first, else China Clay', () => {
+    const library = standardData.load('materials') as MaterialRecord[];
+    const find = (name: string) => library.find((m) => m.name === name);
+    const named = (name: string, amount: number) => line(find(name)!, amount);
+    const BISILICATE = 'Lead Bisilicate Frit (Potclays 2261)';
+    /** The clay of the frit and clay, 85 to 15, that keeps the colour, as the bases are ranked and as it is made. */
+    const clay = (lines: MaterialRecord[], region: string) => {
+      const bases = recipe.leadFreeBases(lines, [], find, library, region, 1060, 'colour');
+      expect(bases.length, 'bases').to.be.above(0);
+      const { materials } = recipe.replaceLead(lines, [], find, library, region, {
+        base: bases[0].name,
+        celsius: 1060,
+        mode: 'colour'
+      });
+      expect(materials.map((m) => [m.name, m.amount])).to.deep.equal([
+        [bases[0].name, '85'],
+        [materials[1].name, '15']
+      ]);
+      return materials[1].name;
+    };
+    // Not a calcined clay listed first: by its name, or by its LOI (Molochite is calcined china clay).
+    const calcinedFirst = [named(BISILICATE, 70), named('Glomax LL Calcined Kaolin', 5), named('EPK Kaolin', 10)];
+    expect(clay([...calcinedFirst, named('Silica', 15)], 'US')).to.equal('EPK Kaolin');
+    expect(
+      clay([named(BISILICATE, 70), named('Molochite', 5), named('China Clay', 10), named('Silica', 15)], 'UK')
+    ).to.equal('China Clay');
+    expect(clay([named(BISILICATE, 70), named('Molochite', 15), named('Silica', 15)], 'UK')).to.equal('China Clay');
+    expect(recipe.isRawClay(find('Molochite')!)).to.equal(false);
+    // Not one no longer made: Albany Slip has been out of production since the late 1980s.
+    expect(clay([named('Litharge', 50), named('Albany Slip', 30), named('Silica', 20)], 'US')).to.equal('China Clay');
+    // A kaolin or ball clay before another raw clay, though there is less of it; the most of them first.
+    expect(
+      clay([named('Litharge', 50), named('Redart', 20), named('OM-4 Ball Clay', 5), named('Silica', 25)], 'US')
+    ).to.equal('OM-4 Ball Clay');
+    expect(
+      clay([named('Litharge', 50), named('OM-4 Ball Clay', 5), named('EPK Kaolin', 10), named('Silica', 35)], 'US')
+    ).to.equal('EPK Kaolin');
+    // A potter's own kaolin, which has no category, is known by its analysis.
+    const epk = find('EPK Kaolin')!;
+    const myEpk: MaterialRecord = { name: 'My EPK', percentmole: epk.percentmole, loi: epk.loi, fields: epk.fields };
+    expect(clay([named('Litharge', 50), line(myEpk, 10), named('Silica', 40)], 'US')).to.equal('My EPK');
+  });
+
   it('costs a batch from the account’s prices, naming the materials with none rather than guessing', () => {
     const lines = {
       materials: [
