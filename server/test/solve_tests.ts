@@ -3,6 +3,7 @@ import { expect } from 'chai';
 import { IntlMessageFormat } from 'intl-messageformat';
 import chemistry from '../../lib/chemistry/index.js';
 import recipe from '../../lib/recipe/index.js';
+import pool from '../../lib/recipe/pool.js';
 import type { MaterialRecord, RecipeMessage } from '../../lib/recipe/index.js';
 import standardData from '../../data/index.js';
 
@@ -180,6 +181,78 @@ describe('Target & Solve', () => {
       expect(tenths(solved), JSON.stringify(solved.materials.map((m) => m.amount))).to.equal(1000);
       for (const m of solved.materials) expect(m.amount).to.match(/^\d+(\.\d)?$/);
     }
+  });
+
+  it('gives Match a recipe that adds up to the old total as shown, and every material brought in 1% of the batch', () => {
+    // Match with what I have rounded each amount on its own: 113.1 for a recipe of 113 (64 of 300 random
+    // matches missed so). And a material brought in at its least, 1% on the target's fired basis, came to
+    // 0.9% once the raw batch was in percent (15 of 299 solves).
+    const own = recipeOf([
+      ['Flint (UK calcined)', 33.6],
+      ['Goerg & Schneider Ton 3616', 38.7],
+      ['Feldspath potassique FP325 (Ceradel)', 40.7]
+    ]);
+    const match = recipe.matchFromShelf(
+      own,
+      [
+        ...shelfOf('Flint (UK calcined)'),
+        { material: find('Goerg & Schneider Ton 3616'), must: true },
+        ...shelfOf('Feldspath potassique FP325 (Ceradel)', 'FFF Feldspar (Sibelco FFF K7-60)'),
+        { material: find('Hymod AT Ball Clay'), must: true },
+        ...shelfOf('Ferro Frit 4113')
+      ],
+      { avoid: ['Flint (UK calcined)'] }
+    );
+    expect(Math.round(10 * total(match))).to.equal(1130);
+    for (const m of match.materials) expect(Number(m.amount), m.name).to.be.at.least(1.13 - 0.05);
+    const target = recipe.unityOf(
+      recipe.molesOf(
+        recipeOf([
+          ['G-200 EU Feldspar', 5],
+          ['Hymod AT Ball Clay', 39.8],
+          ['Ferro Frit 9146 (zircon white)', 41.4],
+          ['Fusion Frit F-12', 27.1],
+          ['Petalite', 40.9],
+          ['Feldspato potassico (Sila Argille)', 8.7]
+        ])
+      )
+    );
+    const solved = recipe.solveTarget(
+      { kind: 'unity', oxides: target },
+      [
+        ...shelfOf('G-200 EU Feldspar'),
+        { material: find('Hymod AT Ball Clay'), must: true },
+        ...shelfOf(
+          'Ferro Frit 9146 (zircon white)',
+          'Fusion Frit F-12',
+          'Petalite',
+          'Feldspato potassico (Sila Argille)',
+          'Masuda Feldspar (益田長石)',
+          'Jingdezhen Porcelain Stone, Sanbaopeng',
+          'Cornish Stone, Synthetic (Walker BA280)'
+        ),
+        { material: find('Mahavir Potash Feldspar'), must: true },
+        ...shelfOf('Oxford Spar')
+      ],
+      { avoid: ['Fusion Frit F-12'] }
+    );
+    expect(amountIn(solved, 'Mahavir Potash Feldspar')).to.be.at.least(1);
+    for (const m of solved.materials) expect(Number(m.amount), m.name).to.be.at.least(1);
+    expect(Math.round(10 * total(solved))).to.equal(1000);
+  });
+
+  it('rounds amounts to add up to a total, the largest remainders moved, an unchanged line and a least kept', () => {
+    // 33.33 + 33.33 + 33.33 shown to one place come to 99.9: the largest remainder goes up.
+    expect(pool.addingUp({ amounts: [33.33, 33.34, 33.33] }, 1, 100).amounts).to.eql([33.33, 33.4, 33.33]);
+    // A line shown as it was (20.25, its own text) counts as it is, and is not moved.
+    expect(pool.addingUp({ amounts: [20.25, 39.94, 39.94] }, 1, 100.25, (i) => i === 0).amounts).to.eql([
+      20.25, 40, 40
+    ]);
+    // Too much: the one rounded up furthest comes down (1.06 to 1.0), but not below its least (1.05).
+    expect(pool.addingUp({ amounts: [1.06, 49.47, 49.47] }, 1, 100).amounts).to.eql([1, 49.47, 49.47]);
+    expect(pool.addingUp({ amounts: [1.06, 49.47, 49.47] }, 1, 100, undefined, () => 1.05).amounts).to.eql([
+      1.06, 49.4, 49.47
+    ]);
   });
 
   it('does not hold the raw clay down with a material that has no oxides', () => {

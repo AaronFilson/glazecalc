@@ -70,6 +70,18 @@ export function changed(name: string, from: Figure | string, to: Figure | string
 export function added(name: string, amount: Figure | string): RecipeMessage;
 /** A material taken out of the recipe: "Niter 10 → 0". */
 export function removed(name: string, amount: number, places: number): RecipeMessage;
+/**
+ * A selection whose amounts, rounded to `places`, add up to `total` as shown (the largest remainders moved
+ * a step); lines `kept`, shown as they were, count as they are and are not moved, and none is moved below
+ * its `least`.
+ */
+export function addingUp<S extends { amounts: number[] }>(
+  selection: S,
+  places: number,
+  total: number,
+  kept?: (i: number) => boolean,
+  least?: (i: number) => number
+): S;
 /** A selection on another batch total: amounts and caps scaled by `scale`. */
 export function scaled(selection: Selection, scale: number): Selection;
 
@@ -90,7 +102,8 @@ export function explain(
   selection: Selection,
   lines: Array<{ material: { name: string }; fixed?: boolean; why?: RecipeMessage }>,
   places: number,
-  target?: Record<string, number>
+  target?: Record<string, number>,
+  batch?: number
 ): Report;
 export function recipeFrom<M extends MaterialRecord>(
   selection: Selection,
