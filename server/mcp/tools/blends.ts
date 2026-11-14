@@ -181,7 +181,8 @@ export const differencesOf = (a: Chemistry, b: Chemistry) => {
     .compareUnity(left!, right!)
     .flatMap((group) => group.rows)
     .map((row) => ({
-      what: row.key ?? row.label,
+      // An oxide as the other answers write it (K2O), not as the page shows it (K₂O).
+      what: row.oxide ?? row.key ?? row.label,
       a: row.left === null ? null : rounded(row.left, row.places),
       b: row.right === null ? null : rounded(row.right, row.places),
       change: row.change === null ? null : rounded(row.change, row.places)

@@ -1300,7 +1300,13 @@ describe('MCP: blend_recipes', () => {
     expect(mg.a).to.be.lessThan(0.01);
     expect(mg.change).to.be.greaterThan(0.1);
     for (const d of result.differences) expect(d.change).to.not.equal(0);
-    expect(result.differences.map((d: { what: string }) => d.what)).to.include('silicaToAlumina');
+    const what = result.differences.map((d: { what: string }) => d.what);
+    expect(what).to.include('silicaToAlumina');
+    // An oxide by its formula as the other answers write it (unityFormula's keys): K2O, not K₂O.
+    expect(what).to.include.members(['K2O', 'Al2O3', 'SiO2']);
+    for (const d of result.differences) expect(d.what).to.match(/^[A-Za-z0-9]+$/);
+    const a = await data('analyze_recipe', { lines: GLOSSY });
+    expect(result.differences.find((d: { what: string }) => d.what === 'Al2O3').a).to.equal(a.unityFormula.Al2O3);
   });
 
   it('refuses bad input with words: unknown material, steps out of range, no amounts, no flux', async () => {
