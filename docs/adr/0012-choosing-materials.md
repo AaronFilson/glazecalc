@@ -285,9 +285,8 @@ have said so.
 - Every page shows what it showed: none of the 16 versions was cut short in the browser, and the
   build's are the same, line for line. A test compares the shipped versions with a fresh search and
   with the browser's bounded one on every run (`server/test/famous_glazes_tests.ts`).
-- No search the app makes itself runs under `WORK` any more, and the test that held the famous
-  glazes' versions under 0.7 of it is gone. `WORK` still bounds every search a person or an AI
-  assistant asks for.
+- The famous glazes' versions no longer run under `WORK`, and the test that held them under 0.7 of
+  it is gone. `WORK` still bounds every search a person or an AI assistant asks for.
 - The build takes about 3 seconds more for the 16 searches, and each language's file about 2.5 kB
   more (0.8 kB gzipped). A famous glaze's page no longer reads in the standard materials (every
   record of the library) or solves when it opens.
