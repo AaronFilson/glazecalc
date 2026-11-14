@@ -185,6 +185,74 @@ describe('Paste-in import: decimal marks', () => {
     }
   });
 
+  it('asks of a comma row with one cell more than its heading row whether the amount is one number', () => {
+    // "Material,Amount" over "Silica,30,5": the 5 is the amount's decimals, or a column the heading did not name.
+    const paste = 'Material,Amount\nSilica,30,5\nKaolin,20,5\nWhiting,49';
+    for (const locale of ['de', 'fr']) {
+      const read = one(paste, { locale });
+      expect(lines(read), locale).to.eql([
+        ['Silica', 30.5, null, false],
+        ['Kaolin', 20.5, null, false],
+        ['Whiting', 49, null, false]
+      ]);
+      expect(
+        read.lines.map((l) => l.joined),
+        locale
+      ).to.eql(['30,5', '20,5', undefined]);
+      expect(read.skipped.map((s) => s.why)).to.eql(['columns']);
+    }
+    // Two columns when the reader chooses it, still marked.
+    const apart = one(paste, { locale: 'de', joined: 'columns' });
+    expect(apart.lines.map((l) => [l.amount, l.joined])).to.eql([
+      [30, '30,5'],
+      [20, '20,5'],
+      [49, undefined]
+    ]);
+    // The amount's cell and the next, wherever the amount is: the columns after it keep their place.
+    expect(lines(one('Material,Amount,Addition\nSilica,30,5,\nRutile,2,5,+', { locale: 'de' }))).to.eql([
+      ['Silica', 30.5, null, false],
+      ['Rutile', 2.5, null, true]
+    ]);
+    // As many cells as the heading, a reader who writes decimal points, or a space beside the comma: nothing to ask.
+    expect(one('Material,Amount,Notes\nSilica,30,5', { locale: 'de' }).lines[0]).not.to.have.property('joined');
+    expect(one(paste, { locale: 'en' }).lines.map((l) => [l.amount, l.joined])).to.eql([
+      [30, undefined],
+      [20, undefined],
+      [49, undefined]
+    ]);
+    expect(one('Material,Amount\nSilica, 30, 5', { locale: 'de' }).lines[0])
+      .to.include({ amount: 30 })
+      .and.not.have.property('joined');
+  });
+
+  it('knows a heading row in any language by its place: words over rows with numbers in the same columns', () => {
+    // A heading with a word no list has ("Preis") was the recipe's title.
+    const read = one('Rohstoff,Menge,Preis\nKalifeldspat,30,2\nQuarz,20,1\nKaolin,50,3', { locale: 'de' });
+    expect(read.title).to.equal(null);
+    expect(read.skipped).to.eql([{ line: 1, text: 'Rohstoff,Menge,Preis', why: 'columns' }]);
+    expect(lines(read)).to.eql([
+      ['Kalifeldspat', 30, null, false],
+      ['Quarz', 20, null, false],
+      ['Kaolin', 50, null, false]
+    ]);
+    // No word any list has: the column of names, and the first column of numbers after it.
+    const unknown = one('Malighafi;Kiasi;Bei\nFeldspar;30;2\nSilica;70;1');
+    expect(unknown.title).to.equal(null);
+    expect(unknown.skipped.map((s) => s.why)).to.eql(['columns']);
+    expect(lines(unknown)).to.eql([
+      ['Feldspar', 30, null, false],
+      ['Silica', 70, null, false]
+    ]);
+    // Under a title, and after a blank line.
+    const titled = one('Celadon\n\nRohstoff;Menge;Preis\nKalifeldspat;30;2\nQuarz;70;1');
+    expect([titled.title, titled.skipped.map((s) => s.why), titled.lines.length]).to.eql(['Celadon', ['columns'], 2]);
+    // Not a heading: a title typed with a comma and a space over rows written without one, rows with their numbers in
+    // other columns, or rows not delimited as it is.
+    expect(one('Shino, carbon trap\nCuster,40\nSilica,60').title).to.equal('Shino, carbon trap');
+    expect(one('Glaze,Notes\nCuster,40\nSilica,60,x\n4,Whiting').skipped.map((s) => s.why)).to.eql([]);
+    expect(one('Malighafi,Kiasi\nFeldspar\t30\nSilica\t70').title).to.equal('Malighafi,Kiasi');
+  });
+
   it('reads a decimal comma in a line of text as a decimal, not a column', () => {
     expect(lines(one('Custer Feldspar 25,5'))).to.eql([['Custer Feldspar', 25.5, null, false]]);
   });

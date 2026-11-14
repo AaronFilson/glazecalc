@@ -25,9 +25,10 @@ export interface PastedLine {
    */
   spaced?: string;
   /**
-   * The last two cells of a comma-separated row as pasted, with the comma between them ("30,5" of "Silica,30,5"),
-   * when they can be one number with a decimal comma or two columns, the reader writing decimal commas: read as
-   * `PasteOptions.joined` says, so the page asks. Absent otherwise.
+   * Two cells of a comma-separated row as pasted, with the comma between them ("30,5" of "Silica,30,5"), when they
+   * can be one number with a decimal comma or two columns, the reader writing decimal commas: the last two of a row
+   * of three with no heading row, or under one, the amount's cell and the next when the row has one cell more than
+   * the heading. Read as `PasteOptions.joined` says, so the page asks. Absent otherwise.
    */
   joined?: string;
 }
@@ -63,9 +64,9 @@ export interface PasteOptions {
    */
   spaced?: 'group' | 'apart' | Readonly<Record<number, 'group' | 'apart'>>;
   /**
-   * How to read a comma-separated row whose last two cells are whole numbers with only a comma between them
-   * ("Silica,30,5"), for a reader who writes decimal commas and with no heading row naming the columns: one number
-   * with a decimal comma ('decimal', 30.5), or two columns, the first the amount ('columns', 30). By default
+   * How to read a comma-separated row whose amount can be two whole numbers with only a comma between them
+   * ("Silica,30,5", with no heading row or under "Material,Amount"), for a reader who writes decimal commas: one
+   * number with a decimal comma ('decimal', 30.5), or two columns, the first the amount ('columns', 30). By default
    * 'decimal', and each such line is marked `joined`.
    */
   joined?: 'decimal' | 'columns';

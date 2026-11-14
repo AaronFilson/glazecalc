@@ -559,8 +559,9 @@ export class ImportPage implements OnInit {
   private readonly spacing = signal<Record<number, 'group' | 'apart'>>({});
   private readonly spacedAs = computed(() => spacedReading(formatLocale()));
   /**
-   * The last two cells of comma-separated rows ("30,5" of "Silica,30,5") where the reader writes decimal commas and
-   * no heading row named the columns: one number, or two columns. Shown with a choice.
+   * Two cells of comma-separated rows ("30,5" of "Silica,30,5") where the reader writes decimal commas: the last two
+   * of a row with no heading row, or the amount's and the next of a row with one cell more than its heading. One
+   * number, or two columns. Shown with a choice.
    */
   protected readonly joined = signal<string[]>([]);
   /** How the person chose to read them; null until they do, when each is one number. */
