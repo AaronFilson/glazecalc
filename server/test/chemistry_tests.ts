@@ -382,8 +382,20 @@ describe('glaze chemistry', () => {
         'Colorant oxides (CoO) are most of the flux, so the unity formula is scaled to them and says little about how the glaze melts.'
       );
       expect(cobalt.warnings[1]).to.equal(
-        'The unity formula has 32.32 SiO₂, more than a glaze can melt: there is too little flux, or this is not a glaze.'
+        'The unity formula has 32.32 SiO₂, unusually high for a glaze: the recipe is for a very high firing, has too little flux, or is not a glaze.'
       );
+      // Traditional Shinos reach 10.1 to 12.8 and melt, at a very high firing: Kamado feldspar with 20%
+      // kaolin is 11.2. Still past 10, so still said, but not as more than a glaze can melt.
+      const records: StandardMaterial[] = standardData.load('materials');
+      const named = (name: string) => records.find((record) => record.name === name)!;
+      const shino = calculateUMF([
+        { material: named('Kamado Feldspar (釜戸長石)'), amount: 80 },
+        { material: named('China Clay'), amount: 20 }
+      ]);
+      expect(shino.umf.SiO2).to.be.closeTo(11.23, 0.01);
+      expect(shino.warningCodes.map((w) => w.code)).to.deep.equal(['silica-high']);
+      expect(shino.warnings[0]).to.match(/^The unity formula has 11\.23 SiO₂, unusually high for a glaze: .*firing/);
+      expect(shino.warnings[0]).to.not.match(/can melt/);
       // Most of the flux: 10 g of whiting is 0.0999 mol CaO; cobalt carbonate is 118.9 g a mole.
       expect(
         codes({ Whiting: 10, 'Cobalt Carbonate (theoretical)': 9.7, Silica: 30, 'Kaolin (theoretical)': 10 })
