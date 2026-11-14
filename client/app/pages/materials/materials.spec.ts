@@ -239,6 +239,19 @@ describe('the page of a standard material', () => {
     expect((await render('Whiting')).page.textContent).not.toContain('has no flux oxide');
   });
 
+  it('reads percent and moles as the chemistry does, in any case, as a record kept before lower case may give them', async () => {
+    const alumina = { ...named('Alumina Hydrate'), percentmole: 'Percent' } as unknown as Material;
+    const section = (await render(alumina)).page.querySelector('#analysis')?.closest('section');
+    expect(section?.textContent).toContain('Alumina Hydrate as weight percent of the raw material');
+    expect(section?.textContent).toContain('per 100 g, the amount its analysis is given for');
+    expect(section?.querySelector('thead')?.textContent).toContain('Weight %');
+    expect(equivalentKind(alumina, analysisOf(alumina).weights!)).toBe('analysis');
+    const silica = { ...named('Silica'), percentmole: 'Molecular' } as unknown as Material;
+    expect((await render(silica)).page.querySelector('#analysis')?.closest('section')?.textContent).toContain(
+      'Silica as moles of each fired oxide per formula'
+    );
+  });
+
   // "The grams that hold 1.0 mole of flux" was false where there is no flux, and misleading where there is little.
   it('says what the equivalent weight is: per mole of flux, large for little flux, per formula or 100 g for none', async () => {
     const shown = async (name: string) => {

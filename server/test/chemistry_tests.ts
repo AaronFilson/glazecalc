@@ -2008,6 +2008,19 @@ describe('glaze chemistry', () => {
       expect(given(' MOLECULAR ')()).to.deep.equal(given('molecular')());
       // None, as an additive saved before it had one, is moles as ever: absent, null or blank alike.
       expect(given('')()).to.deep.equal(given('molecular')());
+      // The pages and the MCP tools tell percent from moles as the library reads it (oxidesGivenIn): a
+      // record saved before the server kept percentmole in lower case may say 'Percent' or 'Molecular'.
+      const givenIn = (material: Partial<MaterialInput>) => chemistry.oxidesGivenIn(material);
+      for (const percentmole of ['percent', 'Percent', ' PERCENT ']) {
+        expect(givenIn({ percentmole }), percentmole).to.equal('percent');
+      }
+      for (const percentmole of ['molecular', 'Molecular', ' MOLECULAR ', '', null, undefined]) {
+        expect(givenIn({ percentmole } as Partial<MaterialInput>), String(percentmole)).to.equal('molecular');
+      }
+      expect(givenIn({ percentmole: 'weight' })).to.equal(null);
+      // As prepareMaterial reads them: an analysis is in percent, a formula in moles, whatever else they say.
+      expect(givenIn({ analysis: { PbO: 100 }, percentmole: 'molecular' })).to.equal('percent');
+      expect(givenIn({ formula: { CaO: 1 }, percentmole: 'percent' })).to.equal('molecular');
       expect(codeOf(twice('abc', '56'))).to.equal('invalid-oxide-amount');
       expect(codeOf(twice('56', 'abc'))).to.equal('invalid-oxide-amount');
       // A batch so large its sums overflow.

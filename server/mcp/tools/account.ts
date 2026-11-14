@@ -9,6 +9,7 @@
 import * as z from 'zod';
 import mongoose from 'mongoose';
 import type { McpServer } from '@modelcontextprotocol/server';
+import chemistry from '../../../lib/chemistry/index.js';
 import firingLib from '../../../lib/cones/firing.js';
 import type { Band, FiringBlock } from '../../../lib/cones/firing.js';
 import results from '../../../lib/cones/results.js';
@@ -334,7 +335,8 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
               rev: revOf(m),
               name: m.name,
               oxides: oxidesOf(m as unknown as MaterialRecord),
-              oxidesAre: m.percentmole === 'molecular' ? 'moles in the formula' : 'weight percent',
+              // As the chemistry reads them: one kept before the schema lower-cased it may say 'Molecular'.
+              oxidesAre: chemistry.oxidesGivenIn(m) === 'percent' ? 'weight percent' : 'moles in the formula',
               loi: m.loi
             }))
           });

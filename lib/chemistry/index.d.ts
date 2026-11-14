@@ -93,6 +93,17 @@ export function formulaToAnalysis(
 
 export function materialWeights(material: MaterialInput): MaterialWeights;
 
+/**
+ * How a material gives its oxides, as the chemistry reads them: 'percent' (an analysis, or fields with
+ * percentmole 'percent' in any case) or 'molecular' (a formula, or fields with 'molecular' in any case, or
+ * none); null for another percentmole, which the chemistry refuses (unknown-percentmole).
+ */
+export function oxidesGivenIn(material: {
+  formula?: unknown;
+  analysis?: unknown;
+  percentmole?: unknown;
+}): 'percent' | 'molecular' | null;
+
 /** A formula for display, with its counts as subscripts: Ca3(PO4)2 → Ca₃(PO₄)₂, 2CaO•3B2O3 → 2CaO•3B₂O₃. */
 export function formatFormula(text: string | null | undefined): string;
 

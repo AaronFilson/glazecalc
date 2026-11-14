@@ -13,7 +13,8 @@ import {
   approve,
   confirmSettingOf,
   confirmationFor,
-  digestOf
+  digestOf,
+  fieldChanges
 } from '../lib/pending_changes.ts';
 import { countTokenDelete, countTokenWrite, TOKEN_DELETES_PER_HOUR, TOKEN_WRITE_LIMITS } from '../lib/rate_limit.ts';
 import { permissionOf } from '../lib/require_scope.ts';
@@ -107,6 +108,29 @@ describe('confirm before changes: the page', () => {
     for (const path of ['/confirm', '/confirm/', '/confirm/a/b', '/confirm/short', '/confirm/' + 'x'.repeat(23)]) {
       expect(isPage(path), path).to.equal(false);
     }
+  });
+});
+
+describe('confirm before changes: a line’s chemistry', () => {
+  it('is in percent or moles as the chemistry reads it, whatever the case it was kept in', () => {
+    const line = (percentmole: string) => ({
+      name: 'Old frit',
+      amount: '10',
+      fields: [{ name: 'PbO', amount: '1' }],
+      percentmole
+    });
+    // Kept before the server lower-cased percentmole: 'Molecular' is moles, and 'Percent' percent.
+    expect(fieldChanges({ materials: [line('Molecular')] }, null)).to.deep.equal([
+      { field: 'materials', after: 'Old frit 10 (PbO 1 mol)' }
+    ]);
+    expect(fieldChanges({ materials: [line('Percent')] }, null)).to.deep.equal([
+      { field: 'materials', after: 'Old frit 10 (PbO 1%)' }
+    ]);
+    // The same chemistry kept in another case is no change; an analysis a tool gives is in percent.
+    expect(fieldChanges({ materials: [line('molecular')] }, { materials: [line('Molecular')] })).to.deep.equal([]);
+    expect(fieldChanges({ materials: [{ name: 'Lead', amount: '5', analysis: { PbO: 100 } }] }, null)).to.deep.equal([
+      { field: 'materials', after: 'Lead 5 (PbO 100%)' }
+    ]);
   });
 });
 

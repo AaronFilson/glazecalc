@@ -5,7 +5,7 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { map } from 'rxjs';
-import { OXIDE_GROUPS, formatFormula, materialWeights } from '../../../../lib/chemistry';
+import { OXIDE_GROUPS, formatFormula, materialWeights, oxidesGivenIn } from '../../../../lib/chemistry';
 import type { MaterialWeights } from '../../../../lib/chemistry';
 import { AuthService } from '../../core/auth.service';
 import { Material } from '../../core/models';
@@ -74,7 +74,7 @@ export function equivalentKind(
     all += moles;
     if (['R2O', 'RO'].includes(OXIDE_GROUPS[oxide] ?? '')) flux += moles;
   }
-  if (!(flux > 0)) return material.percentmole === 'percent' ? 'analysis' : 'formula';
+  if (!(flux > 0)) return oxidesGivenIn(material) === 'percent' ? 'analysis' : 'formula';
   return flux < LITTLE_FLUX * all ? 'little' : 'flux';
 }
 
@@ -186,14 +186,9 @@ const NO_FLUX_NOTES = {
       @if (analysis().weights) {
         <p>
           {{
-            t(
-              material().percentmole === 'percent'
-                ? 'reference.material.analysisPercent'
-                : 'reference.material.analysisMolecular',
-              {
-                name: material().name
-              }
-            )
+            t(inPercent() ? 'reference.material.analysisPercent' : 'reference.material.analysisMolecular', {
+              name: material().name
+            })
           }}
         </p>
         @if (!flux()) {
@@ -215,13 +210,7 @@ const NO_FLUX_NOTES = {
               <tr>
                 <th scope="col">{{ t('reference.material.oxide') }}</th>
                 <th scope="col" class="num">
-                  {{
-                    t(
-                      material().percentmole === 'percent'
-                        ? 'reference.material.amountPercent'
-                        : 'reference.material.amountMolecular'
-                    )
-                  }}
+                  {{ t(inPercent() ? 'reference.material.amountPercent' : 'reference.material.amountMolecular') }}
                 </th>
                 <th scope="col" class="num">{{ t('reference.material.unity') }}</th>
               </tr>
@@ -328,10 +317,10 @@ export class MaterialInfoPage {
   });
   protected readonly analysis = computed(() => analysisOf(this.material()));
   protected readonly flux = computed(() => hasFlux(this.material()));
+  /** Whether its oxides are weight percent, as the chemistry reads them (a record may keep 'Percent'), or moles. */
+  protected readonly inPercent = computed(() => oxidesGivenIn(this.material()) === 'percent');
   /** What the unity of a material with no flux is per, as the sentence on it says: its formula, or 100 g. */
-  protected readonly noFluxNote = computed(
-    () => NO_FLUX_NOTES[this.material().percentmole === 'percent' ? 'analysis' : 'formula']
-  );
+  protected readonly noFluxNote = computed(() => NO_FLUX_NOTES[this.inPercent() ? 'analysis' : 'formula']);
   /** What the equivalent weight is for this material, as the sentence under it says. */
   protected readonly weightsNote = computed(() => {
     const weights = this.analysis().weights;

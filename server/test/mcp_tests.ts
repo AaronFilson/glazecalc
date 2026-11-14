@@ -31,6 +31,7 @@ import {
   TOKEN_WRITE_LIMITS
 } from '../lib/rate_limit.ts';
 import { READ_ONLY_TOKEN, TOO_MANY_CHANGES, WRITE_TOOLS as STEP_UP_TOOLS } from '../mcp/tools/account_write.ts';
+import { materialOut } from '../mcp/tools/public.ts';
 import Activity from '../models/activity.ts';
 import Note from '../models/note.ts';
 import RecordVersion from '../models/record_version.ts';
@@ -1873,6 +1874,38 @@ describe('MCP: personal access tokens', () => {
       } finally {
         await Recipe.updateOne({ _id: recipeId }, { $unset: { firedAt: 1, firing: 1 } });
         await User.updateOne({ _id: mine.user._id }, { $unset: { 'preferences.limitSet': 1 } });
+      }
+    });
+
+    it('say a material’s oxides are percent or moles as the chemistry reads them, whatever the case kept', async () => {
+      // Kept before the schema lower-cased percentmole: Mongoose's setters run when a record is saved, not read.
+      const kept = (name: string, percentmole: string) => ({
+        name,
+        ownedBy: String(mine.user._id),
+        fields: [{ name: 'CaO', amount: '1' }],
+        formulaweight: 56.08,
+        loi: 43.97,
+        molecularweight: 100.09,
+        equivalent: 100.09,
+        percentmole
+      });
+      const { insertedIds } = await Material.collection.insertMany([
+        kept('Legacy whiting', 'Molecular'),
+        kept('Legacy spar', 'Percent')
+      ]);
+      try {
+        const listed = await data('list_my_materials', { search: 'Legacy' }, headers);
+        const oxidesAre = Object.fromEntries(
+          listed.materials.map((m: { name: string; oxidesAre: string }) => [m.name, m.oxidesAre])
+        );
+        expect(oxidesAre).to.deep.equal({ 'Legacy spar': 'weight percent', 'Legacy whiting': 'moles in the formula' });
+        // A library record says it the same way, and so does a record with none, which the chemistry reads as moles.
+        const whiting = standardMaterials().find((m) => m.name === 'Whiting')!;
+        expect(materialOut({ ...whiting, percentmole: 'Molecular' }).oxidesAre).to.equal('moles in the formula');
+        expect(materialOut({ ...whiting, percentmole: undefined }).oxidesAre).to.equal('moles in the formula');
+        expect(materialOut({ ...whiting, percentmole: 'PERCENT' }).oxidesAre).to.equal('weight percent');
+      } finally {
+        await Material.deleteMany({ _id: { $in: Object.values(insertedIds) } });
       }
     });
 
