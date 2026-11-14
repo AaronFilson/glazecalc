@@ -948,6 +948,27 @@ describe('MCP: the public tools', () => {
     expect(described).to.not.include('06 to 6');
   });
 
+  it("convert_cone_temperature says cone 05½ is Orton's 2016 figure, and the other half cones halfway", async () => {
+    // 05½ is the one half cone Orton's 2016 chart gives large cones a figure for, 1023 °C at 150 °C an hour, as the
+    // recipe page says. It was described as put halfway between its neighbours on the older chart, which has no half
+    // cones.
+    const half = await data('convert_cone_temperature', { cone: '05½' });
+    expect(half).to.include({ cone: '05.5', celsius: 1023 });
+    expect(half.basis).to.equal("Orton's 2016 chart, large cones at 150 °C an hour");
+    // Every other half cone is halfway on the older chart, as before, and a whole cone is that chart's.
+    expect((await data('convert_cone_temperature', { cone: '5½' })).basis).to.equal(
+      "Orton's older chart, large cones at 150 °C an hour, a half cone put halfway between its neighbours"
+    );
+    expect((await data('convert_cone_temperature', { cone: '05' })).basis).to.equal(
+      "Orton's older chart, large cones at 150 °C an hour"
+    );
+    // The tool's description says so too.
+    const listed = ((await rpc('tools/list')).body!.result as { tools: Json[] }).tools;
+    const described = listed.find((t) => t.name === 'convert_cone_temperature')!.description as string;
+    expect(described).to.include("cone 05.5, which that chart lacks, is Orton's 2016 figure");
+    expect(described).to.include('the other half cones are put halfway between their neighbours');
+  });
+
   it('suggest_substitutes swaps old materials and suggests amounts', async () => {
     resetFits();
     const result = await data('suggest_substitutes', {

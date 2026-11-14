@@ -178,6 +178,16 @@ describe('ImportPage', () => {
     expect(text(fixture, '.import-firing')).toContain('cone 6');
   });
 
+  it('reads a title that names a cone at its end as the title and its firing, not as a material', async () => {
+    const { page, paste } = await create();
+    // "Celadon, cone 10" over comma rows was a line of its own, "Celadon, cone" at 10.
+    await paste('Celadon, cone 10\nCuster,40\nWhiting,20\nEPK,10\nSilica,30');
+    const [draft] = page['drafts']() as Array<{ title: string; firedAt: unknown; lines: Array<{ name: string }> }>;
+    expect(draft.title).toBe('Celadon, cone 10');
+    expect(draft.firedAt).toEqual({ scale: 'orton', low: '10' });
+    expect(draft.lines.map((l) => l.name)).toEqual(['Custer', 'Whiting', 'EPK', 'Silica']);
+  });
+
   it('asks for a choice where several materials are close, and saves once one is chosen or the line is left out', async () => {
     const { fixture, root, paste, save, selects } = await create();
     await paste('Test\nFeldspar 50\nSilica 50\nZircopax 5');
@@ -368,10 +378,14 @@ describe('ImportPage', () => {
     // A paste typed again is read as the language reads it until the reader chooses.
     await paste('Test\nCuster 500\nSilica 1\u202f500');
     expect(amounts()).toEqual(['500', '500']);
-    // French writes 1 500: one number, and still asked, since "Silica 1" at 500 is a reading too.
+    // French writes 1 500: one number. Silica is a name and "Silica 1" is not, so nothing is asked.
     formatLocale.set('fr');
     try {
       await paste('Test\nCuster 500\nSilica 1\u202f500');
+      expect(amounts()).toEqual(['500', '1500']);
+      expect(root.querySelector('.import-spaced')).toBeNull();
+      // A name the library does not have: "Local clay 1" at 500 is a reading too, so asked, one number until chosen.
+      await paste('Test\nCuster 500\nLocal clay 1\u202f500');
       expect(amounts()).toEqual(['500', '1500']);
       expect(pressed(0)).toEqual(['true', 'false']);
       buttons(0)[1]!.click();
@@ -397,7 +411,7 @@ describe('ImportPage', () => {
       await paste('Test\nCuster,50\nSilica,30,5\nWhiting,20,5');
       expect(amounts()).toEqual(['50', '30.5', '20.5']);
       expect(text(fixture, '.import-joined p')).toContain(
-        'Some numbers in this paste can be read two ways, such as \u201c30,5\u201d: as one number with a decimal comma, 30,5, or as two columns, 30 and 5.'
+        'Some numbers in this paste can be read two ways, such as \u201c30,5\u201d: as one number, 30,5, or as two columns, 30 and 5.'
       );
       expect(buttons().map((b) => b.textContent?.trim())).toEqual([
         'Read 30,5 as one number, 30,5',
@@ -428,6 +442,70 @@ describe('ImportPage', () => {
     await paste('Test\nCuster,50\nSilica,30,5');
     expect(amounts()).toEqual(['50', '30']);
     expect(root.querySelector('.import-joined')).toBeNull();
+  });
+
+  it('asks whether a comma row’s cells are one number with its thousands set apart, or two columns', async () => {
+    const { fixture, root, page, paste } = await create();
+    const amounts = () => page['drafts']()[0].lines.map((l: { amount: string }) => l.amount);
+    const buttons = () => [...root.querySelectorAll<HTMLButtonElement>('.import-joined button')];
+    // English writes 2,140.7: one number until the reader chooses two columns. The first cell alone was read, unasked.
+    await paste('Test\nCuster,1,500\nSilica,2,140.7\nWhiting,360');
+    expect(amounts()).toEqual(['1500', '2140.7', '360']);
+    expect(text(fixture, '.import-joined p')).toContain(
+      'Some numbers in this paste can be read two ways, such as “1,500”: as one number, 1,500, or as two columns, 1 and 500.'
+    );
+    expect(buttons().map((b) => b.textContent?.trim())).toEqual([
+      'Read 1,500 as one number, 1,500',
+      'Read 1 and 500 as two columns'
+    ]);
+    buttons()[1].click();
+    await settle(fixture);
+    expect(amounts()).toEqual(['1', '2', '360']);
+    // German writes 1.161,5: one number, 1161.5.
+    formatLocale.set('de');
+    try {
+      await paste('Test\nCuster,1.161,5\nWhiting,360');
+      expect(amounts()).toEqual(['1161.5', '360']);
+      expect(text(fixture, '.import-joined p')).toContain('such as “1.161,5”: as one number, 1.161,5,');
+    } finally {
+      formatLocale.set('en');
+    }
+  });
+
+  it('asks whether a known name that ends in a number takes the number after its comma, where commas mark decimals', async () => {
+    const KAOLIN_233 = material(
+      'Kaolin 233',
+      [
+        ['Al2O3', 1],
+        ['SiO2', 2]
+      ],
+      13.96
+    );
+    const { fixture, root, page, paste } = await create([KAOLIN_233]);
+    const lines = () => page['drafts']()[0].lines.map((l: { name: string; amount: string }) => [l.name, l.amount]);
+    const buttons = () => [...root.querySelectorAll<HTMLButtonElement>('.import-joined button')];
+    // German "Kaolin 233,5": Kaolin at 233.5, or Kaolin 233 at 5. One number until the reader chooses.
+    formatLocale.set('de');
+    try {
+      await paste('Test\nKaolin 233,5\nSilica 30');
+      expect(lines()).toEqual([
+        ['Kaolin', '233.5'],
+        ['Silica', '30']
+      ]);
+      expect(text(fixture, '.import-joined p')).toContain('such as “233,5”');
+      expect(buttons().map((b) => b.textContent?.trim())).toEqual([
+        'Read 233,5 as one number, 233,5',
+        'Read 233 and 5 as two columns'
+      ]);
+      buttons()[1].click();
+      await settle(fixture);
+      expect(lines()).toEqual([
+        ['Kaolin 233', '5'],
+        ['Silica', '30']
+      ]);
+    } finally {
+      formatLocale.set('en');
+    }
   });
 
   it('limits the box, and says so when the paste is too long instead of reading part of it', async () => {

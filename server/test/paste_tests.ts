@@ -107,6 +107,34 @@ describe('Paste-in import: reading lines', () => {
     ]);
   });
 
+  it('asks of a known name that ends in a number before a comma and digits, where commas mark decimals', () => {
+    // German "Kaolin 233,5" is Kaolin 233 at 5, the known name, or Kaolin at 233.5: it was the first, unasked.
+    const paste = 'Kaolin 233,5\nQuarz 30\nMinspar 200,30';
+    const read = one(paste, { locale: 'de' });
+    expect(read.lines.map((l) => [l.name, l.amount, l.joined])).to.eql([
+      ['Kaolin', 233.5, '233,5'],
+      ['Quarz', 30, undefined],
+      ['Minspar', 200.3, '200,30']
+    ]);
+    // Two columns when the reader chooses them: the known name and its amount.
+    expect(one(paste, { locale: 'fr', joined: 'columns' }).lines.map((l) => [l.name, l.amount, l.joined])).to.eql([
+      ['Kaolin 233', 5, '233,5'],
+      ['Quarz', 30, undefined],
+      ['Minspar 200', 30, '200,30']
+    ]);
+    // Nothing to ask for a reader who writes decimal points, or in a paste whose other rows have a comma between a
+    // name and a number ("Quarz,30"), or under a heading row: the comma is a column's.
+    for (const [text, locale] of [
+      [paste, 'en'],
+      ['Kaolin 233,5\nQuarz,30', 'de'],
+      ['Material,Amount\nKaolin 233,5\nQuarz 30', 'de']
+    ]) {
+      expect(one(text, { locale }).lines[0], text)
+        .to.include({ name: 'Kaolin 233', amount: 5 })
+        .and.not.have.property('joined');
+    }
+  });
+
   it('reads simple fractions and mixed numbers as amounts, and never splits a recipe on one', () => {
     // "Bentonite 1/2" was the title of a second recipe, the materials after it in that one.
     const read = one(
@@ -315,6 +343,73 @@ describe('Paste-in import: decimal marks', () => {
       .and.not.have.property('joined');
   });
 
+  it('asks of a comma row whose amount has its thousands set apart inside it, one number until chosen', () => {
+    const read = (text: string, options = {}) => one(text, options).lines.map((l) => [l.name, l.amount, l.joined]);
+    // Each language's own 2,140.7 or 1.161,5 in an unquoted comma row: the first group was the amount, unasked.
+    // A comma setting the thousands apart, before a decimal point (English, Thai, Hindi): 2140.7, or 2 and 140.7.
+    expect(read('Rutile,2,140.7\nSodium Nitrate,1,114\nSilica,30', { locale: 'en' })).to.eql([
+      ['Rutile', 2140.7, '2,140.7'],
+      ['Sodium Nitrate', 1114, '1,114'],
+      ['Silica', 30, undefined]
+    ]);
+    // In any script's digits (Marathi).
+    expect(read('Mahavir Potash Feldspar,१,२८५', { locale: 'mr' })).to.eql([
+      ['Mahavir Potash Feldspar', 1285, '१,२८५']
+    ]);
+    // A point or a space setting them apart, before a decimal comma (Danish, Czech's no-break space): 1161.5, or
+    // 1.161 and 5.
+    expect(read('Pegmatita,1.161,5\nFluorspar,1.223,5\nSilica,30', { locale: 'da' })).to.eql([
+      ['Pegmatita', 1161.5, '1.161,5'],
+      ['Fluorspar', 1223.5, '1.223,5'],
+      ['Silica', 30, undefined]
+    ]);
+    expect(read('Cornish Stone,1\u00a0183,70', { locale: 'cs' })).to.eql([['Cornish Stone', 1183.7, '1\u00a0183,70']]);
+    // After a known name that ends in a number ("Boraq 1" is one): Boraq at 1111.8 g, or Boraq 1 at 111.8 g, asked as
+    // a decimal comma there is. It was the second, unasked.
+    expect(read('Boraq 1,111.8 g\nSilica 30 g', { locale: 'en' })).to.eql([
+      ['Boraq', 1111.8, '1,111.8'],
+      ['Silica', 30, undefined]
+    ]);
+    expect(read('Boraq 1,111.8 g', { locale: 'en', joined: 'columns' })).to.eql([['Boraq 1', 111.8, '1,111.8']]);
+    // Under a heading row it has one cell more than, as a decimal comma is.
+    expect(read('Material,Amount\nRutile,2,140.7\nSilica,30', { locale: 'en' })).to.eql([
+      ['Rutile', 2140.7, '2,140.7'],
+      ['Silica', 30, undefined]
+    ]);
+    // Two columns when the reader chooses them.
+    expect(read('Rutile,2,140.7\nSodium Nitrate,1,114', { locale: 'en', joined: 'columns' })).to.eql([
+      ['Rutile', 2, '2,140.7'],
+      ['Sodium Nitrate', 1, '1,114']
+    ]);
+    // A row of three whose last two cannot be one number ("Talc,5,50", "Kaolin,20,x"): the rows are three columns,
+    // read as before. A decimal comma is asked of as before.
+    expect(read('Silica,30,300\nKaolin,20,200\nTalc,5,50', { locale: 'en' })).to.eql([
+      ['Silica', 30, undefined],
+      ['Kaolin', 20, undefined],
+      ['Talc', 5, undefined]
+    ]);
+    expect(read('Rutile,2,140.7\nKaolin,20,x', { locale: 'en' })).to.eql([
+      ['Rutile', 2, undefined],
+      ['Kaolin', 20, undefined]
+    ]);
+    expect(read('Silica,30,5\nKaolin,20,x', { locale: 'de' })).to.eql([
+      ['Silica', 30.5, '30,5'],
+      ['Kaolin', 20, undefined]
+    ]);
+    // Nothing to ask where the two cannot be one number: a chosen mark the other way, a first cell that is no number
+    // in thousands, or three digits that are not a group.
+    for (const [text, options] of [
+      ['Rutile,2,140.7', { mark: 'comma' }],
+      ['Pegmatita,1.161,5', { mark: 'point' }],
+      ['Silica,30,5', { locale: 'en' }],
+      ['Silica,12.5,140', { locale: 'en' }],
+      ['Silica,0,500', { locale: 'en' }],
+      ['Silica,1,5000', { locale: 'en' }]
+    ] as const) {
+      expect(one(text, options).lines[0], text).not.to.have.property('joined');
+    }
+  });
+
   it('knows a heading row in any language by its place: words over rows with numbers in the same columns', () => {
     // A heading with a word no list has ("Preis") was the recipe's title.
     const read = one('Rohstoff,Menge,Preis\nKalifeldspat,30,2\nQuarz,20,1\nKaolin,50,3', { locale: 'de' });
@@ -384,8 +479,8 @@ describe('Paste-in import: decimal marks', () => {
     }
     expect(one('Silice 1\u00a0250,5', { locale: 'ru' }).lines[0]).to.include({ name: 'Silice', amount: 1250.5 });
     expect(lines(one('1 500 g Silica', { locale: 'fr' }))).to.eql([['Silica', 1500, 'g', false]]);
-    // "Silica 1" at 500 is a reading too: marked in every language, so the page asks.
-    expect(one('Silica 1 500', { locale: 'sv' }).lines[0].spaced).to.equal('1 500');
+    // With a name the library does not have, "Local clay 1" at 500 is a reading too: marked, so the page asks.
+    expect(one('Local clay 1 500', { locale: 'sv' }).lines[0]).to.include({ amount: 1500, spaced: '1 500' });
     expect(recipe.spacedReading('fr')).to.equal('group');
     expect(recipe.spacedReading('en')).to.equal('apart');
     // English writes 1,500: read as before, the 1 ending the name, and marked so the page asks.
@@ -443,29 +538,91 @@ describe('Paste-in import: decimal marks', () => {
       ).to.eql([undefined, undefined, undefined, undefined, undefined, undefined]);
     }
     // A name the library does not have: marked in every language, and read as the reader's language writes thousands.
-    expect(one('Redart 2 500 g', { locale: 'fr' }).lines[0]).to.include({
-      name: 'Redart',
+    expect(one('Local clay 2 500 g', { locale: 'fr' }).lines[0]).to.include({
+      name: 'Local clay',
       amount: 2500,
       spaced: '2 500'
     });
-    expect(one('Redart 2 500 g', { locale: 'en' }).lines[0]).to.include({
-      name: 'Redart 2',
+    expect(one('Local clay 2 500 g', { locale: 'en' }).lines[0]).to.include({
+      name: 'Local clay 2',
       amount: 500,
       spaced: '2 500'
     });
   });
 
+  it('reads a known name before an amount in threes as one number where the language writes thousands so', () => {
+    // A French paste of known materials in grams asked of every line, though the library has no "Quartz 3".
+    const paste = [
+      'Feldspath potassique (Bodmer) 2\u202f500 g',
+      "Kaolin d'Arvor 1\u202f250 g",
+      'Quartz 3\u202f000 g',
+      'Wollastonite 1\u202f100 g',
+      'Talc 1\u202f150 g'
+    ].join('\n');
+    for (const locale of ['fr', 'sv', 'cs', 'pl', 'pt-PT', 'ru']) {
+      const read = one(paste, { locale });
+      expect(lines(read), locale).to.eql([
+        ['Feldspath potassique (Bodmer)', 2500, 'g', false],
+        ["Kaolin d'Arvor", 1250, 'g', false],
+        ['Quartz', 3000, 'g', false],
+        ['Wollastonite', 1100, 'g', false],
+        ['Talc', 1150, 'g', false]
+      ]);
+      expect(
+        read.lines.map((l) => l.spaced),
+        locale
+      ).to.eql([undefined, undefined, undefined, undefined, undefined]);
+    }
+    // The amount first too; a choice made for the whole paste leaves such a line as it is, as it does "Minspar 200".
+    expect(one('2 500 g Quartz', { locale: 'fr' }).lines[0])
+      .to.include({ name: 'Quartz', amount: 2500 })
+      .and.not.have.property('spaced');
+    expect(one('Quartz 3 000 g', { locale: 'fr', spaced: 'apart' }).lines[0])
+      .to.include({ name: 'Quartz', amount: 3000 })
+      .and.not.have.property('spaced');
+    // A known name with the first group ("Minspar 200") is that name, as before; neither known is asked, one number
+    // until the reader chooses.
+    expect(lines(one('Minspar 200 300 g\nLocal clay 1 500 g', { locale: 'fr' }))).to.eql([
+      ['Minspar 200', 300, 'g', false],
+      ['Local clay', 1500, 'g', false]
+    ]);
+    expect(one('Minspar 200 300 g\nLocal clay 1 500 g', { locale: 'fr' }).lines.map((l) => l.spaced)).to.eql([
+      undefined,
+      '1 500'
+    ]);
+    // Groups at both ends, the amount first and the name's own: the amount's leave the known name. Only the name's
+    // were tried: asked of, and read as "1 828,5 g Mondré & Manz Raku Frit M" at 233864.
+    expect(lines(one('1 828,5 g Mondré & Manz Raku Frit M 233 864', { locale: 'lt' }))).to.eql([
+      ['Mondré & Manz Raku Frit M 233 864', 1828.5, 'g', false]
+    ]);
+    // In English it is asked of, as the amount's groups ("1 500"), so one number reads it right.
+    expect(one('1 500 g Mondré & Manz Frit V 15 098', { spaced: { 1: 'group' } }).lines[0]).to.include({
+      name: 'Mondré & Manz Frit V 15 098',
+      amount: 1500,
+      spaced: '1 500'
+    });
+    // A language that writes 1,500 asks of each, the first group ending the name until the reader chooses.
+    const english = one(paste, { locale: 'en' });
+    expect(english.lines.map((l) => [l.name, l.amount, l.spaced])).to.eql([
+      ['Feldspath potassique (Bodmer) 2', 500, '2 500'],
+      ["Kaolin d'Arvor 1", 250, '1 250'],
+      ['Quartz 3', 0, '3 000'],
+      ['Wollastonite 1', 100, '1 100'],
+      ['Talc 1', 150, '1 150']
+    ]);
+  });
+
   it('reads each line whose thousands may be set apart by a space as the reader chose for that line', () => {
     // One number for a genuine 1 500 joins no other line.
-    const paste = 'Silica 1 500 g\nRedart 2 500 g\nWhiting 300 g';
+    const paste = 'Silica 1 500 g\nLocal clay 2 500 g\nWhiting 300 g';
     expect(lines(one(paste, { spaced: { 1: 'group' } }))).to.eql([
       ['Silica', 1500, 'g', false],
-      ['Redart 2', 500, 'g', false],
+      ['Local clay 2', 500, 'g', false],
       ['Whiting', 300, 'g', false]
     ]);
     expect(lines(one(paste, { locale: 'fr', spaced: { 2: 'apart' } }))).to.eql([
       ['Silica', 1500, 'g', false],
-      ['Redart 2', 500, 'g', false],
+      ['Local clay 2', 500, 'g', false],
       ['Whiting', 300, 'g', false]
     ]);
     // Each stays marked, chosen or not.
@@ -793,6 +950,39 @@ describe('Paste-in import: titles, notes, totals and additions', () => {
       '1240 °C',
       'SG 1.45',
       'https://glazy.org/recipes/1234'
+    ]);
+  });
+
+  it('reads a title that names a cone at its end as the title, not as a material at the cone', () => {
+    // "Celadon, cone 10" over comma rows was the material "Celadon, cone" at 10, and the recipe had no title.
+    const read = one('Celadon, cone 10\nCuster,40\nSilica,60');
+    expect(read.title).to.equal('Celadon, cone 10');
+    expect(lines(read)).to.eql([
+      ['Custer', 40, null, false],
+      ['Silica', 60, null, false]
+    ]);
+    // Over lines of text too, with a dash, a number in the name, a cone with its zero, an SK cone, and the words of
+    // other languages.
+    for (const [text, locale] of [
+      ['Celadon cone 10\nCuster 40\nSilica 60', 'en'],
+      ['Celadon - Cone 10\nCuster 40\nSilica 60', 'en'],
+      ['Leach 4321, cone 10\nCuster,40\nSilica,60', 'en'],
+      ['Tenmoku, cone 06\nCuster,40\nSilica,60', 'en'],
+      ['Seladon, SK 8\nKalifeldspat;40\nQuarz;60', 'de'],
+      ['Seladon, Kegel 10\nKalifeldspat;40\nQuarz;60', 'de'],
+      ['Céladon, cône 10\nFeldspath;40\nSilice;60', 'fr']
+    ]) {
+      const pasted = one(text, { locale });
+      expect(pasted.title, text).to.equal(text.split('\n')[0]);
+      expect(pasted.lines, text).to.have.length(2);
+    }
+    // After a recipe, such a title starts the next one.
+    const two = recipe.parsePaste('Celadon, cone 10\nCuster,40\nSilica,60\n\nTenmoku, cone 6\nCuster,50\nSilica,50', {
+      isName
+    });
+    expect(two.map((r) => [r.title, r.lines.length])).to.eql([
+      ['Celadon, cone 10', 2],
+      ['Tenmoku, cone 6', 2]
     ]);
   });
 

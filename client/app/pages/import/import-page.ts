@@ -9,6 +9,7 @@ import {
   ambiguousNumbers,
   foldedName,
   importAmounts,
+  joinedNumber,
   nameMatcher,
   parsePaste,
   pasteTooLong,
@@ -213,7 +214,7 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
               t('recipe.import.joined', {
                 count: joined().length,
                 example: joined()[0],
-                value: asDecimal(joined()[0]),
+                value: asOne(joined()[0]),
                 first: joinedApart(joined()[0]).first,
                 last: joinedApart(joined()[0]).last
               })
@@ -226,7 +227,7 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
               [attr.aria-pressed]="joiningNow() === 'decimal'"
               (click)="joinAs('decimal')"
             >
-              {{ t('recipe.import.readAsOneNumber', { example: joined()[0], value: asDecimal(joined()[0]) }) }}
+              {{ t('recipe.import.readAsOneNumber', { example: joined()[0], value: asOne(joined()[0]) }) }}
             </button>
             <button
               type="button"
@@ -559,9 +560,10 @@ export class ImportPage implements OnInit {
   private readonly spacing = signal<Record<number, 'group' | 'apart'>>({});
   private readonly spacedAs = computed(() => spacedReading(formatLocale()));
   /**
-   * Two cells of comma-separated rows ("30,5" of "Silica,30,5") where the reader writes decimal commas: the last two
-   * of a row with no heading row, or the amount's and the next of a row with one cell more than its heading. One
-   * number, or two columns. Shown with a choice.
+   * Two cells of comma-separated rows that can be one number or two columns ("30,5" of "Silica,30,5" where the reader
+   * writes decimal commas, "2,140.7" of "Rutile,2,140.7"): the last two of a row with no heading row, or the amount's
+   * and the next of a row with one cell more than its heading; or a known name's last number and the next ("233,5"
+   * of "Kaolin 233,5"). Shown with a choice.
    */
   protected readonly joined = signal<string[]>([]);
   /** How the person chose to read them; null until they do, when each is one number. */
@@ -652,6 +654,9 @@ export class ImportPage implements OnInit {
     first: token.slice(0, token.lastIndexOf(' ')),
     last: token.slice(token.lastIndexOf(' ') + 1)
   });
+
+  /** "30,5" or "2,140.7" read as one number, as the reader writes numbers and as the paste is read: 30.5, 2140.7. */
+  protected asOne = (token: string): number => joinedNumber(token, typedDecimalMark(), formatLocale()) ?? Number.NaN;
 
   /** "30,5" read as two columns: "30" and "5". */
   protected joinedApart = (token: string): { first: string; last: string } => ({

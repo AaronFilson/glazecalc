@@ -19,16 +19,23 @@ export interface PastedLine {
   /** Marked "+", or under a heading such as "Additions". */
   addition: boolean;
   /**
-   * The amount as pasted when its thousands may be set apart by a space ("1 500" of "Silica 1 500": 1500, or
-   * "Silica 1" at 500), in any language: read as `PasteOptions.spaced` says for the line, so the page asks.
-   * Absent otherwise, and for a known name that ends in the groups before the last ("Minspar 200 300 g").
+   * The amount as pasted when its thousands may be set apart by a space ("1 500" of "Local clay 1 500": 1500, or
+   * "Local clay 1" at 500), in any language: read as `PasteOptions.spaced` says for the line, so the page asks.
+   * Absent otherwise, and where a known name (`isName`) decides it, with nothing to ask: the name with the first
+   * group, in any language ("Minspar 200 300 g": Minspar 200 at 300); else the name without it, where the locale
+   * writes thousands with a space ("Quartz 3 000 g" in French: Quartz at 3000).
    */
   spaced?: string;
   /**
-   * Two cells of a comma-separated row as pasted, with the comma between them ("30,5" of "Silica,30,5"), when they
-   * can be one number with a decimal comma or two columns, the reader writing decimal commas: the last two of a row
-   * of three with no heading row, or under one, the amount's cell and the next when the row has one cell more than
-   * the heading. Read as `PasteOptions.joined` says, so the page asks. Absent otherwise.
+   * Two cells of a comma-separated row as pasted, with the comma between them, when they can be one number
+   * (`joinedNumber`) or two columns: "30,5" of "Silica,30,5" where the reader writes decimal commas, "2,140.7" of
+   * "Rutile,2,140.7" or "1.161,5" of "Pegmatita,1.161,5", the thousands set apart inside the number. The last two
+   * of a row of three with no heading row, or under one, the amount's cell and the next when the row has one cell
+   * more than the heading. Or a known name's last number and the number after its comma, when they can be one
+   * ("233,5" of "Kaolin 233,5" where commas mark decimals: Kaolin at 233.5, or Kaolin 233 at 5; "1,111.8" of
+   * "Boraq 1,111.8 g"), where no other row of the paste has a comma between a word and a number. Read as
+   * `PasteOptions.joined` says, so the page asks. Absent otherwise, and in a paste whose rows of three are three
+   * columns ("Talc,5,50"), for digit groups.
    */
   joined?: string;
 }
@@ -58,16 +65,18 @@ export interface PasteOptions {
   /** How to read a number that could be a decimal or digit groups ("1,500" as 1.5 or 1500), when the paste does not decide it; the locale reads it by default. */
   reading?: 'decimal' | 'group';
   /**
-   * How to read an amount with its thousands set apart by a space ("Silica 1 500"): one number ('group'), or
+   * How to read an amount with its thousands set apart by a space ("Local clay 1 500"): one number ('group'), or
    * the first group as the end of the name ('apart'); for the whole paste, or line by line (by `PastedLine.line`).
-   * A line not chosen is read as `spacedReading(locale)` says, and each such line is marked `spaced`.
+   * A line not chosen is read as `spacedReading(locale)` says, and each such line is marked `spaced`. A line a known
+   * name decides is not marked, and is read as that name says whatever is chosen.
    */
   spaced?: 'group' | 'apart' | Readonly<Record<number, 'group' | 'apart'>>;
   /**
-   * How to read a comma-separated row whose amount can be two whole numbers with only a comma between them
-   * ("Silica,30,5", with no heading row or under "Material,Amount"), for a reader who writes decimal commas: one
-   * number with a decimal comma ('decimal', 30.5), or two columns, the first the amount ('columns', 30). By default
-   * 'decimal', and each such line is marked `joined`.
+   * How to read a comma-separated row whose amount can be two numbers with only a comma between them ("Silica,30,5"
+   * for a reader who writes decimal commas, "Rutile,2,140.7"; with no heading row or under "Material,Amount"): one
+   * number ('decimal': 30.5, 2140.7, as `joinedNumber` reads it), or two columns, the first the amount ('columns':
+   * 30, 2). A known name's last number and the number after its comma likewise ("Kaolin 233,5": 'decimal' Kaolin at
+   * 233.5, 'columns' Kaolin 233 at 5). By default 'decimal', and each such line is marked `joined`.
    */
   joined?: 'decimal' | 'columns';
 }
@@ -90,6 +99,14 @@ export function parsePaste(text: string, options?: PasteOptions): PastedRecipe[]
  * number ('group') where the locale writes thousands so (French "1 500", Russian, Swedish), else 'apart'.
  */
 export function spacedReading(locale?: string): 'group' | 'apart';
+
+/**
+ * The two cells a line is asked of (`PastedLine.joined`) as one number, as a reader who writes numbers so reads them
+ * and as `parsePaste` reads the line until they choose two columns: "30,5" is 30.5 where commas mark decimals,
+ * "2,140.7" is 2140.7, "1.161,5" 1161.5, "1 183,70" 1183.7, and "1,114" 1114 where points do. Null when they cannot
+ * be one number.
+ */
+export function joinedNumber(token: string, mark?: DecimalMark, locale?: string): number | null;
 
 /** Each line's amount as saved ("20.5"; '' for none), and an addition's unit. */
 export function importAmounts(recipe: PastedRecipe): Array<{ amount: string; unit?: 'percent' | 'parts' | 'grams' }>;
