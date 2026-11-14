@@ -473,6 +473,22 @@ describe('MCP: the public tools', () => {
     expect(unknown.content[0]!.text).to.include('Custer Feldspar').and.include('Custer Spar');
   });
 
+  it('reads a trace of a material as the amount it is, in a recipe, a blend and a range', async () => {
+    // String(0.0000001) is "1e-7", which the chemistry refuses: analyze_recipe said "Invalid amount".
+    const traced = [...LINES, { material: 'Talc', amount: 0.0000001 }];
+    const trace = await data('analyze_recipe', { lines: traced });
+    expect(trace.unityFormula).to.eql((await data('analyze_recipe', { lines: LINES })).unityFormula);
+    // A tile with 1e-6 % of talc or less had no unity formula: here all but the last.
+    const blend = await data('blend_recipes', {
+      a: [...LINES, { material: 'Talc', amount: 0.000001 }],
+      b: LINES,
+      steps: 11
+    });
+    expect(blend.tiles.filter((tile: Json) => tile.problem).map((tile: Json) => tile.number)).to.eql([]);
+    const vary = await data('vary_material', { recipe: traced, material: 'Whiting', to: 10, steps: 3 });
+    expect(vary.tiles.filter((tile: Json) => tile.problem).map((tile: Json) => tile.number)).to.eql([]);
+  });
+
   it(`takes at most ${MOST_LINES} lines`, async () => {
     const lines = Array.from({ length: MOST_LINES + 1 }, () => ({ material: 'Silica', amount: 1 }));
     const answer = await rpc('tools/call', { name: 'analyze_recipe', arguments: { lines } });
@@ -666,6 +682,44 @@ describe('MCP: the public tools', () => {
     expect(sk.coneFit).to.include({ verdict: 'skipped', skipped: 'noTemperature' });
   });
 
+  it('judges the cone fit on the unity formula as worked out, not as rounded for the answer', async () => {
+    // Lithium carbonate for 0.0997 Li2O: under the 0.1 from which the cone check cannot judge lithium, so the recipe
+    // page judges it. Rounded to three places, as the answers give it, it is 0.1, and the tools skipped it.
+    const lines = [
+      { material: 'Custer Spar', amount: 30 },
+      { material: 'Whiting', amount: 20 },
+      { material: 'EPK Kaolin', amount: 20 },
+      { material: 'Silica', amount: 30 },
+      { material: 'Lithium Carbonate', amount: 2.0442 }
+    ];
+    const worked = chemistry.calculateUMF(
+      lines.map((line) => ({ material: findMaterial(line.material)!, amount: line.amount }))
+    );
+    expect(worked.umf.Li2O).to.be.within(0.0996, 0.0998);
+    const checked = await data('check_limits', { lines, firing: { cone: '6' } });
+    expect(checked.unityFormula.Li2O).to.equal(0.1);
+    expect(checked.coneFit).to.include({ verdict: 'fits' }).and.not.have.property('skipped');
+    const blend = await data('blend_recipes', { a: lines, b: lines, steps: 2, firing: { cone: '6' } });
+    expect(blend.tiles.map((tile: Json) => tile.coneFit)).to.eql(['fits', 'fits']);
+    // A saved recipe, as get_recipe reads it.
+    const potter = await makeUser();
+    const made = await api()
+      .post('/recipe/create')
+      .set({ Authorization: 'Bearer ' + potter.token })
+      .send({
+        title: 'Lithium satin',
+        materials: lines.map((line) => ({ ...findMaterial(line.material)!, amount: String(line.amount) }))
+      });
+    expect(made).to.have.status(200);
+    const saved = await data(
+      'get_recipe',
+      { id: made.body._id, firing: { cone: '6' } },
+      bearer(await makeToken(potter.user))
+    );
+    expect(saved.analysis.unityFormula.Li2O).to.equal(0.1);
+    expect(saved.coneFit).to.include({ verdict: 'fits' }).and.not.have.property('skipped');
+  });
+
   it('check_limits names every limit set it takes', async () => {
     const tools = ((await rpc('tools/list')).body!.result as { tools: Json[] }).tools;
     const tool = tools.find((t) => t.name === 'check_limits')!;
@@ -722,20 +776,31 @@ describe('MCP: the public tools', () => {
     const bucket = await data('specific_gravity_water', { gramsPer100ml: 145.02, litres: 100, target: 1.45 });
     expect(bucket.waterToAddLitres).to.equal(0);
     expect(bucket.note).to.match(/already/);
-    // On either side of the page's rule (lib/recipe/slurry.js), as the page decides.
-    for (const [litres, sg, target] of [
-      [0.5, 2.01, 2],
-      [0.5, 1.4501, 1.45],
-      [1, 1.452, 1.45],
-      [12, 1.45, 1.4502],
-      [100, 1.4502, 1.45],
-      [100, 1.4512, 1.45],
-      [1000, 1.45, 1.45]
+    // On either side of the page's rule, worked out here: the water is litres × (SG − target) ÷ (target − 1), and the
+    // slurry is there already under half a gram of it a litre either way, or under half a gram in a bucket under a
+    // litre, which the page writes to the gram: it never says to add 0 g, nor the tool 0 L.
+    for (const [litres, sg, target, water, note] of [
+      // 0.5 × 0.01 ÷ 1 = 5 g.
+      [0.5, 2.01, 2, 0.005, /^Add the water/],
+      // 0.5 × 0.0004 ÷ 0.45 = 0.44 g: there already. It said to add the water, 0 L of it.
+      [0.5, 1.4504, 1.45, 0, /already/],
+      // 0.5 × 0.0005 ÷ 0.45 = 0.56 g, a gram to the gram.
+      [0.5, 1.4505, 1.45, 0.001, /^Add the water/],
+      [0.5, 1.4495, 1.45, -0.001, /pour off/],
+      // 0.1 × −0.0014 ÷ 0.3 = −0.47 g: there already. It said to pour off 0 L.
+      [0.1, 1.2986, 1.3, 0, /already/],
+      // 1 × 0.002 ÷ 0.45 = 4.4 g.
+      [1, 1.452, 1.45, 0.004, /^Add the water/],
+      // 12 × −0.0002 ÷ 0.4502 = −5.3 g, under 6 g.
+      [12, 1.45, 1.4502, 0, /already/],
+      // 100 × 0.0002 ÷ 0.45 = 44 g, under 50 g; 100 × 0.0012 ÷ 0.45 = 267 g.
+      [100, 1.4502, 1.45, 0, /already/],
+      [100, 1.4512, 1.45, 0.267, /^Add the water/],
+      [1000, 1.45, 1.45, 0, /already/]
     ] as const) {
-      const already = recipe.reachedAlready(recipe.waterToReach(litres, sg, target, null)!, litres);
       const answer = await data('specific_gravity_water', { sg, litres, target });
-      expect(/already/.test(answer.note), `${litres} L from ${sg} to ${target}`).to.equal(already);
-      expect(answer.waterToAddLitres === 0, `${litres} L from ${sg} to ${target}`).to.equal(already);
+      expect(answer.waterToAddLitres, `${litres} L from ${sg} to ${target}`).to.equal(water);
+      expect(answer.note, `${litres} L from ${sg} to ${target}`).to.match(note);
     }
   });
 
@@ -1140,6 +1205,41 @@ describe('MCP: blend_recipes', () => {
     expect(result).to.not.have.property('differences');
   });
 
+  it('keeps two corners’ own analyses under one name apart, so each tile is the corners it mixes', async () => {
+    // Two wood ashes, analysed apart and given under the same name.
+    const a = [
+      { material: 'Wood ash', amount: 40, analysis: { CaO: 50, SiO2: 10, MgO: 5 }, loi: 30 },
+      { material: 'Silica', amount: 30 },
+      { material: 'EPK', amount: 30 }
+    ];
+    const b = [
+      { material: 'Wood ash', amount: 40, analysis: { K2O: 12, SiO2: 55, Al2O3: 10, CaO: 15 }, loi: 5 },
+      { material: 'Silica', amount: 30 },
+      { material: 'EPK', amount: 30 }
+    ];
+    const result = await data('blend_recipes', { a, b, steps: 3 });
+    const both = [{ ...a[0]!, amount: 20 }, a[1], a[2], { ...b[0]!, amount: 20 }];
+    const [onlyA, half, onlyB] = await Promise.all(
+      [a, both, b].map(async (lines) => (await data('analyze_recipe', { lines })).unityFormula)
+    );
+    // The middle tile has both ashes, 20 each. They were one line with A's chemistry, and all B was A's ash too.
+    expect(result.tiles[1].recipe).to.eql([
+      { material: 'Wood ash', percent: 20 },
+      { material: 'Silica', percent: 30 },
+      { material: 'EPK Kaolin', percent: 30 },
+      { material: 'Wood ash', percent: 20 }
+    ]);
+    for (const [i, unity] of [onlyA, half, onlyB].entries()) {
+      const tile = result.tiles[i].unity;
+      expect([tile.SiO2, tile.Al2O3, tile.fluxes.CaO, tile.fluxes.K2O], 'tile ' + (i + 1)).to.eql([
+        unity.SiO2,
+        unity.Al2O3,
+        unity.CaO,
+        unity.K2O
+      ]);
+    }
+  });
+
   it('a triaxial blend of n rows has n(n+1)/2 tiles with three shares each', async () => {
     const result = await data('blend_recipes', { a: GLOSSY, b: MATTE, c: BORON, steps: 4 });
     expect(result).to.include({ kind: 'triaxial', tileCount: 10 });
@@ -1200,7 +1300,13 @@ describe('MCP: blend_recipes', () => {
     expect(mg.a).to.be.lessThan(0.01);
     expect(mg.change).to.be.greaterThan(0.1);
     for (const d of result.differences) expect(d.change).to.not.equal(0);
-    expect(result.differences.map((d: { what: string }) => d.what)).to.include('silicaToAlumina');
+    const what = result.differences.map((d: { what: string }) => d.what);
+    expect(what).to.include('silicaToAlumina');
+    // An oxide by its formula as the other answers write it (unityFormula's keys): K2O, not K₂O.
+    expect(what).to.include.members(['K2O', 'Al2O3', 'SiO2']);
+    for (const d of result.differences) expect(d.what).to.match(/^[A-Za-z0-9]+$/);
+    const a = await data('analyze_recipe', { lines: GLOSSY });
+    expect(result.differences.find((d: { what: string }) => d.what === 'Al2O3').a).to.equal(a.unityFormula.Al2O3);
   });
 
   it('refuses bad input with words: unknown material, steps out of range, no amounts, no flux', async () => {

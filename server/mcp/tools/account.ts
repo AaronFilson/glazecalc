@@ -238,12 +238,14 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
           let alsoChecks: Record<string, unknown> | undefined;
           let coneFit: ReturnType<typeof coneFitOut> = null;
           try {
-            analysis = analysisOf(lines, lang).out;
+            const worked = analysisOf(lines, lang);
+            analysis = worked.out;
             // The firing asked about, else the band chosen on the recipe, else the stated firing, as the page has it.
             const asked = firing ? firingOf(firing) : null;
             const against = asked ? asked.block : (band ?? firedAt ?? null);
+            // On the unity formula as worked out, as the recipe page judges it, not as rounded for the answer.
             coneFit = coneFitOut(
-              recipe.coneFit(analysis.unityFormula as Record<string, number>, against, {
+              recipe.coneFit(worked.result.umf, against, {
                 processes: firedAt?.processes ?? [],
                 materials: lines.map((line) => line.name)
               }),

@@ -326,11 +326,17 @@ export class SlurryCalculator {
     return Math.round(target * 1000) / 1000;
   });
 
-  /** Whether the target typed is the one the recipe keeps (to within what a Baumé or pint figure rounds to). */
+  /**
+   * Whether the target typed is the one the recipe keeps: the SG saving it would keep, or the kept one as the field
+   * writes it in Settings' density (an SG to 0.001; a Baumé or pint figure to 0.1, up to 0.005 of SG).
+   */
   protected isKept(): boolean {
     const kept = this.sgTarget();
     const now = this.targetSg();
-    return kept !== null && now !== null && Math.abs(kept - now) < 0.001;
+    const { target } = this.numbers();
+    if (kept === null || now === null || target === null) return false;
+    const density = this.locale.density();
+    return kept === now || densityText(kept, density) === densityText(target, density);
   }
 
   /** An SG as the SG column writes it: 1.45. */

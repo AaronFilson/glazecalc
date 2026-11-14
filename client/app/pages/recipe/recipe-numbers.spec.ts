@@ -310,6 +310,17 @@ describe('SlurryCalculator', () => {
     );
   });
 
+  it('says a bucket under a litre is at the SG already rather than to add 0 g of water', async () => {
+    const { fixture, type } = await create();
+    await type('slurry-volume', '0.5');
+    // 0.5 L × 0.0004 ÷ 0.45 is 0.44 g of water, which it wrote as "add 0 g".
+    await type('slurry-measured', '1.4504');
+    expect(text(fixture, '.slurry-results')).toContain('It is already at SG 1.45.');
+    // 0.56 g is a gram, to the gram.
+    await type('slurry-measured', '1.4505');
+    expect(text(fixture, '.slurry-results')).toContain('To reach SG 1.45, add 1 g of water.');
+  });
+
   it('leaves the dry SG empty with no estimate: the water to add still works, the dry weights wait for it', async () => {
     const { fixture, root, type } = await create();
     expect((root.querySelector('#slurry-dry') as HTMLInputElement).value).toBe('');
@@ -460,6 +471,23 @@ describe('SlurryCalculator', () => {
     await fixture.whenStable();
     expect((fixture.nativeElement.querySelector('#slurry-target') as HTMLInputElement).value).toBe('48.3');
     expect(text(fixture, '.slurry-target')).toContain("SG 1.5 is this recipe's target.");
+  });
+
+  it('knows the kept target as the field writes it, a pint weight or a Baumé figure to 0.1', async () => {
+    const preferences = TestBed.inject(PreferencesService);
+    // 1.452 is 29.04 oz a pint, written 29, which reads as SG 1.45; 1.242 is 28.25 °Bé, written 28.3, read as 1.243.
+    for (const [density, sg, shown] of [
+      ['pint', 1.452, '29'],
+      ['baume', 1.242, '28.3']
+    ] as const) {
+      preferences.remember('density', density);
+      const fixture = TestBed.createComponent(SlurryCalculator);
+      fixture.componentRef.setInput('sgTarget', sg);
+      await fixture.whenStable();
+      expect((fixture.nativeElement.querySelector('#slurry-target') as HTMLInputElement).value).toBe(shown);
+      expect(text(fixture, '.slurry-target')).toContain(`SG ${sg} is this recipe's target.`);
+      expect(fixture.nativeElement.querySelector('.slurry-target button').textContent).toContain('Clear the target');
+    }
   });
 });
 

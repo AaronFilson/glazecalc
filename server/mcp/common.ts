@@ -184,7 +184,8 @@ export type RecipeLine = MaterialRecord & { amount: string };
 export const resolveLines = (lines: Line[], own?: (name: string) => MaterialRecord | undefined): RecipeLine[] => {
   const unknown: string[] = [];
   const resolved = lines.map((line): RecipeLine | null => {
-    const amount = String(line.amount);
+    // Written plainly: String(0.0000001) is "1e-7", which the chemistry refuses as an amount.
+    const amount = recipe.plainAmount(line.amount);
     if (line.analysis) {
       if (!Object.keys(line.analysis).length) {
         throw new ToolProblem(`The analysis of ${line.material} has no oxides.`);

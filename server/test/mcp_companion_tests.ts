@@ -113,6 +113,33 @@ describe('MCP: vary_material', () => {
     }
   });
 
+  it('keeps the base’s own analysis of the material it varies: the first tile is the base alone', async () => {
+    // The potter's own whiting, with magnesia in it, under the library's name.
+    const own = [
+      { material: 'Whiting', amount: 20, analysis: { CaO: 40, MgO: 12, SiO2: 6 }, loi: 40 },
+      { material: 'Custer Spar', amount: 40 },
+      { material: 'EPK', amount: 20 },
+      { material: 'Silica', amount: 20 }
+    ];
+    const result = await data('vary_material', { recipe: own, material: 'Whiting', from: 0, to: 10, steps: 3 });
+    const [alone, more] = await Promise.all(
+      [own, [{ ...own[0]!, amount: 30 }, ...own.slice(1)]].map(
+        async (lines) => (await data('analyze_recipe', { lines })).unityFormula
+      )
+    );
+    // The library's whiting took the base's own place, so even the base alone lost its magnesia.
+    for (const [tile, unity] of [
+      [result.tiles[0], alone],
+      [result.tiles[2], more]
+    ]) {
+      expect([tile.unity.fluxes.CaO, tile.unity.fluxes.MgO, tile.unity.SiO2], 'tile ' + tile.number).to.eql([
+        unity.CaO,
+        unity.MgO,
+        unity.SiO2
+      ]);
+    }
+  });
+
   it('shows whiting raising lime and lowering silica and alumina per unit of flux, in the trend', async () => {
     const result = await data('vary_material', { recipe: BASE, material: 'Whiting', to: 20 });
     expect(result.steps).to.equal(5);

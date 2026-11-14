@@ -979,7 +979,10 @@ describe('pages in each language', () => {
     for (const [from, to] of [
       ['/materials/nepheline-syenite', '/materials/nepheline-syenite-typical'],
       ['/de/materials/nepheline-syenite', '/de/materials/nepheline-syenite-typical'],
-      ['/zh-Hans/materials/nepheline-syenite?x=1', '/zh-Hans/materials/nepheline-syenite-typical?x=1']
+      ['/zh-Hans/materials/nepheline-syenite?x=1', '/zh-Hans/materials/nepheline-syenite-typical?x=1'],
+      // With a slash at the end too, straight to the page as it is written now.
+      ['/materials/nepheline-syenite/', '/materials/nepheline-syenite-typical'],
+      ['/de/materials/nepheline-syenite/?x=1', '/de/materials/nepheline-syenite-typical?x=1']
     ]) {
       const res = await redirectOf(from!);
       expect(res.status, from).to.equal(301);

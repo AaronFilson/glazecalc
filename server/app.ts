@@ -230,9 +230,10 @@ app.use((req, res, next) => {
   }
   const written = languages.canonicalLanguagePath(req.path);
   if (written) return res.redirect(301, written + queryOf(req));
-  // A renamed standard material's old page, in any language, goes to its page now (lib/material-slug.js).
+  // A renamed standard material's old page, in any language, goes to its page now (lib/material-slug.js),
+  // with a slash at the end or without.
   const prefix = languages.languagePrefix(code);
-  const material = /^\/materials\/([a-z0-9-]+)$/.exec(req.path.slice(prefix.length));
+  const material = /^\/materials\/([a-z0-9-]+)\/?$/.exec(req.path.slice(prefix.length));
   const now = material && req.path.startsWith(prefix) ? materialSlugs.currentSlug(material[1]) : null;
   return now ? res.redirect(301, prefix + '/materials/' + now + queryOf(req)) : next();
 });

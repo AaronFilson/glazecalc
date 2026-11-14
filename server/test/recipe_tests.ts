@@ -94,6 +94,23 @@ describe('Shared recipe tools', () => {
     });
   });
 
+  it('writes an amount as a plain decimal however small, never with an exponent', () => {
+    // String(0.0000001) is "1e-7", which isAmount and the chemistry refuse.
+    expect([0.0000001, 2.5e-8, 12.5, 0, 1.25e21].map((value) => recipe.plainAmount(value))).to.eql([
+      '0.0000001',
+      '0.000000025',
+      '12.5',
+      '0',
+      '1250000000000000000000'
+    ]);
+    for (const value of [1e-7, 1.234567e-9, 5e-324]) {
+      expect(recipe.isAmount(recipe.plainAmount(value)), String(value)).to.equal(true);
+      expect(recipe.amountOf(recipe.plainAmount(value)), String(value)).to.equal(value);
+    }
+    // A tiny amount scaled keeps three figures, written plainly too.
+    expect(recipe.formatScaled(4.99999995e-7)).to.equal('0.0000005');
+  });
+
   it('reads typed numbers by the decimal mark and the locale', () => {
     expect(recipe.parseNumber('1 234,5', 'either', 'fr')).to.equal(1234.5);
     expect(recipe.parseNumber('12.5', 'comma')).to.equal(null);
@@ -550,6 +567,31 @@ describe('Shared recipe tools', () => {
     expect(recipe.stullPoint({ SiO2: 3.5, Al2O3: 0.08 })?.region).to.not.equal('unclassified');
   });
 
+  it('reads Stull’s outlines to their edges: nothing bright between semi-matte and matte, nor on the chart’s rim', () => {
+    const point = (SiO2: number, Al2O3: number) => recipe.stullPoint({ SiO2, Al2O3 })!;
+    // Semi-matte meets matte along matte's lower edge, (0.6, 0.08) to (4, 1). Glazy's semi-matte stopped up to
+    // 0.00035 under it, and a point between them read as bright.
+    for (let x = 1.25; x < 4; x += 0.25) {
+      const edge = 0.08 + (0.92 * (x - 0.6)) / 3.4;
+      for (const y of [edge - 3e-4, edge - 1e-4, edge - 1e-12, edge, edge + 1e-12, edge + 1e-4]) {
+        expect(['semi-matte', 'matte'], `${x}, ${y}`).to.include(point(x, y).region);
+      }
+    }
+    // A point on an outline is in it: alumina 1.0, the chart's top, and silica 0.6 and 7.2 read as the regions they
+    // bound, not bright; so does the line between unfused and matte.
+    expect([1.5, 3.5, 4.5, 6].map((silica) => point(silica, 1).region)).to.eql([
+      'unfused',
+      'matte',
+      'semi-matte',
+      'bright'
+    ]);
+    expect(
+      [point(0.6, 0.08), point(0.6, 0.3), point(0.6, 0.7), point(7.2, 0.3), point(7.2, 0.8)].map((p) => p.region)
+    ).to.eql(['matte', 'matte', 'unfused', 'underfired', 'bright']);
+    expect(point(1.48, 0.652).region).to.equal('unfused');
+    expect([point(7.2, 0.3).crazed, point(1, 1).crazed, point(7.2, 0.8).crazed]).to.eql([true, true, false]);
+  });
+
   it('works out the analysis a unity formula implies: mole percent and the point on Stull’s chart', () => {
     const percent = recipe.molePercent({ CaO: 1, Al2O3: 0.5, SiO2: 3.5, ZnO: 0 });
     expect(percent).to.deep.equal({ CaO: 20, Al2O3: 10, SiO2: 70 });
@@ -581,6 +623,15 @@ describe('Shared recipe tools', () => {
       false,
       false
     ]);
+    // Under a litre, half a gram all the same: the page writes the water to the gram, so it never says to add 0 g.
+    for (const litres of [0.1, 0.5, 1]) {
+      expect([0.00049, -0.00049, 0.0005, -0.0005].map((water) => recipe.reachedAlready(water, litres))).to.eql([
+        true,
+        true,
+        false,
+        false
+      ]);
+    }
     // Thickening is water to pour off; the glaze stays the same.
     const off = recipe.waterToReach(10, 1.4, 1.5, 2.5)!;
     expect(off).to.be.closeTo(-2, 1e-9);

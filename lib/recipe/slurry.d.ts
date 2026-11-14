@@ -17,7 +17,8 @@ export function slurryContents(litres: number, sg: number, dry: number): { glaze
 export function waterToReach(litres: number, sg: number, target: number, dry: number | null): number | null;
 /**
  * Whether a slurry is at the SG wanted already: the water to reach it (kg, from `waterToReach`) is under 0.05% of its
- * volume (litres), half a gram a litre either way. The recipe page and the MCP tool both decide so by it.
+ * volume (litres), half a gram a litre either way, and under a litre under half a gram, which the page and the MCP tool
+ * would write as 0. The recipe page and the MCP tool both decide so by it.
  */
 export function reachedAlready(water: number, litres: number): boolean;
 /** For a weight of dry glaze (kg) at a target SG: the water to add (kg) and the slurry it makes (litres). */
