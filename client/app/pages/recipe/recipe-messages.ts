@@ -1,6 +1,6 @@
 import { translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
-import type { Caution, Figure, RecipeMessage, RecipeMessageCode } from '../../../../lib/recipe/messages';
+import type { Caution, Figure, RecipeError, RecipeMessage, RecipeMessageCode } from '../../../../lib/recipe/messages';
 import { paramsText } from '../../../../lib/recipe/messages';
 import { fixed, upTo } from '../../shared/format';
 
@@ -133,3 +133,13 @@ export const recipeText = (message: RecipeMessage): string =>
 
 /** A caution's sentences, one after another, in the page's language. */
 export const cautionText = (caution: Caution): string => caution.sentences.map(recipeText).join(' ');
+
+/** Why a recipe tool could not do what it was asked (a RecipeError), in the page's language, with its code. */
+export class RecipeProblem extends Error {
+  readonly code: RecipeMessageCode;
+
+  constructor(error: RecipeError) {
+    super(recipeText(error));
+    this.code = error.code;
+  }
+}

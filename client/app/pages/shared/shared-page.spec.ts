@@ -160,7 +160,7 @@ describe('SharedPage', () => {
     }
   });
 
-  it('gives a barium caution beside lead’s from BaO 0.2 in the unity formula, likely to leach from 0.4', async () => {
+  it('gives a barium caution beside lead’s past BaO 0.10 in the unity formula as shown, likely to leach from 0.40', async () => {
     const BARIUM: Material = {
       name: 'Barium carbonate',
       percentmole: 'molecular',
@@ -181,12 +181,13 @@ describe('SharedPage', () => {
       fixture.destroy();
       return note;
     };
-    // 10 g of whiting is 0.1 mol CaO; barium carbonate is 197 g a mole.
-    expect(await caution(4.8)).toBeNull();
-    expect(await caution(5)).toMatch(
-      /^Contains barium: BaO 0\.20 in the unity formula\. Barium can leach .* food or drink\.$/
+    // 10 g of whiting is 0.1 mol CaO; barium carbonate is 197 g a mole. 2.29 g is BaO 0.104, shown as 0.10.
+    expect(await caution(2.29)).toBeNull();
+    expect(await caution(2.34)).toMatch(
+      /^Contains barium: BaO 0\.11 in the unity formula\. Barium can leach .* food or drink\.$/
     );
-    expect(await caution(13.2)).toMatch(/^Contains barium: BaO 0\.40 .*likely to leach barium/);
+    expect(await caution(12.85)).toMatch(/^Contains barium: BaO 0\.39 .*Only a laboratory leach test/);
+    expect(await caution(12.9)).toMatch(/^Contains barium: BaO 0\.40 .*likely to leach barium/);
     // An additive counts, as for lead.
     expect(await caution(13.2, true)).toMatch(/likely to leach/);
   });

@@ -245,8 +245,7 @@
       "text": "Ini ditambahkan di atas dasar. Disimpan bersama resep tetapi bukan bagian dari formula Seger. Pilih dalam satuan apa setiap jumlah:",
       "percent": "<b>% dari dasar</b>: persen dari total dasar, seperti yang diberikan sebagian besar resep: 2 berarti 2% besi oksida merah.",
       "parts": "<b>bagian</b>: satuan yang sama dengan bahan, misalnya 1 bagian pada dasar 3 flint dan 2 dolomit.",
-      "grams": "<b>gram</b>: berat, dalam batch yang sama dengan bahan.",
-      "count": "Sebagian kalkulator menghitung pewarna dalam formula Seger dan sebagian tidak. Centang <b>Hitung pewarna dan aditif di dalamnya</b>, di bawah judul Formula Seger, untuk menghitungnya sesuai beratnya dalam batch, atau biarkan kosong untuk membandingkan dengan kalkulator yang tidak menghitungnya. Pilihan ini disimpan bersama resep."
+      "grams": "<b>gram</b>: berat, dalam batch yang sama dengan bahan."
     },
     "scale": {
       "heading": "Ubah skala saat diperlukan",

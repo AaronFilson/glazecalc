@@ -15,9 +15,9 @@ run found five exports the code used that no declaration had.
 Amended, 2026-11-13: colorant oxides stay fluxes. FeO, MnO, CuO, CoO and NiO are counted in RO with the other
 fluxes, as Glazy's "extended" unity formula counts them (Fe2O3 and Cr2O3 are in R2O3), so counting a recipe's
 colorants changes its unity formula as they change the glaze. The 1.0 review of the chemistry asked whether to leave
-them out of the flux; they are kept, and the unity formula warns where the convention makes it mean little:
-`colorant-flux` when colorant oxides are more than half of the flux, and `silica-high` when it has more than 10
-SiO2. Silica and kaolin with 5% cobalt carbonate had come to CoO 1 and SiO2 32 without a word. Neither warning
+them out of the flux; they are kept, and the unity formula warns where it cannot be read as an ordinary glaze's:
+`colorant-flux` when colorant oxides are more than half of the flux (it is scaled to them, and they melt too, so it
+compares only with other colorant-rich glazes), and `silica-high` when it has more than 10 SiO2. Silica and kaolin with 5% cobalt carbonate had come to CoO 1 and SiO2 32 without a word. Neither warning
 fires on the famous glazes (Shino, feldspar alone, has 9.7 SiO2; Oribe's copper is 0.17 of its flux) or on the
 README's and the landing page's Leach 4321. Where the flux is only a trace, `trace-flux` says it instead.
 

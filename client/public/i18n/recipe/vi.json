@@ -245,8 +245,7 @@
       "text": "Những thứ này được thêm lên trên men nền. Chúng được lưu cùng công thức men nhưng không thuộc công thức Seger. Chọn mỗi lượng tính bằng gì:",
       "percent": "<b>% men nền</b>: một phần trăm của tổng men nền, như hầu hết công thức men ghi: 2 nghĩa là 2% oxit sắt đỏ.",
       "parts": "<b>phần</b>: cùng đơn vị với các nguyên liệu, như 1 phần trên một men nền gồm 3 flint và 2 đôlômít.",
-      "grams": "<b>gam</b>: một khối lượng, trong cùng mẻ với các nguyên liệu.",
-      "count": "Một số công cụ tính tính chất tạo màu vào công thức Seger và một số thì không. Đánh dấu <b>Tính cả chất tạo màu và phụ gia</b>, dưới tiêu đề Công thức Seger, để tính chúng theo khối lượng trong mẻ, hoặc để trống để so sánh với một công cụ tính không tính chúng. Lựa chọn được lưu cùng công thức men."
+      "grams": "<b>gam</b>: một khối lượng, trong cùng mẻ với các nguyên liệu."
     },
     "scale": {
       "heading": "Đổi cách quy đổi khi cần",

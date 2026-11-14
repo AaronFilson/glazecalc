@@ -245,8 +245,7 @@
       "text": "Tās pievieno papildus pamatglazūrai. Tās saglabā kopā ar recepti, taču tās neietilpst Zēgera formulā. Izvēlieties, kādā mērvienībā ir katrs daudzums:",
       "percent": "<b>% no pamatglazūras</b>: procenti no pamatglazūras kopsummas, kā tos norāda lielākā daļa recepšu: 2 nozīmē 2% sarkanā dzelzs oksīda.",
       "parts": "<b>daļas</b>: tā pati mērvienība kā izejvielām, piemēram, 1 daļa uz pamatglazūru no 3 daļām krama un 2 daļām dolomīta.",
-      "grams": "<b>grami</b>: svars tajā pašā porcijā, kurā ir izejvielas.",
-      "count": "Daži kalkulatori ieskaita krāsvielas Zēgera formulā, citi ne. Atzīmējiet <b>Ieskaitīt krāsvielas un piedevas</b> zem virsraksta Zēgera formula, lai tās ieskaitītu pēc to svara porcijā, vai atstājiet neatzīmētu, lai salīdzinātu ar kalkulatoru, kas tās neieskaita. Izvēli saglabā kopā ar recepti."
+      "grams": "<b>grami</b>: svars tajā pašā porcijā, kurā ir izejvielas."
     },
     "scale": {
       "heading": "Pārrēķināšana, kad tā vajadzīga",

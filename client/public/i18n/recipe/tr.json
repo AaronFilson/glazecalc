@@ -245,8 +245,7 @@
       "text": "Bunlar temelin üzerine eklenir. Reçeteyle birlikte kaydedilirler ama Seger formülüne dahil değildirler. Her miktarın birimini seçin:",
       "percent": "<b>temelin %’si</b>: temelin toplamının yüzdesi, çoğu reçetenin verdiği gibi: 2, %2 kırmızı demir oksit demektir.",
       "parts": "<b>kısım</b>: hammaddelerle aynı birim; örneğin 3 flint ve 2 dolomitten oluşan bir temele 1 kısım.",
-      "grams": "<b>gram</b>: hammaddelerle aynı tartımda bir ağırlık.",
-      "count": "Bazı hesaplayıcılar renklendiricileri Seger formülüne katar, bazıları katmaz. Onları tartımdaki ağırlıklarıyla saymak için Seger formülü başlığının altındaki <b>Renklendiricileri ve katkıları da say</b> kutusunu işaretleyin; saymayan bir hesaplayıcıyla karşılaştırmak içinse boş bırakın. Seçim reçeteyle birlikte kaydedilir."
+      "grams": "<b>gram</b>: hammaddelerle aynı tartımda bir ağırlık."
     },
     "scale": {
       "heading": "Gerektiğinde ölçeği değiştirin",

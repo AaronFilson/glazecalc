@@ -378,12 +378,26 @@ describe('glaze chemistry', () => {
       expect(cobalt.umf.CoO).to.be.closeTo(1, 1e-9);
       expect(cobalt.umf.SiO2).to.be.above(30);
       expect(cobalt.warningCodes.map((w) => w.code)).to.deep.equal(['colorant-flux', 'silica-high']);
+      // Not that it says little about the melt: colorants melt too (Digitalfire: "Manganese is an active
+      // melter"). The formula is scaled to them, so it compares only with other colorant-rich glazes.
       expect(cobalt.warnings[0]).to.equal(
-        'Colorant oxides (CoO) are most of the flux, so the unity formula is scaled to them and says little about how the glaze melts.'
+        'Colorant oxides (CoO) are most of the flux, so the unity formula is scaled to them; compare it only with other colorant-rich glazes, not with limits for ordinary glazes.'
       );
       expect(cobalt.warnings[1]).to.equal(
-        'The unity formula has 32.32 SiO₂, more than a glaze can melt: there is too little flux, or this is not a glaze.'
+        'The unity formula has 32.32 SiO₂, unusually high for a glaze: the recipe is for a very high firing, has too little flux, or is not a glaze.'
       );
+      // Traditional Shinos reach 10.1 to 12.8 and melt, at a very high firing: Kamado feldspar with 20%
+      // kaolin is 11.2. Still past 10, so still said, but not as more than a glaze can melt.
+      const records: StandardMaterial[] = standardData.load('materials');
+      const named = (name: string) => records.find((record) => record.name === name)!;
+      const shino = calculateUMF([
+        { material: named('Kamado Feldspar (釜戸長石)'), amount: 80 },
+        { material: named('China Clay'), amount: 20 }
+      ]);
+      expect(shino.umf.SiO2).to.be.closeTo(11.23, 0.01);
+      expect(shino.warningCodes.map((w) => w.code)).to.deep.equal(['silica-high']);
+      expect(shino.warnings[0]).to.match(/^The unity formula has 11\.23 SiO₂, unusually high for a glaze: .*firing/);
+      expect(shino.warnings[0]).to.not.match(/can melt/);
       // Most of the flux: 10 g of whiting is 0.0999 mol CaO; cobalt carbonate is 118.9 g a mole.
       expect(
         codes({ Whiting: 10, 'Cobalt Carbonate (theoretical)': 9.7, Silica: 30, 'Kaolin (theoretical)': 10 })
@@ -1994,6 +2008,19 @@ describe('glaze chemistry', () => {
       expect(given(' MOLECULAR ')()).to.deep.equal(given('molecular')());
       // None, as an additive saved before it had one, is moles as ever: absent, null or blank alike.
       expect(given('')()).to.deep.equal(given('molecular')());
+      // The pages and the MCP tools tell percent from moles as the library reads it (oxidesGivenIn): a
+      // record saved before the server kept percentmole in lower case may say 'Percent' or 'Molecular'.
+      const givenIn = (material: Partial<MaterialInput>) => chemistry.oxidesGivenIn(material);
+      for (const percentmole of ['percent', 'Percent', ' PERCENT ']) {
+        expect(givenIn({ percentmole }), percentmole).to.equal('percent');
+      }
+      for (const percentmole of ['molecular', 'Molecular', ' MOLECULAR ', '', null, undefined]) {
+        expect(givenIn({ percentmole } as Partial<MaterialInput>), String(percentmole)).to.equal('molecular');
+      }
+      expect(givenIn({ percentmole: 'weight' })).to.equal(null);
+      // As prepareMaterial reads them: an analysis is in percent, a formula in moles, whatever else they say.
+      expect(givenIn({ analysis: { PbO: 100 }, percentmole: 'molecular' })).to.equal('percent');
+      expect(givenIn({ formula: { CaO: 1 }, percentmole: 'percent' })).to.equal('molecular');
       expect(codeOf(twice('abc', '56'))).to.equal('invalid-oxide-amount');
       expect(codeOf(twice('56', 'abc'))).to.equal('invalid-oxide-amount');
       // A batch so large its sums overflow.

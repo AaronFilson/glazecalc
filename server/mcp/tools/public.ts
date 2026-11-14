@@ -77,7 +77,8 @@ export const materialOut = (record: LibraryRecord) => ({
   ...(record.category && { category: record.category }),
   ...(record.rawformula && { formula: record.rawformula }),
   oxides: oxidesOf(record),
-  oxidesAre: record.percentmole === 'molecular' ? 'moles in the formula' : 'weight percent',
+  // As the chemistry reads them, in any case: a record may keep 'Molecular'.
+  oxidesAre: chemistry.oxidesGivenIn(record) === 'percent' ? 'weight percent' : 'moles in the formula',
   loi: Number(record.loi ?? 0),
   ...(record.status && { status: record.status }),
   ...(record.statusSince && { statusSince: record.statusSince }),

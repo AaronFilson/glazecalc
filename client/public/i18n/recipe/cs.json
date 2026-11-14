@@ -245,8 +245,7 @@
       "text": "Přidávají se navíc k základní glazuře. Ukládají se s receptem, ale nejsou součástí Segerova vzorce. U každého množství vyberte, v čem je zadané:",
       "percent": "<b>% základu</b>: procento z celkového množství základu, jak je uvádí většina receptů: 2 znamená 2 % červeného oxidu železitého.",
       "parts": "<b>díly</b>: stejná jednotka jako u surovin, například 1 díl na základ ze 3 dílů křemene<en>flint</en> a 2 dílů dolomitu.",
-      "grams": "<b>gramy</b>: hmotnost ve stejné dávce jako suroviny.",
-      "count": "Některé kalkulačky započítávají barviva do Segerova vzorce<en>unity molecular formula</en>, jiné ne. Zaškrtnutím políčka <b>Započítat do něj barviva a přísady</b> pod nadpisem Segerův vzorec je započítáte podle jejich hmotnosti v dávce; když ho necháte nezaškrtnuté, můžete porovnávat s kalkulačkou, která je nezapočítává. Volba se ukládá s receptem."
+      "grams": "<b>gramy</b>: hmotnost ve stejné dávce jako suroviny."
     },
     "scale": {
       "heading": "Přepočítejte recept, když je třeba",

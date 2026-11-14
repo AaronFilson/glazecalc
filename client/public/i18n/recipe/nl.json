@@ -245,8 +245,7 @@
       "text": "Die komen bovenop het basisglazuur. Ze worden met het recept opgeslagen, maar maken geen deel uit van de Segerformule. Kies voor elke hoeveelheid de eenheid:",
       "percent": "<b>% van het basisglazuur</b>: een percentage van het totaal van het basisglazuur, zoals de meeste recepten ze geven: 2 betekent 2% ijzeroxide rood.",
       "parts": "<b>delen</b>: dezelfde eenheid als de grondstoffen, zoals 1 deel op een basis van 3 delen kwarts<en>flint</en> en 2 delen dolomiet.",
-      "grams": "<b>gram</b>: een gewicht, in hetzelfde mengsel als de grondstoffen.",
-      "count": "Sommige calculators tellen kleurstoffen mee in de Segerformule<en>unity molecular formula</en> en andere niet. Vink <b>Kleurstoffen en toevoegingen meetellen</b> aan, onder de kop Segerformule, om ze naar hun gewicht in het mengsel mee te tellen, of laat het vakje leeg om te vergelijken met een calculator die dat niet doet. De keuze wordt met het recept opgeslagen."
+      "grams": "<b>gram</b>: een gewicht, in hetzelfde mengsel als de grondstoffen."
     },
     "scale": {
       "heading": "Reken om wanneer dat nodig is",

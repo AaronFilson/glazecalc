@@ -245,8 +245,7 @@
       "text": "De kommer ud over grundglasuren. De gemmes med opskriften, men er ikke en del af Seger-formlen. Vælg, hvilken enhed hver mængde er angivet i:",
       "percent": "<b>% af grundglasuren</b>: en procentdel af grundglasurens samlede mængde, sådan som de fleste opskrifter angiver dem: 2 betyder 2 % rødt jernoxid.",
       "parts": "<b>dele</b>: samme enhed som råvarerne, fx 1 del til en grundglasur af 3 flint og 2 dolomit.",
-      "grams": "<b>gram</b>: en vægt, i samme portion som råvarerne.",
-      "count": "Nogle beregnere medregner farvestoffer i Seger-formlen<en>unity molecular formula</en>, andre gør ikke. Sæt flueben ved <b>Medregn farvestoffer og tilsætninger</b> under overskriften Seger-formel for at medregne dem efter deres vægt i portionen, eller lad feltet være tomt for at sammenligne med en beregner, der ikke gør. Valget gemmes med opskriften."
+      "grams": "<b>gram</b>: en vægt, i samme portion som råvarerne."
     },
     "scale": {
       "heading": "Omregn efter behov",

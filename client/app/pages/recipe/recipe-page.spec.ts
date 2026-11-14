@@ -3389,6 +3389,51 @@ describe('RecipePage', () => {
         expect(materialsShown(root)).toEqual(['Custer Spar', 'Whiting', 'Silica']);
       });
 
+      const NO_FLUX = 'It cannot be worked out: none of the materials it may use has a flux, such as CaO, K₂O or Na₂O.';
+      const LINER: Array<[Material, string]> = [
+        [CUSTER, '40'],
+        [WHITING, '20'],
+        [SILICA, '30'],
+        [KAOLIN, '10']
+      ];
+
+      it('says when none of the materials on hand has a flux, not that a material has no analysis', async () => {
+        const { fixture, router, page } = await startWith([WHITING, SILICA, CUSTER, G200, KAOLIN]);
+        fill(page, LINER);
+        await settle(fixture);
+        click(fixture, 'Match with what I have');
+        await settle(fixture);
+        answer('/shelf', { shelf: ['Silica', 'Kaolin'] });
+        await settle(fixture);
+        click(fixture, 'Match and compare');
+        await settle(fixture);
+        expect(text(fixture, '.recipe-swap-problem')).toBe(NO_FLUX);
+        expect(router.url).toBe('/');
+      });
+
+      it('says so when worked out again without the only flux it had', async () => {
+        const { fixture, router, root, page } = await startWith([WHITING, SILICA, CUSTER, G200, KAOLIN]);
+        fill(page, LINER);
+        await settle(fixture);
+        click(fixture, 'Match with what I have');
+        await settle(fixture);
+        answer('/shelf', { shelf: ['Whiting', 'Silica', 'Kaolin'] });
+        await settle(fixture);
+        click(fixture, 'Match and compare');
+        await settle(fixture);
+        expect(router.url).toBe('/?compare=before,draft');
+        click(fixture, 'Back to the recipe');
+        await settle(fixture);
+        const whiting = [...root.querySelectorAll('.recipe-swap .swap-uses li')].find(
+          (li) => li.querySelector('b')?.textContent === 'Whiting'
+        ) as HTMLElement;
+        click({ nativeElement: whiting }, 'Leave it out');
+        await settle(fixture);
+        expect(text(fixture, '.recipe-swap-problem')).toBe(NO_FLUX);
+        // The recipe goes back to how it was.
+        expect(materialsShown(root)).toEqual(['Custer Spar', 'Whiting', 'Silica', 'Kaolin']);
+      });
+
       it('says why it could not be worked out again in the compare view too, where it was asked', async () => {
         const { fixture, router, root, page } = await startWith([WHITING, SILICA, CUSTER, G200], [MYSTERY]);
         fill(page, [

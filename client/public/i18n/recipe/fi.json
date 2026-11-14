@@ -245,8 +245,7 @@
       "text": "Ne tulevat pohjalasitteen lisäksi. Ne tallennetaan reseptin mukana, mutta ne eivät ole osa Segerin kaavaa. Valitse kunkin määrän yksikkö:",
       "percent": "<b>% pohjalasitteesta</b>: prosenttia pohjalasitteen kokonaismäärästä, kuten useimmissa resepteissä: 2 tarkoittaa 2 % punaista rautaoksidia.",
       "parts": "<b>osaa</b>: sama yksikkö kuin raaka-aineilla, esimerkiksi 1 osa pohjalasitteeseen, jossa on 3 osaa flinttiä<en>flint</en> ja 2 osaa dolomiittia.",
-      "grams": "<b>grammaa</b>: paino samassa erässä kuin raaka-aineet.",
-      "count": "Jotkin laskimet laskevat väriaineet mukaan Segerin kaavaan<en>unity molecular formula</en>, jotkin eivät. Valitse Segerin kaava -otsikon alta <b>Laske väriaineet ja lisäaineet mukaan</b>, niin ne lasketaan kaavaan sillä painolla, joka niillä on erässä, tai jätä ruutu tyhjäksi, kun tulosta verrataan laskimeen, joka ei laske niitä. Valinta tallennetaan reseptin mukana."
+      "grams": "<b>grammaa</b>: paino samassa erässä kuin raaka-aineet."
     },
     "scale": {
       "heading": "Reseptin muuntaminen tarvittaessa",

@@ -245,8 +245,7 @@
       "text": "Aceștia se adaugă peste glazura de bază. Se salvează împreună cu rețeta, dar nu fac parte din formula Seger. Alegeți unitatea pentru fiecare cantitate:",
       "percent": "<b>% din glazura de bază</b>: un procent din totalul glazurii de bază, cum îi dau majoritatea rețetelor: 2 înseamnă 2 % oxid roșu de fier.",
       "parts": "<b>părți</b>: aceeași unitate ca pentru materiile prime, de exemplu 1 parte la o glazură de bază din 3 părți cremene<en>flint</en> și 2 părți dolomită.",
-      "grams": "<b>grame</b>: o masă, în același amestec cu materiile prime.",
-      "count": "Unele calculatoare includ coloranții în formula Seger<en>unity molecular formula</en>, altele nu. Bifați <b>Includeți coloranții și aditivii</b>, sub titlul Formula Seger, ca să fie incluși după masa lor din amestec, sau lăsați căsuța nebifată ca să comparați cu un calculator care nu îi include. Alegerea se salvează împreună cu rețeta."
+      "grams": "<b>grame</b>: o masă, în același amestec cu materiile prime."
     },
     "scale": {
       "heading": "Convertiți cantitățile când este nevoie",

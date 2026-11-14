@@ -245,8 +245,7 @@
       "text": "Jie dedami papildomai prie bazinės glazūros. Jie įrašomi kartu su receptu, bet neįtraukiami į Segerio formulę. Pasirinkite, kokiais vienetais nurodytas kiekvienas kiekis:",
       "percent": "<b>% bazinės</b>: procentai nuo bazinės glazūros sumos, kaip nurodoma daugumoje receptų: 2 reiškia 2 % raudonojo geležies oksido.",
       "parts": "<b>dalys</b>: tas pats vienetas kaip žaliavų, pvz., 1 dalis bazinei glazūrai iš 3 dalių titnago<en>flint</en> ir 2 dalių dolomito.",
-      "grams": "<b>gramai</b>: masė tame pačiame užmaiše kaip ir žaliavos.",
-      "count": "Vienos skaičiuoklės dažiklius įskaičiuoja į Segerio formulę<en>unity molecular formula</en>, kitos – ne. Pažymėkite <b>Įskaičiuoti dažiklius ir priedus</b> po antrašte Segerio formulė, kad jie būtų įskaičiuoti pagal jų masę užmaiše, arba palikite nepažymėtą, kad galėtumėte palyginti su skaičiuokle, kuri jų neįskaičiuoja. Pasirinkimas įrašomas kartu su receptu."
+      "grams": "<b>gramai</b>: masė tame pačiame užmaiše kaip ir žaliavos."
     },
     "scale": {
       "heading": "Perskaičiavimas, kai reikia",

@@ -40,7 +40,7 @@ export function leadOf(
   return leadLib.recipeHasLead(lines) ? leadLib.leadIn(lines) : null;
 }
 
-/** The barium in a recipe, for the caution beside lead's: BaO from 0.2 in the unity formula, likely to leach from 0.4. */
+/** The barium in a recipe, for the caution beside lead's: BaO past 0.10 in the unity formula, likely to leach from 0.40. */
 export function bariumOf(
   materials: RecipeMaterial[],
   additives: Additive[],
