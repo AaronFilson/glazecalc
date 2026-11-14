@@ -127,20 +127,17 @@ export class ScopeProblem extends ToolProblem {}
 
 /**
  * A cone as Glazecalc writes it in its chart ("5½" as "5.5", SK "6" as "6a"),
- * or a ToolProblem saying which cones there are.
+ * read as the recipe page and paste-in read one ("Cone 6", "^6", "Δ6", "C/6";
+ * lib/cones/firing.js), or a ToolProblem saying which cones there are.
  */
 export const coneOf = (cone: string, chart: 'orton' | 'sk' = 'orton'): string => {
-  const typed = cone
-    .trim()
-    .toLowerCase()
-    .replace(/^(?:sk|cone)\s*/, '')
-    .replace(/\s*½$/, '.5');
-  const found = chart === 'sk' ? firingLib.skCone(typed) : typed;
-  if (found && firingLib.isCone(chart, found)) return found;
+  const found = firingLib.readCone(cone, chart);
+  if (found) return found;
+  const sk = chart === 'orton' ? firingLib.readCone(cone, 'sk') : null;
   throw new ToolProblem(
     chart === 'sk'
       ? `SK ${cone} is not in Glazecalc's SK chart: JIS R 8101 large cones, SK 022 to SK 20 (022 … 016, 015a … 01a, 1a … 6a, then 7 … 20). You can give the temperature instead.`
-      : `Cone ${cone} is not an Orton cone: Orton's run 022 … 01, then 1 … 42, with half cones from 1.5 to 15.5 written as "5.5". You can give the temperature instead.`
+      : `Cone ${cone} is not an Orton cone${sk ? ` (it reads as SK ${sk}: give chart "sk")` : ''}: Orton's run 022 … 01, then 1 … 42, with half cones 05.5 and 1.5 to 15.5 written as "5.5". You can give the temperature instead.`
   );
 };
 

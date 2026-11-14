@@ -2,9 +2,10 @@
 
 Accepted, 2026-10-17. From the research report "Recipe cone field" (2026-10-17, kept out of the
 repository in `reports/`) and the owner's decisions on its open questions. Amended 2026-10-19 (SK
-and Orton by Kyoto's same-kiln columns; result cards), 2026-10-20 (higher cones) and 2026-11-08 (a
-cone counts as tested only when ticked), each marked below. The chemistry-against-cone check it
-left for later is [ADR 22](0022-chemistry-against-the-stated-cone.md).
+and Orton by Kyoto's same-kiln columns; result cards), 2026-10-20 (higher cones), 2026-11-08 (a
+cone counts as tested only when ticked) and 2026-11-13 (cone 05½; the cone figures' chart named as
+the code has it), each marked below. The
+chemistry-against-cone check it left for later is [ADR 22](0022-chemistry-against-the-stated-cone.md).
 
 ## Context
 
@@ -52,11 +53,15 @@ panel. Recipes so far say their firing only in the notes, if at all.
 - **Order by ordinal, never text or number.** Orton runs 022 … 01 (−22 … −1), then 1 … 42; a half
   cone sits halfway. SK follows its chart's order, letter cones included. Ranges, filters and
   ticks use the ordinal. The picker offers Orton 022–13 first, then half cones (1½–12½), then 14–42
-  (rare in pottery, last but there); SK offers its chart.
+  (rare in pottery, last but there); SK offers its chart. (Amended 2026-11-13: the half cones begin
+  with 05½, which Orton makes and charts between 06 and 05, at −5.5 in the order; it is read from a
+  paste or a log, kept, checked and converted as every half cone is, halfway between its
+  neighbours. Before, it was no cone, and pasted text read "cone 05½" as cone 05.)
 - **Conversions are display only, labelled approximate, and say what they rest on.** Orton cones
-  to °C by Orton's large-cone chart at 60 °C an hour (022–14; none above 14; a half cone halfway;
-  the amendment of 2026-10-20 found these figures are the older chart's at 150 °C an hour, and
-  takes the chart to cone 15).
+  to °C by Orton's older chart for large cones at 150 °C an hour, as kiln makers reprint it (022–15;
+  none above 15; a half cone halfway). (Amended 2026-11-13: this said "Orton's large-cone chart at
+  60 °C an hour (022–14)", which the figures never were; the amendment of 2026-10-20 below found
+  what they are and took the chart to cone 15.)
   SK to °C **only** by Kyoto's measured bends for SK 8 and 10 (1198 °C and 1232 °C, at 100 °C an
   hour), labelled approximate; every other SK cone shows no temperature at all (owner's decision,
   review 2026-10-17); Kyoto measured SK 7 to 14 in the same table (see Context), but only these two
@@ -68,7 +73,8 @@ panel. Recipes so far say their firing only in the notes, if at all.
   the conversion into the reader's beside it.
 - **The limits panel takes its bands from the firing.** Each cone maps to a band: Orton and
   temperatures by Hesselberth & Roy's edges (below 1150 °C low, below 1250 °C mid, else high, at
-  the Orton chart's 60 °C/h figures, so cone 1–7 is mid and 8 up high); SK by a table, 022–4a low,
+  the figures of Orton's older chart for large cones at 150 °C an hour, so cone 1–7 is mid and 8 up
+  high; amended 2026-11-13, it said "the Orton chart's 60 °C/h figures"); SK by a table, 022–4a low,
   5a–10 mid, 11 up high, from Kyoto's equivalents (SK 8 near Orton 5, SK 10 near Orton 7, SK 11 near
   Orton 8, SK 12 for Orton 10). A range across bands (cone 6–10) shows **both bands' checks side by side**; a set
   that reads two bands by the same figures shows them once. The wave-2 band picker stays and, when
@@ -119,8 +125,9 @@ panel. Recipes so far say their firing only in the notes, if at all.
 - **Assistants match a cone across scales** (`list_recipes`, `matchesCone`): in the same scale,
   anywhere in the range; between Orton and SK, the recipe's range put into the asked scale by the
   same-kiln equivalents only (a cone with none matches recipes in its own scale only); a
-  cone against a temperature firing (either way) when the cone's figure (Orton's chart at 60 °C an
-  hour, Kyoto's measured SK bends) is within 15 °C of the stated temperature or range.
+  cone against a temperature firing (either way) when the cone's figure (Orton's older chart for
+  large cones at 150 °C an hour, amended 2026-11-13 from "Orton's chart at 60 °C an hour"; Kyoto's
+  measured SK bends) is within 15 °C of the stated temperature or range.
 - **Duplicate for another cone** copies a saved recipe into the editor, unsaved, with the firing,
   band and links cleared, and says that moving cones usually needs reformulating.
 

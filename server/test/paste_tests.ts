@@ -128,6 +128,16 @@ describe('Paste-in import: decimal marks', () => {
     expect(one('EPK,20,5', { mark: 'point' }).lines[0].amount).to.equal(20);
   });
 
+  it('never joins two cells into a decimal when a heading row named the columns', () => {
+    expect(lines(one('Material,Amount,Notes\nSilica,30,5\nKaolin,20,5', { locale: 'de' }))).to.eql([
+      ['Silica', 30, null, false],
+      ['Kaolin', 20, null, false]
+    ]);
+    expect(lines(one('Name,Percent,Grams\nSilica,30,300', { locale: 'fr' }))).to.eql([['Silica', 30, null, false]]);
+    // With no heading, as before.
+    expect(one('Silica,30,5', { locale: 'fr' }).lines[0].amount).to.equal(30.5);
+  });
+
   it('reads a decimal comma in a line of text as a decimal, not a column', () => {
     expect(lines(one('Custer Feldspar 25,5'))).to.eql([['Custer Feldspar', 25.5, null, false]]);
   });
@@ -157,6 +167,77 @@ describe('Paste-in import: decimal marks', () => {
     // Nothing settles it: asked, and the locale reads it.
     expect(recipe.ambiguousNumbers('Custer 1,250')).to.eql(['1,250']);
     expect(recipe.ambiguousNumbers('Custer 12,5\nSilica 40\nWhiting 1250')).to.eql([]);
+  });
+
+  it('reads thousands set apart by a space as one number where the language writes them so, and marks them elsewhere', () => {
+    // French sets thousands apart with a narrow no-break space, Russian with a no-break space: one number, with any space.
+    for (const space of [' ', '\u00a0', '\u202f']) {
+      expect(lines(one(`Silica 1${space}500 g\nWhiting 300 g`, { locale: 'fr' })), JSON.stringify(space)).to.eql([
+        ['Silica', 1500, 'g', false],
+        ['Whiting', 300, 'g', false]
+      ]);
+    }
+    expect(one('Silice 1\u00a0250,5', { locale: 'ru' }).lines[0]).to.include({ name: 'Silice', amount: 1250.5 });
+    expect(lines(one('1 500 g Silica', { locale: 'fr' }))).to.eql([['Silica', 1500, 'g', false]]);
+    expect(one('Silica 1 500', { locale: 'sv' }).lines[0].spaced).to.equal(undefined);
+    // English writes 1,500: read as before, the 1 ending the name, and marked so the page asks.
+    const english = one('Silica 1\u202f500 g\nWhiting 300 g');
+    expect(lines(english)).to.eql([
+      ['Silica 1', 500, 'g', false],
+      ['Whiting', 300, 'g', false]
+    ]);
+    expect(english.lines.map((l) => l.spaced)).to.eql(['1 500', undefined]);
+    expect(one('1 500 g Silica').lines[0].spaced).to.equal('1 500');
+    // Read as one number when the reader chooses it.
+    expect(lines(one('Silica 1 500 g\nWhiting 12 500', { spaced: 'group' }))).to.eql([
+      ['Silica', 1500, 'g', false],
+      ['Whiting', 12500, null, false]
+    ]);
+    expect(one('Silica 1 500', { spaced: 'group' }).lines[0].spaced).to.equal('1 500');
+    // Not thousands set apart: a group of other than three digits, a four-figure number in the name.
+    expect(one('Silica 2 30', { locale: 'fr' }).lines[0]).to.include({ name: 'Silica 2', amount: 30 });
+    expect(one('Frit 3134 500', { locale: 'fr' }).lines[0]).to.include({ name: 'Frit 3134', amount: 500 });
+    expect(one('Frit 3134 500').lines[0].spaced).to.equal(undefined);
+    // A cell holds only its amount: a space there sets thousands apart in any language; tabs stay columns.
+    expect(lines(one('Silica\t1 500\nWhiting\t300'))).to.eql([
+      ['Silica', 1500, null, false],
+      ['Whiting', 300, null, false]
+    ]);
+    expect(lines(one('Silice\t1\t500\nCraie\t2\t300', { locale: 'fr' }))).to.eql([
+      ['Silice', 1, null, false],
+      ['Craie', 2, null, false]
+    ]);
+  });
+
+  it('reads the endings numbers are written with: a full stop, ٪ and ٬, a percent sign first, units in CJK', () => {
+    // A full stop after the amount, as at the end of a sentence, keeps the recipe whole.
+    expect(lines(one('Silica 30.\nWhiting 20.\nKaolin 50.'))).to.eql([
+      ['Silica', 30, null, false],
+      ['Whiting', 20, null, false],
+      ['Kaolin', 50, null, false]
+    ]);
+    expect(one('Silica 22.5.').lines[0].amount).to.equal(22.5);
+    // The Arabic percent sign and thousands separator.
+    expect(lines(one('Silica ٣٠٪\nKaolin ١٬٥٠٠'))).to.eql([
+      ['Silica', 30, '%', false],
+      ['Kaolin', 1500, null, false]
+    ]);
+    // The percent sign before the number, as Turkish writes it.
+    expect(lines(one('Silica %20\nKaolin % 30', { locale: 'tr' }))).to.eql([
+      ['Silica', 20, '%', false],
+      ['Kaolin', 30, '%', false]
+    ]);
+    // Grams, kilograms and parts in Chinese, Japanese and Korean.
+    expect(lines(one('Silica 30克\nKaolin 1 公斤\nWhiting 2千克\nFeldspar 40公克'))).to.eql([
+      ['Silica', 30, 'g', false],
+      ['Kaolin', 1000, 'g', false],
+      ['Whiting', 2000, 'g', false],
+      ['Feldspar', 40, 'g', false]
+    ]);
+    expect(lines(one('Silica 30部\nKaolin 20 그램'))).to.eql([
+      ['Silica', 30, 'parts', false],
+      ['Kaolin', 20, 'g', false]
+    ]);
   });
 
   it('reads Arabic-Indic digits and the Arabic decimal mark', () => {
@@ -699,6 +780,31 @@ describe('Paste-in import: finding the material', () => {
     ]);
     expect(twoAliases.how).to.equal('choose');
     expect(twoAliases.candidates.map((r) => r.name)).to.eql(['One', 'Two']);
+  });
+
+  it('prepares each record’s name once for a paste’s names, not once a line, with the same matches', () => {
+    const typed = ['Custer Feldspar', 'Silca', 'Whitting', 'EPK kaolin clay', 'Neph Sy 270', 'Gerstly borate'];
+    const names = Array.from({ length: 300 }, (_, i) => typed[i % typed.length] + (i % 7 ? '' : ' x'));
+    const first = names.map((name) => recipe.matchName(name, LIBRARY));
+    // Counted, not timed: the second time, no name is normalized again. Before, each line normalized every
+    // record's names and aliases several times over (about 14 ms a name).
+    const normalize = String.prototype.normalize;
+    let normalized = 0;
+    String.prototype.normalize = function (this: string, form?: 'NFC' | 'NFD' | 'NFKC' | 'NFKD') {
+      normalized++;
+      return normalize.call(this, form);
+    };
+    let again: ReturnType<typeof recipe.matchName>[];
+    try {
+      again = names.map((name) => recipe.matchName(name, LIBRARY));
+    } finally {
+      String.prototype.normalize = normalize;
+    }
+    expect(normalized).to.equal(0);
+    expect(again.map((m) => [m.how, m.record?.name, m.candidates.length])).to.eql(
+      first.map((m) => [m.how, m.record?.name, m.candidates.length])
+    );
+    expect(matched('Silca')).to.eql(['close', 'Silica']);
   });
 
   it('compares accented and plain letters loosely, and Turkish dotless i', () => {

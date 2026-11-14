@@ -163,6 +163,39 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
           </div>
         </section>
       }
+      @if (spaced().length) {
+        <section class="panel import-ambiguous import-spaced" role="group" aria-labelledby="import-spaced-text">
+          <p id="import-spaced-text" class="import-ambiguous-text">
+            {{
+              t('recipe.import.spaced', {
+                count: spaced().length,
+                example: spaced()[0],
+                group: asSpaced(spaced()[0]),
+                first: spacedApart(spaced()[0]).first,
+                last: spacedApart(spaced()[0]).last
+              })
+            }}
+          </p>
+          <div class="import-actions">
+            <button
+              type="button"
+              class="btn btn-light border"
+              [attr.aria-pressed]="spacingNow() === 'group'"
+              (click)="spaceAs('group')"
+            >
+              {{ t('recipe.import.readAsGroup', { example: spaced()[0], value: asSpaced(spaced()[0]) }) }}
+            </button>
+            <button
+              type="button"
+              class="btn btn-light border"
+              [attr.aria-pressed]="spacingNow() === 'apart'"
+              (click)="spaceAs('apart')"
+            >
+              {{ t('recipe.import.readSpacedApart', spacedApart(spaced()[0])) }}
+            </button>
+          </div>
+        </section>
+      }
       @if (tooMany()) {
         <p class="muted">{{ t('recipe.import.tooMany', { max: mostRecipes }) }}</p>
       }
@@ -461,6 +494,14 @@ export class ImportPage implements OnInit {
   /** How the person chose to read them; null until they do, when the locale reads them. */
   private readonly reading = signal<'decimal' | 'group' | null>(null);
   protected readonly readingNow = signal<'decimal' | 'group' | null>(null);
+  /**
+   * Amounts with their thousands set apart by a space ("1 500") where the reader's language does not write
+   * them so: one number, or the first group the end of the name. Shown with a choice.
+   */
+  protected readonly spaced = signal<string[]>([]);
+  /** How the person chose to read them; null until they do, when the first group ends the name. */
+  private readonly spacing = signal<'group' | 'apart' | null>(null);
+  protected readonly spacingNow = computed(() => this.spacing() ?? 'apart');
   /** Which limit the text is over, once Read has been pressed. */
   protected readonly tooLong = signal<'chars' | 'lines' | null>(null);
   /** Read, and nothing found. */
@@ -533,10 +574,24 @@ export class ImportPage implements OnInit {
   protected typed(value: string): void {
     this.text.set(value);
     this.reading.set(null);
+    this.spacing.set(null);
   }
 
   protected asDecimal = (token: string): number => Number(token.replace(',', '.'));
   protected asGroup = (token: string): number => Number(token.replace(/[.,]/, ''));
+  /** "1 500" read as one number, in any script's digits. */
+  protected asSpaced = (token: string): number => parseNumber(token.replace(/ /g, '')) ?? Number.NaN;
+  /** "1 500" read apart: "1" and "500". */
+  protected spacedApart = (token: string): { first: string; last: string } => ({
+    first: token.slice(0, token.lastIndexOf(' ')),
+    last: token.slice(token.lastIndexOf(' ') + 1)
+  });
+
+  /** Reads the paste again with the person's choice for amounts with their thousands set apart by a space. */
+  protected spaceAs(spacing: 'group' | 'apart'): void {
+    this.spacing.set(spacing);
+    this.readPaste();
+  }
 
   /** Reads the paste again with the person's choice for the numbers that can be read two ways. */
   protected readAs(reading: 'decimal' | 'group'): void {
@@ -553,6 +608,7 @@ export class ImportPage implements OnInit {
     if (over) {
       this.drafts.set([]);
       this.ambiguous.set([]);
+      this.spaced.set([]);
       this.readEmpty.set(false);
       this.readStatus.set(translate('recipe.import.tooLong', { reason: over, ...PASTE_LIMITS }));
       return;
@@ -564,6 +620,7 @@ export class ImportPage implements OnInit {
       mark: typedDecimalMark(),
       locale: formatLocale(),
       reading: this.reading() ?? undefined,
+      spaced: this.spacing() ?? undefined,
       isName: (text) => names.has(foldedName(text)),
       // A line that is like any material, even only closely, is never taken for a title ("Leach 4321").
       known: (text) => matchName(text, records).how !== 'none'
@@ -578,6 +635,7 @@ export class ImportPage implements OnInit {
               ? 'decimal'
               : 'group'))
     );
+    this.spaced.set([...new Set(read.flatMap((recipe) => recipe.lines.flatMap((line) => line.spaced ?? [])))]);
     this.tooMany.set(read.length > MOST_RECIPES);
     const drafts = read.slice(0, MOST_RECIPES).map((recipe) => this.draftOf(recipe, choices));
     this.drafts.set(drafts);

@@ -572,7 +572,11 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           throw new ToolProblem(`A target SG of ${target} is not under the dry materials' ${dry}.`);
         const contents =
           litres !== undefined && dry !== undefined ? recipe.slurryContents(litres, measured, dry) : null;
-        const raw = litres !== undefined && target !== undefined ? (litres * (measured - target)) / (target - 1) : null;
+        // The recipe page's own figure (lib/recipe/slurry.js), so the two always agree.
+        const raw =
+          litres !== undefined && target !== undefined
+            ? recipe.waterToReach(litres, measured, target, dry ?? null)
+            : null;
         // Rounded first, so a tiny difference reads as none and never as -0.
         const water = raw === null ? null : rounded(raw, 2) || 0;
         return ok({

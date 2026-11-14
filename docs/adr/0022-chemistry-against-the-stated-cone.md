@@ -2,7 +2,9 @@
 
 Accepted, 2026-10-19. From the research report "Chemistry against the stated cone" (2026-10-19,
 kept out of the repository in `reports/`) and the owner's decisions of 2026-10-19. Amended
-2026-10-20: nothing past cone 10 is judged (see "Nothing past cone 10", below).
+2026-10-20: nothing past cone 10 is judged (see "Nothing past cone 10", below). Amended
+2026-11-13: the chart a cone's temperature comes from is named as the code has it (see "What it is
+judged against").
 
 ## Context
 
@@ -52,7 +54,9 @@ The published evidence for reading the cone from the chemistry is thin:
 - **What it is judged against.** The band chosen by hand in the limits panel, read at the cone
   its figures are for (low fire at cone 04, mid at cone 6, high at cone 10), with the stated
   firing's processes; else the recipe's stated firing (`firedAt`). A cone's temperature comes from
-  the existing helpers (`approxCelsius`): Orton's chart at 60 °C an hour, Kyoto's measured bends
+  the existing helpers (`approxCelsius`): Orton's older chart for large cones at 150 °C an hour
+  (amended 2026-11-13: this said "Orton's chart at 60 °C an hour"; the figures are the ones ADR 0021's
+  amendment of 2026-10-20 names, and Katz's cone 10, 1305 °C, is that chart's), Kyoto's measured bends
   for SK 8 and 10 (the SK to Orton match is ADR 0021's same-kiln one, not used here), SK 12 by its stated Orton equivalent (cone 10), a temperature as given.
   Bands are drawn as Hesselberth & Roy's set draws them: low below 1150 °C, mid below 1250 °C.
 - **A range is judged at its ends.** Cooler than its coolest cone, or hotter than its hottest, is
