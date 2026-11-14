@@ -2,6 +2,7 @@
 // Phases 2 and 3): the public tools with no account, the read tools with a
 // personal access token, who may call it and how often.
 import chemistry from '../../lib/chemistry/index.js';
+import type { Meter } from '../../lib/chemistry/index.js';
 import standardData from '../../data/index.js';
 import recipe from '../../lib/recipe/index.js';
 import regions from '../../lib/regions/index.js';
@@ -49,7 +50,7 @@ import AccessToken from '../models/access_token.ts';
 import Firing from '../models/firing.ts';
 import Material from '../models/material.ts';
 import Recipe from '../models/recipe.ts';
-import User from '../models/user.ts';
+import User, { SHELF_MOST } from '../models/user.ts';
 import { api, base, expect, makeUser, sessionToken } from './support/app.ts';
 import { makeToken } from './support/tokens.ts';
 
@@ -2506,64 +2507,115 @@ describe('MCP: limits', () => {
 
   // A list of many materials and a target with many oxides held the server for seconds to minutes
   // (60 of the library's materials and 13 oxides: 7 s; 80: 93 s), anyone's for the asking.
+  const MANY_OXIDES = {
+    kind: 'unity',
+    oxides: {
+      K2O: 0.2,
+      Na2O: 0.1,
+      CaO: 0.5,
+      MgO: 0.1,
+      ZnO: 0.05,
+      BaO: 0.05,
+      Al2O3: 0.4,
+      B2O3: 0.3,
+      SiO2: 3.2,
+      TiO2: 0.1,
+      Fe2O3: 0.05,
+      Li2O: 0.05,
+      SrO: 0.05
+    }
+  };
+  /** A tool call, and the work its fits did: the meters fitFor gives them (chemistry.newMeter). */
+  const metered = async <T>(run: () => Promise<T>): Promise<{ result: T; work: number }> => {
+    const meters: Meter[] = [];
+    const lib = chemistry as { newMeter: typeof chemistry.newMeter };
+    const original = lib.newMeter;
+    lib.newMeter = (most?: number) => {
+      const meter = original(most);
+      meters.push(meter);
+      return meter;
+    };
+    try {
+      const result = await run();
+      return { result, work: meters.reduce((sum, meter) => sum + meter.used, 0) };
+    } finally {
+      lib.newMeter = original;
+    }
+  };
+  /** A shelf at its most: the account's own copies of the library's materials, each named apart. */
+  const fullShelf = async (user: { _id: unknown }, token: string) => {
+    const library = standardData.load('materials') as Array<Record<string, unknown>>;
+    const own = await Material.insertMany(
+      Array.from({ length: SHELF_MOST }, (_, i) => {
+        const { _id, ...copy } = library[i % library.length]!;
+        void _id;
+        return { ...copy, name: `${String(copy.name)} (own ${i + 1})`, ownedBy: String(user._id) };
+      })
+    );
+    const shelf = own.map((m) => String(m._id));
+    const saved = await api()
+      .put('/shelf')
+      .set('Authorization', 'Bearer ' + token)
+      .send({ shelf });
+    expect(saved.status).to.equal(200);
+  };
+
   it('answers the worst fit in about a second, never holding the server longer, and says it stopped short', async function () {
     this.timeout(60000);
     resetFits();
-    const materials = (standardData.load('materials') as Array<{ name: string }>)
-      .slice(0, MOST_MATERIALS)
-      .map((m) => m.name);
-    const target = {
-      kind: 'unity',
-      oxides: {
-        K2O: 0.2,
-        Na2O: 0.1,
-        CaO: 0.5,
-        MgO: 0.1,
-        ZnO: 0.05,
-        BaO: 0.05,
-        Al2O3: 0.4,
-        B2O3: 0.3,
-        SiO2: 3.2,
-        TiO2: 0.1,
-        Fe2O3: 0.05,
-        Li2O: 0.05,
-        SrO: 0.05
-      }
-    };
+    const materials = (standardData.load('materials') as Array<{ name: string }>).slice(0, 60).map((m) => m.name);
     const started = Date.now();
-    const solving = data('solve_target', { target, materials });
-    // The tests share the server's event loop: a timer due as the call goes out fires once the loop is free.
-    const free = await new Promise<number>((resolve) => setTimeout(() => resolve(Date.now() - started), 50));
-    const solved = await solving;
-    expect(free).to.be.below(3000);
+    const { result: solved, work } = await metered(async () => {
+      const solving = data('solve_target', { target: MANY_OXIDES, materials });
+      // The tests share the server's event loop: a timer due as the call goes out fires once the loop is free.
+      const free = await new Promise<number>((resolve) => setTimeout(() => resolve(Date.now() - started), 50));
+      expect(free).to.be.below(3000);
+      return solving;
+    });
+    expect(work).to.be.at.most(1.1 * chemistry.WORK);
     expect(solved.cutShort).to.equal(true);
     expect(solved.closeness.summary).to.include(CUT_SHORT);
     expect(solved.recipe.length).to.be.within(1, 13);
   });
 
-  it(`takes at most ${MOST_MATERIALS} materials to fit at once, named or on the shelf`, async () => {
+  it(`fits from a shelf at its most, ${SHELF_MOST} materials, for the worst target with the work 60 take`, async function () {
+    this.timeout(120000);
     resetFits();
-    const names = (standardData.load('materials') as Array<{ name: string }>)
-      .slice(0, MOST_MATERIALS + 1)
-      .map((m) => m.name);
-    const unity = { kind: 'unity', oxides: { K2O: 0.3, CaO: 0.7, Al2O3: 0.4, SiO2: 3.2 } };
-    expect((await call('match_from_materials', { lines: LINES, have: names })).isError).to.equal(true);
-    expect((await call('solve_target', { target: unity, materials: names })).isError).to.equal(true);
-    expect((await call('solve_target', { target: unity, materials: names.slice(1) })).isError).to.not.equal(true);
-    // A shelf with more: named in words, with how to narrow it, and no fit counted.
     const { user, token } = await makeUser();
-    await api()
-      .put('/shelf')
-      .set('Authorization', 'Bearer ' + token)
-      .send({ shelf: names.map((name) => 'name:' + name) });
+    await fullShelf(user, token);
+    const headers = bearer(await makeToken(user));
+    const sixty = (standardData.load('materials') as Array<{ name: string }>).slice(0, 60).map((m) => m.name);
+    const few = await metered(() => data('solve_target', { target: MANY_OXIDES, materials: sixty }, headers));
+    // Every material on the shelf: the first match over them all alone took several times the work allowed.
+    const all = await metered(() => data('solve_target', { target: MANY_OXIDES, onHand: true }, headers));
+    expect(all.work).to.be.at.most(few.work + 0.25 * chemistry.WORK);
+    expect(all.result.cutShort).to.equal(true);
+    expect(all.result.recipe.length).to.be.within(1, 13);
+    const match = await metered(() => data('match_with_what_i_have', { lines: LINES }, headers));
+    expect(match.work).to.be.at.most(1.25 * chemistry.WORK);
+    expect(match.result.recipe.length).to.be.above(0);
+  });
+
+  it(`takes as many materials to fit at once as a shelf holds, ${MOST_MATERIALS}, named or on the shelf`, async function () {
+    this.timeout(60000);
+    resetFits();
+    expect(MOST_MATERIALS).to.equal(SHELF_MOST);
+    const names = (standardData.load('materials') as Array<{ name: string }>).map((m) => m.name);
+    const unity = { kind: 'unity', oxides: { K2O: 0.3, CaO: 0.7, Al2O3: 0.4, SiO2: 3.2 } };
+    // More named than that is refused before any work.
+    const tooMany = Array.from({ length: MOST_MATERIALS + 1 }, (_, i) => names[i % names.length]!);
+    expect((await call('match_from_materials', { lines: LINES, have: tooMany })).isError).to.equal(true);
+    expect((await call('solve_target', { target: unity, materials: tooMany })).isError).to.equal(true);
+    // A shelf at its most and another named besides: too many, said in words with how to narrow it, no fit counted.
+    const { user, token } = await makeUser();
+    await fullShelf(user, token);
     const headers = bearer(await makeToken(user));
     process.env.RATE_LIMITS = 'on';
-    const onHand = await call('solve_target', { target: unity, onHand: true }, headers);
+    const onHand = await call('solve_target', { target: unity, onHand: true, materials: ['Whiting'] }, headers);
     expect(onHand.isError).to.equal(true);
-    expect(onHand.content[0]!.text).to.match(/^Too many materials to fit at once: 61, .* at most 60\. Narrow the list/);
-    const shelf = await call('match_with_what_i_have', { lines: LINES }, headers);
-    expect(shelf.isError).to.equal(true);
-    expect(shelf.content[0]!.text).to.match(/^Too many materials to fit at once: your shelf has 61, .* at most 60\./);
+    expect(onHand.content[0]!.text).to.match(
+      new RegExp(`^Too many materials to fit at once: ${SHELF_MOST + 1}, .* at most ${SHELF_MOST}\\. Narrow the list`)
+    );
     for (let i = 0; i < FITS_PER_MINUTE; i++)
       expect((await call('match_from_materials', { lines: LINES, have: ['Whiting'] }, headers)).isError).to.not.equal(
         true

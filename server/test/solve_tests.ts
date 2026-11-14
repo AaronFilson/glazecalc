@@ -319,6 +319,28 @@ describe('Target & Solve, Match with what I have and Suggest amounts: the work b
     expect(solved.report.closeness!.verdict).to.be.oneOf(['close', 'fair', 'poor']);
   });
 
+  it('solves from a shelf at its most, 500 materials, with the work 60 take (twenty times it before)', () => {
+    // The first match over every material offered was not bounded: over 364 it alone took the work
+    // allowed, and the whole search up to nine times it. Now it stops with the rest.
+    const shelf = [0, 1, 2]
+      .flatMap((copy) => LIBRARY.map((m) => (copy ? { ...m, name: `${m.name} (${copy + 1})` } : m)))
+      .slice(0, 500)
+      .map((material) => ({ material, must: false }));
+    expect(shelf.length).to.equal(500);
+    const sixty = chemistry.newMeter();
+    recipe.solveTarget({ kind: 'unity', oxides: MANY_OXIDES }, offered(0, 60), { meter: sixty });
+    const meter = chemistry.newMeter();
+    const solved = recipe.solveTarget({ kind: 'unity', oxides: MANY_OXIDES }, shelf, { meter });
+    expect(meter.used).to.be.at.most(sixty.used + 0.25 * chemistry.WORK);
+    expect(meter.used).to.be.at.most(1.25 * chemistry.WORK);
+    expect(solved.report.cutShort).to.equal(true);
+    // A recipe the best found can stand by: in percent, as many materials as the target has oxides at
+    // most, and no oxide far off (the first trim kept the largest amounts and lost the minor oxides').
+    expect(total(solved)).to.be.closeTo(100, 1e-9);
+    expect(solved.materials.length).to.be.within(1, Object.keys(MANY_OXIDES).length);
+    expect(solved.report.closeness!.verdict).to.not.equal('poor');
+  });
+
   it('matches a 13-oxide recipe from 100 materials within the work allowed (80 s before)', () => {
     const analysis = { SiO2: 55, Al2O3: 12, B2O3: 8, CaO: 6, MgO: 2, K2O: 3, Na2O: 3, ZnO: 3 };
     const line = {

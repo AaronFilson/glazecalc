@@ -201,6 +201,8 @@ export function boundedLeastSquares(problem: {
   normal?: { gram: number[][]; atb: number[] };
   /** Counts the solve's work, when given. */
   meter?: Meter;
+  /** With a meter, the solve stops once meter.used reaches this, with x within its bounds (none if not given). */
+  stopAt?: number;
 }): number[];
 
 /** A line offered to selectMaterials: the recipe's own (start > 0) or a material to try. */

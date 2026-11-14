@@ -31,7 +31,6 @@ import {
   languageArg,
   languageOf,
   linesArg,
-  MOST_MATERIALS,
   ok,
   resolveLines,
   ToolProblem,
@@ -382,11 +381,8 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
               resolved = savedLines((await ownRecord(Recipe, recipeId, userId, 'recipe')).materials as unknown[]);
             else if (lines) resolved = resolveLines(lines, await ownMaterials());
             else throw new ToolProblem('Give a recipeId or the lines of a recipe.');
+            // A shelf holds at most SHELF_MOST materials, as many as a fit takes (MOST_MATERIALS).
             const { materials } = await shelfOf();
-            if (materials.length > MOST_MATERIALS)
-              throw new ToolProblem(
-                `Too many materials to fit at once: your shelf has ${materials.length}, and this works from at most ${MOST_MATERIALS}. Narrow the list: name the library materials to try, at most ${MOST_MATERIALS}, to match_from_materials as "have".`
-              );
             const shelf: TryMaterial[] = materials.map((material) => ({ material, must: false }));
             const match = fitFor(caller, (meter) =>
               recipe.matchFromShelf(resolved, shelf, { uncapped: allowMore ?? [], meter })

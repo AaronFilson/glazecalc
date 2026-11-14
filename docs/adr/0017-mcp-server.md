@@ -88,10 +88,13 @@ an assistant to act for one person that is not their web session.
   13 oxides held the server for 7 seconds, 80 for 93, anyone's for the asking). A fit does at most
   `WORK` of the solver's work (`lib/chemistry/fit.js`, about a second; [ADR 12](0012-choosing-materials.md#amended-the-work-a-search-may-do)),
   and past it answers the best it found with `cutShort: true` and a sentence in `closeness.summary`
-  saying to narrow the list. `match_from_materials` takes at most 60 materials in `have`, and
-  `solve_target` 60 with those on hand (both took 100); with more on the shelf, `solve_target`'s
-  `onHand` and `match_with_what_i_have` say so and work nothing out (`MOST_MATERIALS`,
-  `server/mcp/common.ts`). `suggest_substitutes` works out its plan inside the fit it counts, so a
+  saying to narrow the list. Every step of a fit is bounded, the first match over every material
+  offered included, so a fit from 500 materials does about the work one from 60 does:
+  `match_from_materials` takes as many materials in `have` as a shelf holds (500, `SHELF_MOST`; the
+  schema's `maxItems`), and `solve_target` as many with those on hand (`MOST_MATERIALS`,
+  `server/mcp/common.ts`), and `match_with_what_i_have` works from the whole shelf. Only
+  `solve_target` with a shelf and more named besides can be over it, and says so, working nothing
+  out. `suggest_substitutes` works out its plan inside the fit it counts, so a
   caller over the limit gets no work done; the plan and the amounts each have their own meter, as on
   the page, and both are charged to the fit. The fits of everyone without a token together may also
   do at most ten fits' `WORK` a minute (`FIT_WORK_ANYONE_ALL_PER_MINUTE`), besides the 200 fits.

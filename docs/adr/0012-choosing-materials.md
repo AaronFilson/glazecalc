@@ -232,11 +232,14 @@ the one thread the server answers everyone with (or the page's). The MCP tools a
   of them (`fit.js`, 1.5 x 10^8: about a second on a 2015 laptop). The steps that only refine
   what is found stop once it is spent, keeping what they have: dropping and swapping (B), adding
   back (`closer`), trying unused materials for the report (the likeliest first), and putting
-  amounts back at their starts (`fitAmounts`). The potter's limit on new materials and each line's
-  least are kept all the same. A search cut short with more in use than the target has oxides
-  keeps the musts and those the match uses most, up to that many, before C. The selection says
-  `cutShort`; the MCP tools say so in words. Counted, not timed, so the same request gives the same
-  answer on the server and in the browser, however busy either is.
+  amounts back at their starts (`fitAmounts`). So does stage A's first match over every material
+  offered, between its steps, as near as the materials it has taken up by then bring it (amended
+  for 1.0, below: it was not bounded). The potter's limit on new materials and each line's least
+  are kept all the same. A search cut short with more in use than the target has oxides keeps the
+  musts and, up to that many: for each oxide aimed at, the material that gives the match most of it,
+  then those the match uses most, before C. The selection says `cutShort`; the MCP tools say so in
+  words. Counted, not timed, so the same request gives the same answer on the server and in the
+  browser, however busy either is.
 - **Less work for the same answer.** A^T A is worked out once for each problem rather than for
   each of its thousands of solves, and `fitAmounts` tries amounts back at their starts one at a time
   until one is allowed, rather than every one each round. Results are unchanged, bit for bit: over
@@ -250,10 +253,19 @@ the one thread the server answers everyone with (or the page's). The MCP tools a
   app makes itself, a famous glaze's version from a region's base materials (shino from the EU's 66),
   takes about half of `WORK`; a test holds it under 0.7. The recipes and shelves in the tests take
   under a hundredth.
+- **However many materials.** Stage A was the one step not bounded: over 364 materials it alone
+  took the work allowed, a whole search up to nine times it, and over a shelf at its most (500,
+  `SHELF_MOST`) twenty times. It now stops with the rest, so a search from 500 materials does about
+  the work one from 60 does (a test holds it to that, and to `WORK` and a quarter), and the page and
+  the MCP tools take a whole shelf. When the bound cuts stage A, B starts from what it found, and
+  the cut search keeps the materials as above. Keeping, for each oxide, its best source, rather than
+  only the largest amounts, also made the cut answers nearer: of ten random solves from 60 to 364
+  materials, eight cut short, the largest miss went from 2,142 to 63, and six over 60 became one.
 
 **Consequences.**
 
 - A worst case now takes about a second; the event loop is free again after it.
 - A search past the bound gives a good recipe, not always the nearest or the simplest: the MCP
-  tools ask for a shorter list, and take at most 60 materials ([ADR 17](0017-mcp-server.md)).
-  The page does not say yet when a search was cut short; the lists potters make stay well within it.
+  tools ask for a shorter list, and take as many materials as a shelf holds
+  ([ADR 17](0017-mcp-server.md)). The page does not say yet when a search was cut short; the lists
+  potters make stay well within it.
