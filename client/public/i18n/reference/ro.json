@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc are analiza pentru {name} în procente de masă din materia primă înainte de ardere. Contribuția la formula Seger este numărul de moli din fiecare oxid din cantitatea de {name} care conține 1,0 mol de fondant, adică modul în care Glazecalc o adaugă în formula Seger a unei rețete.",
     "analysisMolecular": "Glazecalc are analiza pentru {name} în moli din fiecare oxid după ardere, pe formulă. Contribuția la formula Seger este numărul de moli din fiecare oxid din cantitatea de {name} care conține 1,0 mol de fondant, adică modul în care Glazecalc o adaugă în formula Seger a unei rețete.",
     "noFlux": "{name} nu conține niciun oxid fondant, deci contribuția la formula Seger este pe formulă, așa cum este scrisă.",
+    "noFluxAnalysis": "{name} nu conține niciun oxid fondant, deci contribuția la formula Seger este pe 100 g, cantitatea pentru care este dată analiza sa.",
     "tableCaption": "Oxizii din {name}",
     "oxide": "Oxid",
     "amountPercent": "% masă",

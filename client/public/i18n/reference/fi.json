@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalcissa raaka-aineen {name} analyysi on annettu painoprosentteina raaka-aineesta. Osuus Segerin kaavassa on kunkin oksidin moolimäärä siinä raaka-aineen {name} määrässä, joka sisältää 1,0 moolia sulattajaa; näin Glazecalc lisää raaka-aineen reseptin Segerin kaavaan.",
     "analysisMolecular": "Glazecalcissa raaka-aineen {name} analyysi on annettu poltettujen oksidien moolimäärinä kaavaa kohti. Osuus Segerin kaavassa on kunkin oksidin moolimäärä siinä raaka-aineen {name} määrässä, joka sisältää 1,0 moolia sulattajaa; näin Glazecalc lisää raaka-aineen reseptin Segerin kaavaan.",
     "noFlux": "Raaka-aineessa {name} ei ole sulattajaoksidia, joten osuus Segerin kaavassa annetaan kaavaa kohti sellaisena kuin se on kirjoitettu.",
+    "noFluxAnalysis": "Raaka-aineessa {name} ei ole sulattajaoksidia, joten osuus Segerin kaavassa annetaan 100 g kohti, joka on se määrä, jolle sen analyysi on annettu.",
     "tableCaption": "Oksidit raaka-aineessa {name}",
     "oxide": "Oksidi",
     "amountPercent": "Paino-%",

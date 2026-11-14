@@ -46,7 +46,10 @@ export function analysisOf(material: Material): { rows: OxideRow[]; weights: Mat
   };
 }
 
-/** Whether a material has a flux among its oxides; if not, its unity is per formula as written. */
+/**
+ * Whether a material has a flux among its oxides; if not, its unity is per formula as written, or per 100 g for an
+ * analysis in percent.
+ */
 export const hasFlux = (material: Material): boolean =>
   material.fields.some((field) => ['R2O', 'RO'].includes(OXIDE_GROUPS[field.name] ?? ''));
 
@@ -81,6 +84,15 @@ const WEIGHTS_NOTES = {
   little: marker('reference.material.weightsNoteLittleFlux'),
   formula: marker('reference.material.weightsNoteNoFluxFormula'),
   analysis: marker('reference.material.weightsNoteNoFluxAnalysis')
+};
+
+/**
+ * The sentence on a material with no flux, for each kind (as equivalentKind tells them apart): its unity is per its
+ * formula as written ('formula'), or per the 100 g an analysis in percent is given for ('analysis').
+ */
+const NO_FLUX_NOTES = {
+  formula: marker('reference.material.noFlux'),
+  analysis: marker('reference.material.noFluxAnalysis')
 };
 
 /** The page of a standard material: what its record says, its analysis, and its hazards. */
@@ -185,7 +197,7 @@ const WEIGHTS_NOTES = {
           }}
         </p>
         @if (!flux()) {
-          <p>{{ t('reference.material.noFlux', { name: material().name }) }}</p>
+          <p>{{ t(noFluxNote(), { name: material().name }) }}</p>
         }
         <div
           class="guide-table-scroll"
@@ -316,6 +328,10 @@ export class MaterialInfoPage {
   });
   protected readonly analysis = computed(() => analysisOf(this.material()));
   protected readonly flux = computed(() => hasFlux(this.material()));
+  /** What the unity of a material with no flux is per, as the sentence on it says: its formula, or 100 g. */
+  protected readonly noFluxNote = computed(
+    () => NO_FLUX_NOTES[this.material().percentmole === 'percent' ? 'analysis' : 'formula']
+  );
   /** What the equivalent weight is for this material, as the sentence under it says. */
   protected readonly weightsNote = computed(() => {
     const weights = this.analysis().weights;

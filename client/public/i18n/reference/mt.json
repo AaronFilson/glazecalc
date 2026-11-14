@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc għandu l-analiżi ta’ {name} bħala persentaġġ tal-piż tal-materja prima. Il-kontribut fil-formula ta’ Seger huwa l-moli ta’ kull ossidu fl-ammont ta’ {name} li fih 1.0 mol ta’ fluss. B’hekk Glazecalc iżiddu fil-formula ta’ Seger ta’ riċetta.",
     "analysisMolecular": "Glazecalc għandu l-analiżi ta’ {name} bħala moli ta’ kull ossidu moħmi għal kull formula. Il-kontribut fil-formula ta’ Seger huwa l-moli ta’ kull ossidu fl-ammont ta’ {name} li fih 1.0 mol ta’ fluss. B’hekk Glazecalc iżiddu fil-formula ta’ Seger ta’ riċetta.",
     "noFlux": "{name} m’għandux ossidu tal-fluss, għalhekk il-kontribut tiegħu fil-formula ta’ Seger huwa għal kull formula kif miktuba.",
+    "noFluxAnalysis": "{name} m’għandux ossidu tal-fluss, għalhekk il-kontribut tiegħu fil-formula ta’ Seger huwa għal kull 100 g, l-ammont li għalih tingħata l-analiżi tiegħu.",
     "tableCaption": "Ossidi f’{name}",
     "oxide": "Ossidu",
     "amountPercent": "Piż %",

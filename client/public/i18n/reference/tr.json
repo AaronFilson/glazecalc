@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc, {name} adlı hammaddenin analizini hammaddenin ağırlık yüzdesi olarak tutar. Seger formülüne katkı, {name} adlı hammaddenin 1,0 mol ergitici içeren miktarındaki her oksidin mol sayısıdır; Glazecalc hammaddeyi bir reçetenin Seger formülüne bu şekilde ekler.",
     "analysisMolecular": "Glazecalc, {name} adlı hammaddenin analizini formül başına pişmiş her oksidin mol sayısı olarak tutar. Seger formülüne katkı, {name} adlı hammaddenin 1,0 mol ergitici içeren miktarındaki her oksidin mol sayısıdır; Glazecalc hammaddeyi bir reçetenin Seger formülüne bu şekilde ekler.",
     "noFlux": "{name} adlı hammaddede ergitici oksit yoktur, bu yüzden Seger formülüne katkısı yazıldığı şekliyle formül başınadır.",
+    "noFluxAnalysis": "{name} adlı hammaddede ergitici oksit yoktur, bu yüzden Seger formülüne katkısı, analizinin verildiği miktar olan 100 g başınadır.",
     "tableCaption": "Oksitler: {name}",
     "oxide": "Oksit",
     "amountPercent": "Ağırlık %",

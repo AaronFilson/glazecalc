@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc har analysen af {name} som vægtprocent af råvaren. Bidraget til Seger-formlen er molmængden af hvert oxid i den mængde {name}, der indeholder 1,0 mol flusmiddel; sådan lægger Glazecalc råvaren ind i en opskrifts Seger-formel.",
     "analysisMolecular": "Glazecalc har analysen af {name} som mol af hvert brændt oxid pr. formel. Bidraget til Seger-formlen er molmængden af hvert oxid i den mængde {name}, der indeholder 1,0 mol flusmiddel; sådan lægger Glazecalc råvaren ind i en opskrifts Seger-formel.",
     "noFlux": "{name} indeholder intet flusmiddeloxid, så bidraget til Seger-formlen er pr. formel som skrevet.",
+    "noFluxAnalysis": "{name} indeholder intet flusmiddeloxid, så bidraget til Seger-formlen er pr. 100 g, den mængde analysen er angivet for.",
     "tableCaption": "Oxider i {name}",
     "oxide": "Oxid",
     "amountPercent": "Vægt-%",

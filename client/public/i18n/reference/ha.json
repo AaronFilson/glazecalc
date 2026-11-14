@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc yana da binciken {name} a matsayin kashi bisa nauyi na ɗanyen kayan. Gudummawar UMF ita ce mole na kowane oxide a cikin adadin {name} da ke ɗauke da mole 1.0 na flux, kuma haka Glazecalc ke ƙara shi cikin UMF (unity molecular formula) na tsarin glaze.",
     "analysisMolecular": "Glazecalc yana da binciken {name} a matsayin mole na kowane oxide bayan gasa a kowane tsarin sinadarai. Gudummawar UMF ita ce mole na kowane oxide a cikin adadin {name} da ke ɗauke da mole 1.0 na flux, kuma haka Glazecalc ke ƙara shi cikin UMF (unity molecular formula) na tsarin glaze.",
     "noFlux": "{name} ba shi da oxide na flux, don haka gudummawar UMF ɗinsa bisa tsarin sinadarai ne kamar yadda aka rubuta shi.",
+    "noFluxAnalysis": "{name} ba shi da oxide na flux, don haka gudummawar UMF ɗinsa bisa 100 g ne, adadin da aka ba da bincikensa a kai.",
     "tableCaption": "Oxide a cikin {name}",
     "oxide": "Oxide",
     "amountPercent": "Kashi bisa nauyi %",

@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc har analysen av {name} som viktprocent av den obrända råvaran. Bidraget till Segerformeln är antalet mol av varje oxid i den mängd {name} som innehåller 1,0 mol flussmedel, och så lägger Glazecalc in råvaran i ett recepts Segerformel.",
     "analysisMolecular": "Glazecalc har analysen av {name} som mol av varje bränd oxid per formel. Bidraget till Segerformeln är antalet mol av varje oxid i den mängd {name} som innehåller 1,0 mol flussmedel, och så lägger Glazecalc in råvaran i ett recepts Segerformel.",
     "noFlux": "{name} innehåller ingen flussmedelsoxid, så bidraget till Segerformeln anges per formel så som den är skriven.",
+    "noFluxAnalysis": "{name} innehåller ingen flussmedelsoxid, så bidraget till Segerformeln anges per 100 g, den mängd som analysen är angiven för.",
     "tableCaption": "Oxider i {name}",
     "oxide": "Oxid",
     "amountPercent": "Viktprocent",

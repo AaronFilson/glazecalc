@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc ina uchambuzi wa malighafi iitwayo {name} kama asilimia ya uzito wa malighafi ghafi. Mchango kwa UMF ni moli za kila oksidi katika kiasi cha {name} kinachobeba moli 1.0 ya flux, na hivyo ndivyo Glazecalc inavyoiongeza kwenye fomula ya Seger ya kichocheo.",
     "analysisMolecular": "Glazecalc ina uchambuzi wa malighafi iitwayo {name} kama moli za kila oksidi iliyochomwa kwa kila fomula. Mchango kwa UMF ni moli za kila oksidi katika kiasi cha {name} kinachobeba moli 1.0 ya flux, na hivyo ndivyo Glazecalc inavyoiongeza kwenye fomula ya Seger ya kichocheo.",
     "noFlux": "Malighafi iitwayo {name} haina oksidi ya flux, kwa hiyo mchango wake kwa UMF ni kwa kila fomula kama ilivyoandikwa.",
+    "noFluxAnalysis": "Malighafi iitwayo {name} haina oksidi ya flux, kwa hiyo mchango wake kwa UMF ni kwa kila 100 g, kiasi ambacho uchambuzi wake umetolewa kwacho.",
     "tableCaption": "Oksidi katika {name}",
     "oxide": "Oksidi",
     "amountPercent": "Uzito %",

@@ -24,6 +24,7 @@
     "analysisPercent": "O Glazecalc tem a análise de {name} como porcentagem em peso da matéria-prima crua. A contribuição na fórmula de Seger é a quantidade de mols de cada óxido na quantidade de {name} que contém 1,0 mol de fundente, que é como o Glazecalc a soma à fórmula de Seger de uma receita.",
     "analysisMolecular": "O Glazecalc tem a análise de {name} como mols de cada óxido após a queima, por fórmula. A contribuição na fórmula de Seger é a quantidade de mols de cada óxido na quantidade de {name} que contém 1,0 mol de fundente, que é como o Glazecalc a soma à fórmula de Seger de uma receita.",
     "noFlux": "{name} não tem óxido fundente, então sua contribuição na fórmula de Seger é por fórmula, como está escrita.",
+    "noFluxAnalysis": "{name} não tem óxido fundente, então sua contribuição na fórmula de Seger é por 100 g, a quantidade para a qual sua análise é dada.",
     "tableCaption": "Óxidos em {name}",
     "oxide": "Óxido",
     "amountPercent": "% em peso",

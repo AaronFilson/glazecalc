@@ -24,6 +24,7 @@
     "analysisPercent": "A Glazecalc a(z) {name} nyersanyag összetételét a nyersanyag tömegszázalékában tárolja. A Seger-képlethez való hozzájárulás az egyes oxidok móljainak száma a(z) {name} nyersanyag azon mennyiségében, amely 1,0 mól olvasztóanyagot tartalmaz; a Glazecalc így adja hozzá a recept Seger-képletéhez.",
     "analysisMolecular": "A Glazecalc a(z) {name} nyersanyag összetételét képletenként az egyes égetett oxidok móljaiban tárolja. A Seger-képlethez való hozzájárulás az egyes oxidok móljainak száma a(z) {name} nyersanyag azon mennyiségében, amely 1,0 mól olvasztóanyagot tartalmaz; a Glazecalc így adja hozzá a recept Seger-képletéhez.",
     "noFlux": "A(z) {name} nyersanyagban nincs olvasztó oxid, ezért a Seger-képlethez való hozzájárulása a leírt képletre vonatkozik.",
+    "noFluxAnalysis": "A(z) {name} nyersanyagban nincs olvasztó oxid, ezért a Seger-képlethez való hozzájárulása 100 g-ra vonatkozik, arra a mennyiségre, amelyre az összetétele meg van adva.",
     "tableCaption": "Oxidok a(z) {name} nyersanyagban",
     "oxide": "Oxid",
     "amountPercent": "Tömeg%",

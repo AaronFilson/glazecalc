@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc ha l’analisi di {name} in percentuale in peso del materiale tal quale. Il contributo alla formula di Seger è dato dalle moli di ciascun ossido nella quantità di {name} che contiene 1,0 mole di fondente, ed è così che Glazecalc lo somma nella formula di Seger di una ricetta.",
     "analysisMolecular": "Glazecalc ha l’analisi di {name} in moli di ciascun ossido dopo cottura per formula. Il contributo alla formula di Seger è dato dalle moli di ciascun ossido nella quantità di {name} che contiene 1,0 mole di fondente, ed è così che Glazecalc lo somma nella formula di Seger di una ricetta.",
     "noFlux": "{name} non contiene ossidi fondenti, quindi il suo contributo alla formula di Seger è per formula come scritta.",
+    "noFluxAnalysis": "{name} non contiene ossidi fondenti, quindi il suo contributo alla formula di Seger è per 100 g, la quantità per cui è data la sua analisi.",
     "tableCaption": "Ossidi in {name}",
     "oxide": "Ossido",
     "amountPercent": "% in peso",

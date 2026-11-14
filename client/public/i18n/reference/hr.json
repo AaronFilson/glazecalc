@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc ima analizu sirovine {name} u masenim postocima sirovine prije pečenja. Doprinos Segerovoj formuli je broj mola svakog oksida u količini sirovine {name} koja sadrži 1,0 mol topitelja, a tako ga Glazecalc dodaje u Segerovu formulu recepta.",
     "analysisMolecular": "Glazecalc ima analizu sirovine {name} u molovima svakog oksida nakon pečenja, po formuli. Doprinos Segerovoj formuli je broj mola svakog oksida u količini sirovine {name} koja sadrži 1,0 mol topitelja, a tako ga Glazecalc dodaje u Segerovu formulu recepta.",
     "noFlux": "Sirovina {name} nema oksid topitelja, pa je njezin doprinos Segerovoj formuli po formuli kako je zapisana.",
+    "noFluxAnalysis": "Sirovina {name} nema oksid topitelja, pa je njezin doprinos Segerovoj formuli na 100 g, količinu za koju je dana njezina analiza.",
     "tableCaption": "Oksidi u sirovini {name}",
     "oxide": "Oksid",
     "amountPercent": "Maseni udio, %",

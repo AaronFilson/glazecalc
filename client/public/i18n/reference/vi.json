@@ -24,6 +24,7 @@
     "analysisPercent": "Glazecalc có phân tích của {name} dưới dạng phần trăm khối lượng của nguyên liệu thô. Đóng góp vào công thức Seger là số mol của mỗi oxit trong lượng {name} chứa 1,0 mol chất trợ chảy, và đó là cách Glazecalc cộng nó vào công thức Seger của một công thức men.",
     "analysisMolecular": "Glazecalc có phân tích của {name} dưới dạng số mol của mỗi oxit sau nung trên mỗi công thức hóa học. Đóng góp vào công thức Seger là số mol của mỗi oxit trong lượng {name} chứa 1,0 mol chất trợ chảy, và đó là cách Glazecalc cộng nó vào công thức Seger của một công thức men.",
     "noFlux": "{name} không có oxit chất trợ chảy, nên đóng góp vào công thức Seger của nó được tính trên mỗi công thức hóa học như đã viết.",
+    "noFluxAnalysis": "{name} không có oxit chất trợ chảy, nên đóng góp vào công thức Seger của nó được tính trên 100 g, lượng mà phân tích của nó dựa trên.",
     "tableCaption": "Các oxit trong {name}",
     "oxide": "Oxit",
     "amountPercent": "% khối lượng",

@@ -224,11 +224,18 @@ describe('the page of a standard material', () => {
     expect(scroll?.getAttribute('aria-label')).toBe('Oxides in Silica');
   });
 
-  it('says when a material has no flux, so its unity is per formula as written', async () => {
-    const { page } = await render('Silica');
-    expect(page.querySelector('#analysis')?.closest('section')?.textContent).toContain(
+  // "Per formula as written" was false for a material given by an analysis: its unity is per the 100 g it is for.
+  it('says when a material has no flux, so its unity is per formula as written, or per 100 g for an analysis', async () => {
+    const said = async (name: string) =>
+      (await render(name)).page.querySelector('#analysis')?.closest('section')?.textContent;
+    expect(await said('Silica')).toContain(
       'Silica has no flux oxide, so its unity contribution is per formula as written.'
     );
+    const analysis = await said('Alumina Hydrate');
+    expect(analysis).toContain(
+      'Alumina Hydrate has no flux oxide, so its unity contribution is per 100 g, the amount its analysis is given for.'
+    );
+    expect(analysis).not.toContain('per formula as written');
     expect((await render('Whiting')).page.textContent).not.toContain('has no flux oxide');
   });
 
