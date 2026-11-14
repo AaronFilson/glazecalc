@@ -290,6 +290,32 @@ describe('Paste-in import: decimal marks', () => {
   it('reads Arabic-Indic digits and the Arabic decimal mark', () => {
     expect(one('Silica ٢٥٫٥').lines[0].amount).to.equal(25.5);
   });
+
+  it('reads an amount with the marks Intl writes to keep its direction in Arabic text', () => {
+    // Arabic writes 19.5‎%‎ with left-to-right marks around the sign, and Egyptian Arabic ١٩٫٥٪؜ with the Arabic
+    // letter mark after it: not seen, so a copied amount carries them.
+    const pasted = 'Silica 19.5‎%‎\nWhiting ‏20‎%\nKaolin ١٩٫٥٪؜\nEPK ⁧٤١⁩';
+    const read = one(pasted);
+    expect(read.title).to.equal(null);
+    expect(lines(read)).to.eql([
+      ['Silica', 19.5, '%', false],
+      ['Whiting', 20, '%', false],
+      ['Kaolin', 19.5, '%', false],
+      ['EPK', 41, null, false]
+    ]);
+    // Each line is kept as pasted.
+    expect(read.lines.map((l) => l.text)).to.eql(pasted.split('\n'));
+    // As Intl writes a percent in each language that uses them.
+    for (const locale of ['ar', 'ar-EG', 'ar-u-nu-arab', 'fa', 'ur']) {
+      const percent = (value: number) =>
+        new Intl.NumberFormat(locale, { style: 'percent', maximumFractionDigits: 1 }).format(value);
+      expect(lines(one(`Silica ${percent(0.195)}\nWhiting ${percent(0.2)}\nEPK 60`, { locale })), locale).to.eql([
+        ['Silica', 19.5, '%', false],
+        ['Whiting', 20, '%', false],
+        ['EPK', 60, null, false]
+      ]);
+    }
+  });
 });
 
 describe('Paste-in import: limits', () => {
