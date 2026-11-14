@@ -384,8 +384,8 @@ describe('Paste-in import: decimal marks', () => {
     }
     expect(one('Silice 1\u00a0250,5', { locale: 'ru' }).lines[0]).to.include({ name: 'Silice', amount: 1250.5 });
     expect(lines(one('1 500 g Silica', { locale: 'fr' }))).to.eql([['Silica', 1500, 'g', false]]);
-    // "Silica 1" at 500 is a reading too: marked in every language, so the page asks.
-    expect(one('Silica 1 500', { locale: 'sv' }).lines[0].spaced).to.equal('1 500');
+    // With a name the library does not have, "Local clay 1" at 500 is a reading too: marked, so the page asks.
+    expect(one('Local clay 1 500', { locale: 'sv' }).lines[0]).to.include({ amount: 1500, spaced: '1 500' });
     expect(recipe.spacedReading('fr')).to.equal('group');
     expect(recipe.spacedReading('en')).to.equal('apart');
     // English writes 1,500: read as before, the 1 ending the name, and marked so the page asks.
@@ -443,29 +443,91 @@ describe('Paste-in import: decimal marks', () => {
       ).to.eql([undefined, undefined, undefined, undefined, undefined, undefined]);
     }
     // A name the library does not have: marked in every language, and read as the reader's language writes thousands.
-    expect(one('Redart 2 500 g', { locale: 'fr' }).lines[0]).to.include({
-      name: 'Redart',
+    expect(one('Local clay 2 500 g', { locale: 'fr' }).lines[0]).to.include({
+      name: 'Local clay',
       amount: 2500,
       spaced: '2 500'
     });
-    expect(one('Redart 2 500 g', { locale: 'en' }).lines[0]).to.include({
-      name: 'Redart 2',
+    expect(one('Local clay 2 500 g', { locale: 'en' }).lines[0]).to.include({
+      name: 'Local clay 2',
       amount: 500,
       spaced: '2 500'
     });
   });
 
+  it('reads a known name before an amount in threes as one number where the language writes thousands so', () => {
+    // A French paste of known materials in grams asked of every line, though the library has no "Quartz 3".
+    const paste = [
+      'Feldspath potassique (Bodmer) 2\u202f500 g',
+      "Kaolin d'Arvor 1\u202f250 g",
+      'Quartz 3\u202f000 g',
+      'Wollastonite 1\u202f100 g',
+      'Talc 1\u202f150 g'
+    ].join('\n');
+    for (const locale of ['fr', 'sv', 'cs', 'pl', 'pt-PT', 'ru']) {
+      const read = one(paste, { locale });
+      expect(lines(read), locale).to.eql([
+        ['Feldspath potassique (Bodmer)', 2500, 'g', false],
+        ["Kaolin d'Arvor", 1250, 'g', false],
+        ['Quartz', 3000, 'g', false],
+        ['Wollastonite', 1100, 'g', false],
+        ['Talc', 1150, 'g', false]
+      ]);
+      expect(
+        read.lines.map((l) => l.spaced),
+        locale
+      ).to.eql([undefined, undefined, undefined, undefined, undefined]);
+    }
+    // The amount first too; a choice made for the whole paste leaves such a line as it is, as it does "Minspar 200".
+    expect(one('2 500 g Quartz', { locale: 'fr' }).lines[0])
+      .to.include({ name: 'Quartz', amount: 2500 })
+      .and.not.have.property('spaced');
+    expect(one('Quartz 3 000 g', { locale: 'fr', spaced: 'apart' }).lines[0])
+      .to.include({ name: 'Quartz', amount: 3000 })
+      .and.not.have.property('spaced');
+    // A known name with the first group ("Minspar 200") is that name, as before; neither known is asked, one number
+    // until the reader chooses.
+    expect(lines(one('Minspar 200 300 g\nLocal clay 1 500 g', { locale: 'fr' }))).to.eql([
+      ['Minspar 200', 300, 'g', false],
+      ['Local clay', 1500, 'g', false]
+    ]);
+    expect(one('Minspar 200 300 g\nLocal clay 1 500 g', { locale: 'fr' }).lines.map((l) => l.spaced)).to.eql([
+      undefined,
+      '1 500'
+    ]);
+    // Groups at both ends, the amount first and the name's own: the amount's leave the known name. Only the name's
+    // were tried: asked of, and read as "1 828,5 g Mondré & Manz Raku Frit M" at 233864.
+    expect(lines(one('1 828,5 g Mondré & Manz Raku Frit M 233 864', { locale: 'lt' }))).to.eql([
+      ['Mondré & Manz Raku Frit M 233 864', 1828.5, 'g', false]
+    ]);
+    // In English it is asked of, as the amount's groups ("1 500"), so one number reads it right.
+    expect(one('1 500 g Mondré & Manz Frit V 15 098', { spaced: { 1: 'group' } }).lines[0]).to.include({
+      name: 'Mondré & Manz Frit V 15 098',
+      amount: 1500,
+      spaced: '1 500'
+    });
+    // A language that writes 1,500 asks of each, the first group ending the name until the reader chooses.
+    const english = one(paste, { locale: 'en' });
+    expect(english.lines.map((l) => [l.name, l.amount, l.spaced])).to.eql([
+      ['Feldspath potassique (Bodmer) 2', 500, '2 500'],
+      ["Kaolin d'Arvor 1", 250, '1 250'],
+      ['Quartz 3', 0, '3 000'],
+      ['Wollastonite 1', 100, '1 100'],
+      ['Talc 1', 150, '1 150']
+    ]);
+  });
+
   it('reads each line whose thousands may be set apart by a space as the reader chose for that line', () => {
     // One number for a genuine 1 500 joins no other line.
-    const paste = 'Silica 1 500 g\nRedart 2 500 g\nWhiting 300 g';
+    const paste = 'Silica 1 500 g\nLocal clay 2 500 g\nWhiting 300 g';
     expect(lines(one(paste, { spaced: { 1: 'group' } }))).to.eql([
       ['Silica', 1500, 'g', false],
-      ['Redart 2', 500, 'g', false],
+      ['Local clay 2', 500, 'g', false],
       ['Whiting', 300, 'g', false]
     ]);
     expect(lines(one(paste, { locale: 'fr', spaced: { 2: 'apart' } }))).to.eql([
       ['Silica', 1500, 'g', false],
-      ['Redart 2', 500, 'g', false],
+      ['Local clay 2', 500, 'g', false],
       ['Whiting', 300, 'g', false]
     ]);
     // Each stays marked, chosen or not.

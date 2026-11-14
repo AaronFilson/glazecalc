@@ -368,10 +368,14 @@ describe('ImportPage', () => {
     // A paste typed again is read as the language reads it until the reader chooses.
     await paste('Test\nCuster 500\nSilica 1\u202f500');
     expect(amounts()).toEqual(['500', '500']);
-    // French writes 1 500: one number, and still asked, since "Silica 1" at 500 is a reading too.
+    // French writes 1 500: one number. Silica is a name and "Silica 1" is not, so nothing is asked.
     formatLocale.set('fr');
     try {
       await paste('Test\nCuster 500\nSilica 1\u202f500');
+      expect(amounts()).toEqual(['500', '1500']);
+      expect(root.querySelector('.import-spaced')).toBeNull();
+      // A name the library does not have: "Local clay 1" at 500 is a reading too, so asked, one number until chosen.
+      await paste('Test\nCuster 500\nLocal clay 1\u202f500');
       expect(amounts()).toEqual(['500', '1500']);
       expect(pressed(0)).toEqual(['true', 'false']);
       buttons(0)[1]!.click();

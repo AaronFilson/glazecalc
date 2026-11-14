@@ -19,9 +19,11 @@ export interface PastedLine {
   /** Marked "+", or under a heading such as "Additions". */
   addition: boolean;
   /**
-   * The amount as pasted when its thousands may be set apart by a space ("1 500" of "Silica 1 500": 1500, or
-   * "Silica 1" at 500), in any language: read as `PasteOptions.spaced` says for the line, so the page asks.
-   * Absent otherwise, and for a known name that ends in the groups before the last ("Minspar 200 300 g").
+   * The amount as pasted when its thousands may be set apart by a space ("1 500" of "Local clay 1 500": 1500, or
+   * "Local clay 1" at 500), in any language: read as `PasteOptions.spaced` says for the line, so the page asks.
+   * Absent otherwise, and where a known name (`isName`) decides it, with nothing to ask: the name with the first
+   * group, in any language ("Minspar 200 300 g": Minspar 200 at 300); else the name without it, where the locale
+   * writes thousands with a space ("Quartz 3 000 g" in French: Quartz at 3000).
    */
   spaced?: string;
   /**
@@ -58,9 +60,10 @@ export interface PasteOptions {
   /** How to read a number that could be a decimal or digit groups ("1,500" as 1.5 or 1500), when the paste does not decide it; the locale reads it by default. */
   reading?: 'decimal' | 'group';
   /**
-   * How to read an amount with its thousands set apart by a space ("Silica 1 500"): one number ('group'), or
+   * How to read an amount with its thousands set apart by a space ("Local clay 1 500"): one number ('group'), or
    * the first group as the end of the name ('apart'); for the whole paste, or line by line (by `PastedLine.line`).
-   * A line not chosen is read as `spacedReading(locale)` says, and each such line is marked `spaced`.
+   * A line not chosen is read as `spacedReading(locale)` says, and each such line is marked `spaced`. A line a known
+   * name decides is not marked, and is read as that name says whatever is chosen.
    */
   spaced?: 'group' | 'apart' | Readonly<Record<number, 'group' | 'apart'>>;
   /**
