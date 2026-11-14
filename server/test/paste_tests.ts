@@ -343,6 +343,73 @@ describe('Paste-in import: decimal marks', () => {
       .and.not.have.property('joined');
   });
 
+  it('asks of a comma row whose amount has its thousands set apart inside it, one number until chosen', () => {
+    const read = (text: string, options = {}) => one(text, options).lines.map((l) => [l.name, l.amount, l.joined]);
+    // Each language's own 2,140.7 or 1.161,5 in an unquoted comma row: the first group was the amount, unasked.
+    // A comma setting the thousands apart, before a decimal point (English, Thai, Hindi): 2140.7, or 2 and 140.7.
+    expect(read('Rutile,2,140.7\nSodium Nitrate,1,114\nSilica,30', { locale: 'en' })).to.eql([
+      ['Rutile', 2140.7, '2,140.7'],
+      ['Sodium Nitrate', 1114, '1,114'],
+      ['Silica', 30, undefined]
+    ]);
+    // In any script's digits (Marathi).
+    expect(read('Mahavir Potash Feldspar,१,२८५', { locale: 'mr' })).to.eql([
+      ['Mahavir Potash Feldspar', 1285, '१,२८५']
+    ]);
+    // A point or a space setting them apart, before a decimal comma (Danish, Czech's no-break space): 1161.5, or
+    // 1.161 and 5.
+    expect(read('Pegmatita,1.161,5\nFluorspar,1.223,5\nSilica,30', { locale: 'da' })).to.eql([
+      ['Pegmatita', 1161.5, '1.161,5'],
+      ['Fluorspar', 1223.5, '1.223,5'],
+      ['Silica', 30, undefined]
+    ]);
+    expect(read('Cornish Stone,1\u00a0183,70', { locale: 'cs' })).to.eql([['Cornish Stone', 1183.7, '1\u00a0183,70']]);
+    // After a known name that ends in a number ("Boraq 1" is one): Boraq at 1111.8 g, or Boraq 1 at 111.8 g, asked as
+    // a decimal comma there is. It was the second, unasked.
+    expect(read('Boraq 1,111.8 g\nSilica 30 g', { locale: 'en' })).to.eql([
+      ['Boraq', 1111.8, '1,111.8'],
+      ['Silica', 30, undefined]
+    ]);
+    expect(read('Boraq 1,111.8 g', { locale: 'en', joined: 'columns' })).to.eql([['Boraq 1', 111.8, '1,111.8']]);
+    // Under a heading row it has one cell more than, as a decimal comma is.
+    expect(read('Material,Amount\nRutile,2,140.7\nSilica,30', { locale: 'en' })).to.eql([
+      ['Rutile', 2140.7, '2,140.7'],
+      ['Silica', 30, undefined]
+    ]);
+    // Two columns when the reader chooses them.
+    expect(read('Rutile,2,140.7\nSodium Nitrate,1,114', { locale: 'en', joined: 'columns' })).to.eql([
+      ['Rutile', 2, '2,140.7'],
+      ['Sodium Nitrate', 1, '1,114']
+    ]);
+    // A row of three whose last two cannot be one number ("Talc,5,50", "Kaolin,20,x"): the rows are three columns,
+    // read as before. A decimal comma is asked of as before.
+    expect(read('Silica,30,300\nKaolin,20,200\nTalc,5,50', { locale: 'en' })).to.eql([
+      ['Silica', 30, undefined],
+      ['Kaolin', 20, undefined],
+      ['Talc', 5, undefined]
+    ]);
+    expect(read('Rutile,2,140.7\nKaolin,20,x', { locale: 'en' })).to.eql([
+      ['Rutile', 2, undefined],
+      ['Kaolin', 20, undefined]
+    ]);
+    expect(read('Silica,30,5\nKaolin,20,x', { locale: 'de' })).to.eql([
+      ['Silica', 30.5, '30,5'],
+      ['Kaolin', 20, undefined]
+    ]);
+    // Nothing to ask where the two cannot be one number: a chosen mark the other way, a first cell that is no number
+    // in thousands, or three digits that are not a group.
+    for (const [text, options] of [
+      ['Rutile,2,140.7', { mark: 'comma' }],
+      ['Pegmatita,1.161,5', { mark: 'point' }],
+      ['Silica,30,5', { locale: 'en' }],
+      ['Silica,12.5,140', { locale: 'en' }],
+      ['Silica,0,500', { locale: 'en' }],
+      ['Silica,1,5000', { locale: 'en' }]
+    ] as const) {
+      expect(one(text, options).lines[0], text).not.to.have.property('joined');
+    }
+  });
+
   it('knows a heading row in any language by its place: words over rows with numbers in the same columns', () => {
     // A heading with a word no list has ("Preis") was the recipe's title.
     const read = one('Rohstoff,Menge,Preis\nKalifeldspat,30,2\nQuarz,20,1\nKaolin,50,3', { locale: 'de' });

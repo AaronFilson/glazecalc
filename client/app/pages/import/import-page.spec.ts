@@ -401,7 +401,7 @@ describe('ImportPage', () => {
       await paste('Test\nCuster,50\nSilica,30,5\nWhiting,20,5');
       expect(amounts()).toEqual(['50', '30.5', '20.5']);
       expect(text(fixture, '.import-joined p')).toContain(
-        'Some numbers in this paste can be read two ways, such as \u201c30,5\u201d: as one number with a decimal comma, 30,5, or as two columns, 30 and 5.'
+        'Some numbers in this paste can be read two ways, such as \u201c30,5\u201d: as one number, 30,5, or as two columns, 30 and 5.'
       );
       expect(buttons().map((b) => b.textContent?.trim())).toEqual([
         'Read 30,5 as one number, 30,5',
@@ -432,6 +432,34 @@ describe('ImportPage', () => {
     await paste('Test\nCuster,50\nSilica,30,5');
     expect(amounts()).toEqual(['50', '30']);
     expect(root.querySelector('.import-joined')).toBeNull();
+  });
+
+  it('asks whether a comma row’s cells are one number with its thousands set apart, or two columns', async () => {
+    const { fixture, root, page, paste } = await create();
+    const amounts = () => page['drafts']()[0].lines.map((l: { amount: string }) => l.amount);
+    const buttons = () => [...root.querySelectorAll<HTMLButtonElement>('.import-joined button')];
+    // English writes 2,140.7: one number until the reader chooses two columns. The first cell alone was read, unasked.
+    await paste('Test\nCuster,1,500\nSilica,2,140.7\nWhiting,360');
+    expect(amounts()).toEqual(['1500', '2140.7', '360']);
+    expect(text(fixture, '.import-joined p')).toContain(
+      'Some numbers in this paste can be read two ways, such as “1,500”: as one number, 1,500, or as two columns, 1 and 500.'
+    );
+    expect(buttons().map((b) => b.textContent?.trim())).toEqual([
+      'Read 1,500 as one number, 1,500',
+      'Read 1 and 500 as two columns'
+    ]);
+    buttons()[1].click();
+    await settle(fixture);
+    expect(amounts()).toEqual(['1', '2', '360']);
+    // German writes 1.161,5: one number, 1161.5.
+    formatLocale.set('de');
+    try {
+      await paste('Test\nCuster,1.161,5\nWhiting,360');
+      expect(amounts()).toEqual(['1161.5', '360']);
+      expect(text(fixture, '.import-joined p')).toContain('such as “1.161,5”: as one number, 1.161,5,');
+    } finally {
+      formatLocale.set('en');
+    }
   });
 
   it('asks whether a known name that ends in a number takes the number after its comma, where commas mark decimals', async () => {
