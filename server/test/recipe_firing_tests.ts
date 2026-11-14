@@ -134,9 +134,10 @@ describe('recipe firing (lib/cones/firing.js)', () => {
     expect(firing.approxCelsius('orton', '10')).to.eql({ celsius: 1305, basis: 'orton-150' });
     expect(firing.approxCelsius('orton', '14')).to.eql({ celsius: 1366, basis: 'orton-150' });
     expect(firing.approxCelsius('orton', '15')).to.eql({ celsius: 1431, basis: 'orton-150' });
-    // A half cone halfway between its neighbours; 15½ has no upper neighbour with a figure.
-    expect(firing.approxCelsius('orton', '13.5')).to.eql({ celsius: 1356, basis: 'orton-150' });
-    expect(firing.approxCelsius('orton', '14.5')).to.eql({ celsius: 1399, basis: 'orton-150' });
+    // A half cone halfway between its neighbours, and saying so: the chart has no half cones. 15½ has no upper
+    // neighbour with a figure.
+    expect(firing.approxCelsius('orton', '13.5')).to.eql({ celsius: 1356, basis: 'orton-150-halfway' });
+    expect(firing.approxCelsius('orton', '14.5')).to.eql({ celsius: 1399, basis: 'orton-150-halfway' });
     for (const cone of ['15.5', '16', '17', '21', '31.5', '42'])
       expect(firing.approxCelsius('orton', cone), cone).to.equal(null);
     // In order, so no range is shown backwards: each figure at least the one before (011 and 010 are both 894 °C).
@@ -188,9 +189,13 @@ describe('recipe firing (lib/cones/firing.js)', () => {
     const sorted = [...all].sort((a, b) => firing.compareCones('orton', a, b));
     expect(sorted.slice(sorted.indexOf('06'), sorted.indexOf('04') + 1)).to.eql(['06', '05.5', '05', '04']);
     expect(firing.coneLabel('05.5')).to.equal('05½');
-    // Halfway between its neighbours on the chart, 06 (999 °C) and 05 (1046 °C), as every half cone is.
-    expect(firing.approxCelsius('orton', '05.5')).to.eql({ celsius: 1023, basis: 'orton-150' });
-    expect(firing.approxCelsius('orton', '5.5')).to.eql({ celsius: 1209, basis: 'orton-150' });
+    // Orton's own figure for it, from its 2016 chart for large cones at 150 °C an hour (the older chart has no half
+    // cones), and said so; the same as halfway between 06 (999 °C) and 05 (1046 °C) on the older chart.
+    expect(firing.approxCelsius('orton', '05.5')).to.eql({ celsius: 1023, basis: 'orton-2016-150' });
+    const published = cones.ORTON.published.cones.find((c: { cone: string }) => c.cone === '05.5')!;
+    expect(published.large).to.deep.include({ 150: 1023 });
+    // Every other half cone halfway between its neighbours on the older chart, and said so.
+    expect(firing.approxCelsius('orton', '5.5')).to.eql({ celsius: 1209, basis: 'orton-150-halfway' });
     expect(firing.coneBand('orton', '05.5')).to.equal('low');
     // A range through it, its ticks, and what the server keeps.
     expect(firing.conesBetween('orton', '06', '05.5')).to.eql(['06', '05.5']);

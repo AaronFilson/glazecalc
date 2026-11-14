@@ -1076,6 +1076,8 @@
     "approxCone": "≈ {cone} ({basis}; approximate)",
     "basis": {
       "orton150": "Orton's older chart for large cones at 150 °C an hour",
+      "orton150Halfway": "a half cone halfway between its neighbours on Orton's older chart for large cones at 150 °C an hour",
+      "orton2016": "Orton's 2016 chart for large cones at 150 °C an hour",
       "kyoto": "measured at 100 °C an hour by Kyoto's municipal institute",
       "stated": "as given"
     },

@@ -61,7 +61,11 @@ panel. Recipes so far say their firing only in the notes, if at all.
   to °C by Orton's older chart for large cones at 150 °C an hour, as kiln makers reprint it (022–15;
   none above 15; a half cone halfway). (Amended 2026-11-13: this said "Orton's large-cone chart at
   60 °C an hour (022–14)", which the figures never were; the amendment of 2026-10-20 below found
-  what they are and took the chart to cone 15.)
+  what they are and took the chart to cone 15.) (Amended again 2026-11-13: the older chart has no
+  half cones, so a half cone says it is halfway between its neighbours on it; 05½, the one half
+  cone Orton's 2016 chart gives large cones a figure for, takes that figure, 1023 °C at 150 °C an
+  hour, and says so. It is the same as halfway between 06 and 05, but it was labelled as the
+  older chart's own.)
   SK to °C **only** by Kyoto's measured bends for SK 8 and 10 (1198 °C and 1232 °C, at 100 °C an
   hour), labelled approximate; every other SK cone shows no temperature at all (owner's decision,
   review 2026-10-17); Kyoto measured SK 7 to 14 in the same table (see Context), but only these two

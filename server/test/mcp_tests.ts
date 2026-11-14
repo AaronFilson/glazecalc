@@ -517,6 +517,11 @@ describe('MCP: the public tools', () => {
     const badCone = await call('check_limits', { lines, firing: { cone: '43' } });
     expect(badCone.isError).to.equal(true);
     expect(badCone.content[0]!.text).to.include('1 … 42');
+    // Every half cone it takes, 31½ and 32½ too.
+    expect(badCone.content[0]!.text).to.include('05.5, 1.5 to 15.5, 31.5 and 32.5');
+    for (const cone of ['05.5', '15.5', '31.5', '32.5']) {
+      expect((await call('check_limits', { lines, firing: { cone } })).isError, cone).to.not.equal(true);
+    }
     const badSk = await call('check_limits', { lines, firing: { cone: '26', chart: 'sk' } });
     expect(badSk.isError).to.equal(true);
     expect(badSk.content[0]!.text).to.include('SK 022 to SK 20');
