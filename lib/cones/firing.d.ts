@@ -52,8 +52,11 @@ export function cleanFiring(block: FiringBlock | null | undefined): FiringBlock 
 export function isStated(block: FiringBlock | null | undefined): boolean;
 export function coneLabel(cone: string | undefined): string;
 
-/** What a conversion rests on: Orton's older chart at 150 °C an hour, Kyoto's measured bends, or the figure as given. */
-export type ApproxBasis = 'orton-150' | 'kyoto' | 'stated';
+/**
+ * What a conversion rests on: Orton's older chart for large cones at 150 °C an hour (a half cone halfway between
+ * its neighbours on it), Orton's 2016 chart at that rate (cone 05½), Kyoto's measured bends, or the figure as given.
+ */
+export type ApproxBasis = 'orton-150' | 'orton-150-halfway' | 'orton-2016-150' | 'kyoto' | 'stated';
 export function approxCelsius(scale: ConeScale, cone: string): { celsius: number; basis: ApproxBasis } | null;
 export function approxCone(
   scale: ConeScale,

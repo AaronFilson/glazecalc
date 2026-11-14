@@ -61,7 +61,11 @@ panel. Recipes so far say their firing only in the notes, if at all.
   to °C by Orton's older chart for large cones at 150 °C an hour, as kiln makers reprint it (022–15;
   none above 15; a half cone halfway). (Amended 2026-11-13: this said "Orton's large-cone chart at
   60 °C an hour (022–14)", which the figures never were; the amendment of 2026-10-20 below found
-  what they are and took the chart to cone 15.)
+  what they are and took the chart to cone 15.) (Amended again 2026-11-13: the older chart has no
+  half cones, so a half cone says it is halfway between its neighbours on it; 05½, the one half
+  cone Orton's 2016 chart gives large cones a figure for, takes that figure, 1023 °C at 150 °C an
+  hour, and says so. It is the same as halfway between 06 and 05, but it was labelled as the
+  older chart's own.)
   SK to °C **only** by Kyoto's measured bends for SK 8 and 10 (1198 °C and 1232 °C, at 100 °C an
   hour), labelled approximate; every other SK cone shows no temperature at all (owner's decision,
   review 2026-10-17); Kyoto measured SK 7 to 14 in the same table (see Context), but only these two
@@ -140,11 +144,14 @@ panel. Recipes so far say their firing only in the notes, if at all.
   column, and an Orton cone the SK cone nearest it in Kyoto's SK column, each within 15 °C or none
   (`KYOTO_SK` and `KYOTO_ORTON` in `lib/cones/firing.js`; the table labels Orton 4 to 6 "4a" to
   "6a" and the figure sits in the Orton column). So SK 7 to 14 are Orton 4, 5, 6, 7, 8, 10, 11 and
-  12; Orton 4, 5, 6, 7, 8, 10, 11 and 12 are SK 7, 9, 9, 10, 11, 12, 13 and 14; Orton 9, half
-  cones and cones outside 4 to 12 have none. (Orton 5 and 6 are 4 °C apart in the table, so both
-  are SK 9, and SK 8 is Orton 5: the match is approximate in both directions.) SK 12 for Orton 10
-  is still the institute's own statement. What is shown as a temperature is unchanged (SK 8 and
-  10 only), as are the bands. Conversions stay display only and say they are approximate.
+  12; Orton 4, 5, 6, 7, 8, 10, 11 and 12 are SK 7, 8, 9, 10, 11, 12, 13 and 14; Orton 9, half
+  cones and cones outside 4 to 12 have none. SK 12 for Orton 10 is still the institute's own
+  statement. What is shown as a temperature is unchanged (SK 8 and 10 only), as are the bands.
+  Conversions stay display only and say they are approximate. (Amended 2026-11-13: the two columns
+  are matched one to one, nearest pairs first (`KYOTO_MATCH`), so a cone taken across and back is
+  the cone it was, and a recipe at one cone matches the other's equivalent both ways round. Orton 5
+  was SK 9, the SK cone nearest it (4 °C, against 9 for SK 8), while SK 9 was Orton 6 (0 °C) and
+  SK 8 was Orton 5: cone 5 went across as SK 9 and came back as cone 6. Orton 5 is now SK 8.)
 - **Result cards (amended 2026-10-19).** A recipe keeps the potter's summary of how it came out
   for each **cone and atmosphere** (owner's decision: cone 6 oxidation and cone 6 reduction are
   separate cards), as `coneResults: [{ cone, atmosphere?, summary }]` (`lib/cones/results.js`):

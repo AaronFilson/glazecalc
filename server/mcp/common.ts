@@ -137,7 +137,7 @@ export const coneOf = (cone: string, chart: 'orton' | 'sk' = 'orton'): string =>
   throw new ToolProblem(
     chart === 'sk'
       ? `SK ${cone} is not in Glazecalc's SK chart: JIS R 8101 large cones, SK 022 to SK 20 (022 … 016, 015a … 01a, 1a … 6a, then 7 … 20). You can give the temperature instead.`
-      : `Cone ${cone} is not an Orton cone${sk ? ` (it reads as SK ${sk}: give chart "sk")` : ''}: Orton's run 022 … 01, then 1 … 42, with half cones 05.5 and 1.5 to 15.5 written as "5.5". You can give the temperature instead.`
+      : `Cone ${cone} is not an Orton cone${sk ? ` (it reads as SK ${sk}: give chart "sk")` : ''}: Orton's run 022 … 01, then 1 … 42, with half cones 05.5, 1.5 to 15.5, 31.5 and 32.5, written as "5.5". You can give the temperature instead.`
   );
 };
 

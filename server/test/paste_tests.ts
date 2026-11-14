@@ -62,6 +62,96 @@ describe('Paste-in import: reading lines', () => {
     ]);
   });
 
+  it('reads the amount first in a line with a number at each end, when a unit follows it or the rest is a known name', () => {
+    expect(lines(one('19 g Ferro Frit 3124\n2,5 g Minspar 200\n30 Ferro Frit 3134\n٣٫١ g Ferro Frit 4113'))).to.eql([
+      ['Ferro Frit 3124', 19, 'g', false],
+      ['Minspar 200', 2.5, 'g', false],
+      ['Ferro Frit 3134', 30, null, false],
+      ['Ferro Frit 4113', 3.1, 'g', false]
+    ]);
+    // As before: the name first where the number before it is part of it, or the library knows the name that way.
+    expect(lines(one('325 mesh silica 10\n6 Tile 25\nFerro Frit 3134 20'))).to.eql([
+      ['325 mesh silica', 10, null, false],
+      ['6 Tile', 25, null, false],
+      ['Ferro Frit 3134', 20, null, false]
+    ]);
+  });
+
+  it('reads a known name, a comma and its amount, though there is a digit each side of the comma', () => {
+    // "Ferro Frit 3134,20" was Ferro Frit at 3134.2, the comma read as a decimal one.
+    for (const locale of ['en', 'de', 'fr']) {
+      expect(
+        lines(one('Ferro Frit 3134,20\nMinspar 200,30\nFusion Frit F-12,16.5\nSilica,33', { locale })),
+        locale
+      ).to.eql([
+        ['Ferro Frit 3134', 20, null, false],
+        ['Minspar 200', 30, null, false],
+        ['Fusion Frit F-12', 16.5, null, false],
+        ['Silica', 33, null, false]
+      ]);
+    }
+    // Two numbers after it are asked of as in any comma row: one number with a decimal comma, or two columns. It was
+    // the recipe's title.
+    const read = one('Ferro Frit 3134,20,5\nSilica,30\nEPK,49,5', { locale: 'de' });
+    expect(read.title).to.equal(null);
+    expect(read.lines.map((l) => [l.name, l.amount, l.joined])).to.eql([
+      ['Ferro Frit 3134', 20.5, '20,5'],
+      ['Silica', 30, undefined],
+      ['EPK', 49.5, '49,5']
+    ]);
+    expect(one('Ferro Frit 3134,20,5', { locale: 'en' }).lines[0]).to.include({ name: 'Ferro Frit 3134', amount: 20 });
+    // Under a heading row, by its columns.
+    expect(lines(one('Material,Amount\nFerro Frit 3134,20\nSilica,80', { locale: 'de' }))).to.eql([
+      ['Ferro Frit 3134', 20, null, false],
+      ['Silica', 80, null, false]
+    ]);
+  });
+
+  it('reads simple fractions and mixed numbers as amounts, and never splits a recipe on one', () => {
+    // "Bentonite 1/2" was the title of a second recipe, the materials after it in that one.
+    const read = one(
+      'Silica 30\nBentonite 1/2\nWhiting 20\nRutile 1 1/2\nTin ½\nZircopax 2½ %\n1/4 Epsom salt\n¾ g Copper carbonate'
+    );
+    expect(lines(read)).to.eql([
+      ['Silica', 30, null, false],
+      ['Bentonite', 0.5, null, false],
+      ['Whiting', 20, null, false],
+      ['Rutile', 1.5, null, false],
+      ['Tin', 0.5, null, false],
+      ['Zircopax', 2.5, '%', false],
+      ['Epsom salt', 0.25, null, false],
+      ['Copper carbonate', 0.75, 'g', false]
+    ]);
+    expect(recipe.importAmounts(one('Silica 99\nBentonite 1/3')).map((a) => a.amount)).to.eql(['99', '0.33333']);
+    // In a table's cell, and written with the fraction slash.
+    expect(lines(one('Silica\t30\nBentonite\t1/2\nTin 1\u20442'))).to.eql([
+      ['Silica', 30, null, false],
+      ['Bentonite', 0.5, null, false],
+      ['Tin', 0.5, null, false]
+    ]);
+    // A name that ends in a number before a fraction: the name the library has.
+    expect(lines(one('Tile 6 1/2\nSilica 99'))).to.eql([
+      ['Tile 6', 0.5, null, false],
+      ['Silica', 99, null, false]
+    ]);
+    // A line with a fraction that is not an amount ("1/2 tsp") is a note, never another recipe's title.
+    expect(
+      recipe
+        .parsePaste('Celadon\nSilica 30\nBentonite 1/2 tsp\nWhiting 20', { isName })
+        .map((r) => [r.title, r.notes, r.lines.map((l) => l.name)])
+    ).to.eql([['Celadon', ['Bentonite 1/2 tsp'], ['Silica', 'Whiting']]]);
+    // Not fractions: a name's numbers ("Molochite 30/80"), a date, a number over a smaller one.
+    expect(lines(one('Molochite 30/80 20\nMolochite 16/30\nKalifeldspat K 2/75 10'))).to.eql([
+      ['Molochite 30/80', 20, null, false],
+      ['Molochite 16/30', null, null, false],
+      ['Kalifeldspat K 2/75', 10, null, false]
+    ]);
+    expect(one('Shino\nCuster 50\nFired 12/03').notes).to.eql(['Fired 12/03']);
+    // A title with a number over another that is no fraction still starts the next recipe.
+    const two = recipe.parsePaste('Shino\nCuster 50\nSilica 50\nShino 50/50\nCuster 40\nSilica 60', { isName });
+    expect(two.map((r) => r.title)).to.eql(['Shino', 'Shino 50/50']);
+  });
+
   it('reads a name pasted alone, which the library knows, as a material with no amount', () => {
     expect(lines(one('Recipe\nFrit 3124\nEPK 20'))).to.eql([
       ['Frit 3124', null, null, false],
@@ -185,6 +275,74 @@ describe('Paste-in import: decimal marks', () => {
     }
   });
 
+  it('asks of a comma row with one cell more than its heading row whether the amount is one number', () => {
+    // "Material,Amount" over "Silica,30,5": the 5 is the amount's decimals, or a column the heading did not name.
+    const paste = 'Material,Amount\nSilica,30,5\nKaolin,20,5\nWhiting,49';
+    for (const locale of ['de', 'fr']) {
+      const read = one(paste, { locale });
+      expect(lines(read), locale).to.eql([
+        ['Silica', 30.5, null, false],
+        ['Kaolin', 20.5, null, false],
+        ['Whiting', 49, null, false]
+      ]);
+      expect(
+        read.lines.map((l) => l.joined),
+        locale
+      ).to.eql(['30,5', '20,5', undefined]);
+      expect(read.skipped.map((s) => s.why)).to.eql(['columns']);
+    }
+    // Two columns when the reader chooses it, still marked.
+    const apart = one(paste, { locale: 'de', joined: 'columns' });
+    expect(apart.lines.map((l) => [l.amount, l.joined])).to.eql([
+      [30, '30,5'],
+      [20, '20,5'],
+      [49, undefined]
+    ]);
+    // The amount's cell and the next, wherever the amount is: the columns after it keep their place.
+    expect(lines(one('Material,Amount,Addition\nSilica,30,5,\nRutile,2,5,+', { locale: 'de' }))).to.eql([
+      ['Silica', 30.5, null, false],
+      ['Rutile', 2.5, null, true]
+    ]);
+    // As many cells as the heading, a reader who writes decimal points, or a space beside the comma: nothing to ask.
+    expect(one('Material,Amount,Notes\nSilica,30,5', { locale: 'de' }).lines[0]).not.to.have.property('joined');
+    expect(one(paste, { locale: 'en' }).lines.map((l) => [l.amount, l.joined])).to.eql([
+      [30, undefined],
+      [20, undefined],
+      [49, undefined]
+    ]);
+    expect(one('Material,Amount\nSilica, 30, 5', { locale: 'de' }).lines[0])
+      .to.include({ amount: 30 })
+      .and.not.have.property('joined');
+  });
+
+  it('knows a heading row in any language by its place: words over rows with numbers in the same columns', () => {
+    // A heading with a word no list has ("Preis") was the recipe's title.
+    const read = one('Rohstoff,Menge,Preis\nKalifeldspat,30,2\nQuarz,20,1\nKaolin,50,3', { locale: 'de' });
+    expect(read.title).to.equal(null);
+    expect(read.skipped).to.eql([{ line: 1, text: 'Rohstoff,Menge,Preis', why: 'columns' }]);
+    expect(lines(read)).to.eql([
+      ['Kalifeldspat', 30, null, false],
+      ['Quarz', 20, null, false],
+      ['Kaolin', 50, null, false]
+    ]);
+    // No word any list has: the column of names, and the first column of numbers after it.
+    const unknown = one('Malighafi;Kiasi;Bei\nFeldspar;30;2\nSilica;70;1');
+    expect(unknown.title).to.equal(null);
+    expect(unknown.skipped.map((s) => s.why)).to.eql(['columns']);
+    expect(lines(unknown)).to.eql([
+      ['Feldspar', 30, null, false],
+      ['Silica', 70, null, false]
+    ]);
+    // Under a title, and after a blank line.
+    const titled = one('Celadon\n\nRohstoff;Menge;Preis\nKalifeldspat;30;2\nQuarz;70;1');
+    expect([titled.title, titled.skipped.map((s) => s.why), titled.lines.length]).to.eql(['Celadon', ['columns'], 2]);
+    // Not a heading: a title typed with a comma and a space over rows written without one, rows with their numbers in
+    // other columns, or rows not delimited as it is.
+    expect(one('Shino, carbon trap\nCuster,40\nSilica,60').title).to.equal('Shino, carbon trap');
+    expect(one('Glaze,Notes\nCuster,40\nSilica,60,x\n4,Whiting').skipped.map((s) => s.why)).to.eql([]);
+    expect(one('Malighafi,Kiasi\nFeldspar\t30\nSilica\t70').title).to.equal('Malighafi,Kiasi');
+  });
+
   it('reads a decimal comma in a line of text as a decimal, not a column', () => {
     expect(lines(one('Custer Feldspar 25,5'))).to.eql([['Custer Feldspar', 25.5, null, false]]);
   });
@@ -216,7 +374,7 @@ describe('Paste-in import: decimal marks', () => {
     expect(recipe.ambiguousNumbers('Custer 12,5\nSilica 40\nWhiting 1250')).to.eql([]);
   });
 
-  it('reads thousands set apart by a space as one number where the language writes them so, and marks them elsewhere', () => {
+  it('reads thousands set apart by a space as the language writes them, and marks each such line so the page asks', () => {
     // French sets thousands apart with a narrow no-break space, Russian with a no-break space: one number, with any space.
     for (const space of [' ', '\u00a0', '\u202f']) {
       expect(lines(one(`Silica 1${space}500 g\nWhiting 300 g`, { locale: 'fr' })), JSON.stringify(space)).to.eql([
@@ -226,7 +384,10 @@ describe('Paste-in import: decimal marks', () => {
     }
     expect(one('Silice 1\u00a0250,5', { locale: 'ru' }).lines[0]).to.include({ name: 'Silice', amount: 1250.5 });
     expect(lines(one('1 500 g Silica', { locale: 'fr' }))).to.eql([['Silica', 1500, 'g', false]]);
-    expect(one('Silica 1 500', { locale: 'sv' }).lines[0].spaced).to.equal(undefined);
+    // "Silica 1" at 500 is a reading too: marked in every language, so the page asks.
+    expect(one('Silica 1 500', { locale: 'sv' }).lines[0].spaced).to.equal('1 500');
+    expect(recipe.spacedReading('fr')).to.equal('group');
+    expect(recipe.spacedReading('en')).to.equal('apart');
     // English writes 1,500: read as before, the 1 ending the name, and marked so the page asks.
     const english = one('Silica 1\u202f500 g\nWhiting 300 g');
     expect(lines(english)).to.eql([
@@ -254,6 +415,61 @@ describe('Paste-in import: decimal marks', () => {
       ['Silice', 1, null, false],
       ['Craie', 2, null, false]
     ]);
+  });
+
+  it('reads a known name that ends in a number before an amount in threes, in every language, with nothing to ask', () => {
+    // Thousands set apart by a space would make "Minspar 200 300 g" Minspar at 200 300 g; the library has Minspar 200.
+    const paste = [
+      'Minspar 200 300 g',
+      'Feldspath mixte 64 250',
+      'Mondré & Manz Frit V 15 098 980',
+      'Zirkonfritte M 130 600 250 g',
+      'Kaolin 233 150,5 g',
+      'Silica 25'
+    ].join('\n');
+    for (const locale of ['en', 'de', 'fr', 'sv', 'ru', 'pl', 'cs', 'pt-PT']) {
+      const read = one(paste, { locale });
+      expect(lines(read), locale).to.eql([
+        ['Minspar 200', 300, 'g', false],
+        ['Feldspath mixte 64', 250, null, false],
+        ['Mondré & Manz Frit V 15 098', 980, null, false],
+        ['Zirkonfritte M 130 600', 250, 'g', false],
+        ['Kaolin 233', 150.5, 'g', false],
+        ['Silica', 25, null, false]
+      ]);
+      expect(
+        read.lines.map((l) => l.spaced),
+        locale
+      ).to.eql([undefined, undefined, undefined, undefined, undefined, undefined]);
+    }
+    // A name the library does not have: marked in every language, and read as the reader's language writes thousands.
+    expect(one('Redart 2 500 g', { locale: 'fr' }).lines[0]).to.include({
+      name: 'Redart',
+      amount: 2500,
+      spaced: '2 500'
+    });
+    expect(one('Redart 2 500 g', { locale: 'en' }).lines[0]).to.include({
+      name: 'Redart 2',
+      amount: 500,
+      spaced: '2 500'
+    });
+  });
+
+  it('reads each line whose thousands may be set apart by a space as the reader chose for that line', () => {
+    // One number for a genuine 1 500 joins no other line.
+    const paste = 'Silica 1 500 g\nRedart 2 500 g\nWhiting 300 g';
+    expect(lines(one(paste, { spaced: { 1: 'group' } }))).to.eql([
+      ['Silica', 1500, 'g', false],
+      ['Redart 2', 500, 'g', false],
+      ['Whiting', 300, 'g', false]
+    ]);
+    expect(lines(one(paste, { locale: 'fr', spaced: { 2: 'apart' } }))).to.eql([
+      ['Silica', 1500, 'g', false],
+      ['Redart 2', 500, 'g', false],
+      ['Whiting', 300, 'g', false]
+    ]);
+    // Each stays marked, chosen or not.
+    expect(one(paste, { spaced: { 1: 'group' } }).lines.map((l) => l.spaced)).to.eql(['1 500', '2 500', undefined]);
   });
 
   it('reads the endings numbers are written with: a full stop, ٪ and ٬, a percent sign first, units in CJK', () => {
@@ -289,6 +505,32 @@ describe('Paste-in import: decimal marks', () => {
 
   it('reads Arabic-Indic digits and the Arabic decimal mark', () => {
     expect(one('Silica ٢٥٫٥').lines[0].amount).to.equal(25.5);
+  });
+
+  it('reads an amount with the marks Intl writes to keep its direction in Arabic text', () => {
+    // Arabic writes 19.5‎%‎ with left-to-right marks around the sign, and Egyptian Arabic ١٩٫٥٪؜ with the Arabic
+    // letter mark after it: not seen, so a copied amount carries them.
+    const pasted = 'Silica 19.5‎%‎\nWhiting ‏20‎%\nKaolin ١٩٫٥٪؜\nEPK ⁧٤١⁩';
+    const read = one(pasted);
+    expect(read.title).to.equal(null);
+    expect(lines(read)).to.eql([
+      ['Silica', 19.5, '%', false],
+      ['Whiting', 20, '%', false],
+      ['Kaolin', 19.5, '%', false],
+      ['EPK', 41, null, false]
+    ]);
+    // Each line is kept as pasted.
+    expect(read.lines.map((l) => l.text)).to.eql(pasted.split('\n'));
+    // As Intl writes a percent in each language that uses them.
+    for (const locale of ['ar', 'ar-EG', 'ar-u-nu-arab', 'fa', 'ur']) {
+      const percent = (value: number) =>
+        new Intl.NumberFormat(locale, { style: 'percent', maximumFractionDigits: 1 }).format(value);
+      expect(lines(one(`Silica ${percent(0.195)}\nWhiting ${percent(0.2)}\nEPK 60`, { locale })), locale).to.eql([
+        ['Silica', 19.5, '%', false],
+        ['Whiting', 20, '%', false],
+        ['EPK', 60, null, false]
+      ]);
+    }
   });
 });
 
@@ -829,28 +1071,45 @@ describe('Paste-in import: finding the material', () => {
     expect(twoAliases.candidates.map((r) => r.name)).to.eql(['One', 'Two']);
   });
 
-  it('prepares each record’s name once for a paste’s names, not once a line, with the same matches', () => {
+  it('prepares each record’s name once for a paste’s names, not once a line, and keeps none after it', () => {
     const typed = ['Custer Feldspar', 'Silca', 'Whitting', 'EPK kaolin clay', 'Neph Sy 270', 'Gerstly borate'];
     const names = Array.from({ length: 300 }, (_, i) => typed[i % typed.length] + (i % 7 ? '' : ' x'));
-    const first = names.map((name) => recipe.matchName(name, LIBRARY));
-    // Counted, not timed: the second time, no name is normalized again. Before, each line normalized every
-    // record's names and aliases several times over (about 14 ms a name).
+    // Counted, not timed, so a busy machine cannot fail it.
     const normalize = String.prototype.normalize;
     let normalized = 0;
-    String.prototype.normalize = function (this: string, form?: 'NFC' | 'NFD' | 'NFKC' | 'NFKD') {
-      normalized++;
-      return normalize.call(this, form);
+    const counted = <T>(run: () => T): T => {
+      normalized = 0;
+      String.prototype.normalize = function (this: string, form?: 'NFC' | 'NFD' | 'NFKC' | 'NFKD') {
+        normalized++;
+        return normalize.call(this, form);
+      };
+      try {
+        return run();
+      } finally {
+        String.prototype.normalize = normalize;
+      }
     };
-    let again: ReturnType<typeof recipe.matchName>[];
-    try {
-      again = names.map((name) => recipe.matchName(name, LIBRARY));
-    } finally {
-      String.prototype.normalize = normalize;
-    }
+    // One matcher for the paste: each record's names and each pasted name worked out once, so the paste's 300
+    // names cost about what the library's names do. Before, each line normalized every record's names and aliases
+    // several times over (3.4 million times for these 300, about 14 ms a name).
+    const match = recipe.nameMatcher();
+    const first = counted(() => names.map((name) => match(name, LIBRARY)));
+    const texts = new Set([...LIBRARY.flatMap((r) => [r.name, ...(r.aliases ?? [])]), ...names]).size;
+    expect(normalized)
+      .to.be.above(0)
+      .and.at.most(3 * texts);
+    // Matching them again with it works nothing out again.
+    const again = counted(() => names.map((name) => match(name, LIBRARY)));
     expect(normalized).to.equal(0);
     expect(again.map((m) => [m.how, m.record?.name, m.candidates.length])).to.eql(
       first.map((m) => [m.how, m.record?.name, m.candidates.length])
     );
+    // Nothing is kept outside a matcher: another, or matchName, works the library's names out again, so a
+    // server keeps no one's pasted names between requests.
+    counted(() => recipe.nameMatcher()('Silca', LIBRARY));
+    expect(normalized).to.be.above(LIBRARY.length);
+    counted(() => recipe.matchName('Silca', LIBRARY));
+    expect(normalized).to.be.above(LIBRARY.length);
     expect(matched('Silca')).to.eql(['close', 'Silica']);
   });
 

@@ -119,6 +119,30 @@ describe('Shared recipe tools', () => {
     expect(recipe.forTyping('12.5', 'either', 'de')).to.equal('12,5');
   });
 
+  it('reads digit groups only when the first starts with 1 to 9: "0.500" is never five hundred', () => {
+    // With a chosen mark the other mark only groups digits, and no one writes 500 as 0.500 or 0,500.
+    for (const [text, mark, locale] of [
+      ['0.500', 'comma', 'de'],
+      ['0.125', 'comma', 'fr'],
+      ['0,500', 'point', 'en'],
+      ['00.500', 'comma', 'de'],
+      ['0.250.000', 'comma', 'de'],
+      ['0.250.000', 'either', 'de'],
+      ['0 500', 'either', 'fr'],
+      ['0 500,5', 'either', 'fr'],
+      ['0,00,000', 'either', 'en-IN']
+    ] as const) {
+      expect(recipe.parseNumber(text, mark, locale), `${text} ${mark} ${locale}`).to.equal(null);
+      expect(recipe.toPlain(text, mark, locale), `${text} ${mark} ${locale}`).to.equal(text);
+    }
+    // As before: a decimal where the mark allows it, and groups that start with 1 to 9.
+    expect(recipe.parseNumber('0.500', 'either', 'de')).to.equal(0.5);
+    expect(recipe.parseNumber('0,500', 'comma', 'en')).to.equal(0.5);
+    expect(recipe.parseNumber('1.500', 'comma', 'de')).to.equal(1500);
+    expect(recipe.parseNumber('1 500', 'either', 'fr')).to.equal(1500);
+    expect(recipe.parseNumber('1,00,000', 'either', 'en-IN')).to.equal(100000);
+  });
+
   it('reads Indian digit groups, native digits, the Arabic marks and the marks that keep a direction', () => {
     // The marks Intl writes around a sign or a percent in Arabic: the Arabic letter mark, and left-to-right marks.
     const ALM = String.fromCodePoint(0x61c);

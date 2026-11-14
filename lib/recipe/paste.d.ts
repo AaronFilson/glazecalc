@@ -19,14 +19,16 @@ export interface PastedLine {
   /** Marked "+", or under a heading such as "Additions". */
   addition: boolean;
   /**
-   * The amount as pasted when its thousands are set apart by a space ("1 500") and the reader's language does
-   * not write them so: read as `PasteOptions.spaced` says, so the page asks. Absent otherwise.
+   * The amount as pasted when its thousands may be set apart by a space ("1 500" of "Silica 1 500": 1500, or
+   * "Silica 1" at 500), in any language: read as `PasteOptions.spaced` says for the line, so the page asks.
+   * Absent otherwise, and for a known name that ends in the groups before the last ("Minspar 200 300 g").
    */
   spaced?: string;
   /**
-   * The last two cells of a comma-separated row as pasted, with the comma between them ("30,5" of "Silica,30,5"),
-   * when they can be one number with a decimal comma or two columns, the reader writing decimal commas: read as
-   * `PasteOptions.joined` says, so the page asks. Absent otherwise.
+   * Two cells of a comma-separated row as pasted, with the comma between them ("30,5" of "Silica,30,5"), when they
+   * can be one number with a decimal comma or two columns, the reader writing decimal commas: the last two of a row
+   * of three with no heading row, or under one, the amount's cell and the next when the row has one cell more than
+   * the heading. Read as `PasteOptions.joined` says, so the page asks. Absent otherwise.
    */
   joined?: string;
 }
@@ -57,14 +59,14 @@ export interface PasteOptions {
   reading?: 'decimal' | 'group';
   /**
    * How to read an amount with its thousands set apart by a space ("Silica 1 500"): one number ('group'), or
-   * the first group as the end of the name ('apart'). By default 'group' where the locale writes thousands
-   * so (French, Russian), else 'apart', and each such line is marked `spaced`.
+   * the first group as the end of the name ('apart'); for the whole paste, or line by line (by `PastedLine.line`).
+   * A line not chosen is read as `spacedReading(locale)` says, and each such line is marked `spaced`.
    */
-  spaced?: 'group' | 'apart';
+  spaced?: 'group' | 'apart' | Readonly<Record<number, 'group' | 'apart'>>;
   /**
-   * How to read a comma-separated row whose last two cells are whole numbers with only a comma between them
-   * ("Silica,30,5"), for a reader who writes decimal commas and with no heading row naming the columns: one number
-   * with a decimal comma ('decimal', 30.5), or two columns, the first the amount ('columns', 30). By default
+   * How to read a comma-separated row whose amount can be two whole numbers with only a comma between them
+   * ("Silica,30,5", with no heading row or under "Material,Amount"), for a reader who writes decimal commas: one
+   * number with a decimal comma ('decimal', 30.5), or two columns, the first the amount ('columns', 30). By default
    * 'decimal', and each such line is marked `joined`.
    */
   joined?: 'decimal' | 'columns';
@@ -82,6 +84,12 @@ export function pasteTooLong(text: string): 'chars' | 'lines' | null;
 export function ambiguousNumbers(text: string, mark?: DecimalMark): string[];
 
 export function parsePaste(text: string, options?: PasteOptions): PastedRecipe[];
+
+/**
+ * How a line whose amount may have its thousands set apart by a space is read until the reader chooses: one
+ * number ('group') where the locale writes thousands so (French "1 500", Russian, Swedish), else 'apart'.
+ */
+export function spacedReading(locale?: string): 'group' | 'apart';
 
 /** Each line's amount as saved ("20.5"; '' for none), and an addition's unit. */
 export function importAmounts(recipe: PastedRecipe): Array<{ amount: string; unit?: 'percent' | 'parts' | 'grams' }>;
@@ -101,6 +109,18 @@ export function matchName<T extends { name: string; aliases?: string[] }>(
   records: readonly T[],
   limit?: number
 ): NameMatch<T>;
+
+/** matchName, with each name it compares prepared once for as long as it is kept (one for a paste). */
+export type NameMatcher = <T extends { name: string; aliases?: string[] }>(
+  name: string,
+  records: readonly T[],
+  limit?: number
+) => NameMatch<T>;
+/**
+ * A matcher that prepares each name it compares once, so a paste's lines are matched against records prepared
+ * once, not once a line; it keeps them only as long as it is kept.
+ */
+export function nameMatcher(): NameMatcher;
 /** How close a pasted name is to a record's name, 0 to about 1. */
 export function likeness(pasted: string, recordName: string): number;
 /** A name as compared exactly: NFKC, lower case, spaces as one. */
