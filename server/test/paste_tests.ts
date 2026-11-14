@@ -953,6 +953,39 @@ describe('Paste-in import: titles, notes, totals and additions', () => {
     ]);
   });
 
+  it('reads a title that names a cone at its end as the title, not as a material at the cone', () => {
+    // "Celadon, cone 10" over comma rows was the material "Celadon, cone" at 10, and the recipe had no title.
+    const read = one('Celadon, cone 10\nCuster,40\nSilica,60');
+    expect(read.title).to.equal('Celadon, cone 10');
+    expect(lines(read)).to.eql([
+      ['Custer', 40, null, false],
+      ['Silica', 60, null, false]
+    ]);
+    // Over lines of text too, with a dash, a number in the name, a cone with its zero, an SK cone, and the words of
+    // other languages.
+    for (const [text, locale] of [
+      ['Celadon cone 10\nCuster 40\nSilica 60', 'en'],
+      ['Celadon - Cone 10\nCuster 40\nSilica 60', 'en'],
+      ['Leach 4321, cone 10\nCuster,40\nSilica,60', 'en'],
+      ['Tenmoku, cone 06\nCuster,40\nSilica,60', 'en'],
+      ['Seladon, SK 8\nKalifeldspat;40\nQuarz;60', 'de'],
+      ['Seladon, Kegel 10\nKalifeldspat;40\nQuarz;60', 'de'],
+      ['Céladon, cône 10\nFeldspath;40\nSilice;60', 'fr']
+    ]) {
+      const pasted = one(text, { locale });
+      expect(pasted.title, text).to.equal(text.split('\n')[0]);
+      expect(pasted.lines, text).to.have.length(2);
+    }
+    // After a recipe, such a title starts the next one.
+    const two = recipe.parsePaste('Celadon, cone 10\nCuster,40\nSilica,60\n\nTenmoku, cone 6\nCuster,50\nSilica,50', {
+      isName
+    });
+    expect(two.map((r) => [r.title, r.lines.length])).to.eql([
+      ['Celadon, cone 10', 2],
+      ['Tenmoku, cone 6', 2]
+    ]);
+  });
+
   it('does not take "Red iron oxide" for a reduction note', () => {
     expect(one('Red iron oxide 2').lines[0].name).to.equal('Red iron oxide');
   });

@@ -178,6 +178,16 @@ describe('ImportPage', () => {
     expect(text(fixture, '.import-firing')).toContain('cone 6');
   });
 
+  it('reads a title that names a cone at its end as the title and its firing, not as a material', async () => {
+    const { page, paste } = await create();
+    // "Celadon, cone 10" over comma rows was a line of its own, "Celadon, cone" at 10.
+    await paste('Celadon, cone 10\nCuster,40\nWhiting,20\nEPK,10\nSilica,30');
+    const [draft] = page['drafts']() as Array<{ title: string; firedAt: unknown; lines: Array<{ name: string }> }>;
+    expect(draft.title).toBe('Celadon, cone 10');
+    expect(draft.firedAt).toEqual({ scale: 'orton', low: '10' });
+    expect(draft.lines.map((l) => l.name)).toEqual(['Custer', 'Whiting', 'EPK', 'Silica']);
+  });
+
   it('asks for a choice where several materials are close, and saves once one is chosen or the line is left out', async () => {
     const { fixture, root, paste, save, selects } = await create();
     await paste('Test\nFeldspar 50\nSilica 50\nZircopax 5');
