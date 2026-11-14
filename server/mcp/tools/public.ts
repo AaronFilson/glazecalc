@@ -12,7 +12,7 @@ import type { McpServer } from '@modelcontextprotocol/server';
 import chemistry from '../../../lib/chemistry/index.js';
 import cones from '../../../lib/cones/index.js';
 import firingLib from '../../../lib/cones/firing.js';
-import type { Band, FiringBlock } from '../../../lib/cones/firing.js';
+import type { ApproxBasis, Band, FiringBlock } from '../../../lib/cones/firing.js';
 import recipe from '../../../lib/recipe/index.js';
 import type { ConeFit, MaterialRecord, TryMaterial } from '../../../lib/recipe/index.js';
 import {
@@ -260,14 +260,20 @@ export const coneAnswer = (cone: string, chart: 'orton' | 'sk') => {
   }
   const at = firingLib.approxCelsius('orton', cone);
   const published = cones.ORTON.published.cones.find((c) => c.cone === cone);
+  // What the figure rests on, as the recipe page says it (approxCelsius): the older chart's for a whole cone; a half
+  // cone put halfway between its neighbours on it; and for 05½, which that chart lacks, Orton's 2016 figure for
+  // large cones, the one half cone it gives one.
+  const bases: Partial<Record<ApproxBasis, string>> = {
+    'orton-150': cones.ORTON.chart.basis,
+    'orton-150-halfway': cones.ORTON.chart.basis + ', a half cone put halfway between its neighbours',
+    'orton-2016-150': "Orton's 2016 chart, large cones at 150 °C an hour"
+  };
   return {
     cone,
     chart,
     celsius: at?.celsius ?? null,
     fahrenheit: at ? Math.round(recipe.fahrenheit(at.celsius)) : null,
-    basis: at
-      ? cones.ORTON.chart.basis + (cone.endsWith('.5') ? ', a half cone put halfway between its neighbours' : '')
-      : null,
+    basis: at ? (bases[at.basis] ?? null) : null,
     ...(published && {
       ortonCurrent: {
         ratesAre: '°C an hour over the last 100 °C of the firing',
@@ -497,7 +503,7 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
     {
       title: 'Cones and temperatures',
       description:
-        "Converts between a pyrometric cone and its temperature, and between °C and °F. Orton cones run 022 to 42: Glazecalc's figure, from 022 to 15, is Orton's older chart for large cones at 150 °C an hour, and Orton's current figures (self-supporting cones at 15, 60 and 150 °C an hour, large cones at 60 and 150, cone 022 to 14) come beside it; Orton publishes no figure above cone 14, so cones from 16 up have none. SK cones (JIS R 8101, SK 022 to SK 20) by the standard's nominal figures. Give a cone, or a temperature to find the nearest cones.",
+        "Converts between a pyrometric cone and its temperature, and between °C and °F. Orton cones run 022 to 42: Glazecalc's figure, from 022 to 15, is Orton's older chart for large cones at 150 °C an hour (cone 05.5, which that chart lacks, is Orton's 2016 figure for large cones at that rate, and the other half cones are put halfway between their neighbours), and Orton's current figures (self-supporting cones at 15, 60 and 150 °C an hour, large cones at 60 and 150, cone 022 to 14) come beside it; Orton publishes no figure above cone 14, so cones from 16 up have none. SK cones (JIS R 8101, SK 022 to SK 20) by the standard's nominal figures. Give a cone, or a temperature to find the nearest cones.",
       inputSchema: z.object({
         cone: z.string().max(10).optional(),
         chart: z.enum(['orton', 'sk']).optional(),
