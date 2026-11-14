@@ -603,7 +603,6 @@
     "unknownOxide": "{oxide}, Glazecalc’in tanıdığı bir oksit değil.",
     "together": "Potası (K₂O) ve sodayı (Na₂O) KNaO olarak birlikte değil, ayrı ayrı girin.",
     "badAmount": "{oxide} miktarı 0 veya daha büyük bir sayı değil.",
-    "noFlux": "Hedefin en az bir ergiticiye ihtiyacı var; örneğin CaO, K₂O veya Na₂O.",
     "noMaterials": "Reçetenin yapılacağı en az bir hammadde ekleyin.",
     "noMatch": "Bu hammaddelerin hiçbirinde hedefin oksitlerinden hiçbiri yok."
   },

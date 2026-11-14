@@ -603,7 +603,6 @@
     "unknownOxide": "{oxide} är ingen oxid som Glazecalc känner till.",
     "together": "Ange kali (K₂O) och natron (Na₂O) var för sig, inte tillsammans som KNaO.",
     "badAmount": "Mängden {oxide} är inte ett tal som är 0 eller större.",
-    "noFlux": "Målet behöver minst ett flussmedel, till exempel CaO, K₂O eller Na₂O.",
     "noMaterials": "Lägg till minst en råvara att göra receptet av.",
     "noMatch": "Ingen av de här råvarorna innehåller någon av målets oxider."
   },

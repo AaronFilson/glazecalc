@@ -56,7 +56,9 @@ export function planSuggestion<M extends MaterialRecord>(
 
 /**
  * The suggested recipe; raw clay is held as Match with what I have holds it, but for clays named in
- * `uncapped`. `meter` bounds its work (lib/chemistry newMeter), a new one if not given.
+ * `uncapped`. `meter` bounds its work (lib/chemistry newMeter), a new one if not given. Throws a
+ * RecipeError ('solve.noFlux', params { of: 'recipe' }) if the recipe has no flux, or ({ of: 'offered' })
+ * if none of the materials it may use has one.
  */
 export function suggestAmounts<M extends MaterialRecord>(
   lines: M[],

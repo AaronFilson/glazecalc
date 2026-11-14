@@ -3,6 +3,7 @@ import { expect } from 'chai';
 import { IntlMessageFormat } from 'intl-messageformat';
 import chemistry from '../../lib/chemistry/index.js';
 import recipe from '../../lib/recipe/index.js';
+import pool from '../../lib/recipe/pool.js';
 import type { MaterialRecord, RecipeMessage } from '../../lib/recipe/index.js';
 import standardData from '../../data/index.js';
 
@@ -182,6 +183,78 @@ describe('Target & Solve', () => {
     }
   });
 
+  it('gives Match a recipe that adds up to the old total as shown, and every material brought in 1% of the batch', () => {
+    // Match with what I have rounded each amount on its own: 113.1 for a recipe of 113 (64 of 300 random
+    // matches missed so). And a material brought in at its least, 1% on the target's fired basis, came to
+    // 0.9% once the raw batch was in percent (15 of 299 solves).
+    const own = recipeOf([
+      ['Flint (UK calcined)', 33.6],
+      ['Goerg & Schneider Ton 3616', 38.7],
+      ['Feldspath potassique FP325 (Ceradel)', 40.7]
+    ]);
+    const match = recipe.matchFromShelf(
+      own,
+      [
+        ...shelfOf('Flint (UK calcined)'),
+        { material: find('Goerg & Schneider Ton 3616'), must: true },
+        ...shelfOf('Feldspath potassique FP325 (Ceradel)', 'FFF Feldspar (Sibelco FFF K7-60)'),
+        { material: find('Hymod AT Ball Clay'), must: true },
+        ...shelfOf('Ferro Frit 4113')
+      ],
+      { avoid: ['Flint (UK calcined)'] }
+    );
+    expect(Math.round(10 * total(match))).to.equal(1130);
+    for (const m of match.materials) expect(Number(m.amount), m.name).to.be.at.least(1.13 - 0.05);
+    const target = recipe.unityOf(
+      recipe.molesOf(
+        recipeOf([
+          ['G-200 EU Feldspar', 5],
+          ['Hymod AT Ball Clay', 39.8],
+          ['Ferro Frit 9146 (zircon white)', 41.4],
+          ['Fusion Frit F-12', 27.1],
+          ['Petalite', 40.9],
+          ['Feldspato potassico (Sila Argille)', 8.7]
+        ])
+      )
+    );
+    const solved = recipe.solveTarget(
+      { kind: 'unity', oxides: target },
+      [
+        ...shelfOf('G-200 EU Feldspar'),
+        { material: find('Hymod AT Ball Clay'), must: true },
+        ...shelfOf(
+          'Ferro Frit 9146 (zircon white)',
+          'Fusion Frit F-12',
+          'Petalite',
+          'Feldspato potassico (Sila Argille)',
+          'Masuda Feldspar (益田長石)',
+          'Jingdezhen Porcelain Stone, Sanbaopeng',
+          'Cornish Stone, Synthetic (Walker BA280)'
+        ),
+        { material: find('Mahavir Potash Feldspar'), must: true },
+        ...shelfOf('Oxford Spar')
+      ],
+      { avoid: ['Fusion Frit F-12'] }
+    );
+    expect(amountIn(solved, 'Mahavir Potash Feldspar')).to.be.at.least(1);
+    for (const m of solved.materials) expect(Number(m.amount), m.name).to.be.at.least(1);
+    expect(Math.round(10 * total(solved))).to.equal(1000);
+  });
+
+  it('rounds amounts to add up to a total, the largest remainders moved, an unchanged line and a least kept', () => {
+    // 33.33 + 33.33 + 33.33 shown to one place come to 99.9: the largest remainder goes up.
+    expect(pool.addingUp({ amounts: [33.33, 33.34, 33.33] }, 1, 100).amounts).to.eql([33.33, 33.4, 33.33]);
+    // A line shown as it was (20.25, its own text) counts as it is, and is not moved.
+    expect(pool.addingUp({ amounts: [20.25, 39.94, 39.94] }, 1, 100.25, (i) => i === 0).amounts).to.eql([
+      20.25, 40, 40
+    ]);
+    // Too much: the one rounded up furthest comes down (1.06 to 1.0), but not below its least (1.05).
+    expect(pool.addingUp({ amounts: [1.06, 49.47, 49.47] }, 1, 100).amounts).to.eql([1, 49.47, 49.47]);
+    expect(pool.addingUp({ amounts: [1.06, 49.47, 49.47] }, 1, 100, undefined, () => 1.05).amounts).to.eql([
+      1.06, 49.4, 49.47
+    ]);
+  });
+
   it('does not hold the raw clay down with a material that has no oxides', () => {
     // A potter's own material saved with no oxides costs the match nothing: it was made half the batch
     // (Target & Solve 25%, Match with what I have 47%) to bring the raw clay to 20% of it.
@@ -216,6 +289,51 @@ describe('Target & Solve', () => {
     expect(amountIn(must, 'Nepheline Syenite (typical)')).to.be.at.least(1);
   });
 
+  it('brings calcium from whiting, not fluorspar, and fluorine or soluble materials only where nothing else will do', () => {
+    // Leach 4321: offered with whiting, fluorspar brought all the calcium (16.4%), and no whiting.
+    const leach = recipeOf([
+      ['Custer Spar', 40],
+      ['Silica', 30],
+      ['Whiting', 20],
+      ['EPK Kaolin', 10]
+    ]);
+    const target = { kind: 'unity' as const, oxides: recipe.unityOf(recipe.molesOf(leach)) };
+    for (const shelf of [
+      shelfOf('Custer Spar', 'Silica', 'Whiting', 'EPK Kaolin', 'Fluorspar'),
+      shelfOf('Fluorspar', 'Custer Spar', 'Silica', 'Whiting', 'EPK Kaolin', 'Cryolite')
+    ]) {
+      const solved = recipe.solveTarget(target, shelf);
+      expect(amountIn(solved, 'Fluorspar')).to.equal(0);
+      expect(amountIn(solved, 'Cryolite')).to.equal(0);
+      expect(amountIn(solved, 'Whiting')).to.be.closeTo(20, 0.5);
+      expect(solved.report.closeness!.verdict).to.equal('close');
+    }
+    // With nothing else to bring the calcium, fluorspar does; and marked "must use", it is used.
+    expect(
+      amountIn(recipe.solveTarget(target, shelfOf('Custer Spar', 'Silica', 'EPK Kaolin', 'Fluorspar')), 'Fluorspar')
+    ).to.be.above(10);
+    const must = recipe.solveTarget(target, [
+      ...shelfOf('Custer Spar', 'Silica', 'Whiting', 'EPK Kaolin'),
+      { material: find('Fluorspar'), must: true }
+    ]);
+    expect(amountIn(must, 'Fluorspar')).to.be.at.least(1);
+    // Match with what I have the same, but for the recipe's own: a recipe with fluorspar keeps it.
+    const match = recipe.matchFromShelf(leach, shelfOf('Custer Spar', 'Silica', 'Whiting', 'EPK Kaolin', 'Fluorspar'));
+    expect(match.materials.map((m) => [m.name, m.amount])).to.deep.equal(leach.map((m) => [m.name, m.amount]));
+    const own = recipeOf([
+      ['Custer Spar', 40],
+      ['Silica', 30],
+      ['Fluorspar', 15],
+      ['EPK Kaolin', 10]
+    ]);
+    expect(
+      amountIn(
+        recipe.matchFromShelf(own, shelfOf('Custer Spar', 'Silica', 'Whiting', 'EPK Kaolin', 'Fluorspar')),
+        'Fluorspar'
+      )
+    ).to.equal(15);
+  });
+
   it('refuses what it cannot solve, in codes with their English', () => {
     const shelf = shelfOf('Custer Spar', 'Whiting', 'EPK Kaolin', 'Silica');
     expect(refusal(() => recipe.solveTarget({ kind: 'unity', oxides: { Xx2O: 1, SiO2: 3 } }, shelf))).to.deep.equal({
@@ -248,13 +366,32 @@ describe('Target & Solve', () => {
     expect(refusal(() => recipe.solveTarget({ kind: 'unity', oxides: { Li2O: 1 } }, shelfOf('Silica'))).code).to.equal(
       'solve.noMatch'
     );
-    // Silica and calcined kaolin bring the target's silica and alumina but no flux at all: no unity formula, as the
-    // recipe page says.
-    expect(() =>
-      recipe.solveTarget({ kind: 'unity', oxides: GLOSSY_UNITY }, shelfOf('Calcined Kaolin (theoretical)', 'Silica'))
-    )
-      .to.throw()
-      .with.property('code', 'no-flux');
+    // Silica and calcined kaolin bring the target's silica and alumina but no flux at all: none of them has one
+    // (the chemistry's no-flux said "Recipe contains no flux oxides", of the target as it read).
+    const noFlux = {
+      code: 'solve.noFlux',
+      text: 'None of these materials has a flux, such as CaO, K₂O or Na₂O, so no glaze can be made of them.'
+    };
+    const kaolinAndSilica = shelfOf('Calcined Kaolin (theoretical)', 'Silica');
+    expect(refusal(() => recipe.solveTarget({ kind: 'unity', oxides: GLOSSY_UNITY }, kaolinAndSilica))).to.deep.equal(
+      noFlux
+    );
+    // Match with what I have and Suggest amounts the same; and a recipe with no flux has no unity formula to match.
+    expect(refusal(() => recipe.matchFromShelf(GLOSSY, kaolinAndSilica))).to.deep.equal(noFlux);
+    const slip = recipeOf([
+      ['Calcined Kaolin (theoretical)', 50],
+      ['Silica', 50]
+    ]);
+    const noRecipeFlux = {
+      code: 'solve.noFlux',
+      text: 'The recipe has no flux, such as CaO, K₂O or Na₂O, so it has no unity formula to match.'
+    };
+    expect(refusal(() => recipe.matchFromShelf(slip, kaolinAndSilica))).to.deep.equal(noRecipeFlux);
+    expect(refusal(() => recipe.suggestAmounts(slip, find, [], 'US'))).to.deep.equal(noRecipeFlux);
+    // A target with none, as before.
+    expect(refusal(() => recipe.solveTarget({ kind: 'unity', oxides: { SiO2: 3 } }, kaolinAndSilica)).text).to.equal(
+      'The target needs at least one flux, such as CaO, K₂O or Na₂O.'
+    );
     // Every code has its English.
     for (const code of recipe.CODES.filter((c) => c.startsWith('solve.')))
       expect(ENGLISH[code], code).to.be.a('string');
@@ -348,7 +485,7 @@ describe('Target & Solve, Match with what I have and Suggest amounts: the work b
     expect(solved.report.closeness!.verdict).to.not.equal('poor');
   });
 
-  it('matches a 13-oxide recipe from 100 materials within the work allowed (80 s before)', () => {
+  it('matches a 13-oxide recipe from 100 materials within the work allowed, and finishes (80 s before)', () => {
     const analysis = { SiO2: 55, Al2O3: 12, B2O3: 8, CaO: 6, MgO: 2, K2O: 3, Na2O: 3, ZnO: 3 };
     const line = {
       name: 'Frit-like',
@@ -363,8 +500,45 @@ describe('Target & Solve, Match with what I have and Suggest amounts: the work b
     const meter = chemistry.newMeter();
     const match = recipe.matchFromShelf([line], offered(0, 100), { meter });
     expect(meter.used).to.be.at.most(ALLOWED);
-    expect(match.report.cutShort).to.equal(true);
+    // Screened to the 40 that matter (lib/chemistry/select.js SCREEN), the search finishes: it was cut short.
+    expect(match.report).to.not.have.property('cutShort');
+    expect(match.report.closeness!.verdict).to.equal('close');
     expect(match.materials.length).to.be.within(1, 13);
+  });
+
+  it('solves a target made from 4 of 250 materials close, the pool screened first (poor and cut short before)', () => {
+    // The library, and copies of it under other names, to 250: the first match over all of them took the
+    // work allowed before it settled, and the search cut there missed by 100 (more work gave the same).
+    const usable = LIBRARY.filter(
+      (m) =>
+        !m.fluorine &&
+        !m.soluble &&
+        !(m as { noChemistry?: boolean }).noChemistry &&
+        !(m as { chemistryOf?: string }).chemistryOf &&
+        m.fields?.length
+    );
+    const pool = Array.from({ length: 250 }, (_, i) => {
+      const m = usable[i % usable.length]!;
+      return {
+        material: i < usable.length ? m : { ...m, name: `${m.name} #${Math.floor(i / usable.length)}` },
+        must: false
+      };
+    });
+    const target = recipe.unityOf(
+      recipe.molesOf(
+        recipeOf([
+          ['Fusion Frit F-69', 20],
+          ['Ferro Frit 3134', 30],
+          ['Feldspath potassique ICE 10 (Imerys Spain)', 25],
+          ['Vibrantz Frit 90255', 25]
+        ])
+      )
+    );
+    const meter = chemistry.newMeter();
+    const solved = recipe.solveTarget({ kind: 'unity', oxides: target }, pool, { meter });
+    expect(meter.used).to.be.at.most(chemistry.WORK);
+    expect(solved.report).to.not.have.property('cutShort');
+    expect(solved.report.closeness!.verdict).to.equal('close');
   });
 
   it('suggests amounts for 40 lines, the plan and the suggestion on one meter (19 s before)', () => {

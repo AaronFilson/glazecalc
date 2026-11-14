@@ -603,7 +603,6 @@
     "unknownOxide": "{oxide} ei ole oksidi, jonka Glazecalc tuntee.",
     "together": "Anna potaska (K₂O) ja sooda (Na₂O) erikseen, ei yhdessä KNaO:na.",
     "badAmount": "Oksidin {oxide} määrä ei ole luku, joka on 0 tai suurempi.",
-    "noFlux": "Tavoitteessa on oltava vähintään yksi sulattaja, kuten CaO, K₂O tai Na₂O.",
     "noMaterials": "Lisää vähintään yksi raaka-aine, josta resepti tehdään.",
     "noMatch": "Missään näistä raaka-aineista ei ole yhtään tavoitteen oksidia."
   },

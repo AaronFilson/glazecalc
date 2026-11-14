@@ -1192,6 +1192,102 @@ describe('glaze chemistry', () => {
       }
     });
 
+    // Two frits each in a group of its own, and a feldspar held to a share of the batch: setting the prices
+    // one cap at a time, and then together by Newton's method, left both groups over (11.7 g and 14.2 g
+    // against 8.25 and 9.58), and said nothing.
+    const JOINT = {
+      pool: () => [
+        { material: library.get('FFF Feldspar (Sibelco FFF K7-60)')!, start: 0, group: 's1' },
+        { material: library.get('Alkali Frit 15.10 (Keramikos)')!, start: 0, most: 11.7, group: 'g0' },
+        { material: library.get('Fusion Frit F-19')!, start: 20.5, group: 'g2' }
+      ],
+      target: {
+        K2O: 0.07469364508185836,
+        Na2O: 0.11423829155813757,
+        Al2O3: 0.21000501084324397,
+        CaO: 0.03847147925816046,
+        SiO2: 0.7142405385274848,
+        B2O3: 0.022601041164855357,
+        PbO: 0.21183571505009055
+      },
+      options: { groups: { g0: 8.2453, g2: 9.5824 }, shares: { s1: 0.7317 } }
+    };
+
+    it('should keep caps that pull against each other exactly, where one at a time leaves them broken', () => {
+      // The optimum, from an independent solver (interior point, then its KKT system solved exactly): the
+      // frits at their caps, and the feldspar at its share.
+      const optimum = [48.61918781, 8.2453, 9.5824];
+      for (const fitted of [
+        chemistry.bestFit(JOINT.pool(), JOINT.target, JOINT.options),
+        chemistry.fitAmounts(JOINT.pool(), JOINT.target, JOINT.options)
+      ]) {
+        fitted.amounts.forEach((amount, i) => expect(amount, String(i)).to.be.closeTo(optimum[i], 1e-6 * optimum[i]));
+        expect(fitted.broken).to.equal(undefined);
+      }
+    });
+
+    it('should set the prices again together where one at a time leaves one on a cap with room', () => {
+      // Each cap kept, but a price left on boric acid's share with 0.36 g of room under it: the match 4%
+      // further from the target than it need be.
+      const pool = [
+        { material: library.get('Boric Acid')!, start: 0, most: 6.4, group: 's0' },
+        { material: library.get('Gillespie Borate')!, start: 0, least: 1.9, group: 's1' },
+        { material: library.get('Fusion Frit F-69')!, start: 20.5, least: 4.3 },
+        { material: library.get('Albany Slip')!, start: 20.8, group: 's0' }
+      ];
+      const target = {
+        MgO: 0.0904214881033699,
+        B2O3: 0.44150862545841085,
+        Al2O3: 0.03490484850402188,
+        SiO2: 0.2108716675201659
+      };
+      const { amounts, miss } = chemistry.bestFit(pool, target, { shares: { s0: 0.1241, s1: 0.0391 } });
+      const optimum = [6.030434783, 1.9, 40.6629156, 0];
+      amounts.forEach((amount, i) => expect(amount, String(i)).to.be.closeTo(optimum[i], 1e-6 * (1 + optimum[i])));
+      expect(miss).to.be.closeTo(340.4581, 1e-3);
+    });
+
+    it('should say which caps it cannot keep', () => {
+      // Whiting's least alone is more than the cap on raw calcium: it stays at its least, and the fit says so.
+      const pool = [
+        { material: library.get('G-200 EU Feldspar')!, start: 40 },
+        { material: library.get('Silica')!, start: 30 },
+        { material: library.get('China Clay')!, start: 15 },
+        { material: library.get('Whiting')!, start: 0, least: 8, group: 'raw calcium' }
+      ];
+      const target = chemistry.oxideMoles(
+        lines([
+          ['Whiting', 15],
+          ['G-200 EU Feldspar', 40],
+          ['Silica', 30],
+          ['China Clay', 15]
+        ])
+      );
+      const groups = { 'raw calcium': 5 };
+      for (const fitted of [
+        chemistry.bestFit(pool, target, { groups }),
+        chemistry.fitAmounts(pool, target, { groups })
+      ]) {
+        expect(fitted.amounts[3]).to.be.closeTo(8, 1e-9);
+        expect(fitted.broken).to.deep.equal(['raw calcium']);
+      }
+      // Kept, a cap is not named.
+      expect(chemistry.bestFit(pool, target, { groups: { 'raw calcium': 9 } }).broken).to.equal(undefined);
+    });
+
+    it('should stop setting the prices one cap at a time once the work is spent, and keep the caps all the same', () => {
+      const all = chemistry.newMeter(Infinity);
+      const whole = chemistry.bestFit(JOINT.pool(), JOINT.target, { ...JOINT.options, meter: all });
+      // With almost nothing to spend, the rounds one cap at a time do not start (each can take a hundred
+      // solves); the caps are kept exactly at once, on an allowance of the exact solve's own.
+      const meter = chemistry.newMeter(1);
+      const cut = chemistry.bestFit(JOINT.pool(), JOINT.target, { ...JOINT.options, meter });
+      expect(meter.cut).to.equal(true);
+      expect(meter.used).to.be.below(all.used / 10);
+      expect(cut.broken).to.equal(undefined);
+      cut.amounts.forEach((amount, i) => expect(amount).to.be.closeTo(whole.amounts[i], 1e-6 * whole.amounts[i]));
+    });
+
     it('should say when there is nothing to work out', () => {
       expect(() => chemistry.fitAmounts([], { CaO: 1 })).to.throw(/no materials/);
       expect(() => chemistry.fitAmounts([{ material: library.get('Silica')!, start: 1 }], {})).to.throw(/no oxides/);
@@ -1350,6 +1446,120 @@ describe('glaze chemistry', () => {
       expect(single.capped).to.have.length(1);
       expect(single.capped[0].wouldBe).to.be.closeTo(15, 1);
       expect(single.capped[0].missLifted).to.be.below(single.miss);
+    });
+
+    it('should keep a member at nothing rather than at a least that breaks its cap, and not call a broken cap held', () => {
+      const target = molesOf([
+        ['Whiting', 15],
+        ['G-200 EU Feldspar', 40],
+        ['Silica', 30],
+        ['China Clay', 15]
+      ]);
+      const groups = { 'raw calcium': 5 };
+      const base = [own('G-200 EU Feldspar', 40), own('Silica', 30), own('China Clay', 15)];
+      // Whiting's least, 8 g, is past the cap of 5 by itself: raised to it, the cap broke (and the report
+      // said it was held at 5). Wollastonite brings the calcium instead.
+      const chosen = chemistry.selectMaterials(
+        [...base, offer('Whiting', { group: 'raw calcium', least: 8 }), offer('Wollastonite (Vansil W)', { least: 1 })],
+        target,
+        { groups }
+      );
+      expect(chosen.amounts[3]).to.equal(0);
+      expect(chosen.amounts[4]).to.be.above(10);
+      expect(chosen.capped.filter((c) => c.group === 'raw calcium')).to.deep.equal([]);
+      // A must's least past the cap: nothing keeps it, and the report says it is broken, with what it is.
+      const must = chemistry.selectMaterials(
+        [...base, offer('Whiting', { group: 'raw calcium', least: 8, must: true })],
+        target,
+        {
+          groups
+        }
+      );
+      expect(must.amounts[3]).to.be.closeTo(8, 1e-9);
+      expect(must.capped).to.have.length(1);
+      expect(must.capped[0]).to.include({ group: 'raw calcium', most: 5, broken: true });
+      expect(must.capped[0].wouldBe).to.be.closeTo(8, 1e-9);
+    });
+
+    it('should keep a group and a share that pull against each other (the rerun review, seed 21, case 180)', () => {
+      // The group's one member came to 11.75 g against its cap of 4.61, and the report said it was held at 4.61.
+      const lines = [
+        offer('Potash Feldspar (Valentine Clays)', { least: 1.9410058440230786, group: 's' }),
+        offer('Soda Feldspar (Walker BA340, India)', { least: 0.31700000000000006, group: 'g' }),
+        offer('Sodium Nitrate', { least: 4.065053042732179 }),
+        offer('Zettlitz Kaolin (Sedlec Ia)', { least: 3.3499269806724046, group: 's' }),
+        offer('Calcium Borate Frit (CTM 37)', { least: 0.31700000000000006, group: 'g' })
+      ];
+      const target = {
+        SiO2: 0.14481134430704193,
+        Al2O3: 0.04797618697345064,
+        Fe2O3: 0.0005535829466393632,
+        TiO2: 0.00026043949164214616,
+        K2O: 0.001892881787780668,
+        B2O3: 0.15389775485872703,
+        MgO: 0.000528483525208416,
+        CaO: 0.10065624052641904
+      };
+      const options = { groups: { g: 4.614778675665148 }, shares: { s: 0.2217968927696347 } };
+      const { amounts, capped } = chemistry.selectMaterials(lines, target, options);
+      const batch = amounts.reduce((sum, amount) => sum + amount, 0);
+      expect(amounts[1] + amounts[4], 'the group').to.be.at.most(4.614778675665148 * (1 + 1e-6));
+      expect(amounts[0] + amounts[3], 'the share').to.be.at.most(0.2217968927696347 * batch * (1 + 1e-6));
+      expect(capped.filter((c) => c.broken)).to.deep.equal([]);
+    });
+
+    it("should answer from the recipe's own, cut short, where the limit on new materials leaves none (budget-cut case 30)", () => {
+      // With the work all but spent, stage A had taken up one new material; the limit (none new) dropped it,
+      // and the choosing threw "no materials" with the recipe's own two on hand.
+      const CLAYS = [
+        'Wilco UPF Kaolin',
+        'Glomax LL Calcined Kaolin',
+        'Hawthorn Bond Fireclay',
+        'Caolín Nacional Superfino (Prodesco)'
+      ];
+      const lines = [
+        own('Boric Acid', 32.2),
+        { ...own('Sibelco V161 Ball Clay', 9.9), group: 'clay' },
+        ...[
+          'Bone Ash',
+          'Wilco UPF Kaolin',
+          'Glomax LL Calcined Kaolin',
+          'Feldspath mixte 64 (Ceradel)',
+          'Reimbold & Strick Frit A 3021',
+          'Strontium Carbonate',
+          'Orthoclase',
+          'Cornwall Stone',
+          'Chestnut Wood Ash, washed (栗灰)',
+          'Hawthorn Bond Fireclay',
+          'Tsushima Feldspar (対馬長石)',
+          'Kamado Feldspar (釜戸長石)',
+          'Amakusa Pottery Stone (天草陶石)',
+          'Low Expansion Frit (Potterycrafts P2960)',
+          'Ferro Frit 3195',
+          'Petalite',
+          'Calcium Borate Frit 32.21 (Keramikos)',
+          'Zinc Frit 32.22 (Keramikos)',
+          'Caolín Nacional Superfino (Prodesco)',
+          'Flint'
+        ].map((name) => offer(name, { least: 0.79, ...(CLAYS.includes(name) ? { group: 'clay' } : {}) }))
+      ];
+      const target = {
+        B2O3: 0.27831707772526826,
+        SiO2: 0.5101642727560207,
+        TiO2: 0.0017354285356539158,
+        Al2O3: 0.08458557683820286,
+        Fe2O3: 0.0007562919962176007,
+        Na2O: 0.021067135642717696,
+        K2O: 0.037115027336907476,
+        CaO: 0.0005809868573568485,
+        MgO: 0.0008123263199682413
+      };
+      for (const most of [0, 1e-5 * chemistry.WORK]) {
+        const meter = chemistry.newMeter(most);
+        const cut = chemistry.selectMaterials(lines, target, { extras: 0, shares: { clay: 0.2 }, meter });
+        expect(cut.cutShort).to.equal(true);
+        expect(cut.chosen).to.deep.equal([0, 1]);
+      }
     });
 
     it("should say what lifting a cap alone would give, keeping every other line's least", () => {

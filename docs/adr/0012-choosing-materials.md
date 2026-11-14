@@ -306,3 +306,69 @@ have said so.
 - The build takes about 3 seconds more for the 16 searches, and each language's file about 2.5 kB
   more (0.8 kB gzipped). A famous glaze's page no longer reads in the standard materials (every
   record of the library) or solves when it opens.
+
+## Amended: caps kept, or said to be broken
+
+2026-11-13, from the second 1.0 chemistry review.
+
+**What happened.** Shared caps (a group's members together at most so much, or a share of the batch)
+are kept by a price on their members, set one cap at a time. Where two or three caps pull against
+each other, a second step set the prices together by Newton's method. Against an exact solver, on
+22,500 random problems with two or three caps, that step left a cap that could be kept broken in 129
+of the 6,625 where it ran (1.95%), some several times over, and where the rounds one at a time had
+kept every cap but left a price on one with room under it, the match was up to 43% further from the
+target than it need be. The report then named a broken cap as held ("a closer match needs 24%, more
+than the 4.6% suggested" of a group at 11.75 g against its 4.61). In 23 of 24 broken final recipes,
+the choosing had raised a member to its least, which alone broke its cap, for the miss alone.
+
+**Decision.**
+
+- **Every cap at once, exactly** (`lib/chemistry/caps.js`). Where the rounds one cap at a time leave a
+  cap broken, or a price on a cap with room under it, the least squares is solved with the caps as
+  constraints of their own: a primal active-set method on the KKT system (full pivoting, which stays
+  steady where two materials are nearly alike, as silica and flint). A cap that cannot be kept is
+  allowed over at a price per unit, raised while it is over, so the answer breaks the caps by as few
+  grams in all as the bounds allow. Where the rounds settle, nothing changes, bit for bit.
+- **The work meter** stops the rounds one cap at a time (each can take a hundred solves). The exact
+  solve then keeps the caps, on an allowance of its own (`CAPS_WORK`, a twentieth of `WORK`; its few
+  steps over the materials chosen take far less), so a search cut short keeps every cap it can.
+- **Broken caps are named.** A solve, `bestFit` and `fitAmounts` return the caps they break
+  (`broken`, over by more than a millionth of the batch): where the members' leasts alone come to
+  more, or the work ran out first. The report lists a shared cap as held only where the recipe keeps
+  it so; otherwise it says it could not be held, with what the members come to.
+- **The choosing keeps the caps.** Between two choices, the one that breaks fewer caps is taken before
+  the nearer match: a member is kept at nothing rather than raised to a least that breaks its cap, and
+  a material is not dropped, swapped or added where that breaks one.
+
+**Consequences.**
+
+- On the same 22,500 problems, no cap that can be kept is broken, and where the rounds did not settle
+  the match is the optimum to 1e-14. Where the bounds force a cap over, the worst cap is within twice
+  the least it could be in all but 73 of 4,829 (1,289 before). A solve with two or three caps takes
+  about as long as before (2.4 ms on average, against 2.3).
+- The page and the MCP tools say when a cap could not be held. The page's sentence is English until
+  it is translated.
+
+## Amended: a large pool screened first
+
+2026-11-13, from the second 1.0 chemistry review.
+
+**What happened.** The page and the MCP tools take a whole shelf, up to 500 materials, and the work
+a search may do is bounded. Over hundreds of materials, stage A's one match took all of it before it
+settled, and the search cut there came out poor: targets made exactly from 4 of 250 materials missed
+by 22 to 101, and ten times the work gave the same. The worst search went to 1.82 times `WORK`.
+
+**Decision.** A pool of more than 60 materials (`SCREEN`) is screened before stage A, without solving
+anything: the musts and the recipe's own; for each oxide aimed at, the three richest in it, no two of
+them alike (a last resort counted half as rich, so whiting and not fluorspar stands for the calcium);
+then those whose oxides point most nearly the target's way, 40 in all. A pool of 60 or fewer is chosen
+from whole, as before. Keeping 40 did better than 60: of 16 such targets from 250 and 500 materials,
+none came out poor and one fair (keeping 60, two poor and two fair), and half finished within the work.
+
+**Consequences.**
+
+- The whole library offered as a shelf (178 materials) gives a close match in an eighth of `WORK`, without
+  fluorspar; the worst search found takes 1.04 times `WORK`.
+- The screen does not depend on the meter, so a search that is not cut gives the same answer bounded
+  or not. The EU's 66 base materials are screened too: Oribe's EU version uses five materials rather
+  than six, still close, and Shino's comes close where it was fair. The build makes them anew.

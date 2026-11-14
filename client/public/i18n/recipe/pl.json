@@ -603,7 +603,6 @@
     "unknownOxide": "{oxide} nie jest tlenkiem znanym w Glazecalc.",
     "together": "Potas (K₂O) i sód (Na₂O) należy podać osobno, a nie razem jako KNaO.",
     "badAmount": "Ilość {oxide} nie jest liczbą równą 0 lub większą.",
-    "noFlux": "Cel musi zawierać co najmniej jeden topnik, taki jak CaO, K₂O lub Na₂O.",
     "noMaterials": "Należy dodać co najmniej jeden surowiec, z którego powstanie receptura.",
     "noMatch": "Żaden z tych surowców nie zawiera żadnego z tlenków celu."
   },

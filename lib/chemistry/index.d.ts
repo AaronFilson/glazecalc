@@ -158,18 +158,22 @@ export interface FitOptions {
   meter?: Meter;
 }
 
+/**
+ * broken, when there are any, names the shared caps (groups and shares) the amounts break: those whose
+ * members' leasts alone come to more, or that the work ran out before keeping.
+ */
 export function fitAmounts(
   lines: FitLine[],
   target: Record<string, number>,
   options?: FitOptions
-): { amounts: number[]; moles: Record<string, number>; miss: number };
+): { amounts: number[]; moles: Record<string, number>; miss: number; broken?: string[] };
 
 /** The best match the lines can make, with no pull toward their starts: fast, for ranking choices. */
 export function bestFit(
   lines: FitLine[],
   target: Record<string, number>,
   options?: FitOptions
-): { amounts: number[]; miss: number };
+): { amounts: number[]; miss: number; broken?: string[] };
 
 /** The cones a lead glaze is replaced for, 06 to 6: Orton's older chart, large cones at 150 °C an hour (lib/cones). */
 export const CONES: ReadonlyArray<{ cone: string; celsius: number }>;
@@ -222,6 +226,8 @@ export function boundedLeastSquares(problem: {
 export interface SelectLine extends FitLine {
   must?: boolean;
   avoid?: boolean;
+  /** Used only where nothing else comes as near: a fluorine or soluble material Solve or Match brings in. */
+  lastResort?: boolean;
 }
 
 export interface Selection {
@@ -238,7 +244,9 @@ export interface Selection {
   alike: Array<{ used: number; other: number }>;
   /**
    * Caps that cost match: a line at its most, or a shared cap (group, its
-   * members, named by the largest), with what it would be and the miss lifted.
+   * members, named by the largest), with what it would be and the miss lifted;
+   * and shared caps the recipe could not keep (broken: wouldBe is then what
+   * the members come to, and missLifted the recipe's miss).
    */
   capped: Array<{
     index: number;
@@ -247,6 +255,7 @@ export interface Selection {
     missLifted: number;
     group?: string;
     members?: number[];
+    broken?: true;
   }>;
   countCost: number;
   /** Whether the work allowed ran out first: the best found by then (see lib/chemistry/select.js). */

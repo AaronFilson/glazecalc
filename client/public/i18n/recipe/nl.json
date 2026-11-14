@@ -603,7 +603,6 @@
     "unknownOxide": "{oxide} is geen oxide dat Glazecalc kent.",
     "together": "Geef kalium (K₂O) en natrium (Na₂O) apart op, niet samen als KNaO.",
     "badAmount": "De hoeveelheid {oxide} is geen getal van 0 of meer.",
-    "noFlux": "Het doel heeft minstens één smeltmiddel nodig, zoals CaO, K₂O of Na₂O.",
     "noMaterials": "Voeg minstens één grondstof toe om het recept van te maken.",
     "noMatch": "Geen van deze grondstoffen bevat een van de oxiden van het doel."
   },

@@ -96,6 +96,21 @@ describe('SwapReport', () => {
     expect(reruns[3]).toEqual({ uncapped: ['Whiting'] });
   });
 
+  it('says when a cap could not be held, not that a closer match needs more', async () => {
+    const { fixture } = await create({
+      run: RUN,
+      report: {
+        ...REPORT,
+        capped: [{ ...REPORT.capped[0], most: 5, wouldBe: 8.04, why: "this app's own guideline", broken: true }]
+      },
+      cautions: []
+    });
+    expect(text(fixture, '.swap-report')).toContain(
+      'Whiting could not be held to the 5.0% suggested: the recipe has 8.0%.'
+    );
+    expect(text(fixture, '.swap-report')).not.toContain('A closer match needs');
+  });
+
   it('says what was left out, and lets it back', async () => {
     const { fixture, reruns, button } = await create({
       run: { ...RUN, avoid: ['Minspar 200'] },

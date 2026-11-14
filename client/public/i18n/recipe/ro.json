@@ -603,7 +603,6 @@
     "unknownOxide": "{oxide} nu este un oxid cunoscut de Glazecalc.",
     "together": "Indicați potasa (K₂O) și soda (Na₂O) separat, nu împreună ca KNaO.",
     "badAmount": "Cantitatea de {oxide} nu este un număr egal cu 0 sau mai mare.",
-    "noFlux": "Ținta are nevoie de cel puțin un fondant, de exemplu CaO, K₂O sau Na₂O.",
     "noMaterials": "Adăugați cel puțin o materie primă din care să se facă rețeta.",
     "noMatch": "Niciuna dintre aceste materii prime nu conține vreunul dintre oxizii țintei."
   },

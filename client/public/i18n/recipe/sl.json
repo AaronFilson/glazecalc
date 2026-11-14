@@ -603,7 +603,6 @@
     "unknownOxide": "{oxide} ni oksid, ki ga Glazecalc pozna.",
     "together": "Kalij (K₂O) in natrij (Na₂O) navedite ločeno, ne skupaj kot KNaO.",
     "badAmount": "Količina za {oxide} ni število 0 ali več.",
-    "noFlux": "Cilj potrebuje vsaj eno talilo, na primer CaO, K₂O ali Na₂O.",
     "noMaterials": "Dodajte vsaj eno surovino, iz katere bo sestavljen recept.",
     "noMatch": "Nobena od teh surovin nima nobenega od oksidov cilja."
   },

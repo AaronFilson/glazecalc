@@ -73,9 +73,18 @@ export interface Report {
   /**
    * Caps that cost match, as percents of the batch: "a closer match needs 7%
    * whiting, more than the 5% suggested". A shared cap names its group and
-   * all its members.
+   * all its members. One the recipe could not keep is broken, its wouldBe
+   * what the members come to: "whiting could not be held to the 5% suggested".
    */
-  capped: Array<{ name: string; most: number; wouldBe: number; group?: string; members: string[]; why: string }>;
+  capped: Array<{
+    name: string;
+    most: number;
+    wouldBe: number;
+    group?: string;
+    members: string[];
+    why: string;
+    broken?: true;
+  }>;
   /** Oxides the old recipe has that nothing offered supplies. */
   unreachable: string[];
   /** How much worse the match is for the limit on new materials, if it cost anything. */

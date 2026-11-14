@@ -498,6 +498,7 @@
     "unreachable": "Nothing on offer has {list}. Add a material with it to try, below, to bring it back.",
     "capped": "A closer match needs {wouldBe}% {list}, more than the {most}% suggested.",
     "cappedWhy": "A closer match needs {wouldBe}% {list}, more than the {most}% suggested: {why}.",
+    "cappedBroken": "{list} could not be held to the {most}% suggested: the recipe has {now}%.",
     "allowMore": "Allow more",
     "allowMoreOf": "Allow more {list}",
     "couldHelp": "Not used, but would bring it a little closer:",
@@ -610,7 +611,7 @@
     "unknownOxide": "{oxide} is not an oxide Glazecalc knows.",
     "together": "Give potash (K₂O) and soda (Na₂O) apart, not together as KNaO.",
     "badAmount": "The amount of {oxide} is not a number of 0 or more.",
-    "noFlux": "The target needs at least one flux, such as CaO, K₂O or Na₂O.",
+    "noFlux": "{of, select, offered {None of these materials has a flux, such as CaO, K₂O or Na₂O, so no glaze can be made of them.} recipe {The recipe has no flux, such as CaO, K₂O or Na₂O, so it has no unity formula to match.} other {The target needs at least one flux, such as CaO, K₂O or Na₂O.}}",
     "noMaterials": "Add at least one material to make the recipe from.",
     "noMatch": "None of these materials has any of the target's oxides."
   },

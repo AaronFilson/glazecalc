@@ -603,7 +603,6 @@
     "unknownOxide": "{oxide} 不是 Glazecalc 认识的氧化物。",
     "together": "请分别给出氧化钾（K₂O）和氧化钠（Na₂O），不要合并成 KNaO。",
     "badAmount": "{oxide} 的用量不是 0 或更大的数。",
-    "noFlux": "目标至少需要一种熔剂，例如 CaO、K₂O 或 Na₂O。",
     "noMaterials": "请至少添加一种原料来配制配方。",
     "noMatch": "这些原料都不含目标中的任何氧化物。"
   },

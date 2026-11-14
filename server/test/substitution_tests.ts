@@ -215,6 +215,37 @@ describe('Match with what I have: classic substitutions', () => {
     expect(verdicts(without)).to.include({ B2O3: 'far', KNaO: 'close', CaO: 'close', Al2O3: 'close', SiO2: 'close' });
   });
 
+  it("gives back a recipe's own materials under 1% of the batch, from a shelf with all of them", () => {
+    // 0.5 of lithium carbonate came back as 1 (the least for a material brought in), doubling the lithia;
+    // zinc's 0.8 as 1; and marked "must use", talc's 0.5 as 1.
+    const base: Array<[string, number]> = [
+      ['Custer Spar', 20],
+      ['Ferro Frit 3134', 15],
+      ['Whiting', 15],
+      ['EPK Kaolin', 20],
+      ['Silica', 25]
+    ];
+    for (const [lines, must] of [
+      [recipeOf([...base, ['Talc', 4.5], ['Lithium Carbonate', 0.5]]), false],
+      [recipeOf([...base, ['Talc', 4.2], ['Zinc Oxide', 0.8]]), false],
+      [
+        recipeOf([
+          ['Custer Spar', 40],
+          ['Silica', 30],
+          ['Whiting', 20],
+          ['EPK Kaolin', 9.5],
+          ['Talc', 0.5]
+        ]),
+        true
+      ]
+    ] as Array<[MaterialRecord[], boolean]>) {
+      const shelf = lines.map((line) => ({ material: find(line.name), must }));
+      const match = recipe.matchFromShelf(lines, shelf);
+      expect(match.materials.map((m) => [m.name, m.amount])).to.deep.equal(lines.map((l) => [l.name, l.amount]));
+      expect(match.report.miss).to.be.below(1e-6);
+    }
+  });
+
   it('says how near a suggestion for a discontinued material comes, too', () => {
     const lines = recipeOf([
       ['Oxford Spar', 40],

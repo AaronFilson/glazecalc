@@ -603,7 +603,6 @@
     "unknownOxide": "{oxide} er ikke en oxid, som Glazecalc kender.",
     "together": "Angiv kali (K₂O) og natron (Na₂O) hver for sig, ikke samlet som KNaO.",
     "badAmount": "Mængden af {oxide} er ikke et tal på 0 eller derover.",
-    "noFlux": "Målet kræver mindst ét flusmiddel, for eksempel CaO, K₂O eller Na₂O.",
     "noMaterials": "Tilføj mindst én råvare at lave opskriften af.",
     "noMatch": "Ingen af disse råvarer indeholder nogen af målets oxider."
   },

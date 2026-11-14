@@ -603,7 +603,6 @@
     "unknownOxide": "{oxide} não é um óxido que o Glazecalc conheça.",
     "together": "Indique o potássio (K₂O) e o sódio (Na₂O) em separado, não em conjunto como KNaO.",
     "badAmount": "A quantidade de {oxide} não é um número igual ou superior a 0.",
-    "noFlux": "O objetivo precisa de pelo menos um fundente, como CaO, K₂O ou Na₂O.",
     "noMaterials": "Adicione pelo menos uma matéria-prima com que fazer a receita.",
     "noMatch": "Nenhuma destas matérias-primas tem algum dos óxidos do objetivo."
   },

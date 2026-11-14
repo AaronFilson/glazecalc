@@ -36,7 +36,7 @@ export const SOLVE_BATCH: number;
 
 /**
  * The target as oxide moles on 100 g of fired glaze, with its unity formula; throws a RecipeError
- * ('solve.unknownOxide', 'solve.together', 'solve.badAmount', 'solve.noFlux').
+ * ('solve.unknownOxide', 'solve.together', 'solve.badAmount', 'solve.noFlux' with params { of: 'target' }).
  */
 export function targetOf(target: SolveTarget): {
   moles: Record<string, number>;
@@ -53,8 +53,9 @@ export function solveCautions(
 
 /**
  * A recipe in percent from the materials offered whose unity formula comes as near the target as they
- * allow; throws a RecipeError as targetOf does, 'solve.noMaterials' or 'solve.noMatch'. `meter` bounds
- * its work (lib/chemistry newMeter), a new one if not given.
+ * allow; throws a RecipeError as targetOf does, 'solve.noMaterials', 'solve.noMatch', or 'solve.noFlux'
+ * (params { of: 'offered' }) when none of the materials has a flux. `meter` bounds its work (lib/chemistry
+ * newMeter), a new one if not given.
  */
 export function solveTarget<M extends MaterialRecord>(
   target: SolveTarget,
