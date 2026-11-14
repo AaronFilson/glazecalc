@@ -1,6 +1,6 @@
 {
   "name": "glazecalc",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "Glaze calculation software to assist potters and ceramicists.",
   "private": true,
   "scripts": {
@@ -12,7 +12,7 @@
     "prestart": "npm run build",
     "start": "node --env-file-if-exists=.env server/main.ts",
     "lint": "eslint .",
-    "typecheck": "tsc -p server",
+    "typecheck": "tsc -p server && tsc -p lib",
     "check:i18n": "node scripts/i18n-check.mjs",
     "i18n:sources": "node scripts/i18n-sources.mjs",
     "og-images": "node scripts/og-images-linux.mjs",
@@ -32,8 +32,10 @@
     "test:e2e:both": "node scripts/test-e2e-both.mjs",
     "test:all": "npm test && npm run test:client && npm run test:e2e",
     "test:all:linux": "npm test && npm run test:client && npm run test:e2e:linux",
-    "test:coverage": "c8 --include \"server/**\" --include \"lib/**\" --exclude \"server/test/**\" --reporter text-summary --reporter html mocha",
+    "test:coverage": "c8 --include \"server/**\" --include \"lib/**\" --exclude \"server/test/**\" --reporter text-summary --reporter html --reporter json-summary mocha",
     "test:client:coverage": "ng test --watch=false --coverage",
+    "prelighthouse": "node --env-file-if-exists=.env scripts/ensure-db.mjs",
+    "lighthouse": "node scripts/lighthouse.mjs",
     "seed": "node --env-file-if-exists=.env scripts/seed-standard.js"
   },
   "repository": {

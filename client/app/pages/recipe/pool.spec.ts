@@ -37,6 +37,7 @@ const selection = (amounts: number[], extra: Partial<Selection> = {}): Selection
   alike: [],
   capped: [],
   countCost: 0,
+  cutShort: false,
   ...extra
 });
 
@@ -90,6 +91,13 @@ describe('what a substitution may offer, and how it explains itself', () => {
       { name: 'Silica', amount: '24', supplies: '12% of the silica', needed: true, fixed: false }
     ]);
     expect(report.couldHelp).toEqual([{ name: 'Redart', helps: 0.1 }]);
+    // A material that supplies no oxide's share worth naming.
+    const little = explain(
+      selection([10], { contributions: [{ index: 0, supplies: [], missWithout: 0.01 }] }),
+      [line('Silica', 10)],
+      1
+    );
+    expect(little.uses[0]?.supplies).toBe('a little of the glaze');
     expect(report.alike).toEqual([{ used: 'Feldspar', other: 'Redart' }]);
     // As percents of the batch, 77.12 here.
     expect(report.capped).toHaveLength(1);

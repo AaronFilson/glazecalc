@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+import { OfflineRecords } from '../../core/offline-records';
 import { API, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { TrashEntry, TrashPage } from './trash-page';
 
@@ -112,5 +113,79 @@ describe('TrashPage', () => {
     await settle(fixture);
     expect(root.querySelector('.trash-list')).toBeNull();
     expect(text(fixture, '.trash-none')).toBe('The Trash is empty.');
+  });
+
+  it('puts one back once, however often it is pressed; says when it was back already, or could not be put back', async () => {
+    const { fixture, root, button } = await create();
+    const putBack = button('Put back Celadon');
+    putBack.click();
+    putBack.click();
+    httpMock()
+      .expectOne({ method: 'POST', url: API + '/trash/restore/t1' })
+      .flush({ code: 'trash-not-found', msg: 'Not in the Trash.' }, { status: 404, statusText: 'Not Found' });
+    await settle(fixture);
+    expect(text(fixture, '.server-msg')).toContain('"Celadon" was put back already.');
+    expect(root.querySelectorAll('.trash-list > li').length).toBe(1);
+
+    button('Put back Cone 6 notes').click();
+    httpMock()
+      .expectOne({ method: 'POST', url: API + '/trash/restore/t2' })
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(text(fixture, '.errors-section')).toContain('"Cone 6 notes" could not be put back. Please try again.');
+    expect(root.querySelectorAll('.trash-list > li').length).toBe(1);
+  });
+
+  it('deletes one once; one gone already leaves the list, and a failure is said beside the record', async () => {
+    const { fixture, root, button, press } = await create();
+    await press('Remove Celadon');
+    const yes = button('Yes, remove');
+    yes.click();
+    yes.click();
+    httpMock()
+      .expectOne({ method: 'DELETE', url: API + '/trash/delete/t1' })
+      .flush({}, { status: 404, statusText: 'Not Found' });
+    await settle(fixture);
+    expect(root.querySelectorAll('.trash-list > li').length).toBe(1);
+
+    await press('Remove Cone 6 notes');
+    await press('Yes, remove');
+    httpMock()
+      .expectOne({ method: 'DELETE', url: API + '/trash/delete/t2' })
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(text(fixture, '.remove-problem')).toBe('It could not be removed. Please try again.');
+    expect(root.querySelectorAll('.trash-list > li').length).toBe(1);
+  });
+
+  it('empties the Trash only when asked: Cancel keeps everything, and a failure is said', async () => {
+    const { fixture, root, press } = await create();
+    await press('Empty the Trash');
+    await press('Cancel');
+    expect(root.querySelector('#trash-empty-question')).toBeNull();
+    httpMock().expectNone(API + '/trash/empty');
+
+    await press('Empty the Trash');
+    await press('Yes, empty it');
+    httpMock()
+      .expectOne({ method: 'DELETE', url: API + '/trash/empty' })
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(text(fixture, '.errors-section')).toContain('The Trash could not be emptied. Please try again.');
+    expect(root.querySelectorAll('.trash-list > li').length).toBe(2);
+  });
+
+  it('puts nothing back while the page shows the copy kept on this device, and says why', async () => {
+    const { fixture, button } = await create();
+    // The network failed and the recipes shown are the copy saved on this device.
+    TestBed.inject(OfflineRecords).shown('recipe', new Date('2026-10-20T09:30:00Z'));
+    await settle(fixture);
+    const putBack = button('Put back Celadon');
+    expect(putBack.getAttribute('aria-disabled')).toBe('true');
+    expect(putBack.getAttribute('title')).toContain("Glazecalc can't be reached.");
+    putBack.click();
+    await settle(fixture);
+    httpMock().expectNone(API + '/trash/restore/t1');
+    expect(text(fixture, '.errors-section')).toContain("Glazecalc can't be reached.");
   });
 });

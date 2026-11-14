@@ -10,7 +10,7 @@ export const libraryInfo = {
   // A frit's job, from its maker's stated use: base, base-alkaline, alkali, boron, low-expansion,
   // opacified, zinc, matte, stoneware or lead.
   fritRole: String,
-  // Where it is sold: US, UK, EU, AU.
+  // Where it is sold: US, UK, EU, AU, JP (and CA for one slip).
   region: { type: [String] },
   // current; scarce (hard to get); discontinued; historical (kept to compare with old recipes).
   status: String,

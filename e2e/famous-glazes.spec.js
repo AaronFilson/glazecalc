@@ -1,7 +1,9 @@
 // Famous glazes (docs/famous-glazes.md): a published glaze's page renders, prerendered, with its history
 // notice and its lead-free version marked "calculated, not yet test-fired"; an unpublished glaze, the tests'
 // fixture and any other slug are the not-found page. The fixture's page renders when the published file
-// (the English one, /i18n/famous-glazes/en.json) is stubbed to hold it, as it would once published.
+// (the English one, /i18n/famous-glazes/en.json) is stubbed to hold it, as it would once published, but for
+// the versions the build would work out for it (scripts/famous-glazes.mjs): its own recipe, which the test
+// opens, needs none.
 const { test, expect } = require('@playwright/test');
 const famous = require('../lib/famous-glazes');
 

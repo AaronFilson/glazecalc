@@ -334,7 +334,8 @@
     "US": "US",
     "UK": "UK",
     "EU": "EU",
-    "AU": "AU ne-NZ"
+    "AU": "AU ne-NZ",
+    "JP": "I-Japan"
   },
   "status": {
     "discontinued": "Akusakhiqizwa",

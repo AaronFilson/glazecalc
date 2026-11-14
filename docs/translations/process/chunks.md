@@ -48,7 +48,8 @@ In each path, `<code>` is your language's code. Paths are under {REPO}.
 - `client/public/i18n/regions/en.json` → `client/public/i18n/regions/<code>.json` (14): notes in the region data
   (on shops, the silica limits and food-contact rules), plain text; the EU directive's name takes its official form
   in your language. Safety text.
-- **The two emails**, in `server/lib/account_mail.ts` (read the `en` entries there, but do not edit that file):
+- **The two emails**, `RESET` and `CHANGED` in `server/i18n/mail/en.json` (read them there, but do not edit that
+  folder; go-live.mjs writes the language's file):
   write your translation as JSON to
   `{SCRATCH}emails\<code>.json`,
   shaped `{ "reset": { "subject": "…", "text": "…" }, "changed": { "subject": "…", "text": "…" } }`, with the

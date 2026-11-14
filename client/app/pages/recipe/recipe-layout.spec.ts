@@ -5,6 +5,7 @@ import { RouterTestingHarness } from '@angular/router/testing';
 import { Material } from '../../core/models';
 import { EXPIRING_KEYS } from '../../core/settings-expiry';
 import { answer, httpMock, settle, testProviders } from '../../testing/test-providers';
+import { focusShown } from './focus';
 import { LAYOUT_KEY, layoutFromParam, storeLayout, storedLayout } from './recipe-layout';
 import { RecipePage } from './recipe-page';
 
@@ -59,6 +60,24 @@ describe('recipe layout choice', () => {
     expect(storedLayout(broken)).toBe('standard');
     expect(() => storeLayout('workbench', broken)).not.toThrow();
   });
+
+  it('works where the browser will not even hand over its storage', () => {
+    const own = Object.getOwnPropertyDescriptor(globalThis, 'localStorage');
+    Object.defineProperty(globalThis, 'localStorage', {
+      configurable: true,
+      get: () => {
+        throw new DOMException('The operation is insecure.', 'SecurityError');
+      }
+    });
+    try {
+      expect(storedLayout()).toBe('standard');
+      expect(() => storeLayout('guided')).not.toThrow();
+    } finally {
+      if (own) Object.defineProperty(globalThis, 'localStorage', own);
+      else delete (globalThis as { localStorage?: Storage }).localStorage;
+    }
+    expect(localStorage.getItem(LAYOUT_KEY)).toBeNull();
+  });
 });
 
 describe('RecipePage layouts', () => {
@@ -83,10 +102,10 @@ describe('RecipePage layouts', () => {
   };
 
   const fill = (page: Page) => {
-    page['addMaterial'](WHITING);
-    page['setAmount'](0, '20');
-    page['addMaterial'](SILICA);
-    page['setAmount'](1, '30');
+    page['edit'].addMaterial(WHITING);
+    page['edit'].setAmount(0, '20');
+    page['edit'].addMaterial(SILICA);
+    page['edit'].setAmount(1, '30');
   };
 
   it('shows the standard form by default, with the switch on it', async () => {
@@ -126,7 +145,7 @@ describe('RecipePage layouts', () => {
     const { fixture, page, element } = await create();
     page['chooseLayout']('workbench');
     await settle(fixture);
-    page['focusShown']('recipe-notes');
+    focusShown('recipe-notes');
     expect((element.querySelector('#details-fold') as HTMLDetailsElement).open).toBe(true);
     expect(document.activeElement?.id).toBe('recipe-notes');
   });
@@ -152,6 +171,57 @@ describe('RecipePage layouts', () => {
     expect(panes[3].querySelector('.recipe-status')).not.toBeNull();
 
     (element.querySelector('#guided-next') as HTMLButtonElement).click();
+    await settle(fixture);
+    expect(panes.map((pane) => pane.hidden)).toEqual([true, false, true, true]);
+    expect(document.activeElement?.id).toBe('guided-step-1');
+  });
+
+  it('keeps the workbench folds as they were left, and its peek bar goes to the formula', async () => {
+    const { fixture, page, element } = await create();
+    (element.querySelector('#layout-workbench') as HTMLInputElement).click();
+    fill(page);
+    await settle(fixture);
+    for (const id of ['fix-fold', 'details-fold']) {
+      const fold = element.querySelector('#' + id) as HTMLDetailsElement;
+      fold.open = true;
+      fold.dispatchEvent(new Event('toggle'));
+    }
+    await settle(fixture);
+    // Drawn again, by way of another layout, they are still open.
+    (element.querySelector('#layout-standard') as HTMLInputElement).click();
+    await settle(fixture);
+    (element.querySelector('#layout-workbench') as HTMLInputElement).click();
+    await settle(fixture);
+    expect((element.querySelector('#fix-fold') as HTMLDetailsElement).open).toBe(true);
+    expect((element.querySelector('#details-fold') as HTMLDetailsElement).open).toBe(true);
+
+    // jsdom does not scroll: the scroll is recorded instead.
+    const scrolled = vi.fn();
+    const own = Object.getOwnPropertyDescriptor(Element.prototype, 'scrollIntoView');
+    Element.prototype.scrollIntoView = scrolled;
+    try {
+      (element.querySelector('.workbench-peek button') as HTMLButtonElement).click();
+      expect(scrolled).toHaveBeenCalledWith({ block: 'start' });
+      expect(scrolled.mock.contexts[0]).toBe(element.querySelector('#unity-heading'));
+      expect(document.activeElement?.id).toBe('unity-heading');
+    } finally {
+      if (own) Object.defineProperty(Element.prototype, 'scrollIntoView', own);
+      else delete (Element.prototype as { scrollIntoView?: unknown }).scrollIntoView;
+    }
+  });
+
+  it('goes to a guided step by its tab, and a step back by Back', async () => {
+    const { fixture, page, element } = await create();
+    (element.querySelector('#layout-guided') as HTMLInputElement).click();
+    fill(page);
+    await settle(fixture);
+    const panes = [...element.querySelectorAll('.guided-pane')] as HTMLElement[];
+    (element.querySelector('#guided-tab-2') as HTMLButtonElement).click();
+    await settle(fixture);
+    expect(panes.map((pane) => pane.hidden)).toEqual([true, true, false, true]);
+    expect(element.querySelector('#guided-tab-2')?.getAttribute('aria-current')).toBe('step');
+    expect(document.activeElement?.id).toBe('guided-step-2');
+    (element.querySelector('#guided-back') as HTMLButtonElement).click();
     await settle(fixture);
     expect(panes.map((pane) => pane.hidden)).toEqual([true, false, true, true]);
     expect(document.activeElement?.id).toBe('guided-step-1');

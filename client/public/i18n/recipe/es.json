@@ -50,7 +50,6 @@
     "firedTo": "Cocido a",
     "how": "Cómo",
     "rebuild": "Rehacer el esmalte: conservar su sílice y su alúmina, con boro y otros fundentes en lugar del plomo",
-    "keepColour": "Conservar el color sobre una base sin plomo: la frita y el caolín, 85 a 15, con los colorantes de la receta",
     "fritHeading": "Frita sin plomo como base, la mejor primero",
     "fritBoron": "({boron} % de boro, B₂O₃)",
     "noFrit": "No hay en la biblioteca ninguna frita sin plomo que se venda en su región.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "No se puede sustituir el plomo: un material de la receta no tiene análisis del que partir.",
     "leadRebuiltCone": "Plomo sustituido para cono {cone} sobre {base}: se conservan la sílice y la alúmina de la receta antigua, y el boro y otros fundentes hacen el trabajo del plomo.",
     "leadRebuilt": "Plomo sustituido para {firing} sobre {base}: se conservan la sílice y la alúmina de la receta antigua, y el boro y otros fundentes hacen el trabajo del plomo.",
-    "leadColour": "Plomo sustituido: los colorantes se han pasado a una base sin plomo de {base} y caolín, 85 a 15.",
     "leadGloss": "No igualará exactamente el brillo, la transparencia ni el color del plomo: cuente con menos brillantez, y quizá con enturbiamiento sobre barro rojo o con cuarteado. Pruebe una tanda pequeña sobre su propia pasta.",
     "leadSafety": "Que un esmalte no tenga plomo no lo hace, por sí solo, apto para uso alimentario; eso depende de toda la fórmula y de la cocción.",
     "leadReplaced": "Se ha sustituido el plomo.",
@@ -245,8 +243,7 @@
       "text": "Se añaden sobre la base. Se guardan con la receta, pero no forman parte de la fórmula Seger. Elija en qué unidad va cada cantidad:",
       "percent": "<b>% sobre la base</b>: un porcentaje del total de la base, como lo dan la mayoría de las recetas: 2 significa un 2 % de óxido de hierro rojo.",
       "parts": "<b>partes</b>: la misma unidad que los materiales, como 1 parte sobre una base de 3 de cuarzo molido<en>flint</en> y 2 de dolomita.",
-      "grams": "<b>gramos</b>: un peso, en la misma tanda que los materiales.",
-      "count": "Algunas calculadoras cuentan los colorantes en la fórmula Seger y otras no. Marque <b>Contar en ella los colorantes y aditivos</b>, bajo el título Fórmula Seger, para contarlos según su peso en la tanda, o deje la casilla sin marcar para comparar con una que no los cuente. La elección se guarda con la receta."
+      "grams": "<b>gramos</b>: un peso, en la misma tanda que los materiales."
     },
     "scale": {
       "heading": "Cambiar la escala cuando haga falta",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide} no es un óxido que Glazecalc conozca.",
     "together": "Indique la potasa (K₂O) y la sosa (Na₂O) por separado, no juntas como KNaO.",
     "badAmount": "La cantidad de {oxide} no es un número igual o mayor que 0.",
-    "noFlux": "El objetivo necesita al menos un fundente, como CaO, K₂O o Na₂O.",
     "noMaterials": "Añada al menos un material con el que hacer la receta.",
     "noMatch": "Ninguno de estos materiales tiene ninguno de los óxidos del objetivo."
   },

@@ -2,8 +2,9 @@ name: Publish image
 
 # After CI passes on master, builds the production image natively for amd64 and
 # arm64 (Graviton) and publishes one multi-architecture image to GHCR, tagged
-# with the full commit SHA, and "latest" if it is still master's newest commit.
-# deploy/deploy.sh pulls these tags.
+# with the full commit SHA, and "latest" if it is still master's newest commit,
+# with an SBOM and SLSA build provenance attached, and the provenance signed
+# through GitHub (gh attestation verify). deploy/deploy.sh pulls these tags.
 #
 # The commit it builds, in the run's title: Deploy reads it there, since a run
 # started by another's end carries master's newest commit as its own, which
@@ -69,6 +70,10 @@ jobs:
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
             org.opencontainers.image.revision=${{ github.event.workflow_run.head_sha }}
           outputs: type=image,name=${{ env.IMAGE }},push-by-digest=true,name-canonical=true,push=true
+          # Attached to each platform's image: how it was built (SLSA provenance, in full) and
+          # what is in it (an SBOM), readable with docker buildx imagetools inspect.
+          provenance: mode=max
+          sbom: true
           cache-from: type=gha,scope=${{ matrix.platform }}
           cache-to: type=gha,mode=max,scope=${{ matrix.platform }}
 
@@ -93,6 +98,9 @@ jobs:
     permissions:
       contents: read
       packages: write
+      # To sign the image's build provenance (Sigstore, through GitHub) and keep it as an attestation.
+      id-token: write
+      attestations: write
     steps:
       - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
@@ -109,6 +117,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create and push tags
+        id: tags
         working-directory: /tmp/digests
         env:
           SHA: ${{ github.event.workflow_run.head_sha }}
@@ -128,4 +137,16 @@ jobs:
           fi
           docker buildx imagetools create "${tags[@]}" "${sources[@]}"
           docker buildx imagetools inspect "$IMAGE:sha-$SHA"
-          echo "Published $IMAGE:sha-$SHA" >> "$GITHUB_STEP_SUMMARY"
+          digest=$(docker buildx imagetools inspect "$IMAGE:sha-$SHA" --format '{{json .Manifest}}' | jq -r .digest)
+          echo "digest=$digest" >> "$GITHUB_OUTPUT"
+          echo "Published $IMAGE:sha-$SHA ($digest)" >> "$GITHUB_STEP_SUMMARY"
+
+      # A signed record of where and how the image was built (SLSA build provenance), kept by
+      # GitHub and pushed beside the image. Anyone can check an image with
+      # gh attestation verify oci://ghcr.io/aaronfilson/glazecalc:sha-<commit> --owner AaronFilson
+      - name: Attest the build
+        uses: actions/attest-build-provenance@4d101475d8b20a2381f78447822ac1eab6504dd8 # v4.2.2
+        with:
+          subject-name: ${{ env.IMAGE }}
+          subject-digest: ${{ steps.tags.outputs.digest }}
+          push-to-registry: true

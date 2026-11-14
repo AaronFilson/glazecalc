@@ -2,24 +2,80 @@
 
 Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, from the history.
 
-## 0.5.0 (not yet released)
+## 1.0.0 (2026-11-12)
+
+The 2017 app, put back online in October, has grown into a glaze chemistry workbench in 57 languages that AI
+assistants can use too. In short, with every change in the sections below:
+
+- **For potters:** chemistry for the firing a recipe states, results by cone and a Stull chart; Target & Solve, blends
+  for test tiles, specific gravity, cost per batch and a mix ticket with hazards; share links, the Trash with Undo,
+  offline mode and dictated studio notes; public pages for each standard material, a cone chart, famous glazes, guides.
+- **Languages and regions:** Arabic and Urdu right to left, each language at its own addresses, and regions that set
+  the numbers, digits, cones, standard materials, shops and who to call.
+- **Accounts:** sign-in with Google, GitHub or Microsoft, and two-step sign-in with passkeys, authenticator apps and
+  recovery codes.
+- **AI assistants:** Glazecalc's tools over MCP, in the MCP Registry, with access tokens, an OAuth authorization server
+  with a consent page, connected apps a person can review and revoke, and, if they choose, changes that wait for a yes.
+- **Engineering:** over 3,800 tests in CI on every pull request, with the README's numbers checked against each run;
+  CodeQL; an SBOM and signed SLSA provenance on every image; an A+ (120) from Mozilla's HTTP Observatory; the AWS setup
+  as CDK stacks; a load test; and Lighthouse in CI. Fixed lists what the 1.0 tests, security review and chemistry review found.
 
 ### Added
 
+- **The AWS setup as code** (`deploy/cdk/`, [ADR 29](docs/adr/0029-infrastructure-as-code-with-cdk.md)): AWS CDK stacks
+  in TypeScript declare what `deploy/aws/` made by hand, with the same names and permissions: GitHub's deploy roles and
+  their SSM documents, the operator policy, the instance with its role, network, backups, snapshots and alarms, and
+  SES sending and receiving. Tests hold every policy to its JSON document there and snapshot each template, cdk-nag's
+  AWS Solutions rules check them, and the Infrastructure workflow runs both on changes under `deploy/`. Nothing is
+  deployed from it yet: its README brings the live resources under it with `cdk import`, one stack at a time.
+- **A load test** (`.github/workflows/load.yml`, `scripts/load/`): the production image on an arm64 runner, held to
+  the live instance's size (a t4g.micro's 2 vCPUs and 1 GB, MongoDB's cache as in production), under k6 with 50
+  visitors at once for a minute. It fails if more than 1% of requests fail or the 95th percentile passes 500 ms, and
+  runs when the test changes and by hand. Its first run: about 250 requests a second, a median of 215 ms, a 95th
+  percentile of 270 ms, none failed. That is at full CPU, which the t4g.micro gives only while its CPU credits last;
+  its baseline is 10% of each vCPU.
+- **Usage at a glance** (`scripts/usage-stats.mjs`, in the image too): the number of accounts and trials, what they
+  keep, the share links and the AI apps connected to them, and in how many countries and languages, as counts only.
+  Calls to the MCP endpoint are counted from nginx's access log, which the script's header shows how to do.
+- **A supply chain that can be checked:** the production image is published with an SBOM and SLSA build provenance
+  (BuildKit's, in full), and its provenance is signed through GitHub (`actions/attest-build-provenance`), so
+  `gh attestation verify oci://ghcr.io/aaronfilson/glazecalc:latest --owner AaronFilson` checks where and how it was
+  built. OpenSSF Scorecard rates the repository weekly (`.github/workflows/scorecard.yml`), its findings kept as the
+  run's artifact rather than as code scanning alerts.
+- **Live checks every day**, not only after a deploy: the live site against master's checks, at about a hundred
+  requests, so a fault between deploys is found within a day.
+- **A Permissions-Policy** on every reply: the camera, microphone, location, payment, USB, serial, HID, MIDI and
+  screen capture are off for every page and anything it frames; passkeys, the clipboard and sharing keep their
+  default. Mozilla's HTTP Observatory grades the site A+ (120).
+- **CodeQL**, from a workflow with this project's settings (`.github/workflows/codeql.yml`,
+  `.github/codeql/codeql-config.yml`) instead of default setup, which takes no configuration: the JavaScript and
+  TypeScript and the workflows, on pull requests to master and pushes to it that change code or workflows, and weekly.
+  It leaves out the tests and the messages in 57 languages. Default setup must stay off.
+- **Lighthouse in CI** (`npm run lighthouse`, `scripts/lighthouse.mjs`): four public pages on a production build, on
+  Lighthouse's desktop setting, the median of three runs each. It fails below performance 90, below 100 for
+  accessibility, best practices or SEO, or with layout shift over 0.01. Lighthouse CI is installed apart, from its own
+  lockfile in `scripts/lighthouse/`, like the MCP conformance tools.
+- **The README's numbers are checked against each CI run** (`scripts/readme-numbers.mjs`). The server and Angular
+  suites run with coverage in CI, each job keeps what it measured, and a last job fails the run when the README says
+  more than the run measured, or gives a number in words the check cannot read, and warns when it says much less.
+  The README has badges for the tests, coverage and Lighthouse.
+- **A code of conduct** (the Contributor Covenant), a pull request template with the checks, and forms for something
+  that does not work and for an idea beside the translation form; the New issue page links the security policy.
 - **Famous glazes** (/famous-glazes, docs/famous-glazes.md): a public page per published glaze, from one data file
   each in `data/famous-glazes/`, with the traditional recipe or historic analysis, its unity formula and limits, a
   version from the materials sold in the reader's region (the Target & Solve solver), a button that opens it as a
   trial recipe and a sign-up that comes back to the page. Nothing is published until it meets the publish bar (three
   opened sources, every material in the standard library, no open gaps). İznik is the first: a lead glaze, so it is
   shown as history, with a lead-free version labelled "Calculated, not yet test-fired." Shino (Kamado feldspar alone; no
-  firing temperature is documented, and the page says so) and Oribe followed in round 15, from Japanese sources, in
+  firing temperature is documented, and the page says so) and Oribe followed, from Japanese sources, in
   all 57 languages, their local versions labelled "Calculated, not yet test-fired." Oribe's recipe is the Mie
   Prefecture ceramics testing station's 1976 Oribe for reduction (Kamado feldspar 65, limestone 19, kaolin 15, silica
-  1, copper oxide 5, calcined talc 5; 1250–1280 °C), and its page says that classic Oribe is fired in oxidation
-  (round 17).
+  1, copper oxide 5, calcined talc 5; 1250–1280 °C), and its page says that classic Oribe is fired in oxidation.
   The index is hidden until a glaze is published. The glazes' names and prose are kept per language in the data file,
   and the build writes one file per language (`/i18n/famous-glazes/<code>.json`) so each page stays under the
   prerender's limit. Titles stay short; the search terms go in the description.
+- **A Famous glazes card on the guides list** (/guides), under Reference pages after Standard materials, in every
+  language with that language's own title and lead for the famous glazes (2026-11-07).
 - **A dry SG estimate** (`lib/recipe/density.js`, sources in docs/sources/dry-sg-sources.md). The slurry panel on the
   recipe page now fills in the SG of the dry materials from each material's mineral, its kind or, for a frit, its
   oxides, and the recipe's from them (its weight over the sum of each weight over its SG), saying how it got it and
@@ -32,18 +88,44 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   historical records, Jingdezhen porcelain stones (Sanbaopeng, Nangang) and Longquan zijin soil. A material's source
   can now be of kind `research` (a published study). Commercial colemanite has a second note with Eti Maden's ground
   colemanite specification (limits, not a typical analysis).
+- **Shops in eight more countries** (`lib/regions/suppliers.js`), each read on its own pages as saved in the owner's
+  browsing exports of 2026-11-05 and 2026-11-08: Mexico (CeramiColor), South Africa (Potters Supplies in Randvaal,
+  Cape Pottery Supplies in Somerset West), Croatia (Tapiker, and Artist Vito in Split), Brazil (Arte Brasil Cerâmica),
+  Argentina (Cezart Cerámica, Arte y Fuego in Ituzaingó, Crecer Poles in Buenos Aires), Chile (La Casa del Ceramista,
+  Santiago), Latvia (Keramserviss, Ādaži) and Lithuania (Keramikams.lt, Panevėžys: feldspars, quartz, kaolin, chalk
+  and nepheline syenite in 1 kg packs). Keramserviss sells oxides, kaolin and bentonite, but no feldspar or silica was
+  seen, so the German shop that delivers to Latvia is still listed. A country's list now shows the shops elsewhere that
+  deliver there after its own, not only when it has none, and Malta lists Scarva (Northern Ireland), whose postage
+  page names it. Shops, a country's own or ones that deliver there, are listed for 47 of the 72 regions.
 - **Egypt's shop**: Clay Supply in Fustat (Old Cairo), whose own site lists a kaolin, glazes, oxides and kilns.
+- **The teaching pack in every language** (2026-11-07): /guides/teaching-glaze-calculation in the 55 other languages,
+  translated and reviewed as the other guides were, its safety text back-translated blind. The reviews caught the fix
+  for pinholes, a hold at peak temperature, written as one at the end of the firing in 14 of them.
+  `PARTLY_TRANSLATED_PAGES` is empty, so every copy is offered to search engines as the other guides are. A sum written
+  out in a guide ("28.085 + 2 × 15.999 = 60.083 g") reads left to right on a right-to-left page, and the translations
+  check takes a weight such as 100.086 g for a number, so a language with a decimal comma writes it its own way. The
+  guide now says "Alumina rises down the grid, and silica rises across it" in every language (Thai had it falling), and
+  gives the usual cause of pinholes as a "Gas bubble that did not heal over".
 - **Teaching glaze calculation** (/guides/teaching-glaze-calculation): a seventh guide, a teaching pack of six
   sessions in the order of the Ibaraki Prefectural Industrial Technology Center's published glaze study group
   (cited; Glazecalc is not connected with it): materials and triaxial tiles, the chemistry, reading a unity formula,
   recipe to formula, formula to recipe with Solve for a target, and the clay body and defects. Each session has aims,
   what to prepare, a worked example with 福島長石, whiting, EPK kaolin and silica from the standard library, the steps
   in Glazecalc, a worksheet and Check questions; it ends with a 42-glaze triaxial map and a 24-glaze Seger grid with
-  oxidation and reduction columns. In English and Japanese (the Japanese awaits a native potter's review). A new list,
-  `PARTLY_TRANSLATED_PAGES` in lib/pages.js, offers it to search engines in those two alone; every other language
-  shows the English with the usual notice, canonical to the English and noindex, until it is translated.
+  oxidation and reduction columns. In English and Japanese first (the Japanese awaits a native potter's review), and
+  from 2026-11-07 in every language (above). Until then a new list, `PARTLY_TRANSLATED_PAGES` in lib/pages.js,
+  offered it to search engines in those two alone, every other language showing the English with the usual notice,
+  canonical to the English and noindex; the list is now empty.
+- **A breadcrumb trail on the guides and reference pages** (`client/app/shared/structured-data.ts`,
+  `client/app/shared/breadcrumb.ts`). Each guide's structured data adds a BreadcrumbList (Glazecalc, Guides, the guide,
+  named and addressed in the page's language) in one graph with its Article, as the reference pages had, for search
+  results to show in place of the address. The same trail is also drawn above the title of the
+  guides list and each guide, the materials list and each material, the famous glazes and the cone chart, to the W3C
+  breadcrumb pattern: a labelled navigation list, a link for each step but the current page, and separators drawn by
+  the stylesheet, which a screen reader skips and which turn round on a right-to-left page. Both come from one list of
+  steps, so what a visitor sees and what search engines read cannot differ. In every language.
 - **Each standard material's page in every live language** (docs/prerender-compression-and-material-pages-plan.md,
-  Part B). The 170 material pages are prerendered and offered to search engines in all 57 languages: canonical to
+  Part B). The 182 material pages are prerendered and offered to search engines in all 57 languages: canonical to
   themselves, with hreflang and x-default, in each language's sitemap and with structured data in the language. A
   material whose notes or hazards are not all translated in a language stays noindex there, canonical to the English
   (none is today). `/sitemap.xml` is now a sitemap index of one sitemap per language (`/sitemaps/de.xml`), and IndexNow
@@ -51,7 +133,53 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   starting a trial without asking for a visitor not signed in; below it, "Create a free account" comes back to the page
   after sign-up and after the confirmation email, which is now written in the language of the page the sign-up was
   for; and the beginner guides are linked.
-- **The teaching companion, round 12** (docs/adr/0017-mcp-server.md; MCP server 1.4.0). A new prompt, `teach_me`: a
+- **Two more layouts for the recipe form, Workbench and Guided steps** (`client/app/pages/recipe/recipe-layout.ts`),
+  chosen above the form beside Standard, which stays the default. Each arranges the same parts of the one recipe page,
+  so the chemistry and the saving are the same code. Workbench puts Save and More beside the recipe's title and the
+  unity formula and limits in a side panel that stays in view on a wide screen; on a narrower one the panel follows the
+  recipe, and a bar kept at the top shows the formula in a line, with a button to the panel. The fixes and swaps and
+  the details (date, notes, firing, cost, hazards) are folded. Guided steps shows one step at a time, Recipe, Amounts
+  (the materials, then the additives), Check and Save, numbered in the reader's digits, with Back and Next. A field
+  with a problem opens the fold or step that holds it. The choice is kept in the browser (`recipeLayout`, listed on the
+  privacy page), and `?layout=a`, `b` or `today` picks one for a visit. In every language.
+- **Settings kept in a browser stay until you clear them** (`client/app/core/settings-expiry.ts`;
+  docs/eu-data-plan.md, item 23). Every visit counts as use, and nothing is removed on its own (the owner's rule,
+  2026-11-03). Opening Glazecalc in the same browser after 11 months or more away shows a notice that the settings
+  there, such as the theme and the language, are kept while it is used, with "Clear my settings", which removes them and
+  reloads with the defaults; settings kept with the account are not touched, nor are the sign-in, the trial or the
+  offline copy. A closed translation notice shows again only when its wording changes enough to raise its version. The
+  privacy page says so for each setting it lists, with a row for the record of dates (`settingsDates`). In every
+  language.
+- **Import my data** (account page; `server/routes/import_routes.ts`, `server/lib/import_data.ts`; docs/eu-data-plan.md,
+  item 25): the records of a Download my data file (JSON) brought into the account, from another account or a copy
+  kept. It shows first what the file holds: for each kind of record, how many are new, already there (skipped) or
+  named like one of the account's with other content, and for each of those the person chooses Keep both, Skip or
+  Replace mine, one by one or for all; a replaced record keeps its old version in its history. Settings, prices and
+  materials on hand come in only when ticked; the account, its email, sign-in methods, tokens, share links, history
+  and Trash never do. Ids in the file are never trusted: each record gets a new one, and the links between records are
+  rewritten to them. The whole file is checked before anything is written, and one bad record refuses it with a list
+  of what is wrong. "Undo this import", for 24 hours, removes what it added and puts back what it replaced; an
+  `ImportRun` (`server/models/import_run.ts`) lists the ids before the first record is written, so an import that
+  fails part way is taken back the same way, as MongoDB here runs without transactions. For the web session of an
+  account only, never a trial, token or AI app: one import at a time, 5 an hour, up to 20 MB and 20,000 records a file
+  (Express and nginx take the larger body on these routes alone). In every language.
+- **Search engines are told when pages change** (`scripts/indexnow.mjs`, the last job of the Deploy workflow). Once a
+  production deploy has passed its Live checks, IndexNow (Bing, Yandex, Seznam, Naver) is sent every address in the
+  live sitemaps, 10,000 a request, when the commits since the last one sent change anything a page shows (the client,
+  `lib/`, `data/` or `server/lib/pages.ts`), and nothing when they do not; the last commit sent is kept in the Actions
+  cache. It never fails a deploy: it runs after it, its failure does not fail the run, and it exits 0 whatever IndexNow
+  answers. It refuses any site but production, can be left out of a deploy run by hand, and writes what it did to the
+  job's summary. The site's key is public by design (`lib/indexnow.js`, served at `/<key>.txt`), and the Live checks
+  fetch it.
+- **A link preview image in each language** (`scripts/og-images.mjs`, `lib/og-images.json`): 1200 × 630, the logo and
+  the home page's heading in the language beside a photo of fired cone packs, drawn by Chromium so that right-to-left
+  text, India's scripts and Nastaliq are shaped as a browser shapes them; a letter missing from the app's fonts stops
+  the script rather than drawing an empty box. Each page names its language's image in `og:image` and `twitter:image`,
+  with its alt text in the language (the English image for a page shown in English), and each file is named for its
+  content's hash, so a changed heading is a new address that link previews fetch again. The images are checked in
+  (`npm run og-images`, through Docker on Windows and macOS); a server test checks their sizes and names, and the Live
+  checks fetch the English and German ones.
+- **The teaching companion, continued** (docs/adr/0017-mcp-server.md; MCP server 1.4.0). A new prompt, `teach_me`: a
   short lesson on any glaze topic at the learner's level (new, some, experienced), with up to two guide sections
   attached, one small experiment with one tool, and John Britt's videos linked by his titles with credit only when the
   topic matches a unit of the course companion (`matchTopic`); otherwise no video is named. `compare_recipes` also
@@ -60,7 +188,17 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   (a default the owner is to confirm), Stull regions, cautions on one side only and cone fit. `vary_material` adds
   each tile's flux ratio and, in its trend, the first tile with a new caution and the first whose cone fit changes.
   Both tools now declare an output schema. Assistants only: no change on the website.
-- **Latin American Spanish** (docs/translations/es-419.md): the app, the emails and all five guides, live at
+- **Nigeria, Uganda, Ecuador, Colombia, Costa Rica, Uruguay, Paraguay, Guatemala, Rwanda, Zimbabwe, Botswana, Côte
+  d'Ivoire and Cameroon as regions** (2026-11-02), each in the languages it reads, all already offered: who
+  to call, each number read on an official page (Guatemala has no single one, so CONRED's two fire and rescue numbers
+  are given), Colombia's national toxicology line (018000 916012, free, day and night, for the public too), the only
+  poison line among them, the health ministries but Guatemala's, Zimbabwe's and Côte d'Ivoire's, whose sites could not
+  be confirmed, and each currency. All fire by temperature and list the US materials until you choose otherwise; no
+  silica limit, food rule or shop is shown for them. Nigeria is the first region for Hausa, Yoruba and Igbo, so their
+  pages are written for it, and Ecuador the first for Quechua; Uganda reads Swahili beside English, and Rwanda, Côte
+  d'Ivoire and Cameroon French. Tanzania, Ethiopia, Peru, Bolivia and seven more wait, as a region must show an
+  emergency number read on an official page. The new safety text is in every language. That makes 72 regions.
+- **Latin American Spanish** (docs/translations/es-419.md): the app, the password emails and all five guides, live at
   `/es-419/…`, written for Mexico first, with the Southern Cone's forms in the style sheet's notes. Mexico, Argentina
   and Chile now read it (Spain keeps Spain's Spanish), and a browser asking for Spanish of the Americas (es-MX, es-AR …)
   gets it, as does a United States browser's Spanish (es-US); a bare es, es-ES and es-GQ keep Spain's, which stays
@@ -68,11 +206,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   from a sourced glossary in nine parts, reviewed in six groups, made consistent and back-translated blind in two
   halves. The reviews turned 16 places where "should" had become "must" back into advice, and rewrote a garbled
   sign-up notice.
-- **Brazilian Portuguese** (docs/translations/pt-BR.md): the app, the emails and all five guides, live at `/pt-BR/…`,
+- **Brazilian Portuguese** (docs/translations/pt-BR.md): the app, the password emails and all five guides, live at `/pt-BR/…`,
   by the same process, after the owner read its sign-up notice and approved the standard one. Brazil now reads it, and
   a browser asking for pt-BR gets it; Portugal, Angola and Mozambique keep Portugal's Portuguese. The language picker
   lists both under "Latin America".
-- **Swahili and Amharic** (docs/translations/sw.md, am.md; wave L2): the app, the emails, all five guides and the
+- **Swahili and Amharic** (docs/translations/sw.md, am.md; wave L2): the app, the password emails, all five guides and the
   reference pages (cone chart, list of materials, each material's page), live at `/sw/…` and `/am/…`, by the same
   process, with the safety text back-translated blind. Both carry the plain notice, as Irish and Maltese do: AI
   translates them less well than most, so the notice says so, points to the English, and a line of it stays on every
@@ -80,31 +218,55 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   0–9, Gregorian dates and the 24-hour clock. Kenya, which already listed Swahili, now offers it; the language picker
   has an "Africa" group for both.
 - **Afrikaans, Hausa, Yoruba, Zulu, Igbo, Somali and Quechua** (docs/translations/af.md, ha.md, yo.md, zu.md, ig.md,
-  so.md, qu.md; waves L3 and L4): the app, the emails, all five guides and the reference pages, live at `/af/…`,
+  so.md, qu.md; waves L3 and L4): the app, the password emails, all five guides and the reference pages, live at `/af/…`,
   `/ha/…`, `/yo/…`, `/zu/…`, `/ig/…`, `/so/…` and `/qu/…`, by the same process, with the safety text back-translated
   blind. Afrikaans carries the standard notice; the other six the plain notice. Quechua is Southern Quechua
   (Cusco-Collao) in Peru's official alphabet, with Spanish loans for the glaze terms, and had the owner's extra
   review. South Africa, which already listed Afrikaans and Zulu, now offers them; the picker's "Africa" group lists
-  the six and "Latin America" Quechua. Nigeria, Peru, Bolivia and Ecuador are not regions yet. The README counts 57
-  languages.
+  the six and "Latin America" Quechua. Nigeria and Ecuador became regions on 2026-11-02 (above); Peru and Bolivia are
+  not regions yet. The README counts 57 languages.
 - **Mexico, Brazil, Argentina, Chile, South Africa, Kenya and Ghana as regions**, in English and the languages
   already offered: who to call, each read on an official page (Brazil's and Argentina's national poison lines, South
   Africa's Poisons Information Helpline with its own hours), the health ministries, each currency, and Orton cones
-  in °C for Mexico, Brazil and South Africa. No silica limit, food rule or shop is shown for them yet. Brazilian
-  Portuguese, Latin American Spanish, Quechua, Swahili, Amharic, Afrikaans, Hausa, Yoruba, Zulu, Igbo and Somali are
-  known but not offered, ahead of their waves; the language picker has a "Latin America" group for the first three.
-  Colombia, Peru, Nigeria and Ethiopia wait for an emergency number confirmed on an official page.
+  in °C for Mexico, Brazil and South Africa. No silica limit or food rule is shown for them; all but Kenya and Ghana
+  have since had shops listed (above). Brazilian Portuguese, Latin American Spanish, Quechua, Swahili,
+  Amharic, Afrikaans, Hausa, Yoruba, Zulu, Igbo and Somali were known but not offered, ahead of their waves (all live
+  since: above); the language picker has a "Latin America" group for the first three. Peru and Ethiopia wait for an
+  emergency number confirmed on an official page; Colombia and Nigeria became regions on 2026-11-02 (above).
 - **The cone chart, the list of standard materials and each material's page can be translated**, language by
-  language (round 10, stream B, first part; nothing visible changes yet: no language is switched on). A language in
-  `REFERENCE_LANGUAGES` (lib/regions/languages.js, the `reference: true` flag) gets `/<code>/cones` and
+  language (no language was switched on with it, and every language is since: above).
+  A language in `REFERENCE_LANGUAGES` (lib/regions/languages.js, the `reference: true` flag) gets `/<code>/cones` and
   `/<code>/materials` prerendered, in the sitemap and with hreflang among those languages alone; the others keep the
-  English with the notice, noindex and no hreflang. A material's page is drawn in the browser in every language but
-  English and stays English for search engines. Its notes and hazards come from the translations the signed-in
-  library already shows (`records/`), through a slim file made at each build (`scripts/material-i18n.mjs`, as the
-  advice page has), and a note with no translation shows in English, marked `lang="en"`, instead of the page's
-  notice. The cone charts' three notes, which carry the advice to set a witness cone, and the "Theoretical formula"
-  label are new keys in `records/en.json` for the translation waves. `npm run check:i18n` wants `reference/` and
-  `records/` complete in each language the pages are shown in.
+  English with the notice, noindex and no hreflang. A material's page was drawn in the browser in every language but
+  English and stayed English for search engines, until Part B prerendered it in every language (above). Its notes and
+  hazards come from the translations the signed-in library already shows (`records/`), through a slim file made at
+  each build (`scripts/material-i18n.mjs`, as the advice page has), and a note with no translation shows in English,
+  marked `lang="en"`, instead of the page's notice. The cone charts' three notes, which carry the advice to set a
+  witness cone, and the "Theoretical formula" label are new keys in `records/en.json` for the translation waves.
+  `npm run check:i18n` wants `reference/` and `records/` complete in each language the pages are shown in.
+- **Offline mode, stages 3 and 4: your records, and changes made offline** (docs/adr/0028-service-worker.md, amended
+  2026-11-02 and 2026-11-03). An account (never a trial) can turn on "Keep my records on this device" on the account
+  page, on each device, off by default. Its recipes, materials, additives, firing logs, notes, settings and prices are
+  then kept in the browser's IndexedDB (`client/app/core/offline-records.ts`), fetched in full when it is turned on and
+  at most once a day after, and shown from that copy only when the network fails, under a banner with the date it was
+  saved. A change made with no network waits on the device (`client/app/core/outbox.ts`) and the page goes on at
+  once, a new record with a temporary id; each such record says "Waiting to save", and the banner counts them. Once
+  the network is back the changes are sent in order (on Chromium, Background Sync wakes the page), each with an
+  `Idempotency-Key`, so one sent twice is made once (`server/models/idempotency.ts`), and a change or removal with
+  `If-Match` and the version it was made from. Every record an account owns now has that version (`rev`), and every
+  route that changes, removes or undoes one takes `If-Match`: a record that has moved on is answered 409
+  `record-conflict` with the record as it is now, or 404 `record-gone`; without it the last write wins, as before, so
+  tokens and assistants work as they did (the MCP update tools take a `rev` too). A note changed in both places keeps
+  both texts; for any other record the person chooses (`client/app/core/outbox-conflict.dialog.ts`): Save mine as a
+  copy (the default), Keep mine or Keep theirs, or Save as new or Discard my changes when it is gone. Signing out asks
+  whether to keep the copy and the waiting changes on the device (Keep is the default) or delete them; another account
+  signing in there never sees or sends them, and they come back when their account signs in again. The account page
+  clears them (Clear offline data), sets how long they are kept while Glazecalc is not opened there (until deleted, by
+  default, or 1 week to 1 year), and on an iPhone or iPad, outside the Home Screen app, says that Safari may remove
+  them after 7 days without use. An account deleted elsewhere is offered an export of its copy before anything is
+  cleared. The Trash, the shelf and the token pages say "Not available offline"; undo, sharing,
+  firing links and import still need the network. In every language, with the privacy page's rows for the copy and
+  the waiting changes.
 - **Offline mode, stages 0 to 2** (docs/adr/0028-service-worker.md; the owner's choices, 2026-10-31). The app, the
   guides, the safety pages, the cone chart and the materials open with no network, on a phone that has opened the
   site before: Angular's service worker keeps the app and an offline page (`app-shell.html`, with one style nonce for
@@ -118,9 +280,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   page's version at the next open if ignored. A menu button, "Install app", appears where Chrome or Edge offers
   it, and never a popup. `safety-worker.js` is the kill switch (`KILL_SWITCH` in `scripts/service-worker.mjs`,
   steps in `deploy/README.md`). Urdu text shows at once in the device's font while Nastaliq is on its way (a test
-  holds the file back 3 s). The five new messages (`offline.*`) are in English only until the next wave. Records on
-  the phone (stage 3) and offline editing (stage 4) are not part of this.
-- **Nepali and Sinhala** (docs/translations/ne.md, si.md): the app, the emails and all five guides, live at `/ne/…`
+  holds the file back 3 s). The five new messages (`offline.*`), in English at first, are in every language. Records
+  on the phone and offline editing came later (above).
+- **Nepali and Sinhala** (docs/translations/ne.md, si.md): the app, the password emails and all five guides, live at `/ne/…`
   (Devanagari), written for Nepal, and `/si/…`, written for Sri Lanka, each with that country's law, poison lines and
   number grouping, and the standard notice (the owner's choice, 2026-10-30; Sinhala's plain notice is turned off, so
   no language of waves I2 to I4 has it). Nepali shows Devanagari digits by default, as CLDR has them (the owner kept
@@ -132,7 +294,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   rows, which added words the English does not have, are fixed. The home-safety guide keeps the blunt title "Don't
   poison your family" in both. With them every language Glazecalc knows is offered. Native reviewers are wanted (the
   Native check rows in each style sheet). The README counts 46 languages.
-- **Punjabi and Odia** (docs/translations/pa.md, or.md): the app, the emails and all five guides, live at `/pa/…`
+- **Punjabi and Odia** (docs/translations/pa.md, or.md): the app, the password emails and all five guides, live at `/pa/…`
   (Gurmukhi) and `/or/…`, written for India, with the standard notice (the owner's choice, 2026-10-30), under the same
   rules as India's other languages (the potters' loanword first, the Latin full stop and never the danda, 0–9 in the
   text; the page shows 0–9 by default, Gurmukhi or Odia digits only when chosen). Each was translated from a sourced
@@ -143,7 +305,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   The home-safety guide keeps the blunt title "Don't poison your family" in both (Punjabi's softened title is fixed
   in its style sheet). Native reviewers are wanted (the Native check rows in each style sheet). The README counts 44
   languages.
-- **Telugu, Gujarati and Malayalam** (docs/translations/te.md, gu.md, ml.md): the app, the emails and all five guides,
+- **Telugu, Gujarati and Malayalam** (docs/translations/te.md, gu.md, ml.md): the app, the password emails and all five guides,
   live at `/te/…`, `/gu/…` and `/ml/…`, written for India, with the standard notice, under the same rules as Tamil,
   Marathi and Kannada (the potters' loanword first, the Latin full stop, 0–9 in the text; the page shows 0–9 by
   default in all three). Each was translated from a sourced glossary (308 to 332 rows), reviewed in six groups, made
@@ -162,7 +324,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   two layout faults, now fixed for every language: the hidden "Skip to content" link, when its text took two lines
   on a phone, hung over the logo, and the firing card's "A range" box could not wrap and made the recipe page
   scroll sideways.
-- **Tamil, Marathi and Kannada** (docs/translations/ta.md, mr.md, kn.md): the app, the emails and all five guides, live
+- **Tamil, Marathi and Kannada** (docs/translations/ta.md, mr.md, kn.md): the app, the password emails and all five guides, live
   at `/ta/…`, `/mr/…` and `/kn/…`, written for India, with the standard notice. Each uses the studio potters' loanword
   first with the textbook term in brackets at its first use, ends sentences with the Latin full stop and writes 0–9;
   the page shows numbers as CLDR has them: Marathi in Devanagari digits, Tamil and Kannada in 0–9, Kannada grouped in
@@ -177,7 +339,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   (`lib/recipe/paste.js`), in the words of each language's glossary and recipe labels. Headings are compared in NFKC,
   without Arabic vowel marks or tatweel, with Urdu and Arabic letter forms taken as one, so a heading typed on either
   keyboard matches.
-- **Urdu and Bengali** (docs/translations/ur.md, bn.md): the app, the emails and all five guides, live at `/ur/…`
+- **Urdu and Bengali** (docs/translations/ur.md, bn.md): the app, the password emails and all five guides, live at `/ur/…`
   (right to left, in Nastaliq) and `/bn/…`, with the standard notice. Urdu is written for Pakistan: آپ, the potters'
   loanwords (گلیز, فرٹ), sentences ending with ۔, Urdu's own letters (ی ک ہ) and the digits 0–9, as Pakistan writes
   them. Bengali is written for Bangladesh, and West Bengal reads the same page: আপনি, পানি, sentences ending with the
@@ -234,7 +396,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   reads each one back, and saves it through Glazecalc only after a clear yes, never inventing an amount and
   never calling a change saved while it waits for approval. The skill is in `skills/glazecalc-dictation/`,
   served as a ZIP at `/downloads/glazecalc-dictation.zip` (packed at build time by `scripts/build-skills.mjs`)
-  and linked from `/assistants` with how to install it (English for now; the page stays out of search). For
+  and linked from `/assistants` with how to install it (in English at first, now in every language). For
   assistants without skills, the MCP server has it as the prompt `dictation` and the resource
   `glazecalc://skills/glazecalc-dictation`. Three new MCP write tools, through the same permission, limits and
   confirm-changes step as the others: `create_firing_log`, `add_firing_rows` (at most 500 rows, the log kept
@@ -245,7 +407,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   (docs/integrations/directories.md). The course prompt `glaze_course_lesson` may save with them too: a
   firing log of the test firing, a recipe's result in it, or a note `about` a recipe or firing log, each
   read back first and saved only on a yes.
-- **Arabic and Hindi** (docs/translations/ar.md, hi.md): the app, the emails and all five guides, live at
+- **Arabic and Hindi** (docs/translations/ar.md, hi.md): the app, the password emails and all five guides, live at
   `/ar/…` (right to left) and `/hi/…`. Arabic is Modern Standard Arabic for the Arab countries, its terms chosen from Arabic
   ceramics sources (Egyptian, Iraqi, Sudanese and Libyan university papers, suppliers, Oman's GHS guide), with all six
   plural forms and impersonal instructions; Hindi uses आप, the potters' loanwords with the formal term in brackets, and
@@ -269,10 +431,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   panel and the hazards. "Open as a new recipe" puts it on the recipe page, not saved yet. It runs
   on the same engine as Match with what I have (`solveTarget` in `lib/recipe/solve.js`). The MCP
   server has it as `solve_target`, a public tool: the materials by name, or `onHand` for a caller
-  that may read the shelf. English only.
+  that may read the shelf. In English at first, now in every language.
 - **A public page for each standard material, a list of them, and a cone chart** (docs/seo-plan.md,
   item 17), the pages potters search for. `/materials/<name>` (for example
-  `/materials/ferro-frit-3134`) says what the library says of one of its 170 standard materials and
+  `/materials/ferro-frit-3134`) says what the library says of one of its 182 standard materials and
   nothing more: its kind, formula, other names, maker, where it is sold, similar materials (linked where
   they have a page), notes, source and status; its oxide analysis and the unity contribution Glazecalc works
   out from it (the same code the recipe page uses), with its equivalent weight, fired weight and loss on
@@ -283,10 +445,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   cones and scale first; the firing guide, the guides list and the safety guides link to them. The addresses are
   apart from the signed-in `/material` page of your own materials. Each is prerendered, in the sitemap, with
   its own title, description, canonical address and structured data (a web page with its trail), is
-  readable with JavaScript off, and has no sideways scroll at 320 px. English only for now: they are in
-  `ENGLISH_ONLY_PAGES`, so other languages' addresses show the English with a notice and are not indexed, only
-  the English is in the sitemap, and the build renders them in English alone. Their words are in
-  `client/public/i18n/reference/en.json`, for a later translation wave.
+  readable with JavaScript off, and has no sideways scroll at 320 px. In English at first: they were in
+  `ENGLISH_ONLY_PAGES`, so other languages' addresses showed the English with a notice and were not indexed, and
+  only the English was in the sitemap. Their words, in `client/public/i18n/reference/`, are in every language since,
+  and every language's pages are prerendered and indexed (above).
 - **Higher cones, for porcelain** (docs/adr/0021-recipe-firing.md, amended
   2026-10-20). Orton cones have a temperature to cone 15 (1431 °C, Orton's older chart for large
   cones at 150 °C an hour, the only Orton figure above 14 we found); cones 16 to 42 are taken
@@ -297,7 +459,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   cone 12 and up" (1320 °C and hotter, SK 14 up): the published limits stop at cone 10, so no
   set's figures are checked there and the panel says why; the other checks still run. The band
   can be chosen by hand. The firing guide's cone chart goes to cone 14 and says what Orton
-  publishes past it. English only.
+  publishes past it. In English at first, now in every language.
 - **A Digits setting, and digits that follow each country** (docs/i18n-plan.md, Digits; groundwork for
   the Indian subcontinent and the Arabic-speaking countries). Settings offers digits as usual where you
   are (the default), Western digits 0–9, or the language's own digits where it has them, each with a
@@ -311,16 +473,16 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   numbers may now use Indian digit groups (1,00,000 and 12,34,567.5), the Arabic percent sign (٪) and a
   percent sign before or after (5 %, %5), and may carry the marks `Intl` writes to keep a number's
   direction in Arabic text. The translations check reads all of these and asks translations to write
-  0–9. Arabic pages will be written for Egypt, Hindi and Tamil for India, Urdu for Pakistan and Bengali
-  for Bangladesh once those are regions; nothing a live language shows changes. Kept with the account
-  (or trial) like the other settings. English only for now.
-- **Groundwork for Arabic and Hindi** (not offered yet): Hindi joins Arabic as a known language (its pages exist,
+  0–9. Arabic pages are written for Egypt, Hindi and Tamil for India, Urdu for Pakistan and Bengali
+  for Bangladesh, now that those are regions (below); nothing a language live then showed changed. Kept
+  with the account (or trial) like the other settings. In English at first, now in every language.
+- **Groundwork for Arabic and Hindi** (both live since: above): Hindi joins Arabic as a known language (its pages exist,
   unindexed), both with the standard notice, and the translation prompts know them: Modern Standard Arabic for every
   Arab country, right to left, with six plural forms, and Hindi with आप and the potters' loanwords. Arabic's style
   sheet and glossary (331 rows) are in `docs/translations/ar.md`, from an Egyptian supplier, an Iraqi glaze paper,
   Algeria's Arabic Journal officiel and the Microsoft Arabic style guide, with the rows for a native potter marked.
-- **Ready for Arabic, Urdu, Hindi and Bengali** (docs/i18n-plan.md, "Right to left, as built"; no new
-  language is offered yet). Two pseudo-locales test it on every page: `/ar-XD/` writes each
+- **Ready for Arabic, Urdu, Hindi and Bengali** (docs/i18n-plan.md, "Right to left, as built"; all four
+  live since: above). Two pseudo-locales test it on every page: `/ar-XD/` writes each
   message in Arabic letters, right to left, with all six of Arabic's plural forms and Arabic-Indic
   digits, so the browser's own bidirectional rules run as they will for Arabic; `/hi-XE/` writes
   them in Devanagari, stacked and marked above and below. On a right-to-left page, values with
@@ -334,7 +496,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   never spaced out or slanted; Urdu's Nastaliq is served with the app (Noto Nastaliq Urdu, OFL, cut
   to Urdu's letters, 193 kB) and fetched by Urdu pages only. Emails in a right-to-left language
   start each line with a right-to-left mark. The Linux browser tests' image adds four of Noto's
-  fonts (Naskh Arabic, Sans Arabic, Sans Devanagari, Sans Bengali). English only.
+  fonts (Naskh Arabic, Sans Arabic, Sans Devanagari, Sans Bengali). Its new text, in English at first, is in every
+  language.
 
 - **Confirm before changes** (docs/adr/0025-confirm-before-changes.md). On Connected apps, an
   account can choose that changes from assistants, apps and access tokens wait for its approval:
@@ -357,7 +520,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   waiting changes; a confirmed removal counts once against its token's removals. A personal token
   can be made with "Changes from this token need no confirmation". Asking less sends the owner an
   email; a change waits 30 minutes at most, and what it would do is removed once it is decided.
-  `get_my_settings` shows the choice. English only.
+  `get_my_settings` shows the choice. In English at first, now in every language; the email is in English in the 25
+  languages added from Arabic on, which have only the password emails.
 - **The consent page for AI apps, and a notice for each connection** (docs/adr/0024-authorization-server.md).
   An app such as Claude or ChatGPT that asks to connect sends the person to `/connect/<id>`, after
   signing in if needed (the sign-in page now takes `?next=`, this site's pages only). It shows the
@@ -368,7 +532,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   unconfirmed emails are told why they cannot connect. Each new connection emails the account,
   naming the app, its host and whether it can change records, with a link to Connected apps,
   which now marks self-described apps. The `/assistants` page explains the two ways to connect.
-  The consent API reports a redirect's host for http and https only. English only for now.
+  The consent API reports a redirect's host for http and https only. In English at first, now in every
+  language; the notice email is in English in the 25 languages added from Arabic on, which have only the
+  password emails.
 - **The shelf over REST, with one Undo.** A token that can change records may add or remove one
   material at a time (`POST /api/shelf/add` and `/remove`, by `key` or `name`) and put back the
   shelf as it was before the last change (`POST /api/shelf/undo`, one step); `GET /api/shelf`
@@ -376,7 +542,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   `add_to_shelf` and `remove_from_shelf`, keep the earlier list for that Undo too; a new MCP tool,
   `undo_shelf_change`, puts it back. A token's shelf changes are written to the activity log, and
   the earlier list goes with the account's export and deletion. The website has no Undo button
-  for it yet. English only.
+  for it yet. In English at first, now in every language.
 - **Blend tiles for assistants and a chemistry table on the Blends page.** A new public MCP tool,
   `blend_recipes`, works out the tiles of a line blend between two recipes (2 to 11 steps) or a
   triaxial blend between three (2 to 6 rows): each tile's shares, its recipe in percent, its key
@@ -385,7 +551,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   is a calculation, not a test result. On the Blends page, a closed "Chemistry per tile" table
   shows silica to alumina, boron, expansion, the number of cautions and, when a recipe has a
   firing, the cone fit. The comparison of two unity formulas moved to `lib/recipe/compare.js`, so
-  the app and the server share it. English only for now.
+  the app and the server share it. In English at first, now in every language.
 - **An OAuth authorization server for AI assistants** (docs/adr/0024-authorization-server.md), the
   server side: apps such as Claude and ChatGPT will connect to a person's records by asking on the
   website, once the consent page ships. oidc-provider 9.12.2 under `/oauth/`, with its metadata at
@@ -412,7 +578,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 /api/connections`: the web session only, every query the account's own. A Trash entry now
   records which token moved it (`tokenId`, from the REST routes and the `move_to_trash` tool);
   older entries are matched through the activity log. The privacy notice says the activity also
-  shows on Connected apps. English only for now.
+  shows on Connected apps. In English at first, now in every language.
 - **A companion to John Britt's free glaze course** (/guides/learn-with-john-britt): a sixth
   guide, in English only, with one section for each of 12 units of his free online Glaze Course on
   YouTube. Each unit links his videos by the titles he gave them (never copied, retold or
@@ -438,7 +604,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   calls a glaze a pass, and every note shows its sources and says it is a guide, not a test. Also
   `coneFit` in the MCP tools `get_recipe` and `check_limits` (with a firing); not on print or
   shared pages. Katz's rule now starts from his own 1305 °C for cone 10 (was 1300 °C), so the "too
-  little boron" check and replacing lead ask for 0.01 more boron. English only for now.
+  little boron" check and replacing lead ask for 0.01 more boron. In English at first, now in every language.
 - **Sign in with Microsoft** (docs/adr/0023-microsoft-sign-in.md), beside Google and GitHub, for
   personal and work or school accounts, with Microsoft's own button. Accounts are found by the
   Microsoft tenant and the account's id, never by email: Microsoft's email is not taken on trust,
@@ -446,8 +612,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   and an email another Glazecalc account has is refused, to be linked from the account page once
   signed in. Confirming a change on an account without a password asks Microsoft for the password
   again. Off until its settings exist (deploy/README.md); the privacy notice names Microsoft. The
-  provider messages and texts that now name Microsoft show in English until the next translation
-  round.
+  provider messages and texts that now name Microsoft, in English at first, are in every language.
 - **Access tokens that can change records.** On the account page a token can now be made to
   "Read only" or to "Read and change" (still confirmed with the password and, with two-step
   sign-in on, a second step); one that can change records lasts at most 90 days, and the notice
@@ -461,15 +626,16 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   minute and 5,000 a day per account (apart from reads), each token still moves at most 100
   records an hour to the Trash, and an account keeps at most 20,000 earlier versions (the oldest
   go first, never the one from before a token's changes). The "Use Glazecalc from your AI
-  assistant" page says how to use such a token safely. English only for now.
+  assistant" page says how to use such a token safely. In English at first, now in every language; the
+  notice email is in English in the 25 languages added from Arabic on, which have only the password emails.
 
 - **Terms of use** at `/terms`, linked from every page's footer: Glazecalc is free for your own
   glazes, records and learning, as a hobby, for teaching or in business; the code stays under the
   MIT License, and the terms are for the site. They ask users not to break the shared server
   (no attacks, floods, scraping, getting round limits, spare accounts or unwanted email), welcome
   scripts and AI assistants with an access token, say the site may refuse requests or close an
-  account that puts it at risk, and that it is provided as is. English only for now; the next
-  translation round brings the other languages.
+  account that puts it at risk, and that it is provided as is. In English at first; the next
+  translation round brought the other languages.
 
 - **A recipe states its firing** (docs/adr/0021-recipe-firing.md): under the notes, the cone as you give it in Orton, SK
   or a temperature (stored as entered, never converted), or a claimed range with a tick for each cone you have actually
@@ -602,7 +768,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   kept: no name, picture or provider token. A trial on the browser comes along into the account.
   The export lists the linked providers, and the privacy notice and the record of processing say
   what is kept. The provider's one-time code and state stay out of nginx's access log and the
-  app's error log (`enable-https.sh` is run again for the nginx part, deploy/README.md). New English text only, for the next translation wave.
+  app's error log (`enable-https.sh` is run again for the nginx part, deploy/README.md). Its text, in English at first,
+  is in every language; its emails are in English in the 25 languages added from Arabic on, which have only the
+  password emails.
 - **Access tokens** ([integrations plan](docs/integrations-plan.md), Phase 3): the account page's
   new "Access tokens" section makes a token for your own AI assistant or script, which can read
   your recipes, materials, notebook and firing logs but change nothing. Making one asks for the
@@ -611,7 +779,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   Each stops working after 7, 30, 90 or 365 days (30 unless chosen), up to 10 at once, and can be
   revoked one by one or all together. An email says when one is made and, 7 days ahead, when one
   is about to stop working. After a password change the page lists the tokens still working,
-  with "Revoke all". Trials cannot make tokens. In English for now.
+  with "Revoke all". Trials cannot make tokens. In English at first, now in every language; its emails are in
+  English in the 25 languages added from Arabic on, which have only the password emails.
 - **Glazecalc's tools for AI assistants** ([ADR 0017](docs/adr/0017-mcp-server.md)): `POST /mcp`
   serves the Model Context Protocol, for Claude Code, VS Code, Cursor, Gemini CLI and others. With
   no account: search the library, a material's data, a recipe's unity formula, the limit checks,
@@ -625,8 +794,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   and 5,000 per account with a token) and 10 substitutions or matches a minute; the privacy page
   says so. CI checks the endpoint with the official MCP conformance suite and the MCP Inspector
   (`npm run test:mcp`), and `server.json` lists it in the MCP Registry as
-  `com.glazecalcapp/glazecalc` once the owner publishes it. A new page, "Use Glazecalc from your AI assistant" (`/assistants`, English
-  for now), shows how to add it.
+  `com.glazecalcapp/glazecalc` once the owner publishes it. A new page, "Use Glazecalc from your AI assistant"
+  (`/assistants`, in English at first, now in every language), shows how to add it.
 - **The Trash and Undo.** Removing a recipe, material, note or other record moves it to the Trash,
   where it waits 30 days; the removal notice has Undo, and the Trash page puts records back, deletes
   them for good or empties the Trash. Each saved change keeps the version before it (the last 20,
@@ -638,7 +807,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   password reset or "Sign out everywhere".
 - **A full Content-Security-Policy from nginx** (`default-src 'self'`), on top of the app's
   header and the build's `<meta>` policy; the e2e check loads every page under all three.
-- **Groundwork for Indonesian, Vietnamese and Thai** (not offered yet): the three are known languages (their pages exist, unindexed), with style sheets and glossaries in `docs/translations`, prompts for their translation, and Thai dates in the Gregorian calendar until a Calendar setting exists. The landing page's small heading no longer spaces out Thai letters.
+- **Groundwork for Indonesian, Vietnamese and Thai** (all three live since: below): the three are known languages (their pages exist, unindexed), with style sheets and glossaries in `docs/translations`, prompts for their translation, and Thai dates in the Gregorian calendar until the Calendar setting (below) came. The landing page's small heading no longer spaces out Thai letters.
 - **Two-step sign-in**, optional, on the account page ([ADR 0014](docs/adr/0014-two-step-sign-in.md),
   [plan](docs/mfa-plan.md)). An authenticator app (a QR code or a key to type), passkeys (named,
   renamed and removed, up to ten) and ten recovery codes, shown once. Signing in then takes the
@@ -770,7 +939,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   Orton numbers are never turned into each other. The new guide section is translated into every
   language.
 - **Japan as a region** (in Japanese or English). It fires by SK cones and reads glaze density in
-  degrees Baumé until you choose otherwise, and lists the US materials until Japan's own are added.
+  degrees Baumé until you choose otherwise, and listed the US materials until Japan's own were added (its own
+  library since: Changed, below).
   The guides give, each from an official page with its date:
   - **Who to call:** 119, and the Japan Poison Information Center's two public lines (Osaka and
     Tsukuba, 24 hours, free), which take only acute poisoning that has happened, not long-term
@@ -782,8 +952,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - **Lead and cadmium** in the law's own units: µg/cm² for flat ware, three sizes and cooking ware
     in µg/mL, each a most.
   - **Three shops** selling raw glaze materials, by their own names.
-- **Türkiye as a region** (in English for now). It fires by temperature and reads glaze density as
-  specific gravity until you choose otherwise (Orton cones and Baumé are a setting away), and lists
+- **Türkiye as a region** (in English at first, in Turkish since: above). It fires by temperature and reads glaze
+  density as specific gravity until you choose otherwise (Orton cones and Baumé are a setting away), and lists
   the EU's materials. The guides give, each from an official page with its date:
   - **Who to call:** 112 for every emergency service, and the National Poison Information Centre
     (UZEM) on 114, 24 hours, every day.
@@ -822,7 +992,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
     binding 0.025 mg/m³. The Philippines' limit could not be read, and the page says so.
   - **Lead and cadmium:** Indonesia's 2026 limits, with the third of three tests held to them, and
     Thailand's, all in mg/L. China's could not be read, and Hong Kong has none of its own found.
-  - **Shops:** none was found in any of the five, and the page says so.
+  - **Shops:** none was found in any of the five at first; Hong Kong, Thailand and the Philippines have some since
+    (see Changed), and China's and Indonesia's pages say none was found.
 - **A Calendar setting.** Dates are shown in the Gregorian calendar by default everywhere, Thai pages
   too; Settings offers the Thai Buddhist era (2569) and Japanese eras (令和8年) for readers who want
   them, each with a sample date. Every date the app shows follows it (firing logs, recipe dates,
@@ -837,7 +1008,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   weight. They are listed as sold in Japan (the library's regions gain JP), so the local-equivalents
   guide offers their closest match elsewhere. Mikumo feldspar (Digitalfire's analysis only) and
   natural ashes (no analysis found) are not added.
-- **Vietnam as a region** (in English until Vietnamese is translated), firing by temperature until
+- **Vietnam as a region** (in English at first, in Vietnamese since: above), firing by temperature until
   you choose otherwise, with the US materials, prices in dong, and numbers and dates as vi-VN.
   - **Who to call:** 115 for an ambulance, with 113 (police) and 114 (fire). Official government
     pages list the three numbers but not what each is for, so the roles follow Circular 22/2014 as
@@ -850,10 +1021,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
     read, and the page says that too.
   - **Shops:** none was found, and the page says so.
 - **India, Pakistan, Bangladesh, Egypt, the United Arab Emirates, Morocco and Algeria as regions**
-  (docs/south-asia-mena-plan.md), in English until their languages are translated; French pages
+  (docs/south-asia-mena-plan.md), in English at first and in their own languages since (above); French pages
   show Morocco's and Algeria's too. India fires by Orton cones, the others by temperature, until you
   choose otherwise; all list the US materials, read °C and specific gravity, and price in their own
-  money (rupees, taka, pounds, dirhams, dinars). Arabic pages, not offered yet, are written for Egypt.
+  money (rupees, taka, pounds, dirhams, dinars). Arabic pages, offered since (above), are written for Egypt.
   The guides give, each from an official page with its source and date, and leave out what could not
   be checked:
   - **Who to call:** India 112, and the National Poisons Information Centre at AIIMS (1800 116 117,
@@ -864,14 +1035,16 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
     on 0801 000 180 or 05 37 68 64 64, both linked; Algeria 14 for civil protection. Where no public
     poison line could be confirmed, the health ministry is linked, except the UAE's and Algeria's, whose
     sites could not be read. Abu Dhabi's poison service is not shown.
-  - **Silica:** no limit is shown for any of them. For India the page says each state sets its own
-    under the 2020 OSH Code, and links DGOSH; India's dust masks are FFP2 and FFP3 (IS 9473).
+  - **Silica:** no national limit is shown for any of them. For India the page says each state sets its own
+    under the 2020 OSH Code (two states' limits since: above), and links DGOSH; India's dust masks are FFP2 and
+    FFP3 (IS 9473).
     Bangladesh links its factories inspectorate.
   - **Lead and cadmium:** Algeria's order of 16 January 2019, the EU directive's limits, with its rule
     for a piece up to 50% over. India's IS 9806 is a voluntary standard, so it is not shown.
-  - **Shops:** two in India and two in Abu Dhabi; none was found in the others, and the page says so.
+  - **Shops:** two in India and two in Abu Dhabi, and Egypt's one since (above); none was found in the others, and
+    the page says so.
   - A poison line's other number can now have its own link (Morocco's), kept on one line and read
-    left to right in any language. English only.
+    left to right in any language. In English at first, now in every language.
 - **Groundwork for East and Southeast Asia**, before any of its languages:
   - **Numbers and dates** can be written as in Japan, Korea, mainland China and Taiwan (Simplified and
     Traditional Chinese each keep their script in any region), Hong Kong, Singapore, Malaysia,
@@ -905,7 +1078,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
     English's placeholders, tags and the plural forms their language needs; each page tested in a
     pseudo-locale shows no text left unmarked; and a mirrored right-to-left page was tried in
     Arabic.
-  - **Ready for Japanese, Chinese, Korean and Thai** (none offered yet): each page in them names
+  - **Ready for Japanese, Chinese, Korean and Thai** (all live since: above): each page in them names
     the device's own serif for its script, so a browser need not fall back to a thin one; emphasis
     is bold, not a slanted copy of the letters; and lines break as the language breaks them. A
     Japanese pseudo-locale (`/ja-XC/`) tests every page in characters with no spaces, at a phone's
@@ -1095,6 +1268,54 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **Japan has its own material library,** which lists the nine Japanese materials (Amakusa pottery stone, the
+  Fukushima, Kamado, Tsushima and Masuda feldspars, Korean kaolin and three synthetic ashes) and the US set beside
+  them, so a potter in Japan keeps every material they could pick before (`inRegion`, `lib/recipe/library.js`). Japan
+  used the US library, chosen before it had materials of its own, so the Japanese ones showed only under All regions
+  and were never suggested. "Japan" is now a choice in the library's region filter, in every language, and the library
+  a potter in Japan follows. Swaps take Japan's own substitute first (Amakusa stone for Jingdezhen porcelain stone),
+  then one from the US set, and the local-equivalents guide names Japan in every language. The MCP server (1.5.0)
+  takes `region: "JP"` in `search_materials` and `suggest_substitutes`, and its search filters as the app does.
+- **Over 1,550 Angular unit tests, from 1,188, and 99% of the app's statements run by them, from 92%,** across the
+  recipe pages, the account and its offline copy, sign-in, the app's frame and every other page, driven through
+  each page's own fields and buttons. The client's coverage now counts the app's own code (`client/`), templates
+  included; the shared library in `lib/` counts with the server's tests, where its own are. Every test has 15
+  seconds (`vitest-base.config.mts`) and the famous glazes' solver 60, as coverage slows them. Runs give the same
+  result each time: turning the offline copy on no longer switches to it a second time when the site hears who is
+  signed in, a race that could fetch every record twice and that sometimes failed the offline tests; the offline
+  copy, the outbox and the install offer stop their work when a test's app is torn down, so nothing reaches the next
+  test; a failed check of the fake API no longer fails the spec files after it; the region a test chose ends with
+  it; and the connect page's Allow hold is timed by the test's own clock.
+- **The recipe page is in parts** a person can hold: `recipe-page.ts` went from 2,362 lines to 982 and its template
+  from 1,279 to 546. The saved list, the swaps (modern materials, Suggest amounts, Replace lead, Match with what I
+  have and Undo), the print and compare views, the materials and colorants tables and the lists to add from are
+  components and classes of their own beside it, behind the recipe area's tests (99% of statements), with the same
+  page for anyone using it.
+- **The chemistry library's JavaScript is type-checked against its declarations** (`lib/tsconfig.json`, in
+  `npm run typecheck` and so in CI; not strict yet): each module's use of another is checked against the `.d.ts` the
+  app and the server read. It found drift: `say` (`lib/recipe/messages.js`) and `added`, `changed`, `removed` and
+  `scaled` (`lib/recipe/pool.js`), which the recipe tools share, were not declared, so nothing checked their uses.
+  They are declared now; `lib/recipe/index.d.ts` still promises only what `index.js` exports, and the test that
+  compares each module's exports with its declarations no longer leaves them out. The rest needed only types
+  TypeScript could not work out for itself (an object built up step by step, a table of rows), written as JSDoc
+  comments: the code does what it did.
+- **The account emails' words are data,** one file a language (`server/i18n/mail/<language>.json`), as the app's
+  own messages are. `server/lib/account_mail.ts` went from 8,422 lines to about 700, and every export it had is
+  the same, checked value for value; a language without an email still gets the English.
+- **The README starts with the engineering:** an "At a glance" section for anyone reading the code, then the
+  highlights, which now name the standard terms beside the plain ones (MFA, CSRF protection, SSG, PWA, WCAG 2.2 AA,
+  CI/CD) and link the privacy records and the live checks. What the app does is folded below them. Its numbers were
+  out of date: about 1,000, 700 and 175 tests where CI ran over 1,750, 1,150 and 450, and 92% Angular coverage
+  where it measured 91%.
+- **1.0.0** is the version that was 0.5.0 (not yet released): the app has been live since October.
+- **A cone from a book is not a cone you have tested** (docs/adr/0021-recipe-firing.md, amended 2026-11-08). A single
+  stated cone has its own tick, "I've test-fired this at cone 6", off until ticked; before, choosing a cone counted it
+  as tested. A range keeps one tick per cone, none ticked at the start, and a pasted recipe's cone is never ticked. A
+  stated cone not ticked reads "Stated cone 6; not ticked as tested" in the editor, the saved list, the print and the
+  shared page, and its result card stays. What is stored is unchanged (`firedAt.tested` is still a list of cones), so
+  the REST routes, the MCP tools, sharing, the export and the offline outbox work as before; a saved recipe keeps its
+  ticks, and one with a cone and none ticked now reads as untested. The MCP tools' description says so. In every
+  language.
 - **Compressed pages** (docs/prerender-compression-and-material-pages-plan.md, Part A). Each page reply is compressed
   in Node after its fresh nonce goes in (`server/lib/compress.ts`: brotli 5, else gzip 5), with `Vary` and
   `Content-Length`; the sitemaps are compressed once each with an ETag. nginx passes these through and gzips the rest
@@ -1105,22 +1326,28 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   carry `x-default`, as each page's head does.
 - **Page descriptions use the words potters search for**, in 30 languages first and then all; titles are unchanged
   (the owner's rule).
-- **About 11,457 prerendered pages** (every material in every language, the famous glazes, the teaching guide), a
+- **About 11,571 prerendered pages** (every material in every language, the famous glazes, the teaching guide), a
   build of about 4 minutes. A page may now be up to 120 kB gzipped (was 100 kB), as the fully translated glazing
   basics guide in the Indic scripts came to just over 100 kB. The CI, publish and staging time-outs are raised.
 - **The firing guide**: the cone chart gives Orton's slow-rate figures for cones 018, 015, 07 and 02 (a dash now
   means Orton gives none), and says most low-fire glazes sold are made for cone 06 or 05.
-- **Round 14 translation catch-up**: all 56 other languages translated the round's English (famous glazes, the dry SG
+- **A translation catch-up**: all 56 other languages translated the new English (famous glazes, the dry SG
   estimate and guide section, the Stull chart, the teaching guide's card, the new materials' notes and hazards, the
   changed guide sections) in five language groups, each language back-translated blind and the differences fixed
   (docs/translations/process/README.md).
+- **The messages still in English, translated** (2026-10-31), in every language then live: Target & Solve, the silica
+  limits table, the who-to-call words, the offline and region messages, the AI assistants page and the dictation
+  skill's, and the pages' titles and descriptions. Each language's translation was reviewed, and its safety text (the
+  silica table, who to call) back-translated blind and compared with the English; services keep their names as they
+  write them. The guides list's Standard materials card no longer says "In English.", as every live language had the
+  reference pages.
 - **"Choose your country or region"**: the guides' region list and the prompts under it ask for a country or region
   (the owner's choice), as Hong Kong and Taiwan are among the places listed. In every language, in the words its
   region list already uses ("countries and regions"). So does the making-a-glaze guide's line on shops ("choose
   another country or region"), in every language, and the MCP server's guide text, in English, says what the
   website shows "in your country or region".
-- **The reference pages link the home safety guide by its title, "Don't poison your family"** (English; the
-  reference pages are not translated yet), where they said "Glaze safety at home".
+- **The reference pages link the home safety guide by its title, "Don't poison your family"** (in English at first,
+  in every language once the reference pages were translated), where they said "Glaze safety at home".
 - **Limits that suit AI apps' shared addresses** (ADR 24, the same amendment). Claude's and ChatGPT's
   servers send everyone's requests from a few addresses, so limits are now keyed on what a request has
   proven. The token endpoint counts per address only what it refuses (300 in 15 minutes), per account
@@ -1182,14 +1409,14 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   nothing offered supplies one of the recipe's fluxes (lithia with no lithium on hand), the other
   fluxes make up its share, so silica comes out about 5% high rather than 26%. The clay caution no
   longer repeats what the old recipe already had. Underneath, the fit takes caps on a share of the
-  batch, and an amount tried back at its start can no longer break a cap. English only.
+  batch, and an amount tried back at its start can no longer break a cap. In English at first, now in every language.
 
 - **The Orton chart says what it is.** Glazecalc's Orton figures from cone 06 up were labelled
   "large cones at 60 °C an hour" but are the large-cone column at 150 °C an hour of Orton's older
   chart (as determined at the US National Bureau of Standards, reprinted by W P Dawson and
   FireRight), the same chart Katz's cone 10 at 1305 °C comes from. The figures are unchanged, so
   no band, check or note changes; the label says so, and cones 022 to 07 now take the same
-  column (600 to 984 °C). English only.
+  column (600 to 984 °C). In English at first, now in every language.
 - **The cone check does not judge past cone 10** (docs/adr/0022, amended 2026-10-20). Katz's rule
   and Hesselberth & Roy's figures stop at cone 10, so a firing hotter than that (Orton 10½ up,
   SK 13 up, above 1305 °C, or the new top band) gets "can't compare" rather than being held to
@@ -1219,9 +1446,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   the window (two at 320 px). Names are set in `<bdi>` and the styles use logical properties, so
   Arabic and Urdu will mirror correctly. A group is a line in `lib/regions/groups.js`, which a
   server test requires for every language and region. What is saved is unchanged (the language's
-  code, the region's code). English only: the headings and "No language matches" are translated
-  with the next wave.
-- **Asia's region data, checked again** (2026-10-19, English only; docs/asia-plan.md, Phase C).
+  code, the region's code). The headings and "No language matches", in English at first, are in every
+  language.
+- **Asia's region data, checked again** (2026-10-19, in English at first, now in every language; docs/asia-plan.md,
+  Phase C).
   Every value keeps its source, check date and status, and no unconfirmed safety value is shown.
   - **China:** China CDC's national poison hotline, 010-83132345, from China CDC's own page, which
     tells the public to call it; no official page gives its hours or cost, and the page says so.
@@ -1266,7 +1494,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   before its last change, kept for one Undo. The terms of use add that connecting an app is your
   choice and that you answer for what an app you allow does in your account. The record of
   processing (docs/processing-record.md) has a new activity, Connected AI apps, and names AI apps
-  as separate controllers, with no new processor. English only for now.
+  as separate controllers, with no new processor. In English at first, now in every language.
 - **MCP `check_limits` follows the account's own limit set.** Called with a personal access token
   that may read preferences and no `limitSet`, it checks against the limit set saved in the
   account's settings (the recipe page's own, Hesselberth & Roy's until changed), as `get_recipe`
@@ -1276,8 +1504,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   conversion beside a recipe's cone, and an assistant's search across the two scales, now use the Kyoto municipal
   institute's own Orton column, bent in the same kiln at the same rate as its SK cones, instead of Orton's chart at a
   different heating rate. Orton 4 is now SK 7 (was SK 8) and Orton 6 is SK 9 (was SK 10); SK 7, 9, 11, 13 and 14 and
-  Orton 8, 11 and 12 now have a match. The firing guide's Kyoto cones paragraph says so (English; the other
-  languages follow with the next translation round).
+  Orton 8, 11 and 12 now have a match. The firing guide's Kyoto cones paragraph says so (in English at first, now
+  in every language).
 - **Guides end with "More guides"**, links to the other guides with their summaries, drawn into the prerendered page so
   search engines follow them. The home safety guide is called by its own title, "Don't poison your family", in the
   guides list, the "More guides" block and its page title too (the owner's choice, in every language: each language's
@@ -1291,7 +1519,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - **A new firing log starts with Time, Temperature (°F or °C as you read temperatures) and Cone**,
   each removable; logs already saved are unchanged. The duplicate "Add a field above" line is gone.
 - The settings labels for how you fire read "Orton cones", "SK cones, JIS R 8101" and "Temperature,
-  as a kiln controller's program". English only for now.
+  as a kiln controller's program". In English at first, now in every language.
 - **One limit on what an account keeps.** An account keeps up to 100,000 records of every kind
   together (recipes, materials, notes, firing logs and the rest), in place of 2,000 of each kind;
   `ACCOUNT_MAX_RECORDS` still sets another. Trials keep their own limits.
@@ -1312,7 +1540,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - **The account page lists its sections at the top**, each a link to its heading, so the
     password, two-step sign-in and deleting are a tap away; and its buttons are plain, the filled
     one kept for the main action of a step under way.
-  - **The footer's 28 languages are one line**, "Language: English", that opens the list.
+  - **The footer's languages are one line**, "Language: English", that opens the list.
   - **On a phone**, every button and menu link is a finger's height (44px), and text in fields is
     16px, so iPhones no longer zoom into a field.
   - **Two-step sign-in** shows On or Off beside its heading, says "9 of 10 recovery codes left",
@@ -1437,6 +1665,168 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **Found by the 1.0 tests** (each fixed with a test that fails without the fix):
+  - The share link's "Show the recipe's notes too" box, clicked while a link was being made, stayed ticked though the
+    link was made without the notes; it now ignores the click until the link is made.
+  - Replace lead, Match with what I have and working a swap out again said why they could not go on only in the box
+    for discontinued materials, so on most recipes the button did nothing visible; the reason now shows either way,
+    and in the compare view too.
+  - A price typed while the one before it was being saved was wiped when that save came back, and never saved.
+  - "Use it in a recipe" on a material's page and "Open this recipe" on a famous glaze's page passed through the
+    sign-in page while a trial started, leaving it in the tab's history.
+  - Similar materials and Replaces on a material's page had a space before each comma.
+  - The offline copy's "keep for" list showed a time it could not save, until the next visit showed the old one.
+  - After signing out, the next account to sign in on the same tab saw the last one's connected apps and token
+    count until its own loaded, or for good if that failed; both are forgotten when the session ends.
+  - After a sign-in during which the browser could not open the offline copy's database, the account's own copy
+    stayed locked at its later sign-ins until it was turned on again; the next sign-in now shows it.
+- **Found by the 1.0 review of the chemistry** (four reviews against primary sources: CIAAW's atomic weights,
+  Digitalfire, Hesselberth and Roy, Orton's charts and Brongniart's formula; each fixed with a test that fails
+  without the fix):
+  - A substitution whose alumina was as low as the old recipe's still said there was too little: the check for what
+    the old recipe already had compared the wrong way round. It now stays quiet when the new recipe has as much as the
+    old, or nearly.
+  - A material saved with its oxides as "Percent" was worked out as moles. The server now keeps percent or molecular,
+    in lower case, and refuses anything else, and the chemistry reads the two in any case.
+  - Barium had no warning: from BaO 0.2 in the unity formula one now shows beside lead's, and from 0.4, after
+    Digitalfire, it says the glaze is likely to leach. The "Contains lead" warning looked only at the base materials,
+    so lead added as a colorant gave none; it now counts the additives.
+  - Katz's "too little boron" warning came up on lead and alkaline glazes, which melt without boron; it now leaves them
+    out, as the cone check does. A firing given as null was read as 0 °C, so the boron check asked for 2.61 B₂O₃; a
+    firing that is not a number is now unknown.
+  - Colorant oxides count as fluxes, so silica and kaolin with 5% cobalt carbonate came to CoO 1 and SiO₂ 32 without a
+    word. They stay fluxes (ADR 4 says so now), and the unity formula warns when colorants are most of the flux or
+    silica is over 10, which no famous glaze or example reaches.
+  - A potter's own clay and whiting have no category, so the clay checks did not count "My EPK" as clay; a material
+    with no category is now known by its analysis.
+  - The unity formula read "1e1" as 10, "0x10" as 16 and true as 1, though the recipe page calls them invalid, and an
+    LOI or molecular weight it could not read ("43,97") was taken as left out, so a whiting typed with a comma lost its
+    whole LOI. Both are now refused, and an LOI and molecular weight more than half a point apart give a warning.
+  - Material names in Japanese, Chinese or Russian all came to the same empty key, so looking one up found another
+    material; names now keep the letters of every script.
+  - Target & Solve and the tools worked a recipe with no flux at all to a unity formula of zeros, and two formulas with
+    no flux were called close; they now say there is no unity formula, as the recipe page does.
+  - When the work allowed ran out while raw clay was being held, a match could keep the answer with more raw clay
+    without saying it had been cut short; it now says so. A material used in a match could end under its least
+    (about 0.5% of the batch where the app promises at least 1%, in about 1 in 100 solves); every material used now
+    keeps its least.
+  - Target & Solve's recipes could add up to 99.9 or 100.1, about a quarter of them; they now add up to 100. A
+    potter's own material with no oxides became filler under the clay hold, a quarter to half of the batch, and a cap
+    on an amount and a cap on a share together could be broken threefold while the report said it held; both are
+    fixed.
+  - What a material supplies could be named in a different order in Safari than in Chrome and Firefox, and oxides tied
+    in the closeness report in a different order in some languages; both are the same everywhere now. The solver gives
+    a sound answer for a material with no oxides, where it gave NaN.
+  - Suggest amounts' plan ranked choices with no limit on its work, and the tools for AI assistants gave the amounts
+    less work than the page did, so the two could differ; the ranking now stops with the work, and both give the
+    amounts their own.
+  - Paste-in: a long run of spaces froze the import page (50,000 characters, about 14 seconds); lines are now read in
+    linear time. "Silica 1 500 g", with the thousands set apart by a space, was read as a material named "Silica 1" at
+    500 g: where the reader's language writes thousands that way it is now 1,500 g, and elsewhere the page asks. For a
+    reader who writes decimal commas, "Silica,30,5" under a heading row was joined into 30.5; each cell is now its own
+    column.
+  - Paste-in also lost lines ending in a full stop ("Silica 30."), with the Arabic percent sign or thousands mark, a
+    percent sign before the amount ("%20") or the units 克, 公克, 公斤, 千克, 部 and 그램, each splitting the recipe in
+    two; read "Fired at 1220–1260 °C" as 1260 °C, "cone 05½" as 05, "Fire to cone 6" as a material and "Bisque to cone
+    04, glaze fire to cone 6" as cone 04; and matched a long paste's names at about 14 ms a line. All are read right
+    now, ten times faster, and cone 05½, which Orton makes, is a cone everywhere.
+  - The tools for AI assistants refused a cone written "^6", "Δ6" or "C/6", and read "SK 8" asked as an Orton cone as
+    Orton 8; they now read a cone with the app's own reader. "Potassium carbonate" now finds Pearl Ash.
+  - One name meant two materials: the chemistry's built-in formula materials shared eight names with real products in
+    the library, so "Potash Feldspar" was K₂O·Al₂O₃·6SiO₂ on the start page and Potclays 3426 in the calculator. They
+    and kaolin are now named "(theoretical)". Six generic words in paste-in never offered their choice, because a
+    record had the word as a name: that record is now Nepheline Syenite (typical), its old page address goes to the new
+    one, and "Sodium feldspar", "Calcined China Clay" and "Zirconia" offer a choice.
+  - A material's page said the equivalent weight is the grams that hold 1.0 mole of flux even for silica or China Clay,
+    which have none, gave EPK's 9,840 g with no word on why, and called an analysis with no flux "per formula as
+    written"; the figures are unchanged, and the sentences now say which each is, in all 57 languages.
+  - Zirconium's atomic weight is CIAAW 2024's 91.222, not 91.224, and the tests name CIAAW 2024. New regression tests
+    work the README's Leach 4321 out without the library and hold Digitalfire's G1214M to its published unity formula
+    and expansion.
+  - Found again by an independent verification of these fixes, and fixed: paste-in misread names ending in a number
+    where thousands are set apart by a space ("Minspar 200 300 g"), a slow-cool range over the peak, a cone written
+    before "bisque", decimals under a two-column heading, "0.500" as 500, fractions, Arabic percents and headings in
+    other languages, and now asks only when a line is truly ambiguous; blends kept the first corner's chemistry for two
+    lines of one name; shared caps are kept exactly and a cap that cannot be kept is said to be broken; Match and
+    Suggest keep a recipe's own small amounts, add up to its total and keep very small batches; whiting, not
+    fluorspar, brings calcium; a shelf of more than 60 materials is screened to the 40 that matter, so a whole shelf
+    (up to 500) gives a close match; barium is cautioned past BaO 0.10 (Digitalfire's figure) and zinc and the other
+    limits are read as shown; a newly crossed limit is no longer hidden as "already"; tiny amounts are never written
+    "1e-7"; the Stull chart's edges, slurry under a litre, Keep the colour's clay, cone 05½'s source and the no-flux
+    messages are right.
+- **Found by the 1.0 security review of the tools for AI assistants and the OAuth server** (each fixed with a test that
+  fails without the fix):
+  - The tools that fit amounts could hold the server for everyone, with no account: `solve_target` with 60 of the
+    library's materials and a 13-oxide target took 7 seconds, with 80 it took 93 seconds, and `suggest_substitutes` took
+    30 seconds on a 40-line recipe. A search now does at most about a second's work (`lib/chemistry/fit.js` `WORK`,
+    counted, not timed, so the page and the server answer alike) and past it gives the best it found and says so
+    (`cutShort`). The same answers come sooner, bit for bit, the famous glazes' versions included (shino from the EU's
+    library: 5 s to 0.7 s). `match_from_materials` and `solve_target` take a whole shelf (up to 500 materials; they took 100) within the same
+    work, and everyone without an account together may have at most ten such searches' work
+    done a minute.
+  - The approval page showed a recipe's lines by name and amount only, so a change that kept "Custer Spar 30" but gave it
+    the analysis of lead oxide looked like no change. A line whose chemistry changes now shows its oxides before and
+    after, a new line given by its own analysis shows them, and an undo of a record or of the shelf shows what it puts
+    back.
+  - An app's address (CIMD) was looked up on the four threads that also check passwords, and outside the fetch's time
+    limits: a name whose server never answered held a thread, and one authorization 18 seconds. Names are now looked up
+    with c-ares within the fetch's time, and every fetch one request makes shares 5 seconds.
+  - A token's request to take a material off the shelf could name one material for approval and take off another; the
+    approval now names the one it changes.
+  - `/oauth/authorize` sent a browser straight on to any address a self-registered app gave, with `prompt=none` or a
+    start without PKCE. Those errors, and any other before the person's yes, are shown on the site's page unless someone
+    has a working connection to the app.
+  - Smaller: a connected app's token is refused at `GET /api/pending-changes/:id` (it asks the MCP endpoint), "ask
+    before removals" now asks before undoing the shelf's last change, and an app can no longer be named by an address on
+    this site.
+- **Found by the 1.0 security review of accounts and records** (each fixed with a test that fails without the fix):
+  - After a password reset, a passkey alone no longer signs in until a sign-in with the new password and a second step
+    (the sign-in page says so), and a passkey alone never cancels a request to turn two-step sign-in off. Someone who
+    knew only the password could add a passkey while two-step sign-in was off, keep signing in with it after the owner's
+    reset, and so stop `clear_mfa.ts --clear`.
+  - One account could hold the server's memory and fill its disk. A record now holds at most 1,000 items in a list,
+    100,000 characters in a text, 16 levels and 256 KB (nesting past MongoDB's 100 levels was a server error), and an
+    import body at most a million lists and objects. The record lists and Download my data are sent a record at a time,
+    and the data file is no longer indented. Changes made on the website are limited to 300 a minute and 10,000 a day
+    per account, and production's app is held to 512 MB with a 256 MB heap.
+  - The spreadsheet downloads let a formula through in a list (a recipe's notes, a material's analysis) and after a
+    minus (`-1+HYPERLINK(...)`).
+  - Password sign-in counted an IPv6 address with its /56; it now counts the /48.
+  - Reading records had no limit (found by code scanning): every request to the API now counts against a ceiling of
+    1,200 a minute per address, under each route's own limits.
+  - The import answered 500 for a preference named like something every object has (`toString`, `__proto__`), and a
+    crafted `/#//` link stopped the app from starting.
+- **Found by the 1.0 security review of the deploy and supply chain:**
+  - Deploy started on any successful run named Publish image on a branch named master, so a fork's pull request could
+    start a production deploy of an older image (still behind the reviewer's approval). It now starts only on this
+    repository's own run of `publish.yml`, and a typed tag is checked before it is used.
+  - Deploy staging accepted a pull request's ref (`refs/pull/<n>/head`), so a fork's commit could have been staged, with
+    its scripts run as root on the shared instance once approved. Pull request refs are refused, and only commits on
+    this repository's branches are staged.
+  - IndexNow runs, and keeps its last commit, only for a deployed commit on master, and reads that commit only as a full
+    SHA. The sitemap's addresses are decoded once.
+  - nginx passed on a client's X-Forwarded-Host and Forwarded headers. X-Forwarded-Host is now the Host and Forwarded is
+    dropped, in production and on staging.
+  - Docker and containerd, from Docker's own repository, were left out of the automatic security updates. They are in
+    them now; an existing instance gets the setting by hand (`deploy/README.md`).
+  - The mail forwarder passed on mail with a forged From as if from its sender. Mail that fails DMARC is now dropped
+    when the sender's domain asks for that, and otherwise arrives marked "[Failed DMARC]", with SES's results for the
+    original kept as `X-Original-Authentication-Results`.
+  - The nightly backup and a restore passed MongoDB's password on the command line; it now goes in a config file read
+    from the shell, or in mongosh's sign-in script.
+  - Smaller: the Dockerfile no longer pulls its frontend by tag, CI's MongoDB is pinned by digest as Compose's is,
+    Dependabot's npm updates wait a week, go-live takes only language codes, and the prerender's inline-script check
+    reads tags in any case.
+- **The tools CI installs apart are past their advisories:** the MCP conformance suite and Inspector take hono 4.13.16
+  and @hono/node-server 2.1.6 (Dependabot's two open alerts, and five moderate ones for hono), and Lighthouse CI takes
+  basic-ftp 6.2.4. A moderate advisory for the minimatch bundled inside aws-cdk-lib has no fix to take yet; the
+  Infrastructure workflow says why it does not reach this setup.
+- **The deploy docs say what the AWS setup does**, found while the CDK stacks were held to it: which documents name
+  the account and region, the mail documents in the file table, what the operator may create without the
+  `app=glazecalc` tag and do to the old servers, the instance role reading dumps to restore one, the staging tags the
+  role accepts and the order of build and approval, production deploys starting by themselves after Publish image,
+  and the mail bucket aborting unfinished uploads after a day.
+
 - **Numbers and dates in a language the browser lacks**: Google Chrome 156 and Playwright's Chromium have no Intl
   data for Nepali, Sinhala or Odia and only part of Punjabi's, so live Odia and Punjabi pages showed English dates
   ("October 3, 2026", or "2026 M10 3" in Punjabi) and Punjabi numbers grouped 1,234,567.5, and Nepali's Devanagari
@@ -1445,6 +1835,12 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   language or writes it otherwise than Node (`lib/regions/locale-fallback.js`), so each page shows its own month
   names, digits and grouping, and matches the prerendered page; the Digits setting works as before. A server test
   fails if the data and Node's Intl part.
+- **Buttons are named by the words they show** (WCAG 2.5.3, Label in Name; found by axe-core 4.14, 2026-11-02). The
+  Add buttons in the recipe page's lists of materials and additives, and the swap report's Add it, were announced as
+  "Add Silica" and the like while they showed the name, its status and "+ Add"; each one's name is now its visible
+  text. The swap report's "Leave it out" and "Use it instead", and Solve for a target's "Leave it out", are named by
+  their own words too, with the line they act on as their description. The five spoken labels are gone from all 57
+  languages.
 - **Bengali no longer writes dissolving as melting**: two material notes and the glazing basics guide's paragraph on
   leaching said a glaze or frit "melts" where the English says it dissolves. Found by the Kannada review; Hindi, Urdu
   and Marathi were checked and did not have it.
@@ -1486,7 +1882,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   zile" and "1 zi". The mailer gives those emails the number and its noun together, chosen by
   Romanian's plural forms; the texts had "{days} zile" and "{hours} ore", wrong from 20 on, and
   "{days} de zile", wrong below 20.
-- **English made plain where round 5's translators found it unclear** (each is translated again in
+- **English made plain where the translators found it unclear** (each translated again in
   the next wave): the privacy notice says access tokens and connections are kept until they expire
   and then for 30 days more, not "up to" 30; Taiwan's emergency note says plainly what 112 does
   when a mobile phone has no signal; the firing guide's kiln-watch line says to stay nearby and
@@ -1585,6 +1981,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - Praseodymium oxide is Pr₆O₁₁, the form sold for stains, not PrO₂.
 
 ### Removed
+
+- `Outbox.remove()`, which nothing called: clearing the offline copy deletes its waiting changes itself.
 
 - `.git-blame-ignore-revs`: the reformat it named was squashed into the 0.3.0 merge.
 

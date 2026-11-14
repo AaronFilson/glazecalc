@@ -1,5 +1,3 @@
-# syntax=docker/dockerfile:1
-
 # Glazecalc: one Node server for the Angular client and the JSON API (/api).
 #
 #   docker build -t glazecalc .
@@ -8,6 +6,9 @@
 # node:24-slim is Debian-based, which bcrypt's prebuilt binaries need (glibc).
 # Base images are pinned by digest for repeatable builds; Dependabot proposes
 # updates. (Written out in each FROM because Dependabot cannot follow an ARG.)
+# No "# syntax=" line: BuildKit's own Dockerfile frontend has all this file
+# uses (RUN --mount, FROM --platform), and one named there would be pulled
+# from Docker Hub by tag at each build, the one image here not pinned.
 
 # All dependencies, including the Angular build tools. This stage and the build
 # below run on the machine's own platform ($BUILDPLATFORM): their output, the
@@ -57,7 +58,7 @@ COPY server ./server
 COPY lib ./lib
 # The MCP prompt dictation reads the skill's own files (server/mcp/dictation.ts).
 COPY skills ./skills
-COPY scripts/seed-standard.js ./scripts/
+COPY scripts/seed-standard.js scripts/usage-stats.mjs ./scripts/
 COPY --from=build /app/dist/glazecalc/browser ./dist/glazecalc/browser
 COPY --from=build /app/dist/glazecalc/prerendered ./dist/glazecalc/prerendered
 

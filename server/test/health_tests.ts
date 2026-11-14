@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import { API_LIMITS, apiRequests } from '../lib/rate_limit.ts';
 import { api, expect, makeUser } from './support/app.ts';
 
 describe('API caching', () => {
@@ -33,5 +34,45 @@ describe('health check', () => {
       if (state) Object.defineProperty(mongoose.connection, 'readyState', state);
       else delete (mongoose.connection as { readyState?: number }).readyState;
     }
+  });
+});
+
+// The ceiling on every request to /api from one address (limits.apiRequests), under each route's own limits.
+describe('every request to /api, per address', () => {
+  const limits = API_LIMITS as { minute: number };
+  const was = { ...limits };
+  const forget = () => {
+    for (const key of ['127.0.0.1', '::ffff:127.0.0.1', '::1']) void apiRequests.resetKey(key);
+  };
+  beforeEach(() => {
+    forget();
+    process.env.RATE_LIMITS = 'on';
+  });
+  afterEach(() => {
+    process.env.RATE_LIMITS = 'off';
+    Object.assign(limits, was);
+    forget();
+  });
+
+  it('leaves room for a class behind one address', () => {
+    expect(API_LIMITS.minute).to.be.at.least(1000);
+  });
+
+  it('answers 429 once one address has made more than the ceiling a minute, signed in or not, but not the health check', async () => {
+    limits.minute = 4;
+    const { token } = await makeUser();
+    const session = (address: string) =>
+      api()
+        .get(address)
+        .set('Cookie', 'glazecalc_session=' + token);
+    expect(await session('/recipe/getAll')).to.have.status(200);
+    expect(await session('/materials/getAll')).to.have.status(200);
+    expect(await session('/trash/getAll')).to.have.status(200);
+    expect(await api().get('/verify')).to.have.status(200);
+    for (const over of [await session('/notes/getAll'), await api().get('/verify'), await session('/firing/getAll')]) {
+      expect(over).to.have.status(429);
+      expect(over.body.code).to.equal('too-many-requests');
+    }
+    expect(await api().get('/health')).to.have.status(200);
   });
 });

@@ -1,5 +1,6 @@
 // Types for lib/recipe/suggest.js (see index.d.ts).
 
+import type { Meter } from '../chemistry';
 import type { AdditiveRecord, MaterialRecord, TryMaterial } from './library';
 import type { Caution, RecipeMessage } from './messages';
 import type { Report } from './pool';
@@ -41,15 +42,24 @@ export interface Suggestion<M extends MaterialRecord = MaterialRecord> {
   cautions: Caution[];
 }
 
+/**
+ * The swaps, and what to ask first; `meter` counts its work (lib/chemistry newMeter), a new one if not given,
+ * and once it is spent the ranking of choices stops (those not ranked follow, in the order given).
+ */
 export function planSuggestion<M extends MaterialRecord>(
   lines: M[],
   find: (name: string) => M | undefined,
   standard: M[],
   region: string,
-  options?: { allowLead?: boolean }
+  options?: { allowLead?: boolean; meter?: Meter }
 ): Plan;
 
-/** The suggested recipe; raw clay is held as Match with what I have holds it, but for clays named in `uncapped`. */
+/**
+ * The suggested recipe; raw clay is held as Match with what I have holds it, but for clays named in
+ * `uncapped`. `meter` bounds its work (lib/chemistry newMeter), a new one if not given. Throws a
+ * RecipeError ('solve.noFlux', params { of: 'recipe' }) if the recipe has no flux, or ({ of: 'offered' })
+ * if none of the materials it may use has one.
+ */
 export function suggestAmounts<M extends MaterialRecord>(
   lines: M[],
   find: (name: string) => M | undefined,
@@ -61,5 +71,6 @@ export function suggestAmounts<M extends MaterialRecord>(
     avoid?: string[];
     additives?: AdditiveRecord[];
     uncapped?: string[];
+    meter?: Meter;
   }
 ): Suggestion<M>;

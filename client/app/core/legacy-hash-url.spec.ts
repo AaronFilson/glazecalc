@@ -17,4 +17,27 @@ describe('redirectLegacyHashUrl', () => {
     expect(run('/reset', '#token=abc')).not.toHaveBeenCalled();
     expect(run('/advice', '#/recipe')).not.toHaveBeenCalled();
   });
+
+  it('never goes to an address that names another site', () => {
+    expect(run('/', '#//evil.example')).not.toHaveBeenCalled();
+    expect(run('/', '#//evil.example/recipe?x=1')).not.toHaveBeenCalled();
+    expect(run('/', '#/\\evil.example')).not.toHaveBeenCalled();
+  });
+
+  it('lets the app start when the browser refuses the address', () => {
+    const replaceState = vi.fn(() => {
+      throw new DOMException('A history state object with URL cannot be created', 'SecurityError');
+    });
+    const history = { state: null, replaceState } as unknown as History;
+    expect(() => redirectLegacyHashUrl({ pathname: '/', hash: '#/recipe' } as Location, history)).not.toThrow();
+    expect(replaceState).toHaveBeenCalledOnce();
+  });
+
+  it("leaves the page's own history as it is at a crafted /#// link, without an error", () => {
+    const start = window.location.href;
+    const history = window.history;
+    const location = { pathname: '/', hash: '#//evil.example' } as Location;
+    expect(() => redirectLegacyHashUrl(location, history)).not.toThrow();
+    expect(window.location.href).toBe(start);
+  });
 });

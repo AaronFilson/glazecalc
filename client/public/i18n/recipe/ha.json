@@ -50,7 +50,6 @@
     "firedTo": "An gasa har zuwa",
     "how": "Yadda",
     "rebuild": "Sake gina glaze: riƙe silica da alumina ɗinsa, da boron da wasu flux maimakon darma",
-    "keepColour": "Riƙe launin a kan tushe babu darma: frit da kaolin, 85 zuwa 15, tare da masu launi na girke-girken",
     "fritHeading": "Frit babu darma da za a gina a kai, mafi kyau da farko",
     "fritBoron": "({boron}% boron, B₂O₃)",
     "noFrit": "Babu frit babu darma da ake sayarwa a yankinku a cikin laburare.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Ba za a iya maye gurbin darma ba: wani kaya a cikin girke-girken ba shi da analysis da za a yi aiki da shi.",
     "leadRebuiltCone": "An maye gurbin darma don cone {cone} a kan {base}: an riƙe silica da alumina na tsohon girke-girken, tare da boron da wasu flux suna yin aikin darma.",
     "leadRebuilt": "An maye gurbin darma don {firing} a kan {base}: an riƙe silica da alumina na tsohon girke-girken, tare da boron da wasu flux suna yin aikin darma.",
-    "leadColour": "An maye gurbin darma: an ɗauki masu launi zuwa kan tushe babu darma na {base} da kaolin, 85 zuwa 15.",
     "leadGloss": "Ba zai yi daidai da sheƙi, tsabta ko launin darma daidai ba: ku sa ran ƙarancin haske, da yiwuwar gajimare a kan jan yumɓu ko crazing. Gwada ƙaramin batch a kan yumɓunku.",
     "leadSafety": "Rashin darma shi kaɗai ba ya sa glaze ya zama lafiya ga abinci; hakan ya dogara da dukan tsarin da gasawar.",
     "leadReplaced": "An maye gurbin darma.",
@@ -245,8 +243,7 @@
       "text": "Waɗannan suna zuwa a saman tushe. Ana ajiye su tare da girke-girken amma ba sa cikin UMF. Zaɓi abin da kowane adadi yake ciki:",
       "percent": "<b>% na tushe</b>: kashi na jimlar tushe, kamar yadda yawancin girke-girke ke ba da su: 2 na nufin 2% red iron oxide.",
       "parts": "<b>rabo</b>: ma'auni ɗaya da na kayan aiki, kamar rabo 1 a kan tushe na flint 3 da dolomite 2.",
-      "grams": "<b>giram</b>: nauyi, a cikin batch ɗaya da kayan aiki.",
-      "count": "Wasu lissafai suna ƙidaya masu launi a cikin UMF wasu kuma ba sa yi. Yi alama a <b>Ƙidaya masu launi da ƙarin kaya a ciki</b>, a ƙarƙashin taken UMF, don ƙidaya su da nauyinsu a cikin batch, ko ku bar shi babu alama don kwatantawa da wanda ba ya ƙidaya su. Ana ajiye zaɓin tare da girke-girken."
+      "grams": "<b>giram</b>: nauyi, a cikin batch ɗaya da kayan aiki."
     },
     "scale": {
       "heading": "Canja ma'auni idan kuna buƙata",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide} ba oxide ba ne da Glazecalc ya sani.",
     "together": "Ba da potash (K₂O) da soda (Na₂O) daban-daban, ba tare a matsayin KNaO ba.",
     "badAmount": "Adadin {oxide} ba lamba ba ce ta 0 ko fiye.",
-    "noFlux": "Manufar tana buƙatar aƙalla flux ɗaya, kamar CaO, K₂O ko Na₂O.",
     "noMaterials": "Ƙara aƙalla kaya ɗaya don yin girke-girken daga gare shi.",
     "noMatch": "Babu ɗaya daga cikin waɗannan kayan da ke da wani daga cikin oxide na manufar."
   },

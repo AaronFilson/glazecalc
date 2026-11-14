@@ -3,11 +3,12 @@
 Accepted, 2026-10-16. Phase 1 of [the integrations plan](../integrations-plan.md), with the owner's
 decisions 1 (Google and GitHub first, Microsoft second) and 8 (verify email at sign-up). Builds on
 [ADR 5](0005-sign-in-tokens.md) (the session cookie), [ADR 7](0007-trials-as-real-accounts.md)
-(trials) and [ADR 14](0014-two-step-sign-in.md) (two-step sign-in).
+(trials) and [ADR 14](0014-two-step-sign-in.md) (two-step sign-in). Microsoft was added on the same flow by
+[ADR 23](0023-microsoft-sign-in.md), which records only what differs.
 
 ## Context
 
-People asked to sign in without yet another password. Glazecalc is a small non-profit on one
+People asked to sign in without yet another password. Glazecalc is small, free and non-commercial, on one
 instance ([ADR 1](0001-one-ec2-instance.md)): no paid identity service, no provider script on its
 pages (which would load before any click and break the privacy notice's promise), and nothing that
 would let an account be taken over. The risk the research singled out is _pre-hijacking_: someone

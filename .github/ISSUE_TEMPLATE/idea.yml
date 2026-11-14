@@ -1,0 +1,21 @@
+# The form for an idea or something missing.
+name: An idea
+description: Something Glazecalc could do, or do better.
+labels: ['enhancement']
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: What you are trying to do
+      description: The work in the studio or at the computer, more than the button you have in mind.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help
+  - type: textarea
+    id: now
+    attributes:
+      label: How you do it now
+      description: Another calculator, a spreadsheet, by hand, or not at all.

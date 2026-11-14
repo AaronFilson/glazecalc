@@ -8,6 +8,8 @@ import { SIGN_IN_PROVIDERS } from '../core/auth.service';
 import { FIRST_RENDER } from '../core/first-render';
 import { sessionExpiredInterceptor } from '../core/session-expired.interceptor';
 import { provideEnglish } from './i18n';
+// This file is not a spec, so the app's own build type-checks it too, where Vitest's globals are not declared.
+import { vi } from 'vitest';
 
 export const API = 'http://api.test';
 
@@ -28,8 +30,60 @@ export function testProviders() {
   ];
 }
 
+/** The controllers whose verify resets TestBed when it fails. */
+const resetting = new WeakSet<HttpTestingController>();
+
+/**
+ * The fake API's controller. A verify that fails (a request left open, as when a test failed half-way) resets
+ * TestBed before it fails the test: Vitest skips the afterEach hooks after one that throws, Angular's own reset
+ * among them, and in this non-isolated run the spec files after it in the worker would then all fail on finding
+ * this test's module still there. One failure stays one failure.
+ */
 export function httpMock(): HttpTestingController {
-  return TestBed.inject(HttpTestingController);
+  const controller = TestBed.inject(HttpTestingController);
+  if (!resetting.has(controller)) {
+    resetting.add(controller);
+    const verify = controller.verify.bind(controller);
+    controller.verify = (options) => {
+      try {
+        verify(options);
+      } catch (err) {
+        TestBed.resetTestingModule();
+        throw err;
+      }
+    };
+  }
+  return controller;
+}
+
+/**
+ * vi.waitFor, with 10 seconds instead of its 1: with coverage on and every core busy, the fake IndexedDB
+ * and the requests a test waits for can take longer than a second.
+ */
+export function waitFor<T>(check: () => T | Promise<T>): Promise<T> {
+  return vi.waitFor(check, { timeout: 10_000 });
+}
+
+type Listener = (reason: unknown) => void;
+
+/**
+ * The promise rejections nothing handled while `run` went on, and for `after` ms more: the errors of work left
+ * running, which Vitest otherwise reports for the whole run rather than for the test that left it.
+ */
+export async function unhandledRejectionsDuring(run: () => unknown, after = 200): Promise<unknown[]> {
+  const node = (
+    globalThis as unknown as { process: { on(e: string, l: Listener): void; off(e: string, l: Listener): void } }
+  ).process;
+  const seen: unknown[] = [];
+  const listener: Listener = (reason) => void seen.push(reason);
+  node.on('unhandledRejection', listener);
+  try {
+    await run();
+    await new Promise((resolve) => setTimeout(resolve, after));
+  } finally {
+    node.off('unhandledRejection', listener);
+  }
+  return seen;
 }
 
 /** Lets pending promises finish, then renders. */

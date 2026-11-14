@@ -1,0 +1,73 @@
+name: Infrastructure
+
+# The AWS setup as CDK stacks (deploy/cdk): synthesizes them, which runs
+# cdk-nag's AWS Solutions rules on every template, in normal and import mode,
+# and runs the tests against the JSON documents in deploy/aws/ and the
+# snapshots. Nothing here signs in to AWS: synthesizing needs no account, and
+# deploying stays by hand (deploy/cdk/README.md).
+on:
+  push:
+    branches: [master]
+    # The stacks read deploy/cloud-init.yaml, deploy/aws/mail-forwarder and the
+    # tests deploy/aws/*.json, so any change under deploy/ runs this.
+    paths:
+      - 'deploy/**'
+      - '.github/workflows/infrastructure.yml'
+  pull_request:
+    paths:
+      - 'deploy/**'
+      - '.github/workflows/infrastructure.yml'
+
+# The job only reads the repository; nothing here needs to write.
+permissions:
+  contents: read
+
+jobs:
+  cdk:
+    name: CDK synth, cdk-nag and tests
+    # Pinned, as in ci.yml.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: deploy/cdk
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Nothing here pushes; the tools installed from npm cannot read a token from .git/config.
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: deploy/cdk/package-lock.json
+
+      # Installed apart from the app, from the lockfile in deploy/cdk/, with no
+      # install scripts, as CI does for scripts/lighthouse/ and scripts/mcp-conformance/.
+      - name: Install
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      # High and critical fail the run. One moderate advisory has no fix to take:
+      # minimatch before 11.0.1 (GHSA-g3hv-75wg-m249, slow matching of crafted
+      # patterns) is bundled inside aws-cdk-lib (2.275.0 here; the newest release,
+      # 2.276.0, still bundles ^10.2.6), and an override cannot reach a bundled
+      # package. The only pattern it matches here is the mail forwarder asset's own
+      # exclude: ['test'] (lib/inbound-stack.ts). It goes when aws-cdk-lib bundles
+      # 11.0.1 or later.
+      - name: Check for known vulnerabilities
+        run: npm audit --audit-level=high
+
+      - name: Type-check
+        run: npm run typecheck
+
+      # cdk-nag runs as the app synthesizes: an unacknowledged finding fails
+      # it, and --strict fails on any warning too. Import mode is what
+      # cdk import would use, so it must pass the same rules.
+      - name: Synthesize, with cdk-nag
+        run: |
+          npx --no-install cdk synth --quiet --strict
+          npx --no-install cdk synth --quiet --strict -c import=true
+
+      - name: Tests
+        run: npm test

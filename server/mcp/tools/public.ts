@@ -12,22 +12,24 @@ import type { McpServer } from '@modelcontextprotocol/server';
 import chemistry from '../../../lib/chemistry/index.js';
 import cones from '../../../lib/cones/index.js';
 import firingLib from '../../../lib/cones/firing.js';
-import type { Band, FiringBlock } from '../../../lib/cones/firing.js';
+import type { ApproxBasis, Band, FiringBlock } from '../../../lib/cones/firing.js';
 import recipe from '../../../lib/recipe/index.js';
 import type { ConeFit, MaterialRecord, TryMaterial } from '../../../lib/recipe/index.js';
 import {
   type Caller,
   cautionOut,
   coneOf,
-  countFit,
+  CUT_SHORT,
   firingArg,
   type Firing,
   firingOf,
+  fitFor,
   guarded,
   type Line,
   languageArg,
   languageOf,
   linesArg,
+  MOST_MATERIALS,
   ok,
   resolveLines,
   ToolProblem,
@@ -49,12 +51,13 @@ import { shelfMaterials } from '../shelf.ts';
 /** Whether the tool only reads and changes nothing anywhere: true for every tool here. */
 const READ_ONLY = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false } as const;
 
-const REGIONS = ['US', 'UK', 'EU', 'AU'] as const;
+/** The library's regions (lib/regions: each region's library); JP lists the US set too (lib/recipe/library.js). */
+const REGIONS = ['US', 'UK', 'EU', 'AU', 'JP'] as const;
 const regionArg = z
   .enum(REGIONS)
   .optional()
   .describe(
-    'Where the potter buys materials, so suggestions are ones sold there: US, UK, EU or AU. Leave it out for any.'
+    "Where the potter buys materials, so suggestions are ones sold there: US, UK, EU, AU or JP (Japan's list has the US materials too). Leave it out for any."
   );
 
 /** A library record, short, for a list. */
@@ -74,7 +77,8 @@ export const materialOut = (record: LibraryRecord) => ({
   ...(record.category && { category: record.category }),
   ...(record.rawformula && { formula: record.rawformula }),
   oxides: oxidesOf(record),
-  oxidesAre: record.percentmole === 'molecular' ? 'moles in the formula' : 'weight percent',
+  // As the chemistry reads them, in any case: a record may keep 'Molecular'.
+  oxidesAre: chemistry.oxidesGivenIn(record) === 'percent' ? 'weight percent' : 'moles in the formula',
   loi: Number(record.loi ?? 0),
   ...(record.status && { status: record.status }),
   ...(record.statusSince && { statusSince: record.statusSince }),
@@ -226,7 +230,8 @@ const SG_BASIS_WORDS: Record<string, string> = {
  */
 const sgLinesOf = (lines: Line[]) =>
   lines.map((line) => {
-    const amount = String(line.amount);
+    // Written plainly: the estimate reads String(0.0000001), "1e-7", as no amount.
+    const amount = recipe.plainAmount(line.amount);
     const found = line.analysis ? undefined : (findMaterial(line.material) ?? findAdditive(line.material));
     return found ? { ...found, ownedBy: 'Standard', amount } : { name: line.material, amount };
   });
@@ -256,14 +261,20 @@ export const coneAnswer = (cone: string, chart: 'orton' | 'sk') => {
   }
   const at = firingLib.approxCelsius('orton', cone);
   const published = cones.ORTON.published.cones.find((c) => c.cone === cone);
+  // What the figure rests on, as the recipe page says it (approxCelsius): the older chart's for a whole cone; a half
+  // cone put halfway between its neighbours on it; and for 05½, which that chart lacks, Orton's 2016 figure for
+  // large cones, the one half cone it gives one.
+  const bases: Partial<Record<ApproxBasis, string>> = {
+    'orton-150': cones.ORTON.chart.basis,
+    'orton-150-halfway': cones.ORTON.chart.basis + ', a half cone put halfway between its neighbours',
+    'orton-2016-150': "Orton's 2016 chart, large cones at 150 °C an hour"
+  };
   return {
     cone,
     chart,
     celsius: at?.celsius ?? null,
     fahrenheit: at ? Math.round(recipe.fahrenheit(at.celsius)) : null,
-    basis: at
-      ? cones.ORTON.chart.basis + (cone.endsWith('.5') ? ', a half cone put halfway between its neighbours' : '')
-      : null,
+    basis: at ? (bases[at.basis] ?? null) : null,
     ...(published && {
       ortonCurrent: {
         ratesAre: '°C an hour over the last 100 °C of the firing',
@@ -290,6 +301,15 @@ const COULD_BE_NEARER = 0.5;
 
 /** How near the fit tries to bring each oxide (lib/chemistry/fit.js), as the closeness sentences say it. */
 const NEAR = '0.02, or 5% of a large amount such as silica (0.06 for soda and potash apart)';
+
+/** A sentence for each cap the recipe could not keep (report.capped, broken). */
+const notHeld = (report: Report): string[] =>
+  report.capped
+    .filter((c) => c.broken)
+    .map(
+      (c) =>
+        `${listed(c.members)} could not be held to the ${rounded(c.most, 1)}% of the batch suggested: the recipe has ${rounded(c.wouldBe, 1)}%.`
+    );
 
 /** Formulas as a list: "Na2O, K2O and B2O3". */
 const listed = (names: string[]): string =>
@@ -318,7 +338,9 @@ const closenessOut = (report: Report) => {
     report.unreachable.length ? `Nothing given supplies ${listed(report.unreachable)}.` : '',
     report.miss - report.best < COULD_BE_NEARER
       ? 'These materials cannot come much nearer.'
-      : 'These materials could come nearer: see couldHelp and capped.'
+      : 'These materials could come nearer: see couldHelp and capped.',
+    ...notHeld(report),
+    report.cutShort ? CUT_SHORT : ''
   ];
   return {
     verdict: found.verdict,
@@ -344,16 +366,20 @@ const reportOut = (report: Report, language: string) => ({
     needed: use.needed
   })),
   couldHelp: report.couldHelp.map((c) => ({ material: c.name, helps: rounded(c.helps, 3) })),
-  // Caps that cost match, as percents of the batch: allowMore lifts one.
+  // Caps that cost match, as percents of the batch: allowMore lifts one. One the recipe could not keep
+  // is broken, with what its materials come to (wouldBe).
   capped: report.capped.map((c) => ({
     materials: c.members,
     most: rounded(c.most, 1),
     wouldBe: rounded(c.wouldBe, 1),
-    ...(c.why && { why: recipeText(c.why, language) })
+    ...(c.why && { why: recipeText(c.why, language) }),
+    ...(c.broken && { broken: true })
   })),
   unreachable: report.unreachable,
   miss: rounded(report.miss, 4),
-  best: rounded(report.best, 4)
+  best: rounded(report.best, 4),
+  // The work ran out before every choice was tried (closeness.summary says so too).
+  ...(report.cutShort && { cutShort: true })
 });
 
 /** Library names to lift a cap from, as the library has them; a ToolProblem names any not in it. */
@@ -462,11 +488,13 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
             : undefined;
         const at = firingOf(firing);
         const checks = checksOf(resolved, at, limitSet ?? own, lang);
+        // The cone fit judges the unity formula as worked out, as the recipe page does, not as rounded for the answer.
+        const { result, out } = analysisOf(resolved, lang);
         const fit = coneFitOut(
-          recipe.coneFit(checks.unityFormula, at.block, { materials: resolved.map((line) => line.name) }),
+          recipe.coneFit(result.umf, at.block, { materials: resolved.map((line) => line.name) }),
           lang
         );
-        return ok({ ...checks, stull: analysisOf(resolved, lang).out.stull, ...(fit && { coneFit: fit }) });
+        return ok({ ...checks, stull: out.stull, ...(fit && { coneFit: fit }) });
       }, lang);
     }
   );
@@ -476,7 +504,7 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
     {
       title: 'Cones and temperatures',
       description:
-        "Converts between a pyrometric cone and its temperature, and between °C and °F. Orton cones run 022 to 42: Glazecalc's figure, from 022 to 15, is Orton's older chart for large cones at 150 °C an hour, and Orton's current figures (self-supporting cones at 15, 60 and 150 °C an hour, large cones at 60 and 150, cone 022 to 14) come beside it; Orton publishes no figure above cone 14, so cones from 16 up have none. SK cones (JIS R 8101, SK 022 to SK 20) by the standard's nominal figures. Give a cone, or a temperature to find the nearest cones.",
+        "Converts between a pyrometric cone and its temperature, and between °C and °F. Orton cones run 022 to 42: Glazecalc's figure, from 022 to 15, is Orton's older chart for large cones at 150 °C an hour (cone 05.5, which that chart lacks, is Orton's 2016 figure for large cones at that rate, and the other half cones are put halfway between their neighbours), and Orton's current figures (self-supporting cones at 15, 60 and 150 °C an hour, large cones at 60 and 150, cone 022 to 14) come beside it; Orton publishes no figure above cone 14, so cones from 16 up have none. SK cones (JIS R 8101, SK 022 to SK 20) by the standard's nominal figures. Give a cone, or a temperature to find the nearest cones.",
       inputSchema: z.object({
         cone: z.string().max(10).optional(),
         chart: z.enum(['orton', 'sk']).optional(),
@@ -566,9 +594,16 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           throw new ToolProblem(`A target SG of ${target} is not under the dry materials' ${dry}.`);
         const contents =
           litres !== undefined && dry !== undefined ? recipe.slurryContents(litres, measured, dry) : null;
-        const raw = litres !== undefined && target !== undefined ? (litres * (measured - target)) / (target - 1) : null;
-        // Rounded first, so a tiny difference reads as none and never as -0.
-        const water = raw === null ? null : rounded(raw, 2) || 0;
+        // The recipe page's own figure, and its own rule for when the slurry is there already (lib/recipe/slurry.js),
+        // so the two always agree.
+        const raw =
+          litres !== undefined && target !== undefined
+            ? recipe.waterToReach(litres, measured, target, dry ?? null)
+            : null;
+        const already = raw !== null && litres !== undefined && recipe.reachedAlready(raw, litres);
+        // As the page writes it: to the gram under a kilogram (a litre of water weighs a kilogram), else to 10 g;
+        // never as -0.
+        const water = raw === null ? null : already ? 0 : rounded(raw, Math.abs(raw) < 1 ? 3 : 2) || 0;
         return ok({
           sg: rounded(measured, 3),
           ...estimated,
@@ -579,12 +614,11 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           ...(water !== null && {
             target,
             waterToAddLitres: water,
-            note:
-              water === 0
-                ? 'The glaze is already at that SG.'
-                : water < 0
-                  ? 'Negative: let the glaze settle, then pour off that much clear water. Stir well and weigh 100 mL again.'
-                  : 'Add the water a little at a time, stir well, and weigh 100 mL again.'
+            note: already
+              ? 'The glaze is already at that SG.'
+              : raw! < 0
+                ? 'Negative: let the glaze settle, then pour off that much clear water. Stir well and weigh 100 mL again.'
+                : 'Add the water a little at a time, stir well, and weigh 100 mL again.'
           }),
           ...(target !== undefined && litres === undefined && { note: 'Give litres for the water to add.' })
         });
@@ -612,24 +646,36 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
         const resolved = resolveLines(lines);
         const uncapped = allowedMore(allowMore);
         const options = { allowLead: allowLead ?? false };
-        const plan = recipe.planSuggestion<MaterialRecord>(
-          resolved,
-          findMaterial,
-          standardMaterials(),
-          region ?? '',
-          options
-        );
-        if (!plan.swaps.length) return ok({ swaps: [], note: 'Nothing in this recipe is discontinued or scarce.' });
-        countFit(caller);
-        // The best choice for each oxide left short, as the app offers first.
-        const bringIn = plan.shortfalls
-          .map((shortfall) => (shortfall.choices[0] ? findMaterial(shortfall.choices[0].name) : undefined))
-          .filter((material): material is LibraryRecord => Boolean(material))
-          // One material can be the best choice for two oxides: it comes in once.
-          .filter((material, i, all) => all.findIndex((other) => other.name === material.name) === i);
-        const suggestion = recipe.suggestAmounts<MaterialRecord>(resolved, findMaterial, bringIn, region ?? '', {
-          ...options,
-          uncapped
+        // Nothing to swap is said without working anything out, and is not counted as a fit.
+        if (!recipe.modernMaterials<MaterialRecord>(resolved, findMaterial, region ?? '', options).swaps.length)
+          return ok({ swaps: [], note: 'Nothing in this recipe is discontinued or scarce.' });
+        // The plan and the suggestion are one fit, charged together; but each has its own meter, as on the
+        // page (where the amounts are worked out after the potter chooses), so both give the same answer.
+        const { plan, suggestion } = fitFor(caller, (meter) => {
+          const plan = recipe.planSuggestion<MaterialRecord>(
+            resolved,
+            findMaterial,
+            standardMaterials(),
+            region ?? '',
+            { ...options, meter }
+          );
+          // The best choice for each oxide left short, as the app offers first.
+          const bringIn = plan.shortfalls
+            .map((shortfall) => (shortfall.choices[0] ? findMaterial(shortfall.choices[0].name) : undefined))
+            .filter((material): material is LibraryRecord => Boolean(material))
+            // One material can be the best choice for two oxides: it comes in once.
+            .filter((material, i, all) => all.findIndex((other) => other.name === material.name) === i);
+          const amounts = chemistry.newMeter();
+          try {
+            const suggestion = recipe.suggestAmounts<MaterialRecord>(resolved, findMaterial, bringIn, region ?? '', {
+              ...options,
+              uncapped,
+              meter: amounts
+            });
+            return { plan, suggestion };
+          } finally {
+            meter.used += amounts.used;
+          }
         });
         return ok({
           swaps: plan.swaps,
@@ -664,8 +710,8 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
         have: z
           .array(z.string().min(1).max(200))
           .min(1)
-          .max(100)
-          .describe('The library names of the materials on hand.'),
+          .max(MOST_MATERIALS)
+          .describe(`The library names of the materials on hand, at most ${MOST_MATERIALS}.`),
         mustUse: z
           .array(z.string().min(1).max(200))
           .max(20)
@@ -689,8 +735,7 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           return { material, must: must.has(material.name) };
         });
         const uncapped = allowedMore(allowMore);
-        countFit(caller);
-        const match = recipe.matchFromShelf(resolved, shelf, { uncapped });
+        const match = fitFor(caller, (meter) => recipe.matchFromShelf(resolved, shelf, { uncapped, meter }));
         return ok(matchOut(match, lang));
       }, lang);
     }
@@ -719,9 +764,11 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           .describe('The unity formula or oxide analysis to aim for.'),
         materials: z
           .array(z.string().min(1).max(200))
-          .max(100)
+          .max(MOST_MATERIALS)
           .optional()
-          .describe('The library names of the materials to make it from. Use search_materials to find the names.'),
+          .describe(
+            `The library names of the materials to make it from, at most ${MOST_MATERIALS} with any on hand. Use search_materials to find the names.`
+          ),
         onHand: z
           .boolean()
           .optional()
@@ -758,16 +805,21 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           throw new ToolProblem(
             onHand ? 'There are no materials on hand. Name the materials instead.' : 'Name the materials to use.'
           );
+        if (unique.length > MOST_MATERIALS)
+          throw new ToolProblem(
+            `Too many materials to fit at once: ${unique.length}, with those on hand, and solve_target takes at most ${MOST_MATERIALS}. Narrow the list: name the materials to use, without onHand.`
+          );
         const must = new Set((mustUse ?? []).map((name) => findMaterial(name)?.name ?? name));
         const missingMust = [...must].filter((name) => !unique.some((m) => m.name === name));
         if (missingMust.length) throw new ToolProblem(`mustUse names materials not given: ${missingMust.join(', ')}.`);
         const uncapped = allowedMore(allowMore);
         const at = firingOf(firing);
-        countFit(caller);
-        const solved = recipe.solveTarget(
-          { kind: target.kind, oxides: target.oxides },
-          unique.map((material) => ({ material, must: must.has(material.name) })),
-          { uncapped, celsius: at.celsius, band: at.band }
+        const solved = fitFor(caller, (meter) =>
+          recipe.solveTarget(
+            { kind: target.kind, oxides: target.oxides },
+            unique.map((material) => ({ material, must: must.has(material.name) })),
+            { uncapped, celsius: at.celsius, band: at.band, meter }
+          )
         );
         return ok(solvedOut(solved, lang, at.band === 'top'));
       }, lang);
@@ -790,7 +842,9 @@ const solvedClosenessOut = (report: Report) => {
     report.unreachable.length ? `Nothing given supplies ${listed(report.unreachable)}.` : '',
     report.miss - report.best < COULD_BE_NEARER
       ? 'These materials cannot come much nearer.'
-      : 'These materials could come nearer: see couldHelp and capped.'
+      : 'These materials could come nearer: see couldHelp and capped.',
+    ...notHeld(report),
+    report.cutShort ? CUT_SHORT : ''
   ];
   return {
     verdict: found.verdict,
@@ -808,7 +862,7 @@ const solvedClosenessOut = (report: Report) => {
 
 /** A solved recipe, as solve_target answers it. */
 const solvedOut = (solved: ReturnType<typeof recipe.solveTarget>, language: string, top: boolean) => {
-  const { uses, couldHelp, capped, unreachable, miss, best } = reportOut(solved.report, language);
+  const { uses, couldHelp, capped, unreachable, miss, best, cutShort } = reportOut(solved.report, language);
   return {
     recipe: solved.materials.map((material) => ({ material: material.name, percent: Number(material.amount) })),
     unityFormula: roundAll(solved.unity),
@@ -823,6 +877,7 @@ const solvedOut = (solved: ReturnType<typeof recipe.solveTarget>, language: stri
     unreachable,
     miss,
     best,
+    ...(cutShort && { cutShort }),
     cautions: solved.cautions.map((caution) => cautionOut(caution, language)),
     ...(top && { limitsNote: TOP_NOTE }),
     note: 'A calculation from the fired oxides, not a test: mix a small batch and test-fire it first.'

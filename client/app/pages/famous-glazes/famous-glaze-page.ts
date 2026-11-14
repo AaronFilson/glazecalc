@@ -1,5 +1,5 @@
-import { isPlatformBrowser } from '@angular/common';
-import { Component, PLATFORM_ID, computed, inject, signal } from '@angular/core';
+import { Location } from '@angular/common';
+import { Component, computed, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
@@ -8,7 +8,8 @@ import { map } from 'rxjs';
 import { formatFormula } from '../../../../lib/chemistry';
 import { regionFor } from '../../../../lib/regions';
 import { AuthService } from '../../core/auth.service';
-import { Material, Recipe } from '../../core/models';
+import { FIRST_RENDER } from '../../core/first-render';
+import { Recipe } from '../../core/models';
 import { PendingRecipeService } from '../../core/pending-recipe.service';
 import { PreferencesService } from '../../core/preferences.service';
 import { PAGE_LANGUAGE } from '../../i18n/language';
@@ -26,8 +27,8 @@ import {
   nameIn,
   nativeRecipe,
   nativeUnity,
-  offeredIn,
-  proseIn
+  proseIn,
+  versionMaterials
 } from './famous-glaze';
 
 /** The atmospheres' names, as the keys of their messages. */
@@ -223,7 +224,7 @@ const unityRows = (unity: Record<string, number>): Array<{ oxide: string; amount
           </tbody>
         </table>
         <p class="small">{{ t(verdictKeys[version.verdict]) }}</p>
-      } @else if (localTried()) {
+      } @else if (localShown()) {
         <p>{{ library() ? t('famous.local.none') : t('famous.local.choose') }}</p>
       }
     </section>
@@ -234,7 +235,7 @@ const unityRows = (unity: Record<string, number>): Array<{ oxide: string; amount
         <a
           id="famous-open"
           class="btn btn-primary"
-          routerLink="/recipe"
+          [href]="recipeAddress"
           [attr.aria-busy]="starting() || null"
           (click)="open($event)"
           >{{ glaze().lead ? t('famous.glaze.openLeadFree') : t('famous.glaze.open') }}</a
@@ -318,6 +319,7 @@ export class FamousGlazePage {
   private readonly router = inject(Router);
   private readonly pending = inject(PendingRecipeService);
   private readonly preferences = inject(PreferencesService);
+  private readonly firstRender = inject(FIRST_RENDER);
   protected readonly formatFormula = formatFormula;
   protected readonly formatPlain = formatPlain;
   protected readonly fixed = fixed;
@@ -359,23 +361,13 @@ export class FamousGlazePage {
     regionFor(this.preferences.region())?.library ??
       (REGIONS.some((r) => r.value === chosenRegion()) ? chosenRegion() : '')
   );
-  /** The standard materials, which come in with the page's first solve (standard-materials.ts is large). */
-  private readonly standard = signal<readonly Material[] | null>(null);
-  protected readonly localTried = computed(() => this.standard() !== null);
-  protected readonly local = computed(() => {
-    const standard = this.standard();
-    if (!standard) return null;
-    return localVersion(this.glaze(), offeredIn(this.glaze(), this.library(), standard));
-  });
-
-  constructor() {
-    // In the browser only: the build's render leaves the version to be worked out where the reader is.
-    if (isPlatformBrowser(inject(PLATFORM_ID))) void this.loadStandard();
-  }
-
-  private async loadStandard(): Promise<void> {
-    this.standard.set((await import('../materials/standard-materials')).STANDARD_MATERIALS);
-  }
+  /**
+   * Whether the version for the region is shown. The region is this browser's choice, so the build's render
+   * leaves it out, and so does the browser's first render, which has to match that HTML (core/first-render.ts).
+   */
+  protected readonly localShown = computed(() => !this.firstRender());
+  /** The version for the region, as the build worked it out (scripts/famous-glazes.mjs); null where none was made. */
+  protected readonly local = computed(() => (this.localShown() ? localVersion(this.glaze(), this.library()) : null));
 
   protected pickLibrary(value: string): void {
     this.library.set(value);
@@ -383,18 +375,31 @@ export class FamousGlazePage {
 
   protected readonly path = computed(() => '/famous-glazes/' + this.glaze().slug);
   protected readonly starting = signal(false);
+  /**
+   * The main button's address in the page's language (/de/recipe), for a new tab. Not a routerLink, whose own
+   * navigation would take a visitor to the sign-in page while their trial starts.
+   */
+  protected readonly recipeAddress = inject(Location).prepareExternalUrl('/recipe');
 
-  /** The recipe the main button opens: the native one, or for a lead glaze its lead-free version. */
-  private recipeToOpen(): Recipe | null {
+  /** The recipe the main button opens: the native one, or for a lead glaze its lead-free version for the region. */
+  private async recipeToOpen(): Promise<Recipe | null> {
     const glaze = this.glaze();
     const native = nativeRecipe(glaze, this.name());
     if (native) return native;
-    const version = this.local();
+    const library = this.library();
+    const version = localVersion(glaze, library);
     if (!version) return null;
+    // The version names its materials, and the recipe takes their records: a region's from the standard
+    // materials, which come in only now (standard-materials.ts is large), the proposal's from the glaze.
+    const records = library
+      ? (await import('../materials/standard-materials')).STANDARD_MATERIALS
+      : (glaze.leadFree?.prefer ?? []);
+    const materials = versionMaterials(version, records);
+    if (!materials) return null;
     return {
       title: translate('famous.glaze.leadFreeTitle', { name: this.name() }),
       notes: translate('famous.local.untestedNote'),
-      materials: version.materials,
+      materials,
       additives: version.additives
     };
   }
@@ -406,8 +411,7 @@ export class FamousGlazePage {
     if (this.starting()) return;
     this.starting.set(true);
     try {
-      if (!this.standard()) await this.loadStandard();
-      const recipe = this.recipeToOpen();
+      const recipe = await this.recipeToOpen();
       try {
         await this.auth.whenChecked();
         if (!this.auth.hasSession()) await this.auth.startTrial();

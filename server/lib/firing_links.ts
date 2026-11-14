@@ -34,6 +34,7 @@ import Recipe, { FIRING_LINKS } from '../models/recipe.ts';
 import { userOf } from './jwt_auth.ts';
 import { say } from './messages.ts';
 import { fieldChanges, registerPreview } from './pending_changes.ts';
+import * as limits from './rate_limit.ts';
 import { logActivity, titleOf } from './record_history.ts';
 import { bump } from './record_rev.ts';
 import requireScope from './require_scope.ts';
@@ -293,15 +294,15 @@ export function addFiringLinkRoutes(router: Router): void {
     })
   };
 
-  router.post('/firings/:id', writing, jsonParser, asking.link, async (req, res) => {
+  router.post('/firings/:id', writing, limits.sessionWrites, jsonParser, asking.link, async (req, res) => {
     send(res, await link(whoIs(req), inputOf(req)));
   });
 
-  router.put('/firings/:id/:firing', writing, jsonParser, asking.change, async (req, res) => {
+  router.put('/firings/:id/:firing', writing, limits.sessionWrites, jsonParser, asking.change, async (req, res) => {
     send(res, await change(whoIs(req), inputOf(req)));
   });
 
-  router.delete('/firings/:id/:firing', writing, asking.unlink, async (req, res) => {
+  router.delete('/firings/:id/:firing', writing, limits.sessionWrites, asking.unlink, async (req, res) => {
     send(res, await unlink(whoIs(req), inputOf(req)));
   });
 }

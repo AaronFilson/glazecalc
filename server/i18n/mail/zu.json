@@ -1,0 +1,10 @@
+{
+  "CHANGED": {
+    "subject": "Iphasiwedi yakho ye-Glazecalc ishintshiwe",
+    "text": "Iphasiwedi ye-akhawunti ye-Glazecalc ethi {account} isanda kushintshwa, futhi yonke idivayisi ebingene ikhishiwe.\n\nUma bekunguwe, akukho okunye okufanele ukwenze. Uma bekungewena, setha kabusha iphasiwedi yakho ngokushesha ku-{forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Setha kabusha iphasiwedi yakho ye-Glazecalc",
+    "text": "Othile (sethemba ukuthi nguwe) ucele ukusetha kabusha iphasiwedi ye-akhawunti ye-Glazecalc ethi {account}.\n\nUkuze ukhethe iphasiwedi entsha, vula lesi sixhumanisi kungakapheli imizuzu engu-{minutes}:\n\n{link}\n\nIsixhumanisi sisebenza kanye. Uma kungewena ocele lokhu, ungayinaki le imeyili; iphasiwedi yakho ihlala injalo.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

@@ -191,7 +191,20 @@ describe('LocaleService', () => {
     expect(preferences.cones()).toBe('sk');
   });
 
-  it('fires by SK cones and reads density in Baumé in Japan, until chosen, and lists the US library', () => {
+  it('leaves the library the region it keeps on this browser when torn down, not the one the visit followed', () => {
+    // A region chosen in the library itself, then a different one in Settings.
+    localStorage.setItem('region', 'US');
+    const preferences = TestBed.inject(PreferencesService);
+    TestBed.inject(LocaleService);
+    preferences.remember('region', 'DE');
+    TestBed.tick();
+    expect(chosenRegion()).toBe('EU');
+    // The next app (the next test's) starts from the browser's choice, as a new visit would.
+    TestBed.resetTestingModule();
+    expect(chosenRegion()).toBe('US');
+  });
+
+  it("fires by SK cones and reads density in Baumé in Japan, until chosen, and lists Japan's library", () => {
     const preferences = TestBed.inject(PreferencesService);
     const locale = TestBed.inject(LocaleService);
     preferences.remember('region', 'JP');
@@ -202,7 +215,8 @@ describe('LocaleService', () => {
       'sk',
       'baume'
     ]);
-    expect(chosenRegion()).toBe('US');
+    // Japan's own, which lists the US set too (lib/recipe/library.js).
+    expect(chosenRegion()).toBe('JP');
     // Orton cones and temperature are a setting away.
     preferences.remember('cones', 'orton');
     TestBed.tick();
@@ -276,6 +290,9 @@ describe('LocaleService during the first render', () => {
 
   it('switches to the browser’s own settings afterwards', () => {
     const { state, locale } = firstRender('de');
+    // Checked while the first render stands: still the language's own region.
+    TestBed.tick();
+    expect(locale.region()).toBe('DE');
     state.set(false);
     TestBed.tick();
     expect([locale.region(), locale.locale(), locale.temperature(), formatLocale()]).toEqual([

@@ -50,7 +50,6 @@
     "firedTo": "Pişirim sıcaklığı",
     "how": "Nasıl",
     "rebuild": "Sırrı yeniden kur: silis ve alüminasını koru, kurşunun yerine bor ve diğer ergiticileri kullan",
-    "keepColour": "Rengi kurşunsuz bir temel sırda koru: 85’e 15 oranında frit ve kaolen, reçetenin renklendiricileriyle",
     "fritHeading": "Üzerine kurulacak kurşunsuz frit, en iyisi başta",
     "fritBoron": "(%{boron} bor, B₂O₃)",
     "noFrit": "Bölgenizde satılan kurşunsuz fritlerin hiçbiri kütüphanede yok.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Kurşun değiştirilemiyor: reçetedeki bir hammaddenin hesaplamaya temel olacak bir analizi yok.",
     "leadRebuiltCone": "Kurşun, {cone} numaralı piramit için {base} fritinin üzerine kurularak değiştirildi: eski reçetenin silis ve alüminası korundu, kurşunun işini bor ve diğer ergiticiler yapıyor.",
     "leadRebuilt": "Kurşun, {firing} sıcaklığında pişirim için {base} fritinin üzerine kurularak değiştirildi: eski reçetenin silis ve alüminası korundu, kurşunun işini bor ve diğer ergiticiler yapıyor.",
-    "leadColour": "Kurşun değiştirildi: renklendiriciler, 85’e 15 oranında {base} friti ve kaolenden oluşan kurşunsuz bir temel sırra aktarıldı.",
     "leadGloss": "Kurşunun parlaklığını, berraklığını veya rengini tam olarak tutturmaz: daha az ışıltı, kırmızı çamur üzerinde olası bir bulanıklaşma veya sır çatlağı bekleyin. Küçük bir tartımı kendi çamurunuz üzerinde test edin.",
     "leadSafety": "Kurşun içermemesi tek başına bir sırrı gıdaya uygun yapmaz; bu, formülün tamamına ve pişirime bağlıdır.",
     "leadReplaced": "Kurşun değiştirildi.",
@@ -245,8 +243,7 @@
       "text": "Bunlar temelin üzerine eklenir. Reçeteyle birlikte kaydedilirler ama Seger formülüne dahil değildirler. Her miktarın birimini seçin:",
       "percent": "<b>temelin %’si</b>: temelin toplamının yüzdesi, çoğu reçetenin verdiği gibi: 2, %2 kırmızı demir oksit demektir.",
       "parts": "<b>kısım</b>: hammaddelerle aynı birim; örneğin 3 flint ve 2 dolomitten oluşan bir temele 1 kısım.",
-      "grams": "<b>gram</b>: hammaddelerle aynı tartımda bir ağırlık.",
-      "count": "Bazı hesaplayıcılar renklendiricileri Seger formülüne katar, bazıları katmaz. Onları tartımdaki ağırlıklarıyla saymak için Seger formülü başlığının altındaki <b>Renklendiricileri ve katkıları da say</b> kutusunu işaretleyin; saymayan bir hesaplayıcıyla karşılaştırmak içinse boş bırakın. Seçim reçeteyle birlikte kaydedilir."
+      "grams": "<b>gram</b>: hammaddelerle aynı tartımda bir ağırlık."
     },
     "scale": {
       "heading": "Gerektiğinde ölçeği değiştirin",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide}, Glazecalc’in tanıdığı bir oksit değil.",
     "together": "Potası (K₂O) ve sodayı (Na₂O) KNaO olarak birlikte değil, ayrı ayrı girin.",
     "badAmount": "{oxide} miktarı 0 veya daha büyük bir sayı değil.",
-    "noFlux": "Hedefin en az bir ergiticiye ihtiyacı var; örneğin CaO, K₂O veya Na₂O.",
     "noMaterials": "Reçetenin yapılacağı en az bir hammadde ekleyin.",
     "noMatch": "Bu hammaddelerin hiçbirinde hedefin oksitlerinden hiçbiri yok."
   },

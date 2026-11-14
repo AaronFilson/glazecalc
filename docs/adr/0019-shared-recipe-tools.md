@@ -3,6 +3,11 @@
 Accepted, 2026-10-16. Item 6 of [the integrations plan](../integrations-plan.md), ahead of the
 public MCP tools (its Phase 2), which call these from the server.
 
+Amended, 2026-11-12: the declarations are no longer kept in step by hand alone. `npm run typecheck`, in CI,
+checks the library's JavaScript against them (`lib/tsconfig.json`), and `server/test/lib_types_tests.ts` checks
+that each module exports what its declaration says and that every declaration is correct TypeScript. The first
+run found five exports the code used that no declaration had.
+
 ## Context
 
 [ADR 4](0004-shared-chemistry.md) put the arithmetic (unity formulas, fitting amounts) in
@@ -81,14 +86,15 @@ Node and the Angular build both load, typed by hand-written declarations, one pe
   the warnings), `bands` coolest first (`{ band, belowC }`, the last with no `belowC`), the band
   used when the firing is unknown (`whenUnknown`), and `unity[band][oxide]`, a range
   `{ min, max, minLikely, maxLikely }` in moles for each oxide or sum (`'B2O3'`, `'Al2O3'`,
-  `'K2O+Na2O'`, `'SiO2'`...). Bands are `'low'` (cone 06-02), `'mid'` (cone 4-6) and `'high'`
-  (cone 9-11); `bandOf(set, celsius)` finds a firing's band. The app's own set,
-  `GLAZECALC_LIMITS`, has only low and mid, so cone 10 is checked as mid fire, as before. It is
-  built from `CHECK_LIMITS`, which keeps the figures that are not ranges on the unity formula
-  (clay and whiting shares, expansion, boron blue, the size notes). `pastLimits` takes the set as
-  `input.limitSet`, the app's own by default, and reads boron, alumina, soda and potash and
-  magnesia from it for the firing's band. Magnesia is checked only in a low band because its
-  sentence says it does not melt at cone 06-04.
+  `'K2O+Na2O'`, `'SiO2'`...). Bands are `'low'` (cone 06-02), `'mid'` (cone 4-6), `'high'`
+  (cone 9-11) and, since [ADR 21](0021-recipe-firing.md)'s higher cones, `'top'` (cone 12 up, where
+  no set has figures); `bandOf(set, celsius)` finds a firing's band. The app's own set,
+  `GLAZECALC_LIMITS`, has figures only for low and mid, so cone 10 is checked as mid fire, as
+  before. It is built from `CHECK_LIMITS`, which keeps the figures that are not ranges on the
+  unity formula (clay and whiting shares, expansion, boron blue, the size notes). `pastLimits`
+  takes the set as `input.limitSet`, the app's own by default, and reads boron, alumina, soda and
+  potash and magnesia from it for the firing's band. Magnesia is checked only in a low band
+  because its sentence says it does not melt at cone 06-04.
 - **Hesselberth & Roy (added October 2026).** `HESSELBERTH_ROY_LIMITS` sits in `LIMIT_SETS`
   beside the app's own, and `DEFAULT_LIMIT_SET` names it: the recipe page shows it unless the
   potter chooses the app's own (the `limitSet` setting, kept with the account as the other
@@ -123,8 +129,9 @@ max, past, likely }`), or null where the set does not apply. The recipe page sho
   set has no "likely" grade to drive them.
 - **Target SG.** The SG calculator can keep a target on the recipe as `sgTarget` (a number, 1 to
   2.5, `SG_TARGET_RANGE`; null clears it). Another branch's mix ticket reads it by that name. It
-  is saved, versioned, trashed and exported like the recipe's other fields. Dry materials default
-  to SG 2.5 (editable).
+  is saved, versioned, trashed and exported like the recipe's other fields. Dry materials defaulted
+  to SG 2.5 (editable) until 2026-11-04; since then no SG is assumed: it is typed, or estimated from
+  the recipe's materials (`density.js`).
 - **Batches.** `slurry.js` does Brongniart's formula in litres and kilograms: the dry glaze and
   water in a slurry (`slurryContents`), the water to bring it to an SG (`waterToReach`, which
   does not depend on the dry materials' SG), and the water for a batch (`waterForBatch`), with

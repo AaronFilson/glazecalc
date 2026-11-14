@@ -224,6 +224,19 @@ describe('StullChart', () => {
     const none = await create(null);
     expect(text(none.fixture, 'figcaption')).toContain('There is no point to plot');
   });
+
+  it("in a guide, draws the chart alone and describes it in the guides' own words", async () => {
+    const fixture = TestBed.createComponent(StullChart);
+    fixture.componentRef.setInput('guide', true);
+    await fixture.whenStable();
+    const root = fixture.nativeElement as HTMLElement;
+    const svg = root.querySelector('svg')!;
+    const [titleId, descId] = svg.getAttribute('aria-labelledby')!.split(' ');
+    expect(svg.querySelector('#' + titleId)?.textContent).toContain('Stull chart');
+    expect(svg.querySelector('#' + descId)?.textContent?.trim()).toMatch(/^Silica \(SiO₂\) across, from about 1 to 7/);
+    expect(text(fixture, 'figcaption')).not.toContain('There is no point to plot');
+    expect(root.querySelector('circle')).toBeNull();
+  });
 });
 
 describe('SlurryCalculator', () => {
@@ -295,6 +308,17 @@ describe('SlurryCalculator', () => {
     expect(text(fixture, '.slurry-problem')).toBe(
       "An SG has to be more than 1 (water's) and less than the dry materials' 2.5."
     );
+  });
+
+  it('says a bucket under a litre is at the SG already rather than to add 0 g of water', async () => {
+    const { fixture, type } = await create();
+    await type('slurry-volume', '0.5');
+    // 0.5 L × 0.0004 ÷ 0.45 is 0.44 g of water, which it wrote as "add 0 g".
+    await type('slurry-measured', '1.4504');
+    expect(text(fixture, '.slurry-results')).toContain('It is already at SG 1.45.');
+    // 0.56 g is a gram, to the gram.
+    await type('slurry-measured', '1.4505');
+    expect(text(fixture, '.slurry-results')).toContain('To reach SG 1.45, add 1 g of water.');
   });
 
   it('leaves the dry SG empty with no estimate: the water to add still works, the dry weights wait for it', async () => {
@@ -411,6 +435,35 @@ describe('SlurryCalculator', () => {
     expect(fixture.componentInstance['sgTarget']()).toBeNull();
   });
 
+  it('says a dry SG must be over water’s, and offers to keep no target the dry materials do not reach', async () => {
+    const { fixture, root, type } = await create();
+    const save = () => root.querySelector('.slurry-target button');
+    expect(save()).not.toBeNull();
+    await type('slurry-dry', '0.9');
+    expect(text(fixture, '.slurry-problem')).toBe("The dry materials' SG has to be more than 1.");
+    expect(save()).toBeNull();
+    // Dry materials at 1.4 cannot make a glaze of 1.45.
+    await type('slurry-dry', '1.4');
+    expect(text(fixture, '.slurry-problem')).toBe(
+      "An SG has to be more than 1 (water's) and less than the dry materials' 1.4."
+    );
+    expect(save()).toBeNull();
+  });
+
+  it('gives the volumes in the unit chosen', async () => {
+    const { fixture, root, type } = await create();
+    await type('slurry-dry', '2.5');
+    await type('slurry-volume', '10');
+    await type('slurry-measured', '1.5');
+    expect(text(fixture, '.slurry-results')).toContain('It ends at about 11.11 L.');
+    const unit = root.querySelector('.slurry-pair select') as HTMLSelectElement;
+    unit.value = 'usGallon';
+    unit.dispatchEvent(new Event('change'));
+    await fixture.whenStable();
+    // Ten US gallons, now.
+    expect(text(fixture, '.slurry-results')).toMatch(/It ends at about 11\.11 US gal\.$/);
+  });
+
   it('starts from the target a recipe keeps, as Settings read densities', async () => {
     TestBed.inject(PreferencesService).remember('density', 'baume');
     const fixture = TestBed.createComponent(SlurryCalculator);
@@ -418,6 +471,23 @@ describe('SlurryCalculator', () => {
     await fixture.whenStable();
     expect((fixture.nativeElement.querySelector('#slurry-target') as HTMLInputElement).value).toBe('48.3');
     expect(text(fixture, '.slurry-target')).toContain("SG 1.5 is this recipe's target.");
+  });
+
+  it('knows the kept target as the field writes it, a pint weight or a Baumé figure to 0.1', async () => {
+    const preferences = TestBed.inject(PreferencesService);
+    // 1.452 is 29.04 oz a pint, written 29, which reads as SG 1.45; 1.242 is 28.25 °Bé, written 28.3, read as 1.243.
+    for (const [density, sg, shown] of [
+      ['pint', 1.452, '29'],
+      ['baume', 1.242, '28.3']
+    ] as const) {
+      preferences.remember('density', density);
+      const fixture = TestBed.createComponent(SlurryCalculator);
+      fixture.componentRef.setInput('sgTarget', sg);
+      await fixture.whenStable();
+      expect((fixture.nativeElement.querySelector('#slurry-target') as HTMLInputElement).value).toBe(shown);
+      expect(text(fixture, '.slurry-target')).toContain(`SG ${sg} is this recipe's target.`);
+      expect(fixture.nativeElement.querySelector('.slurry-target button').textContent).toContain('Clear the target');
+    }
   });
 });
 

@@ -1,5 +1,6 @@
 import type { RecordModel } from '../lib/guest_limits.ts';
-import { forgetRunning, IMPORT_RECORDS_MOST } from '../lib/import_data.ts';
+import { forgetRunning, IMPORT_CONTAINERS_MOST, IMPORT_RECORDS_MOST } from '../lib/import_data.ts';
+import { RECORD_MOST } from '../lib/record_fields.ts';
 import Firing from '../models/firing.ts';
 import ImportRun from '../models/import_run.ts';
 import Material from '../models/material.ts';
@@ -250,6 +251,29 @@ describe('import API', () => {
     expect(user!.shelf ?? []).to.eql([]);
   });
 
+  it('takes only the preferences it knows, never a name every object has', async () => {
+    const names = ['toString', 'constructor', '__proto__', 'hasOwnProperty', 'valueOf'];
+    // Written as JSON, so that __proto__ is a key of its own, as a file can have it.
+    const preferences = '{' + names.map((name) => `"${name}":"dark"`).join(',') + ',"theme":"dark"}';
+    const file = { ...(await exportOf(alice.token)), preferences: '§' };
+    const body = JSON.stringify({ file, include: { preferences: true } }).replace('"§"', preferences);
+    const send = (path: string) =>
+      api()
+        .post(path)
+        .set('Authorization', 'Bearer ' + bob.token)
+        .set('Content-Type', 'application/json')
+        .send(body);
+    const preview = await send('/import/preview');
+    expect(preview, JSON.stringify(preview.body)).to.have.status(200);
+    expect(preview.body.preferences).to.equal(1);
+    const done = await send('/import');
+    expect(done, JSON.stringify(done.body)).to.have.status(200);
+    expect(done.body.preferences).to.equal(true);
+    const user = await User.findById(bob.user._id).lean();
+    expect(Object.keys(user!.preferences ?? {})).to.eql(['theme']);
+    expect(user!.preferences).to.include({ theme: 'dark' });
+  });
+
   it('refuses a file with a bad record, listing it, and writes nothing', async () => {
     const file = (await exportOf(alice.token)) as { records: { recipes: Row[]; materials: Row[] } };
     file.records.recipes.push({ title: 'No materials' });
@@ -281,6 +305,36 @@ describe('import API', () => {
     });
     expect((await post('/import', bob.token, { file })).status).to.equal(422);
     expect(await Material.countDocuments({ ownedBy: String(bob.user._id) })).to.equal(0);
+  });
+
+  it('refuses a record larger than the record routes take, and nesting of any depth, as problems in the file', async () => {
+    const file = (await exportOf(alice.token)) as { records: { recipes: Row[] } };
+    // Each text within the limit, the three together over the record's bytes.
+    const long = 'x'.repeat(RECORD_MOST.chars);
+    file.records.recipes.push({ title: 'Too long in all', materials: [], notes: [long, long, long] });
+    file.records.recipes.push({
+      title: 'Too many lines',
+      materials: Array.from({ length: RECORD_MOST.items + 1 }, () => ({}))
+    });
+    const res = await post('/import/preview', bob.token, { file });
+    expect(res).to.have.status(422);
+    expect(res.body.problems).to.eql([
+      { kind: 'recipes', index: 1, title: 'Too long in all', reason: 'invalid', field: 'notes' },
+      { kind: 'recipes', index: 2, title: 'Too many lines', reason: 'invalid', field: 'materials' }
+    ]);
+    for (const depth of [200, 5000, 40000]) {
+      const lists = '['.repeat(depth) + ']'.repeat(depth);
+      const deep = `{"file":{"format":"glazecalc-export","version":1,"records":{"recipes":[{"title":"t","materials":[${lists}]}]}}}`;
+      const answer = await api()
+        .post('/import/preview')
+        .set('Authorization', 'Bearer ' + bob.token)
+        .set('Content-Type', 'application/json')
+        .send(deep);
+      expect(answer, 'depth ' + depth).to.have.status(422);
+      expect(answer.body.problems).to.eql([
+        { kind: 'recipes', index: 0, title: 't', reason: 'invalid', field: 'materials' }
+      ]);
+    }
   });
 
   it('refuses what is not an export, a newer version, and too many records', async () => {
@@ -380,6 +434,22 @@ describe('import API', () => {
           .send({ pad: fine })
       ).status
     ).to.equal(413);
+  });
+
+  it('refuses, before reading it, a body with more lists and objects than a real file holds', async () => {
+    // 20 MB of empty objects ran the server out of memory as it read them: this is more than the limit, in 3 MB.
+    const many = '{},'.repeat(IMPORT_CONTAINERS_MOST) + '{}';
+    const body = `{"file":{"format":"glazecalc-export","version":1,"records":{"recipes":[{"title":"x","materials":[${many}]}]}}}`;
+    for (const path of ['/import/preview', '/import']) {
+      const res = await api()
+        .post(path)
+        .set('Authorization', 'Bearer ' + bob.token)
+        .set('Content-Type', 'application/json')
+        .send(body);
+      expect(res, path).to.have.status(413);
+      expect(res.body.code).to.equal('too-large');
+    }
+    expect(await Recipe.countDocuments({ ownedBy: String(bob.user._id) })).to.equal(0);
   });
 
   it('counts imports per account', async () => {

@@ -50,7 +50,6 @@
     "firedTo": "Cuit à",
     "how": "Méthode",
     "rebuild": "Reconstruire l’émail : garder sa silice et son alumine, avec du bore et d’autres fondants à la place du plomb",
-    "keepColour": "Garder la couleur sur une base sans plomb : la fritte et du kaolin, 85 pour 15, avec les colorants de la recette",
     "fritHeading": "Fritte sans plomb servant de base, la plus adaptée en premier",
     "fritBoron": "({boron} % de bore, B₂O₃)",
     "noFrit": "La bibliothèque ne contient aucune fritte sans plomb vendue dans votre région.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Impossible de remplacer le plomb : une matière de la recette n’a pas d’analyse sur laquelle s’appuyer.",
     "leadRebuiltCone": "Plomb remplacé pour le cône {cone}, sur la base {base} : la silice et l’alumine de l’ancienne recette sont conservées, et le bore et d’autres fondants font le travail du plomb.",
     "leadRebuilt": "Plomb remplacé pour une cuisson à {firing}, sur la base {base} : la silice et l’alumine de l’ancienne recette sont conservées, et le bore et d’autres fondants font le travail du plomb.",
-    "leadColour": "Plomb remplacé : les colorants sont reportés sur une base sans plomb, {base} et kaolin, 85 pour 15.",
     "leadGloss": "Le résultat n’aura pas exactement la brillance, la limpidité ou la couleur d’un émail au plomb : attendez-vous à moins d’éclat, et peut-être à un voile sur terre rouge ou à du tressaillage. Testez une petite préparation sur votre propre terre.",
     "leadSafety": "L’absence de plomb ne suffit pas, à elle seule, à rendre un émail apte au contact alimentaire ; cela dépend de toute la formule et de la cuisson.",
     "leadReplaced": "Le plomb est remplacé.",
@@ -245,8 +243,7 @@
       "text": "Ils viennent en ajout à la base. Ils sont enregistrés avec la recette mais ne font pas partie de la formule de Seger. Choisissez l’unité de chaque quantité :",
       "percent": "<b>% de la base</b> : un pourcentage du total de la base, comme dans la plupart des recettes : 2 signifie 2 % d’oxyde de fer rouge.",
       "parts": "<b>parts</b> : la même unité que les matières, par exemple 1 part sur une base de 3 parts de silice<en>flint</en> et 2 de dolomie.",
-      "grams": "<b>grammes</b> : un poids, dans la même préparation que les matières.",
-      "count": "Certains calculateurs comptent les colorants dans la formule de Seger<en>unity molecular formula</en>, d’autres non. Cochez <b>Y compter les colorants et additifs</b>, sous le titre Formule de Seger, pour les compter selon leur poids dans la préparation, ou laissez la case décochée pour comparer avec un calculateur qui ne les compte pas. Ce choix est enregistré avec la recette."
+      "grams": "<b>grammes</b> : un poids, dans la même préparation que les matières."
     },
     "scale": {
       "heading": "Changer l’échelle si besoin",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide} n’est pas un oxyde connu de Glazecalc.",
     "together": "Indiquez la potasse (K₂O) et la soude (Na₂O) séparément, et non ensemble sous la forme KNaO.",
     "badAmount": "La quantité de {oxide} n’est pas un nombre supérieur ou égal à 0.",
-    "noFlux": "La cible a besoin d’au moins un fondant, comme CaO, K₂O ou Na₂O.",
     "noMaterials": "Ajoutez au moins une matière pour composer la recette.",
     "noMatch": "Aucune de ces matières ne contient d’oxyde de la cible."
   },

@@ -7,6 +7,19 @@
 # mongodump runs as the app's MongoDB user; its password is in the mongo container's environment.
 set -euo pipefail
 
+# Runs a MongoDB tool in the mongo container as the app's user. The password,
+# from the container's environment, reaches the tool in a config file read
+# from a here-document (--config /dev/fd/3), never on a command line, which
+# any process on the instance could read (ps). It is letters and digits only
+# (deploy.sh checks), so it needs no escaping in the file's YAML.
+as_app() {
+  docker compose -f compose.prod.yaml exec -T mongo sh -c '"$@" --config /dev/fd/3 --username glazecalc \
+    --authenticationDatabase glazecalc 3<<EOF
+password: "$MONGO_APP_PASSWORD"
+EOF
+' sh "$@"
+}
+
 cd /opt/glazecalc
 token=$(curl -fsS -X PUT http://169.254.169.254/latest/api/token -H 'X-aws-ec2-metadata-token-ttl-seconds: 60')
 region=$(curl -fsS -H "X-aws-ec2-metadata-token: $token" http://169.254.169.254/latest/meta-data/placement/region)
@@ -22,10 +35,8 @@ trap 'rm -f "$dump" "$log"' EXIT
 # The deletion log stays out of the dump, so restoring one, even with --drop,
 # leaves the live log as it is; restore.sh then deletes again every account in
 # it. The log goes up beside the dump, for when the live database is lost too.
-docker compose -f compose.prod.yaml exec -T mongo sh -c 'mongodump --db glazecalc --excludeCollection deletions \
-  --archive --gzip --quiet --username glazecalc --password "$MONGO_APP_PASSWORD" --authenticationDatabase glazecalc' > "$dump"
-docker compose -f compose.prod.yaml exec -T mongo sh -c 'mongodump --db glazecalc --collection deletions \
-  --archive --gzip --quiet --username glazecalc --password "$MONGO_APP_PASSWORD" --authenticationDatabase glazecalc' > "$log"
+as_app mongodump --db glazecalc --excludeCollection deletions --archive --gzip --quiet > "$dump"
+as_app mongodump --db glazecalc --collection deletions --archive --gzip --quiet > "$log"
 aws s3 cp "$dump" "s3://$bucket/$key" --region "$region" --only-show-errors
 aws s3 cp "$log" "s3://$bucket/${key%.archive.gz}.deletions.archive.gz" --region "$region" --only-show-errors
 echo "Backup written to s3://$bucket/$key ($(stat -c %s "$dump") bytes), with its deletion log"

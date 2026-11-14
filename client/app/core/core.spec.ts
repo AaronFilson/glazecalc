@@ -3,6 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import { API, httpMock, testProviders } from '../testing/test-providers';
+import { API_BASE } from './api-base';
 import { ApiResourceFactory } from './api-resource.service';
 import { AuthService } from './auth.service';
 import { TranslocoService } from '@jsverse/transloco';
@@ -10,6 +11,8 @@ import { calculateUMF } from '../../../lib/chemistry';
 import type { ChemistryError } from '../../../lib/chemistry';
 import { chemistryText, useCodedMessages } from '../i18n/coded';
 import { errorMessage } from './error-message';
+import { FIRST_RENDER } from './first-render';
+import { askBeforeLeaving, type AsksBeforeLeaving } from './leave.guard';
 
 describe('sessionExpiredInterceptor', () => {
   beforeEach(() => {
@@ -119,6 +122,24 @@ describe('ApiResource', () => {
       .expectOne({ method: 'DELETE', url: API + '/notes/delete/1' })
       .flush({});
     await removed;
+
+    const changed = notes.change('1', { content: 'c' });
+    const put = httpMock().expectOne({ method: 'PUT', url: API + '/notes/change/1' });
+    expect(put.request.body).toEqual({ content: 'c' });
+    put.flush({ code: 'record-updated', rev: 2 });
+    await changed;
+
+    // Back from the Trash, by its entry; and back to the version before the last change.
+    const restored = notes.restore('t1');
+    httpMock()
+      .expectOne({ method: 'POST', url: API + '/trash/restore/t1' })
+      .flush({ code: 'trash-restored', record: { _id: '1', content: 'b' } });
+    expect(await restored).toEqual({ _id: '1', content: 'b' });
+    const undone = notes.undo('1');
+    httpMock()
+      .expectOne({ method: 'POST', url: API + '/notes/undo/1' })
+      .flush({ code: 'record-undone', record: { _id: '1', content: 'a' } });
+    expect(await undone).toEqual({ _id: '1', content: 'a' });
   });
 
   describe('getStandard with no network', () => {
@@ -232,5 +253,20 @@ describe('errorMessage', () => {
       'fallback'
     );
     expect(errorMessage(new Error('boom'), 'fallback')).toBe('fallback');
+  });
+});
+
+describe('what the app starts from', () => {
+  it('calls the API under /api, and starts in the first render, unless it is told otherwise', () => {
+    expect(TestBed.inject(API_BASE)).toBe('/api');
+    expect(TestBed.inject(FIRST_RENDER)()).toBe(true);
+  });
+
+  it('asks a page with work not saved before a link leaves it, and lets any other page go', () => {
+    const leave = (page: AsksBeforeLeaving | null) =>
+      askBeforeLeaving(page as AsksBeforeLeaving, null as never, null as never, null as never);
+    expect(leave({ canLeave: () => false })).toBe(false);
+    expect(leave({ canLeave: () => true })).toBe(true);
+    expect(leave(null)).toBe(true);
   });
 });

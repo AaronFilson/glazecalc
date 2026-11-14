@@ -50,7 +50,6 @@
     "firedTo": "A gbara ọkụ ruo",
     "how": "Otu",
     "rebuild": "Wughachi glaze ahụ: debe silica na alumina ya, were boron na flux ndị ọzọ dochie lead",
-    "keepColour": "Debe agba ya na ntọala enweghị lead: frit na kaolin, 85 ruo 15, ya na ihe na-enye agba nke usoro ahụ",
     "fritHeading": "Frit enweghị lead a ga-ewuli na ya, nke kacha mma bụ ụzọ",
     "fritBoron": "({boron}% boron, B₂O₃)",
     "noFrit": "Ọ dịghị frit enweghị lead a na-ere na mpaghara gị dị n'ọbá akwụkwọ.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Enweghị ike idochie lead ahụ: otu ihe n'usoro ahụ enweghị nyocha a ga-eji rụọ ọrụ.",
     "leadRebuiltCone": "E dochiri lead maka cone {cone} na {base}: e debere silica na alumina nke usoro ochie ahụ, boron na flux ndị ọzọ na-arụ ọrụ lead.",
     "leadRebuilt": "E dochiri lead maka {firing} na {base}: e debere silica na alumina nke usoro ochie ahụ, boron na flux ndị ọzọ na-arụ ọrụ lead.",
-    "leadColour": "E dochiri lead: e bufere ihe na-enye agba na ntọala enweghị lead nke {base} na kaolin, 85 ruo 15.",
     "leadGloss": "Ọ gaghị adị ka nchapụta, ịdị doro anya ma ọ bụ agba nke lead kpọmkwem: tụọ anya na ọ ga-egbuke obere, nwekwaa ike ịghọ nke na-adịghị doro anya (clouding) n'elu ụrọ uhie ma ọ bụ crazing. Nwalee obere batch n'ụrọ nke gị.",
     "leadSafety": "Inweghị lead n'onwe ya anaghị eme ka glaze dị mma maka nri; nke ahụ dabere na usoro ya niile na ịgba ọkụ.",
     "leadReplaced": "E dochiri lead ahụ.",
@@ -245,8 +243,7 @@
       "text": "Ndị a na-aga n'elu ntọala. A na-echekwa ha na usoro ahụ mana ha abụghị akụkụ nke UMF. Họrọ ihe ọnụọgụ ọ bụla dị na ya:",
       "percent": "<b>% nke ntọala</b>: pasentị nke ngụkọta ntọala ahụ, dịka ọtụtụ usoro si enye ha: 2 pụtara 2% red iron oxide.",
       "parts": "<b>akụkụ</b>: otu nkeji ahụ dịka ihe eji arụ ọrụ, dịka akụkụ 1 na ntọala nke flint 3 na dolomite 2.",
-      "grams": "<b>gram</b>: ịdị arọ, n'otu batch ahụ dịka ihe eji arụ ọrụ.",
-      "count": "Ụfọdụ ihe ngụkọ na-agụnye ihe na-enye agba na UMF, ụfọdụ anaghị. Kaa <b>Gụnye ihe na-enye agba na ihe mgbakwunye n'ime ya</b>, n'okpuru isiokwu UMF, iji gụọ ha dịka ịdị arọ ha na batch, ma ọ bụ hapụ ya ka ị tụlee ya na nke na-adịghị. A na-echekwa nhọrọ ahụ na usoro ahụ."
+      "grams": "<b>gram</b>: ịdị arọ, n'otu batch ahụ dịka ihe eji arụ ọrụ."
     },
     "scale": {
       "heading": "Gbanwee ọtụtụ mgbe ọ dị gị mkpa",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide} abụghị oxide Glazecalc maara.",
     "together": "Nye potash (K₂O) na soda (Na₂O) iche iche, ọ bụghị ọnụ dịka KNaO.",
     "badAmount": "Ọnụọgụ {oxide} abụghị nọmba nke 0 ma ọ bụ karịa.",
-    "noFlux": "Ebumnuche ahụ chọrọ opekata mpe otu flux, dịka CaO, K₂O ma ọ bụ Na₂O.",
     "noMaterials": "Tinye opekata mpe otu ihe a ga-eji mee usoro ahụ.",
     "noMatch": "Ọ dịghị otu n'ime ihe ndị a nwere oxide ọ bụla nke ebumnuche ahụ."
   },

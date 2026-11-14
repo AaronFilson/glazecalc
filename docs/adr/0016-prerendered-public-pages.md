@@ -1,8 +1,8 @@
 # 16. Public pages are prerendered at build and hydrated in place
 
 Accepted, 2026-10-13. Follows the plan in [docs/seo-plan.md](../seo-plan.md). The number is 16
-because the sign-in plan (MFA) reserves 14 and the integrations plan (OAuth) reserves 15; this
-file will sit out of order in the index until those are written.
+because the sign-in plan (MFA) had reserved 14 and the integrations plan (OAuth) 15; both were
+written after this one.
 
 ## Context
 
@@ -46,7 +46,7 @@ nonce and the headers for its language). In the browser the app hydrates the pag
 - **The build fails** if a page logs an error, is the not-found page, has little text, or has a
   script the browser build's policy does not know.
 - **The initial bundle budget is 700 kB** (warning), up from 650 kB, since hydration adds about
-  32 kB.
+  32 kB; 710 kB since 14 Oct 2026, for the Asian font stacks and script rules (`angular.json`).
 - Event replay is left out: it needs an inline script that `autoCsp` cannot hash at build.
 
 ## Consequences
@@ -55,7 +55,7 @@ nonce and the headers for its language). In the browser the app hydrates the pag
   75 kB gzipped (a Greek guide). Before the guide's text was drawn by directives the largest was
   560 kB, most of it Angular's hydration data for its many nested templates.
 - Since 4 Nov 2026 each standard material's page is rendered in every translated language too. With the
-  famous glazes, the new materials and the teaching guide that is about 11,457 pages, about 4 minutes and
+  famous glazes, the new materials and the teaching guide that is about 11,500 pages, about 4 minutes and
   1.5 GB. A material page loads only its own notes and hazards, so its state stays small; one with English
   standing in is written and listed in `material-fallback.json`, and kept out of that language's index,
   instead of failing the build. The build refuses a page over 120 kB gzipped (`MAX_GZIPPED`, was 100 kB).

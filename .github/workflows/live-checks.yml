@@ -1,7 +1,7 @@
 name: Live checks
 
 # Checks a deployed site from outside, after Deploy and Deploy staging (or by
-# hand, Actions → Live checks): the health check and security headers, every
+# hand, Actions → Live checks, and daily): the health check and security headers, every
 # live language's home page and the English public pages (scripts/live-check.mjs);
 # the same pages in a browser with no Content-Security-Policy violation or
 # script error (e2e/live); and the MCP endpoint against the protocol
@@ -26,21 +26,31 @@ on:
         options:
           - https://glazecalcapp.com
           - https://staging.glazecalcapp.com
+  # Daily, the live site with master's checks: monitoring between deploys, at
+  # about a hundred requests (the MCP endpoint only through the Inspector, under
+  # its limit per address). A failed run is the alert.
+  schedule:
+    - cron: '23 6 * * *'
 
 permissions:
   contents: read
 
 jobs:
   check:
-    name: Live checks (${{ inputs.url }})
+    name: Live checks (${{ inputs.url || 'https://glazecalcapp.com' }})
     # 24.04 as CI: Playwright's browser dependencies install there.
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     env:
-      LIVE_URL: ${{ inputs.url }}
+      LIVE_URL: ${{ inputs.url || 'https://glazecalcapp.com' }}
     steps:
       # The deployed commit's own checks, which expect what it serves; one from
-      # before the checks existed is checked with this workflow's.
+      # before the checks existed is checked with this workflow's. That runs the
+      # commit's code (npm ci, the checks) with the default branch's cache
+      # access, which code scanning reports as cache poisoning (two alerts,
+      # dismissed as by design): only people with write access can start these
+      # runs, and the commit is a published master commit (deploy.yml checks its
+      # 40 hex) or one on a branch of this repository (staging.yml).
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ inputs.ref }}

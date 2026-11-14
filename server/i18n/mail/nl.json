@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Uw wachtwoord voor Glazecalc is gewijzigd",
+    "text": "Het wachtwoord van het account {account} bij Glazecalc is zojuist gewijzigd, en alle apparaten die waren ingelogd, zijn uitgelogd.\n\nWas u dit zelf, dan hoeft u verder niets te doen. Zo niet, stel uw wachtwoord dan meteen opnieuw in via {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "Er is een nieuw e-mailadres aangevraagd voor uw Glazecalc-account",
+    "text": "Er is zojuist een wijziging van het e-mailadres aangevraagd voor het Glazecalc-account {account}. Er is een link naar het nieuwe adres gestuurd, en de wijziging gaat pas in als die link wordt geopend.\n\nWas u dit zelf, dan hoeft u verder niets te doen. Zo niet, dan kent iemand misschien uw wachtwoord: stel het meteen opnieuw in via {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Bevestig uw nieuwe e-mailadres voor Glazecalc",
+    "text": "Iemand (hopelijk u) heeft gevraagd {account} te gebruiken als e-mailadres van zijn of haar Glazecalc-account.\n\nOpen binnen {hours} uur deze link om de wijziging door te voeren:\n\n{link}\n\nDe link werkt één keer, en alle apparaten die waren ingelogd, worden uitgelogd. Hebt u hier niet om gevraagd, negeer deze e-mail dan; er verandert niets.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "nooit; wijzigingen van apps en toegangstokens worden meteen aangebracht",
+    "removals": "alleen vóór een verwijdering (een record naar de prullenbak verplaatsen, of een grondstof van de grondstoffen in voorraad halen); andere wijzigingen van apps en toegangstokens worden meteen aangebracht"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Glazecalc vraagt nu minder voordat apps uw records wijzigen",
+    "text": "Het Glazecalc-account {account} vraagt sinds zojuist om goedkeuring: {choice}.\n\nWas u dit zelf, dan hoeft u verder niets te doen. U kunt het bekijken en wijzigen op Gekoppelde apps via {page}\n\nZo niet, zet het daar dan terug, trek elke app of elk token in dat u niet kent, en stel uw wachtwoord meteen opnieuw in via {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "Er is een app aan uw Glazecalc-account gekoppeld",
+    "opening": "Er is op {date} om {time} (UTC) een app gekoppeld aan het Glazecalc-account {account}.\n\n",
+    "named": "De app: “{name}”\n",
+    "checked": "Het adres ervan, gecontroleerd door Glazecalc: {host}\n",
+    "selfDescribed": "De app heeft zichzelf geregistreerd, dus de naam is alleen wat ze over zichzelf zegt.\n",
+    "answerAt": "Ze ontvangt het antwoord op: {host}\n",
+    "loopback": "Ze ontvangt het antwoord op de computer van waaruit ze is gekoppeld ({host}).\n",
+    "read": "\nZe kan de recepten, het notitieboek, de grondstoffen, de voorraad en de instellingen lezen die in het account zijn opgeslagen. Ze kan niets wijzigen.\n\n",
+    "write": "\nZe kan de recepten, het notitieboek, de grondstoffen, de voorraad en de instellingen lezen die in het account zijn opgeslagen, en {days} dagen lang kan ze die ook wijzigen: records maken en wijzigen, en ze naar de prullenbak verplaatsen. Elke wijziging bewaart een versie van het record zoals het was, zodat u haar op de website ongedaan kunt maken.\n\n",
+    "closing": "Was u dit zelf, dan hoeft u verder niets te doen. U kunt zien wat ze doet en haar intrekken via {page}\n\nZo niet, trek haar daar dan in en stel uw wachtwoord meteen opnieuw in via {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Uw Glazecalc-account is verwijderd",
+    "text": "Het Glazecalc-account {account} is verwijderd, met alles wat erin was opgeslagen: recepten, grondstoffen, stookbeurten, notities en instellingen. Dit kan niet ongedaan worden gemaakt.\n\nKopieën in de back-ups van de site worden verwijderd zodra de back-ups verlopen, binnen {days} dagen.\n\nU kunt op elk moment een nieuw account maken.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "een authenticator-app",
+    "passkey": "de passkey “{name}”"
+  },
+  "MFA_ADDED": {
+    "subject": "Er is een inlogstap toegevoegd aan uw Glazecalc-account",
+    "text": "Zojuist is dit aan het Glazecalc-account {account} toegevoegd als tweede stap voor het inloggen: {method}.\n\nWas u dit zelf, dan hoeft u verder niets te doen. Bewaar uw herstelcodes op een veilige plek. Zo niet, dan kent iemand misschien uw wachtwoord: stel het meteen opnieuw in via {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "Inloggen in twee stappen wordt uitgezet voor uw Glazecalc-account",
+    "text": "Iemand heeft gevraagd inloggen in twee stappen uit te zetten voor het Glazecalc-account {account}, omdat elke authenticator-app, passkey en herstelcode ervan kwijt is.\n\nInloggen in twee stappen wordt uitgezet op {date}, tenzij u vóór die tijd een e-mail stuurt naar privacy@glazecalcapp.com. Daarna kan met alleen het wachtwoord op het account worden ingelogd.\n\nWas u dit zelf, dan hoeft u verder niets te doen. Zo niet, stuur dan nu een e-mail naar privacy@glazecalcapp.com en stel uw wachtwoord meteen opnieuw in via {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "Inloggen in twee stappen is uitgezet voor uw Glazecalc-account",
+    "text": "Inloggen in twee stappen is zojuist uitgezet voor het Glazecalc-account {account}: elke authenticator-app, passkey en herstelcode is verwijderd, en alle apparaten die waren ingelogd, zijn uitgelogd. Voor het inloggen is nu alleen het wachtwoord nodig.\n\nU kunt inloggen in twee stappen op uw accountpagina weer aanzetten. Hebt u hier niet om gevraagd, stel uw wachtwoord dan meteen opnieuw in via {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "Er is een inlogstap verwijderd van uw Glazecalc-account",
+    "text": "Zojuist is dit van het Glazecalc-account {account} verwijderd als tweede stap voor het inloggen: {method}. Was het de laatste, dan is voor het inloggen nu alleen het wachtwoord nodig.\n\nWas u dit zelf, dan hoeft u verder niets te doen. Zo niet, stel uw wachtwoord dan meteen opnieuw in via {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "Er is een nieuwe manier om in te loggen toegevoegd aan uw Glazecalc-account",
+    "text": "U kunt nu inloggen op het Glazecalc-account {account} met {provider}.\n\nWas u dit zelf, dan hoeft u verder niets te doen. Zo niet, ontkoppel het dan op uw accountpagina via {page} en stel uw wachtwoord meteen opnieuw in via {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "Er is een manier om in te loggen verwijderd uit uw Glazecalc-account",
+    "text": "{provider} is ontkoppeld van het Glazecalc-account {account} en kan niet meer worden gebruikt om erop in te loggen.\n\nWas u dit zelf, dan hoeft u verder niets te doen. Zo niet, dan is misschien iemand ingelogd op uw account: stel uw wachtwoord meteen opnieuw in via {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Nieuwe herstelcodes voor uw Glazecalc-account",
+    "text": "Er zijn zojuist nieuwe herstelcodes gemaakt voor het Glazecalc-account {account}. De oude codes werken niet meer.\n\nWas u dit zelf, bewaar de nieuwe codes dan op een veilige plek. Zo niet, stel uw wachtwoord dan meteen opnieuw in via {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "Er is een herstelcode gebruikt voor uw Glazecalc-account",
+    "text": "Een van de herstelcodes van het Glazecalc-account {account} is zojuist gebruikt en werkt dus niet nog een keer. Ongebruikte codes over: {left}. U kunt nieuwe codes maken op uw accountpagina: {page}\n\nWas u dit niet, dan heeft iemand misschien uw wachtwoord en uw codes: stel uw wachtwoord meteen opnieuw in via {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Wachtwoord voor Glazecalc opnieuw instellen",
+    "text": "Iemand (hopelijk u) heeft gevraagd het wachtwoord van het account {account} bij Glazecalc opnieuw in te stellen.\n\nOpen deze link binnen {minutes} minuten om een nieuw wachtwoord te kiezen:\n\n{link}\n\nDe link werkt één keer. Hebt u hier niet om gevraagd, negeer deze e-mail dan; uw wachtwoord blijft hetzelfde.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "Uw wachtwoord voor Glazecalc is gewijzigd",
+    "opening": "Het wachtwoord van het account {account} bij Glazecalc is zojuist opnieuw ingesteld, en elk apparaat dat was ingelogd, is uitgelogd.\n\n",
+    "stopped": "Voor het geval iemand anders het oude wachtwoord had, heeft het opnieuw instellen ook deze dingen stopgezet:\n\n",
+    "tokens": "- De toegangstokens en gekoppelde apps die bij uw opgeslagen werk konden ({count}). Als u er nog een nodig hebt, maak dan een nieuw token op uw accountpagina via {page}\n",
+    "providers": "- Inloggen met {providers}, wat u op uw accountpagina via {page} opnieuw kunt koppelen\n",
+    "shareLinks": "- De links die u had gemaakt om recepten te delen. U kunt nieuwe maken vanuit elk recept.\n",
+    "closing": "\nWas u dit zelf, dan hoeft u verder niets te doen. Zo niet, stel uw wachtwoord dan meteen opnieuw in via {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Iemand heeft uw Glazecalc-wachtwoord ingevoerd maar het inloggen niet afgerond",
+    "text": "Iemand heeft het juiste wachtwoord voor het Glazecalc-account {account} ingevoerd, maar heeft de tweede stap van het inloggen niet afgerond. Uw tweede stap hield die persoon buiten.\n\nWas u dit zelf, dan hoeft u verder niets te doen. Zo niet, dan kent iemand uw wachtwoord: wijzig het meteen. U kunt het opnieuw instellen via {forgot}\n\nNa 10 onjuiste codes uit een authenticator-app worden codes een uur lang geweigerd; na nog eens 10 een dag lang; en daarna telkens een week lang. Een passkey of een herstelcode werkt nog wel terwijl codes worden geweigerd. Uw wachtwoord per e-mail opnieuw instellen maakt hier een einde aan: de onafgeronde pogingen van die persoon vervallen, die persoon heeft het wachtwoord niet meer, en codes werken weer.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Een toegangstoken voor uw Glazecalc-account verloopt binnenkort",
+    "text": "Het toegangstoken met de naam “{name}” voor het Glazecalc-account {account} werkt vanaf {date} niet meer.\n\nGebruikt u het nog, maak dan vóór die tijd een nieuw token via {page} en geef dat aan uw assistent of script in plaats van het oude. Gebruikt u het niet meer, dan hoeft u niets te doen.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Een nieuw toegangstoken voor uw Glazecalc-account",
+    "text": "Er is zojuist een toegangstoken met de naam “{name}” gemaakt voor het Glazecalc-account {account}. Het kan tot {date} de recepten, grondstoffen, notities en stookverslagen lezen die in het account zijn opgeslagen.\n\nWas u dit zelf, dan hoeft u verder niets te doen. U kunt uw tokens zien en intrekken via {page}\n\nZo niet, trek het daar dan in en stel uw wachtwoord meteen opnieuw in via {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Een nieuw toegangstoken waarmee uw Glazecalc-records kunnen worden gewijzigd",
+    "text": "Er is zojuist een toegangstoken met de naam “{name}” gemaakt voor het Glazecalc-account {account}. Het kan tot {date} de recepten, grondstoffen, notities en stookverslagen die in het account zijn opgeslagen lezen en wijzigen, en ze naar de prullenbak verplaatsen. Elke wijziging die het aanbrengt, bewaart het record zoals het was, zodat u haar op de website ongedaan kunt maken.\n\nWas u dit zelf, dan hoeft u verder niets te doen. U kunt uw tokens zien en intrekken via {page}\n\nZo niet, trek het daar dan in en stel uw wachtwoord meteen opnieuw in via {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Bevestig uw e-mailadres voor Glazecalc",
+    "text": "Iemand (hopelijk u) heeft een Glazecalc-account gemaakt met het adres {account}.\n\nOpen binnen {hours} uur deze link om te bevestigen dat dit adres van u is:\n\n{link}\n\nDe link werkt één keer. Hebt u geen account gemaakt, negeer deze e-mail dan; u krijgt verder niets, tenzij u erom vraagt.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

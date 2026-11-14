@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "您的 Glazecalc 密碼已變更",
+    "text": "Glazecalc 帳戶 {account} 的密碼剛剛已變更，所有原本已登入的裝置都已登出。\n\n如果這是您本人的操作，就不需要再做任何事。如果不是，請立即到 {forgot} 重設密碼\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "有人要求變更您的 Glazecalc 帳戶的電子郵件",
+    "text": "剛剛有人要求變更 Glazecalc 帳戶 {account} 的電子郵件。連結已寄到新地址，只有開啟該連結，變更才會生效。\n\n如果這是您本人的操作，就不需要再做任何事。如果不是，表示有人可能知道您的密碼，請立即到 {forgot} 重設密碼\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "確認您的 Glazecalc 新電子郵件",
+    "text": "有人（希望是您本人）要求把 {account} 用作 Glazecalc 帳戶的電子郵件。\n\n若要完成變更，請在 {hours} 小時內開啟這個連結：\n\n{link}\n\n此連結只能使用一次，所有已登入的裝置都會登出。如果您沒有提出這項要求，請忽略這封電子郵件；不會有任何變更。\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "永不詢問：來自應用程式和存取權杖的變更會立即生效",
+    "removals": "僅在移除前詢問：把紀錄移到垃圾桶，或從現有原料中拿掉一種原料。來自應用程式和存取權杖的其他變更會立即生效"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "現在 Glazecalc 在應用程式變更您的紀錄前詢問得較少",
+    "text": "Glazecalc 帳戶 {account} 剛剛被設定為以下列方式要求核准：{choice}。\n\n如果這是您本人的操作，就不需要再做任何事。您可以在 {page} 的「已連接的應用程式」查看和變更這項設定。\n\n如果不是，請在那裡改回原來的設定，撤銷任何您不認識的應用程式或權杖，並立即到 {forgot} 重設密碼\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "有應用程式連接到了您的 Glazecalc 帳戶",
+    "opening": "{date} {time}（UTC），有一個應用程式連接到了 Glazecalc 帳戶 {account}。\n\n",
+    "named": "應用程式：「{name}」\n",
+    "checked": "它的位址，已由 Glazecalc 查核：{host}\n",
+    "selfDescribed": "它是自行註冊的，所以它的名稱只是它對自己的說法。\n",
+    "answerAt": "它在此接收回覆：{host}\n",
+    "loopback": "它在連接它的那台電腦（{host}）上接收回覆。\n",
+    "read": "\n它可以讀取該帳戶中儲存的釉方、筆記本、原料、現有原料和設定。它無法變更任何內容。\n\n",
+    "write": "\n它可以讀取該帳戶中儲存的釉方、筆記本、原料、現有原料和設定，並且在 {days} 天內還可以變更它們：建立和變更紀錄，並把紀錄移到垃圾桶。每次變更都會保留紀錄原來的一個版本，所以您可以在網站上復原。\n\n",
+    "closing": "如果這是您本人的操作，就不需要再做任何事。您可以在 {page} 查看它做了什麼並撤銷它。\n\n如果不是，請在那裡撤銷它，並立即到 {forgot} 重設密碼\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "您的 Glazecalc 帳戶已刪除",
+    "text": "Glazecalc 帳戶 {account} 已刪除，其中儲存的所有內容也一併刪除：釉方、原料、燒窯紀錄、筆記和設定。此動作無法復原。\n\n網站備份中的副本會隨備份到期而刪除，最遲在 {days} 天內。\n\n您隨時可以建立新帳戶。\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "驗證器應用程式",
+    "passkey": "密碼金鑰「{name}」"
+  },
+  "MFA_ADDED": {
+    "subject": "您的 Glazecalc 帳戶新增了一個登入步驟",
+    "text": "剛剛為 Glazecalc 帳戶 {account} 新增了以下內容，作為登入的第二個步驟：{method}。\n\n如果這是您本人的操作，就不需要再做任何事。請把您的備用碼存放在安全的地方。如果不是，表示有人可能知道您的密碼，請立即到 {forgot} 重設密碼\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "您的 Glazecalc 帳戶的兩步驟驗證將被關閉",
+    "text": "有人要求關閉 Glazecalc 帳戶 {account} 的兩步驟驗證，原因是該帳戶所有的驗證器應用程式、密碼金鑰和備用碼都遺失了。\n\n除非您在此之前寄信到 privacy@glazecalcapp.com，否則兩步驟驗證將在 {date} 關閉。之後，只用密碼就可以登入該帳戶。\n\n如果這是您本人的操作，就不需要再做任何事。如果不是，請立即寄信到 privacy@glazecalcapp.com，並立即到 {forgot} 重設密碼\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "您的 Glazecalc 帳戶的兩步驟驗證已關閉",
+    "text": "剛剛關閉了 Glazecalc 帳戶 {account} 的兩步驟驗證：所有的驗證器應用程式、密碼金鑰和備用碼都已移除，所有已登入的裝置都已登出。現在登入只需要密碼。\n\n您可以在帳戶頁面重新開啟兩步驟驗證。如果您沒有提出這項要求，請立即到 {forgot} 重設密碼\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "您的 Glazecalc 帳戶移除了一個登入步驟",
+    "text": "剛剛從 Glazecalc 帳戶 {account} 移除了以下這個登入的第二個步驟：{method}。如果這是最後一個，現在登入只需要密碼。\n\n如果這是您本人的操作，就不需要再做任何事。如果不是，請立即到 {forgot} 重設密碼\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "您的 Glazecalc 帳戶新增了一種登入方式",
+    "text": "現在可以用 {provider} 登入 Glazecalc 帳戶 {account}。\n\n如果這是您本人的操作，就不需要再做任何事。如果不是，請到帳戶頁面 {page} 取消連結，並立即到 {forgot} 重設密碼\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "您的 Glazecalc 帳戶移除了一種登入方式",
+    "text": "已取消 {provider} 與 Glazecalc 帳戶 {account} 的連結，無法再用來登入該帳戶。\n\n如果這是您本人的操作，就不需要再做任何事。如果不是，表示有人可能已登入您的帳戶：請立即到 {forgot} 重設密碼\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "您的 Glazecalc 帳戶有了新的備用碼",
+    "text": "剛剛為 Glazecalc 帳戶 {account} 產生了新的備用碼，舊的備用碼已失效。\n\n如果這是您本人的操作，請把新的備用碼存放在安全的地方。如果不是，請立即到 {forgot} 重設密碼\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "您的 Glazecalc 帳戶使用了一個備用碼",
+    "text": "Glazecalc 帳戶 {account} 的一個備用碼剛剛被使用，不能再次使用。未使用的備用碼還剩 {left} 個。您可以在帳戶頁面產生新的備用碼：{page}\n\n如果這不是您本人的操作，表示有人可能知道您的密碼和備用碼：請立即到 {forgot} 重設密碼\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "重設您的 Glazecalc 密碼",
+    "text": "有人（希望是您本人）要求重設 Glazecalc 帳戶 {account} 的密碼。\n\n若要設定新密碼，請在 {minutes} 分鐘內開啟這個連結：\n\n{link}\n\n此連結只能使用一次。如果您沒有提出這項要求，請忽略這封電子郵件；您的密碼不會改變。\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "您的 Glazecalc 密碼已變更",
+    "opening": "Glazecalc 帳戶 {account} 的密碼剛剛已重設，所有已登入的裝置都已登出。\n\n",
+    "stopped": "為防有人知道舊密碼，這次重設還讓以下內容失效：\n\n",
+    "tokens": "- 可以存取您已儲存內容的存取權杖和已連接的應用程式（{count} 個）。如果您仍需要，請到帳戶頁面 {page} 建立新權杖\n",
+    "providers": "- 使用 {providers} 登入，您可以在帳戶頁面 {page} 再次連結\n",
+    "shareLinks": "- 您為分享釉方所建立的連結。您可以在每個釉方中建立新的連結。\n",
+    "closing": "\n如果這是您本人的操作，就不需要再做任何事。如果不是，請立即到 {forgot} 重設密碼\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "有人輸入了您的 Glazecalc 密碼，但沒有完成登入",
+    "text": "有人輸入了 Glazecalc 帳戶 {account} 的正確密碼，但沒有完成登入的第二個步驟。您設定的第二個步驟把此人擋在了門外。\n\n如果這是您本人的操作，就不需要再做任何事。如果不是，表示有人知道您的密碼：請立即變更。您可以到 {forgot} 重設\n\n驗證器應用程式的驗證碼連續輸錯 10 次後，將在一小時內拒絕驗證碼；再輸錯 10 次後，拒絕一天；此後每次都拒絕一週。在驗證碼被拒絕期間，密碼金鑰或備用碼仍然可以使用。透過電子郵件重設密碼，可以把此人拒於門外：其已開始的任何登入都會結束，其所知道的密碼會失效，驗證碼也會恢復可用。\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "您的 Glazecalc 帳戶的一個存取權杖即將失效",
+    "text": "Glazecalc 帳戶 {account} 上名為「{name}」的存取權杖將在 {date} 失效。\n\n如果您仍在使用這個權杖，請在此之前到 {page} 建立新權杖，並交給您的助理或指令碼，以取代舊權杖。如果您已不再使用，就不需要做任何事。\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "您的 Glazecalc 帳戶有了新的存取權杖",
+    "text": "剛剛為 Glazecalc 帳戶 {account} 建立了一個名為「{name}」的存取權杖。在 {date} 之前，這個權杖可以讀取該帳戶中儲存的釉方、原料、筆記和燒窯紀錄。\n\n如果這是您本人的操作，就不需要再做任何事。您可以在 {page} 查看並撤銷您的權杖。\n\n如果不是，請在那裡撤銷這個權杖，並立即到 {forgot} 重設密碼\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "您的 Glazecalc 帳戶有了可以變更紀錄的新存取權杖",
+    "text": "剛剛為 Glazecalc 帳戶 {account} 建立了一個名為「{name}」的存取權杖。在 {date} 之前，這個權杖可以讀取和變更該帳戶中儲存的釉方、原料、筆記和燒窯紀錄，並把它們移到垃圾桶。它所做的每一次變更都會保留紀錄原來的樣子，所以您可以在網站上復原。\n\n如果這是您本人的操作，就不需要再做任何事。您可以在 {page} 查看並撤銷您的權杖。\n\n如果不是，請在那裡撤銷這個權杖，並立即到 {forgot} 重設密碼\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "確認您的 Glazecalc 電子郵件",
+    "text": "有人（希望是您本人）用地址 {account} 建立了 Glazecalc 帳戶。\n\n若要確認這個地址屬於您，請在 {hours} 小時內開啟這個連結：\n\n{link}\n\n此連結只能使用一次。如果您沒有建立帳戶，請忽略這封電子郵件；除非您提出要求，否則不會再寄任何郵件給您。\n\n-- \nGlazecalc, {app}\n"
+  }
+}

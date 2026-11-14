@@ -15,6 +15,8 @@ export interface MaterialField {
  */
 export interface MaterialInput {
   name: string;
+  /** Other names to find it by, as an extra material of calculateUMF. */
+  aliases?: string[];
   formula?: Record<string, number>;
   analysis?: Record<string, number | string>;
   fields?: MaterialField[];
@@ -68,7 +70,7 @@ export interface MaterialWeights {
   warningCodes: ChemistryMessage[];
 }
 
-/** IUPAC standard atomic weights (abridged), g/mol, of the elements in the oxides. */
+/** Standard atomic weights (CIAAW's abridged table of 2024), g/mol, of the elements in the oxides. */
 export const ATOMIC_WEIGHTS: Record<string, number>;
 export const MOLAR_MASS: Record<string, number>;
 export const OXIDE_GROUPS: Record<string, OxideGroup>;
@@ -90,6 +92,17 @@ export function formulaToAnalysis(
 };
 
 export function materialWeights(material: MaterialInput): MaterialWeights;
+
+/**
+ * How a material gives its oxides, as the chemistry reads them: 'percent' (an analysis, or fields with
+ * percentmole 'percent' in any case) or 'molecular' (a formula, or fields with 'molecular' in any case, or
+ * none); null for another percentmole, which the chemistry refuses (unknown-percentmole).
+ */
+export function oxidesGivenIn(material: {
+  formula?: unknown;
+  analysis?: unknown;
+  percentmole?: unknown;
+}): 'percent' | 'molecular' | null;
 
 /** A formula for display, with its counts as subscripts: Ca3(PO4)2 → Ca₃(PO₄)₂, 2CaO•3B2O3 → 2CaO•3B₂O₃. */
 export function formatFormula(text: string | null | undefined): string;
@@ -116,8 +129,25 @@ export interface FitLine {
 }
 
 /**
+ * The work a search has done, in the solver's multiply-adds, the most it may
+ * do, and whether a step stopped because it got there (see lib/chemistry/fit.js WORK).
+ */
+export interface Meter {
+  used: number;
+  most: number;
+  cut: boolean;
+}
+
+/** The most work one search may do, unless its meter says otherwise (see lib/chemistry/fit.js). */
+export const WORK: number;
+
+/** A meter for one search, or for several to share: at most `most` work (WORK if not given). */
+export function newMeter(most?: number): Meter;
+
+/**
  * How near the oxides should come, and shared caps (see lib/chemistry/fit.js):
- * groups on an amount, shares on a share (0 to 1) of the batch.
+ * groups on an amount, shares on a share (0 to 1) of the batch; and the
+ * meter of the search a fit is part of.
  */
 export interface FitOptions {
   near?: Record<string, number>;
@@ -125,20 +155,25 @@ export interface FitOptions {
   fluxTotal?: number;
   groups?: Record<string, number>;
   shares?: Record<string, number>;
+  meter?: Meter;
 }
 
+/**
+ * broken, when there are any, names the shared caps (groups and shares) the amounts break: those whose
+ * members' leasts alone come to more, or that the work ran out before keeping.
+ */
 export function fitAmounts(
   lines: FitLine[],
   target: Record<string, number>,
   options?: FitOptions
-): { amounts: number[]; moles: Record<string, number>; miss: number };
+): { amounts: number[]; moles: Record<string, number>; miss: number; broken?: string[] };
 
 /** The best match the lines can make, with no pull toward their starts: fast, for ranking choices. */
 export function bestFit(
   lines: FitLine[],
   target: Record<string, number>,
   options?: FitOptions
-): { amounts: number[]; miss: number };
+): { amounts: number[]; miss: number; broken?: string[] };
 
 /** The cones a lead glaze is replaced for, 06 to 6: Orton's older chart, large cones at 150 °C an hour (lib/cones). */
 export const CONES: ReadonlyArray<{ cone: string; celsius: number }>;
@@ -179,12 +214,20 @@ export function boundedLeastSquares(problem: {
   lambda?: number;
   pullTo?: number[];
   cost?: number[];
+  /** A^T A and A^T b (lsq.js normalEquations), when worked out already for many solves of one problem. */
+  normal?: { gram: number[][]; atb: number[] };
+  /** Counts the solve's work, when given. */
+  meter?: Meter;
+  /** With a meter, the solve stops once meter.used reaches this, with x within its bounds (none if not given). */
+  stopAt?: number;
 }): number[];
 
 /** A line offered to selectMaterials: the recipe's own (start > 0) or a material to try. */
 export interface SelectLine extends FitLine {
   must?: boolean;
   avoid?: boolean;
+  /** Used only where nothing else comes as near: a fluorine or soluble material Solve or Match brings in. */
+  lastResort?: boolean;
 }
 
 export interface Selection {
@@ -201,7 +244,9 @@ export interface Selection {
   alike: Array<{ used: number; other: number }>;
   /**
    * Caps that cost match: a line at its most, or a shared cap (group, its
-   * members, named by the largest), with what it would be and the miss lifted.
+   * members, named by the largest), with what it would be and the miss lifted;
+   * and shared caps the recipe could not keep (broken: wouldBe is then what
+   * the members come to, and missLifted the recipe's miss).
    */
   capped: Array<{
     index: number;
@@ -210,8 +255,11 @@ export interface Selection {
     missLifted: number;
     group?: string;
     members?: number[];
+    broken?: true;
   }>;
   countCost: number;
+  /** Whether the work allowed ran out first: the best found by then (see lib/chemistry/select.js). */
+  cutShort: boolean;
 }
 
 /** The fewest materials from the lines that bring the target close (see lib/chemistry/select.js). */
@@ -241,6 +289,10 @@ export interface Closeness {
   oxides: OxideCloseness[];
 }
 
+/**
+ * Throws a ChemistryError 'no-flux' for a target with no fluxes, as calculateUMF does: it has no unity formula
+ * to come near. Moles with no fluxes, against a target that has them, are 'poor'.
+ */
 export function closeness(target: Record<string, number>, moles: Record<string, number>): Closeness;
 
 /** The chemistry's messages by code, in English (lib/chemistry/messages.js). */

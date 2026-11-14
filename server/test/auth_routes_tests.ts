@@ -947,6 +947,28 @@ describe('two-step sign-in', () => {
         expect(limited.body.code).to.eql('too-many-sign-ins');
       });
 
+      it('counts an IPv6 address with its whole /48, so a guesser cannot move on to the next /56', async function () {
+        // Many sign-ins, each checking a password: the files run in parallel, so allow more than 5 seconds.
+        this.timeout(15000);
+        const { email } = await makeUser();
+        // Two addresses in one /48 but not one /56, and one in another /48.
+        const first = '2001:db8:1:100::1';
+        const sameNetwork = '2001:db8:1:200::1';
+        const elsewhere = '2001:db8:2::1';
+        const guess = (ip: string) =>
+          api().get('/signin').set('X-Forwarded-For', ip).set('Authorization', basic(email, 'wrong-password'));
+        try {
+          for (let i = 0; i < 20; i++) expect(await guess(first)).to.have.status(401);
+          const moved = await guess(sameNetwork);
+          expect(moved).to.have.status(429);
+          expect(moved.body.code).to.eql('too-many-sign-ins');
+          expect(await guess(elsewhere)).to.have.status(401);
+        } finally {
+          const keys = [first, sameNetwork, elsewhere].map(limits.networkKey);
+          await Promise.all(keys.flatMap((key) => [limits.signIn.resetKey(key), limits.signInAny.resetKey(key)]));
+        }
+      });
+
       it('counts only refused passwords, whether the right one signs in or asks for the second step', async function () {
         // Many sign-ins, each checking a password: the files run in parallel, so allow more than 5 seconds.
         this.timeout(15000);

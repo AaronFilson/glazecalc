@@ -105,7 +105,10 @@ export const registerBlendTools = (server: McpServer): void => {
             shares: Object.fromEntries(tile.shares.map((share, i) => [LETTERS[i], rounded(share, 4)]))
           };
           if (!mixed) return { ...base, problem: 'No recipe could be worked out for this tile.' };
-          const lines: RecipeLine[] = mixed.materials.map(({ line, amount }) => ({ ...line, amount: String(amount) }));
+          const lines: RecipeLine[] = mixed.materials.map(({ line, amount }) => ({
+            ...line,
+            amount: recipe.plainAmount(amount)
+          }));
           const percent = mixed.materials.map(({ line, amount }) => ({
             material: line.name,
             percent: rounded(amount, 2)
@@ -178,7 +181,8 @@ export const differencesOf = (a: Chemistry, b: Chemistry) => {
     .compareUnity(left!, right!)
     .flatMap((group) => group.rows)
     .map((row) => ({
-      what: row.key ?? row.label,
+      // An oxide as the other answers write it (K2O), not as the page shows it (K₂O).
+      what: row.oxide ?? row.key ?? row.label,
       a: row.left === null ? null : rounded(row.left, row.places),
       b: row.right === null ? null : rounded(row.right, row.places),
       change: row.change === null ? null : rounded(row.change, row.places)
@@ -202,10 +206,8 @@ export const tileChemistry = (
   try {
     const { result } = analysisOf(lines, lang);
     const checks = checksOf(lines, at, limitSet, lang);
-    const fit = coneFitOut(
-      recipe.coneFit(checks.unityFormula, at.block, { materials: lines.map((line) => line.name) }),
-      lang
-    );
+    // On the unity formula as worked out, as the page judges a tile, not as rounded for the answer.
+    const fit = coneFitOut(recipe.coneFit(result.umf, at.block, { materials: lines.map((line) => line.name) }), lang);
     const umf = result.umf;
     return {
       limits: { id: checks.limitSet.id, band: checks.bandUsed as unknown },

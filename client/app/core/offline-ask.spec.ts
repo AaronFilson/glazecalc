@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { provideEnglish } from '../testing/i18n';
 import { OfflineAsk, OfflineAskDialog, type AskQuestion } from './offline-ask';
+import { waitFor } from '../testing/test-providers';
 
 const question = (changes: Partial<AskQuestion> = {}): AskQuestion => ({
   title: 'Keep it?',
@@ -47,7 +48,7 @@ describe('OfflineAskDialog', () => {
       'Delete from this device',
       'Cancel'
     ]);
-    await vi.waitFor(() => expect(document.activeElement).toBe(buttons(root)[0]));
+    await waitFor(() => expect(document.activeElement).toBe(buttons(root)[0]));
     buttons(root)[1].click();
     expect(await answer).toBe('delete');
     await fixture.whenStable();
@@ -64,7 +65,7 @@ describe('OfflineAskDialog', () => {
         ]
       })
     );
-    await vi.waitFor(() => expect(document.activeElement).toBe(buttons(root)[1]));
+    await waitFor(() => expect(document.activeElement).toBe(buttons(root)[1]));
     fixture.nativeElement.remove();
   });
 
@@ -76,6 +77,11 @@ describe('OfflineAskDialog', () => {
     dialog.dispatchEvent(new KeyboardEvent('keydown', { key: 'Tab', bubbles: true, cancelable: true }));
     expect(document.activeElement).toBe(buttons(root)[0]);
     dialog.dispatchEvent(new KeyboardEvent('keydown', { key: 'Tab', shiftKey: true, bubbles: true, cancelable: true }));
+    expect(document.activeElement).toBe(last);
+    // Any other key is the button's own.
+    const enter = new KeyboardEvent('keydown', { key: 'Enter', bubbles: true, cancelable: true });
+    dialog.dispatchEvent(enter);
+    expect(enter.defaultPrevented).toBe(false);
     expect(document.activeElement).toBe(last);
     dialog.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true, cancelable: true }));
     expect(await answer).toBe('cancel');

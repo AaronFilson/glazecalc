@@ -189,6 +189,8 @@ echo "Steps: 1 bucket, 2 bucket policy, 3 role, 4 function, 5 SES permission, 6 
 echo "       7 sending user for Gmail, 8 activate the rule set, 9 the MX record (last, own confirmation)."
 
 # ---------------------------------------------------------------------------
+# The bucket's lifecycle rule, expire-mail, deletes messages after 30 days and
+# aborts incomplete multipart uploads after 1 day.
 say "1. Private bucket for received mail (all public access blocked, messages deleted after 30 days)"
 if ! exists aws s3api head-bucket --bucket "$bucket"; then
   change "Create the bucket $bucket" aws s3api create-bucket --bucket "$bucket" \

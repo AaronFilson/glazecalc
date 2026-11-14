@@ -9,9 +9,18 @@
 // refuseAccessTokens), so nothing but the person can write records in bulk.
 // The two routes that take a file read up to IMPORT_BODY_LIMIT, the only ones
 // that take more than the usual body; nginx allows the same on these paths
-// (deploy/nginx/glazecalc-proxy.conf).
+// (deploy/nginx/glazecalc-proxy.conf). A body with more lists and objects than
+// a real file holds (IMPORT_CONTAINERS_MOST) is refused as too large before it
+// is read, as reading it could take more memory than the server has.
 import express from 'express';
-import { IMPORT_BODY_LIMIT, previewImport, runImport, undoImport, type ImportRequest } from '../lib/import_data.ts';
+import {
+  fewEnoughContainers,
+  IMPORT_BODY_LIMIT,
+  previewImport,
+  runImport,
+  undoImport,
+  type ImportRequest
+} from '../lib/import_data.ts';
 import { notGuest } from '../lib/guest_limits.ts';
 import jwtAuth, { userOf } from '../lib/jwt_auth.ts';
 import * as limits from '../lib/rate_limit.ts';
@@ -19,7 +28,7 @@ import * as limits from '../lib/rate_limit.ts';
 const importRouter = express.Router();
 export default importRouter;
 
-const bigJson = express.json({ limit: IMPORT_BODY_LIMIT });
+const bigJson = express.json({ limit: IMPORT_BODY_LIMIT, verify: fewEnoughContainers });
 const requestOf = (body: unknown): ImportRequest => (body && typeof body === 'object' ? body : {}) as ImportRequest;
 
 importRouter.post('/preview', jwtAuth, notGuest, limits.importPreviews, bigJson, async (req, res) => {

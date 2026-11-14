@@ -37,6 +37,9 @@ export type RecipeMessageCode =
   | 'checks.zincIron'
   | 'checks.zincCopper'
   | 'checks.zincLowFire'
+  | 'checks.barium'
+  | 'checks.bariumLikely'
+  | 'checks.bariumTends'
   | 'checks.whiting'
   | 'checks.whitingProbably'
   | 'checks.whitingTends'
@@ -140,6 +143,7 @@ export type CheckName =
   | 'zinc-iron'
   | 'zinc-copper'
   | 'zinc-low-fire'
+  | 'barium'
   | 'whiting'
   | 'fluorine'
   | 'clay-low'
@@ -172,6 +176,7 @@ export type Quantity =
   | 'K2O+Na2O'
   | 'MgO'
   | 'ZnO'
+  | 'BaO'
   | 'SiO2:Al2O3'
   | 'raw-clay-percent'
   | 'raw-calcium-percent'
@@ -205,6 +210,8 @@ export class RecipeError extends Error {
   params?: RecipeMessage['params'];
 }
 
+/** A message: its code, and its values. The recipe tools' own; index.js does not export it. */
+export function say(code: RecipeMessageCode, params?: RecipeMessage['params']): RecipeMessage;
 export function figure(value: number, places: number): Figure;
 export function upTo(value: number, places: number): Figure;
 /** A saved plain number ("12.50") as a figure keeping its decimals; other text as it is. */

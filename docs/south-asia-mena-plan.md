@@ -4,7 +4,7 @@ The regions of the plan for the subcontinent and Arabic (round 6, 2026-10-20), a
 method of docs/asia-plan.md, Phase C: every entry has its source, its check date and a status, no unverified
 safety value is shown, and what could not be read is left out and said to be unconfirmed. Languages come later
 (Arabic and Hindi first, then Urdu and Bengali); the groundwork (digits, right to left, fonts, the grouped
-pickers, whose region list gains an Africa group with these regions) is on its own branches.
+pickers, whose region list gains an Africa group with these regions) was on its own branches.
 
 **Done 2026-10-20** (branch r6-regions-c1, English only): India, Pakistan, Bangladesh, Egypt, the United Arab
 Emirates, Morocco and Algeria. Saudi Arabia is not added (the owner's decision). Iraq, Jordan and Tunisia are
@@ -19,8 +19,8 @@ three state poison centres and two states' silica limits (below).
   EGP, AED, MAD, DZD). India fires by Orton cones (its shops sell them and label glazes by cone); the others
   by temperature, with cones one tap away.
 - Languages, the most used first: India `hi`, `en`; Pakistan `ur`, `en`; Bangladesh `bn`; Egypt `ar`; the
-  UAE `ar`, `en`; Morocco and Algeria `ar`, `fr`. None of `hi`, `ur`, `bn` or `ar` is live yet, so no live
-  language's pages change: French pages are still written for France, and English for no region. Once
+  UAE `ar`, `en`; Morocco and Algeria `ar`, `fr`. None of `hi`, `ur`, `bn` or `ar` was live then, so no live
+  language's pages changed: French pages are still written for France, and English for no region. Once
   live, Arabic pages are written for Egypt, Hindi and Tamil for India, Urdu for Pakistan and Bengali for
   Bangladesh (`COUNTRY_OF` in client/app/core/first-render.ts, which waited for these regions). Egypt's digits
   are Arabic-Indic in Arabic and 0–9 in English (`DIGITS` in lib/regions).
@@ -96,8 +96,8 @@ data sits in India's own entries.
 
 ## Sri Lanka and Nepal (C3, 2026-10-21)
 
-From the same report. English pages first: `si`, `ta` (for Sri Lanka) and `ne` are not live, so no live
-language's pages change (Tamil pages are still written for India). Both in the region list's Asia group.
+From the same report. English pages first: `si`, `ta` (for Sri Lanka) and `ne` were not live then, so no live
+language's pages changed (Tamil pages are still written for India). Both in the region list's Asia group.
 
 | Region                                               | Who to call                                                                                                                                                                                                                                              | Silica and masks                                                                | Food contact | Shops      |
 | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------ | ---------- |
@@ -135,8 +135,8 @@ language's pages change (Tamil pages are still written for India). Both in the r
   `clipped` for a value cut off in the copy read, said so and never guessed. Shown as a table under the
   no-limit note, each state's rules linked below it, and only states whose status may be shown. Revisit (a
   state picker) if more states publish limits that differ.
-- Nothing else: Bangladesh's call centre uses the existing medical-advice row, and the languages not yet known
-  (`hi`, `ur`, `bn`) are listed by their regions as Malay and Tamil are by Singapore's.
+- Nothing else: Bangladesh's call centre uses the existing medical-advice row, and the languages not yet known then
+  (`hi`, `ur`, `bn`) were listed by their regions as Malay and Tamil were by Singapore's.
 
 ## Tests
 

@@ -50,7 +50,6 @@
     "firedTo": "Ishiswe kuze kube",
     "how": "Kanjani",
     "rebuild": "Yakha kabusha i-glaze: gcina i-silica ne-alumina yayo, ne-boron namanye ama-flux esikhundleni somthofu",
-    "keepColour": "Gcina umbala esisekelweni esingenamthofu: i-frit ne-kaolin, 85 kuya ku-15, nokokufaka umbala kweresiphi",
     "fritHeading": "I-frit engenamthofu ongakhela phezu kwayo, engcono kuqala",
     "fritBoron": "({boron}% i-boron, B₂O₃)",
     "noFrit": "Ayikho i-frit engenamthofu ethengiswa endaweni yakho esemtatsheni.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Umthofu awukwazi ukuthathelwa isikhundla: okunye okokwakha kuresiphi akunakho ukuhlaziywa okungasetshenziswa.",
     "leadRebuiltCone": "Umthofu uthathelwe isikhundla ku-cone {cone} phezu kwe-{base}: i-silica ne-alumina yeresiphi endala kugciniwe, i-boron namanye ama-flux enza umsebenzi womthofu.",
     "leadRebuilt": "Umthofu uthathelwe isikhundla ekushiseni kwe-{firing} phezu kwe-{base}: i-silica ne-alumina yeresiphi endala kugciniwe, i-boron namanye ama-flux enza umsebenzi womthofu.",
-    "leadColour": "Umthofu uthathelwe isikhundla: okokufaka umbala kuyiswe esisekelweni esingenamthofu se-{base} ne-kaolin, 85 kuya ku-15.",
     "leadGloss": "Ngeke ifane ncamashi nokucwebezela, ukucaca noma umbala womthofu: lindela ukukhanya okuncane, nokuba namafu okungenzeka phezu kobumba olubomvu noma i-crazing. Hlola i-batch encane phezu kobumba lwakho.",
     "leadSafety": "Ukungabi nomthofu (Pb) akuyenzi ngokwako i-glaze iphephe ekudleni; lokho kuncike kuyo yonke ifomula nasekushiseni.",
     "leadReplaced": "Umthofu uthathelwe isikhundla.",
@@ -245,8 +243,7 @@
       "text": "Lokhu kungena ngaphezu kwesisekelo. Kulondolozwa neresiphi kodwa akuyona ingxenye ye-UMF. Khetha ukuthi inani ngalinye likuyiphi iyunithi:",
       "percent": "<b>% yesisekelo</b>: iphesenti lesamba sesisekelo, njengoba amaresiphi amaningi ekunikeza: u-2 usho u-2% we-red iron oxide.",
       "parts": "<b>izingxenye</b>: iyunithi efanayo neyokokwakha, njengengxenye engu-1 esisekelweni se-flint engu-3 ne-dolomite engu-2.",
-      "grams": "<b>amagremu</b>: isisindo, ku-batch efanayo nokokwakha.",
-      "count": "Ezinye izibali zibala okokufaka umbala ku-UMF kanti ezinye azikubali. Khetha okuthi <b>Bala okokufaka umbala nezithasiselo kuyo</b>, ngaphansi kwesihloko se-UMF, ukuze ukubale ngesisindo sakho ku-batch, noma ukushiye kungakhethiwe ukuze uqhathanise nesibali esingakubali. Ukukhetha kulondolozwa neresiphi."
+      "grams": "<b>amagremu</b>: isisindo, ku-batch efanayo nokokwakha."
     },
     "scale": {
       "heading": "Shintsha isikali lapho udinga",
@@ -604,7 +601,6 @@
     "unknownOxide": "I-{oxide} akuyona i-oxide i-Glazecalc eyaziyo.",
     "together": "Nikeza i-potash (K₂O) ne-soda (Na₂O) ngokwehlukana, hhayi ndawonye njenge-KNaO.",
     "badAmount": "Inani le-{oxide} akuyona inombolo engu-0 noma ngaphezulu.",
-    "noFlux": "Okuhlosiwe kudinga okungenani i-flux eyodwa, njenge-CaO, i-K₂O noma i-Na₂O.",
     "noMaterials": "Engeza okokwakha okungenani okukodwa ukuze wenze iresiphi.",
     "noMatch": "Akukho kulokhu okokwakha okunanoma iyiphi yama-oxide okuhlosiwe."
   },

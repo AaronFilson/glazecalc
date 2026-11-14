@@ -8,11 +8,16 @@ This plan adds optional two-step sign-in (MFA) for accounts: passkeys (WebAuthn)
 
 ## Status (14 October 2026)
 
+**Since then:** two-step sign-in is in production ([ADR 0014](adr/0014-two-step-sign-in.md)), and staging runs,
+deployed by the Deploy staging workflow ([deploy/README.md](../deploy/README.md), "Staging"). Item 19 is done in 31 of
+the 56 translations; the others send these emails in English. Item 18 is not built. The rest of this section is as it
+stood on 14 October.
+
 **Phase 1 is built** on branch `mfa`: the contract commit, streams A (factors on the server), B (the sign-in flow and `clear_mfa.ts`), C (the client) and D (mail, operations, docs), merged in that order, then the integration follow-ups:
 
 - A 401 from `/signin/*` (a wrong second step, an unknown passkey) is the sign-in page's to show, like `/signin`'s own: it no longer ends a trial on the browser or sends it to the start page (`client/app/core/session-expired.interceptor.ts`).
 - Removing the last factor, by a route or by `clear_mfa.ts --clear`, sends one `mfa-off` email instead of a removal notice per factor; `--notify` sends `accountMail.sendMfaClearNotice`.
-- A change on the account page confirmed with a factor cancels a pending `mfa.clearRequestedAt`, as a sign-in with one does (`docs/data-requests.md` says `--notify` must then be run again).
+- A change on the account page confirmed with a factor cancels a pending `mfa.clearRequestedAt`, as a sign-in with the password and a second step does (`docs/data-requests.md` says `--notify` must then be run again).
 - The account section shows `mfa-not-on` (and `totp-none`, `totp-exists`, `passkey-not-found`) by its code when it was out of date, and loads itself again.
 - After the review of 14 October (`reports/mfa-review-2026-10-14.md`, items 4, 5, 10, 11): a confirmed factor is not wasted when the change then fails. Adding a passkey confirms once (`POST /api/mfa/passkeys/grant`) and keeps a 5-minute grant (`server/lib/change_grant.ts`) for the options and the save, taken only when the passkey is saved, and the browser's step has a click of its own ("Now add the passkey"). An authenticator app's setup has an id, and only the newest counts. One passkey-add challenge per account. At sign-in each try holds the pending record before its factor is checked (`second_step.reserve`), and a passkey try takes its challenge, a failed one bringing a new one.
 - CI's Docker job sets the public compose test `MFA_KEY` itself. The OAuth ADR is 0015 in `docs/integrations-plan.md`; the next free ADR number is 0019.
@@ -243,7 +248,7 @@ Everything that differs between production and staging comes from the environmen
       - `--clear <email>` (refused before 7 days, using a `clearRequestedAt` field) removes the factors and codes, raises `tokenVersion` and sends `MFA_REMOVED`.
       - The owner runs it only for a request from the account's confirmed address, after the requester has done a password reset. This is the rule already in `docs/data-requests.md`: verify by a link, never by ID.
       - **Not within 30 days of an email change:** opening the link to a new address sets `emailChangedAt`; `--notify` and `--clear` both refuse while it is less than 30 days old, print why and from when they work, and point to verifying the requester another way (`docs/data-requests.md`). `--clear` also does nothing if the address changed since it looked.
-      - **A sign-in with a factor cancels the request** (coordinator, 14 October 2026): a successful second step, or a successful passkey-first sign-in, removes a pending `mfa.clearRequestedAt` with one atomic `$unset`, and logs only `MFA_CLEAR_CANCELLED` (no address). The real owner still has a working factor, and it defeats a clear request made by someone else. A later `--clear` is then refused until `--notify` is run again. Turning two-step sign-in off, or on again, also removes it, so an old request never applies to a later setup.
+      - **A sign-in with a factor cancels the request** (coordinator, 14 October 2026): a successful second step removes a pending `mfa.clearRequestedAt` with one atomic `$unset`, and logs only `MFA_CLEAR_CANCELLED` (no address). Until 13 November 2026 a passkey-first sign-in did too; the 1.0 security review found that someone who had only the password could add a passkey while two-step sign-in was off and use it to cancel every request the owner made after a reset, so a passkey alone no longer cancels one, and after a password reset it does not sign in on its own until a sign-in with the new password and a second step (`mfa.resetAt`, `passkey-after-reset`). The real owner still has a working factor, and it defeats a clear request made by someone else. A later `--clear` is then refused until `--notify` is run again. Turning two-step sign-in off, or on again, also removes it, so an old request never applies to a later setup.
     - **No admin route over HTTP,** so a stolen admin session can't remove anyone's factors. `selfOrAdmin` and `SETTABLE_FIELDS` stay as they are, and `mfa` is never settable.
 
     Effort S. Files: new `server/clear_mfa.ts` (stream B; `mfa.clearRequestedAt` is in the model since step 0), `docs/data-requests.md`, `deploy/README.md` (stream D).

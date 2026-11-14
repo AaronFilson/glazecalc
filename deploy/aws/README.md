@@ -4,6 +4,11 @@ Every AWS step, in order, as commands to review and run. Production was set up w
 October 2026; they are kept to rebuild it or to set up another instance.
 Background and reasoning: [docs/ec2-deploy-plan.md](../../docs/ec2-deploy-plan.md).
 
+The same resources are declared as AWS CDK stacks in [deploy/cdk](../cdk/README.md)
+([ADR 29](../../docs/adr/0029-infrastructure-as-code-with-cdk.md)), whose tests keep them equal to the JSON
+documents here. Once a stack's live resources are imported there, change them through the CDK app, not with
+these commands.
+
 **Who runs what:**
 
 - **Admin (once):** the steps marked _Admin_ create IAM roles, which a limited user must not be
@@ -12,14 +17,23 @@ Background and reasoning: [docs/ec2-deploy-plan.md](../../docs/ec2-deploy-plan.m
   us-west-2), after `git clone https://github.com/AaronFilson/glazecalc.git && cd glazecalc`.
 - **Everything else:** the `copper-bell` CLI user, once the admin attaches
   [operator-policy.json](operator-policy.json) to its group (step 0). That policy lets it
-  create only resources tagged `app=glazecalc`, launch only t4g.micro or t4g.small, change DNS
-  only for glazecalcapp.com, and stop or terminate the two old servers.
+  create security groups, launch templates and Elastic IPs only with the tag `app=glazecalc`.
+  It may create these without the tag: t4g.micro or t4g.small instances (no other type),
+  snapshots of any volume, parameters under `/glazecalc/`, the backup bucket and objects in it,
+  alarms named `glazecalc-*`, Data Lifecycle Manager policies, budgets, and the service-linked
+  role `AWSServiceRoleForCloudWatchEvents` (for the alarms' EC2 actions). It may change DNS
+  records only for glazecalcapp.com and its subdomains, and stop, start or terminate the two old
+  servers and read their console output.
 
 Defaults chosen in these files, change them before running if you decide otherwise:
 region **us-west-2** (where the old instance is), image registry **GHCR**, MongoDB
 **self-hosted** in Docker, instance **t4g.micro** (arm64, 1 GB; resize to t4g.small with a
-stop, `modify-instance-attribute --instance-type`, start if memory gets tight). The account ID 724654236968 and the
-region appear in `instance-policy.json` and `deploy-policy.json` as well.
+stop, `modify-instance-attribute --instance-type`, start if memory gets tight). The account ID 724654236968 is
+in every JSON document here as well, except the command documents (`deploy-document.json`,
+`staging-deploy-document.json`), `instance-trust.json` and `dlm-policy.json`. The region is in those documents
+too, except `github-oidc-trust.json`, `github-oidc-trust-staging.json`, `mail-forwarder-trust.json` and
+`staging-images-policy.json`. `setup-github-deploy.sh` and `create-inbound.sh` name both, and `create-mailer.sh`
+the region.
 
 ```bash
 REGION=us-west-2
@@ -90,9 +104,19 @@ aws s3api put-bucket-lifecycle-configuration --bucket "$BUCKET" --lifecycle-conf
 beside it (`<dump>.deletions.archive.gz`), which the same rule expires; see "Restoring a backup"
 in [deploy/README.md](../README.md).
 
+Optional, for staging: the S3 route for staging images ([deploy/README.md](../README.md), "Staging", step 8)
+adds a second rule, `expire-staging-images` (uploads under `staging-images/` deleted after 7 days), and an
+inline policy on the instance role (section 4), `glazecalc-staging-images`
+([staging-images-policy.json](staging-images-policy.json)), which lets the instance read them. The command
+above replaces every rule, so it would drop the second one; step 8's command keeps both. The CDK stack
+declares the rule and the policy only when its setting `stagingImages` is `true`
+([deploy/cdk/README.md](../cdk/README.md#settings)).
+
 ## 4. Admin: instance role
 
-Session Manager access plus reading `/glazecalc/*` parameters and writing dumps.
+Session Manager access, reading `/glazecalc/*` parameters, and the dumps under `mongodump/` in the backup
+bucket: writing them (`backup.sh`), and listing and reading them to restore one
+([deploy/README.md](../README.md), "Restoring a backup").
 
 ```bash
 aws iam create-role --role-name glazecalc-instance \
@@ -115,8 +139,9 @@ or `sha-<40 hex characters>`, so even an approved workflow run cannot run other 
 **Staging** (the Deploy staging workflow, deploy/README.md, "Staging"): a second role, which only
 runs in the repository's `staging` environment can assume, and which may only run the
 `glazecalc-staging-deploy` document. That runs `staging.sh` with a tag AWS checks to be
-`staging-<40 hex>` or `sha-<40 hex>`; the role cannot run production's document or any other
-command. But `staging.sh` runs as root on the instance production shares, and takes its own
+`staging-<40 hex>` or `sha-<40 hex>` (a master build from CI), so the role may stage either, but
+the workflow only ever sends `staging-<commit>`. The role cannot run production's document or
+any other command. But `staging.sh` runs as root on the instance production shares, and takes its own
 scripts from the commit it stages: approving a staging run trusts that branch's `deploy/` as
 much as running it by hand would. The workflow stages only commits on this repository's branches
 (never a fork's pull request), and only after the `staging` environment's reviewer approves. The
@@ -344,6 +369,10 @@ done
 # 15 minutes, missing data not breaching, alarm and OK actions to glazecalc-alerts.
 ```
 
+The repository does not record the alarms' names. The CDK stack takes them from its settings
+`bounceAlarmName` and `complaintAlarmName` ([deploy/cdk/README.md](../cdk/README.md#settings)), by default
+`glazecalc-ses-bounce-rate` and `glazecalc-ses-complaint-rate`; its import steps check the live names first.
+
 Deleted accounts and the suppression list (Admin, once a month): an address that bounced or
 complained stays on the account-level suppression list until it is removed, after its account is
 deleted too. The app cannot remove it: it sends over SMTP and has no SES API access, and the
@@ -400,8 +429,16 @@ for spam and viruses, stores each message in a private S3 bucket (deleted after 
 small Lambda function ([mail-forwarder](mail-forwarder/)) sends it on. The forwarded message comes from
 `"<sender's name> via Glazecalc" <forwarder@glazecalcapp.com>` (SES only sends as our own domain),
 with Reply-To set to the original sender (or to the Reply-To the sender set), so a plain reply goes to
-them. Mail the scan marks as spam or as carrying a virus is dropped. `no-reply@glazecalcapp.com`, the
+them. Mail the scan marks as spam or as carrying a virus is dropped, and so is mail that fails DMARC
+when the sender's domain asks for such mail to be rejected or quarantined (its From is forged, most
+likely); other mail that fails DMARC arrives with `[Failed DMARC]` before its subject. A forwarded
+message keeps SES's own SPF, DKIM and DMARC results for the original, as
+`X-Original-Authentication-Results`. `no-reply@glazecalcapp.com`, the
 app's sender, stays undeliverable, and there is no catch-all: any other address is refused.
+
+The DMARC handling and that header reach the live function when its code is next updated: run the
+script again (below, "Changing the inbox or the function") or deploy the CDK's `glazecalc-mail-inbound`
+stack ([deploy/cdk/README.md](../cdk/README.md)). Until then it drops spam and viruses only.
 
 The owner's inbox address is kept only in the Lambda function's environment (the script takes it from
 `OWNER_INBOX` when you run it). It is in no file in this repository.
@@ -442,13 +479,14 @@ In this order. The script shows each command and asks before every change.
    ```bash
    OWNER_INBOX=<your inbox address> bash deploy/aws/create-inbound.sh
    ```
-   It does these, asking before each: the bucket (public access blocked, 30-day expiry), its policy (SES
-   may store mail only for this account and this receipt rule), the forwarder's role and function, SES's
-   permission to call it, the receipt rule set and rule (six recipients, scanning on, S3 then Lambda), the
-   IAM user `glazecalc-mail-send`, the activation of the rule set, and last, behind its own confirmation
-   (type `mx`), the DNS record `glazecalcapp.com MX 10 inbound-smtp.us-west-2.amazonaws.com`. Running it
-   again skips what exists and updates the rest. SES allows one active receipt rule set per region; the
-   script says if another one is already active, and activating replaces it.
+   It does these, asking before each: the bucket (public access blocked; messages deleted after 30 days and
+   incomplete multipart uploads aborted after 1 day), its policy (SES may store mail only for this account
+   and this receipt rule), the forwarder's role and function, SES's permission to call it, the receipt rule
+   set and rule (six recipients, scanning on, S3 then Lambda), the IAM user `glazecalc-mail-send`, the
+   activation of the rule set, and last, behind its own confirmation (type `mx`), the DNS record
+   `glazecalcapp.com MX 10 inbound-smtp.us-west-2.amazonaws.com`. Running it again skips what exists and
+   updates the rest. SES allows one active receipt rule set per region; the script says if another one is
+   already active, and activating replaces it.
 4. **Test** (below), then the Gmail steps.
 5. **Publish the security contact** (last section).
 
@@ -459,13 +497,14 @@ Send a message from some other mail account (not the inbox it forwards to) to ea
 - Each should arrive within a minute, from `<your name> via Glazecalc`, with the text intact and any
   attachment (try a small PDF).
 - Press Reply: the To address should be the account you sent from, not `forwarder@`.
-- In one message's source: `dkim=pass` and `dmarc=pass` for glazecalcapp.com, and no `DKIM-Signature` of the
-  original sender.
+- In one message's source: `dkim=pass` and `dmarc=pass` for glazecalcapp.com, no `DKIM-Signature` of the
+  original sender, and the original's results from SES in `X-Original-Authentication-Results`.
 - Send to `nobody@glazecalcapp.com` and to `no-reply@glazecalcapp.com`: both should bounce.
 - `nslookup -type=MX glazecalcapp.com` shows the new record.
 - Nothing arrives? Read the function's log: `aws logs tail /aws/lambda/glazecalc-mail-forwarder --since 15m`,
   and list the stored messages: `aws s3 ls s3://glazecalc-mail-724654236968/inbound/`. A message the scan
-  marked as spam is stored, but the log says "Dropped"; look at the object if you suspect a false positive.
+  marked as spam, or one dropped for DMARC, is stored, but the log says "Dropped" with its id and why; look at
+  the object if you suspect a false positive.
   A message too large for SES to send on fails and stays in the bucket for 30 days.
 
 ### Send mail as these addresses (Gmail)

@@ -2,6 +2,11 @@
 
 Accepted, 2026-10-05.
 
+Amended, 2026-10-14: since 2026-10-13 a sign-in lasts until the browser closes unless "Keep me signed in on this
+device" is ticked (then 7 days; a trial's always 14), and "Sign out everywhere" (`POST /api/signout-everywhere`)
+raises `tokenVersion` to end every session. Since 2026-10-14 production's cookie is `__Host-glazecalc_session` on
+`Path=/`, so no other host can set one; development keeps `glazecalc_session` on `/api` (`server/lib/session.ts`).
+
 ## Context
 
 The API needs to know who is calling. The 2017 app used JSON Web Tokens kept in the browser's

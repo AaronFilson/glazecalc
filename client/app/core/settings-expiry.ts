@@ -8,8 +8,9 @@
  *   keeps the settings here, and "Clear my settings" removes them (clearSettings).
  *
  * The sign-in note, the trial, the old token, the offline-records switch and the offline-language note are
- * not listed: they end with the session or with their cache (core/auth.service.ts, core/offline-records.ts,
- * core/offline-languages.ts), and must never vanish while in use.
+ * not listed: they end with the session or with their cache (core/auth.service.ts, core/offline-languages.ts),
+ * or, for the offline copy, which may outlive a sign-out when the person keeps it, with the time they chose to
+ * keep it (keepExpired in core/offline-records.ts); and they must never vanish while in use.
  */
 
 /** The record of dates. */

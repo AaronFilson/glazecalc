@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { Additive, Material, Recipe } from '../../core/models';
 import { API, answer, httpMock, settle, skippedHeadings, testProviders, text } from '../../testing/test-providers';
+import { formatLocale } from '../../shared/format';
 import { ImportPage } from './import-page';
 
 const material = (
@@ -177,6 +178,16 @@ describe('ImportPage', () => {
     expect(text(fixture, '.import-firing')).toContain('cone 6');
   });
 
+  it('reads a title that names a cone at its end as the title and its firing, not as a material', async () => {
+    const { page, paste } = await create();
+    // "Celadon, cone 10" over comma rows was a line of its own, "Celadon, cone" at 10.
+    await paste('Celadon, cone 10\nCuster,40\nWhiting,20\nEPK,10\nSilica,30');
+    const [draft] = page['drafts']() as Array<{ title: string; firedAt: unknown; lines: Array<{ name: string }> }>;
+    expect(draft.title).toBe('Celadon, cone 10');
+    expect(draft.firedAt).toEqual({ scale: 'orton', low: '10' });
+    expect(draft.lines.map((l) => l.name)).toEqual(['Custer', 'Whiting', 'EPK', 'Silica']);
+  });
+
   it('asks for a choice where several materials are close, and saves once one is chosen or the line is left out', async () => {
     const { fixture, root, paste, save, selects } = await create();
     await paste('Test\nFeldspar 50\nSilica 50\nZircopax 5');
@@ -320,6 +331,183 @@ describe('ImportPage', () => {
     expect(root.querySelector('.import-ambiguous')).toBeNull();
   });
 
+  it('asks how to read each line whose thousands may be set apart by a space, and reads that line as chosen', async () => {
+    const MINSPAR = material(
+      'Minspar 200',
+      [
+        ['Na2O', 1],
+        ['Al2O3', 1],
+        ['SiO2', 6]
+      ],
+      0
+    );
+    const { fixture, root, page, paste } = await create([MINSPAR]);
+    const amounts = () => page['drafts']()[0].lines.map((l: { amount: string }) => l.amount);
+    const rows = () => [...root.querySelectorAll<HTMLElement>('.import-spaced-line')];
+    const buttons = (row: number) => [...rows()[row]!.querySelectorAll<HTMLButtonElement>('button')];
+    const pressed = (row: number) => buttons(row).map((b) => b.getAttribute('aria-pressed'));
+    await paste('Test\nMinspar 200 300\nCuster 500\nSilica 1\u202f500\nWhiting 2\u202f500');
+    // English writes 1,500: read as before, the 1 ending the name, and asked of each line. Minspar 200 is a name:
+    // 300 of it, with nothing to ask.
+    expect(amounts()).toEqual(['300', '500', '500', '500']);
+    expect(text(fixture, '.import-spaced .import-ambiguous-text')).toContain(
+      'can be read two ways, such as “1 500”: as 1,500, with a space setting the thousands apart, or as 1 and 500, apart.'
+    );
+    expect(rows().map((row) => row.querySelector('code')?.textContent)).toEqual([
+      'Silica 1\u202f500',
+      'Whiting 2\u202f500'
+    ]);
+    expect(rows()[0]!.getAttribute('aria-labelledby')).toBe('import-spaced-4');
+    expect(text(fixture, '#import-spaced-4')).toBe('Line 4 as pasted:Silica 1 500');
+    expect(buttons(0).map((b) => b.textContent?.trim())).toEqual(['Read 1 500 as 1,500', 'Read 1 and 500 apart']);
+    expect([pressed(0), pressed(1)]).toEqual([
+      ['false', 'true'],
+      ['false', 'true']
+    ]);
+    // One number for one line sets no other line's number.
+    buttons(0)[0]!.click();
+    await settle(fixture);
+    expect(amounts()).toEqual(['300', '500', '1500', '500']);
+    expect([pressed(0), pressed(1)]).toEqual([
+      ['true', 'false'],
+      ['false', 'true']
+    ]);
+    buttons(1)[0]!.click();
+    await settle(fixture);
+    expect(amounts()).toEqual(['300', '500', '1500', '2500']);
+    // A paste typed again is read as the language reads it until the reader chooses.
+    await paste('Test\nCuster 500\nSilica 1\u202f500');
+    expect(amounts()).toEqual(['500', '500']);
+    // French writes 1 500: one number. Silica is a name and "Silica 1" is not, so nothing is asked.
+    formatLocale.set('fr');
+    try {
+      await paste('Test\nCuster 500\nSilica 1\u202f500');
+      expect(amounts()).toEqual(['500', '1500']);
+      expect(root.querySelector('.import-spaced')).toBeNull();
+      // A name the library does not have: "Local clay 1" at 500 is a reading too, so asked, one number until chosen.
+      await paste('Test\nCuster 500\nLocal clay 1\u202f500');
+      expect(amounts()).toEqual(['500', '1500']);
+      expect(pressed(0)).toEqual(['true', 'false']);
+      buttons(0)[1]!.click();
+      await settle(fixture);
+      expect(amounts()).toEqual(['500', '500']);
+      expect(pressed(0)).toEqual(['false', 'true']);
+      // Nothing to ask where no line can be read two ways.
+      await paste('Test\nMinspar 200 300\nCuster 500');
+      expect(amounts()).toEqual(['300', '500']);
+      expect(root.querySelector('.import-spaced')).toBeNull();
+    } finally {
+      formatLocale.set('en');
+    }
+  });
+
+  it('asks whether a comma row\u2019s last two cells are one number or two columns, where commas mark decimals', async () => {
+    const { fixture, root, page, paste, chosenNames } = await create();
+    const amounts = () => page['drafts']()[0].lines.map((l: { amount: string }) => l.amount);
+    const buttons = () => [...root.querySelectorAll<HTMLButtonElement>('.import-joined button')];
+    // German writes 30,5 for 30.5, so with no heading row "Silica,30,5" is 30.5 or 30 and 5: one number, and asked.
+    formatLocale.set('de');
+    try {
+      await paste('Test\nCuster,50\nSilica,30,5\nWhiting,20,5');
+      expect(amounts()).toEqual(['50', '30.5', '20.5']);
+      expect(text(fixture, '.import-joined p')).toContain(
+        'Some numbers in this paste can be read two ways, such as \u201c30,5\u201d: as one number, 30,5, or as two columns, 30 and 5.'
+      );
+      expect(buttons().map((b) => b.textContent?.trim())).toEqual([
+        'Read 30,5 as one number, 30,5',
+        'Read 30 and 5 as two columns'
+      ]);
+      expect(buttons().map((b) => b.getAttribute('aria-pressed'))).toEqual(['true', 'false']);
+      buttons()[1].click();
+      await settle(fixture);
+      expect(amounts()).toEqual(['50', '30', '20']);
+      expect(chosenNames()).toEqual(['Custer Spar', 'Silica', 'Whiting']);
+      expect(buttons().map((b) => b.getAttribute('aria-pressed'))).toEqual(['false', 'true']);
+      buttons()[0].click();
+      await settle(fixture);
+      expect(amounts()).toEqual(['50', '30.5', '20.5']);
+      // A paste typed again is read as one number until the reader chooses.
+      buttons()[1].click();
+      await settle(fixture);
+      await paste('Test\nCuster,50\nSilica,30,5');
+      expect(amounts()).toEqual(['50', '30.5']);
+      // Under a heading row that names the columns, each cell is its column: nothing to ask.
+      await paste('Material,Amount,Notes\nCuster,50,1\nSilica,30,5');
+      expect(amounts()).toEqual(['50', '30']);
+      expect(root.querySelector('.import-joined')).toBeNull();
+    } finally {
+      formatLocale.set('en');
+    }
+    // English writes decimal points: two columns, with nothing to ask.
+    await paste('Test\nCuster,50\nSilica,30,5');
+    expect(amounts()).toEqual(['50', '30']);
+    expect(root.querySelector('.import-joined')).toBeNull();
+  });
+
+  it('asks whether a comma row’s cells are one number with its thousands set apart, or two columns', async () => {
+    const { fixture, root, page, paste } = await create();
+    const amounts = () => page['drafts']()[0].lines.map((l: { amount: string }) => l.amount);
+    const buttons = () => [...root.querySelectorAll<HTMLButtonElement>('.import-joined button')];
+    // English writes 2,140.7: one number until the reader chooses two columns. The first cell alone was read, unasked.
+    await paste('Test\nCuster,1,500\nSilica,2,140.7\nWhiting,360');
+    expect(amounts()).toEqual(['1500', '2140.7', '360']);
+    expect(text(fixture, '.import-joined p')).toContain(
+      'Some numbers in this paste can be read two ways, such as “1,500”: as one number, 1,500, or as two columns, 1 and 500.'
+    );
+    expect(buttons().map((b) => b.textContent?.trim())).toEqual([
+      'Read 1,500 as one number, 1,500',
+      'Read 1 and 500 as two columns'
+    ]);
+    buttons()[1].click();
+    await settle(fixture);
+    expect(amounts()).toEqual(['1', '2', '360']);
+    // German writes 1.161,5: one number, 1161.5.
+    formatLocale.set('de');
+    try {
+      await paste('Test\nCuster,1.161,5\nWhiting,360');
+      expect(amounts()).toEqual(['1161.5', '360']);
+      expect(text(fixture, '.import-joined p')).toContain('such as “1.161,5”: as one number, 1.161,5,');
+    } finally {
+      formatLocale.set('en');
+    }
+  });
+
+  it('asks whether a known name that ends in a number takes the number after its comma, where commas mark decimals', async () => {
+    const KAOLIN_233 = material(
+      'Kaolin 233',
+      [
+        ['Al2O3', 1],
+        ['SiO2', 2]
+      ],
+      13.96
+    );
+    const { fixture, root, page, paste } = await create([KAOLIN_233]);
+    const lines = () => page['drafts']()[0].lines.map((l: { name: string; amount: string }) => [l.name, l.amount]);
+    const buttons = () => [...root.querySelectorAll<HTMLButtonElement>('.import-joined button')];
+    // German "Kaolin 233,5": Kaolin at 233.5, or Kaolin 233 at 5. One number until the reader chooses.
+    formatLocale.set('de');
+    try {
+      await paste('Test\nKaolin 233,5\nSilica 30');
+      expect(lines()).toEqual([
+        ['Kaolin', '233.5'],
+        ['Silica', '30']
+      ]);
+      expect(text(fixture, '.import-joined p')).toContain('such as “233,5”');
+      expect(buttons().map((b) => b.textContent?.trim())).toEqual([
+        'Read 233,5 as one number, 233,5',
+        'Read 233 and 5 as two columns'
+      ]);
+      buttons()[1].click();
+      await settle(fixture);
+      expect(lines()).toEqual([
+        ['Kaolin 233', '5'],
+        ['Silica', '30']
+      ]);
+    } finally {
+      formatLocale.set('en');
+    }
+  });
+
   it('limits the box, and says so when the paste is too long instead of reading part of it', async () => {
     const { fixture, root, paste } = await create();
     expect((root.querySelector('#paste-text') as HTMLTextAreaElement).getAttribute('maxlength')).toBe('50000');
@@ -333,6 +521,81 @@ describe('ImportPage', () => {
     await paste('Custer 50\nSilica 50');
     expect(root.querySelector('.import-too-long')).toBeNull();
     expect(root.querySelectorAll('.import-recipe').length).toBe(1);
+  });
+
+  it('reads a name with a number in it, such as Leach 4321, as the title over its materials', async () => {
+    const { root, paste, chosenNames } = await create();
+    await paste('Leach 4321\nCuster 40\nWhiting 20\nSilica 30\nEPK 10');
+    expect((root.querySelector('#import-title-0') as HTMLInputElement).value).toBe('Leach 4321');
+    expect(chosenNames()).toEqual(['Custer Spar', 'Whiting', 'Silica', 'EPK Kaolin']);
+  });
+
+  it('reads a number as a whole thousand again when asked', async () => {
+    const { root, page, paste } = await create();
+    await paste('Test\nCuster 50\nWhiting 22,5\nSilica 1,500');
+    const press = async (label: string) => {
+      [...root.querySelectorAll<HTMLButtonElement>('.import-ambiguous button')]
+        .find((b) => b.textContent?.trim() === label)!
+        .click();
+      await settle();
+    };
+    await press('Read 1,500 as 1.5');
+    await press('Read 1,500 as 1,500');
+    expect(page['drafts']()[0].lines.map((l: { amount: string }) => l.amount)).toEqual(['50', '22.5', '1500']);
+  });
+
+  it('counts a line as an addition once its box is ticked', async () => {
+    const { fixture, root, paste } = await create();
+    await paste('Test\nWhiting 20\nSilica 80\nCuster 5');
+    expect(text(fixture, '.import-totals')).toBe('Base materials add up to 105');
+    (root.querySelector('#import-add-0-2') as HTMLInputElement).click();
+    await settle(fixture);
+    expect(text(fixture, '.import-totals')).toBe('Base materials add up to 100 · 1 addition');
+  });
+
+  it('asks for a base material with an amount, and for a recipe to be chosen, before saving', async () => {
+    const { fixture, root, paste, save } = await create();
+    await paste('Iron wash\nRed iron oxide 2');
+    await save();
+    httpMock().expectNone(API + '/recipe/create');
+    expect(text(fixture, '.import-problems')).toBe('Keep at least one base material with an amount.');
+    (root.querySelector('#import-include-0') as HTMLInputElement).click();
+    await settle(fixture);
+    await save();
+    expect(text(fixture, '.import-save-problem')).toBe('Choose at least one recipe to save.');
+  });
+
+  it('shows the first 30 recipes of a longer paste, and says the rest come once these are saved', async () => {
+    const { fixture, root, paste } = await create();
+    await paste(Array.from({ length: 31 }, (_, i) => `Glaze ${i + 1}\nWhiting 20\nSilica 80`).join('\n\n'));
+    expect(root.querySelectorAll('.import-recipe')).toHaveLength(30);
+    expect(text(fixture)).toContain('Only the first 30 recipes are shown. Paste the rest once these are saved.');
+  });
+
+  it('waits for the lists before reading, and reads against those that came when one could not be fetched', async () => {
+    const fixture = TestBed.createComponent(ImportPage);
+    await fixture.whenStable();
+    const root = fixture.nativeElement as HTMLElement;
+    const box = root.querySelector('#paste-text') as HTMLTextAreaElement;
+    box.value = 'Test\nWhiting 20\nSilica 80';
+    box.dispatchEvent(new Event('input'));
+    await settle(fixture);
+    const read = root.querySelector('.import-actions button') as HTMLButtonElement;
+    read.click();
+    await settle(fixture);
+    expect(root.querySelector('.import-recipe')).toBeNull();
+
+    httpMock()
+      .expectOne(API + '/materials/getAll')
+      .flush(null, { status: 500, statusText: 'Server Error' });
+    answer('/materials/getStandard', [WHITING, SILICA]);
+    answer('/additives/getAll', []);
+    answer('/additives/getStandard', []);
+    await settle(fixture);
+    expect(text(fixture, '.errors-section')).not.toBe('');
+    read.click();
+    await settle(fixture);
+    expect(root.querySelectorAll('.import-recipe')).toHaveLength(1);
   });
 
   it('says when nothing could be read', async () => {

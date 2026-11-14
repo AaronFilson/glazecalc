@@ -54,8 +54,10 @@ trap cleanup EXIT
 trap 'cleanup; exit 130' INT
 trap 'cleanup; exit 143' TERM
 docker network create "$RUN" >/dev/null
-# GLIBC_TUNABLES: for Linux 6.19 through 7.0.13, as compose.yaml says.
-docker run -d --name "$RUN-mongo" --network "$RUN" -e GLIBC_TUNABLES=glibc.pthread.rseq=1 mongo:9.0 >/dev/null
+# GLIBC_TUNABLES: for Linux 6.19 through 7.0.13, as compose.yaml says. The
+# image is compose.yaml's, by its digest (CI's services too): move them together.
+docker run -d --name "$RUN-mongo" --network "$RUN" -e GLIBC_TUNABLES=glibc.pthread.rseq=1 \
+  mongo:9.0@sha256:452bdaf2127b8ff851e31410a267809b9829eded219979f2210e7c7efb85a058 >/dev/null
 
 # The tests run in a container named for this run, so cleanup can stop it.
 # --init gives it an init process that passes Ctrl-C (SIGINT) on to npm and

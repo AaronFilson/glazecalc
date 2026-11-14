@@ -152,6 +152,45 @@ describe('Blends: mixing the corners', () => {
     expect(recipe.mixRecipes([a, b], [0.3, 0.7])!.materials).to.have.length(1);
   });
 
+  it('keeps two corners’ own analyses under one name as two lines, each with its own chemistry', () => {
+    // Lines without ids, as the MCP gives them: two wood ashes analysed apart.
+    const ash = (fields: Array<[string, string]>) => ({
+      name: 'Wood ash',
+      amount: '40',
+      percentmole: 'percent',
+      loi: 0,
+      fields: fields.map(([name, amount]) => ({ name, amount }))
+    });
+    const ashA = ash([
+      ['CaO', '60'],
+      ['SiO2', '20'],
+      ['K2O', '20']
+    ]);
+    const ashB = ash([
+      ['SiO2', '70'],
+      ['K2O', '25'],
+      ['CaO', '5']
+    ]);
+    const a = { materials: [ashA, line('Silica', '60')] };
+    const b = { materials: [ashB, line('Silica', '60')] };
+    // All B is recipe B, its own ash and not A's; A, with no share, has no say in it.
+    const allB = recipe.mixRecipes([a, b], [0, 1])!;
+    expect(allB.materials.map((m) => [m.line, round(m.amount)])).to.eql([
+      [ashB, 40],
+      [b.materials[1], 60]
+    ]);
+    // Half and half: both ashes, the silica they share as one line.
+    const half = recipe.mixRecipes([a, b], [0.5, 0.5])!;
+    expect(half.materials.map((m) => [m.line, round(m.amount)])).to.eql([
+      [ashA, 20],
+      [a.materials[1], 60],
+      [ashB, 20]
+    ]);
+    // The same analysis, written in another order, is the same material.
+    const same = { materials: [{ ...ashA, fields: [...ashA.fields].reverse() }, line('Silica', '60')] };
+    expect(recipe.mixRecipes([a, same], [0.5, 0.5])!.materials).to.have.length(2);
+  });
+
   it('mixes four corners of a biaxial tile and three of a triaxial', () => {
     const only = (name: string) => ({ materials: [line(name, '10')] });
     const corners = [only('A'), only('B'), only('C'), only('D')];

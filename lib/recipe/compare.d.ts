@@ -17,6 +17,8 @@ export interface CompareRow {
   /** An oxide's formula (with `formula`), or the row's key for a balance row. */
   label: string;
   formula?: true;
+  /** An oxide's row: the oxide as the unity formula's keys write it, K2O where the label is K₂O. */
+  oxide?: string;
   /** A balance row's key: silicaToAlumina, r2oFluxes, roFluxes, loi or expansion. */
   key?: string;
   /** The value in each recipe; null where it has none. */

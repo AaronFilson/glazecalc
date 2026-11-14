@@ -49,6 +49,16 @@ done
 
 cd /opt/glazecalc
 compose() { docker compose --progress quiet -f compose.prod.yaml "$@"; }
+# Runs a MongoDB tool in the mongo container as the app's user, as backup.sh
+# does: the password, from the container's environment, goes in a config file
+# read from a here-document (--config /dev/fd/3), never on a command line,
+# which any process on the instance could read (ps).
+as_app() {
+  compose exec -T mongo sh -c '"$@" --config /dev/fd/3 --username glazecalc --authenticationDatabase glazecalc 3<<EOF
+password: "$MONGO_APP_PASSWORD"
+EOF
+' sh "$@"
+}
 
 files=()
 trap 'rm -f ${files[@]+"${files[@]}"}' EXIT
@@ -87,12 +97,19 @@ fi
 
 if [ -n "$log" ]; then
   # No --drop: the saved entries are added, and those already here stay.
-  compose exec -T mongo sh -c 'mongorestore --archive --gzip --nsInclude glazecalc.deletions --quiet --username glazecalc --password "$MONGO_APP_PASSWORD" --authenticationDatabase glazecalc' < "$log"
+  as_app mongorestore --archive --gzip --nsInclude glazecalc.deletions --quiet < "$log"
   echo "Added the saved deletion log from $log_source."
 fi
 
-# With no log, accounts deleted since the dump would come back with it.
-logged=$(compose exec -T mongo sh -c 'mongosh --quiet "mongodb://glazecalc:$MONGO_APP_PASSWORD@localhost/glazecalc?authSource=glazecalc" --eval "db.deletions.countDocuments()"')
+# With no log, accounts deleted since the dump would come back with it. mongosh
+# takes no config file, so it signs in from its script, which reads the
+# password from its own environment: again on no command line.
+logged=$(compose exec -T mongo sh -c 'mongosh --quiet mongodb://localhost/glazecalc --eval "db.auth(\"glazecalc\", process.env.MONGO_APP_PASSWORD); db.deletions.countDocuments()"')
+# Only a number is a count: anything else could hide an empty log from the check below.
+if [[ ! "$logged" =~ ^[0-9]+$ ]]; then
+  echo "Could not count the deletion log, so nothing is restored. mongosh said: $logged" >&2
+  exit 1
+fi
 echo "Deletion log: $logged entries."
 if [ "$logged" = 0 ] && [ -z "$without_log" ]; then
   echo "The deletion log is empty, so nothing is restored. If the database is new, pass the newest" >&2
@@ -104,7 +121,7 @@ compose stop app
 echo "App stopped."
 
 echo "Restoring $dump_source"
-compose exec -T mongo sh -c 'mongorestore --archive --gzip --drop --nsExclude glazecalc.deletions --quiet --username glazecalc --password "$MONGO_APP_PASSWORD" --authenticationDatabase glazecalc' < "$dump"
+as_app mongorestore --archive --gzip --drop --nsExclude glazecalc.deletions --quiet < "$dump"
 
 if ! compose run --rm --no-deps app node server/reapply_deletions.ts; then
   echo "The dump is restored, but the deletion log could not be re-applied, so the app stays stopped." >&2

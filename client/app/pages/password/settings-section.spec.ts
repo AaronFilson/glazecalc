@@ -167,6 +167,37 @@ describe('SettingsSection', () => {
     expect(text(fixture, '.settings-status')).toBe('Saved: amounts are typed with a point for decimals.');
   });
 
+  it('saves a format of numbers and dates, saying whose it is', async () => {
+    const { fixture } = await create();
+    const format = fixture.nativeElement.querySelector('#format') as HTMLSelectElement;
+    format.value = 'de-DE';
+    format.dispatchEvent(new Event('change'));
+    await fixture.whenStable();
+    const req = httpMock().expectOne(API + '/preferences');
+    expect(req.request.body).toEqual({ format: 'de-DE' });
+    req.flush({ format: 'de-DE' });
+    await settle(fixture);
+    expect(text(fixture, '.settings-status')).toBe('Saved: numbers and dates as in German (Germany).');
+  });
+
+  it('says only the last of two quick choices was saved', async () => {
+    const { fixture, radio } = await create();
+    radio('g').click();
+    radio('lb').click();
+    await fixture.whenStable();
+    const [first, second] = httpMock().match(API + '/preferences');
+    expect(first!.request.body).toEqual({ weightUnit: 'g' });
+    expect(second!.request.body).toEqual({ weightUnit: 'lb' });
+    first!.flush({ weightUnit: 'g' });
+    await settle(fixture);
+    // Grams are no longer the choice: nothing is said about them.
+    expect(text(fixture, '.settings-status')).toBe('');
+    second!.flush({ weightUnit: 'lb' });
+    await settle(fixture);
+    expect(text(fixture, '.settings-status')).toBe('Saved: batch weights are in pounds and ounces.');
+    expect(radio('lb').checked).toBe(true);
+  });
+
   it("shows each format's date in the calendar chosen: Gregorian for Thai by default, Buddhist when chosen", async () => {
     const thai = (fixture: { nativeElement: HTMLElement }) =>
       (fixture.nativeElement.querySelector('#format option[value="th-TH"]') as HTMLOptionElement).textContent

@@ -23,6 +23,8 @@ describe("a Bengali page's figures", () => {
     expect(textDigitsFor('hi', formatLocaleFor('hi', 'IN', 'auto', 'gregory', 'native'))).toBeNull();
     expect(textDigitsFor('ur', formatLocaleFor('ur', 'PK', 'auto', 'gregory', 'native'))).toBeNull();
     expect(textDigitsFor('en', 'en-US')).toBeNull();
+    // A locale the browser cannot read leaves the figures as written.
+    expect(textDigitsFor('bn', 'not a locale')).toBeNull();
   });
 
   it("are written in Bengali digits, but for formulas, codes, a name's number and addresses", () => {

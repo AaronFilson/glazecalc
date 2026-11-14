@@ -50,7 +50,6 @@
     "firedTo": "Imechomwa hadi",
     "how": "Jinsi gani",
     "rebuild": "Jenga glaze upya: baki na silika na alumina yake, ukiweka boroni na flux nyingine badala ya madini ya risasi (Pb)",
-    "keepColour": "Baki na rangi juu ya msingi usio na madini ya risasi (Pb): frit na kaolini, 85 kwa 15, pamoja na vitia rangi vya kichocheo",
     "fritHeading": "Frit isiyo na madini ya risasi (Pb) ya kujengea, bora kwanza",
     "fritBoron": "({boron}% boroni, B₂O₃)",
     "noFrit": "Hakuna frit isiyo na madini ya risasi (Pb) inayouzwa katika eneo lako iliyo kwenye maktaba.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "madini ya risasi (Pb) hayawezi kubadilishwa: malighafi moja katika kichocheo haina uchambuzi wa kutumia.",
     "leadRebuiltCone": "madini ya risasi (Pb) yamebadilishwa kwa koni {cone} juu ya {base}: silika na alumina ya kichocheo cha zamani zimebaki, na boroni na flux nyingine zikifanya kazi ya madini ya risasi (Pb).",
     "leadRebuilt": "madini ya risasi (Pb) yamebadilishwa kwa {firing} juu ya {base}: silika na alumina ya kichocheo cha zamani zimebaki, na boroni na flux nyingine zikifanya kazi ya madini ya risasi (Pb).",
-    "leadColour": "madini ya risasi (Pb) yamebadilishwa: vitia rangi vimehamishiwa kwenye msingi usio na madini ya risasi (Pb) wa {base} na kaolini, 85 kwa 15.",
     "leadGloss": "Haitalingana kikamilifu na mng'ao, uangavu au rangi ya madini ya risasi (Pb): tarajia mng'ao mdogo, na huenda ikawa na ukungu juu ya udongo mwekundu au nyufa ndogo (crazing). Jaribu kundi dogo kwenye udongo wako mwenyewe.",
     "leadSafety": "Kukosa madini ya risasi (Pb) peke yake hakuifanyi glaze kuwa salama kwa chakula; hilo hutegemea fomula nzima na uchomaji.",
     "leadReplaced": "madini ya risasi (Pb) yamebadilishwa.",
@@ -245,8 +243,7 @@
       "text": "Hivi huwekwa juu ya msingi. Huhifadhiwa pamoja na kichocheo lakini si sehemu ya UMF. Chagua kipimo cha kila kiasi:",
       "percent": "<b>% ya msingi</b>: asilimia ya jumla ya msingi, kama vichocheo vingi vinavyoviandika: 2 maana yake ni 2% ya oksidi nyekundu ya chuma.",
       "parts": "<b>sehemu</b>: kipimo kile kile cha malighafi, kama sehemu 1 juu ya msingi wa flint 3 na dolomite 2.",
-      "grams": "<b>gramu</b>: uzito, katika kundi lile lile la malighafi.",
-      "count": "Baadhi ya vikokotoo huhesabu vitia rangi katika UMF na vingine havihesabu. Weka alama kwenye <b>Hesabu vitia rangi na viongezeo ndani yake</b>, chini ya kichwa cha Fomula ya Seger (UMF), ili kuvihesabu kwa uzito wake katika kundi, au uiache wazi ili kulinganisha na kikokotoo kisichovihesabu. Chaguo huhifadhiwa pamoja na kichocheo."
+      "grams": "<b>gramu</b>: uzito, katika kundi lile lile la malighafi."
     },
     "scale": {
       "heading": "Badilisha kipimo unapohitaji",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide} si oksidi ambayo Glazecalc inaijua.",
     "together": "Toa potashi (K₂O) na soda (Na₂O) kando kando, si pamoja kama KNaO.",
     "badAmount": "Kiasi cha {oxide} si namba ya 0 au zaidi.",
-    "noFlux": "Lengo linahitaji angalau flux moja, kama CaO, K₂O au Na₂O.",
     "noMaterials": "Ongeza angalau malighafi moja ya kutengenezea kichocheo.",
     "noMatch": "Hakuna malighafi kati ya hizi yenye oksidi yoyote ya lengo."
   },

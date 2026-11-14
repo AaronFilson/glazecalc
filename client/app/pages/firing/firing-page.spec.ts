@@ -13,6 +13,7 @@ import {
 import { formatLocale } from '../../shared/format';
 import { FiringLog } from './firing-log';
 import { FiringPage } from './firing-page';
+import { OfflineRecords } from '../../core/offline-records';
 import { PreferencesService } from '../../core/preferences.service';
 import { PAGE_LANGUAGE } from '../../i18n/language';
 
@@ -238,6 +239,138 @@ describe('FiringPage', () => {
     await removing;
     expect(page['myFirings']()).toEqual([]);
     expect(page['notices'].messages()).toEqual(['Moved "Old" to the Trash.']);
+  });
+
+  describe('as a potter fills it in', () => {
+    const use = (fixture: { nativeElement: HTMLElement; whenStable(): Promise<unknown> }) => {
+      const root = fixture.nativeElement;
+      const type = async (field: HTMLInputElement | HTMLTextAreaElement, value: string) => {
+        field.value = value;
+        field.dispatchEvent(new Event('input'));
+        await settle(fixture as never);
+      };
+      const press = async (label: string, nth = 0) => {
+        [...root.querySelectorAll('button')].filter((b) => b.textContent?.trim() === label)[nth]!.click();
+        await settle(fixture as never);
+      };
+      const fields = () => [...root.querySelectorAll('.included-name')].map((name) => name.textContent?.trim());
+      const cells = () => [...root.querySelectorAll<HTMLInputElement>('.firing-table input')];
+      return { root, type, press, fields, cells };
+    };
+
+    it('builds a log field by field and row by row, and keeps it when it could not be saved', async () => {
+      const { fixture } = await create([], [], true);
+      const { root, type, press, fields, cells } = use(fixture);
+      await type(root.querySelector('#firing-title') as HTMLInputElement, 'Glaze 14');
+      await type(root.querySelector('#firing-kiln') as HTMLInputElement, 'Skutt');
+      await type(root.querySelector('#firing-date') as HTMLInputElement, '2026-10-04');
+      await type(root.querySelector('#firing-notes') as HTMLTextAreaElement, 'Cone 6 down at 11:40.');
+      const pick = root.querySelector('#fieldselect') as HTMLSelectElement;
+      pick.value = 'Atmosphere';
+      pick.dispatchEvent(new Event('change'));
+      await settle(fixture);
+      await press('Add the field');
+      expect(fields()).toEqual(['Time', 'Temperature F', 'Cone', 'Atmosphere']);
+      // Time moves right of the temperature, the atmosphere left of the cone, and the cone goes.
+      await press('Move field right', 0);
+      await press('Move field left', 3);
+      await press('Remove the field', 3);
+      expect(fields()).toEqual(['Temperature F', 'Time', 'Atmosphere']);
+
+      await press('Add a row to the firing table');
+      await press('Add a row to the firing table');
+      await type(cells()[0]!, '1000');
+      await type(cells()[3]!, '1830');
+      await press('Remove row', 0);
+      expect(cells().map((cell) => cell.value)).toEqual(['1830', '', '']);
+
+      await press('Save');
+      const req = httpMock().expectOne(API + '/firing/create');
+      expect(req.request.body).toEqual({
+        title: 'Glaze 14',
+        kiln: 'Skutt',
+        date: '2026-10-04',
+        notes: 'Cone 6 down at 11:40.',
+        fieldsIncluded: ['Temperature F', 'Time', 'Atmosphere'],
+        rows: [['1830', '', '']]
+      });
+      req.flush(null, { status: 500, statusText: 'Server Error' });
+      await settle(fixture);
+      expect(text(fixture, '.errors-section')).toContain('Error: the request to the server failed.');
+      expect(fields()).toEqual(['Temperature F', 'Time', 'Atmosphere']);
+      expect((root.querySelector('#firing-title') as HTMLInputElement).value).toBe('Glaze 14');
+    });
+
+    it('asks for a field to be chosen once every field is in the log', async () => {
+      const { fixture } = await create();
+      const { root, press, fields } = use(fixture);
+      const offered = root.querySelector('#fieldselect') as HTMLSelectElement;
+      const add = [...root.querySelectorAll('button')].find((b) => b.textContent?.trim() === 'Add the field')!;
+      while (offered.options.length) {
+        add.click();
+        await fixture.whenStable();
+      }
+      expect(fields().length).toBeGreaterThan(10);
+      await press('Add the field');
+      expect(fieldProblem(fixture, 'fieldselect')).toBe('Choose a field to add, then Add the field.');
+    });
+
+    it('moves a stored log to the Trash once its Remove is confirmed', async () => {
+      const stored: Firing = { _id: 'f1', title: 'Old', fieldsIncluded: ['Time'], rows: [['1:00']] };
+      const { fixture } = await create([stored]);
+      const { root, press } = use(fixture);
+      (root.querySelector('button[aria-label="Remove Old"]') as HTMLButtonElement).click();
+      await settle(fixture);
+      await press('Yes, remove');
+      httpMock()
+        .expectOne({ method: 'DELETE', url: API + '/firing/delete/f1' })
+        .flush({});
+      await settle(fixture);
+      expect(root.querySelector('.stored-firing')).toBeNull();
+      expect(text(fixture, '.server-msg')).toContain('Moved "Old" to the Trash.');
+    });
+  });
+
+  it('says when the logs, or the recipes to link them to, could not be fetched', async () => {
+    const fixture = TestBed.createComponent(FiringPage);
+    await fixture.whenStable();
+    httpMock()
+      .expectOne(API + '/recipe/getAll')
+      .flush(null, { status: 500, statusText: 'Server Error' });
+    answer('/firing/getAll', [{ _id: 'f1', title: 'Glaze 14', fieldsIncluded: ['Cone'], rows: [['6']] }]);
+    await settle(fixture);
+    expect(text(fixture, '.fired-recipes')).toContain('Your recipes could not be fetched, so none can be linked now.');
+
+    TestBed.resetTestingModule();
+    TestBed.configureTestingModule({ providers: testProviders() });
+    const again = TestBed.createComponent(FiringPage);
+    await again.whenStable();
+    answer('/recipe/getAll', []);
+    httpMock()
+      .expectOne(API + '/firing/getAll')
+      .flush(null, { status: 500, statusText: 'Server Error' });
+    await settle(again);
+    expect(text(again, '.errors-section')).toContain('There was an error in getting the firing records information.');
+  });
+
+  it('says when a recipe could not be linked, and that links wait for the network while the saved copy is shown', async () => {
+    const stored: Firing = { _id: 'f1', title: 'Glaze 14', fieldsIncluded: ['Cone'], rows: [['6']] };
+    const { fixture } = await create([stored], [{ _id: 'r1', title: 'Clear', materials: [] }]);
+    const link = fixture.nativeElement.querySelector('#fired-add-f1') as HTMLButtonElement;
+    link.click();
+    httpMock()
+      .expectOne({ method: 'POST', url: API + '/recipe/firings/r1' })
+      .flush(null, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(text(fixture, '.errors-section')).toContain('The link could not be saved.');
+
+    const records = TestBed.inject(OfflineRecords);
+    records.showingCopy.set(new Date(2026, 9, 12, 14, 30));
+    await fixture.whenStable();
+    link.click();
+    await settle(fixture);
+    httpMock().expectNone(API + '/recipe/firings/r1');
+    expect(text(fixture, '.errors-section')).toContain(records.note()!);
   });
 
   it('picks the recipes fired in a log, keeping the link on the recipe, and takes one off again', async () => {

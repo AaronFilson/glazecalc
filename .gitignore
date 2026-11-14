@@ -14,6 +14,12 @@ coverage/
 test-results/
 test-results-linux/
 playwright-report/
+# Lighthouse (npm run lighthouse) and what CI measured for the README (scripts/readme-numbers.mjs)
+/.lighthouseci/
+/lighthouse-results/
+/numbers/
+# The CDK app's synthesized templates (deploy/cdk: cdk synth)
+/deploy/cdk/cdk.out/
 
 # Local settings loaded by the npm scripts; see .env.example
 .env

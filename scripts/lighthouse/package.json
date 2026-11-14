@@ -1,0 +1,12 @@
+{
+  "name": "glazecalc-lighthouse",
+  "private": true,
+  "description": "Lighthouse CI at an exact version with a lockfile, for scripts/lighthouse.mjs; installed apart from the app with npm ci.",
+  "license": "MIT",
+  "dependencies": {
+    "@lhci/cli": "0.16.1"
+  },
+  "overrides": {
+    "basic-ftp": "6.2.4"
+  }
+}

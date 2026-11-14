@@ -263,6 +263,123 @@ describe('MaterialPage', () => {
     expect(page['notices'].errors()[0]).toContain('Warning: Analysis of Short spar totals 50.00%');
   });
 
+  describe('as a potter fills it in', () => {
+    const fill = (fixture: { nativeElement: HTMLElement; whenStable(): Promise<unknown> }) => {
+      const root = fixture.nativeElement;
+      const type = async (id: string, value: string) => {
+        const field = root.querySelector('#' + id) as HTMLInputElement | HTMLTextAreaElement;
+        field.value = value;
+        field.dispatchEvent(new Event('input'));
+        field.dispatchEvent(new Event('blur'));
+        await settle(fixture as never);
+      };
+      const click = async (selector: string) => {
+        (root.querySelector(selector) as HTMLElement).click();
+        await settle(fixture as never);
+      };
+      const addOxide = async (oxide: string) => {
+        const select = root.querySelector('#firedoxide') as HTMLSelectElement;
+        select.value = oxide;
+        select.dispatchEvent(new Event('change'));
+        await settle(fixture as never);
+        const add = [...root.querySelectorAll('button')].find(
+          (b) => b.textContent?.trim() === 'Add the oxide to the list'
+        );
+        add!.click();
+        await settle(fixture as never);
+      };
+      return { type, click, addOxide };
+    };
+
+    it('saves every field typed in, and keeps them when the save fails', async () => {
+      const { fixture } = await create();
+      const { type, click, addOxide } = fill(fixture);
+      await type('material-name', 'My Talc');
+      await type('raw-formula', '3MgO•4SiO2•H2O');
+      await type('related-to', 'Talc');
+      await type('notes', 'From the yard.');
+      await type('LOI', '4.75');
+      await type('manualmolecularweight', '379.27');
+      await click('#radiopercent');
+      await click('#radiomole');
+      for (const oxide of ['MgO', 'CaO', 'SiO2']) await addOxide(oxide);
+      await type('oxide-amount-0', '3');
+      await type('oxide-amount-2', '4');
+      await click('button[aria-label="Remove CaO from the formula"]');
+      expect([...fixture.nativeElement.querySelectorAll('.oxide-lines b')].map((b: Element) => b.textContent)).toEqual([
+        'MgO',
+        'SiO₂'
+      ]);
+
+      await click('form button[type="submit"]');
+      const req = httpMock().expectOne(API + '/materials/create');
+      expect(req.request.body).toEqual(
+        expect.objectContaining({
+          name: 'My Talc',
+          rawformula: '3MgO•4SiO2•H2O',
+          relatedTo: 'Talc',
+          notes: 'From the yard.',
+          percentmole: 'molecular',
+          loi: 4.75,
+          fields: [
+            { name: 'MgO', amount: '3', amountUnity: 1 },
+            { name: 'SiO2', amount: '4', amountUnity: 1.3333 }
+          ]
+        })
+      );
+      req.flush({ msg: 'Missing required information' }, { status: 400, statusText: 'Bad Request' });
+      await settle(fixture);
+      expect(text(fixture, '.errors-section')).toContain('Missing required information');
+      expect((fixture.nativeElement.querySelector('#material-name') as HTMLInputElement).value).toBe('My Talc');
+    });
+
+    it('says why a formula of nothing cannot be saved, without calling the server', async () => {
+      const { fixture } = await create();
+      const { type, click, addOxide } = fill(fixture);
+      await type('material-name', 'Nothing');
+      await type('LOI', '0');
+      await addOxide('MgO');
+      await type('oxide-amount-0', '0');
+      await click('form button[type="submit"]');
+      httpMock().expectNone(API + '/materials/create');
+      expect(text(fixture, '.errors-section')).toContain('Error: Material Nothing has no oxides');
+    });
+
+    it('moves one of my materials to the Trash once its Remove is confirmed', async () => {
+      const mine: Material = {
+        _id: 'm1',
+        name: 'Mine',
+        percentmole: 'molecular',
+        loi: 0,
+        fields: [{ name: 'CaO', amount: 1 }]
+      };
+      const { fixture } = await create([mine]);
+      const { click } = fill(fixture);
+      await click('button[aria-label="Remove Mine"]');
+      const yes = [...fixture.nativeElement.querySelectorAll('button')].find(
+        (b: HTMLButtonElement) => b.textContent?.trim() === 'Yes, remove'
+      ) as HTMLButtonElement;
+      yes.click();
+      httpMock()
+        .expectOne({ method: 'DELETE', url: API + '/materials/delete/m1' })
+        .flush({});
+      await settle(fixture);
+      expect(text(fixture, '.server-msg')).toContain('Moved "Mine" to the Trash.');
+      expect(fixture.nativeElement.querySelector('button[aria-label="Remove Mine"]')).toBeNull();
+    });
+  });
+
+  it('says when my materials could not be fetched', async () => {
+    const fixture = TestBed.createComponent(MaterialPage);
+    await fixture.whenStable();
+    httpMock()
+      .expectOne(API + '/materials/getAll')
+      .flush(null, { status: 500, statusText: 'Server Error' });
+    answer('/materials/getStandard', []);
+    await settle(fixture);
+    expect(text(fixture, '.errors-section')).toContain('There was an error in getting the materials information.');
+  });
+
   it('removes an oxide line and a saved material', async () => {
     const mine: Material = {
       _id: 'm1',

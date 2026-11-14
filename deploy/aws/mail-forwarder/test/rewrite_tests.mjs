@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { isLoop, parseMailbox, rewriteMessage, shouldDrop } from '../rewrite.mjs';
+import { dropReason, failsDmarc, isLoop, parseMailbox, rewriteMessage } from '../rewrite.mjs';
 
 const FORWARDER = 'forwarder@glazecalcapp.com';
 const message = (headers, body = 'Hello,\r\n\r\nA question.\r\n') => headers.join('\r\n') + '\r\n\r\n' + body;
@@ -117,15 +117,75 @@ describe('mail forwarder: rewriting', function () {
     assert.ok(!out.includes('Reply-To'));
     assert.ok(out.endsWith('\n\nBody\n'));
   });
+
+  it("keeps SES's Authentication-Results, renamed, and drops any the message brought", () => {
+    const out = rewrite(
+      message([
+        'Authentication-Results: amazonses.com;',
+        ' spf=fail smtp.mailfrom=bank.example;',
+        ' dmarc=fail header.from=bank.example;',
+        'From: Bank <help@bank.example>',
+        'Authentication-Results: amazonses.com; spf=pass; dkim=pass; dmarc=pass',
+        'Authentication-Results: mx.example.net; dmarc=pass',
+        'X-Original-Authentication-Results: amazonses.com; dmarc=pass',
+        'Subject: Your account'
+      ])
+    );
+    const lines = headerLines(out);
+    assert.deepEqual(
+      lines.filter((line) => /authentication-results/i.test(line) || /^ /.test(line)),
+      [
+        'X-Original-Authentication-Results: amazonses.com;',
+        ' spf=fail smtp.mailfrom=bank.example;',
+        ' dmarc=fail header.from=bank.example;'
+      ]
+    );
+  });
+
+  it("keeps no Authentication-Results when the first is not SES's", () => {
+    const out = rewrite(message(['Authentication-Results: amazonses.com.example; dmarc=pass', 'From: a@example.org']));
+    assert.ok(!/authentication-results/i.test(out));
+  });
+
+  it('says "[Failed DMARC]" in the Subject when told the original failed DMARC, and only then', () => {
+    const raw = message(['From: a@example.org', 'Subject: Invoice', 'To: hello@glazecalcapp.com']);
+    const failed = (text) =>
+      headerLines(rewriteMessage(Buffer.from(text, 'latin1'), FORWARDER, { failedDmarc: true }).toString('latin1'));
+    assert.ok(failed(raw).includes('Subject: [Failed DMARC] Invoice'));
+    assert.ok(headerLines(rewrite(raw)).includes('Subject: Invoice'));
+    // Folded or encoded, the text after it is kept as it was; with no Subject, one is added.
+    const encoded = message(['From: a@example.org', 'Subject:', ' =?UTF-8?B?w4lmZg==?=']);
+    assert.deepEqual(failed(encoded).slice(-2), ['Subject: [Failed DMARC] ', ' =?UTF-8?B?w4lmZg==?=']);
+    assert.ok(failed(message(['From: a@example.org'])).includes('Subject: [Failed DMARC]'));
+  });
 });
 
 describe('mail forwarder: what is not forwarded', function () {
-  it('drops spam and virus FAIL verdicts only', () => {
-    assert.equal(shouldDrop({ spamVerdict: { status: 'FAIL' }, virusVerdict: { status: 'PASS' } }), true);
-    assert.equal(shouldDrop({ spamVerdict: { status: 'PASS' }, virusVerdict: { status: 'FAIL' } }), true);
-    assert.equal(shouldDrop({ spamVerdict: { status: 'PASS' }, virusVerdict: { status: 'PASS' } }), false);
-    assert.equal(shouldDrop({ spamVerdict: { status: 'GRAY' }, virusVerdict: { status: 'DISABLED' } }), false);
-    assert.equal(shouldDrop({}), false);
+  it('drops spam and virus FAIL verdicts', () => {
+    assert.ok(dropReason({ spamVerdict: { status: 'FAIL' }, virusVerdict: { status: 'PASS' } }));
+    assert.ok(dropReason({ spamVerdict: { status: 'PASS' }, virusVerdict: { status: 'FAIL' } }));
+    assert.equal(dropReason({ spamVerdict: { status: 'PASS' }, virusVerdict: { status: 'PASS' } }), null);
+    assert.equal(dropReason({ spamVerdict: { status: 'GRAY' }, virusVerdict: { status: 'DISABLED' } }), null);
+    assert.equal(dropReason({}), null);
+  });
+
+  it("drops a DMARC FAIL when the sender's domain asks for reject or quarantine, and forwards the rest", () => {
+    const pass = { spamVerdict: { status: 'PASS' }, virusVerdict: { status: 'PASS' } };
+    const failed = (dmarcPolicy) => ({ ...pass, dmarcVerdict: { status: 'FAIL' }, dmarcPolicy });
+    // SES's reference gives the policy as a string, its example as an object with a status: both are read.
+    for (const policy of ['reject', 'quarantine', 'REJECT', { status: 'QUARANTINE' }]) {
+      assert.match(dropReason(failed(policy)), /^DMARC FAIL/, JSON.stringify(policy));
+    }
+    for (const policy of ['none', { status: 'NONE' }, undefined]) {
+      assert.equal(dropReason(failed(policy)), null, JSON.stringify(policy));
+      assert.equal(failsDmarc(failed(policy)), true);
+    }
+    // Only a FAIL: a domain without DMARC (GRAY), or a check that could not be made, is forwarded as it is.
+    for (const status of ['PASS', 'GRAY', 'PROCESSING_FAILED']) {
+      const receipt = { ...pass, dmarcVerdict: { status }, dmarcPolicy: 'reject' };
+      assert.equal(dropReason(receipt), null, status);
+      assert.equal(failsDmarc(receipt), false, status);
+    }
   });
 
   it('recognises mail from the forwarder itself or already forwarded', () => {

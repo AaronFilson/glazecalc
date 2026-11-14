@@ -25,6 +25,7 @@
 // When the setting cannot be read, the change waits (fail closed).
 import crypto from 'node:crypto';
 import mongoose, { type Types } from 'mongoose';
+import chemistry from '../../lib/chemistry/index.js';
 import languages from '../../lib/regions/languages.js';
 import AccessToken from '../models/access_token.ts';
 import PendingChange, { PENDING_MINUTES, type PendingStatus } from '../models/pending_change.ts';
@@ -449,8 +450,15 @@ export interface FieldChange {
   after: string;
 }
 
-/** Turns a waiting change's arguments into the fields it sets, given the record as it is now (null for a new one). */
-export type Preview = (args: unknown, current: Record<string, unknown> | null) => FieldChange[];
+/**
+ * Turns a waiting change's arguments into the fields it sets, given the record as it is now (null for a
+ * new one) and the account it is for.
+ */
+export type Preview = (
+  args: unknown,
+  current: Record<string, unknown> | null,
+  userId: string
+) => FieldChange[] | Promise<FieldChange[]>;
 
 const previews = new Map<string, Preview>();
 
@@ -462,6 +470,22 @@ export const registerPreview = (source: Pending['source'], action: string, previ
 /** At most this many characters of one value are sent; the page shows fewer, with a way to see these. */
 export const VALUE_LONGEST = 20000;
 
+type Row = Record<string, unknown>;
+
+/** A row of a list that names something: a recipe's material ("name" as saved, "material" as a tool takes it). */
+const isNamedRow = (item: unknown): item is Row =>
+  !!item &&
+  typeof item === 'object' &&
+  !Array.isArray(item) &&
+  typeof ((item as Row).name ?? (item as Row).material) === 'string';
+
+/** A named row as one line: "Silica 30", "Cobalt Carbonate 1 percent". */
+const rowText = (row: Row): string =>
+  [row.name ?? row.material, row.amount, row.unit].filter((part) => part !== undefined && part !== '').join(' ');
+
+/** Text no longer than the page is sent. */
+const capped = (text: string): string => (text.length > VALUE_LONGEST ? text.slice(0, VALUE_LONGEST) + '…' : text);
+
 /**
  * A field's value as text for the page: a list of materials or oxides as one
  * line each ("Silica 30"), a note's paragraphs one after another, anything
@@ -472,20 +496,7 @@ export const asText = (value: unknown): string => {
     if (value === undefined || value === null) return '';
     if (typeof value === 'string') return value;
     if (typeof value === 'number' || typeof value === 'boolean') return String(value);
-    if (Array.isArray(value)) {
-      return value
-        .map((item) => {
-          if (item && typeof item === 'object' && !Array.isArray(item)) {
-            const row = item as Record<string, unknown>;
-            const name = row.name ?? row.material;
-            if (typeof name === 'string') {
-              return [name, row.amount, row.unit].filter((part) => part !== undefined && part !== '').join(' ');
-            }
-          }
-          return asText(item);
-        })
-        .join('\n');
-    }
+    if (Array.isArray(value)) return value.map((item) => (isNamedRow(item) ? rowText(item) : asText(item))).join('\n');
     if (typeof value === 'object') {
       const entries = Object.entries(value as Record<string, unknown>);
       if (entries.every(([, v]) => typeof v === 'number' || typeof v === 'string')) {
@@ -494,18 +505,94 @@ export const asText = (value: unknown): string => {
     }
     return JSON.stringify(value) ?? '';
   })();
-  return text.length > VALUE_LONGEST ? text.slice(0, VALUE_LONGEST) + '…' : text;
+  return capped(text);
 };
 
-/** The fields given, each as it is in the record now and as it would be; those that would not change are left out. */
-export const fieldChanges = (given: Record<string, unknown>, current: Record<string, unknown> | null): FieldChange[] =>
+/** A material line's own oxides: its fields as saved, or the analysis a tool was given; none for a plain row. */
+const oxidesOf = (row: Row): Array<[string, number]> => {
+  if (Array.isArray(row.fields)) {
+    return row.fields
+      .filter((field): field is Row => !!field && typeof field === 'object')
+      .map((field) => [String(field.name), Number(field.amount)]);
+  }
+  if (row.analysis && typeof row.analysis === 'object') {
+    return Object.entries(row.analysis as Row).map(([oxide, amount]) => [oxide, Number(amount)]);
+  }
+  return [];
+};
+
+/**
+ * A line's chemistry as the page shows it: "PbO 100%", or in moles for a formula, and its LOI. Percent or moles
+ * as the chemistry reads them: a line kept before the server lower-cased percentmole may say 'Molecular'.
+ */
+const chemistryText = (row: Row): string => {
+  const unit = chemistry.oxidesGivenIn(row) === 'percent' ? '%' : ' mol';
+  const loi = Number(row.loi) || 0;
+  return [...oxidesOf(row).map(([oxide, amount]) => oxide + ' ' + amount + unit), ...(loi ? [`LOI ${loi}%`] : [])].join(
+    ', '
+  );
+};
+
+/** The same whatever order the oxides come in, and with none at nothing: two lines whose chemistry is the same match. */
+const chemistryKey = (row: Row): string =>
+  JSON.stringify([
+    oxidesOf(row)
+      .filter(([, amount]) => amount !== 0)
+      .sort(([p], [q]) => (p < q ? -1 : p > q ? 1 : 0)),
+    chemistry.oxidesGivenIn(row),
+    Number(row.loi) || 0
+  ]);
+
+/**
+ * A recipe's lines before and after, as the page shows them: one line each,
+ * and a line's oxides as well wherever they are not what they were. A line
+ * kept by its name whose chemistry changes shows it on both sides (an
+ * assistant could keep "Custer Spar 30" and give it the analysis of lead
+ * oxide); a line new to the recipe shows its own, unless `known` says it is a
+ * material by its name (the library's, or the account's own).
+ */
+const linesText = (after: Row[], before: Row[] | null, known: (row: Row) => boolean) => {
+  const shown = new Set<Row>();
+  const unpaired = [...(before ?? [])];
+  const nameOf = (row: Row) => row.name ?? row.material;
+  for (const row of after) {
+    const k = unpaired.findIndex((old) => nameOf(old) === nameOf(row));
+    if (k < 0) {
+      if (oxidesOf(row).length && !known(row)) shown.add(row);
+      continue;
+    }
+    const old = unpaired.splice(k, 1)[0]!;
+    if (chemistryKey(old) !== chemistryKey(row)) {
+      shown.add(old);
+      shown.add(row);
+    }
+  }
+  const text = (rows: Row[]) =>
+    capped(rows.map((row) => rowText(row) + (shown.has(row) ? ` (${chemistryText(row)})` : '')).join('\n'));
+  return { before: before && text(before), after: text(after) };
+};
+
+/**
+ * The fields given, each as it is in the record now and as it would be; those that would not change are left
+ * out. A list of materials says where a line's chemistry changes (linesText); `known` names the lines that are
+ * a material by its name.
+ */
+export const fieldChanges = (
+  given: Record<string, unknown>,
+  current: Record<string, unknown> | null,
+  { known = () => false }: { known?: (row: Row) => boolean } = {}
+): FieldChange[] =>
   Object.entries(given)
     .filter(([, value]) => value !== undefined)
-    .map(([field, value]) => ({
-      field,
-      ...(current && { before: asText(current[field]) }),
-      after: asText(value)
-    }))
+    .map(([field, value]) => {
+      const was = current?.[field];
+      if (Array.isArray(value) && value.some((row) => isNamedRow(row) && oxidesOf(row).length)) {
+        const rows = (list: unknown[]) => list.filter(isNamedRow);
+        const texts = linesText(rows(value), current ? rows(Array.isArray(was) ? was : []) : null, known);
+        return { field, ...(current && { before: texts.before! }), after: texts.after };
+      }
+      return { field, ...(current && { before: asText(was) }), after: asText(value) };
+    })
     .filter((change) => change.before !== change.after);
 
 /** What this app did to the record before: what it was called before, and how long ago it last changed it. */
@@ -564,7 +651,10 @@ export const detailsOf = async (
       : null;
   }
   const preview = previews.get(change.source + ':' + change.action);
-  const changes = change.status === 'pending' && preview && change.args != null ? preview(change.args, current) : [];
+  const changes =
+    change.status === 'pending' && preview && change.args != null
+      ? await preview(change.args, current, String(change.userId))
+      : [];
   const history = change.removal ? await historyOf(change, current, now) : null;
   return { changes, history };
 };

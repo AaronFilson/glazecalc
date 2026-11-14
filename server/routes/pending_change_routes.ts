@@ -6,7 +6,8 @@
 //                                              summary, each field it sets as it is now and would be,
 //                                              what the app did to the record lately, and every other
 //                                              change waiting from the same app; or, once decided,
-//                                              what came of it. With the token that asked:
+//                                              what came of it. With the personal token that asked (an
+//                                              app connected with OAuth asks the MCP endpoint, 403 here):
 //                                              { status, msg, outcome? }. Reading it changes nothing:
 //                                              both can read what came of it until its time is up
 //   POST /api/pending-changes/:id/approve      the person approves it: it is made, once
@@ -43,7 +44,7 @@ import {
   type Outcome,
   type Pending
 } from '../lib/pending_changes.ts';
-import { accessTokenIn, checkAccessToken, invalidToken } from '../lib/token_auth.ts';
+import { accessTokenIn, checkAccessToken, insufficientScope, invalidToken } from '../lib/token_auth.ts';
 import AccessToken from '../models/access_token.ts';
 
 const pendingChangeRouter = express.Router();
@@ -85,6 +86,8 @@ const reasonOf = (outcome: Outcome): string | undefined => {
 const forToken = async (req: Request, res: Response, token: string): Promise<void> => {
   const found = await checkAccessToken(req, token);
   if (!found) return invalidToken(res);
+  // An app connected with OAuth has tokens for the MCP endpoint alone (docs/adr/0024), and asks there.
+  if (found.via !== 'pat') return insufficientScope(res);
   const outcome = await outcomeForToken(req.params.id, String(found.token._id));
   if (!outcome) {
     res.status(404).json(NOT_FOUND);

@@ -11,6 +11,7 @@ import * as site from '../lib/site.ts';
 import * as totp from '../lib/totp.ts';
 import User from '../models/user.ts';
 import { api, expect, makeUser, sessionToken } from './support/app.ts';
+import * as mail from './support/mail.ts';
 import { SoftAuthenticator } from './support/soft_authenticator.ts';
 
 type Res = Awaited<ReturnType<ReturnType<typeof api>['get']>>;
@@ -345,6 +346,97 @@ describe('two-step sign-in end to end (real factors)', () => {
     });
   });
 
+  // A reset keeps the passkeys, as second steps, but someone who had the old
+  // password may have added one (server/routes/password_routes.ts).
+  describe('after a password reset', () => {
+    /** Resets the password by the emailed link, as the owner does. */
+    const resetByEmail = async (who: Account, password: string) => {
+      // Notices about the account (a passkey added) go out after their replies.
+      await mail.settle();
+      const before = mail.to(who.email).length;
+      expect(await api().post('/password/forgot').send({ email: who.email })).to.have.status(200);
+      const sent = await mail.waitFor(who.email, before + 1);
+      const res = await api()
+        .post('/password/reset')
+        .send({ token: mail.tokenIn(sent[sent.length - 1]!), password });
+      expect(res, JSON.stringify(res.body)).to.have.status(200);
+      who.password = password;
+    };
+    const resetAt = async (who: Account) => (await User.findById(who.user._id).lean())!.mfa?.resetAt;
+
+    it('signs in with a passkey alone only after the new password and a second step', async () => {
+      const alice = await account();
+      const { authenticator } = await addPasskey(alice);
+      await resetByEmail(alice, 'a-new-password');
+      expect(await resetAt(alice)).to.be.instanceOf(Date);
+
+      const refused = await passkeySignIn(authenticator.assert((await passkeyOptions()).challenge));
+      expect(refused).to.have.status(401);
+      expect(refused.body.code).to.eql('passkey-after-reset');
+      expect(refused.body.msg).to.include('password');
+      expect(sessionToken(refused)).to.eql(null);
+
+      // The passkey is still the second step after the new password, and that sign-in lifts the hold.
+      const step = await passwordStep(alice);
+      expect(step.methods.passkey).to.eql(true);
+      const res = await secondStep(step.pending, { passkey: authenticator.assert(step.passkeyOptions!.challenge) });
+      expect(res, JSON.stringify(res.body)).to.have.status(200);
+      expect(await resetAt(alice)).to.eql(undefined);
+      const again = await passkeySignIn(authenticator.assert((await passkeyOptions()).challenge));
+      expect(again, JSON.stringify(again.body)).to.have.status(200);
+    });
+
+    it('is lifted by any second step after the new password, and is not set without a passkey', async () => {
+      const alice = await account();
+      await enrolTotp(alice);
+      await resetByEmail(alice, 'a-new-password');
+      // Only an authenticator app: there is no passkey to hold back.
+      expect(await resetAt(alice)).to.eql(undefined);
+
+      const bob = await account();
+      const { authenticator, codes } = await addPasskey(bob);
+      await resetByEmail(bob, 'a-new-password');
+      const step = await passwordStep(bob);
+      expect(await secondStep(step.pending, { recoveryCode: codes[0] })).to.have.status(200);
+      expect(await resetAt(bob)).to.eql(undefined);
+      expect(await passkeySignIn(authenticator.assert((await passkeyOptions()).challenge))).to.have.status(200);
+    });
+
+    it('keeps the owner a way back from someone who had the password and added a passkey', async function () {
+      // Two resets' worth of email, and a dozen password checks: more than the usual 5 seconds.
+      this.timeout(30000);
+      // The owner: no two-step sign-in. Someone with the password signs in and adds a passkey,
+      // which needs only the password while it is off, and gets the recovery codes.
+      const owner = await account();
+      const intruderIn = await api().get('/signin').set('Authorization', basic(owner.email, owner.password));
+      expect(intruderIn.body.code).to.eql('signed-in');
+      const intruder: Account = { ...owner, token: sessionToken(intruderIn)! };
+      const { authenticator } = await addPasskey(intruder);
+
+      // The owner resets the password by email; the new password asks for a second step they do not have.
+      await resetByEmail(owner, 'owners-new-password');
+      expect((await passwordStep(owner)).methods).to.eql({ totp: false, passkey: true, recovery: true });
+      // The intruder's passkey no longer signs in on its own.
+      const intruderTry = async () => passkeySignIn(authenticator.assert((await passkeyOptions()).challenge));
+      const refused = await intruderTry();
+      expect(refused).to.have.status(401);
+      expect(refused.body.code).to.eql('passkey-after-reset');
+
+      // The way back (docs/data-requests.md): --notify, seven days, --clear. The intruder's tries in
+      // between cancel nothing.
+      expect((await notify(owner.email)).ok).to.eql(true);
+      for (let i = 0; i < 3; i++) expect((await intruderTry()).body.code).to.eql('passkey-after-reset');
+      const later = new Date(Date.now() + (WAIT_DAYS + 1) * DAY);
+      const cleared = await clear(owner.email, later);
+      expect(cleared.ok, cleared.message).to.eql(true);
+      expect((await User.findById(owner.user._id).lean())!.mfa).to.eql(undefined);
+      // The owner signs in with the new password alone; the intruder's passkey is gone.
+      const signedIn = await api().get('/signin').set('Authorization', basic(owner.email, owner.password));
+      expect(signedIn.body.code).to.eql('signed-in');
+      expect((await intruderTry()).body.code).to.eql('passkey-unknown');
+    });
+  });
+
   // server/lib/code_lock.ts: a round of 10 wrong codes, then codes are refused
   // for an hour, a day, and a week each time after.
   describe('wrong codes from an authenticator app, per account', () => {
@@ -538,11 +630,17 @@ describe('two-step sign-in end to end (real factors)', () => {
       expect((await User.findById(alice.user._id).lean())!.mfa!.totp).to.not.eql(undefined);
     });
 
-    it('is cancelled by a passkey-first sign-in', async () => {
+    it('is not cancelled by a passkey alone, only by the password and a passkey as the second step', async () => {
       const alice = await account();
       const { authenticator } = await addPasskey(alice);
       await requested(alice);
+      // Someone who had the password may have added the passkey: it signs in, and cancels nothing.
       expect(await passkeySignIn(authenticator.assert((await passkeyOptions()).challenge))).to.have.status(200);
+      expect(await clearRequestedAt(alice)).to.be.instanceOf(Date);
+
+      const step = await passwordStep(alice);
+      const res = await secondStep(step.pending, { passkey: authenticator.assert(step.passkeyOptions!.challenge) });
+      expect(res, JSON.stringify(res.body)).to.have.status(200);
       expect(await clearRequestedAt(alice)).to.eql(undefined);
       expect((await clear(alice.email)).ok).to.eql(false);
     });

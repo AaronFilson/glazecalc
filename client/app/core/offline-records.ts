@@ -142,6 +142,13 @@ export class OfflineRecords {
   /** A sign-in just started and /verify has not named the user: the copy may be another person's, so it is not read. */
   private held = false;
   /**
+   * The copy is being turned on (setEnabled) and is not written yet: the user's own is about to be, so checkOwner
+   * leaves it rather than switch to it a second time.
+   */
+  private turningOn = false;
+  /** Torn down (the app, or a test's injector): work still on its way stops before it touches anything. */
+  private destroyed = false;
+  /**
    * The copies the page on screen shows in place of the server's answers, and when each was saved. Emptied as each
    * navigation starts (pageStarted): the next page's own requests fill it again if the network is still gone.
    */
@@ -182,7 +189,10 @@ export class OfflineRecords {
     if (!this.storesAnything()) this.ready = this.drop();
     else {
       // Changes waiting from before: counted at once, so a start with no network shows them (the user is the copy's).
-      if (this.outbox().noted()) queueMicrotask(() => void this.outbox().refreshCount());
+      if (this.outbox().noted())
+        queueMicrotask(() => {
+          if (!this.destroyed) void this.outbox().refreshCount();
+        });
       // The site opens: the time the person chose to keep the copy is checked now, and only now.
       this.ready = this.opened();
     }
@@ -218,6 +228,7 @@ export class OfflineRecords {
     document.addEventListener('visibilitychange', onShown);
     worker?.addEventListener('message', onWorker);
     inject(DestroyRef).onDestroy(() => {
+      this.destroyed = true;
       window.removeEventListener('storage', onStorage);
       window.removeEventListener('online', onOnline);
       window.removeEventListener('pageshow', onShown);
@@ -246,6 +257,7 @@ export class OfflineRecords {
     const gone = this.goneId();
     if (gone && !this.auth.hasSession()) {
       const current = await this.currentId();
+      if (this.destroyed) return;
       if (current === gone || (current === null && (await this.outbox().mine(gone)).length > 0))
         void this.askGone(gone);
       else if (current !== null) this.setGone(null);
@@ -257,6 +269,7 @@ export class OfflineRecords {
    * used now. Only ever for the account that is opening the site here. True when they were removed.
    */
   private async checkKeep(userId: string): Promise<boolean> {
+    if (this.destroyed) return false;
     const db = await openRecordsDb(() => undefined);
     try {
       const tx = db.transaction(STORE, 'readwrite');
@@ -336,8 +349,15 @@ export class OfflineRecords {
       return false;
     }
     this.enabled.set(true);
-    await this.learnUser();
-    if (this.user && !(await this.writeMeta())) {
+    this.turningOn = true;
+    let written: boolean;
+    try {
+      await this.learnUser();
+      written = !this.user || (await this.writeMeta());
+    } finally {
+      this.turningOn = false;
+    }
+    if (!written) {
       await this.clear();
       this.notKept.set(true);
       return false;
@@ -592,7 +612,11 @@ export class OfflineRecords {
     if (reason === 'gone') {
       // Deleted elsewhere: the person is asked to export what this device holds before it is cleared.
       const id = user?.id ?? (await this.currentId());
-      if (id && ((await this.currentId()) === id || (await this.outbox().mine(id)).length > 0)) {
+      if (!id) return;
+      const current = await this.currentId();
+      if (this.destroyed) return;
+      if (current === id || (await this.outbox().mine(id)).length > 0) {
+        if (this.destroyed) return;
         this.setGone(id);
         await this.askGone(id);
       }
@@ -610,6 +634,7 @@ export class OfflineRecords {
    * is cleared until they choose to; "Later" asks again the next time the site opens.
    */
   private async askGone(id: string): Promise<void> {
+    if (this.destroyed) return;
     const ask = this.injector.get(OfflineAsk);
     const count = (await this.outbox().mine(id)).length;
     const body = [translate(marker('offline.goneBody'))];
@@ -639,7 +664,7 @@ export class OfflineRecords {
       if (then !== 'clear') return;
     } else if (answer !== 'clear') return;
     // Only this account's copy and changes, and only if nobody signed in meanwhile.
-    if (this.goneId() !== id || this.auth.hasSession()) return;
+    if (this.goneId() !== id || this.auth.hasSession() || this.destroyed) return;
     await this.wipe(id);
     this.setGone(null);
   }
@@ -656,6 +681,7 @@ export class OfflineRecords {
     } catch {
       // Nothing could be read: the file holds what the outbox has.
     }
+    if (this.destroyed) return;
     const day = new Date().toISOString().slice(0, 10);
     saveJson(deviceExport(id, copies, await this.outbox().mine(id)), `glazecalc-offline-data-${day}.json`);
   }
@@ -691,16 +717,27 @@ export class OfflineRecords {
    * they kept one here before, is shown again; the same person's queue is sent.
    */
   private async checkOwner(user: SignedInUser): Promise<void> {
+    // Named while the copy is being turned on: setEnabled writes the user's own copy itself.
+    const turningOn = this.turningOn;
     try {
-      if (this.storesAnything() && this.user === user && (await this.currentId()) !== user.id)
+      if (!turningOn && this.storesAnything() && this.user === user && (await this.needsSwitch(user)))
         await this.switchTo(user);
     } finally {
       if (this.user === user) this.held = false;
     }
-    if (this.user === user) {
+    if (this.user === user && !this.destroyed) {
       void this.outbox().refreshCount(user.id);
       void this.outbox().flush();
     }
+  }
+
+  /**
+   * Whether `user`'s sign-in changes which copy is shown: the copy shown last is another account's, or it is
+   * theirs but locked. A sign-in during which the database could not be opened locks the copy without changing
+   * whose it is, so the account's next sign-in shows it again rather than leave it locked until turned on anew.
+   */
+  private async needsSwitch(user: SignedInUser): Promise<boolean> {
+    return (await this.currentId()) !== user.id || this.rawFlag() === RECORDS_LOCKED;
   }
 
   /** Makes `user`'s copy the one shown, or none when they keep none here; every other copy stays, locked. */
@@ -719,13 +756,13 @@ export class OfflineRecords {
       // Could not look: nothing is shown, nothing is deleted.
       mine = false;
     }
-    if (this.user !== user) return;
+    if (this.user !== user || this.destroyed) return;
     // The account opens the site here again: its own time to keep the copy is checked now.
     if (mine && (await this.checkKeep(user.id).catch(() => false))) {
       this.user = user;
       return;
     }
-    if (this.user !== user) return;
+    if (this.user !== user || this.destroyed) return;
     this.forgetState();
     this.user = user;
     this.setFlag(mine ? '1' : RECORDS_LOCKED);
@@ -735,7 +772,7 @@ export class OfflineRecords {
 
   /** Whether this browser may hold a copy (any account's) or waiting changes. */
   private storesAnything(): boolean {
-    return this.browser && (this.rawFlag() !== null || this.outbox().noted());
+    return !this.destroyed && this.browser && (this.rawFlag() !== null || this.outbox().noted());
   }
 
   private rawFlag(): string | null {
@@ -757,6 +794,8 @@ export class OfflineRecords {
 
   /** Opens the database whether or not the signed-in user keeps a copy: only call it when storesAnything. */
   private openAny(): Promise<IDBDatabase> {
+    // Torn down: IndexedDB may be another app's by now (a test's), and is not touched.
+    if (this.destroyed) return Promise.reject(new Error('Torn down'));
     return this.db ?? openRecordsDb(() => (this.db = null));
   }
 
@@ -784,7 +823,7 @@ export class OfflineRecords {
   }
 
   private keeping(): boolean {
-    return this.browser && this.enabled() && this.auth.hasSession() && this.auth.trial() === null;
+    return !this.destroyed && this.browser && this.enabled() && this.auth.hasSession() && this.auth.trial() === null;
   }
 
   private outbox(): Outbox {
@@ -877,6 +916,7 @@ export class OfflineRecords {
    * any page after a sign-out shows.
    */
   private async wipe(account?: string): Promise<void> {
+    if (this.destroyed) return;
     const owner = account ?? this.user?.id ?? null;
     const stored = this.storesAnything();
     // At once: no page after a sign-out reads the copy. Set back to "locked" below if other accounts keep copies.
@@ -916,9 +956,11 @@ export class OfflineRecords {
         // Could not look: the database is not deleted, since it could hold a change.
         otherChanges = 1;
       }
+      if (this.destroyed) return;
       await this.outbox()
         .refreshCount(owner ?? undefined)
         .catch(() => undefined);
+      if (this.destroyed) return;
     }
     if (otherCopies > 0) this.setFlag(RECORDS_LOCKED);
     if (otherCopies > 0 || otherChanges > 0) return;

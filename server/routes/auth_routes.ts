@@ -240,6 +240,7 @@ authRouter.post(
     // The pending sign-in is used: a failure from here on needs the password again.
     try {
       await secondStep.cancelClearRequest(user._id);
+      await secondStep.allowPasskeyFirst(user._id);
       return await signedIn(res, user, pending.trialId, pending.keep);
     } catch (err) {
       log.error('A second step was right, but the sign-in could not be finished', { code: log.codeOf(err) });
@@ -250,7 +251,11 @@ authRouter.post(
 
 // Passkey-first sign-in (decision 1, item 17): any discoverable passkey for
 // this site, with user verification, counts as both steps. Passkey autofill
-// uses the same two routes. The options have a lighter limit of their own
+// uses the same two routes. After a password reset it does not, until a
+// sign-in with the new password and a second step (mfa.resetAt,
+// server/routes/password_routes.ts): 401 'passkey-after-reset', which says
+// so; and it never cancels a request to turn two-step sign-in off
+// (secondStep.cancelClearRequest). The options have a lighter limit of their own
 // (limits.passkeyOptions): the page asks for them on every sign-in page load
 // where autofill works, they start no session, and an unused challenge expires.
 // The sign-in itself has its own limit too (limits.passkeySignIn, refusals
@@ -285,7 +290,8 @@ authRouter.post('/signin/passkey', limits.passkeySignIn, express.json(), async (
   if (!(await secondStep.checks.verifyAuthentication(user, assertion, challenge, true))) {
     return res.status(401).json(say('passkey-failed'));
   }
-  await secondStep.cancelClearRequest(user._id);
+  // Checked after the passkey, so only whoever holds it learns why.
+  if (user.mfa?.resetAt) return res.status(401).json(say('passkey-after-reset'));
   const trial = await currentUser(req);
   return signedIn(res, user, trial?.guest ? trial._id : undefined, session.wantsKept(req));
 });

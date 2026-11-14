@@ -4,19 +4,14 @@ import path from 'node:path';
 import ts from 'typescript';
 import { expect } from './support/app.ts';
 
-// lib/ is CommonJS with a hand-written .d.ts beside each module, and nothing
-// else compares the two: TypeScript reads only the .d.ts. So a renamed or
-// removed export would pass the type check and fail when the page runs. This
-// compares the values each .d.ts declares (functions, constants, classes; not
-// types) with what its .js exports.
+// lib/ is CommonJS with a hand-written .d.ts beside each module. Its type check
+// (lib/tsconfig.json) holds each module's use of another to that one's .d.ts,
+// but a module's own exports are compared with nothing: TypeScript reads only
+// the .d.ts. So a renamed or removed export would pass the type check and fail
+// when the page runs. This compares the values each .d.ts declares (functions,
+// constants, classes; not types) with what its .js exports.
 const LIB = path.resolve(import.meta.dirname, '..', '..', 'lib');
 const require = createRequire(import.meta.url);
-
-/** Exported for the other lib modules only, so not declared for the app. */
-const INTERNAL: Record<string, string[]> = {
-  'recipe/messages': ['say'],
-  'recipe/pool': ['added', 'changed', 'removed', 'scaled']
-};
 
 const declarations = (dir: string): string[] =>
   readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
@@ -48,16 +43,65 @@ describe('lib types', () => {
     expect(files.length).to.be.greaterThan(30);
   });
 
+  it('has declarations that are correct TypeScript, the ones no module of lib reads included', () => {
+    // lib/tsconfig.json checks only the .d.ts files its JavaScript reaches, and the server's and the
+    // client's checks skip declaration files, so entry points such as recipe/index.d.ts were checked by
+    // nothing. This checks every one, with the library's own settings.
+    const checked = ts.createProgram(files, {
+      noEmit: true,
+      target: ts.ScriptTarget.ES2024,
+      lib: ['lib.es2024.d.ts'],
+      module: ts.ModuleKind.NodeNext,
+      moduleResolution: ts.ModuleResolutionKind.NodeNext,
+      types: ['node'],
+      skipLibCheck: false
+    });
+    const problems = ts.getPreEmitDiagnostics(checked).map((diagnostic) => {
+      const where = diagnostic.file ? path.relative(LIB, diagnostic.file.fileName) + ': ' : '';
+      return where + ts.flattenDiagnosticMessageText(diagnostic.messageText, '\n');
+    });
+    expect(problems).to.eql([]);
+  });
+
+  it('declares what the solver takes and what a choosing always gives as they are', () => {
+    // The declarations drifted: boundedLeastSquares did not take `normal` (A^T A and A^T b worked out
+    // once, as fit.js passes them), and a selection's cutShort, which select.js always sets, was optional.
+    const index = program.getSourceFile(path.join(LIB, 'chemistry', 'index.d.ts'))!;
+    const exports = checker.getExportsOfModule(checker.getSymbolAtLocation(index)!);
+    const exported = (name: string) => exports.find((symbol) => symbol.name === name)!;
+    const solver = checker.getTypeOfSymbol(exported('boundedLeastSquares'));
+    const [signature] = checker.getSignaturesOfType(solver, ts.SignatureKind.Call);
+    const problem = checker.getTypeOfSymbol(signature!.parameters[0]!);
+    const normal = problem.getProperty('normal');
+    expect(normal, 'boundedLeastSquares takes normal').to.not.equal(undefined);
+    const shape = checker.getNonNullableType(checker.getTypeOfSymbol(normal!));
+    expect(shape.getProperty('gram'), 'normal.gram').to.not.equal(undefined);
+    expect(shape.getProperty('atb'), 'normal.atb').to.not.equal(undefined);
+    const cutShort = checker.getDeclaredTypeOfSymbol(exported('Selection')).getProperty('cutShort')!;
+    expect(cutShort.flags & ts.SymbolFlags.Optional, 'Selection.cutShort is always given').to.equal(0);
+    // And the JavaScript does give it, a boolean, as declared.
+    const chemistry = require(path.join(LIB, 'chemistry', 'index.js')) as {
+      selectMaterials: (lines: object[], target: object) => { cutShort: unknown };
+    };
+    const silica = { name: 'Silica', percentmole: 'percent', loi: 0, fields: [{ name: 'SiO2', amount: 100 }] };
+    const whiting = { name: 'Whiting', percentmole: 'percent', loi: 0, fields: [{ name: 'CaO', amount: 100 }] };
+    const selection = chemistry.selectMaterials(
+      [
+        { material: silica, start: 0 },
+        { material: whiting, start: 0 }
+      ],
+      { CaO: 1, SiO2: 3 }
+    );
+    expect(selection.cutShort).to.be.a('boolean');
+  });
+
   for (const file of files) {
     const name = path
       .relative(LIB, file)
       .replace(/\\/g, '/')
       .replace(/\.d\.ts$/, '');
     it(`lib/${name}.js exports what lib/${name}.d.ts declares`, () => {
-      const internal = INTERNAL[name] ?? [];
-      const exported = Object.keys(require(file.replace(/\.d\.ts$/, '.js')) as object)
-        .filter((key) => !internal.includes(key))
-        .sort();
+      const exported = Object.keys(require(file.replace(/\.d\.ts$/, '.js')) as object).sort();
       expect(exported).to.eql(declared(file));
     });
   }

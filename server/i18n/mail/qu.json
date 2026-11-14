@@ -1,0 +1,10 @@
+{
+  "CHANGED": {
+    "subject": "Glazecalc pakasqa simiykiqa t'ikrasqañam",
+    "text": "Glazecalc cuentapa {account} pakasqa siminqa kunanllan t'ikrasqa, yaykusqa kaq llapan dispositivokunapas lluqsichisqañam.\n\nSichus qam karqanki chayqa, manam imapas ruranaykipaq kanchu. Mana chayqa, pakasqa simiykita kunanpacha musuqyachiy kaypi: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Glazecalc pakasqa simiykita musuqyachiy",
+    "text": "Pipas (qamchá) Glazecalc cuentapa {account} pakasqa siminta musuqyachiyta mañakurqan.\n\nMusuq pakasqa simita akllanaykipaq, kay enlaceta {minutes} minuto ukhupi kichay:\n\n{link}\n\nEnlaceqa huk kutillam llamk'an. Sichus mana qamchu kayta mañakurqanki chayqa, kay correota ama kasuychu; pakasqa simiykiqa kaqllam kanqa.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

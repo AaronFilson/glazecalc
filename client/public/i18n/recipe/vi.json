@@ -50,7 +50,6 @@
     "firedTo": "Nung đến",
     "how": "Cách làm",
     "rebuild": "Dựng lại men: giữ silica và alumina của nó, với bo và các chất trợ chảy khác thay cho chì",
-    "keepColour": "Giữ màu trên men nền không chì: frit và cao lanh, theo tỷ lệ 85 : 15, với các chất tạo màu của công thức men",
     "fritHeading": "Frit không chì để làm nền, tốt nhất trước",
     "fritBoron": "({boron}% bo, B₂O₃)",
     "noFrit": "Không có frit không chì nào bán trong khu vực của bạn có trong thư viện.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Không thể thay chì: một nguyên liệu trong công thức men không có phân tích để dựa vào.",
     "leadRebuiltCone": "Đã thay chì cho côn {cone} trên {base}: giữ silica và alumina của công thức men cũ, với bo và các chất trợ chảy khác làm việc của chì.",
     "leadRebuilt": "Đã thay chì cho {firing} trên {base}: giữ silica và alumina của công thức men cũ, với bo và các chất trợ chảy khác làm việc của chì.",
-    "leadColour": "Đã thay chì: các chất tạo màu được chuyển sang một men nền không chì gồm {base} và cao lanh, theo tỷ lệ 85 : 15.",
     "leadGloss": "Nó sẽ không khớp chính xác độ bóng, độ trong hay màu của chì: hãy dự kiến kém rực rỡ hơn, và có thể bị đục trên đất sét đỏ hoặc rạn nứt men. Hãy thử một mẻ nhỏ trên đất của bạn.",
     "leadSafety": "Việc không có chì tự nó không làm cho một loại men an toàn khi tiếp xúc thực phẩm; điều đó phụ thuộc vào toàn bộ công thức hóa học và việc nung.",
     "leadReplaced": "Chì đã được thay.",
@@ -245,8 +243,7 @@
       "text": "Những thứ này được thêm lên trên men nền. Chúng được lưu cùng công thức men nhưng không thuộc công thức Seger. Chọn mỗi lượng tính bằng gì:",
       "percent": "<b>% men nền</b>: một phần trăm của tổng men nền, như hầu hết công thức men ghi: 2 nghĩa là 2% oxit sắt đỏ.",
       "parts": "<b>phần</b>: cùng đơn vị với các nguyên liệu, như 1 phần trên một men nền gồm 3 flint và 2 đôlômít.",
-      "grams": "<b>gam</b>: một khối lượng, trong cùng mẻ với các nguyên liệu.",
-      "count": "Một số công cụ tính tính chất tạo màu vào công thức Seger và một số thì không. Đánh dấu <b>Tính cả chất tạo màu và phụ gia</b>, dưới tiêu đề Công thức Seger, để tính chúng theo khối lượng trong mẻ, hoặc để trống để so sánh với một công cụ tính không tính chúng. Lựa chọn được lưu cùng công thức men."
+      "grams": "<b>gam</b>: một khối lượng, trong cùng mẻ với các nguyên liệu."
     },
     "scale": {
       "heading": "Đổi cách quy đổi khi cần",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide} không phải là oxit mà Glazecalc biết.",
     "together": "Hãy nhập kali (K₂O) và natri (Na₂O) riêng, không gộp thành KNaO.",
     "badAmount": "Lượng {oxide} không phải là một số từ 0 trở lên.",
-    "noFlux": "Mục tiêu cần ít nhất một chất trợ chảy, như CaO, K₂O hoặc Na₂O.",
     "noMaterials": "Hãy thêm ít nhất một nguyên liệu để làm công thức men.",
     "noMatch": "Không nguyên liệu nào trong số này có oxit nào của mục tiêu."
   },

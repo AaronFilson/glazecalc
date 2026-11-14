@@ -50,7 +50,6 @@
     "firedTo": "Bränd till",
     "how": "Metod",
     "rebuild": "Bygg om glasyren: behåll dess kiseldioxid och aluminiumoxid, med bor och andra flussmedel i stället för blyet",
-    "keepColour": "Behåll färgen på en blyfri bas: frittan och kaolin, 85 till 15, med receptets färgmedel",
     "fritHeading": "Blyfri fritta att bygga på, bästa först",
     "fritBoron": "({boron} % bor, B₂O₃)",
     "noFrit": "Biblioteket har ingen blyfri fritta som säljs i regionen.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Blyet kan inte ersättas: en råvara i receptet saknar analys att utgå från.",
     "leadRebuiltCone": "Blyet ersatt för kägla {cone} med {base} som bas: det gamla receptets kiseldioxid och aluminiumoxid behålls, och bor och andra flussmedel gör blyets arbete.",
     "leadRebuilt": "Blyet ersatt för bränning till {firing} med {base} som bas: det gamla receptets kiseldioxid och aluminiumoxid behålls, och bor och andra flussmedel gör blyets arbete.",
-    "leadColour": "Blyet ersatt: färgmedlen överförda till en blyfri bas av {base} och kaolin, 85 till 15.",
     "leadGloss": "Den får inte exakt samma glans, klarhet eller färg som med bly: räkna med mindre lyster och möjligen en slöja över röd lera, eller krackelering. Prova en liten sats på den egna leran.",
     "leadSafety": "Att en glasyr saknar bly gör den inte i sig livsmedelssäker; det beror på hela formeln och bränningen.",
     "leadReplaced": "Blyet är ersatt.",
@@ -245,8 +243,7 @@
       "text": "De läggs utöver basen. De sparas med receptet men ingår inte i Segerformeln. Välj vilken enhet varje mängd anges i:",
       "percent": "<b>% av basen</b>: en procent av basens summa, så som de flesta recept anger dem: 2 betyder 2 % röd järnoxid.",
       "parts": "<b>delar</b>: samma enhet som råvarorna, till exempel 1 del på en bas av 3 flinta och 2 dolomit.",
-      "grams": "<b>gram</b>: en vikt, i samma sats som råvarorna.",
-      "count": "Vissa kalkylatorer räknar med färgmedel i Segerformeln<en>unity molecular formula</en> och andra gör det inte. Markera <b>Räkna med färgmedel och tillsatser</b>, under rubriken Segerformel, för att räkna in dem efter deras vikt i satsen, eller lämna rutan omarkerad för att jämföra med en kalkylator som inte gör det. Valet sparas med receptet."
+      "grams": "<b>gram</b>: en vikt, i samma sats som råvarorna."
     },
     "scale": {
       "heading": "Räkna om vid behov",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide} är ingen oxid som Glazecalc känner till.",
     "together": "Ange kali (K₂O) och natron (Na₂O) var för sig, inte tillsammans som KNaO.",
     "badAmount": "Mängden {oxide} är inte ett tal som är 0 eller större.",
-    "noFlux": "Målet behöver minst ett flussmedel, till exempel CaO, K₂O eller Na₂O.",
     "noMaterials": "Lägg till minst en råvara att göra receptet av.",
     "noMatch": "Ingen av de här råvarorna innehåller någon av målets oxider."
   },

@@ -1,3 +1,4 @@
+import { PLATFORM_ID } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { InstallService } from './install.service';
 
@@ -51,5 +52,21 @@ describe('InstallService', () => {
     const install = TestBed.inject(InstallService);
     window.dispatchEvent(offerEvent());
     expect(install.available()).toBe(false);
+  });
+
+  it('offers nothing during the prerender, and listens for no offer', () => {
+    TestBed.configureTestingModule({ providers: [{ provide: PLATFORM_ID, useValue: 'server' }] });
+    const install = TestBed.inject(InstallService);
+    window.dispatchEvent(offerEvent());
+    expect(install.available()).toBe(false);
+  });
+
+  it('stops listening to the window when the app is torn down', () => {
+    standalone(false);
+    TestBed.inject(InstallService);
+    TestBed.resetTestingModule();
+    const event = offerEvent();
+    window.dispatchEvent(event);
+    expect(event.defaultPrevented).toBe(false);
   });
 });

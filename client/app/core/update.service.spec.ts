@@ -125,4 +125,22 @@ describe('UpdateService', () => {
     expect(reload).not.toHaveBeenCalled();
     expect(listeners['visibilitychange']).toBeUndefined();
   });
+
+  it('lets a failed look for a new version go', async () => {
+    worker.checkForUpdate.mockRejectedValueOnce(new Error('Failed to fetch'));
+    start();
+    listeners['visibilitychange']!();
+    await new Promise((resolve) => setTimeout(resolve));
+    expect(worker.checkForUpdate).toHaveBeenCalledTimes(1);
+    expect(reload).not.toHaveBeenCalled();
+  });
+
+  it('does not load the page again when the worker cannot go on and there is no storage to guard a loop', () => {
+    vi.spyOn(Storage.prototype, 'getItem').mockImplementation(() => {
+      throw new DOMException('The operation is insecure.', 'SecurityError');
+    });
+    start();
+    unrecoverable.next({ reason: 'cache gone' });
+    expect(reload).not.toHaveBeenCalled();
+  });
 });

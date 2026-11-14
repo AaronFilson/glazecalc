@@ -61,6 +61,17 @@ export const mailAllowlist = (): string[] | null => {
 /** The WebAuthn relying party id: the site's host name, no port (glazecalcapp.com, localhost). */
 export const rpId = (): string => new URL(siteUrl()).hostname;
 
+/**
+ * Whether a host is this site's own, one under it or one above it
+ * (glazecalcapp.com and www.glazecalcapp.com; glazecalcapp.com from staging):
+ * where no app connected with OAuth is given its answer, or named by its address.
+ */
+export const isOwnHost = (hostname: string): boolean => {
+  const own = rpId();
+  const host = hostname.replace(/\.+$/, '');
+  return host === own || host.endsWith('.' + own) || own.endsWith('.' + host);
+};
+
 /** The origin WebAuthn expects a passkey to be used from: https://glazecalcapp.com, http://localhost:3100. */
 export const origin = (): string => new URL(siteUrl()).origin;
 

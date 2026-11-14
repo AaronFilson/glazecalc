@@ -6,7 +6,7 @@ import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { formatFormula } from '../../../../lib/chemistry';
 import { firingBands, isStated } from '../../../../lib/cones/firing';
 import type { FiringBlock } from '../../../../lib/cones/firing';
-import { formatScaled, totalOf } from '../../../../lib/recipe/amounts';
+import { formatScaled, plainAmount, totalOf } from '../../../../lib/recipe/amounts';
 import { BLEND_STEPS, blendTiles, mixRecipes } from '../../../../lib/recipe/blends';
 import type { BlendKind, BlendTile } from '../../../../lib/recipe/blends';
 import { coneFit } from '../../../../lib/recipe/cone-fit';
@@ -648,10 +648,11 @@ export class BlendsPage implements OnInit {
     const band = firing ? (firingBands(firing)[0] ?? set.whenUnknown) : set.whenUnknown;
     const includeAdditives = this.includeAdditives();
     return tiles.map((entry) => {
-      const materials = entry.materials.map(({ line, amount }) => ({ ...line, amount: String(amount) }));
+      // Written plainly: String(0.0000005) is "5e-7", which the chemistry refuses as an amount.
+      const materials = entry.materials.map(({ line, amount }) => ({ ...line, amount: plainAmount(amount) }));
       const additives = entry.additives.map(({ line, amount }) => ({
         ...line,
-        amount: String(amount),
+        amount: plainAmount(amount),
         unit: 'percent' as const
       }));
       const { analysis } = evaluate(materials, additives, { includeAdditives });

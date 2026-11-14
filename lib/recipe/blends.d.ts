@@ -26,12 +26,18 @@ export interface Blend {
 
 export function blendTiles(kind: BlendKind, steps: number): Blend | null;
 
-/** A line of a corner recipe: a material or additive with its amount as saved. */
+/**
+ * A line of a corner recipe: a material or additive with its amount as saved. Lines without an id are the same
+ * material when their names and their chemistry (fields, LOI, percent or moles) are the same.
+ */
 export interface BlendLine {
   _id?: string;
   name: string;
   amount?: string;
   unit?: AdditiveUnit;
+  fields?: ReadonlyArray<{ name: string; amount: string | number }>;
+  loi?: number | string | null;
+  percentmole?: string;
 }
 
 export interface MixedRecipe<M, A> {
@@ -55,6 +61,12 @@ export function varyMaterial(
   mode: 'add' | 'replace',
   instead?: string
 ): { tiles: VariedTile[]; tooMuch?: undefined } | { tooMuch: number; tiles?: undefined };
+
+/**
+ * Which material a line is, as mixRecipes matches lines: its saved id, else its name and the chemistry it carries
+ * (fields, LOI, percent or moles), so two analyses given under one name are two materials.
+ */
+export function sameKey(line: BlendLine): string;
 
 export function mixRecipes<M extends BlendLine, A extends BlendLine>(
   corners: ReadonlyArray<{ materials?: M[]; additives?: A[] }>,

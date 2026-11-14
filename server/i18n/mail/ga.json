@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Athraíodh do phasfhocal Glazecalc",
+    "text": "Athraíodh an pasfhocal don chuntas Glazecalc {account} anois díreach, agus síníodh amach gach gléas a bhí sínithe isteach.\n\nMás tusa a rinne é, níl aon rud eile le déanamh. Mura tusa, athshocraigh do phasfhocal láithreach anseo: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "Iarradh ríomhphost nua do do chuntas Glazecalc",
+    "text": "Iarradh athrú ríomhphoist anois díreach ar an gcuntas Glazecalc {account}. Seoladh nasc chuig an seoladh nua, agus ní tharlaíonn an t-athrú ach nuair a osclaítear an nasc sin.\n\nMás tusa a rinne é, níl aon rud eile le déanamh. Mura tusa, b’fhéidir go bhfuil do phasfhocal ag duine éigin: athshocraigh é láithreach anseo: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Deimhnigh do ríomhphost nua don chuntas Glazecalc",
+    "text": "D’iarr duine éigin (tusa, tá súil againn) go n-úsáidfí an seoladh {account} mar ríomhphost cuntais Glazecalc.\n\nChun an t-athrú a dhéanamh, oscail an nasc seo laistigh de {hours} uair an chloig:\n\n{link}\n\nNí oibríonn an nasc ach uair amháin, agus síneofar amach gach gléas a bhí sínithe isteach. Mura tusa a d’iarr é seo, déan neamhaird den ríomhphost seo; ní athrófar aon rud.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "riamh: déantar athruithe ó aipeanna agus ó chomharthaí rochtana láithreach",
+    "removals": "roimh bhaint amháin: taifead a bhogadh go dtí an bruscar, nó ábhar a bhaint den stoc. Déantar athruithe eile ó aipeanna agus ó chomharthaí rochtana láithreach"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Fiafraíonn Glazecalc níos lú anois sula n-athraíonn aipeanna do thaifid",
+    "text": "Socraíodh an cuntas Glazecalc {account} anois díreach chun faomhadh a iarraidh mar seo: {choice}.\n\nMás tusa a rinne é, níl aon rud eile le déanamh. Is féidir leat é a fheiceáil agus a athrú ar ‘Aipeanna ceangailte’ ag {page}\n\nMura tusa, athraigh ar ais ansin é, cúlghair aon aip nó comhartha nach n-aithníonn tú, agus athshocraigh do phasfhocal láithreach ag {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "Ceanglaíodh aip le do chuntas Glazecalc",
+    "opening": "Ceanglaíodh aip leis an gcuntas Glazecalc {account} ar {date} ag {time} (UTC).\n\n",
+    "named": "An aip: “{name}”\n",
+    "checked": "A seoladh, seiceáilte ag Glazecalc: {host}\n",
+    "selfDescribed": "Chláraigh sí í féin, mar sin níl ina hainm ach an méid a deir sí fúithi féin.\n",
+    "answerAt": "Faigheann sí an freagra ag: {host}\n",
+    "loopback": "Faigheann sí an freagra ar an ríomhaire ónar ceanglaíodh í ({host}).\n",
+    "read": "\nIs féidir léi na hoidis, an leabhar nótaí, na hábhair, an stoc agus na socruithe atá sábháilte sa chuntas a léamh. Ní féidir léi aon rud a athrú.\n\n",
+    "write": "\nIs féidir léi na hoidis, an leabhar nótaí, na hábhair, an stoc agus na socruithe atá sábháilte sa chuntas a léamh, agus ar feadh {days} lá is féidir léi iad a athrú freisin: taifid a dhéanamh agus a athrú, agus iad a bhogadh go dtí an bruscar. Coinníonn gach athrú leagan den taifead mar a bhí, ionas gur féidir leat é a chealú ar an suíomh gréasáin.\n\n",
+    "closing": "Más tusa a rinne é, níl aon rud eile le déanamh. Is féidir leat a fheiceáil cad a dhéanann sí agus í a chúlghairm ag {page}\n\nMura tusa, cúlghair ansin í agus athshocraigh do phasfhocal láithreach ag {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Scriosadh do chuntas Glazecalc",
+    "text": "Scriosadh an cuntas Glazecalc {account}, agus gach a bhí sábháilte ann: oidis, ábhair, taifid bhácála, nótaí agus socruithe. Ní féidir é a chealú.\n\nScriostar cóipeanna i gcúltacaí an tsuímh de réir mar a théann na cúltacaí in éag, laistigh de {days} lá.\n\nIs féidir leat cuntas nua a chruthú am ar bith.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "aip fhíordheimhnithe",
+    "passkey": "an eochair rochtana “{name}”"
+  },
+  "MFA_ADDED": {
+    "subject": "Cuireadh céim síniú isteach le do chuntas Glazecalc",
+    "text": "Cuireadh é seo leis an gcuntas Glazecalc {account} anois díreach mar an dara céim chun síniú isteach: {method}.\n\nMás tusa a rinne é, níl aon rud eile le déanamh. Coinnigh do chóid aisghabhála in áit shábháilte. Mura tusa, b’fhéidir go bhfuil do phasfhocal ag duine éigin: athshocraigh é láithreach anseo: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "Cuirfear as síniú isteach dhá chéim ar do chuntas Glazecalc",
+    "text": "D’iarr duine éigin go gcuirfí as síniú isteach dhá chéim ar an gcuntas Glazecalc {account}, mar gur cailleadh gach aip fhíordheimhnithe, eochair rochtana agus cód aisghabhála a bhí aige.\n\nCuirfear as síniú isteach dhá chéim ar {date} mura scríobhann tú chuig privacy@glazecalcapp.com roimhe sin. Ina dhiaidh sin, beifear in ann síniú isteach sa chuntas leis an bpasfhocal amháin.\n\nMás tusa a d’iarr é, níl aon rud eile le déanamh. Mura tusa, scríobh chuig privacy@glazecalcapp.com anois, agus athshocraigh do phasfhocal láithreach anseo: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "Cuireadh as síniú isteach dhá chéim ar do chuntas Glazecalc",
+    "text": "Cuireadh as síniú isteach dhá chéim ar an gcuntas Glazecalc {account} anois díreach: baineadh gach aip fhíordheimhnithe, eochair rochtana agus cód aisghabhála, agus síníodh amach gach gléas a bhí sínithe isteach. Ní bhíonn ach an pasfhocal ag teastáil anois chun síniú isteach.\n\nIs féidir leat síniú isteach dhá chéim a chur ar siúl arís ar leathanach do chuntais. Mura tusa a d’iarr é seo, athshocraigh do phasfhocal láithreach anseo: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "Baineadh céim síniú isteach ó do chuntas Glazecalc",
+    "text": "Baineadh é seo den chuntas Glazecalc {account} anois díreach mar an dara céim chun síniú isteach: {method}. Más é an ceann deireanach é, ní bhíonn ach an pasfhocal ag teastáil anois chun síniú isteach.\n\nMás tusa a rinne é, níl aon rud eile le déanamh. Mura tusa, athshocraigh do phasfhocal láithreach anseo: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "Cuireadh bealach nua síniú isteach le do chuntas Glazecalc",
+    "text": "Is féidir leat síniú isteach sa chuntas Glazecalc {account} le {provider} anois.\n\nMás tusa a rinne é, níl aon rud eile le déanamh. Mura tusa, dícheangail é ar leathanach do chuntais ag {page} agus athshocraigh do phasfhocal láithreach ag {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "Baineadh bealach síniú isteach de do chuntas Glazecalc",
+    "text": "Dícheanglaíodh {provider} den chuntas Glazecalc {account}, agus ní féidir é a úsáid a thuilleadh chun síniú isteach ann.\n\nMás tusa a rinne é, níl aon rud eile le déanamh. Mura tusa, d’fhéadfadh duine éigin a bheith sínithe isteach i do chuntas: athshocraigh do phasfhocal láithreach ag {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Cóid aisghabhála nua do do chuntas Glazecalc",
+    "text": "Rinneadh cóid aisghabhála nua don chuntas Glazecalc {account} anois díreach. Ní oibríonn na seanchóid a thuilleadh.\n\nMás tusa a rinne é, coinnigh na cóid nua in áit shábháilte. Mura tusa, athshocraigh do phasfhocal láithreach anseo: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "Úsáideadh cód aisghabhála ar do chuntas Glazecalc",
+    "text": "Úsáideadh ceann de na cóid aisghabhála don chuntas Glazecalc {account} anois díreach, mar sin ní oibreoidh sé arís. Cóid nár úsáideadh atá fágtha: {left}. Is féidir leat cóid nua a dhéanamh ar leathanach do chuntais: {page}\n\nMurar tusa a bhí ann, b’fhéidir go bhfuil do phasfhocal agus do chóid ag duine éigin: athshocraigh do phasfhocal láithreach anseo: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Athshocraigh do phasfhocal Glazecalc",
+    "text": "D’iarr duine éigin (tusa, tá súil againn) an pasfhocal a athshocrú don chuntas Glazecalc {account}.\n\nChun pasfhocal nua a roghnú, oscail an nasc seo laistigh de {minutes} nóiméad:\n\n{link}\n\nNí oibríonn an nasc ach uair amháin. Mura tusa a d’iarr é seo, déan neamhaird den ríomhphost seo; fanfaidh do phasfhocal mar an gcéanna.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "Athraíodh do phasfhocal Glazecalc",
+    "opening": "Athshocraíodh pasfhocal an chuntais Glazecalc {account} anois díreach, agus síníodh amach gach gléas a bhí sínithe isteach.\n\n",
+    "stopped": "I gcás go raibh an seanphasfhocal ag duine éigin eile, chuir an t-athshocrú deireadh leo seo freisin:\n\n",
+    "tokens": "- Na comharthaí rochtana agus na haipeanna ceangailte a d’fhéadfadh teacht ar do chuid oibre sábháilte ({count}). Más gá ceann acu fós duit, déan comhartha nua ar leathanach do chuntais ag {page}\n",
+    "providers": "- Síniú isteach le {providers}, ar féidir leat iad a cheangal arís ar leathanach do chuntais ag {page}\n",
+    "shareLinks": "- Na naisc a bhí déanta agat chun oidis a chomhroinnt. Is féidir leat cinn nua a dhéanamh ó gach oideas.\n",
+    "closing": "\nMás tusa a rinne é, níl aon rud eile le déanamh. Mura tusa, athshocraigh do phasfhocal láithreach ag {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Cuireadh do phasfhocal Glazecalc isteach ach níor críochnaíodh an síniú isteach",
+    "text": "Chuir duine éigin an pasfhocal ceart isteach don chuntas Glazecalc {account}, ach níor críochnaíodh an dara céim den síniú isteach. Chuir do dhara céim bac ar an síniú isteach.\n\nMás tusa a bhí ann, níl aon rud eile le déanamh. Mura tusa, tá do phasfhocal ag duine éigin: athraigh é láithreach. Is féidir leat é a athshocrú anseo: {forgot}\n\nTar éis 10 gcód mícheart ó aip fhíordheimhnithe, ní ghlactar le cóid ar feadh uair an chloig; tar éis 10 gcinn eile, ar feadh lae; agus ansin ar feadh seachtaine gach uair. Oibríonn eochair rochtana nó cód aisghabhála fós fad nach nglactar le cóid. Cuireann athshocrú do phasfhocail trí ríomhphost deireadh leis seo: cuirtear deireadh leis na sínithe isteach nár críochnaíodh, níl an pasfhocal acu a thuilleadh, agus oibríonn cóid arís.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Rachaidh comhartha rochtana do chuntais Glazecalc in éag go luath",
+    "text": "Stopfaidh an comhartha rochtana darb ainm “{name}” ar an gcuntas Glazecalc {account} ag obair ar {date}.\n\nMá úsáideann tú fós é, déan comhartha nua roimhe sin ag {page} agus tabhair do do chúntóir nó do do script é in ionad an tseanchomhartha. Mura n-úsáideann tú a thuilleadh é, níl aon rud le déanamh.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Comhartha rochtana nua do do chuntas Glazecalc",
+    "text": "Rinneadh comhartha rochtana darb ainm “{name}” anois díreach don chuntas Glazecalc {account}. Is féidir leis na hoidis, na hábhair, na nótaí agus na taifid bhácála atá sábháilte sa chuntas a léamh go dtí {date}.\n\nMás tusa a rinne é, níl aon rud eile le déanamh. Is féidir leat do chomharthaí a fheiceáil agus a chúlghairm ag {page}\n\nMura tusa, cúlghair é ansin agus athshocraigh do phasfhocal láithreach ag {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Comhartha rochtana nua atá in ann do thaifid Glazecalc a athrú",
+    "text": "Rinneadh comhartha rochtana darb ainm “{name}” anois díreach don chuntas Glazecalc {account}. Is féidir leis na hoidis, na hábhair, na nótaí agus na taifid bhácála atá sábháilte sa chuntas a léamh agus a athrú, agus iad a bhogadh go dtí an bruscar, go dtí {date}. Coinníonn gach athrú a dhéanann sé an taifead mar a bhí sé, mar sin is féidir leat é a chealú ar an suíomh gréasáin.\n\nMás tusa a rinne é, níl aon rud eile le déanamh. Is féidir leat do chomharthaí a fheiceáil agus a chúlghairm ag {page}\n\nMura tusa, cúlghair é ansin agus athshocraigh do phasfhocal láithreach ag {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Deimhnigh do ríomhphost don chuntas Glazecalc",
+    "text": "Chruthaigh duine éigin (tusa, tá súil againn) cuntas Glazecalc leis an seoladh {account}.\n\nChun a dheimhniú gur leatsa an seoladh seo, oscail an nasc seo laistigh de {hours} uair an chloig:\n\n{link}\n\nNí oibríonn an nasc ach uair amháin. Mura tusa a chruthaigh cuntas, déan neamhaird den ríomhphost seo; ní sheolfar aon rud eile chugat mura n-iarrann tú é.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

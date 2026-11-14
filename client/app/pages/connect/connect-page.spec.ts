@@ -1,5 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute, convertToParamMap } from '@angular/router';
+import { AuthService } from '../../core/auth.service';
 import { OPEN_PAGE } from '../../i18n/language';
 import { API, httpMock, settle, skippedHeadings, testProviders, text } from '../../testing/test-providers';
 import { ALLOW_AFTER_MS, ConnectPage, type ConnectRequest } from './connect-page';
@@ -104,24 +105,44 @@ describe('ConnectPage', () => {
   });
 
   it('holds Allow back until the page has been in front a moment, and again each time it comes back', async () => {
-    const { fixture, button } = await create(LOOPBACK, 40);
+    // A minute, so that no machine is slow enough to let it pass on its own; from the first time the window comes
+    // back, the test moves the clock itself. (With 40 ms of real time, a busy machine let the moment pass before the
+    // test's click.)
+    const moment = 60_000;
+    const { fixture, button } = await create(LOOPBACK, moment);
     const allow = () => button('Allow')!;
     // Just shown: a click meant for something else, such as the second half of a double-click, does nothing.
     expect(allow().getAttribute('aria-disabled')).toBe('true');
     allow().click();
     httpMock().expectNone(ADDRESS);
-    await wait(80);
-    await settle(fixture);
-    expect(allow().hasAttribute('aria-disabled')).toBe(false);
-    // The window goes behind another, then comes back to the front: Allow waits again from then.
-    window.dispatchEvent(new Event('blur'));
-    await settle(fixture);
-    expect(allow().getAttribute('aria-disabled')).toBe('true');
-    window.dispatchEvent(new Event('focus'));
-    await settle(fixture);
-    allow().click();
-    httpMock().expectNone(ADDRESS);
-    await wait(80);
+    vi.useFakeTimers({ toFake: ['setTimeout', 'clearTimeout'] });
+    try {
+      // The window goes behind another, then comes back to the front: Allow waits again from then, and only then.
+      // (Each check renders at once: the page's own render waits for a tick of the clock, which only the test moves.)
+      window.dispatchEvent(new Event('blur'));
+      window.dispatchEvent(new Event('focus'));
+      await vi.advanceTimersByTimeAsync(moment - 1);
+      fixture.detectChanges();
+      expect(allow().getAttribute('aria-disabled')).toBe('true');
+      allow().click();
+      httpMock().expectNone(ADDRESS);
+      await vi.advanceTimersByTimeAsync(1);
+      fixture.detectChanges();
+      expect(allow().hasAttribute('aria-disabled')).toBe(false);
+      // Behind another again: held at once, and for the whole moment once it is back in front.
+      window.dispatchEvent(new Event('blur'));
+      fixture.detectChanges();
+      expect(allow().getAttribute('aria-disabled')).toBe('true');
+      window.dispatchEvent(new Event('focus'));
+      await vi.advanceTimersByTimeAsync(moment - 1);
+      allow().click();
+      httpMock().expectNone(ADDRESS);
+      await vi.advanceTimersByTimeAsync(1);
+      // Whatever the page left waiting runs before the real clock is back.
+      await vi.runOnlyPendingTimersAsync();
+    } finally {
+      vi.useRealTimers();
+    }
     await settle(fixture);
     allow().click();
     const post = httpMock().expectOne(ADDRESS);
@@ -195,6 +216,33 @@ describe('ConnectPage', () => {
     expect(all).toContain('It cannot change anything.');
     expect(root.querySelector('#connect-write')).toBeNull();
     expect(root.querySelector('.warning')).toBeNull();
+  });
+
+  it('names an app that gives no name as such, and says which account it would reach', async () => {
+    const { fixture } = await create({ ...CIMD, client: { ...CIMD.client, name: '' } });
+    expect(text(fixture, 'h2')).toBe('An app with no name');
+    TestBed.inject(AuthService).email.set('potter@example.com');
+    await fixture.whenStable();
+    expect(text(fixture)).toContain('Signed in as potter@example.com');
+  });
+
+  it('holds Allow back for a second after the page is shown, unless told otherwise', async () => {
+    TestBed.configureTestingModule({
+      providers: [
+        ...testProviders(),
+        { provide: ActivatedRoute, useValue: { snapshot: { paramMap: convertToParamMap({ uid: UID }) } } }
+      ]
+    });
+    const fixture = TestBed.createComponent(ConnectPage);
+    await fixture.whenStable();
+    httpMock().expectOne(ADDRESS).flush(CIMD);
+    await settle(fixture);
+    const allow = [...(fixture.nativeElement as HTMLElement).querySelectorAll('button')].find(
+      (b) => b.textContent?.trim() === 'Allow'
+    )!;
+    expect(allow.getAttribute('aria-disabled')).toBe('true');
+    allow.click();
+    httpMock().expectNone(ADDRESS);
   });
 
   it('warns when an app named by its address sends the answer to another host', async () => {

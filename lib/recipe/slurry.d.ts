@@ -15,6 +15,12 @@ export function slurryContents(litres: number, sg: number, dry: number): { glaze
  * It does not depend on `dry`: given, the SGs must be under it; null, only over water's.
  */
 export function waterToReach(litres: number, sg: number, target: number, dry: number | null): number | null;
+/**
+ * Whether a slurry is at the SG wanted already: the water to reach it (kg, from `waterToReach`) is under 0.05% of its
+ * volume (litres), half a gram a litre either way, and under a litre under half a gram, which the page and the MCP tool
+ * would write as 0. The recipe page and the MCP tool both decide so by it.
+ */
+export function reachedAlready(water: number, litres: number): boolean;
 /** For a weight of dry glaze (kg) at a target SG: the water to add (kg) and the slurry it makes (litres). */
 export function waterForBatch(glaze: number, target: number, dry: number): { water: number; litres: number } | null;
 /** The dry glaze and water (kg) to mix a volume (litres) at a target SG. */

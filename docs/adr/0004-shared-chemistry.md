@@ -2,6 +2,25 @@
 
 Accepted, 2026-10-04.
 
+Amended, 2026-10-19: the server runs the library too, for the MCP tools since 2026-10-16
+([ADR 17](0017-mcp-server.md), [ADR 19](0019-shared-recipe-tools.md)), and since 2026-10-19 it works out the unity
+formula of a recipe an assistant saves through them (`server/mcp/tools/account_write.ts`). What the recipe page saves
+is still kept as the browser worked it out.
+
+Amended, 2026-11-12: the declarations are no longer kept in step by hand alone. `npm run typecheck`, in CI,
+checks the library's JavaScript against them (`lib/tsconfig.json`), and `server/test/lib_types_tests.ts` checks
+that each module exports what its declaration says and that every declaration is correct TypeScript. The first
+run found five exports the code used that no declaration had.
+
+Amended, 2026-11-13: colorant oxides stay fluxes. FeO, MnO, CuO, CoO and NiO are counted in RO with the other
+fluxes, as Glazy's "extended" unity formula counts them (Fe2O3 and Cr2O3 are in R2O3), so counting a recipe's
+colorants changes its unity formula as they change the glaze. The 1.0 review of the chemistry asked whether to leave
+them out of the flux; they are kept, and the unity formula warns where it cannot be read as an ordinary glaze's:
+`colorant-flux` when colorant oxides are more than half of the flux (it is scaled to them, and they melt too, so it
+compares only with other colorant-rich glazes), and `silica-high` when it has more than 10 SiO2. Silica and kaolin with 5% cobalt carbonate had come to CoO 1 and SiO2 32 without a word. Neither warning
+fires on the famous glazes (Shino, feldspar alone, has 9.7 SiO2; Oribe's copper is 0.17 of its flux) or on the
+README's and the landing page's Leach 4321. Where the flux is only a trace, `trace-flux` says it instead.
+
 ## Context
 
 The heart of Glazecalc is arithmetic: turning a recipe (grams of materials) into its unity

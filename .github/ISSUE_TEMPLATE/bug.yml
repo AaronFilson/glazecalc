@@ -1,0 +1,41 @@
+# The form for something that does not work. A translation that reads wrong has
+# its own form (translation.yml), and a security problem goes to SECURITY.md.
+name: Something does not work
+description: A page, a calculation or a sign-in that does not do what it should.
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for telling us. Please leave out passwords, codes and anything else private.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, and what you saw.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The address of the page, such as https://glazecalcapp.com/recipe.
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      description: Such as Firefox on Windows, or Safari on an iPhone.
+  - type: dropdown
+    id: number
+    attributes:
+      label: Is a number wrong?
+      description: A wrong unity formula, limit, batch weight or temperature can spoil a glaze or make it unsafe.
+      options:
+        - 'No'
+        - 'Yes: a calculation, a limit or a temperature looks wrong'
+    validations:
+      required: true

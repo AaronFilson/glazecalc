@@ -50,7 +50,6 @@
     "firedTo": "Gebak tot",
     "how": "Hoe",
     "rebuild": "Bou die glasuur weer op: hou sy silika en alumina, met boor en ander vloeimiddels vir die lood",
-    "keepColour": "Hou die kleur op 'n loodvrye basis: die frit en kaolien, 85 tot 15, met die resep se kleurstowwe",
     "fritHeading": "Loodvrye frit om op te bou, beste eerste",
     "fritBoron": "({boron}% boor, B₂O₃)",
     "noFrit": "Geen loodvrye frit wat in jou streek verkoop word, is in die biblioteek nie.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Die lood kan nie vervang word nie: 'n grondstof in die resep het geen ontleding om van te werk nie.",
     "leadRebuiltCone": "Lood vervang vir kegel {cone} op {base}: die ou resep se silika en alumina behou, met boor en ander vloeimiddels wat lood se werk doen.",
     "leadRebuilt": "Lood vervang vir {firing} op {base}: die ou resep se silika en alumina behou, met boor en ander vloeimiddels wat lood se werk doen.",
-    "leadColour": "Lood vervang: die kleurstowwe oorgedra na 'n loodvrye basis van {base} en kaolien, 85 tot 15.",
     "leadGloss": "Dit sal nie lood se glans, helderheid of kleur presies ewenaar nie: verwag minder briljantheid, en moontlike troebelheid oor rooi klei of haarlynbarsies. Toets 'n klein mengsel op jou eie klei.",
     "leadSafety": "Om geen lood te hê nie, maak 'n glasuur nie op sigself veilig met kos nie; dit hang af van die hele formule en die bak.",
     "leadReplaced": "Die lood is vervang.",
@@ -245,8 +243,7 @@
       "text": "Dié kom bo-op die basis. Hulle word saam met die resep gestoor, maar is nie deel van die Seger-formule nie. Kies waarin elke hoeveelheid is:",
       "percent": "<b>% van basis</b>: 'n persent van die basis se totaal, soos die meeste resepte dit gee: 2 beteken 2% rooi ysteroksied.",
       "parts": "<b>dele</b>: dieselfde eenheid as die grondstowwe, soos 1 deel op 'n basis van 3 flint en 2 dolomiet.",
-      "grams": "<b>gram</b>: 'n gewig, in dieselfde mengsel as die grondstowwe.",
-      "count": "Party sakrekenaars tel kleurstowwe in die Seger-formule en party nie. Merk <b>Tel kleurstowwe en bymiddels daarin</b>, onder die opskrif Seger-formule, om hulle teen hulle gewig in die mengsel te tel, of laat dit oop om te vergelyk met een wat dit nie doen nie. Die keuse word saam met die resep gestoor."
+      "grams": "<b>gram</b>: 'n gewig, in dieselfde mengsel as die grondstowwe."
     },
     "scale": {
       "heading": "Verander die skaal wanneer jy moet",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide} is nie 'n oksied wat Glazecalc ken nie.",
     "together": "Gee kalium (K₂O) en natrium (Na₂O) apart, nie saam as KNaO nie.",
     "badAmount": "Die hoeveelheid {oxide} is nie 'n getal van 0 of meer nie.",
-    "noFlux": "Die teiken het ten minste een vloeimiddel nodig, soos CaO, K₂O of Na₂O.",
     "noMaterials": "Voeg ten minste een grondstof by om die resep van te maak.",
     "noMatch": "Geeneen van hierdie grondstowwe het enige van die teiken se oksiede nie."
   },

@@ -1,0 +1,21 @@
+# CodeQL's settings for this repository, read by .github/workflows/codeql.yml.
+# Default setup cannot take a file like this, which is why the scan runs from a
+# workflow.
+#
+# The queries are the default suite, the one default setup runs: the security
+# queries precise enough to act on. security-extended adds less precise ones;
+# try it on a branch before turning it on here.
+name: Glazecalc
+
+paths-ignore:
+  # The tests, which never ship: their fixtures use made-up secrets, plain http
+  # and Math.random on purpose. The workflow's paths leave them out too, so a
+  # change only to tests starts no scan.
+  - server/test
+  - e2e
+  - '**/*.spec.ts'
+  - deploy/aws/mail-forwarder/test
+  # The messages in 57 languages and the English they were made from: about
+  # 57 MB of JSON and Markdown with no code in it, which would only slow the scan.
+  - client/public/i18n
+  - client/i18n-fingerprints

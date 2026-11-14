@@ -1,0 +1,10 @@
+{
+  "CHANGED": {
+    "subject": "A ti yí ọ̀rọ̀ aṣínà Glazecalc yín padà",
+    "text": "A ṣẹ̀ṣẹ̀ yí ọ̀rọ̀ aṣínà àkáǹtì Glazecalc {account} padà, a sì ti mú gbogbo ẹ̀rọ tí ó ti wọlé jáde.\n\nBí ẹ̀yin ni, kò sí ohun mìíràn láti ṣe. Bí kì í bá ṣe ẹ̀yin, ẹ tún ọ̀rọ̀ aṣínà yín ṣe lẹ́sẹ̀kẹsẹ̀ ní {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Ẹ tún ọ̀rọ̀ aṣínà Glazecalc yín ṣe",
+    "text": "Ẹnì kan (a nírètí pé ẹ̀yin ni) béèrè láti tún ọ̀rọ̀ aṣínà àkáǹtì Glazecalc {account} ṣe.\n\nLáti yan ọ̀rọ̀ aṣínà tuntun, ẹ ṣí líǹkì yìí láàárín ìṣẹ́jú {minutes}:\n\n{link}\n\nLíǹkì náà ń ṣiṣẹ́ lẹ́ẹ̀kan. Bí kì í bá ṣe ẹ̀yin ló béèrè fún èyí, ẹ fojú fo ímeèlì yìí; ọ̀rọ̀ aṣínà yín kò ní yí padà.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

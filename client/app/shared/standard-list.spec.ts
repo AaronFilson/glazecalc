@@ -102,6 +102,29 @@ describe('StandardList', () => {
     expect(localStorage.getItem('region')).toBe('UK');
   });
 
+  it("offers Japan, whose library lists Japan's own materials and the US set, not the UK's", async () => {
+    const { fixture, names, set } = await create([
+      ...RECORDS,
+      record('Fukushima Feldspar (福島長石)', { category: 'feldspar', region: ['JP'] })
+    ]);
+    const options = [...fixture.nativeElement.querySelectorAll('.standard-tools select')]
+      .find((s: HTMLSelectElement) => [...s.options].some((o) => o.value === 'UK'))
+      .querySelectorAll('option');
+    expect([...options].map((o: HTMLOptionElement) => [o.value, o.textContent?.trim()])).toEqual([
+      ['', 'All regions'],
+      ['US', 'US'],
+      ['UK', 'UK'],
+      ['EU', 'EU'],
+      ['AU', 'AU and NZ'],
+      ['JP', 'Japan']
+    ]);
+    await set('Sold in', 'JP');
+    expect(names()).toEqual(['Custer Spar', 'Fukushima Feldspar (福島長石)', 'Silica', 'Stain (proprietary)']);
+    // The US's lists none of Japan's.
+    await set('Sold in', 'US');
+    expect(names()).toEqual(['Custer Spar', 'Silica', 'Stain (proprietary)']);
+  });
+
   it('shows the region chosen last as chosen, not just filtered by', async () => {
     localStorage.setItem('region', 'UK');
     const { fixture, names } = await create();
@@ -123,6 +146,16 @@ describe('StandardList', () => {
     expect(text(fixture, 'tbody')).toContain('Similar: Mahavir Potash Feldspar');
     expect(text(fixture, 'tbody')).toContain('Replaces: Custer Spar');
     expect(text(fixture, 'tbody')).not.toContain('Use instead');
+  });
+
+  it('names who makes a record, says an additive is counted as the material it borrows from, and when nothing matches', async () => {
+    const gum: Additive = { _id: 'g', name: 'Gum', fields: [], chemistryOf: 'Bentonite' };
+    const { fixture, names, set } = await create([record('Ferro Frit 3134', { manufacturer: 'Vibrantz' }), gum]);
+    expect(text(fixture, 'tbody')).toContain('Made by: Vibrantz');
+    const gumRow = [...fixture.nativeElement.querySelectorAll('tbody tr')][1] as HTMLElement;
+    expect(gumRow.querySelector('.standard-analysis')?.textContent?.trim()).toBe('Counted as Bentonite');
+    await set('Filter', 'zirconium');
+    expect(names()).toEqual(['Nothing matches. Try another name, kind or region.']);
   });
 
   it('marks what is no longer current, says what to use, and links the source', async () => {

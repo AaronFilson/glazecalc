@@ -12,7 +12,7 @@ import { fixed } from '../../shared/format';
 import { DatePipe } from '../../shared/format-pipes';
 import { folded } from '../../shared/library-info';
 import { RichText } from '../../i18n/rich-text';
-import { leadIn, recipeHasLead } from '../recipe/lead';
+import { bariumOf, leadOf } from '../recipe/lead';
 import { printLines } from '../recipe/recipe-print';
 import { evaluate } from '../recipe/recipe-analysis';
 import { HazardSource, RecipeHazards } from '../recipe/recipe-hazards';
@@ -121,12 +121,21 @@ type View = 'recipe' | 'worked';
       </div>
 
       <article class="shared-sheet" aria-labelledby="shared-title">
-        <!-- As on the recipe page, in both views and on paper: the lead caution, and the hazards below. -->
+        <!-- As on the recipe page, in both views and on paper: the lead and barium cautions, and the hazards below. -->
         @if (lead(); as lead) {
           <p class="shared-lead" role="note">
             <gc-rich
               [text]="t('recipe.page.containsLead', { unity: fixed(lead.unity, 3), percent: fixed(lead.percent, 0) })"
             />
+          </p>
+        }
+        @if (barium(); as barium) {
+          <p class="shared-barium" role="note">
+            @if (barium.likely) {
+              <gc-rich [text]="t('recipe.page.containsBariumLikely', { unity: fixed(barium.unity, 2) })" />
+            } @else {
+              <gc-rich [text]="t('recipe.page.containsBarium', { unity: fixed(barium.unity, 2) })" />
+            }
           </p>
         }
         @if (view() === 'worked') {
@@ -401,7 +410,8 @@ type View = 'recipe' | 'worked';
       color: var(--gc-muted);
       margin: 0.5rem 0 0;
     }
-    .shared-lead {
+    .shared-lead,
+    .shared-barium {
       border-inline-start: 3px solid var(--gc-danger-text);
       padding-inline-start: 0.75rem;
       margin: 0 0 1rem;
@@ -498,11 +508,14 @@ export class SharedPage implements OnInit {
   };
   protected readonly lines = computed(() => printLines(this.recipe() ?? { materials: [] }, 0, 'g'));
   protected readonly fixed = fixed;
-  /** Lead in the materials, as the recipe page finds it: how much, for its caution. */
-  protected readonly lead = computed(() => {
-    const materials = this.recipe()?.materials ?? [];
-    return recipeHasLead(materials) ? leadIn(materials) : null;
-  });
+  /** Lead in the materials and additives, as the recipe page finds it: how much, for its caution. */
+  protected readonly lead = computed(() =>
+    leadOf(this.recipe()?.materials ?? [], this.recipe()?.additives ?? [], this.chemistryOf)
+  );
+  /** Barium, for its caution beside lead's. */
+  protected readonly barium = computed(() =>
+    bariumOf(this.recipe()?.materials ?? [], this.recipe()?.additives ?? [], this.chemistryOf)
+  );
   /**
    * What the hazards are read from: the lines as the server sent them, with the
    * library's current hazards for its own materials and additives, and none

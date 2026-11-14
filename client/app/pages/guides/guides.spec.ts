@@ -1,10 +1,11 @@
 import { APP_BASE_HREF, Location, PlatformLocation } from '@angular/common';
 import { TestBed } from '@angular/core/testing';
-import { ActivatedRoute, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+import { ActivatedRoute, ActivatedRouteSnapshot, Router, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { firstValueFrom, isObservable } from 'rxjs';
+import { PreferencesService } from '../../core/preferences.service';
 import { PAGE_LANGUAGE } from '../../i18n/language';
 import { REFERENCE_LANGUAGE_LIST } from '../materials/reference-text';
-import { httpMock, testProviders } from '../../testing/test-providers';
+import { httpMock, settle, testProviders } from '../../testing/test-providers';
 import { blocks, coneSystemsIn, forConeSystem, readGuide } from './guide-document';
 import { GuidePage } from './guide-page';
 import { GuideText, guideText } from './guide-text';
@@ -409,6 +410,18 @@ describe('guides', () => {
     expect(offered()).toEqual(['Show it for firing to Orton cones', 'Show it for firing by temperature']);
   });
 
+  it('follows a way of firing chosen in Settings while the guide is open', async () => {
+    const { fixture, page } = await render(firing);
+    const ids = () => [...page.querySelectorAll('.guide h2')].map((h) => h.id);
+    expect(ids()).toContain('kiln-sitter');
+    TestBed.inject(PreferencesService).remember('cones', 'temperature');
+    // The guide changes once the page has drawn the change, not in the middle of it.
+    await settle(fixture);
+    await settle(fixture);
+    expect(ids()).toContain('by-temperature');
+    expect(ids()).not.toContain('kiln-sitter');
+  });
+
   it('opens the firing guide at its SK cones for those who set SK cones', async () => {
     localStorage.setItem('cones', 'sk');
     const { page } = await render(firing);
@@ -478,6 +491,86 @@ describe('guides', () => {
     expect(page.querySelector('.english-term')?.getAttribute('lang')).toBe('en');
   });
 
+  describe('every kind of block and text a guide can have', () => {
+    const EVERY = `---
+title: Every kind
+lead: What a guide can hold.
+---
+## The parts {#parts}
+
+#### A small heading {#small}
+
+#### Ends in \`code\`
+
+A line that breaks\\
+here, ~~struck~~ words, {{nothing}} left as written, and [the recipe page](/recipe#materials).
+
+- An item with a list in it
+  - inside it
+- A plain item
+
+1. A step with steps in it
+   1. a smaller step
+
+---
+
+Table: Fired to {{2232 °F; 1222 °C}} at {{SG 1.45}} with \`CaO\`, **bold**, *em*, [a link](https://example.com) and frit{{en: frit}}
+
+| Cone | °C |
+| ---- | --: |
+| 6 | 1222 |
+`;
+
+    it('draws headings, line breaks, nested lists, a rule and a table named by its caption', async () => {
+      const { page } = await render(EVERY);
+      const small = page.querySelector('h4#small') as HTMLElement;
+      expect(small.textContent).toBe('A small heading');
+      expect(small.getAttribute('tabindex')).toBe('-1');
+      const plainHeading = [...page.querySelectorAll('h4')].find((h4) => !h4.id)!;
+      expect(plainHeading.innerHTML).toBe('Ends in <code>code</code>');
+      const paragraph = page.querySelector('#parts')!.closest('section')!.querySelector('p')!;
+      expect(paragraph.querySelector('br')).not.toBeNull();
+      // Struck words are drawn as words, and braces that hold nothing known are left as written.
+      expect(paragraph.textContent).toContain('struck words, {{nothing}} left as written');
+      const outer = page.querySelector('#parts')!.closest('section')!.querySelector('ul')!;
+      expect(outer.querySelector('li > span')?.textContent).toBe('An item with a list in it');
+      expect(outer.querySelector('li > ul > li')?.textContent).toBe('inside it');
+      expect(page.querySelector('ol > li > ol > li')?.textContent).toBe('a smaller step');
+      expect(page.querySelector('hr')).not.toBeNull();
+      const box = page.querySelector('.guide-table-scroll') as HTMLElement;
+      const label = box.getAttribute('aria-label')!;
+      expect(label).toContain('SG 1.45');
+      expect(label).toContain('°C');
+      expect(label).toContain('with CaO, bold, em, a link and frit');
+      expect(label).not.toContain('{{');
+    });
+
+    it('follows a link to a page of the app in the app, and leaves a new tab to the browser', async () => {
+      const { page } = await render(EVERY);
+      const navigate = vi.spyOn(TestBed.inject(Router), 'navigateByUrl').mockResolvedValue(true);
+      const link = [...page.querySelectorAll('a')].find((a) => a.textContent === 'the recipe page')!;
+      expect(link.getAttribute('href')).toBe('/recipe#materials');
+      const press = (init: MouseEventInit) => {
+        let leftToBrowser = false;
+        page.addEventListener(
+          'click',
+          (event) => {
+            leftToBrowser = !event.defaultPrevented;
+            event.preventDefault();
+          },
+          { once: true }
+        );
+        link.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, button: 0, ...init }));
+        return leftToBrowser;
+      };
+      expect(press({ ctrlKey: true })).toBe(true);
+      expect(navigate).not.toHaveBeenCalled();
+      expect(press({})).toBe(false);
+      expect(navigate).toHaveBeenCalledTimes(1);
+      expect(TestBed.inject(Router).serializeUrl(navigate.mock.calls[0]![0] as UrlTree)).toBe('/recipe#materials');
+    });
+  });
+
   it('shows who to call in the home safety guide', async () => {
     localStorage.setItem('preferredRegion', 'GB');
     const { page } = await render(homeSafety);
@@ -491,6 +584,13 @@ describe('guides', () => {
       const result = TestBed.runInInjectionContext(() => guideText(route, {} as RouterStateSnapshot));
       return isObservable(result) ? firstValueFrom(result) : Promise.resolve(result as GuideText);
     };
+
+    it("reads the page's language's own Markdown where there is one", async () => {
+      const german = load('de');
+      httpMock().expectOne('/i18n/guides/firing/de.md').flush('# Deutsch');
+      httpMock().expectNone('/i18n/guides/firing/en.md');
+      expect(await german).toEqual({ text: '# Deutsch', language: null });
+    });
 
     it("reads the page's language's Markdown, or the English until there is one", async () => {
       const german = load('de');

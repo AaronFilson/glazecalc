@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Votre mot de passe Glazecalc a été modifié",
+    "text": "Le mot de passe du compte Glazecalc {account} vient d’être modifié, et tous les appareils connectés ont été déconnectés.\n\nSi c’est vous, il n’y a rien d’autre à faire. Sinon, réinitialisez votre mot de passe tout de suite sur {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "Une nouvelle adresse e-mail a été demandée pour votre compte Glazecalc",
+    "text": "Un changement d’adresse e-mail vient d’être demandé pour le compte Glazecalc {account}. Un lien a été envoyé à la nouvelle adresse, et le changement n’a lieu que lorsque ce lien est ouvert.\n\nSi c’est vous, il n’y a rien d’autre à faire. Sinon, quelqu’un connaît peut-être votre mot de passe : réinitialisez-le tout de suite sur {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Confirmez votre nouvelle adresse e-mail pour Glazecalc",
+    "text": "Quelqu’un (vous, nous l’espérons) a demandé à utiliser {account} comme adresse e-mail de son compte Glazecalc.\n\nPour effectuer le changement, ouvrez ce lien dans les {hours} heures :\n\n{link}\n\nLe lien ne fonctionne qu’une fois, et tous les appareils connectés seront déconnectés. Si vous n’avez rien demandé, ignorez cet e-mail ; rien ne changera.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "ne jamais demander d’approbation (les modifications des applications et des jetons d’accès sont faites tout de suite)",
+    "removals": "ne demander d’approbation qu’avant un retrait, c’est-à-dire avant de mettre un enregistrement à la corbeille ou de retirer une matière des matières disponibles (les autres modifications des applications et des jetons d’accès sont faites tout de suite)"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Glazecalc demande désormais moins avant que des applications modifient vos enregistrements",
+    "text": "Le compte Glazecalc {account} vient d’être réglé pour {choice}.\n\nSi c’est vous, il n’y a rien d’autre à faire. Vous pouvez voir et changer ce réglage dans Applications connectées, sur {page}\n\nSinon, rétablissez-le là, révoquez toute application ou tout jeton que vous ne connaissez pas, et réinitialisez votre mot de passe tout de suite sur {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "Une application a été connectée à votre compte Glazecalc",
+    "opening": "Une application a été connectée au compte Glazecalc {account} le {date} à {time} (UTC).\n\n",
+    "named": "L’application : « {name} »\n",
+    "checked": "Son adresse, vérifiée par Glazecalc : {host}\n",
+    "selfDescribed": "Elle s’est inscrite elle-même : son nom n’est donc que ce qu’elle dit d’elle-même.\n",
+    "answerAt": "Elle reçoit la réponse à : {host}\n",
+    "loopback": "Elle reçoit la réponse sur l’ordinateur depuis lequel elle a été connectée ({host}).\n",
+    "read": "\nElle peut lire les recettes, le carnet, les matières, le stock et les paramètres enregistrés dans le compte. Elle ne peut rien modifier.\n\n",
+    "write": "\nElle peut lire les recettes, le carnet, les matières, le stock et les paramètres enregistrés dans le compte, et pendant {days} jours elle peut aussi les modifier : créer et modifier des enregistrements, et les mettre à la corbeille. Chaque modification conserve une version de l’enregistrement tel qu’il était : vous pouvez donc l’annuler sur le site.\n\n",
+    "closing": "Si c’est vous, il n’y a rien d’autre à faire. Vous pouvez voir ce qu’elle fait et la révoquer sur {page}\n\nSinon, révoquez-la là et réinitialisez votre mot de passe tout de suite sur {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Votre compte Glazecalc a été supprimé",
+    "text": "Le compte Glazecalc {account} a été supprimé, avec tout ce qu’il contenait : recettes, matières premières, cuissons, notes et réglages. Cette action est irréversible.\n\nLes copies dans les sauvegardes du site sont supprimées à mesure que les sauvegardes expirent, dans un délai de {days} jours.\n\nVous pouvez créer un nouveau compte à tout moment.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "une application d’authentification",
+    "passkey": "la clé d’accès « {name} »"
+  },
+  "MFA_ADDED": {
+    "subject": "Une étape de connexion a été ajoutée à votre compte Glazecalc",
+    "text": "Une deuxième étape de connexion vient d’être ajoutée au compte Glazecalc {account} : {method}.\n\nSi c’est vous, il n’y a rien d’autre à faire. Conservez vos codes de récupération en lieu sûr. Sinon, quelqu’un connaît peut-être votre mot de passe : réinitialisez-le tout de suite sur {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "La connexion en deux étapes de votre compte Glazecalc va être désactivée",
+    "text": "Quelqu’un a demandé la désactivation de la connexion en deux étapes du compte Glazecalc {account}, parce que toutes les applications d’authentification, clés d’accès et tous les codes de récupération de ce compte ont été perdus.\n\nLa connexion en deux étapes sera désactivée le {date}, sauf si vous écrivez à privacy@glazecalcapp.com avant cette date. Ensuite, on pourra se connecter au compte avec son seul mot de passe.\n\nSi c’est vous, il n’y a rien d’autre à faire. Sinon, écrivez dès maintenant à privacy@glazecalcapp.com et réinitialisez tout de suite votre mot de passe sur {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "La connexion en deux étapes a été désactivée sur votre compte Glazecalc",
+    "text": "La connexion en deux étapes vient d’être désactivée sur le compte Glazecalc {account} : toutes les applications d’authentification, clés d’accès et tous les codes de récupération ont été retirés, et tous les appareils connectés ont été déconnectés. La connexion ne demande plus que le mot de passe.\n\nVous pouvez réactiver la connexion en deux étapes sur la page de votre compte. Si vous n’avez rien demandé, réinitialisez votre mot de passe tout de suite sur {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "Une étape de connexion a été retirée de votre compte Glazecalc",
+    "text": "Une deuxième étape de connexion vient d’être retirée du compte Glazecalc {account} : {method}. Si c’était la dernière, la connexion ne demande plus que le mot de passe.\n\nSi c’est vous, il n’y a rien d’autre à faire. Sinon, réinitialisez votre mot de passe tout de suite sur {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "Un nouveau moyen de connexion a été ajouté à votre compte Glazecalc",
+    "text": "Vous pouvez maintenant vous connecter au compte Glazecalc {account} avec {provider}.\n\nSi c’est vous, il n’y a rien d’autre à faire. Sinon, dissociez-le sur la page de votre compte, {page}, et réinitialisez votre mot de passe tout de suite sur {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "Un moyen de connexion a été retiré de votre compte Glazecalc",
+    "text": "{provider} a été dissocié du compte Glazecalc {account} et ne peut plus servir à s’y connecter.\n\nSi c’est vous, il n’y a rien d’autre à faire. Sinon, quelqu’un est peut-être connecté à votre compte : réinitialisez votre mot de passe tout de suite sur {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Nouveaux codes de récupération pour votre compte Glazecalc",
+    "text": "De nouveaux codes de récupération viennent d’être créés pour le compte Glazecalc {account}. Les anciens codes ne fonctionnent plus.\n\nSi c’est vous, conservez les nouveaux codes en lieu sûr. Sinon, réinitialisez votre mot de passe tout de suite sur {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "Un code de récupération a été utilisé sur votre compte Glazecalc",
+    "text": "L’un des codes de récupération du compte Glazecalc {account} vient d’être utilisé : il ne fonctionnera plus. Codes inutilisés restants : {left}. Vous pouvez créer de nouveaux codes sur la page de votre compte : {page}\n\nSi ce n’est pas vous, quelqu’un a peut-être votre mot de passe et vos codes : réinitialisez votre mot de passe tout de suite sur {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Réinitialisation de votre mot de passe Glazecalc",
+    "text": "Quelqu’un (vous, nous l’espérons) a demandé à réinitialiser le mot de passe du compte Glazecalc {account}.\n\nPour choisir un nouveau mot de passe, ouvrez ce lien dans les {minutes} minutes :\n\n{link}\n\nLe lien ne fonctionne qu’une fois. Si vous n’avez rien demandé, ignorez cet e-mail ; votre mot de passe reste le même.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "Votre mot de passe Glazecalc a été modifié",
+    "opening": "Le mot de passe du compte Glazecalc {account} vient d’être réinitialisé, et tous les appareils connectés ont été déconnectés.\n\n",
+    "stopped": "Au cas où quelqu’un d’autre aurait eu l’ancien mot de passe, la réinitialisation a aussi mis fin à ce qui suit :\n\n",
+    "tokens": "- Les jetons d’accès et les applications connectées qui pouvaient accéder à votre travail enregistré ({count}). Si vous en avez encore besoin, créez un nouveau jeton sur la page de votre compte, {page}\n",
+    "providers": "- La connexion avec {providers}, que vous pouvez associer de nouveau sur la page de votre compte, {page}\n",
+    "shareLinks": "- Les liens que vous aviez créés pour partager des recettes. Vous pouvez en créer de nouveaux depuis chaque recette.\n",
+    "closing": "\nSi c’est vous, il n’y a rien d’autre à faire. Sinon, réinitialisez votre mot de passe tout de suite sur {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Quelqu’un a saisi votre mot de passe Glazecalc sans terminer la connexion",
+    "text": "Quelqu’un a saisi le bon mot de passe du compte Glazecalc {account}, mais n’a pas terminé la deuxième étape de la connexion. Votre deuxième étape l’a empêché d’entrer.\n\nSi c’est vous, il n’y a rien d’autre à faire. Sinon, quelqu’un connaît votre mot de passe : changez-le tout de suite. Vous pouvez le réinitialiser sur {forgot}\n\nAprès 10 codes erronés d’une application d’authentification, les codes sont refusés pendant une heure ; après 10 de plus, pendant un jour ; puis pendant une semaine à chaque fois. Une clé d’accès ou un code de récupération fonctionne toujours tant que les codes sont refusés. Réinitialiser votre mot de passe par e-mail y met fin : les connexions inachevées de cette personne prennent fin, elle n’a plus le mot de passe, et les codes fonctionnent de nouveau.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Un jeton d’accès de votre compte Glazecalc expire bientôt",
+    "text": "Le jeton d’accès nommé « {name} » du compte Glazecalc {account} cesse de fonctionner le {date}.\n\nSi vous l’utilisez encore, créez un nouveau jeton avant cette date sur {page} et donnez-le à votre assistant ou à votre script à la place de l’ancien. Si vous ne l’utilisez plus, il n’y a rien à faire.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Un nouveau jeton d’accès pour votre compte Glazecalc",
+    "text": "Un jeton d’accès nommé « {name} » vient d’être créé pour le compte Glazecalc {account}. Il peut lire les recettes, matières, notes et relevés de cuisson enregistrés dans le compte jusqu’au {date}.\n\nSi c’est vous, il n’y a rien d’autre à faire. Vous pouvez voir et révoquer vos jetons sur {page}\n\nSinon, révoquez-le là et réinitialisez votre mot de passe tout de suite sur {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Un nouveau jeton d’accès qui peut modifier vos enregistrements Glazecalc",
+    "text": "Un jeton d’accès nommé « {name} » vient d’être créé pour le compte Glazecalc {account}. Il peut lire et modifier les recettes, matières, notes et relevés de cuisson enregistrés dans le compte, et les mettre à la corbeille, jusqu’au {date}. Chaque modification qu’il fait garde l’enregistrement tel qu’il était : vous pouvez donc l’annuler sur le site.\n\nSi c’est vous, il n’y a rien d’autre à faire. Vous pouvez voir et révoquer vos jetons sur {page}\n\nSinon, révoquez-le là et réinitialisez votre mot de passe tout de suite sur {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Confirmez votre adresse e-mail pour Glazecalc",
+    "text": "Quelqu’un (vous, nous l’espérons) a créé un compte Glazecalc avec l’adresse {account}.\n\nPour confirmer que cette adresse est bien la vôtre, ouvrez ce lien dans les {hours} heures :\n\n{link}\n\nLe lien ne fonctionne qu’une fois. Si vous n’avez pas créé de compte, ignorez cet e-mail ; vous ne recevrez rien d’autre, sauf si vous le demandez.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

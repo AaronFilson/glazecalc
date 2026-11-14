@@ -197,4 +197,80 @@ describe('ConfirmPage', () => {
     await settle(fixture);
     expect(text(fixture, '.signed-out')).toContain('Sign in to Glazecalc with the account the change is for');
   });
+
+  it('shows the whole of a long value as it is now, and less of it again', async () => {
+    setUp();
+    const long = 'Wax resist on the foot. '.repeat(30);
+    const { fixture, root } = await create({
+      ...CHANGE,
+      summary: { code: 'pending-change', msg: 'Change the recipe “Celadon”: notes.', params: {} },
+      removal: false,
+      changes: [{ field: 'notes', before: long, after: 'Short now.' }]
+    });
+    const before = () => root.querySelector('.before .value')!.textContent!;
+    const toggle = () => root.querySelector('.before .show-all') as HTMLElement;
+    expect(before().endsWith('…')).toBe(true);
+    expect(toggle().textContent?.trim()).toBe('Show all');
+    toggle().click();
+    await settle(fixture);
+    expect(before()).toBe(long);
+    expect(toggle().textContent?.trim()).toBe('Show less');
+    toggle().click();
+    await settle(fixture);
+    expect(before().endsWith('…')).toBe(true);
+    // The short new value has nothing to show more of.
+    expect(root.querySelector('.after .show-all')).toBeNull();
+  });
+
+  it('says when the change could not be loaded', async () => {
+    setUp();
+    const { fixture, root } = await create(null, 500);
+    expect(text(fixture, '.panel')).toBe('The change could not be loaded. Please reload the page to try again.');
+    expect(root.querySelector('.approve')).toBeNull();
+  });
+
+  it('gives the reason a change approved could not be made', async () => {
+    setUp();
+    const { fixture, root } = await create();
+    (root.querySelector('.approve') as HTMLElement).click();
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/pending-changes/abc123/approve')
+      .flush({
+        code: 'pending-not-made',
+        msg: 'Nothing was changed.',
+        status: 'failed',
+        reason: 'The recipe is no longer there.'
+      });
+    await settle(fixture);
+    expect(text(fixture, '.answer')).toBe('Nothing was changed.');
+    expect(root.querySelector('.answer')!.classList.contains('made')).toBe(false);
+    expect(text(fixture, '.reason')).toBe('The recipe is no longer there.');
+  });
+
+  it('sends one answer at a time, says when it could not be sent, and lets the person answer again', async () => {
+    setUp();
+    const { fixture, root } = await create();
+    const approve = root.querySelector('.approve') as HTMLElement;
+    approve.click();
+    approve.click();
+    httpMock()
+      .expectOne(API + '/pending-changes/abc123/approve')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(text(fixture, '[role="alert"]')).toBe('Error: could not send your answer. Please try again.');
+    expect(root.querySelector('.approve')).not.toBeNull();
+  });
+
+  it('says when the change is gone by the time it is answered', async () => {
+    setUp();
+    const { fixture, root } = await create();
+    (root.querySelector('.decline') as HTMLElement).click();
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/pending-changes/abc123/decline')
+      .flush({ code: 'pending-not-found', msg: 'Not here.' }, { status: 404, statusText: 'Not Found' });
+    await settle(fixture);
+    expect(text(fixture, '.missing')).toContain('There is no change waiting at this address.');
+  });
 });

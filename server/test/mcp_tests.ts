@@ -2,18 +2,26 @@
 // Phases 2 and 3): the public tools with no account, the read tools with a
 // personal access token, who may call it and how often.
 import chemistry from '../../lib/chemistry/index.js';
+import type { Meter } from '../../lib/chemistry/index.js';
 import standardData from '../../data/index.js';
 import recipe from '../../lib/recipe/index.js';
+import regions from '../../lib/regions/index.js';
 import {
+  chargeFit,
   countFit,
+  CUT_SHORT,
+  FIT_WORK_ANYONE_ALL_PER_MINUTE,
   FITS_ANYONE_ALL_PER_MINUTE,
   FITS_PER_MINUTE,
   guarded,
   MOST_LINES,
+  MOST_MATERIALS,
   resetFits,
+  resolveLines,
   ToolProblem,
   UNEXPECTED
 } from '../mcp/common.ts';
+import type { MaterialRecord } from '../../lib/recipe/index.js';
 import {
   CEILINGS,
   countTokenDelete,
@@ -23,13 +31,14 @@ import {
   TOKEN_WRITE_LIMITS
 } from '../lib/rate_limit.ts';
 import { READ_ONLY_TOKEN, TOO_MANY_CHANGES, WRITE_TOOLS as STEP_UP_TOOLS } from '../mcp/tools/account_write.ts';
+import { materialOut } from '../mcp/tools/public.ts';
 import Activity from '../models/activity.ts';
 import Note from '../models/note.ts';
 import RecordVersion from '../models/record_version.ts';
 import ShareLink from '../models/share_link.ts';
 import Trash, { TRASH_MAX_ACCOUNT } from '../models/trash.ts';
 import { GUIDE_IDS, termsOf } from '../mcp/guides.ts';
-import { findMaterial } from '../mcp/library.ts';
+import { findMaterial, standardMaterials } from '../mcp/library.ts';
 import { MOST_STREAMS, sdkSubscribers, streamsOpen } from '../mcp/index.ts';
 import { SERVER_INFO } from '../mcp/server.ts';
 import { PLACES } from '../mcp/words.ts';
@@ -42,7 +51,7 @@ import AccessToken from '../models/access_token.ts';
 import Firing from '../models/firing.ts';
 import Material from '../models/material.ts';
 import Recipe from '../models/recipe.ts';
-import User from '../models/user.ts';
+import User, { SHELF_MOST } from '../models/user.ts';
 import { api, base, expect, makeUser, sessionToken } from './support/app.ts';
 import { makeToken } from './support/tokens.ts';
 
@@ -425,6 +434,22 @@ describe('MCP: the public tools', () => {
     expect(missing.isError).to.equal(true);
   });
 
+  it("search_materials lists, in Japan's library, Japan's own materials and the US set, not the EU's", async () => {
+    const names = async (query: string, region: string) =>
+      (await data('search_materials', { query, region })).materials.map((m: { name: string }) => m.name);
+    // The library a potter in Japan has, from the region's data, as the app picks it.
+    const japan = regions.regionFor('JP')!.library;
+    expect(await names('fukushima', japan)).to.eql(['Fukushima Feldspar (福島長石)']);
+    expect(await names('mahavir', japan)).to.eql(['Mahavir Potash Feldspar']);
+    expect(await names('FP325', japan)).to.eql([]);
+    // The US library does not list Japan's.
+    expect(await names('fukushima', 'US')).to.eql([]);
+    const listed = ((await rpc('tools/list')).body!.result as { tools: Json[] }).tools;
+    const search = listed.find((t) => t.name === 'search_materials')!;
+    const region = (search.inputSchema as { properties: Record<string, { enum?: string[] }> }).properties.region!;
+    expect(region.enum).to.eql(['US', 'UK', 'EU', 'AU', 'JP']);
+  });
+
   it('analyze_recipe gives the unity formula the app works out', async () => {
     const result = await data('analyze_recipe', { lines: LINES });
     const lines = LINES.map((line) => ({ material: findMaterial(line.material)!, amount: line.amount }));
@@ -447,6 +472,22 @@ describe('MCP: the public tools', () => {
     const unknown = await call('analyze_recipe', { lines: [{ material: 'Custer Feldspar', amount: 50 }] });
     expect(unknown.isError).to.equal(true);
     expect(unknown.content[0]!.text).to.include('Custer Feldspar').and.include('Custer Spar');
+  });
+
+  it('reads a trace of a material as the amount it is, in a recipe, a blend and a range', async () => {
+    // String(0.0000001) is "1e-7", which the chemistry refuses: analyze_recipe said "Invalid amount".
+    const traced = [...LINES, { material: 'Talc', amount: 0.0000001 }];
+    const trace = await data('analyze_recipe', { lines: traced });
+    expect(trace.unityFormula).to.eql((await data('analyze_recipe', { lines: LINES })).unityFormula);
+    // A tile with 1e-6 % of talc or less had no unity formula: here all but the last.
+    const blend = await data('blend_recipes', {
+      a: [...LINES, { material: 'Talc', amount: 0.000001 }],
+      b: LINES,
+      steps: 11
+    });
+    expect(blend.tiles.filter((tile: Json) => tile.problem).map((tile: Json) => tile.number)).to.eql([]);
+    const vary = await data('vary_material', { recipe: traced, material: 'Whiting', to: 10, steps: 3 });
+    expect(vary.tiles.filter((tile: Json) => tile.problem).map((tile: Json) => tile.number)).to.eql([]);
   });
 
   it(`takes at most ${MOST_LINES} lines`, async () => {
@@ -493,6 +534,11 @@ describe('MCP: the public tools', () => {
     const badCone = await call('check_limits', { lines, firing: { cone: '43' } });
     expect(badCone.isError).to.equal(true);
     expect(badCone.content[0]!.text).to.include('1 … 42');
+    // Every half cone it takes, 31½ and 32½ too.
+    expect(badCone.content[0]!.text).to.include('05.5, 1.5 to 15.5, 31.5 and 32.5');
+    for (const cone of ['05.5', '15.5', '31.5', '32.5']) {
+      expect((await call('check_limits', { lines, firing: { cone } })).isError, cone).to.not.equal(true);
+    }
     const badSk = await call('check_limits', { lines, firing: { cone: '26', chart: 'sk' } });
     expect(badSk.isError).to.equal(true);
     expect(badSk.content[0]!.text).to.include('SK 022 to SK 20');
@@ -537,6 +583,21 @@ describe('MCP: the public tools', () => {
     // "5½" is read as the half cone; "cone 6" as cone 6.
     expect((await data('check_limits', { lines, firing: { cone: '5½' } })).celsius).to.equal(1209);
     expect((await data('check_limits', { lines, firing: { cone: 'cone 6' } })).celsius).to.equal(1222);
+    // And as paste-in and the recipe page read a cone (lib/cones/firing.js): "^6", "Δ6", "C/6", other digits.
+    for (const cone of ['^6', 'Δ6', '∆ 6', 'C/6', 'c6', 'Cone ٦', '６']) {
+      expect((await data('check_limits', { lines, firing: { cone } })).celsius, cone).to.equal(1222);
+    }
+    expect((await data('convert_cone_temperature', { cone: '^05½' })).cone).to.equal('05.5');
+    expect((await data('check_limits', { lines, firing: { cone: 'SK-8', chart: 'sk' } })).celsius).to.equal(1198);
+    // One cone of the chart asked for: never a range, a firing word, or another chart's cone read as this one's.
+    for (const cone of ['^6-7', 'Δ6 ox', 'cone 4,5', 'SK 8']) {
+      expect((await call('check_limits', { lines, firing: { cone } })).isError, cone).to.equal(true);
+    }
+    for (const cone of ['SK 8', 'SK8', '6a']) {
+      const skAsOrton = await call('convert_cone_temperature', { cone });
+      expect(skAsOrton.content[0]!.text, cone).to.include('give chart "sk"');
+    }
+    expect((await call('check_limits', { lines, firing: { cone: '^6', chart: 'sk' } })).isError).to.equal(true);
     // A temperature that hot is 'top' too, up to 1600 °C (2912 °F).
     expect((await data('check_limits', { lines, firing: { celsius: 1450 } })).band).to.equal('top');
     expect((await data('check_limits', { lines, firing: { fahrenheit: 2900 } })).band).to.equal('top');
@@ -627,6 +688,44 @@ describe('MCP: the public tools', () => {
     expect(sk.coneFit).to.include({ verdict: 'skipped', skipped: 'noTemperature' });
   });
 
+  it('judges the cone fit on the unity formula as worked out, not as rounded for the answer', async () => {
+    // Lithium carbonate for 0.0997 Li2O: under the 0.1 from which the cone check cannot judge lithium, so the recipe
+    // page judges it. Rounded to three places, as the answers give it, it is 0.1, and the tools skipped it.
+    const lines = [
+      { material: 'Custer Spar', amount: 30 },
+      { material: 'Whiting', amount: 20 },
+      { material: 'EPK Kaolin', amount: 20 },
+      { material: 'Silica', amount: 30 },
+      { material: 'Lithium Carbonate', amount: 2.0442 }
+    ];
+    const worked = chemistry.calculateUMF(
+      lines.map((line) => ({ material: findMaterial(line.material)!, amount: line.amount }))
+    );
+    expect(worked.umf.Li2O).to.be.within(0.0996, 0.0998);
+    const checked = await data('check_limits', { lines, firing: { cone: '6' } });
+    expect(checked.unityFormula.Li2O).to.equal(0.1);
+    expect(checked.coneFit).to.include({ verdict: 'fits' }).and.not.have.property('skipped');
+    const blend = await data('blend_recipes', { a: lines, b: lines, steps: 2, firing: { cone: '6' } });
+    expect(blend.tiles.map((tile: Json) => tile.coneFit)).to.eql(['fits', 'fits']);
+    // A saved recipe, as get_recipe reads it.
+    const potter = await makeUser();
+    const made = await api()
+      .post('/recipe/create')
+      .set({ Authorization: 'Bearer ' + potter.token })
+      .send({
+        title: 'Lithium satin',
+        materials: lines.map((line) => ({ ...findMaterial(line.material)!, amount: String(line.amount) }))
+      });
+    expect(made).to.have.status(200);
+    const saved = await data(
+      'get_recipe',
+      { id: made.body._id, firing: { cone: '6' } },
+      bearer(await makeToken(potter.user))
+    );
+    expect(saved.analysis.unityFormula.Li2O).to.equal(0.1);
+    expect(saved.coneFit).to.include({ verdict: 'fits' }).and.not.have.property('skipped');
+  });
+
   it('check_limits names every limit set it takes', async () => {
     const tools = ((await rpc('tools/list')).body!.result as { tools: Json[] }).tools;
     const tool = tools.find((t) => t.name === 'check_limits')!;
@@ -655,9 +754,60 @@ describe('MCP: the public tools', () => {
     const same = await data('specific_gravity_water', { sg: 1.45, litres: 10, target: 1.45 });
     expect(same.waterToAddLitres).to.equal(0);
     expect(same.note).to.match(/already/);
+    // The recipe page's figure (lib/recipe/slurry.js), as the page writes it: to the gram under a kilogram, else to 10 g.
+    for (const [litres, sg, target, figure] of [
+      [10, 1.6, 1.45, 3.33],
+      [3.5, 1.38, 1.47, -0.67],
+      [2, 1.5, 1.45, 0.222],
+      [250, 1.52, 1.5, 10]
+    ] as const) {
+      const answer = await data('specific_gravity_water', { sg, litres, target });
+      const water = recipe.waterToReach(litres, sg, target, null)!;
+      expect(answer.waterToAddLitres).to.equal(figure);
+      expect(answer.waterToAddLitres).to.equal(Number(water.toFixed(Math.abs(water) < 1 ? 3 : 2)));
+    }
     expect((await call('specific_gravity_water', { sg: 1.4, gramsPer100ml: 140 })).isError).to.equal(true);
     expect((await call('specific_gravity_water', {})).isError).to.equal(true);
     expect((await call('specific_gravity_water', { sg: 2.4, drySg: 2.2 })).isError).to.equal(true);
+  });
+
+  it('specific_gravity_water says the slurry is at the SG already exactly when the recipe page does', async () => {
+    // A litre at SG 1.452 takes 4.4 mL of water to reach 1.45: the page says to add 4 g, and so does the tool, to the
+    // gram. Rounded to 0.01 L first, it said the glaze was already there.
+    const litre = await data('specific_gravity_water', { sg: 1.452, litres: 1, target: 1.45 });
+    expect(litre.waterToAddLitres).to.equal(0.004);
+    expect(litre.note).to.match(/^Add the water/);
+    // 100 L weighing 145.02 g a 100 mL is 44 mL from 1.45, under half a gram a litre: the page says it is there
+    // already, and so does the tool. It said to add 0.04 L.
+    const bucket = await data('specific_gravity_water', { gramsPer100ml: 145.02, litres: 100, target: 1.45 });
+    expect(bucket.waterToAddLitres).to.equal(0);
+    expect(bucket.note).to.match(/already/);
+    // On either side of the page's rule, worked out here: the water is litres × (SG − target) ÷ (target − 1), and the
+    // slurry is there already under half a gram of it a litre either way, or under half a gram in a bucket under a
+    // litre, which the page writes to the gram: it never says to add 0 g, nor the tool 0 L.
+    for (const [litres, sg, target, water, note] of [
+      // 0.5 × 0.01 ÷ 1 = 5 g.
+      [0.5, 2.01, 2, 0.005, /^Add the water/],
+      // 0.5 × 0.0004 ÷ 0.45 = 0.44 g: there already. It said to add the water, 0 L of it.
+      [0.5, 1.4504, 1.45, 0, /already/],
+      // 0.5 × 0.0005 ÷ 0.45 = 0.56 g, a gram to the gram.
+      [0.5, 1.4505, 1.45, 0.001, /^Add the water/],
+      [0.5, 1.4495, 1.45, -0.001, /pour off/],
+      // 0.1 × −0.0014 ÷ 0.3 = −0.47 g: there already. It said to pour off 0 L.
+      [0.1, 1.2986, 1.3, 0, /already/],
+      // 1 × 0.002 ÷ 0.45 = 4.4 g.
+      [1, 1.452, 1.45, 0.004, /^Add the water/],
+      // 12 × −0.0002 ÷ 0.4502 = −5.3 g, under 6 g.
+      [12, 1.45, 1.4502, 0, /already/],
+      // 100 × 0.0002 ÷ 0.45 = 44 g, under 50 g; 100 × 0.0012 ÷ 0.45 = 267 g.
+      [100, 1.4502, 1.45, 0, /already/],
+      [100, 1.4512, 1.45, 0.267, /^Add the water/],
+      [1000, 1.45, 1.45, 0, /already/]
+    ] as const) {
+      const answer = await data('specific_gravity_water', { sg, litres, target });
+      expect(answer.waterToAddLitres, `${litres} L from ${sg} to ${target}`).to.equal(water);
+      expect(answer.note, `${litres} L from ${sg} to ${target}`).to.match(note);
+    }
   });
 
   it('specific_gravity_water estimates the dry SG from a recipe, saying how, and a drySg given wins', async () => {
@@ -672,6 +822,11 @@ describe('MCP: the public tools', () => {
     expect(estimated.drySgBasis).to.equal('mixed');
     expect(estimated.drySgNote).to.match(/estimate/i);
     expect(estimated).to.have.property('bucket');
+    // The same recipe in hundred-millionths: String(0.0000002) is "2e-7", which the estimate read as no amount
+    // ("No estimate: the lines have no amounts").
+    const tiny = lines.map((line) => ({ ...line, amount: line.amount / 100000000 }));
+    const traced = await data('specific_gravity_water', { sg: 1.5, litres: 10, target: 1.45, lines: tiny });
+    expect([traced.drySg, traced.drySgBasis]).to.eql([estimated.drySg, estimated.drySgBasis]);
     const given = await data('specific_gravity_water', { sg: 1.5, litres: 10, drySg: 2.5, lines });
     expect(given.drySg).to.equal(2.5);
     expect(given).not.to.have.property('drySgBasis');
@@ -798,6 +953,27 @@ describe('MCP: the public tools', () => {
     expect(described).to.not.include('06 to 6');
   });
 
+  it("convert_cone_temperature says cone 05½ is Orton's 2016 figure, and the other half cones halfway", async () => {
+    // 05½ is the one half cone Orton's 2016 chart gives large cones a figure for, 1023 °C at 150 °C an hour, as the
+    // recipe page says. It was described as put halfway between its neighbours on the older chart, which has no half
+    // cones.
+    const half = await data('convert_cone_temperature', { cone: '05½' });
+    expect(half).to.include({ cone: '05.5', celsius: 1023 });
+    expect(half.basis).to.equal("Orton's 2016 chart, large cones at 150 °C an hour");
+    // Every other half cone is halfway on the older chart, as before, and a whole cone is that chart's.
+    expect((await data('convert_cone_temperature', { cone: '5½' })).basis).to.equal(
+      "Orton's older chart, large cones at 150 °C an hour, a half cone put halfway between its neighbours"
+    );
+    expect((await data('convert_cone_temperature', { cone: '05' })).basis).to.equal(
+      "Orton's older chart, large cones at 150 °C an hour"
+    );
+    // The tool's description says so too.
+    const listed = ((await rpc('tools/list')).body!.result as { tools: Json[] }).tools;
+    const described = listed.find((t) => t.name === 'convert_cone_temperature')!.description as string;
+    expect(described).to.include("cone 05.5, which that chart lacks, is Orton's 2016 figure");
+    expect(described).to.include('the other half cones are put halfway between their neighbours');
+  });
+
   it('suggest_substitutes swaps old materials and suggests amounts', async () => {
     resetFits();
     const result = await data('suggest_substitutes', {
@@ -825,6 +1001,40 @@ describe('MCP: the public tools', () => {
     expect(modern.swaps).to.eql([]);
   });
 
+  it('suggest_substitutes gives the amounts the page gives, even when the plan takes much of the work', async function () {
+    this.timeout(60000);
+    resetFits();
+    // Two old materials leave eight oxides short, and 38 materials given by analysis make every fit
+    // the plan ranks with large: the plan alone takes about two thirds of the work allowed.
+    const frac = (x: number) => x - Math.floor(x);
+    const mixes = Array.from({ length: 38 }, (_, k) => {
+      const ti = +(30 + 30 * frac((k + 1) * 0.618034)).toFixed(2);
+      const sn = +(10 + 30 * frac((k + 1) * 0.414214)).toFixed(2);
+      return {
+        material: 'Opacifier mix ' + (k + 1),
+        amount: +(0.2 + frac((k + 1) * 0.754878)).toFixed(2),
+        analysis: { TiO2: ti, SnO2: sn, CeO2: +(100 - ti - sn).toFixed(2) }
+      };
+    });
+    const lines = [
+      { material: 'Lepidolite', amount: 7.62 },
+      { material: 'Ferro Frit 9146 (zircon white)', amount: 7.85 },
+      ...mixes
+    ];
+    const result = await data('suggest_substitutes', { lines });
+    // As the page works it out: the plan, then the amounts for the first choice of each, each on its own meter.
+    const records = resolveLines(lines);
+    const plan = recipe.planSuggestion<MaterialRecord>(records, findMaterial, standardMaterials(), '');
+    const bringIn = plan.shortfalls
+      .map((s) => (s.choices[0] ? findMaterial(s.choices[0].name) : undefined))
+      .filter((m): m is NonNullable<typeof m> => Boolean(m))
+      .filter((m, i, all) => all.findIndex((other) => other.name === m.name) === i);
+    const page = recipe.suggestAmounts<MaterialRecord>(records, findMaterial, bringIn, '');
+    expect(result.recipe).to.deep.equal(
+      page.materials.map((m) => ({ material: m.name, amount: Number(m.amount ?? 0) }))
+    );
+  });
+
   it('match_from_materials remakes a recipe from what is given', async () => {
     resetFits();
     const have = ['Minspar 200', 'Whiting', 'EPK', 'Silica'];
@@ -833,11 +1043,20 @@ describe('MCP: the public tools', () => {
     for (const line of result.recipe) if (line.amount > 0) expect(allowed).to.include(line.material);
     const unknown = await call('match_from_materials', { lines: LINES, have: ['Moon dust'] });
     expect(unknown.isError).to.equal(true);
+    // Nothing given with a flux: said of the materials, not "Recipe contains no flux oxides" of the recipe.
+    const noFlux = await call('match_from_materials', {
+      lines: LINES,
+      have: ['Silica', 'Calcined Kaolin (theoretical)']
+    });
+    expect(noFlux.isError).to.equal(true);
+    expect(noFlux.content[0].text).to.equal(
+      'None of these materials has a flux, such as CaO, K₂O or Na₂O, so no glaze can be made of them.'
+    );
   });
 
   // The staging session's recipe and shelf: an assistant read the solver's score as a wide miss.
   const GERSTLEY = [
-    { material: 'Nepheline Syenite', amount: 40 },
+    { material: 'Nepheline Syenite (typical)', amount: 40 },
     { material: 'Silica', amount: 25 },
     { material: 'Gerstley Borate', amount: 15 },
     { material: 'EPK', amount: 20 }
@@ -886,7 +1105,7 @@ describe('MCP: the public tools', () => {
   it('match_from_materials holds raw clay to 20% where that costs little, and allowMore lifts it', async () => {
     resetFits();
     const lines = [
-      { material: 'Nepheline Syenite', amount: 35 },
+      { material: 'Nepheline Syenite (typical)', amount: 35 },
       { material: 'Silica', amount: 25 },
       { material: 'Whiting', amount: 10 },
       { material: 'EPK', amount: 15 },
@@ -1027,6 +1246,41 @@ describe('MCP: blend_recipes', () => {
     expect(result).to.not.have.property('differences');
   });
 
+  it('keeps two corners’ own analyses under one name apart, so each tile is the corners it mixes', async () => {
+    // Two wood ashes, analysed apart and given under the same name.
+    const a = [
+      { material: 'Wood ash', amount: 40, analysis: { CaO: 50, SiO2: 10, MgO: 5 }, loi: 30 },
+      { material: 'Silica', amount: 30 },
+      { material: 'EPK', amount: 30 }
+    ];
+    const b = [
+      { material: 'Wood ash', amount: 40, analysis: { K2O: 12, SiO2: 55, Al2O3: 10, CaO: 15 }, loi: 5 },
+      { material: 'Silica', amount: 30 },
+      { material: 'EPK', amount: 30 }
+    ];
+    const result = await data('blend_recipes', { a, b, steps: 3 });
+    const both = [{ ...a[0]!, amount: 20 }, a[1], a[2], { ...b[0]!, amount: 20 }];
+    const [onlyA, half, onlyB] = await Promise.all(
+      [a, both, b].map(async (lines) => (await data('analyze_recipe', { lines })).unityFormula)
+    );
+    // The middle tile has both ashes, 20 each. They were one line with A's chemistry, and all B was A's ash too.
+    expect(result.tiles[1].recipe).to.eql([
+      { material: 'Wood ash', percent: 20 },
+      { material: 'Silica', percent: 30 },
+      { material: 'EPK Kaolin', percent: 30 },
+      { material: 'Wood ash', percent: 20 }
+    ]);
+    for (const [i, unity] of [onlyA, half, onlyB].entries()) {
+      const tile = result.tiles[i].unity;
+      expect([tile.SiO2, tile.Al2O3, tile.fluxes.CaO, tile.fluxes.K2O], 'tile ' + (i + 1)).to.eql([
+        unity.SiO2,
+        unity.Al2O3,
+        unity.CaO,
+        unity.K2O
+      ]);
+    }
+  });
+
   it('a triaxial blend of n rows has n(n+1)/2 tiles with three shares each', async () => {
     const result = await data('blend_recipes', { a: GLOSSY, b: MATTE, c: BORON, steps: 4 });
     expect(result).to.include({ kind: 'triaxial', tileCount: 10 });
@@ -1087,7 +1341,13 @@ describe('MCP: blend_recipes', () => {
     expect(mg.a).to.be.lessThan(0.01);
     expect(mg.change).to.be.greaterThan(0.1);
     for (const d of result.differences) expect(d.change).to.not.equal(0);
-    expect(result.differences.map((d: { what: string }) => d.what)).to.include('silicaToAlumina');
+    const what = result.differences.map((d: { what: string }) => d.what);
+    expect(what).to.include('silicaToAlumina');
+    // An oxide by its formula as the other answers write it (unityFormula's keys): K2O, not K₂O.
+    expect(what).to.include.members(['K2O', 'Al2O3', 'SiO2']);
+    for (const d of result.differences) expect(d.what).to.match(/^[A-Za-z0-9]+$/);
+    const a = await data('analyze_recipe', { lines: GLOSSY });
+    expect(result.differences.find((d: { what: string }) => d.what === 'Al2O3').a).to.equal(a.unityFormula.Al2O3);
   });
 
   it('refuses bad input with words: unknown material, steps out of range, no amounts, no flux', async () => {
@@ -1763,6 +2023,38 @@ describe('MCP: personal access tokens', () => {
       }
     });
 
+    it('say a material’s oxides are percent or moles as the chemistry reads them, whatever the case kept', async () => {
+      // Kept before the schema lower-cased percentmole: Mongoose's setters run when a record is saved, not read.
+      const kept = (name: string, percentmole: string) => ({
+        name,
+        ownedBy: String(mine.user._id),
+        fields: [{ name: 'CaO', amount: '1' }],
+        formulaweight: 56.08,
+        loi: 43.97,
+        molecularweight: 100.09,
+        equivalent: 100.09,
+        percentmole
+      });
+      const { insertedIds } = await Material.collection.insertMany([
+        kept('Legacy whiting', 'Molecular'),
+        kept('Legacy spar', 'Percent')
+      ]);
+      try {
+        const listed = await data('list_my_materials', { search: 'Legacy' }, headers);
+        const oxidesAre = Object.fromEntries(
+          listed.materials.map((m: { name: string; oxidesAre: string }) => [m.name, m.oxidesAre])
+        );
+        expect(oxidesAre).to.deep.equal({ 'Legacy spar': 'weight percent', 'Legacy whiting': 'moles in the formula' });
+        // A library record says it the same way, and so does a record with none, which the chemistry reads as moles.
+        const whiting = standardMaterials().find((m) => m.name === 'Whiting')!;
+        expect(materialOut({ ...whiting, percentmole: 'Molecular' }).oxidesAre).to.equal('moles in the formula');
+        expect(materialOut({ ...whiting, percentmole: undefined }).oxidesAre).to.equal('moles in the formula');
+        expect(materialOut({ ...whiting, percentmole: 'PERCENT' }).oxidesAre).to.equal('weight percent');
+      } finally {
+        await Material.deleteMany({ _id: { $in: Object.values(insertedIds) } });
+      }
+    });
+
     it('read the materials, the shelf, the firing logs, the notebook and the settings', async () => {
       const materials = await data('list_my_materials', {}, headers);
       expect(materials.materials.map((m: { name: string }) => m.name)).to.eql(['Local red clay']);
@@ -1954,6 +2246,25 @@ describe('MCP: the write tools', () => {
       expect(refused.isError).to.equal(true);
     }
     expect(await Recipe.countDocuments({ ownedBy })).to.equal(1);
+  });
+
+  it('saves a trace of a colorant or an oxide as a plain decimal, as the pages save an amount', async () => {
+    // String(0.0000001) is "1e-7": the recipe page took the colorant's amount for not a number, and the chemistry,
+    // counting colorants, refused it.
+    const made = await data(
+      'create_recipe',
+      { title: 'Trace', lines: LINES, colorants: [{ name: 'Cobalt Carbonate', amount: 0.0000001 }] },
+      headers
+    );
+    const saved = (await Recipe.findById(made.id).lean())!;
+    expect((saved.additives[0] as { amount: string }).amount).to.equal('0.0000001');
+    const material = await data(
+      'add_my_material',
+      { name: 'Trace spar', analysis: { SiO2: 70, Al2O3: 18, K2O: 12, Fe2O3: 0.0000001 } },
+      headers
+    );
+    const fields = (await Material.findById(material.id).lean())!.fields as Array<{ name: string; amount: string }>;
+    expect(fields.find((field) => field.name === 'Fe2O3')?.amount).to.equal('0.0000001');
   });
 
   it('update tools and move_to_trash refuse a stale rev, changing nothing, and count each change', async () => {
@@ -2420,6 +2731,150 @@ describe('MCP: limits', () => {
     expect(() => countFit({ key: 'user:1', userId: '1' }, now)).to.not.throw();
     expect(() => countFit({ key: 'ip:203.0.113.9' }, now + 61 * 1000)).to.not.throw();
     resetFits();
+  });
+
+  it('does at most ten of the largest fits’ work a minute for everyone without a token together', async () => {
+    expect(FIT_WORK_ANYONE_ALL_PER_MINUTE).to.equal(10 * chemistry.WORK);
+    resetFits();
+    process.env.RATE_LIMITS = 'on';
+    const now = Date.now();
+    // Ten fits as large as they may be, each from its own address, and the count of fits far from its ceiling.
+    for (let i = 0; i < 10; i++) {
+      const caller = { key: 'ip:198.51.100.' + i };
+      countFit(caller, now);
+      chargeFit(caller, chemistry.WORK, now);
+    }
+    expect(() => countFit({ key: 'ip:203.0.113.9' }, now)).to.throw(ToolProblem, 'without a Glazecalc account');
+    // An account's fits are not counted there, and the next minute starts again.
+    expect(() => countFit({ key: 'user:1', userId: '1' }, now)).to.not.throw();
+    expect(() => countFit({ key: 'ip:203.0.113.9' }, now + 61 * 1000)).to.not.throw();
+
+    // A tool's fit is charged what it did: with all but one unit charged already, one fit fills it.
+    resetFits();
+    chargeFit({ key: 'ip:198.51.100.1' }, FIT_WORK_ANYONE_ALL_PER_MINUTE - 1);
+    const have = ['Minspar 200', 'Whiting', 'EPK', 'Silica'];
+    await data('match_from_materials', { lines: LINES, have }, { 'x-forwarded-for': '192.0.2.77' });
+    expect(() => countFit({ key: 'ip:203.0.113.9' })).to.throw(ToolProblem, 'without a Glazecalc account');
+    resetFits();
+  });
+
+  // A list of many materials and a target with many oxides held the server for seconds to minutes
+  // (60 of the library's materials and 13 oxides: 7 s; 80: 93 s), anyone's for the asking.
+  const MANY_OXIDES = {
+    kind: 'unity',
+    oxides: {
+      K2O: 0.2,
+      Na2O: 0.1,
+      CaO: 0.5,
+      MgO: 0.1,
+      ZnO: 0.05,
+      BaO: 0.05,
+      Al2O3: 0.4,
+      B2O3: 0.3,
+      SiO2: 3.2,
+      TiO2: 0.1,
+      Fe2O3: 0.05,
+      Li2O: 0.05,
+      SrO: 0.05
+    }
+  };
+  /** A tool call, and the work its fits did: the meters fitFor gives them (chemistry.newMeter). */
+  const metered = async <T>(run: () => Promise<T>): Promise<{ result: T; work: number }> => {
+    const meters: Meter[] = [];
+    const lib = chemistry as { newMeter: typeof chemistry.newMeter };
+    const original = lib.newMeter;
+    lib.newMeter = (most?: number) => {
+      const meter = original(most);
+      meters.push(meter);
+      return meter;
+    };
+    try {
+      const result = await run();
+      return { result, work: meters.reduce((sum, meter) => sum + meter.used, 0) };
+    } finally {
+      lib.newMeter = original;
+    }
+  };
+  /** A shelf at its most: the account's own copies of the library's materials, each named apart. */
+  const fullShelf = async (user: { _id: unknown }, token: string) => {
+    const library = standardData.load('materials') as Array<Record<string, unknown>>;
+    const own = await Material.insertMany(
+      Array.from({ length: SHELF_MOST }, (_, i) => {
+        const { _id, ...copy } = library[i % library.length]!;
+        void _id;
+        return { ...copy, name: `${String(copy.name)} (own ${i + 1})`, ownedBy: String(user._id) };
+      })
+    );
+    const shelf = own.map((m) => String(m._id));
+    const saved = await api()
+      .put('/shelf')
+      .set('Authorization', 'Bearer ' + token)
+      .send({ shelf });
+    expect(saved.status).to.equal(200);
+  };
+
+  it('answers the worst fit in about a second, never holding the server longer, and says it stopped short', async function () {
+    this.timeout(60000);
+    resetFits();
+    const materials = (standardData.load('materials') as Array<{ name: string }>).slice(0, 60).map((m) => m.name);
+    const started = Date.now();
+    const { result: solved, work } = await metered(async () => {
+      const solving = data('solve_target', { target: MANY_OXIDES, materials });
+      // The tests share the server's event loop: a timer due as the call goes out fires once the loop is free.
+      // The bound is the work counted, below; the time only has to be far from the 93 s 80 materials took (3 s
+      // allowed was 4 to 12 s on a machine busy with other tests).
+      const free = await new Promise<number>((resolve) => setTimeout(() => resolve(Date.now() - started), 50));
+      expect(free).to.be.below(30000);
+      return solving;
+    });
+    expect(work).to.be.at.most(1.1 * chemistry.WORK);
+    expect(solved.cutShort).to.equal(true);
+    expect(solved.closeness.summary).to.include(CUT_SHORT);
+    expect(solved.recipe.length).to.be.within(1, 13);
+  });
+
+  it(`fits from a shelf at its most, ${SHELF_MOST} materials, for the worst target with the work 60 take`, async function () {
+    this.timeout(120000);
+    resetFits();
+    const { user, token } = await makeUser();
+    await fullShelf(user, token);
+    const headers = bearer(await makeToken(user));
+    const sixty = (standardData.load('materials') as Array<{ name: string }>).slice(0, 60).map((m) => m.name);
+    const few = await metered(() => data('solve_target', { target: MANY_OXIDES, materials: sixty }, headers));
+    // Every material on the shelf: the first match over them all alone took several times the work allowed.
+    const all = await metered(() => data('solve_target', { target: MANY_OXIDES, onHand: true }, headers));
+    expect(all.work).to.be.at.most(few.work + 0.25 * chemistry.WORK);
+    expect(all.result.cutShort).to.equal(true);
+    expect(all.result.recipe.length).to.be.within(1, 13);
+    const match = await metered(() => data('match_with_what_i_have', { lines: LINES }, headers));
+    expect(match.work).to.be.at.most(1.25 * chemistry.WORK);
+    expect(match.result.recipe.length).to.be.above(0);
+  });
+
+  it(`takes as many materials to fit at once as a shelf holds, ${MOST_MATERIALS}, named or on the shelf`, async function () {
+    this.timeout(60000);
+    resetFits();
+    expect(MOST_MATERIALS).to.equal(SHELF_MOST);
+    const names = (standardData.load('materials') as Array<{ name: string }>).map((m) => m.name);
+    const unity = { kind: 'unity', oxides: { K2O: 0.3, CaO: 0.7, Al2O3: 0.4, SiO2: 3.2 } };
+    // More named than that is refused before any work.
+    const tooMany = Array.from({ length: MOST_MATERIALS + 1 }, (_, i) => names[i % names.length]!);
+    expect((await call('match_from_materials', { lines: LINES, have: tooMany })).isError).to.equal(true);
+    expect((await call('solve_target', { target: unity, materials: tooMany })).isError).to.equal(true);
+    // A shelf at its most and another named besides: too many, said in words with how to narrow it, no fit counted.
+    const { user, token } = await makeUser();
+    await fullShelf(user, token);
+    const headers = bearer(await makeToken(user));
+    process.env.RATE_LIMITS = 'on';
+    const onHand = await call('solve_target', { target: unity, onHand: true, materials: ['Whiting'] }, headers);
+    expect(onHand.isError).to.equal(true);
+    expect(onHand.content[0]!.text).to.match(
+      new RegExp(`^Too many materials to fit at once: ${SHELF_MOST + 1}, .* at most ${SHELF_MOST}\\. Narrow the list`)
+    );
+    for (let i = 0; i < FITS_PER_MINUTE; i++)
+      expect((await call('match_from_materials', { lines: LINES, have: ['Whiting'] }, headers)).isError).to.not.equal(
+        true
+      );
   });
 
   it(`works out at most ${FITS_PER_MINUTE} substitutions or matches a minute for one caller`, async () => {

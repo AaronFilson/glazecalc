@@ -3,8 +3,11 @@
 Accepted, 2026-10-16; the guides, resources, prompts, conformance check and registry listing added 2026-10-17. Phases 2 and 3 of [the integrations plan](../integrations-plan.md): the public
 tools, and read-only personal access tokens. The plan's decisions 3, 4, 5, 6 and 9 are the owner's,
 all as recommended. Amended 2026-10-19: personal tokens can also change records, and the MCP
-endpoint has write tools (see [Amended: tokens that write](#amended-tokens-that-write)); and apps
-connected with OAuth reach it too (see [Amended: OAuth](#amended-oauth)).
+endpoint has write tools (see [Amended: tokens that write](#amended-tokens-that-write)); apps
+connected with OAuth reach it too (see [Amended: OAuth](#amended-oauth)); and a change from an app
+can wait for the person's yes (see [Amended: confirm before changes](#amended-confirm-before-changes)).
+Amended 2026-10-21: three more write tools, for dictated studio notes (see
+[Amended: dictated studio notes](#amended-dictated-studio-notes)).
 
 ## Context
 
@@ -38,7 +41,9 @@ an assistant to act for one person that is not their web session.
   `suggest_substitutes` and `match_from_materials` (which say how near they come, oxide by oxide:
   [ADR 12](0012-choosing-materials.md#amended-how-near-a-match-comes)), `solve_target` (a recipe for a
   target unity formula or analysis from named materials, or the shelf for a caller that may read it:
-  [ADR 26](0026-target-and-solve.md)), and (`server/mcp/tools/blends.ts`)
+  [ADR 26](0026-target-and-solve.md)), `specific_gravity_water` (2026-11: a glaze slurry's specific
+  gravity and the water to add or pour off for a target, as the recipe page works them out), and
+  (`server/mcp/tools/blends.ts`)
   `blend_recipes`: the test tiles of a line or triaxial blend between two or three recipes, each
   with its recipe, key unity formula figures, expansion, limit cautions and, with a firing, its
   cone fit, or a comparison of two recipes. A calculation, not a test result. The teaching
@@ -76,7 +81,23 @@ an assistant to act for one person that is not their web session.
   Nothing a caller sends is stored by the app. nginx's access log, kept 14 days as for every page,
   records each request's IP address, time, request line (`POST /mcp`, never the body), status and
   user agent ([processing record](../processing-record.md), "Web server logs"); the privacy page and
-  the assistants page say so.
+  the assistants page say so. Server 1.5.0 (2026-11, backward compatible) adds `JP` to the `region`
+  that `search_materials` and `suggest_substitutes` take: Japan's library, which lists the Japanese
+  materials and the US set too, filtered as the app filters it (`inRegion`, `lib/recipe/library.js`).
+  It also bounds the tools that fit amounts (the 1.0 security review: 60 materials and a target with
+  13 oxides held the server for 7 seconds, 80 for 93, anyone's for the asking). A fit does at most
+  `WORK` of the solver's work (`lib/chemistry/fit.js`, about a second; [ADR 12](0012-choosing-materials.md#amended-the-work-a-search-may-do)),
+  and past it answers the best it found with `cutShort: true` and a sentence in `closeness.summary`
+  saying to narrow the list. Every step of a fit is bounded, the first match over every material
+  offered included, so a fit from 500 materials does about the work one from 60 does:
+  `match_from_materials` takes as many materials in `have` as a shelf holds (500, `SHELF_MOST`; the
+  schema's `maxItems`), and `solve_target` as many with those on hand (`MOST_MATERIALS`,
+  `server/mcp/common.ts`), and `match_with_what_i_have` works from the whole shelf. Only
+  `solve_target` with a shelf and more named besides can be over it, and says so, working nothing
+  out. `suggest_substitutes` works out its plan inside the fit it counts, so a
+  caller over the limit gets no work done; the plan and the amounts each have their own meter, as on
+  the page, and both are charged to the fit. The fits of everyone without a token together may also
+  do at most ten fits' `WORK` a minute (`FIT_WORK_ANYONE_ALL_PER_MINUTE`), besides the 200 fits.
 - **The guides, as a tool and as resources** (`server/mcp/guides.ts`, `server/mcp/tools/guides.ts`):
   `search_guides` searches the guides' sections in the language asked for (an app language, else
   English), and the English guides where that language finds nothing, saying so; each hit has the
@@ -85,8 +106,8 @@ an assistant to act for one person that is not their web session.
   or common endings ("crawling" finds "crawl"); a section with every word ranks first, its heading
   counts most, and a list of sources comes last. Resources: `glazecalc://guides/{language}/{guide}`
   and `.../{guide}/{section}` (Markdown, with the address it comes from), `glazecalc://materials/{name}`
-  (what `get_material` returns) and `glazecalc://cones` (the Orton and SK charts); only the five
-  English guides and the cone charts are listed, the rest are templates with completions. The guides
+  (what `get_material` returns) and `glazecalc://cones` (the Orton and SK charts); only the English
+  guides and the cone charts are listed, the rest are templates with completions. The guides
   are read from the same Markdown the site shows, with the site's marks settled once for everyone:
   temperatures in both scales as the source gives them, the parts for Orton cones (search can ask for
   SK or temperature), and in place of what the site draws for the reader's country, a line pointing
@@ -104,7 +125,7 @@ an assistant to act for one person that is not their web session.
   (read back first, saved only on a yes): a notebook entry, `about` a recipe or firing log when it is
   one's, a recipe, a firing log (`create_firing_log`) or a recipe's result in a firing (`link_firing`). A sixth, `what_does_this_material_do` (2026-10), runs
   `get_material` and `vary_material` on a base the person gives, or asks for one (it never invents
-  one), and explains the trend and the Stull walk. A seventh, `teach_me` (2026-11), takes a free
+  one), and explains the trend and the Stull walk. An eighth, `teach_me` (2026-11), takes a free
   topic and a level (`new`, the default, `some` or `experienced`) with an optional recipe and cone:
   it attaches up to two guide sections (the matched unit's reads, else the best `search_guides` hits),
   asks for one small experiment with one tool, what to look for on the tile, and a question to check
@@ -278,6 +299,9 @@ apps connected with OAuth tokens for this endpoint alone. What changes here:
 - "Without a token the list has only the public tools", above, no longer holds (2026-10-20, ADR 24
   "Amended: sign-in when a tool needs it"): every tool is listed, and a call to one of the
   person's own with no token is answered 401 so the app asks the person to sign in.
+- "One address may keep at most 3 subscription streams", above, no longer holds (2026-10-21, ADR 24
+  "Amended: ChatGPT's document, private_key_jwt, shared addresses"): the 3 are per account, or per
+  address without a token, and calls without a token also have ceilings for everyone together.
 
 ## Amended: confirm before changes
 
@@ -285,11 +309,11 @@ apps connected with OAuth tokens for this endpoint alone. What changes here:
 ("What the assistant is given is data" and "Prompt injection, revisited"): asking the person before
 a change is built. An account can choose that changes from assistants and access tokens wait for
 its approval: removals only, or every change (off by default). A waiting change is made only when
-the person approves it on the website, signed in, or (for a removal, by the owner's choice) answers
-yes in the client's own form; no token can approve one, the state handed to the client is signed
-and bound to the one change, and a change runs once, after everything is checked again. Words
-planted in a note can still lead an assistant to ask for a change, but no longer to make one
-unseen, when the setting is on. A form's yes is weaker than the website's (ADR 25, Consequences).
+the person approves it on the website, signed in (a yes in the client's own form, built first for
+removals, was taken out after review: ADR 25, Alternatives); no token can approve one, the state
+handed to the client is signed and bound to the one change, and a change runs once, after
+everything is checked again. Words planted in a note can still lead an assistant to ask for a
+change, but no longer to make one unseen, when the setting is on.
 
 ## Amended: dictated studio notes
 
@@ -297,5 +321,5 @@ unseen, when the setting is on. A form's yes is weaker than the website's (ADR 2
 through the same gate as the nine above (`server/mcp/tools/dictation_write.ts`):
 `create_firing_log`, `add_firing_rows` and `link_firing` (a recipe's link to a firing log and its
 result, by the recipe routes' own code); `add_notebook_entry` takes `about`, a record of the
-account's the note is about. A sixth prompt, `dictation`, and a resource,
+account's the note is about. A seventh prompt, `dictation`, and a resource,
 `glazecalc://skills/glazecalc-dictation`, carry the skill for clients that take no skills.

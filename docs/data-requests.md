@@ -41,7 +41,7 @@ Check only that the person controls the account. **Never ask for an identity doc
 | See their data (Art. 15)            | Point them to **Download my data** on the account page. If they can't sign in, export it for them after the check above. Also tell them the purposes, who processes it (AWS), where it is stored (US, Oregon), how long it's kept and their rights, as the privacy notice says.          |
 | Take their data elsewhere (Art. 20) | The same export: JSON, with CSV for recipes and materials. They can import that JSON file into another Glazecalc account with **Import my data** on its account page (records, and the settings, prices and shelf they tick; never the account, sign-in methods, tokens or share links). |
 | Correct their data (Art. 16)        | Most fields can be changed on the account page; the email address through the confirmation link. Change anything else by hand.                                                                                                                                                           |
-| Delete their data (Art. 17)         | **Delete account** on the account page, or an admin deletion after the check. Either way the deletion is logged and re-applied if a backup is restored, and backups expire within the period the notice states. Tell the person that.                                                    |
+| Delete their data (Art. 17)         | **Delete my account** on the account page, or an admin deletion after the check. Either way the deletion is logged and re-applied if a backup is restored, and backups expire within the period the notice states. Tell the person that.                                                 |
 | Restrict or object (Art. 18, 21)    | Rare for this app; the only processing is running the account. Answer case by case, and record the decision.                                                                                                                                                                             |
 
 ## Turning off two-step sign-in
@@ -69,10 +69,12 @@ for it on the website ([ADR 0014](adr/0014-two-step-sign-in.md)); the owner runs
    date in the request log.
 5. **If anyone writes to privacy@ to stop it** (from that address), do not go on. Ask what happened; if the request was not
    theirs, tell them to change their password, and the account stays as it is.
-   **Using any factor also cancels the request:** if the account signs in with a second step or a passkey, or confirms
-   a change on its account page with a factor, the server removes `mfa.clearRequestedAt` (the log says only
-   `MFA_CLEAR_CANCELLED`). Whoever did that still has a factor. `--clear` then refuses ("Run --notify first"); if the
-   person still wants it turned off, ask why, and run `--notify` again, which starts a new seven days.
+   **Using the password and a factor also cancels the request:** if the account signs in with the password and a
+   second step, or confirms a change on its account page with a factor, the server removes `mfa.clearRequestedAt` (the
+   log says only `MFA_CLEAR_CANCELLED`). Whoever did that still has the password and a factor. A passkey on its own
+   (passkey-first sign-in) does not cancel it, and after the password reset it does not sign in on its own either
+   (`mfa.resetAt`), since someone who once had the password may have added it. `--clear` then refuses ("Run --notify
+   first"); if the person still wants it turned off, ask why, and run `--notify` again, which starts a new seven days.
 6. **Day 7 or later:** run `clear_mfa.ts --clear <address>`. It refuses before seven days have passed. It removes
    every factor and recovery code, signs out every device and emails the address that two-step sign-in is off. Tell
    the person to sign in with the password and set up two-step sign-in again, and to keep the new recovery codes.

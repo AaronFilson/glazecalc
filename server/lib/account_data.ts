@@ -16,6 +16,7 @@ import Material from '../models/material.ts';
 import Note from '../models/note.ts';
 import OAuthLogin from '../models/oauth_login.ts';
 import EmailToken from '../models/email_token.ts';
+import Idempotency from '../models/idempotency.ts';
 import PasswordReset from '../models/password_reset.ts';
 import PendingChange from '../models/pending_change.ts';
 import PendingSignIn from '../models/pending_sign_in.ts';
@@ -139,7 +140,10 @@ const deleteRecords = async (ids: string[]): Promise<number> => {
     // Provider sign-ins under way; the linked providers themselves are in the User document.
     OAuthLogin.deleteMany({ $or: [{ userId: { $in: ids } }, { linkUserId: { $in: ids } }] }),
     // Personal access tokens and OAuth grants.
-    AccessToken.deleteMany({ userId: { $in: ids } })
+    AccessToken.deleteMany({ userId: { $in: ids } }),
+    // The answers kept for the offline outbox's repeated writes (models/idempotency.ts), which may hold a
+    // record's content: they would otherwise stay up to 7 days after the account.
+    Idempotency.deleteMany({ ownedBy: { $in: ids } })
   ]);
   return results.reduce((count, result) => count + result.deletedCount, 0);
 };

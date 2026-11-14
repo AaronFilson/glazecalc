@@ -3,13 +3,18 @@
   "unknown-oxide": "Unknown oxide {oxide} in material {material}",
   "invalid-oxide-amount": "Invalid amount for {oxide} in material {material}",
   "loi-range": "LOI of {material} must be at least 0 and less than 100",
+  "invalid-loi": "LOI of {material} must be a number",
+  "invalid-molecular-weight": "Molecular weight of {material} must be a number",
   "no-oxides": "Material {material} has no oxides",
+  "unknown-percentmole": "Material {material} must give its oxides in percent or in moles",
   "no-name": "Material must have a name",
   "no-analysis": "Material {material} needs a formula or an analysis",
   "recipe-shape": "Recipe must be an array of '{ material, amount }' or a map of amounts",
   "invalid-amount": "Invalid amount for material {material}",
   "missing-material": "Recipe line is missing a material",
   "unknown-material": "Unknown material {material}",
+  "blank-name": "The name {name} of material {material} has no letters or digits to find it by",
+  "duplicate-name": "Materials {other} and {material} both go by the name {name}",
   "no-flux": "Recipe contains no flux oxides, so the UMF is undefined",
   "no-target": "The target has no oxides to aim for",
   "no-materials": "There are no materials to work out",
@@ -19,5 +24,8 @@
   "bad-formula": "Could not parse formula {formula}",
   "analysis-total": "Analysis of {material} totals {total}% including LOI; expected about 100%.",
   "stored-equivalent": "The stored equivalent weight of {material} does not match its formula and LOI; the formula and LOI were used instead.",
-  "trace-flux": "Recipe contains only traces of flux oxides, so the UMF is not meaningful."
+  "trace-flux": "Recipe contains only traces of flux oxides, so the UMF is not meaningful.",
+  "colorant-flux": "Colorant oxides ({oxides}) are most of the flux, so the unity formula is scaled to them; compare it only with other colorant-rich glazes, not with limits for ordinary glazes.",
+  "silica-high": "The unity formula has {silica} SiO₂, unusually high for a glaze: the recipe is for a very high firing, has too little flux, or is not a glaze.",
+  "loi-molecular-weight": "The LOI of {material} ({loi}%) does not match its molecular weight, which gives {implied}%; the LOI was used."
 }

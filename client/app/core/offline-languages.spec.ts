@@ -1,5 +1,6 @@
 import { HttpClient, HttpErrorResponse, provideHttpClient, withInterceptors } from '@angular/common/http';
 import { provideHttpClientTesting } from '@angular/common/http/testing';
+import { PLATFORM_ID } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { firstValueFrom } from 'rxjs';
 import { filesFor } from '../../../lib/offline-files';
@@ -148,5 +149,26 @@ describe('the files kept for offline use', () => {
         expect((error as HttpErrorResponse).status, address).toBe(init.status);
       }
     });
+  });
+
+  it('reads nothing from a cache the browser will not open', async () => {
+    vi.stubGlobal('caches', {
+      open: () => Promise.reject(new DOMException('The operation is insecure.', 'SecurityError'))
+    });
+    expect(await TestBed.inject(OfflineLanguages).read('/i18n/en.json')).toBeNull();
+  });
+
+  it('keeps the files again when the note of the last language kept cannot be read', async () => {
+    localStorage.setItem('offlineLanguage', '{not json');
+    await TestBed.inject(OfflineLanguages).keep('en');
+    expect(fetched.length).toBeGreaterThan(0);
+  });
+
+  it('keeps nothing during the prerender', async () => {
+    TestBed.overrideProvider(PLATFORM_ID, { useValue: 'server' });
+    const languages = TestBed.inject(OfflineLanguages);
+    expect(languages.isBrowser()).toBe(false);
+    await languages.keep('fr');
+    expect(fetched).toEqual([]);
   });
 });

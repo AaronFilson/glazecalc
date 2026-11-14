@@ -1,0 +1,82 @@
+name: CodeQL
+
+# GitHub's code scanning, run from a workflow instead of default setup, because
+# default setup takes no configuration file: it would scan the tests and the
+# 57 languages' messages too, on every change. Here the scan follows this
+# project's settings (.github/codeql/codeql-config.yml says what it leaves out,
+# and why), runs only when code or workflows change, on pull requests to master
+# and pushes to it, and weekly, since CodeQL's own queries change. Default setup
+# must stay off (Settings → Code security), or the upload is refused.
+on:
+  push:
+    branches: [master]
+    # Code and workflows only: a change to messages, guides, data or docs
+    # alone starts no scan. The tests are left out here as in the config.
+    paths:
+      - '**.ts'
+      - '**.js'
+      - '**.mjs'
+      - '**.cjs'
+      - '**.html'
+      - '!server/test/**'
+      - '!e2e/**'
+      - '!**.spec.ts'
+      - '!deploy/aws/mail-forwarder/test/**'
+      - '.github/workflows/**'
+      - '.github/codeql/**'
+  pull_request:
+    branches: [master]
+    paths:
+      - '**.ts'
+      - '**.js'
+      - '**.mjs'
+      - '**.cjs'
+      - '**.html'
+      - '!server/test/**'
+      - '!e2e/**'
+      - '!**.spec.ts'
+      - '!deploy/aws/mail-forwarder/test/**'
+      - '.github/workflows/**'
+      - '.github/codeql/**'
+  schedule:
+    - cron: '41 5 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# A newer push to a pull request replaces its scan in progress; master's run to the end.
+concurrency:
+  group: codeql-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  analyze:
+    name: CodeQL (${{ matrix.language }})
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      # To upload the results to code scanning.
+      security-events: write
+    strategy:
+      fail-fast: false
+      matrix:
+        # The workflows are scanned too: CodeQL looks there for injection from
+        # untrusted input and for untrusted code checked out in privileged runs.
+        language: [javascript-typescript, actions]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: github/codeql-action/init@33d7b85da1a04171e211befe2c739303b9a4c066 # v4.39.3
+        with:
+          languages: ${{ matrix.language }}
+          # Nothing to compile: CodeQL reads the TypeScript and JavaScript as they are.
+          build-mode: none
+          config-file: ./.github/codeql/codeql-config.yml
+
+      - uses: github/codeql-action/analyze@33d7b85da1a04171e211befe2c739303b9a4c066 # v4.39.3
+        with:
+          category: /language:${{ matrix.language }}

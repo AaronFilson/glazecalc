@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Il-password tiegħek ta’ Glazecalc inbidlet",
+    "text": "Il-password tal-kont {account} ta’ Glazecalc għadha kif inbidlet, u kull apparat li kien dieħel fil-kont ħareġ minnu.\n\nJekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Jekk le, irrisettja l-password tiegħek minnufih hawn: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "Intalab indirizz elettroniku ġdid għall-kont tiegħek ta’ Glazecalc",
+    "text": "Għadha kif intalbet bidla tal-indirizz elettroniku fuq il-kont {account} ta’ Glazecalc. Intbagħat link lill-indirizz il-ġdid, u l-bidla ssir biss meta jinfetaħ dak il-link.\n\nJekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Jekk le, xi ħadd jista’ jkun jaf il-password tiegħek: irrisettjaha minnufih hawn: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Ikkonferma l-indirizz elettroniku l-ġdid tiegħek għal Glazecalc",
+    "text": "Xi ħadd (nittamaw li kont int) talab li l-indirizz {account} jintuża għal kont ta’ Glazecalc.\n\nBiex issir il-bidla, iftaħ dan il-link fi żmien {hours} siegħa:\n\n{link}\n\nIl-link jaħdem darba biss, u kull apparat li kien dieħel fil-kont se joħroġ minnu. Jekk ma talabtx dan, injora dan il-messaġġ; ma jinbidel xejn.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "qatt: il-bidliet mill-apps u mit-tokens tal-aċċess isiru minnufih",
+    "removals": "biss qabel tneħħija: meta rekord jitressaq lejn il-barmil, jew meta materjal jitneħħa mill-materjali li għandek. Bidliet oħra mill-apps u mit-tokens tal-aċċess isiru minnufih"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Glazecalc issa jistaqsi inqas qabel ma l-apps jibdlu r-rekords tiegħek",
+    "text": "Il-kont {account} ta’ Glazecalc għadu kif ġie ssettjat biex jitlob l-approvazzjoni hekk: {choice}.\n\nJekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Tista’ tara u tibdel dan fuq Apps konnessi hawn: {page}\n\nJekk le, erġa’ ssettjah kif kien hemm, irrevoka kwalunkwe app jew token li ma tagħrafx, u rrisettja l-password tiegħek minnufih hawn: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "Ġiet konnessa app mal-kont tiegħek ta’ Glazecalc",
+    "opening": "Ġiet konnessa app mal-kont {account} ta’ Glazecalc fil-{date} fil-{time} (UTC).\n\n",
+    "named": "L-app: “{name}”\n",
+    "checked": "L-indirizz tagħha, iċċekkjat minn Glazecalc: {host}\n",
+    "selfDescribed": "Irreġistrat lilha nfisha, għalhekk isimha huwa biss dak li tgħid hi dwarha nfisha.\n",
+    "answerAt": "Tirċievi t-tweġiba f’: {host}\n",
+    "loopback": "Tirċievi t-tweġiba fuq il-kompjuter li minnu ġiet konnessa ({host}).\n",
+    "read": "\nTista’ taqra r-riċetti, il-pitazz, il-materjali, il-materjali li għandek u s-settings issejvjati fil-kont. Ma tista’ tibdel xejn.\n\n",
+    "write": "\nTista’ taqra r-riċetti, il-pitazz, il-materjali, il-materjali li għandek u s-settings issejvjati fil-kont, u għal {days} jum tista’ wkoll tibdilhom: toħloq u tibdel rekords, u tressaqhom lejn il-barmil. Kull bidla żżomm verżjoni tar-rekord kif kien, biex tkun tista’ terġa’ lura minnha fuq is-sit web.\n\n",
+    "closing": "Jekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Tista’ tara x’tagħmel u tirrevokaha hawn: {page}\n\nJekk le, irrevokaha hemm u rrisettja l-password tiegħek minnufih hawn: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Il-kont tiegħek ta’ Glazecalc tħassar",
+    "text": "Il-kont {account} ta’ Glazecalc tħassar, flimkien ma’ kulma kien issejvjat fih: riċetti, materjali, reġistri tal-ħami, noti u settings. Ma tistax terġa’ lura minn dan.\n\nKopji fil-backups tas-sit jitħassru hekk kif jiskadu l-backups, fi żmien {days} jum.\n\nTista’ toħloq kont ġdid meta trid.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "app tal-awtentikazzjoni",
+    "passkey": "il-passkey “{name}”"
+  },
+  "MFA_ADDED": {
+    "subject": "Żdied pass tad-dħul mal-kont tiegħek ta’ Glazecalc",
+    "text": "Dan għadu kif żdied mal-kont {account} ta’ Glazecalc bħala t-tieni pass għad-dħul: {method}.\n\nJekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Żomm il-kodiċijiet ta’ rkupru tiegħek f’post sigur. Jekk le, xi ħadd jista’ jkun jaf il-password tiegħek: irrisettjaha minnufih hawn: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "Id-dħul f’żewġ passi fuq il-kont tiegħek ta’ Glazecalc se jintefa",
+    "text": "Xi ħadd talab li jintefa d-dħul f’żewġ passi fuq il-kont {account} ta’ Glazecalc, għax intilfu kull app tal-awtentikazzjoni, passkey u kodiċi ta’ rkupru tiegħu.\n\nId-dħul f’żewġ passi se jintefa f’din id-data: {date}, sakemm ma tiktibx lil privacy@glazecalcapp.com qabel. Wara dan, wieħed ikun jista’ jidħol fil-kont bil-password biss.\n\nJekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Jekk le, ikteb lil privacy@glazecalcapp.com issa, u rrisettja l-password tiegħek minnufih hawn: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "Id-dħul f’żewġ passi ntefa fuq il-kont tiegħek ta’ Glazecalc",
+    "text": "Id-dħul f’żewġ passi għadu kif intefa fuq il-kont {account} ta’ Glazecalc: kull app tal-awtentikazzjoni, passkey u kodiċi ta’ rkupru tneħħew, u kull apparat li kien dieħel fil-kont ħareġ minnu. Issa biex tidħol hemm bżonn il-password biss.\n\nTista’ terġa’ tixgħel id-dħul f’żewġ passi fil-paġna tal-kont tiegħek. Jekk ma talabtx dan, irrisettja l-password tiegħek minnufih hawn: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "Tneħħa pass tad-dħul mill-kont tiegħek ta’ Glazecalc",
+    "text": "Dan għadu kif tneħħa mill-kont {account} ta’ Glazecalc bħala t-tieni pass għad-dħul: {method}. Jekk kien l-aħħar wieħed, issa biex tidħol hemm bżonn il-password biss.\n\nJekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Jekk le, irrisettja l-password tiegħek minnufih hawn: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "Ġie miżjud mod ġdid ta’ dħul mal-kont tiegħek ta’ Glazecalc",
+    "text": "Issa tista’ tidħol fil-kont {account} ta’ Glazecalc b’{provider}.\n\nJekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Jekk le, neħħi l-għaqda fil-paġna tal-kont tiegħek hawn: {page} u rrisettja l-password tiegħek minnufih hawn: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "Tneħħa mod ta’ dħul mill-kont tiegħek ta’ Glazecalc",
+    "text": "L-għaqda ma’ {provider} tneħħiet mill-kont {account} ta’ Glazecalc, u {provider} ma jistax jintuża aktar biex tidħol fih.\n\nJekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Jekk le, jista’ jkun li xi ħadd huwa dieħel fil-kont tiegħek: irrisettja l-password tiegħek minnufih hawn: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Kodiċijiet ta’ rkupru ġodda għall-kont tiegħek ta’ Glazecalc",
+    "text": "Għadhom kif inħolqu kodiċijiet ta’ rkupru ġodda għall-kont {account} ta’ Glazecalc. Il-kodiċijiet il-qodma ma jaħdmux aktar.\n\nJekk kont int, żomm il-kodiċijiet il-ġodda f’post sigur. Jekk le, irrisettja l-password tiegħek minnufih hawn: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "Intuża kodiċi ta’ rkupru fuq il-kont tiegħek ta’ Glazecalc",
+    "text": "Wieħed mill-kodiċijiet ta’ rkupru tal-kont {account} ta’ Glazecalc għadu kif intuża, għalhekk ma jaħdimx aktar. Kodiċijiet li fadal mhux użati: {left}. Tista’ toħloq kodiċijiet ġodda fil-paġna tal-kont tiegħek: {page}\n\nJekk ma kontx int, xi ħadd jista’ jkollu l-password u l-kodiċijiet tiegħek: irrisettja l-password tiegħek minnufih hawn: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Irrisettja l-password tiegħek ta’ Glazecalc",
+    "text": "Xi ħadd (nittamaw li kont int) talab li tiġi rrisettjata l-password tal-kont {account} ta’ Glazecalc.\n\nBiex tagħżel password ġdida, iftaħ dan il-link fi żmien {minutes} min:\n\n{link}\n\nIl-link jaħdem darba biss. Jekk ma talabtx dan, injora dan il-messaġġ; il-password tiegħek tibqa’ l-istess.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "Il-password tiegħek ta’ Glazecalc inbidlet",
+    "opening": "Il-password tal-kont {account} ta’ Glazecalc għadha kif ġiet irrisettjata, u kull apparat li kien dieħel ħareġ.\n\n",
+    "stopped": "Fil-każ li xi ħadd ieħor kellu l-password il-qadima, l-irrisettjar waqqaf ukoll dawn:\n\n",
+    "tokens": "- It-tokens tal-aċċess u l-apps konnessi li setgħu jaslu għax-xogħol issejvjat tiegħek ({count}). Jekk għad għandek bżonn wieħed, oħloq token ġdid fil-paġna tal-kont tiegħek hawn: {page}\n",
+    "providers": "- Id-dħul b’{providers}, li tista’ terġa’ tgħaqqad fil-paġna tal-kont tiegħek hawn: {page}\n",
+    "shareLinks": "- Il-links li kont għamilt biex taqsam riċetti. Tista’ toħloq oħrajn minn kull riċetta.\n",
+    "closing": "\nJekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Jekk le, irrisettja l-password tiegħek minnufih hawn: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Xi ħadd daħħal il-password tiegħek ta’ Glazecalc iżda ma lestiex id-dħul",
+    "text": "Xi ħadd daħħal il-password it-tajba tal-kont {account} ta’ Glazecalc, iżda ma lestiex it-tieni pass tad-dħul. It-tieni pass tiegħek ma ħalliex id-dħul jitlesta.\n\nJekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Jekk le, xi ħadd jaf il-password tiegħek: ibdilha minnufih. Tista’ tirrisettjaha hawn: {forgot}\n\nWara 10 kodiċijiet ħżiena minn app tal-awtentikazzjoni, il-kodiċijiet jiġu rrifjutati għal siegħa; wara 10 oħra, għal jum; u mbagħad għal ġimgħa kull darba. Passkey jew kodiċi ta’ rkupru xorta jaħdmu waqt li l-kodiċijiet qed jiġu rrifjutati. Jekk tirrisettja l-password tiegħek bil-posta elettronika, dan jintemm: id-dħul mhux lest tagħhom jintemm, il-password li kellhom ma tibqax tgħodd, u l-kodiċijiet jerġgħu jaħdmu.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Token tal-aċċess għall-kont tiegħek ta’ Glazecalc dalwaqt jiskadi",
+    "text": "It-token tal-aċċess bl-isem “{name}” fuq il-kont {account} ta’ Glazecalc jieqaf jaħdem f’din id-data: {date}.\n\nJekk għadek tużah, oħloq token ġdid qabel dak iż-żmien hawn: {page} u agħtih lill-assistent jew lill-iscript tiegħek minflok il-qadim. Jekk m’għadekx tużah, m’hemm xejn x’tagħmel.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Token ġdid tal-aċċess għall-kont tiegħek ta’ Glazecalc",
+    "text": "Token tal-aċċess bl-isem “{name}” għadu kif inħoloq għall-kont {account} ta’ Glazecalc. Jista’ jaqra r-riċetti, il-materjali, in-noti u r-reġistri tal-ħami ssejvjati fil-kont sa din id-data: {date}.\n\nJekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Tista’ tara u tirrevoka t-tokens tiegħek hawn: {page}\n\nJekk le, irrevokah hemm u rrisettja l-password tiegħek minnufih hawn: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Token tal-aċċess ġdid li jista’ jibdel ir-rekords tiegħek ta’ Glazecalc",
+    "text": "Token tal-aċċess bl-isem “{name}” għadu kif inħoloq għall-kont {account} ta’ Glazecalc. Jista’ jaqra u jibdel ir-riċetti, il-materjali, in-noti u r-reġistri tal-ħami ssejvjati fil-kont, u jgħaddihom għall-barmil, sa din id-data: {date}. Kull bidla li jagħmel iżżomm ir-rekord kif kien, għalhekk tkun tista’ terġa’ lura minnha fuq il-websajt.\n\nJekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Tista’ tara u tirrevoka t-tokens tiegħek hawn: {page}\n\nJekk le, irrevokah hemm u rrisettja l-password tiegħek minnufih hawn: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Ikkonferma l-indirizz elettroniku tiegħek għal Glazecalc",
+    "text": "Xi ħadd (nittamaw li kont int) għamel kont ta’ Glazecalc bl-indirizz {account}.\n\nBiex tikkonferma li dan l-indirizz huwa tiegħek, iftaħ dan il-link fi żmien {hours} siegħa:\n\n{link}\n\nIl-link jaħdem darba biss. Jekk ma għamiltx kont, injora dan il-messaġġ; ma jintbagħtlek xejn aktar sakemm ma titlobx int.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

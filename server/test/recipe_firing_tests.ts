@@ -10,6 +10,8 @@ import { api, expect, makeUser, sessionToken } from './support/app.ts';
 
 // A recipe's firing block (docs/adr/0021-recipe-firing.md): the cone as stated,
 // in order, its range and tested cones, its bands, and reading it from a paste.
+const { min: FIRING_LIMITS_MIN, max: FIRING_LIMITS_MAX } = firing.FIRING_LIMITS.celsius;
+
 describe('recipe firing (lib/cones/firing.js)', () => {
   it('puts Orton cones in true order: 022 … 01 below 1 … 42, 06 far below 6, half cones between', () => {
     const sorted = ['6', '06', '10', '022', '01', '1', '5.5', '42', '014'].sort((a, b) =>
@@ -132,9 +134,10 @@ describe('recipe firing (lib/cones/firing.js)', () => {
     expect(firing.approxCelsius('orton', '10')).to.eql({ celsius: 1305, basis: 'orton-150' });
     expect(firing.approxCelsius('orton', '14')).to.eql({ celsius: 1366, basis: 'orton-150' });
     expect(firing.approxCelsius('orton', '15')).to.eql({ celsius: 1431, basis: 'orton-150' });
-    // A half cone halfway between its neighbours; 15½ has no upper neighbour with a figure.
-    expect(firing.approxCelsius('orton', '13.5')).to.eql({ celsius: 1356, basis: 'orton-150' });
-    expect(firing.approxCelsius('orton', '14.5')).to.eql({ celsius: 1399, basis: 'orton-150' });
+    // A half cone halfway between its neighbours, and saying so: the chart has no half cones. 15½ has no upper
+    // neighbour with a figure.
+    expect(firing.approxCelsius('orton', '13.5')).to.eql({ celsius: 1356, basis: 'orton-150-halfway' });
+    expect(firing.approxCelsius('orton', '14.5')).to.eql({ celsius: 1399, basis: 'orton-150-halfway' });
     for (const cone of ['15.5', '16', '17', '21', '31.5', '42'])
       expect(firing.approxCelsius('orton', cone), cone).to.equal(null);
     // In order, so no range is shown backwards: each figure at least the one before (011 and 010 are both 894 °C).
@@ -178,6 +181,35 @@ describe('recipe firing (lib/cones/firing.js)', () => {
     expect(firing.readFiring('^14-16')).to.include({ scale: 'orton', low: '14', high: '16' });
   });
 
+  it('takes cone 05½, which Orton makes: offered, in order, checked, converted and kept', () => {
+    expect(firing.coneChoices('orton').find((group) => group.group === 'half')!.cones[0]).to.equal('05.5');
+    expect(firing.isCone('orton', '05.5')).to.equal(true);
+    for (const cone of ['06.5', '022.5', '01.5', '0.5']) expect(firing.isCone('orton', cone), cone).to.equal(false);
+    const all = firing.coneChoices('orton').flatMap((group) => group.cones);
+    const sorted = [...all].sort((a, b) => firing.compareCones('orton', a, b));
+    expect(sorted.slice(sorted.indexOf('06'), sorted.indexOf('04') + 1)).to.eql(['06', '05.5', '05', '04']);
+    expect(firing.coneLabel('05.5')).to.equal('05½');
+    // Orton's own figure for it, from its 2016 chart for large cones at 150 °C an hour (the older chart has no half
+    // cones), and said so; the same as halfway between 06 (999 °C) and 05 (1046 °C) on the older chart.
+    expect(firing.approxCelsius('orton', '05.5')).to.eql({ celsius: 1023, basis: 'orton-2016-150' });
+    const published = cones.ORTON.published.cones.find((c: { cone: string }) => c.cone === '05.5')!;
+    expect(published.large).to.deep.include({ 150: 1023 });
+    // Every other half cone halfway between its neighbours on the older chart, and said so.
+    expect(firing.approxCelsius('orton', '5.5')).to.eql({ celsius: 1209, basis: 'orton-150-halfway' });
+    expect(firing.coneBand('orton', '05.5')).to.equal('low');
+    // A range through it, its ticks, and what the server keeps.
+    expect(firing.conesBetween('orton', '06', '05.5')).to.eql(['06', '05.5']);
+    expect(firing.conesBetween('orton', '05.5', '04')).to.eql(['05.5', '05', '04']);
+    expect(firing.conesBetween('orton', '06', '04')).to.eql(['06', '05', '04']);
+    expect(firing.firingProblem({ scale: 'orton', low: '05.5', high: '04', tested: ['05.5'] })).to.equal(null);
+    expect(firing.firingProblem({ scale: 'orton', low: '05', high: '05.5' })).to.equal('order');
+    expect(results.isAnyCone('05.5')).to.equal(true);
+    expect(firing.inRange({ scale: 'orton', low: '06', high: '05' }, 'orton', '05.5')).to.equal(true);
+    expect(firing.matchesCone({ scale: 'temperature', low: '1020' }, 'orton', '05.5')).to.equal(true);
+    expect(firing.conesFromLog({ fieldsIncluded: ['Cone'], rows: [['05½'], ['06']] }, 'orton')).to.eql(['06', '05.5']);
+    expect(firing.glazyConeCell({ scale: 'orton', low: '05.5' })).to.equal('Δ05.5');
+  });
+
   it('keeps its band edges with the limit sets: 1150, 1250 and 1320 °C', () => {
     expect(recipeLib.FIRING.topFrom).to.equal(1320);
     const edges = recipeLib.HESSELBERTH_ROY_LIMITS.bands.map((b) => b.belowC);
@@ -187,14 +219,27 @@ describe('recipe firing (lib/cones/firing.js)', () => {
     expect(firing.approxCelsius('orton', '12')!.celsius).to.be.at.least(1320);
   });
 
+  it('draws its band edges where lib/recipe/limits.js does: every temperature from 500 to 1600 °C in the same band', () => {
+    // The edges are written in both (LOW_BELOW, MID_BELOW and HIGH_BELOW here; FIRING and the sets' bands there).
+    for (let celsius = FIRING_LIMITS_MIN; celsius <= FIRING_LIMITS_MAX; celsius++) {
+      const band = firing.coneBand('temperature', String(celsius))!;
+      expect(band, `${celsius} °C`).to.equal(recipeLib.bandOf(recipeLib.HESSELBERTH_ROY_LIMITS, celsius));
+      // The app's own set has no high band: it reads high fire as mid, as it reads the temperature.
+      expect(recipeLib.bandIn(recipeLib.GLAZECALC_LIMITS, band), `${celsius} °C, Glazecalc`).to.equal(
+        recipeLib.bandOf(recipeLib.GLAZECALC_LIMITS, celsius)
+      );
+    }
+  });
+
   it('matches SK and Orton by Kyoto’s same-kiln columns (100 °C an hour), not Orton’s chart at another rate', () => {
     // Kyoto SK 7 … 14: 1183 1198 1211 1232 1253 1290 1311 1331; its Orton 4 … 12: 1179 1207 1211 1232 1252 1271 1290 1301 1324.
     const sk = { 7: '4', 8: '5', 9: '6', 10: '7', 11: '8', 12: '10', 13: '11', 14: '12' };
     for (const [from, to] of Object.entries(sk)) {
       expect(firing.approxCone('sk', from, 'orton'), `SK ${from}`).to.eql({ cone: to, basis: 'kyoto' });
     }
-    // The other way: the SK cone nearest within 15 °C; Orton 4 is SK 7 (not 8), Orton 6 is SK 9 (not 10).
-    const orton = { 4: '7', 5: '9', 6: '9', 7: '10', 8: '11', 10: '12', 11: '13', 12: '14' };
+    // The other way, the same pairs: Orton 4 is SK 7 (not 8), Orton 6 is SK 9 (not 10), and Orton 5 is SK 8, though
+    // SK 9 is nearer it (4 °C, against 9), since SK 9 is Orton 6's (0 °C).
+    const orton = { 4: '7', 5: '8', 6: '9', 7: '10', 8: '11', 10: '12', 11: '13', 12: '14' };
     for (const [from, to] of Object.entries(orton)) {
       expect(firing.approxCone('orton', from, 'sk'), `Orton ${from}`).to.eql({ cone: to, basis: 'kyoto' });
     }
@@ -215,6 +260,32 @@ describe('recipe firing (lib/cones/firing.js)', () => {
     const ortonBlock = { scale: 'orton' as const, low: '4', high: '6' };
     expect(firing.matchesCone(ortonBlock, 'sk', '8')).to.equal(true);
     expect(firing.matchesCone(ortonBlock, 'sk', '10')).to.equal(false);
+  });
+
+  it('matches Orton and SK one to one, so a cone taken across and back is the cone it was', () => {
+    // Orton 5 was SK 9, and SK 9 Orton 6: the round trip came back a cone hotter.
+    const all = (scale: 'orton' | 'sk') => firing.coneChoices(scale).flatMap((group) => group.cones);
+    let across = 0;
+    for (const [from, to] of [
+      ['orton', 'sk'],
+      ['sk', 'orton']
+    ] as const) {
+      for (const cone of all(from)) {
+        const other = firing.approxCone(from, cone, to);
+        if (!other) continue;
+        across++;
+        expect(firing.approxCone(to, other.cone, from)?.cone, `${from} ${cone}`).to.equal(cone);
+      }
+    }
+    expect(across).to.equal(16);
+    // A recipe at one cone matches the other's equivalent both ways round.
+    for (const orton of all('orton')) {
+      for (const sk of all('sk')) {
+        expect(firing.matchesCone({ scale: 'orton', low: orton }, 'sk', sk), `Orton ${orton}, SK ${sk}`).to.equal(
+          firing.matchesCone({ scale: 'sk', low: sk }, 'orton', orton)
+        );
+      }
+    }
   });
 
   it('shows half cones as ½', () => {
@@ -369,6 +440,224 @@ describe('recipe firing (lib/cones/firing.js)', () => {
       const log = { fieldsIncluded: ['Cones Top'], rows: [['4,5'], ['6,5']] };
       expect(firing.conesFromLog(log, 'orton')).to.eql(['4', '5', '6']);
       expect(firing.conesFromLog(log, 'orton', { decimalComma: true })).to.eql(['4.5', '6.5']);
+    });
+
+    it('reads long runs of spaces in linear time, and the whole of a long note', () => {
+      const timed = (run: () => unknown): number => {
+        const start = process.hrtime.bigint();
+        run();
+        return Number(process.hrtime.bigint() - start) / 1e6;
+      };
+      const spaces = ' '.repeat(49900);
+      // Each took seconds before (quadratic backtracking in the SK, SK list and temperature patterns).
+      for (const text of ['sk' + spaces + 'x', 'sk 8' + spaces + 'x', '1240 deg' + spaces + 'x']) {
+        expect(
+          timed(() => firing.readFiring(text)),
+          text.slice(0, 8)
+        ).to.be.below(250);
+        expect(
+          timed(() => firing.firingFromLines(['Silica 20', text])),
+          text.slice(0, 8)
+        ).to.be.below(250);
+        const note = 'Silica 20\nWhiting 30\n' + text;
+        expect(
+          timed(() => paste.parsePaste(note)),
+          text.slice(0, 8)
+        ).to.be.below(250);
+      }
+      // The same firings as before on ordinary text, spaced out or not.
+      expect(firing.readFiring('SK  -  8')).to.include({ scale: 'sk', low: '8' });
+      expect(firing.readFiring('sk- 8, sk -10')).to.include({ scale: 'sk', low: '8', high: '10' });
+      expect(firing.readFiring('1240 degrees  C')).to.include({ scale: 'temperature', low: '1240' });
+      expect(firing.readFiring('1240 deg C')).to.include({ scale: 'temperature', low: '1240' });
+      // A long note's firing is read wherever it is: its start, or past the 300th character, where round 1 stopped.
+      expect(firing.readFiring('Cone 6 ox, ' + 'a'.repeat(400))).to.include({ scale: 'orton', low: '6' });
+      const note = 'A soft satin that breaks to amber over texture. '.repeat(8);
+      expect(firing.readFiring(note + 'Fire to cone 6 in oxidation.')).to.deep.include({
+        scale: 'orton',
+        low: '6',
+        atmospheres: ['oxidation']
+      });
+      expect(firing.firingFromLines([note + 'Fire to cone 6.'])).to.eql({ scale: 'orton', low: '6' });
+      expect(firing.readFiring(note + 'I apply it thin over cone 04 bisque and fire it to cone 6.')).to.include({
+        low: '6'
+      });
+    });
+
+    it('reads "Cone 6.0", °F with a thousands separator, º typed for °, and a range with ° at both ends', () => {
+      expect(firing.readFiring('Cone 6.0')).to.include({ scale: 'orton', low: '6' });
+      expect(firing.readFiring('^6.0')).to.include({ scale: 'orton', low: '6' });
+      expect(firing.readFiring('cone 10.0 reduction')).to.deep.include({
+        scale: 'orton',
+        low: '10',
+        atmospheres: ['reduction']
+      });
+      expect(firing.readFiring('Cone 5.0-6.0')).to.include({ low: '5', high: '6' });
+      expect(firing.readFiring('Cone 6.05')?.low).to.equal(undefined);
+      // 1,945 °F is 1063 °C, never 945 °F (507 °C).
+      for (const [text, low] of [
+        ['Fire to 1,945°F', '1063'],
+        ['Fire to 1,940 °F', '1060'],
+        ['Fire to 2,232°F', '1222'],
+        ['Brennen bei 1.240°C', '1240']
+      ] as const) {
+        expect(firing.readFiring(text), text).to.include({ scale: 'temperature', low });
+      }
+      expect(firing.readFiring('1,945-2,000°F')).to.include({ low: '1063', high: '1093' });
+      // The masculine ordinal, typed for the degree sign on Spanish and Portuguese keyboards.
+      expect(firing.readFiring('Cocción 1240ºC')).to.include({ scale: 'temperature', low: '1240' });
+      expect(firing.readFiring('1220º-1260ºC')).to.include({ low: '1220', high: '1260' });
+      // A degree sign at both ends and the unit at the end: the range, not its top.
+      expect(firing.readFiring('1220°-1260°C')).to.include({ low: '1220', high: '1260' });
+      expect(firing.readFiring('2228°-2264°F')).to.include({ low: '1220', high: '1240' });
+    });
+
+    it('keeps a bisque firing’s atmosphere out of the glaze’s', () => {
+      for (const text of [
+        'Bisque cone 04 oxidation; glaze cone 10 reduction',
+        'Bisque in oxidation, glaze cone 10 reduction',
+        'Cone 04 bisque in oxidation, cone 10 reduction',
+        'Bisque: cone 04, ox. Glaze: cone 10 reduction'
+      ]) {
+        expect(firing.readFiring(text), text).to.deep.include({ low: '10', atmospheres: ['reduction'] });
+      }
+      // The glaze's own is read, and a bisque line's says nothing.
+      expect(firing.readFiring('Bisque to cone 04, glaze cone 6 in oxidation')).to.deep.include({
+        low: '6',
+        atmospheres: ['oxidation']
+      });
+      expect(firing.readFiring('Bisque in oxidation')).to.equal(null);
+      expect(firing.firingFromLines(['Bisque cone 04 in oxidation', 'Cone 10 reduction'])).to.eql({
+        scale: 'orton',
+        low: '10',
+        atmospheres: ['reduction']
+      });
+    });
+
+    it('reads a temperature range, cone 05½, and other scripts’ digits; never a half cone Orton does not make', () => {
+      // A range of temperatures is the range, never its top alone.
+      for (const text of ['Fired at 1220-1260°C', '1220 - 1260 °C', '1220°C-1260°C', '1220 to 1260 deg C']) {
+        expect(firing.readFiring(text), text).to.include({ scale: 'temperature', low: '1220', high: '1260' });
+      }
+      expect(firing.readFiring('2228-2264°F')).to.include({ scale: 'temperature', low: '1220', high: '1240' });
+      expect(firing.readFiring('Fired at 1240°C')).to.include({ scale: 'temperature', low: '1240' });
+      // Cone 05½ is Orton's, between 06 and 05, never read as 05; Orton makes no 06½, which is not read at all.
+      expect(firing.readFiring('Cone 05½')).to.include({ scale: 'orton', low: '05.5' });
+      expect(firing.readFiring('cone 05 1/2')).to.include({ scale: 'orton', low: '05.5' });
+      expect(firing.readFiring('cone 06-05½')).to.include({ low: '06', high: '05.5' });
+      expect(firing.readFiring('Cone 06½')?.low).to.equal(undefined);
+      expect(firing.readFiring('Cone 5½')).to.include({ low: '5.5' });
+      // Arabic-Indic and other digits.
+      expect(firing.readFiring('Δ٦')).to.include({ scale: 'orton', low: '6' });
+      expect(firing.readFiring('cone ٠٦')).to.include({ scale: 'orton', low: '06' });
+    });
+
+    it('reads the temperature or the range a line names first, so a cooling range is not the peak', () => {
+      // A range after the peak, to cool or to open the kiln, is not the firing.
+      for (const [text, low] of [
+        ['Fire to 1240°C, slow cool 1100-900°C', '1240'],
+        ['Fire to 2232°F, slow cool 1900-1500°F', '1222'],
+        ['Peak 1240°C; cool 1000-800°C at 50°C/h', '1240'],
+        ['1222°C (slow cool 1050–950°C)', '1222'],
+        ['Fire to 1240°C; open the kiln at 100-150°C', '1240'],
+        ['1240°C, hold 15 min, drop 1240-1100°C', '1240']
+      ] as const) {
+        expect(firing.readFiring(text), text).to.include({ scale: 'temperature', low }).and.not.have.property('high');
+      }
+      expect(firing.firingFromLines(['Fire to 1240°C, slow cool 1100-900°C'])).to.eql({
+        scale: 'temperature',
+        low: '1240'
+      });
+      // A range first is the firing; one that is no firing (below 500 °C) gives way to a temperature that is.
+      expect(firing.readFiring('1220-1260°C, slow cool to 900°C')).to.include({ low: '1220', high: '1260' });
+      expect(firing.readFiring('Open at 100-150°C, fired to 1240°C')).to.include({ scale: 'temperature', low: '1240' });
+      expect(firing.readFiring('400-1240°C'))
+        .to.include({ scale: 'temperature', low: '1240' })
+        .and.not.have.property('high');
+      expect(firing.readFiring('Open the kiln at 100-150°C')).to.equal(null);
+    });
+
+    it('reads "Fire to cone 6" as a firing, and a bisque firing as not the glaze’s', () => {
+      expect(firing.readFiring('Fire to cone 6')).to.eql({ scale: 'orton', low: '6', whole: true });
+      expect(firing.isFiringLine('Fire to cone 6')).to.equal(true);
+      for (const text of ['Glazed to cone 6', 'Bisqued to cone 04 then glazed to cone 6']) {
+        expect(firing.readFiring(text), text).to.eql({ scale: 'orton', low: '6', whole: true });
+      }
+      expect(firing.readFiring('Bisque to cone 04, glaze fire to cone 6')).to.eql({
+        scale: 'orton',
+        low: '6',
+        whole: true
+      });
+      expect(firing.isFiringLine('Bisque to cone 04')).to.equal(true);
+      expect(firing.readFiring('Bisque to cone 04')).to.equal(null);
+      expect(firing.firingFromLines(['Bisque to cone 04', 'Glaze fire to cone 6'])).to.eql({
+        scale: 'orton',
+        low: '6'
+      });
+      // The bisque cone before the word, or after it, and a temperature, in any order with the glaze's.
+      for (const text of [
+        'Cone 04 bisque, cone 6 glaze',
+        'Cone 04 bisque; cone 6 glaze',
+        'Glaze fire to cone 6 after a cone 04 bisque',
+        'Bisque at ^04, glaze ^6',
+        'Cone 6 (bisque cone 04)',
+        'bisque fired to 04, glazed at cone 6'
+      ]) {
+        expect(firing.readFiring(text), text).to.include({ scale: 'orton', low: '6' }).and.not.have.property('high');
+      }
+      expect(firing.readFiring('bisque 1000°C, glaze 1240°C')).to.include({ scale: 'temperature', low: '1240' });
+      expect(firing.readFiring('cone 04 bisque')).to.equal(null);
+      expect(firing.isFiringLine('cone 04 bisque')).to.equal(true);
+      const [recipe] = paste.parsePaste('Shino\nCuster 50\nFire to cone 6\nBisque to cone 04\nSilica 50');
+      expect(recipe!.lines.map((l) => l.name)).to.eql(['Custer', 'Silica']);
+      expect(recipe!.notes).to.eql(['Fire to cone 6', 'Bisque to cone 04']);
+    });
+
+    it('reads the glaze’s cone where a bisque cone follows its word, with : = @ ( or - between them', () => {
+      // The bisque's cone after its word: the cone before the word is the glaze's. It was taken for the bisque's.
+      for (const text of [
+        'Glaze: cone 6 Bisque: cone 04',
+        'Fire to cone 6 Bisque to cone 04',
+        'Glaze firing: cone 6 Bisque firing: cone 04',
+        'Cone 6 bisque cone 04',
+        'Glaze cone 6 bisque 04',
+        'Bisque: cone 04, Glaze: cone 6',
+        'Bisque - cone 04; glaze - cone 6',
+        'Bisque (cone 04), glaze cone 6',
+        'Bisque @ cone 04, glaze @ cone 6',
+        'Bisque firing: cone 04. Glaze firing: cone 6.',
+        'Bisque = ^04 / glaze = ^6',
+        'Bisque cone 06-04, glaze cone 6',
+        'Bisque ^06-^04; glaze ^6'
+      ]) {
+        expect(firing.readFiring(text), text).to.include({ scale: 'orton', low: '6' }).and.not.have.property('high');
+      }
+      expect(firing.readFiring('Bisque 1000-1040°C, glaze 1240°C'))
+        .to.include({ scale: 'temperature', low: '1240' })
+        .and.not.have.property('high');
+      // A bisque firing alone says nothing of the glaze's, and is still a firing line.
+      for (const text of ['Bisque: cone 04', 'Bisque = ^06-^04', 'Bisque (1000°C)', 'Bisque firing - 1000-1040°C']) {
+        expect(firing.readFiring(text), text).to.equal(null);
+        expect(firing.isFiringLine(text), text).to.equal(true);
+      }
+      expect(firing.firingFromLines(['Bisque: cone 04', 'Glaze: cone 6'])).to.eql({ scale: 'orton', low: '6' });
+      expect(firing.firingFromLines(['Bisque ^06-^04', 'Glaze ^6'])).to.eql({ scale: 'orton', low: '6' });
+    });
+
+    it('reads one cone as typed, for the assistants: bare or as paste-in writes it, never a range or another scale’s', () => {
+      for (const text of ['6', 'Cone 6', '^6', 'Δ6', 'C/6', 'c6', 'Δ٦', '６']) {
+        expect(firing.readCone(text), text).to.equal('6');
+      }
+      expect(firing.readCone('5½')).to.equal('5.5');
+      expect(firing.readCone('05 1/2')).to.equal('05.5');
+      expect(firing.readCone('06')).to.equal('06');
+      expect(firing.readCone('6', 'sk')).to.equal('6a');
+      expect(firing.readCone('SK 8', 'sk')).to.equal('8');
+      expect(firing.readCone('cone 6', 'sk')).to.equal('6a');
+      for (const text of ['SK 8', '6a', '^6-7', 'Δ6 ox', 'cone 4,5', '43', '', 'Bisque to cone 04']) {
+        expect(firing.readCone(text), text).to.equal(null);
+      }
+      expect(firing.readCone('^6', 'sk')).to.equal(null);
     });
 
     it('tells a clear firing line from a bare number or a weak word', () => {

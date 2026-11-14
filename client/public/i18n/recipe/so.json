@@ -50,7 +50,6 @@
     "firedTo": "Lagu gubay",
     "how": "Sidee",
     "rebuild": "Glaze-ka dib u dhis: hay silica-diisa iyo alumina-diisa, boron iyo flux kale oo rasaasta beddela",
-    "keepColour": "Midabka ku hay saldhig aan rasaas lahayn: frit-ka iyo kaolin, 85 ilaa 15, iyo midabeeyayaasha habka",
     "fritHeading": "Frit aan rasaas lahayn oo lagu dhiso, kan ugu fiican marka hore",
     "fritBoron": "({boron}% boron, B₂O₃)",
     "noFrit": "Frit aan rasaas lahayn oo lagu iibiyo gobolkaaga kuma jiro maktabadda.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Rasaasta lama beddeli karo: walax habka ku jirta ma laha falanqayn laga shaqeeyo.",
     "leadRebuiltCone": "Rasaasta waa la beddelay cone {cone} iyadoo saldhig ah {base}: silica-da iyo alumina-da habkii hore waa la hayay, boron iyo flux kale ayaa qabanaya shaqadii rasaasta.",
     "leadRebuilt": "Rasaasta waa la beddelay {firing} iyadoo saldhig ah {base}: silica-da iyo alumina-da habkii hore waa la hayay, boron iyo flux kale ayaa qabanaya shaqadii rasaasta.",
-    "leadColour": "Rasaasta waa la beddelay: midabeeyayaasha waxaa loo raray saldhig aan rasaas lahayn oo ah {base} iyo kaolin, 85 ilaa 15.",
     "leadGloss": "Si sax ah uma waafaqi doono ifidda, saafiganaanta ama midabka rasaasta: filo ifid ka yar, iyo suurtagal ah inuu saafinimada lumiyo (clouding) dhoobada cas dusheeda ama crazing (dillaac yaryar). Ku tijaabi batch yar dhoobadaada.",
     "leadSafety": "Rasaas la'aantu kaligeed glaze-ka kama dhigto mid ammaan u ah cuntada; taasi waxay ku xiran tahay qaaciddada oo dhan iyo gubidda.",
     "leadReplaced": "Rasaasta waa la beddelay.",
@@ -245,8 +243,7 @@
       "text": "Kuwani waxay saaran yihiin saldhigga dushiisa. Waxaa lagu kaydiyaa habka laakiin kama mid aha UMF-ta. Dooro waxa qadar walba ku qoran yahay:",
       "percent": "<b>% saldhigga</b>: boqolkiiba wadarta saldhigga, sida habab badan u bixiyaan: 2 macnaheedu waa 2% red iron oxide.",
       "parts": "<b>qaybo</b>: isla halbeegga walxaha, sida 1 qayb oo ku jirta saldhig ah 3 flint iyo 2 dolomite.",
-      "grams": "<b>garaam</b>: miisaan, isla batch-ka walxaha.",
-      "count": "Xisaabiyeyaasha qaar waxay midabeeyayaasha ku xisaabiyaan UMF-ta qaarna ma xisaabiyaan. Calaamadee <b>Ku xisaabi midabeeyayaasha iyo walxaha lagu daro</b>, ciwaanka UMF hoostiisa, si loogu xisaabiyo miisaankooda batch-ka, ama ka tag oo madhan si aad ula barbardhigto mid aan xisaabin. Doorashada waxaa lagu kaydiyaa habka."
+      "grams": "<b>garaam</b>: miisaan, isla batch-ka walxaha."
     },
     "scale": {
       "heading": "Beddel cabbirka markaad u baahato",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide} ma aha oksaydh Glazecalc yaqaan.",
     "together": "Potash (K₂O) iyo soda (Na₂O) kala bixi, ha isku darin KNaO ahaan.",
     "badAmount": "Qadarka {oxide} ma aha tiro 0 ama ka badan.",
-    "noFlux": "Bartilmaameedku wuxuu u baahan yahay ugu yaraan hal flux, sida CaO, K₂O ama Na₂O.",
     "noMaterials": "Ku dar ugu yaraan hal walax oo habka laga sameeyo.",
     "noMatch": "Walxahan midna ma laha oksaydhyada bartilmaameedka midkood."
   },

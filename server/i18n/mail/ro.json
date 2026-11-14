@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Parola dumneavoastră pentru Glazecalc a fost schimbată",
+    "text": "Parola contului Glazecalc {account} tocmai a fost schimbată, iar toate dispozitivele care erau conectate au fost deconectate.\n\nDacă ați fost dumneavoastră, nu mai trebuie să faceți nimic. Dacă nu, resetați-vă imediat parola la {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "A fost cerută o nouă adresă de e-mail pentru contul dumneavoastră Glazecalc",
+    "text": "Tocmai s-a cerut schimbarea adresei de e-mail pentru contul Glazecalc {account}. Un link a fost trimis la noua adresă, iar schimbarea se face numai când linkul este deschis.\n\nDacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Dacă nu, cineva ar putea cunoaște parola: resetați-o imediat la {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Confirmați noua adresă de e-mail pentru Glazecalc",
+    "text": "Cineva (sperăm că dumneavoastră) a cerut să folosească {account} ca adresă de e-mail a contului său Glazecalc.\n\nPentru a face schimbarea, deschideți acest link în următoarele {hours}:\n\n{link}\n\nLinkul funcționează o singură dată, iar toate dispozitivele conectate vor fi deconectate. Dacă nu ați cerut acest lucru, ignorați acest e-mail; nu se va schimba nimic.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "niciodată; modificările venite de la aplicații și tokenuri de acces se fac imediat",
+    "removals": "numai înainte de o eliminare (mutarea unei înregistrări în coșul de reciclare sau scoaterea unei materii prime din materiile prime în stoc); celelalte modificări venite de la aplicații și tokenuri de acces se fac imediat"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Glazecalc întreabă acum mai puțin înainte ca aplicațiile să vă modifice înregistrările",
+    "text": "Setarea contului Glazecalc {account} tocmai a fost schimbată. Aprobarea se cere acum: {choice}.\n\nDacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Puteți vedea și schimba setarea în Aplicații conectate, la {page}\n\nDacă nu, readuceți-o acolo la cum era, revocați orice aplicație sau token pe care nu îl cunoașteți și resetați imediat parola la {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "O aplicație a fost conectată la contul dumneavoastră Glazecalc",
+    "opening": "O aplicație a fost conectată la contul Glazecalc {account} pe {date}, la ora {time} (UTC).\n\n",
+    "named": "Aplicația: „{name}”\n",
+    "checked": "Adresa ei, verificată de Glazecalc: {host}\n",
+    "selfDescribed": "S-a înregistrat singură, așa că numele ei este doar ce spune ea despre sine.\n",
+    "answerAt": "Primește răspunsul la: {host}\n",
+    "loopback": "Primește răspunsul pe computerul de pe care a fost conectată ({host}).\n",
+    "read": "\nPoate citi rețetele, caietul, materiile prime, stocul și setările salvate în cont. Nu poate modifica nimic.\n\n",
+    "write": "\nPoate citi rețetele, caietul, materiile prime, stocul și setările salvate în cont și, timp de {days}, le poate și modifica: poate crea și modifica înregistrări și le poate muta în coșul de reciclare. Fiecare modificare păstrează o versiune a înregistrării așa cum era, deci o puteți anula pe site.\n\n",
+    "closing": "Dacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Puteți vedea ce face și o puteți revoca la {page}\n\nDacă nu, revocați-o acolo și resetați imediat parola la {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Contul dumneavoastră Glazecalc a fost șters",
+    "text": "Contul Glazecalc {account} a fost șters, împreună cu tot ce era salvat în el: rețete, materii prime, arderi, notițe și setări. Acțiunea nu poate fi anulată.\n\nCopiile din copiile de siguranță ale site-ului sunt șterse pe măsură ce acestea expiră, în cel mult {days}.\n\nPuteți crea un cont nou oricând.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "o aplicație de autentificare",
+    "passkey": "cheia de acces „{name}”"
+  },
+  "MFA_ADDED": {
+    "subject": "A fost adăugat un pas de conectare la contul dumneavoastră Glazecalc",
+    "text": "Acest al doilea pas pentru conectare tocmai a fost adăugat la contul Glazecalc {account}: {method}.\n\nDacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Păstrați codurile de recuperare într-un loc sigur. Dacă nu, cineva ar putea cunoaște parola: resetați-o imediat la {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "Conectarea în doi pași pentru contul dumneavoastră Glazecalc va fi dezactivată",
+    "text": "Cineva a cerut dezactivarea conectării în doi pași pentru contul Glazecalc {account}, deoarece toate aplicațiile de autentificare, cheile de acces și codurile de recuperare ale contului au fost pierdute.\n\nConectarea în doi pași va fi dezactivată la {date}, dacă nu scrieți la privacy@glazecalcapp.com înainte de această dată. După aceea, în cont se poate intra numai cu parola.\n\nDacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Dacă nu, scrieți acum la privacy@glazecalcapp.com și resetați-vă imediat parola la {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "Conectarea în doi pași a fost dezactivată pentru contul dumneavoastră Glazecalc",
+    "text": "Conectarea în doi pași tocmai a fost dezactivată pentru contul Glazecalc {account}: toate aplicațiile de autentificare, cheile de acces și codurile de recuperare au fost eliminate, iar toate dispozitivele conectate au fost deconectate. Conectarea necesită acum doar parola.\n\nPuteți activa din nou conectarea în doi pași pe pagina contului. Dacă nu ați cerut acest lucru, resetați-vă imediat parola la {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "A fost eliminat un pas de conectare din contul dumneavoastră Glazecalc",
+    "text": "Acest al doilea pas pentru conectare tocmai a fost eliminat din contul Glazecalc {account}: {method}. Dacă a fost ultimul, conectarea necesită acum doar parola.\n\nDacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Dacă nu, resetați-vă imediat parola la {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "A fost adăugat un nou mod de conectare la contul dumneavoastră Glazecalc",
+    "text": "Vă puteți conecta acum la contul Glazecalc {account} cu {provider}.\n\nDacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Dacă nu, dezasociați-l pe pagina contului, la {page}, și resetați imediat parola la {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "A fost eliminat un mod de conectare de la contul dumneavoastră Glazecalc",
+    "text": "{provider} a fost dezasociat de la contul Glazecalc {account} și nu mai poate fi folosit pentru conectarea la el.\n\nDacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Dacă nu, cineva ar putea fi conectat la contul dumneavoastră: resetați imediat parola la {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Coduri de recuperare noi pentru contul dumneavoastră Glazecalc",
+    "text": "Tocmai au fost create coduri de recuperare noi pentru contul Glazecalc {account}. Codurile vechi nu mai funcționează.\n\nDacă ați fost dumneavoastră, păstrați codurile noi într-un loc sigur. Dacă nu, resetați-vă imediat parola la {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "A fost folosit un cod de recuperare pentru contul dumneavoastră Glazecalc",
+    "text": "Unul dintre codurile de recuperare ale contului Glazecalc {account} tocmai a fost folosit, deci nu va mai funcționa. Coduri nefolosite rămase: {left}. Puteți crea coduri noi pe pagina contului: {page}\n\nDacă nu ați fost dumneavoastră, cineva ar putea avea parola și codurile: resetați-vă imediat parola la {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Resetarea parolei pentru Glazecalc",
+    "text": "Cineva (sperăm că dumneavoastră) a cerut resetarea parolei pentru contul Glazecalc {account}.\n\nPentru a alege o parolă nouă, deschideți acest link în următoarele {minutes} min:\n\n{link}\n\nLinkul funcționează o singură dată. Dacă nu ați cerut acest lucru, ignorați acest e-mail; parola rămâne aceeași.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "Parola dumneavoastră pentru Glazecalc a fost schimbată",
+    "opening": "Parola contului Glazecalc {account} tocmai a fost resetată, iar toate dispozitivele care erau conectate au fost deconectate.\n\n",
+    "stopped": "În cazul în care altcineva avea vechea parolă, resetarea a oprit și acestea:\n\n",
+    "tokens": "- Tokenurile de acces și aplicațiile conectate care puteau accesa lucrările dumneavoastră salvate ({count}). Dacă încă aveți nevoie de unul, creați un token nou pe pagina contului, la {page}\n",
+    "providers": "- Conectarea cu {providers}, pe care o puteți asocia din nou pe pagina contului, la {page}\n",
+    "shareLinks": "- Linkurile pe care le făcuseți pentru a partaja rețete. Puteți crea altele noi din fiecare rețetă.\n",
+    "closing": "\nDacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Dacă nu, resetați imediat parola la {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Cineva a introdus parola dumneavoastră Glazecalc, dar nu a încheiat conectarea",
+    "text": "Cineva a introdus parola corectă pentru contul Glazecalc {account}, dar nu a încheiat al doilea pas al conectării. Al doilea pas l-a oprit.\n\nDacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Dacă nu, cineva știe parola: schimbați-o imediat. O puteți reseta la {forgot}\n\nDupă 10 coduri greșite dintr-o aplicație de autentificare, codurile sunt refuzate o oră; după alte 10, o zi; apoi, de fiecare dată, o săptămână. O cheie de acces sau un cod de recuperare funcționează în continuare cât timp codurile sunt refuzate. Resetarea parolei prin e-mail pune capăt situației: conectările neîncheiate ale persoanei respective se încheie, ea nu mai are parola, iar codurile funcționează din nou.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Un token de acces al contului dumneavoastră Glazecalc expiră în curând",
+    "text": "Tokenul de acces numit „{name}” de pe contul Glazecalc {account} încetează să funcționeze la {date}.\n\nDacă încă îl folosiți, creați un token nou înainte de atunci la {page} și dați-l asistentului sau scriptului dumneavoastră în locul celui vechi. Dacă nu-l mai folosiți, nu aveți nimic de făcut.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Un nou token de acces pentru contul dumneavoastră Glazecalc",
+    "text": "Tocmai a fost creat un token de acces numit „{name}” pentru contul Glazecalc {account}. Poate citi rețetele, materiile prime, notițele și jurnalele de ardere salvate în cont până la {date}.\n\nDacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Vă puteți vedea și revoca tokenurile la {page}\n\nDacă nu, revocați-l acolo și resetați imediat parola la {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Un nou token de acces care vă poate modifica înregistrările Glazecalc",
+    "text": "Tocmai a fost creat un token de acces numit „{name}” pentru contul Glazecalc {account}. Poate citi și modifica rețetele, materiile prime, notițele și jurnalele de ardere salvate în cont și le poate muta în coșul de reciclare, până la {date}. Fiecare modificare pe care o face păstrează înregistrarea așa cum era, deci o puteți anula pe site.\n\nDacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Vă puteți vedea și revoca tokenurile la {page}\n\nDacă nu, revocați-l acolo și resetați imediat parola la {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Confirmați adresa de e-mail pentru Glazecalc",
+    "text": "Cineva (sperăm că dumneavoastră) a creat un cont Glazecalc cu adresa {account}.\n\nPentru a confirma că această adresă este a dumneavoastră, deschideți acest link în următoarele {hours}:\n\n{link}\n\nLinkul funcționează o singură dată. Dacă nu ați creat un cont, ignorați acest e-mail; nu veți mai primi nimic, decât dacă cereți.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

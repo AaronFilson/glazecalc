@@ -11,7 +11,8 @@ const additiveSchema = new mongoose.Schema({
   formulaweight: Number,
   loi: Number,
   molecularweight: Number,
-  percentmole: String,
+  // How the fields' amounts are given, as a material's (none: moles); stored in lower case.
+  percentmole: { type: String, trim: true, lowercase: true, enum: ['percent', 'molecular'] },
   notes: { type: [String] },
   ownedBy: { type: String, required: true },
   relatedTo: { type: [String] },

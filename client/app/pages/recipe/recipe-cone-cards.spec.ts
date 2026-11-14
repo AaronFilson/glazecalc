@@ -83,6 +83,8 @@ describe('coneCards', () => {
       { cone: '6', summary: 'Glossy' }
     ]);
     expect(withSummary(results, { cone: '5' }, '')).toEqual([{ cone: '6', summary: 'Glossy' }]);
+    // The logs not placed have no summary of their own.
+    expect(withSummary(results, { cone: null }, 'Glossy')).toEqual(results);
     expect(withSummary(results, { cone: '6', atmosphere: 'reduction' }, 'Green')).toEqual([
       ...results,
       { cone: '6', atmosphere: 'reduction', summary: 'Green' }
@@ -210,6 +212,71 @@ describe('RecipeConeCards', () => {
     expect(summary).not.toMatch(/limit caution/);
   });
 
+  it('gives a card at a temperature the temperature alone, with no conversion', async () => {
+    const { fixture } = await create({ block: { scale: 'temperature', low: '1240', tested: ['1240'] } });
+    const summary = text(fixture, '.cone-card summary');
+    expect(summary).toMatch(/^(2264\s°F|1240\s°C) · /);
+    expect(summary).not.toContain('≈');
+  });
+
+  it('marks a log placed outside the stated firing, on its card and among the places offered', async () => {
+    const { fixture, root } = await create({
+      block: { scale: 'orton', low: '6' },
+      links: [{ firing: 'f1', cone: '10' }]
+    });
+    const summaries = [...root.querySelectorAll('details.cone-card summary')].map((s) =>
+      (s.textContent ?? '').replace(/\s+/g, ' ').trim()
+    );
+    expect(summaries[0]).not.toContain('outside');
+    expect(summaries[1]).toMatch(/^cone 10 · .* · outside the stated firing$/);
+    const select = root.querySelector('#cone-place-1-f1') as HTMLSelectElement;
+    expect([...select.options].map((o) => o.textContent?.trim())).toEqual([
+      'Not placed',
+      'cone 6',
+      'cone 10 (outside the stated firing)'
+    ]);
+    expect(select.value).toBe('10|');
+    expect(text(fixture, '.cone-cards')).toContain('Glaze 14');
+  });
+
+  it('places one log of several for a recipe not saved yet, leaving the others where they were', async () => {
+    const { fixture, root, cards } = await create({
+      block: { scale: 'orton', low: '6' },
+      links: [
+        { firing: 'f1', cone: '6', result: 'glossy' },
+        { firing: 'f2', result: 'dry' }
+      ]
+    });
+    const select = root.querySelector('#cone-place-1-f2') as HTMLSelectElement;
+    select.value = '6|';
+    select.dispatchEvent(new Event('change'));
+    await fixture.whenStable();
+    expect(cards.links()).toEqual([
+      { firing: 'f1', cone: '6', result: 'glossy' },
+      { firing: 'f2', result: 'dry', cone: '6' }
+    ]);
+  });
+
+  it('says when where a log was fired could not be saved, and leaves it where it was', async () => {
+    const { fixture, root, cards } = await create({
+      block: { scale: 'orton', low: '6' },
+      links: [{ firing: 'f2' }],
+      recipeId: 'r1'
+    });
+    const emitted: FiringLink[][] = [];
+    cards.saved.subscribe((links) => emitted.push(links));
+    const select = root.querySelector('#cone-place-1-f2') as HTMLSelectElement;
+    select.value = '6|';
+    select.dispatchEvent(new Event('change'));
+    httpMock()
+      .expectOne({ method: 'PUT', url: API + '/recipe/firings/r1/f2' })
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(text(fixture, '.cone-cards [role=alert]')).toBe('Where the firing log was fired could not be saved.');
+    expect(emitted).toEqual([]);
+    expect(cards.links()).toEqual([{ firing: 'f2' }]);
+  });
+
   it('shows the cone-fit line in its slot when one is given', async () => {
     const { fixture } = await create({
       block: { scale: 'orton', low: '6' },
@@ -235,5 +302,28 @@ describe('ConeSummaries', () => {
     expect(terms[0]?.replace(/\s+/g, ' ')).toMatch(/^cone 6 · oxidation · ≈ 12\d\d °C$/);
     expect(terms[1]).toContain('outside the stated firing');
     expect(text(fixture, 'dl')).toContain('Satin');
+  });
+
+  it('heads the summaries at the level the page asks for, the shared page’s second, by the id it gives', async () => {
+    const fixture = TestBed.createComponent(ConeSummaries);
+    fixture.componentRef.setInput('reader', { cones: 'orton', temperature: 'C' });
+    fixture.componentRef.setInput('block', { scale: 'orton', low: '6' });
+    fixture.componentRef.setInput('results', [{ cone: '6', summary: 'Satin' }]);
+    fixture.componentRef.setInput('level', 2);
+    fixture.componentRef.setInput('headingId', 'shared-cone-results');
+    await fixture.whenStable();
+    const root = fixture.nativeElement as HTMLElement;
+    expect(root.querySelector('h3')).toBeNull();
+    expect(root.querySelector('h2')?.id).toBe('shared-cone-results');
+    expect(root.querySelector('section')?.getAttribute('aria-labelledby')).toBe('shared-cone-results');
+    expect(text(fixture, 'h2')).toBe('Results by cone');
+  });
+
+  it('shows nothing without a summary at a cone', async () => {
+    const fixture = TestBed.createComponent(ConeSummaries);
+    fixture.componentRef.setInput('reader', { cones: 'orton', temperature: 'C' });
+    fixture.componentRef.setInput('block', { scale: 'orton', low: '6' });
+    await fixture.whenStable();
+    expect(fixture.nativeElement.querySelector('section')).toBeNull();
   });
 });

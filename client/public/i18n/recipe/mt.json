@@ -50,7 +50,6 @@
     "firedTo": "Moħmi sa",
     "how": "Kif",
     "rebuild": "Erġa’ ibni l-glejż: żomm is-silika u l-alumina tiegħu, b’boron u flussi oħra minflok iċ-ċomb",
-    "keepColour": "Żomm il-kulur fuq bażi mingħajr ċomb: il-fritta u l-kawlina, 85 : 15, bil-kuluranti tar-riċetta",
     "fritHeading": "Fritta mingħajr ċomb li tibni fuqha, l-aħjar l-ewwel",
     "fritBoron": "({boron}% boron, B₂O₃)",
     "noFrit": "Fil-librerija m’hemm l-ebda fritta mingħajr ċomb li tinbiegħ fir-reġjun tiegħek.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Iċ-ċomb ma jistax jinbidel: materjal fir-riċetta m’għandux analiżi li fuqha jsir il-kalkolu.",
     "leadRebuiltCone": "Iċ-ċomb inbidel għall-kon {cone} fuq il-fritta {base}: is-silika u l-alumina tar-riċetta l-qadima nżammu, u l-boron u flussi oħra jagħmlu x-xogħol taċ-ċomb.",
     "leadRebuilt": "Iċ-ċomb inbidel għal ħami sa {firing} fuq il-fritta {base}: is-silika u l-alumina tar-riċetta l-qadima nżammu, u l-boron u flussi oħra jagħmlu x-xogħol taċ-ċomb.",
-    "leadColour": "Iċ-ċomb inbidel: il-kuluranti ttieħdu fuq bażi mingħajr ċomb tal-fritta {base} u kawlina, 85 : 15.",
     "leadGloss": "Mhux se jkollu eżatt il-leqa, iċ-ċarezza jew il-kulur taċ-ċomb: stenna inqas brillantezza, u possibbilment ċpar fuq tafal aħmar jew xegħir. Ittestja taħlita żgħira fuq it-tafal tiegħek.",
     "leadSafety": "Li glejż ma jkollux ċomb ma jagħmlux waħdu sikur għall-ikel; dan jiddependi mill-formula kollha u mill-ħami.",
     "leadReplaced": "Iċ-ċomb inbidel.",
@@ -245,8 +243,7 @@
       "text": "Dawn imorru fuq il-bażi. Jiġu ssejvjati mar-riċetta, imma mhumiex parti mill-formula ta’ Seger. Agħżel f’liema unità hu kull ammont:",
       "percent": "<b>% tal-bażi</b>: perċentwal tat-total tal-bażi, kif jagħtuhom il-biċċa l-kbira tar-riċetti: 2 tfisser 2% ossidu tal-ħadid aħmar.",
       "parts": "<b>partijiet</b>: l-istess unità bħall-materjali, pereżempju 1 parti fuq bażi ta’ 3 flint u 2 dolomit.",
-      "grams": "<b>grammi</b>: piż, fl-istess taħlita bħall-materjali.",
-      "count": "Xi kalkulaturi jgħoddu l-kuluranti fil-formula ta’ Seger u oħrajn le. Immarka <b>Għodd il-kuluranti u l-addittivi fiha</b>, taħt l-intestatura Formula ta’ Seger, biex jingħaddu skont il-piż tagħhom fit-taħlita, jew ħalliha mhux immarkata biex tqabbel ma’ kalkulatur li ma jgħoddhomx. L-għażla tiġi ssejvjata mar-riċetta."
+      "grams": "<b>grammi</b>: piż, fl-istess taħlita bħall-materjali."
     },
     "scale": {
       "heading": "Ibdel id-daqs meta jkollok bżonn",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide} mhuwiex ossidu magħruf minn Glazecalc.",
     "together": "Agħti l-potassa (K₂O) u s-soda (Na₂O) separati, mhux flimkien bħala KNaO.",
     "badAmount": "L-ammont ta’ {oxide} mhuwiex numru ta’ 0 jew aktar.",
-    "noFlux": "Il-mira teħtieġ fluss wieħed mill-inqas, bħal CaO, K₂O jew Na₂O.",
     "noMaterials": "Żid materjal wieħed mill-inqas biex tagħmel ir-riċetta minnu.",
     "noMatch": "L-ebda wieħed minn dawn il-materjali m’għandu xi ossidu mill-mira."
   },

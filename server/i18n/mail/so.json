@@ -1,0 +1,10 @@
+{
+  "CHANGED": {
+    "subject": "Furaha sirta ee Glazecalc waa la beddelay",
+    "text": "Furaha sirta ee akoonka Glazecalc {account} hadda ayaa la beddelay, qalab kasta oo ku jiray akoonkana waa laga saaray.\n\nHaddii ay adiga ahayd, wax kale oo la sameeyo ma jiraan. Haddii kale, isla markiiba dib u deji furaha sirta {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Dib u deji furaha sirta ee Glazecalc",
+    "text": "Qof (waxaan rajaynaynaa inaad adigu tahay) ayaa codsaday in dib loo dejiyo furaha sirta ee akoonka Glazecalc {account}.\n\nSi aad u doorato furo sir ah oo cusub, fur link-gan {minutes} daqiiqo gudahood:\n\n{link}\n\nLink-gu hal mar ayuu shaqeeyaa. Haddii aadan tan codsan, iska indha tir email-kan; furaha sirtaadu sidiisa ayuu ahaanayaa.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

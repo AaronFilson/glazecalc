@@ -334,7 +334,8 @@
     "US": "États-Unis",
     "UK": "Royaume-Uni",
     "EU": "UE",
-    "AU": "Australie et Nouvelle-Zélande"
+    "AU": "Australie et Nouvelle-Zélande",
+    "JP": "Japon"
   },
   "status": {
     "discontinued": "Plus fabriqué",

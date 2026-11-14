@@ -1,7 +1,10 @@
 import * as leadLib from '../../../../lib/recipe/lead';
 import { Additive, RecipeMaterial } from '../../core/models';
+import { MaterialInput } from '../../../../lib/chemistry';
 import { LibraryMaterial } from './compare';
 import { Report, TryMaterial, reportText } from './pool';
+import { plainAmount } from './rebase';
+import { unityLines } from './recipe-analysis';
 import { cautionText, recipeText } from './recipe-messages';
 
 // Replace lead (docs/adr/0011-replacing-lead.md and 0012): an old lead glaze
@@ -10,8 +13,47 @@ import { cautionText, recipeText } from './recipe-messages';
 // server (lib/recipe/lead.js); this puts what it says in the page's language.
 
 export type { BaseChoice, LeadMode } from '../../../../lib/recipe/lead';
-export { leadFreeBases, leadIn, recipeHasLead } from '../../../../lib/recipe/lead';
+export { clayFor, leadFreeBases, leadIn, recipeHasLead } from '../../../../lib/recipe/lead';
 export { roleOf } from '../../../../lib/recipe/materials';
+
+/**
+ * The lines the lead and barium warnings read: the materials and the additives too (a lead frit or
+ * red lead added as a colorant), whether or not the unity formula counts the additives, at their
+ * weights as it would count them.
+ */
+function warnedLines(
+  materials: RecipeMaterial[],
+  additives: Additive[],
+  chemistryOf?: (name: string) => MaterialInput | undefined
+): RecipeMaterial[] {
+  // An additive's weight is a number, written plainly: String(0.0000001), "1e-7", reads as no amount, no lead.
+  return unityLines(materials, additives, { includeAdditives: true, chemistryOf }).lines.map(
+    (line) =>
+      ({
+        ...(line.material as RecipeMaterial),
+        amount: typeof line.amount === 'number' ? plainAmount(line.amount) : String(line.amount)
+      }) as RecipeMaterial
+  );
+}
+
+/** The lead in a recipe, for its caution, in its materials and additives. Null without lead. */
+export function leadOf(
+  materials: RecipeMaterial[],
+  additives: Additive[],
+  chemistryOf?: (name: string) => MaterialInput | undefined
+): { unity: number; percent: number } | null {
+  const lines = warnedLines(materials, additives, chemistryOf);
+  return leadLib.recipeHasLead(lines) ? leadLib.leadIn(lines) : null;
+}
+
+/** The barium in a recipe, for the caution beside lead's: BaO past 0.10 in the unity formula, likely to leach from 0.40. */
+export function bariumOf(
+  materials: RecipeMaterial[],
+  additives: Additive[],
+  chemistryOf?: (name: string) => MaterialInput | undefined
+): { unity: number; likely: boolean } | null {
+  return leadLib.bariumIn(warnedLines(materials, additives, chemistryOf));
+}
 
 export interface Replacement {
   materials: RecipeMaterial[];

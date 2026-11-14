@@ -7,10 +7,11 @@ How the production setup fits together. The plan and reasoning are in
 ```
 GitHub: push to master ─► CI (tests, Docker check) ─► Publish image (amd64 + arm64)
                                                         └─► ghcr.io/aaronfilson/glazecalc:sha-<commit>, :latest
-GitHub: Actions → Deploy (manual, approved) ─OIDC─► AWS role ─SSM Run Command─► /opt/glazecalc/deploy.sh <tag>
+GitHub: Publish image on master ─► Deploy (or Actions → Deploy <tag> by hand) ─► (approved)
+          ─OIDC─► AWS role ─SSM Run Command─► /opt/glazecalc/deploy.sh <tag>
           deploy.sh: backup.sh ─► new image, healthy, indexes built ─► nginx files from the same commit
         └─► Live checks: health, headers, every language's home page, pages in a browser, /mcp
-GitHub: Actions → Deploy staging <branch> (approved) ─► arm64 image :staging-<commit>
+GitHub: Actions → Deploy staging <branch> ─► arm64 image :staging-<commit> ─► (approved)
           ─OIDC─► staging role ─SSM Run Command─► /opt/glazecalc/staging.sh staging-<commit> ─► Live checks
 
 EC2 (Debian 13, t4g.micro):
@@ -54,7 +55,9 @@ them from the commit production runs rather than from master.
 | `systemd/*`                                              | `/etc/systemd/system/`                 | the units listed above                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | `compose.staging.yaml`, `staging.sh`, `mongo-users.sh`   | `/opt/glazecalc/`                      | the staging copy: installed by hand once, then `staging.sh` updates them from each commit it deploys; see "Staging" below                                                                                                                                                                                                                                                                                                                                                  |
 | `nginx/glazecalc-staging.conf`                           | `/etc/nginx/sites-available/`          | staging.glazecalcapp.com to 127.0.0.1:3001, once `enable-https.sh --with-staging` has added the name; then from each staging deploy                                                                                                                                                                                                                                                                                                                                        |
-| `aws/*.json`                                             | IAM, SSM, DLM                          | instance role, GitHub deploy roles (production and staging) and their one command document each, CLI user policy, snapshot policy                                                                                                                                                                                                                                                                                                                                          |
+| `aws/*.json`                                             | IAM, SSM, DLM                          | instance role (and the optional staging images policy, "Staging" below), GitHub deploy roles (production and staging) and their one command document each, CLI user policy, snapshot policy                                                                                                                                                                                                                                                                                |
+| `aws/mail*.json`                                         | IAM, S3, SES                           | the mail documents (aws/README.md, sections 14 and 15): the policies for whoever sets up sending and receiving, the app's sending user (only as no-reply@), the user Gmail sends through (only as the six addresses that receive mail), the mail bucket's policy, the forwarder function's role and the receipt rule                                                                                                                                                       |
+| `aws/mail-forwarder/`                                    | Lambda                                 | the function that forwards mail for those six addresses to the owner's inbox (aws/README.md, section 15)                                                                                                                                                                                                                                                                                                                                                                   |
 
 Settings come from SSM Parameter Store, never from the repository or user data:
 `/glazecalc/app-secret` (SecureString), `/glazecalc/mongo-password` (SecureString, the app's
@@ -98,6 +101,10 @@ Day to day:
   branch's name; see "Staging" below.
 - **Rate limits** (sign-in, sign-up, resets, second steps; `server/lib/rate_limit.ts`) count per
   client address or per account in the app's memory, so every deploy or restart starts them again.
+- **Memory:** the app's container is held to 512 MB and its Node heap to 256 MB (`compose.prod.yaml`
+  says why), so it cannot take what MongoDB and nginx need on the 1 GB instance; an app that
+  outgrows its heap stops and Docker starts it again. `sudo docker stats --no-stream` shows each
+  container's memory against its limit.
 - **Session cookie:** in production it is `__Host-glazecalc_session` (Secure, `Path=/`, no
   `Domain`), so no subdomain can set one the site would read. The older `glazecalc_session` is
   not read in production (one set for the whole domain by a subdomain or a hostile network would
@@ -450,6 +457,26 @@ Afterwards:
 - **`OAUTH_INVALID_CLIENT` in the app's log** means a provider refused the client id or secret:
   check the parameters against the provider's console. `OAUTH_FAILED` lines are single sign-ins
   that did not work (a code reused, the provider slow), worth a look only in numbers.
+
+## Security updates
+
+`unattended-upgrades` installs Debian's security updates each day, and reboots at 11:30 UTC when
+one needs it (`cloud-init.yaml`). Docker Engine and containerd come from Docker's own repository,
+which Debian's list of origins leaves out, so `cloud-init.yaml` adds it
+(`/etc/apt/apt.conf.d/51glazecalc-docker`) and they update the same way. An update to Docker
+restarts it, and the app with it (`glazecalc.service` requires `docker.service`): about a minute.
+cloud-init runs only at first boot, so an instance made before that file was added gets it by
+hand, once, in Session Manager:
+
+```bash
+sudo tee /etc/apt/apt.conf.d/51glazecalc-docker > /dev/null <<'EOF'
+Unattended-Upgrade::Origins-Pattern {
+  "origin=Docker,codename=${distro_codename},label=Docker CE";
+};
+EOF
+# The allowed origins now include Docker's:
+sudo unattended-upgrade --dry-run --debug 2>&1 | grep -m1 'Allowed origins'
+```
 
 ## How long logs are kept
 
@@ -854,7 +881,9 @@ the image (checking that its label names the same commit), writes the root-only 
 starts the app and waits for `/api/health` on 3001, checks that it built its indexes, loads the
 standard materials, then installs staging's nginx site from the commit. If the new version does not
 become healthy, the staging version that was running is started again (or staging is left stopped)
-and it says so. A master build from CI works too: `staging.sh sha-<sha>` (by hand only).
+and it says so. A master build from CI works too: `staging.sh sha-<sha>`. The staging role's command
+document accepts that tag as well, but the Deploy staging workflow only ever sends `staging-<sha>`,
+so a master build is staged by hand.
 
 Also:
 

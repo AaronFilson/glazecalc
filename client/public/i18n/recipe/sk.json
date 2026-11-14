@@ -50,7 +50,6 @@
     "firedTo": "Vypálené na",
     "how": "Spôsob",
     "rebuild": "Zostaviť glazúru nanovo: zachovať jej oxid kremičitý a oxid hlinitý, s bórom a ďalšími tavivami namiesto olova",
-    "keepColour": "Zachovať farbu na bezolovnatej základnej glazúre: frita a kaolín v pomere 85 : 15, s farbivami z receptu",
     "fritHeading": "Bezolovnatá frita ako základ, od najvhodnejšej",
     "fritBoron": "({boron} % bóru, B₂O₃)",
     "noFrit": "V knižnici nie je žiadna bezolovnatá frita, ktorá sa predáva vo vašom regióne.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Olovo sa nedá nahradiť: niektorá surovina v recepte nemá analýzu, z ktorej by sa dalo vychádzať.",
     "leadRebuiltCone": "Olovo nahradené pre výpal na kužeľ {cone} so základnou fritou {base}: oxid kremičitý a oxid hlinitý pôvodného receptu zostali, prácu olova robí bór a ďalšie tavivá.",
     "leadRebuilt": "Olovo nahradené pre výpal na {firing} so základnou fritou {base}: oxid kremičitý a oxid hlinitý pôvodného receptu zostali, prácu olova robí bór a ďalšie tavivá.",
-    "leadColour": "Olovo nahradené: farbivá prenesené na bezolovnatú základnú glazúru z frity {base} a kaolínu v pomere 85 : 15.",
     "leadGloss": "Lesk, priezračnosť ani farbu olovnatej glazúry presne nedosiahne: počítajte s menšou brilanciou a prípadne s mliečnym závojom na červenej hline alebo s trhlinkovaním. Malú dávku vyskúšajte na vlastnej hline.",
     "leadSafety": "To, že glazúra neobsahuje olovo, ju samo osebe nerobí vhodnou na styk s potravinami; to závisí od celého vzorca a od výpalu.",
     "leadReplaced": "Olovo je nahradené.",
@@ -245,8 +243,7 @@
       "text": "Pridávajú sa navyše k základnej glazúre. Ukladajú sa s receptom, ale nie sú súčasťou Segerovho vzorca. Pri každom množstve vyberte jednotku:",
       "percent": "<b>% základu</b>: percento z celkového množstva základu, ako ich uvádza väčšina receptov: 2 znamená 2 % červeného oxidu železa.",
       "parts": "<b>diely</b>: rovnaká jednotka ako pri surovinách, napríklad 1 diel na základ z 3 dielov mletého kremeňa<en>flint</en> a 2 dielov dolomitu.",
-      "grams": "<b>gramy</b>: hmotnosť v tej istej dávke ako suroviny.",
-      "count": "Niektoré kalkulačky započítavajú farbivá do Segerovho vzorca<en>unity molecular formula</en> a niektoré nie. Zaškrtnite políčko <b>Započítať farbivá a prísady</b> pod nadpisom Segerov vzorec, ak ich chcete započítať podľa ich hmotnosti v dávke, alebo ho nechajte prázdne, ak porovnávate s kalkulačkou, ktorá ich nezapočítava. Voľba sa uloží s receptom."
+      "grams": "<b>gramy</b>: hmotnosť v tej istej dávke ako suroviny."
     },
     "scale": {
       "heading": "Keď treba, prepočítajte recept",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide} nie je oxid, ktorý Glazecalc pozná.",
     "together": "Zadajte potaš (K₂O) a sódu (Na₂O) zvlášť, nie spolu ako KNaO.",
     "badAmount": "Množstvo {oxide} nie je číslo 0 alebo väčšie.",
-    "noFlux": "Cieľ potrebuje aspoň jedno tavivo, napríklad CaO, K₂O alebo Na₂O.",
     "noMaterials": "Pridajte aspoň jednu surovinu, z ktorej sa recept vytvorí.",
     "noMatch": "Žiadna z týchto surovín neobsahuje žiadny z oxidov cieľa."
   },

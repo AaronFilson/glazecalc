@@ -61,4 +61,27 @@ describe('SharedRecipes', () => {
     const none = await create([]);
     expect(text(none.fixture, '.shared-none')).toBe('You are not sharing any recipe.');
   });
+
+  it('says when the shared recipes could not be loaded', async () => {
+    const fixture = TestBed.createComponent(SharedRecipes);
+    await fixture.whenStable();
+    httpMock()
+      .expectOne(API + '/share/recipes')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(fixture.nativeElement.querySelector('[role=alert]')).not.toBeNull();
+    expect(fixture.nativeElement.querySelector('li')).toBeNull();
+  });
+
+  it('stops sharing once, however often it is pressed', async () => {
+    const { fixture, root } = await create();
+    const stop = root.querySelector('button[aria-label="Stop sharing Celadon"]') as HTMLButtonElement;
+    stop.click();
+    stop.click();
+    httpMock()
+      .expectOne({ method: 'DELETE', url: API + '/share/recipe/r2' })
+      .flush({ code: 'share-stopped' });
+    await settle(fixture);
+    expect(root.querySelectorAll('li').length).toBe(1);
+  });
 });

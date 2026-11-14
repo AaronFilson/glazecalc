@@ -1,4 +1,26 @@
-import { hazardSources } from './recipe-hazards';
+import { TestBed } from '@angular/core/testing';
+import { testProviders, text } from '../../testing/test-providers';
+import { RecipeHazards, hazardSources } from './recipe-hazards';
+
+describe('RecipeHazards', () => {
+  beforeEach(() => TestBed.configureTestingModule({ providers: testProviders() }));
+
+  it('heads the hazards at the level the page asks for, the shared page’s second, by the id it gives', async () => {
+    const fixture = TestBed.createComponent(RecipeHazards);
+    fixture.componentRef.setInput('sources', [
+      { name: 'Silica', ownedBy: 'Standard', hazards: 'Contains crystalline silica; do not breathe the dust.' }
+    ]);
+    fixture.componentRef.setInput('level', 2);
+    fixture.componentRef.setInput('headingId', 'shared-hazards');
+    await fixture.whenStable();
+    const root = fixture.nativeElement as HTMLElement;
+    expect(root.querySelector('h3')).toBeNull();
+    expect(root.querySelector('h2')?.id).toBe('shared-hazards');
+    expect(root.querySelector('section')?.getAttribute('aria-labelledby')).toBe('shared-hazards');
+    expect(text(fixture, 'h2')).toBe('Hazards');
+    expect(text(fixture, '.recipe-hazards-list')).toBe('Silica: Contains crystalline silica; do not breathe the dust.');
+  });
+});
 
 describe('hazardSources', () => {
   it("reads a standard material's hazards from the library as it is now, and a potter's own as written", () => {

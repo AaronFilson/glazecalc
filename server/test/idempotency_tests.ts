@@ -1,3 +1,4 @@
+import { deleteAccount } from '../lib/account_data.ts';
 import Idempotency from '../models/idempotency.ts';
 import Note from '../models/note.ts';
 import Recipe from '../models/recipe.ts';
@@ -115,5 +116,18 @@ describe('Idempotency-Key on writes the offline outbox sends again', () => {
     const second = await send();
     expect(second.body._id).to.equal(first.body._id);
     expect(await Note.countDocuments({ ownedBy: userId })).to.equal(1);
+  });
+
+  it('keeps no answer after the account is deleted, where it could hold a record', async () => {
+    const saved = (await create()).body as { _id: string };
+    await api()
+      .put('/recipe/change/' + saved._id)
+      .set('Authorization', bearer(token))
+      .set('Idempotency-Key', KEY)
+      .set('If-Match', '"0"')
+      .send({ recipe: { title: 'Kept in the answer' } });
+    expect(await Idempotency.countDocuments({ ownedBy: userId })).to.equal(1);
+    await deleteAccount(userId);
+    expect(await Idempotency.countDocuments({ ownedBy: userId })).to.equal(0);
   });
 });

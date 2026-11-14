@@ -9,11 +9,13 @@ import {
   ambiguousNumbers,
   foldedName,
   importAmounts,
-  matchName,
+  joinedNumber,
+  nameMatcher,
   parsePaste,
-  pasteTooLong
+  pasteTooLong,
+  spacedReading
 } from '../../../../lib/recipe/paste';
-import type { MatchHow, PastedRecipe } from '../../../../lib/recipe/paste';
+import type { MatchHow, NameMatcher, PastedRecipe } from '../../../../lib/recipe/paste';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Additive, AdditiveUnit, Material, Recipe } from '../../core/models';
@@ -159,6 +161,81 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
               (click)="readAs('group')"
             >
               {{ t('recipe.import.readAsGroup', { example: ambiguous()[0], value: asGroup(ambiguous()[0]) }) }}
+            </button>
+          </div>
+        </section>
+      }
+      @if (spaced().length) {
+        <section class="panel import-ambiguous import-spaced" role="group" aria-labelledby="import-spaced-text">
+          <p id="import-spaced-text" class="import-ambiguous-text">
+            {{
+              t('recipe.import.spaced', {
+                count: spaced().length,
+                example: spaced()[0].token,
+                group: asSpaced(spaced()[0].token),
+                first: spacedApart(spaced()[0].token).first,
+                last: spacedApart(spaced()[0].token).last
+              })
+            }}
+          </p>
+          <!-- Each line its own choice: one number for a genuine 1 500 sets no other line's number. -->
+          @for (one of spaced(); track one.line) {
+            <div class="import-spaced-line" role="group" [attr.aria-labelledby]="'import-spaced-' + one.line">
+              <p class="import-spaced-pasted" [id]="'import-spaced-' + one.line">
+                <span class="visually-hidden">{{ t('recipe.import.pastedLine', { line: one.line }) }}</span>
+                <code dir="auto">{{ one.text }}</code>
+              </p>
+              <div class="import-actions">
+                <button
+                  type="button"
+                  class="btn btn-light border"
+                  [attr.aria-pressed]="spacingOf(one.line) === 'group'"
+                  (click)="spaceAs(one.line, 'group')"
+                >
+                  {{ t('recipe.import.readAsGroup', { example: one.token, value: asSpaced(one.token) }) }}
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-light border"
+                  [attr.aria-pressed]="spacingOf(one.line) === 'apart'"
+                  (click)="spaceAs(one.line, 'apart')"
+                >
+                  {{ t('recipe.import.readSpacedApart', spacedApart(one.token)) }}
+                </button>
+              </div>
+            </div>
+          }
+        </section>
+      }
+      @if (joined().length) {
+        <section class="panel import-ambiguous import-joined" role="group" aria-labelledby="import-joined-text">
+          <p id="import-joined-text" class="import-ambiguous-text">
+            {{
+              t('recipe.import.joined', {
+                count: joined().length,
+                example: joined()[0],
+                value: asOne(joined()[0]),
+                first: joinedApart(joined()[0]).first,
+                last: joinedApart(joined()[0]).last
+              })
+            }}
+          </p>
+          <div class="import-actions">
+            <button
+              type="button"
+              class="btn btn-light border"
+              [attr.aria-pressed]="joiningNow() === 'decimal'"
+              (click)="joinAs('decimal')"
+            >
+              {{ t('recipe.import.readAsOneNumber', { example: joined()[0], value: asOne(joined()[0]) }) }}
+            </button>
+            <button
+              type="button"
+              class="btn btn-light border"
+              [attr.aria-pressed]="joiningNow() === 'columns'"
+              (click)="joinAs('columns')"
+            >
+              {{ t('recipe.import.readAsColumns', joinedApart(joined()[0])) }}
             </button>
           </div>
         </section>
@@ -343,6 +420,19 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
     .import-ambiguous-text {
       margin: 0 0 0.5rem;
     }
+    .import-spaced-line + .import-spaced-line {
+      border-top: 1px solid var(--gc-border);
+      margin-top: 0.6rem;
+      padding-top: 0.6rem;
+    }
+    .import-spaced-pasted {
+      margin: 0 0 0.35rem;
+    }
+    .import-spaced-pasted code {
+      color: var(--gc-text);
+      overflow-wrap: anywhere;
+      white-space: pre-wrap;
+    }
     .import-help {
       margin: 0.5rem 0 0.75rem;
     }
@@ -461,6 +551,24 @@ export class ImportPage implements OnInit {
   /** How the person chose to read them; null until they do, when the locale reads them. */
   private readonly reading = signal<'decimal' | 'group' | null>(null);
   protected readonly readingNow = signal<'decimal' | 'group' | null>(null);
+  /**
+   * Lines whose amount may have its thousands set apart by a space ("Silica 1 500": 1500, or "Silica 1" at 500),
+   * with the amount as pasted: each shown with a choice of its own.
+   */
+  protected readonly spaced = signal<Array<{ line: number; text: string; token: string }>>([]);
+  /** How the person chose to read each, by its line in the paste; one not chosen is read as their language writes thousands. */
+  private readonly spacing = signal<Record<number, 'group' | 'apart'>>({});
+  private readonly spacedAs = computed(() => spacedReading(formatLocale()));
+  /**
+   * Two cells of comma-separated rows that can be one number or two columns ("30,5" of "Silica,30,5" where the reader
+   * writes decimal commas, "2,140.7" of "Rutile,2,140.7"): the last two of a row with no heading row, or the amount's
+   * and the next of a row with one cell more than its heading; or a known name's last number and the next ("233,5"
+   * of "Kaolin 233,5"). Shown with a choice.
+   */
+  protected readonly joined = signal<string[]>([]);
+  /** How the person chose to read them; null until they do, when each is one number. */
+  private readonly joining = signal<'decimal' | 'columns' | null>(null);
+  protected readonly joiningNow = computed(() => this.joining() ?? 'decimal');
   /** Which limit the text is over, once Read has been pressed. */
   protected readonly tooLong = signal<'chars' | 'lines' | null>(null);
   /** Read, and nothing found. */
@@ -533,10 +641,45 @@ export class ImportPage implements OnInit {
   protected typed(value: string): void {
     this.text.set(value);
     this.reading.set(null);
+    this.spacing.set({});
+    this.joining.set(null);
   }
 
   protected asDecimal = (token: string): number => Number(token.replace(',', '.'));
   protected asGroup = (token: string): number => Number(token.replace(/[.,]/, ''));
+  /** "1 500" read as one number, in any script's digits. */
+  protected asSpaced = (token: string): number => parseNumber(token.replace(/ /g, '')) ?? Number.NaN;
+  /** "1 500" read apart: "1" and "500". */
+  protected spacedApart = (token: string): { first: string; last: string } => ({
+    first: token.slice(0, token.lastIndexOf(' ')),
+    last: token.slice(token.lastIndexOf(' ') + 1)
+  });
+
+  /** "30,5" or "2,140.7" read as one number, as the reader writes numbers and as the paste is read: 30.5, 2140.7. */
+  protected asOne = (token: string): number => joinedNumber(token, typedDecimalMark(), formatLocale()) ?? Number.NaN;
+
+  /** "30,5" read as two columns: "30" and "5". */
+  protected joinedApart = (token: string): { first: string; last: string } => ({
+    first: token.slice(0, token.indexOf(',')),
+    last: token.slice(token.indexOf(',') + 1)
+  });
+
+  /** How a line whose thousands may be set apart by a space is read: as the person chose, else as their language does. */
+  protected spacingOf(line: number): 'group' | 'apart' {
+    return this.spacing()[line] ?? this.spacedAs();
+  }
+
+  /** Reads the paste again with the person's choice for one line whose thousands may be set apart by a space. */
+  protected spaceAs(line: number, spacing: 'group' | 'apart'): void {
+    this.spacing.update((chosen) => ({ ...chosen, [line]: spacing }));
+    this.readPaste();
+  }
+
+  /** Reads the paste again with the person's choice for the rows whose last two cells can be one number. */
+  protected joinAs(joining: 'decimal' | 'columns'): void {
+    this.joining.set(joining);
+    this.readPaste();
+  }
 
   /** Reads the paste again with the person's choice for the numbers that can be read two ways. */
   protected readAs(reading: 'decimal' | 'group'): void {
@@ -553,6 +696,8 @@ export class ImportPage implements OnInit {
     if (over) {
       this.drafts.set([]);
       this.ambiguous.set([]);
+      this.spaced.set([]);
+      this.joined.set([]);
       this.readEmpty.set(false);
       this.readStatus.set(translate('recipe.import.tooLong', { reason: over, ...PASTE_LIMITS }));
       return;
@@ -560,13 +705,17 @@ export class ImportPage implements OnInit {
     const choices = this.choices();
     const records = choices.map((c) => c.record);
     const names = new Set(choices.flatMap((c) => [c.record.name, ...(c.record.aliases ?? [])]).map(foldedName));
+    // One matcher for this reading: each record's names are worked out once for all the lines, and dropped after.
+    const match = nameMatcher();
     const read = parsePaste(this.text(), {
       mark: typedDecimalMark(),
       locale: formatLocale(),
       reading: this.reading() ?? undefined,
+      spaced: this.spacing(),
+      joined: this.joining() ?? undefined,
       isName: (text) => names.has(foldedName(text)),
       // A line that is like any material, even only closely, is never taken for a title ("Leach 4321").
-      known: (text) => matchName(text, records).how !== 'none'
+      known: (text) => match(text, records).how !== 'none'
     }).filter((recipe) => recipe.lines.length);
     const unsure = ambiguousNumbers(this.text(), typedDecimalMark());
     this.ambiguous.set(unsure);
@@ -578,8 +727,14 @@ export class ImportPage implements OnInit {
               ? 'decimal'
               : 'group'))
     );
+    this.spaced.set(
+      read.flatMap((recipe) =>
+        recipe.lines.flatMap((line) => (line.spaced ? [{ line: line.line, text: line.text, token: line.spaced }] : []))
+      )
+    );
+    this.joined.set([...new Set(read.flatMap((recipe) => recipe.lines.flatMap((line) => line.joined ?? [])))]);
     this.tooMany.set(read.length > MOST_RECIPES);
-    const drafts = read.slice(0, MOST_RECIPES).map((recipe) => this.draftOf(recipe, choices));
+    const drafts = read.slice(0, MOST_RECIPES).map((recipe) => this.draftOf(recipe, choices, match));
     this.drafts.set(drafts);
     this.triedSave.set(false);
     this.saveProblem.set('');
@@ -597,7 +752,7 @@ export class ImportPage implements OnInit {
     }
   }
 
-  private draftOf(recipe: PastedRecipe, choices: Choice[]): Draft {
+  private draftOf(recipe: PastedRecipe, choices: Choice[], matchName: NameMatcher): Draft {
     const keyOf = new Map<object, string>(choices.map((c) => [c.record, c.key]));
     const materialsFirst = [
       ...choices.filter((c) => c.kind === 'material'),

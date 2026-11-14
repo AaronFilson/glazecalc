@@ -1,0 +1,107 @@
+{
+  "CHANGED": {
+    "subject": "Vaše heslo do aplikace Glazecalc bylo změněno",
+    "text": "Heslo k účtu {account} v aplikaci Glazecalc bylo právě změněno a všechna zařízení, která byla přihlášena, byla odhlášena.\n\nPokud jste to byli Vy, nemusíte už nic dělat. Pokud ne, ihned si obnovte heslo zde: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CHANGE_NOTICE": {
+    "subject": "Pro Váš účet Glazecalc byl vyžádán nový e-mail",
+    "text": "U účtu Glazecalc {account} byla právě vyžádána změna e-mailu. Na novou adresu byl odeslán odkaz a změna se provede, teprve až se tento odkaz otevře.\n\nPokud jste to byli Vy, nemusíte nic dělat. Pokud ne, někdo možná zná Vaše heslo: ihned si ho obnovte na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHANGE": {
+    "subject": "Potvrďte svůj nový e-mail pro Glazecalc",
+    "text": "Někdo (doufejme, že Vy) požádal, aby se {account} používal jako e-mail ke svému účtu Glazecalc.\n\nChcete-li změnu provést, otevřete do {hours} hodin tento odkaz:\n\n{link}\n\nOdkaz funguje jen jednou a všechna přihlášená zařízení se odhlásí. Pokud jste o to nežádali, tento e-mail ignorujte; nic se nezmění.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONFIRM_CHOICES": {
+    "off": "nikdy se neptat. Změny z aplikací a přístupových tokenů se provádějí okamžitě",
+    "removals": "ptát se jen před odebráním: přesunutím záznamu do koše nebo odebráním suroviny ze surovin v zásobě. Ostatní změny z aplikací a přístupových tokenů se provádějí okamžitě"
+  },
+  "CONFIRM_LOOSENED": {
+    "subject": "Glazecalc se teď méně ptá, než aplikace změní Vaše záznamy",
+    "text": "Nastavení Potvrzení před změnami u účtu Glazecalc {account} bylo právě změněno na: {choice}.\n\nPokud jste to byli Vy, nemusíte už nic dělat. Nastavení můžete vidět a změnit na stránce Připojené aplikace: {page}\n\nPokud ne, nastavte ho tam zpět, zneplatněte každou aplikaci nebo token, které neznáte, a ihned si obnovte heslo zde: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "CONNECTION_MADE": {
+    "subject": "K Vašemu účtu Glazecalc byla připojena aplikace",
+    "opening": "K účtu Glazecalc {account} byla {date} v {time} (UTC) připojena aplikace.\n\n",
+    "named": "Aplikace: „{name}“\n",
+    "checked": "Její adresa, ověřená službou Glazecalc: {host}\n",
+    "selfDescribed": "Zaregistrovala se sama, takže její název je jen to, co o sobě sama tvrdí.\n",
+    "answerAt": "Odpověď přijímá na: {host}\n",
+    "loopback": "Odpověď přijímá na počítači, ze kterého byla připojena ({host}).\n",
+    "read": "\nMůže číst recepty, zápisník, suroviny, zásobu a nastavení uložené v účtu. Nemůže nic měnit.\n\n",
+    "write": "\nMůže číst recepty, zápisník, suroviny, zásobu a nastavení uložené v účtu a po dobu {days} dnů je může také měnit: vytvářet a měnit záznamy a přesouvat je do koše. Každá změna zachová verzi záznamu tak, jak byl, takže ji můžete na webu vrátit zpět.\n\n",
+    "closing": "Pokud jste to byli Vy, nemusíte už nic dělat. Co dělá, můžete vidět a zneplatnit ji na {page}\n\nPokud ne, zneplatněte ji tam a ihned si obnovte heslo zde: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "DELETED": {
+    "subject": "Váš účet Glazecalc byl smazán",
+    "text": "Účet Glazecalc {account} byl smazán spolu se vším, co v něm bylo uloženo: recepty, surovinami, výpaly, poznámkami a nastavením. Nelze to vrátit zpět.\n\nKopie v zálohách webu se mažou, jakmile zálohy vyprší, do {days} dnů.\n\nKdykoli si můžete vytvořit nový účet.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "METHODS": {
+    "totp": "ověřovací aplikace",
+    "passkey": "přístupový klíč „{name}“"
+  },
+  "MFA_ADDED": {
+    "subject": "K Vašemu účtu Glazecalc byl přidán krok přihlášení",
+    "text": "K účtu Glazecalc {account} bylo právě přidáno jako druhý krok přihlášení: {method}.\n\nPokud jste to byli Vy, nemusíte nic dělat. Kódy pro obnovení uschovejte na bezpečném místě. Pokud ne, někdo možná zná Vaše heslo: ihned si ho obnovte na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_CLEAR_NOTICE": {
+    "subject": "Dvoustupňové přihlášení na Vašem účtu Glazecalc bude vypnuto",
+    "text": "Někdo požádal o vypnutí dvoustupňového přihlášení na účtu Glazecalc {account}, protože byla ztracena každá ověřovací aplikace, každý přístupový klíč i každý kód pro obnovení k němu.\n\nDvoustupňové přihlášení bude vypnuto dne {date}, pokud do té doby nenapíšete na privacy@glazecalcapp.com. Poté se bude možné k účtu přihlásit jen heslem.\n\nPokud jste to byli Vy, nemusíte nic dělat. Pokud ne, napište hned na privacy@glazecalcapp.com a ihned si obnovte heslo na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_OFF": {
+    "subject": "Na Vašem účtu Glazecalc bylo vypnuto dvoustupňové přihlášení",
+    "text": "Na účtu Glazecalc {account} bylo právě vypnuto dvoustupňové přihlášení: byla odebrána každá ověřovací aplikace, každý přístupový klíč i každý kód pro obnovení a všechna přihlášená zařízení byla odhlášena. K přihlášení nyní stačí jen heslo.\n\nDvoustupňové přihlášení můžete znovu zapnout na stránce svého účtu. Pokud jste o to nežádali, ihned si obnovte heslo na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "MFA_REMOVED": {
+    "subject": "Z Vašeho účtu Glazecalc byl odebrán krok přihlášení",
+    "text": "Z účtu Glazecalc {account} bylo právě odebráno jako druhý krok přihlášení: {method}. Pokud to byl poslední, k přihlášení nyní stačí jen heslo.\n\nPokud jste to byli Vy, nemusíte nic dělat. Pokud ne, ihned si obnovte heslo na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_LINKED": {
+    "subject": "K Vašemu účtu Glazecalc byl přidán nový způsob přihlášení",
+    "text": "K účtu Glazecalc {account} se nyní můžete přihlašovat přes {provider}.\n\nPokud jste to byli Vy, nemusíte už nic dělat. Pokud ne, zrušte toto propojení na stránce svého účtu na {page} a ihned si obnovte heslo zde: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "PROVIDER_UNLINKED": {
+    "subject": "Z Vašeho účtu Glazecalc byl odebrán jeden způsob přihlášení",
+    "text": "Propojení {provider} s účtem Glazecalc {account} bylo zrušeno a už se přes něj nelze k tomuto účtu přihlásit.\n\nPokud jste to byli Vy, nemusíte už nic dělat. Pokud ne, může být k Vašemu účtu někdo přihlášen: ihned si obnovte heslo zde: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_NEW": {
+    "subject": "Nové kódy pro obnovení k Vašemu účtu Glazecalc",
+    "text": "K účtu Glazecalc {account} byly právě vytvořeny nové kódy pro obnovení. Staré kódy už nefungují.\n\nPokud jste to byli Vy, nové kódy uschovejte na bezpečném místě. Pokud ne, ihned si obnovte heslo na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RECOVERY_USED": {
+    "subject": "Na Vašem účtu Glazecalc byl použit kód pro obnovení",
+    "text": "Jeden z kódů pro obnovení k účtu Glazecalc {account} byl právě použit, takže už nebude fungovat. Nepoužitých kódů zbývá: {left}. Nové kódy můžete vytvořit na stránce svého účtu: {page}\n\nPokud jste to nebyli Vy, někdo možná má Vaše heslo i Vaše kódy: ihned si obnovte heslo na {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET": {
+    "subject": "Obnovení hesla do aplikace Glazecalc",
+    "text": "Někdo (doufejme, že Vy) požádal o obnovení hesla k účtu {account} v aplikaci Glazecalc.\n\nChcete-li si zvolit nové heslo, otevřete do {minutes} minut tento odkaz:\n\n{link}\n\nOdkaz funguje jen jednou. Pokud jste o to nežádali, tento e-mail ignorujte; Vaše heslo zůstane stejné.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "RESET_STOPPED": {
+    "subject": "Vaše heslo do aplikace Glazecalc bylo změněno",
+    "opening": "Heslo k účtu {account} v aplikaci Glazecalc bylo právě obnoveno a všechna zařízení, která byla přihlášena, byla odhlášena.\n\n",
+    "stopped": "Pro případ, že by staré heslo znal někdo jiný, obnovení zastavilo také toto:\n\n",
+    "tokens": "- Přístupové tokeny a připojené aplikace, které měly přístup k Vaší uložené práci ({count}). Pokud některý stále potřebujete, vytvořte nový token na stránce svého účtu na {page}\n",
+    "providers": "- Přihlašování přes {providers}, které můžete znovu propojit na stránce svého účtu na {page}\n",
+    "shareLinks": "- Odkazy, které jste vytvořili ke sdílení receptů. Nové můžete vytvořit u každého receptu.\n",
+    "closing": "\nPokud jste to byli Vy, nemusíte už nic dělat. Pokud ne, ihned si obnovte heslo zde: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "SECOND_STEP_UNFINISHED": {
+    "subject": "Někdo zadal Vaše heslo ke Glazecalc, ale nedokončil přihlášení",
+    "text": "Někdo zadal správné heslo k účtu Glazecalc {account}, ale nedokončil druhý krok přihlášení. Váš druhý krok ho nepustil dál.\n\nPokud jste to byli Vy, nemusíte nic dělat. Pokud ne, někdo zná Vaše heslo: ihned ho změňte. Můžete si ho obnovit na {forgot}\n\nPo 10 chybných kódech z ověřovací aplikace se kódy odmítají hodinu; po dalších 10 jeden den; a pak pokaždé týden. Přístupový klíč nebo kód pro obnovení funguje i v době, kdy se kódy odmítají. Obnovení hesla e-mailem to ukončí: nedokončená přihlášení dotyčného skončí, heslo už nezná a kódy zase fungují.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_EXPIRING": {
+    "subject": "Přístupový token k Vašemu účtu Glazecalc brzy vyprší",
+    "text": "Přístupový token s názvem „{name}“ u účtu Glazecalc {account} přestane fungovat {date}.\n\nPokud ho stále používáte, vytvořte do té doby na {page} nový token a dejte ho svému asistentovi nebo skriptu místo starého. Pokud ho už nepoužíváte, nemusíte nic dělat.\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE": {
+    "subject": "Nový přístupový token k Vašemu účtu Glazecalc",
+    "text": "Přístupový token s názvem „{name}“ byl právě vytvořen pro účet Glazecalc {account}. Může číst recepty, suroviny, poznámky a záznamy výpalů uložené v účtu do {date}.\n\nPokud jste to byli Vy, nemusíte už nic dělat. Své tokeny můžete vidět a zneplatnit na {page}\n\nPokud ne, zneplatněte ho tam a ihned si obnovte heslo zde: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "TOKEN_MADE_WRITE": {
+    "subject": "Nový přístupový token, který může měnit záznamy ve Vašem účtu Glazecalc",
+    "text": "Přístupový token s názvem „{name}“ byl právě vytvořen pro účet Glazecalc {account}. Do {date} může číst a měnit recepty, suroviny, poznámky a záznamy výpalů uložené v účtu a přesouvat je do koše. Každá změna, kterou provede, zachová záznam tak, jak byl, takže ji můžete na webu vrátit zpět.\n\nPokud jste to byli Vy, nemusíte už nic dělat. Své tokeny můžete vidět a zneplatnit na {page}\n\nPokud ne, zneplatněte ho tam a ihned si obnovte heslo zde: {forgot}\n\n-- \nGlazecalc, {app}\n"
+  },
+  "VERIFY": {
+    "subject": "Potvrďte svůj e-mail pro Glazecalc",
+    "text": "Někdo (doufejme, že Vy) vytvořil účet Glazecalc s adresou {account}.\n\nChcete-li potvrdit, že tato adresa patří Vám, otevřete do {hours} hodin tento odkaz:\n\n{link}\n\nOdkaz funguje jen jednou. Pokud jste účet nevytvářeli, tento e-mail ignorujte; nic dalšího Vám nebude posláno, pokud o to nepožádáte.\n\n-- \nGlazecalc, {app}\n"
+  }
+}

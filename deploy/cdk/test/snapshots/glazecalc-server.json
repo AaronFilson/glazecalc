@@ -1,0 +1,539 @@
+{
+  "Description": "glazecalc: the instance, its role, network, backups, snapshots and alarms",
+  "Resources": {
+    "Backups9A29A52D": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketEncryption": {
+          "ServerSideEncryptionConfiguration": [
+            {
+              "ServerSideEncryptionByDefault": {
+                "SSEAlgorithm": "AES256"
+              }
+            }
+          ]
+        },
+        "BucketName": "glazecalc-backups-724654236968",
+        "LifecycleConfiguration": {
+          "Rules": [
+            {
+              "ExpirationInDays": 30,
+              "Id": "expire-dumps",
+              "Prefix": "mongodump/",
+              "Status": "Enabled"
+            }
+          ]
+        },
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": true,
+          "BlockPublicPolicy": true,
+          "IgnorePublicAcls": true,
+          "RestrictPublicBuckets": true
+        }
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-server/Backups/Resource"
+      }
+    },
+    "BackupsPolicy374D03D2": {
+      "Type": "AWS::S3::BucketPolicy",
+      "Properties": {
+        "Bucket": {
+          "Ref": "Backups9A29A52D"
+        },
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "s3:*",
+              "Condition": {
+                "Bool": {
+                  "aws:SecureTransport": "false"
+                }
+              },
+              "Effect": "Deny",
+              "Principal": {
+                "AWS": "*"
+              },
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "Backups9A29A52D",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "Backups9A29A52D",
+                          "Arn"
+                        ]
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-server/Backups/Policy/Resource"
+      }
+    },
+    "BackupBucketParameterB4E44F01": {
+      "Type": "AWS::SSM::Parameter",
+      "Properties": {
+        "Name": "/glazecalc/backup-bucket",
+        "Type": "String",
+        "Value": {
+          "Ref": "Backups9A29A52D"
+        }
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-server/BackupBucketParameter/Resource"
+      }
+    },
+    "InstanceRole3CCE2F1D": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "ec2.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/AmazonSSMManagedInstanceCore"
+              ]
+            ]
+          }
+        ],
+        "Policies": [
+          {
+            "PolicyDocument": {
+              "Statement": [
+                {
+                  "Action": "ssm:GetParameter",
+                  "Effect": "Allow",
+                  "Resource": "arn:aws:ssm:us-west-2:724654236968:parameter/glazecalc/*",
+                  "Sid": "ReadAppSettings"
+                },
+                {
+                  "Action": [
+                    "s3:PutObject",
+                    "s3:GetObject"
+                  ],
+                  "Effect": "Allow",
+                  "Resource": {
+                    "Fn::Join": [
+                      "",
+                      [
+                        {
+                          "Fn::GetAtt": [
+                            "Backups9A29A52D",
+                            "Arn"
+                          ]
+                        },
+                        "/mongodump/*"
+                      ]
+                    ]
+                  },
+                  "Sid": "WriteAndRestoreDatabaseDumps"
+                },
+                {
+                  "Action": "s3:ListBucket",
+                  "Condition": {
+                    "StringLike": {
+                      "s3:prefix": "mongodump/*"
+                    }
+                  },
+                  "Effect": "Allow",
+                  "Resource": {
+                    "Fn::GetAtt": [
+                      "Backups9A29A52D",
+                      "Arn"
+                    ]
+                  },
+                  "Sid": "FindDumpsToRestore"
+                }
+              ],
+              "Version": "2012-10-17"
+            },
+            "PolicyName": "glazecalc-app"
+          }
+        ],
+        "RoleName": "glazecalc-instance"
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-server/InstanceRole/Resource"
+      }
+    },
+    "InstanceProfile9F2F41CB": {
+      "Type": "AWS::IAM::InstanceProfile",
+      "Properties": {
+        "InstanceProfileName": "glazecalc-instance",
+        "Roles": [
+          {
+            "Ref": "InstanceRole3CCE2F1D"
+          }
+        ]
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-server/InstanceProfile/Resource"
+      }
+    },
+    "WebSecurityGroup": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "glazecalc: HTTP and HTTPS",
+        "GroupName": "glazecalc-web",
+        "SecurityGroupIngress": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "FromPort": 80,
+            "IpProtocol": "tcp",
+            "ToPort": 80
+          },
+          {
+            "CidrIpv6": "::/0",
+            "FromPort": 80,
+            "IpProtocol": "tcp",
+            "ToPort": 80
+          },
+          {
+            "CidrIp": "0.0.0.0/0",
+            "FromPort": 443,
+            "IpProtocol": "tcp",
+            "ToPort": 443
+          },
+          {
+            "CidrIpv6": "::/0",
+            "FromPort": 443,
+            "IpProtocol": "tcp",
+            "ToPort": 443
+          }
+        ],
+        "Tags": [
+          {
+            "Key": "app",
+            "Value": "glazecalc"
+          },
+          {
+            "Key": "Name",
+            "Value": "glazecalc-web"
+          }
+        ]
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-server/WebSecurityGroup"
+      }
+    },
+    "LaunchTemplate": {
+      "Type": "AWS::EC2::LaunchTemplate",
+      "Properties": {
+        "LaunchTemplateData": {
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/xvda",
+              "Ebs": {
+                "Encrypted": true,
+                "VolumeSize": 20,
+                "VolumeType": "gp3"
+              }
+            }
+          ],
+          "CreditSpecification": {
+            "CpuCredits": "standard"
+          },
+          "IamInstanceProfile": {
+            "Name": {
+              "Ref": "InstanceProfile9F2F41CB"
+            }
+          },
+          "ImageId": "resolve:ssm:/aws/service/debian/release/13/latest/arm64",
+          "InstanceType": "t4g.micro",
+          "MetadataOptions": {
+            "HttpEndpoint": "enabled",
+            "HttpPutResponseHopLimit": 1,
+            "HttpTokens": "required"
+          },
+          "SecurityGroupIds": [
+            {
+              "Fn::GetAtt": [
+                "WebSecurityGroup",
+                "GroupId"
+              ]
+            }
+          ],
+          "TagSpecifications": [
+            {
+              "ResourceType": "instance",
+              "Tags": [
+                {
+                  "Key": "Name",
+                  "Value": "glazecalc"
+                },
+                {
+                  "Key": "app",
+                  "Value": "glazecalc"
+                }
+              ]
+            },
+            {
+              "ResourceType": "volume",
+              "Tags": [
+                {
+                  "Key": "Name",
+                  "Value": "glazecalc"
+                },
+                {
+                  "Key": "app",
+                  "Value": "glazecalc"
+                }
+              ]
+            }
+          ],
+          "UserData": "I2Nsb3VkLWNvbmZpZwojIEZpcnN0LWJvb3Qgc2V0dXAgZm9yIHRoZSBnbGF6ZWNhbGMgRUMyIGluc3RhbmNlIChvZmZpY2lhbCBEZWJpYW4gMTMgQU1JLAojIGFybTY0IG9yIGFtZDY0KS4gUGFzc2VkIGFzIHVzZXIgZGF0YSBieSB0aGUgbGF1bmNoIHRlbXBsYXRlLgojCiMgTm8gc2VjcmV0cyBoZXJlOiB1c2VyIGRhdGEgaXMgcmVhZGFibGUgYnkgYW55IHByb2Nlc3Mgb24gdGhlIGluc3RhbmNlIGFuZCBpcwojIGxvZ2dlZC4gQVBQX1NFQ1JFVCwgdGhlIE1vbmdvREIgcGFzc3dvcmQsIHRoZSBiYWNrdXAgYnVja2V0IG5hbWUgYW5kIHRoZSBvcHRpb25hbCBMZXQncyBFbmNyeXB0IGVtYWlsCiMgYXJlIHJlYWQgZnJvbSBTU00gUGFyYW1ldGVyIFN0b3JlICgvZ2xhemVjYWxjLyopIHVzaW5nIHRoZSBpbnN0YW5jZSByb2xlLgojCiMgVGhlIHNldHVwIGl0c2VsZiBpcyBkZXBsb3kvc2V0dXAtaW5zdGFuY2Uuc2gsIGRvd25sb2FkZWQgYW5kIHJ1biBvbmNlLgojIFByb2dyZXNzIGFuZCBlcnJvcnM6IC92YXIvbG9nL2Nsb3VkLWluaXQtb3V0cHV0LmxvZwojICAgKFNlc3Npb24gTWFuYWdlcjogc3VkbyB0YWlsIC1mIC92YXIvbG9nL2Nsb3VkLWluaXQtb3V0cHV0LmxvZykKCnBhY2thZ2VfdXBkYXRlOiB0cnVlCnBhY2thZ2VfdXBncmFkZTogdHJ1ZQpwYWNrYWdlczoKICAtIGNhLWNlcnRpZmljYXRlcwogIC0gY3VybAogIC0gdW56aXAKICAtIGpxCiAgLSB1bmF0dGVuZGVkLXVwZ3JhZGVzCgp3cml0ZV9maWxlczoKICAjIE1vbmdvREIgcHJvZHVjdGlvbiBub3Rlczsgdm0ub3ZlcmNvbW1pdF9tZW1vcnkgaXMgc2V0IGJ5IG1vbmdvZGItdGhwLnNlcnZpY2UuCiAgLSBwYXRoOiAvZXRjL3N5c2N0bC5kLzkwLWdsYXplY2FsYy5jb25mCiAgICBjb250ZW50OiB8CiAgICAgIHZtLnN3YXBwaW5lc3MgPSAxCiAgICAgIG5ldC5pcHY0LnRjcF9rZWVwYWxpdmVfdGltZSA9IDEyMAoKICAjIFNlY3VyaXR5IHVwZGF0ZXMgaW5zdGFsbCBhdXRvbWF0aWNhbGx5LgogIC0gcGF0aDogL2V0Yy9hcHQvYXB0LmNvbmYuZC8yMGF1dG8tdXBncmFkZXMKICAgIGNvbnRlbnQ6IHwKICAgICAgQVBUOjpQZXJpb2RpYzo6VXBkYXRlLVBhY2thZ2UtTGlzdHMgIjEiOwogICAgICBBUFQ6OlBlcmlvZGljOjpVbmF0dGVuZGVkLVVwZ3JhZGUgIjEiOwoKICAjIERvY2tlciBFbmdpbmUgYW5kIGNvbnRhaW5lcmQgY29tZSBmcm9tIERvY2tlcidzIG93biByZXBvc2l0b3J5CiAgIyAoc2V0dXAtaW5zdGFuY2Uuc2gpLCB3aGljaCBEZWJpYW4ncyBsaXN0IG9mIG9yaWdpbnMgdG8gdXBkYXRlIGZyb20gbGVhdmVzCiAgIyBvdXQ6IHRoaXMgYWRkcyBpdCwgc28gdGhleSB1cGRhdGUgdGhlIHNhbWUgd2F5LiBBbiB1cGRhdGUgcmVzdGFydHMgRG9ja2VyLAogICMgYW5kIHRoZSBhcHAgd2l0aCBpdCwgZm9yIGFib3V0IGEgbWludXRlLiBBZGRlZCB0byB0aGUgbGlzdCwgbm90IHJlcGxhY2luZyBpdC4KICAtIHBhdGg6IC9ldGMvYXB0L2FwdC5jb25mLmQvNTFnbGF6ZWNhbGMtZG9ja2VyCiAgICBjb250ZW50OiB8CiAgICAgIFVuYXR0ZW5kZWQtVXBncmFkZTo6T3JpZ2lucy1QYXR0ZXJuIHsKICAgICAgICAib3JpZ2luPURvY2tlcixjb2RlbmFtZT0ke2Rpc3Ryb19jb2RlbmFtZX0sbGFiZWw9RG9ja2VyIENFIjsKICAgICAgfTsKCiAgIyBLZXJuZWwgYW5kIHNpbWlsYXIgdXBkYXRlcyBvbmx5IHRha2UgZWZmZWN0IGFmdGVyIGEgcmVib290LiBXaGVuIG9uZSBuZWVkcwogICMgaXQsIHJlYm9vdCBhdCAxMTozMCBVVEM6IGFmdGVyIHRoZSAxMDowMCBzbmFwc2hvdCBhbmQgdGhlIDEwOjMwICgrMjAgbWluKQogICMgYmFja3VwLiBnbGF6ZWNhbGMuc2VydmljZSBicmluZ3MgdGhlIGFwcCBiYWNrOyBhYm91dCBhIG1pbnV0ZSBvZiBkb3dudGltZS4KICAtIHBhdGg6IC9ldGMvYXB0L2FwdC5jb25mLmQvNTJnbGF6ZWNhbGMtcmVib290CiAgICBjb250ZW50OiB8CiAgICAgIFVuYXR0ZW5kZWQtVXBncmFkZTo6QXV0b21hdGljLVJlYm9vdCAidHJ1ZSI7CiAgICAgIFVuYXR0ZW5kZWQtVXBncmFkZTo6QXV0b21hdGljLVJlYm9vdC1UaW1lICIxMTozMCI7CgogICMgRG9ja2VyJ3MgImxvY2FsIiBsb2cgZHJpdmVyIHJvdGF0ZXMgY29udGFpbmVyIGxvZ3MgYnkgaXRzZWxmLCBieSBzaXplIG9ubHkKICAjIChjb21wb3NlLnByb2QueWFtbCBzZXRzIHRoZSBsaW1pdDogNSBmaWxlcyBvZiAxMCBNQiBwZXIgY29udGFpbmVyKS4KICAtIHBhdGg6IC9ldGMvZG9ja2VyL2RhZW1vbi5qc29uCiAgICBjb250ZW50OiB8CiAgICAgIHsgImxvZy1kcml2ZXIiOiAibG9jYWwiIH0KCnJ1bmNtZDoKICAtIFsKICAgICAgY3VybCwKICAgICAgLWZzU0wsCiAgICAgIC1vLAogICAgICAvdXNyL2xvY2FsL3NiaW4vZ2xhemVjYWxjLXNldHVwLnNoLAogICAgICAnaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0Fhcm9uRmlsc29uL2dsYXplY2FsYy9tYXN0ZXIvZGVwbG95L3NldHVwLWluc3RhbmNlLnNoJwogICAgXQogIC0gW2Jhc2gsIC91c3IvbG9jYWwvc2Jpbi9nbGF6ZWNhbGMtc2V0dXAuc2hdCg=="
+        },
+        "LaunchTemplateName": "glazecalc",
+        "TagSpecifications": [
+          {
+            "ResourceType": "launch-template",
+            "Tags": [
+              {
+                "Key": "app",
+                "Value": "glazecalc"
+              }
+            ]
+          }
+        ]
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-server/LaunchTemplate"
+      }
+    },
+    "Instance": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "DisableApiTermination": true,
+        "LaunchTemplate": {
+          "LaunchTemplateId": {
+            "Ref": "LaunchTemplate"
+          },
+          "Version": "1"
+        },
+        "Tags": [
+          {
+            "Key": "app",
+            "Value": "glazecalc"
+          },
+          {
+            "Key": "Name",
+            "Value": "glazecalc"
+          }
+        ]
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-server/Instance"
+      }
+    },
+    "ElasticIp": {
+      "Type": "AWS::EC2::EIP",
+      "Properties": {
+        "Domain": "vpc",
+        "InstanceId": {
+          "Ref": "Instance"
+        },
+        "Tags": [
+          {
+            "Key": "app",
+            "Value": "glazecalc"
+          },
+          {
+            "Key": "Name",
+            "Value": "glazecalc"
+          }
+        ]
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-server/ElasticIp"
+      }
+    },
+    "Snapshots": {
+      "Type": "AWS::DLM::LifecyclePolicy",
+      "Properties": {
+        "Description": "glazecalc daily snapshots",
+        "ExecutionRoleArn": "arn:aws:iam::724654236968:role/AWSDataLifecycleManagerDefaultRole",
+        "PolicyDetails": {
+          "PolicyType": "EBS_SNAPSHOT_MANAGEMENT",
+          "ResourceTypes": [
+            "INSTANCE"
+          ],
+          "Schedules": [
+            {
+              "CopyTags": true,
+              "CreateRule": {
+                "Interval": 24,
+                "IntervalUnit": "HOURS",
+                "Times": [
+                  "10:00"
+                ]
+              },
+              "Name": "Daily keep 7",
+              "RetainRule": {
+                "Count": 7
+              },
+              "TagsToAdd": [
+                {
+                  "Key": "snapshot-of",
+                  "Value": "glazecalc"
+                }
+              ]
+            }
+          ],
+          "TargetTags": [
+            {
+              "Key": "app",
+              "Value": "glazecalc"
+            }
+          ]
+        },
+        "State": "ENABLED"
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-server/Snapshots"
+      }
+    },
+    "RecoverAlarm57AA5930": {
+      "Type": "AWS::CloudWatch::Alarm",
+      "Properties": {
+        "AlarmActions": [
+          "arn:aws:automate:us-west-2:ec2:recover"
+        ],
+        "AlarmName": "glazecalc-recover",
+        "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+        "Dimensions": [
+          {
+            "Name": "InstanceId",
+            "Value": {
+              "Ref": "Instance"
+            }
+          }
+        ],
+        "EvaluationPeriods": 2,
+        "MetricName": "StatusCheckFailed_System",
+        "Namespace": "AWS/EC2",
+        "Period": 60,
+        "Statistic": "Maximum",
+        "Threshold": 1
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-server/RecoverAlarm/Resource"
+      }
+    },
+    "RebootAlarm34EA8646": {
+      "Type": "AWS::CloudWatch::Alarm",
+      "Properties": {
+        "AlarmActions": [
+          "arn:aws:automate:us-west-2:ec2:reboot"
+        ],
+        "AlarmName": "glazecalc-reboot",
+        "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+        "Dimensions": [
+          {
+            "Name": "InstanceId",
+            "Value": {
+              "Ref": "Instance"
+            }
+          }
+        ],
+        "EvaluationPeriods": 3,
+        "MetricName": "StatusCheckFailed_Instance",
+        "Namespace": "AWS/EC2",
+        "Period": 60,
+        "Statistic": "Maximum",
+        "Threshold": 1
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-server/RebootAlarm/Resource"
+      }
+    }
+  },
+  "Parameters": {
+    "BootstrapVersion": {
+      "Type": "AWS::SSM::Parameter::Value<String>",
+      "Default": "/cdk-bootstrap/hnb659fds/version",
+      "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]"
+    }
+  },
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  {
+                    "Ref": "BootstrapVersion"
+                  }
+                ]
+              }
+            ]
+          },
+          "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI."
+        }
+      ]
+    }
+  }
+}

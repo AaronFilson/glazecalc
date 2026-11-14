@@ -86,18 +86,24 @@ const list = (names: string[]): string => listOf(names);
         @for (cap of report.capped; track cap.name) {
           <p>
             {{
-              cap.why
-                ? t('recipe.swapReport.cappedWhy', {
-                    wouldBe: (cap.wouldBe | gcFixed: 0),
+              cap.broken
+                ? t('recipe.swapReport.cappedBroken', {
+                    now: (cap.wouldBe | gcFixed: 1),
                     list: list(cap.members),
-                    most: (cap.most | gcFixed: 0),
-                    why: cap.why
+                    most: (cap.most | gcFixed: 1)
                   })
-                : t('recipe.swapReport.capped', {
-                    wouldBe: (cap.wouldBe | gcFixed: 0),
-                    list: list(cap.members),
-                    most: (cap.most | gcFixed: 0)
-                  })
+                : cap.why
+                  ? t('recipe.swapReport.cappedWhy', {
+                      wouldBe: (cap.wouldBe | gcFixed: 0),
+                      list: list(cap.members),
+                      most: (cap.most | gcFixed: 0),
+                      why: cap.why
+                    })
+                  : t('recipe.swapReport.capped', {
+                      wouldBe: (cap.wouldBe | gcFixed: 0),
+                      list: list(cap.members),
+                      most: (cap.most | gcFixed: 0)
+                    })
             }}
             <button
               type="button"

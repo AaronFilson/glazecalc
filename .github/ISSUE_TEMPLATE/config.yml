@@ -1,0 +1,6 @@
+# The "New issue" page: the forms in this folder, a blank issue, and this link.
+blank_issues_enabled: true
+contact_links:
+  - name: A security problem
+    url: https://github.com/AaronFilson/glazecalc/security/policy
+    about: Please report it privately, as the security policy says, not in an issue.

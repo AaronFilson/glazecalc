@@ -28,6 +28,19 @@ services:
   app:
     image: ghcr.io/aaronfilson/glazecalc:${GLAZECALC_TAG:-latest}
     restart: unless-stopped
+    # Memory, on a 1 GB t4g.micro with a 2 GB swap file (setup-instance.sh) for
+    # a moment's peak: MongoDB takes about 400 MB (its 0.25 GB cache, below, and
+    # its own working memory), and Debian, Docker, the SSM agent and nginx about
+    # 150 MB, which leaves the app about 450 MB. Node's heap is capped at 256 MB
+    # (NODE_OPTIONS below: about what Node takes for itself on 1 GB, written
+    # here so that a larger instance does not raise it unseen), and the
+    # container at 512 MB. In use the process is about 120 to 220 MB; the
+    # largest import (a 20 MB file of 20,000 records) peaks at 440 to 480 MB
+    # with this heap (measured on a laptop, 2026-11-13), the swap file covering
+    # the rest at that moment. An app that outgrows its heap stops and is started again
+    # (restart, above), rather than pushing MongoDB into swap or out of memory.
+    # Staging has its own, smaller limits (compose.staging.yaml).
+    mem_limit: 512m
     # APP_SECRET, MONGODB_URI (with the app's MongoDB user and password),
     # MFA_KEY (two-step sign-in's key), the email settings and, once their
     # parameters exist, GOOGLE_/GITHUB_/MICROSOFT_CLIENT_ID and _CLIENT_SECRET
@@ -37,6 +50,7 @@ services:
     environment:
       NODE_ENV: production
       PORT: 3000
+      NODE_OPTIONS: --max-old-space-size=256
       # Where the site lives (server/lib/site.ts): mail links, the sitemap, and
       # the host passkeys belong to. Required in production. Production has no
       # SITE_LABEL, NOINDEX or MAIL_ALLOWLIST: those are for a staging copy.

@@ -357,18 +357,24 @@ interface Result {
         @for (cap of r.solved.report.capped; track cap.name) {
           <p>
             {{
-              cap.why
-                ? t('recipe.swapReport.cappedWhy', {
-                    wouldBe: fixed(cap.wouldBe, 0),
+              cap.broken
+                ? t('recipe.swapReport.cappedBroken', {
+                    now: fixed(cap.wouldBe, 1),
                     list: listOf(cap.members),
-                    most: fixed(cap.most, 0),
-                    why: cap.why
+                    most: fixed(cap.most, 1)
                   })
-                : t('recipe.swapReport.capped', {
-                    wouldBe: fixed(cap.wouldBe, 0),
-                    list: listOf(cap.members),
-                    most: fixed(cap.most, 0)
-                  })
+                : cap.why
+                  ? t('recipe.swapReport.cappedWhy', {
+                      wouldBe: fixed(cap.wouldBe, 0),
+                      list: listOf(cap.members),
+                      most: fixed(cap.most, 0),
+                      why: cap.why
+                    })
+                  : t('recipe.swapReport.capped', {
+                      wouldBe: fixed(cap.wouldBe, 0),
+                      list: listOf(cap.members),
+                      most: fixed(cap.most, 0)
+                    })
             }}
             <button
               type="button"
@@ -742,9 +748,9 @@ export class SolvePage implements OnInit {
       if (!(error instanceof SolveProblem)) throw error;
       this.problem.set(error.message);
       const field =
-        error.code === 'solve.noFlux'
+        error.code === 'solve.noFlux' && !error.ofMaterials
           ? fieldId('CaO')
-          : error.code === 'solve.noMaterials'
+          : error.code === 'solve.noMaterials' || error.ofMaterials
             ? 'solve-materials-heading'
             : 'solve-run';
       afterNextRender(() => document.getElementById(field)?.focus(), { injector: this.injector });

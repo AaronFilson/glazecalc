@@ -80,12 +80,14 @@ export class LocaleService {
     effect(() => listLocale.set(this.listLocale()));
     effect(() => typedDecimalMark.set(this.preferences.decimalMark()));
     // Back to the defaults when the app (or a test's injector) is torn down, so
-    // the next one does not start in this one's locale.
+    // the next one does not start in this one's locale, nor in the region this
+    // visit followed: the library's own choice on the browser is the one left.
     inject(DestroyRef).onDestroy(() => {
       formatLocale.set('en');
       listLocale.set('en');
       typedDecimalMark.set('either');
       pageDirection.set('ltr');
+      followRegion(readRegion());
     });
     // The library lists what is sold where the potter works, once a region is chosen. This follows
     // the setting for the visit; only a choice made in the library itself is kept on the browser.

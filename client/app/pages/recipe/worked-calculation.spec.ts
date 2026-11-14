@@ -125,4 +125,21 @@ describe('WorkedCalculation', () => {
     const { fixture } = await create([{ ...SILICA, amount: '' }]);
     expect(text(fixture)).toContain('There is nothing to work out: the materials have no amounts.');
   });
+
+  it('names a counted colorant it cannot work with, under the working', async () => {
+    const fixture = TestBed.createComponent(WorkedCalculation);
+    fixture.componentRef.setInput('materials', MATERIALS);
+    fixture.componentRef.setInput('additives', [
+      IRON,
+      { ...IRON, name: 'Odd ochre', percentmole: 'percent', fields: [{ name: 'Fe', amount: 100 }] }
+    ]);
+    fixture.componentRef.setInput('includeAdditives', true);
+    await fixture.whenStable();
+    expect(text(fixture, 'ul.worked-note')).toBe(
+      'Odd ochre has no oxide analysis the unity formula can use, so it is left out.'
+    );
+    // The iron is in the working; the ochre is not.
+    expect(text(fixture, '.worked-table tbody')).toContain('Red iron oxide');
+    expect(text(fixture)).not.toMatch(/Odd ochre: \d/);
+  });
 });

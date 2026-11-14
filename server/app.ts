@@ -46,6 +46,7 @@ import {
 import { readPrerendered } from './lib/prerendered.ts';
 import { sendCompressed } from './lib/compress.ts';
 import languages from '../lib/regions/languages.js';
+import materialSlugs from '../lib/material-slug.js';
 
 const app = express();
 export default app;
@@ -77,8 +78,24 @@ export const contentSecurityPolicy = (nonce?: string): string =>
     "form-action 'self'",
     "frame-ancestors 'none'"
   ].join('; ');
+// Powerful browser features no page here uses, turned off for every page and anything it frames, so a
+// script that got in could not reach the camera, the microphone or the like. Passkeys, the clipboard and
+// sharing, which the app does use, keep their default: this site only. Only names Chrome knows, as an
+// unknown one is a console error on every page.
+export const PERMISSIONS_POLICY = [
+  'camera=()',
+  'microphone=()',
+  'geolocation=()',
+  'payment=()',
+  'usb=()',
+  'serial=()',
+  'hid=()',
+  'midi=()',
+  'display-capture=()'
+].join(', ');
 app.use((req, res, next) => {
   res.set('Content-Security-Policy', contentSecurityPolicy());
+  res.set('Permissions-Policy', PERMISSIONS_POLICY);
   next();
 });
 // X-Robots-Tag on every response of a copy that is not to be indexed (NOINDEX).
@@ -108,10 +125,20 @@ api.get('/health', (req, res) => {
     .catch(() => unavailable('not responding'));
 });
 
+// Every request below, per address (limits.apiRequests): a ceiling under each route's own limits.
+api.use(limits.apiRequests);
+
 // /additives, /advice, /firing, /materials, /notes, /recipe and /trash: the
 // only routes an access token can reach (with /shelf, below), each route asking for its permission
-// (server/lib/require_scope.ts).
-for (const [name, router] of Object.entries(records)) api.use('/' + name, router);
+// (server/lib/require_scope.ts). Named one at a time, not in a loop, so that code scanning can follow
+// each router to the limits above it.
+api.use('/additives', records.additives);
+api.use('/advice', records.advice);
+api.use('/firing', records.firing);
+api.use('/materials', records.materials);
+api.use('/notes', records.notes);
+api.use('/recipe', records.recipe);
+api.use('/trash', records.trash);
 // And /shelf: reading it and changing one material at a time (routes/shelf_routes.ts); its PUT is the session's.
 api.use('/shelf', shelfRoutes);
 // Changes waiting for the person's approval (docs/adr/0025): the token that asked may read what came of
@@ -154,7 +181,7 @@ app.use('/.well-known', metadataRouter);
 // The authorization server for AI assistants (docs/adr/0024-authorization-server.md): everything
 // under /oauth/, and its metadata (RFC 8414) where clients look for it from the issuer, the site.
 app.use(oauthServer);
-app.get('/.well-known/oauth-authorization-server', (req, res) => {
+app.get('/.well-known/oauth-authorization-server', limits.siteDocuments, (req, res) => {
   res.set('Cache-Control', 'public, max-age=3600').json(authorizationServerMetadata());
 });
 // Microsoft's publisher domain file, written from MICROSOFT_CLIENT_ID (docs/adr/0023-microsoft-sign-in.md).
@@ -202,7 +229,13 @@ app.use((req, res, next) => {
     return res.redirect(301, req.path + '/' + queryOf(req));
   }
   const written = languages.canonicalLanguagePath(req.path);
-  return written ? res.redirect(301, written + queryOf(req)) : next();
+  if (written) return res.redirect(301, written + queryOf(req));
+  // A renamed standard material's old page, in any language, goes to its page now (lib/material-slug.js),
+  // with a slash at the end or without.
+  const prefix = languages.languagePrefix(code);
+  const material = /^\/materials\/([a-z0-9-]+)\/?$/.exec(req.path.slice(prefix.length));
+  const now = material && req.path.startsWith(prefix) ? materialSlugs.currentSlug(material[1]) : null;
+  return now ? res.redirect(301, prefix + '/materials/' + now + queryOf(req)) : next();
 });
 
 // A copy that is not to be indexed (NOINDEX) serves no sitemap, and its
@@ -246,7 +279,7 @@ app.get('/robots.txt', site.robotsTxt);
 // docs/adr/0028-service-worker.md): index.html with one style nonce for the whole build, written into the page
 // and named in its policy here, which the worker keeps with the page. The bytes are the file's, as the worker
 // checks them against its manifest. Online, every address is still answered below, with a nonce of its own.
-app.get('/app-shell.html', async (req, res, next) => {
+app.get('/app-shell.html', limits.siteDocuments, async (req, res, next) => {
   let shell: Buffer;
   try {
     shell = await readFile(path.join(CLIENT, 'app-shell.html'));

@@ -50,7 +50,6 @@
     "firedTo": "Degama iki",
     "how": "Būdas",
     "rebuild": "Sudaryti glazūrą iš naujo: palikti jos silicio dioksidą ir aliuminio oksidą, o šviną pakeisti boru ir kitais fliusais",
-    "keepColour": "Išlaikyti spalvą ant bešvinės bazinės glazūros: fritas ir kaolinas santykiu 85 : 15, su recepto dažikliais",
     "fritHeading": "Bešvinis fritas pagrindui (geriausi – sąrašo pradžioje)",
     "fritBoron": "({boron} % boro, B₂O₃)",
     "noFrit": "Bibliotekoje nėra bešvinio frito, parduodamo jūsų regione.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Švino pakeisti negalima: recepte yra žaliava be cheminės analizės, iš kurios būtų galima skaičiuoti.",
     "leadRebuiltCone": "Švinas pakeistas degimui iki piroskopo {cone}, remiantis fritu {base}: palikti senojo recepto silicio dioksidas ir aliuminio oksidas, o švino darbą atlieka boras ir kiti fliusai.",
     "leadRebuilt": "Švinas pakeistas degimui iki {firing}, remiantis fritu {base}: palikti senojo recepto silicio dioksidas ir aliuminio oksidas, o švino darbą atlieka boras ir kiti fliusai.",
-    "leadColour": "Švinas pakeistas: dažikliai perkelti ant bešvinės bazinės glazūros iš frito {base} ir kaolino santykiu 85 : 15.",
     "leadGloss": "Švino suteikiamo blizgesio, skaidrumo ar spalvos ji tiksliai neatkartos: tikėkitės mažesnio spindesio ir galimo drumstėjimo ant raudonos molio masės arba trūkinėjimo. Išbandykite nedidelį užmaišą ant savo molio masės.",
     "leadSafety": "Vien tai, kad glazūroje nėra švino, dar nereiškia, kad ji tinkama liestis su maistu; tai priklauso nuo visos formulės ir degimo.",
     "leadReplaced": "Švinas pakeistas.",
@@ -245,8 +243,7 @@
       "text": "Jie dedami papildomai prie bazinės glazūros. Jie įrašomi kartu su receptu, bet neįtraukiami į Segerio formulę. Pasirinkite, kokiais vienetais nurodytas kiekvienas kiekis:",
       "percent": "<b>% bazinės</b>: procentai nuo bazinės glazūros sumos, kaip nurodoma daugumoje receptų: 2 reiškia 2 % raudonojo geležies oksido.",
       "parts": "<b>dalys</b>: tas pats vienetas kaip žaliavų, pvz., 1 dalis bazinei glazūrai iš 3 dalių titnago<en>flint</en> ir 2 dalių dolomito.",
-      "grams": "<b>gramai</b>: masė tame pačiame užmaiše kaip ir žaliavos.",
-      "count": "Vienos skaičiuoklės dažiklius įskaičiuoja į Segerio formulę<en>unity molecular formula</en>, kitos – ne. Pažymėkite <b>Įskaičiuoti dažiklius ir priedus</b> po antrašte Segerio formulė, kad jie būtų įskaičiuoti pagal jų masę užmaiše, arba palikite nepažymėtą, kad galėtumėte palyginti su skaičiuokle, kuri jų neįskaičiuoja. Pasirinkimas įrašomas kartu su receptu."
+      "grams": "<b>gramai</b>: masė tame pačiame užmaiše kaip ir žaliavos."
     },
     "scale": {
       "heading": "Perskaičiavimas, kai reikia",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide} nėra Glazecalc žinomas oksidas.",
     "together": "Nurodykite kalio (K₂O) ir natrio (Na₂O) oksidus atskirai, o ne kartu kaip KNaO.",
     "badAmount": "{oxide} kiekis nėra skaičius, ne mažesnis už 0.",
-    "noFlux": "Tikslui reikia bent vieno fliuso, pavyzdžiui, CaO, K₂O arba Na₂O.",
     "noMaterials": "Pridėkite bent vieną žaliavą, iš kurios būtų sudarytas receptas.",
     "noMatch": "Nė viena iš šių žaliavų neturi nė vieno iš tikslo oksidų."
   },

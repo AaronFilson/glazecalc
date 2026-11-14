@@ -1,0 +1,431 @@
+{
+  "Description": "glazecalc: SES receiving for six addresses, the mail bucket and the forwarder",
+  "Resources": {
+    "Mail6A3D1F64": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketEncryption": {
+          "ServerSideEncryptionConfiguration": [
+            {
+              "ServerSideEncryptionByDefault": {
+                "SSEAlgorithm": "AES256"
+              }
+            }
+          ]
+        },
+        "BucketName": "glazecalc-mail-724654236968",
+        "LifecycleConfiguration": {
+          "Rules": [
+            {
+              "AbortIncompleteMultipartUpload": {
+                "DaysAfterInitiation": 1
+              },
+              "ExpirationInDays": 30,
+              "Id": "expire-mail",
+              "Prefix": "inbound/",
+              "Status": "Enabled"
+            }
+          ]
+        },
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": true,
+          "BlockPublicPolicy": true,
+          "IgnorePublicAcls": true,
+          "RestrictPublicBuckets": true
+        }
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-mail-inbound/Mail/Resource"
+      }
+    },
+    "MailPolicyBB7619B4": {
+      "Type": "AWS::S3::BucketPolicy",
+      "Properties": {
+        "Bucket": {
+          "Ref": "Mail6A3D1F64"
+        },
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "s3:*",
+              "Condition": {
+                "Bool": {
+                  "aws:SecureTransport": "false"
+                }
+              },
+              "Effect": "Deny",
+              "Principal": {
+                "AWS": "*"
+              },
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "Mail6A3D1F64",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "Mail6A3D1F64",
+                          "Arn"
+                        ]
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "Action": "s3:PutObject",
+              "Condition": {
+                "StringEquals": {
+                  "aws:SourceAccount": "724654236968",
+                  "aws:SourceArn": "arn:aws:ses:us-west-2:724654236968:receipt-rule-set/glazecalc-inbound:receipt-rule/forward-to-owner"
+                }
+              },
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "ses.amazonaws.com"
+              },
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    {
+                      "Fn::GetAtt": [
+                        "Mail6A3D1F64",
+                        "Arn"
+                      ]
+                    },
+                    "/inbound/*"
+                  ]
+                ]
+              },
+              "Sid": "SesMayStoreMailFromThisRuleOnly"
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-mail-inbound/Mail/Policy/Resource"
+      }
+    },
+    "ForwarderRoleD8BAA15A": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Condition": {
+                "StringEquals": {
+                  "aws:SourceAccount": "724654236968"
+                }
+              },
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "Policies": [
+          {
+            "PolicyDocument": {
+              "Statement": [
+                {
+                  "Action": "s3:GetObject",
+                  "Effect": "Allow",
+                  "Resource": {
+                    "Fn::Join": [
+                      "",
+                      [
+                        {
+                          "Fn::GetAtt": [
+                            "Mail6A3D1F64",
+                            "Arn"
+                          ]
+                        },
+                        "/inbound/*"
+                      ]
+                    ]
+                  },
+                  "Sid": "ReadReceivedMail"
+                },
+                {
+                  "Action": "ses:SendRawEmail",
+                  "Condition": {
+                    "StringEquals": {
+                      "ses:FromAddress": "forwarder@glazecalcapp.com"
+                    }
+                  },
+                  "Effect": "Allow",
+                  "Resource": "arn:aws:ses:us-west-2:724654236968:identity/*",
+                  "Sid": "SendOnlyAsTheForwarder"
+                },
+                {
+                  "Action": [
+                    "logs:CreateLogGroup",
+                    "logs:CreateLogStream",
+                    "logs:PutLogEvents"
+                  ],
+                  "Effect": "Allow",
+                  "Resource": "arn:aws:logs:us-west-2:724654236968:log-group:/aws/lambda/glazecalc-mail-forwarder:*",
+                  "Sid": "Logs"
+                }
+              ],
+              "Version": "2012-10-17"
+            },
+            "PolicyName": "forward-mail"
+          }
+        ],
+        "RoleName": "glazecalc-mail-forwarder",
+        "Tags": [
+          {
+            "Key": "app",
+            "Value": "glazecalc"
+          }
+        ]
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-mail-inbound/ForwarderRole/Resource"
+      }
+    },
+    "ForwarderLogs55C54B84": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "LogGroupName": "/aws/lambda/glazecalc-mail-forwarder"
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-mail-inbound/ForwarderLogs/Resource"
+      }
+    },
+    "ForwarderE6AEDC44": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Architectures": [
+          "arm64"
+        ],
+        "Code": {
+          "S3Bucket": "cdk-hnb659fds-assets-724654236968-us-west-2",
+          "S3Key": "89ea9ec8fdd09d36bee893943d89835d289604b12f699db8bb737ec340385867.zip"
+        },
+        "Environment": {
+          "Variables": {
+            "OWNER_INBOX": "{{resolve:ssm:/glazecalc/owner-inbox:1}}",
+            "BUCKET": {
+              "Ref": "Mail6A3D1F64"
+            },
+            "OBJECT_PREFIX": "inbound/",
+            "FORWARDER_ADDRESS": "forwarder@glazecalcapp.com"
+          }
+        },
+        "FunctionName": "glazecalc-mail-forwarder",
+        "Handler": "index.handler",
+        "MemorySize": 256,
+        "Role": {
+          "Fn::GetAtt": [
+            "ForwarderRoleD8BAA15A",
+            "Arn"
+          ]
+        },
+        "Runtime": "nodejs24.x",
+        "Tags": [
+          {
+            "Key": "app",
+            "Value": "glazecalc"
+          }
+        ],
+        "Timeout": 30
+      },
+      "DependsOn": [
+        "ForwarderRoleD8BAA15A"
+      ],
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-mail-inbound/Forwarder/Resource",
+        "aws:asset:path": "asset.89ea9ec8fdd09d36bee893943d89835d289604b12f699db8bb737ec340385867",
+        "aws:asset:is-bundled": false,
+        "aws:asset:property": "Code"
+      }
+    },
+    "ForwarderAllowSesInbound74DC2FC2": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "ForwarderE6AEDC44",
+            "Arn"
+          ]
+        },
+        "Principal": "ses.amazonaws.com",
+        "SourceAccount": "724654236968",
+        "SourceArn": "arn:aws:ses:us-west-2:724654236968:receipt-rule-set/glazecalc-inbound:receipt-rule/forward-to-owner"
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-mail-inbound/Forwarder/AllowSesInbound"
+      }
+    },
+    "RuleSetE30C6C48": {
+      "Type": "AWS::SES::ReceiptRuleSet",
+      "Properties": {
+        "RuleSetName": "glazecalc-inbound"
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-mail-inbound/RuleSet/Resource"
+      }
+    },
+    "ForwardToOwner44E87299": {
+      "Type": "AWS::SES::ReceiptRule",
+      "Properties": {
+        "Rule": {
+          "Actions": [
+            {
+              "S3Action": {
+                "BucketName": {
+                  "Ref": "Mail6A3D1F64"
+                },
+                "ObjectKeyPrefix": "inbound/"
+              }
+            },
+            {
+              "LambdaAction": {
+                "FunctionArn": {
+                  "Fn::GetAtt": [
+                    "ForwarderE6AEDC44",
+                    "Arn"
+                  ]
+                },
+                "InvocationType": "Event"
+              }
+            }
+          ],
+          "Enabled": true,
+          "Name": "forward-to-owner",
+          "Recipients": [
+            "privacy@glazecalcapp.com",
+            "security@glazecalcapp.com",
+            "postmaster@glazecalcapp.com",
+            "abuse@glazecalcapp.com",
+            "hello@glazecalcapp.com",
+            "contact@glazecalcapp.com"
+          ],
+          "ScanEnabled": true,
+          "TlsPolicy": "Optional"
+        },
+        "RuleSetName": {
+          "Ref": "RuleSetE30C6C48"
+        }
+      },
+      "DependsOn": [
+        "ForwarderAllowSesInbound74DC2FC2",
+        "MailPolicyBB7619B4"
+      ],
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-mail-inbound/ForwardToOwner/Resource"
+      }
+    },
+    "GmailSender6DA9B3BD": {
+      "Type": "AWS::IAM::User",
+      "Properties": {
+        "Policies": [
+          {
+            "PolicyDocument": {
+              "Statement": [
+                {
+                  "Action": "ses:SendRawEmail",
+                  "Condition": {
+                    "StringEquals": {
+                      "ses:FromAddress": [
+                        "privacy@glazecalcapp.com",
+                        "security@glazecalcapp.com",
+                        "postmaster@glazecalcapp.com",
+                        "abuse@glazecalcapp.com",
+                        "hello@glazecalcapp.com",
+                        "contact@glazecalcapp.com"
+                      ]
+                    }
+                  },
+                  "Effect": "Allow",
+                  "Resource": "arn:aws:ses:us-west-2:724654236968:identity/*",
+                  "Sid": "SendOnlyAsTheSixAddressesThroughSmtp"
+                }
+              ],
+              "Version": "2012-10-17"
+            },
+            "PolicyName": "send-as-the-six"
+          }
+        ],
+        "Tags": [
+          {
+            "Key": "app",
+            "Value": "glazecalc"
+          }
+        ],
+        "UserName": "glazecalc-mail-send"
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "RetainExceptOnCreate",
+      "Metadata": {
+        "aws:cdk:path": "glazecalc-mail-inbound/GmailSender/Resource"
+      }
+    }
+  },
+  "Parameters": {
+    "BootstrapVersion": {
+      "Type": "AWS::SSM::Parameter::Value<String>",
+      "Default": "/cdk-bootstrap/hnb659fds/version",
+      "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]"
+    }
+  },
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  {
+                    "Ref": "BootstrapVersion"
+                  }
+                ]
+              }
+            ]
+          },
+          "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI."
+        }
+      ]
+    }
+  }
+}

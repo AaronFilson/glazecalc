@@ -112,7 +112,8 @@ Everything is stored with the account (like the theme and lead today), with a co
 is right. Visitors keep theirs in the browser only.
 
 The library's region filter (`chosenRegion()`) follows the region setting. EU countries keep the EU material set and
-add local trade names as aliases; Ireland, whose shops sell the UK's materials, has the UK's.
+add local trade names as aliases; Ireland, whose shops sell the UK's materials, has the UK's. Japan has its own, which
+lists the US set too ([the Asia plan](asia-plan.md), decision 5).
 
 ## Phase 1: groundwork, in English (about 2–3 weeks)
 
@@ -322,8 +323,9 @@ browser on Windows and Linux before its commit, with at most six agents at a tim
 - A segment whose translation is out of date shows in English until it is redone. CI reports how many there are.
 - The offline work (round 10, docs/adr/0028-service-worker.md) added five messages in English only, the `offline` group
   of `client/public/i18n/en.json`: a language not saved on the phone, a new version ready with its two buttons, and
-  "Install app". They show in English in every language until the next wave translates them. The app keeps a
-  reader's own language and English for offline use, so a message that is English in the file is English offline too.
+  "Install app". They showed in English in every language until they were translated on 2026-10-31; every language
+  has the `offline` group now. The app keeps a reader's own language and English for offline use, so a message that
+  is English in the file is English offline too.
 
 ### Corrections from people
 
@@ -466,8 +468,9 @@ The EU plan is built so that later regions add languages and data, not a new app
   Hausa follow as languages.
 - **Region data.** Many countries have no poison centre, and the data model already handles that: the emergency
   number, and a link to the health ministry. Emergency numbers vary (India 112, China 120 for an ambulance), so they
-  are always data. India, Pakistan, Bangladesh, Egypt, the UAE, Morocco and Algeria are regions since 2026-10-20, in
-  English (docs/south-asia-mena-plan.md); Morocco and Algeria list French, so French pages show their data already.
+  are always data. India, Pakistan, Bangladesh, Egypt, the UAE, Morocco and Algeria are regions since 2026-10-20,
+  first in English (docs/south-asia-mena-plan.md); Morocco and Algeria list French, so French pages show their data
+  already.
 - **Reaching people.** Baidu does not use hreflang, and GitHub is unreliable from mainland China, so the correction
   link there also needs a route that works in China, such as an email address.
 - **The language picker.** At 60–80 languages it becomes a searchable list grouped by region, each language in its own
@@ -547,9 +550,10 @@ and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu p
   unclipped. Google Chrome 156 and Playwright's Chromium have no Intl data for Nepali, Sinhala or Odia (Intl falls back
   to en-US) and only part of Punjabi's (dates "2026 M10 14", numbers grouped 1,234,567.5), so those pages showed 0–9
   and English dates. **Fixed** (2026-10-30, the owner's choice): `scripts/locale-fallback.mjs` writes, at each build,
-  what the app formats in those four languages from Node's Intl into `lib/regions/locale-fallback-data.json` (date
-  patterns and month, weekday and day-period names for the app's date styles; grouping, separators, percent and
-  currency patterns per numbering system; their digits; list patterns; 14 kB), and `lib/regions/locale-fallback.js`
+  what the app formats in those four languages (and, since round 10, in Hausa, Yoruba, Zulu, Igbo, Somali and
+  Quechua) from Node's Intl into `lib/regions/locale-fallback-data.json` (date patterns and month, weekday and
+  day-period names for the app's date styles; grouping, separators, percent and currency patterns per numbering
+  system; their digits; list patterns; 14 kB for the four), and `lib/regions/locale-fallback.js`
   writes from it wherever the browser lacks the language: Intl resolves it to another language, writes a month as
   "M10", or writes a few samples otherwise than Node did. Every page then matches the prerendered one, the Digits
   setting included; `server/test/locale_fallback_tests.ts` fails if Node's Intl and the data part. **Still open for
@@ -564,9 +568,11 @@ and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu p
   (a consonant + ZWJ + ්), and Bengali's ZWJ between র and the virama, for ra with ya-phala); the 12-hour times of each Indian language (रात 8 बजे and the like) are kept whole so that the
   figures check reports them; and where a language's `one` takes 0 as well as 1 (Hindi, Kannada, Gujarati, Punjabi,
   Sinhala, French), an English plural whose `one` is for exactly one has an `=1` form in the translation.
-- **Still to do with the languages themselves:** pinned digits and calendars for each region (Phase A1), the
-  any-script parser for lakh grouping and Arabic separators (A2, A3), and `/ar/`, `/hi/`, `/ur/` and `/bn/` pages
-  prerendered for their regions. Wave I1 (Tamil, Marathi, Kannada) is done; the iPhone font check and Marathi's ल/श
+- **Done with the languages themselves:** pinned digits and calendars for each region (Phase A1), the any-script
+  parser for lakh grouping and Arabic separators (A2, A3), and `/ar/`, `/hi/`, `/ur/` and `/bn/` pages prerendered
+  for their regions (Egypt, India, Pakistan and Bangladesh: `COUNTRY_OF` in client/app/core/first-render.ts); Arabic
+  and Hindi went live on 2026-10-20, Urdu and Bengali on 2026-10-21. Wave I1 (Tamil, Marathi, Kannada) is done; the
+  iPhone font check and Marathi's ल/श
   forms (above) are the owner's, and native reviewers for Tamil and Marathi are wanted (the Native check lists in
   docs/translations/ta.md, mr.md, kn.md). Kannada groups numbers in threes (1,234,567), as CLDR has it, unlike India's
   other languages; accepted as it is. Wave I2 (Telugu, Gujarati, Malayalam) is done (round 9); native reviewers for
@@ -595,14 +601,16 @@ and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu p
   (`am`, Ethiopic script with its own punctuation, digits 0–9, Gregorian dates, the 24-hour clock) are offered, each
   with the reference pages and the plain notice (as Irish and Maltese have; for Swahili the owner's decision of
   2026-11-01). Kenya, which listed Swahili beside English, now offers it; the picker's "Africa" group lists both.
-  Tanzania, Uganda and Ethiopia are not regions yet (Ethiopia waits for an emergency number confirmed on an official
-  page). Native reviewers for both are wanted (the Native check rows in docs/translations/sw.md, am.md).
+  Tanzania and Ethiopia are not regions yet (Ethiopia waits for an emergency number confirmed on an official page);
+  Uganda is one since 2026-11-02, with Swahili beside English. Native reviewers for both are wanted (the Native check
+  rows in docs/translations/sw.md, am.md).
 - **Africa and Latin America, waves L3 and L4** (round 10, scratch/round10/c-l34/): Afrikaans (`af`, the standard
   notice), Hausa (`ha`), Yoruba (`yo`), Zulu (`zu`), Igbo (`ig`), Somali (`so`) and Southern Quechua (`qu`,
   Cusco-Collao, with the owner's extra review) are offered, each with the reference pages; all but Afrikaans carry
   the plain notice. South Africa, which listed Afrikaans and Zulu beside English, now offers them; the picker lists
-  the six under "Africa" and Quechua under "Latin America". Nigeria, Peru, Bolivia and Ecuador are not regions yet
-  (no emergency number confirmed on an official page). Native reviewers are wanted for all seven (the Native check
+  the six under "Africa" and Quechua under "Latin America". Peru and Bolivia are not regions yet (no emergency number
+  confirmed on an official page); Nigeria (with Hausa, Yoruba and Igbo beside English) and Ecuador (with Latin
+  American Spanish and Quechua) are regions since 2026-11-02. Native reviewers are wanted for all seven (the Native check
   rows in docs/translations/af.md, ha.md, yo.md, zu.md, ig.md, so.md, qu.md).
 
 ## What stays the same
