@@ -62,6 +62,12 @@ export function varyMaterial(
   instead?: string
 ): { tiles: VariedTile[]; tooMuch?: undefined } | { tooMuch: number; tiles?: undefined };
 
+/**
+ * Which material a line is, as mixRecipes matches lines: its saved id, else its name and the chemistry it carries
+ * (fields, LOI, percent or moles), so two analyses given under one name are two materials.
+ */
+export function sameKey(line: BlendLine): string;
+
 export function mixRecipes<M extends BlendLine, A extends BlendLine>(
   corners: ReadonlyArray<{ materials?: M[]; additives?: A[] }>,
   shares: readonly number[]
