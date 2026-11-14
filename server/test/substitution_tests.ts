@@ -246,6 +246,37 @@ describe('Match with what I have: classic substitutions', () => {
     }
   });
 
+  it('writes a small batch’s new amounts to as many decimals as keep 1% of it, in a match and a suggestion', () => {
+    // Three decimals for any batch under 5: a batch of 0.0005 g came to 0 of every amount that changed, so Match
+    // with what I have made an empty recipe, and Suggest amounts left out the feldspar and kaolin it swapped in.
+    const batch = (scale: number) =>
+      recipeOf([
+        ['Custer Spar', 40 * scale],
+        ['Whiting', 20 * scale],
+        ['EPK Kaolin', 20 * scale],
+        ['Silica', 20 * scale]
+      ]);
+    const lines = batch(0.000005);
+    const total = (materials: MaterialRecord[]) => materials.reduce((sum, m) => sum + recipe.amountOf(m.amount), 0);
+    const match = recipe.matchFromShelf(lines, shelfOf('Minspar 200', 'Whiting', 'EPK Kaolin', 'Silica'));
+    expect(match.materials.map((m) => m.name)).to.include('Minspar 200');
+    expect(total(match.materials)).to.be.closeTo(0.0005, 0.0000005);
+    // The materials a suggestion for 100 g has: their total is what they come to, as there.
+    const suggest = (lines: MaterialRecord[]) =>
+      recipe.suggestAmounts(lines, (name) => LIBRARY.find((m) => m.name === name), [], 'US');
+    const suggestion = suggest(lines);
+    expect(suggestion.materials.map((m) => m.name)).to.deep.equal(suggest(batch(1)).materials.map((m) => m.name));
+    expect(suggestion.materials).to.have.length(4);
+    for (const m of [...match.materials, ...suggestion.materials]) {
+      expect(recipe.amountOf(m.amount), m.name).to.be.at.least(0.000005);
+      expect((m.amount!.split('.')[1] ?? '').length, m.name).to.be.at.most(6);
+    }
+    // A batch of 5 or more is written as before: 2 decimals to 50, then 1.
+    expect([0.0005, 0.05, 0.1, 4.9, 5, 49, 50].map((batch) => recipe.placesFor(batch))).to.deep.equal([
+      6, 4, 3, 3, 2, 2, 1
+    ]);
+  });
+
   it("gives back a recipe's own amounts as they were however small the batch, written plainly", () => {
     // An amount kept as it was keeps its text, written with String(): 0.0000004 as "4e-7", which reads as no
     // amount, so every line of a batch of 0.000001 was taken out and the match was an empty recipe.
