@@ -2568,8 +2568,10 @@ describe('MCP: limits', () => {
     const { result: solved, work } = await metered(async () => {
       const solving = data('solve_target', { target: MANY_OXIDES, materials });
       // The tests share the server's event loop: a timer due as the call goes out fires once the loop is free.
+      // The bound is the work counted, below; the time only has to be far from the 93 s 80 materials took (3 s
+      // allowed was 4 to 12 s on a machine busy with other tests).
       const free = await new Promise<number>((resolve) => setTimeout(() => resolve(Date.now() - started), 50));
-      expect(free).to.be.below(3000);
+      expect(free).to.be.below(30000);
       return solving;
     });
     expect(work).to.be.at.most(1.1 * chemistry.WORK);
