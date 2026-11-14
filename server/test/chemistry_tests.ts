@@ -378,8 +378,10 @@ describe('glaze chemistry', () => {
       expect(cobalt.umf.CoO).to.be.closeTo(1, 1e-9);
       expect(cobalt.umf.SiO2).to.be.above(30);
       expect(cobalt.warningCodes.map((w) => w.code)).to.deep.equal(['colorant-flux', 'silica-high']);
+      // Not that it says little about the melt: colorants melt too (Digitalfire: "Manganese is an active
+      // melter"). The formula is scaled to them, so it compares only with other colorant-rich glazes.
       expect(cobalt.warnings[0]).to.equal(
-        'Colorant oxides (CoO) are most of the flux, so the unity formula is scaled to them and says little about how the glaze melts.'
+        'Colorant oxides (CoO) are most of the flux, so the unity formula is scaled to them; compare it only with other colorant-rich glazes, not with limits for ordinary glazes.'
       );
       expect(cobalt.warnings[1]).to.equal(
         'The unity formula has 32.32 SiO₂, unusually high for a glaze: the recipe is for a very high firing, has too little flux, or is not a glaze.'

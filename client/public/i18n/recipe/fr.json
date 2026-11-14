@@ -245,8 +245,7 @@
       "text": "Ils viennent en ajout à la base. Ils sont enregistrés avec la recette mais ne font pas partie de la formule de Seger. Choisissez l’unité de chaque quantité :",
       "percent": "<b>% de la base</b> : un pourcentage du total de la base, comme dans la plupart des recettes : 2 signifie 2 % d’oxyde de fer rouge.",
       "parts": "<b>parts</b> : la même unité que les matières, par exemple 1 part sur une base de 3 parts de silice<en>flint</en> et 2 de dolomie.",
-      "grams": "<b>grammes</b> : un poids, dans la même préparation que les matières.",
-      "count": "Certains calculateurs comptent les colorants dans la formule de Seger<en>unity molecular formula</en>, d’autres non. Cochez <b>Y compter les colorants et additifs</b>, sous le titre Formule de Seger, pour les compter selon leur poids dans la préparation, ou laissez la case décochée pour comparer avec un calculateur qui ne les compte pas. Ce choix est enregistré avec la recette."
+      "grams": "<b>grammes</b> : un poids, dans la même préparation que les matières."
     },
     "scale": {
       "heading": "Changer l’échelle si besoin",

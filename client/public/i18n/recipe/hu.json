@@ -245,8 +245,7 @@
       "text": "Ezek az alapmázon felül kerülnek a receptbe. A recepttel együtt mentődnek, de nem részei a Seger-képletnek. Válassza ki, milyen egységben adja meg az egyes mennyiségeket:",
       "percent": "<b>az alapmáz %-a</b>: az alapmáz összegének százaléka, ahogy a legtöbb recept megadja; a 2 itt 2% vörös vas-oxidot jelent.",
       "parts": "<b>rész</b>: ugyanaz az egység, mint a nyersanyagoké, például 1 rész egy 3 rész kovakőből<en>flint</en> és 2 rész dolomitból álló alapmázon.",
-      "grams": "<b>gramm</b>: tömeg, ugyanabban az adagban, mint a nyersanyagok.",
-      "count": "Egyes kalkulátorok beszámítják a színezőket a Seger-képletbe<en>unity molecular formula</en>, mások nem. Jelölje be a <b>Színezők és adalékok beszámítása</b> négyzetet a Seger-képlet címsor alatt, ha az adagbeli tömegükkel akarja beszámítani őket, vagy hagyja üresen, ha olyan kalkulátorral hasonlítja össze, amely nem számítja be őket. A választás a recepttel együtt mentődik."
+      "grams": "<b>gramm</b>: tömeg, ugyanabban az adagban, mint a nyersanyagok."
     },
     "scale": {
       "heading": "Átszámítás, ha szükséges",

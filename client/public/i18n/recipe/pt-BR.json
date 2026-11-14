@@ -245,8 +245,7 @@
       "text": "Eles vão além da base. São salvos com a receita, mas não fazem parte da fórmula de Seger. Escolha em que está cada quantidade:",
       "percent": "<b>% da base</b>: uma porcentagem do total da base, como a maioria das receitas os dá: 2 significa 2% de óxido de ferro vermelho.",
       "parts": "<b>partes</b>: a mesma unidade das matérias-primas, como 1 parte sobre uma base de 3 de sílex e 2 de dolomita.",
-      "grams": "<b>gramas</b>: um peso, no mesmo lote das matérias-primas.",
-      "count": "Algumas calculadoras contam os corantes na fórmula de Seger e outras não. Marque <b>Contar os corantes e aditivos nela</b>, sob o título Fórmula de Seger, para contá-los pelo seu peso no lote, ou deixe desmarcado para comparar com uma que não conta. A escolha é salva com a receita."
+      "grams": "<b>gramas</b>: um peso, no mesmo lote das matérias-primas."
     },
     "scale": {
       "heading": "Mude a escala quando precisar",

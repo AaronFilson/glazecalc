@@ -245,8 +245,7 @@
       "text": "Vanno in aggiunta alla base. Si salvano con la ricetta ma non fanno parte della formula di Seger. Scegliere in che unità è ogni quantità:",
       "percent": "<b>% sulla base</b>: una percentuale del totale della base, come li indica la maggior parte delle ricette: 2 significa 2% di ossido di ferro rosso.",
       "parts": "<b>parti</b>: la stessa unità dei materiali, per esempio 1 parte su una base di 3 parti di selce<en>flint</en> e 2 di dolomite.",
-      "grams": "<b>grammi</b>: un peso, nella stessa pesata dei materiali.",
-      "count": "Alcuni calcolatori conteggiano i coloranti nella formula di Seger e altri no. Selezionare <b>Conteggia coloranti e additivi</b>, sotto il titolo Formula di Seger, per conteggiarli in base al loro peso nella pesata, oppure lasciarlo deselezionato per confrontare con un calcolatore che non li conteggia. La scelta viene salvata con la ricetta."
+      "grams": "<b>grammi</b>: un peso, nella stessa pesata dei materiali."
     },
     "scale": {
       "heading": "Ricalcolare le quantità quando serve",

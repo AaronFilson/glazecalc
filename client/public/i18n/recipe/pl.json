@@ -245,8 +245,7 @@
       "text": "Dodaje się je ponad bazę. Są zapisywane razem z recepturą, ale nie wchodzą do wzoru Segera. Dla każdej ilości należy wybrać jednostkę:",
       "percent": "<b>% bazy</b>: procent sumy bazy, tak jak podaje się barwniki w większości receptur: 2 oznacza 2 % tlenku żelaza czerwonego.",
       "parts": "<b>części</b>: ta sama jednostka co dla surowców, np. 1 część na bazę z 3 części mączki kwarcowej<en>flint</en> i 2 części dolomitu.",
-      "grams": "<b>gramy</b>: masa w tej samej porcji co surowce.",
-      "count": "Niektóre kalkulatory uwzględniają barwniki we wzorze Segera<en>unity molecular formula</en>, a inne nie. Zaznaczenie pola <b>Uwzględnij barwniki i dodatki</b> pod nagłówkiem Wzór Segera wlicza je według ich masy w porcji; pole niezaznaczone pozwala porównać wynik z kalkulatorem, który ich nie wlicza. Wybór jest zapisywany razem z recepturą."
+      "grams": "<b>gramy</b>: masa w tej samej porcji co surowce."
     },
     "scale": {
       "heading": "Przeliczanie w razie potrzeby",

@@ -245,8 +245,7 @@
       "text": "De läggs utöver basen. De sparas med receptet men ingår inte i Segerformeln. Välj vilken enhet varje mängd anges i:",
       "percent": "<b>% av basen</b>: en procent av basens summa, så som de flesta recept anger dem: 2 betyder 2 % röd järnoxid.",
       "parts": "<b>delar</b>: samma enhet som råvarorna, till exempel 1 del på en bas av 3 flinta och 2 dolomit.",
-      "grams": "<b>gram</b>: en vikt, i samma sats som råvarorna.",
-      "count": "Vissa kalkylatorer räknar med färgmedel i Segerformeln<en>unity molecular formula</en> och andra gör det inte. Markera <b>Räkna med färgmedel och tillsatser</b>, under rubriken Segerformel, för att räkna in dem efter deras vikt i satsen, eller lämna rutan omarkerad för att jämföra med en kalkylator som inte gör det. Valet sparas med receptet."
+      "grams": "<b>gram</b>: en vikt, i samma sats som råvarorna."
     },
     "scale": {
       "heading": "Räkna om vid behov",

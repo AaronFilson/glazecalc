@@ -245,8 +245,7 @@
       "text": "Oni idu povrh osnove. Spremaju se s receptom, ali nisu dio Segerove formule. Odaberite u čemu je izražena svaka količina:",
       "percent": "<b>% osnove</b>: postotak ukupne količine osnove, kako ih navodi većina recepata: 2 znači 2 % crvenog željeznog oksida.",
       "parts": "<b>dijelovi</b>: ista jedinica kao za sirovine, npr. 1 dio na osnovu od 3 dijela flinta i 2 dijela dolomita.",
-      "grams": "<b>grami</b>: masa, u istoj smjesi kao i sirovine.",
-      "count": "Neki kalkulatori uračunavaju bojila u Segerovu formulu, a neki ne. Označite polje <b>Uračunaj bojila i dodatke</b>, ispod naslova Segerova formula, da biste ih uračunali prema njihovoj masi u smjesi, ili ga ostavite neoznačenim da biste usporedili s kalkulatorom koji ih ne uračunava. Izbor se sprema s receptom."
+      "grams": "<b>grami</b>: masa, u istoj smjesi kao i sirovine."
     },
     "scale": {
       "heading": "Preračunajte kad zatreba",

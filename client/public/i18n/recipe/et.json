@@ -245,8 +245,7 @@
       "text": "Need lisatakse põhiglasuurile lisaks. Need salvestatakse koos retseptiga, kuid ei kuulu Segeri valemisse. Valige, millises ühikus iga kogus on:",
       "percent": "<b>% põhiglasuurist</b>: protsent põhiglasuuri kogusummast, nagu enamik retsepte neid annab: 2 tähendab 2% punast raudoksiidi.",
       "parts": "<b>osa</b>: sama ühik mis toorainetel, näiteks 1 osa põhiglasuuril, milles on 3 osa flinti ja 2 osa dolomiiti.",
-      "grams": "<b>grammi</b>: mass, samas segus mis toorained.",
-      "count": "Mõni kalkulaator arvestab värvained Segeri valemisse, mõni mitte. Märkige pealkirja Segeri valem all ruut <b>Arvesta värvained ja lisaained sisse</b>, et arvestada neid nende massi järgi segus, või jätke see märkimata, et võrrelda kalkulaatoriga, mis seda ei tee. Valik salvestatakse koos retseptiga."
+      "grams": "<b>grammi</b>: mass, samas segus mis toorained."
     },
     "scale": {
       "heading": "Teisendamine, kui vaja",
