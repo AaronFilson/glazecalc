@@ -489,12 +489,11 @@ describe("a famous glaze's page", () => {
       const open = page.querySelector('#famous-open') as HTMLAnchorElement;
       open.click();
       open.click();
-      await settle(rendered);
-      // Signed in: no trial is started.
-      httpMock()
-        .expectOne(API + '/verify')
-        .flush({ msg: 'User verified', id: 'u1', email: 'a@b.com' });
-      await settle(rendered);
+      // Signed in: no trial is started. A region's version reads the standard materials in first, which takes
+      // as long as loading a module does, so each step is waited for rather than timed.
+      const verify = await vi.waitFor(() => httpMock().expectOne(API + '/verify'));
+      verify.flush({ msg: 'User verified', id: 'u1', email: 'a@b.com' });
+      await vi.waitFor(() => expect(navigate).toHaveBeenCalledWith('/recipe'));
       await settle(rendered);
       expect(navigate.mock.calls.filter(([address]) => address === '/recipe')).toHaveLength(1);
       return TestBed.inject(PendingRecipeService).take()!;
@@ -526,9 +525,13 @@ describe("a famous glaze's page", () => {
       expect(recipe.additives?.map((line) => line.name)).toEqual(['Tin oxide']);
     });
 
-    it('opens no recipe for a region the build made no version for', async () => {
+    it('opens no recipe for a region the build made no version for, nor one naming a material it cannot find', async () => {
       setUp(iznik);
       saveRegion('EU');
+      expect(await openTwice()).toBeNull();
+      // A file from another build, say, whose proposal names a material this one's records do not have.
+      const versions = { '': { lines: [['No Such Frit', 100]], verdict: 'poor' } };
+      setUp({ ...iznik, versions } as unknown as FamousGlaze);
       expect(await openTwice()).toBeNull();
     });
   });
