@@ -23,6 +23,12 @@ export interface PastedLine {
    * not write them so: read as `PasteOptions.spaced` says, so the page asks. Absent otherwise.
    */
   spaced?: string;
+  /**
+   * The last two cells of a comma-separated row as pasted, with the comma between them ("30,5" of "Silica,30,5"),
+   * when they can be one number with a decimal comma or two columns, the reader writing decimal commas: read as
+   * `PasteOptions.joined` says, so the page asks. Absent otherwise.
+   */
+  joined?: string;
 }
 
 /** A line set aside: a total, or a row of column headings. */
@@ -55,6 +61,13 @@ export interface PasteOptions {
    * so (French, Russian), else 'apart', and each such line is marked `spaced`.
    */
   spaced?: 'group' | 'apart';
+  /**
+   * How to read a comma-separated row whose last two cells are whole numbers with only a comma between them
+   * ("Silica,30,5"), for a reader who writes decimal commas and with no heading row naming the columns: one number
+   * with a decimal comma ('decimal', 30.5), or two columns, the first the amount ('columns', 30). By default
+   * 'decimal', and each such line is marked `joined`.
+   */
+  joined?: 'decimal' | 'columns';
 }
 
 /** The most a paste can be: characters, lines, and characters in a line that can be a material. */
