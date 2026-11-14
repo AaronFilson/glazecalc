@@ -107,6 +107,34 @@ describe('Paste-in import: reading lines', () => {
     ]);
   });
 
+  it('asks of a known name that ends in a number before a comma and digits, where commas mark decimals', () => {
+    // German "Kaolin 233,5" is Kaolin 233 at 5, the known name, or Kaolin at 233.5: it was the first, unasked.
+    const paste = 'Kaolin 233,5\nQuarz 30\nMinspar 200,30';
+    const read = one(paste, { locale: 'de' });
+    expect(read.lines.map((l) => [l.name, l.amount, l.joined])).to.eql([
+      ['Kaolin', 233.5, '233,5'],
+      ['Quarz', 30, undefined],
+      ['Minspar', 200.3, '200,30']
+    ]);
+    // Two columns when the reader chooses them: the known name and its amount.
+    expect(one(paste, { locale: 'fr', joined: 'columns' }).lines.map((l) => [l.name, l.amount, l.joined])).to.eql([
+      ['Kaolin 233', 5, '233,5'],
+      ['Quarz', 30, undefined],
+      ['Minspar 200', 30, '200,30']
+    ]);
+    // Nothing to ask for a reader who writes decimal points, or in a paste whose other rows have a comma between a
+    // name and a number ("Quarz,30"), or under a heading row: the comma is a column's.
+    for (const [text, locale] of [
+      [paste, 'en'],
+      ['Kaolin 233,5\nQuarz,30', 'de'],
+      ['Material,Amount\nKaolin 233,5\nQuarz 30', 'de']
+    ]) {
+      expect(one(text, { locale }).lines[0], text)
+        .to.include({ name: 'Kaolin 233', amount: 5 })
+        .and.not.have.property('joined');
+    }
+  });
+
   it('reads simple fractions and mixed numbers as amounts, and never splits a recipe on one', () => {
     // "Bentonite 1/2" was the title of a second recipe, the materials after it in that one.
     const read = one(

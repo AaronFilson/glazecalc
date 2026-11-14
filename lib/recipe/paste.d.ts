@@ -30,7 +30,9 @@ export interface PastedLine {
    * Two cells of a comma-separated row as pasted, with the comma between them ("30,5" of "Silica,30,5"), when they
    * can be one number with a decimal comma or two columns, the reader writing decimal commas: the last two of a row
    * of three with no heading row, or under one, the amount's cell and the next when the row has one cell more than
-   * the heading. Read as `PasteOptions.joined` says, so the page asks. Absent otherwise.
+   * the heading. Or a known name's last number and the whole number after its comma ("233,5" of "Kaolin 233,5":
+   * Kaolin at 233.5, or Kaolin 233 at 5), where no other row of the paste has a comma between a word and a number.
+   * Read as `PasteOptions.joined` says, so the page asks. Absent otherwise.
    */
   joined?: string;
 }
@@ -69,8 +71,9 @@ export interface PasteOptions {
   /**
    * How to read a comma-separated row whose amount can be two whole numbers with only a comma between them
    * ("Silica,30,5", with no heading row or under "Material,Amount"), for a reader who writes decimal commas: one
-   * number with a decimal comma ('decimal', 30.5), or two columns, the first the amount ('columns', 30). By default
-   * 'decimal', and each such line is marked `joined`.
+   * number with a decimal comma ('decimal', 30.5), or two columns, the first the amount ('columns', 30). A known
+   * name's last number and the number after its comma likewise ("Kaolin 233,5": 'decimal' Kaolin at 233.5,
+   * 'columns' Kaolin 233 at 5). By default 'decimal', and each such line is marked `joined`.
    */
   joined?: 'decimal' | 'columns';
 }

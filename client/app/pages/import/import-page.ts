@@ -560,8 +560,9 @@ export class ImportPage implements OnInit {
   private readonly spacedAs = computed(() => spacedReading(formatLocale()));
   /**
    * Two cells of comma-separated rows ("30,5" of "Silica,30,5") where the reader writes decimal commas: the last two
-   * of a row with no heading row, or the amount's and the next of a row with one cell more than its heading. One
-   * number, or two columns. Shown with a choice.
+   * of a row with no heading row, or the amount's and the next of a row with one cell more than its heading; or a
+   * known name's last number and the next ("233,5" of "Kaolin 233,5"). One number, or two columns. Shown with a
+   * choice.
    */
   protected readonly joined = signal<string[]>([]);
   /** How the person chose to read them; null until they do, when each is one number. */

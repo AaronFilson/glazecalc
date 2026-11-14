@@ -434,6 +434,42 @@ describe('ImportPage', () => {
     expect(root.querySelector('.import-joined')).toBeNull();
   });
 
+  it('asks whether a known name that ends in a number takes the number after its comma, where commas mark decimals', async () => {
+    const KAOLIN_233 = material(
+      'Kaolin 233',
+      [
+        ['Al2O3', 1],
+        ['SiO2', 2]
+      ],
+      13.96
+    );
+    const { fixture, root, page, paste } = await create([KAOLIN_233]);
+    const lines = () => page['drafts']()[0].lines.map((l: { name: string; amount: string }) => [l.name, l.amount]);
+    const buttons = () => [...root.querySelectorAll<HTMLButtonElement>('.import-joined button')];
+    // German "Kaolin 233,5": Kaolin at 233.5, or Kaolin 233 at 5. One number until the reader chooses.
+    formatLocale.set('de');
+    try {
+      await paste('Test\nKaolin 233,5\nSilica 30');
+      expect(lines()).toEqual([
+        ['Kaolin', '233.5'],
+        ['Silica', '30']
+      ]);
+      expect(text(fixture, '.import-joined p')).toContain('such as “233,5”');
+      expect(buttons().map((b) => b.textContent?.trim())).toEqual([
+        'Read 233,5 as one number, 233,5',
+        'Read 233 and 5 as two columns'
+      ]);
+      buttons()[1].click();
+      await settle(fixture);
+      expect(lines()).toEqual([
+        ['Kaolin 233', '5'],
+        ['Silica', '30']
+      ]);
+    } finally {
+      formatLocale.set('en');
+    }
+  });
+
   it('limits the box, and says so when the paste is too long instead of reading part of it', async () => {
     const { fixture, root, paste } = await create();
     expect((root.querySelector('#paste-text') as HTMLTextAreaElement).getAttribute('maxlength')).toBe('50000');
