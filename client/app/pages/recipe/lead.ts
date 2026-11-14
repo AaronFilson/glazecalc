@@ -3,6 +3,7 @@ import { Additive, RecipeMaterial } from '../../core/models';
 import { MaterialInput } from '../../../../lib/chemistry';
 import { LibraryMaterial } from './compare';
 import { Report, TryMaterial, reportText } from './pool';
+import { plainAmount } from './rebase';
 import { unityLines } from './recipe-analysis';
 import { cautionText, recipeText } from './recipe-messages';
 
@@ -25,8 +26,13 @@ function warnedLines(
   additives: Additive[],
   chemistryOf?: (name: string) => MaterialInput | undefined
 ): RecipeMaterial[] {
+  // An additive's weight is a number, written plainly: String(0.0000001), "1e-7", reads as no amount, no lead.
   return unityLines(materials, additives, { includeAdditives: true, chemistryOf }).lines.map(
-    (line) => ({ ...(line.material as RecipeMaterial), amount: String(line.amount) }) as RecipeMaterial
+    (line) =>
+      ({
+        ...(line.material as RecipeMaterial),
+        amount: typeof line.amount === 'number' ? plainAmount(line.amount) : String(line.amount)
+      }) as RecipeMaterial
   );
 }
 

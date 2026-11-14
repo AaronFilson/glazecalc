@@ -1,4 +1,5 @@
 import { calculateUMF } from '../../../../lib/chemistry';
+import { plainAmount } from '../../../../lib/recipe/amounts';
 import { Additive, Material, Recipe, RecipeMaterial } from '../../core/models';
 import { FamousGlaze, GlazeLine } from './famous-data';
 
@@ -24,7 +25,7 @@ export interface LocalVersion {
 
 const asAdditive = (line: GlazeLine<Additive>): Additive => ({
   ...line.record,
-  amount: String(line.amount),
+  amount: plainAmount(line.amount),
   unit: 'percent'
 });
 
@@ -53,7 +54,7 @@ export function versionMaterials(version: LocalVersion, records: readonly Materi
   for (const line of version.materials) {
     const record = records.find((material) => material.name === line.name);
     if (!record) return null;
-    materials.push({ ...structuredClone(record), amount: String(line.amount) });
+    materials.push({ ...structuredClone(record), amount: plainAmount(line.amount) });
   }
   return materials;
 }
@@ -63,7 +64,7 @@ export function nativeRecipe(glaze: FamousGlaze, title: string): Recipe | null {
   if (glaze.lead || !glaze.recipe) return null;
   return {
     title,
-    materials: glaze.recipe.lines.map((line) => ({ ...line.record, amount: String(line.amount) })),
+    materials: glaze.recipe.lines.map((line) => ({ ...line.record, amount: plainAmount(line.amount) })),
     additives: glaze.recipe.additives.map(asAdditive)
   };
 }

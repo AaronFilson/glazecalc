@@ -8,6 +8,7 @@ export {
   formatAmount,
   formatScaled,
   isAmount,
+  plainAmount,
   rebase,
   totalOf,
   unitOf,

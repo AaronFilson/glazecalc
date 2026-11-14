@@ -4,7 +4,7 @@ import { calculateUMF } from '../../../../lib/chemistry';
 import { Additive, RecipeMaterial } from '../../core/models';
 import { provideEnglish } from '../../testing/i18n';
 import { LibraryMaterial } from './compare';
-import { leadFreeBases, leadIn, recipeHasLead, replaceLead } from './lead';
+import { leadFreeBases, leadIn, leadOf, recipeHasLead, replaceLead } from './lead';
 
 const material = (
   name: string,
@@ -129,6 +129,18 @@ describe('replacing lead', () => {
     const lead = leadIn(HONEY);
     expect(lead.unity).toBeCloseTo(1, 6);
     expect(lead.percent).toBeGreaterThan(50);
+  });
+
+  it('finds lead in a colorant however little of it there is', () => {
+    // A colorant counts at its weight, a number: 0.0000001% of a 100 g base, written as String() writes it
+    // ("1e-7"), read as no amount, and the recipe had no lead to warn of.
+    const base = recipe([
+      [KAOLIN, '50'],
+      [SILICA, '50']
+    ]);
+    const trace = { ...structuredClone(RED_LEAD), amount: '0.0000001', unit: 'percent' } as Additive;
+    expect(leadOf(base, [])).toBeNull();
+    expect(leadOf(base, [trace])?.unity).toBeCloseTo(1, 6);
   });
 
   it('still says how much lead there is when another line cannot be read', () => {

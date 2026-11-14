@@ -51,6 +51,7 @@ import {
   type ServerContext
 } from '@modelcontextprotocol/server';
 import chemistry from '../../../lib/chemistry/index.js';
+import recipe from '../../../lib/recipe/index.js';
 import type { MaterialRecord } from '../../../lib/recipe/index.js';
 import { makeRoom, type RecordModel } from '../../lib/guest_limits.ts';
 import { textOf, type MessageCode } from '../../lib/messages.ts';
@@ -361,7 +362,8 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
       const library = mine ? undefined : findAdditive(name);
       const record = mine ?? (library && { ...library, ...(libraryIdOf(library) && { _id: libraryIdOf(library) }) });
       if (!record) unknown.push(name);
-      return { ...record, amount: String(amount), unit: unit ?? 'percent' };
+      // Written plainly, as the page saves an amount: String(0.0000001) is "1e-7", which it refuses.
+      return { ...record, amount: recipe.plainAmount(amount), unit: unit ?? 'percent' };
     });
     if (unknown.length) {
       throw new ToolProblem(
@@ -390,7 +392,8 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
       formulaweight: rounded(weights.firedWeight, 2),
       fields: input.fields.map((field) => ({
         name: field.name,
-        amount: String(field.amount),
+        // A number written plainly, as the Materials page saves an oxide's amount: "0.0000001", not "1e-7".
+        amount: typeof field.amount === 'number' ? recipe.plainAmount(field.amount) : String(field.amount),
         amountUnity: rounded(weights.unity[field.name] ?? 0, 4)
       })),
       warningCodes: weights.warningCodes
@@ -716,10 +719,12 @@ const linesAsSaved = async (lines: z.infer<typeof linesArg>, userId: string) => 
   const byName = new Map(own.map((m) => [nameKey(m.name), m]));
   const known = new Set<object>();
   const rows = lines.map((line) => {
-    if (line.analysis) return { ...line, name: line.material, amount: String(line.amount), loi: line.loi ?? 0 };
+    // Each amount as the tool saves it (resolveLines): "0.0000001", not String()'s "1e-7".
+    const amount = recipe.plainAmount(line.amount);
+    if (line.analysis) return { ...line, name: line.material, amount, loi: line.loi ?? 0 };
     const found = byName.get(nameKey(line.material)) ?? findMaterial(line.material);
-    if (!found) return { name: line.material, amount: String(line.amount) };
-    const row = { ...found, amount: String(line.amount) };
+    if (!found) return { name: line.material, amount };
+    const row = { ...found, amount };
     known.add(row);
     return row;
   });
@@ -733,7 +738,8 @@ registerPreview('mcp', 'create_recipe', async (given, _current, userId) => {
     {
       title: args.title,
       materials: lines?.rows,
-      additives: args.colorants,
+      // Each amount as colorantLines saves it.
+      additives: args.colorants?.map((colorant) => ({ ...colorant, amount: recipe.plainAmount(colorant.amount) })),
       notes: notesOf(args.notes),
       firing: args.firing,
       foodSurface: args.foodSurface

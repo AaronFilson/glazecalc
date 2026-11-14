@@ -822,6 +822,11 @@ describe('MCP: the public tools', () => {
     expect(estimated.drySgBasis).to.equal('mixed');
     expect(estimated.drySgNote).to.match(/estimate/i);
     expect(estimated).to.have.property('bucket');
+    // The same recipe in hundred-millionths: String(0.0000002) is "2e-7", which the estimate read as no amount
+    // ("No estimate: the lines have no amounts").
+    const tiny = lines.map((line) => ({ ...line, amount: line.amount / 100000000 }));
+    const traced = await data('specific_gravity_water', { sg: 1.5, litres: 10, target: 1.45, lines: tiny });
+    expect([traced.drySg, traced.drySgBasis]).to.eql([estimated.drySg, estimated.drySgBasis]);
     const given = await data('specific_gravity_water', { sg: 1.5, litres: 10, drySg: 2.5, lines });
     expect(given.drySg).to.equal(2.5);
     expect(given).not.to.have.property('drySgBasis');
@@ -2220,6 +2225,25 @@ describe('MCP: the write tools', () => {
       expect(refused.isError).to.equal(true);
     }
     expect(await Recipe.countDocuments({ ownedBy })).to.equal(1);
+  });
+
+  it('saves a trace of a colorant or an oxide as a plain decimal, as the pages save an amount', async () => {
+    // String(0.0000001) is "1e-7": the recipe page took the colorant's amount for not a number, and the chemistry,
+    // counting colorants, refused it.
+    const made = await data(
+      'create_recipe',
+      { title: 'Trace', lines: LINES, colorants: [{ name: 'Cobalt Carbonate', amount: 0.0000001 }] },
+      headers
+    );
+    const saved = (await Recipe.findById(made.id).lean())!;
+    expect((saved.additives[0] as { amount: string }).amount).to.equal('0.0000001');
+    const material = await data(
+      'add_my_material',
+      { name: 'Trace spar', analysis: { SiO2: 70, Al2O3: 18, K2O: 12, Fe2O3: 0.0000001 } },
+      headers
+    );
+    const fields = (await Material.findById(material.id).lean())!.fields as Array<{ name: string; amount: string }>;
+    expect(fields.find((field) => field.name === 'Fe2O3')?.amount).to.equal('0.0000001');
   });
 
   it('update tools and move_to_trash refuse a stale rev, changing nothing, and count each change', async () => {

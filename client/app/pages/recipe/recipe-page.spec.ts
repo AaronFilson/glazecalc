@@ -278,6 +278,10 @@ describe('RecipePage', () => {
     expect(estimate.unknownShare).toBeCloseTo(4 / 204, 9);
     expect(estimate.unknown).toEqual(['Bentonite']);
     expect(estimate.sg).toBe(Math.round((200 / (100 / 2.71 + 100 / 2.65)) * 100) / 100);
+    // A trace too: 0.0000001% of the base is 0.0000002 g, which String() wrote "2e-7", read as none.
+    page['edit'].setAdditiveAmount(0, '0.0000001');
+    const trace = page['drySgEstimate']().parts.find((part: { name: string }) => part.name === 'Bentonite');
+    expect(trace.grams).toBeCloseTo(0.0000002, 15);
   });
 
   it('leaves out additives it cannot count, and borrows chemistry where one says to', () => {

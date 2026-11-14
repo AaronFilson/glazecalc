@@ -1042,6 +1042,35 @@ describe('Shared recipe tools', () => {
     }
   });
 
+  it('writes the amounts of a batch under a millionth plainly, so they read back and the frit is there', () => {
+    // formatAmount wrote with String(): the frit's 85% of 0.00000035 g as "2.975e-7", which reads as no amount, so
+    // the replacement had no flux and Replace lead failed, in either mode.
+    const library = standardData.load('materials') as MaterialRecord[];
+    const find = (name: string) => library.find((m) => m.name === name);
+    const plain = (m: MaterialRecord, amount: number) => ({ ...m, amount: recipe.plainAmount(amount) });
+    const lines = [
+      plain(find('Lead Bisilicate Frit (Potclays 2261)')!, 0.0000002),
+      plain(KAOLIN, 0.00000005),
+      plain(SILICA, 0.0000001)
+    ];
+    for (const mode of ['colour', 'rebuild'] as const) {
+      const [base] = recipe.leadFreeBases(lines, [], find, library, 'UK', 1060, mode);
+      const { materials } = recipe.replaceLead(lines, [], find, library, 'UK', {
+        base: base!.name,
+        celsius: 1060,
+        mode
+      });
+      for (const m of materials) expect(m.amount, `${mode}: ${m.name}`).to.match(/^0\.0{6}\d+$/);
+      expect(recipe.amountOf(materials.find((m) => m.name === base!.name)?.amount), mode).to.be.above(0);
+      expect(
+        materials.reduce((sum, m) => sum + recipe.amountOf(m.amount), 0),
+        mode
+      ).to.be.closeTo(0.00000035, 0.000000005);
+      expect(recipe.unityOf(recipe.molesOf(materials)), mode).to.be.an('object');
+    }
+    expect(recipe.formatAmount(0.000000085, 9)).to.equal('0.000000085');
+  });
+
   it('keeps the colour with a raw clay still sold, a kaolin or ball clay first, else China Clay', () => {
     const library = standardData.load('materials') as MaterialRecord[];
     const find = (name: string) => library.find((m) => m.name === name);

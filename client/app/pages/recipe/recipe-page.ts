@@ -45,7 +45,7 @@ import { Notices, NoticesList } from '../../shared/notices';
 import { firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
 import { Removal } from '../../shared/remove-button';
-import { amountOf, isAmount, unitOf } from './rebase';
+import { amountOf, isAmount, plainAmount, unitOf } from './rebase';
 import { additiveAmount, evaluate } from './recipe-analysis';
 import { RecipeCompare } from './recipe-compare';
 import { RecipeCost } from './recipe-cost';
@@ -340,9 +340,10 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   /** The dry materials' SG estimated from the recipe (lib/recipe/density.js), for the SG calculator. */
   protected readonly drySgEstimate = computed(() => {
     const base = this.edit.total();
+    // Written plainly: the estimate reads String(0.0000001), "1e-7", as no amount.
     const additives = this.additiveLines().map((line) => ({
       ...line,
-      amount: String(unitOf(line) === 'percent' ? (amountOf(line.amount) / 100) * base : amountOf(line.amount))
+      amount: plainAmount(unitOf(line) === 'percent' ? (amountOf(line.amount) / 100) * base : amountOf(line.amount))
     }));
     return recipeDrySg([...this.lines(), ...additives]);
   });

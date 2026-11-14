@@ -246,6 +246,26 @@ describe('Match with what I have: classic substitutions', () => {
     }
   });
 
+  it("gives back a recipe's own amounts as they were however small the batch, written plainly", () => {
+    // An amount kept as it was keeps its text, written with String(): 0.0000004 as "4e-7", which reads as no
+    // amount, so every line of a batch of 0.000001 was taken out and the match was an empty recipe.
+    const lines = (
+      [
+        ['Custer Spar', 0.0000004],
+        ['Whiting', 0.0000002],
+        ['EPK Kaolin', 0.0000002],
+        ['Silica', 0.0000002]
+      ] as Array<[string, number]>
+    ).map(([name, amount]) => ({ ...find(name), amount: recipe.plainAmount(amount) }));
+    const match = recipe.matchFromShelf(lines, shelfOf(...lines.map((line) => line.name)));
+    expect(match.materials.map((m) => [m.name, m.amount])).to.deep.equal([
+      ['Custer Spar', '0.0000004'],
+      ['Whiting', '0.0000002'],
+      ['EPK Kaolin', '0.0000002'],
+      ['Silica', '0.0000002']
+    ]);
+  });
+
   it('says how near a suggestion for a discontinued material comes, too', () => {
     const lines = recipeOf([
       ['Oxford Spar', 40],
