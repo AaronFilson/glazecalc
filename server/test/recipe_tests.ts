@@ -243,6 +243,56 @@ describe('Shared recipe tools', () => {
     expect(clay(21, 15)).to.include('clay-high');
   });
 
+  it('counts a caution as the old recipe’s only when it raised the same one, as serious or more', () => {
+    const lines = [{ material: KAOLIN, amount: '10' }];
+    const glaze = { K2O: 0.15, Na2O: 0.1, CaO: 0.5, B2O3: 0.2, Al2O3: 0.3, SiO2: 3 };
+    const severity = (check: string, oxide: string, was: number, now: number, celsius: number) => {
+      const unity = (value: number) => ({ ...glaze, [oxide]: value, ...(oxide === 'K2O' && { Na2O: 0 }) });
+      return recipe
+        .pastLimits({ lines, unity: unity(now), old: unity(was), celsius })
+        .find((caution) => caution.check === check)?.severity;
+    };
+    // From a caution to likely: low-fire alumina 0.11 to 0.10, mid-fire 0.21 to 0.195 (shown as 0.20).
+    expect(severity('alumina-low', 'Al2O3', 0.11, 0.1, 1060)).to.equal('likely');
+    expect(severity('alumina-low', 'Al2O3', 0.21, 0.195, 1222)).to.equal('likely');
+    // On the limit, the old recipe had no caution: 0.15 to 0.14 at low fire crosses it.
+    expect(severity('alumina-low', 'Al2O3', 0.15, 0.14, 1060)).to.equal('caution');
+    // The same on the high side: soda and potash, boron, magnesia and barium.
+    expect(severity('alkali', 'K2O', 0.38, 0.41, 1222)).to.equal('likely');
+    expect(severity('alkali', 'K2O', 0.3, 0.32, 1222)).to.equal('caution');
+    expect(severity('boron-high', 'B2O3', 0.37, 0.4, 1222)).to.equal('likely');
+    expect(severity('magnesia', 'MgO', 0.28, 0.3, 1060)).to.equal('likely');
+    expect(severity('barium', 'BaO', 0.38, 0.41, 1222)).to.equal('likely');
+    expect(severity('barium', 'BaO', 0.1, 0.106, 1222)).to.equal('caution');
+    // As serious as the old recipe's, and no more than a tenth worse: not news.
+    expect(severity('alumina-low', 'Al2O3', 0.12, 0.115, 1060)).to.equal(undefined);
+    expect(severity('alumina-low', 'Al2O3', 0.1, 0.095, 1060)).to.equal(undefined);
+    expect(severity('alkali', 'K2O', 0.42, 0.44, 1222)).to.equal(undefined);
+    expect(severity('boron-high', 'B2O3', 0.35, 0.36, 1222)).to.equal(undefined);
+    expect(severity('barium', 'BaO', 0.2, 0.21, 1222)).to.equal(undefined);
+    // Nor less serious than it was.
+    expect(severity('alumina-low', 'Al2O3', 0.09, 0.12, 1060)).to.equal(undefined);
+    expect(severity('alkali', 'K2O', 0.45, 0.39, 1222)).to.equal(undefined);
+    // Raw clay the same way: from the caution's 24% to the likely 26% is news, 26% to 27% is not.
+    const clay = (amount: number, oldClay: number) =>
+      recipe
+        .pastLimits({
+          lines: [
+            { material: KAOLIN, amount: String(amount) },
+            { material: SILICA, amount: String(100 - amount) }
+          ],
+          unity: glaze,
+          old: glaze,
+          oldClay,
+          celsius: 1222
+        })
+        .find((caution) => caution.check === 'clay-high')?.severity;
+    expect(clay(26, 24)).to.equal('likely');
+    expect(clay(27, 26)).to.equal(undefined);
+    expect(recipe.rawClayHigh(26, 24)).to.equal(true);
+    expect(recipe.rawClayHigh(24.5, 24)).to.equal(false);
+  });
+
   it('keeps the figures the checks warn at as data', () => {
     expect(recipe.CHECK_LIMITS.boronMidFire.caution).to.equal(0.33);
     expect(recipe.FIRING.lowFireBelow).to.equal(1150);
