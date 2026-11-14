@@ -216,7 +216,7 @@ describe('Paste-in import: decimal marks', () => {
     expect(recipe.ambiguousNumbers('Custer 12,5\nSilica 40\nWhiting 1250')).to.eql([]);
   });
 
-  it('reads thousands set apart by a space as one number where the language writes them so, and marks them elsewhere', () => {
+  it('reads thousands set apart by a space as the language writes them, and marks each such line so the page asks', () => {
     // French sets thousands apart with a narrow no-break space, Russian with a no-break space: one number, with any space.
     for (const space of [' ', '\u00a0', '\u202f']) {
       expect(lines(one(`Silica 1${space}500 g\nWhiting 300 g`, { locale: 'fr' })), JSON.stringify(space)).to.eql([
@@ -226,7 +226,10 @@ describe('Paste-in import: decimal marks', () => {
     }
     expect(one('Silice 1\u00a0250,5', { locale: 'ru' }).lines[0]).to.include({ name: 'Silice', amount: 1250.5 });
     expect(lines(one('1 500 g Silica', { locale: 'fr' }))).to.eql([['Silica', 1500, 'g', false]]);
-    expect(one('Silica 1 500', { locale: 'sv' }).lines[0].spaced).to.equal(undefined);
+    // "Silica 1" at 500 is a reading too: marked in every language, so the page asks.
+    expect(one('Silica 1 500', { locale: 'sv' }).lines[0].spaced).to.equal('1 500');
+    expect(recipe.spacedReading('fr')).to.equal('group');
+    expect(recipe.spacedReading('en')).to.equal('apart');
     // English writes 1,500: read as before, the 1 ending the name, and marked so the page asks.
     const english = one('Silica 1\u202f500 g\nWhiting 300 g');
     expect(lines(english)).to.eql([
@@ -254,6 +257,61 @@ describe('Paste-in import: decimal marks', () => {
       ['Silice', 1, null, false],
       ['Craie', 2, null, false]
     ]);
+  });
+
+  it('reads a known name that ends in a number before an amount in threes, in every language, with nothing to ask', () => {
+    // Thousands set apart by a space would make "Minspar 200 300 g" Minspar at 200 300 g; the library has Minspar 200.
+    const paste = [
+      'Minspar 200 300 g',
+      'Feldspath mixte 64 250',
+      'Mondré & Manz Frit V 15 098 980',
+      'Zirkonfritte M 130 600 250 g',
+      'Kaolin 233 150,5 g',
+      'Silica 25'
+    ].join('\n');
+    for (const locale of ['en', 'de', 'fr', 'sv', 'ru', 'pl', 'cs', 'pt-PT']) {
+      const read = one(paste, { locale });
+      expect(lines(read), locale).to.eql([
+        ['Minspar 200', 300, 'g', false],
+        ['Feldspath mixte 64', 250, null, false],
+        ['Mondré & Manz Frit V 15 098', 980, null, false],
+        ['Zirkonfritte M 130 600', 250, 'g', false],
+        ['Kaolin 233', 150.5, 'g', false],
+        ['Silica', 25, null, false]
+      ]);
+      expect(
+        read.lines.map((l) => l.spaced),
+        locale
+      ).to.eql([undefined, undefined, undefined, undefined, undefined, undefined]);
+    }
+    // A name the library does not have: marked in every language, and read as the reader's language writes thousands.
+    expect(one('Redart 2 500 g', { locale: 'fr' }).lines[0]).to.include({
+      name: 'Redart',
+      amount: 2500,
+      spaced: '2 500'
+    });
+    expect(one('Redart 2 500 g', { locale: 'en' }).lines[0]).to.include({
+      name: 'Redart 2',
+      amount: 500,
+      spaced: '2 500'
+    });
+  });
+
+  it('reads each line whose thousands may be set apart by a space as the reader chose for that line', () => {
+    // One number for a genuine 1 500 joins no other line.
+    const paste = 'Silica 1 500 g\nRedart 2 500 g\nWhiting 300 g';
+    expect(lines(one(paste, { spaced: { 1: 'group' } }))).to.eql([
+      ['Silica', 1500, 'g', false],
+      ['Redart 2', 500, 'g', false],
+      ['Whiting', 300, 'g', false]
+    ]);
+    expect(lines(one(paste, { locale: 'fr', spaced: { 2: 'apart' } }))).to.eql([
+      ['Silica', 1500, 'g', false],
+      ['Redart 2', 500, 'g', false],
+      ['Whiting', 300, 'g', false]
+    ]);
+    // Each stays marked, chosen or not.
+    expect(one(paste, { spaced: { 1: 'group' } }).lines.map((l) => l.spaced)).to.eql(['1 500', '2 500', undefined]);
   });
 
   it('reads the endings numbers are written with: a full stop, ٪ and ٬, a percent sign first, units in CJK', () => {

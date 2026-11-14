@@ -321,28 +321,66 @@ describe('ImportPage', () => {
     expect(root.querySelector('.import-ambiguous')).toBeNull();
   });
 
-  it('asks how to read thousands set apart by a space, unless the reader’s language writes them so', async () => {
-    const { fixture, root, page, paste, chosenNames } = await create();
+  it('asks how to read each line whose thousands may be set apart by a space, and reads that line as chosen', async () => {
+    const MINSPAR = material(
+      'Minspar 200',
+      [
+        ['Na2O', 1],
+        ['Al2O3', 1],
+        ['SiO2', 6]
+      ],
+      0
+    );
+    const { fixture, root, page, paste } = await create([MINSPAR]);
     const amounts = () => page['drafts']()[0].lines.map((l: { amount: string }) => l.amount);
-    const buttons = () => [...root.querySelectorAll<HTMLButtonElement>('.import-spaced button')];
-    await paste('Test\nCuster 500\nSilica 1\u202f500');
-    // English writes 1,500: read as before, the 1 ending the name, and asked.
-    expect(amounts()).toEqual(['500', '500']);
-    expect(text(fixture, '.import-spaced p')).toContain(
+    const rows = () => [...root.querySelectorAll<HTMLElement>('.import-spaced-line')];
+    const buttons = (row: number) => [...rows()[row]!.querySelectorAll<HTMLButtonElement>('button')];
+    const pressed = (row: number) => buttons(row).map((b) => b.getAttribute('aria-pressed'));
+    await paste('Test\nMinspar 200 300\nCuster 500\nSilica 1\u202f500\nWhiting 2\u202f500');
+    // English writes 1,500: read as before, the 1 ending the name, and asked of each line. Minspar 200 is a name:
+    // 300 of it, with nothing to ask.
+    expect(amounts()).toEqual(['300', '500', '500', '500']);
+    expect(text(fixture, '.import-spaced .import-ambiguous-text')).toContain(
       'can be read two ways, such as “1 500”: as 1,500, with a space setting the thousands apart, or as 1 and 500, apart.'
     );
-    expect(buttons().map((b) => b.textContent?.trim())).toEqual(['Read 1 500 as 1,500', 'Read 1 and 500 apart']);
-    expect(buttons().map((b) => b.getAttribute('aria-pressed'))).toEqual(['false', 'true']);
-    buttons()[0].click();
+    expect(rows().map((row) => row.querySelector('code')?.textContent)).toEqual([
+      'Silica 1\u202f500',
+      'Whiting 2\u202f500'
+    ]);
+    expect(rows()[0]!.getAttribute('aria-labelledby')).toBe('import-spaced-4');
+    expect(text(fixture, '#import-spaced-4')).toBe('Line 4 as pasted:Silica 1 500');
+    expect(buttons(0).map((b) => b.textContent?.trim())).toEqual(['Read 1 500 as 1,500', 'Read 1 and 500 apart']);
+    expect([pressed(0), pressed(1)]).toEqual([
+      ['false', 'true'],
+      ['false', 'true']
+    ]);
+    // One number for one line sets no other line's number.
+    buttons(0)[0]!.click();
     await settle(fixture);
-    expect(amounts()).toEqual(['500', '1500']);
-    expect(chosenNames()).toEqual(['Custer Spar', 'Silica']);
-    expect(buttons().map((b) => b.getAttribute('aria-pressed'))).toEqual(['true', 'false']);
-    // French writes 1 500: one number, with nothing to ask.
+    expect(amounts()).toEqual(['300', '500', '1500', '500']);
+    expect([pressed(0), pressed(1)]).toEqual([
+      ['true', 'false'],
+      ['false', 'true']
+    ]);
+    buttons(1)[0]!.click();
+    await settle(fixture);
+    expect(amounts()).toEqual(['300', '500', '1500', '2500']);
+    // A paste typed again is read as the language reads it until the reader chooses.
+    await paste('Test\nCuster 500\nSilica 1\u202f500');
+    expect(amounts()).toEqual(['500', '500']);
+    // French writes 1 500: one number, and still asked, since "Silica 1" at 500 is a reading too.
     formatLocale.set('fr');
     try {
       await paste('Test\nCuster 500\nSilica 1\u202f500');
       expect(amounts()).toEqual(['500', '1500']);
+      expect(pressed(0)).toEqual(['true', 'false']);
+      buttons(0)[1]!.click();
+      await settle(fixture);
+      expect(amounts()).toEqual(['500', '500']);
+      expect(pressed(0)).toEqual(['false', 'true']);
+      // Nothing to ask where no line can be read two ways.
+      await paste('Test\nMinspar 200 300\nCuster 500');
+      expect(amounts()).toEqual(['300', '500']);
       expect(root.querySelector('.import-spaced')).toBeNull();
     } finally {
       formatLocale.set('en');

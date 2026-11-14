@@ -19,8 +19,9 @@ export interface PastedLine {
   /** Marked "+", or under a heading such as "Additions". */
   addition: boolean;
   /**
-   * The amount as pasted when its thousands are set apart by a space ("1 500") and the reader's language does
-   * not write them so: read as `PasteOptions.spaced` says, so the page asks. Absent otherwise.
+   * The amount as pasted when its thousands may be set apart by a space ("1 500" of "Silica 1 500": 1500, or
+   * "Silica 1" at 500), in any language: read as `PasteOptions.spaced` says for the line, so the page asks.
+   * Absent otherwise, and for a known name that ends in the groups before the last ("Minspar 200 300 g").
    */
   spaced?: string;
   /**
@@ -57,10 +58,10 @@ export interface PasteOptions {
   reading?: 'decimal' | 'group';
   /**
    * How to read an amount with its thousands set apart by a space ("Silica 1 500"): one number ('group'), or
-   * the first group as the end of the name ('apart'). By default 'group' where the locale writes thousands
-   * so (French, Russian), else 'apart', and each such line is marked `spaced`.
+   * the first group as the end of the name ('apart'); for the whole paste, or line by line (by `PastedLine.line`).
+   * A line not chosen is read as `spacedReading(locale)` says, and each such line is marked `spaced`.
    */
-  spaced?: 'group' | 'apart';
+  spaced?: 'group' | 'apart' | Readonly<Record<number, 'group' | 'apart'>>;
   /**
    * How to read a comma-separated row whose last two cells are whole numbers with only a comma between them
    * ("Silica,30,5"), for a reader who writes decimal commas and with no heading row naming the columns: one number
@@ -82,6 +83,12 @@ export function pasteTooLong(text: string): 'chars' | 'lines' | null;
 export function ambiguousNumbers(text: string, mark?: DecimalMark): string[];
 
 export function parsePaste(text: string, options?: PasteOptions): PastedRecipe[];
+
+/**
+ * How a line whose amount may have its thousands set apart by a space is read until the reader chooses: one
+ * number ('group') where the locale writes thousands so (French "1 500", Russian, Swedish), else 'apart'.
+ */
+export function spacedReading(locale?: string): 'group' | 'apart';
 
 /** Each line's amount as saved ("20.5"; '' for none), and an addition's unit. */
 export function importAmounts(recipe: PastedRecipe): Array<{ amount: string; unit?: 'percent' | 'parts' | 'grams' }>;
