@@ -62,6 +62,51 @@ describe('Paste-in import: reading lines', () => {
     ]);
   });
 
+  it('reads the amount first in a line with a number at each end, when a unit follows it or the rest is a known name', () => {
+    expect(lines(one('19 g Ferro Frit 3124\n2,5 g Minspar 200\n30 Ferro Frit 3134\n٣٫١ g Ferro Frit 4113'))).to.eql([
+      ['Ferro Frit 3124', 19, 'g', false],
+      ['Minspar 200', 2.5, 'g', false],
+      ['Ferro Frit 3134', 30, null, false],
+      ['Ferro Frit 4113', 3.1, 'g', false]
+    ]);
+    // As before: the name first where the number before it is part of it, or the library knows the name that way.
+    expect(lines(one('325 mesh silica 10\n6 Tile 25\nFerro Frit 3134 20'))).to.eql([
+      ['325 mesh silica', 10, null, false],
+      ['6 Tile', 25, null, false],
+      ['Ferro Frit 3134', 20, null, false]
+    ]);
+  });
+
+  it('reads a known name, a comma and its amount, though there is a digit each side of the comma', () => {
+    // "Ferro Frit 3134,20" was Ferro Frit at 3134.2, the comma read as a decimal one.
+    for (const locale of ['en', 'de', 'fr']) {
+      expect(
+        lines(one('Ferro Frit 3134,20\nMinspar 200,30\nFusion Frit F-12,16.5\nSilica,33', { locale })),
+        locale
+      ).to.eql([
+        ['Ferro Frit 3134', 20, null, false],
+        ['Minspar 200', 30, null, false],
+        ['Fusion Frit F-12', 16.5, null, false],
+        ['Silica', 33, null, false]
+      ]);
+    }
+    // Two numbers after it are asked of as in any comma row: one number with a decimal comma, or two columns. It was
+    // the recipe's title.
+    const read = one('Ferro Frit 3134,20,5\nSilica,30\nEPK,49,5', { locale: 'de' });
+    expect(read.title).to.equal(null);
+    expect(read.lines.map((l) => [l.name, l.amount, l.joined])).to.eql([
+      ['Ferro Frit 3134', 20.5, '20,5'],
+      ['Silica', 30, undefined],
+      ['EPK', 49.5, '49,5']
+    ]);
+    expect(one('Ferro Frit 3134,20,5', { locale: 'en' }).lines[0]).to.include({ name: 'Ferro Frit 3134', amount: 20 });
+    // Under a heading row, by its columns.
+    expect(lines(one('Material,Amount\nFerro Frit 3134,20\nSilica,80', { locale: 'de' }))).to.eql([
+      ['Ferro Frit 3134', 20, null, false],
+      ['Silica', 80, null, false]
+    ]);
+  });
+
   it('reads a name pasted alone, which the library knows, as a material with no amount', () => {
     expect(lines(one('Recipe\nFrit 3124\nEPK 20'))).to.eql([
       ['Frit 3124', null, null, false],
