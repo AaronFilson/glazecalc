@@ -15,6 +15,8 @@ export interface MaterialField {
  */
 export interface MaterialInput {
   name: string;
+  /** Other names to find it by, as an extra material of calculateUMF. */
+  aliases?: string[];
   formula?: Record<string, number>;
   analysis?: Record<string, number | string>;
   fields?: MaterialField[];

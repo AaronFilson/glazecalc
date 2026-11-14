@@ -248,6 +248,13 @@ describe('Target & Solve', () => {
     expect(refusal(() => recipe.solveTarget({ kind: 'unity', oxides: { Li2O: 1 } }, shelfOf('Silica'))).code).to.equal(
       'solve.noMatch'
     );
+    // Silica and calcined kaolin bring the target's silica and alumina but no flux at all: no unity formula, as the
+    // recipe page says.
+    expect(() =>
+      recipe.solveTarget({ kind: 'unity', oxides: GLOSSY_UNITY }, shelfOf('Calcined Kaolin (theoretical)', 'Silica'))
+    )
+      .to.throw()
+      .with.property('code', 'no-flux');
     // Every code has its English.
     for (const code of recipe.CODES.filter((c) => c.startsWith('solve.')))
       expect(ENGLISH[code], code).to.be.a('string');

@@ -175,6 +175,49 @@ describe('Shared recipe tools', () => {
     expect(cautions.map((caution) => caution.check)).to.include('clay-low');
   });
 
+  it('knows a potter’s own raw clay and whiting, which have no category, by their analysis', () => {
+    const library = standardData.load('materials') as MaterialRecord[];
+    const epk = library.find((m) => m.name === 'EPK Kaolin')!;
+    const whiting = library.find((m) => m.name === 'Whiting')!;
+    // A potter's own, typed in from the data sheet: no category, no ownedBy 'Standard'.
+    const own = (record: MaterialRecord, name: string): MaterialRecord => ({
+      name,
+      percentmole: record.percentmole,
+      loi: record.loi,
+      fields: record.fields
+    });
+    const myEpk = own(epk, 'My EPK');
+    const myWhiting = own(whiting, 'Calcium carbonate from the feed store');
+    expect(recipe.isRawClay(myEpk)).to.equal(true);
+    const unity = { K2O: 0.2, CaO: 0.8, Al2O3: 0.3, B2O3: 0.6, SiO2: 3 };
+    const checks = (clay: MaterialRecord, flux: MaterialRecord, amounts: [number, number, number]) => {
+      const lines = [
+        { material: clay, amount: String(amounts[0]) },
+        { material: flux, amount: String(amounts[1]) },
+        { material: SILICA, amount: String(amounts[2]) }
+      ];
+      return {
+        clay: recipe.rawClayPercent(lines.map((line) => ({ ...line.material, amount: line.amount }))),
+        checks: recipe.pastLimits({ lines, unity, celsius: 1060 }).map((c) => [c.check, c.severity, c.value])
+      };
+    };
+    // My EPK and my whiting behave as the library's: too much clay, too little, and raw whiting at low fire.
+    for (const amounts of [
+      [30, 10, 60],
+      [3, 10, 87],
+      [15, 12, 73]
+    ] as Array<[number, number, number]>) {
+      expect(checks(myEpk, myWhiting, amounts), String(amounts)).to.deep.equal(checks(epk, whiting, amounts));
+    }
+    expect(checks(myEpk, myWhiting, [30, 10, 60]).checks.map((c) => c[0])).to.include.members(['clay-high', 'whiting']);
+    // Calcined clay (no LOI) and wollastonite (calcium, no LOI) are neither.
+    expect(recipe.isRawClay({ ...myEpk, name: 'My calcined kaolin', loi: 0 })).to.equal(false);
+    const wollastonite = { name: 'My wollastonite', percentmole: 'molecular' as const, loi: 0, fields: whiting.fields };
+    expect(checks(myEpk, wollastonite, [15, 12, 73]).checks.map((c) => c[0])).to.not.include('whiting');
+    // A library record keeps its category: kaolin's analysis filed as something else is not raw clay.
+    expect(recipe.isRawClay({ ...myEpk, category: 'feldspar' })).to.equal(false);
+  });
+
   it('does not warn of what the old recipe already had', () => {
     const unity = { K2O: 0.6, Na2O: 0.1, CaO: 0.3, Al2O3: 0.3, SiO2: 3 };
     const lines = [{ material: KAOLIN, amount: '10' }];
@@ -335,9 +378,22 @@ describe('Shared recipe tools', () => {
     // The band wins over a temperature: SK 8 is mid fire though JIS says 1250 °C.
     expect(checks({ band: 'mid', celsius: 1250, limitSet: recipe.HESSELBERTH_ROY_LIMITS })).to.include('boron-high');
     // A low band with no temperature skips Katz's "too little boron", which needs one.
-    const lean = { ...unity, B2O3: 0 };
+    const lean = { ...unity, K2O: 0.2, Na2O: 0.1, B2O3: 0 };
     expect(recipe.pastLimits({ lines, unity: lean, band: 'low' }).map((c) => c.check)).to.not.include('boron-short');
     expect(recipe.pastLimits({ lines, unity: lean, celsius: 1060 }).map((c) => c.check)).to.include('boron-short');
+    // Nor for a lead or alkaline glaze, which melts without boron (Katz's rule is for neither, as in cone-fit).
+    const short = (u: Record<string, number>) =>
+      recipe.pastLimits({ lines, unity: u, celsius: 1060 }).map((c) => c.check);
+    expect(short({ ...lean, PbO: 0.06 })).to.not.include('boron-short');
+    expect(short({ ...lean, PbO: 0.05 })).to.include('boron-short');
+    expect(short({ ...lean, K2O: 0.25, Na2O: 0.2 })).to.not.include('boron-short');
+    // A firing of null (or NaN) is not known, not 0 °C: the same as none.
+    for (const celsius of [null, NaN, Infinity]) {
+      const unknown = recipe.pastLimits({ lines, unity: lean, celsius: celsius as unknown as number });
+      expect(unknown, String(celsius)).to.deep.equal(recipe.pastLimits({ lines, unity: lean }));
+      expect(recipe.bandOf(recipe.GLAZECALC_LIMITS, celsius as unknown as number), String(celsius)).to.equal(undefined);
+    }
+    expect(Number.isNaN(chemistry.boronFor(null as unknown as number))).to.equal(true);
   });
 
   it('gives a row per limit, with the sums added up and the side a value is past', () => {
@@ -387,6 +443,40 @@ describe('Shared recipe tools', () => {
     expect(recipe.pastSide(2.494, { min: 2.5 })).to.equal('below');
   });
 
+  it('cautions of barium, which can leach, from 0.2 in the unity formula and likely from 0.4, at any firing', () => {
+    const lines = [{ material: KAOLIN, amount: '10' }];
+    const unity = { K2O: 0.1, Na2O: 0.1, CaO: 0.5, Al2O3: 0.3, B2O3: 0.2, SiO2: 3 };
+    const barium = (baO: number, celsius?: number, old?: Record<string, number>) =>
+      recipe.pastLimits({ lines, unity: { ...unity, BaO: baO }, celsius, old }).find((c) => c.check === 'barium');
+    expect(barium(0.19, 1222)).to.equal(undefined);
+    expect(barium(0.2, 1222)).to.include({ severity: 'caution', quantity: 'BaO', limit: 0.2, direction: 'above' });
+    expect(barium(0.4, 1060)).to.include({ severity: 'likely' });
+    expect(barium(0.3)).to.include({ severity: 'caution' });
+    expect(words(barium(0.4)!)).to.match(/barium oxide \(BaO\) 0\.40 .*leach.*food/);
+    expect(words(barium(0.3)!)).to.match(/leach.*food/);
+    // Not news when the old recipe had as much.
+    expect(barium(0.3, 1222, { ...unity, BaO: 0.3 })).to.equal(undefined);
+    // For the warning beside lead's: BaO in the unity formula of the lines, as leadIn reads them.
+    const BARIUM_CARBONATE = material('Barium carbonate', [['BaO', 1]], 22.3);
+    const bariumIn = (grams: number) =>
+      recipe.bariumIn([line(BARIUM_CARBONATE, grams), line(WHITING, 10), line(SILICA, 30)]);
+    // 10 g of whiting is 0.0999 mol CaO; barium carbonate is 197.3 g a mole.
+    expect(bariumIn(4.8)).to.equal(null);
+    expect(bariumIn(5)).to.deep.include({ likely: false });
+    expect(bariumIn(5)!.unity).to.be.closeTo(0.2, 0.01);
+    expect(bariumIn(13.2)).to.deep.include({ likely: true });
+    expect(recipe.bariumIn([line(WHITING, 10), line(SILICA, 30)])).to.equal(null);
+  });
+
+  it('has no unity formula without a flux, as calculateUMF says', () => {
+    for (const moles of [{ SiO2: 1, Al2O3: 0.1 }, {}] as Array<Record<string, number>>) {
+      expect(() => recipe.unityOf(moles), JSON.stringify(moles))
+        .to.throw()
+        .with.property('code', 'no-flux');
+    }
+    expect(recipe.unityOf({ CaO: 0.2, K2O: 0.05, SiO2: 1 })).to.deep.equal({ CaO: 0.8, K2O: 0.2, SiO2: 4 });
+  });
+
   it('checks a glaze with no alumina at all as low in alumina, but not an empty one', () => {
     const lines = [{ material: KAOLIN, amount: '10' }];
     const unity = { K2O: 0.2, Na2O: 0.1, CaO: 0.7, B2O3: 0.4, Al2O3: 0, SiO2: 3 };
@@ -397,6 +487,13 @@ describe('Shared recipe tools', () => {
     // Not news when the old recipe had none either.
     const old = recipe.pastLimits({ lines, unity, old: unity, celsius: 1222 }).map((c) => c.check);
     expect(old).not.to.include('alumina-low');
+    // Nor when it had as little (or a little less, to 10%); much less than it had is news.
+    const thin = { ...unity, Al2O3: 0.15 };
+    const was = (u: Record<string, number>) =>
+      recipe.pastLimits({ lines, unity: u, old: thin, celsius: 1222 }).map((c) => c.check);
+    expect(was(thin)).not.to.include('alumina-low');
+    expect(was({ ...thin, Al2O3: 0.14 })).not.to.include('alumina-low');
+    expect(was({ ...thin, Al2O3: 0.1 })).to.include('alumina-low');
   });
 
   it('only cautions with Hesselberth & Roy’s set, which gives no figure for a likely fault, as its table does', () => {
@@ -871,5 +968,48 @@ describe('the unity formula worked step by step (workedCalculation)', () => {
     expect(() => recipe.workedCalculation([{ material: { name: 'Silica', formula: { SiO2: 1 } }, amount: 10 }]))
       .to.throw()
       .with.property('code', 'no-flux');
+  });
+
+  it('takes a material by name, and refuses the amounts calculateUMF refuses, as it does', () => {
+    // By name from the built-in materials, as calculateUMF finds them.
+    const byName = [
+      { material: 'Whiting', amount: 20 },
+      { material: 'silica', amount: '30' }
+    ];
+    const worked = recipe.workedCalculation(byName);
+    const umf = chemistry.calculateUMF(byName).umf;
+    expect(worked.materials.map((m) => m.name)).to.eql(['Whiting', 'Silica']);
+    for (const total of worked.oxides) expect(total.unity).to.be.closeTo(umf[total.oxide], 1e-12);
+    const codeOf = (run: () => unknown) => {
+      try {
+        run();
+      } catch (error) {
+        return (error as { code?: string }).code;
+      }
+      return undefined;
+    };
+    expect(codeOf(() => recipe.workedCalculation([{ material: 'Unobtainium', amount: 10 }]))).to.equal(
+      'unknown-material'
+    );
+    // Each amount calculateUMF refuses, refused the same way; a blank one counts as 0, as there.
+    for (const amount of ['abc', '-3', -3, '1e1', '0x10', true, NaN, Infinity]) {
+      const lines = [
+        { material: 'Whiting', amount: amount as unknown as string },
+        { material: 'Silica', amount: 30 }
+      ];
+      expect(
+        codeOf(() => recipe.workedCalculation(lines)),
+        String(amount)
+      ).to.equal('invalid-amount');
+      expect(
+        codeOf(() => chemistry.calculateUMF(lines)),
+        String(amount)
+      ).to.equal('invalid-amount');
+    }
+    const blank = recipe.workedCalculation([
+      { material: 'Whiting', amount: 20 },
+      { material: 'Silica', amount: '' }
+    ]);
+    expect(blank.materials.map((m) => m.name)).to.eql(['Whiting']);
   });
 });

@@ -370,6 +370,34 @@ describe('glaze chemistry', () => {
           .warnings
       ).to.eql([]);
     });
+
+    it('should keep colorant oxides as fluxes, and warn when they are most of the flux or silica runs past 10', () => {
+      const codes = (recipe: Record<string, number>) => calculateUMF(recipe).warningCodes.map((w) => w.code);
+      // Silica and kaolin with 5% cobalt carbonate: cobalt is all the flux, and the silica is over 30.
+      const cobalt = calculateUMF({ Silica: 70, Kaolin: 25, 'Cobalt Carbonate': 5 });
+      expect(cobalt.umf.CoO).to.be.closeTo(1, 1e-9);
+      expect(cobalt.umf.SiO2).to.be.above(30);
+      expect(cobalt.warningCodes.map((w) => w.code)).to.deep.equal(['colorant-flux', 'silica-high']);
+      expect(cobalt.warnings[0]).to.equal(
+        'Colorant oxides (CoO) are most of the flux, so the unity formula is scaled to them and says little about how the glaze melts.'
+      );
+      expect(cobalt.warnings[1]).to.equal(
+        'The unity formula has 32.32 SiO₂, more than a glaze can melt: there is too little flux, or this is not a glaze.'
+      );
+      // Most of the flux: 10 g of whiting is 0.0999 mol CaO; cobalt carbonate is 118.9 g a mole.
+      expect(codes({ Whiting: 10, 'Cobalt Carbonate': 9.7, Silica: 30, Kaolin: 10 })).to.deep.equal([]);
+      expect(codes({ Whiting: 10, 'Cobalt Carbonate': 14.5, Silica: 30, Kaolin: 10 })).to.deep.equal(['colorant-flux']);
+      // Silica past 10: 59 g of silica is 9.8 on 10 g of whiting, 61 g is 10.2.
+      expect(codes({ Whiting: 10, Silica: 59 })).to.deep.equal([]);
+      expect(codes({ Whiting: 10, Silica: 61 })).to.deep.equal(['silica-high']);
+      // Where the flux is only a trace, that is the warning: the unity formula means nothing anyway.
+      expect(codes({ Silica: 99.5, Whiting: 0.5 })).to.deep.equal(['trace-flux']);
+      // Never on the examples: the README's Leach 4321 (the landing page's) and a copper glaze.
+      expect(codes({ 'Potash Feldspar': 40, Silica: 30, Whiting: 20, Kaolin: 10 })).to.deep.equal([]);
+      expect(
+        codes({ 'Potash Feldspar': 40, Silica: 30, Whiting: 20, Kaolin: 10, 'Copper Carbonate': 5 })
+      ).to.deep.equal([]);
+    });
   });
 
   describe('app material format', () => {
@@ -1845,6 +1873,62 @@ describe('glaze chemistry', () => {
       expect(() => calculateUMF({ Unobtainium: 10 })).to.throw(/Unknown material/);
     });
 
+    it('should find a material by its name in any script, and refuse extra names that leave no key or share one', () => {
+      const codeOf = (work: () => unknown): string | undefined => {
+        try {
+          work();
+        } catch (e) {
+          return (e as ChemistryError).code;
+        }
+        return undefined;
+      };
+      type Named = MaterialInput & { aliases?: string[]; noChemistry?: boolean };
+      const standard = (
+        [...standardData.load('materials'), ...standardData.load('additives')] as unknown as Named[]
+      ).filter((record) => record.fields?.length && !record.noChemistry);
+      const kamado = standard.find((record) => record.name.startsWith('Kamado Feldspar'))!;
+      const alone = (material: MaterialInput) => calculateUMF([{ material, amount: 100 }]);
+      // A Japanese or Russian name kept nothing of itself, so any one found whichever such material came last.
+      expect(calculateUMF({ 釜戸長石: 100 }, { materials: [kamado] }).umf).to.deep.equal(alone(kamado).umf);
+      expect(codeOf(() => calculateUMF({ 福島長石: 100 }, { materials: [kamado] }))).to.equal('unknown-material');
+      // Accents and full-width letters fold away; ASCII names are read as before.
+      const spar: MaterialInput = { name: 'Feldspáth sodique', analysis: { Na2O: 11.8, Al2O3: 19.4, SiO2: 68.7 } };
+      expect(calculateUMF({ 'FELDSPATH SODIQUE': 100 }, { materials: [spar] }).umf).to.deep.equal(alone(spar).umf);
+      expect(calculateUMF({ ＳＩＬＩＣＡ: 30, Whiting: 20 }).umf).to.deep.equal(
+        calculateUMF({ Silica: 30, Whiting: 20 }).umf
+      );
+      // Every standard name and alias finds its own record: each record's names in one batch, beside a flux
+      // (for those with none), come to the record's own unity formula.
+      const flux = { material: { name: 'A flux', analysis: { CaO: 56 }, loi: 44 }, amount: 10 };
+      for (const record of standard) {
+        const names = [record.name, ...(record.aliases ?? [])];
+        const own = calculateUMF([{ material: record, amount: 100 }, flux]).umf;
+        const lines = names.map((name) => ({ material: name, amount: 100 / names.length }));
+        const found = calculateUMF([...lines, flux], { materials: standard }).umf;
+        expect(Object.keys(found).sort(), record.name).to.deep.equal(Object.keys(own).sort());
+        for (const [oxide, moles] of Object.entries(own)) expect(found[oxide], record.name).to.be.closeTo(moles, 1e-9);
+      }
+      // Among the extra materials, a name or alias with no letters or digits, or one two of them share, is refused.
+      const whiting: Named = { name: 'My whiting', analysis: { CaO: 56 }, loi: 44 };
+      expect(codeOf(() => calculateUMF({ Silica: 1 }, { materials: [{ ...whiting, name: '—' }] }))).to.equal(
+        'blank-name'
+      );
+      expect(codeOf(() => calculateUMF({ Silica: 1 }, { materials: [{ ...whiting, aliases: ['()'] }] }))).to.equal(
+        'blank-name'
+      );
+      expect(
+        codeOf(() => calculateUMF({ Silica: 1 }, { materials: [whiting, { ...whiting, name: 'my-Whiting!' }] }))
+      ).to.equal('duplicate-name');
+      expect(
+        codeOf(() => calculateUMF({ Silica: 1 }, { materials: [whiting, { ...spar, aliases: ['MY WHITING'] }] }))
+      ).to.equal('duplicate-name');
+      // Its own name again among its aliases is no clash, and an extra material still replaces a built-in one.
+      expect(
+        codeOf(() => calculateUMF({ 'my whiting': 1 }, { materials: [{ ...whiting, aliases: ['My Whiting'] }] }))
+      ).to.equal(undefined);
+      expect(calculateUMF({ Whiting: 1 }, { materials: [{ ...whiting, name: 'Whiting' }] }).loi).to.equal(44);
+    });
+
     it('should reject misspelled oxides such as Si02', () => {
       const bad = { name: 'Typo', analysis: { Si02: 100 } };
       expect(() => calculateUMF([{ material: bad, amount: 1 }])).to.throw(/Unknown oxide/);
@@ -1888,10 +1972,90 @@ describe('glaze chemistry', () => {
             { name: 'CaO', amount: second }
           ]
         });
+      // Oxides in percent or moles, in any case, and nothing else: "Percent" is percent, not moles.
+      const given = (percentmole: string) => () =>
+        chemistry.materialWeights({ name: 'Odd', percentmole, fields: [{ name: 'CaO', amount: '56' }] });
+      expect(codeOf(given('weight'))).to.equal('unknown-percentmole');
+      expect(codeOf(given('percent'))).to.equal(undefined);
+      expect(codeOf(given('molecular'))).to.equal(undefined);
+      expect(given('Percent')()).to.deep.equal(given('percent')());
+      expect(given(' MOLECULAR ')()).to.deep.equal(given('molecular')());
+      // None, as an additive saved before it had one, is moles as ever: absent, null or blank alike.
+      expect(given('')()).to.deep.equal(given('molecular')());
       expect(codeOf(twice('abc', '56'))).to.equal('invalid-oxide-amount');
       expect(codeOf(twice('56', 'abc'))).to.equal('invalid-oxide-amount');
       // A batch so large its sums overflow.
       expect(codeOf(() => calculateUMF({ Whiting: 1e308, Silica: 1e308 }))).to.equal('invalid-amount');
+      // An amount is a number or a plain decimal, as saved: not what Number() would also read.
+      for (const odd of ['1e1', '0x10', true, '12,5', 'Infinity']) {
+        expect(
+          codeOf(() => calculateUMF({ Whiting: odd as unknown as number, Silica: 30 })),
+          String(odd)
+        ).to.equal('invalid-amount');
+      }
+      const plain = calculateUMF({ Whiting: 20, Silica: 30 }).umf;
+      expect(calculateUMF({ Whiting: ' 20 ', Silica: '30.0' } as unknown as Record<string, number>).umf).to.deep.equal(
+        plain
+      );
+      expect(
+        calculateUMF({ Whiting: 20, Silica: 30, Kaolin: '' } as unknown as Record<string, number>).umf
+      ).to.deep.equal(plain);
+    });
+
+    it('should refuse an LOI or molecular weight that is given but not a number, and say when the two disagree', () => {
+      const codeOf = (work: () => unknown): string | undefined => {
+        try {
+          work();
+        } catch (e) {
+          return (e as ChemistryError).code;
+        }
+        return undefined;
+      };
+      const whiting = { name: 'My whiting', percentmole: 'molecular', fields: [{ name: 'CaO', amount: '1' }] };
+      const weights = (extra: object) => chemistry.materialWeights({ ...whiting, ...extra } as MaterialInput);
+      for (const odd of ['43,97', Infinity, NaN, 'abc', true]) {
+        expect(
+          codeOf(() => weights({ loi: odd })),
+          String(odd)
+        ).to.equal('invalid-loi');
+        expect(
+          codeOf(() => weights({ molecularweight: odd })),
+          String(odd)
+        ).to.equal('invalid-molecular-weight');
+      }
+      // In percent too, where the LOI is all there is.
+      expect(
+        codeOf(() =>
+          chemistry.materialWeights({
+            ...whiting,
+            percentmole: 'percent',
+            fields: [{ name: 'CaO', amount: '56' }],
+            loi: '43,97'
+          })
+        )
+      ).to.equal('invalid-loi');
+      // Left out (absent, null or blank) is still left out; given, either one sets the LOI.
+      for (const blank of [undefined, null, '', '  ']) expect(weights({ loi: blank }).loi).to.equal(0);
+      expect(weights({ loi: '43.97' }).loi).to.equal(43.97);
+      expect(weights({ molecularweight: '100.09' }).loi).to.be.closeTo(43.97, 0.01);
+      // Both, agreeing to half a point: no warning. Further apart: the LOI is used, with a warning.
+      expect(weights({ loi: 43.6, molecularweight: 100.09 }).warningCodes).to.deep.equal([]);
+      const apart = weights({ loi: 30, molecularweight: 100.09 });
+      expect(apart.loi).to.equal(30);
+      expect(apart.warningCodes.map((w) => w.code)).to.deep.equal(['loi-molecular-weight']);
+      expect(apart.warnings[0]).to.equal(
+        'The LOI of My whiting (30.00%) does not match its molecular weight, which gives 43.97%; the LOI was used.'
+      );
+      // Every standard material's LOI and molecular weight agree.
+      const standard = [...standardData.load('materials'), ...standardData.load('additives')];
+      for (const record of standard as unknown as Array<MaterialInput & { noChemistry?: boolean }>) {
+        if (record.fields?.length && !record.noChemistry) {
+          expect(
+            chemistry.materialWeights(record).warningCodes.map((w) => w.code),
+            record.name
+          ).to.not.include('loi-molecular-weight');
+        }
+      }
     });
   });
 });

@@ -1,6 +1,6 @@
 import { Injector, Signal, WritableSignal, afterNextRender, computed, inject, signal } from '@angular/core';
 import { translate } from '@jsverse/transloco';
-import { CONES } from '../../../../lib/chemistry';
+import { CONES, MaterialInput } from '../../../../lib/chemistry';
 import { FiringBlock, firingBands } from '../../../../lib/cones/firing';
 import { FiringBand, LIMIT_SETS, bandOf } from '../../../../lib/recipe/limits';
 import { LocaleService } from '../../core/locale.service';
@@ -10,7 +10,7 @@ import { formatTemperature, listOf } from '../../shared/format';
 import { chosenRegion, findNamed, hasLead } from '../../shared/library-info';
 import { LibraryMaterial, modernMaterials } from './compare';
 import { focusWhenDrawn } from './focus';
-import { BaseChoice, LeadMode, leadFreeBases, leadIn, recipeHasLead, replaceLead } from './lead';
+import { BaseChoice, LeadMode, bariumOf, leadFreeBases, leadOf, recipeHasLead, replaceLead } from './lead';
 import { TryMaterial } from './pool';
 import { libraryKey } from './recipe-library';
 import { matchFromShelf } from './shelf';
@@ -40,6 +40,8 @@ export type SwapKind = 'modern' | 'lead' | 'shelf';
 export interface SwapPage {
   readonly lines: Signal<RecipeMaterial[]>;
   readonly additiveLines: Signal<Additive[]>;
+  /** The chemistry an additive borrows by name. */
+  chemistryOf(name: string): MaterialInput | undefined;
   /** The firing band for the limits, which a recipe rebuilt without lead takes from its cone when it has none. */
   readonly firing: WritableSignal<FiringBand | ''>;
   readonly firedAt: Signal<FiringBlock | null>;
@@ -118,7 +120,16 @@ export class RecipeSwaps {
    * so a potter who fires to SK cones sees the temperature.
    */
   readonly byCones = computed(() => this.locale.cones() === 'orton');
-  readonly leadAmount = computed(() => (recipeHasLead(this.page.lines()) ? leadIn(this.page.lines()) : null));
+  /** The lead for the caution: in the materials or the additives. */
+  readonly leadAmount = computed(() =>
+    leadOf(this.page.lines(), this.page.additiveLines(), (name) => this.page.chemistryOf(name))
+  );
+  /** The barium for its caution, shown with lead's. */
+  readonly bariumAmount = computed(() =>
+    bariumOf(this.page.lines(), this.page.additiveLines(), (name) => this.page.chemistryOf(name))
+  );
+  /** Whether Replace lead has lead to replace: it works on the materials, not the additives. */
+  readonly leadInMaterials = computed(() => recipeHasLead(this.page.lines()));
   readonly leadQuestion = signal<{
     cone: string;
     mode: LeadMode;
@@ -139,6 +150,7 @@ export class RecipeSwaps {
     () =>
       (this.hasLines() ? this.modern().swaps.length + this.modern().colorants.length : 0) +
       (this.leadAmount() ? 1 : 0) +
+      (this.bariumAmount() ? 1 : 0) +
       (this.page.undo() ? 1 : 0)
   );
 

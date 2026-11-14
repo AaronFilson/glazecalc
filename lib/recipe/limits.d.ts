@@ -22,6 +22,7 @@ export const CHECK_LIMITS: Readonly<{
   alkaliMidFire: TwoLevels;
   magnesiaLowFire: TwoLevels;
   zinc: number;
+  barium: TwoLevels;
   rawCalcium: TwoLevels;
   clay: TwoLevels & { least: number };
   expansionRises: TwoLevels;
