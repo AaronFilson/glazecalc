@@ -3,8 +3,9 @@
 glazecalc's AWS resources were made by hand, from the commands in [deploy/aws/README.md](../aws/README.md), the
 JSON documents beside it and its scripts. This folder declares the same resources as code, with AWS CDK in
 TypeScript ([ADR 29](../../docs/adr/0029-infrastructure-as-code-with-cdk.md)): the same names, the same conditions,
-the same permissions. Nothing has been deployed from it yet. The live resources come under it with `cdk import`, one
-stack at a time, by the steps in [Bringing the live resources under CDK](#bringing-the-live-resources-under-cdk).
+the same permissions. The live resources came under it with `cdk import` on 2026-11-14, one stack at a time, by the
+steps in [Bringing the live resources under CDK](#bringing-the-live-resources-under-cdk); changes now go through the
+code, as [After the import](#after-the-import) says.
 
 It runs on Node 24, which runs the TypeScript as it is (`node bin/glazecalc.ts`, no build step and no ts-node), as the
 server does ([ADR 8](../../docs/adr/0008-typescript-server-without-a-build.md)). Synthesizing needs no AWS account.
@@ -207,14 +208,21 @@ out, so the import records the resources as they are, and the deploy after it ad
 The same seven steps for each, with what is particular to each stack in the next sections. `<stack>` is the stack's
 name.
 
-1. **Look at what will be imported:** `npx cdk diff -c import=true <stack>`. The stack does not exist yet, so every
-   resource shows as new (`[+]`). Check each name against the live resource.
+Run as the account's root user, every command first warns that the credentials "could not be used to assume" a
+`cdk-hnb659fds-*` role, "Proceeding anyway". That is expected: root cannot assume roles, so CDK uses root's own
+credentials, and the warnings can be ignored.
+
+1. **Look at what will be imported:** `npx cdk diff -c import=true --method=template <stack>`. The stack does not
+   exist yet, so every resource shows as new (`[+]`). Check each name against the live resource. Without
+   `--method=template` the diff makes a change set that would create the resources, which fails because they
+   already exist.
 2. **Record the identifiers:** `npx cdk import -c import=true <stack> --record-resource-mapping import-<stack>.json`.
    For each resource it asks what to import: where the template names the resource (a role name, a bucket name) it
    offers that name, so answer yes; otherwise it asks for the identifier, from the tables below. A resource type
    CloudFormation cannot import is skipped with "unsupported resource type"; the stack's section says what then. It
-   writes the file and imports nothing. Read the file, and keep it out of the repository (the server's holds the
-   instance's ids).
+   writes the file and imports nothing. Read the file before the next step, and correct any value that differs from the
+   tables (`jq` can set one in place); a resource given the wrong name fails the import, which then changes nothing.
+   Keep the file out of the repository (the server's holds the instance's ids).
 3. **Import:** `npx cdk import -c import=true <stack> --resource-mapping import-<stack>.json`. CloudFormation makes
    the stack from the existing resources: `IMPORT_COMPLETE`.
 4. **Check for drift**, which shows where the live resources differ from the template:
@@ -259,8 +267,14 @@ failed deploy rolls itself back, removing what it had just made. A failed import
 | `DeployDocument`, `StagingDocument` | offered: `glazecalc-deploy`, `glazecalc-staging-deploy`                              |
 | `OperatorPolicy`                    | `PolicyArn`: `arn:aws:iam::724654236968:policy/glazecalc-operator`                   |
 
+- **Before the import:** check that each resource exists and that the two roles carry the tag `app=glazecalc`, as the
+  code gives them (`aws iam list-role-tags --role-name <role>`). On 2026-11-14 the operator policy had never been
+  made, so it was left out of the mapping and the deploy created it; and `glazecalc-github-deploy` lacked its tag,
+  which was added by hand (`aws iam tag-role --role-name glazecalc-github-deploy --tags Key=app,Value=glazecalc`).
+  A resource missing from AWS is left out of the mapping; the deploy after the import makes it.
 - **Drift expected:** none.
-- **The deploy after it changes:** nothing.
+- **The deploy after it changes:** nothing, unless the operator policy was left out above: then it makes it, with no
+  attachments. The CLI users' group keeps the policy it has until it is moved to `glazecalc-operator` by hand.
 - **Check:** the next Deploy and Deploy staging runs work as before.
 - **Before the operator policy's first change through CDK:** IAM keeps five versions of a managed policy, and each
   change makes one. If `aws iam list-policy-versions --policy-arn arn:aws:iam::724654236968:policy/glazecalc-operator`
@@ -322,7 +336,10 @@ failed deploy rolls itself back, removing what it had just made. A failed import
 | `GmailSender`                           | offered: `glazecalc-mail-send`                                                                                       |
 
 - **Drift expected:** none. The function keeps the code `create-inbound.sh` last uploaded until the forwarder's
-  code next changes here; CloudFormation then uploads the new zip.
+  code next changes here; CloudFormation then uploads the new zip. The rule's recipients are in alphabetical order
+  in the code because SES returns them so; in any other order, drift detection reports the same six as changed.
+- **The mapping:** the rule's identifier is two values, `RuleName` `forward-to-owner` and `RuleSetName`
+  `glazecalc-inbound`. On 2026-11-14 the prompts recorded the rule set's name for both; check the file.
 - **The deploy after it changes:** it adds the TLS-only statement to the mail bucket's policy.
 - **If CloudFormation could not import the rule set and the rule:** the deploy must make them, and their names are
   taken. At a quiet time, run these together, then the check. Mail to the six addresses bounces back to its sender

@@ -4,12 +4,12 @@
   "TlsPolicy": "Optional",
   "ScanEnabled": true,
   "Recipients": [
-    "privacy@glazecalcapp.com",
-    "security@glazecalcapp.com",
-    "postmaster@glazecalcapp.com",
     "abuse@glazecalcapp.com",
+    "contact@glazecalcapp.com",
     "hello@glazecalcapp.com",
-    "contact@glazecalcapp.com"
+    "postmaster@glazecalcapp.com",
+    "privacy@glazecalcapp.com",
+    "security@glazecalcapp.com"
   ],
   "Actions": [
     {
