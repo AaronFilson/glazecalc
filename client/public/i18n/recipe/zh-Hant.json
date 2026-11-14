@@ -604,7 +604,6 @@
     "unknownOxide": "{oxide} 不是 Glazecalc 認得的氧化物。",
     "together": "請分開填寫鉀（K₂O）和鈉（Na₂O），不要合併寫成 KNaO。",
     "badAmount": "{oxide} 的數量不是 0 或更大的數字。",
-    "noFlux": "目標至少需要一種助熔劑，例如 CaO、K₂O 或 Na₂O。",
     "noMaterials": "請至少加入一種原料來調配釉方。",
     "noMatch": "這些原料都不含目標中的任何氧化物。"
   },

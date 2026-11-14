@@ -748,9 +748,9 @@ export class SolvePage implements OnInit {
       if (!(error instanceof SolveProblem)) throw error;
       this.problem.set(error.message);
       const field =
-        error.code === 'solve.noFlux'
+        error.code === 'solve.noFlux' && !error.ofMaterials
           ? fieldId('CaO')
-          : error.code === 'solve.noMaterials'
+          : error.code === 'solve.noMaterials' || error.ofMaterials
             ? 'solve-materials-heading'
             : 'solve-run';
       afterNextRender(() => document.getElementById(field)?.focus(), { injector: this.injector });

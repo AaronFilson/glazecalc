@@ -604,7 +604,6 @@
     "unknownOxide": "{oxide} は Glazecalc が知らない酸化物です。",
     "together": "カリ（K₂O）とソーダ（Na₂O）は、KNaO にまとめず別々に入力してください。",
     "badAmount": "{oxide} の量が、0以上の数ではありません。",
-    "noFlux": "目標には、CaO、K₂O、Na₂O など、媒溶剤が少なくとも一つ必要です。",
     "noMaterials": "調合を作るために、原料を少なくとも一つ追加してください。",
     "noMatch": "これらの原料には、目標の酸化物がどれも含まれていません。"
   },

@@ -604,7 +604,6 @@
     "unknownOxide": "{oxide} is nie 'n oksied wat Glazecalc ken nie.",
     "together": "Gee kalium (K₂O) en natrium (Na₂O) apart, nie saam as KNaO nie.",
     "badAmount": "Die hoeveelheid {oxide} is nie 'n getal van 0 of meer nie.",
-    "noFlux": "Die teiken het ten minste een vloeimiddel nodig, soos CaO, K₂O of Na₂O.",
     "noMaterials": "Voeg ten minste een grondstof by om die resep van te maak.",
     "noMatch": "Geeneen van hierdie grondstowwe het enige van die teiken se oksiede nie."
   },

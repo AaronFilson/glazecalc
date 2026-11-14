@@ -946,6 +946,15 @@ describe('MCP: the public tools', () => {
     for (const line of result.recipe) if (line.amount > 0) expect(allowed).to.include(line.material);
     const unknown = await call('match_from_materials', { lines: LINES, have: ['Moon dust'] });
     expect(unknown.isError).to.equal(true);
+    // Nothing given with a flux: said of the materials, not "Recipe contains no flux oxides" of the recipe.
+    const noFlux = await call('match_from_materials', {
+      lines: LINES,
+      have: ['Silica', 'Calcined Kaolin (theoretical)']
+    });
+    expect(noFlux.isError).to.equal(true);
+    expect(noFlux.content[0].text).to.equal(
+      'None of these materials has a flux, such as CaO, K₂O or Na₂O, so no glaze can be made of them.'
+    );
   });
 
   // The staging session's recipe and shelf: an assistant read the solver's score as a wide miss.

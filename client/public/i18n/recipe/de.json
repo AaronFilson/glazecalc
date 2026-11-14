@@ -604,7 +604,6 @@
     "unknownOxide": "{oxide} ist kein Oxid, das Glazecalc kennt.",
     "together": "Geben Sie Pottasche (K₂O) und Soda (Na₂O) getrennt an, nicht zusammen als KNaO.",
     "badAmount": "Die Menge von {oxide} ist keine Zahl ab 0.",
-    "noFlux": "Das Ziel braucht mindestens ein Flussmittel, etwa CaO, K₂O oder Na₂O.",
     "noMaterials": "Fügen Sie mindestens einen Rohstoff hinzu, aus dem das Rezept erstellt wird.",
     "noMatch": "Keiner dieser Rohstoffe enthält eines der Oxide des Ziels."
   },

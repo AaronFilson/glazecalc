@@ -160,7 +160,11 @@ describe('SolvePage', () => {
     const { fixture, root, type, click } = await create([KAOLIN._id!, SILICA._id!]);
     await typeGlossy(type);
     await click('#solve-run');
-    expect(text(fixture, '#solve-problem')).toBe('Recipe contains no flux oxides, so the UMF is undefined');
+    // Of the materials, at the materials: the target has its fluxes ("Recipe contains no flux oxides" said otherwise).
+    expect(text(fixture, '#solve-problem')).toBe(
+      'None of these materials has a flux, such as CaO, K₂O or Na₂O, so no glaze can be made of them.'
+    );
+    expect(document.activeElement?.id).toBe('solve-materials-heading');
     expect(root.querySelector('.solve-recipe')).toBeNull();
   });
 

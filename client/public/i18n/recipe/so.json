@@ -604,7 +604,6 @@
     "unknownOxide": "{oxide} ma aha oksaydh Glazecalc yaqaan.",
     "together": "Potash (K₂O) iyo soda (Na₂O) kala bixi, ha isku darin KNaO ahaan.",
     "badAmount": "Qadarka {oxide} ma aha tiro 0 ama ka badan.",
-    "noFlux": "Bartilmaameedku wuxuu u baahan yahay ugu yaraan hal flux, sida CaO, K₂O ama Na₂O.",
     "noMaterials": "Ku dar ugu yaraan hal walax oo habka laga sameeyo.",
     "noMatch": "Walxahan midna ma laha oksaydhyada bartilmaameedka midkood."
   },

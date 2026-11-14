@@ -15,8 +15,9 @@ export interface ShelfMatch<M extends MaterialRecord = MaterialRecord> {
 /**
  * The recipe made from the materials on the shelf only, raw clay held within 20% of the batch (or the
  * recipe's own share) where the match allows, but for clays named in `uncapped`; throws a RecipeError
- * ('shelf.empty') if there are none, and ('solve.noMatch') if none has any of the recipe's oxides. `meter`
- * bounds its work (lib/chemistry newMeter), a new one if not given.
+ * ('shelf.empty') if there are none, ('solve.noMatch') if none has any of the recipe's oxides, and
+ * ('solve.noFlux', params { of: 'recipe' }) if the recipe has no flux or ({ of: 'offered' }) if none of
+ * the materials it may use has one. `meter` bounds its work (lib/chemistry newMeter), a new one if not given.
  */
 export function matchFromShelf<M extends MaterialRecord>(
   lines: M[],

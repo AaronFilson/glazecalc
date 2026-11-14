@@ -604,7 +604,6 @@
     "unknownOxide": "{oxide} ei ole oksiid, mida Glazecalc tunneb.",
     "together": "Esitage kaalium (K₂O) ja naatrium (Na₂O) eraldi, mitte koos nagu KNaO.",
     "badAmount": "Oksiidi {oxide} kogus ei ole arv, mis on 0 või suurem.",
-    "noFlux": "Siht vajab vähemalt ühte sulandajat, näiteks CaO, K₂O või Na₂O.",
     "noMaterials": "Lisage vähemalt üks toorain, millest retsept koostada.",
     "noMatch": "Ühegi nende tooraine koostises pole ühtki sihi oksiidi."
   },

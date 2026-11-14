@@ -604,7 +604,6 @@
     "unknownOxide": "{oxide} si oksidi ambayo Glazecalc inaijua.",
     "together": "Toa potashi (K₂O) na soda (Na₂O) kando kando, si pamoja kama KNaO.",
     "badAmount": "Kiasi cha {oxide} si namba ya 0 au zaidi.",
-    "noFlux": "Lengo linahitaji angalau flux moja, kama CaO, K₂O au Na₂O.",
     "noMaterials": "Ongeza angalau malighafi moja ya kutengenezea kichocheo.",
     "noMatch": "Hakuna malighafi kati ya hizi yenye oksidi yoyote ya lengo."
   },

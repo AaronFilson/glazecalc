@@ -604,7 +604,6 @@
     "unknownOxide": "{oxide} bukan oksida yang dikenal Glazecalc.",
     "together": "Tulis kalium (K₂O) dan natrium (Na₂O) secara terpisah, jangan digabung sebagai KNaO.",
     "badAmount": "Jumlah {oxide} bukan angka 0 atau lebih.",
-    "noFlux": "Target memerlukan setidaknya satu pelebur, seperti CaO, K₂O atau Na₂O.",
     "noMaterials": "Tambahkan setidaknya satu bahan untuk membuat resep.",
     "noMatch": "Tidak satu pun bahan ini mengandung oksida target."
   },

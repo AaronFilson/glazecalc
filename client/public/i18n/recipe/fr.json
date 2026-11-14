@@ -604,7 +604,6 @@
     "unknownOxide": "{oxide} n’est pas un oxyde connu de Glazecalc.",
     "together": "Indiquez la potasse (K₂O) et la soude (Na₂O) séparément, et non ensemble sous la forme KNaO.",
     "badAmount": "La quantité de {oxide} n’est pas un nombre supérieur ou égal à 0.",
-    "noFlux": "La cible a besoin d’au moins un fondant, comme CaO, K₂O ou Na₂O.",
     "noMaterials": "Ajoutez au moins une matière pour composer la recette.",
     "noMatch": "Aucune de ces matières ne contient d’oxyde de la cible."
   },

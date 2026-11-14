@@ -604,7 +604,6 @@
     "unknownOxide": "{oxide} không phải là oxit mà Glazecalc biết.",
     "together": "Hãy nhập kali (K₂O) và natri (Na₂O) riêng, không gộp thành KNaO.",
     "badAmount": "Lượng {oxide} không phải là một số từ 0 trở lên.",
-    "noFlux": "Mục tiêu cần ít nhất một chất trợ chảy, như CaO, K₂O hoặc Na₂O.",
     "noMaterials": "Hãy thêm ít nhất một nguyên liệu để làm công thức men.",
     "noMatch": "Không nguyên liệu nào trong số này có oxit nào của mục tiêu."
   },

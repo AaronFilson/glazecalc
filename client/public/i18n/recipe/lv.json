@@ -604,7 +604,6 @@
     "unknownOxide": "{oxide} nav oksīds, ko Glazecalc pazīst.",
     "together": "Norādiet kāliju (K₂O) un nātriju (Na₂O) atsevišķi, nevis kopā kā KNaO.",
     "badAmount": "{oxide} daudzums nav skaitlis, kas ir 0 vai lielāks.",
-    "noFlux": "Mērķim vajag vismaz vienu kušni, piemēram, CaO, K₂O vai Na₂O.",
     "noMaterials": "Pievienojiet vismaz vienu izejvielu, no kuras sastādīt recepti.",
     "noMatch": "Nevienā no šīm izejvielām nav neviena mērķa oksīda."
   },

@@ -604,7 +604,6 @@
     "unknownOxide": "{oxide} není oxid, který Glazecalc zná.",
     "together": "Zadejte potaš (K₂O) a sodu (Na₂O) zvlášť, ne dohromady jako KNaO.",
     "badAmount": "Množství {oxide} není číslo 0 nebo větší.",
-    "noFlux": "Cíl potřebuje alespoň jedno tavivo, například CaO, K₂O nebo Na₂O.",
     "noMaterials": "Přidejte alespoň jednu surovinu, ze které se recept vytvoří.",
     "noMatch": "Žádná z těchto surovin neobsahuje žádný z oxidů cíle."
   },

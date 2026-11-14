@@ -366,13 +366,32 @@ describe('Target & Solve', () => {
     expect(refusal(() => recipe.solveTarget({ kind: 'unity', oxides: { Li2O: 1 } }, shelfOf('Silica'))).code).to.equal(
       'solve.noMatch'
     );
-    // Silica and calcined kaolin bring the target's silica and alumina but no flux at all: no unity formula, as the
-    // recipe page says.
-    expect(() =>
-      recipe.solveTarget({ kind: 'unity', oxides: GLOSSY_UNITY }, shelfOf('Calcined Kaolin (theoretical)', 'Silica'))
-    )
-      .to.throw()
-      .with.property('code', 'no-flux');
+    // Silica and calcined kaolin bring the target's silica and alumina but no flux at all: none of them has one
+    // (the chemistry's no-flux said "Recipe contains no flux oxides", of the target as it read).
+    const noFlux = {
+      code: 'solve.noFlux',
+      text: 'None of these materials has a flux, such as CaO, K₂O or Na₂O, so no glaze can be made of them.'
+    };
+    const kaolinAndSilica = shelfOf('Calcined Kaolin (theoretical)', 'Silica');
+    expect(refusal(() => recipe.solveTarget({ kind: 'unity', oxides: GLOSSY_UNITY }, kaolinAndSilica))).to.deep.equal(
+      noFlux
+    );
+    // Match with what I have and Suggest amounts the same; and a recipe with no flux has no unity formula to match.
+    expect(refusal(() => recipe.matchFromShelf(GLOSSY, kaolinAndSilica))).to.deep.equal(noFlux);
+    const slip = recipeOf([
+      ['Calcined Kaolin (theoretical)', 50],
+      ['Silica', 50]
+    ]);
+    const noRecipeFlux = {
+      code: 'solve.noFlux',
+      text: 'The recipe has no flux, such as CaO, K₂O or Na₂O, so it has no unity formula to match.'
+    };
+    expect(refusal(() => recipe.matchFromShelf(slip, kaolinAndSilica))).to.deep.equal(noRecipeFlux);
+    expect(refusal(() => recipe.suggestAmounts(slip, find, [], 'US'))).to.deep.equal(noRecipeFlux);
+    // A target with none, as before.
+    expect(refusal(() => recipe.solveTarget({ kind: 'unity', oxides: { SiO2: 3 } }, kaolinAndSilica)).text).to.equal(
+      'The target needs at least one flux, such as CaO, K₂O or Na₂O.'
+    );
     // Every code has its English.
     for (const code of recipe.CODES.filter((c) => c.startsWith('solve.')))
       expect(ENGLISH[code], code).to.be.a('string');

@@ -604,7 +604,6 @@
     "unknownOxide": "I-{oxide} akuyona i-oxide i-Glazecalc eyaziyo.",
     "together": "Nikeza i-potash (K₂O) ne-soda (Na₂O) ngokwehlukana, hhayi ndawonye njenge-KNaO.",
     "badAmount": "Inani le-{oxide} akuyona inombolo engu-0 noma ngaphezulu.",
-    "noFlux": "Okuhlosiwe kudinga okungenani i-flux eyodwa, njenge-CaO, i-K₂O noma i-Na₂O.",
     "noMaterials": "Engeza okokwakha okungenani okukodwa ukuze wenze iresiphi.",
     "noMatch": "Akukho kulokhu okokwakha okunanoma iyiphi yama-oxide okuhlosiwe."
   },

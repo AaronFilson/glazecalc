@@ -604,7 +604,6 @@
     "unknownOxide": "{oxide} mhuwiex ossidu magħruf minn Glazecalc.",
     "together": "Agħti l-potassa (K₂O) u s-soda (Na₂O) separati, mhux flimkien bħala KNaO.",
     "badAmount": "L-ammont ta’ {oxide} mhuwiex numru ta’ 0 jew aktar.",
-    "noFlux": "Il-mira teħtieġ fluss wieħed mill-inqas, bħal CaO, K₂O jew Na₂O.",
     "noMaterials": "Żid materjal wieħed mill-inqas biex tagħmel ir-riċetta minnu.",
     "noMatch": "L-ebda wieħed minn dawn il-materjali m’għandu xi ossidu mill-mira."
   },

@@ -604,7 +604,6 @@
     "unknownOxide": "Ní ocsaíd í {oxide} a bhfuil aithne ag Glazecalc uirthi.",
     "together": "Tabhair potais (K₂O) agus sóid (Na₂O) ar leith, ní le chéile mar KNaO.",
     "badAmount": "Ní uimhir 0 nó níos mó é méid {oxide}.",
-    "noFlux": "Teastaíonn flosc amháin ar a laghad ón sprioc, mar CaO, K₂O nó Na₂O.",
     "noMaterials": "Cuir ábhar amháin ar a laghad leis chun an t-oideas a dhéanamh as.",
     "noMatch": "Níl aon cheann de na hocsaídí sa sprioc in aon cheann de na hábhair seo."
   },

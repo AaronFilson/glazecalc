@@ -604,7 +604,6 @@
     "unknownOxide": "Glazecalc가 아는 산화물이 아닙니다: {oxide}.",
     "together": "칼리(K₂O)와 소다(Na₂O)는 KNaO로 합치지 말고 따로 입력하세요.",
     "badAmount": "{oxide}의 양이 0 이상의 숫자가 아닙니다.",
-    "noFlux": "목표에는 CaO, K₂O, Na₂O 같은 융제가 하나 이상 있어야 합니다.",
     "noMaterials": "레시피를 만들 원료를 하나 이상 추가하세요.",
     "noMatch": "이 원료 중에는 목표의 산화물이 든 것이 없습니다."
   },
