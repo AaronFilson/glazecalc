@@ -601,15 +601,21 @@ describe('Paste-in import: decimal marks', () => {
       amount: 1500,
       spaced: '1 500'
     });
-    // A language that writes 1,500 asks of each, the first group ending the name until the reader chooses.
+    // A language that writes 1,500 asks of each, the first group ending the name until the reader chooses; but
+    // never with an amount of nothing: a last group of zeros ("Quartz 3 000") is one number until the reader says.
     const english = one(paste, { locale: 'en' });
     expect(english.lines.map((l) => [l.name, l.amount, l.spaced])).to.eql([
       ['Feldspath potassique (Bodmer) 2', 500, '2 500'],
       ["Kaolin d'Arvor 1", 250, '1 250'],
-      ['Quartz 3', 0, '3 000'],
+      ['Quartz', 3000, '3 000'],
       ['Wollastonite 1', 100, '1 100'],
       ['Talc 1', 150, '1 150']
     ]);
+    expect(one('Quartz 3 000 g', { locale: 'en', spaced: { 1: 'apart' } }).lines[0]).to.include({
+      name: 'Quartz 3',
+      amount: 0,
+      spaced: '3 000'
+    });
   });
 
   it('reads each line whose thousands may be set apart by a space as the reader chose for that line', () => {
