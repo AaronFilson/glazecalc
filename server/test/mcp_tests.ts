@@ -694,18 +694,49 @@ describe('MCP: the public tools', () => {
     const same = await data('specific_gravity_water', { sg: 1.45, litres: 10, target: 1.45 });
     expect(same.waterToAddLitres).to.equal(0);
     expect(same.note).to.match(/already/);
-    // The recipe page's figure (lib/recipe/slurry.js), rounded to centilitres.
-    for (const [litres, sg, target] of [
-      [10, 1.6, 1.45],
-      [3.5, 1.38, 1.47],
-      [250, 1.52, 1.5]
+    // The recipe page's figure (lib/recipe/slurry.js), as the page writes it: to the gram under a kilogram, else to 10 g.
+    for (const [litres, sg, target, figure] of [
+      [10, 1.6, 1.45, 3.33],
+      [3.5, 1.38, 1.47, -0.67],
+      [2, 1.5, 1.45, 0.222],
+      [250, 1.52, 1.5, 10]
     ] as const) {
       const answer = await data('specific_gravity_water', { sg, litres, target });
-      expect(answer.waterToAddLitres).to.equal(Math.round(recipe.waterToReach(litres, sg, target, null)! * 100) / 100);
+      const water = recipe.waterToReach(litres, sg, target, null)!;
+      expect(answer.waterToAddLitres).to.equal(figure);
+      expect(answer.waterToAddLitres).to.equal(Number(water.toFixed(Math.abs(water) < 1 ? 3 : 2)));
     }
     expect((await call('specific_gravity_water', { sg: 1.4, gramsPer100ml: 140 })).isError).to.equal(true);
     expect((await call('specific_gravity_water', {})).isError).to.equal(true);
     expect((await call('specific_gravity_water', { sg: 2.4, drySg: 2.2 })).isError).to.equal(true);
+  });
+
+  it('specific_gravity_water says the slurry is at the SG already exactly when the recipe page does', async () => {
+    // A litre at SG 1.452 takes 4.4 mL of water to reach 1.45: the page says to add 4 g, and so does the tool, to the
+    // gram. Rounded to 0.01 L first, it said the glaze was already there.
+    const litre = await data('specific_gravity_water', { sg: 1.452, litres: 1, target: 1.45 });
+    expect(litre.waterToAddLitres).to.equal(0.004);
+    expect(litre.note).to.match(/^Add the water/);
+    // 100 L weighing 145.02 g a 100 mL is 44 mL from 1.45, under half a gram a litre: the page says it is there
+    // already, and so does the tool. It said to add 0.04 L.
+    const bucket = await data('specific_gravity_water', { gramsPer100ml: 145.02, litres: 100, target: 1.45 });
+    expect(bucket.waterToAddLitres).to.equal(0);
+    expect(bucket.note).to.match(/already/);
+    // On either side of the page's rule (lib/recipe/slurry.js), as the page decides.
+    for (const [litres, sg, target] of [
+      [0.5, 2.01, 2],
+      [0.5, 1.4501, 1.45],
+      [1, 1.452, 1.45],
+      [12, 1.45, 1.4502],
+      [100, 1.4502, 1.45],
+      [100, 1.4512, 1.45],
+      [1000, 1.45, 1.45]
+    ] as const) {
+      const already = recipe.reachedAlready(recipe.waterToReach(litres, sg, target, null)!, litres);
+      const answer = await data('specific_gravity_water', { sg, litres, target });
+      expect(/already/.test(answer.note), `${litres} L from ${sg} to ${target}`).to.equal(already);
+      expect(answer.waterToAddLitres === 0, `${litres} L from ${sg} to ${target}`).to.equal(already);
+    }
   });
 
   it('specific_gravity_water estimates the dry SG from a recipe, saying how, and a drySg given wins', async () => {

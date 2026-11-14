@@ -475,6 +475,15 @@ describe('Shared recipe tools', () => {
     // Thinning 10 L from 1.5 to 1.45: water = 10 × 0.05 ÷ 0.45 kg, whatever the materials.
     expect(recipe.waterToReach(10, 1.5, 1.45, 2.5)).to.be.closeTo(1.111, 1e-3);
     expect(recipe.waterToReach(10, 1.5, 1.45, 2.6)).to.be.closeTo(1.111, 1e-3);
+    // At the SG wanted already: under half a gram of water a litre either way, for the page and the MCP tool alike.
+    expect(recipe.reachedAlready(recipe.waterToReach(100, 1.4502, 1.45, null)!, 100)).to.equal(true);
+    expect(recipe.reachedAlready(recipe.waterToReach(1, 1.452, 1.45, null)!, 1)).to.equal(false);
+    expect([0.0049, -0.0049, 0.005, -0.005].map((water) => recipe.reachedAlready(water, 10))).to.eql([
+      true,
+      true,
+      false,
+      false
+    ]);
     // Thickening is water to pour off; the glaze stays the same.
     const off = recipe.waterToReach(10, 1.4, 1.5, 2.5)!;
     expect(off).to.be.closeTo(-2, 1e-9);

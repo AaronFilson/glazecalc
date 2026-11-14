@@ -572,13 +572,16 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           throw new ToolProblem(`A target SG of ${target} is not under the dry materials' ${dry}.`);
         const contents =
           litres !== undefined && dry !== undefined ? recipe.slurryContents(litres, measured, dry) : null;
-        // The recipe page's own figure (lib/recipe/slurry.js), so the two always agree.
+        // The recipe page's own figure, and its own rule for when the slurry is there already (lib/recipe/slurry.js),
+        // so the two always agree.
         const raw =
           litres !== undefined && target !== undefined
             ? recipe.waterToReach(litres, measured, target, dry ?? null)
             : null;
-        // Rounded first, so a tiny difference reads as none and never as -0.
-        const water = raw === null ? null : rounded(raw, 2) || 0;
+        const already = raw !== null && litres !== undefined && recipe.reachedAlready(raw, litres);
+        // As the page writes it: to the gram under a kilogram (a litre of water weighs a kilogram), else to 10 g;
+        // never as -0.
+        const water = raw === null ? null : already ? 0 : rounded(raw, Math.abs(raw) < 1 ? 3 : 2) || 0;
         return ok({
           sg: rounded(measured, 3),
           ...estimated,
@@ -589,12 +592,11 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           ...(water !== null && {
             target,
             waterToAddLitres: water,
-            note:
-              water === 0
-                ? 'The glaze is already at that SG.'
-                : water < 0
-                  ? 'Negative: let the glaze settle, then pour off that much clear water. Stir well and weigh 100 mL again.'
-                  : 'Add the water a little at a time, stir well, and weigh 100 mL again.'
+            note: already
+              ? 'The glaze is already at that SG.'
+              : raw! < 0
+                ? 'Negative: let the glaze settle, then pour off that much clear water. Stir well and weigh 100 mL again.'
+                : 'Add the water a little at a time, stir well, and weigh 100 mL again.'
           }),
           ...(target !== undefined && litres === undefined && { note: 'Give litres for the water to add.' })
         });
