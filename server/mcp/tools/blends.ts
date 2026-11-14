@@ -205,10 +205,8 @@ export const tileChemistry = (
   try {
     const { result } = analysisOf(lines, lang);
     const checks = checksOf(lines, at, limitSet, lang);
-    const fit = coneFitOut(
-      recipe.coneFit(checks.unityFormula, at.block, { materials: lines.map((line) => line.name) }),
-      lang
-    );
+    // On the unity formula as worked out, as the page judges a tile, not as rounded for the answer.
+    const fit = coneFitOut(recipe.coneFit(result.umf, at.block, { materials: lines.map((line) => line.name) }), lang);
     const umf = result.umf;
     return {
       limits: { id: checks.limitSet.id, band: checks.bandUsed as unknown },

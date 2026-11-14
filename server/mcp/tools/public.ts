@@ -468,11 +468,13 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
             : undefined;
         const at = firingOf(firing);
         const checks = checksOf(resolved, at, limitSet ?? own, lang);
+        // The cone fit judges the unity formula as worked out, as the recipe page does, not as rounded for the answer.
+        const { result, out } = analysisOf(resolved, lang);
         const fit = coneFitOut(
-          recipe.coneFit(checks.unityFormula, at.block, { materials: resolved.map((line) => line.name) }),
+          recipe.coneFit(result.umf, at.block, { materials: resolved.map((line) => line.name) }),
           lang
         );
-        return ok({ ...checks, stull: analysisOf(resolved, lang).out.stull, ...(fit && { coneFit: fit }) });
+        return ok({ ...checks, stull: out.stull, ...(fit && { coneFit: fit }) });
       }, lang);
     }
   );

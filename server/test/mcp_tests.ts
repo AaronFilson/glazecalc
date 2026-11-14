@@ -682,6 +682,44 @@ describe('MCP: the public tools', () => {
     expect(sk.coneFit).to.include({ verdict: 'skipped', skipped: 'noTemperature' });
   });
 
+  it('judges the cone fit on the unity formula as worked out, not as rounded for the answer', async () => {
+    // Lithium carbonate for 0.0997 Li2O: under the 0.1 from which the cone check cannot judge lithium, so the recipe
+    // page judges it. Rounded to three places, as the answers give it, it is 0.1, and the tools skipped it.
+    const lines = [
+      { material: 'Custer Spar', amount: 30 },
+      { material: 'Whiting', amount: 20 },
+      { material: 'EPK Kaolin', amount: 20 },
+      { material: 'Silica', amount: 30 },
+      { material: 'Lithium Carbonate', amount: 2.0442 }
+    ];
+    const worked = chemistry.calculateUMF(
+      lines.map((line) => ({ material: findMaterial(line.material)!, amount: line.amount }))
+    );
+    expect(worked.umf.Li2O).to.be.within(0.0996, 0.0998);
+    const checked = await data('check_limits', { lines, firing: { cone: '6' } });
+    expect(checked.unityFormula.Li2O).to.equal(0.1);
+    expect(checked.coneFit).to.include({ verdict: 'fits' }).and.not.have.property('skipped');
+    const blend = await data('blend_recipes', { a: lines, b: lines, steps: 2, firing: { cone: '6' } });
+    expect(blend.tiles.map((tile: Json) => tile.coneFit)).to.eql(['fits', 'fits']);
+    // A saved recipe, as get_recipe reads it.
+    const potter = await makeUser();
+    const made = await api()
+      .post('/recipe/create')
+      .set({ Authorization: 'Bearer ' + potter.token })
+      .send({
+        title: 'Lithium satin',
+        materials: lines.map((line) => ({ ...findMaterial(line.material)!, amount: String(line.amount) }))
+      });
+    expect(made).to.have.status(200);
+    const saved = await data(
+      'get_recipe',
+      { id: made.body._id, firing: { cone: '6' } },
+      bearer(await makeToken(potter.user))
+    );
+    expect(saved.analysis.unityFormula.Li2O).to.equal(0.1);
+    expect(saved.coneFit).to.include({ verdict: 'fits' }).and.not.have.property('skipped');
+  });
+
   it('check_limits names every limit set it takes', async () => {
     const tools = ((await rpc('tools/list')).body!.result as { tools: Json[] }).tools;
     const tool = tools.find((t) => t.name === 'check_limits')!;
