@@ -253,6 +253,21 @@ describe('firing in words', () => {
       'SK'
     );
   });
+
+  it('says a half cone is halfway between its neighbours on the older chart, and 05½ is Orton’s own 2016 figure', () => {
+    const celsius = { cones: 'orton' as const, temperature: 'C' as const };
+    expect(firingWords({ scale: 'orton', low: '5.5' }, celsius)!.conversion).toMatch(
+      /^≈ 1209\s°C \(a half cone halfway between its neighbours on Orton's older chart for large cones at 150 °C an hour; approximate\)$/
+    );
+    // The older chart has no half cones: 05½ is Orton's 2016 chart's, for large cones at 150 °C an hour.
+    expect(firingWords({ scale: 'orton', low: '05.5' }, celsius)!.conversion).toMatch(
+      /^≈ 1023\s°C \(Orton's 2016 chart for large cones at 150 °C an hour; approximate\)$/
+    );
+    // A range across a half cone and a whole one names both.
+    expect(firingWords({ scale: 'orton', low: '5.5', high: '6' }, celsius)!.conversion).toMatch(
+      /^≈ 1209\s°C–1222\s°C \(a half cone halfway between its neighbours on Orton's older chart for large cones at 150 °C an hour, Orton's older chart for large cones at 150 °C an hour; approximate\)$/
+    );
+  });
 });
 
 describe('RecipeLimits band names', () => {

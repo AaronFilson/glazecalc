@@ -11,6 +11,7 @@ export function gramsApart(a: MaterialInput, b: MaterialInput): number | null;
 export function likeForLike(a: MaterialInput, b: MaterialInput): boolean;
 export function roleOf(frit: MaterialRecord): FritRole | undefined;
 export function fluxesOf(moles: Record<string, number>): number;
+/** Throws the chemistry's no-flux without a flux, as calculateUMF does. */
 export function unityOf(moles: Record<string, number>): Record<string, number>;
 /** Moles of each fired oxide in recipe lines, each a material with its amount as saved. */
 export function molesOf(lines: MaterialRecord[]): Record<string, number>;

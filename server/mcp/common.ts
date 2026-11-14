@@ -9,6 +9,7 @@ import type { Band, FiringBlock } from '../../lib/cones/firing.js';
 import recipe from '../../lib/recipe/index.js';
 import type { Caution, MaterialRecord } from '../../lib/recipe/index.js';
 import * as log from '../lib/log.ts';
+import { SHELF_MOST } from '../models/user.ts';
 import { findMaterial, searchLibrary } from './library.ts';
 import { writeChallenge } from './urls.ts';
 import { cautionText, chemistryText, languageOf, recipeText } from './words.ts';
@@ -18,11 +19,12 @@ export const MOST_LINES = 40;
 
 /**
  * At most this many materials for one fit to choose from (match_from_materials' have, solve_target's
- * materials with the shelf, match_with_what_i_have's shelf): a studio's shelf, with room to spare.
- * The work a fit may do is bounded too (lib/chemistry/fit.js WORK), but its first match over every
- * material offered is not, and grows with them.
+ * materials with the shelf): as many as a shelf holds (SHELF_MOST), so a shelf is never too large.
+ * The work a fit may do is bounded however many there are (lib/chemistry/fit.js WORK), and more than
+ * 60 are screened to the 40 or so that matter before the choosing (lib/chemistry/select.js SCREEN), so
+ * a whole shelf's search finishes within it, or comes near.
  */
-export const MOST_MATERIALS = 60;
+export const MOST_MATERIALS = SHELF_MOST;
 
 /** Who is calling, for the limits: 'user:<id>' with a token, 'ip:<address>' without. */
 export interface Caller {
@@ -126,20 +128,17 @@ export class ScopeProblem extends ToolProblem {}
 
 /**
  * A cone as Glazecalc writes it in its chart ("5½" as "5.5", SK "6" as "6a"),
- * or a ToolProblem saying which cones there are.
+ * read as the recipe page and paste-in read one ("Cone 6", "^6", "Δ6", "C/6";
+ * lib/cones/firing.js), or a ToolProblem saying which cones there are.
  */
 export const coneOf = (cone: string, chart: 'orton' | 'sk' = 'orton'): string => {
-  const typed = cone
-    .trim()
-    .toLowerCase()
-    .replace(/^(?:sk|cone)\s*/, '')
-    .replace(/\s*½$/, '.5');
-  const found = chart === 'sk' ? firingLib.skCone(typed) : typed;
-  if (found && firingLib.isCone(chart, found)) return found;
+  const found = firingLib.readCone(cone, chart);
+  if (found) return found;
+  const sk = chart === 'orton' ? firingLib.readCone(cone, 'sk') : null;
   throw new ToolProblem(
     chart === 'sk'
       ? `SK ${cone} is not in Glazecalc's SK chart: JIS R 8101 large cones, SK 022 to SK 20 (022 … 016, 015a … 01a, 1a … 6a, then 7 … 20). You can give the temperature instead.`
-      : `Cone ${cone} is not an Orton cone: Orton's run 022 … 01, then 1 … 42, with half cones from 1.5 to 15.5 written as "5.5". You can give the temperature instead.`
+      : `Cone ${cone} is not an Orton cone${sk ? ` (it reads as SK ${sk}: give chart "sk")` : ''}: Orton's run 022 … 01, then 1 … 42, with half cones 05.5, 1.5 to 15.5, 31.5 and 32.5, written as "5.5". You can give the temperature instead.`
   );
 };
 
@@ -186,7 +185,8 @@ export type RecipeLine = MaterialRecord & { amount: string };
 export const resolveLines = (lines: Line[], own?: (name: string) => MaterialRecord | undefined): RecipeLine[] => {
   const unknown: string[] = [];
   const resolved = lines.map((line): RecipeLine | null => {
-    const amount = String(line.amount);
+    // Written plainly: String(0.0000001) is "1e-7", which the chemistry refuses as an amount.
+    const amount = recipe.plainAmount(line.amount);
     if (line.analysis) {
       if (!Object.keys(line.analysis).length) {
         throw new ToolProblem(`The analysis of ${line.material} has no oxides.`);

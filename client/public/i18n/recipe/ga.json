@@ -50,7 +50,6 @@
     "firedTo": "Bácáilte go",
     "how": "Conas",
     "rebuild": "Atóg an glónra: coinnigh a shilice agus a alúmana, le bórón agus floscanna eile in áit na luaidhe",
-    "keepColour": "Coinnigh an dath ar bhunghlónra gan luaidhe: an friot agus caoilín, 85 le 15, le hábhair datha an oidis",
     "fritHeading": "Friot gan luaidhe le tógáil air, an ceann is fearr ar dtús",
     "fritBoron": "({boron}% bóróin, B₂O₃)",
     "noFrit": "Níl aon fhriot gan luaidhe a dhíoltar i do réigiún sa leabharlann.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Ní féidir an luaidhe a ionadú: níl anailís ag ábhar san oideas le hoibriú uaithi.",
     "leadRebuiltCone": "Ionadaíodh an luaidhe do chón {cone} ar an bhfriot {base}: coinníodh silice agus alúmana an tseanoidis, agus déanann bórón agus floscanna eile obair na luaidhe.",
     "leadRebuilt": "Ionadaíodh an luaidhe do bhácáil ag {firing} ar an bhfriot {base}: coinníodh silice agus alúmana an tseanoidis, agus déanann bórón agus floscanna eile obair na luaidhe.",
-    "leadColour": "Ionadaíodh an luaidhe: aistríodh na hábhair datha chuig bunghlónra gan luaidhe den fhriot {base} agus de chaoilín, 85 le 15.",
     "leadGloss": "Ní mheaitseálfaidh sé loinnir, gléine ná dath na luaidhe go díreach: bí ag súil le níos lú niamhrachta, agus le scamallú ar chré dhearg nó le snáithlíonrú, b’fhéidir. Déan tástáil ar bhaisc bheag ar do chré féin.",
     "leadSafety": "Ní fhágann easpa luaidhe, ann féin, go bhfuil glónra slán i gcomhair bia; braitheann sé sin ar an bhfoirmle ar fad agus ar an mbácáil.",
     "leadReplaced": "Tá an luaidhe ionadaithe.",
@@ -245,8 +243,7 @@
       "text": "Téann siad seo anuas ar an mbunghlónra. Sábháiltear leis an oideas iad ach ní cuid den fhoirmle Seger iad. Roghnaigh an t-aonad do gach méid:",
       "percent": "<b>% den bhunghlónra</b>: céatadán d’iomlán an bhunghlónra, mar a thugann formhór na n-oideas iad: ciallaíonn 2 go bhfuil 2% ocsaíd iarainn dhearg ann.",
       "parts": "<b>codanna</b>: an t-aonad céanna leis na hábhair, mar shampla 1 chuid ar bhunghlónra de 3 chuid breochloiche<en>flint</en> agus 2 chuid dolaimíte.",
-      "grams": "<b>graim</b>: meáchan, sa bhaisc chéanna leis na hábhair.",
-      "count": "Áiríonn roinnt áireamhán na hábhair datha san fhoirmle Seger<en>unity molecular formula</en> agus ní áiríonn cuid eile. Ticeáil <b>Áirigh na hábhair datha agus na breiseáin inti</b>, faoin gceannteideal ‘Foirmle Seger’, chun iad a áireamh de réir a meáchain sa bhaisc, nó fág gan tic é chun comparáid a dhéanamh le háireamhán nach n-áiríonn iad. Sábháiltear an rogha leis an oideas."
+      "grams": "<b>graim</b>: meáchan, sa bhaisc chéanna leis na hábhair."
     },
     "scale": {
       "heading": "An scála a athrú nuair is gá",
@@ -604,7 +601,6 @@
     "unknownOxide": "Ní ocsaíd í {oxide} a bhfuil aithne ag Glazecalc uirthi.",
     "together": "Tabhair potais (K₂O) agus sóid (Na₂O) ar leith, ní le chéile mar KNaO.",
     "badAmount": "Ní uimhir 0 nó níos mó é méid {oxide}.",
-    "noFlux": "Teastaíonn flosc amháin ar a laghad ón sprioc, mar CaO, K₂O nó Na₂O.",
     "noMaterials": "Cuir ábhar amháin ar a laghad leis chun an t-oideas a dhéanamh as.",
     "noMatch": "Níl aon cheann de na hocsaídí sa sprioc in aon cheann de na hábhair seo."
   },

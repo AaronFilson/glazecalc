@@ -31,9 +31,17 @@ export function sizeNotes(
   lines: Array<{ material: MaterialRecord; amount: string | number | undefined }>,
   low?: boolean
 ): Caution[];
-/** Whether a material is raw (not calcined) clay. */
-export function isRawClay(material: { category?: string; name: string }): boolean;
+/**
+ * Whether a material is raw (not calcined) clay: by its category, calcined by its name or by an LOI under 2%
+ * (Molochite), or for one with no category by its analysis.
+ */
+export function isRawClay(material: MaterialRecord): boolean;
 /** Whether raw clay at this percent of the batch is past the caution, and news against the old recipe's. */
 export function rawClayHigh(clay: number, clayWas?: number): boolean;
 /** Raw (not calcined) clay as a percent of the batch. */
-export function rawClayPercent(lines: Array<{ category?: string; name: string; amount?: string | number }>): number;
+export function rawClayPercent(lines: Array<Omit<MaterialRecord, 'amount'> & { amount?: string | number }>): number;
+/**
+ * How serious BaO in the unity formula is, compared at the two decimals shown: null to 0.10, 'likely'
+ * from 0.40, 'caution' between (CHECK_LIMITS.barium; Digitalfire, https://digitalfire.com/glossary/123).
+ */
+export function bariumSeverity(barium: number): 'caution' | 'likely' | null;

@@ -50,7 +50,6 @@
     "firedTo": "Égetési hőmérséklet",
     "how": "Módszer",
     "rebuild": "A máz újraépítése: a szilícium-dioxid és a timföld megtartása, az ólom helyett bórral és más olvasztóanyagokkal",
-    "keepColour": "A szín megtartása ólommentes alapmázon: fritt és kaolin 85:15 arányban, a recept színezőivel",
     "fritHeading": "Ólommentes fritt az alaphoz, a legjobbtól kezdve",
     "fritBoron": "({boron}% bór, B₂O₃)",
     "noFrit": "A könyvtárban nincs olyan ólommentes fritt, amelyet az Ön régiójában forgalmaznak.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Az ólom nem helyettesíthető: a recept egyik nyersanyagának nincs összetétele, amelyből számolni lehetne.",
     "leadRebuiltCone": "Ólom helyettesítve (gúla: {cone}, alapfritt: {base}): A régi recept szilícium-dioxidja és timföldje megmaradt, az ólom munkáját bór és más olvasztóanyagok végzik.",
     "leadRebuilt": "Ólom helyettesítve (égetés: {firing}, alapfritt: {base}): A régi recept szilícium-dioxidja és timföldje megmaradt, az ólom munkáját bór és más olvasztóanyagok végzik.",
-    "leadColour": "Ólom helyettesítve: A színezők átkerültek egy ólommentes alapmázra, amely {base} frittből és kaolinból áll, 85:15 arányban.",
     "leadGloss": "Nem lesz pontosan olyan fényes, tiszta vagy olyan színű, mint az ólmos máz: Kevesebb ragyogásra számítson, és esetleg fátyolosodásra vörös agyagon, vagy hajszálrepedésre. Próbáljon ki egy kis adagot a saját masszáján.",
     "leadSafety": "Az ólom hiánya önmagában nem teszi a mázat élelmiszerrel érintkezésre alkalmassá; ez a teljes képlettől és az égetéstől függ.",
     "leadReplaced": "Ólom helyettesítve.",
@@ -245,8 +243,7 @@
       "text": "Ezek az alapmázon felül kerülnek a receptbe. A recepttel együtt mentődnek, de nem részei a Seger-képletnek. Válassza ki, milyen egységben adja meg az egyes mennyiségeket:",
       "percent": "<b>az alapmáz %-a</b>: az alapmáz összegének százaléka, ahogy a legtöbb recept megadja; a 2 itt 2% vörös vas-oxidot jelent.",
       "parts": "<b>rész</b>: ugyanaz az egység, mint a nyersanyagoké, például 1 rész egy 3 rész kovakőből<en>flint</en> és 2 rész dolomitból álló alapmázon.",
-      "grams": "<b>gramm</b>: tömeg, ugyanabban az adagban, mint a nyersanyagok.",
-      "count": "Egyes kalkulátorok beszámítják a színezőket a Seger-képletbe<en>unity molecular formula</en>, mások nem. Jelölje be a <b>Színezők és adalékok beszámítása</b> négyzetet a Seger-képlet címsor alatt, ha az adagbeli tömegükkel akarja beszámítani őket, vagy hagyja üresen, ha olyan kalkulátorral hasonlítja össze, amely nem számítja be őket. A választás a recepttel együtt mentődik."
+      "grams": "<b>gramm</b>: tömeg, ugyanabban az adagban, mint a nyersanyagok."
     },
     "scale": {
       "heading": "Átszámítás, ha szükséges",
@@ -604,7 +601,6 @@
     "unknownOxide": "A(z) {oxide} nem olyan oxid, amelyet a Glazecalc ismer.",
     "together": "A káliumot (K₂O) és a nátriumot (Na₂O) külön adja meg, ne együtt KNaO-ként.",
     "badAmount": "A(z) {oxide} mennyisége nem 0 vagy annál nagyobb szám.",
-    "noFlux": "A célhoz legalább egy olvasztóanyag kell, például CaO, K₂O vagy Na₂O.",
     "noMaterials": "Adjon hozzá legalább egy nyersanyagot, amelyből a receptet elkészíti.",
     "noMatch": "Ezen nyersanyagok egyike sem tartalmazza a cél egyik oxidját sem."
   },

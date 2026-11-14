@@ -79,7 +79,7 @@ describe('lists written a record at a time', () => {
             formulaweight: 1,
             loi: 0,
             molecularweight: 1,
-            percentmole: 'x'
+            percentmole: 'percent'
           },
           { name: 'Odd', ownedBy, source: {}, aliases: null, fields: [{ name: 'CaO', amount: 1 }] }
         ]

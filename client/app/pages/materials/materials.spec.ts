@@ -21,7 +21,7 @@ import { useCodedMessages } from '../../i18n/coded';
 import { PAGE_LANGUAGE } from '../../i18n/language';
 import { API, httpMock, settle, skippedHeadings, testProviders } from '../../testing/test-providers';
 import { ConesPage } from './cones-page';
-import { MaterialInfoPage, analysisOf, hasFlux } from './material-info-page';
+import { MaterialInfoPage, analysisOf, equivalentKind, hasFlux } from './material-info-page';
 import {
   knownMaterial,
   materialDescriptionKey,
@@ -224,12 +224,66 @@ describe('the page of a standard material', () => {
     expect(scroll?.getAttribute('aria-label')).toBe('Oxides in Silica');
   });
 
-  it('says when a material has no flux, so its unity is per formula as written', async () => {
-    const { page } = await render('Silica');
-    expect(page.querySelector('#analysis')?.closest('section')?.textContent).toContain(
+  // "Per formula as written" was false for a material given by an analysis: its unity is per the 100 g it is for.
+  it('says when a material has no flux, so its unity is per formula as written, or per 100 g for an analysis', async () => {
+    const said = async (name: string) =>
+      (await render(name)).page.querySelector('#analysis')?.closest('section')?.textContent;
+    expect(await said('Silica')).toContain(
       'Silica has no flux oxide, so its unity contribution is per formula as written.'
     );
+    const analysis = await said('Alumina Hydrate');
+    expect(analysis).toContain(
+      'Alumina Hydrate has no flux oxide, so its unity contribution is per 100 g, the amount its analysis is given for.'
+    );
+    expect(analysis).not.toContain('per formula as written');
     expect((await render('Whiting')).page.textContent).not.toContain('has no flux oxide');
+  });
+
+  it('reads percent and moles as the chemistry does, in any case, as a record kept before lower case may give them', async () => {
+    const alumina = { ...named('Alumina Hydrate'), percentmole: 'Percent' } as unknown as Material;
+    const section = (await render(alumina)).page.querySelector('#analysis')?.closest('section');
+    expect(section?.textContent).toContain('Alumina Hydrate as weight percent of the raw material');
+    expect(section?.textContent).toContain('per 100 g, the amount its analysis is given for');
+    expect(section?.querySelector('thead')?.textContent).toContain('Weight %');
+    expect(equivalentKind(alumina, analysisOf(alumina).weights!)).toBe('analysis');
+    const silica = { ...named('Silica'), percentmole: 'Molecular' } as unknown as Material;
+    expect((await render(silica)).page.querySelector('#analysis')?.closest('section')?.textContent).toContain(
+      'Silica as moles of each fired oxide per formula'
+    );
+  });
+
+  // "The grams that hold 1.0 mole of flux" was false where there is no flux, and misleading where there is little.
+  it('says what the equivalent weight is: per mole of flux, large for little flux, per formula or 100 g for none', async () => {
+    const shown = async (name: string) => {
+      const { page } = await render(name);
+      return {
+        note: page.querySelector('#analysis ~ p.muted')?.textContent?.trim(),
+        equivalent: page.querySelector('#analysis ~ dl dd')?.textContent?.trim()
+      };
+    };
+    const fired = 'The fired weight is what is left of that after firing.';
+    expect(await shown('Whiting')).toEqual({
+      note: `The equivalent weight is the grams of Whiting that hold 1.0 mole of flux. ${fired}`,
+      equivalent: '100.08'
+    });
+    expect(await shown('EPK Kaolin')).toEqual({
+      note:
+        'The equivalent weight is the grams of EPK Kaolin that hold 1.0 mole of flux. EPK Kaolin has little flux, so ' +
+        `its equivalent weight is large, and so are its unity contributions. ${fired}`,
+      equivalent: '9840.14'
+    });
+    expect(await shown('Silica')).toEqual({
+      note: `Silica has no flux, so its equivalent weight is the weight in grams of its formula as written. ${fired}`,
+      equivalent: '60.08'
+    });
+    expect(await shown('Alumina Hydrate')).toEqual({
+      note: `Alumina Hydrate has no flux, so its equivalent weight is 100 g, the amount its analysis is given for. ${fired}`,
+      equivalent: '100'
+    });
+    // A frit or a flux never reads as one with little flux, or none.
+    for (const material of STANDARD_MATERIALS.filter((m) => m.category === 'frit' || m.category === 'flux')) {
+      expect(equivalentKind(material, analysisOf(material).weights!), material.name).toBe('flux');
+    }
   });
 
   it('says a material has lead, and when it is no longer sold', async () => {

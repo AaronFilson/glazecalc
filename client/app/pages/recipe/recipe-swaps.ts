@@ -1,8 +1,10 @@
 import { Injector, Signal, WritableSignal, afterNextRender, computed, inject, signal } from '@angular/core';
 import { translate } from '@jsverse/transloco';
-import { CONES } from '../../../../lib/chemistry';
+import { CONES, MaterialInput } from '../../../../lib/chemistry';
+import type { ChemistryError } from '../../../../lib/chemistry';
 import { FiringBlock, firingBands } from '../../../../lib/cones/firing';
 import { FiringBand, LIMIT_SETS, bandOf } from '../../../../lib/recipe/limits';
+import { RecipeError } from '../../../../lib/recipe/messages';
 import { LocaleService } from '../../core/locale.service';
 import { Additive, Material, Recipe, RecipeMaterial } from '../../core/models';
 import { ShelfService } from '../../core/shelf.service';
@@ -10,9 +12,10 @@ import { formatTemperature, listOf } from '../../shared/format';
 import { chosenRegion, findNamed, hasLead } from '../../shared/library-info';
 import { LibraryMaterial, modernMaterials } from './compare';
 import { focusWhenDrawn } from './focus';
-import { BaseChoice, LeadMode, leadFreeBases, leadIn, recipeHasLead, replaceLead } from './lead';
+import { BaseChoice, LeadMode, bariumOf, clayFor, leadFreeBases, leadOf, recipeHasLead, replaceLead } from './lead';
 import { TryMaterial } from './pool';
 import { libraryKey } from './recipe-library';
+import { RecipeProblem, recipeText } from './recipe-messages';
 import { matchFromShelf } from './shelf';
 import { Plan, planSuggestion, suggestAmounts } from './suggest';
 // Types apart from the report, which the page and its parts defer (@defer), so its file can be left out until needed.
@@ -40,6 +43,8 @@ export type SwapKind = 'modern' | 'lead' | 'shelf';
 export interface SwapPage {
   readonly lines: Signal<RecipeMaterial[]>;
   readonly additiveLines: Signal<Additive[]>;
+  /** The chemistry an additive borrows by name. */
+  chemistryOf(name: string): MaterialInput | undefined;
   /** The firing band for the limits, which a recipe rebuilt without lead takes from its cone when it has none. */
   readonly firing: WritableSignal<FiringBand | ''>;
   readonly firedAt: Signal<FiringBlock | null>;
@@ -118,13 +123,24 @@ export class RecipeSwaps {
    * so a potter who fires to SK cones sees the temperature.
    */
   readonly byCones = computed(() => this.locale.cones() === 'orton');
-  readonly leadAmount = computed(() => (recipeHasLead(this.page.lines()) ? leadIn(this.page.lines()) : null));
+  /** The lead for the caution: in the materials or the additives. */
+  readonly leadAmount = computed(() =>
+    leadOf(this.page.lines(), this.page.additiveLines(), (name) => this.page.chemistryOf(name))
+  );
+  /** The barium for its caution, shown with lead's. */
+  readonly bariumAmount = computed(() =>
+    bariumOf(this.page.lines(), this.page.additiveLines(), (name) => this.page.chemistryOf(name))
+  );
+  /** Whether Replace lead has lead to replace: it works on the materials, not the additives. */
+  readonly leadInMaterials = computed(() => recipeHasLead(this.page.lines()));
   readonly leadQuestion = signal<{
     cone: string;
     mode: LeadMode;
     bases: BaseChoice[];
     base: string;
   } | null>(null);
+  /** The clay Keep the colour puts with the frit (lead.js clayFor): the recipe's own raw clay, or China Clay. */
+  readonly colourClay = computed(() => clayFor(this.page.lines(), this.page.standardMaterials())?.name ?? '');
 
   /** What Undo the swap puts back, while there is one. */
   readonly undo = computed(() => this.page.undo());
@@ -139,6 +155,7 @@ export class RecipeSwaps {
     () =>
       (this.hasLines() ? this.modern().swaps.length + this.modern().colorants.length : 0) +
       (this.leadAmount() ? 1 : 0) +
+      (this.bariumAmount() ? 1 : 0) +
       (this.page.undo() ? 1 : 0)
   );
 
@@ -205,12 +222,12 @@ export class RecipeSwaps {
         chosenRegion(),
         { allowLead: !this.page.leadOff() }
       );
-    } catch {
-      this.problem.set(translate('recipe.page.cannotSuggest'));
+    } catch (error) {
+      this.problem.set(this.whyNot(error, translate('recipe.page.cannotSuggest')));
       return;
     }
     if (!plan.shortfalls.length) {
-      this.applySuggestion(this.runOf('suggest'));
+      this.tryTo(() => this.applySuggestion(this.runOf('suggest')), translate('recipe.page.cannotSuggest'));
       return;
     }
     const chosen = Object.fromEntries(plan.shortfalls.map((short) => [short.oxide, short.choices[0]?.name ?? '']));
@@ -239,7 +256,7 @@ export class RecipeSwaps {
       .filter((material): material is Material => !!material);
     const run = { ...this.runOf('suggest'), bringIn, tries: this.suggestTries() };
     this.closeQuestions();
-    this.applySuggestion(run);
+    this.tryTo(() => this.applySuggestion(run), translate('recipe.page.cannotSuggest'));
   }
 
   /** Replace lead: asks the firing, how, and which lead-free frit to build on. */
@@ -249,8 +266,8 @@ export class RecipeSwaps {
     let bases: BaseChoice[];
     try {
       bases = this.basesFor(cone);
-    } catch {
-      this.problem.set(translate('recipe.page.cannotReplaceLead'));
+    } catch (error) {
+      this.problem.set(this.whyNot(error, translate('recipe.page.cannotReplaceLead')));
       return;
     }
     this.leadTries.set([]);
@@ -295,7 +312,7 @@ export class RecipeSwaps {
     const run: Run = { ...this.runOf('lead'), cone, mode, base, tries: mode === 'rebuild' ? this.leadTries() : [] };
     this.leadQuestion.set(null);
     this.shelfOpen.set(false);
-    this.applyLead(run);
+    this.tryTo(() => this.applyLead(run), translate('recipe.page.cannotReplaceLead'));
   }
 
   /** Match with what I have: shows the materials on hand, fetched from the account. */
@@ -368,8 +385,8 @@ export class RecipeSwaps {
     const run: Run = { ...this.runOf('shelf'), tries: this.shelfTries() };
     try {
       this.applyShelf(run);
-    } catch {
-      this.problem.set(translate('recipe.page.cannotMatch'));
+    } catch (error) {
+      this.problem.set(this.whyNot(error, translate('recipe.page.cannotMatch')));
       return;
     }
     this.shelfOpen.set(false);
@@ -388,8 +405,8 @@ export class RecipeSwaps {
       if (run.kind === 'suggest') this.applySuggestion(run, false);
       else if (run.kind === 'shelf') this.applyShelf(run, false);
       else this.applyLead(run, false);
-    } catch {
-      this.problem.set(translate('recipe.page.cannotRerun'));
+    } catch (error) {
+      this.problem.set(this.whyNot(error, translate('recipe.page.cannotRerun')));
       return;
     }
     focusWhenDrawn(this.injector, 'swap-report-heading', 'swap-report-heading', null);
@@ -403,6 +420,30 @@ export class RecipeSwaps {
     this.closeQuestions();
     this.page.announce(translate('recipe.page.swapUndone'));
     this.page.focusTitle();
+  }
+
+  /**
+   * Why a swap could not be worked out, in the page's language: what the recipe tools said (a coded
+   * RecipeError; with no flux, solve.noFlux says of what: the recipe, or the materials it may use); the same
+   * of the materials, should the chemistry find no flux in what it would make (no-flux: a unity formula
+   * needs one); or else `fallback`, which says a material has no analysis to work from.
+   */
+  private whyNot(error: unknown, fallback: string): string {
+    if (error instanceof RecipeProblem) return error.message;
+    if (error instanceof RecipeError) return recipeText(error);
+    if ((error as ChemistryError | null)?.code === 'no-flux') {
+      return recipeText({ code: 'solve.noFlux', params: { of: 'offered' } });
+    }
+    return fallback;
+  }
+
+  /** Makes a swap, or says why it could not (whyNot) rather than failing with nothing said. */
+  private tryTo(swap: () => void, fallback: string): void {
+    try {
+      swap();
+    } catch (error) {
+      this.problem.set(this.whyNot(error, fallback));
+    }
   }
 
   /** A run with nothing chosen yet. */
@@ -490,7 +531,11 @@ export class RecipeSwaps {
         ? this.byCones()
           ? translate('recipe.page.leadRebuiltCone', { cone: run.cone, base: run.base })
           : translate('recipe.page.leadRebuilt', { firing: this.firingLabel(firing), base: run.base })
-        : translate('recipe.page.leadColour', { base: run.base });
+        : translate('recipe.page.leadColour', {
+            base: run.base,
+            // The clay it was made with: the recipe's own (Redart, say), or China Clay.
+            clay: replacement.materials.find((material) => material.name !== run.base)?.name ?? ''
+          });
     const parts = [
       how,
       this.changedNote(replacement.changes),

@@ -50,7 +50,6 @@
     "firedTo": "Kaykama ruphachisqa",
     "how": "Imayna",
     "rebuild": "Esmalteta wakmanta ruray: sílicenta alúminantapas waqaychay, titip rantinpi boro, huk fundentekunapas",
-    "keepColour": "Llimp'inta mana titiyuq basepi waqaychay: frita, caolínpas, 85 15-man, ruranapa llimp'iqninkunawan",
     "fritHeading": "Mana titiyuq frita, chaypi rurananpaq, aswan allinmanta qallarispa",
     "fritBoron": "({boron}% boro, B₂O₃)",
     "noFrit": "Suyuykipi vendekuq mana titiyuq fritaqa manan qillqa wasipichu kan.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Titiqa manan rantichikuyta atinchu: ruranapi huk materialqa mana análisisniyuqmi.",
     "leadRebuiltCone": "Titiqa cono {cone}-paq {base} basepi rantichisqa: ñawpa ruranap sílicen alúminanpas waqaychasqa, borowan huk fundentekunawanpas titip llamk'ayninta ruraspa.",
     "leadRebuilt": "Titiqa {firing} ruphachiypaq {base} basepi rantichisqa: ñawpa ruranap sílicen alúminanpas waqaychasqa, borowan huk fundentekunawanpas titip llamk'ayninta ruraspa.",
-    "leadColour": "Titi rantichisqa: llimp'iqkunaqa mana titiyuq basemanmi apasqa, {base} caolínpas, 85 15-man.",
     "leadGloss": "Manan titip lliphiyninman, ch'uyayninman, llimp'inmanpas chiqaqtachu tupanqa: aswan pisi k'anchayta suyay, puka mitu hawanpi phuyuyaytapas, cuarteadotapas atinmanmi. Kikiyki mituykipi huch'uy loteta pruebay.",
     "leadSafety": "Mana titiyuq kayllaqa manan esmalteta mikhunapaq mana manchakuypaq ruranchu; chayqa llapan fórmulamanta ruphachiymantawanmi kanqa.",
     "leadReplaced": "Titiqa rantichisqañam.",
@@ -245,8 +243,7 @@
       "text": "Kaykunaqa basep hawanpim rinku. Ruranawan waqaychasqa kanku, ichaqa manan fórmula unitariap partenchu. Sapa hayk'a imapi kasqanta akllay:",
       "percent": "<b>basemanta %</b>: basep llapanmanta huk porciento, aswan achka ruranakuna quykusqanman hina: 2 nisqaqa puka fierro óxidomanta 2%-mi.",
       "parts": "<b>partekuna</b>: materialkunap kaqlla unidadnin, 3 flint 2 dolomitapas basepi 1 parte hina.",
-      "grams": "<b>gramokuna</b>: huk llasay, materialkunap kaqlla lotenpi.",
-      "count": "Wakin yupanakunaqa llimp'iqkunata fórmula unitariapi yupanku, wakintaq manan. Lotepi llasayninman hina yupanapaq, Fórmula unitaria umalliq uranpi <b>Llimp'iqkunata, yapakunatapas chaypi yupay</b> nisqata marcay, otaq mana yupaqwan tupachinapaq mana marcasqata saqiy. Akllasqaykiqa ruranawan waqaychakun."
+      "grams": "<b>gramokuna</b>: huk llasay, materialkunap kaqlla lotenpi."
     },
     "scale": {
       "heading": "Necesitaspaqa escalata t'ikray",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide} nisqaqa manan Glazecalc riqsisqan óxidochu.",
     "together": "Potasata (K₂O) sodatapas (Na₂O) sapaq quy, manan kuska KNaO hinachu.",
     "badAmount": "{oxide} nisqap hayk'anqa manan 0 otaq aswan yupaychu.",
-    "noFlux": "Metaqa pisimanta pisi huk fundentetam necesitan, CaO, K₂O otaq Na₂O hina.",
     "noMaterials": "Ruranata ruranapaq pisimanta pisi huk materialta yapay.",
     "noMatch": "Kay materialkunamanta mana mayqinpas metap óxidonkunamanta mana imatapas apanchu."
   },

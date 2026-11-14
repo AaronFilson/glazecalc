@@ -156,6 +156,37 @@ describe('SolvePage', () => {
     expect(document.activeElement?.id).toBe('solve-oxide-CaO');
   });
 
+  it('says so when the materials chosen bring no flux at all, rather than giving a recipe with no unity formula', async () => {
+    const { fixture, root, type, click } = await create([KAOLIN._id!, SILICA._id!]);
+    await typeGlossy(type);
+    await click('#solve-run');
+    // Of the materials, at the materials: the target has its fluxes ("Recipe contains no flux oxides" said otherwise).
+    expect(text(fixture, '#solve-problem')).toBe(
+      'None of these materials has a flux, such as CaO, K₂O or Na₂O, so no glaze can be made of them.'
+    );
+    expect(document.activeElement?.id).toBe('solve-materials-heading');
+    expect(root.querySelector('.solve-recipe')).toBeNull();
+  });
+
+  it('says so at the materials when the one left out from the report was the only flux', async () => {
+    const { fixture, root, page, type, click } = await create([WHITING._id!, KAOLIN._id!, SILICA._id!]);
+    await type('CaO', '1');
+    await type('Al2O3', '0.3');
+    await type('SiO2', '3');
+    await click('#solve-run');
+    const leave = [...root.querySelectorAll('.solve-uses button')].find((b) =>
+      document.getElementById(b.getAttribute('aria-describedby')!)?.textContent?.includes('Whiting')
+    ) as HTMLElement;
+    leave.click();
+    await settle(fixture);
+    expect(text(fixture, '#solve-problem')).toBe(
+      'None of these materials has a flux, such as CaO, K₂O or Na₂O, so no glaze can be made of them.'
+    );
+    expect(document.activeElement?.id).toBe('solve-materials-heading');
+    // The recipe it had stays.
+    expect(page['result']().solved.materials.map((m: Material) => m.name)).toContain('Whiting');
+  });
+
   it('says what nothing chosen supplies, and that the recipe is poor', async () => {
     const { fixture, type, click } = await create();
     await typeGlossy(type);

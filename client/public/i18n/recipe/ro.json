@@ -50,7 +50,6 @@
     "firedTo": "Ars la",
     "how": "Metoda",
     "rebuild": "Refaceți glazura: păstrați silicea și alumina, cu bor și alți fondanți în locul plumbului",
-    "keepColour": "Păstrați culoarea pe o bază fără plumb: frita și caolinul, 85 la 15, cu coloranții rețetei",
     "fritHeading": "Frita fără plumb de folosit ca bază (cele mai potrivite primele)",
     "fritBoron": "({boron} % bor, B₂O₃)",
     "noFrit": "Biblioteca nu conține nicio frită fără plumb vândută în regiunea dumneavoastră.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Plumbul nu poate fi înlocuit: o materie primă din rețetă nu are o analiză chimică de la care să se pornească.",
     "leadRebuiltCone": "Plumbul a fost înlocuit pentru conul {cone}, cu frita de bază {base}: silicea și alumina rețetei vechi au fost păstrate, iar borul și alți fondanți preiau rolul plumbului.",
     "leadRebuilt": "Plumbul a fost înlocuit pentru arderea la {firing}, cu frita de bază {base}: silicea și alumina rețetei vechi au fost păstrate, iar borul și alți fondanți preiau rolul plumbului.",
-    "leadColour": "Plumbul a fost înlocuit: coloranții au fost trecuți pe o bază fără plumb din {base} și caolin, 85 la 15.",
     "leadGloss": "Nu va avea exact luciul, limpezimea sau culoarea date de plumb: așteptați-vă la mai puțină strălucire și, posibil, la un aspect lăptos peste argila roșie sau la fisurare. Testați o cantitate mică pe argila dumneavoastră.",
     "leadSafety": "Lipsa plumbului nu face, prin ea însăși, o glazură potrivită pentru contact alimentar; asta depinde de întreaga formulă și de ardere.",
     "leadReplaced": "Plumbul a fost înlocuit.",
@@ -245,8 +243,7 @@
       "text": "Aceștia se adaugă peste glazura de bază. Se salvează împreună cu rețeta, dar nu fac parte din formula Seger. Alegeți unitatea pentru fiecare cantitate:",
       "percent": "<b>% din glazura de bază</b>: un procent din totalul glazurii de bază, cum îi dau majoritatea rețetelor: 2 înseamnă 2 % oxid roșu de fier.",
       "parts": "<b>părți</b>: aceeași unitate ca pentru materiile prime, de exemplu 1 parte la o glazură de bază din 3 părți cremene<en>flint</en> și 2 părți dolomită.",
-      "grams": "<b>grame</b>: o masă, în același amestec cu materiile prime.",
-      "count": "Unele calculatoare includ coloranții în formula Seger<en>unity molecular formula</en>, altele nu. Bifați <b>Includeți coloranții și aditivii</b>, sub titlul Formula Seger, ca să fie incluși după masa lor din amestec, sau lăsați căsuța nebifată ca să comparați cu un calculator care nu îi include. Alegerea se salvează împreună cu rețeta."
+      "grams": "<b>grame</b>: o masă, în același amestec cu materiile prime."
     },
     "scale": {
       "heading": "Convertiți cantitățile când este nevoie",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide} nu este un oxid cunoscut de Glazecalc.",
     "together": "Indicați potasa (K₂O) și soda (Na₂O) separat, nu împreună ca KNaO.",
     "badAmount": "Cantitatea de {oxide} nu este un număr egal cu 0 sau mai mare.",
-    "noFlux": "Ținta are nevoie de cel puțin un fondant, de exemplu CaO, K₂O sau Na₂O.",
     "noMaterials": "Adăugați cel puțin o materie primă din care să se facă rețeta.",
     "noMatch": "Niciuna dintre aceste materii prime nu conține vreunul dintre oxizii țintei."
   },

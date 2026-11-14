@@ -39,7 +39,7 @@ describe('Match with what I have: classic substitutions', () => {
   // A staging session (2026-10-19): an assistant asked to replace Gerstley Borate called the
   // MCP tool, read its score (a miss of 20.5) as a wide miss, and built a recipe by hand instead.
   const GERSTLEY = recipeOf([
-    ['Nepheline Syenite', 40],
+    ['Nepheline Syenite (typical)', 40],
     ['Silica', 25],
     ['Gerstley Borate', 15],
     ['EPK Kaolin', 20]
@@ -97,7 +97,7 @@ describe('Match with what I have: classic substitutions', () => {
 
   it('holds raw clay to 20% where that costs the match little, says what more would give, and allows more', () => {
     const lines = recipeOf([
-      ['Nepheline Syenite', 35],
+      ['Nepheline Syenite (typical)', 35],
       ['Silica', 25],
       ['Whiting', 10],
       ['EPK Kaolin', 15],
@@ -213,6 +213,88 @@ describe('Match with what I have: classic substitutions', () => {
     expect(without.report.unreachable).to.deep.equal(['B2O3']);
     expect(without.report.closeness!.verdict).to.equal('poor');
     expect(verdicts(without)).to.include({ B2O3: 'far', KNaO: 'close', CaO: 'close', Al2O3: 'close', SiO2: 'close' });
+  });
+
+  it("gives back a recipe's own materials under 1% of the batch, from a shelf with all of them", () => {
+    // 0.5 of lithium carbonate came back as 1 (the least for a material brought in), doubling the lithia;
+    // zinc's 0.8 as 1; and marked "must use", talc's 0.5 as 1.
+    const base: Array<[string, number]> = [
+      ['Custer Spar', 20],
+      ['Ferro Frit 3134', 15],
+      ['Whiting', 15],
+      ['EPK Kaolin', 20],
+      ['Silica', 25]
+    ];
+    for (const [lines, must] of [
+      [recipeOf([...base, ['Talc', 4.5], ['Lithium Carbonate', 0.5]]), false],
+      [recipeOf([...base, ['Talc', 4.2], ['Zinc Oxide', 0.8]]), false],
+      [
+        recipeOf([
+          ['Custer Spar', 40],
+          ['Silica', 30],
+          ['Whiting', 20],
+          ['EPK Kaolin', 9.5],
+          ['Talc', 0.5]
+        ]),
+        true
+      ]
+    ] as Array<[MaterialRecord[], boolean]>) {
+      const shelf = lines.map((line) => ({ material: find(line.name), must }));
+      const match = recipe.matchFromShelf(lines, shelf);
+      expect(match.materials.map((m) => [m.name, m.amount])).to.deep.equal(lines.map((l) => [l.name, l.amount]));
+      expect(match.report.miss).to.be.below(1e-6);
+    }
+  });
+
+  it('writes a small batch’s new amounts to as many decimals as keep 1% of it, in a match and a suggestion', () => {
+    // Three decimals for any batch under 5: a batch of 0.0005 g came to 0 of every amount that changed, so Match
+    // with what I have made an empty recipe, and Suggest amounts left out the feldspar and kaolin it swapped in.
+    const batch = (scale: number) =>
+      recipeOf([
+        ['Custer Spar', 40 * scale],
+        ['Whiting', 20 * scale],
+        ['EPK Kaolin', 20 * scale],
+        ['Silica', 20 * scale]
+      ]);
+    const lines = batch(0.000005);
+    const total = (materials: MaterialRecord[]) => materials.reduce((sum, m) => sum + recipe.amountOf(m.amount), 0);
+    const match = recipe.matchFromShelf(lines, shelfOf('Minspar 200', 'Whiting', 'EPK Kaolin', 'Silica'));
+    expect(match.materials.map((m) => m.name)).to.include('Minspar 200');
+    expect(total(match.materials)).to.be.closeTo(0.0005, 0.0000005);
+    // The materials a suggestion for 100 g has: their total is what they come to, as there.
+    const suggest = (lines: MaterialRecord[]) =>
+      recipe.suggestAmounts(lines, (name) => LIBRARY.find((m) => m.name === name), [], 'US');
+    const suggestion = suggest(lines);
+    expect(suggestion.materials.map((m) => m.name)).to.deep.equal(suggest(batch(1)).materials.map((m) => m.name));
+    expect(suggestion.materials).to.have.length(4);
+    for (const m of [...match.materials, ...suggestion.materials]) {
+      expect(recipe.amountOf(m.amount), m.name).to.be.at.least(0.000005);
+      expect((m.amount!.split('.')[1] ?? '').length, m.name).to.be.at.most(6);
+    }
+    // A batch of 5 or more is written as before: 2 decimals to 50, then 1.
+    expect([0.0005, 0.05, 0.1, 4.9, 5, 49, 50].map((batch) => recipe.placesFor(batch))).to.deep.equal([
+      6, 4, 3, 3, 2, 2, 1
+    ]);
+  });
+
+  it("gives back a recipe's own amounts as they were however small the batch, written plainly", () => {
+    // An amount kept as it was keeps its text, written with String(): 0.0000004 as "4e-7", which reads as no
+    // amount, so every line of a batch of 0.000001 was taken out and the match was an empty recipe.
+    const lines = (
+      [
+        ['Custer Spar', 0.0000004],
+        ['Whiting', 0.0000002],
+        ['EPK Kaolin', 0.0000002],
+        ['Silica', 0.0000002]
+      ] as Array<[string, number]>
+    ).map(([name, amount]) => ({ ...find(name), amount: recipe.plainAmount(amount) }));
+    const match = recipe.matchFromShelf(lines, shelfOf(...lines.map((line) => line.name)));
+    expect(match.materials.map((m) => [m.name, m.amount])).to.deep.equal([
+      ['Custer Spar', '0.0000004'],
+      ['Whiting', '0.0000002'],
+      ['EPK Kaolin', '0.0000002'],
+      ['Silica', '0.0000002']
+    ]);
   });
 
   it('says how near a suggestion for a discontinued material comes, too', () => {

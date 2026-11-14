@@ -236,10 +236,10 @@ describe('LandingPage', () => {
       [...tr.querySelectorAll('td')].map((td) => td.textContent?.trim())
     );
     expect(rows).toEqual([
-      ['Potash Feldspar', '40'],
+      ['Potash Feldspar (theoretical)', '40'],
       ['Silica', '30'],
       ['Whiting', '20'],
-      ['Kaolin', '10']
+      ['Kaolin (theoretical)', '10']
     ]);
     const umf = text(fixture, '.unity-result');
     // Leach 4321, checked by hand in the server chemistry tests.

@@ -22,6 +22,7 @@ export const CHECK_LIMITS: Readonly<{
   alkaliMidFire: TwoLevels;
   magnesiaLowFire: TwoLevels;
   zinc: number;
+  barium: TwoLevels;
   rawCalcium: TwoLevels;
   clay: TwoLevels & { least: number };
   expansionRises: TwoLevels;
@@ -86,6 +87,8 @@ export function bandIn(set: LimitSet, band: FiringBand): FiringBand;
 /** A set's ranges for a band (its nearest, if it does not name it), or null where it does not apply. */
 export function unityFor(set: LimitSet, band: FiringBand): Readonly<Record<string, UnityRange>> | null;
 
+/** A unity formula's value as the limits compare it: at the two decimals it is shown with (0.0196 is 0.02). */
+export function asShown(value: number): number;
 /**
  * Which side of a range a value is past, or null within it, compared at the two
  * decimals it is shown with: a value at a bound is within. The checks and the
@@ -94,7 +97,7 @@ export function unityFor(set: LimitSet, band: FiringBand): Readonly<Record<strin
 export function pastSide(value: number, range: UnityRange): 'below' | 'above' | null;
 /** Whether a value past a range is at or past its figure for a likely fault; false where it has none. */
 export function isLikely(value: number, range: UnityRange, past: 'below' | 'above' | null, thin?: boolean): boolean;
-/** A thin glaze, for boron's likely figure: alumina or silica under CHECK_LIMITS.thin. */
+/** A thin glaze, for boron's likely figure: alumina or silica under CHECK_LIMITS.thin, at the two decimals shown. */
 export function isThin(unity: Record<string, number>): boolean;
 
 /** A recipe's value against one of a set's ranges. */

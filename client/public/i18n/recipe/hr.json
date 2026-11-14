@@ -50,7 +50,6 @@
     "firedTo": "Pečeno na",
     "how": "Način",
     "rebuild": "Sastavi glazuru iznova: zadrži njezin silicijev dioksid i glinicu, a olovo zamijeni borom i drugim topiteljima",
-    "keepColour": "Zadrži boju na bezolovnoj osnovi: frita i kaolin u omjeru 85 : 15, s bojilima iz recepta",
     "fritHeading": "Bezolovna frita za osnovu, poredano od najprikladnije",
     "fritBoron": "({boron} % bora, B₂O₃)",
     "noFrit": "U biblioteci nema bezolovne frite koja se prodaje u vašoj regiji.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Olovo nije moguće zamijeniti: jedna sirovina u receptu nema analizu iz koje bi se računalo.",
     "leadRebuiltCone": "Olovo je zamijenjeno za stožac {cone}, na osnovi frite {base}: zadržani su silicijev dioksid i glinica starog recepta, a posao olova obavljaju bor i drugi topitelji.",
     "leadRebuilt": "Olovo je zamijenjeno za pečenje na {firing}, na osnovi frite {base}: zadržani su silicijev dioksid i glinica starog recepta, a posao olova obavljaju bor i drugi topitelji.",
-    "leadColour": "Olovo je zamijenjeno: bojila su prenesena na bezolovnu osnovu od frite {base} i kaolina u omjeru 85 : 15.",
     "leadGloss": "Neće posve postići sjaj, prozirnost ni boju olovne glazure: očekujte manje blistavosti te moguće zamućenje na crvenoj glini ili pucanje glazure. Isprobajte malu smjesu na vlastitoj glini.",
     "leadSafety": "To što glazura nema olova samo po sebi ne znači da je prikladna za dodir s hranom; to ovisi o cijeloj formuli i o pečenju.",
     "leadReplaced": "Olovo je zamijenjeno.",
@@ -245,8 +243,7 @@
       "text": "Oni idu povrh osnove. Spremaju se s receptom, ali nisu dio Segerove formule. Odaberite u čemu je izražena svaka količina:",
       "percent": "<b>% osnove</b>: postotak ukupne količine osnove, kako ih navodi većina recepata: 2 znači 2 % crvenog željeznog oksida.",
       "parts": "<b>dijelovi</b>: ista jedinica kao za sirovine, npr. 1 dio na osnovu od 3 dijela flinta i 2 dijela dolomita.",
-      "grams": "<b>grami</b>: masa, u istoj smjesi kao i sirovine.",
-      "count": "Neki kalkulatori uračunavaju bojila u Segerovu formulu, a neki ne. Označite polje <b>Uračunaj bojila i dodatke</b>, ispod naslova Segerova formula, da biste ih uračunali prema njihovoj masi u smjesi, ili ga ostavite neoznačenim da biste usporedili s kalkulatorom koji ih ne uračunava. Izbor se sprema s receptom."
+      "grams": "<b>grami</b>: masa, u istoj smjesi kao i sirovine."
     },
     "scale": {
       "heading": "Preračunajte kad zatreba",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide} nije oksid koji Glazecalc poznaje.",
     "together": "Unesite kalij (K₂O) i natrij (Na₂O) zasebno, a ne zajedno kao KNaO.",
     "badAmount": "Količina oksida {oxide} nije broj 0 ili veći.",
-    "noFlux": "Cilj treba barem jedan topitelj, kao što su CaO, K₂O ili Na₂O.",
     "noMaterials": "Dodajte barem jednu sirovinu od koje će se napraviti recept.",
     "noMatch": "Nijedna od ovih sirovina nema nijedan od oksida cilja."
   },

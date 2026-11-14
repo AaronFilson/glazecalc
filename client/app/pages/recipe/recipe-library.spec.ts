@@ -197,6 +197,13 @@ describe('RecipeHelp', () => {
     expect((await create(false)).fixture.nativeElement.querySelector('.recipe-help')).not.toBeNull();
   });
 
+  it('says that colorant oxides join the fluxes when colorants are counted', async () => {
+    const help = await create(true);
+    expect(text(help.fixture, '.recipe-help')).toContain(
+      'to count them at their weight in the batch: their colorant oxides, such as CoO, CuO and MnO, then join the fluxes.'
+    );
+  });
+
   it('opened for an account with no recipes, it does not fold when the first one is saved', async () => {
     const page = await create(null);
     expect(page.fixture.nativeElement.querySelector('.recipe-help')).toBeNull();

@@ -1,7 +1,7 @@
 // Types for lib/recipe/pool.js (see index.d.ts).
 
 import type { Closeness, FitOptions, SelectLine, Selection } from '../chemistry';
-import type { MaterialRecord } from './library';
+import type { MaterialRecord, TryMaterial } from './library';
 import type { Figure, RecipeMessage } from './messages';
 
 /** What one chosen material does. */
@@ -23,7 +23,10 @@ export interface Report {
   couldHelp: Array<{ name: string; helps: number }>;
   /** Near-identical pairs: the one used, and another that could stand in for it. */
   alike: Array<{ used: string; other: string }>;
-  /** Caps that cost match, as percents of the batch; a shared cap names its group and all its members. */
+  /**
+   * Caps that cost match, as percents of the batch; a shared cap names its group and all its members.
+   * A shared cap the recipe could not keep is broken, its wouldBe what the members come to.
+   */
   capped: Array<{
     name: string;
     most: number;
@@ -31,6 +34,7 @@ export interface Report {
     group?: string;
     members: string[];
     why?: RecipeMessage;
+    broken?: true;
   }>;
   /** Oxides the old recipe has that nothing offered supplies. */
   unreachable: string[];
@@ -48,7 +52,14 @@ export interface Report {
   cutShort?: true;
 }
 
+/** The decimals a batch's new amounts are written to: 1 from 50, 2 from 5, else 3, and under 0.1 enough for 1% of it. */
 export function placesFor(total: number): number;
+
+/**
+ * Whether a material offered is a last resort for the choosing (SelectLine lastResort): a fluorine or
+ * soluble material not marked "must use".
+ */
+export function lastResort(tried: TryMaterial): boolean;
 
 // The notes a new recipe's changes are written in, and a selection moved to
 // another batch total: the recipe tools' own (lead.js, shelf.js, solve.js);
@@ -60,6 +71,18 @@ export function changed(name: string, from: Figure | string, to: Figure | string
 export function added(name: string, amount: Figure | string): RecipeMessage;
 /** A material taken out of the recipe: "Niter 10 → 0". */
 export function removed(name: string, amount: number, places: number): RecipeMessage;
+/**
+ * A selection whose amounts, rounded to `places`, add up to `total` as shown (the largest remainders moved
+ * a step); lines `kept`, shown as they were, count as they are and are not moved, and none is moved below
+ * its `least`.
+ */
+export function addingUp<S extends { amounts: number[] }>(
+  selection: S,
+  places: number,
+  total: number,
+  kept?: (i: number) => boolean,
+  least?: (i: number) => number
+): S;
 /** A selection on another batch total: amounts and caps scaled by `scale`. */
 export function scaled(selection: Selection, scale: number): Selection;
 
@@ -80,7 +103,8 @@ export function explain(
   selection: Selection,
   lines: Array<{ material: { name: string }; fixed?: boolean; why?: RecipeMessage }>,
   places: number,
-  target?: Record<string, number>
+  target?: Record<string, number>,
+  batch?: number
 ): Report;
 export function recipeFrom<M extends MaterialRecord>(
   selection: Selection,

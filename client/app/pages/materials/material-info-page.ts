@@ -5,7 +5,7 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { map } from 'rxjs';
-import { OXIDE_GROUPS, formatFormula, materialWeights } from '../../../../lib/chemistry';
+import { OXIDE_GROUPS, formatFormula, materialWeights, oxidesGivenIn } from '../../../../lib/chemistry';
 import type { MaterialWeights } from '../../../../lib/chemistry';
 import { AuthService } from '../../core/auth.service';
 import { Material } from '../../core/models';
@@ -46,9 +46,54 @@ export function analysisOf(material: Material): { rows: OxideRow[]; weights: Mat
   };
 }
 
-/** Whether a material has a flux among its oxides; if not, its unity is per formula as written. */
+/**
+ * Whether a material has a flux among its oxides; if not, its unity is per formula as written, or per 100 g for an
+ * analysis in percent.
+ */
 export const hasFlux = (material: Material): boolean =>
   material.fields.some((field) => ['R2O', 'RO'].includes(OXIDE_GROUPS[field.name] ?? ''));
+
+/**
+ * Fluxes under this share of a material's oxides, counted in moles, are little, as in a kaolin, a ball clay,
+ * silica or alumina, whose fluxes are impurities; a feldspar, a frit or a flux has more.
+ */
+export const LITTLE_FLUX = 0.05;
+
+/**
+ * What a material's equivalent weight is (lib/chemistry/materials.js materialWeights): the grams that hold 1.0
+ * mole of flux ('flux'), which is large where the material has little flux ('little'); with no flux, the weight
+ * of its formula as written ('formula'), or 100 g for an analysis in percent ('analysis').
+ */
+export function equivalentKind(
+  material: Material,
+  weights: MaterialWeights
+): 'flux' | 'little' | 'formula' | 'analysis' {
+  let flux = 0;
+  let all = 0;
+  for (const [oxide, moles] of Object.entries(weights.unity)) {
+    all += moles;
+    if (['R2O', 'RO'].includes(OXIDE_GROUPS[oxide] ?? '')) flux += moles;
+  }
+  if (!(flux > 0)) return oxidesGivenIn(material) === 'percent' ? 'analysis' : 'formula';
+  return flux < LITTLE_FLUX * all ? 'little' : 'flux';
+}
+
+/** The sentence under the weights, for each kind of equivalent weight. */
+const WEIGHTS_NOTES = {
+  flux: marker('reference.material.weightsNote'),
+  little: marker('reference.material.weightsNoteLittleFlux'),
+  formula: marker('reference.material.weightsNoteNoFluxFormula'),
+  analysis: marker('reference.material.weightsNoteNoFluxAnalysis')
+};
+
+/**
+ * The sentence on a material with no flux, for each kind (as equivalentKind tells them apart): its unity is per its
+ * formula as written ('formula'), or per the 100 g an analysis in percent is given for ('analysis').
+ */
+const NO_FLUX_NOTES = {
+  formula: marker('reference.material.noFlux'),
+  analysis: marker('reference.material.noFluxAnalysis')
+};
 
 /** The page of a standard material: what its record says, its analysis, and its hazards. */
 @Component({
@@ -141,18 +186,13 @@ export const hasFlux = (material: Material): boolean =>
       @if (analysis().weights) {
         <p>
           {{
-            t(
-              material().percentmole === 'percent'
-                ? 'reference.material.analysisPercent'
-                : 'reference.material.analysisMolecular',
-              {
-                name: material().name
-              }
-            )
+            t(inPercent() ? 'reference.material.analysisPercent' : 'reference.material.analysisMolecular', {
+              name: material().name
+            })
           }}
         </p>
         @if (!flux()) {
-          <p>{{ t('reference.material.noFlux', { name: material().name }) }}</p>
+          <p>{{ t(noFluxNote(), { name: material().name }) }}</p>
         }
         <div
           class="guide-table-scroll"
@@ -170,13 +210,7 @@ export const hasFlux = (material: Material): boolean =>
               <tr>
                 <th scope="col">{{ t('reference.material.oxide') }}</th>
                 <th scope="col" class="num">
-                  {{
-                    t(
-                      material().percentmole === 'percent'
-                        ? 'reference.material.amountPercent'
-                        : 'reference.material.amountMolecular'
-                    )
-                  }}
+                  {{ t(inPercent() ? 'reference.material.amountPercent' : 'reference.material.amountMolecular') }}
                 </th>
                 <th scope="col" class="num">{{ t('reference.material.unity') }}</th>
               </tr>
@@ -200,7 +234,7 @@ export const hasFlux = (material: Material): boolean =>
           <dt>{{ t('reference.material.loi') }}</dt>
           <dd>{{ t('reference.material.loiValue', { value: upTo(analysis().weights!.loi, 2) }) }}</dd>
         </dl>
-        <p class="muted">{{ t('reference.material.weightsNote', { name: material().name }) }}</p>
+        <p class="muted">{{ t(weightsNote(), { name: material().name }) }}</p>
       } @else {
         <p>{{ t('reference.material.noAnalysis') }}</p>
       }
@@ -283,6 +317,15 @@ export class MaterialInfoPage {
   });
   protected readonly analysis = computed(() => analysisOf(this.material()));
   protected readonly flux = computed(() => hasFlux(this.material()));
+  /** Whether its oxides are weight percent, as the chemistry reads them (a record may keep 'Percent'), or moles. */
+  protected readonly inPercent = computed(() => oxidesGivenIn(this.material()) === 'percent');
+  /** What the unity of a material with no flux is per, as the sentence on it says: its formula, or 100 g. */
+  protected readonly noFluxNote = computed(() => NO_FLUX_NOTES[this.inPercent() ? 'analysis' : 'formula']);
+  /** What the equivalent weight is for this material, as the sentence under it says. */
+  protected readonly weightsNote = computed(() => {
+    const weights = this.analysis().weights;
+    return WEIGHTS_NOTES[weights ? equivalentKind(this.material(), weights) : 'flux'];
+  });
   protected readonly lead = computed(() => hasLead(this.material()));
   protected readonly formula = computed(() => formatFormula(this.material().rawformula));
   protected readonly kind = computed(() => CATEGORY_LABELS[this.material().category ?? 'other'] ?? '');

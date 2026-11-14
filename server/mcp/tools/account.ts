@@ -9,6 +9,7 @@
 import * as z from 'zod';
 import mongoose from 'mongoose';
 import type { McpServer } from '@modelcontextprotocol/server';
+import chemistry from '../../../lib/chemistry/index.js';
 import firingLib from '../../../lib/cones/firing.js';
 import type { Band, FiringBlock } from '../../../lib/cones/firing.js';
 import results from '../../../lib/cones/results.js';
@@ -31,7 +32,6 @@ import {
   languageArg,
   languageOf,
   linesArg,
-  MOST_MATERIALS,
   ok,
   resolveLines,
   ToolProblem,
@@ -239,12 +239,14 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
           let alsoChecks: Record<string, unknown> | undefined;
           let coneFit: ReturnType<typeof coneFitOut> = null;
           try {
-            analysis = analysisOf(lines, lang).out;
+            const worked = analysisOf(lines, lang);
+            analysis = worked.out;
             // The firing asked about, else the band chosen on the recipe, else the stated firing, as the page has it.
             const asked = firing ? firingOf(firing) : null;
             const against = asked ? asked.block : (band ?? firedAt ?? null);
+            // On the unity formula as worked out, as the recipe page judges it, not as rounded for the answer.
             coneFit = coneFitOut(
-              recipe.coneFit(analysis.unityFormula as Record<string, number>, against, {
+              recipe.coneFit(worked.result.umf, against, {
                 processes: firedAt?.processes ?? [],
                 materials: lines.map((line) => line.name)
               }),
@@ -335,7 +337,8 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
               rev: revOf(m),
               name: m.name,
               oxides: oxidesOf(m as unknown as MaterialRecord),
-              oxidesAre: m.percentmole === 'molecular' ? 'moles in the formula' : 'weight percent',
+              // As the chemistry reads them: one kept before the schema lower-cased it may say 'Molecular'.
+              oxidesAre: chemistry.oxidesGivenIn(m) === 'percent' ? 'weight percent' : 'moles in the formula',
               loi: m.loi
             }))
           });
@@ -382,11 +385,8 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
               resolved = savedLines((await ownRecord(Recipe, recipeId, userId, 'recipe')).materials as unknown[]);
             else if (lines) resolved = resolveLines(lines, await ownMaterials());
             else throw new ToolProblem('Give a recipeId or the lines of a recipe.');
+            // A shelf holds at most SHELF_MOST materials, as many as a fit takes (MOST_MATERIALS).
             const { materials } = await shelfOf();
-            if (materials.length > MOST_MATERIALS)
-              throw new ToolProblem(
-                `Too many materials to fit at once: your shelf has ${materials.length}, and this works from at most ${MOST_MATERIALS}. Narrow the list: name the library materials to try, at most ${MOST_MATERIALS}, to match_from_materials as "have".`
-              );
             const shelf: TryMaterial[] = materials.map((material) => ({ material, must: false }));
             const match = fitFor(caller, (meter) =>
               recipe.matchFromShelf(resolved, shelf, { uncapped: allowMore ?? [], meter })

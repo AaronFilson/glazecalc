@@ -14,7 +14,7 @@ describe('materials API', () => {
     loi: 3,
     equivalent: 284,
     molecularweight: 284,
-    percentmole: 'molecular',
+    percentmole: 'molecular' as const,
     notes: ['fake note id 1', 'fake note id 2'],
     relatedTo: ['china clay', 'kaolin'],
     rawformula: 'Al2O3-2SiO2-2H2O'
@@ -133,6 +133,28 @@ describe('materials API', () => {
       .get('/materials/getAll')
       .set('Authorization', 'Bearer ' + token);
     expect(all.body).to.eql([]);
+  });
+
+  it('keeps the oxides as percent or molecular, in any case, and nothing else', async () => {
+    const percent = await create({ ...porcelain, percentmole: ' Percent ' });
+    expect(percent).to.have.status(200);
+    expect(percent.body.percentmole).to.equal('percent');
+    expect((await create({ ...porcelain, percentmole: 'MOLECULAR' })).body.percentmole).to.equal('molecular');
+    const odd = await create({ ...porcelain, percentmole: 'weight' });
+    expect(odd).to.have.status(400);
+    expect(odd.body.code).to.equal('invalid-input');
+    // A change is kept the same way.
+    const change = (percentmole: string) =>
+      api()
+        .put('/materials/change/' + percent.body._id)
+        .set('Authorization', 'Bearer ' + token)
+        .send({ ...percent.body, percentmole });
+    expect(await change('Molecular')).to.have.status(200);
+    expect((await Material.findById(percent.body._id).lean())?.percentmole).to.equal('molecular');
+    const refused = await change('weight');
+    expect(refused).to.have.status(400);
+    expect(refused.body.code).to.equal('record-invalid');
+    expect(await Material.countDocuments({ percentmole: { $nin: ['percent', 'molecular'] } })).to.equal(0);
   });
 
   it('accepts an LOI of 0, as for silica', async () => {

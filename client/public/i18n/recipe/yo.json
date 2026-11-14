@@ -50,7 +50,6 @@
     "firedTo": "A sun ún dé",
     "how": "Bí",
     "rebuild": "Tún glaze náà kọ́: ẹ pa silica àti alumina rẹ̀ mọ́, pẹ̀lú boron àti flux mìíràn dípò òjé",
-    "keepColour": "Pa àwọ̀ náà mọ́ lórí ìpìlẹ̀ láìní òjé: frit àti kaolin, 85 sí 15, pẹ̀lú ohun àwọ̀ ìlànà náà",
     "fritHeading": "Frit láìní òjé láti kọ́ lé lórí, èyí tó dára jù lọ ní àkọ́kọ́",
     "fritBoron": "({boron}% boron, B₂O₃)",
     "noFrit": "Kò sí frit láìní òjé tí a ń tà ní agbègbè yín nínú Ibi ìkówèésí.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "A kò lè rọ́pò òjé náà: ohun èlò kan nínú ìlànà kò ní analysis tí a lè ṣiṣẹ́ lé lórí.",
     "leadRebuiltCone": "A rọ́pò òjé fún cone {cone} lórí {base}: a pa silica àti alumina ìlànà àtijọ́ mọ́, pẹ̀lú boron àti flux mìíràn tí ń ṣe iṣẹ́ òjé.",
     "leadRebuilt": "A rọ́pò òjé fún {firing} lórí {base}: a pa silica àti alumina ìlànà àtijọ́ mọ́, pẹ̀lú boron àti flux mìíràn tí ń ṣe iṣẹ́ òjé.",
-    "leadColour": "A rọ́pò òjé: a gbé àwọn ohun àwọ̀ lọ sórí ìpìlẹ̀ láìní òjé ti {base} àti kaolin, 85 sí 15.",
     "leadGloss": "Kò ní bá dídán, ìmọ́lẹ̀ tàbí àwọ̀ òjé mu gẹ́lẹ́: ẹ retí ìtànná tí ó kéré sí i, àti pé ó lè má mọ́ kedere (clouding) lórí amọ̀ pupa, tàbí kí ó ní crazing (ìfọ́ wẹ́wẹ́). Ẹ dán batch kékeré wò lórí amọ̀ tiyín.",
     "leadSafety": "Àìní òjé nìkan kò sọ glaze di èyí tí kò léwu fún oúnjẹ; ìyẹn sinmi lórí gbogbo fọ́múlà àti ìsun.",
     "leadReplaced": "A ti rọ́pò òjé náà.",
@@ -245,8 +243,7 @@
       "text": "Àwọn wọ̀nyí ń lọ lórí ìpìlẹ̀. A ń fi wọ́n pamọ́ pẹ̀lú ìlànà ṣùgbọ́n wọn kì í ṣe ara UMF. Ẹ yan ohun tí ìwọ̀n kọ̀ọ̀kan wà nínú rẹ̀:",
       "percent": "<b>% ti ìpìlẹ̀</b>: ìdá ọgọ́rùn-ún àpapọ̀ ìpìlẹ̀, bí ọ̀pọ̀lọpọ̀ ìlànà ṣe ń fún wọn: 2 túmọ̀ sí 2% red iron oxide.",
       "parts": "<b>ìpín</b>: ẹ̀yọ ìwọ̀n kan náà bí àwọn ohun èlò, bí ìpín 1 lórí ìpìlẹ̀ flint 3 àti dolomite 2.",
-      "grams": "<b>gíráàmù</b>: ìwúwo kan, nínú batch kan náà bí àwọn ohun èlò.",
-      "count": "Àwọn ẹ̀rọ ìṣirò kan ń ka ohun àwọ̀ mọ́ UMF, àwọn kan kò ṣe bẹ́ẹ̀. Ẹ fi àmì sí <b>Ka ohun àwọ̀ àti àfikún mọ́ ọn</b>, lábẹ́ àkọlé UMF, láti kà wọ́n ní ìwúwo wọn nínú batch, tàbí kí ẹ fi í sílẹ̀ láìní àmì láti fi wé èyí tí kò kà wọ́n. A ń fi ìyàn náà pamọ́ pẹ̀lú ìlànà."
+      "grams": "<b>gíráàmù</b>: ìwúwo kan, nínú batch kan náà bí àwọn ohun èlò."
     },
     "scale": {
       "heading": "Yí ìwọ̀n padà nígbà tí ẹ bá nílò rẹ̀",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide} kì í ṣe oxide tí Glazecalc mọ̀.",
     "together": "Ẹ fún potash (K₂O) àti soda (Na₂O) lọ́tọ̀ọ̀tọ̀, kì í ṣe papọ̀ bí KNaO.",
     "badAmount": "Ìwọ̀n {oxide} kì í ṣe nọ́ńbà 0 tàbí jù bẹ́ẹ̀ lọ.",
-    "noFlux": "Àfojúsùn náà nílò ó kéré tán flux kan, bí CaO, K₂O tàbí Na₂O.",
     "noMaterials": "Ẹ fi ó kéré tán ohun èlò kan kún un láti ṣe ìlànà náà.",
     "noMatch": "Kò sí ọ̀kan nínú àwọn ohun èlò wọ̀nyí tí ó ní èyíkéyìí nínú àwọn oxide àfojúsùn."
   },

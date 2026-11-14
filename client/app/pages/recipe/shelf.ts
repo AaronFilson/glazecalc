@@ -2,7 +2,7 @@ import { RecipeError } from '../../../../lib/recipe/messages';
 import * as shelfLib from '../../../../lib/recipe/shelf';
 import { Additive, RecipeMaterial } from '../../core/models';
 import { Report, TryMaterial, reportText } from './pool';
-import { cautionText, recipeText } from './recipe-messages';
+import { RecipeProblem, cautionText, recipeText } from './recipe-messages';
 
 // Match with what I have (docs/adr/0012): a recipe made again from only the
 // materials the potter has on hand. The match is shared with the server
@@ -31,8 +31,8 @@ export function matchFromShelf(
   try {
     match = shelfLib.matchFromShelf<RecipeMaterial>(lines, shelf, options);
   } catch (error) {
-    // The library says why in a code; the page's error says it in words.
-    throw error instanceof RecipeError ? new Error(recipeText(error)) : error;
+    // The library says why in a code; the page's error says it in words, and keeps the code.
+    throw error instanceof RecipeError ? new RecipeProblem(error) : error;
   }
   return {
     materials: match.materials,

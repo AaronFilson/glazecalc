@@ -176,6 +176,9 @@ describe('options', () => {
     expect(fieldsText({ percentmole: 'percent', fields })).toBe('SiO₂ 68.5%, Al₂O₃ 17%');
     expect(fieldsText({ percentmole: 'molecular', fields })).toBe('SiO₂ : 68.5; Al₂O₃ : 17');
     expect(fieldsText({ fields })).toBe('SiO₂ : 68.5; Al₂O₃ : 17');
+    // As the chemistry reads them, a record kept before the server lower-cased them: 'Percent' is percent.
+    expect(fieldsText({ percentmole: 'Percent', fields })).toBe('SiO₂ 68.5%, Al₂O₃ 17%');
+    expect(fieldsText({ percentmole: ' Molecular ', fields })).toBe('SiO₂ : 68.5; Al₂O₃ : 17');
     // Numbers the reader's way, whether saved as text or as numbers.
     formatLocale.set('de-DE');
     try {

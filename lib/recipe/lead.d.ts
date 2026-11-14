@@ -47,4 +47,14 @@ export function replaceLead<M extends MaterialRecord>(
   region: string,
   options: { base: string; celsius: number; mode: LeadMode } & LeadExtras<M>
 ): Replacement<M>;
+/**
+ * The clay of the 85:15 base that keeps the colour: the recipe's raw clay still sold, a kaolin or a ball clay
+ * first, else the standard China Clay; undefined without either.
+ */
+export function clayFor<L extends MaterialRecord, M extends MaterialRecord>(
+  lines: readonly L[],
+  standard: readonly M[]
+): L | M | undefined;
 export function leadIn(lines: MaterialRecord[]): { unity: number; percent: number };
+/** BaO in the unity formula past the barium caution's figure (0.10 as shown; checks.js bariumSeverity); null to it. */
+export function bariumIn(lines: MaterialRecord[]): { unity: number; likely: boolean } | null;

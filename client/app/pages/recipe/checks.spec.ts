@@ -23,7 +23,9 @@ const additive = (name: string, oxide: string): Additive => ({
   amount: '2',
   unit: 'percent'
 });
-const BASE = [line('Frit', 80, { category: 'frit' }), line('Kaolin', 20, { category: 'clay' })];
+// A raw kaolin loses about 14% of its weight as it fires; one that loses under 2% is calcined (checks.js isRawClay).
+const KAOLIN = { category: 'clay', loi: 14 } as const;
+const BASE = [line('Frit', 80, { category: 'frit' }), line('Kaolin', 20, KAOLIN)];
 const GLOSSY = { CaO: 0.7, Na2O: 0.15, K2O: 0.15, Al2O3: 0.3, B2O3: 0.5, SiO2: 3 };
 
 // The warnings are messages.
@@ -87,7 +89,7 @@ describe('saying what is past a limit', () => {
       line('Fluorspar', 5, { fluorine: true }),
       // A frit that releases a little fluorine is named as such too.
       line('Ferro Frit 3269', 5, { category: 'frit', fritRole: 'alkali', fluorine: true }),
-      line('Kaolin', 25, { category: 'clay' })
+      line('Kaolin', 25, KAOLIN)
     ];
     const warnings = pastLimits({ lines, unity: GLOSSY });
     expect(warnings.some((w) => w.startsWith('Borax dissolves in water'))).toBe(true);

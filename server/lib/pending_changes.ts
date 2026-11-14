@@ -25,6 +25,7 @@
 // When the setting cannot be read, the change waits (fail closed).
 import crypto from 'node:crypto';
 import mongoose, { type Types } from 'mongoose';
+import chemistry from '../../lib/chemistry/index.js';
 import languages from '../../lib/regions/languages.js';
 import AccessToken from '../models/access_token.ts';
 import PendingChange, { PENDING_MINUTES, type PendingStatus } from '../models/pending_change.ts';
@@ -520,9 +521,12 @@ const oxidesOf = (row: Row): Array<[string, number]> => {
   return [];
 };
 
-/** A line's chemistry as the page shows it: "PbO 100%", or in moles for a formula, and its LOI. */
+/**
+ * A line's chemistry as the page shows it: "PbO 100%", or in moles for a formula, and its LOI. Percent or moles
+ * as the chemistry reads them: a line kept before the server lower-cased percentmole may say 'Molecular'.
+ */
 const chemistryText = (row: Row): string => {
-  const unit = row.percentmole === 'molecular' ? ' mol' : '%';
+  const unit = chemistry.oxidesGivenIn(row) === 'percent' ? '%' : ' mol';
   const loi = Number(row.loi) || 0;
   return [...oxidesOf(row).map(([oxide, amount]) => oxide + ' ' + amount + unit), ...(loi ? [`LOI ${loi}%`] : [])].join(
     ', '
@@ -535,7 +539,7 @@ const chemistryKey = (row: Row): string =>
     oxidesOf(row)
       .filter(([, amount]) => amount !== 0)
       .sort(([p], [q]) => (p < q ? -1 : p > q ? 1 : 0)),
-    row.percentmole === 'molecular',
+    chemistry.oxidesGivenIn(row),
     Number(row.loi) || 0
   ]);
 

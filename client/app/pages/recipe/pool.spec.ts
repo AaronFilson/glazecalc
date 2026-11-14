@@ -37,6 +37,7 @@ const selection = (amounts: number[], extra: Partial<Selection> = {}): Selection
   alike: [],
   capped: [],
   countCost: 0,
+  cutShort: false,
   ...extra
 });
 

@@ -18,7 +18,7 @@ assistants can use too. In short, with every change in the sections below:
   with a consent page, connected apps a person can review and revoke, and, if they choose, changes that wait for a yes.
 - **Engineering:** over 3,800 tests in CI on every pull request, with the README's numbers checked against each run;
   CodeQL; an SBOM and signed SLSA provenance on every image; an A+ (120) from Mozilla's HTTP Observatory; the AWS setup
-  as CDK stacks; a load test; and Lighthouse in CI. Fixed lists what the 1.0 tests and security review found.
+  as CDK stacks; a load test; and Lighthouse in CI. Fixed lists what the 1.0 tests, security review and chemistry review found.
 
 ### Added
 
@@ -1680,6 +1680,80 @@ assistants can use too. In short, with every change in the sections below:
     count until its own loaded, or for good if that failed; both are forgotten when the session ends.
   - After a sign-in during which the browser could not open the offline copy's database, the account's own copy
     stayed locked at its later sign-ins until it was turned on again; the next sign-in now shows it.
+- **Found by the 1.0 review of the chemistry** (four reviews against primary sources: CIAAW's atomic weights,
+  Digitalfire, Hesselberth and Roy, Orton's charts and Brongniart's formula; each fixed with a test that fails
+  without the fix):
+  - A substitution whose alumina was as low as the old recipe's still said there was too little: the check for what
+    the old recipe already had compared the wrong way round. It now stays quiet when the new recipe has as much as the
+    old, or nearly.
+  - A material saved with its oxides as "Percent" was worked out as moles. The server now keeps percent or molecular,
+    in lower case, and refuses anything else, and the chemistry reads the two in any case.
+  - Barium had no warning: from BaO 0.2 in the unity formula one now shows beside lead's, and from 0.4, after
+    Digitalfire, it says the glaze is likely to leach. The "Contains lead" warning looked only at the base materials,
+    so lead added as a colorant gave none; it now counts the additives.
+  - Katz's "too little boron" warning came up on lead and alkaline glazes, which melt without boron; it now leaves them
+    out, as the cone check does. A firing given as null was read as 0 °C, so the boron check asked for 2.61 B₂O₃; a
+    firing that is not a number is now unknown.
+  - Colorant oxides count as fluxes, so silica and kaolin with 5% cobalt carbonate came to CoO 1 and SiO₂ 32 without a
+    word. They stay fluxes (ADR 4 says so now), and the unity formula warns when colorants are most of the flux or
+    silica is over 10, which no famous glaze or example reaches.
+  - A potter's own clay and whiting have no category, so the clay checks did not count "My EPK" as clay; a material
+    with no category is now known by its analysis.
+  - The unity formula read "1e1" as 10, "0x10" as 16 and true as 1, though the recipe page calls them invalid, and an
+    LOI or molecular weight it could not read ("43,97") was taken as left out, so a whiting typed with a comma lost its
+    whole LOI. Both are now refused, and an LOI and molecular weight more than half a point apart give a warning.
+  - Material names in Japanese, Chinese or Russian all came to the same empty key, so looking one up found another
+    material; names now keep the letters of every script.
+  - Target & Solve and the tools worked a recipe with no flux at all to a unity formula of zeros, and two formulas with
+    no flux were called close; they now say there is no unity formula, as the recipe page does.
+  - When the work allowed ran out while raw clay was being held, a match could keep the answer with more raw clay
+    without saying it had been cut short; it now says so. A material used in a match could end under its least
+    (about 0.5% of the batch where the app promises at least 1%, in about 1 in 100 solves); every material used now
+    keeps its least.
+  - Target & Solve's recipes could add up to 99.9 or 100.1, about a quarter of them; they now add up to 100. A
+    potter's own material with no oxides became filler under the clay hold, a quarter to half of the batch, and a cap
+    on an amount and a cap on a share together could be broken threefold while the report said it held; both are
+    fixed.
+  - What a material supplies could be named in a different order in Safari than in Chrome and Firefox, and oxides tied
+    in the closeness report in a different order in some languages; both are the same everywhere now. The solver gives
+    a sound answer for a material with no oxides, where it gave NaN.
+  - Suggest amounts' plan ranked choices with no limit on its work, and the tools for AI assistants gave the amounts
+    less work than the page did, so the two could differ; the ranking now stops with the work, and both give the
+    amounts their own.
+  - Paste-in: a long run of spaces froze the import page (50,000 characters, about 14 seconds); lines are now read in
+    linear time. "Silica 1 500 g", with the thousands set apart by a space, was read as a material named "Silica 1" at
+    500 g: where the reader's language writes thousands that way it is now 1,500 g, and elsewhere the page asks. For a
+    reader who writes decimal commas, "Silica,30,5" under a heading row was joined into 30.5; each cell is now its own
+    column.
+  - Paste-in also lost lines ending in a full stop ("Silica 30."), with the Arabic percent sign or thousands mark, a
+    percent sign before the amount ("%20") or the units 克, 公克, 公斤, 千克, 部 and 그램, each splitting the recipe in
+    two; read "Fired at 1220–1260 °C" as 1260 °C, "cone 05½" as 05, "Fire to cone 6" as a material and "Bisque to cone
+    04, glaze fire to cone 6" as cone 04; and matched a long paste's names at about 14 ms a line. All are read right
+    now, ten times faster, and cone 05½, which Orton makes, is a cone everywhere.
+  - The tools for AI assistants refused a cone written "^6", "Δ6" or "C/6", and read "SK 8" asked as an Orton cone as
+    Orton 8; they now read a cone with the app's own reader. "Potassium carbonate" now finds Pearl Ash.
+  - One name meant two materials: the chemistry's built-in formula materials shared eight names with real products in
+    the library, so "Potash Feldspar" was K₂O·Al₂O₃·6SiO₂ on the start page and Potclays 3426 in the calculator. They
+    and kaolin are now named "(theoretical)". Six generic words in paste-in never offered their choice, because a
+    record had the word as a name: that record is now Nepheline Syenite (typical), its old page address goes to the new
+    one, and "Sodium feldspar", "Calcined China Clay" and "Zirconia" offer a choice.
+  - A material's page said the equivalent weight is the grams that hold 1.0 mole of flux even for silica or China Clay,
+    which have none, gave EPK's 9,840 g with no word on why, and called an analysis with no flux "per formula as
+    written"; the figures are unchanged, and the sentences now say which each is, in all 57 languages.
+  - Zirconium's atomic weight is CIAAW 2024's 91.222, not 91.224, and the tests name CIAAW 2024. New regression tests
+    work the README's Leach 4321 out without the library and hold Digitalfire's G1214M to its published unity formula
+    and expansion.
+  - Found again by an independent verification of these fixes, and fixed: paste-in misread names ending in a number
+    where thousands are set apart by a space ("Minspar 200 300 g"), a slow-cool range over the peak, a cone written
+    before "bisque", decimals under a two-column heading, "0.500" as 500, fractions, Arabic percents and headings in
+    other languages, and now asks only when a line is truly ambiguous; blends kept the first corner's chemistry for two
+    lines of one name; shared caps are kept exactly and a cap that cannot be kept is said to be broken; Match and
+    Suggest keep a recipe's own small amounts, add up to its total and keep very small batches; whiting, not
+    fluorspar, brings calcium; a shelf of more than 60 materials is screened to the 40 that matter, so a whole shelf
+    (up to 500) gives a close match; barium is cautioned past BaO 0.10 (Digitalfire's figure) and zinc and the other
+    limits are read as shown; a newly crossed limit is no longer hidden as "already"; tiny amounts are never written
+    "1e-7"; the Stull chart's edges, slurry under a litre, Keep the colour's clay, cone 05½'s source and the no-flux
+    messages are right.
 - **Found by the 1.0 security review of the tools for AI assistants and the OAuth server** (each fixed with a test that
   fails without the fix):
   - The tools that fit amounts could hold the server for everyone, with no account: `solve_target` with 60 of the
@@ -1687,8 +1761,8 @@ assistants can use too. In short, with every change in the sections below:
     30 seconds on a 40-line recipe. A search now does at most about a second's work (`lib/chemistry/fit.js` `WORK`,
     counted, not timed, so the page and the server answer alike) and past it gives the best it found and says so
     (`cutShort`). The same answers come sooner, bit for bit, the famous glazes' versions included (shino from the EU's
-    library: 5 s to 0.7 s). `match_from_materials` and `solve_target` take at most 60 materials (they took 100), a
-    larger shelf is refused in words, and everyone without an account together may have at most ten such searches' work
+    library: 5 s to 0.7 s). `match_from_materials` and `solve_target` take a whole shelf (up to 500 materials; they took 100) within the same
+    work, and everyone without an account together may have at most ten such searches' work
     done a minute.
   - The approval page showed a recipe's lines by name and amount only, so a change that kept "Custer Spar 30" but gave it
     the analysis of lead oxide looked like no change. A line whose chemistry changes now shows its oxides before and

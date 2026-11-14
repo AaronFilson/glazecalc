@@ -63,6 +63,38 @@ describe('lib types', () => {
     expect(problems).to.eql([]);
   });
 
+  it('declares what the solver takes and what a choosing always gives as they are', () => {
+    // The declarations drifted: boundedLeastSquares did not take `normal` (A^T A and A^T b worked out
+    // once, as fit.js passes them), and a selection's cutShort, which select.js always sets, was optional.
+    const index = program.getSourceFile(path.join(LIB, 'chemistry', 'index.d.ts'))!;
+    const exports = checker.getExportsOfModule(checker.getSymbolAtLocation(index)!);
+    const exported = (name: string) => exports.find((symbol) => symbol.name === name)!;
+    const solver = checker.getTypeOfSymbol(exported('boundedLeastSquares'));
+    const [signature] = checker.getSignaturesOfType(solver, ts.SignatureKind.Call);
+    const problem = checker.getTypeOfSymbol(signature!.parameters[0]!);
+    const normal = problem.getProperty('normal');
+    expect(normal, 'boundedLeastSquares takes normal').to.not.equal(undefined);
+    const shape = checker.getNonNullableType(checker.getTypeOfSymbol(normal!));
+    expect(shape.getProperty('gram'), 'normal.gram').to.not.equal(undefined);
+    expect(shape.getProperty('atb'), 'normal.atb').to.not.equal(undefined);
+    const cutShort = checker.getDeclaredTypeOfSymbol(exported('Selection')).getProperty('cutShort')!;
+    expect(cutShort.flags & ts.SymbolFlags.Optional, 'Selection.cutShort is always given').to.equal(0);
+    // And the JavaScript does give it, a boolean, as declared.
+    const chemistry = require(path.join(LIB, 'chemistry', 'index.js')) as {
+      selectMaterials: (lines: object[], target: object) => { cutShort: unknown };
+    };
+    const silica = { name: 'Silica', percentmole: 'percent', loi: 0, fields: [{ name: 'SiO2', amount: 100 }] };
+    const whiting = { name: 'Whiting', percentmole: 'percent', loi: 0, fields: [{ name: 'CaO', amount: 100 }] };
+    const selection = chemistry.selectMaterials(
+      [
+        { material: silica, start: 0 },
+        { material: whiting, start: 0 }
+      ],
+      { CaO: 1, SiO2: 3 }
+    );
+    expect(selection.cutShort).to.be.a('boolean');
+  });
+
   for (const file of files) {
     const name = path
       .relative(LIB, file)

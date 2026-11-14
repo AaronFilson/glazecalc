@@ -50,7 +50,6 @@
     "firedTo": "Žgano do",
     "how": "Način",
     "rebuild": "Sestavi glazuro na novo: ohrani njeno kremenico in glinico, namesto svinca pa bor in druga talila",
-    "keepColour": "Ohrani barvo na osnovi brez svinca: frita in kaolin v razmerju 85 : 15, z barvili iz recepta",
     "fritHeading": "Frita brez svinca za osnovo, od najprimernejše naprej",
     "fritBoron": "({boron} % bora, B₂O₃)",
     "noFrit": "V knjižnici ni nobene frite brez svinca, ki se prodaja v vaši regiji.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Svinca ni mogoče zamenjati: ena od surovin v receptu nima analize, na kateri bi temeljil izračun.",
     "leadRebuiltCone": "Svinec je zamenjan za stožec {cone} na osnovi {base}: kremenica in glinica starega recepta sta ohranjeni, delo svinca pa opravljajo bor in druga talila.",
     "leadRebuilt": "Svinec je zamenjan za žganje pri {firing} na osnovi {base}: kremenica in glinica starega recepta sta ohranjeni, delo svinca pa opravljajo bor in druga talila.",
-    "leadColour": "Svinec je zamenjan: barvila so prenesena na osnovo brez svinca iz frite {base} in kaolina v razmerju 85 : 15.",
     "leadGloss": "Sijaja, prozornosti in barve svinčene glazure ne bo dosegla povsem: pričakujte manj leska ter morebitno motnost na rdeči glini ali lasaste razpoke. Preizkusite majhno mešanico na svoji glini.",
     "leadSafety": "Glazura samo zato, ker nima svinca, še ni primerna za stik z živili; to je odvisno od celotne formule in žganja.",
     "leadReplaced": "Svinec je zamenjan.",
@@ -245,8 +243,7 @@
       "text": "Ti se dodajo dodatno k osnovi. Shranijo se z receptom, vendar niso del Segerjeve formule. Izberite, v kateri enoti je posamezna količina:",
       "percent": "<b>% osnove</b>: odstotek celotne osnove, kot jih navaja večina receptov: 2 pomeni 2 % rdečega železovega oksida.",
       "parts": "<b>deli</b>: ista enota kot pri surovinah, na primer 1 del na osnovo iz 3 delov kremenjaka<en>flint</en> in 2 delov dolomita.",
-      "grams": "<b>grami</b>: masa v isti mešanici kot surovine.",
-      "count": "Nekateri kalkulatorji barvila upoštevajo v Segerjevi formuli<en>unity molecular formula</en>, drugi ne. Označite <b>Upoštevaj barvila in dodatke</b> pod naslovom Segerjeva formula, da se upoštevajo z njihovo maso v mešanici, ali pustite polje neoznačeno, da primerjate s kalkulatorjem, ki jih ne upošteva. Izbira se shrani z receptom."
+      "grams": "<b>grami</b>: masa v isti mešanici kot surovine."
     },
     "scale": {
       "heading": "Preračun po potrebi",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide} ni oksid, ki ga Glazecalc pozna.",
     "together": "Kalij (K₂O) in natrij (Na₂O) navedite ločeno, ne skupaj kot KNaO.",
     "badAmount": "Količina za {oxide} ni število 0 ali več.",
-    "noFlux": "Cilj potrebuje vsaj eno talilo, na primer CaO, K₂O ali Na₂O.",
     "noMaterials": "Dodajte vsaj eno surovino, iz katere bo sestavljen recept.",
     "noMatch": "Nobena od teh surovin nima nobenega od oksidov cilja."
   },

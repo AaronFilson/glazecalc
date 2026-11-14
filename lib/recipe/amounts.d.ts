@@ -27,6 +27,8 @@ export function isAmount(value: Amount): boolean;
 export function amountOf(value: Amount): number;
 export function totalOf(values: Amount[]): number;
 export function formatAmount(value: number, decimals: number): string;
+/** A number as an amount is saved: a plain decimal ("0.0000001", never "1e-7") that reads back as the same number. */
+export function plainAmount(value: number): string;
 export function wholePartsFactor(amounts: number[]): number;
 export function formatScaled(value: number): string;
 export function rebase(

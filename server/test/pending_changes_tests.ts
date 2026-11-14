@@ -13,7 +13,8 @@ import {
   approve,
   confirmSettingOf,
   confirmationFor,
-  digestOf
+  digestOf,
+  fieldChanges
 } from '../lib/pending_changes.ts';
 import { countTokenDelete, countTokenWrite, TOKEN_DELETES_PER_HOUR, TOKEN_WRITE_LIMITS } from '../lib/rate_limit.ts';
 import { permissionOf } from '../lib/require_scope.ts';
@@ -107,6 +108,29 @@ describe('confirm before changes: the page', () => {
     for (const path of ['/confirm', '/confirm/', '/confirm/a/b', '/confirm/short', '/confirm/' + 'x'.repeat(23)]) {
       expect(isPage(path), path).to.equal(false);
     }
+  });
+});
+
+describe('confirm before changes: a line’s chemistry', () => {
+  it('is in percent or moles as the chemistry reads it, whatever the case it was kept in', () => {
+    const line = (percentmole: string) => ({
+      name: 'Old frit',
+      amount: '10',
+      fields: [{ name: 'PbO', amount: '1' }],
+      percentmole
+    });
+    // Kept before the server lower-cased percentmole: 'Molecular' is moles, and 'Percent' percent.
+    expect(fieldChanges({ materials: [line('Molecular')] }, null)).to.deep.equal([
+      { field: 'materials', after: 'Old frit 10 (PbO 1 mol)' }
+    ]);
+    expect(fieldChanges({ materials: [line('Percent')] }, null)).to.deep.equal([
+      { field: 'materials', after: 'Old frit 10 (PbO 1%)' }
+    ]);
+    // The same chemistry kept in another case is no change; an analysis a tool gives is in percent.
+    expect(fieldChanges({ materials: [line('molecular')] }, { materials: [line('Molecular')] })).to.deep.equal([]);
+    expect(fieldChanges({ materials: [{ name: 'Lead', amount: '5', analysis: { PbO: 100 } }] }, null)).to.deep.equal([
+      { field: 'materials', after: 'Lead 5 (PbO 100%)' }
+    ]);
   });
 });
 
@@ -1164,6 +1188,26 @@ describe('confirm before changes: what the page shows of a line’s chemistry an
       (change: Json) => change.field === 'materials'
     );
     expect(created.after).to.equal('Silica 70\nWhiting 30 (PbO 100%)');
+  });
+
+  it('shows a trace of a material or a colorant as the tool saves it, so the same lines show no change', async () => {
+    // The page wrote String(0.0000001), "1e-7", where the tool saves "0.0000001": the same lines again showed a
+    // change, and a new recipe's lines were not as they would be saved.
+    const traced = [...LINER, { material: 'Talc', amount: 0.0000001 }];
+    const made = await callTool(write, 'create_recipe', { title: 'Liner', lines: traced });
+    const id = JSON.parse(textOf(made.body)).id as string;
+    await setting(mine.token, 'all');
+    const same = await callTool(write, 'update_recipe', { id, lines: traced });
+    expect((await pageOf(pendingIdIn(textOf(same.body)))).changes).to.deep.equal([]);
+    const fresh = await callTool(write, 'create_recipe', {
+      title: 'Another',
+      lines: traced,
+      colorants: [{ name: 'Cobalt Carbonate', amount: 0.0000001 }]
+    });
+    const changes = (await pageOf(pendingIdIn(textOf(fresh.body)))).changes as Json[];
+    const after = (field: string) => changes.find((change) => change.field === field)!.after as string;
+    expect(after('materials').split('\n').at(-1)).to.equal('Talc 0.0000001');
+    expect(after('additives')).to.equal('Cobalt Carbonate 0.0000001');
   });
 
   it('shows a change to a line’s chemistry made on the REST routes', async () => {

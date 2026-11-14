@@ -13,6 +13,7 @@ import {
   compareKeys,
   compareMessage,
   compareSegment,
+  flatten,
   messageFiles,
   numbersIn
 } from '../../scripts/i18n-check.mjs';
@@ -834,5 +835,18 @@ describe('i18n:sources and uncommitted translations', () => {
     } finally {
       rmSync(outside, { recursive: true, force: true });
     }
+  });
+});
+
+// Irish (docs/translations/ga.md): a placeholder cannot be mutated, so a name never follows a word that mutates
+// it (i, de, do, le, ar …) nor stands in the genitive after a noun (anailís {name}); a generic noun takes the
+// mutation, and the name follows it (san ábhar {name}, den ábhar {name}, anailís an ábhair {name}).
+describe('Irish on the reference pages', () => {
+  it('puts no name straight after a word that mutates it, and gives flux its genitive, flosca', () => {
+    const file = path.resolve(import.meta.dirname, '..', '..', 'client', 'public', 'i18n', 'reference', 'ga.json');
+    const messages = Object.entries(flatten(JSON.parse(readFileSync(file, 'utf8'))) as Record<string, string>);
+    const mutated = /(?:^|\s)(?:i|de|do|le|ar|ó|faoi|roimh|thar|trí|anailís)\s+\{name\}/;
+    expect(messages.filter(([, text]) => mutated.test(text)).map(([key]) => key)).to.eql([]);
+    expect(messages.filter(([, text]) => /mól de flosc/.test(text)).map(([key]) => key)).to.eql([]);
   });
 });

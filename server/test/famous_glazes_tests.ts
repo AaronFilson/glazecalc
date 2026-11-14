@@ -1,9 +1,15 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import chemistry from '../../lib/chemistry/index.js';
+import type { Meter } from '../../lib/chemistry/index.js';
 import * as famous from '../../lib/famous-glazes.js';
 import type { FamousGlaze } from '../../lib/famous-glazes.js';
+import * as famousVersions from '../../lib/famous-versions.js';
+import type { GlazeVersion, ResolvedGlaze } from '../../lib/famous-versions.js';
 import { FAMOUS_GLAZE_PAGES, famousTranslatedIn } from '../../lib/pages.js';
 import { pageSources } from '../../lib/page-dates.js';
+import recipe from '../../lib/recipe/index.js';
+import type { MaterialRecord } from '../../lib/recipe/index.js';
 import { publishedFile, publishedFiles } from '../../scripts/famous-glazes.mjs';
 import { PUBLIC_PAGES, isAppOnlyPage, isPage, pageHtml, prerenderedKey, sitemap } from '../lib/pages.ts';
 import { expect } from './support/app.ts';
@@ -18,8 +24,20 @@ const HTML =
 const glazes = famous.loadGlazes();
 const fixture = famous.loadGlazes(famous.FIXTURE_DIR).find((glaze) => glaze.slug === 'fixture-celadon')!;
 const copy = (glaze: FamousGlaze): FamousGlaze => JSON.parse(JSON.stringify(glaze));
+/** The library's regions, and '' for a lead-free version's own materials: every choice the page offers. */
+const CHOICES = ['', ...famousVersions.VERSION_REGIONS];
 
-describe('famous glazes: the data', () => {
+/**
+ * The files as the build writes them, worked out once for the tests here: the versions' searches take a few
+ * seconds. The fixture is left out of them, as from the site.
+ */
+let built: Record<string, string> | undefined;
+const builtFiles = () => (built ??= publishedFiles([...glazes, fixture]));
+
+describe('famous glazes: the data', function () {
+  // The first test to read the built files waits for the versions' searches, longer under coverage.
+  this.timeout(120_000);
+
   it('has a sound file for each glaze, its materials all found and its sources all listed', () => {
     expect(glazes.length).to.be.above(0);
     for (const glaze of [...glazes, fixture]) expect(famous.glazeProblems(glaze), glaze.slug).to.eql([]);
@@ -129,6 +147,35 @@ describe('famous glazes: the data', () => {
     );
   });
 
+  it('gives no colorant-flux or silica-high warning on any glaze: its recipe, with its colorants, or its analysis', () => {
+    const quiet = (lines: Array<{ material: unknown; amount: number | string }>, label: string) => {
+      const codes = chemistry.calculateUMF(lines as never).warningCodes.map((w) => w.code);
+      expect(codes, label).to.not.include.members(['colorant-flux', 'silica-high']);
+    };
+    type Line = { record: { fields?: unknown[]; noChemistry?: boolean } | undefined; amount: number | string };
+    for (const glaze of [...glazes, fixture]) {
+      const resolved = famous.resolveGlaze(glaze) as {
+        recipe: { lines: Line[]; additives: Line[] } | null;
+        analysis: { oxides: Record<string, number> } | null;
+      };
+      if (resolved.recipe) {
+        const base = resolved.recipe.lines.map((line) => ({ material: line.record, amount: line.amount }));
+        quiet(base, glaze.slug);
+        const total = base.reduce((sum, line) => sum + Number(line.amount), 0);
+        const colorants = resolved.recipe.additives
+          .filter((line) => line.record?.fields?.length && !line.record.noChemistry)
+          .map((line) => ({ material: line.record, amount: (Number(line.amount) * total) / 100 }));
+        quiet([...base, ...colorants], glaze.slug + ' with its colorants');
+      }
+      if (resolved.analysis) {
+        const analysis = Object.fromEntries(
+          Object.entries(resolved.analysis.oxides).filter(([oxide]) => oxide in chemistry.OXIDE_GROUPS)
+        );
+        quiet([{ material: { name: glaze.slug, analysis }, amount: 100 }], glaze.slug + ' analysis');
+      }
+    }
+  });
+
   it('resolves each material to its full record for the page', () => {
     const resolved = famous.resolveGlaze(fixture);
     expect(resolved.recipe.lines[0].record.fields.length).to.be.above(0);
@@ -140,7 +187,7 @@ describe('famous glazes: the data', () => {
   });
 
   it("writes one file per language, each with the glazes' prose in English and that language only", () => {
-    const files = publishedFiles([...glazes, fixture]);
+    const files = builtFiles();
     expect(Object.keys(files)).to.include.members(['en.json', 'de.json', 'ta.json']);
     expect(files).not.to.have.property('published.json');
     const iznikFile = glazes.find((g) => g.slug === 'iznik')!;
@@ -163,6 +210,193 @@ describe('famous glazes: the data', () => {
     expect(famous.glazeTranslatedIn(fixture, 'en')).to.equal(true);
     expect(famous.glazeTranslatedIn(fixture, 'de')).to.equal(true);
     expect(famous.glazeTranslatedIn(fixture, 'fr')).to.equal(false);
+  });
+});
+
+describe('famous glazes: the versions', function () {
+  // Every published glaze's versions are searched for twice in the test that compares them: about 10 seconds,
+  // longer under coverage.
+  this.timeout(180_000);
+
+  /** A glaze as a built file gives it (lib/famous-glazes.js resolveGlaze), with its versions. */
+  type Shipped = ResolvedGlaze & { versions: Record<string, GlazeVersion> };
+  const shipped = (name = 'en.json'): Shipped[] => JSON.parse(builtFiles()[name]!);
+
+  it("ships a version of every published glaze for each region, and İznik's from its proposal's own materials", () => {
+    const names = new Set(famousVersions.standardMaterials().map((material) => material.name));
+    const english = shipped();
+    expect(english.map((glaze) => [glaze.slug, Object.keys(glaze.versions)])).to.eql([
+      ['iznik', CHOICES],
+      ['oribe', famousVersions.VERSION_REGIONS],
+      ['shino', famousVersions.VERSION_REGIONS]
+    ]);
+    for (const glaze of english) {
+      for (const [library, version] of Object.entries(glaze.versions)) {
+        const label = `${glaze.slug} ${library || 'proposal'}`;
+        const total = version.lines.reduce((sum, [, amount]) => sum + amount, 0);
+        expect(total, label).to.be.closeTo(100, 0.5);
+        for (const [name, amount] of version.lines) {
+          expect(names.has(name), `${label}: ${name}`).to.equal(true);
+          expect(amount, `${label}: ${name}`).to.be.above(0);
+        }
+        expect(['close', 'fair', 'poor'], label).to.include(version.verdict);
+      }
+    }
+    const prefer = glazes.find((glaze) => glaze.slug === 'iznik')!.leadFree!.prefer!;
+    expect(english[0]!.versions['']!.lines.every(([name]) => prefer.includes(name))).to.equal(true);
+    // Worked out once, for every language's file alike.
+    const versionsIn = (name: string) => shipped(name).map((glaze) => glaze.versions);
+    for (const name of ['de.json', 'ja.json', 'ta.json']) expect(versionsIn(name), name).to.eql(versionsIn('en.json'));
+  });
+
+  // As the page worked a version out in the browser until 2026-11-13 (client/app/pages/famous-glazes/famous-glaze.ts
+  // then), from the glaze as its file gives it: the target (the native recipe's unity formula, or a lead glaze's
+  // analysis with its lead's share of the fluxes handed to others), the materials offered (a region's base
+  // materials as the app's bundle has them, or the proposal's own) and the solve, on the meter given. Kept apart
+  // from lib/famous-versions.js, which does it for the build now, so that a change there that would change what a
+  // page shows is seen here.
+  const BASE_KINDS = ['feldspar', 'clay', 'frit', 'boron', 'flux', 'silica', 'alumina'];
+  const isFlux = (oxide: string) => ['R2O', 'RO'].includes(chemistry.OXIDE_GROUPS[oxide]!);
+  const STANDARD: MaterialRecord[] = fs
+    .readFileSync('data/materials.ndjson', 'utf8')
+    .split('\n')
+    .filter((line) => line.trim())
+    .map((line) => {
+      const { _id, ...rest } = JSON.parse(line);
+      return { ...rest, _id: typeof _id === 'string' ? _id : _id.$oid };
+    });
+  const pageTarget = (glaze: Shipped): Record<string, number> | null => {
+    if (!glaze.lead) {
+      if (!glaze.recipe) return null;
+      return chemistry.calculateUMF(glaze.recipe.lines.map((line) => ({ material: line.record, amount: line.amount })))
+        .umf;
+    }
+    if (!glaze.analysis || !glaze.leadFree) return null;
+    const colorants = new Set(
+      glaze.leadFree.additives.flatMap((line) => (line.record.fields ?? []).map((field) => field.name))
+    );
+    const base = Object.fromEntries(Object.entries(glaze.analysis.oxides).filter(([oxide]) => !colorants.has(oxide)));
+    const target = chemistry.leadFreeTarget(recipe.targetOf({ kind: 'analysis', oxides: base }).moles, {
+      celsius: glaze.leadFree.celsius
+    });
+    const fluxes = Object.entries(target).reduce((sum, [oxide, amount]) => (isFlux(oxide) ? sum + amount : sum), 0);
+    return Object.fromEntries(Object.entries(target).map(([oxide, amount]) => [oxide, amount / fluxes]));
+  };
+  /** The lines the page drew, each amount as text, and how near they came; null where it drew none. */
+  const pageVersion = (glaze: Shipped, library: string, meter: Meter) => {
+    const target = pageTarget(glaze);
+    const offered: MaterialRecord[] = library
+      ? STANDARD.filter(
+          (material) =>
+            BASE_KINDS.includes(material.category ?? '') &&
+            !material.soluble &&
+            recipe.suggestable(material, { region: library })
+        )
+      : [...(glaze.leadFree?.prefer ?? [])];
+    if (!target || !offered.length) return null;
+    try {
+      const solved = recipe.solveTarget(
+        { kind: 'unity', oxides: target },
+        offered.map((material) => ({ material, must: false })),
+        { meter }
+      );
+      return {
+        lines: solved.materials.map((material) => [material.name, material.amount]),
+        verdict: solved.report.closeness!.verdict
+      };
+    } catch {
+      return null;
+    }
+  };
+  /** A shipped version as the page draws it: each amount as text. */
+  const drawn = (version: GlazeVersion | undefined) =>
+    version ? { lines: version.lines.map(([name, amount]) => [name, String(amount)]), verdict: version.verdict } : null;
+
+  it('ships for every published glaze and region the version a fresh search makes, and the one the page made', () => {
+    let compared = 0;
+    let asTheBrowserMadeIt = 0;
+    for (const glaze of shipped()) {
+      for (const library of CHOICES) {
+        const label = `${glaze.slug} ${library || 'proposal'}`;
+        // Fresh, as the build searches: with no bound on the work.
+        const fresh = pageVersion(glaze, library, chemistry.newMeter(Infinity));
+        expect(drawn(glaze.versions[library]), label).to.eql(fresh);
+        compared++;
+        // As the browser searched, within the library's bound (lib/chemistry/fit.js WORK). A search it did not
+        // cut short is the same search, step for step: none was cut on 2026-11-13 (Shino from the UK's materials
+        // came nearest, at 0.55 of the bound), so every page shows what it showed. One that a later glaze's
+        // search would have cut short is shipped in full.
+        const meter = chemistry.newMeter();
+        const browser = pageVersion(glaze, library, meter);
+        if (!meter.cut) {
+          expect(browser, label).to.eql(fresh);
+          asTheBrowserMadeIt++;
+        }
+      }
+    }
+    expect(compared).to.equal(shipped().length * CHOICES.length);
+    expect(asTheBrowserMadeIt).to.be.above(0);
+  });
+
+  it('stops the build for a version whose search would be cut short, naming the glaze and the materials', () => {
+    const shino = glazes.find((glaze) => glaze.slug === 'shino')!;
+    // The build's searches have no bound; with one far too small, every search is cut short.
+    expect(() => publishedFiles([shino], { work: 1 })).to.throw(
+      /^A glaze marked published has a version to fix:\n {2}shino: its version from the US library would be cut short\n/
+    );
+  });
+
+  it('stops the build for a published glaze with a version that cannot be made, naming why', () => {
+    // Known by its analysis alone, with no lead: a version aims at a recipe's unity formula, or at a lead glaze's
+    // analysis made lead-free, so this one has nothing to aim at. It meets the bar all the same.
+    const analysisOnly = {
+      ...copy(fixture),
+      fixture: false,
+      analysis: { oxides: { SiO2: 70, Al2O3: 15, CaO: 10, K2O: 5 }, sources: ['T2'] }
+    };
+    delete analysisOnly.recipe;
+    expect(famous.publishProblems(analysisOnly)).to.eql([]);
+    expect(() => publishedFile([analysisOnly])).to.throw(
+      /fixture-celadon: no version from the US library: nothing to aim at/
+    );
+    // The solver's refusal, by its code: no material offered has any of the glaze's oxides.
+    const tin = {
+      name: 'Tin',
+      category: 'silica',
+      percentmole: 'molecular',
+      loi: 0,
+      fields: [{ name: 'SnO2', amount: 1 }]
+    } as MaterialRecord;
+    const resolved = famous.resolveGlaze(fixture);
+    const refused = famousVersions.glazeVersions(resolved, { materials: [tin] });
+    expect(refused.versions).to.eql({});
+    expect(refused.problems).to.include('fixture-celadon: no version from the EU library (solve.noMatch)');
+    // And none offered.
+    expect(famousVersions.glazeVersions(resolved, { materials: [] }).problems).to.include(
+      'fixture-celadon: no version from the JP library: no materials offered'
+    );
+  });
+
+  it("aims a lead glaze's version at its analysis with no lead and boron for its firing, from a region's base materials", () => {
+    const iznik = famous.resolveGlaze(glazes.find((glaze) => glaze.slug === 'iznik')!);
+    const target = famousVersions.targetUnity(iznik)!;
+    expect(target['PbO']).to.equal(undefined);
+    expect(target['SnO2']).to.equal(undefined);
+    expect(target['B2O3']).to.be.above(0.3);
+    expect(famousVersions.targetUnity({ ...iznik, analysis: null })).to.equal(null);
+    expect(famousVersions.targetUnity({ ...iznik, leadFree: null })).to.equal(null);
+    const offered = famousVersions.offeredIn(iznik, 'US');
+    expect(offered.length).to.be.above(10);
+    for (const material of offered) {
+      expect(BASE_KINDS, material.name).to.include(material.category);
+      expect(material.soluble, material.name).to.not.equal(true);
+      expect(recipe.hasLead(material), material.name).to.equal(false);
+    }
+    // With no region chosen, the proposal's own materials; a glaze with no lead-free version has none.
+    expect(famousVersions.offeredIn(iznik, '').map((material) => material.name)).to.eql(
+      iznik.leadFree.prefer.map((material: MaterialRecord) => material.name)
+    );
+    expect(famousVersions.offeredIn(famous.resolveGlaze(fixture), '')).to.eql([]);
   });
 });
 

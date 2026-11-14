@@ -155,17 +155,19 @@
           "
         />
       </p>
-      <div class="recipe-swap-buttons">
-        <button
-          id="replace-lead"
-          type="button"
-          class="btn btn-light border btn-sm"
-          [attr.aria-expanded]="!!swaps().leadQuestion()"
-          (click)="swaps().askReplaceLead()"
-        >
-          {{ t('recipe.page.replaceLead') }}
-        </button>
-      </div>
+      @if (swaps().leadInMaterials()) {
+        <div class="recipe-swap-buttons">
+          <button
+            id="replace-lead"
+            type="button"
+            class="btn btn-light border btn-sm"
+            [attr.aria-expanded]="!!swaps().leadQuestion()"
+            (click)="swaps().askReplaceLead()"
+          >
+            {{ t('recipe.page.replaceLead') }}
+          </button>
+        </div>
+      }
       @if (swaps().leadQuestion(); as question) {
         <section class="recipe-suggest" aria-labelledby="lead-heading">
           <h4 id="lead-heading" tabindex="-1">{{ t('recipe.page.replaceHeading') }}</h4>
@@ -211,7 +213,7 @@
                 (change)="swaps().chooseLeadMode('colour')"
               />
               <label class="form-check-label" for="lead-mode-colour">
-                {{ t('recipe.page.keepColour') }}
+                {{ t('recipe.page.keepColour', { clay: swaps().colourClay() }) }}
               </label>
             </div>
           </fieldset>
@@ -280,6 +282,15 @@
         </section>
       }
     </div>
+  }
+  @if (swaps().bariumAmount(); as barium) {
+    <p class="recipe-swap recipe-barium" role="note">
+      @if (barium.likely) {
+        <gc-rich [text]="t('recipe.page.containsBariumLikely', { unity: (barium.unity | gcFixed: 2) })" />
+      } @else {
+        <gc-rich [text]="t('recipe.page.containsBarium', { unity: (barium.unity | gcFixed: 2) })" />
+      }
+    </p>
   }
   @if (swaps().hasLines()) {
     <div class="recipe-shelf">

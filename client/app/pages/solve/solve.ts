@@ -1,8 +1,10 @@
-import type { Closeness } from '../../../../lib/chemistry';
+import { MESSAGES } from '../../../../lib/chemistry';
+import type { ChemistryError, Closeness } from '../../../../lib/chemistry';
 import type { FiringBand } from '../../../../lib/recipe/limits';
 import { RecipeError } from '../../../../lib/recipe/messages';
 import * as solveLib from '../../../../lib/recipe/solve';
 import { RecipeMaterial } from '../../core/models';
+import { chemistryText } from '../../i18n/coded';
 import { Report, TryMaterial, reportText } from '../recipe/pool';
 import { cautionText, recipeText } from '../recipe/recipe-messages';
 
@@ -50,8 +52,13 @@ export function solve(run: SolveRun): Solved {
       { avoid: run.avoid, uncapped: run.uncapped }
     );
   } catch (error) {
-    // The library says why in a code; the page says it in words.
-    throw error instanceof RecipeError ? new SolveProblem(recipeText(error), error.code) : error;
+    // The library says why in a code; the page says it in words. The chemistry's own too: no flux in
+    // what the materials chosen bring.
+    if (error instanceof RecipeError)
+      throw new SolveProblem(recipeText(error), error.code, error.params?.['of'] === 'offered');
+    const coded = error as ChemistryError;
+    if (coded?.code && coded.code in MESSAGES) throw new SolveProblem(chemistryText(coded), coded.code);
+    throw error;
   }
   return {
     materials: solved.materials,
@@ -63,11 +70,12 @@ export function solve(run: SolveRun): Solved {
   };
 }
 
-/** Why a target could not be solved, in words, with the library's code. */
+/** Why a target could not be solved, in words, with the library's code, and whether it is the materials'. */
 export class SolveProblem extends Error {
   constructor(
     message: string,
-    readonly code: string
+    readonly code: string,
+    readonly ofMaterials = false
   ) {
     super(message);
   }

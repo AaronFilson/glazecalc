@@ -50,7 +50,6 @@
     "firedTo": "Gebrannt auf",
     "how": "Vorgehen",
     "rebuild": "Glasur neu aufbauen: Kieselsäure und Tonerde behalten, mit Bor und anderen Flussmitteln anstelle des Bleis",
-    "keepColour": "Die Farbe auf einer bleifreien Grundglasur behalten: Fritte und Kaolin im Verhältnis 85 zu 15, mit den Färbemitteln des Rezepts",
     "fritHeading": "Bleifreie Fritte als Grundlage, die beste zuerst",
     "fritBoron": "({boron} % Bor, B₂O₃)",
     "noFrit": "Die Bibliothek enthält keine bleifreie Fritte, die in Ihrer Region verkauft wird.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Das Blei lässt sich nicht ersetzen: Ein Rohstoff im Rezept hat keine Analyse, mit der sich rechnen lässt.",
     "leadRebuiltCone": "Blei ersetzt für Kegel {cone} auf Basis von {base}: Kieselsäure und Tonerde des alten Rezepts beibehalten, Bor und andere Flussmittel übernehmen die Aufgabe des Bleis.",
     "leadRebuilt": "Blei ersetzt für {firing} auf Basis von {base}: Kieselsäure und Tonerde des alten Rezepts beibehalten, Bor und andere Flussmittel übernehmen die Aufgabe des Bleis.",
-    "leadColour": "Blei ersetzt: die Färbemittel auf eine bleifreie Grundglasur aus {base} und Kaolin übertragen, im Verhältnis 85 zu 15.",
     "leadGloss": "Die Glasur wird Glanz, Klarheit oder Farbe einer Bleiglasur nicht genau erreichen: Rechnen Sie mit weniger Brillanz und möglicherweise mit Schleierbildung über rotem Ton oder mit Haarrissen. Testen Sie einen kleinen Ansatz auf Ihrer eigenen Tonmasse.",
     "leadSafety": "Dass eine Glasur kein Blei enthält, macht sie allein noch nicht lebensmittelgeeignet; das hängt von der gesamten Formel und vom Brand ab.",
     "leadReplaced": "Das Blei ist ersetzt.",
@@ -245,8 +243,7 @@
       "text": "Sie kommen zusätzlich zur Grundglasur hinzu. Sie werden mit dem Rezept gespeichert, sind aber nicht Teil der Segerformel. Wählen Sie, in welcher Einheit jede Menge angegeben ist:",
       "percent": "<b>% der Grundglasur</b>: ein Prozentsatz der Gesamtmenge der Grundglasur, wie die meisten Rezepte sie angeben: 2 bedeutet 2 % Eisenoxid rot.",
       "parts": "<b>Teile</b>: dieselbe Einheit wie bei den Rohstoffen, etwa 1 Teil auf eine Grundglasur aus 3 Teilen Flint und 2 Teilen Dolomit.",
-      "grams": "<b>Gramm</b>: ein Gewicht, im selben Ansatz wie die Rohstoffe.",
-      "count": "Manche Rechner zählen Färbemittel in der Segerformel mit, andere nicht. Kreuzen Sie unter der Überschrift „Segerformel“ <b>Färbemittel und Zusätze mitzählen</b> an, um sie mit ihrem Gewicht im Ansatz mitzuzählen, oder lassen Sie das Kästchen leer, um mit einem Rechner zu vergleichen, der sie nicht mitzählt. Die Wahl wird mit dem Rezept gespeichert."
+      "grams": "<b>Gramm</b>: ein Gewicht, im selben Ansatz wie die Rohstoffe."
     },
     "scale": {
       "heading": "Bei Bedarf umrechnen",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide} ist kein Oxid, das Glazecalc kennt.",
     "together": "Geben Sie Pottasche (K₂O) und Soda (Na₂O) getrennt an, nicht zusammen als KNaO.",
     "badAmount": "Die Menge von {oxide} ist keine Zahl ab 0.",
-    "noFlux": "Das Ziel braucht mindestens ein Flussmittel, etwa CaO, K₂O oder Na₂O.",
     "noMaterials": "Fügen Sie mindestens einen Rohstoff hinzu, aus dem das Rezept erstellt wird.",
     "noMatch": "Keiner dieser Rohstoffe enthält eines der Oxide des Ziels."
   },

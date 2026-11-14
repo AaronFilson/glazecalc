@@ -3,6 +3,7 @@ import chemistry from '../../lib/chemistry/index.js';
 import type { ChemistryError, MaterialField, MaterialInput } from '../../lib/chemistry/index.js';
 import standardData from '../../data/index.js';
 import library from '../../lib/recipe/library.js';
+import paste from '../../lib/recipe/paste.js';
 
 const expect = chai.expect;
 const calculateUMF = chemistry.calculateUMF;
@@ -71,14 +72,61 @@ const atomsIn = (formula: string, k = 1): Record<string, number> => {
 const massOf = (atoms: Record<string, number>): number =>
   Object.entries(atoms).reduce((mass, [element, n]) => mass + ATOMIC_WEIGHTS[element] * n, 0);
 
+// The reference data: CIAAW's abridged standard atomic weights of 2024, as printed there with their
+// uncertainty (https://www.ciaaw.org/abridged-atomic-weights.htm). Zirconium's was revised in 2024.
+const CIAAW_2024: Record<string, string> = {
+  H: '1.0080 ± 0.0002',
+  Li: '6.94 ± 0.06',
+  B: '10.81 ± 0.02',
+  C: '12.011 ± 0.002',
+  O: '15.999 ± 0.001',
+  Na: '22.990 ± 0.001',
+  Mg: '24.305 ± 0.002',
+  Al: '26.982 ± 0.001',
+  Si: '28.085 ± 0.001',
+  P: '30.974 ± 0.001',
+  S: '32.06 ± 0.02',
+  K: '39.098 ± 0.001',
+  Ca: '40.078 ± 0.004',
+  Ti: '47.867 ± 0.001',
+  V: '50.942 ± 0.001',
+  Cr: '51.996 ± 0.001',
+  Mn: '54.938 ± 0.001',
+  Fe: '55.845 ± 0.002',
+  Co: '58.933 ± 0.001',
+  Ni: '58.693 ± 0.001',
+  Cu: '63.546 ± 0.003',
+  Zn: '65.38 ± 0.02',
+  Sr: '87.62 ± 0.01',
+  Zr: '91.222 ± 0.003',
+  Sn: '118.71 ± 0.01',
+  Sb: '121.76 ± 0.01',
+  Ba: '137.33 ± 0.01',
+  Ce: '140.12 ± 0.01',
+  Pr: '140.91 ± 0.01',
+  Pb: '207.2 ± 1.1'
+};
+
 describe('glaze chemistry', () => {
   describe('molar masses', () => {
-    it('should derive oxide molar masses from atomic weights', () => {
+    it("should use CIAAW 2024's standard atomic weights, as its abridged table rounds them", () => {
+      expect(Object.keys(chemistry.ATOMIC_WEIGHTS).sort()).to.eql(Object.keys(CIAAW_2024).sort());
+      for (const [element, printed] of Object.entries(CIAAW_2024)) {
+        const [value, uncertainty] = printed.split(' ± ');
+        const places = value.split('.')[1]?.length ?? 0;
+        // Ba, Ce and Pr are a place longer, as in CIAAW's full table: the same once rounded.
+        expect(Number(chemistry.ATOMIC_WEIGHTS[element].toFixed(places)), element).to.equal(Number(value));
+        expect(chemistry.ATOMIC_WEIGHTS[element], element).to.be.closeTo(Number(value), Number(uncertainty));
+      }
+    });
+
+    it('should derive oxide molar masses from atomic weights (CIAAW 2024)', () => {
       expect(MW.SiO2).to.be.closeTo(60.083, 0.001);
       expect(MW.Al2O3).to.be.closeTo(101.961, 0.001);
       expect(MW.K2O).to.be.closeTo(94.195, 0.001);
       expect(MW.CaO).to.be.closeTo(56.077, 0.001);
       expect(MW.B2O3).to.be.closeTo(69.617, 0.001);
+      expect(MW.ZrO2).to.be.closeTo(123.22, 0.001);
     });
   });
 
@@ -118,7 +166,12 @@ describe('glaze chemistry', () => {
     });
 
     it('should calculate a Leach 4321 celadon base', () => {
-      const result = calculateUMF({ 'Potash Feldspar': 40, Silica: 30, Whiting: 20, Kaolin: 10 });
+      const result = calculateUMF({
+        'Potash Feldspar (theoretical)': 40,
+        Silica: 30,
+        Whiting: 20,
+        'Kaolin (theoretical)': 10
+      });
       expect(result.umf.K2O).to.be.closeTo(0.2645, 0.0001);
       expect(result.umf.CaO).to.be.closeTo(0.7355, 0.0001);
       expect(result.umf.Al2O3).to.be.closeTo(0.4071, 0.0001);
@@ -130,7 +183,12 @@ describe('glaze chemistry', () => {
 
     it("should calculate the expansion as Digitalfire and Glazy do: Leach 4321's 7.49", () => {
       // Glazy's help works this glaze through to 7.49 (https://help.glazy.org/concepts/analyses).
-      const result = calculateUMF({ 'Potash Feldspar': 40, Silica: 30, Whiting: 20, Kaolin: 10 });
+      const result = calculateUMF({
+        'Potash Feldspar (theoretical)': 40,
+        Silica: 30,
+        Whiting: 20,
+        'Kaolin (theoretical)': 10
+      });
       expect(result.expansion).to.be.closeTo(7.49, 0.005);
       // Weight percent times each oxide's coefficient, on an analysis normalized to 100.
       expect(chemistry.expansion({ SiO2: 50, Na2O: 50 })).to.be.closeTo(50 * 0.035 + 50 * 0.387, 1e-9);
@@ -140,23 +198,120 @@ describe('glaze chemistry', () => {
       expect(chemistry.expansion({})).to.equal(null);
     });
 
+    // The README's 4321 (its screenshot: Orthoclase, Silica, Whiting and China Clay), worked out here without the
+    // library: atomic weights from CIAAW 2024 above, and each record's oxides and LOI as stored.
+    it("should give the README's Leach 4321 as an independent calculation does, from CIAAW 2024 and the records", () => {
+      const weight = (element: string) => Number(CIAAW_2024[element].split(' ± ')[0]);
+      const molar = (oxide: string) =>
+        [...oxide.matchAll(/([A-Z][a-z]?)(\d*)/g)].reduce(
+          (sum, [, element, n]) => sum + weight(element) * Number(n || 1),
+          0
+        );
+      const records: StandardMaterial[] = standardData.load('materials');
+      const recipe = [
+        ['Orthoclase', 40],
+        ['Silica', 30],
+        ['Whiting', 20],
+        ['China Clay', 10]
+      ] as const;
+      const moles: Record<string, number> = {};
+      for (const [name, grams] of recipe) {
+        const record = records.find((r) => r.name === name)!;
+        // Moles of each fired oxide in one formula; the raw formula weighs its fired oxides over (1 - LOI).
+        expect(record.percentmole, name).to.equal('molecular');
+        const fired = record.fields.reduce((sum, f) => sum + Number(f.amount) * molar(f.name), 0);
+        const raw = fired / (1 - record.loi / 100);
+        for (const f of record.fields) moles[f.name] = (moles[f.name] ?? 0) + (grams / raw) * Number(f.amount);
+      }
+      const flux = moles.K2O + moles.CaO;
+      const mine: Record<string, number> = Object.fromEntries(Object.entries(moles).map(([o, m]) => [o, m / flux]));
+      const published = { K2O: 0.26448, CaO: 0.73552, Al2O3: 0.40705, SiO2: 3.70983 };
+      for (const [oxide, value] of Object.entries(published))
+        expect(mine[oxide].toFixed(5), oxide).to.equal(String(value));
+      expect((mine.SiO2 / mine.Al2O3).toFixed(4)).to.equal('9.1139');
+
+      const theirs = calculateUMF(
+        recipe.map(([name, grams]) => ({ material: records.find((r) => r.name === name)!, amount: grams }))
+      );
+      expect(Object.keys(theirs.umf).sort()).to.eql(Object.keys(mine).sort());
+      for (const oxide of Object.keys(mine)) expect(theirs.umf[oxide], oxide).to.be.closeTo(mine[oxide], 1e-12);
+      expect(theirs.siAlRatio).to.be.closeTo(mine.SiO2 / mine.Al2O3, 1e-12);
+    });
+
+    // Digitalfire's G1214M (https://digitalfire.com/article/g1214m+cone+5-7+20x5+glossy+transparent+glaze): its
+    // published fired analysis, as one material, gives its published unity formula and expansion, to its places.
+    it("should round-trip Digitalfire's G1214M: its analysis gives its unity formula and expansion, 7.15", () => {
+      const analysis = {
+        CaO: 14.84,
+        K2O: 2.13,
+        MgO: 0.09,
+        Na2O: 2.78,
+        TiO2: 0.31,
+        B2O3: 4.79,
+        Al2O3: 11.74,
+        SiO2: 63.08,
+        Fe2O3: 0.23,
+        MnO: 0.03
+      };
+      const published = {
+        CaO: 0.79,
+        K2O: 0.07,
+        MgO: 0.01,
+        Na2O: 0.13,
+        TiO2: 0.01,
+        B2O3: 0.21,
+        Al2O3: 0.34,
+        SiO2: 3.14,
+        Fe2O3: 0.0,
+        MnO: 0.0
+      };
+      const result = calculateUMF([{ material: { name: 'G1214M', analysis }, amount: 100 }]);
+      expect(Object.keys(result.umf).sort()).to.eql(Object.keys(published).sort());
+      for (const [oxide, value] of Object.entries(published)) {
+        expect(result.umf[oxide].toFixed(2), oxide).to.equal(value.toFixed(2));
+      }
+      expect(result.expansion).to.be.closeTo(7.149, 0.0005);
+      expect(result.expansion!.toFixed(2)).to.equal('7.15');
+      expect(result.warnings).to.eql([]);
+    });
+
     it('should report fired oxide weight percents that total 100', () => {
-      const result = calculateUMF({ 'Potash Feldspar': 40, Silica: 30, Whiting: 20, Kaolin: 10 });
+      const result = calculateUMF({
+        'Potash Feldspar (theoretical)': 40,
+        Silica: 30,
+        Whiting: 20,
+        'Kaolin (theoretical)': 10
+      });
       const total = Object.keys(result.analysis).reduce((sum, oxide) => sum + result.analysis[oxide], 0);
       expect(total).to.be.closeTo(100, 1e-9);
       expect(result.analysis.SiO2).to.be.closeTo(67.43, 0.01);
     });
 
     it('should not depend on batch size', () => {
-      const small = calculateUMF({ 'Potash Feldspar': 40, Silica: 30, Whiting: 20, Kaolin: 10 });
-      const large = calculateUMF({ 'Potash Feldspar': 4000, Silica: 3000, Whiting: 2000, Kaolin: 1000 });
+      const small = calculateUMF({
+        'Potash Feldspar (theoretical)': 40,
+        Silica: 30,
+        Whiting: 20,
+        'Kaolin (theoretical)': 10
+      });
+      const large = calculateUMF({
+        'Potash Feldspar (theoretical)': 4000,
+        Silica: 3000,
+        Whiting: 2000,
+        'Kaolin (theoretical)': 1000
+      });
       Object.keys(small.umf).forEach((oxide) => {
         expect(large.umf[oxide]).to.be.closeTo(small.umf[oxide], 1e-9);
       });
     });
 
     it('should match material names regardless of case, spacing and aliases', () => {
-      const result = calculateUMF({ 'potash-feldspar': 40, FLINT: 30, whiting: 20, kaolin: 10 });
+      const result = calculateUMF({
+        'potash-feldspar (Theoretical)': 40,
+        FLINT: 30,
+        whiting: 20,
+        'KAOLIN-THEORETICAL': 10
+      });
       expect(result.umf.K2O).to.be.closeTo(0.2645, 0.0001);
     });
 
@@ -169,7 +324,7 @@ describe('glaze chemistry', () => {
         }
       ];
       const result = calculateUMF(
-        { 'My Feldspar': 40, Silica: 30, Whiting: 20, Kaolin: 10, RIO: 1 },
+        { 'My Feldspar': 40, Silica: 30, Whiting: 20, 'Kaolin (theoretical)': 10, 'Red Iron Oxide (theoretical)': 1 },
         { materials: userMaterials }
       );
       const feldsparMoles = {
@@ -210,7 +365,64 @@ describe('glaze chemistry', () => {
       ]);
       expect(slip.warningCodes.map((w) => w.code)).to.deep.equal(['trace-flux']);
       // A glaze, even one with much silica, is not.
-      expect(calculateUMF({ 'Potash Feldspar': 25, Whiting: 10, Kaolin: 15, Silica: 50 }).warnings).to.eql([]);
+      expect(
+        calculateUMF({ 'Potash Feldspar (theoretical)': 25, Whiting: 10, 'Kaolin (theoretical)': 15, Silica: 50 })
+          .warnings
+      ).to.eql([]);
+    });
+
+    it('should keep colorant oxides as fluxes, and warn when they are most of the flux or silica runs past 10', () => {
+      const codes = (recipe: Record<string, number>) => calculateUMF(recipe).warningCodes.map((w) => w.code);
+      // Silica and kaolin with 5% cobalt carbonate: cobalt is all the flux, and the silica is over 30.
+      const cobalt = calculateUMF({ Silica: 70, 'Kaolin (theoretical)': 25, 'Cobalt Carbonate (theoretical)': 5 });
+      expect(cobalt.umf.CoO).to.be.closeTo(1, 1e-9);
+      expect(cobalt.umf.SiO2).to.be.above(30);
+      expect(cobalt.warningCodes.map((w) => w.code)).to.deep.equal(['colorant-flux', 'silica-high']);
+      // Not that it says little about the melt: colorants melt too (Digitalfire: "Manganese is an active
+      // melter"). The formula is scaled to them, so it compares only with other colorant-rich glazes.
+      expect(cobalt.warnings[0]).to.equal(
+        'Colorant oxides (CoO) are most of the flux, so the unity formula is scaled to them; compare it only with other colorant-rich glazes, not with limits for ordinary glazes.'
+      );
+      expect(cobalt.warnings[1]).to.equal(
+        'The unity formula has 32.32 SiO₂, unusually high for a glaze: the recipe is for a very high firing, has too little flux, or is not a glaze.'
+      );
+      // Traditional Shinos reach 10.1 to 12.8 and melt, at a very high firing: Kamado feldspar with 20%
+      // kaolin is 11.2. Still past 10, so still said, but not as more than a glaze can melt.
+      const records: StandardMaterial[] = standardData.load('materials');
+      const named = (name: string) => records.find((record) => record.name === name)!;
+      const shino = calculateUMF([
+        { material: named('Kamado Feldspar (釜戸長石)'), amount: 80 },
+        { material: named('China Clay'), amount: 20 }
+      ]);
+      expect(shino.umf.SiO2).to.be.closeTo(11.23, 0.01);
+      expect(shino.warningCodes.map((w) => w.code)).to.deep.equal(['silica-high']);
+      expect(shino.warnings[0]).to.match(/^The unity formula has 11\.23 SiO₂, unusually high for a glaze: .*firing/);
+      expect(shino.warnings[0]).to.not.match(/can melt/);
+      // Most of the flux: 10 g of whiting is 0.0999 mol CaO; cobalt carbonate is 118.9 g a mole.
+      expect(
+        codes({ Whiting: 10, 'Cobalt Carbonate (theoretical)': 9.7, Silica: 30, 'Kaolin (theoretical)': 10 })
+      ).to.deep.equal([]);
+      expect(
+        codes({ Whiting: 10, 'Cobalt Carbonate (theoretical)': 14.5, Silica: 30, 'Kaolin (theoretical)': 10 })
+      ).to.deep.equal(['colorant-flux']);
+      // Silica past 10: 59 g of silica is 9.8 on 10 g of whiting, 61 g is 10.2.
+      expect(codes({ Whiting: 10, Silica: 59 })).to.deep.equal([]);
+      expect(codes({ Whiting: 10, Silica: 61 })).to.deep.equal(['silica-high']);
+      // Where the flux is only a trace, that is the warning: the unity formula means nothing anyway.
+      expect(codes({ Silica: 99.5, Whiting: 0.5 })).to.deep.equal(['trace-flux']);
+      // Never on the examples: the README's Leach 4321 (the landing page's) and a copper glaze.
+      expect(
+        codes({ 'Potash Feldspar (theoretical)': 40, Silica: 30, Whiting: 20, 'Kaolin (theoretical)': 10 })
+      ).to.deep.equal([]);
+      expect(
+        codes({
+          'Potash Feldspar (theoretical)': 40,
+          Silica: 30,
+          Whiting: 20,
+          'Kaolin (theoretical)': 10,
+          'Copper Carbonate (theoretical)': 5
+        })
+      ).to.deep.equal([]);
     });
   });
 
@@ -540,6 +752,33 @@ describe('glaze chemistry', () => {
       }
     });
 
+    // One name, one material (the 1.0 chemistry review): calculateUMF reads a name from the chemistry's own
+    // formula materials (lib/chemistry/materials.js), and the calculator from this library. "Potash Feldspar" was
+    // K₂O•Al₂O₃•6SiO₂ on the start page and Potclays 3426 in the calculator.
+    it("should give each of the chemistry's formula materials the chemistry the library gives its name", () => {
+      const percents = (material: MaterialInput) =>
+        Object.fromEntries(
+          Object.entries(chemistry.molesPerGram(material)).map(([oxide, moles]) => [oxide, moles * MW[oxide] * 100])
+        );
+      for (const builtIn of chemistry.FORMULA_MATERIALS) {
+        const ours = percents(builtIn);
+        for (const name of [builtIn.name, ...(builtIn.aliases ?? [])]) {
+          const same = (other: string) => paste.compactName(other) === paste.compactName(name);
+          for (const record of all.filter((r) => [r.name, ...(r.aliases ?? [])].some(same))) {
+            const label = `${name} (${builtIn.name}) and ${record.name}`;
+            const theirs = percents(record);
+            expect(chemistry.materialWeights(record).loi, label + ': LOI').to.be.closeTo(
+              chemistry.materialWeights(builtIn).loi,
+              0.01
+            );
+            for (const oxide of new Set([...Object.keys(ours), ...Object.keys(theirs)])) {
+              expect(theirs[oxide] ?? 0, label + ': ' + oxide).to.be.closeTo(ours[oxide] ?? 0, 0.01);
+            }
+          }
+        }
+      }
+    });
+
     it('should store additive chemistry that agrees with its analysis and LOI', () => {
       for (const additive of additives.filter((a) => !a.noChemistry && !a.chemistryOf)) {
         const weights = chemistry.materialWeights(additive);
@@ -582,12 +821,12 @@ describe('glaze chemistry', () => {
         { material: byName['China Clay'], amount: 10 }
       ]);
       const theoretical = calculateUMF({
-        'Potash Feldspar': 40,
+        'Potash Feldspar (theoretical)': 40,
         Silica: 20,
         Whiting: 10,
         Dolomite: 20,
         Talc: 5,
-        Kaolin: 10
+        'Kaolin (theoretical)': 10
       });
       Object.keys(theoretical.umf).forEach((oxide) => {
         expect(fromData.umf[oxide], oxide).to.be.closeTo(theoretical.umf[oxide], 0.001);
@@ -705,6 +944,55 @@ describe('glaze chemistry', () => {
       // |x - 2|^2 + 2 cost x is least at 2 - cost, and no lower than its bound.
       near(boundedLeastSquares({ columns: [[1]], b: [2], lo: [0], hi: [Infinity], cost: [0.5] }), [1.5]);
       near(boundedLeastSquares({ columns: [[1]], b: [2], lo: [0.5], hi: [Infinity], cost: [3] }), [0.5]);
+    });
+
+    it('should give a number for a column of zeros, and not hold back a tiny column', () => {
+      // A column of zeros with a rebate (a price below nothing) came back NaN: 0 times Infinity.
+      const zeros = boundedLeastSquares({ columns: [[0, 0]], b: [1, 1], lo: [0], hi: [Infinity], cost: [-1] });
+      expect(zeros.every(Number.isFinite)).to.equal(true);
+      // With a pull, it goes where the pull and the price put it, as no row has a say: 2 - (-1)/1 = 3.
+      near(
+        boundedLeastSquares({
+          columns: [[0, 0]],
+          b: [1, 1],
+          lo: [0],
+          hi: [Infinity],
+          lambda: 1,
+          pullTo: [2],
+          cost: [-1]
+        }),
+        [3]
+      );
+      // Beside a column of zeros, the others are solved as ever.
+      near(
+        boundedLeastSquares({
+          columns: [
+            [1, 0],
+            [0, 0],
+            [0, 1]
+          ],
+          b: [2, 3],
+          lo: [0, 0, 0],
+          hi: [Infinity, 5, Infinity]
+        }),
+        [2, 0, 3]
+      );
+      // Tiny columns beside a large one: half a millionth of it, where the ridge for the large one (1e-13 of
+      // its square) held the small one at 98% of what it takes; a ten-millionth, where its slope was under
+      // the large one's tolerance and it did not move at all.
+      for (const tiny of [2e-6, 1e-7]) {
+        const x = boundedLeastSquares({
+          columns: [
+            [tiny, 0],
+            [0, 1]
+          ],
+          b: [tiny, 1],
+          lo: [0, 0],
+          hi: [Infinity, Infinity]
+        });
+        expect(x[0], String(tiny)).to.be.closeTo(1, 1e-4);
+        expect(x[1]).to.be.closeTo(1, 1e-9);
+      }
     });
 
     it('should cope with near-duplicate columns, and match a slow method on random problems', () => {
@@ -870,6 +1158,136 @@ describe('glaze chemistry', () => {
       expect(amounts[3] + amounts[4]).to.be.at.most(5 + 1e-6);
     });
 
+    it('should keep a cap on an amount and a cap on a share together', () => {
+      // Clay Ceram is the group's one member and, outside the share, gets its rebate: set one at a time,
+      // the two prices pulled against each other, and after ten rounds the group's 12.46 came back at 40.
+      const pool = [
+        { material: library.get('Ferro Frit 4113')!, start: 0, least: 15.6838, group: 's' },
+        { material: library.get('Niter')!, start: 0 },
+        { material: library.get('Eckalite 2 Kaolin')!, start: 0, least: 1.219, group: 's' },
+        { material: library.get('Lead, Red')!, start: 0 },
+        { material: library.get('Clay Ceram (Unimin, Granville)')!, start: 0, least: 1.219, group: 'g' }
+      ];
+      const target = {
+        K2O: 0.059929,
+        SiO2: 0.739948,
+        Al2O3: 0.193607,
+        Fe2O3: 0.002237,
+        TiO2: 0.005106,
+        Na2O: 0.03768,
+        PbO: 0.1164,
+        MgO: 0.001891,
+        B2O3: 0.069023,
+        CaO: 0.084026
+      };
+      const options = { groups: { g: 12.4568 }, shares: { s: 0.3401 } };
+      for (const { amounts } of [
+        chemistry.bestFit(pool, target, options),
+        chemistry.fitAmounts(pool, target, options)
+      ]) {
+        const batch = amounts.reduce((sum, amount) => sum + amount, 0);
+        expect(amounts[4], 'the group').to.be.at.most(12.4568 * (1 + 1e-6));
+        expect((amounts[0] + amounts[2]) / batch, 'the share').to.be.at.most(0.3401 * (1 + 1e-6));
+        pool.forEach((line, i) => expect(amounts[i]).to.be.at.least((line.least ?? 0) * (1 - 1e-9)));
+      }
+    });
+
+    // Two frits each in a group of its own, and a feldspar held to a share of the batch: setting the prices
+    // one cap at a time, and then together by Newton's method, left both groups over (11.7 g and 14.2 g
+    // against 8.25 and 9.58), and said nothing.
+    const JOINT = {
+      pool: () => [
+        { material: library.get('FFF Feldspar (Sibelco FFF K7-60)')!, start: 0, group: 's1' },
+        { material: library.get('Alkali Frit 15.10 (Keramikos)')!, start: 0, most: 11.7, group: 'g0' },
+        { material: library.get('Fusion Frit F-19')!, start: 20.5, group: 'g2' }
+      ],
+      target: {
+        K2O: 0.07469364508185836,
+        Na2O: 0.11423829155813757,
+        Al2O3: 0.21000501084324397,
+        CaO: 0.03847147925816046,
+        SiO2: 0.7142405385274848,
+        B2O3: 0.022601041164855357,
+        PbO: 0.21183571505009055
+      },
+      options: { groups: { g0: 8.2453, g2: 9.5824 }, shares: { s1: 0.7317 } }
+    };
+
+    it('should keep caps that pull against each other exactly, where one at a time leaves them broken', () => {
+      // The optimum, from an independent solver (interior point, then its KKT system solved exactly): the
+      // frits at their caps, and the feldspar at its share.
+      const optimum = [48.61918781, 8.2453, 9.5824];
+      for (const fitted of [
+        chemistry.bestFit(JOINT.pool(), JOINT.target, JOINT.options),
+        chemistry.fitAmounts(JOINT.pool(), JOINT.target, JOINT.options)
+      ]) {
+        fitted.amounts.forEach((amount, i) => expect(amount, String(i)).to.be.closeTo(optimum[i], 1e-6 * optimum[i]));
+        expect(fitted.broken).to.equal(undefined);
+      }
+    });
+
+    it('should set the prices again together where one at a time leaves one on a cap with room', () => {
+      // Each cap kept, but a price left on boric acid's share with 0.36 g of room under it: the match 4%
+      // further from the target than it need be.
+      const pool = [
+        { material: library.get('Boric Acid')!, start: 0, most: 6.4, group: 's0' },
+        { material: library.get('Gillespie Borate')!, start: 0, least: 1.9, group: 's1' },
+        { material: library.get('Fusion Frit F-69')!, start: 20.5, least: 4.3 },
+        { material: library.get('Albany Slip')!, start: 20.8, group: 's0' }
+      ];
+      const target = {
+        MgO: 0.0904214881033699,
+        B2O3: 0.44150862545841085,
+        Al2O3: 0.03490484850402188,
+        SiO2: 0.2108716675201659
+      };
+      const { amounts, miss } = chemistry.bestFit(pool, target, { shares: { s0: 0.1241, s1: 0.0391 } });
+      const optimum = [6.030434783, 1.9, 40.6629156, 0];
+      amounts.forEach((amount, i) => expect(amount, String(i)).to.be.closeTo(optimum[i], 1e-6 * (1 + optimum[i])));
+      expect(miss).to.be.closeTo(340.4581, 1e-3);
+    });
+
+    it('should say which caps it cannot keep', () => {
+      // Whiting's least alone is more than the cap on raw calcium: it stays at its least, and the fit says so.
+      const pool = [
+        { material: library.get('G-200 EU Feldspar')!, start: 40 },
+        { material: library.get('Silica')!, start: 30 },
+        { material: library.get('China Clay')!, start: 15 },
+        { material: library.get('Whiting')!, start: 0, least: 8, group: 'raw calcium' }
+      ];
+      const target = chemistry.oxideMoles(
+        lines([
+          ['Whiting', 15],
+          ['G-200 EU Feldspar', 40],
+          ['Silica', 30],
+          ['China Clay', 15]
+        ])
+      );
+      const groups = { 'raw calcium': 5 };
+      for (const fitted of [
+        chemistry.bestFit(pool, target, { groups }),
+        chemistry.fitAmounts(pool, target, { groups })
+      ]) {
+        expect(fitted.amounts[3]).to.be.closeTo(8, 1e-9);
+        expect(fitted.broken).to.deep.equal(['raw calcium']);
+      }
+      // Kept, a cap is not named.
+      expect(chemistry.bestFit(pool, target, { groups: { 'raw calcium': 9 } }).broken).to.equal(undefined);
+    });
+
+    it('should stop setting the prices one cap at a time once the work is spent, and keep the caps all the same', () => {
+      const all = chemistry.newMeter(Infinity);
+      const whole = chemistry.bestFit(JOINT.pool(), JOINT.target, { ...JOINT.options, meter: all });
+      // With almost nothing to spend, the rounds one cap at a time do not start (each can take a hundred
+      // solves); the caps are kept exactly at once, on an allowance of the exact solve's own.
+      const meter = chemistry.newMeter(1);
+      const cut = chemistry.bestFit(JOINT.pool(), JOINT.target, { ...JOINT.options, meter });
+      expect(meter.cut).to.equal(true);
+      expect(meter.used).to.be.below(all.used / 10);
+      expect(cut.broken).to.equal(undefined);
+      cut.amounts.forEach((amount, i) => expect(amount).to.be.closeTo(whole.amounts[i], 1e-6 * whole.amounts[i]));
+    });
+
     it('should say when there is nothing to work out', () => {
       expect(() => chemistry.fitAmounts([], { CaO: 1 })).to.throw(/no materials/);
       expect(() => chemistry.fitAmounts([{ material: library.get('Silica')!, start: 1 }], {})).to.throw(/no oxides/);
@@ -1030,6 +1448,120 @@ describe('glaze chemistry', () => {
       expect(single.capped[0].missLifted).to.be.below(single.miss);
     });
 
+    it('should keep a member at nothing rather than at a least that breaks its cap, and not call a broken cap held', () => {
+      const target = molesOf([
+        ['Whiting', 15],
+        ['G-200 EU Feldspar', 40],
+        ['Silica', 30],
+        ['China Clay', 15]
+      ]);
+      const groups = { 'raw calcium': 5 };
+      const base = [own('G-200 EU Feldspar', 40), own('Silica', 30), own('China Clay', 15)];
+      // Whiting's least, 8 g, is past the cap of 5 by itself: raised to it, the cap broke (and the report
+      // said it was held at 5). Wollastonite brings the calcium instead.
+      const chosen = chemistry.selectMaterials(
+        [...base, offer('Whiting', { group: 'raw calcium', least: 8 }), offer('Wollastonite (Vansil W)', { least: 1 })],
+        target,
+        { groups }
+      );
+      expect(chosen.amounts[3]).to.equal(0);
+      expect(chosen.amounts[4]).to.be.above(10);
+      expect(chosen.capped.filter((c) => c.group === 'raw calcium')).to.deep.equal([]);
+      // A must's least past the cap: nothing keeps it, and the report says it is broken, with what it is.
+      const must = chemistry.selectMaterials(
+        [...base, offer('Whiting', { group: 'raw calcium', least: 8, must: true })],
+        target,
+        {
+          groups
+        }
+      );
+      expect(must.amounts[3]).to.be.closeTo(8, 1e-9);
+      expect(must.capped).to.have.length(1);
+      expect(must.capped[0]).to.include({ group: 'raw calcium', most: 5, broken: true });
+      expect(must.capped[0].wouldBe).to.be.closeTo(8, 1e-9);
+    });
+
+    it('should keep a group and a share that pull against each other (the rerun review, seed 21, case 180)', () => {
+      // The group's one member came to 11.75 g against its cap of 4.61, and the report said it was held at 4.61.
+      const lines = [
+        offer('Potash Feldspar (Valentine Clays)', { least: 1.9410058440230786, group: 's' }),
+        offer('Soda Feldspar (Walker BA340, India)', { least: 0.31700000000000006, group: 'g' }),
+        offer('Sodium Nitrate', { least: 4.065053042732179 }),
+        offer('Zettlitz Kaolin (Sedlec Ia)', { least: 3.3499269806724046, group: 's' }),
+        offer('Calcium Borate Frit (CTM 37)', { least: 0.31700000000000006, group: 'g' })
+      ];
+      const target = {
+        SiO2: 0.14481134430704193,
+        Al2O3: 0.04797618697345064,
+        Fe2O3: 0.0005535829466393632,
+        TiO2: 0.00026043949164214616,
+        K2O: 0.001892881787780668,
+        B2O3: 0.15389775485872703,
+        MgO: 0.000528483525208416,
+        CaO: 0.10065624052641904
+      };
+      const options = { groups: { g: 4.614778675665148 }, shares: { s: 0.2217968927696347 } };
+      const { amounts, capped } = chemistry.selectMaterials(lines, target, options);
+      const batch = amounts.reduce((sum, amount) => sum + amount, 0);
+      expect(amounts[1] + amounts[4], 'the group').to.be.at.most(4.614778675665148 * (1 + 1e-6));
+      expect(amounts[0] + amounts[3], 'the share').to.be.at.most(0.2217968927696347 * batch * (1 + 1e-6));
+      expect(capped.filter((c) => c.broken)).to.deep.equal([]);
+    });
+
+    it("should answer from the recipe's own, cut short, where the limit on new materials leaves none (budget-cut case 30)", () => {
+      // With the work all but spent, stage A had taken up one new material; the limit (none new) dropped it,
+      // and the choosing threw "no materials" with the recipe's own two on hand.
+      const CLAYS = [
+        'Wilco UPF Kaolin',
+        'Glomax LL Calcined Kaolin',
+        'Hawthorn Bond Fireclay',
+        'Caolín Nacional Superfino (Prodesco)'
+      ];
+      const lines = [
+        own('Boric Acid', 32.2),
+        { ...own('Sibelco V161 Ball Clay', 9.9), group: 'clay' },
+        ...[
+          'Bone Ash',
+          'Wilco UPF Kaolin',
+          'Glomax LL Calcined Kaolin',
+          'Feldspath mixte 64 (Ceradel)',
+          'Reimbold & Strick Frit A 3021',
+          'Strontium Carbonate',
+          'Orthoclase',
+          'Cornwall Stone',
+          'Chestnut Wood Ash, washed (栗灰)',
+          'Hawthorn Bond Fireclay',
+          'Tsushima Feldspar (対馬長石)',
+          'Kamado Feldspar (釜戸長石)',
+          'Amakusa Pottery Stone (天草陶石)',
+          'Low Expansion Frit (Potterycrafts P2960)',
+          'Ferro Frit 3195',
+          'Petalite',
+          'Calcium Borate Frit 32.21 (Keramikos)',
+          'Zinc Frit 32.22 (Keramikos)',
+          'Caolín Nacional Superfino (Prodesco)',
+          'Flint'
+        ].map((name) => offer(name, { least: 0.79, ...(CLAYS.includes(name) ? { group: 'clay' } : {}) }))
+      ];
+      const target = {
+        B2O3: 0.27831707772526826,
+        SiO2: 0.5101642727560207,
+        TiO2: 0.0017354285356539158,
+        Al2O3: 0.08458557683820286,
+        Fe2O3: 0.0007562919962176007,
+        Na2O: 0.021067135642717696,
+        K2O: 0.037115027336907476,
+        CaO: 0.0005809868573568485,
+        MgO: 0.0008123263199682413
+      };
+      for (const most of [0, 1e-5 * chemistry.WORK]) {
+        const meter = chemistry.newMeter(most);
+        const cut = chemistry.selectMaterials(lines, target, { extras: 0, shares: { clay: 0.2 }, meter });
+        expect(cut.cutShort).to.equal(true);
+        expect(cut.chosen).to.deep.equal([0, 1]);
+      }
+    });
+
     it("should say what lifting a cap alone would give, keeping every other line's least", () => {
       // Zinc capped at 5 g, and the clay held at 10 g or more, as Replace lead holds it.
       const target = molesOf([
@@ -1061,7 +1593,7 @@ describe('glaze chemistry', () => {
     // The staging case behind ADR 12's note on closeness: nepheline syenite and
     // Gerstley Borate replaced from a shelf with Custer Spar and Frit 3134.
     const GERSTLEY = molesOf([
-      ['Nepheline Syenite', 40],
+      ['Nepheline Syenite (typical)', 40],
       ['Silica', 25],
       ['Gerstley Borate', 15],
       ['EPK Kaolin', 20]
@@ -1121,6 +1653,79 @@ describe('glaze chemistry', () => {
       // A cap on a share of the batch holds too: the other lines take up what the clay cannot.
       const shared = chemistry.fitAmounts(lines, target, { shares: { 'clay and silica': 0.44 } }).amounts;
       expect(share(shared, 0) + share(shared, 1)).to.be.at.most(0.44 + 1e-6);
+    });
+
+    it('should keep every material used at its least, not only the last one raised to it', () => {
+      // Raising Bone Ash to its least once took Godfrey Spar, raised before it, to 0.74 (least 9.17).
+      const leasts: Array<[string, number, object?]> = [
+        ['Standard Porcelain China Clay', 4.4988, { start: 5.6 }],
+        ['Godfrey Spar', 9.1696],
+        ['Eckalite 2 Kaolin', 8.6795],
+        ['Bone Ash', 14.1091],
+        ['Nepheline Syenite (Norwegian, UK)', 10.1633, { avoid: true }],
+        ['Litharge', 4.763],
+        ['Hymod AT Ball Clay', 13.4878],
+        ['Potash Feldspar (Valentine Clays)', 6.2934],
+        ['Talc', 12.9392, { must: true }],
+        ['Lead Bisilicate Frit 10.05 (Keramikos)', 14.0001],
+        ['China Clay', 14.635],
+        ['FFP 45 Feldspar', 12.798],
+        ['Grolleg China Clay', 1.067]
+      ];
+      const lines = leasts.map(([name, least, extra]) => ({ ...offer(name, extra), least }));
+      const target = {
+        SiO2: 0.78733,
+        Al2O3: 0.13688,
+        Fe2O3: 0.00782,
+        K2O: 0.04947,
+        TiO2: 0.00219,
+        Na2O: 0.01333,
+        CaO: 0.12833,
+        MgO: 0.00696,
+        B2O3: 0.18208,
+        PbO: 0.07001,
+        MnO: 0.00043
+      };
+      const result = chemistry.selectMaterials(lines, target);
+      expect(result.chosen.length).to.be.above(1);
+      for (const i of result.chosen) {
+        expect(result.amounts[i], lines[i].material.name).to.be.at.least(lines[i].least * (1 - 1e-6));
+      }
+    });
+
+    it('should say what each material supplies in one order every browser agrees on', () => {
+      // Shares compared by their difference rounded were not a total order (0.92 tied 0.94 and 0.94
+      // tied 0.97, but 0.92 did not tie 0.97), so Safari could name them in another order than Chrome.
+      // Now: largest first in bands of 5%, then the oxide the glaze has most of, then by name.
+      const target = chemistry.oxideMoles(
+        (
+          [
+            ['Potash Feldspar (Potclays 3426)', 8.1],
+            ['Nepheline Syenite A270', 16.2],
+            ['Mondré & Manz Frit M 1233', 2.3],
+            ['Vibrantz Frit 90368', 4.9]
+          ] as Array<[string, number]>
+        ).map(([name, amount]) => ({ material: library.get(name)!, amount }))
+      );
+      const lines = [
+        'Lead, Red',
+        'Low Expansion Frit (Potterycrafts P2960)',
+        'Kaolin 233 (Carl Jäger)',
+        'Fusion Frit F-2',
+        'Dolomite',
+        'Cornwall Stone',
+        'Ferro Frit 4113'
+      ].map((name) => offer(name));
+      const result = chemistry.selectMaterials(lines, target);
+      const band = (share: number) => Math.round(20 * share);
+      let pairs = 0;
+      for (const { supplies } of result.contributions) {
+        supplies.slice(1).forEach((part, k) => {
+          expect(band(part.share)).to.be.at.most(band(supplies[k].share));
+          pairs++;
+        });
+      }
+      expect(pairs).to.be.above(2);
     });
 
     it('should make up a flux nothing offered supplies from the others, keeping the formula near', () => {
@@ -1183,6 +1788,35 @@ describe('glaze chemistry', () => {
       );
       expect(thin.verdict).to.equal('poor');
       expect(thin.oxides.find((o) => o.oxide === 'Al2O3')!.verdict).to.equal('far');
+    });
+
+    it('should not call two formulas with no fluxes close: a target with none has no unity formula', () => {
+      // Silica and kaolin against silica and alumina: no rows to compare, and every row of none was "close".
+      expect(() => chemistry.closeness({ SiO2: 1, Al2O3: 0.2 }, { SiO2: 3, Al2O3: 0.1 }))
+        .to.throw(/no flux/)
+        .with.property('code', 'no-flux');
+      // A match with no fluxes, against a target that has them, is poor, however small the target's fluxes.
+      const fluxless = chemistry.closeness({ CaO: 0.01, SiO2: 0.03, Al2O3: 0.003 }, { SiO2: 3, Al2O3: 0.3 });
+      expect(fluxless.verdict).to.equal('poor');
+    });
+
+    it('should order oxides that tie by name the same in every language the reader has', () => {
+      // TiO2 and ZrO2, neither in the target, tie on group and amount; in Estonian, localeCompare
+      // without a locale put ZrO2 first. Here every comparison without a locale is made Estonian.
+      const target = { CaO: 1, Al2O3: 0.4, SiO2: 3 };
+      const moles = { CaO: 1, Al2O3: 0.4, SiO2: 3, TiO2: 0.05, ZrO2: 0.05 };
+      const original = String.prototype.localeCompare;
+      const estonian = function (this: string, that: string, locales?: string | string[], options?: object) {
+        return original.call(this, that, locales ?? 'et', options);
+      };
+      String.prototype.localeCompare = estonian as typeof original;
+      let order: string[];
+      try {
+        order = chemistry.closeness(target, moles).oxides.map((o) => o.oxide);
+      } finally {
+        String.prototype.localeCompare = original;
+      }
+      expect(order.indexOf('TiO2')).to.be.below(order.indexOf('ZrO2'));
     });
 
     describe('what it says of the materials', () => {
@@ -1468,11 +2102,67 @@ describe('glaze chemistry', () => {
 
   describe('invalid input', () => {
     it('should reject a recipe with no flux', () => {
-      expect(() => calculateUMF({ Silica: 60, Kaolin: 40 })).to.throw(/no flux/);
+      expect(() => calculateUMF({ Silica: 60, 'Kaolin (theoretical)': 40 })).to.throw(/no flux/);
     });
 
     it('should reject unknown materials', () => {
       expect(() => calculateUMF({ Unobtainium: 10 })).to.throw(/Unknown material/);
+    });
+
+    it('should find a material by its name in any script, and refuse extra names that leave no key or share one', () => {
+      const codeOf = (work: () => unknown): string | undefined => {
+        try {
+          work();
+        } catch (e) {
+          return (e as ChemistryError).code;
+        }
+        return undefined;
+      };
+      type Named = MaterialInput & { aliases?: string[]; noChemistry?: boolean };
+      const standard = (
+        [...standardData.load('materials'), ...standardData.load('additives')] as unknown as Named[]
+      ).filter((record) => record.fields?.length && !record.noChemistry);
+      const kamado = standard.find((record) => record.name.startsWith('Kamado Feldspar'))!;
+      const alone = (material: MaterialInput) => calculateUMF([{ material, amount: 100 }]);
+      // A Japanese or Russian name kept nothing of itself, so any one found whichever such material came last.
+      expect(calculateUMF({ 釜戸長石: 100 }, { materials: [kamado] }).umf).to.deep.equal(alone(kamado).umf);
+      expect(codeOf(() => calculateUMF({ 福島長石: 100 }, { materials: [kamado] }))).to.equal('unknown-material');
+      // Accents and full-width letters fold away; ASCII names are read as before.
+      const spar: MaterialInput = { name: 'Feldspáth sodique', analysis: { Na2O: 11.8, Al2O3: 19.4, SiO2: 68.7 } };
+      expect(calculateUMF({ 'FELDSPATH SODIQUE': 100 }, { materials: [spar] }).umf).to.deep.equal(alone(spar).umf);
+      expect(calculateUMF({ ＳＩＬＩＣＡ: 30, Whiting: 20 }).umf).to.deep.equal(
+        calculateUMF({ Silica: 30, Whiting: 20 }).umf
+      );
+      // Every standard name and alias finds its own record: each record's names in one batch, beside a flux
+      // (for those with none), come to the record's own unity formula.
+      const flux = { material: { name: 'A flux', analysis: { CaO: 56 }, loi: 44 }, amount: 10 };
+      for (const record of standard) {
+        const names = [record.name, ...(record.aliases ?? [])];
+        const own = calculateUMF([{ material: record, amount: 100 }, flux]).umf;
+        const lines = names.map((name) => ({ material: name, amount: 100 / names.length }));
+        const found = calculateUMF([...lines, flux], { materials: standard }).umf;
+        expect(Object.keys(found).sort(), record.name).to.deep.equal(Object.keys(own).sort());
+        for (const [oxide, moles] of Object.entries(own)) expect(found[oxide], record.name).to.be.closeTo(moles, 1e-9);
+      }
+      // Among the extra materials, a name or alias with no letters or digits, or one two of them share, is refused.
+      const whiting: Named = { name: 'My whiting', analysis: { CaO: 56 }, loi: 44 };
+      expect(codeOf(() => calculateUMF({ Silica: 1 }, { materials: [{ ...whiting, name: '—' }] }))).to.equal(
+        'blank-name'
+      );
+      expect(codeOf(() => calculateUMF({ Silica: 1 }, { materials: [{ ...whiting, aliases: ['()'] }] }))).to.equal(
+        'blank-name'
+      );
+      expect(
+        codeOf(() => calculateUMF({ Silica: 1 }, { materials: [whiting, { ...whiting, name: 'my-Whiting!' }] }))
+      ).to.equal('duplicate-name');
+      expect(
+        codeOf(() => calculateUMF({ Silica: 1 }, { materials: [whiting, { ...spar, aliases: ['MY WHITING'] }] }))
+      ).to.equal('duplicate-name');
+      // Its own name again among its aliases is no clash, and an extra material still replaces a built-in one.
+      expect(
+        codeOf(() => calculateUMF({ 'my whiting': 1 }, { materials: [{ ...whiting, aliases: ['My Whiting'] }] }))
+      ).to.equal(undefined);
+      expect(calculateUMF({ Whiting: 1 }, { materials: [{ ...whiting, name: 'Whiting' }] }).loi).to.equal(44);
     });
 
     it('should reject misspelled oxides such as Si02', () => {
@@ -1518,10 +2208,103 @@ describe('glaze chemistry', () => {
             { name: 'CaO', amount: second }
           ]
         });
+      // Oxides in percent or moles, in any case, and nothing else: "Percent" is percent, not moles.
+      const given = (percentmole: string) => () =>
+        chemistry.materialWeights({ name: 'Odd', percentmole, fields: [{ name: 'CaO', amount: '56' }] });
+      expect(codeOf(given('weight'))).to.equal('unknown-percentmole');
+      expect(codeOf(given('percent'))).to.equal(undefined);
+      expect(codeOf(given('molecular'))).to.equal(undefined);
+      expect(given('Percent')()).to.deep.equal(given('percent')());
+      expect(given(' MOLECULAR ')()).to.deep.equal(given('molecular')());
+      // None, as an additive saved before it had one, is moles as ever: absent, null or blank alike.
+      expect(given('')()).to.deep.equal(given('molecular')());
+      // The pages and the MCP tools tell percent from moles as the library reads it (oxidesGivenIn): a
+      // record saved before the server kept percentmole in lower case may say 'Percent' or 'Molecular'.
+      const givenIn = (material: Partial<MaterialInput>) => chemistry.oxidesGivenIn(material);
+      for (const percentmole of ['percent', 'Percent', ' PERCENT ']) {
+        expect(givenIn({ percentmole }), percentmole).to.equal('percent');
+      }
+      for (const percentmole of ['molecular', 'Molecular', ' MOLECULAR ', '', null, undefined]) {
+        expect(givenIn({ percentmole } as Partial<MaterialInput>), String(percentmole)).to.equal('molecular');
+      }
+      expect(givenIn({ percentmole: 'weight' })).to.equal(null);
+      // As prepareMaterial reads them: an analysis is in percent, a formula in moles, whatever else they say.
+      expect(givenIn({ analysis: { PbO: 100 }, percentmole: 'molecular' })).to.equal('percent');
+      expect(givenIn({ formula: { CaO: 1 }, percentmole: 'percent' })).to.equal('molecular');
       expect(codeOf(twice('abc', '56'))).to.equal('invalid-oxide-amount');
       expect(codeOf(twice('56', 'abc'))).to.equal('invalid-oxide-amount');
       // A batch so large its sums overflow.
       expect(codeOf(() => calculateUMF({ Whiting: 1e308, Silica: 1e308 }))).to.equal('invalid-amount');
+      // An amount is a number or a plain decimal, as saved: not what Number() would also read.
+      for (const odd of ['1e1', '0x10', true, '12,5', 'Infinity']) {
+        expect(
+          codeOf(() => calculateUMF({ Whiting: odd as unknown as number, Silica: 30 })),
+          String(odd)
+        ).to.equal('invalid-amount');
+      }
+      const plain = calculateUMF({ Whiting: 20, Silica: 30 }).umf;
+      expect(calculateUMF({ Whiting: ' 20 ', Silica: '30.0' } as unknown as Record<string, number>).umf).to.deep.equal(
+        plain
+      );
+      expect(
+        calculateUMF({ Whiting: 20, Silica: 30, Kaolin: '' } as unknown as Record<string, number>).umf
+      ).to.deep.equal(plain);
+    });
+
+    it('should refuse an LOI or molecular weight that is given but not a number, and say when the two disagree', () => {
+      const codeOf = (work: () => unknown): string | undefined => {
+        try {
+          work();
+        } catch (e) {
+          return (e as ChemistryError).code;
+        }
+        return undefined;
+      };
+      const whiting = { name: 'My whiting', percentmole: 'molecular', fields: [{ name: 'CaO', amount: '1' }] };
+      const weights = (extra: object) => chemistry.materialWeights({ ...whiting, ...extra } as MaterialInput);
+      for (const odd of ['43,97', Infinity, NaN, 'abc', true]) {
+        expect(
+          codeOf(() => weights({ loi: odd })),
+          String(odd)
+        ).to.equal('invalid-loi');
+        expect(
+          codeOf(() => weights({ molecularweight: odd })),
+          String(odd)
+        ).to.equal('invalid-molecular-weight');
+      }
+      // In percent too, where the LOI is all there is.
+      expect(
+        codeOf(() =>
+          chemistry.materialWeights({
+            ...whiting,
+            percentmole: 'percent',
+            fields: [{ name: 'CaO', amount: '56' }],
+            loi: '43,97'
+          })
+        )
+      ).to.equal('invalid-loi');
+      // Left out (absent, null or blank) is still left out; given, either one sets the LOI.
+      for (const blank of [undefined, null, '', '  ']) expect(weights({ loi: blank }).loi).to.equal(0);
+      expect(weights({ loi: '43.97' }).loi).to.equal(43.97);
+      expect(weights({ molecularweight: '100.09' }).loi).to.be.closeTo(43.97, 0.01);
+      // Both, agreeing to half a point: no warning. Further apart: the LOI is used, with a warning.
+      expect(weights({ loi: 43.6, molecularweight: 100.09 }).warningCodes).to.deep.equal([]);
+      const apart = weights({ loi: 30, molecularweight: 100.09 });
+      expect(apart.loi).to.equal(30);
+      expect(apart.warningCodes.map((w) => w.code)).to.deep.equal(['loi-molecular-weight']);
+      expect(apart.warnings[0]).to.equal(
+        'The LOI of My whiting (30.00%) does not match its molecular weight, which gives 43.97%; the LOI was used.'
+      );
+      // Every standard material's LOI and molecular weight agree.
+      const standard = [...standardData.load('materials'), ...standardData.load('additives')];
+      for (const record of standard as unknown as Array<MaterialInput & { noChemistry?: boolean }>) {
+        if (record.fields?.length && !record.noChemistry) {
+          expect(
+            chemistry.materialWeights(record).warningCodes.map((w) => w.code),
+            record.name
+          ).to.not.include('loi-molecular-weight');
+        }
+      }
     });
   });
 });

@@ -50,7 +50,6 @@
     "firedTo": "Polttolämpötila",
     "how": "Tapa",
     "rebuild": "Rakenna lasite uudelleen: säilytä sen piidioksidi ja alumiinioksidi, ja korvaa lyijy boorilla ja muilla sulattajilla",
-    "keepColour": "Säilytä väri lyijyttömällä pohjalasitteella: fritti ja kaoliini suhteessa 85:15 sekä reseptin väriaineet",
     "fritHeading": "Lyijytön fritti pohjaksi, paras ensin",
     "fritBoron": "({boron} % booria, B₂O₃)",
     "noFrit": "Kirjastossa ei ole lyijytöntä frittiä, jota myydään omalla alueella.",
@@ -166,7 +165,6 @@
     "cannotReplaceLead": "Lyijyä ei voi korvata: jollakin reseptin raaka-aineella ei ole analyysiä, josta laskea.",
     "leadRebuiltCone": "Lyijy korvattu keilaa {cone} varten, pohjana fritti {base}: vanhan reseptin piidioksidi ja alumiinioksidi säilytetty, ja boori ja muut sulattajat hoitavat lyijyn tehtävän.",
     "leadRebuilt": "Lyijy korvattu lämpötilaa {firing} varten, pohjana fritti {base}: vanhan reseptin piidioksidi ja alumiinioksidi säilytetty, ja boori ja muut sulattajat hoitavat lyijyn tehtävän.",
-    "leadColour": "Lyijy korvattu: väriaineet siirretty lyijyttömälle pohjalasitteelle, jossa on frittiä {base} ja kaoliinia suhteessa 85:15.",
     "leadGloss": "Lopputulos ei vastaa täsmälleen lyijyn kiiltoa, kirkkautta tai väriä: odotettavissa on vähemmän loistetta ja mahdollisesti huntuisuutta punasaven päällä tai säröilyä. Testaa pieni erä omalla savella.",
     "leadSafety": "Lyijyttömyys ei yksinään tee lasitteesta elintarvikekäyttöön sopivaa; se riippuu koko kaavasta ja poltosta.",
     "leadReplaced": "Lyijy on korvattu.",
@@ -245,8 +243,7 @@
       "text": "Ne tulevat pohjalasitteen lisäksi. Ne tallennetaan reseptin mukana, mutta ne eivät ole osa Segerin kaavaa. Valitse kunkin määrän yksikkö:",
       "percent": "<b>% pohjalasitteesta</b>: prosenttia pohjalasitteen kokonaismäärästä, kuten useimmissa resepteissä: 2 tarkoittaa 2 % punaista rautaoksidia.",
       "parts": "<b>osaa</b>: sama yksikkö kuin raaka-aineilla, esimerkiksi 1 osa pohjalasitteeseen, jossa on 3 osaa flinttiä<en>flint</en> ja 2 osaa dolomiittia.",
-      "grams": "<b>grammaa</b>: paino samassa erässä kuin raaka-aineet.",
-      "count": "Jotkin laskimet laskevat väriaineet mukaan Segerin kaavaan<en>unity molecular formula</en>, jotkin eivät. Valitse Segerin kaava -otsikon alta <b>Laske väriaineet ja lisäaineet mukaan</b>, niin ne lasketaan kaavaan sillä painolla, joka niillä on erässä, tai jätä ruutu tyhjäksi, kun tulosta verrataan laskimeen, joka ei laske niitä. Valinta tallennetaan reseptin mukana."
+      "grams": "<b>grammaa</b>: paino samassa erässä kuin raaka-aineet."
     },
     "scale": {
       "heading": "Reseptin muuntaminen tarvittaessa",
@@ -604,7 +601,6 @@
     "unknownOxide": "{oxide} ei ole oksidi, jonka Glazecalc tuntee.",
     "together": "Anna potaska (K₂O) ja sooda (Na₂O) erikseen, ei yhdessä KNaO:na.",
     "badAmount": "Oksidin {oxide} määrä ei ole luku, joka on 0 tai suurempi.",
-    "noFlux": "Tavoitteessa on oltava vähintään yksi sulattaja, kuten CaO, K₂O tai Na₂O.",
     "noMaterials": "Lisää vähintään yksi raaka-aine, josta resepti tehdään.",
     "noMatch": "Missään näistä raaka-aineista ei ole yhtään tavoitteen oksidia."
   },
