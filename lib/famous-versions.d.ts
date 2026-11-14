@@ -45,10 +45,10 @@ export function offeredIn(
 export function versionOf(glaze: ResolvedGlaze, offered: readonly MaterialRecord[], meter?: Meter): GlazeVersion | null;
 
 /**
- * Every version of a glaze by the region it is made for ('' for a lead-free version's own materials), what
- * keeps any from being shipped, and the most work a search did. `work` bounds each search (never, if not given).
+ * Every version of a glaze by the region it is made for ('' for a lead-free version's own materials), and what
+ * keeps any from being shipped. `work` bounds each search (never, if not given).
  */
 export function glazeVersions(
   glaze: ResolvedGlaze,
   options?: { materials?: readonly MaterialRecord[]; work?: number }
-): { versions: Record<string, GlazeVersion>; problems: string[]; used: number };
+): { versions: Record<string, GlazeVersion>; problems: string[] };
