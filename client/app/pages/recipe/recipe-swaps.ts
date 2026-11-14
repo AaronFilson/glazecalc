@@ -12,7 +12,7 @@ import { formatTemperature, listOf } from '../../shared/format';
 import { chosenRegion, findNamed, hasLead } from '../../shared/library-info';
 import { LibraryMaterial, modernMaterials } from './compare';
 import { focusWhenDrawn } from './focus';
-import { BaseChoice, LeadMode, bariumOf, leadFreeBases, leadOf, recipeHasLead, replaceLead } from './lead';
+import { BaseChoice, LeadMode, bariumOf, clayFor, leadFreeBases, leadOf, recipeHasLead, replaceLead } from './lead';
 import { TryMaterial } from './pool';
 import { libraryKey } from './recipe-library';
 import { RecipeProblem, recipeText } from './recipe-messages';
@@ -139,6 +139,8 @@ export class RecipeSwaps {
     bases: BaseChoice[];
     base: string;
   } | null>(null);
+  /** The clay Keep the colour puts with the frit (lead.js clayFor): the recipe's own raw clay, or China Clay. */
+  readonly colourClay = computed(() => clayFor(this.page.lines(), this.page.standardMaterials())?.name ?? '');
 
   /** What Undo the swap puts back, while there is one. */
   readonly undo = computed(() => this.page.undo());
@@ -422,14 +424,16 @@ export class RecipeSwaps {
 
   /**
    * Why a swap could not be worked out, in the page's language: what the recipe tools said (a coded
-   * RecipeError); that none of the materials it may use has a flux, where the chemistry found none in what
-   * it would make (no-flux: a unity formula needs one); or else `fallback`, which says a material has no
-   * analysis to work from.
+   * RecipeError; with no flux, solve.noFlux says of what: the recipe, or the materials it may use); the same
+   * of the materials, should the chemistry find no flux in what it would make (no-flux: a unity formula
+   * needs one); or else `fallback`, which says a material has no analysis to work from.
    */
   private whyNot(error: unknown, fallback: string): string {
     if (error instanceof RecipeProblem) return error.message;
     if (error instanceof RecipeError) return recipeText(error);
-    if ((error as ChemistryError | null)?.code === 'no-flux') return translate('recipe.page.noFlux');
+    if ((error as ChemistryError | null)?.code === 'no-flux') {
+      return recipeText({ code: 'solve.noFlux', params: { of: 'offered' } });
+    }
     return fallback;
   }
 
@@ -527,7 +531,11 @@ export class RecipeSwaps {
         ? this.byCones()
           ? translate('recipe.page.leadRebuiltCone', { cone: run.cone, base: run.base })
           : translate('recipe.page.leadRebuilt', { firing: this.firingLabel(firing), base: run.base })
-        : translate('recipe.page.leadColour', { base: run.base });
+        : translate('recipe.page.leadColour', {
+            base: run.base,
+            // The clay it was made with: the recipe's own (Redart, say), or China Clay.
+            clay: replacement.materials.find((material) => material.name !== run.base)?.name ?? ''
+          });
     const parts = [
       how,
       this.changedNote(replacement.changes),

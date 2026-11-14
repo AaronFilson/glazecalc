@@ -211,6 +211,33 @@ describe('a famous glaze worked out', () => {
     expect(versionMaterials(version, iznik.leadFree!.prefer)).toBeNull();
   });
 
+  it('writes a trace of a material or a colorant plainly, as the recipe page reads amounts', () => {
+    // String(0.0000001) is "1e-7", which the recipe page takes for not a number.
+    const trace = 0.0000001;
+    const glaze = {
+      ...fixture,
+      recipe: {
+        ...fixture.recipe!,
+        lines: fixture.recipe!.lines.map((line, i) => (i === 0 ? { ...line, amount: trace } : line)),
+        additives: fixture.recipe!.additives.map((line) => ({ ...line, amount: trace }))
+      },
+      versions: {
+        US: {
+          lines: [
+            ['Silica', 99.9999999],
+            ['Whiting', trace]
+          ],
+          verdict: 'close'
+        }
+      }
+    } as unknown as FamousGlaze;
+    const recipe = nativeRecipe(glaze, 'Trace')!;
+    expect([recipe.materials[0]!.amount, recipe.additives![0]!.amount]).toEqual(['0.0000001', '0.0000001']);
+    const version = localVersion(glaze, 'US')!;
+    expect(version.additives[0]!.amount).toBe('0.0000001');
+    expect(versionMaterials(version, STANDARD_MATERIALS)!.map((m) => m.amount)).toEqual(['99.9999999', '0.0000001']);
+  });
+
   it("gives a glaze's words in the page's language, or the English marked", () => {
     expect(proseIn(fixture.origin, 'de')).toEqual({ text: 'Die Tests (nie auf der Website)', english: false });
     expect(proseIn(fixture.origin, 'fr').english).toBe(true);

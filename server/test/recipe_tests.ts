@@ -613,6 +613,43 @@ describe('Shared recipe tools', () => {
     expect(recipe.CHECK_LIMITS.barium).to.deep.equal({ caution: 0.1, likely: 0.4 });
   });
 
+  it('reads zinc and its other unity formula figures at the two decimals shown, as barium and the limits are', () => {
+    const lines = [{ material: KAOLIN, amount: '10' }];
+    const unity = { K2O: 0.1, Na2O: 0.1, CaO: 0.8, Al2O3: 0.3, B2O3: 0.6, SiO2: 3 };
+    const checks = (changed: Record<string, number>, celsius?: number, old?: Record<string, number>) =>
+      recipe.pastLimits({ lines, unity: { ...unity, ...changed }, celsius, old });
+    const has = (check: string, ...args: Parameters<typeof checks>) => checks(...args).some((c) => c.check === check);
+    // Zinc does little melting below cone 03 from ZnO 0.02: 0.0196, shown as 0.02, had no caution.
+    expect(has('zinc-low-fire', { ZnO: 0.014 }, 1060)).to.equal(false);
+    expect(has('zinc-low-fire', { ZnO: 0.0196 }, 1060)).to.equal(true);
+    expect(words(checks({ ZnO: 0.0196 }, 1060).find((c) => c.check === 'zinc-low-fire')!)).to.include('zinc (0.02)');
+    const chrome = [{ name: 'Chrome oxide', amount: '1', fields: [{ name: 'Cr2O3', amount: '1' }] }];
+    const zincChrome = recipe.pastLimits({ lines, unity: { ...unity, ZnO: 0.0196 }, celsius: 1222, additives: chrome });
+    expect(zincChrome.map((c) => c.check)).to.include('zinc-chrome');
+    // Not news when the old recipe had as much, as shown: its 0.019 is 0.02 too.
+    expect(has('zinc-low-fire', { ZnO: 0.02 }, 1060, { ...unity, ZnO: 0.019 })).to.equal(false);
+    // Too little boron at cone 04 is under 0.8 of Katz's 0.49, 0.392: 0.3924 is shown as 0.39.
+    expect(has('boron-short', { B2O3: 0.3924 }, 1060)).to.equal(true);
+    expect(has('boron-short', { B2O3: 0.396 }, 1060)).to.equal(false);
+    // Boron blue is over 0.5 of boron and calcia, and under 0.2 of alumina: 0.50 and 0.20 are not.
+    const blue = { B2O3: 0.6, Al2O3: 0.18 };
+    expect(has('boron-blue', blue)).to.equal(true);
+    expect(has('boron-blue', { ...blue, B2O3: 0.5004 })).to.equal(false);
+    expect(has('boron-blue', { ...blue, CaO: 0.5004 })).to.equal(false);
+    expect(has('boron-blue', { ...blue, Al2O3: 0.1996 })).to.equal(false);
+    expect(has('boron-blue', blue, undefined, { ...unity, ...blue, B2O3: 0.5004 })).to.equal(true);
+    // A thin glaze, under 0.15 of alumina, is likely past 0.8 of boron already; 0.1496 is shown as 0.15, and so
+    // is not, in the checks and the table alike.
+    const boron = (alumina: number) =>
+      checks({ B2O3: 0.9, Al2O3: alumina }, 1060).find((c) => c.check === 'boron-high');
+    const row = (alumina: number) =>
+      recipe
+        .limitRows({ ...unity, B2O3: 0.9, Al2O3: alumina }, recipe.GLAZECALC_LIMITS, 'low')!
+        .find((r) => r.oxide === 'B2O3')!;
+    expect([boron(0.144)?.severity, row(0.144).likely]).to.deep.equal(['likely', true]);
+    expect([boron(0.1496)?.severity, row(0.1496).likely]).to.deep.equal(['caution', false]);
+  });
+
   it('has no unity formula without a flux, as calculateUMF says', () => {
     for (const moles of [{ SiO2: 1, Al2O3: 0.1 }, {}] as Array<Record<string, number>>) {
       expect(() => recipe.unityOf(moles), JSON.stringify(moles))
@@ -1040,6 +1077,35 @@ describe('Shared recipe tools', () => {
     for (const mode of ['colour', 'rebuild'] as const) {
       expect(Math.max(...replaced(batch(1000), mode).materials.map((m) => decimals(m.amount))), mode).to.equal(3);
     }
+  });
+
+  it('writes the amounts of a batch under a millionth plainly, so they read back and the frit is there', () => {
+    // formatAmount wrote with String(): the frit's 85% of 0.00000035 g as "2.975e-7", which reads as no amount, so
+    // the replacement had no flux and Replace lead failed, in either mode.
+    const library = standardData.load('materials') as MaterialRecord[];
+    const find = (name: string) => library.find((m) => m.name === name);
+    const plain = (m: MaterialRecord, amount: number) => ({ ...m, amount: recipe.plainAmount(amount) });
+    const lines = [
+      plain(find('Lead Bisilicate Frit (Potclays 2261)')!, 0.0000002),
+      plain(KAOLIN, 0.00000005),
+      plain(SILICA, 0.0000001)
+    ];
+    for (const mode of ['colour', 'rebuild'] as const) {
+      const [base] = recipe.leadFreeBases(lines, [], find, library, 'UK', 1060, mode);
+      const { materials } = recipe.replaceLead(lines, [], find, library, 'UK', {
+        base: base!.name,
+        celsius: 1060,
+        mode
+      });
+      for (const m of materials) expect(m.amount, `${mode}: ${m.name}`).to.match(/^0\.0{6}\d+$/);
+      expect(recipe.amountOf(materials.find((m) => m.name === base!.name)?.amount), mode).to.be.above(0);
+      expect(
+        materials.reduce((sum, m) => sum + recipe.amountOf(m.amount), 0),
+        mode
+      ).to.be.closeTo(0.00000035, 0.000000005);
+      expect(recipe.unityOf(recipe.molesOf(materials)), mode).to.be.an('object');
+    }
+    expect(recipe.formatAmount(0.000000085, 9)).to.equal('0.000000085');
   });
 
   it('keeps the colour with a raw clay still sold, a kaolin or ball clay first, else China Clay', () => {

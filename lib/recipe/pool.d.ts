@@ -52,6 +52,7 @@ export interface Report {
   cutShort?: true;
 }
 
+/** The decimals a batch's new amounts are written to: 1 from 50, 2 from 5, else 3, and under 0.1 enough for 1% of it. */
 export function placesFor(total: number): number;
 
 /**

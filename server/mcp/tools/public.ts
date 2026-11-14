@@ -230,7 +230,8 @@ const SG_BASIS_WORDS: Record<string, string> = {
  */
 const sgLinesOf = (lines: Line[]) =>
   lines.map((line) => {
-    const amount = String(line.amount);
+    // Written plainly: the estimate reads String(0.0000001), "1e-7", as no amount.
+    const amount = recipe.plainAmount(line.amount);
     const found = line.analysis ? undefined : (findMaterial(line.material) ?? findAdditive(line.material));
     return found ? { ...found, ownedBy: 'Standard', amount } : { name: line.material, amount };
   });

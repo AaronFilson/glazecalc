@@ -418,17 +418,27 @@ export const registerCompanionTools = (server: McpServer, caller?: Caller): void
         const amounts = Array.from({ length: count }, (_, i) =>
           Number((least + (i * (to - least)) / (count - 1)).toFixed(6))
         );
-        const varyBase = base.map((line) => ({ name: line.name, amount: Number(line.amount) }));
-        const made = recipe.varyMaterial(varyBase, varied!.name, amounts, how, gives?.name);
+        // Each line is varied by its name and the chemistry it carries (sameKey), as blend_recipes mixes them: two
+        // of the base's own analyses under one name stay two lines, each with its own chemistry.
+        // A material the base has keeps the base's own line (an analysis given under a library name, say): the
+        // amount varied goes on its first line of that name, so the library's record is only for a material the
+        // base lacks.
+        const variedLine = base.find((line) => line.name === varied!.name) ?? varied!;
+        const varyBase = base.map((line) => ({ name: recipe.sameKey(line), amount: Number(line.amount) }));
+        const made = recipe.varyMaterial(
+          varyBase,
+          recipe.sameKey(variedLine),
+          amounts,
+          how,
+          gives && recipe.sameKey(gives)
+        );
         if (made.tooMuch !== undefined) {
           const only = Number(gives!.amount);
           throw new ToolProblem(
             `${gives!.name} would run out: the base has ${only}, so ${varied!.name} can replace at most ${only}, and ${made.tooMuch} was asked for. Lower to.`
           );
         }
-        // A material the base has keeps the base's own line (an analysis given under a library name, say): the
-        // amount varied goes on that line, so the library's record is only for a material the base lacks.
-        const records = new Map<string, RecipeLine>([varied!, ...base].map((line) => [line.name, line]));
+        const records = new Map<string, RecipeLine>([variedLine, ...base].map((line) => [recipe.sameKey(line), line]));
         let limits: { id: string; band: unknown } | undefined;
         const tiles = made.tiles.map((tile, i): Tile => {
           const lines = tile.lines.map((line) => ({

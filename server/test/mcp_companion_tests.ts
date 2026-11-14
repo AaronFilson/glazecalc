@@ -140,6 +140,44 @@ describe('MCP: vary_material', () => {
     }
   });
 
+  it('keeps two of the base’s own analyses under one name apart, each line with its own chemistry', async () => {
+    // Two wood ashes, analysed apart and given under the same name: the tiles' lines were found by name, so
+    // both took the last one's chemistry, even in the first tile (the base alone).
+    const ashes = [
+      { material: 'Wood ash', amount: 20, analysis: { CaO: 50, SiO2: 10, MgO: 5 }, loi: 30 },
+      { material: 'Wood ash', amount: 20, analysis: { K2O: 12, SiO2: 55, Al2O3: 10, CaO: 15 }, loi: 5 },
+      { material: 'Silica', amount: 30 },
+      { material: 'EPK', amount: 30 }
+    ];
+    const unityOf = async (lines: Json[]) => (await data('analyze_recipe', { lines })).unityFormula;
+    const figures = (unity: Json) => [unity.SiO2, unity.Al2O3, unity.CaO, unity.K2O, unity.MgO];
+    const tileFigures = (tile: Json) => figures({ ...tile.unity, ...tile.unity.fluxes });
+    const added = await data('vary_material', { recipe: ashes, material: 'Whiting', from: 0, to: 10, steps: 3 });
+    expect(tileFigures(added.tiles[0]), 'the base alone').to.eql(figures(await unityOf(ashes)));
+    expect(tileFigures(added.tiles[2]), 'with 10 of whiting').to.eql(
+      figures(await unityOf([...ashes, { material: 'Whiting', amount: 10 }]))
+    );
+    // In place of silica, too.
+    const replaced = await data('vary_material', {
+      recipe: ashes,
+      material: 'Whiting',
+      to: 10,
+      steps: 2,
+      mode: 'replace',
+      instead: 'Silica'
+    });
+    expect(tileFigures(replaced.tiles[1])).to.eql(
+      figures(
+        await unityOf([
+          ...ashes.slice(0, 2),
+          { material: 'Silica', amount: 20 },
+          ashes[3]!,
+          { material: 'Whiting', amount: 10 }
+        ])
+      )
+    );
+  });
+
   it('shows whiting raising lime and lowering silica and alumina per unit of flux, in the trend', async () => {
     const result = await data('vary_material', { recipe: BASE, material: 'Whiting', to: 20 });
     expect(result.steps).to.equal(5);
