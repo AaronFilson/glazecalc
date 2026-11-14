@@ -521,6 +521,37 @@ describe('recipe firing (lib/cones/firing.js)', () => {
       expect(recipe!.notes).to.eql(['Fire to cone 6', 'Bisque to cone 04']);
     });
 
+    it('reads the glaze’s cone where a bisque cone follows its word, with : = @ ( or - between them', () => {
+      // The bisque's cone after its word: the cone before the word is the glaze's. It was taken for the bisque's.
+      for (const text of [
+        'Glaze: cone 6 Bisque: cone 04',
+        'Fire to cone 6 Bisque to cone 04',
+        'Glaze firing: cone 6 Bisque firing: cone 04',
+        'Cone 6 bisque cone 04',
+        'Glaze cone 6 bisque 04',
+        'Bisque: cone 04, Glaze: cone 6',
+        'Bisque - cone 04; glaze - cone 6',
+        'Bisque (cone 04), glaze cone 6',
+        'Bisque @ cone 04, glaze @ cone 6',
+        'Bisque firing: cone 04. Glaze firing: cone 6.',
+        'Bisque = ^04 / glaze = ^6',
+        'Bisque cone 06-04, glaze cone 6',
+        'Bisque ^06-^04; glaze ^6'
+      ]) {
+        expect(firing.readFiring(text), text).to.include({ scale: 'orton', low: '6' }).and.not.have.property('high');
+      }
+      expect(firing.readFiring('Bisque 1000-1040°C, glaze 1240°C'))
+        .to.include({ scale: 'temperature', low: '1240' })
+        .and.not.have.property('high');
+      // A bisque firing alone says nothing of the glaze's, and is still a firing line.
+      for (const text of ['Bisque: cone 04', 'Bisque = ^06-^04', 'Bisque (1000°C)', 'Bisque firing - 1000-1040°C']) {
+        expect(firing.readFiring(text), text).to.equal(null);
+        expect(firing.isFiringLine(text), text).to.equal(true);
+      }
+      expect(firing.firingFromLines(['Bisque: cone 04', 'Glaze: cone 6'])).to.eql({ scale: 'orton', low: '6' });
+      expect(firing.firingFromLines(['Bisque ^06-^04', 'Glaze ^6'])).to.eql({ scale: 'orton', low: '6' });
+    });
+
     it('reads one cone as typed, for the assistants: bare or as paste-in writes it, never a range or another scale’s', () => {
       for (const text of ['6', 'Cone 6', '^6', 'Δ6', 'C/6', 'c6', 'Δ٦', '６']) {
         expect(firing.readCone(text), text).to.equal('6');
