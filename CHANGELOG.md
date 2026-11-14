@@ -2,6 +2,18 @@
 
 Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, from the history.
 
+## Unreleased
+
+### Changed
+
+- **The AWS resources are managed by CDK** (`deploy/cdk/`): on 2026-11-14 the four stacks imported the live
+  resources and deployed, with no drift and no interruption to mail. The deploys added the TLS-only policies on the
+  backup and mail buckets, turned on the instance's termination protection, and made the `glazecalc-operator` policy,
+  which had never existed. The runbook now records what the import found: check each role's `app=glazecalc` tag first,
+  diff in import mode with `--method=template`, read the resource mapping before importing, and expect warnings when
+  running as root. The receipt rule's recipients are in alphabetical order, as SES returns them, so drift detection
+  finds nothing.
+
 ## 1.0.0 (2026-11-12)
 
 The 2017 app, put back online in October, has grown into a glaze chemistry workbench in 57 languages that AI

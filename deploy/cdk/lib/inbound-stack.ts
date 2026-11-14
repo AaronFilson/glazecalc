@@ -189,7 +189,9 @@ export class InboundStack extends Stack {
       enabled: true,
       tlsPolicy: TlsPolicy.OPTIONAL,
       scanEnabled: true,
-      recipients: MAILBOXES.map((box) => `${box}@${domain}`),
+      // Sorted, as SES returns them: in any other order drift detection
+      // reports the same six addresses as changed.
+      recipients: [...MAILBOXES].sort().map((box) => `${box}@${domain}`),
       actions: [store, forward]
     });
     // SES checks, when the rule is made, that it may write to the bucket and
