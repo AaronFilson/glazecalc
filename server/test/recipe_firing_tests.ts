@@ -460,6 +460,31 @@ describe('recipe firing (lib/cones/firing.js)', () => {
       expect(firing.readFiring('cone ٠٦')).to.include({ scale: 'orton', low: '06' });
     });
 
+    it('reads the temperature or the range a line names first, so a cooling range is not the peak', () => {
+      // A range after the peak, to cool or to open the kiln, is not the firing.
+      for (const [text, low] of [
+        ['Fire to 1240°C, slow cool 1100-900°C', '1240'],
+        ['Fire to 2232°F, slow cool 1900-1500°F', '1222'],
+        ['Peak 1240°C; cool 1000-800°C at 50°C/h', '1240'],
+        ['1222°C (slow cool 1050–950°C)', '1222'],
+        ['Fire to 1240°C; open the kiln at 100-150°C', '1240'],
+        ['1240°C, hold 15 min, drop 1240-1100°C', '1240']
+      ] as const) {
+        expect(firing.readFiring(text), text).to.include({ scale: 'temperature', low }).and.not.have.property('high');
+      }
+      expect(firing.firingFromLines(['Fire to 1240°C, slow cool 1100-900°C'])).to.eql({
+        scale: 'temperature',
+        low: '1240'
+      });
+      // A range first is the firing; one that is no firing (below 500 °C) gives way to a temperature that is.
+      expect(firing.readFiring('1220-1260°C, slow cool to 900°C')).to.include({ low: '1220', high: '1260' });
+      expect(firing.readFiring('Open at 100-150°C, fired to 1240°C')).to.include({ scale: 'temperature', low: '1240' });
+      expect(firing.readFiring('400-1240°C'))
+        .to.include({ scale: 'temperature', low: '1240' })
+        .and.not.have.property('high');
+      expect(firing.readFiring('Open the kiln at 100-150°C')).to.equal(null);
+    });
+
     it('reads "Fire to cone 6" as a firing, and a bisque firing as not the glaze’s', () => {
       expect(firing.readFiring('Fire to cone 6')).to.eql({ scale: 'orton', low: '6', whole: true });
       expect(firing.isFiringLine('Fire to cone 6')).to.equal(true);
