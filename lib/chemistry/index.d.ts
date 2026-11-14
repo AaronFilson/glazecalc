@@ -68,7 +68,7 @@ export interface MaterialWeights {
   warningCodes: ChemistryMessage[];
 }
 
-/** IUPAC standard atomic weights (abridged), g/mol, of the elements in the oxides. */
+/** Standard atomic weights (CIAAW's abridged table of 2024), g/mol, of the elements in the oxides. */
 export const ATOMIC_WEIGHTS: Record<string, number>;
 export const MOLAR_MASS: Record<string, number>;
 export const OXIDE_GROUPS: Record<string, OxideGroup>;

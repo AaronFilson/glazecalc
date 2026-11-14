@@ -39,7 +39,7 @@ describe('Match with what I have: classic substitutions', () => {
   // A staging session (2026-10-19): an assistant asked to replace Gerstley Borate called the
   // MCP tool, read its score (a miss of 20.5) as a wide miss, and built a recipe by hand instead.
   const GERSTLEY = recipeOf([
-    ['Nepheline Syenite', 40],
+    ['Nepheline Syenite (typical)', 40],
     ['Silica', 25],
     ['Gerstley Borate', 15],
     ['EPK Kaolin', 20]
@@ -97,7 +97,7 @@ describe('Match with what I have: classic substitutions', () => {
 
   it('holds raw clay to 20% where that costs the match little, says what more would give, and allows more', () => {
     const lines = recipeOf([
-      ['Nepheline Syenite', 35],
+      ['Nepheline Syenite (typical)', 35],
       ['Silica', 25],
       ['Whiting', 10],
       ['EPK Kaolin', 15],

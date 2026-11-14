@@ -12,12 +12,16 @@ import { PAGE_LANGUAGE } from '../../i18n/language';
 import { StructuredData, homeData, pageAddress } from '../../shared/structured-data';
 import { UnityFormula } from '../recipe/unity-formula';
 
-/** Bernard Leach's "4321" celadon base, in parts by weight. */
+/**
+ * Bernard Leach's "4321" celadon base, in parts by weight, from the chemistry's theoretical materials. Each is
+ * named as the calculator's library names it (Orthoclase and China Clay go by these names too), so the
+ * example typed or pasted into the calculator gives the same unity formula.
+ */
 export const EXAMPLE_RECIPE = [
-  { material: 'Potash Feldspar', amount: 40 },
+  { material: 'Potash Feldspar (theoretical)', amount: 40 },
   { material: 'Silica', amount: 30 },
   { material: 'Whiting', amount: 20 },
-  { material: 'Kaolin', amount: 10 }
+  { material: 'Kaolin (theoretical)', amount: 10 }
 ];
 
 /** What Glazecalc does, as keys to the messages shown. */

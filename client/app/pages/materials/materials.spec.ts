@@ -21,7 +21,7 @@ import { useCodedMessages } from '../../i18n/coded';
 import { PAGE_LANGUAGE } from '../../i18n/language';
 import { API, httpMock, settle, skippedHeadings, testProviders } from '../../testing/test-providers';
 import { ConesPage } from './cones-page';
-import { MaterialInfoPage, analysisOf, hasFlux } from './material-info-page';
+import { MaterialInfoPage, analysisOf, equivalentKind, hasFlux } from './material-info-page';
 import {
   knownMaterial,
   materialDescriptionKey,
@@ -230,6 +230,40 @@ describe('the page of a standard material', () => {
       'Silica has no flux oxide, so its unity contribution is per formula as written.'
     );
     expect((await render('Whiting')).page.textContent).not.toContain('has no flux oxide');
+  });
+
+  // "The grams that hold 1.0 mole of flux" was false where there is no flux, and misleading where there is little.
+  it('says what the equivalent weight is: per mole of flux, large for little flux, per formula or 100 g for none', async () => {
+    const shown = async (name: string) => {
+      const { page } = await render(name);
+      return {
+        note: page.querySelector('#analysis ~ p.muted')?.textContent?.trim(),
+        equivalent: page.querySelector('#analysis ~ dl dd')?.textContent?.trim()
+      };
+    };
+    const fired = 'The fired weight is what is left of that after firing.';
+    expect(await shown('Whiting')).toEqual({
+      note: `The equivalent weight is the grams of Whiting that hold 1.0 mole of flux. ${fired}`,
+      equivalent: '100.08'
+    });
+    expect(await shown('EPK Kaolin')).toEqual({
+      note:
+        'The equivalent weight is the grams of EPK Kaolin that hold 1.0 mole of flux. EPK Kaolin has little flux, so ' +
+        `its equivalent weight is large, and so are its unity contributions. ${fired}`,
+      equivalent: '9840.14'
+    });
+    expect(await shown('Silica')).toEqual({
+      note: `Silica has no flux, so its equivalent weight is the weight in grams of its formula as written. ${fired}`,
+      equivalent: '60.08'
+    });
+    expect(await shown('Alumina Hydrate')).toEqual({
+      note: `Alumina Hydrate has no flux, so its equivalent weight is 100 g, the amount its analysis is given for. ${fired}`,
+      equivalent: '100'
+    });
+    // A frit or a flux never reads as one with little flux, or none.
+    for (const material of STANDARD_MATERIALS.filter((m) => m.category === 'frit' || m.category === 'flux')) {
+      expect(equivalentKind(material, analysisOf(material).weights!), material.name).toBe('flux');
+    }
   });
 
   it('says a material has lead, and when it is no longer sold', async () => {

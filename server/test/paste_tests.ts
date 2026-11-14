@@ -550,12 +550,14 @@ describe('Paste-in import: finding the material', () => {
     expect(matched('G200')).to.eql(['alias', 'G-200 Feldspar']);
     expect(matched('Feldspar, potash')).to.eql(['alias', 'Potash Feldspar (Potterycrafts P3296)']);
     expect(matched('Kalifeldspat K 11')).to.eql(['alias', 'Norflux Potash Feldspar (Sibelco, K 11 / LIS D75)']);
+    // It offered barium, lithium and strontium carbonate, whiting and potassium bichromate, but not Pearl Ash.
+    expect(matched('Potassium carbonate')).to.eql(['alias', 'Pearl Ash']);
   });
 
   it('takes a close name when one stands out', () => {
     expect(matched('Custer Feldspar')).to.eql(['close', 'Custer Spar']);
     expect(matched('Frit 3134')).to.eql(['close', 'Ferro Frit 3134']);
-    expect(matched('Nephaline Syenite')).to.eql(['close', 'Nepheline Syenite']);
+    expect(matched('Nephaline Syenite A270')).to.eql(['close', 'Nepheline Syenite A270']);
     expect(matched('Copper carb')).to.eql(['close', 'Copper carbonate']);
     expect(matched('Gerstley')).to.eql(['close', 'Gerstley Borate']);
   });
@@ -625,23 +627,43 @@ describe('Paste-in import: finding the material', () => {
     expect(names('Zirconium silicate')[0]).to.equal('Zircon');
     expect(names('FELDSPAR')[0]).to.equal('Custer Spar');
     expect(names('Frit')[0]).to.equal('Ferro Frit 3134');
+    expect(names('Nepheline Syenite')).to.eql([
+      'Nepheline Syenite (typical)',
+      'Nepheline Syenite A270',
+      'Nepheline Syenite (Norwegian, UK)'
+    ]);
     expect(names('Kaolin').length).to.be.at.most(5);
     expect(recipe.matchName('Kaolin', LIBRARY, 2).candidates).to.have.length(2);
   });
 
-  it('still takes a library name or alias exactly, even when it is a generic word', () => {
+  it('still takes a library name or alias exactly, though the table offers it for a generic word', () => {
     expect(matched('Silica')).to.eql(['name', 'Silica']);
     expect(matched('Flint')).to.eql(['name', 'Flint']);
     expect(matched('Whiting')).to.eql(['name', 'Whiting']);
     expect(matched('Talc')).to.eql(['name', 'Talc']);
     expect(matched('Quartz')).to.eql(['alias', 'Silica']);
     expect(matched('Zircon')).to.eql(['name', 'Zircon']);
-    expect(matched('Nepheline Syenite')).to.eql(['name', 'Nepheline Syenite']);
+    expect(matched('Nepheline Syenite 270')).to.eql(['alias', 'Nepheline Syenite A270']);
   });
 
   it('takes a potter’s own record named like a generic word before the table', () => {
     const own = { name: 'Kaolin', aliases: [], ownedBy: 'me' };
     expect(recipe.matchName('kaolin', [own, ...LIBRARY]).record).to.equal(own);
+  });
+
+  // A name or alias the library has is taken before the table is read, so a word that is one would never offer
+  // its choice: "Nepheline Syenite" took the 2017 typical formula, "Sodium feldspar" the UK Potclays spar.
+  it('has no word the library has as a name or another name, so each one offers its choice', () => {
+    const names = new Set(LIBRARY.flatMap((r) => [r.name, ...(r.aliases ?? [])]).map(recipe.compactName));
+    const shadowed = GENERIC_NAMES.flatMap((entry) => entry.words).filter((word) =>
+      names.has(recipe.compactName(word))
+    );
+    expect(shadowed).to.eql([]);
+    for (const word of ['Nepheline Syenite', 'Sodium feldspar', 'Calcined China Clay', 'Zirconia']) {
+      const match = recipe.matchName(word, LIBRARY);
+      expect(match.how, word).to.equal('choose');
+      expect(match.record, word).to.equal(null);
+    }
   });
 
   it('keeps the table to words, in the library, once each', () => {

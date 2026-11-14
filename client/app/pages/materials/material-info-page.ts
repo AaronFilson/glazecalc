@@ -50,6 +50,39 @@ export function analysisOf(material: Material): { rows: OxideRow[]; weights: Mat
 export const hasFlux = (material: Material): boolean =>
   material.fields.some((field) => ['R2O', 'RO'].includes(OXIDE_GROUPS[field.name] ?? ''));
 
+/**
+ * Fluxes under this share of a material's oxides, counted in moles, are little, as in a kaolin, a ball clay,
+ * silica or alumina, whose fluxes are impurities; a feldspar, a frit or a flux has more.
+ */
+export const LITTLE_FLUX = 0.05;
+
+/**
+ * What a material's equivalent weight is (lib/chemistry/materials.js materialWeights): the grams that hold 1.0
+ * mole of flux ('flux'), which is large where the material has little flux ('little'); with no flux, the weight
+ * of its formula as written ('formula'), or 100 g for an analysis in percent ('analysis').
+ */
+export function equivalentKind(
+  material: Material,
+  weights: MaterialWeights
+): 'flux' | 'little' | 'formula' | 'analysis' {
+  let flux = 0;
+  let all = 0;
+  for (const [oxide, moles] of Object.entries(weights.unity)) {
+    all += moles;
+    if (['R2O', 'RO'].includes(OXIDE_GROUPS[oxide] ?? '')) flux += moles;
+  }
+  if (!(flux > 0)) return material.percentmole === 'percent' ? 'analysis' : 'formula';
+  return flux < LITTLE_FLUX * all ? 'little' : 'flux';
+}
+
+/** The sentence under the weights, for each kind of equivalent weight. */
+const WEIGHTS_NOTES = {
+  flux: marker('reference.material.weightsNote'),
+  little: marker('reference.material.weightsNoteLittleFlux'),
+  formula: marker('reference.material.weightsNoteNoFluxFormula'),
+  analysis: marker('reference.material.weightsNoteNoFluxAnalysis')
+};
+
 /** The page of a standard material: what its record says, its analysis, and its hazards. */
 @Component({
   selector: 'gc-material-info-page',
@@ -200,7 +233,7 @@ export const hasFlux = (material: Material): boolean =>
           <dt>{{ t('reference.material.loi') }}</dt>
           <dd>{{ t('reference.material.loiValue', { value: upTo(analysis().weights!.loi, 2) }) }}</dd>
         </dl>
-        <p class="muted">{{ t('reference.material.weightsNote', { name: material().name }) }}</p>
+        <p class="muted">{{ t(weightsNote(), { name: material().name }) }}</p>
       } @else {
         <p>{{ t('reference.material.noAnalysis') }}</p>
       }
@@ -283,6 +316,11 @@ export class MaterialInfoPage {
   });
   protected readonly analysis = computed(() => analysisOf(this.material()));
   protected readonly flux = computed(() => hasFlux(this.material()));
+  /** What the equivalent weight is for this material, as the sentence under it says. */
+  protected readonly weightsNote = computed(() => {
+    const weights = this.analysis().weights;
+    return WEIGHTS_NOTES[weights ? equivalentKind(this.material(), weights) : 'flux'];
+  });
   protected readonly lead = computed(() => hasLead(this.material()));
   protected readonly formula = computed(() => formatFormula(this.material().rawformula));
   protected readonly kind = computed(() => CATEGORY_LABELS[this.material().category ?? 'other'] ?? '');
