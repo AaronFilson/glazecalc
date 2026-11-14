@@ -107,6 +107,51 @@ describe('Paste-in import: reading lines', () => {
     ]);
   });
 
+  it('reads simple fractions and mixed numbers as amounts, and never splits a recipe on one', () => {
+    // "Bentonite 1/2" was the title of a second recipe, the materials after it in that one.
+    const read = one(
+      'Silica 30\nBentonite 1/2\nWhiting 20\nRutile 1 1/2\nTin ½\nZircopax 2½ %\n1/4 Epsom salt\n¾ g Copper carbonate'
+    );
+    expect(lines(read)).to.eql([
+      ['Silica', 30, null, false],
+      ['Bentonite', 0.5, null, false],
+      ['Whiting', 20, null, false],
+      ['Rutile', 1.5, null, false],
+      ['Tin', 0.5, null, false],
+      ['Zircopax', 2.5, '%', false],
+      ['Epsom salt', 0.25, null, false],
+      ['Copper carbonate', 0.75, 'g', false]
+    ]);
+    expect(recipe.importAmounts(one('Silica 99\nBentonite 1/3')).map((a) => a.amount)).to.eql(['99', '0.33333']);
+    // In a table's cell, and written with the fraction slash.
+    expect(lines(one('Silica\t30\nBentonite\t1/2\nTin 1\u20442'))).to.eql([
+      ['Silica', 30, null, false],
+      ['Bentonite', 0.5, null, false],
+      ['Tin', 0.5, null, false]
+    ]);
+    // A name that ends in a number before a fraction: the name the library has.
+    expect(lines(one('Tile 6 1/2\nSilica 99'))).to.eql([
+      ['Tile 6', 0.5, null, false],
+      ['Silica', 99, null, false]
+    ]);
+    // A line with a fraction that is not an amount ("1/2 tsp") is a note, never another recipe's title.
+    expect(
+      recipe
+        .parsePaste('Celadon\nSilica 30\nBentonite 1/2 tsp\nWhiting 20', { isName })
+        .map((r) => [r.title, r.notes, r.lines.map((l) => l.name)])
+    ).to.eql([['Celadon', ['Bentonite 1/2 tsp'], ['Silica', 'Whiting']]]);
+    // Not fractions: a name's numbers ("Molochite 30/80"), a date, a number over a smaller one.
+    expect(lines(one('Molochite 30/80 20\nMolochite 16/30\nKalifeldspat K 2/75 10'))).to.eql([
+      ['Molochite 30/80', 20, null, false],
+      ['Molochite 16/30', null, null, false],
+      ['Kalifeldspat K 2/75', 10, null, false]
+    ]);
+    expect(one('Shino\nCuster 50\nFired 12/03').notes).to.eql(['Fired 12/03']);
+    // A title with a number over another that is no fraction still starts the next recipe.
+    const two = recipe.parsePaste('Shino\nCuster 50\nSilica 50\nShino 50/50\nCuster 40\nSilica 60', { isName });
+    expect(two.map((r) => r.title)).to.eql(['Shino', 'Shino 50/50']);
+  });
+
   it('reads a name pasted alone, which the library knows, as a material with no amount', () => {
     expect(lines(one('Recipe\nFrit 3124\nEPK 20'))).to.eql([
       ['Frit 3124', null, null, false],
