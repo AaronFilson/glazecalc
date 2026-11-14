@@ -12,6 +12,7 @@ import { PendingRecipeService } from '../../core/pending-recipe.service';
 import { PreferencesService } from '../../core/preferences.service';
 import { answer, API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { MOLAR_MASS } from '../../../../lib/chemistry';
+import { RecipeError } from '../../../../lib/recipe/messages';
 import { formatLocale } from '../../shared/format';
 import { evaluate, savedAnalysis } from './recipe-analysis';
 import { RecipePage } from './recipe-page';
@@ -3438,7 +3439,10 @@ describe('RecipePage', () => {
         expect(materialsShown(root)).toEqual(['Custer Spar', 'Whiting', 'Silica']);
       });
 
-      const NO_FLUX = 'It cannot be worked out: none of the materials it may use has a flux, such as CaO, K₂O or Na₂O.';
+      // What the recipe tools say of no flux (solve.noFlux), of the materials a swap may use and of the recipe, as
+      // Target & Solve and the MCP tools say it.
+      const NO_FLUX = 'None of these materials has a flux, such as CaO, K₂O or Na₂O, so no glaze can be made of them.';
+      const NO_FLUX_RECIPE = 'The recipe has no flux, such as CaO, K₂O or Na₂O, so it has no unity formula to match.';
       const LINER: Array<[Material, string]> = [
         [CUSTER, '40'],
         [WHITING, '20'],
@@ -3481,6 +3485,75 @@ describe('RecipePage', () => {
         expect(text(fixture, '.recipe-swap-problem')).toBe(NO_FLUX);
         // The recipe goes back to how it was.
         expect(materialsShown(root)).toEqual(['Custer Spar', 'Whiting', 'Silica', 'Kaolin']);
+      });
+
+      it('says when the recipe itself has no flux to match, in Suggest amounts and Match with what I have', async () => {
+        // An old ball clay and silica: no flux at all, so no unity formula to bring back, whatever is on hand.
+        const OLD_CLAY: Material = {
+          ...material(
+            'Old ball clay',
+            [
+              ['Al2O3', 1],
+              ['SiO2', 3]
+            ],
+            12
+          ),
+          status: 'discontinued',
+          substitutes: ['Kaolin']
+        };
+        const { fixture, router, page } = await startWith([WHITING, SILICA, KAOLIN, OLD_CLAY]);
+        fill(page, [
+          [OLD_CLAY, '50'],
+          [SILICA, '50']
+        ]);
+        await settle(fixture);
+        click(fixture, 'Suggest amounts and compare');
+        await settle(fixture);
+        expect(text(fixture, '.recipe-swap-problem')).toBe(NO_FLUX_RECIPE);
+        click(fixture, 'Match with what I have');
+        await settle(fixture);
+        answer('/shelf', { shelf: ['Whiting', 'Silica', 'Kaolin'] });
+        await settle(fixture);
+        click(fixture, 'Match and compare');
+        await settle(fixture);
+        expect(text(fixture, '.recipe-swap-problem')).toBe(NO_FLUX_RECIPE);
+        expect(router.url).toBe('/');
+      });
+
+      it('says no flux in the same words should the chemistry itself find none in what a swap makes', async () => {
+        // Each swap refuses first in the recipe tools' words; the chemistry's own no-flux, should it ever come,
+        // is of the materials too, not a sentence of its own.
+        const { page } = await startWith([WHITING, SILICA]);
+        const whyNot = (error: unknown): string => page['swaps']['whyNot'](error, 'Something else.');
+        expect(whyNot({ code: 'no-flux' })).toBe(NO_FLUX);
+        expect(whyNot(new RecipeError('solve.noFlux', { of: 'offered' }))).toBe(NO_FLUX);
+        expect(whyNot(new RecipeError('solve.noFlux', { of: 'recipe' }))).toBe(NO_FLUX_RECIPE);
+        expect(whyNot(new Error('no-name'))).toBe('Something else.');
+      });
+
+      it('says so when suggested amounts are worked out again without the only flux they had', async () => {
+        // Niter is the recipe's only flux, and the soda frit that replaces it the suggestion's.
+        const { fixture, router, root, page } = await startWith([SILICA, NITER, SODA_FRIT, KAOLIN]);
+        fill(page, [
+          [NITER, '10'],
+          [KAOLIN, '40'],
+          [SILICA, '50']
+        ]);
+        await settle(fixture);
+        click(fixture, 'Suggest amounts and compare');
+        await settle(fixture);
+        click(fixture, 'Work it out and compare');
+        await settle(fixture);
+        expect(router.url).toBe('/?compare=before,draft');
+        click(fixture, 'Back to the recipe');
+        await settle(fixture);
+        const frit = [...root.querySelectorAll('.recipe-swap .swap-uses li')].find(
+          (li) => li.querySelector('b')?.textContent === 'Soda frit'
+        ) as HTMLElement;
+        click({ nativeElement: frit }, 'Leave it out');
+        await settle(fixture);
+        expect(text(fixture, '.recipe-swap-problem')).toBe(NO_FLUX);
+        expect(materialsShown(root)).toEqual(['Niter', 'Kaolin', 'Silica']);
       });
 
       it('says why it could not be worked out again in the compare view too, where it was asked', async () => {

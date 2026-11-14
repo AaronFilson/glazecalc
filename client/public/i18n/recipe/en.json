@@ -177,7 +177,6 @@
     "shelfNote": "Made from what you have on hand, coming as near the old recipe's fired oxides as those materials allow.",
     "shelfMade": "Made from what you have.",
     "cannotRerun": "It cannot be worked out that way: a material has no analysis to work from.",
-    "noFlux": "It cannot be worked out: none of the materials it may use has a flux, such as CaO, K₂O or Na₂O.",
     "swapUndone": "The swap is undone: the recipe is as it was.",
     "toolsLabel": "More ways to make recipes",
     "pasteIn": "Paste in recipes",

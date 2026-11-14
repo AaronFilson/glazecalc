@@ -388,6 +388,15 @@ describe('Target & Solve', () => {
     };
     expect(refusal(() => recipe.matchFromShelf(slip, kaolinAndSilica))).to.deep.equal(noRecipeFlux);
     expect(refusal(() => recipe.suggestAmounts(slip, find, [], 'US'))).to.deep.equal(noRecipeFlux);
+    // Suggest amounts without the only flux it may use (the report's Leave it out on Custer Spar's feldspar).
+    const spar = recipeOf([
+      ['Custer Spar', 30],
+      ['Calcined Kaolin (theoretical)', 20],
+      ['Silica', 50]
+    ]);
+    expect(refusal(() => recipe.suggestAmounts(spar, find, [], 'US', { avoid: ['G-200 EU Feldspar'] }))).to.deep.equal(
+      noFlux
+    );
     // A target with none, as before.
     expect(refusal(() => recipe.solveTarget({ kind: 'unity', oxides: { SiO2: 3 } }, kaolinAndSilica)).text).to.equal(
       'The target needs at least one flux, such as CaO, K₂O or Na₂O.'
