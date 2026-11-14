@@ -581,6 +581,15 @@ describe('Shared recipe tools', () => {
       false,
       false
     ]);
+    // Under a litre, half a gram all the same: the page writes the water to the gram, so it never says to add 0 g.
+    for (const litres of [0.1, 0.5, 1]) {
+      expect([0.00049, -0.00049, 0.0005, -0.0005].map((water) => recipe.reachedAlready(water, litres))).to.eql([
+        true,
+        true,
+        false,
+        false
+      ]);
+    }
     // Thickening is water to pour off; the glaze stays the same.
     const off = recipe.waterToReach(10, 1.4, 1.5, 2.5)!;
     expect(off).to.be.closeTo(-2, 1e-9);

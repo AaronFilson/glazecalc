@@ -722,20 +722,31 @@ describe('MCP: the public tools', () => {
     const bucket = await data('specific_gravity_water', { gramsPer100ml: 145.02, litres: 100, target: 1.45 });
     expect(bucket.waterToAddLitres).to.equal(0);
     expect(bucket.note).to.match(/already/);
-    // On either side of the page's rule (lib/recipe/slurry.js), as the page decides.
-    for (const [litres, sg, target] of [
-      [0.5, 2.01, 2],
-      [0.5, 1.4501, 1.45],
-      [1, 1.452, 1.45],
-      [12, 1.45, 1.4502],
-      [100, 1.4502, 1.45],
-      [100, 1.4512, 1.45],
-      [1000, 1.45, 1.45]
+    // On either side of the page's rule, worked out here: the water is litres × (SG − target) ÷ (target − 1), and the
+    // slurry is there already under half a gram of it a litre either way, or under half a gram in a bucket under a
+    // litre, which the page writes to the gram: it never says to add 0 g, nor the tool 0 L.
+    for (const [litres, sg, target, water, note] of [
+      // 0.5 × 0.01 ÷ 1 = 5 g.
+      [0.5, 2.01, 2, 0.005, /^Add the water/],
+      // 0.5 × 0.0004 ÷ 0.45 = 0.44 g: there already. It said to add the water, 0 L of it.
+      [0.5, 1.4504, 1.45, 0, /already/],
+      // 0.5 × 0.0005 ÷ 0.45 = 0.56 g, a gram to the gram.
+      [0.5, 1.4505, 1.45, 0.001, /^Add the water/],
+      [0.5, 1.4495, 1.45, -0.001, /pour off/],
+      // 0.1 × −0.0014 ÷ 0.3 = −0.47 g: there already. It said to pour off 0 L.
+      [0.1, 1.2986, 1.3, 0, /already/],
+      // 1 × 0.002 ÷ 0.45 = 4.4 g.
+      [1, 1.452, 1.45, 0.004, /^Add the water/],
+      // 12 × −0.0002 ÷ 0.4502 = −5.3 g, under 6 g.
+      [12, 1.45, 1.4502, 0, /already/],
+      // 100 × 0.0002 ÷ 0.45 = 44 g, under 50 g; 100 × 0.0012 ÷ 0.45 = 267 g.
+      [100, 1.4502, 1.45, 0, /already/],
+      [100, 1.4512, 1.45, 0.267, /^Add the water/],
+      [1000, 1.45, 1.45, 0, /already/]
     ] as const) {
-      const already = recipe.reachedAlready(recipe.waterToReach(litres, sg, target, null)!, litres);
       const answer = await data('specific_gravity_water', { sg, litres, target });
-      expect(/already/.test(answer.note), `${litres} L from ${sg} to ${target}`).to.equal(already);
-      expect(answer.waterToAddLitres === 0, `${litres} L from ${sg} to ${target}`).to.equal(already);
+      expect(answer.waterToAddLitres, `${litres} L from ${sg} to ${target}`).to.equal(water);
+      expect(answer.note, `${litres} L from ${sg} to ${target}`).to.match(note);
     }
   });
 
