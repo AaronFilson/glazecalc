@@ -932,6 +932,41 @@ describe('Shared recipe tools', () => {
     for (const caution of replaced.cautions) expect(words(caution)).to.not.match(/\{|undefined/);
   });
 
+  it('replaces the lead of a batch so small its amounts need more decimals, never rounding the frit away', () => {
+    // The base frit always has a flux; only rounding could leave a recipe without one, and its unity formula
+    // (unityOf) then has none. A batch of 0.00035 g came to 0 of everything, and Replace lead failed.
+    const library = standardData.load('materials') as MaterialRecord[];
+    const find = (name: string) => library.find((m) => m.name === name);
+    const batch = (scale: number) => [
+      line(find('Lead Bisilicate Frit (Potclays 2261)')!, 0.0002 * scale),
+      line(KAOLIN, 0.00005 * scale),
+      line(SILICA, 0.0001 * scale)
+    ];
+    const replaced = (lines: MaterialRecord[], mode: 'colour' | 'rebuild') => {
+      const [base] = recipe.leadFreeBases(lines, [], find, library, 'UK', 1060, mode);
+      const { materials } = recipe.replaceLead(lines, [], find, library, 'UK', {
+        base: base!.name,
+        celsius: 1060,
+        mode
+      });
+      return { base: base!.name, materials };
+    };
+    for (const mode of ['colour', 'rebuild'] as const) {
+      const { base, materials } = replaced(batch(1), mode);
+      expect(Number(materials.find((m) => m.name === base)?.amount), mode).to.be.above(0);
+      expect(
+        materials.reduce((sum, m) => sum + Number(m.amount), 0),
+        mode
+      ).to.be.closeTo(0.00035, 0.000005);
+      expect(recipe.unityOf(recipe.molesOf(materials)), mode).to.be.an('object');
+    }
+    // A batch of 0.1 or more is written to 3 decimals, as before.
+    const decimals = (amount?: string) => (amount?.split('.')[1] ?? '').length;
+    for (const mode of ['colour', 'rebuild'] as const) {
+      expect(Math.max(...replaced(batch(1000), mode).materials.map((m) => decimals(m.amount))), mode).to.equal(3);
+    }
+  });
+
   it('keeps the colour with a raw clay still sold, a kaolin or ball clay first, else China Clay', () => {
     const library = standardData.load('materials') as MaterialRecord[];
     const find = (name: string) => library.find((m) => m.name === name);

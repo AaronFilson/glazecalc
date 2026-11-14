@@ -1,8 +1,10 @@
 import { Injector, Signal, WritableSignal, afterNextRender, computed, inject, signal } from '@angular/core';
 import { translate } from '@jsverse/transloco';
 import { CONES, MaterialInput } from '../../../../lib/chemistry';
+import type { ChemistryError } from '../../../../lib/chemistry';
 import { FiringBlock, firingBands } from '../../../../lib/cones/firing';
 import { FiringBand, LIMIT_SETS, bandOf } from '../../../../lib/recipe/limits';
+import { RecipeError } from '../../../../lib/recipe/messages';
 import { LocaleService } from '../../core/locale.service';
 import { Additive, Material, Recipe, RecipeMaterial } from '../../core/models';
 import { ShelfService } from '../../core/shelf.service';
@@ -13,6 +15,7 @@ import { focusWhenDrawn } from './focus';
 import { BaseChoice, LeadMode, bariumOf, leadFreeBases, leadOf, recipeHasLead, replaceLead } from './lead';
 import { TryMaterial } from './pool';
 import { libraryKey } from './recipe-library';
+import { RecipeProblem, recipeText } from './recipe-messages';
 import { matchFromShelf } from './shelf';
 import { Plan, planSuggestion, suggestAmounts } from './suggest';
 // Types apart from the report, which the page and its parts defer (@defer), so its file can be left out until needed.
@@ -217,12 +220,12 @@ export class RecipeSwaps {
         chosenRegion(),
         { allowLead: !this.page.leadOff() }
       );
-    } catch {
-      this.problem.set(translate('recipe.page.cannotSuggest'));
+    } catch (error) {
+      this.problem.set(this.whyNot(error, translate('recipe.page.cannotSuggest')));
       return;
     }
     if (!plan.shortfalls.length) {
-      this.applySuggestion(this.runOf('suggest'));
+      this.tryTo(() => this.applySuggestion(this.runOf('suggest')), translate('recipe.page.cannotSuggest'));
       return;
     }
     const chosen = Object.fromEntries(plan.shortfalls.map((short) => [short.oxide, short.choices[0]?.name ?? '']));
@@ -251,7 +254,7 @@ export class RecipeSwaps {
       .filter((material): material is Material => !!material);
     const run = { ...this.runOf('suggest'), bringIn, tries: this.suggestTries() };
     this.closeQuestions();
-    this.applySuggestion(run);
+    this.tryTo(() => this.applySuggestion(run), translate('recipe.page.cannotSuggest'));
   }
 
   /** Replace lead: asks the firing, how, and which lead-free frit to build on. */
@@ -261,8 +264,8 @@ export class RecipeSwaps {
     let bases: BaseChoice[];
     try {
       bases = this.basesFor(cone);
-    } catch {
-      this.problem.set(translate('recipe.page.cannotReplaceLead'));
+    } catch (error) {
+      this.problem.set(this.whyNot(error, translate('recipe.page.cannotReplaceLead')));
       return;
     }
     this.leadTries.set([]);
@@ -307,7 +310,7 @@ export class RecipeSwaps {
     const run: Run = { ...this.runOf('lead'), cone, mode, base, tries: mode === 'rebuild' ? this.leadTries() : [] };
     this.leadQuestion.set(null);
     this.shelfOpen.set(false);
-    this.applyLead(run);
+    this.tryTo(() => this.applyLead(run), translate('recipe.page.cannotReplaceLead'));
   }
 
   /** Match with what I have: shows the materials on hand, fetched from the account. */
@@ -380,8 +383,8 @@ export class RecipeSwaps {
     const run: Run = { ...this.runOf('shelf'), tries: this.shelfTries() };
     try {
       this.applyShelf(run);
-    } catch {
-      this.problem.set(translate('recipe.page.cannotMatch'));
+    } catch (error) {
+      this.problem.set(this.whyNot(error, translate('recipe.page.cannotMatch')));
       return;
     }
     this.shelfOpen.set(false);
@@ -400,8 +403,8 @@ export class RecipeSwaps {
       if (run.kind === 'suggest') this.applySuggestion(run, false);
       else if (run.kind === 'shelf') this.applyShelf(run, false);
       else this.applyLead(run, false);
-    } catch {
-      this.problem.set(translate('recipe.page.cannotRerun'));
+    } catch (error) {
+      this.problem.set(this.whyNot(error, translate('recipe.page.cannotRerun')));
       return;
     }
     focusWhenDrawn(this.injector, 'swap-report-heading', 'swap-report-heading', null);
@@ -415,6 +418,28 @@ export class RecipeSwaps {
     this.closeQuestions();
     this.page.announce(translate('recipe.page.swapUndone'));
     this.page.focusTitle();
+  }
+
+  /**
+   * Why a swap could not be worked out, in the page's language: what the recipe tools said (a coded
+   * RecipeError); that none of the materials it may use has a flux, where the chemistry found none in what
+   * it would make (no-flux: a unity formula needs one); or else `fallback`, which says a material has no
+   * analysis to work from.
+   */
+  private whyNot(error: unknown, fallback: string): string {
+    if (error instanceof RecipeProblem) return error.message;
+    if (error instanceof RecipeError) return recipeText(error);
+    if ((error as ChemistryError | null)?.code === 'no-flux') return translate('recipe.page.noFlux');
+    return fallback;
+  }
+
+  /** Makes a swap, or says why it could not (whyNot) rather than failing with nothing said. */
+  private tryTo(swap: () => void, fallback: string): void {
+    try {
+      swap();
+    } catch (error) {
+      this.problem.set(this.whyNot(error, fallback));
+    }
   }
 
   /** A run with nothing chosen yet. */
