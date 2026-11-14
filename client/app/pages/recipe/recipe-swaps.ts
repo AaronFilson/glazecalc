@@ -12,7 +12,7 @@ import { formatTemperature, listOf } from '../../shared/format';
 import { chosenRegion, findNamed, hasLead } from '../../shared/library-info';
 import { LibraryMaterial, modernMaterials } from './compare';
 import { focusWhenDrawn } from './focus';
-import { BaseChoice, LeadMode, bariumOf, leadFreeBases, leadOf, recipeHasLead, replaceLead } from './lead';
+import { BaseChoice, LeadMode, bariumOf, clayFor, leadFreeBases, leadOf, recipeHasLead, replaceLead } from './lead';
 import { TryMaterial } from './pool';
 import { libraryKey } from './recipe-library';
 import { RecipeProblem, recipeText } from './recipe-messages';
@@ -139,6 +139,8 @@ export class RecipeSwaps {
     bases: BaseChoice[];
     base: string;
   } | null>(null);
+  /** The clay Keep the colour puts with the frit (lead.js clayFor): the recipe's own raw clay, or China Clay. */
+  readonly colourClay = computed(() => clayFor(this.page.lines(), this.page.standardMaterials())?.name ?? '');
 
   /** What Undo the swap puts back, while there is one. */
   readonly undo = computed(() => this.page.undo());
@@ -527,7 +529,11 @@ export class RecipeSwaps {
         ? this.byCones()
           ? translate('recipe.page.leadRebuiltCone', { cone: run.cone, base: run.base })
           : translate('recipe.page.leadRebuilt', { firing: this.firingLabel(firing), base: run.base })
-        : translate('recipe.page.leadColour', { base: run.base });
+        : translate('recipe.page.leadColour', {
+            base: run.base,
+            // The clay it was made with: the recipe's own (Redart, say), or China Clay.
+            clay: replacement.materials.find((material) => material.name !== run.base)?.name ?? ''
+          });
     const parts = [
       how,
       this.changedNote(replacement.changes),

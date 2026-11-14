@@ -213,7 +213,7 @@
                 (change)="swaps().chooseLeadMode('colour')"
               />
               <label class="form-check-label" for="lead-mode-colour">
-                {{ t('recipe.page.keepColour') }}
+                {{ t('recipe.page.keepColour', { clay: swaps().colourClay() }) }}
               </label>
             </div>
           </fieldset>

@@ -3204,6 +3204,51 @@ describe('RecipePage', () => {
         expect(materialsShown(root)).toEqual(['Red lead', 'China Clay', 'Silica']);
       });
 
+      it('keeps the colour on the recipe’s own clay, and names it: Redart, not kaolin', async () => {
+        // A red earthenware clay, neither kaolin nor ball clay: the recipe's only clay, so the colour is kept on it.
+        const REDART: Material = {
+          ...material(
+            'Redart',
+            [
+              ['Al2O3', 1],
+              ['SiO2', 4],
+              ['Fe2O3', 0.2],
+              ['K2O', 0.05]
+            ],
+            5
+          ),
+          category: 'clay'
+        };
+        const { fixture, router, root, page } = await startWith([
+          WHITING,
+          SILICA,
+          CHINA_CLAY,
+          RED_LEAD,
+          REDART,
+          frit('Borosilicate frit', 0.6)
+        ]);
+        fill(page, [
+          [RED_LEAD, '55'],
+          [REDART, '15'],
+          [SILICA, '30']
+        ]);
+        await settle(fixture);
+        click(fixture, 'Replace lead');
+        await settle(fixture);
+        expect(text(fixture, 'label[for="lead-mode-colour"]')).toBe(
+          "Keep the colour on a lead-free base: the frit and Redart, 85 to 15, with the recipe's colorants"
+        );
+        (root.querySelector('#lead-mode-colour') as HTMLInputElement).click();
+        await settle(fixture);
+        click(fixture, 'Replace lead and compare');
+        await settle(fixture);
+        expect(router.url).toBe('/?compare=before,draft');
+        expect(page['lines']().map((l: Material) => l.name)).toEqual(['Borosilicate frit', 'Redart']);
+        expect(page['notes']()).toMatch(
+          /^Lead replaced: the colorants carried onto a lead-free base of Borosilicate frit and Redart, 85 to 15\. /
+        );
+      });
+
       it('works a lead replacement out again from its report under the materials', async () => {
         const { fixture, router, root, page } = await startWith([
           WHITING,

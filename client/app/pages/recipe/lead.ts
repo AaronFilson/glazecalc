@@ -13,7 +13,7 @@ import { cautionText, recipeText } from './recipe-messages';
 // server (lib/recipe/lead.js); this puts what it says in the page's language.
 
 export type { BaseChoice, LeadMode } from '../../../../lib/recipe/lead';
-export { leadFreeBases, leadIn, recipeHasLead } from '../../../../lib/recipe/lead';
+export { clayFor, leadFreeBases, leadIn, recipeHasLead } from '../../../../lib/recipe/lead';
 export { roleOf } from '../../../../lib/recipe/materials';
 
 /**
