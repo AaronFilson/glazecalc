@@ -621,7 +621,8 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
         // Nothing to swap is said without working anything out, and is not counted as a fit.
         if (!recipe.modernMaterials<MaterialRecord>(resolved, findMaterial, region ?? '', options).swaps.length)
           return ok({ swaps: [], note: 'Nothing in this recipe is discontinued or scarce.' });
-        // The plan and the suggestion are one fit, with one meter for both.
+        // The plan and the suggestion are one fit, charged together; but each has its own meter, as on the
+        // page (where the amounts are worked out after the potter chooses), so both give the same answer.
         const { plan, suggestion } = fitFor(caller, (meter) => {
           const plan = recipe.planSuggestion<MaterialRecord>(
             resolved,
@@ -636,12 +637,17 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
             .filter((material): material is LibraryRecord => Boolean(material))
             // One material can be the best choice for two oxides: it comes in once.
             .filter((material, i, all) => all.findIndex((other) => other.name === material.name) === i);
-          const suggestion = recipe.suggestAmounts<MaterialRecord>(resolved, findMaterial, bringIn, region ?? '', {
-            ...options,
-            uncapped,
-            meter
-          });
-          return { plan, suggestion };
+          const amounts = chemistry.newMeter();
+          try {
+            const suggestion = recipe.suggestAmounts<MaterialRecord>(resolved, findMaterial, bringIn, region ?? '', {
+              ...options,
+              uncapped,
+              meter: amounts
+            });
+            return { plan, suggestion };
+          } finally {
+            meter.used += amounts.used;
+          }
         });
         return ok({
           swaps: plan.swaps,

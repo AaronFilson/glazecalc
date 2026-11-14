@@ -707,6 +707,55 @@ describe('glaze chemistry', () => {
       near(boundedLeastSquares({ columns: [[1]], b: [2], lo: [0.5], hi: [Infinity], cost: [3] }), [0.5]);
     });
 
+    it('should give a number for a column of zeros, and not hold back a tiny column', () => {
+      // A column of zeros with a rebate (a price below nothing) came back NaN: 0 times Infinity.
+      const zeros = boundedLeastSquares({ columns: [[0, 0]], b: [1, 1], lo: [0], hi: [Infinity], cost: [-1] });
+      expect(zeros.every(Number.isFinite)).to.equal(true);
+      // With a pull, it goes where the pull and the price put it, as no row has a say: 2 - (-1)/1 = 3.
+      near(
+        boundedLeastSquares({
+          columns: [[0, 0]],
+          b: [1, 1],
+          lo: [0],
+          hi: [Infinity],
+          lambda: 1,
+          pullTo: [2],
+          cost: [-1]
+        }),
+        [3]
+      );
+      // Beside a column of zeros, the others are solved as ever.
+      near(
+        boundedLeastSquares({
+          columns: [
+            [1, 0],
+            [0, 0],
+            [0, 1]
+          ],
+          b: [2, 3],
+          lo: [0, 0, 0],
+          hi: [Infinity, 5, Infinity]
+        }),
+        [2, 0, 3]
+      );
+      // Tiny columns beside a large one: half a millionth of it, where the ridge for the large one (1e-13 of
+      // its square) held the small one at 98% of what it takes; a ten-millionth, where its slope was under
+      // the large one's tolerance and it did not move at all.
+      for (const tiny of [2e-6, 1e-7]) {
+        const x = boundedLeastSquares({
+          columns: [
+            [tiny, 0],
+            [0, 1]
+          ],
+          b: [tiny, 1],
+          lo: [0, 0],
+          hi: [Infinity, Infinity]
+        });
+        expect(x[0], String(tiny)).to.be.closeTo(1, 1e-4);
+        expect(x[1]).to.be.closeTo(1, 1e-9);
+      }
+    });
+
     it('should cope with near-duplicate columns, and match a slow method on random problems', () => {
       let seed = 11;
       const random = () => (seed = (seed * 1103515245 + 12345) % 2147483648) / 2147483648;
@@ -868,6 +917,40 @@ describe('glaze chemistry', () => {
       expect(amounts[3]).to.be.at.least(1 - 1e-9);
       expect(amounts[4]).to.be.at.least(1 - 1e-9);
       expect(amounts[3] + amounts[4]).to.be.at.most(5 + 1e-6);
+    });
+
+    it('should keep a cap on an amount and a cap on a share together', () => {
+      // Clay Ceram is the group's one member and, outside the share, gets its rebate: set one at a time,
+      // the two prices pulled against each other, and after ten rounds the group's 12.46 came back at 40.
+      const pool = [
+        { material: library.get('Ferro Frit 4113')!, start: 0, least: 15.6838, group: 's' },
+        { material: library.get('Niter')!, start: 0 },
+        { material: library.get('Eckalite 2 Kaolin')!, start: 0, least: 1.219, group: 's' },
+        { material: library.get('Lead, Red')!, start: 0 },
+        { material: library.get('Clay Ceram (Unimin, Granville)')!, start: 0, least: 1.219, group: 'g' }
+      ];
+      const target = {
+        K2O: 0.059929,
+        SiO2: 0.739948,
+        Al2O3: 0.193607,
+        Fe2O3: 0.002237,
+        TiO2: 0.005106,
+        Na2O: 0.03768,
+        PbO: 0.1164,
+        MgO: 0.001891,
+        B2O3: 0.069023,
+        CaO: 0.084026
+      };
+      const options = { groups: { g: 12.4568 }, shares: { s: 0.3401 } };
+      for (const { amounts } of [
+        chemistry.bestFit(pool, target, options),
+        chemistry.fitAmounts(pool, target, options)
+      ]) {
+        const batch = amounts.reduce((sum, amount) => sum + amount, 0);
+        expect(amounts[4], 'the group').to.be.at.most(12.4568 * (1 + 1e-6));
+        expect((amounts[0] + amounts[2]) / batch, 'the share').to.be.at.most(0.3401 * (1 + 1e-6));
+        pool.forEach((line, i) => expect(amounts[i]).to.be.at.least((line.least ?? 0) * (1 - 1e-9)));
+      }
     });
 
     it('should say when there is nothing to work out', () => {
@@ -1123,6 +1206,79 @@ describe('glaze chemistry', () => {
       expect(share(shared, 0) + share(shared, 1)).to.be.at.most(0.44 + 1e-6);
     });
 
+    it('should keep every material used at its least, not only the last one raised to it', () => {
+      // Raising Bone Ash to its least once took Godfrey Spar, raised before it, to 0.74 (least 9.17).
+      const leasts: Array<[string, number, object?]> = [
+        ['Standard Porcelain China Clay', 4.4988, { start: 5.6 }],
+        ['Godfrey Spar', 9.1696],
+        ['Eckalite 2 Kaolin', 8.6795],
+        ['Bone Ash', 14.1091],
+        ['Nepheline Syenite (Norwegian, UK)', 10.1633, { avoid: true }],
+        ['Litharge', 4.763],
+        ['Hymod AT Ball Clay', 13.4878],
+        ['Potash Feldspar (Valentine Clays)', 6.2934],
+        ['Talc', 12.9392, { must: true }],
+        ['Lead Bisilicate Frit 10.05 (Keramikos)', 14.0001],
+        ['China Clay', 14.635],
+        ['FFP 45 Feldspar', 12.798],
+        ['Grolleg China Clay', 1.067]
+      ];
+      const lines = leasts.map(([name, least, extra]) => ({ ...offer(name, extra), least }));
+      const target = {
+        SiO2: 0.78733,
+        Al2O3: 0.13688,
+        Fe2O3: 0.00782,
+        K2O: 0.04947,
+        TiO2: 0.00219,
+        Na2O: 0.01333,
+        CaO: 0.12833,
+        MgO: 0.00696,
+        B2O3: 0.18208,
+        PbO: 0.07001,
+        MnO: 0.00043
+      };
+      const result = chemistry.selectMaterials(lines, target);
+      expect(result.chosen.length).to.be.above(1);
+      for (const i of result.chosen) {
+        expect(result.amounts[i], lines[i].material.name).to.be.at.least(lines[i].least * (1 - 1e-6));
+      }
+    });
+
+    it('should say what each material supplies in one order every browser agrees on', () => {
+      // Shares compared by their difference rounded were not a total order (0.92 tied 0.94 and 0.94
+      // tied 0.97, but 0.92 did not tie 0.97), so Safari could name them in another order than Chrome.
+      // Now: largest first in bands of 5%, then the oxide the glaze has most of, then by name.
+      const target = chemistry.oxideMoles(
+        (
+          [
+            ['Potash Feldspar (Potclays 3426)', 8.1],
+            ['Nepheline Syenite A270', 16.2],
+            ['Mondré & Manz Frit M 1233', 2.3],
+            ['Vibrantz Frit 90368', 4.9]
+          ] as Array<[string, number]>
+        ).map(([name, amount]) => ({ material: library.get(name)!, amount }))
+      );
+      const lines = [
+        'Lead, Red',
+        'Low Expansion Frit (Potterycrafts P2960)',
+        'Kaolin 233 (Carl Jäger)',
+        'Fusion Frit F-2',
+        'Dolomite',
+        'Cornwall Stone',
+        'Ferro Frit 4113'
+      ].map((name) => offer(name));
+      const result = chemistry.selectMaterials(lines, target);
+      const band = (share: number) => Math.round(20 * share);
+      let pairs = 0;
+      for (const { supplies } of result.contributions) {
+        supplies.slice(1).forEach((part, k) => {
+          expect(band(part.share)).to.be.at.most(band(supplies[k].share));
+          pairs++;
+        });
+      }
+      expect(pairs).to.be.above(2);
+    });
+
     it('should make up a flux nothing offered supplies from the others, keeping the formula near', () => {
       // Lithium carbonate's lithia, with no lithium on hand: a fifth of the fluxes.
       const lithium = molesOf([
@@ -1183,6 +1339,35 @@ describe('glaze chemistry', () => {
       );
       expect(thin.verdict).to.equal('poor');
       expect(thin.oxides.find((o) => o.oxide === 'Al2O3')!.verdict).to.equal('far');
+    });
+
+    it('should not call two formulas with no fluxes close: a target with none has no unity formula', () => {
+      // Silica and kaolin against silica and alumina: no rows to compare, and every row of none was "close".
+      expect(() => chemistry.closeness({ SiO2: 1, Al2O3: 0.2 }, { SiO2: 3, Al2O3: 0.1 }))
+        .to.throw(/no flux/)
+        .with.property('code', 'no-flux');
+      // A match with no fluxes, against a target that has them, is poor, however small the target's fluxes.
+      const fluxless = chemistry.closeness({ CaO: 0.01, SiO2: 0.03, Al2O3: 0.003 }, { SiO2: 3, Al2O3: 0.3 });
+      expect(fluxless.verdict).to.equal('poor');
+    });
+
+    it('should order oxides that tie by name the same in every language the reader has', () => {
+      // TiO2 and ZrO2, neither in the target, tie on group and amount; in Estonian, localeCompare
+      // without a locale put ZrO2 first. Here every comparison without a locale is made Estonian.
+      const target = { CaO: 1, Al2O3: 0.4, SiO2: 3 };
+      const moles = { CaO: 1, Al2O3: 0.4, SiO2: 3, TiO2: 0.05, ZrO2: 0.05 };
+      const original = String.prototype.localeCompare;
+      const estonian = function (this: string, that: string, locales?: string | string[], options?: object) {
+        return original.call(this, that, locales ?? 'et', options);
+      };
+      String.prototype.localeCompare = estonian as typeof original;
+      let order: string[];
+      try {
+        order = chemistry.closeness(target, moles).oxides.map((o) => o.oxide);
+      } finally {
+        String.prototype.localeCompare = original;
+      }
+      expect(order.indexOf('TiO2')).to.be.below(order.indexOf('ZrO2'));
     });
 
     describe('what it says of the materials', () => {

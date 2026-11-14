@@ -9,6 +9,7 @@ import type { Band, FiringBlock } from '../../lib/cones/firing.js';
 import recipe from '../../lib/recipe/index.js';
 import type { Caution, MaterialRecord } from '../../lib/recipe/index.js';
 import * as log from '../lib/log.ts';
+import { SHELF_MOST } from '../models/user.ts';
 import { findMaterial, searchLibrary } from './library.ts';
 import { writeChallenge } from './urls.ts';
 import { cautionText, chemistryText, languageOf, recipeText } from './words.ts';
@@ -18,11 +19,11 @@ export const MOST_LINES = 40;
 
 /**
  * At most this many materials for one fit to choose from (match_from_materials' have, solve_target's
- * materials with the shelf, match_with_what_i_have's shelf): a studio's shelf, with room to spare.
- * The work a fit may do is bounded too (lib/chemistry/fit.js WORK), but its first match over every
- * material offered is not, and grows with them.
+ * materials with the shelf): as many as a shelf holds (SHELF_MOST), so a shelf is never too large.
+ * The work a fit may do is bounded however many there are (lib/chemistry/fit.js WORK): the first
+ * match over every material offered stops with the rest once it is spent.
  */
-export const MOST_MATERIALS = 60;
+export const MOST_MATERIALS = SHELF_MOST;
 
 /** Who is calling, for the limits: 'user:<id>' with a token, 'ip:<address>' without. */
 export interface Caller {

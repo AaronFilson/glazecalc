@@ -197,8 +197,12 @@ export function boundedLeastSquares(problem: {
   lambda?: number;
   pullTo?: number[];
   cost?: number[];
+  /** A^T A and A^T b (lsq.js normalEquations), when worked out already for many solves of one problem. */
+  normal?: { gram: number[][]; atb: number[] };
   /** Counts the solve's work, when given. */
   meter?: Meter;
+  /** With a meter, the solve stops once meter.used reaches this, with x within its bounds (none if not given). */
+  stopAt?: number;
 }): number[];
 
 /** A line offered to selectMaterials: the recipe's own (start > 0) or a material to try. */
@@ -232,8 +236,8 @@ export interface Selection {
     members?: number[];
   }>;
   countCost: number;
-  /** Whether the work allowed ran out first: the best found by then (see lib/chemistry/select.js); always given. */
-  cutShort?: boolean;
+  /** Whether the work allowed ran out first: the best found by then (see lib/chemistry/select.js). */
+  cutShort: boolean;
 }
 
 /** The fewest materials from the lines that bring the target close (see lib/chemistry/select.js). */
@@ -263,6 +267,10 @@ export interface Closeness {
   oxides: OxideCloseness[];
 }
 
+/**
+ * Throws a ChemistryError 'no-flux' for a target with no fluxes, as calculateUMF does: it has no unity formula
+ * to come near. Moles with no fluxes, against a target that has them, are 'poor'.
+ */
 export function closeness(target: Record<string, number>, moles: Record<string, number>): Closeness;
 
 /** The chemistry's messages by code, in English (lib/chemistry/messages.js). */
