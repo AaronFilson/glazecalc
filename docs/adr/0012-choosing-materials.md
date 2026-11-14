@@ -5,7 +5,9 @@ and the frit choice and fixed extras in [ADR 11](0011-replacing-lead.md). Amende
 match says how near it comes, holds raw clay where its own check wants it, and makes up a flux
 nothing offered supplies (see [Amended: how near a match comes](#amended-how-near-a-match-comes)).
 Amended 2026-11-13: a search does at most a set amount of work (see
-[Amended: the work a search may do](#amended-the-work-a-search-may-do)).
+[Amended: the work a search may do](#amended-the-work-a-search-may-do)), and the famous glazes'
+versions are worked out at build with no bound on it (see
+[Amended: the famous glazes' versions at build](#amended-the-famous-glazes-versions-at-build)).
 
 ## Context
 
@@ -269,3 +271,38 @@ the one thread the server answers everyone with (or the page's). The MCP tools a
   tools ask for a shorter list, and take as many materials as a shelf holds
   ([ADR 17](0017-mcp-server.md)). The page does not say yet when a search was cut short; the lists
   potters make stay well within it.
+
+## Amended: the famous glazes' versions at build
+
+2026-11-13, the owner's decision after the 1.0 review.
+
+**What happened.** The amendment above left the famous glazes' versions, the largest searches the
+app made itself, to each reader's browser, within `WORK`. The largest published one, Shino from the
+UK's 49 base materials, took 0.55 of it, but the tests' celadon, which is never published, was
+already cut short from the EU's 66 (at 1.003 times `WORK`; the whole search takes 9.5 times). A glaze
+published later could have come out different from what the whole search makes, and nothing would
+have said so.
+
+**Decision.**
+
+- **At build, with no bound.** `scripts/famous-glazes.mjs` works out every published glaze's
+  versions (`lib/famous-versions.js`): from each region's base materials (US, UK, EU, AU, JP) and,
+  for a lead glaze, from its proposal's own, with the target, the materials and the solver the page
+  used, on a meter that never cuts. Each language's file carries them, each line as
+  `[material name, percent]`, with the closeness verdict ([docs/famous-glazes.md](../famous-glazes.md)).
+- **The page solves nothing.** It shows the version for the reader's region, and reads the standard
+  materials in only to open a region's lead-free version as a recipe.
+- **The build stops** for a published glaze with a version it cannot make, or whose search would be
+  cut short, naming the glaze, the materials and why, as it does for a glaze that fails the publish
+  bar.
+
+**Consequences.**
+
+- Every page shows what it showed: none of the 16 versions was cut short in the browser, and the
+  build's are the same, line for line. A test compares the shipped versions with a fresh search and
+  with the browser's bounded one on every run (`server/test/famous_glazes_tests.ts`).
+- The famous glazes' versions no longer run under `WORK`, and the test that held them under 0.7 of
+  it is gone. `WORK` still bounds every search a person or an AI assistant asks for.
+- The build takes about 3 seconds more for the 16 searches, and each language's file about 2.5 kB
+  more (0.8 kB gzipped). A famous glaze's page no longer reads in the standard materials (every
+  record of the library) or solves when it opens.
