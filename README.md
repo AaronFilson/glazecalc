@@ -35,7 +35,7 @@ For anyone reading the code; the [highlights](#highlights) below give the detail
 
 - **Stack:** Angular 22 (standalone components, signals, zoneless), TypeScript on Node 24 with Express 5 and
   Mongoose 9, MongoDB 9, Docker, and AWS (EC2, SSM, SES, S3, CloudWatch).
-- **Tested in CI on every pull request:** over 1,800 server tests (98% of statements, 88% of branches), over 1,550
+- **Tested in CI on every pull request:** over 1,950 server tests (98% of statements, 88% of branches), over 1,550
   Angular unit tests (99% of statements, 91% of branches) and over 450 Playwright browser tests, with axe checks
   against WCAG 2.2 AA. Also the official MCP conformance suite, CodeQL on the code and the workflows, and Lighthouse
   on desktop: performance 99; accessibility, best practices and SEO 100. CI checks these numbers too.
@@ -64,7 +64,7 @@ The details, with the decisions behind them:
   `.ts` files directly with no build step ([ADR 8](docs/adr/0008-typescript-server-without-a-build.md)),
   and put back online. The
   [case study](docs/case-study.md) tells how.
-- **Tested at three levels, in CI on every pull request and push to master:** over 1,800 server tests (98% of
+- **Tested at three levels, in CI on every pull request and push to master:** over 1,950 server tests (98% of
   statements, 88% of branches) run against the app in-process; over 1,550 Angular unit tests (99% of statements,
   91% of branches); over 450 Playwright browser tests, including [axe](https://github.com/dequelabs/axe-core)
   accessibility checks against WCAG 2.2 AA of every page in light and dark mode, every page in a pseudo-locale to
