@@ -6,6 +6,7 @@ export interface CoreWarning {
 /** A material prepared by the core: its identity, fired analysis, LOI and formula weight. */
 export interface CorePrepared {
   id: unknown;
+  label: unknown;
   analysis: Record<string, number>;
   loi: number;
   formulaWeight: number;

@@ -12,7 +12,11 @@ describe('the core chemistry, nameless', () => {
   before(() => {
     const appIdOf = (record: { name?: string }) => record.name;
     identity.setIdOf((record: { id?: unknown }) => record.id);
-    restore = () => identity.setIdOf(appIdOf);
+    identity.setLabelOf((record: { id?: unknown }) => record.id);
+    restore = () => {
+      identity.setIdOf(appIdOf);
+      identity.setLabelOf(appIdOf);
+    };
   });
   after(() => restore());
 

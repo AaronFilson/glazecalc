@@ -20,4 +20,4 @@ export function calculateUMF(
 export function readLine(
   line: CoreLine,
   lookup?: (reference: string) => CorePrepared | undefined
-): { amount: number; id: unknown; material: CorePrepared } | null;
+): { amount: number; id: unknown; label: unknown; material: CorePrepared } | null;

@@ -6,3 +6,9 @@ export function setIdOf(read: (record: any) => unknown): void;
 export function keyOf(record: unknown): string;
 /** Sets how the core reads which records are the same material. */
 export function setKeyOf(read: (record: any) => string): void;
+/** The label a result gives a record (by default its identity). */
+export function labelOf(record: unknown): any;
+/** Sets what a result calls a record. */
+export function setLabelOf(read: (record: any) => unknown): void;
+/** The ids a result keeps beside its labels, out of sight of JSON and Object.keys. */
+export const IDS: unique symbol;
