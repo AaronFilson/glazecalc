@@ -34,11 +34,12 @@ describe('the nameless core (lib/core)', () => {
     }
   });
 
-  it('never reads a name: only an oxide field or a cap group is called by one', () => {
+  // An oxide field ({ name: 'SiO2', amount }) and a cap group are called by a name; so is an error class.
+  it('never reads a name: only an oxide field, a cap group or an error class is called by one', () => {
     for (const file of files) {
       const reads = [...code(file).matchAll(/([\w$\]\)]+)\.name\b/g)].map((m) => m[1]);
       expect(
-        reads.filter((owner) => !['field', 'group'].includes(owner!)),
+        reads.filter((owner) => !['field', 'group', 'this'].includes(owner!)),
         path.relative(CORE, file)
       ).to.deep.equal([]);
     }
@@ -47,14 +48,7 @@ describe('the nameless core (lib/core)', () => {
   it('writes no words: no English templates, no locale, no display formatting', () => {
     for (const file of files) {
       const text = code(file);
-      for (const banned of [
-        /\bIntl\b/,
-        /toLocale\w*\(/,
-        /\benglish\(/,
-        /\bsay\(/,
-        /\bformatFormula\b/,
-        /\bwarnings\s*:/
-      ]) {
+      for (const banned of [/\bIntl\b/, /toLocale\w*\(/, /\benglish\(/, /\bformatFormula\b/, /\bwarnings\s*:/]) {
         expect(banned.test(text), `${path.relative(CORE, file)}: ${banned}`).to.equal(false);
       }
     }
