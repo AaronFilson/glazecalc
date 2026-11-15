@@ -27,6 +27,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   without one by its name, as before; results still call each by its name. An import gives each copy in the new
   account its own and points the recipe lines at them.
 
+- **The standard records carry their traits** (`data/`, `traits`): what the chemistry once read from a material's
+  name (a theoretical mineral, calcined, raw whiting or dolomite, a colorant's kind, a kaolin or ball clay, the
+  fallback clay and silica, its mineral for the dry SG). A potter's own material is still read by its name.
+
 ### Fixed
 
 - **Cautions show the decimal that agrees with their limits:** raw clay and whiting as 20.3%, not 20%; a small
