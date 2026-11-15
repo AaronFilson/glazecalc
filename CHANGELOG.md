@@ -23,6 +23,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **Cautions show the decimal that agrees with their limits:** raw clay and whiting as 20.3%, not 20%; a small
+  amount as 0.96%, not 1.0%; silica to alumina as 4.99:1, not 5.0:1; expansion as 6.06 to 6.27. A caution no longer
+  shows a number that seems to be within its limit.
 - **A molecular weight lighter than the fired oxides** is no longer read silently as no LOI: it warns
   (`molecular-weight-low`).
 - **vary_material** finds `instead` among the base recipe's own lines before the library's names (a base line of

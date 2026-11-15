@@ -325,6 +325,23 @@ describe('Shared recipe tools', () => {
     expect(clay(21, 15)).to.include('clay-high');
   });
 
+  it("shows a caution's percent, ratio and expansion with the decimal that agrees with its limit", () => {
+    const unity = { K2O: 0.6, Na2O: 0.1, CaO: 0.3, Al2O3: 0.3, SiO2: 3 };
+    // 20.3% raw clay is over 20%: it says 20.3, not 20.
+    const cautions = recipe.pastLimits({
+      lines: [
+        { material: KAOLIN, amount: '20.3' },
+        { material: SILICA, amount: '79.7' }
+      ],
+      unity,
+      celsius: 1222
+    });
+    const high = cautions.find((c) => c.check === 'clay-high')!;
+    const clayParam = high.sentences.find((s) => s.code === 'checks.clayHigh')!.params!.clay;
+    expect(clayParam).to.deep.equal({ value: 20.3, places: 1 });
+    expect(recipe.figureText(clayParam as { value: number; places: number })).to.equal('20.3');
+  });
+
   it('counts a caution as the old recipe’s only when it raised the same one, as serious or more', () => {
     const lines = [{ material: KAOLIN, amount: '10' }];
     const glaze = { K2O: 0.15, Na2O: 0.1, CaO: 0.5, B2O3: 0.2, Al2O3: 0.3, SiO2: 3 };
