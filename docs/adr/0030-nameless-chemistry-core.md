@@ -1,6 +1,6 @@
 # 30. A nameless chemistry core, with names and words outside it
 
-Proposed, 2026-11-14.
+Accepted, 2026-11-15 (proposed 2026-11-14).
 
 ## Context
 
@@ -58,3 +58,23 @@ name. Keeping names clear is the job of the data and the apps.
 - Glaze Vault's vendored copy changes shape: it calls the catalog to turn its names into records.
 - Open in step 2: one library repo with two modules, or two repos; whether the English messages sit in the catalog or
   in each app; whether recognizing materials by name survives at all.
+
+## As built (2026-11-15)
+
+- **`lib/core`** holds the core: `chemistry/` (oxides, materials, the unity formula, the fit and the solver),
+  `cones/` (the charts' figures and firing blocks) and `recipe/` (the recipe tools). It requires only itself; a test
+  (`server/test/core_boundary_tests.ts`) holds it to that, to reading no names and to writing no words.
+- **Three hooks the host sets once:** `identity.idOf` (which record a record is; `record.id` by default),
+  `identity.keyOf` (which lines are the same material, to add up) and `traits.traitsOf` (what the core needs to
+  know of a record beyond its chemistry; `record.traits` by default). A material given as a string is a reference
+  the host's `lookup` resolves.
+- **Problems and warnings are codes:** an error's message is its code; warnings are `{ code, params }`, with raw
+  oxides, cones and ids.
+- **Glazecalc's side stays at the old paths** (`lib/chemistry`, `lib/recipe`, `lib/cones`), so the app, the server
+  and their tests are unchanged: it sets the identity to the name, the key to `sameKey`, and the traits from the
+  names exactly as the code once read them (`lib/recipe/traits.js`, `density-names.js`); and it puts back the
+  English, the subscripted oxides, cone labels, the limit sets' names and sources, and the warnings arrays.
+- **Still to do:** stored records with ids, and traits in the standard records' data, retire the name-based hooks;
+  the result fields still called `name` (pool's uses, shelf's changes) then carry ids. The core's declarations
+  re-export the app's while the two agree. The name-reading modules (paste, generic names, hazards, the worked
+  calculation) and the locale's numbers and temperatures become the catalog module when the repository is split.

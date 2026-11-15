@@ -14,6 +14,24 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   running as root. The receipt rule's recipients are in alphabetical order, as SES returns them, so drift detection
   finds nothing.
 
+- **The chemistry's core is nameless** ([ADR 30](docs/adr/0030-nameless-chemistry-core.md)): the chemistry,
+  cones and recipe tools that Glaze Vault will share move to `lib/core`, which takes records, tells them apart by an
+  identity the host chooses, asks the host for what it once read from a material's name (calcined, raw whiting, a
+  colorant's kind, the fallback clay), and returns numbers and codes, never words. `lib/chemistry`, `lib/recipe` and
+  `lib/cones` keep their paths and exports and put the names, English, labels and sources back, so every result is
+  the same. A test holds `lib/core` to requiring only itself, reading no names and writing no words.
+
+### Fixed
+
+- **A molecular weight lighter than the fired oxides** is no longer read silently as no LOI: it warns
+  (`molecular-weight-low`).
+- **vary_material** finds `instead` among the base recipe's own lines before the library's names (a base line of
+  the potter's own "Wood ash" was refused), and keeps a tiny step: zinc from 0 to 2e-7 no longer came to 0 in every
+  tile.
+- **Irish:** names after a preposition outside the material pages take a noun ("ón aip {name}", "don oideas
+  {title}"), and a test lists any that come back. The help for Replace lead's Keep the colour says the recipe's own
+  clay, not kaolin.
+
 ## 1.0.0 (2026-11-12)
 
 The 2017 app, put back online in October, has grown into a glaze chemistry workbench in 57 languages that AI
