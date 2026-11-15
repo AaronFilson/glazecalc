@@ -27,5 +27,6 @@
   "trace-flux": "Recipe contains only traces of flux oxides, so the UMF is not meaningful.",
   "colorant-flux": "Colorant oxides ({oxides}) are most of the flux, so the unity formula is scaled to them; compare it only with other colorant-rich glazes, not with limits for ordinary glazes.",
   "silica-high": "The unity formula has {silica} SiO₂, unusually high for a glaze: the recipe is for a very high firing, has too little flux, or is not a glaze.",
-  "loi-molecular-weight": "The LOI of {material} ({loi}%) does not match its molecular weight, which gives {implied}%; the LOI was used."
+  "loi-molecular-weight": "The LOI of {material} ({loi}%) does not match its molecular weight, which gives {implied}%; the LOI was used.",
+  "molecular-weight-low": "The molecular weight of {material} ({molecularWeight}) is less than its fired oxides weigh ({firedWeight}), so it gives no LOI: check the formula and the molecular weight."
 }
