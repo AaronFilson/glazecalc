@@ -51,27 +51,23 @@ describe('UUIDs: records and recipe lines', () => {
     expect(copy.uuid).to.match(UUID).and.not.equal(first.uuid);
   });
 
-  it('gives older records and recipe lines theirs, the owner’s own before the standard, and is safe to repeat', async () => {
+  it('gives older records and recipe lines theirs, by the record a line came from, then by name, and is safe to repeat', async () => {
     const { user } = await makeUser();
     const owner = String(user._id);
+    const library = standardData.load('materials') as Array<{ _id: unknown; name: string; uuid: string }>;
+    const [first, second] = [library[0]!, library[1]!];
+    // The owner's own record, named as a standard one, with no uuid yet.
     const own = new Types.ObjectId();
     await Material.collection.insertOne({
       _id: own,
-      name: 'Silica',
+      name: first.name,
       ownedBy: owner,
       fields: [],
       percentmole: 'percent'
     });
-    const standard = new Types.ObjectId();
-    const standardUuid = '00000000-0000-4000-8000-000000000001';
-    await Material.collection.insertOne({
-      _id: standard,
-      name: 'Whiting (uuid test)',
-      ownedBy: 'Standard',
-      uuid: standardUuid,
-      fields: [],
-      percentmole: 'percent'
-    });
+    // A standard record in the database with no uuid: the seed gives it data/'s, the migration never one.
+    const standardRow = new Types.ObjectId();
+    await Material.collection.insertOne({ _id: standardRow, name: 'Not given one', ownedBy: 'Standard', fields: [] });
     const additive = new Types.ObjectId();
     await Additive.collection.insertOne({ _id: additive, name: 'My iron', ownedBy: owner, fields: [] });
     const recipe = new Types.ObjectId();
@@ -80,28 +76,33 @@ describe('UUIDs: records and recipe lines', () => {
       ownedBy: owner,
       title: 'Old',
       materials: [
-        { name: 'Silica', amount: '30' },
-        { name: 'Whiting (uuid test)', amount: '20' },
+        // Copied from the standard record (its _id), though the owner has one of that name: the standard's.
+        { _id: String(first._id), name: first.name, amount: '30' },
+        // By name: the owner's own first.
+        { name: first.name, amount: '5' },
+        // By name: the standard library's, from data/.
+        { name: second.name, amount: '20' },
         { name: 'Nobody has this', amount: '1' }
       ],
       additives: [{ name: 'My iron', amount: '2' }]
     });
 
-    const first = await addMissingUuids();
-    expect(first.records).to.be.at.least(2);
-    expect(first.recipes).to.be.at.least(1);
+    const done = await addMissingUuids();
+    expect(done.records).to.be.at.least(2);
+    expect(done.recipes).to.be.at.least(1);
     const ownUuid = ((await Material.collection.findOne({ _id: own })) as { uuid?: string }).uuid;
     expect(ownUuid).to.match(UUID);
+    expect(((await Material.collection.findOne({ _id: standardRow })) as { uuid?: string }).uuid).to.equal(undefined);
     const ironUuid = ((await Additive.collection.findOne({ _id: additive })) as { uuid?: string }).uuid;
     const lines = (await Recipe.collection.findOne({ _id: recipe })) as unknown as {
       materials: Array<{ name: string; uuid?: string }>;
       additives: Array<{ name: string; uuid?: string }>;
     };
-    expect(lines.materials.map((line) => line.uuid)).to.eql([ownUuid, standardUuid, undefined]);
+    expect(lines.materials.map((line) => line.uuid)).to.eql([first.uuid, ownUuid, second.uuid, undefined]);
     expect(lines.additives[0]!.uuid).to.equal(ironUuid);
 
-    const second = await addMissingUuids();
-    expect(second.recipes).to.equal(0);
+    const again = await addMissingUuids();
+    expect(again.recipes).to.equal(0);
     expect(((await Material.collection.findOne({ _id: own })) as { uuid?: string }).uuid).to.equal(ownUuid);
   });
 });

@@ -150,11 +150,10 @@ function toRecord(entry, problems) {
           : []
     )
   );
-  doc.traits = traits;
+  if (Object.keys(traits).length) doc.traits = traits;
   return Object.fromEntries(
     ORDER.filter((field) => {
       const v = doc[field];
-      if (field === 'traits') return true;
       return v !== undefined && v !== '' && !(Array.isArray(v) && !v.length && field !== 'fields' && field !== 'notes');
     }).map((field) => [field, doc[field]])
   );

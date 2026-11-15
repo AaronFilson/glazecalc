@@ -74,7 +74,14 @@ name. Keeping names clear is the job of the data and the apps.
   and their tests are unchanged: it sets the identity to the name, the key to `sameKey`, and the traits from the
   names exactly as the code once read them (`lib/recipe/traits.js`, `density-names.js`); and it puts back the
   English, the subscripted oxides, cone labels, the limit sets' names and sources, and the warnings arrays.
-- **Still to do:** stored records with ids, and traits in the standard records' data, retire the name-based hooks;
-  the result fields still called `name` (pool's uses, shelf's changes) then carry ids. The core's declarations
-  re-export the app's while the two agree. The name-reading modules (paste, generic names, hazards, the worked
-  calculation) and the locale's numbers and temperatures become the catalog module when the repository is split.
+- **Ids, labels and traits since (2026-11-15):** materials and additives carry a `uuid` (standard ones fixed in
+  `data/`, a potter's own given one on save; a copy of another record gets its own), and recipe lines the uuid of
+  the record they came from. Glazecalc's `idOf` is the uuid, the name for a record without one; a fourth hook,
+  `labelOf`, names a record in results and messages (the name), so ids never reach a page. The standard records
+  carry their `traits` in `data/`; a potter's own are read from the name. The app's names for what to avoid,
+  which clays not to cap and the base frit become ids in `lib/recipe/ids.js`. The solver's work scales with the
+  problem, to four times WORK.
+- **Still to do:** the core's declarations re-export the app's (`lib/core/**/*.d.ts` point at `lib/recipe`), so
+  `lib/core` does not yet type-check alone: it needs declarations of its own before it can be its own repository
+  and submodule. Then the catalog (names, aliases, generic words, paste, traits from names, the English) becomes
+  the second submodule. Merging the library's own duplicate chemistries is a task of its own.

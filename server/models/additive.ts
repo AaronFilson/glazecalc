@@ -21,6 +21,8 @@ const additiveSchema = new mongoose.Schema({
   // The record's identity for the chemistry and across apps (docs/adr/0030-nameless-chemistry-core.md):
   // given once, kept when the name changes. Standard records have theirs in data/.
   ...uuidField,
+  // What the chemistry needs to know of a standard record beyond its analysis (data/, lib/recipe/traits.js).
+  traits: { type: mongoose.Schema.Types.Mixed },
   rawformula: String,
   // Counts the changes made (server/lib/record_rev.ts); a client's If-Match names the one it saw.
   rev: { type: Number, default: 0 },

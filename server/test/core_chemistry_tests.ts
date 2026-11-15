@@ -1,24 +1,19 @@
 // The core's chemistry on its own (lib/core/chemistry), with records that have ids and no names:
 // what Glaze Vault and any other host see.
 import { expect } from 'chai';
+import messages from '../../lib/chemistry/messages.js';
 import identity from '../../lib/core/identity.js';
 import materials from '../../lib/core/chemistry/materials.js';
 import umf from '../../lib/core/chemistry/umf.js';
 
 describe('the core chemistry, nameless', () => {
-  // The app sets names as the identity (lib/chemistry/messages.js); these tests read ids, and put the
-  // app's back after.
-  let restore: () => void;
+  // The app sets its own hooks (lib/chemistry/messages.js); these tests read ids, and put the app's back after.
   before(() => {
-    const appIdOf = (record: { name?: string }) => record.name;
     identity.setIdOf((record: { id?: unknown }) => record.id);
     identity.setLabelOf((record: { id?: unknown }) => record.id);
-    restore = () => {
-      identity.setIdOf(appIdOf);
-      identity.setLabelOf(appIdOf);
-    };
   });
-  after(() => restore());
+  // Glazecalc's own hooks back for the tests that follow, as the app sets them.
+  after(() => messages.useGlazecalcHosts());
 
   const silica = { id: 7, formula: { SiO2: 1 } };
   const whiting = { id: 'w-1', formula: { CaO: 1, CO2: 1 } };
