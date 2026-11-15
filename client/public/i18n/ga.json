@@ -139,7 +139,7 @@
     "bannerEdit": "Is féidir leat leanúint ort ag obair: fanann do chuid athruithe ar an ngléas seo agus seoltar iad nuair is féidir Glazecalc a shroicheadh.",
     "saved": "Sábháladh do chuid athruithe gan idirlíon.",
     "dismiss": "Dún",
-    "failed": "Níorbh fhéidir athrú ar {name} a shábháil. Níor seoladh é.",
+    "failed": "Níorbh fhéidir athrú ar an taifead {name} a shábháil. Níor seoladh é.",
     "copyText": "Cóipeáil téacs",
     "remove": "Bain",
     "dependsFailed": "Braitheann sé ar thaifead nárbh fhéidir a shábháil."

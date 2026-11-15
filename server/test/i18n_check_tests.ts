@@ -849,4 +849,31 @@ describe('Irish on the reference pages', () => {
     expect(messages.filter(([, text]) => mutated.test(text)).map(([key]) => key)).to.eql([]);
     expect(messages.filter(([, text]) => /mól de flosc/.test(text)).map(([key]) => key)).to.eql([]);
   });
+
+  it('puts no name, title, list or client straight after a word that mutates it, in any Irish file', () => {
+    const dir = path.resolve(import.meta.dirname, '..', '..', 'client', 'public', 'i18n');
+    const files = [
+      '',
+      'account',
+      'recipe',
+      'site',
+      'reference',
+      'library',
+      'records',
+      'notebook',
+      'chemistry',
+      'guides'
+    ];
+    const mutated = /(?:^|\s)(?:i|de|do|le|ar|ó|faoi|roimh|thar|trí|anailís)\s+\{(?:name|title|list|client)\}/;
+    const slips = files.flatMap((sub) => {
+      const messages = flatten(JSON.parse(readFileSync(path.join(dir, sub, 'ga.json'), 'utf8'))) as Record<
+        string,
+        string
+      >;
+      return Object.entries(messages)
+        .filter(([, text]) => mutated.test(text))
+        .map(([key]) => `${sub || 'core'}:${key}`);
+    });
+    expect(slips).to.eql([]);
+  });
 });
