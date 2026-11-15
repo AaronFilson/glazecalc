@@ -26,6 +26,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - **Cautions show the decimal that agrees with their limits:** raw clay and whiting as 20.3%, not 20%; a small
   amount as 0.96%, not 1.0%; silica to alumina as 4.99:1, not 5.0:1; expansion as 6.06 to 6.27. A caution no longer
   shows a number that seems to be within its limit.
+- **Larger searches get more work:** Target & Solve, Match with what I have and Suggest amounts allow work in
+  proportion to the problem (materials offered times the target's oxides) above 60 materials and 13 oxides, to four
+  times it at the most, so 80 materials for a 13-oxide target finish rather than stop short. The MCP tools charge the
+  work a search did.
 - **A molecular weight lighter than the fired oxides** is no longer read silently as no LOI: it warns
   (`molecular-weight-low`).
 - **vary_material** finds `instead` among the base recipe's own lines before the library's names (a base line of

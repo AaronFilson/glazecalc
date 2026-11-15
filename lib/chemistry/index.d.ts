@@ -136,10 +136,14 @@ export interface Meter {
   used: number;
   most: number;
   cut: boolean;
+  /** Made without a most of its own: a search over a larger problem may raise it, to WORK_CEILING times WORK. */
+  scales?: boolean;
 }
 
 /** The most work one search may do, unless its meter says otherwise (see lib/chemistry/fit.js). */
 export const WORK: number;
+/** The most a meter that scales may be raised to, as a multiple of WORK (lib/chemistry/select.js scaledWork). */
+export const WORK_CEILING: number;
 
 /** A meter for one search, or for several to share: at most `most` work (WORK if not given). */
 export function newMeter(most?: number): Meter;

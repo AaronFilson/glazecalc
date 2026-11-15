@@ -2843,11 +2843,14 @@ describe('MCP: limits', () => {
     const few = await metered(() => data('solve_target', { target: MANY_OXIDES, materials: sixty }, headers));
     // Every material on the shelf: the first match over them all alone took several times the work allowed.
     const all = await metered(() => data('solve_target', { target: MANY_OXIDES, onHand: true }, headers));
-    expect(all.work).to.be.at.most(few.work + 0.25 * chemistry.WORK);
+    // Sixty materials and a 13-oxide target are the size WORK is set for: their work is not raised.
+    expect(few.work).to.be.at.most(1.25 * chemistry.WORK);
+    // Every material takes at most the ceiling's work (lib/chemistry/select.js scaledWork), not 500 materials' worth.
+    expect(all.work).to.be.at.most(1.25 * chemistry.WORK * chemistry.WORK_CEILING);
     expect(all.result.cutShort).to.equal(true);
     expect(all.result.recipe.length).to.be.within(1, 13);
     const match = await metered(() => data('match_with_what_i_have', { lines: LINES }, headers));
-    expect(match.work).to.be.at.most(1.25 * chemistry.WORK);
+    expect(match.work).to.be.at.most(1.25 * chemistry.WORK * chemistry.WORK_CEILING);
     expect(match.result.recipe.length).to.be.above(0);
   });
 

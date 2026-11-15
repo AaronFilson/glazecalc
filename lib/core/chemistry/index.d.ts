@@ -1,6 +1,7 @@
 // The core's chemistry/index has the declarations of the app's (lib/chemistry/index.d.ts) for what the two share.
 export {
   WORK,
+  WORK_CEILING,
   ATOMIC_WEIGHTS,
   CONES,
   EXPANSION,
