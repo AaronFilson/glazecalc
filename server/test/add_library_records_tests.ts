@@ -39,6 +39,7 @@ describe('adding records to the standard library', () => {
     dir = fs.mkdtempSync(path.join(os.tmpdir(), 'glazecalc-library-'));
     for (const part of [
       'scripts/add-library-records.js',
+      'lib/core',
       'lib/chemistry',
       'data/materials.ndjson',
       'data/additives.ndjson'
