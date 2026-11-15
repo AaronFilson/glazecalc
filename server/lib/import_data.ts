@@ -179,7 +179,7 @@ const folded = (record: Row): string =>
  */
 const UPGRADES: readonly ((file: Row) => Row)[] = [];
 
-/** The value with ids, owners and empty values taken out, and keys in order, for comparing content. */
+/** The value with ids (UUIDs too), owners and empty values taken out, and keys in order, for comparing content. */
 const canonical = (value: unknown): unknown => {
   if (Array.isArray(value)) return value.map(canonical);
   if (value instanceof Date) return value.toISOString();
@@ -187,7 +187,7 @@ const canonical = (value: unknown): unknown => {
   if (isObject(value)) {
     const out: Row = {};
     for (const key of Object.keys(value).sort()) {
-      if (key === '_id' || key === 'ownedBy' || key === '__v') continue;
+      if (key === '_id' || key === 'uuid' || key === 'ownedBy' || key === '__v') continue;
       const inner = canonical(value[key]);
       if (inner === undefined || inner === null || inner === '' || (Array.isArray(inner) && !inner.length)) continue;
       out[key] = inner;
@@ -466,6 +466,57 @@ const roomLeft = async (userId: string): Promise<number> => {
   return most - (await accountRecords(userId, most));
 };
 
+/**
+ * The imported recipes' lines with the UUID of the record each now links to (its _id, rewritten by the
+ * plan): a copy made in this account has a UUID of its own (models/uuid.ts). A line linked to nothing
+ * keeps a standard record's UUID, and no other: the record it named is the other account's.
+ */
+const linesTakeUuids = async (userId: string, recipeIds: Array<string | Types.ObjectId>): Promise<void> => {
+  if (!recipeIds.length) return;
+  const standardUuids = new Set(
+    (await Promise.all([Material, Additive].map((Model) => Model.collection.distinct('uuid', { ownedBy: 'Standard' }))))
+      .flat()
+      .map(String)
+  );
+  const recipes = await Recipe.collection
+    .find({ _id: { $in: recipeIds.map((id) => new mongoose.Types.ObjectId(String(id))) }, ownedBy: userId })
+    .toArray();
+  const linked = new Set<string>();
+  for (const recipe of recipes) {
+    for (const line of [...((recipe.materials as Row[]) ?? []), ...((recipe.additives as Row[]) ?? [])]) {
+      if (isObject(line) && line._id !== undefined && mongoose.isValidObjectId(line._id)) linked.add(String(line._id));
+    }
+  }
+  const ids = [...linked].map((id) => new mongoose.Types.ObjectId(id));
+  const uuidOf = new Map<string, string>();
+  for (const Model of [Material, Additive]) {
+    const rows = await Model.collection
+      .find({ _id: { $in: ids }, ownedBy: { $in: [userId, 'Standard'] } }, { projection: { uuid: 1 } })
+      .toArray();
+    for (const row of rows) if (typeof row.uuid === 'string') uuidOf.set(String(row._id), row.uuid);
+  }
+  for (const recipe of recipes) {
+    const relink = (lines: unknown) =>
+      Array.isArray(lines)
+        ? lines.map((line: unknown) => {
+            if (!isObject(line)) return line;
+            const uuid = line._id !== undefined ? uuidOf.get(String(line._id)) : undefined;
+            if (uuid) return { ...line, uuid };
+            return typeof line.uuid === 'string' && standardUuids.has(line.uuid) ? line : without(line, ['uuid']);
+          })
+        : lines;
+    await Recipe.collection.updateOne(
+      { _id: recipe._id },
+      {
+        $set: {
+          materials: relink(recipe.materials),
+          ...(recipe.additives !== undefined && { additives: relink(recipe.additives) })
+        }
+      }
+    );
+  }
+};
+
 /** POST /api/import/preview: what the import would do, writing nothing. */
 export const previewImport = async (user: UserDocument, request: ImportRequest): Promise<Reply> => {
   const userId = String(user._id);
@@ -645,7 +696,8 @@ const importLocked = async (user: UserDocument, request: ImportRequest, now: Dat
       const replaced = await MODELS[kind].findOneAndUpdate(
         { _id: fate.id, ownedBy: userId },
         {
-          $set: { ...doc, updatedAt: now },
+          // The record keeps its own UUID: the file's is the record it came from.
+          $set: { ...without(doc, ['uuid']), updatedAt: now },
           $inc: { rev: 1 },
           ...(unset.length && { $unset: Object.fromEntries(unset.map((field) => [field, 1])) })
         },
@@ -670,6 +722,12 @@ const importLocked = async (user: UserDocument, request: ImportRequest, now: Dat
       );
     }
     if (shelf) await setShelf(userId, shelf);
+    await linesTakeUuids(
+      userId,
+      plan.writes
+        .filter(({ record, fate }) => record.kind === 'recipes' && fate.action !== 'skip')
+        .map(({ fate }) => fate.id)
+    );
     await ImportRun.updateOne({ _id: run._id }, { $set: { replaced: run.replaced } });
   } catch (err) {
     log.error('Import failed, taking it back', { code: log.codeOf(err) });

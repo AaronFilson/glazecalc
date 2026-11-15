@@ -44,6 +44,7 @@ const SOURCE_KINDS = ['manufacturer', 'supplier', 'sds', 'digitalfire', 'glazy',
 // The order of a record's fields, as in the data files.
 const ORDER = [
   '_id',
+  'uuid',
   'rawformula',
   'equivalent',
   'percentmole',
@@ -109,6 +110,7 @@ function toRecord(entry, problems) {
     fields.map((f) => `${formatFormula(f.name)} ${f.amount}%`).join(', ') + (loi ? `, LOI ${loi}%` : '');
   const doc = {
     _id: { $oid: crypto.randomBytes(12).toString('hex') },
+    uuid: crypto.randomUUID(),
     rawformula: entry.rawformula ? formatFormula(entry.rawformula).replace(/·/g, '•') : analysisText,
     equivalent: round(weights.equivalent, 2),
     percentmole: 'percent',

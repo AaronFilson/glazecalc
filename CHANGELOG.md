@@ -21,6 +21,12 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   `lib/cones` keep their paths and exports and put the names, English, labels and sources back, so every result is
   the same. A test holds `lib/core` to requiring only itself, reading no names and writing no words.
 
+- **Materials and additives have UUIDs:** every record has a `uuid`, the standard ones fixed in `data/`, a
+  potter's own given one when saved (a copy of another record gets its own) and older ones at the next start, when
+  recipe lines get the uuid of the record they name too. The chemistry tells records apart by it, and a record
+  without one by its name, as before; results still call each by its name. An import gives each copy in the new
+  account its own and points the recipe lines at them.
+
 ### Fixed
 
 - **Cautions show the decimal that agrees with their limits:** raw clay and whiting as 20.3%, not 20%; a small

@@ -9,6 +9,7 @@ import app from './app.ts';
 import { reapplyDeletions } from './lib/account_data.ts';
 import { dateOldTrash } from './lib/record_history.ts';
 import { addMissingRevs } from './lib/record_rev_migration.ts';
+import { addMissingUuids } from './lib/uuid_migration.ts';
 import * as guestSweeper from './lib/guest_sweeper.ts';
 import * as tokenReminders from './lib/token_reminders.ts';
 import * as log from './lib/log.ts';
@@ -50,6 +51,14 @@ const start = async () => {
     if (records || accounts) log.info('Gave revisions to older records', { records, accounts });
   } catch (err) {
     log.error('Could not give revisions to older records', { err });
+  }
+
+  // Records and recipe lines from before UUIDs get one (one missing reads by its name, as before).
+  try {
+    const { records, recipes } = await addMissingUuids();
+    if (records || recipes) log.info('Gave UUIDs to older records and recipe lines', { records, recipes });
+  } catch (err) {
+    log.error('Could not give UUIDs to older records', { err });
   }
 
   // Each model builds its indexes once connected. One that cannot be built (an
