@@ -403,7 +403,12 @@ export const registerCompanionTools = (server: McpServer, caller?: Caller): void
         // The material by its library name, with the nearest names where it is not found.
         const [varied] = resolveLines([{ material, amount: 1 }]);
         const named = (name: string) => name.normalize('NFKC').toLowerCase().trim();
-        const gives = instead ? base.find((line) => named(line.name) === named(resolveInstead(instead))) : undefined;
+        // The base's own name first, as typed, so that a material of the user's own is never read as a library
+        // material of a near name; then the library's name for it (an alias, or another spelling).
+        const gives = instead
+          ? (base.find((line) => named(line.name) === named(instead)) ??
+            base.find((line) => named(line.name) === named(resolveInstead(instead))))
+          : undefined;
         if (how === 'replace' && !gives) {
           throw new ToolProblem(
             `${instead} is not in the base recipe, so ${varied!.name} cannot take its place. The base has: ${base.map((line) => line.name).join(', ')}.`
@@ -416,7 +421,9 @@ export const registerCompanionTools = (server: McpServer, caller?: Caller): void
         const at = firingOf(firing);
 
         const amounts = Array.from({ length: count }, (_, i) =>
-          Number((least + (i * (to - least)) / (count - 1)).toFixed(6))
+          // To 12 significant figures, which clears the float noise of the division (0.30000000000000004) but
+          // keeps a tiny step: fixed decimals made every tile of zinc 0 to 2e-7 zero.
+          Number((least + (i * (to - least)) / (count - 1)).toPrecision(12))
         );
         // Each line is varied by its name and the chemistry it carries (sameKey), as blend_recipes mixes them: two
         // of the base's own analyses under one name stay two lines, each with its own chemistry.
