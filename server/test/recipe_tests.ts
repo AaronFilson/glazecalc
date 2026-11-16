@@ -643,6 +643,12 @@ describe('Shared recipe tools', () => {
     const chrome = [{ name: 'Chrome oxide', amount: '1', fields: [{ name: 'Cr2O3', amount: '1' }] }];
     const zincChrome = recipe.pastLimits({ lines, unity: { ...unity, ZnO: 0.0196 }, celsius: 1222, additives: chrome });
     expect(zincChrome.map((c) => c.check)).to.include('zinc-chrome');
+    // A pink stain by its name (the app's traits) gets boron blue's pink fix.
+    const pinkStain = [{ name: 'Mason 6020 Pink', amount: '5', fields: [] }];
+    const pinkBlue = recipe.pastLimits({ lines, unity: { ...unity, Al2O3: 0.18 }, additives: pinkStain });
+    expect(pinkBlue.find((c) => c.check === 'boron-blue')!.sentences.map((s) => s.code)).to.include(
+      'checks.boronBlueFixPink'
+    );
     // Not news when the old recipe had as much, as shown: its 0.019 is 0.02 too.
     expect(has('zinc-low-fire', { ZnO: 0.02 }, 1060, { ...unity, ZnO: 0.019 })).to.equal(false);
     // Too little boron at cone 04 is under 0.8 of Katz's 0.49, 0.392: 0.3924 is shown as 0.39.

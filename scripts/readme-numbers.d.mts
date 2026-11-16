@@ -37,7 +37,7 @@ export function measureLighthouse(
 /** Each place the README gives numbers, and how they are read and written. */
 export const CLAIMS: ReadonlyArray<{ what: string; pattern: RegExp; mention?: RegExp }>;
 /** Whether a stated number is true of a measured one, out of date, or not true. */
-export function judge(kind: 'count' | 'percent' | 'score', stated: number, measured: number): Verdict;
+export function judge(kind: 'count' | 'percent' | 'score' | 'performance', stated: number, measured: number): Verdict;
 /** Every number the README gives, against what was measured. */
 export function findings(text: string, numbers: Numbers): Finding[];
 /** The README with every number it gives replaced by the measured one, rounded down; nothing else changes. */

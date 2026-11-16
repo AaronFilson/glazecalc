@@ -18,3 +18,6 @@ package-lock.json
 scratch/
 reports/
 research_notes/
+
+# Built by scripts/core-fixture.mjs, which --check compares byte for byte.
+lib/core/test/standard.json

@@ -21,6 +21,8 @@
     "pretest": "node --env-file-if-exists=.env scripts/ensure-db.mjs",
     "test": "mocha",
     "pretest:mcp": "node --env-file-if-exists=.env scripts/ensure-db.mjs mcp",
+    "test:core": "node --test --experimental-test-coverage --test-coverage-include=\"lib/core/**\" --test-coverage-exclude=\"lib/core/test/**\" \"lib/core/test/*.test.js\"",
+    "check:core-fixture": "node scripts/core-fixture.mjs --check",
     "test:mcp": "node scripts/mcp-conformance.mjs",
     "pretest:e2e": "node --env-file-if-exists=.env scripts/ensure-db.mjs e2e",
     "pretest:coverage": "node --env-file-if-exists=.env scripts/ensure-db.mjs",
