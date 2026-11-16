@@ -6,6 +6,7 @@ import path from 'node:path';
 import { expect } from 'chai';
 
 const CORE = path.join(import.meta.dirname, '..', '..', 'lib', 'core');
+const TESTS = path.join(CORE, 'test') + path.sep;
 const filesIn = (dir: string): string[] =>
   readdirSync(dir).flatMap((entry) => {
     const full = path.join(dir, entry);
@@ -27,6 +28,8 @@ describe('the nameless core (lib/core)', () => {
   it('requires only its own modules', () => {
     for (const file of files) {
       for (const [, target] of code(file).matchAll(/require\(\s*['"]([^'"]+)['"]\s*\)/g)) {
+        // The core's own tests (lib/core/test) may use Node's test runner and assert as well.
+        if (file.startsWith(TESTS) && target!.startsWith('node:')) continue;
         expect(target!.startsWith('.'), `${path.relative(CORE, file)} requires ${target}`).to.equal(true);
         const resolved = path.resolve(path.dirname(file), target!);
         expect(resolved.startsWith(CORE + path.sep), `${path.relative(CORE, file)} requires ${target}`).to.equal(true);

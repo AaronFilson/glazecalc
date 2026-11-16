@@ -120,6 +120,11 @@ jobs:
       - name: Mail forwarder tests
         run: npm run test:forwarder
 
+      # The nameless core on its own (lib/core/test): Node alone, no server, database or packages,
+      # as it will run in the library's own repository. Its fixture must match data/.
+      - name: The chemistry core's own tests
+        run: npm run check:core-fixture && npm run test:core
+
       # The official MCP conformance suite (2026-07-28 and 2025-11-25) and the
       # MCP Inspector against /mcp on a server of its own. They are installed
       # apart from the app, from the lockfile in scripts/mcp-conformance/, with
