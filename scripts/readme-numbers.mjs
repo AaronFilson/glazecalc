@@ -164,7 +164,7 @@ export const CLAIMS = [
     numbers: (match) => [
       {
         what: 'Lighthouse performance',
-        kind: 'score',
+        kind: 'performance',
         stated: Number(match[1]),
         measured: (n) => n.lighthouse.performance
       },
@@ -222,7 +222,7 @@ export const CLAIMS = [
       return [
         {
           what: 'Lighthouse badge, performance',
-          kind: 'score',
+          kind: 'performance',
           stated: Number(parts[1]),
           measured: (n) => n.lighthouse.performance
         },
@@ -251,7 +251,8 @@ export const CLAIMS = [
 /**
  * Whether a number the README states is 'true' of what a run measured, 'out of date' (true, but well
  * below it), or 'not true'. A count must be below the count ("over"); a percent at most the whole
- * percent measured; a score at most the score.
+ * percent measured; a score at most the score. Lighthouse's performance moves a point from run to run on
+ * the same build (99, then 98), so it may be one over what a run measured, and no more.
  */
 export function judge(kind, stated, measured) {
   if (kind === 'count') return stated >= measured ? 'not true' : measured - stated >= 100 ? 'out of date' : 'true';
@@ -259,7 +260,8 @@ export function judge(kind, stated, measured) {
     const whole = Math.floor(measured);
     return stated > whole ? 'not true' : whole - stated >= 2 ? 'out of date' : 'true';
   }
-  return stated > measured ? 'not true' : measured - stated >= 3 ? 'out of date' : 'true';
+  const noise = kind === 'performance' ? 1 : 0;
+  return stated > measured + noise ? 'not true' : measured - stated >= 3 ? 'out of date' : 'true';
 }
 
 /**
