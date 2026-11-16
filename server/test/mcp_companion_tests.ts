@@ -210,6 +210,31 @@ describe('MCP: vary_material', () => {
     expect(result.trend.silicaToAlumina.direction).to.equal('rises');
   });
 
+  it('keeps a tiny step: zinc 0 to 2e-7 is not rounded to nothing', async () => {
+    const result = await data('vary_material', { recipe: BASE, material: 'Zinc Oxide', to: 2e-7, steps: 3 });
+    expect(result.tiles.map((t: Json) => t.amount)).to.eql([0, 1e-7, 2e-7]);
+  });
+
+  it("finds `instead` by the base's own name before the library's", async () => {
+    // A line of the user's own under a name the library reads as its own "Wood Ash (average of six)".
+    const own = [
+      { material: 'Wood ash', amount: 40, analysis: { CaO: 50, SiO2: 10, MgO: 5 }, loi: 30 },
+      { material: 'Silica', amount: 30 },
+      { material: 'EPK', amount: 20 },
+      { material: 'Whiting', amount: 10 }
+    ];
+    const result = await data('vary_material', {
+      recipe: own,
+      material: 'Dolomite',
+      to: 10,
+      steps: 2,
+      mode: 'replace',
+      instead: 'wood ash'
+    });
+    expect(result).to.include({ mode: 'replace', instead: 'Wood ash', baseTotal: 100 });
+    expect(result.tiles[1].recipe.find((l: Json) => l.material === 'Wood ash')?.percent).to.equal(30);
+  });
+
   it('replaces another material when asked, so every tile keeps the same total', async () => {
     const result = await data('vary_material', {
       recipe: WITH_WHITING,

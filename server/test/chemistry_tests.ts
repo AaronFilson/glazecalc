@@ -2295,6 +2295,15 @@ describe('glaze chemistry', () => {
       expect(apart.warnings[0]).to.equal(
         'The LOI of My whiting (30.00%) does not match its molecular weight, which gives 43.97%; the LOI was used.'
       );
+      // A molecular weight below the fired oxides' weight (56.08 for CaO) is impossible: no LOI, and a warning.
+      const low = weights({ molecularweight: 50 });
+      expect(low.loi).to.equal(0);
+      expect(low.warningCodes.map((w) => w.code)).to.deep.equal(['molecular-weight-low']);
+      expect(weights({ loi: 43.97, molecularweight: 50 }).warningCodes.map((w) => w.code)).to.deep.equal([
+        'molecular-weight-low'
+      ]);
+      // The fired weight itself (no LOI) is not a slip.
+      expect(weights({ molecularweight: 56.08 }).warningCodes).to.deep.equal([]);
       // Every standard material's LOI and molecular weight agree.
       const standard = [...standardData.load('materials'), ...standardData.load('additives')];
       for (const record of standard as unknown as Array<MaterialInput & { noChemistry?: boolean }>) {

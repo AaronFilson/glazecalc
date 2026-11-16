@@ -244,7 +244,13 @@ export default function recordRoutes(
       // In the Trash, or gone: the version stays, for when it is put back.
       if (!current) return rev === undefined ? { status: 404, body: notFound } : gone(label);
       if (rev !== undefined && revOf(current) !== rev) return conflict(label, current);
-      replacement = { ...earlier, rev: revOf(current) + 1, updatedAt: new Date() };
+      // The record keeps its UUID: a version saved before UUIDs has none, and one never names another record.
+      replacement = {
+        ...earlier,
+        ...(typeof current.uuid === 'string' && { uuid: current.uuid }),
+        rev: revOf(current) + 1,
+        updatedAt: new Date()
+      };
       before = await Model.findOneAndReplace({ ...filter, ...revFilter(revOf(current)) }, replacement, {
         returnDocument: 'before',
         lean: true

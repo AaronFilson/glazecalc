@@ -86,6 +86,11 @@ describe("the README's numbers (scripts/readme-numbers.mjs)", () => {
     expect(judge('score', 98, 98)).to.equal('true');
     expect(judge('score', 100, 99)).to.equal('not true');
     expect(judge('score', 95, 99)).to.equal('out of date');
+    // Performance may be a point over a run's measure (Lighthouse's noise), and no more.
+    expect(judge('performance', 99, 98)).to.equal('true');
+    expect(judge('performance', 99, 97)).to.equal('not true');
+    expect(judge('performance', 96, 99)).to.equal('out of date');
+    expect(judge('score', 99, 98)).to.equal('not true');
   });
 
   it('finds every number the README gives, and can read each one', () => {

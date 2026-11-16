@@ -457,8 +457,27 @@ describe('Target & Solve, Match with what I have and Suggest amounts: the work b
     SrO: 0.05
   };
   // What past the bound may still be done (C on the few kept, the report): a quarter of it at most.
-  const ALLOWED = 1.25 * chemistry.WORK;
+  // A meter that scales (fit.js newMeter) may be raised for a larger problem, to WORK_CEILING times WORK
+  // (select.js scaledWork); what may be done past its most is a part of it at most.
+  const ALLOWED = 1.25 * chemistry.WORK * chemistry.WORK_CEILING;
+  const withinItsMost = (meter: { used: number; most: number }) => expect(meter.used).to.be.at.most(1.25 * meter.most);
   const offered = (from: number, to: number) => LIBRARY.slice(from, to).map((material) => ({ material, must: false }));
+
+  it('raises the work a meter allows with the size of the problem, to the ceiling, unless it was given a most', () => {
+    // 60 materials and a 13-oxide target are the size WORK is for; 200 are over three times it.
+    const big = chemistry.newMeter();
+    recipe.solveTarget({ kind: 'unity', oxides: MANY_OXIDES }, offered(0, 200), { meter: big });
+    expect(big.most).to.be.above(3 * chemistry.WORK);
+    expect(big.most).to.be.at.most(chemistry.WORK * chemistry.WORK_CEILING);
+    const small = chemistry.newMeter();
+    recipe.solveTarget({ kind: 'unity', oxides: { K2O: 0.3, CaO: 0.7, Al2O3: 0.4, SiO2: 3.2 } }, offered(0, 20), {
+      meter: small
+    });
+    expect(small.most).to.equal(chemistry.WORK);
+    const given = chemistry.newMeter(chemistry.WORK / 2);
+    recipe.solveTarget({ kind: 'unity', oxides: MANY_OXIDES }, offered(0, 200), { meter: given });
+    expect(given.most).to.equal(chemistry.WORK / 2);
+  });
 
   it('solves 80 materials for a 13-oxide target within the work allowed, with the best found (93 s before)', () => {
     const meter = chemistry.newMeter();
@@ -484,8 +503,9 @@ describe('Target & Solve, Match with what I have and Suggest amounts: the work b
     recipe.solveTarget({ kind: 'unity', oxides: MANY_OXIDES }, offered(0, 60), { meter: sixty });
     const meter = chemistry.newMeter();
     const solved = recipe.solveTarget({ kind: 'unity', oxides: MANY_OXIDES }, shelf, { meter });
-    expect(meter.used).to.be.at.most(sixty.used + 0.25 * chemistry.WORK);
+    // 500 materials take at most the ceiling's work, however many more than 60 they are.
     expect(meter.used).to.be.at.most(ALLOWED);
+    withinItsMost(meter);
     expect(solved.report.cutShort).to.equal(true);
     // A recipe the best found can stand by: in percent, as many materials as the target has oxides at
     // most, and no oxide far off (the first trim kept the largest amounts and lost the minor oxides').
@@ -545,7 +565,8 @@ describe('Target & Solve, Match with what I have and Suggest amounts: the work b
     );
     const meter = chemistry.newMeter();
     const solved = recipe.solveTarget({ kind: 'unity', oxides: target }, pool, { meter });
-    expect(meter.used).to.be.at.most(chemistry.WORK);
+    expect(meter.used).to.be.at.most(ALLOWED);
+    withinItsMost(meter);
     expect(solved.report).to.not.have.property('cutShort');
     expect(solved.report.closeness!.verdict).to.equal('close');
   });

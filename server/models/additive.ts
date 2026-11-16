@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import { keepUuidOwn, uuidField } from './uuid.ts';
 import { idemKeyField, indexIdemKey } from './idempotency.ts';
 import { libraryInfo } from './library_info.ts';
 
@@ -17,6 +18,11 @@ const additiveSchema = new mongoose.Schema({
   ownedBy: { type: String, required: true },
   relatedTo: { type: [String] },
   name: { type: String, required: true },
+  // The record's identity for the chemistry and across apps (docs/adr/0030-nameless-chemistry-core.md):
+  // given once, kept when the name changes. Standard records have theirs in data/.
+  ...uuidField,
+  // What the chemistry needs to know of a standard record beyond its analysis (data/, lib/recipe/traits.js).
+  traits: { type: mongoose.Schema.Types.Mixed },
   rawformula: String,
   // Counts the changes made (server/lib/record_rev.ts); a client's If-Match names the one it saw.
   rev: { type: Number, default: 0 },
@@ -29,5 +35,6 @@ const additiveSchema = new mongoose.Schema({
 // latest record, the quota count and the account's deletion look up by owner.
 additiveSchema.index({ ownedBy: 1, _id: 1 });
 indexIdemKey(additiveSchema);
+keepUuidOwn(additiveSchema);
 
 export default mongoose.model('Additive', additiveSchema);

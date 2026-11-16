@@ -21,6 +21,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
 const { MOLAR_MASS, formatFormula, materialWeights } = require('../lib/chemistry');
+const { traitsFromName } = require('../lib/recipe/traits');
 
 const FILES = { material: 'data/materials.ndjson', additive: 'data/additives.ndjson' };
 const CATEGORIES = [
@@ -44,6 +45,7 @@ const SOURCE_KINDS = ['manufacturer', 'supplier', 'sds', 'digitalfire', 'glazy',
 // The order of a record's fields, as in the data files.
 const ORDER = [
   '_id',
+  'uuid',
   'rawformula',
   'equivalent',
   'percentmole',
@@ -66,6 +68,7 @@ const ORDER = [
   'hazards',
   'soluble',
   'fluorine',
+  'traits',
   'source'
 ];
 
@@ -109,6 +112,7 @@ function toRecord(entry, problems) {
     fields.map((f) => `${formatFormula(f.name)} ${f.amount}%`).join(', ') + (loi ? `, LOI ${loi}%` : '');
   const doc = {
     _id: { $oid: crypto.randomBytes(12).toString('hex') },
+    uuid: crypto.randomUUID(),
     rawformula: entry.rawformula ? formatFormula(entry.rawformula).replace(/·/g, '•') : analysisText,
     equivalent: round(weights.equivalent, 2),
     percentmole: 'percent',
@@ -136,6 +140,17 @@ function toRecord(entry, problems) {
       kind: entry.source.type
     }
   };
+  // What the chemistry needs to know of it beyond its analysis (lib/recipe/traits.js), as the data keeps it.
+  const traits = Object.fromEntries(
+    Object.entries(traitsFromName({ ...doc, ownedBy: 'Standard' })).flatMap(([trait, value]) =>
+      value === true
+        ? [[trait, true]]
+        : trait === 'density' && value
+          ? [[trait, Object.fromEntries(Object.entries(value).filter(([, v]) => v !== undefined))]]
+          : []
+    )
+  );
+  if (Object.keys(traits).length) doc.traits = traits;
   return Object.fromEntries(
     ORDER.filter((field) => {
       const v = doc[field];

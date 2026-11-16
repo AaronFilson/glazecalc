@@ -96,7 +96,7 @@
     "openAbove": "Oscail san eagarthóir",
     "openName": "Oscail {title}",
     "more": "Tuilleadh",
-    "moreName": "Tuilleadh do {title}",
+    "moreName": "Tuilleadh don oideas {title}",
     "printName": "Priontáil {title}",
     "compareName": "Cuir {title} i gcomparáid",
     "hide": "Folaigh na sonraí",
@@ -263,7 +263,6 @@
       "heading": "Dhá oideas a chur i gcomparáid",
       "text": "Cuireann an cnaipe <b>Cuir i gcomparáid</b>, in aice le ‘Sábháil’ nó ar oideas sábháilte, dhá fhoirmle Seger taobh le taobh, ocsaíd ar ocsaíd, leis an athrú ón gcéad cheann go dtí an dara ceann. Chun comparáid ar aon dul a dhéanamh, áirigh na hábhair datha sa dá cheann, nó ná háirigh i gceachtar acu iad.",
       "modern": "Má úsáideann oideas ábhar nach ndéantar a thuilleadh, mar shampla Custer Spar, luann sé cad a úsáidtear anois, agus an féidir leis sin teacht ina áit gram ar ghram. Cuireann an cnaipe <b>Bain triail as ábhair an lae inniu agus cuir i gcomparáid</b> na hábhair sin isteach, ceann ar cheann, mar oideas nua, agus cuireann sé i gcomparáid leis an seanoideas é; cuireann an cnaipe <b>Cealaigh an malartú</b> ar ais mar a bhí é. Nuair nach malartú ar aon dul é, oibríonn an cnaipe <b>Mol méideanna agus cuir i gcomparáid</b> amach na méideanna arís chun an fhoirmle Seger a thabhairt ar ais, ag athrú an líon is lú díobh is féidir. Mura féidir leis an ábhar nua rud a thug an seanábhar a thabhairt ar ais, mar shampla an photais ón nítear, fiafraíonn sé cén t-ábhar ba cheart é sin a dhéanamh. Ní mheaitseálann sé ach na hocsaídí tar éis bácála, mar sin déan tástáil ar bhaisc bheag ar dtús.",
-      "lead": "Má tá luaidhe in oideas, luann sé é sin. Fiafraíonn an cnaipe <b>Ionadaigh an luaidhe</b> díot cén cón bácála a úsáideann tú agus cén friot<en>frit</en> gan luaidhe ar a dtógfar é, agus ansin atógann sé an glónra (coinnítear a shilice agus a alúmana, agus déanann bórón agus floscanna eile obair na luaidhe) nó coinníonn sé a chuid ábhar datha ar bhunghlónra gan luaidhe den fhriot agus de chaoilín, 85 le 15. Ní liostaítear ábhair ina bhfuil luaidhe le cur leis ach nuair atá an luaidhe ar siúl sna socruithe ar leathanach do chuntais.",
       "shelf": "Déanann an cnaipe <b>Meaitseáil leis a bhfuil agam</b> an t-oideas arís as na hábhair atá agat amháin, chomh gar dá ocsaídí tar éis bácála agus a ligeann siad. Coinnítear liosta do stoic le do chuntas.",
       "tries": "Is féidir <b>ábhair le triail</b> a thabhairt do gach ceann acu seo, aon cheann atá agat nó ar mhaith leat go gcuirfí san áireamh, agus <b>Ní mór a úsáid</b> a thiceáil chun ceann a choinneáil isteach. Luann an t-oideas nua cad a sholáthraíonn gach ábhar agus an bhfuil sé ag teastáil ón meaitseáil, cad eile a chuideodh, agus rudaí le faire orthu. Thar theorainn a mholtar, mar shampla mórán bóróin ag cón 6 nó bánlí<en>whiting</en> mar atá ag cón 04, luann sé cad is dócha a dhéanfaidh an glónra seachas diúltú. Oibríonn a chnaipí an t-oideas amach arís ón seanoideas: fág ábhar ar lár, cuir ceann leis, nó ceadaigh níos mó thar theorainn."
     },
@@ -334,7 +333,7 @@
     "showCost": "Taispeáin costas na baisce",
     "showCostHelp": "As de réir réamhshocraithe, ionas nach dtaispeánann ticéad a thugtar do dhuine praghsanna. Úsáideann sé na praghsanna a choinnítear le do chuntas.",
     "cost": "Costas baisce {cost}: {perUnit} an {unit, select, lb {punt} other {cileagram}} de ghlónra tirim, ábhair datha agus breiseáin san áireamh.",
-    "costPartial": "Is é {cost} costas na n-ábhar a bhfuil praghas orthu. Níl aon phraghas ar {list}.",
+    "costPartial": "Is é {cost} costas na n-ábhar a bhfuil praghas orthu. Níl aon phraghas ar na hábhair seo: {list}.",
     "worked": "Na céimeanna oibrithe: conas a thagann an fhoirmle Seger as na méideanna, céim ar chéim, mar bhileog oibre"
   },
   "cost": {
@@ -642,7 +641,7 @@
     },
     "shownFor": "Nuair nach roghnaítear aon bhácáil, is do na cinn seo atá na figiúirí a thaispeántar: {band}. Sábháiltear an bhácáil leis an oideas.",
     "cone": "Seo figiúirí na sraithe do chón {cone}.",
-    "caption": "An fhoirmle Seger i gcomparáid le {name}, i móil",
+    "caption": "An fhoirmle Seger i gcomparáid leis an tsraith teorainneacha {name}, i móil",
     "oxide": "Ocsaíd",
     "glaze": "An glónra seo",
     "range": "Raon",
@@ -805,7 +804,7 @@
     "yourAdditives": "Do chuid breiseán",
     "standardAdditives": "Breiseáin chaighdeánacha",
     "how": {
-      "alias": "Ainm eile ar {name}.",
+      "alias": "Ainm eile ar an ábhar {name}.",
       "close": "An buille faoi thuairim is fearr: {name}. Seiceáil gurb é seo an t-ábhar a bhí i gceist.",
       "choose": "Tá roinnt ábhar gar don líne. Roghnaigh ceann, nó fág an líne ar lár.",
       "none": "Níor aimsíodh sa leabharlann é. Roghnaigh ábhar, nó fág an líne ar lár."

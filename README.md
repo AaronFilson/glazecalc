@@ -9,9 +9,9 @@ Aaron Filson, in 57 languages, and usable from AI assistants through its MCP ser
 
 [![CI](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/AaronFilson/glazecalc/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/AaronFilson/glazecalc/actions/workflows/codeql.yml)
-[![Tests](https://img.shields.io/badge/tests-3%2C800%2B-2ea44f)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
+[![Tests](https://img.shields.io/badge/tests-4%2C050%2B-2ea44f)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
 [![Coverage](https://img.shields.io/badge/coverage-98%25%20server%20%C2%B7%2099%25%20client-2ea44f)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
-[![Lighthouse](https://img.shields.io/badge/Lighthouse-99%20%C2%B7%20100%20%C2%B7%20100%20%C2%B7%20100-f44b21)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
+[![Lighthouse](https://img.shields.io/badge/Lighthouse-98%20%C2%B7%20100%20%C2%B7%20100%20%C2%B7%20100-f44b21)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
 [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-com.glazecalcapp%2Fglazecalc-5b5bd6)](https://registry.modelcontextprotocol.io/v0/servers?search=com.glazecalcapp/glazecalc)
 [![Mozilla HTTP Observatory: A+](https://img.shields.io/badge/HTTP%20Observatory-A%2B-2ea44f)](https://developer.mozilla.org/en-US/observatory/analyze?host=glazecalcapp.com)
 [![Live checks](https://github.com/AaronFilson/glazecalc/actions/workflows/live-checks.yml/badge.svg)](https://github.com/AaronFilson/glazecalc/actions/workflows/live-checks.yml)
@@ -35,10 +35,10 @@ For anyone reading the code; the [highlights](#highlights) below give the detail
 
 - **Stack:** Angular 22 (standalone components, signals, zoneless), TypeScript on Node 24 with Express 5 and
   Mongoose 9, MongoDB 9, Docker, and AWS (EC2, SSM, SES, S3, CloudWatch).
-- **Tested in CI on every pull request:** over 1,800 server tests (98% of statements, 88% of branches), over 1,550
+- **Tested in CI on every pull request:** over 2,000 server tests (98% of statements, 89% of branches), over 1,600
   Angular unit tests (99% of statements, 91% of branches) and over 450 Playwright browser tests, with axe checks
   against WCAG 2.2 AA. Also the official MCP conformance suite, CodeQL on the code and the workflows, and Lighthouse
-  on desktop: performance 99; accessibility, best practices and SEO 100. CI checks these numbers too.
+  on desktop: performance 98; accessibility, best practices and SEO 100. CI checks these numbers too.
 - **Security:** sign-in with OAuth 2.0 and OpenID Connect (Google, GitHub, Microsoft) or a password; MFA with WebAuthn
   passkeys, TOTP and recovery codes; JWTs in httpOnly cookies with CSRF protection; a layered content security
   policy and a Permissions-Policy, graded A+ by Mozilla's HTTP Observatory; keyless CI/CD with no stored AWS keys,
@@ -64,8 +64,8 @@ The details, with the decisions behind them:
   `.ts` files directly with no build step ([ADR 8](docs/adr/0008-typescript-server-without-a-build.md)),
   and put back online. The
   [case study](docs/case-study.md) tells how.
-- **Tested at three levels, in CI on every pull request and push to master:** over 1,800 server tests (98% of
-  statements, 88% of branches) run against the app in-process; over 1,550 Angular unit tests (99% of statements,
+- **Tested at three levels, in CI on every pull request and push to master:** over 2,000 server tests (98% of
+  statements, 89% of branches) run against the app in-process; over 1,600 Angular unit tests (99% of statements,
   91% of branches); over 450 Playwright browser tests, including [axe](https://github.com/dequelabs/axe-core)
   accessibility checks against WCAG 2.2 AA of every page in light and dark mode, every page in a pseudo-locale to
   find text not marked for translation, and every page in each language at a phone's width. CodeQL scans the code
@@ -133,7 +133,7 @@ The details, with the decisions behind them:
   domain so every email stays unique, conversion to an account in place (or into an existing
   account at sign-in), limits against abuse,
   and an hourly cleanup ([ADR 7](docs/adr/0007-trials-as-real-accounts.md)).
-- **Lighthouse in CI, on a production build (desktop):** performance 99; accessibility, best practices and SEO 100;
+- **Lighthouse in CI, on a production build (desktop):** performance 98; accessibility, best practices and SEO 100;
   no layout shift. Four public pages, the median of three runs each; CI fails below the limits in
   [lighthouserc.json](scripts/lighthouse/lighthouserc.json), and `npm run lighthouse` measures the same here.
 

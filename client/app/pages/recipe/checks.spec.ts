@@ -69,7 +69,7 @@ describe('saying what is past a limit', () => {
   it('warns of raw whiting at low fire, as the app’s own guideline', () => {
     const lines = [...BASE, line('Whiting', 8)];
     const [whiting] = pastLimits({ lines, unity: GLOSSY, celsius: 1060 });
-    expect(whiting).toContain('At 7% it tends to pinhole');
+    expect(whiting).toContain('At 7.4% it tends to pinhole');
     expect(whiting).toContain("5% is this app's guideline");
     expect(pastLimits({ lines, unity: { ...GLOSSY, B2O3: 0.2 }, celsius: 1222 })).toEqual([]);
   });
@@ -96,9 +96,9 @@ describe('saying what is past a limit', () => {
     expect(warnings.some((w) => w.startsWith('Fluorspar releases fluorine as it fires.'))).toBe(true);
     expect(warnings.some((w) => w.startsWith('Ferro Frit 3269 releases fluorine as it fires.'))).toBe(true);
     expect(warnings.some((w) => w.startsWith('A calcium borate frit is normally a small boron top-up'))).toBe(true);
-    expect(warnings.some((w) => w.startsWith('Over 20% raw clay (25%)'))).toBe(true);
+    expect(warnings.some((w) => w.startsWith('Over 20% raw clay (25.0%)'))).toBe(true);
     const bare = pastLimits({ lines: [line('Frit', 100, { category: 'frit' })], unity: GLOSSY, oldClay: 20 });
-    expect(bare.some((w) => w.startsWith('This has no raw clay; the old recipe had 20%.'))).toBe(true);
+    expect(bare.some((w) => w.startsWith('This has no raw clay; the old recipe had 20.0%.'))).toBe(true);
   });
 
   it('says how the expansion moves against the old recipe', () => {
@@ -113,7 +113,7 @@ describe('saying what is past a limit', () => {
     const many = Array.from({ length: 8 }, (_, i) => line('M' + i, i === 0 ? 0.5 : 14));
     const notes = sizeNotes(many);
     expect(notes[0]).toContain('This recipe has 8 base materials');
-    expect(notes.some((n) => n.startsWith('M0 is 0.5% of the batch'))).toBe(true);
+    expect(notes.some((n) => n.startsWith('M0 is 0.51% of the batch'))).toBe(true);
     expect(sizeNotes(BASE)).toEqual([]);
     expect(
       rawClayPercent([

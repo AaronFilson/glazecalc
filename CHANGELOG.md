@@ -14,6 +14,41 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   running as root. The receipt rule's recipients are in alphabetical order, as SES returns them, so drift detection
   finds nothing.
 
+- **The chemistry's core is nameless** ([ADR 30](docs/adr/0030-nameless-chemistry-core.md)): the chemistry,
+  cones and recipe tools that Glaze Vault will share move to `lib/core`, which takes records, tells them apart by an
+  identity the host chooses, asks the host for what it once read from a material's name (calcined, raw whiting, a
+  colorant's kind, the fallback clay), and returns numbers and codes, never words. `lib/chemistry`, `lib/recipe` and
+  `lib/cones` keep their paths and exports and put the names, English, labels and sources back, so every result is
+  the same. A test holds `lib/core` to requiring only itself, reading no names and writing no words.
+
+- **Materials and additives have UUIDs:** every record has a `uuid`, the standard ones fixed in `data/`, a
+  potter's own given one when saved (a copy of another record gets its own) and older ones at the next start, when
+  recipe lines get the uuid of the record they name too. The chemistry tells records apart by it, and a record
+  without one by its name, as before; results still call each by its name. An import gives each copy in the new
+  account its own and points the recipe lines at them.
+
+- **The standard records carry their traits** (`data/`, `traits`): what the chemistry once read from a material's
+  name (a theoretical mineral, calcined, raw whiting or dolomite, a colorant's kind, a kaolin or ball clay, the
+  fallback clay and silica, its mineral for the dry SG). A potter's own material is still read by its name.
+
+### Fixed
+
+- **Cautions show the decimal that agrees with their limits:** raw clay and whiting as 20.3%, not 20%; a small
+  amount as 0.96%, not 1.0%; silica to alumina as 4.99:1, not 5.0:1; expansion as 6.06 to 6.27. A caution no longer
+  shows a number that seems to be within its limit.
+- **Larger searches get more work:** Target & Solve, Match with what I have and Suggest amounts allow work in
+  proportion to the problem (materials offered times the target's oxides) above 60 materials and 13 oxides, to four
+  times it at the most, so 80 materials for a 13-oxide target finish rather than stop short. The MCP tools charge the
+  work a search did.
+- **A molecular weight lighter than the fired oxides** is no longer read silently as no LOI: it warns
+  (`molecular-weight-low`).
+- **vary_material** finds `instead` among the base recipe's own lines before the library's names (a base line of
+  the potter's own "Wood ash" was refused), and keeps a tiny step: zinc from 0 to 2e-7 no longer came to 0 in every
+  tile.
+- **Irish:** names after a preposition outside the material pages take a noun ("ón aip {name}", "don oideas
+  {title}"), and a test lists any that come back. The help for Replace lead's Keep the colour says the recipe's own
+  clay, not kaolin.
+
 ## 1.0.0 (2026-11-12)
 
 The 2017 app, put back online in October, has grown into a glaze chemistry workbench in 57 languages that AI

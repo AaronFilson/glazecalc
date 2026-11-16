@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import { keepUuidOwn, uuidField } from './uuid.ts';
 import { idemKeyField, indexIdemKey } from './idempotency.ts';
 import { libraryInfo } from './library_info.ts';
 
@@ -13,6 +14,11 @@ const materialSchema = new mongoose.Schema({
   ownedBy: { type: String, required: true },
   relatedTo: { type: [String] },
   name: { type: String, required: true },
+  // The record's identity for the chemistry and across apps (docs/adr/0030-nameless-chemistry-core.md):
+  // given once, kept when the name changes. Standard records have theirs in data/.
+  ...uuidField,
+  // What the chemistry needs to know of a standard record beyond its analysis (data/, lib/recipe/traits.js).
+  traits: { type: mongoose.Schema.Types.Mixed },
   // How the fields' amounts are given; stored in lower case, so 'Percent' is kept as 'percent'.
   percentmole: { type: String, required: true, trim: true, lowercase: true, enum: ['percent', 'molecular'] },
   rawformula: String,
@@ -27,5 +33,6 @@ const materialSchema = new mongoose.Schema({
 // latest record, the quota count and the account's deletion look up by owner.
 materialSchema.index({ ownedBy: 1, _id: 1 });
 indexIdemKey(materialSchema);
+keepUuidOwn(materialSchema);
 
 export default mongoose.model('Material', materialSchema);

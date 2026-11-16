@@ -29,7 +29,7 @@ const exportOf = async (token: string): Promise<Row> =>
 /** A record's content without ids and owners, as two accounts' copies compare. */
 const content = (record: Row): Row => {
   // Ids at every depth: a recipe line's copy of its material drops the other account's owner too.
-  const dropped = new Set(['_id', '__v', 'firing', 'ownedBy', 'relatedId', 'rev', 'updatedAt']);
+  const dropped = new Set(['_id', 'uuid', '__v', 'firing', 'ownedBy', 'relatedId', 'rev', 'updatedAt']);
   return JSON.parse(JSON.stringify(record, (key, value) => (dropped.has(key) ? undefined : value)));
 };
 
@@ -107,6 +107,10 @@ describe('import API', () => {
     ]);
     expect(String(mat!._id)).to.not.equal(ids.material);
     expect((recipe!.materials as Row[])[0]!._id).to.equal(String(mat!._id));
+    // The copy is another record, with a UUID of its own, and the line names it.
+    const alicesUuid = ((await Material.findById(ids.material).lean()) as { uuid?: string }).uuid;
+    expect(mat!.uuid).to.be.a('string').and.not.equal(alicesUuid);
+    expect((recipe!.materials as Row[])[0]!.uuid).to.equal(mat!.uuid);
     expect((recipe!.materials as Row[])[0]).to.not.have.property('ownedBy');
     expect(recipe!.firings![0]!.firing).to.equal(String(log!._id));
     expect(note!.relatedId).to.equal(String(recipe!._id));
