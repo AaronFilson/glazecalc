@@ -20,6 +20,6 @@ export {
   firingBands,
   inRange,
   matchesCone
-} from '../../cones/firing';
+} from '../../cones/firing.js';
 /** Each SK cone's place in the chart, coolest first. */
 export const SK_ORDER: Map<string, number>;

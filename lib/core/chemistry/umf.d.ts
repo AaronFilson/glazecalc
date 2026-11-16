@@ -1,4 +1,4 @@
-import type { CoreMaterial, CorePrepared, CoreWarning } from './materials';
+import type { CoreMaterial, CorePrepared, CoreWarning } from './materials.js';
 
 export interface CoreLine {
   material: CoreMaterial | string;

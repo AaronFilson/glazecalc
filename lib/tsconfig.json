@@ -18,7 +18,8 @@
     "checkJs": true,
     "noEmit": true,
     "strict": false,
-    "skipLibCheck": false
+    "skipLibCheck": false,
+    "allowImportingTsExtensions": true
   },
   "include": ["**/*.js"],
   // The core's own tests (npm run test:core) pass nameless records, which the declarations

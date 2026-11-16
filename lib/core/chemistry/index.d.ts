@@ -21,5 +21,5 @@ export {
   oxideMoles,
   oxidesGivenIn,
   selectMaterials
-} from '../../chemistry/index';
-export { prepareMaterial } from './materials';
+} from '../../chemistry/index.js';
+export { prepareMaterial } from './materials.js';
