@@ -20,6 +20,8 @@ const code = (file: string) =>
 
 describe('the nameless core (lib/core)', () => {
   const files = filesIn(CORE);
+  // The library's code, without its own tests, which may build records and read their fields freely.
+  const shipped = files.filter((file) => !file.startsWith(TESTS));
 
   it('has its files', () => {
     expect(files.length).to.be.greaterThan(5);
@@ -39,7 +41,7 @@ describe('the nameless core (lib/core)', () => {
 
   // An oxide field ({ name: 'SiO2', amount }) and a cap group are called by a name; so is an error class.
   it('never reads a name: only an oxide field, a cap group or an error class is called by one', () => {
-    for (const file of files) {
+    for (const file of shipped) {
       const reads = [...code(file).matchAll(/([\w$\]\)]+)\.name\b/g)].map((m) => m[1]);
       expect(
         reads.filter((owner) => !['field', 'group', 'this'].includes(owner!)),
@@ -49,7 +51,7 @@ describe('the nameless core (lib/core)', () => {
   });
 
   it('writes no words: no English templates, no locale, no display formatting', () => {
-    for (const file of files) {
+    for (const file of shipped) {
       const text = code(file);
       for (const banned of [/\bIntl\b/, /toLocale\w*\(/, /\benglish\(/, /\bformatFormula\b/, /\bwarnings\s*:/]) {
         expect(banned.test(text), `${path.relative(CORE, file)}: ${banned}`).to.equal(false);
