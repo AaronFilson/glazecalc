@@ -157,7 +157,7 @@ function cappedLeastSquares({
   const isFree = (j: number) => !fixed[j] && side[j] === 0;
   // Each cap: 'under' its most, 'at' it (held there exactly), or 'over' it at a price for each unit over.
   const over = (g: number) => caps[g].weights.reduce((sum, weight, j) => sum + weight * x[j], 0) - caps[g].most;
-  const state: CapState[] = caps.map((cap, g) => (over(g) > 0 ? 'over' : 'under'));
+  const state: CapState[] = caps.map((_cap, g) => (over(g) > 0 ? 'over' : 'under'));
   const gradientScale = Math.max(1e-300, ...v.map(Math.abs), ...x.map((value, j) => diagonal[j] * Math.abs(value)));
   const price = caps.map((cap) => RAISE * Math.max(cap.price || 0, gradientScale));
   const dearest = DEAREST * gradientScale;
@@ -181,7 +181,7 @@ function cappedLeastSquares({
   for (let step = 0; step < limit && !spent(); step++) {
     const free: number[] = [];
     for (let j = 0; j < n; j++) if (isFree(j)) free.push(j);
-    const held = caps.map((cap, g) => g).filter((g) => state[g] === 'at');
+    const held = caps.map((_cap, g) => g).filter((g) => state[g] === 'at');
     // The free variables' right-hand side: A^T b and the pull, less the others where they are and the prices.
     const r = free.map((j) => {
       let value = v[j];
@@ -217,7 +217,7 @@ function cappedLeastSquares({
       continue;
     }
     const target = solution.slice(0, free.length);
-    const mu = held.map((g, b) => across * solution[free.length + b]);
+    const mu = held.map((_g, b) => across * solution[free.length + b]);
     // A step of rounding noise is none: taken as a direction, it would stop at once at any bound or cap
     // it touches, and the steps could go round in circles at a corner where many meet (all at nothing).
     const p = target.map((value, i) => {
@@ -258,7 +258,7 @@ function cappedLeastSquares({
         blocking = { j, side: move < 0 ? -1 : 1 };
       }
     });
-    caps.forEach((cap, g) => {
+    caps.forEach((_cap, g) => {
       if (state[g] === 'at') return;
       const toward = rate(g);
       const ratio =
@@ -312,7 +312,7 @@ function cappedLeastSquares({
     }
     // The best at these prices: a cap still over its most is charged more, while that may help.
     const dearer = caps
-      .map((cap, g) => g)
+      .map((_cap, g) => g)
       .filter((g) => state[g] === 'over' && over(g) > caps[g].tolerance && price[g] < dearest);
     if (!dearer.length) break;
     dearer.forEach((g) => (price[g] = Math.min(dearest, RAISE * price[g])));

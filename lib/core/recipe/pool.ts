@@ -292,7 +292,7 @@ function addingUp<S extends { amounts: number[] }>(
   // How far rounding moved each, in steps: above 0, rounded down.
   const moved = amounts.map((amount, i) => amount * step - units[i]);
   const order = amounts
-    .map((amount, i) => i)
+    .map((_amount, i) => i)
     .filter((i) => units[i] > 0 && !kept(i))
     .sort((p, q) => (left > 0 ? moved[q] - moved[p] : moved[p] - moved[q]) || p - q);
   const given = amounts.slice();
