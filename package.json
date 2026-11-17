@@ -14,6 +14,7 @@
     "lint": "eslint .",
     "typecheck": "tsc -p server && tsc -p lib && tsc -p lib/core",
     "check:i18n": "node scripts/i18n-check.mjs",
+    "check:audit": "node scripts/audit.mjs",
     "i18n:sources": "node scripts/i18n-sources.mjs",
     "og-images": "node scripts/og-images-linux.mjs",
     "format": "prettier --write",
