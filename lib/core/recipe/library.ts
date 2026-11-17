@@ -1,5 +1,6 @@
 import { traitsOf } from '../traits.ts';
 import type { MaterialField, MaterialInput } from '../types.ts';
+import type { Host } from '../host.ts';
 
 /** A frit's job, from its maker's stated use (research_notes/Base frits for lead free glazes). */
 export type FritRole =
@@ -85,9 +86,9 @@ function inRegion(record: { region?: string[] }, region: string): boolean {
  * something to buy: the real feldspars and clays are offered instead. Pure
  * chemicals such as whiting and the carbonates are offered as they are.
  */
-const isIdealMineral = (material: MaterialRecord): boolean =>
+const isIdealMineral = (host: Host, material: MaterialRecord): boolean =>
   material.source?.kind === 'theoretical' &&
-  (material.category === 'feldspar' || material.category === 'clay' || traitsOf(material).theoretical === true);
+  (material.category === 'feldspar' || material.category === 'clay' || traitsOf(host, material).theoretical === true);
 
 /**
  * Whether the app may suggest a material: current, sold in the region, not a
@@ -96,13 +97,14 @@ const isIdealMineral = (material: MaterialRecord): boolean =>
  * The potter can still add any material to try.
  */
 function suggestable(
+  host: Host,
   material: MaterialRecord,
   { region, allowLead = false }: { region: string; allowLead?: boolean }
 ): boolean {
   return (
     (!material.status || material.status === 'current') &&
     inRegion(material, region) &&
-    !isIdealMineral(material) &&
+    !isIdealMineral(host, material) &&
     !material.soluble &&
     !material.fluorine &&
     (allowLead || !hasLead(material))

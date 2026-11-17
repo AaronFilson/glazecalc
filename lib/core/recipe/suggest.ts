@@ -13,6 +13,7 @@ import type { AdditiveRecord, MaterialRecord, TryMaterial } from './library.ts';
 import type { Caution, RecipeMessage } from './messages.ts';
 import type { Report } from './pool.ts';
 import type { Swap } from './swaps.ts';
+import type { Host } from '../host.ts';
 
 /** A material that could bring a short oxide back (labelOf), with its weight percent of the oxide. */
 export interface Choice {
@@ -81,9 +82,15 @@ const CHOICES = 3;
 const LEAST_SHARE = 0.01;
 
 /** The old recipe's oxides, the modern materials one for one, and the swaps. */
-function setUp<M extends MaterialRecord>(lines: M[], find: Find<M>, region: string, options: { allowLead?: boolean }) {
-  const { materials, swaps } = modernMaterials(lines, find, region, options);
-  const target = molesOf(lines);
+function setUp<M extends MaterialRecord>(
+  host: Host,
+  lines: M[],
+  find: Find<M>,
+  region: string,
+  options: { allowLead?: boolean }
+) {
+  const { materials, swaps } = modernMaterials(host, lines, find, region, options);
+  const target = molesOf(host, lines);
   const modern = materials.map((material): { material: M; start: number; least?: number } => ({
     material,
     start: amountOf(material.amount)
@@ -92,7 +99,7 @@ function setUp<M extends MaterialRecord>(lines: M[], find: Find<M>, region: stri
 }
 
 /** Oxides the old materials gave that come out well short, with what came out. */
-function shortOf(target: Oxides, moles: Oxides, old: MaterialRecord[]): Short[] {
+function shortOf(host: Host, target: Oxides, moles: Oxides, old: MaterialRecord[]): Short[] {
   const fluxes = fluxesOf(target);
   if (!(fluxes > 0)) return [];
   const result: Short[] = [];
@@ -102,12 +109,12 @@ function shortOf(target: Oxides, moles: Oxides, old: MaterialRecord[]): Short[] 
     if (was < SMALLEST_ASKED || now >= SHORT * was) continue;
     // Only what the swapped-out materials gave: the rest of the recipe is still there.
     const from = old.filter((material) => {
-      const given = (molesPerGram(material)[oxide] ?? 0) * amountOf(material.amount);
+      const given = (molesPerGram(host, material)[oxide] ?? 0) * amountOf(material.amount);
       return given >= 0.1 * amount;
     });
     if (from.length) {
-      const short = { oxide, was, now, from: from.map(labelOf) };
-      Object.defineProperty(short, IDS, { value: { from: from.map(idOf) } });
+      const short = { oxide, was, now, from: from.map((material) => labelOf(host, material)) };
+      Object.defineProperty(short, IDS, { value: { from: from.map((material) => idOf(host, material)) } });
       result.push(short as Short);
     }
   }
@@ -126,31 +133,32 @@ function shortOf(target: Oxides, moles: Oxides, old: MaterialRecord[]): Short[] 
  * MCP tools alike, so both give the same answer.
  */
 function planSuggestion<M extends MaterialRecord>(
+  host: Host,
   lines: M[],
   find: Find<M>,
   standard: M[],
   region: string,
   { allowLead = false, meter = newMeter() }: { allowLead?: boolean; meter?: Meter } = {}
 ): Plan {
-  const { target, modern, swaps } = setUp(lines, find, region, { allowLead });
+  const { target, modern, swaps } = setUp(host, lines, find, region, { allowLead });
   const replaced = new Set(swaps.map((swap) => swap[IDS].from));
-  const old = lines.filter((line) => replaced.has(idOf(line)));
-  const first = fitAmounts(modern, target, { meter });
-  const inRecipe = new Set(modern.map((line) => idOf(line.material)));
-  const shortfalls = shortOf(target, first.moles, old).map(({ oxide, was, now, from, [IDS]: ids }) => {
+  const old = lines.filter((line) => replaced.has(idOf(host, line)));
+  const first = fitAmounts(host, modern, target, { meter });
+  const inRecipe = new Set(modern.map((line) => idOf(host, line.material)));
+  const shortfalls = shortOf(host, target, first.moles, old).map(({ oxide, was, now, from, [IDS]: ids }) => {
     const instead = swaps.filter((swap) => ids.from.includes(swap[IDS].from)).map((swap) => swap.to);
     const choices = standard
       .filter(
         (material) =>
-          suggestable(material, { region, allowLead }) &&
-          !inRecipe.has(idOf(material)) &&
-          oxidePercent(material, oxide) >= LEAST_PERCENT
+          suggestable(host, material, { region, allowLead }) &&
+          !inRecipe.has(idOf(host, material)) &&
+          oxidePercent(host, material, oxide) >= LEAST_PERCENT
       )
       .map((material) => ({
-        name: labelOf(material),
-        percent: oxidePercent(material, oxide),
+        name: labelOf(host, material),
+        percent: oxidePercent(host, material, oxide),
         // Once the work is spent, the rest are not fitted: after those that were, in the library's order.
-        miss: spent(meter) ? Infinity : bestFit([...modern, { material, start: 0 }], target, { meter }).miss
+        miss: spent(meter) ? Infinity : bestFit(host, [...modern, { material, start: 0 }], target, { meter }).miss
       }))
       .sort((a, b) => (a.miss === b.miss ? 0 : a.miss - b.miss))
       .slice(0, CHOICES)
@@ -173,6 +181,7 @@ function planSuggestion<M extends MaterialRecord>(
  * none of the materials it may use has one (of: 'offered').
  */
 function suggestAmounts<M extends MaterialRecord>(
+  host: Host,
   lines: M[],
   find: Find<M>,
   bringIn: M[],
@@ -193,11 +202,11 @@ function suggestAmounts<M extends MaterialRecord>(
     meter?: Meter;
   } = {}
 ): Suggestion<M> {
-  const { target, modern, swaps } = setUp(lines, find, region, { allowLead });
+  const { target, modern, swaps } = setUp(host, lines, find, region, { allowLead });
   if (!(fluxesOf(target) > 0)) throw new RecipeError('solve.noFlux', { of: 'recipe' });
   const total = modern.reduce((sum, line) => sum + line.start, 0);
   const places = placesFor(total);
-  const inRecipe = new Set(modern.map((line) => idOf(line.material)));
+  const inRecipe = new Set(modern.map((line) => idOf(host, line.material)));
   const added = (material: M, must: boolean) => ({
     material: { ...structuredClone(material), amount: '' },
     start: 0,
@@ -205,14 +214,17 @@ function suggestAmounts<M extends MaterialRecord>(
     least: LEAST_SHARE * total
   });
   const offered = [
-    ...bringIn.filter((m) => !inRecipe.has(idOf(m))).map((m) => added(m, true)),
+    ...bringIn.filter((m) => !inRecipe.has(idOf(host, m))).map((m) => added(m, true)),
     ...tries
-      .filter((t) => !inRecipe.has(idOf(t.material)) && !bringIn.some((m) => idOf(m) === idOf(t.material)))
+      .filter(
+        (t) => !inRecipe.has(idOf(host, t.material)) && !bringIn.some((m) => idOf(host, m) === idOf(host, t.material))
+      )
       .map((t) => added(t.material, t.must))
   ];
-  const oldClay = rawClayPercent(lines);
+  const oldClay = rawClayPercent(host, lines);
   const { selection: chosen, lines: all } = selectHoldingClay(
-    [...modern, ...offered].map((line) => ({ ...line, avoid: avoid.includes(idOf(line.material)) })),
+    host,
+    [...modern, ...offered].map((line) => ({ ...line, avoid: avoid.includes(idOf(host, line.material)) })),
     target,
     { keepOwn: true, oldClay, batch: total, uncapped, meter }
   );
@@ -222,30 +234,34 @@ function suggestAmounts<M extends MaterialRecord>(
   const newTotal = chosen.amounts.reduce((sum, amount) => sum + amount, 0);
   const selection = addingUp(chosen, places, newTotal, unchanged, (i) => Number(all[i].least) || 0);
   const replacements = new Set(swaps.map((swap) => swap[IDS].to));
-  const { materials, changes, unused } = recipeFrom(selection, all, replacements, places);
+  const { materials, changes, unused } = recipeFrom(host, selection, all, replacements, places);
   const replaced = new Set(swaps.map((swap) => swap[IDS].from));
   const stillShort = shortOf(
+    host,
     target,
     selection.moles,
-    lines.filter((line) => replaced.has(idOf(line)))
+    lines.filter((line) => replaced.has(idOf(host, line)))
   ).map((short) => short.oxide);
   const cautions = [
-    ...pastLimits({
+    ...pastLimits(host, {
       lines: materials.map((material) => ({ material, amount: material.amount })),
       unity: unityOf(selection.moles),
       old: unityOf(target),
       oldClay,
       additives,
-      expansion: { was: expansionOf(lines), now: expansionOf(materials) }
+      expansion: { was: expansionOf(host, lines), now: expansionOf(host, materials) }
     }),
-    ...sizeNotes(materials.map((material) => ({ material, amount: material.amount })))
+    ...sizeNotes(
+      host,
+      materials.map((material) => ({ material, amount: material.amount }))
+    )
   ];
   return {
     materials,
     changes,
     unused,
     stillShort,
-    report: explain(selection, all, places, target, newTotal),
+    report: explain(host, selection, all, places, target, newTotal),
     cautions
   };
 }

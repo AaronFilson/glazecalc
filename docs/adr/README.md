@@ -35,6 +35,7 @@ record that says what it replaces.
 | [0028](0028-service-worker.md)                    | Offline: Angular's service worker keeps the app, the app the language   | 2026-10-31 |
 | [0029](0029-infrastructure-as-code-with-cdk.md)   | The AWS setup as code, with AWS CDK in TypeScript                       | 2026-11-12 |
 | [0030](0030-nameless-chemistry-core.md)           | A nameless chemistry core, with names and words outside it              | 2026-11-14 |
+| [0031](0031-functional-core.md)                   | A functional core: what it reads comes with each call                   | 2026-11-17 |
 
 0018 is kept for the privacy notice on connecting an AI assistant, item 39 of
 [the integrations plan](../integrations-plan.md). The next new record takes 0031.

@@ -3,6 +3,7 @@ import { idOf, labelOf, IDS } from '../identity.ts';
 import { hasLead, inRegion } from './library.ts';
 import { likeForLike } from './materials.ts';
 import type { LibraryStatus, MaterialRecord } from './library.ts';
+import type { Host } from '../host.ts';
 
 export interface Swap {
   /** labelOf the old material and the new; their ids (idOf) are under IDS, not enumerable. */
@@ -52,6 +53,7 @@ const current = <T extends { status?: LibraryStatus }>(record: T | null | undefi
  * `find` gives a record's library record, or a substitute's by its reference.
  */
 function modernMaterials<M extends MaterialRecord>(
+  host: Host,
   materials: M[],
   find: (wanted: M | string) => M | undefined,
   region: string = '',
@@ -83,21 +85,23 @@ function modernMaterials<M extends MaterialRecord>(
         record.category === 'colorant'
           ? record.substitutes.map((name) => findAdditive?.(name)).find(current)
           : undefined;
-      if (additive) colorants.push({ from: labelOf(material), ...status(record), to: labelOf(additive) });
+      if (additive) colorants.push({ from: labelOf(host, material), ...status(record), to: labelOf(host, additive) });
       return material;
     }
     swaps.push({
-      from: labelOf(material),
+      from: labelOf(host, material),
       ...status(record),
-      to: labelOf(substitute),
-      like: likeForLike(record, substitute),
+      to: labelOf(host, substitute),
+      like: likeForLike(host, record, substitute),
       lead: hasLead(substitute)
     } as Swap);
     // The two records' ids, for matching them again: not enumerable, out of sight of the result.
-    Object.defineProperty(swaps[swaps.length - 1], IDS, { value: { from: idOf(material), to: idOf(substitute) } });
+    Object.defineProperty(swaps[swaps.length - 1], IDS, {
+      value: { from: idOf(host, material), to: idOf(host, substitute) }
+    });
     return { ...structuredClone(substitute), amount: material.amount };
   });
-  return { materials: mergeSameMaterials(modern), swaps, colorants };
+  return { materials: mergeSameMaterials(host, modern), swaps, colorants };
 }
 
 /**
@@ -105,10 +109,10 @@ function modernMaterials<M extends MaterialRecord>(
  * (Custer and Oxford spar by G-200 EU), or one already in the recipe, become
  * one line with their amounts added, where both are numbers.
  */
-function mergeSameMaterials<M extends MaterialRecord>(materials: M[]): M[] {
+function mergeSameMaterials<M extends MaterialRecord>(host: Host, materials: M[]): M[] {
   const merged: M[] = [];
   for (const material of materials) {
-    const same = merged.find((m) => idOf(m) === idOf(material));
+    const same = merged.find((m) => idOf(host, m) === idOf(host, material));
     const [a, b] = [Number(same?.amount), Number(material.amount)];
     if (same && same.amount?.trim() && material.amount?.trim() && Number.isFinite(a) && Number.isFinite(b)) {
       same.amount = String(Number((a + b).toFixed(5)));

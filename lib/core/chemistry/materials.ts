@@ -3,6 +3,7 @@ import type { Warning } from '../problem.ts';
 import { idOf, labelOf } from '../identity.ts';
 import * as oxides from './oxides.ts';
 import type { MaterialField, MaterialInput, Oxides, PreparedMaterial } from '../types.ts';
+import type { Host } from '../host.ts';
 
 // Converts a molar formula into a weight-percent analysis plus LOI. Each count
 // must be a number, at least 0, and some oxide must be left after firing.
@@ -45,11 +46,11 @@ const optionalNumber = function (value: unknown): number | null {
 // A value that may be left out (absent, null or blank: null) but, when given, is a number: a finite
 // number, or a plain decimal as typed and saved ("43.97"). Anything else, such as '43,97', Infinity,
 // NaN or true, is the `code` problem, not a value left out.
-const givenNumber = function (value: unknown, code: string, material: MaterialInput): number | null {
+const givenNumber = function (host: Host, value: unknown, code: string, material: MaterialInput): number | null {
   if (value === undefined || value === null || (typeof value === 'string' && value.trim() === '')) return null;
   const plain = typeof value === 'string' && /^-?\d*\.?\d+$/.test(value.trim());
   const number = typeof value === 'number' ? value : plain ? Number(value) : NaN;
-  if (!isFinite(number)) throw problem(code, { material: labelOf(material) });
+  if (!isFinite(number)) throw problem(code, { material: labelOf(host, material) });
   return number;
 };
 
@@ -74,10 +75,10 @@ const readAmounts = function (entries: Array<[string, unknown]>, materialLabel: 
 };
 
 // The LOI, or null when none is given; at least 0 and less than 100.
-const readLoi = function (material: MaterialInput): number | null {
-  const loi = givenNumber(material.loi, 'invalid-loi', material);
+const readLoi = function (host: Host, material: MaterialInput): number | null {
+  const loi = givenNumber(host, material.loi, 'invalid-loi', material);
   if (loi !== null && (loi < 0 || loi >= 100)) {
-    throw problem('loi-range', { material: labelOf(material) });
+    throw problem('loi-range', { material: labelOf(host, material) });
   }
   return loi;
 };
@@ -109,7 +110,10 @@ const oxidesGivenIn = function (material: {
 // each fired oxide per formula, and the raw formula weight comes from the LOI,
 // or from molecularweight when no LOI is given; given both, the LOI is used, with
 // a warning when the two disagree by more than LOI_AGREES.
-const fieldsToAnalysis = function (material: MaterialInput & { fields: MaterialField[] }): {
+const fieldsToAnalysis = function (
+  host: Host,
+  material: MaterialInput & { fields: MaterialField[] }
+): {
   analysis: Oxides;
   loi: number;
   formulaWeight: number;
@@ -117,13 +121,13 @@ const fieldsToAnalysis = function (material: MaterialInput & { fields: MaterialF
 } {
   const amounts = readAmounts(
     material.fields.map((field) => [field.name, field.amount]),
-    labelOf(material)
+    labelOf(host, material)
   );
-  let loi = readLoi(material);
+  let loi = readLoi(host, material);
   // 'percent' or 'molecular', in any case, as the server keeps them; none (an additive saved before
   // it had one: absent, null or blank, as the app reads it) is read as moles, as ever.
   const given = oxidesGivenIn(material);
-  if (given === null) throw problem('unknown-percentmole', { material: labelOf(material) });
+  if (given === null) throw problem('unknown-percentmole', { material: labelOf(host, material) });
 
   if (given === 'percent') {
     return { analysis: amounts, loi: loi || 0, formulaWeight: 100 };
@@ -131,8 +135,8 @@ const fieldsToAnalysis = function (material: MaterialInput & { fields: MaterialF
 
   let firedWeight = 0;
   Object.keys(amounts).forEach((oxide) => (firedWeight += amounts[oxide] * oxides.MOLAR_MASS[oxide]));
-  if (firedWeight === 0) throw problem('no-oxides', { material: labelOf(material) });
-  const molecularWeight = givenNumber(material.molecularweight, 'invalid-molecular-weight', material);
+  if (firedWeight === 0) throw problem('no-oxides', { material: labelOf(host, material) });
+  const molecularWeight = givenNumber(host, material.molecularweight, 'invalid-molecular-weight', material);
   // The LOI the molecular weight gives: what the raw formula loses to the fired one.
   const implied =
     molecularWeight !== null && molecularWeight > firedWeight ? (1 - firedWeight / molecularWeight) * 100 : 0;
@@ -141,12 +145,14 @@ const fieldsToAnalysis = function (material: MaterialInput & { fields: MaterialF
   // typed, or a wrong formula), so it gives no LOI, and says so rather than reading as none.
   const impossible = molecularWeight !== null && molecularWeight < firedWeight * (1 - LOI_AGREES / 100);
   if (impossible) {
-    warningCodes.push(warning('molecular-weight-low', { material: labelOf(material), molecularWeight, firedWeight }));
+    warningCodes.push(
+      warning('molecular-weight-low', { material: labelOf(host, material), molecularWeight, firedWeight })
+    );
   }
   if (loi === null) {
     loi = implied;
   } else if (!impossible && molecularWeight !== null && Math.abs(loi - implied) > LOI_AGREES) {
-    warningCodes.push(warning('loi-molecular-weight', { material: labelOf(material), loi, implied }));
+    warningCodes.push(warning('loi-molecular-weight', { material: labelOf(host, material), loi, implied }));
   }
 
   const analysis: Oxides = {};
@@ -158,7 +164,7 @@ const fieldsToAnalysis = function (material: MaterialInput & { fields: MaterialF
 
 // Warns when a stored unity formula and equivalent weight (entered by hand in
 // older versions of the app) disagree with the formula and LOI by over 3%.
-const checkStoredEquivalent = function (material: MaterialInput, analysis: Oxides): Warning | null {
+const checkStoredEquivalent = function (host: Host, material: MaterialInput, analysis: Oxides): Warning | null {
   const equivalent = optionalNumber(material.equivalent);
   if (!material.fields || !equivalent) return null;
   const mismatch = material.fields.some((field) => {
@@ -168,7 +174,7 @@ const checkStoredEquivalent = function (material: MaterialInput, analysis: Oxide
     // Stored amounts are rounded to 4 places, which puts a trace oxide (0.04% Fe2O3) well over 3% off.
     return Math.abs(stored - derived) > Math.max(0.03 * derived, 0.0001);
   });
-  return mismatch ? warning('stored-equivalent', { material: labelOf(material) }) : null;
+  return mismatch ? warning('stored-equivalent', { material: labelOf(host, material) }) : null;
 };
 
 // Validates a material and returns { id, label, analysis, loi, formulaWeight, warningCodes }: warningCodes
@@ -176,41 +182,41 @@ const checkStoredEquivalent = function (material: MaterialInput, analysis: Oxide
 // formulaWeight is the raw weight of the formula as written (100 for analyses).
 // Accepts { formula }, { analysis: { SiO2: 68.5 }, loi }, or the
 // app's stored { fields, percentmole, loi } shape; each with an identity (idOf).
-const prepareMaterial = function (material: MaterialInput | null | undefined): PreparedMaterial {
+const prepareMaterial = function (host: Host, material: MaterialInput | null | undefined): PreparedMaterial {
   // A material must have an identity (idOf).
   if (!material) throw problem('no-name');
-  const id = idOf(material);
-  const label = labelOf(material);
+  const id = idOf(host, material);
+  const label = labelOf(host, material);
   if (id === undefined || id === null || id === '' || label === undefined || label === null || label === '') {
     throw problem('no-name');
   }
   let prepared: { analysis: Oxides; loi: number; formulaWeight: number; warningCodes?: Warning[] };
   if (material.formula) {
-    prepared = formulaToAnalysis(material.formula, labelOf(material));
+    prepared = formulaToAnalysis(material.formula, labelOf(host, material));
   } else if (material.analysis) {
     prepared = {
-      analysis: readAmounts(Object.entries(material.analysis), labelOf(material)),
-      loi: readLoi(material) || 0,
+      analysis: readAmounts(Object.entries(material.analysis), labelOf(host, material)),
+      loi: readLoi(host, material) || 0,
       formulaWeight: 100
     };
   } else if (Array.isArray(material.fields)) {
-    prepared = fieldsToAnalysis(material as MaterialInput & { fields: MaterialField[] });
+    prepared = fieldsToAnalysis(host, material as MaterialInput & { fields: MaterialField[] });
   } else {
-    throw problem('no-analysis', { material: labelOf(material) });
+    throw problem('no-analysis', { material: labelOf(host, material) });
   }
 
   let total = prepared.loi;
   Object.keys(prepared.analysis).forEach((oxide) => (total += prepared.analysis[oxide]));
   const warningCodes = [...(prepared.warningCodes ?? [])];
   if (Math.abs(total - 100) > 2) {
-    warningCodes.push(warning('analysis-total', { material: labelOf(material), total }));
+    warningCodes.push(warning('analysis-total', { material: labelOf(host, material), total }));
   }
-  const equivalentWarning = checkStoredEquivalent(material, prepared.analysis);
+  const equivalentWarning = checkStoredEquivalent(host, material, prepared.analysis);
   if (equivalentWarning) warningCodes.push(equivalentWarning);
 
   return {
-    id: idOf(material),
-    label: labelOf(material),
+    id: idOf(host, material),
+    label: labelOf(host, material),
     analysis: prepared.analysis,
     loi: prepared.loi,
     formulaWeight: prepared.formulaWeight,
@@ -229,8 +235,8 @@ const prepareMaterial = function (material: MaterialInput | null | undefined): P
  *   molecularWeight raw weight of the formula as written (100 for analyses)
  *   loi             loss on ignition, percent
  */
-const materialWeights = function (material: MaterialInput) {
-  const prepared = prepareMaterial(material);
+const materialWeights = function (host: Host, material: MaterialInput) {
+  const prepared = prepareMaterial(host, material);
   const molesPerGram: Oxides = {};
   let fluxPerGram = 0;
   Object.keys(prepared.analysis).forEach((oxide) => {

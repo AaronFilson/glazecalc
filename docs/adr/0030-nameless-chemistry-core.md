@@ -1,6 +1,6 @@
 # 30. A nameless chemistry core, with names and words outside it
 
-Accepted, 2026-11-15 (proposed 2026-11-14).
+Accepted, 2026-11-15 (proposed 2026-11-14). Its readers come with each call since ADR 31.
 
 ## Context
 

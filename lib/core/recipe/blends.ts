@@ -9,6 +9,7 @@ import { keyOf } from '../identity.ts';
 import { amountOf, totalOf, unitOf } from './amounts.ts';
 import type { Amount } from './amounts.ts';
 import type { AdditiveUnit } from './library.ts';
+import type { Host } from '../host.ts';
 
 export type BlendKind = 'line' | 'biaxial' | 'triaxial';
 
@@ -131,13 +132,14 @@ function blendTiles(kind: BlendKind, steps: number): Blend | null {
  * has no base to mix.
  */
 function mixRecipes<M extends BlendLine, A extends BlendLine>(
+  host: Host,
   corners: ReadonlyArray<{ materials?: M[]; additives?: A[] }>,
   shares: readonly number[]
 ): MixedRecipe<M, A> | null {
   const materials = new Map<string, { line: M; amount: number }>();
   const additives = new Map<string, { line: A; amount: number }>();
   const add = <L>(into: Map<string, { line: L; amount: number }>, line: L, amount: number) => {
-    const key = keyOf(line);
+    const key = keyOf(host, line);
     const entry = into.get(key);
     if (entry) entry.amount += amount;
     else into.set(key, { line, amount });

@@ -9,6 +9,7 @@ import type { MaterialRecord, TryMaterial } from './library.ts';
 import type { FiringBand, LimitSet } from './limits.ts';
 import type { Caution } from './messages.ts';
 import type { Report } from './pool.ts';
+import type { Host } from '../host.ts';
 
 /** A target as typed: a unity formula (moles, per mole of fluxes) or an oxide analysis (weight percent). */
 export interface SolveTarget {
@@ -99,14 +100,22 @@ function targetOf({ kind, oxides }: SolveTarget): { moles: Oxides; unity: Oxides
  * and amounts too small or materials too many for a test batch.
  */
 function solveCautions(
+  host: Host,
   materials: MaterialRecord[],
   unity: Oxides,
   { celsius, band, limitSet }: SolveFiring = {}
 ): Caution[] {
   const lines = materials.map((material) => ({ material, amount: material.amount }));
   return [
-    ...pastLimits({ lines, unity, celsius, band, limitSet, expansion: { was: null, now: expansionOf(materials) } }),
-    ...sizeNotes(lines, band === 'low')
+    ...pastLimits(host, {
+      lines,
+      unity,
+      celsius,
+      band,
+      limitSet,
+      expansion: { was: null, now: expansionOf(host, materials) }
+    }),
+    ...sizeNotes(host, lines, band === 'low')
   ];
 }
 
@@ -129,6 +138,7 @@ function solveCautions(
  * oxide comes; unreachable names the oxides nothing offered supplies.
  */
 function solveTarget<M extends MaterialRecord>(
+  host: Host,
   target: SolveTarget,
   offered: TryMaterial<M>[],
   {
@@ -150,11 +160,11 @@ function solveTarget<M extends MaterialRecord>(
       start: 0,
       must: tried.must,
       least,
-      avoid: avoid.includes(idOf(tried.material)),
+      avoid: avoid.includes(idOf(host, tried.material)),
       lastResort: lastResort(tried)
     }));
     try {
-      return selectHoldingClay(lines, moles, { batch: BATCH, uncapped, meter: work });
+      return selectHoldingClay(host, lines, moles, { batch: BATCH, uncapped, meter: work });
     } catch (error) {
       // Every material dropped as no help at all: none has any of the target's oxides.
       if ((error as { code?: unknown } | null)?.code === 'no-materials') throw new RecipeError('solve.noMatch');
@@ -180,15 +190,15 @@ function solveTarget<M extends MaterialRecord>(
   if (!(fluxesOf(selection.moles) > 0)) throw new RecipeError('solve.noFlux', { of: 'offered' });
   const places = 1;
   const onTotal = addingUp(scaled(selection, BATCH / total), places, BATCH, undefined, () => LEAST_SHARE * BATCH);
-  const { materials } = recipeFrom(onTotal, pool, new Set(), places);
+  const { materials } = recipeFrom(host, onTotal, pool, new Set(), places);
   const unity = unityOf(selection.moles);
   return {
     materials,
     target: aim,
     unity,
     fluxes,
-    report: explain(onTotal, pool, places, moles, BATCH),
-    cautions: solveCautions(materials, unity, { celsius, band, limitSet })
+    report: explain(host, onTotal, pool, places, moles, BATCH),
+    cautions: solveCautions(host, materials, unity, { celsius, band, limitSet })
   };
 }
 

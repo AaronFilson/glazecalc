@@ -11,24 +11,25 @@ import { amountOf } from './amounts.ts';
 import { hasLead } from './library.ts';
 import type { FritRole, MaterialRecord } from './library.ts';
 import type { MaterialInput, Oxides } from '../types.ts';
+import type { Host } from '../host.ts';
 
 // What the recipe tools work out from a material's chemistry: how much of an
 // oxide it brings, how alike two are, a frit's job, and a recipe's oxides
 // (docs/adr/0012-choosing-materials.md).
 
 /** A material's weight percent of an oxide, as fired out of the raw material: G-200 EU Feldspar has 11% K₂O. */
-function oxidePercent(material: MaterialInput, oxide: string): number {
+function oxidePercent(host: Host, material: MaterialInput, oxide: string): number {
   try {
-    return (molesPerGram(material)[oxide] ?? 0) * MOLAR_MASS[oxide] * 100;
+    return (molesPerGram(host, material)[oxide] ?? 0) * MOLAR_MASS[oxide] * 100;
   } catch {
     return 0;
   }
 }
 
 /** Fired oxides per gram of the raw material, or null when it has no chemistry the app can read. */
-function oxidesPerGram(material: MaterialInput): Oxides | null {
+function oxidesPerGram(host: Host, material: MaterialInput): Oxides | null {
   try {
-    const { unity, equivalent } = materialWeights(material);
+    const { unity, equivalent } = materialWeights(host, material);
     return Object.fromEntries(
       Object.entries(unity).map(([oxide, moles]) => [oxide, (moles * MOLAR_MASS[oxide]) / equivalent])
     );
@@ -45,8 +46,8 @@ const LIKE_FOR_LIKE_GRAMS = 15;
  * 100 g of raw material differ, in all; null where either has no oxides to
  * compare.
  */
-function gramsApart(a: MaterialInput, b: MaterialInput): number | null {
-  const [x, y] = [oxidesPerGram(a), oxidesPerGram(b)];
+function gramsApart(host: Host, a: MaterialInput, b: MaterialInput): number | null {
+  const [x, y] = [oxidesPerGram(host, a), oxidesPerGram(host, b)];
   if (!x || !y || !Object.keys(x).length || !Object.keys(y).length) return null;
   const oxides = new Set([...Object.keys(x), ...Object.keys(y)]);
   return [...oxides].reduce((sum, oxide) => sum + Math.abs((x[oxide] ?? 0) - (y[oxide] ?? 0)), 0) * 100;
@@ -58,9 +59,9 @@ function gramsApart(a: MaterialInput, b: MaterialInput): number | null {
  * and G-200 EU Feldspar do; niter (potash) and a soda frit, or red lead and a
  * lead frit, do not, so their amounts need working out again.
  */
-function likeForLike(a: MaterialInput, b: MaterialInput): boolean {
+function likeForLike(host: Host, a: MaterialInput, b: MaterialInput): boolean {
   // Without oxides to compare, nothing says they are alike.
-  const grams = gramsApart(a, b);
+  const grams = gramsApart(host, a, b);
   return grams !== null && grams <= LIKE_FOR_LIKE_GRAMS;
 }
 
@@ -69,11 +70,11 @@ function likeForLike(a: MaterialInput, b: MaterialInput): boolean {
  * worked out from its oxides for one a potter entered (the research's window
  * for a base, and the alkali test for a partner).
  */
-function roleOf(frit: MaterialRecord): FritRole | undefined {
+function roleOf(host: Host, frit: MaterialRecord): FritRole | undefined {
   if (frit.fritRole) return frit.fritRole;
   if (frit.category !== 'frit') return undefined;
   if (hasLead(frit)) return 'lead';
-  const p = (oxide: string) => oxidePercent(frit, oxide);
+  const p = (oxide: string) => oxidePercent(host, frit, oxide);
   const alkali = p('Na2O') + p('K2O') + p('Li2O');
   const minor = ['MgO', 'ZnO', 'BaO', 'SrO', 'ZrO2', 'Li2O'].every((oxide) => p(oxide) <= 3);
   if (p('B2O3') >= 10 && p('B2O3') <= 30 && p('SiO2') >= 40 && p('CaO') >= 8 && alkali >= 3 && alkali <= 13 && minor) {
@@ -100,13 +101,19 @@ function unityOf(moles: Oxides): Oxides {
 }
 
 /** Moles of each fired oxide in recipe lines, each a material with its amount as saved. */
-const molesOf = (lines: MaterialRecord[]): Oxides =>
-  oxideMoles(lines.map((line) => ({ material: line, amount: amountOf(line.amount) })));
+const molesOf = (host: Host, lines: MaterialRecord[]): Oxides =>
+  oxideMoles(
+    host,
+    lines.map((line) => ({ material: line, amount: amountOf(line.amount) }))
+  );
 
 /** A recipe's calculated expansion, or null where it cannot be worked out. */
-function expansionOf(lines: MaterialRecord[]): number | null {
+function expansionOf(host: Host, lines: MaterialRecord[]): number | null {
   try {
-    return calculateUMF(lines.map((line) => ({ material: line, amount: amountOf(line.amount) }))).expansion;
+    return calculateUMF(
+      host,
+      lines.map((line) => ({ material: line, amount: amountOf(line.amount) }))
+    ).expansion;
   } catch {
     return null;
   }

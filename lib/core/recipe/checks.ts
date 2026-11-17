@@ -21,6 +21,7 @@ import type { FiringBand, LimitSet, Past, UnityRange } from './limits.ts';
 import type { AdditiveRecord, MaterialRecord } from './library.ts';
 import type { Caution, CheckName, Quantity, RecipeMessage, Severity } from './messages.ts';
 import type { Amount } from './amounts.ts';
+import type { Host } from '../host.ts';
 
 /** A line of a recipe to check: its material, and its amount. */
 export interface CheckLine {
@@ -70,11 +71,11 @@ const KNAO = (u: Oxides): number => (u['K2O'] ?? 0) + (u['Na2O'] ?? 0);
 const value = (u: Oxides | null | undefined, oxide: string): number => (u ? (u[oxide] ?? 0) : 0);
 
 // An additive that is this colorant (its trait, e.g. chrome) or carries one of its oxides.
-const hasColorant = (additives: AdditiveRecord[], colorant: string, oxides: string[]): boolean =>
+const hasColorant = (host: Host, additives: AdditiveRecord[], colorant: string, oxides: string[]): boolean =>
   additives.some(
     (a) =>
       amountOf(a.amount) > 0 &&
-      (traitsOf(a)[colorant] === true ||
+      (traitsOf(host, a)[colorant] === true ||
         (a.fields ?? []).some((field) => oxides.includes(field.name) && Number(field.amount) > 0))
   );
 
@@ -91,11 +92,11 @@ const OWN_DOLOMITE = { calciaMagnesia: 0.9, loi: [45, 48] };
  * What a material with no category is by its analysis: 'clay', 'whiting', 'dolomite', or null (or
  * with a category).
  */
-function kindByAnalysis(material: MaterialRecord): 'clay' | 'whiting' | 'dolomite' | null {
+function kindByAnalysis(host: Host, material: MaterialRecord): 'clay' | 'whiting' | 'dolomite' | null {
   if (material.category) return null;
   let prepared: ReturnType<typeof prepareMaterial>;
   try {
-    prepared = prepareMaterial(material);
+    prepared = prepareMaterial(host, material);
   } catch {
     return null;
   }
@@ -125,19 +126,25 @@ const CALCINED_LOI = 2;
  * Whether a material is raw (not calcined) clay, which shrinks as the glaze dries: by its category,
  * calcined by its traits or its LOI, or for one with no category by its analysis.
  */
-const isRawClay = (material: MaterialRecord): boolean =>
-  (material.category === 'clay' && !traitsOf(material).calcined && !(Number(material.loi ?? NaN) < CALCINED_LOI)) ||
-  kindByAnalysis(material) === 'clay';
+const isRawClay = (host: Host, material: MaterialRecord): boolean =>
+  (material.category === 'clay' &&
+    !traitsOf(host, material).calcined &&
+    !(Number(material.loi ?? NaN) < CALCINED_LOI)) ||
+  kindByAnalysis(host, material) === 'clay';
 
 /** Whether a material is raw whiting or dolomite: by its traits, or for one with no category by its analysis. */
-const isRawCalcium = (material: MaterialRecord): boolean =>
-  traitsOf(material).rawCalcium === true || ['whiting', 'dolomite'].includes(kindByAnalysis(material) as string);
+const isRawCalcium = (host: Host, material: MaterialRecord): boolean =>
+  traitsOf(host, material).rawCalcium === true ||
+  ['whiting', 'dolomite'].includes(kindByAnalysis(host, material) as string);
 
 /** Raw (not calcined) clay as a percent of the batch. */
-function rawClayPercent(lines: Array<MaterialRecord | (Omit<MaterialRecord, 'amount'> & { amount?: Amount })>): number {
+function rawClayPercent(
+  host: Host,
+  lines: Array<MaterialRecord | (Omit<MaterialRecord, 'amount'> & { amount?: Amount })>
+): number {
   const total = lines.reduce((sum, line) => sum + amountOf(line.amount), 0);
   const clay = lines
-    .filter((line) => isRawClay(line as MaterialRecord))
+    .filter((line) => isRawClay(host, line as MaterialRecord))
     .reduce((sum, line) => sum + amountOf(line.amount), 0);
   return total > 0 ? (100 * clay) / total : 0;
 }
@@ -195,7 +202,7 @@ function bariumSeverity(barium: number): Serious | null {
  * boron, magnesia, raw whiting) are left out. A band the set has no figures
  * for (Hesselberth & Roy's low fire, every set's 'top') checks no ranges.
  */
-function pastLimits(input: CheckInput): Caution[] {
+function pastLimits(host: Host, input: CheckInput): Caution[] {
   const { unity, old } = input;
   // Anything but a finite number is an unknown firing: null is not 0 °C.
   const celsius = Number.isFinite(input.celsius) ? (input.celsius as number) : undefined;
@@ -327,7 +334,7 @@ function pastLimits(input: CheckInput): Caution[] {
   }
 
   // Boron blue, its figures read at the two decimals shown: B2O3 and CaO over 0.50, Al2O3 under 0.20.
-  const pink = hasColorant(additives, 'pink', []);
+  const pink = hasColorant(host, additives, 'pink', []);
   const blue = L.boronBlue;
   const isBlue = (u: Oxides | null | undefined) =>
     asShown(value(u, 'B2O3')) > blue.boron &&
@@ -387,9 +394,9 @@ function pastLimits(input: CheckInput): Caution[] {
     asShown(zincIn(u)) >= L.zinc ? 'caution' : null;
   if (zincMatters(unity) && !already(zincIn, zincMatters)) {
     const fields = measured('ZnO', zinc, L.zinc, 'above', 'caution');
-    if (hasColorant(additives, 'chrome', ['Cr2O3'])) caution('zinc-chrome', fields, say('checks.zincChrome'));
-    if (hasColorant(additives, 'iron', ['Fe2O3', 'FeO'])) caution('zinc-iron', fields, say('checks.zincIron'));
-    if (hasColorant(additives, 'copper', ['CuO'])) caution('zinc-copper', fields, say('checks.zincCopper'));
+    if (hasColorant(host, additives, 'chrome', ['Cr2O3'])) caution('zinc-chrome', fields, say('checks.zincChrome'));
+    if (hasColorant(host, additives, 'iron', ['Fe2O3', 'FeO'])) caution('zinc-iron', fields, say('checks.zincIron'));
+    if (hasColorant(host, additives, 'copper', ['CuO'])) caution('zinc-copper', fields, say('checks.zincCopper'));
     if (celsius !== undefined && celsius < FIRING.zincMeltsFrom) {
       caution('zinc-low-fire', fields, say('checks.zincLowFire', { zinc: two(zinc) }));
     }
@@ -412,7 +419,7 @@ function pastLimits(input: CheckInput): Caution[] {
   // Materials: raw whiting at low fire, fluorspar, kaolin, soluble ones, frits doing the wrong job.
   const total = input.lines.reduce((sum, line) => sum + amountOf(line.amount), 0);
   const percent = (amount: Amount) => (total > 0 ? (100 * amountOf(amount)) / total : 0);
-  const rawCalcium = input.lines.filter((line) => isRawCalcium(line.material));
+  const rawCalcium = input.lines.filter((line) => isRawCalcium(host, line.material));
   const rawShare = rawCalcium.reduce((sum, line) => sum + percent(line.amount), 0);
   if (low && rawShare > L.rawCalcium.caution) {
     caution(
@@ -438,13 +445,13 @@ function pastLimits(input: CheckInput): Caution[] {
     if (line.material.fluorine && amountOf(line.amount) > 0) {
       caution(
         'fluorine',
-        { severity: 'caution', material: labelOf(line.material) },
-        say('checks.fluorine', { name: labelOf(line.material) })
+        { severity: 'caution', material: labelOf(host, line.material) },
+        say('checks.fluorine', { name: labelOf(host, line.material) })
       );
     }
   }
   const clay = input.lines
-    .filter((line) => isRawClay(line.material))
+    .filter((line) => isRawClay(host, line.material))
     .reduce((sum, line) => sum + percent(line.amount), 0);
   const clayWas = input.oldClay;
   if (clay < L.clay.least && (clayWas === undefined || clayWas >= L.clay.least)) {
@@ -477,14 +484,14 @@ function pastLimits(input: CheckInput): Caution[] {
     if (line.material.soluble && amountOf(line.amount) > 0) {
       caution(
         'soluble',
-        { severity: 'caution', material: labelOf(line.material) },
-        say('checks.soluble', { name: labelOf(line.material) })
+        { severity: 'caution', material: labelOf(host, line.material) },
+        say('checks.soluble', { name: labelOf(host, line.material) })
       );
     }
   }
   const main = [...input.lines].sort((p, q) => amountOf(q.amount) - amountOf(p.amount))[0];
   const role = main?.material.fritRole;
-  const frit: Measured = { severity: 'note', material: labelOf(main?.material) };
+  const frit: Measured = { severity: 'note', material: labelOf(host, main?.material) };
   if (role === 'boron') caution('frit-role', frit, say('checks.boronFrit'));
   else if (role === 'low-expansion') caution('frit-role', frit, say('checks.lowExpansionFrit'));
   else if (role === 'alkali') caution('frit-role', frit, say('checks.alkaliFrit'));
@@ -521,7 +528,7 @@ function pastLimits(input: CheckInput): Caution[] {
  * Notes on the recipe's size and small amounts: many materials to buy and
  * weigh, or an amount too small to weigh well in a test batch.
  */
-function sizeNotes(lines: CheckLine[], low?: boolean): Caution[] {
+function sizeNotes(host: Host, lines: CheckLine[], low?: boolean): Caution[] {
   const used = lines.filter((line) => amountOf(line.amount) > 0);
   const total = used.reduce((sum, line) => sum + amountOf(line.amount), 0);
   const notes: Caution[] = [];
@@ -539,10 +546,10 @@ function sizeNotes(lines: CheckLine[], low?: boolean): Caution[] {
       notes.push({
         check: 'small-amount',
         ...measured('material-percent', percent, L.smallPercent, 'below', 'note'),
-        material: labelOf(line.material),
+        material: labelOf(host, line.material),
         sentences: [
           say('checks.smallAmount', {
-            name: labelOf(line.material),
+            name: labelOf(host, line.material),
             percent: figure(percent, 2),
             reads: figure(L.scaleReads, 1)
           })

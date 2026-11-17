@@ -5,6 +5,7 @@ import * as materials from './materials.ts';
 import { problem, warning } from '../problem.ts';
 import type { Warning } from '../problem.ts';
 import type { OxideGroup, Oxides, PreparedMaterial, RecipeLine } from '../types.ts';
+import type { Host } from '../host.ts';
 
 /** The prepared material for a reference: a material given as a string in place of a record. */
 export type Lookup = (reference: string) => PreparedMaterial | null | undefined;
@@ -64,12 +65,13 @@ const readAmount = function (value: unknown): number {
  * record's identity (idOf), or the reference; `label`, what a problem calls it (labelOf).
  */
 const readLine = function (
+  host: Host,
   line: RecipeLine,
   lookup?: Lookup
 ): { amount: number; id: unknown; label: unknown; material: PreparedMaterial } | null {
   const amount = readAmount(line.amount);
-  const id = (line.material && idOf(line.material)) || line.material;
-  const label = (line.material && labelOf(line.material)) || line.material;
+  const id = (line.material && idOf(host, line.material)) || line.material;
+  const label = (line.material && labelOf(host, line.material)) || line.material;
   if (!isFinite(amount) || amount < 0) {
     throw problem('invalid-amount', { material: label });
   }
@@ -81,7 +83,7 @@ const readLine = function (
     if (!material) throw problem('unknown-material', { material: line.material });
     return { amount, id, label, material };
   }
-  return { amount, id, label, material: materials.prepareMaterial(line.material) };
+  return { amount, id, label, material: materials.prepareMaterial(host, line.material) };
 };
 
 /**
@@ -103,6 +105,7 @@ const readLine = function (
  *             not total 100%, or fluxes that are only traces, in the order met
  */
 const calculateUMF = function (
+  host: Host,
   recipe: RecipeLine[] | Record<string, unknown>,
   options?: { lookup?: Lookup } | null
 ): UmfResult {
@@ -113,7 +116,7 @@ const calculateUMF = function (
   const warningCodes: Warning[] = [];
 
   recipeLines(recipe).forEach((line) => {
-    const read = readLine(line, options?.lookup);
+    const read = readLine(host, line, options?.lookup);
     if (!read) return;
     const { amount, label, material } = read;
     // Every line's warnings, as met: a host that words them may drop those that read the same.
