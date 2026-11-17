@@ -1,0 +1,8 @@
+[
+  {
+    "advisory": "GHSA-fc5q-39xc-vjpf",
+    "package": "picomatch",
+    "until": "2026-12-31",
+    "why": "ReDoS through repeated extglobs. Every version to 4.0.7, the latest, is affected, and there is no fix yet. It is reached only by the build and test tools (the Angular CLI and build, Vite, Vitest), from the globs in their own config; the app does not ship it (npm audit --omit=dev finds nothing)."
+  }
+]
