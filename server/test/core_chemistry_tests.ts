@@ -2,15 +2,15 @@
 // what Glaze Vault and any other host see.
 import { expect } from 'chai';
 import messages from '../../lib/chemistry/messages.js';
-import identity from '../../lib/core/identity.js';
-import materials from '../../lib/core/chemistry/materials.js';
-import umf from '../../lib/core/chemistry/umf.js';
+import * as identity from '../../lib/core/identity.ts';
+import * as materials from '../../lib/core/chemistry/materials.ts';
+import * as umf from '../../lib/core/chemistry/umf.ts';
 
 describe('the core chemistry, nameless', () => {
   // The app sets its own hooks (lib/chemistry/messages.js); these tests read ids, and put the app's back after.
   before(() => {
-    identity.setIdOf((record: { id?: unknown }) => record.id);
-    identity.setLabelOf((record: { id?: unknown }) => record.id);
+    identity.setIdOf((record: { id?: string }) => record.id);
+    identity.setLabelOf((record: { id?: string }) => record.id);
   });
   // Glazecalc's own hooks back for the tests that follow, as the app sets them.
   after(() => messages.useGlazecalcHosts());
