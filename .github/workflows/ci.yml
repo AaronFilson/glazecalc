@@ -121,7 +121,8 @@ jobs:
         run: npm run test:forwarder
 
       # The nameless core on its own (lib/core/test): Node alone, no server, database or packages,
-      # as it will run in the library's own repository. Its fixture must match data/.
+      # as it will run in the library's own repository. Its fixture must match data/, and its tests
+      # must run 98% of its lines, 95% of its branches and 97% of its functions.
       - name: The chemistry core's own tests
         run: npm run check:core-fixture && npm run test:core
 
@@ -136,6 +137,30 @@ jobs:
 
       - name: MCP conformance
         run: npm run test:mcp
+
+  outputs:
+    name: Chemistry outputs
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      # Every output of the chemistry, over the standard materials, the famous glazes in every region,
+      # seeded recipes, and the cones, slurries and text a potter types, against the hashes kept in
+      # scripts/chemistry-outputs.json. A change that moves one says why in its PR, and keeps the new
+      # hashes with node scripts/chemistry-outputs.mjs --write.
+      - name: Every output as kept
+        run: npm run check:outputs
 
   client:
     name: Client unit tests
