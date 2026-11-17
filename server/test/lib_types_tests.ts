@@ -16,7 +16,8 @@ const require = createRequire(import.meta.url);
 const declarations = (dir: string): string[] =>
   readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
     const file = path.join(dir, entry.name);
-    if (entry.isDirectory()) return declarations(file);
+    // The core (lib/core) is TypeScript: its types are its source, which tsc -p lib/core checks.
+    if (entry.isDirectory()) return file === path.join(LIB, 'core') ? [] : declarations(file);
     return entry.name.endsWith('.d.ts') ? [file] : [];
   });
 

@@ -82,6 +82,17 @@ export default tseslint.config(
     files: ['lib/**/*.js'],
     languageOptions: { globals: { ...globals.node, ...globals.browser } }
   },
+  // The nameless core (lib/core, docs/adr/0030): ES modules in TypeScript, with its own tests as
+  // ES module JavaScript (node:test). It runs in Node and the browser, so it has neither's globals.
+  {
+    files: ['lib/core/**/*.ts'],
+    extends: [...tseslint.configs.recommended],
+    languageOptions: { sourceType: 'module' }
+  },
+  {
+    files: ['lib/core/test/**/*.js'],
+    languageOptions: { sourceType: 'module' }
+  },
 
   // Angular client: TypeScript and component templates.
   {

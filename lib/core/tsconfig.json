@@ -1,0 +1,23 @@
+{
+  // The core on its own, as the library repo will check it (step 4): strict erasable TypeScript, ES modules,
+  // nothing but itself and Node's types. npm run typecheck runs it.
+  "compilerOptions": {
+    "target": "es2024",
+    "lib": ["es2024"],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "types": [],
+    "strict": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "skipLibCheck": false
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["test/**"]
+}
