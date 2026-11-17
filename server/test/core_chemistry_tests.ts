@@ -3,8 +3,8 @@
 import { expect } from 'chai';
 import messages from '../../lib/chemistry/messages.js';
 import * as identity from '../../lib/core/identity.ts';
-import * as materials from '../../lib/core/chemistry/materials.js';
-import * as umf from '../../lib/core/chemistry/umf.js';
+import * as materials from '../../lib/core/chemistry/materials.ts';
+import * as umf from '../../lib/core/chemistry/umf.ts';
 
 describe('the core chemistry, nameless', () => {
   // The app sets its own hooks (lib/chemistry/messages.js); these tests read ids, and put the app's back after.
