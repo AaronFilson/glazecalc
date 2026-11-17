@@ -10,7 +10,7 @@ const TESTS = path.join(CORE, 'test') + path.sep;
 const filesIn = (dir: string): string[] =>
   readdirSync(dir).flatMap((entry) => {
     const full = path.join(dir, entry);
-    return statSync(full).isDirectory() ? filesIn(full) : full.endsWith('.js') ? [full] : [];
+    return statSync(full).isDirectory() ? filesIn(full) : /\.(ts|js)$/.test(full) ? [full] : [];
   });
 // The code, without its comments, which may say what the host does.
 const code = (file: string) =>
@@ -23,20 +23,34 @@ describe('the nameless core (lib/core)', () => {
   // The library's code, without its own tests, which may build records and read their fields freely.
   const shipped = files.filter((file) => !file.startsWith(TESTS));
 
-  it('has its files', () => {
-    expect(files.length).to.be.greaterThan(5);
+  // So that the checks below can never pass by reading nothing, as they did while they looked only at
+  // .js files and require() after the core became TypeScript.
+  it('has its files: its code and its tests', () => {
+    expect(shipped.length).to.be.greaterThan(30);
+    expect(files.length - shipped.length).to.be.greaterThan(10);
   });
 
-  it('requires only its own modules', () => {
+  it('imports only its own modules', () => {
+    // import ... from, export ... from, a bare import, import() and require(): the module each names.
+    const targetsOf = (file: string) =>
+      [
+        ...code(file).matchAll(/\b(?:import|export)\b[^'"`;]*?\bfrom\s*['"]([^'"]+)['"]/g),
+        ...code(file).matchAll(/\bimport\s*['"]([^'"]+)['"]/g),
+        ...code(file).matchAll(/\b(?:import|require)\(\s*['"]([^'"]+)['"]\s*\)/g)
+      ].map((m) => m[1]!);
+    let read = 0;
     for (const file of files) {
-      for (const [, target] of code(file).matchAll(/require\(\s*['"]([^'"]+)['"]\s*\)/g)) {
+      for (const target of targetsOf(file)) {
+        read++;
         // The core's own tests (lib/core/test) may use Node's test runner and assert as well.
-        if (file.startsWith(TESTS) && target!.startsWith('node:')) continue;
-        expect(target!.startsWith('.'), `${path.relative(CORE, file)} requires ${target}`).to.equal(true);
-        const resolved = path.resolve(path.dirname(file), target!);
-        expect(resolved.startsWith(CORE + path.sep), `${path.relative(CORE, file)} requires ${target}`).to.equal(true);
+        if (file.startsWith(TESTS) && target.startsWith('node:')) continue;
+        expect(target.startsWith('.'), `${path.relative(CORE, file)} imports ${target}`).to.equal(true);
+        const resolved = path.resolve(path.dirname(file), target);
+        expect(resolved.startsWith(CORE + path.sep), `${path.relative(CORE, file)} imports ${target}`).to.equal(true);
       }
     }
+    // The patterns find the imports there are.
+    expect(read).to.be.greaterThan(100);
   });
 
   // An oxide field ({ name: 'SiO2', amount }) and a cap group are called by a name; so is an error class.
