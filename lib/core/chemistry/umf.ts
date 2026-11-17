@@ -126,7 +126,7 @@ const calculateUMF = function (
     loiWeight += (amount * material.loi) / 100;
     Object.keys(material.analysis).forEach((oxide) => {
       const oxideWeight = (amount * material.analysis[oxide]) / 100;
-      moles[oxide] = (moles[oxide] || 0) + oxideWeight / oxides.MOLAR_MASS[oxide];
+      moles[oxide] = (moles[oxide] || 0) + oxideWeight / host.oxides.molarMass[oxide];
       firedWeight += oxideWeight;
     });
     // So large an amount that the batch's sums overflow.
@@ -138,7 +138,7 @@ const calculateUMF = function (
   let fluxMoles = 0;
   let allMoles = 0;
   Object.keys(moles).forEach((oxide) => {
-    if (oxides.isFlux(oxide)) fluxMoles += moles[oxide];
+    if (oxides.isFlux(host, oxide)) fluxMoles += moles[oxide];
     allMoles += moles[oxide];
   });
   if (fluxMoles === 0) throw problem('no-flux');
@@ -150,8 +150,8 @@ const calculateUMF = function (
   const groups: Record<OxideGroup, number> = { R2O: 0, RO: 0, R2O3: 0, RO2: 0 };
   Object.keys(moles).forEach((oxide) => {
     umf[oxide] = moles[oxide] / fluxMoles;
-    analysis[oxide] = ((moles[oxide] * oxides.MOLAR_MASS[oxide]) / firedWeight) * 100;
-    groups[oxides.OXIDE_GROUPS[oxide]] += umf[oxide];
+    analysis[oxide] = ((moles[oxide] * host.oxides.molarMass[oxide]) / firedWeight) * 100;
+    groups[host.oxides.groups[oxide]] += umf[oxide];
   });
   // Where the flux is only a trace, that says it already.
   if (!trace) {

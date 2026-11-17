@@ -40,6 +40,7 @@ describe('adding records to the standard library', () => {
     for (const part of [
       'scripts/add-library-records.js',
       'lib/core',
+      'lib/catalog',
       'lib/recipe',
       'lib/cones',
       'lib/chemistry',

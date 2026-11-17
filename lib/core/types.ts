@@ -6,6 +6,21 @@ export type Oxides = Record<string, number>;
 
 export type OxideGroup = 'R2O' | 'RO' | 'R2O3' | 'RO2';
 
+/**
+ * The elements and oxides the core works with, which it is given in the host (host.oxides): the catalog's
+ * OXIDES (lib/catalog/oxides.ts), or a host's own.
+ */
+export interface OxideTable {
+  /** Grams per mole of each element, by its symbol: what a formula's weight is worked out from. */
+  readonly atomicWeights: Readonly<Record<string, number>>;
+  /** The Seger group of each oxide the core works with: R2O and RO are the fluxes. */
+  readonly groups: Readonly<Record<string, OxideGroup>>;
+  /** Compounds driven off in firing, which count toward the loss on ignition. */
+  readonly volatiles: readonly string[];
+  /** Grams per mole of each oxide and volatile. */
+  readonly molarMass: Readonly<Record<string, number>>;
+}
+
 /** An oxide amount in the stored material shape. */
 export interface MaterialField {
   name: string;

@@ -8,29 +8,30 @@ import type { Host } from '../host.ts';
 // Converts a molar formula into a weight-percent analysis plus LOI. Each count
 // must be a number, at least 0, and some oxide must be left after firing.
 const formulaToAnalysis = function (
+  host: Host,
   formula: Record<string, unknown>,
   materialLabel?: unknown
 ): { analysis: Oxides; loi: number; formulaWeight: number } {
   let formulaWeight = 0;
   let firedWeight = 0;
   Object.keys(formula).forEach((compound) => {
-    if (!oxides.isOxide(compound) && !oxides.isVolatile(compound)) {
+    if (!oxides.isOxide(host, compound) && !oxides.isVolatile(host, compound)) {
       throw problem('unknown-compound', { compound });
     }
     const count = Number(formula[compound]);
     if (!isFinite(count) || count < 0) {
       throw problem('invalid-oxide-amount', { oxide: compound, material: materialLabel });
     }
-    formulaWeight += count * oxides.MOLAR_MASS[compound];
-    if (oxides.isOxide(compound)) firedWeight += count * oxides.MOLAR_MASS[compound];
+    formulaWeight += count * host.oxides.molarMass[compound];
+    if (oxides.isOxide(host, compound)) firedWeight += count * host.oxides.molarMass[compound];
   });
   if (!(firedWeight > 0)) throw problem('no-oxides', { material: materialLabel });
 
   const analysis: Oxides = {};
   let loi = 0;
   Object.keys(formula).forEach((compound) => {
-    const percent = ((Number(formula[compound]) * oxides.MOLAR_MASS[compound]) / formulaWeight) * 100;
-    if (oxides.isVolatile(compound)) loi += percent;
+    const percent = ((Number(formula[compound]) * host.oxides.molarMass[compound]) / formulaWeight) * 100;
+    if (oxides.isVolatile(host, compound)) loi += percent;
     else analysis[compound] = percent;
   });
   return { analysis, loi, formulaWeight };
@@ -59,11 +60,11 @@ const LOI_AGREES = 0.5;
 
 // Reads [['SiO2', '68.5']] into { SiO2: 68.5 }, checking each amount before
 // adding up an oxide given twice.
-const readAmounts = function (entries: Array<[string, unknown]>, materialLabel: unknown): Oxides {
+const readAmounts = function (host: Host, entries: Array<[string, unknown]>, materialLabel: unknown): Oxides {
   const amounts: Oxides = {};
   entries.forEach(([oxide, value]) => {
     const amount = Number(value);
-    if (!oxides.isOxide(oxide)) {
+    if (!oxides.isOxide(host, oxide)) {
       throw problem('unknown-oxide', { oxide: oxide, material: materialLabel });
     }
     if (!isFinite(amount) || amount < 0) {
@@ -120,6 +121,7 @@ const fieldsToAnalysis = function (
   warningCodes?: Warning[];
 } {
   const amounts = readAmounts(
+    host,
     material.fields.map((field) => [field.name, field.amount]),
     labelOf(host, material)
   );
@@ -134,7 +136,7 @@ const fieldsToAnalysis = function (
   }
 
   let firedWeight = 0;
-  Object.keys(amounts).forEach((oxide) => (firedWeight += amounts[oxide] * oxides.MOLAR_MASS[oxide]));
+  Object.keys(amounts).forEach((oxide) => (firedWeight += amounts[oxide] * host.oxides.molarMass[oxide]));
   if (firedWeight === 0) throw problem('no-oxides', { material: labelOf(host, material) });
   const molecularWeight = givenNumber(host, material.molecularweight, 'invalid-molecular-weight', material);
   // The LOI the molecular weight gives: what the raw formula loses to the fired one.
@@ -157,7 +159,7 @@ const fieldsToAnalysis = function (
 
   const analysis: Oxides = {};
   Object.keys(amounts).forEach((oxide) => {
-    analysis[oxide] = ((amounts[oxide] * oxides.MOLAR_MASS[oxide]) / firedWeight) * (100 - loi);
+    analysis[oxide] = ((amounts[oxide] * host.oxides.molarMass[oxide]) / firedWeight) * (100 - loi);
   });
   return { analysis, loi, formulaWeight: firedWeight / (1 - loi / 100), warningCodes };
 };
@@ -170,7 +172,7 @@ const checkStoredEquivalent = function (host: Host, material: MaterialInput, ana
   const mismatch = material.fields.some((field) => {
     const stored = optionalNumber(field.amountUnity);
     if (stored === null || !analysis[field.name]) return false;
-    const derived = (analysis[field.name] / 100 / oxides.MOLAR_MASS[field.name]) * equivalent;
+    const derived = (analysis[field.name] / 100 / host.oxides.molarMass[field.name]) * equivalent;
     // Stored amounts are rounded to 4 places, which puts a trace oxide (0.04% Fe2O3) well over 3% off.
     return Math.abs(stored - derived) > Math.max(0.03 * derived, 0.0001);
   });
@@ -192,10 +194,10 @@ const prepareMaterial = function (host: Host, material: MaterialInput | null | u
   }
   let prepared: { analysis: Oxides; loi: number; formulaWeight: number; warningCodes?: Warning[] };
   if (material.formula) {
-    prepared = formulaToAnalysis(material.formula, labelOf(host, material));
+    prepared = formulaToAnalysis(host, material.formula, labelOf(host, material));
   } else if (material.analysis) {
     prepared = {
-      analysis: readAmounts(Object.entries(material.analysis), labelOf(host, material)),
+      analysis: readAmounts(host, Object.entries(material.analysis), labelOf(host, material)),
       loi: readLoi(host, material) || 0,
       formulaWeight: 100
     };
@@ -240,8 +242,8 @@ const materialWeights = function (host: Host, material: MaterialInput) {
   const molesPerGram: Oxides = {};
   let fluxPerGram = 0;
   Object.keys(prepared.analysis).forEach((oxide) => {
-    molesPerGram[oxide] = prepared.analysis[oxide] / 100 / oxides.MOLAR_MASS[oxide];
-    if (oxides.isFlux(oxide)) fluxPerGram += molesPerGram[oxide];
+    molesPerGram[oxide] = prepared.analysis[oxide] / 100 / host.oxides.molarMass[oxide];
+    if (oxides.isFlux(host, oxide)) fluxPerGram += molesPerGram[oxide];
   });
 
   const equivalent = fluxPerGram > 0 ? 1 / fluxPerGram : prepared.formulaWeight;

@@ -1,8 +1,8 @@
-import * as oxides from './oxides.ts';
 import { ALKALIS, CLOSE, CLOSE_APART, CLOSE_SHARE } from './fit.ts';
 import { problem } from '../problem.ts';
 import { unityOf } from './select.ts';
 import type { Oxides } from '../types.ts';
+import type { Host } from '../host.ts';
 
 export type Verdict = 'close' | 'off' | 'far';
 
@@ -53,15 +53,15 @@ const row = (oxide: string, was: number, now: number, close: number): ClosenessR
  * 'no-flux', as calculateUMF does. Moles with no fluxes, against a target that
  * has them, are 'poor'.
  */
-function closeness(target: Oxides, moles: Oxides): Closeness {
-  const was = unityOf(target);
+function closeness(host: Host, target: Oxides, moles: Oxides): Closeness {
+  const was = unityOf(host, target);
   if (!Object.keys(was).length) throw problem('no-flux');
-  const now = unityOf(moles);
+  const now = unityOf(host, moles);
   const shown = [...new Set([...Object.keys(was), ...Object.keys(now)])].filter(
     (oxide) => Math.max(was[oxide] || 0, now[oxide] || 0) >= SHOWN
   );
   const place = (oxide: string) => {
-    const group = ORDER.indexOf(oxides.OXIDE_GROUPS[oxide]);
+    const group = ORDER.indexOf(host.oxides.groups[oxide]);
     return group < 0 ? ORDER.length : group;
   };
   const rows = shown

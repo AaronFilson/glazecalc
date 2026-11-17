@@ -4,7 +4,7 @@
 // record carries its own (`record.traits`); a host whose records do not yet gives its own reader (Glazecalc's
 // reads them from its standard names, lib/recipe/traits.js).
 
-import type { Host } from './host.ts';
+import type { Readers } from './host.ts';
 
 /** A material's mineral for its dry specific gravity (recipe/density.ts), or null with why there is none. */
 export interface DensityTrait {
@@ -40,7 +40,7 @@ export interface Traits {
 const recordTraits = (record: { traits?: Traits }): Traits => (record && record.traits) || {};
 
 /** The traits of a record, as the host reads them (by default `record.traits`); empty for none. */
-export const traitsOf = (host: Host, record: unknown): Traits =>
+export const traitsOf = (host: Readers, record: unknown): Traits =>
   record === null || record === undefined
     ? {}
     : (host.traitsOf ? host.traitsOf(record) : recordTraits(record as never)) || {};

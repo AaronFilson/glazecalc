@@ -1,5 +1,4 @@
 import * as messages from '../problem.ts';
-import * as oxides from './oxides.ts';
 import * as materials from './materials.ts';
 import { boundedLeastSquares, normalEquations } from './lsq.ts';
 import { cappedLeastSquares } from './caps.ts';
@@ -134,7 +133,7 @@ const spent = (meter: Meter): boolean => {
   return true;
 };
 
-const isFlux = (oxide: string) => oxides.OXIDE_GROUPS[oxide] === 'R2O' || oxides.OXIDE_GROUPS[oxide] === 'RO';
+const isFlux = (host: Host, oxide: string) => host.oxides.groups[oxide] === 'R2O' || host.oxides.groups[oxide] === 'RO';
 
 /**
  * The problem in numbers, in the unity formula's terms (moles per mole of the
@@ -151,7 +150,7 @@ const setUp = function (host: Host, lines: FitLine[], target: Oxides, options: F
   const names = new Set(Object.keys(target));
   columns.forEach((column) => Object.keys(column).forEach((oxide) => names.add(oxide)));
   const list = Array.from(names);
-  const fluxes = list.reduce((sum, oxide) => (isFlux(oxide) ? sum + (target[oxide] || 0) : sum), 0);
+  const fluxes = list.reduce((sum, oxide) => (isFlux(host, oxide) ? sum + (target[oxide] || 0) : sum), 0);
   const scale = fluxes > 0 ? fluxes : Math.max(0, ...list.map((oxide) => target[oxide] || 0));
   if (!(scale > 0)) throw messages.problem('no-target');
 
@@ -161,7 +160,7 @@ const setUp = function (host: Host, lines: FitLine[], target: Oxides, options: F
     close: near[oxide] ?? (ALKALIS.includes(oxide) ? CLOSE_APART : CLOSE)
   }));
   if (ALKALIS.some((oxide) => names.has(oxide))) rows.push({ oxides: ALKALIS, close: options.alkalis ?? CLOSE });
-  const fluxNames = list.filter(isFlux);
+  const fluxNames = list.filter((oxide) => isFlux(host, oxide));
   const supplied = (oxide: string) => columns.some((column) => column[oxide] > 0);
   const missing = fluxNames.some((oxide) => (target[oxide] || 0) >= FLUX_WORTH * fluxes && !supplied(oxide));
   if (options.fluxTotal) rows.push({ oxides: fluxNames, close: options.fluxTotal });
@@ -202,7 +201,7 @@ const prepare = function (host: Host, lines: FitLine[], target: Oxides, options:
   const least = lines.map((line, i) => Math.min(most[i], Math.max(0, Number(line.least) || 0)));
   const starts = lines.map((line, i) => Math.min(most[i], Math.max(least[i], Number(line.start) || 0)));
   // With nothing to start from, the batch the target implies sets the scale.
-  const firedGrams = Object.keys(target).reduce((sum, oxide) => sum + target[oxide] * oxides.MOLAR_MASS[oxide], 0);
+  const firedGrams = Object.keys(target).reduce((sum, oxide) => sum + target[oxide] * host.oxides.molarMass[oxide], 0);
   const size = starts.reduce((sum, amount) => sum + amount, 0) || firedGrams || 1;
   // Each cap as weights on the amounts, their weighted total at most `most`: a
   // group's members count 1 each; for a share s of the batch, members count

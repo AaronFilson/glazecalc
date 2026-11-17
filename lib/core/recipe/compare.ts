@@ -2,7 +2,8 @@
 // MCP blend_recipes tool's differences between two recipes. What the rows are
 // is a key or a formula, never words: the app puts them in the page's language.
 
-import { OXIDE_GROUPS, expansion } from '../chemistry/index.ts';
+import { expansion } from '../chemistry/index.ts';
+import type { Host } from '../host.ts';
 
 /** The part of an analysis the comparison reads (a unity formula result, or a host's saved analysis). */
 export interface ComparableAnalysis {
@@ -44,8 +45,8 @@ const GLASS_FORMERS = ['SiO2'];
 const UNITY_COLUMNS = ['fluxes', 'stabilizers', 'glassFormers', 'wildcards'] as const;
 
 /** Which of the UNITY_COLUMNS an oxide goes under, as an index. */
-function unityColumnOf(oxide: string): number {
-  const group = OXIDE_GROUPS[oxide];
+function unityColumnOf(host: Host, oxide: string): number {
+  const group = host.oxides.groups[oxide];
   if (group === 'R2O' || group === 'RO') return 0;
   return STABILIZERS.includes(oxide) ? 1 : GLASS_FORMERS.includes(oxide) ? 2 : 3;
 }
@@ -86,7 +87,7 @@ const fact = (key: string, left: number | null, right: number | null, places: nu
  * r2oFluxes, roFluxes, loi, expansion) and its label is that key. The first
  * three columns are always there; the wildcards only with a row.
  */
-function compareUnity(left: ComparableAnalysis | null, right: ComparableAnalysis | null): CompareGroup[] {
+function compareUnity(host: Host, left: ComparableAnalysis | null, right: ComparableAnalysis | null): CompareGroup[] {
   const groups: CompareGroup[] = UNITY_COLUMNS.map((key) => ({ key, rows: [] }));
   const both = !!left && !!right;
   const oxides = [...new Set([...Object.keys(left?.uList ?? {}), ...Object.keys(right?.uList ?? {})])];
@@ -94,7 +95,7 @@ function compareUnity(left: ComparableAnalysis | null, right: ComparableAnalysis
     const a = value(left?.uList[oxide]);
     const b = value(right?.uList[oxide]);
     if (a === null && b === null) continue;
-    groups[unityColumnOf(oxide)].rows.push({ ...row(oxide, a, b, both), formula: true, oxide });
+    groups[unityColumnOf(host, oxide)].rows.push({ ...row(oxide, a, b, both), formula: true, oxide });
   }
   const ratio = (analysis: ComparableAnalysis | null) => (analysis ? silicaAluminaRatio(analysis) : null);
   // Worked out from the fired analysis when a saved one has no figure of its own.

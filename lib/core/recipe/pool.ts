@@ -228,7 +228,7 @@ function explain(
     countCost: selection.countCost,
     miss: selection.miss,
     best: selection.best,
-    ...(target ? { closeness: closeness(target, selection.moles) } : {}),
+    ...(target ? { closeness: closeness(host, target, selection.moles) } : {}),
     ...(selection.cutShort ? { cutShort: true } : {})
   };
 }

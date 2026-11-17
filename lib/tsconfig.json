@@ -24,8 +24,8 @@
     "skipLibCheck": false,
     "allowImportingTsExtensions": true
   },
-  "include": ["**/*.js", "core/**/*.ts"],
+  "include": ["**/*.js", "core/**/*.ts", "catalog/**/*.ts"],
   // The core's own tests (npm run test:core) come in with the core's strict check, once every
   // module of it has its types.
-  "exclude": ["core/test/**"]
+  "exclude": ["core/test/**", "catalog/test/**"]
 }

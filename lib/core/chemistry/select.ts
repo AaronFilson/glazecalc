@@ -1,4 +1,3 @@
-import * as oxides from './oxides.ts';
 import { prepare, fitAmounts, molesPerGram, newMeter, spent, WORK, WORK_CEILING } from './fit.ts';
 import type { Answer, FitResult } from './fit.ts';
 import type { Meter, Oxides, SelectLine, SelectOptions } from '../types.ts';
@@ -99,11 +98,11 @@ const PER_OXIDE = 3;
 // recipe's own, than its own amount if that is less: its 0.5 of lithium carbonate is not raised to 1).
 const MUST_SHARE = 0.01;
 
-const isFlux = (oxide: string) => oxides.OXIDE_GROUPS[oxide] === 'R2O' || oxides.OXIDE_GROUPS[oxide] === 'RO';
+const isFlux = (host: Host, oxide: string) => host.oxides.groups[oxide] === 'R2O' || host.oxides.groups[oxide] === 'RO';
 
 /** The unity formula of oxide moles: per mole of the fluxes. */
-const unityOf = (moles: Oxides): Oxides => {
-  const fluxes = Object.keys(moles).reduce((sum, oxide) => (isFlux(oxide) ? sum + moles[oxide] : sum), 0);
+const unityOf = (host: Host, moles: Oxides): Oxides => {
+  const fluxes = Object.keys(moles).reduce((sum, oxide) => (isFlux(host, oxide) ? sum + moles[oxide] : sum), 0);
   const unity: Oxides = {};
   if (fluxes > 0) Object.keys(moles).forEach((oxide) => (unity[oxide] = moles[oxide] / fluxes));
   return unity;
@@ -179,7 +178,7 @@ const selectMaterials = function (
   // One meter for the choosing and what it tries again for the report (or the caller's, to share it).
   options = { ...options, meter: options.meter ?? newMeter() };
   const { meter } = options as Metered;
-  scaledWork(lines, target, meter);
+  scaledWork(host, lines, target, meter);
   const { fit, within, everything, columns, best, chosen, mustLeast, result, amounts, countCost } = choose(
     host,
     lines,
@@ -194,7 +193,7 @@ const selectMaterials = function (
   const base = within(finalUse).miss;
 
   // Oxides the target has that nothing offered supplies.
-  const targetUnity = unityOf(target);
+  const targetUnity = unityOf(host, target);
   const unreachable = Object.keys(targetUnity).filter(
     (oxide) =>
       targetUnity[oxide] >= TRACE && !columns.some((column, i) => everything.has(i) && (column[oxide] || 0) > 0)
@@ -204,7 +203,7 @@ const selectMaterials = function (
   // material would stand in and everything would look free.
   // What each material supplies of the glaze's oxides (as Digitalfire shows it),
   // and how much worse the match is without it, refitted within the final recipe.
-  const resultUnity = unityOf(result.moles);
+  const resultUnity = unityOf(host, result.moles);
   const contributions = [...finalUse].map((i) => {
     const supplies = Object.keys(result.moles)
       .map((oxide) => ({ oxide, share: ((columns[i][oxide] || 0) * amounts[i]) / result.moles[oxide] }))
@@ -347,9 +346,9 @@ const selectMaterials = function (
  * How much larger than the reference this problem is (materials offered, not avoided, times the
  * oxides aimed at), from 1 to WORK_CEILING; a meter that scales is raised to WORK times that.
  */
-const scaledWork = function (lines: SelectLine[], target: Oxides, meter: Meter): number {
+const scaledWork = function (host: Host, lines: SelectLine[], target: Oxides, meter: Meter): number {
   const offered = lines.filter((line) => !line.avoid).length;
-  const unity = unityOf(target);
+  const unity = unityOf(host, target);
   const aimed = Object.keys(unity).filter((oxide) => unity[oxide] >= TRACE).length;
   const scale = Math.min(WORK_CEILING, Math.max(1, (offered * aimed) / REFERENCE_SIZE));
   if (meter.scales) meter.most = Math.max(meter.most, WORK * scale);
@@ -388,7 +387,7 @@ const choose = function (host: Host, lines: SelectLine[], target: Oxides, option
   const scored = (match: Answer, set: Set<number>) => match.miss + LAST_RESORT * resorts(set);
 
   // The oxides aimed at, the most first.
-  const targetUnity = unityOf(target);
+  const targetUnity = unityOf(host, target);
   const aimedAt = Object.keys(targetUnity)
     .filter((oxide) => targetUnity[oxide] >= TRACE)
     .sort((p, q) => targetUnity[q] - targetUnity[p] || (p < q ? -1 : 1));

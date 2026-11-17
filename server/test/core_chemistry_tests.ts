@@ -1,12 +1,14 @@
 // The core's chemistry on its own (lib/core/chemistry), with records that have ids and no names:
-// what Glaze Vault and any other host see. Its host is {}, the core's own readers: a record's id is its
-// identity and its label. Glazecalc's host (lib/chemistry/host.js) is passed only by Glazecalc's calls.
+// what Glaze Vault and any other host see. Its host has the catalog's tables and the core's own readers: a
+// record's id is its identity and its label. Glazecalc's host (lib/chemistry/host.js) is passed only by
+// Glazecalc's calls.
 import { expect } from 'chai';
 import type { Host } from '../../lib/core/host.ts';
 import * as materials from '../../lib/core/chemistry/materials.ts';
 import * as umf from '../../lib/core/chemistry/umf.ts';
+import { OXIDES } from '../../lib/catalog/oxides.ts';
 
-const HOST: Host = {};
+const HOST: Host = { oxides: OXIDES };
 
 describe('the core chemistry, nameless', () => {
   const silica = { id: 7, formula: { SiO2: 1 } };

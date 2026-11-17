@@ -1,11 +1,4 @@
-import {
-  MOLAR_MASS,
-  OXIDE_GROUPS,
-  calculateUMF,
-  materialWeights,
-  molesPerGram,
-  oxideMoles
-} from '../chemistry/index.ts';
+import { calculateUMF, materialWeights, molesPerGram, oxideMoles } from '../chemistry/index.ts';
 import { problem } from '../problem.ts';
 import { amountOf } from './amounts.ts';
 import { hasLead } from './library.ts';
@@ -20,7 +13,7 @@ import type { Host } from '../host.ts';
 /** A material's weight percent of an oxide, as fired out of the raw material: G-200 EU Feldspar has 11% K₂O. */
 function oxidePercent(host: Host, material: MaterialInput, oxide: string): number {
   try {
-    return (molesPerGram(host, material)[oxide] ?? 0) * MOLAR_MASS[oxide] * 100;
+    return (molesPerGram(host, material)[oxide] ?? 0) * host.oxides.molarMass[oxide] * 100;
   } catch {
     return 0;
   }
@@ -31,7 +24,7 @@ function oxidesPerGram(host: Host, material: MaterialInput): Oxides | null {
   try {
     const { unity, equivalent } = materialWeights(host, material);
     return Object.fromEntries(
-      Object.entries(unity).map(([oxide, moles]) => [oxide, (moles * MOLAR_MASS[oxide]) / equivalent])
+      Object.entries(unity).map(([oxide, moles]) => [oxide, (moles * host.oxides.molarMass[oxide]) / equivalent])
     );
   } catch {
     return null;
@@ -86,16 +79,17 @@ function roleOf(host: Host, frit: MaterialRecord): FritRole | undefined {
 }
 
 /** The fluxes of a set of oxide moles: the unity formula's one mole. */
-function fluxesOf(moles: Oxides) {
+function fluxesOf(host: Host, moles: Oxides) {
   return Object.entries(moles).reduce(
-    (sum, [oxide, amount]) => (OXIDE_GROUPS[oxide] === 'R2O' || OXIDE_GROUPS[oxide] === 'RO' ? sum + amount : sum),
+    (sum, [oxide, amount]) =>
+      host.oxides.groups[oxide] === 'R2O' || host.oxides.groups[oxide] === 'RO' ? sum + amount : sum,
     0
   );
 }
 
 /** The unity formula of oxide moles. Without a flux there is none: the chemistry's no-flux, as calculateUMF throws. */
-function unityOf(moles: Oxides): Oxides {
-  const fluxes = fluxesOf(moles);
+function unityOf(host: Host, moles: Oxides): Oxides {
+  const fluxes = fluxesOf(host, moles);
   if (!(fluxes > 0)) throw problem('no-flux');
   return Object.fromEntries(Object.entries(moles).map(([oxide, amount]) => [oxide, amount / fluxes]));
 }

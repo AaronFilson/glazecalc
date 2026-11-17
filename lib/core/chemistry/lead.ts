@@ -1,6 +1,6 @@
 import { problem } from '../problem.ts';
-import * as oxides from './oxides.ts';
 import type { Oxides } from '../types.ts';
+import type { Host } from '../host.ts';
 
 // Replacing the lead in an old glaze (docs/adr/0011-replacing-lead.md, and the
 // research behind it). Nothing lead-free supplies PbO, and no published rule
@@ -76,11 +76,11 @@ export interface LeadFreeOptions {
   noStrontium?: boolean;
 }
 
-const leadFreeTarget = function (moles: Oxides, options: LeadFreeOptions): Oxides {
+const leadFreeTarget = function (host: Host, moles: Oxides, options: LeadFreeOptions): Oxides {
   const celsius = Number(options && options.celsius);
   if (!(celsius > 0)) throw problem('no-temperature');
   const fluxes = Object.keys(moles).reduce((sum, oxide) => {
-    const group = oxides.OXIDE_GROUPS[oxide];
+    const group = host.oxides.groups[oxide];
     return group === 'R2O' || group === 'RO' ? sum + moles[oxide] : sum;
   }, 0);
   if (!(fluxes > 0)) throw problem('no-flux-to-rebuild');
