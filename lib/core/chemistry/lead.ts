@@ -87,8 +87,8 @@ const leadFreeTarget = function (moles: Oxides, options: LeadFreeOptions): Oxide
 
   const unity: Oxides = {};
   Object.keys(moles).forEach((oxide) => (unity[oxide] = moles[oxide] / fluxes));
-  let lead = unity.PbO || 0;
-  delete unity.PbO;
+  let lead = unity['PbO'] || 0;
+  delete unity['PbO'];
   const give = (oxide: string, most: number) => {
     const amount = Math.max(0, Math.min(lead, most - (unity[oxide] || 0)));
     if (amount > 0) unity[oxide] = (unity[oxide] || 0) + amount;
@@ -96,13 +96,13 @@ const leadFreeTarget = function (moles: Oxides, options: LeadFreeOptions): Oxide
   };
 
   // Soda and potash, in the proportion the glaze already has them, or half each.
-  const k = unity.K2O || 0;
-  const na = unity.Na2O || 0;
+  const k = unity['K2O'] || 0;
+  const na = unity['Na2O'] || 0;
   const alkali = Math.max(0, Math.min(lead, ALKALI_TARGET - k - na));
   if (alkali > 0) {
     const potash = k + na > 0 ? k / (k + na) : 0.5;
-    unity.K2O = k + alkali * potash;
-    unity.Na2O = na + alkali * (1 - potash);
+    unity['K2O'] = k + alkali * potash;
+    unity['Na2O'] = na + alkali * (1 - potash);
     lead -= alkali;
   }
   give('CaO', CALCIUM_LIMIT);
@@ -113,8 +113,8 @@ const leadFreeTarget = function (moles: Oxides, options: LeadFreeOptions): Oxide
   others.forEach((oxide) => give(oxide, (unity[oxide] || 0) + LITTLE));
   give('CaO', Infinity);
 
-  unity.Al2O3 = Math.max(unity.Al2O3 || 0, celsius >= MID_FIRE_FROM ? LEAST_ALUMINA_MID_FIRE : LEAST_ALUMINA);
-  unity.B2O3 = Math.max(unity.B2O3 || 0, boronFor(celsius));
+  unity['Al2O3'] = Math.max(unity['Al2O3'] || 0, celsius >= MID_FIRE_FROM ? LEAST_ALUMINA_MID_FIRE : LEAST_ALUMINA);
+  unity['B2O3'] = Math.max(unity['B2O3'] || 0, boronFor(celsius));
   const target: Oxides = {};
   Object.keys(unity).forEach((oxide) => (target[oxide] = unity[oxide] * fluxes));
   return target;

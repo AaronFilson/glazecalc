@@ -104,8 +104,8 @@ function compareUnity(left: ComparableAnalysis | null, right: ComparableAnalysis
     key: 'balance',
     rows: [
       fact('silicaToAlumina', ratio(left), ratio(right), 2),
-      fact('r2oFluxes', left?.groups?.R2O ?? null, right?.groups?.R2O ?? null, 2),
-      fact('roFluxes', left?.groups?.RO ?? null, right?.groups?.RO ?? null, 2),
+      fact('r2oFluxes', left?.groups?.['R2O'] ?? null, right?.groups?.['R2O'] ?? null, 2),
+      fact('roFluxes', left?.groups?.['RO'] ?? null, right?.groups?.['RO'] ?? null, 2),
       fact('loi', left?.loi ?? null, right?.loi ?? null, 1),
       fact('expansion', expands(left), expands(right), 2)
     ]
