@@ -55,8 +55,10 @@ jobs:
       - name: Check formatting
         run: npm run format:check
 
+      # High and critical advisories fail the run, but those allowed for a while in
+      # scripts/audit-allowed.json, each with why it can wait and its last day.
       - name: Check for known vulnerabilities
-        run: npm audit --audit-level=high
+        run: npm run check:audit
 
   server:
     name: Server, mail forwarder and MCP tests
@@ -136,6 +138,30 @@ jobs:
 
       - name: MCP conformance
         run: npm run test:mcp
+
+  outputs:
+    name: Chemistry outputs
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      # Every output of the chemistry, over the standard materials, the famous glazes in every region,
+      # seeded recipes, and the cones, slurries and text a potter types, against the hashes kept in
+      # scripts/chemistry-outputs.json. A change that moves one says why in its PR, and keeps the new
+      # hashes with node scripts/chemistry-outputs.mjs --write.
+      - name: Every output as kept
+        run: npm run check:outputs
 
   client:
     name: Client unit tests
@@ -387,7 +413,7 @@ jobs:
   # The one check to require: it passes when every job above has.
   all:
     name: Node 24
-    needs: [checks, server, client, e2e, docker, lighthouse, numbers]
+    needs: [checks, server, client, e2e, docker, lighthouse, numbers, outputs]
     if: always()
     runs-on: ubuntu-24.04
     timeout-minutes: 5
