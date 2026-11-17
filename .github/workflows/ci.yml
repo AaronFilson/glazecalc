@@ -55,8 +55,10 @@ jobs:
       - name: Check formatting
         run: npm run format:check
 
+      # High and critical advisories fail the run, but those allowed for a while in
+      # scripts/audit-allowed.json, each with why it can wait and its last day.
       - name: Check for known vulnerabilities
-        run: npm audit --audit-level=high
+        run: npm run check:audit
 
   server:
     name: Server, mail forwarder and MCP tests
