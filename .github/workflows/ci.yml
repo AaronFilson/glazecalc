@@ -128,6 +128,11 @@ jobs:
       - name: The chemistry core's own tests
         run: npm run check:core-fixture && npm run test:core
 
+      # The catalog on its own (lib/catalog/test): the tables the core is given, with Node alone, as they
+      # will run in the catalog's own repository. Its tests must run all of its code.
+      - name: The catalog's own tests
+        run: npm run test:catalog
+
       # The official MCP conformance suite (2026-07-28 and 2025-11-25) and the
       # MCP Inspector against /mcp on a server of its own. They are installed
       # apart from the app, from the lockfile in scripts/mcp-conformance/, with

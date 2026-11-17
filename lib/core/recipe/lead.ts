@@ -1,7 +1,7 @@
 import { idOf, labelOf } from '../identity.ts';
 import { traitsOf } from '../traits.ts';
 import { problem } from '../problem.ts';
-import { MOLAR_MASS, bestFit, calculateUMF, leadFreeTarget, oxideMoles, selectMaterials } from '../chemistry/index.ts';
+import { bestFit, calculateUMF, leadFreeTarget, oxideMoles, selectMaterials } from '../chemistry/index.ts';
 import { amountOf, formatAmount, totalOf } from './amounts.ts';
 import { bariumSeverity, isRawClay, pastLimits, sizeNotes } from './checks.ts';
 import { FIRING } from './limits.ts';
@@ -132,7 +132,7 @@ function targetFor<M extends MaterialRecord>(host: Host, { lines, additives, cel
   const strontium = [...lines.filter((line) => !hasLead(line)), ...(extras.tries ?? []).map((t) => t.material)].some(
     (material) => oxidePercent(host, material, 'SrO') > 0
   );
-  return leadFreeTarget(molesOf(host, lines), {
+  return leadFreeTarget(host, molesOf(host, lines), {
     celsius,
     noZinc:
       chrome || has(host, additives, ['Fe2O3', 'FeO', 'CuO'], ['iron', 'copper']) || celsius < FIRING.zincMeltsFrom,
@@ -407,7 +407,7 @@ function replaceLead<M extends MaterialRecord>(
   cautions.push(
     ...pastLimits(host, {
       lines: materials.map((material) => ({ material, amount: material.amount })),
-      unity: unityOf(moles),
+      unity: unityOf(host, moles),
       celsius,
       additives,
       expansion: { was: expansionOf(host, lines), now: expansionOf(host, materials) }
@@ -424,7 +424,7 @@ function replaceLead<M extends MaterialRecord>(
 /** What changes without lead, for the colorants in the recipe. */
 function cautionsFor(host: Host, lines: MaterialRecord[], additives: AdditiveRecord[]): Caution[] {
   const moles = molesOf(host, lines);
-  const fluxes = fluxesOf(moles);
+  const fluxes = fluxesOf(host, moles);
   const lead = fluxes > 0 ? (moles['PbO'] ?? 0) / fluxes : 0;
   const cautions: Caution[] = [];
   const caution = (check: CheckName, code: RecipeMessageCode) =>
@@ -462,12 +462,12 @@ function readableMoles(host: Host, lines: MaterialRecord[]): Oxides {
  */
 function leadIn(host: Host, lines: MaterialRecord[]): { unity: number; percent: number } {
   const moles = readableMoles(host, lines);
-  const fluxes = fluxesOf(moles);
-  const grams = Object.entries(moles).reduce((sum, [oxide, amount]) => sum + amount * MOLAR_MASS[oxide], 0);
+  const fluxes = fluxesOf(host, moles);
+  const grams = Object.entries(moles).reduce((sum, [oxide, amount]) => sum + amount * host.oxides.molarMass[oxide], 0);
   const lead = moles['PbO'] ?? 0;
   return {
     unity: fluxes > 0 ? lead / fluxes : 0,
-    percent: grams > 0 ? (100 * lead * MOLAR_MASS['PbO']) / grams : 0
+    percent: grams > 0 ? (100 * lead * host.oxides.molarMass['PbO']) / grams : 0
   };
 }
 
@@ -481,7 +481,7 @@ function leadIn(host: Host, lines: MaterialRecord[]): { unity: number; percent: 
  */
 function bariumIn(host: Host, lines: MaterialRecord[]): { unity: number; likely: boolean } | null {
   const moles = readableMoles(host, lines);
-  const fluxes = fluxesOf(moles);
+  const fluxes = fluxesOf(host, moles);
   const unity = fluxes > 0 ? (moles['BaO'] ?? 0) / fluxes : 0;
   const severity = bariumSeverity(unity);
   return severity ? { unity, likely: severity === 'likely' } : null;

@@ -1,7 +1,7 @@
 // The core's chemistry, nameless and without words (docs/adr/0030-nameless-chemistry-core.md).
 
 export { WORK, WORK_CEILING, bestFit, fitAmounts, molesPerGram, newMeter, oxideMoles } from './fit.ts';
-export { ATOMIC_WEIGHTS, MOLAR_MASS, OXIDE_GROUPS } from './oxides.ts';
+export { FLUX_GROUPS, isFlux, isOxide, isVolatile, molarMass } from './oxides.ts';
 export { CONES, boronFor, leadFreeTarget } from './lead.ts';
 export { EXPANSION, expansion } from './expansion.ts';
 export { boundedLeastSquares } from './lsq.ts';

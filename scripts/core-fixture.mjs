@@ -1,15 +1,18 @@
-// The standard records as the nameless core sees them (docs/adr/0030-nameless-chemistry-core.md):
-// lib/core/test/standard.json, which the core's own tests (npm run test:core) read instead of the
-// app's data loader, MongoDB or Mongoose. Each record goes by its uuid as `id`, keeps only what the
-// core reads, and names its substitutes by id. No names, aliases, notes, sources or hazards.
+// What the nameless core's own tests (npm run test:core) work from, as the core sees it, so that they read
+// neither the app's data loader, MongoDB nor Mongoose, nor the catalog (docs/adr/0030, 0031):
+// - lib/core/test/standard.json, the standard records. Each goes by its uuid as `id`, keeps only what the
+//   core reads, and names its substitutes by id. No names, aliases, notes, sources or hazards.
+// - lib/core/test/tables.json, the catalog's tables, which the tests' host passes (lib/catalog).
 //
-//   node scripts/core-fixture.mjs           writes the fixture
-//   node scripts/core-fixture.mjs --check   fails when the fixture is not what data/ gives
+//   node scripts/core-fixture.mjs           writes the fixtures
+//   node scripts/core-fixture.mjs --check   fails when a fixture is not what data/ and lib/catalog give
 import { readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
+import { OXIDES } from '../lib/catalog/oxides.ts';
 
 const ROOT = path.join(import.meta.dirname, '..');
 const OUT = path.join(ROOT, 'lib', 'core', 'test', 'standard.json');
+const TABLES = path.join(ROOT, 'lib', 'core', 'test', 'tables.json');
 
 // What the core reads of a record (beyond its id); anything else stays with the app.
 const KEEP = [
@@ -60,13 +63,20 @@ export function build() {
 
 export const text = () => JSON.stringify(build(), null, 1) + '\n';
 
+/** The catalog's tables, as the tests' host passes them. */
+export const tablesText = () => JSON.stringify({ oxides: OXIDES }, null, 1) + '\n';
+
 if (import.meta.main ?? process.argv[1] === import.meta.filename) {
+  const fixtures = [
+    [OUT, text()],
+    [TABLES, tablesText()]
+  ];
   if (process.argv.includes('--check')) {
-    if (readFileSync(OUT, 'utf8') !== text()) {
-      console.error('lib/core/test/standard.json is out of date: node scripts/core-fixture.mjs');
-      process.exit(1);
-    }
+    const stale = fixtures.filter(([file, wanted]) => readFileSync(file, 'utf8') !== wanted);
+    for (const [file] of stale)
+      console.error(`${path.relative(ROOT, file)} is out of date: node scripts/core-fixture.mjs`);
+    if (stale.length) process.exit(1);
   } else {
-    writeFileSync(OUT, text());
+    for (const [file, wanted] of fixtures) writeFileSync(file, wanted);
   }
 }

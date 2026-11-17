@@ -53,7 +53,7 @@ function matchFromShelf<M extends MaterialRecord>(
   const target = molesOf(host, lines);
   // A unity formula needs a flux: a recipe with none has none to match (the chemistry's no-flux, "Recipe
   // contains no flux oxides", said so of the recipe and of a shelf with no flux alike).
-  if (!(fluxesOf(target) > 0)) throw new RecipeError('solve.noFlux', { of: 'recipe' });
+  if (!(fluxesOf(host, target) > 0)) throw new RecipeError('solve.noFlux', { of: 'recipe' });
   const oldTotal = totalOf(lines.map((line) => line.amount));
   const places = placesFor(oldTotal);
   const old = new Map<unknown, number>(lines.map((line) => [idOf(host, line), amountOf(line.amount)]));
@@ -106,7 +106,7 @@ function matchFromShelf<M extends MaterialRecord>(
   }
   const { selection, lines: pool } = chosen;
   // None of the materials it may use has a flux: no glaze can be made of them.
-  if (!(fluxesOf(selection.moles) > 0)) throw new RecipeError('solve.noFlux', { of: 'offered' });
+  if (!(fluxesOf(host, selection.moles) > 0)) throw new RecipeError('solve.noFlux', { of: 'offered' });
   // On the old batch's total, the amounts as shown adding up to it: one that did not change is shown as it was.
   const scaledTo = scaled(selection, newTotal > 0 ? oldTotal / newTotal : 1);
   const unchanged = (i: number) => scaledTo.amounts[i] === pool[i].start && pool[i].start > 0;
@@ -123,8 +123,8 @@ function matchFromShelf<M extends MaterialRecord>(
   const cautions = [
     ...pastLimits(host, {
       lines: materials.map((material) => ({ material, amount: material.amount })),
-      unity: unityOf(selection.moles),
-      old: unityOf(target),
+      unity: unityOf(host, selection.moles),
+      old: unityOf(host, target),
       oldClay,
       additives,
       expansion: { was: expansionOf(host, lines), now: expansionOf(host, materials) }

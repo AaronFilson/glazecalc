@@ -1,4 +1,3 @@
-import { MOLAR_MASS } from '../chemistry/index.ts';
 import { labelOf } from '../identity.ts';
 import { traitsOf } from '../traits.ts';
 import { amountOf } from './amounts.ts';
@@ -168,7 +167,7 @@ const GLASS_VOLUMES: Readonly<Record<string, number>> = Object.freeze({
 const GLASS_IGNORED_SHARE = 0.01;
 
 /** A glass's density from its fired oxides per gram, or null with the oxides it cannot take. */
-function glassDensity(perGram: Oxides): { sg: number | null; outside: string[] } {
+function glassDensity(host: Host, perGram: Oxides): { sg: number | null; outside: string[] } {
   let mass = 0;
   let volume = 0;
   let other = 0;
@@ -178,12 +177,12 @@ function glassDensity(perGram: Oxides): { sg: number | null; outside: string[] }
     if (!(grams > 0)) continue;
     total += grams;
     const v = GLASS_VOLUMES[oxide];
-    if (v === undefined || !MOLAR_MASS[oxide]) {
+    if (v === undefined || !host.oxides.molarMass[oxide]) {
       other += grams;
       outside.push(oxide);
       continue;
     }
-    const moles = grams / MOLAR_MASS[oxide];
+    const moles = grams / host.oxides.molarMass[oxide];
     mass += grams;
     volume += moles * v;
   }
@@ -212,7 +211,7 @@ function materialSg(host: Host, material: SgMaterial): MaterialSg {
   const category = material?.category;
   if (category === 'frit') {
     const perGram = oxidesPerGram(host, material);
-    const { sg, outside } = perGram ? glassDensity(perGram) : { sg: null, outside: [] };
+    const { sg, outside } = perGram ? glassDensity(host, perGram) : { sg: null, outside: [] };
     if (sg === null) return { sg: null, basis: 'none', reason: WHY_NOT.glassOxides, oxides: outside };
     return { sg: round(sg), basis: 'glass', source: 'appen' };
   }

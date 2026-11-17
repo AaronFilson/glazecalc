@@ -100,7 +100,7 @@ function setUp<M extends MaterialRecord>(
 
 /** Oxides the old materials gave that come out well short, with what came out. */
 function shortOf(host: Host, target: Oxides, moles: Oxides, old: MaterialRecord[]): Short[] {
-  const fluxes = fluxesOf(target);
+  const fluxes = fluxesOf(host, target);
   if (!(fluxes > 0)) return [];
   const result: Short[] = [];
   for (const [oxide, amount] of Object.entries(target)) {
@@ -203,7 +203,7 @@ function suggestAmounts<M extends MaterialRecord>(
   } = {}
 ): Suggestion<M> {
   const { target, modern, swaps } = setUp(host, lines, find, region, { allowLead });
-  if (!(fluxesOf(target) > 0)) throw new RecipeError('solve.noFlux', { of: 'recipe' });
+  if (!(fluxesOf(host, target) > 0)) throw new RecipeError('solve.noFlux', { of: 'recipe' });
   const total = modern.reduce((sum, line) => sum + line.start, 0);
   const places = placesFor(total);
   const inRecipe = new Set(modern.map((line) => idOf(host, line.material)));
@@ -228,7 +228,7 @@ function suggestAmounts<M extends MaterialRecord>(
     target,
     { keepOwn: true, oldClay, batch: total, uncapped, meter }
   );
-  if (!(fluxesOf(chosen.moles) > 0)) throw new RecipeError('solve.noFlux', { of: 'offered' });
+  if (!(fluxesOf(host, chosen.moles) > 0)) throw new RecipeError('solve.noFlux', { of: 'offered' });
   // The amounts as shown add up to the new batch's total, as they come to (one that did not change shown as it was).
   const unchanged = (i: number) => chosen.amounts[i] === all[i].start && all[i].start > 0;
   const newTotal = chosen.amounts.reduce((sum, amount) => sum + amount, 0);
@@ -245,8 +245,8 @@ function suggestAmounts<M extends MaterialRecord>(
   const cautions = [
     ...pastLimits(host, {
       lines: materials.map((material) => ({ material, amount: material.amount })),
-      unity: unityOf(selection.moles),
-      old: unityOf(target),
+      unity: unityOf(host, selection.moles),
+      old: unityOf(host, target),
       oldClay,
       additives,
       expansion: { was: expansionOf(host, lines), now: expansionOf(host, materials) }

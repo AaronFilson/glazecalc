@@ -1,5 +1,5 @@
 import { idOf } from '../identity.ts';
-import { MOLAR_MASS, OXIDE_GROUPS, newMeter } from '../chemistry/index.ts';
+import { newMeter } from '../chemistry/index.ts';
 import { pastLimits, sizeNotes } from './checks.ts';
 import { expansionOf, fluxesOf, unityOf } from './materials.ts';
 import { RecipeError } from './messages.ts';
@@ -52,7 +52,8 @@ const TOGETHER = ['KNaO', 'R2O', 'NaKO'];
 /** Loss on ignition, which an analysis may give and the target leaves out. */
 const LOI = 'LOI';
 
-const isFlux = (oxide: string): boolean => OXIDE_GROUPS[oxide] === 'R2O' || OXIDE_GROUPS[oxide] === 'RO';
+const isFlux = (host: Host, oxide: string): boolean =>
+  host.oxides.groups[oxide] === 'R2O' || host.oxides.groups[oxide] === 'RO';
 
 /**
  * The target as oxide moles for the solver: the unity formula (per mole of its
@@ -67,14 +68,14 @@ const isFlux = (oxide: string): boolean => OXIDE_GROUPS[oxide] === 'R2O' || OXID
  * Returns { moles, unity, fluxes }: fluxes is what a unity formula's fluxes
  * added up to as given (1 for an analysis).
  */
-function targetOf({ kind, oxides }: SolveTarget): { moles: Oxides; unity: Oxides; fluxes: number } {
+function targetOf(host: Host, { kind, oxides }: SolveTarget): { moles: Oxides; unity: Oxides; fluxes: number } {
   const given: Oxides = {};
   for (const [name, value] of Object.entries(oxides ?? {})) {
     const oxide = String(name).trim();
     if (oxide.toUpperCase() === LOI) continue;
     if (TOGETHER.some((together) => together.toLowerCase() === oxide.toLowerCase()))
       throw new RecipeError('solve.together');
-    if (!Object.hasOwn(OXIDE_GROUPS, oxide)) throw new RecipeError('solve.unknownOxide', { oxide });
+    if (!Object.hasOwn(host.oxides.groups, oxide)) throw new RecipeError('solve.unknownOxide', { oxide });
     const amount = Number(value);
     if (value === null || value === '' || !Number.isFinite(amount) || amount < 0)
       throw new RecipeError('solve.badAmount', { oxide });
@@ -82,12 +83,17 @@ function targetOf({ kind, oxides }: SolveTarget): { moles: Oxides; unity: Oxides
   }
   const molesGiven =
     kind === 'analysis'
-      ? Object.fromEntries(Object.entries(given).map(([oxide, percent]) => [oxide, percent / MOLAR_MASS[oxide]]))
+      ? Object.fromEntries(
+          Object.entries(given).map(([oxide, percent]) => [oxide, percent / host.oxides.molarMass[oxide]])
+        )
       : given;
-  const fluxes = Object.entries(molesGiven).reduce((sum, [oxide, moles]) => (isFlux(oxide) ? sum + moles : sum), 0);
+  const fluxes = Object.entries(molesGiven).reduce(
+    (sum, [oxide, moles]) => (isFlux(host, oxide) ? sum + moles : sum),
+    0
+  );
   if (!(fluxes > 0)) throw new RecipeError('solve.noFlux', { of: 'target' });
-  const unity = unityOf(molesGiven);
-  const fired = Object.entries(unity).reduce((sum, [oxide, moles]) => sum + moles * MOLAR_MASS[oxide], 0);
+  const unity = unityOf(host, molesGiven);
+  const fired = Object.entries(unity).reduce((sum, [oxide, moles]) => sum + moles * host.oxides.molarMass[oxide], 0);
   // Fluxes so slight against the rest (CaO 5e-324 with SiO2 3) that the unity formula is past any number.
   if (!Number.isFinite(fired)) throw new RecipeError('solve.noFlux', { of: 'target' });
   const moles = Object.fromEntries(Object.entries(unity).map(([oxide, value]) => [oxide, (value * BATCH) / fired]));
@@ -150,7 +156,7 @@ function solveTarget<M extends MaterialRecord>(
     meter
   }: SolveFiring & { avoid?: unknown[]; uncapped?: unknown[]; meter?: Meter } = {}
 ): Solved<M> {
-  const { moles, unity: aim, fluxes } = targetOf(target);
+  const { moles, unity: aim, fluxes } = targetOf(host, target);
   if (!offered.length) throw new RecipeError('solve.noMaterials');
   // One meter for the choosing, and for choosing again below.
   const work = meter ?? newMeter();
@@ -187,11 +193,11 @@ function solveTarget<M extends MaterialRecord>(
   }
   const { selection, lines: pool } = chosen;
   // None of the materials it may use has a flux, though the target has: no glaze can be made of them.
-  if (!(fluxesOf(selection.moles) > 0)) throw new RecipeError('solve.noFlux', { of: 'offered' });
+  if (!(fluxesOf(host, selection.moles) > 0)) throw new RecipeError('solve.noFlux', { of: 'offered' });
   const places = 1;
   const onTotal = addingUp(scaled(selection, BATCH / total), places, BATCH, undefined, () => LEAST_SHARE * BATCH);
   const { materials } = recipeFrom(host, onTotal, pool, new Set(), places);
-  const unity = unityOf(selection.moles);
+  const unity = unityOf(host, selection.moles);
   return {
     materials,
     target: aim,
@@ -227,11 +233,11 @@ const FORMULA = /^[A-Z][A-Za-z0-9]*$/;
 const NUMBER = /^(\d+(?:[.,]\d+)?|[.,]\d+)$/;
 
 /** The oxide a pasted name stands for, as the app writes it, ignoring case: "sio2" is SiO2. */
-const knownName = (name: string): string | undefined => {
+const knownName = (host: Host, name: string): string | undefined => {
   const wanted = name.toLowerCase();
   if (wanted === LOI.toLowerCase()) return LOI;
   return (
-    Object.keys(OXIDE_GROUPS).find((oxide) => oxide.toLowerCase() === wanted) ??
+    Object.keys(host.oxides.groups).find((oxide) => oxide.toLowerCase() === wanted) ??
     TOGETHER.find((together) => together.toLowerCase() === wanted)
   );
 };
@@ -245,13 +251,13 @@ const formulaLike = (word: string): boolean => FORMULA.test(word) && /O\d*$/.tes
  * soda came together (KNaO) }. LOI is read and left out. An oxide given twice
  * keeps the first.
  */
-function parseTarget(text: unknown): { oxides: Oxides; unknown: string[]; together: boolean } {
+function parseTarget(host: Host, text: unknown): { oxides: Oxides; unknown: string[]; together: boolean } {
   const plain = String(text ?? '').replace(/[₀-₉]/g, (digit) => SUBSCRIPTS[digit]);
   const oxides: Oxides = {};
   const unknown: string[] = [];
   let together = false;
   const take = (name: string, value: string) => {
-    const oxide = knownName(name);
+    const oxide = knownName(host, name);
     if (!oxide) {
       if (formulaLike(name) && !unknown.includes(name)) unknown.push(name);
       return;
