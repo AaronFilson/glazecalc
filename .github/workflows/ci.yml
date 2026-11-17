@@ -411,7 +411,7 @@ jobs:
   # The one check to require: it passes when every job above has.
   all:
     name: Node 24
-    needs: [checks, server, client, e2e, docker, lighthouse, numbers]
+    needs: [checks, server, client, e2e, docker, lighthouse, numbers, outputs]
     if: always()
     runs-on: ubuntu-24.04
     timeout-minutes: 5
