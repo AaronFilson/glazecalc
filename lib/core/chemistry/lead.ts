@@ -14,7 +14,7 @@ import type { Oxides } from '../types.ts';
  * bends at: Orton's older chart for large cones heated at 150 °C an hour, the
  * figures lib/cones/index.js reads (ORTON.chart) and Katz's cone 10 comes from.
  */
-const CONES = [
+const CONES: ReadonlyArray<{ cone: string; celsius: number }> = [
   { cone: '06', celsius: 999 },
   { cone: '05', celsius: 1046 },
   { cone: '04', celsius: 1060 },
@@ -37,7 +37,7 @@ const CONES = [
  * Digitalfire's "0.5 molar parts" at cone 06. NaN for an unknown firing
  * (anything but a finite number: null is not 0 °C).
  */
-const boronFor = (celsius) => (Number.isFinite(celsius) ? Math.max(0, (1305 - celsius) / 500) : NaN);
+const boronFor = (celsius: number): number => (Number.isFinite(celsius) ? Math.max(0, (1305 - celsius) / 500) : NaN);
 
 // Lead's share of the fluxes goes first to soda and potash, up to this much of
 // them together (more is less durable and crazes), then to calcium up to its
@@ -67,7 +67,16 @@ const MID_FIRE_FROM = 1150;
  *   options.noZincOrMagnesia  both, as before
  *   options.noStrontium leave strontium out: when nothing on offer supplies it
  */
-const leadFreeTarget = function (moles, options) {
+/** What a lead-free target is for: the firing, and the fluxes to leave out. */
+export interface LeadFreeOptions {
+  celsius: number;
+  noZinc?: boolean;
+  noMagnesia?: boolean;
+  noZincOrMagnesia?: boolean;
+  noStrontium?: boolean;
+}
+
+const leadFreeTarget = function (moles: Oxides, options: LeadFreeOptions): Oxides {
   const celsius = Number(options && options.celsius);
   if (!(celsius > 0)) throw problem('no-temperature');
   const fluxes = Object.keys(moles).reduce((sum, oxide) => {
@@ -80,7 +89,7 @@ const leadFreeTarget = function (moles, options) {
   Object.keys(moles).forEach((oxide) => (unity[oxide] = moles[oxide] / fluxes));
   let lead = unity.PbO || 0;
   delete unity.PbO;
-  const give = (oxide, most) => {
+  const give = (oxide: string, most: number) => {
     const amount = Math.max(0, Math.min(lead, most - (unity[oxide] || 0)));
     if (amount > 0) unity[oxide] = (unity[oxide] || 0) + amount;
     lead -= amount;
@@ -99,7 +108,7 @@ const leadFreeTarget = function (moles, options) {
   give('CaO', CALCIUM_LIMIT);
   const noZinc = options.noZinc || options.noZincOrMagnesia;
   const noMagnesia = options.noMagnesia || options.noZincOrMagnesia;
-  const left = { ZnO: noZinc, SrO: options.noStrontium, MgO: noMagnesia };
+  const left: Record<string, boolean | undefined> = { ZnO: noZinc, SrO: options.noStrontium, MgO: noMagnesia };
   const others = ['ZnO', 'SrO', 'MgO'].filter((oxide) => !left[oxide]);
   others.forEach((oxide) => give(oxide, (unity[oxide] || 0) + LITTLE));
   give('CaO', Infinity);

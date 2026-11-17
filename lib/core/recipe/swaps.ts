@@ -2,17 +2,40 @@ import { idOf, labelOf, IDS } from '../identity.ts';
 
 import { hasLead, inRegion } from './library.ts';
 import { likeForLike } from './materials.ts';
+import type { LibraryStatus, MaterialRecord } from './library.ts';
 
-/**
- * @typedef {import('../../recipe/library.js').LibraryStatus} LibraryStatus
- * @typedef {import('../../recipe/library.js').MaterialRecord} MaterialRecord
- */
+export interface Swap {
+  /** labelOf the old material and the new; their ids (idOf) are under IDS, not enumerable. */
+  from: unknown;
+  /** Why: the old material's status, and the year since. */
+  status: LibraryStatus;
+  statusSince?: string;
+  to: unknown;
+  /** Whether the two give the glaze much the same oxides, gram for gram (likeForLike). */
+  like: boolean;
+  /** Whether what takes its place still has lead in it. */
+  lead: boolean;
+  /** The two records' ids (idOf), not enumerable. */
+  readonly [IDS]: { from: unknown; to: unknown };
+}
+
+/** An old colorant among the materials whose substitute is an additive. */
+export interface ColorantSwap {
+  from: unknown;
+  status: LibraryStatus;
+  statusSince?: string;
+  to: unknown;
+}
+
+/** What the library says of an additive: whether it is current. */
+type AdditiveStatus = { status?: LibraryStatus; statusSince?: string; [more: string]: unknown };
 
 // Trying an old recipe with the materials that replace its discontinued ones
 // (issue #6). A swap names the old material's status ('discontinued',
 // 'scarce', 'historical') and the year since, for the app to put in words.
 
-const current = (record) => !!record && (!record.status || record.status === 'current');
+const current = <T extends { status?: LibraryStatus }>(record: T | null | undefined): record is T =>
+  !!record && (!record.status || record.status === 'current');
 
 /**
  * The recipe's materials with each one that is no longer current (discontinued,
@@ -26,26 +49,24 @@ const current = (record) => !!record && (!record.status || record.status === 'cu
  * An old colorant whose substitute is among the additives (`findAdditive`)
  * stays as it is, and is listed in `colorants` for the potter to move.
  *
- * @param {MaterialRecord[]} materials
- * @param {(wanted: MaterialRecord | string) => MaterialRecord | undefined} find  a record's library record, or a
- *   substitute's by its reference
- * @param {string} [region]
- * @param {{ allowLead?: boolean, findAdditive?: (name: string) =>
- *   { name: string, status?: LibraryStatus, statusSince?: string } | undefined }} [options]
+ * `find` gives a record's library record, or a substitute's by its reference.
  */
-function modernMaterials(
-  materials,
-  find,
-  region = '',
-  { allowLead = true, findAdditive }: { allowLead?: boolean; findAdditive?: (record: unknown) => unknown } = {}
-) {
-  const swaps = [];
-  const colorants = [];
-  const status = (record) => ({
-    status: record.status,
+function modernMaterials<M extends MaterialRecord>(
+  materials: M[],
+  find: (wanted: M | string) => M | undefined,
+  region: string = '',
+  {
+    allowLead = true,
+    findAdditive
+  }: { allowLead?: boolean; findAdditive?: (reference: string) => AdditiveStatus | undefined } = {}
+): { materials: M[]; swaps: Swap[]; colorants: ColorantSwap[] } {
+  const swaps: Swap[] = [];
+  const colorants: ColorantSwap[] = [];
+  const status = (record: { status?: LibraryStatus; statusSince?: string }) => ({
+    status: record.status as LibraryStatus,
     ...(record.statusSince ? { statusSince: record.statusSince } : {})
   });
-  const modern = materials.map((material) => {
+  const modern = materials.map((material): M => {
     const record = find(material);
     if (!record?.status || record.status === 'current' || !record.substitutes?.length) return material;
     const substitutes = record.substitutes
@@ -71,7 +92,7 @@ function modernMaterials(
       to: labelOf(substitute),
       like: likeForLike(record, substitute),
       lead: hasLead(substitute)
-    });
+    } as Swap);
     // The two records' ids, for matching them again: not enumerable, out of sight of the result.
     Object.defineProperty(swaps[swaps.length - 1], IDS, { value: { from: idOf(material), to: idOf(substitute) } });
     return { ...structuredClone(substitute), amount: material.amount };
@@ -84,8 +105,8 @@ function modernMaterials(
  * (Custer and Oxford spar by G-200 EU), or one already in the recipe, become
  * one line with their amounts added, where both are numbers.
  */
-function mergeSameMaterials(materials) {
-  const merged = [];
+function mergeSameMaterials<M extends MaterialRecord>(materials: M[]): M[] {
+  const merged: M[] = [];
   for (const material of materials) {
     const same = merged.find((m) => idOf(m) === idOf(material));
     const [a, b] = [Number(same?.amount), Number(material.amount)];

@@ -2,6 +2,24 @@ import * as oxides from './oxides.ts';
 import { ALKALIS, CLOSE, CLOSE_APART, CLOSE_SHARE } from './fit.ts';
 import { problem } from '../problem.ts';
 import { unityOf } from './select.ts';
+import type { Oxides } from '../types.ts';
+
+export type Verdict = 'close' | 'off' | 'far';
+
+/** One oxide compared: its unity amounts was and now, how near it should come, and the verdict. */
+export interface ClosenessRow {
+  oxide: string;
+  was: number;
+  now: number;
+  difference: number;
+  near: number;
+  verdict: Verdict;
+}
+
+export interface Closeness {
+  verdict: 'close' | 'fair' | 'poor';
+  oxides: ClosenessRow[];
+}
 
 // How near a match comes to what it aims at, oxide by oxide, in terms a potter
 // (or an assistant reading a tool's answer) can weigh without the fit's own
@@ -17,7 +35,7 @@ const FAR = 3;
 // Fluxes first, then alumina and boron, then silica, as a unity formula is read.
 const ORDER = ['R2O', 'RO', 'R2O3', 'RO2'];
 
-const row = (oxide, was, now, close) => {
+const row = (oxide: string, was: number, now: number, close: number): ClosenessRow => {
   const near = Math.max(close, CLOSE_SHARE * was);
   const difference = now - was;
   const off = Math.abs(difference) / near;
@@ -35,14 +53,14 @@ const row = (oxide, was, now, close) => {
  * 'no-flux', as calculateUMF does. Moles with no fluxes, against a target that
  * has them, are 'poor'.
  */
-function closeness(target, moles) {
+function closeness(target: Oxides, moles: Oxides): Closeness {
   const was = unityOf(target);
   if (!Object.keys(was).length) throw problem('no-flux');
   const now = unityOf(moles);
   const shown = [...new Set([...Object.keys(was), ...Object.keys(now)])].filter(
     (oxide) => Math.max(was[oxide] || 0, now[oxide] || 0) >= SHOWN
   );
-  const place = (oxide) => {
+  const place = (oxide: string) => {
     const group = ORDER.indexOf(oxides.OXIDE_GROUPS[oxide]);
     return group < 0 ? ORDER.length : group;
   };
@@ -51,7 +69,7 @@ function closeness(target, moles) {
     .sort((p, q) => place(p) - place(q) || (was[q] || 0) - (was[p] || 0) || (p < q ? -1 : p > q ? 1 : 0))
     .map((oxide) => row(oxide, was[oxide] || 0, now[oxide] || 0, ALKALIS.includes(oxide) ? CLOSE_APART : CLOSE));
   if (shown.some((oxide) => ALKALIS.includes(oxide))) {
-    const both = (unity) => ALKALIS.reduce((sum, oxide) => sum + (unity[oxide] || 0), 0);
+    const both = (unity: Oxides) => ALKALIS.reduce((sum, oxide) => sum + (unity[oxide] || 0), 0);
     const after = rows.filter((r) => place(r.oxide) === 0).length;
     rows.splice(after, 0, row('KNaO', both(was), both(now), CLOSE));
   }

@@ -6,6 +6,16 @@ import { expansionOf, fluxesOf, molesOf, unityOf } from './materials.ts';
 import { RecipeError } from './messages.ts';
 import { addingUp, explain, lastResort, placesFor, recipeFrom, removed, scaled, selectHoldingClay } from './pool.ts';
 import type { Meter } from '../types.ts';
+import type { AdditiveRecord, MaterialRecord, TryMaterial } from './library.ts';
+import type { Caution, RecipeMessage } from './messages.ts';
+import type { Report } from './pool.ts';
+
+export interface ShelfMatch<M extends MaterialRecord = MaterialRecord> {
+  materials: M[];
+  changes: RecipeMessage[];
+  report: Report;
+  cautions: Caution[];
+}
 
 // Match with what I have (docs/adr/0012): a recipe made again from only the
 // materials the potter has on hand, as few of them as come near its fired
@@ -26,17 +36,17 @@ const LEAST_SHARE = 0.01;
  * (of: 'recipe': no unity formula to match) or nothing on the shelf it may use
  * has one (of: 'offered'). `meter` bounds the work (lib/chemistry newMeter; a
  * new one, with the library's own bound, if not given).
- *
- * @param {import('../../recipe/library.js').MaterialRecord[]} lines
- * @param {import('../../recipe/library.js').TryMaterial[]} shelf
- * @param {{ avoid?: string[], additives?: import('../../recipe/library.js').AdditiveRecord[], uncapped?: string[],
- *   meter?: import('../../chemistry/index.js').Meter }} [options]
  */
-function matchFromShelf(
-  lines,
-  shelf,
-  { avoid = [], additives = [], uncapped = [], meter }: { avoid?: unknown[]; additives?: unknown[]; uncapped?: unknown[]; meter?: Meter } = {}
-) {
+function matchFromShelf<M extends MaterialRecord>(
+  lines: M[],
+  shelf: TryMaterial<M>[],
+  {
+    avoid = [],
+    additives = [],
+    uncapped = [],
+    meter
+  }: { avoid?: unknown[]; additives?: AdditiveRecord[]; uncapped?: unknown[]; meter?: Meter } = {}
+): ShelfMatch<M> {
   if (!shelf.length) throw new RecipeError('shelf.empty');
   const target = molesOf(lines);
   // A unity formula needs a flux: a recipe with none has none to match (the chemistry's no-flux, "Recipe
@@ -47,14 +57,14 @@ function matchFromShelf(
   const old = new Map<unknown, number>(lines.map((line) => [idOf(line), amountOf(line.amount)]));
   const oldClay = rawClayPercent(lines);
   // The materials on the shelf, each worth at least 1% of `batch` (the recipe's own, at least its amount).
-  const offeredOn = (batch) =>
+  const offeredOn = (batch: number) =>
     shelf.map((tried) => {
       const start = old.get(idOf(tried.material)) ?? 0;
       return {
         material: {
           ...structuredClone(tried.material),
           // Written plainly: an amount kept as it was keeps this text, and String(4e-7) is "4e-7", read as 0.
-          amount: old.has(idOf(tried.material)) ? plainAmount(old.get(idOf(tried.material))) : ''
+          amount: old.has(idOf(tried.material)) ? plainAmount(old.get(idOf(tried.material))!) : ''
         },
         start,
         must: tried.must,
@@ -68,16 +78,17 @@ function matchFromShelf(
     });
   // One meter for the choosing, and for choosing again below.
   const work = meter ?? newMeter();
-  const choose = (batch) => {
+  const choose = (batch: number) => {
     try {
       return selectHoldingClay(offeredOn(batch), target, { oldClay, batch: oldTotal, uncapped, meter: work });
     } catch (error) {
       // Every material dropped as no help at all: none has any of the recipe's oxides (as solveTarget says it).
-      if (error?.code === 'no-materials') throw new RecipeError('solve.noMatch');
+      if ((error as { code?: unknown } | null)?.code === 'no-materials') throw new RecipeError('solve.noMatch');
       throw error;
     }
   };
-  const rawTotal = (chosen) => chosen.selection.amounts.reduce((sum, amount) => sum + amount, 0);
+  const rawTotal = (chosen: { selection: { amounts: number[] } }) =>
+    chosen.selection.amounts.reduce((sum, amount) => sum + amount, 0);
   let chosen = choose(oldTotal);
   let newTotal = rawTotal(chosen);
   // On the old batch's total, a material brought in at its least (1% of the old batch) is under 1% of the
@@ -96,8 +107,9 @@ function matchFromShelf(
   if (!(fluxesOf(selection.moles) > 0)) throw new RecipeError('solve.noFlux', { of: 'offered' });
   // On the old batch's total, the amounts as shown adding up to it: one that did not change is shown as it was.
   const scaledTo = scaled(selection, newTotal > 0 ? oldTotal / newTotal : 1);
-  const unchanged = (i) => scaledTo.amounts[i] === pool[i].start && pool[i].start > 0;
-  const least = (i) => (pool[i].start > 0 ? Math.min(LEAST_SHARE * oldTotal, pool[i].start) : LEAST_SHARE * oldTotal);
+  const unchanged = (i: number) => scaledTo.amounts[i] === pool[i].start && pool[i].start > 0;
+  const least = (i: number) =>
+    pool[i].start > 0 ? Math.min(LEAST_SHARE * oldTotal, pool[i].start) : LEAST_SHARE * oldTotal;
   const onTotal = addingUp(scaledTo, places, oldTotal, unchanged, least);
   const { materials, changes } = recipeFrom(onTotal, pool, new Set(), places);
   const onShelf = new Set(shelf.map((tried) => idOf(tried.material)));

@@ -13,7 +13,20 @@
 // Research: research_notes/Asia/japan-verification-2026-10-14.md.
 
 /** The cone number as printed ('022', '015a', '7'), and its nominal melt-down temperature in °C. */
-const row = (cone, celsius) => ({ cone, celsius });
+export interface ConeRow {
+  cone: string;
+  celsius: number;
+}
+
+/** Orton's current figures for a cone: by heating rate (°C an hour), self-supporting and, where printed, large. */
+export interface PublishedCone {
+  cone: string;
+  selfSupporting: Record<number, number>;
+  large?: Record<number, number>;
+  largeDiffers?: boolean;
+}
+
+const row = (cone: string, celsius: number): ConeRow => ({ cone, celsius });
 
 const SK_LARGE_CONES = [
   row('022', 600),
@@ -107,7 +120,9 @@ const ORTON_OLDER_150: Array<[cone: string, celsius: number]> = [
  * hour, then large at 60 and 150 (null where Orton prints none). Half cones as
  * printed, '05.5' and '5.5'.
  */
-const ORTON_PUBLISHED: Array<[cone: string, slow: number | null, medium: number, fast: number, large60: number | null, large150: number | null]> = [
+const ORTON_PUBLISHED: Array<
+  [cone: string, slow: number | null, medium: number, fast: number, large60: number | null, large150: number | null]
+> = [
   ['022', null, 586, 590, null, null],
   ['021', null, 600, 617, null, null],
   ['020', null, 626, 638, null, null],
@@ -150,16 +165,17 @@ const ORTON_PUBLISHED: Array<[cone: string, slow: number | null, medium: number,
 /** The large cones Orton marks as made differently, with their own equivalents. */
 const ORTON_LARGE_DIFFERENT = ['13', '14'];
 
-const rates = (pairs: Array<[number, number | null]>): Record<number, number> => Object.fromEntries(pairs.filter(([, celsius]) => celsius !== null));
+const rates = (pairs: Array<[number, number | null]>): Record<number, number> =>
+  Object.fromEntries(pairs.filter((pair): pair is [number, number] => pair[1] !== null));
 
 /** SK's large cones: each cone as printed and its nominal melt-down temperature in °C. */
 const SK_CONES = SK_LARGE_CONES;
 
 /** Orton's older chart: each cone and its figure for large cones heated at 150 °C an hour. */
-const ORTON_CHART_CONES = ORTON_OLDER_150.map(([cone, celsius]) => ({ cone, celsius }));
+const ORTON_CHART_CONES: ConeRow[] = ORTON_OLDER_150.map(([cone, celsius]) => ({ cone, celsius }));
 
 /** Orton's current figures: each cone's self-supporting and large figures by heating rate. */
-const ORTON_PUBLISHED_CONES = ORTON_PUBLISHED.map(([cone, slow, medium, fast, large60, large150]) => ({
+const ORTON_PUBLISHED_CONES: PublishedCone[] = ORTON_PUBLISHED.map(([cone, slow, medium, fast, large60, large150]) => ({
   cone,
   selfSupporting: rates([
     [15, slow],

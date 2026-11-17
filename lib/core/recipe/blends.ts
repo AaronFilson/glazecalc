@@ -7,19 +7,64 @@ import { keyOf } from '../identity.ts';
 // its base, mixed in those proportions.
 
 import { amountOf, totalOf, unitOf } from './amounts.ts';
+import type { Amount } from './amounts.ts';
+import type { AdditiveUnit } from './library.ts';
+
+export type BlendKind = 'line' | 'biaxial' | 'triaxial';
+
+export interface BlendTile {
+  /** From 1. */
+  number: number;
+  row: number;
+  col: number;
+  /** Each corner's share, 0 to 1, in the corners' order. */
+  shares: number[];
+}
+
+export interface Blend {
+  kind: BlendKind;
+  steps: number;
+  corners: number;
+  rows: number;
+  tiles: BlendTile[];
+}
+
+/** A line of a corner recipe: a material or additive with its amount as saved; keyOf says which are the same. */
+export interface BlendLine {
+  amount?: Amount;
+  unit?: AdditiveUnit;
+  [more: string]: unknown;
+}
+
+export interface MixedRecipe<M, A> {
+  /** Percent of the base: they add up to 100. */
+  materials: Array<{ line: M; amount: number }>;
+  /** Percent of the base. */
+  additives: Array<{ line: A; amount: number }>;
+}
+
+/** One tile of an ingredient blend: its amount of the material and its lines (amounts above nothing), by id. */
+export interface VariedTile {
+  amount: number;
+  lines: Array<{ id: unknown; amount: number }>;
+}
 
 /** How many corner recipes each kind of blend mixes. */
-const CORNERS = { line: 2, biaxial: 4, triaxial: 3 };
+const CORNERS: Readonly<Record<BlendKind, number>> = { line: 2, biaxial: 4, triaxial: 3 };
 
 /**
  * The fewest and most steps each kind takes: tiles in a line, tiles along a
  * side of a biaxial square (8 is 64 tiles), rows of a triaxial triangle
  * (11 is 66 tiles).
  */
-const STEPS = { line: { min: 2, max: 21 }, biaxial: { min: 2, max: 8 }, triaxial: { min: 2, max: 11 } };
+const STEPS: Readonly<Record<BlendKind, { min: number; max: number }>> = {
+  line: { min: 2, max: 21 },
+  biaxial: { min: 2, max: 8 },
+  triaxial: { min: 2, max: 11 }
+};
 
 // Shares a hair off a round number (0.30000000000000004) are rounded to it.
-const share = (value) => Math.round(value * 1e9) / 1e9;
+const share = (value: number): number => Math.round(value * 1e9) / 1e9;
 
 /**
  * A blend's tiles: each one's number (from 1), its row and column, and each
@@ -33,11 +78,11 @@ const share = (value) => Math.round(value * 1e9) / 1e9;
  *
  * Null for an unknown kind or steps out of range.
  */
-function blendTiles(kind, steps) {
-  const range = STEPS[kind];
+function blendTiles(kind: BlendKind, steps: number): Blend | null {
+  const range: { min: number; max: number } | undefined = STEPS[kind];
   if (!range || !Number.isInteger(steps) || steps < range.min || steps > range.max) return null;
   const last = steps - 1;
-  const tiles = [];
+  const tiles: BlendTile[] = [];
   if (kind === 'line') {
     for (let col = 0; col < steps; col++) {
       tiles.push({ number: col + 1, row: 0, col, shares: [share(1 - col / last), share(col / last)] });
@@ -85,10 +130,13 @@ function blendTiles(kind, steps) {
  * left out. Amounts are numbers, not rounded. Null when a corner with a share
  * has no base to mix.
  */
-function mixRecipes(corners, shares) {
-  const materials = new Map();
-  const additives = new Map();
-  const add = (into, line, amount) => {
+function mixRecipes<M extends BlendLine, A extends BlendLine>(
+  corners: ReadonlyArray<{ materials?: M[]; additives?: A[] }>,
+  shares: readonly number[]
+): MixedRecipe<M, A> | null {
+  const materials = new Map<string, { line: M; amount: number }>();
+  const additives = new Map<string, { line: A; amount: number }>();
+  const add = <L>(into: Map<string, { line: L; amount: number }>, line: L, amount: number) => {
     const key = keyOf(line);
     const entry = into.get(key);
     if (entry) entry.amount += amount;
@@ -112,7 +160,7 @@ function mixRecipes(corners, shares) {
       add(additives, additive, weight * percent);
     }
   }
-  const kept = (into) =>
+  const kept = <L>(into: Map<string, { line: L; amount: number }>) =>
     [...into.values()]
       .filter((entry) => entry.amount > 1e-9)
       .map((entry) => ({ line: entry.line, amount: entry.amount }));
@@ -131,8 +179,14 @@ function mixRecipes(corners, shares) {
  * `instead` would go below nothing, { tooMuch } with the first amount that
  * does it. Amounts are numbers, not rounded.
  */
-function varyMaterial(base, material, amounts, mode, instead) {
-  const tiles = [];
+function varyMaterial(
+  base: ReadonlyArray<{ id: unknown; amount: number }>,
+  material: unknown,
+  amounts: readonly number[],
+  mode: 'add' | 'replace',
+  instead?: unknown
+): { tiles: VariedTile[]; tooMuch?: undefined } | { tooMuch: number; tiles?: undefined } {
+  const tiles: VariedTile[] = [];
   for (const amount of amounts) {
     const lines = base.map((line) => ({ id: line.id, amount: line.amount }));
     const own = lines.find((line) => line.id === material);

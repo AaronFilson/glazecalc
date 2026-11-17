@@ -109,9 +109,12 @@ const oxidesGivenIn = function (material: {
 // each fired oxide per formula, and the raw formula weight comes from the LOI,
 // or from molecularweight when no LOI is given; given both, the LOI is used, with
 // a warning when the two disagree by more than LOI_AGREES.
-const fieldsToAnalysis = function (
-  material: MaterialInput & { fields: MaterialField[] }
-): { analysis: Oxides; loi: number; formulaWeight: number; warningCodes?: Warning[] } {
+const fieldsToAnalysis = function (material: MaterialInput & { fields: MaterialField[] }): {
+  analysis: Oxides;
+  loi: number;
+  formulaWeight: number;
+  warningCodes?: Warning[];
+} {
   const amounts = readAmounts(
     material.fields.map((field) => [field.name, field.amount]),
     labelOf(material)
@@ -131,7 +134,8 @@ const fieldsToAnalysis = function (
   if (firedWeight === 0) throw problem('no-oxides', { material: labelOf(material) });
   const molecularWeight = givenNumber(material.molecularweight, 'invalid-molecular-weight', material);
   // The LOI the molecular weight gives: what the raw formula loses to the fired one.
-  const implied = molecularWeight !== null && molecularWeight > firedWeight ? (1 - firedWeight / molecularWeight) * 100 : 0;
+  const implied =
+    molecularWeight !== null && molecularWeight > firedWeight ? (1 - firedWeight / molecularWeight) * 100 : 0;
   const warningCodes: Warning[] = [];
   // A raw formula cannot weigh less than its fired oxides: such a molecular weight is a slip (the fired weight
   // typed, or a wrong formula), so it gives no LOI, and says so rather than reading as none.
@@ -248,9 +252,4 @@ const materialWeights = function (material: MaterialInput) {
   };
 };
 
-export {
-  formulaToAnalysis,
-  materialWeights,
-  oxidesGivenIn,
-  prepareMaterial
-};
+export { formulaToAnalysis, materialWeights, oxidesGivenIn, prepareMaterial };

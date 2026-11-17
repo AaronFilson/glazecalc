@@ -17,6 +17,40 @@ import {
 import { say, figure } from './messages.ts';
 import { CONE_FIT } from './cone-fit.ts';
 import type { Oxides } from '../types.ts';
+import type { FiringBand, LimitSet, Past, UnityRange } from './limits.ts';
+import type { AdditiveRecord, MaterialRecord } from './library.ts';
+import type { Caution, CheckName, Quantity, RecipeMessage, Severity } from './messages.ts';
+import type { Amount } from './amounts.ts';
+
+/** A line of a recipe to check: its material, and its amount. */
+export interface CheckLine {
+  material: MaterialRecord;
+  amount: Amount;
+}
+
+export interface CheckInput {
+  /** The new recipe's base materials and amounts. */
+  lines: CheckLine[];
+  /** Its unity formula, base materials only. */
+  unity?: Oxides | null;
+  /** The old recipe's unity formula, to warn only of what is new or worse. */
+  old?: Oxides;
+  /** The firing temperature, when it is known. */
+  celsius?: number | null;
+  /** The firing's band, when it is known by its cone (coneBand): it wins over the band of `celsius`. */
+  band?: FiringBand;
+  additives?: AdditiveRecord[];
+  /** The old recipe's raw clay, as a percent of its batch. */
+  oldClay?: number;
+  /** Calculated expansion, before and after. */
+  expansion?: { was: number | null; now: number | null };
+  /** The limits on the unity formula to check against: the app's own (GLAZECALC_LIMITS) by default. */
+  limitSet?: LimitSet;
+}
+
+/** What a check measured, and how serious it is. */
+type Measured = Omit<Caution, 'check' | 'sentences'>;
+type Serious = 'caution' | 'likely';
 
 // Past a recommended limit, say what the fired glaze will likely do, rather
 // than block (docs/adr/0012-choosing-materials.md, and the research report
@@ -32,11 +66,11 @@ import type { Oxides } from '../types.ts';
 // changes a sentence, the sentence comes in both forms rather than with a
 // phrase swapped in, so it translates whole.
 
-const KNAO = (u) => (u['K2O'] ?? 0) + (u['Na2O'] ?? 0);
-const value = (u, oxide) => (u ? (u[oxide] ?? 0) : 0);
+const KNAO = (u: Oxides): number => (u['K2O'] ?? 0) + (u['Na2O'] ?? 0);
+const value = (u: Oxides | null | undefined, oxide: string): number => (u ? (u[oxide] ?? 0) : 0);
 
 // An additive that is this colorant (its trait, e.g. chrome) or carries one of its oxides.
-const hasColorant = (additives, colorant, oxides) =>
+const hasColorant = (additives: AdditiveRecord[], colorant: string, oxides: string[]): boolean =>
   additives.some(
     (a) =>
       amountOf(a.amount) > 0 &&
@@ -57,7 +91,7 @@ const OWN_DOLOMITE = { calciaMagnesia: 0.9, loi: [45, 48] };
  * What a material with no category is by its analysis: 'clay', 'whiting', 'dolomite', or null (or
  * with a category).
  */
-function kindByAnalysis(material) {
+function kindByAnalysis(material: MaterialRecord): 'clay' | 'whiting' | 'dolomite' | null {
   if (material.category) return null;
   let prepared: ReturnType<typeof prepareMaterial>;
   try {
@@ -66,7 +100,7 @@ function kindByAnalysis(material) {
     return null;
   }
   const { analysis, loi } = prepared;
-  const within = (range) => loi >= range[0] && loi <= range[1];
+  const within = (range: number[]) => loi >= range[0] && loi <= range[1];
   if ((analysis['Al2O3'] ?? 0) >= OWN_CLAY.alumina && within(OWN_CLAY.loi)) return 'clay';
   const fired = Object.values(analysis).reduce((sum, percent) => sum + percent, 0);
   const calcia = analysis['CaO'] ?? 0;
@@ -91,18 +125,20 @@ const CALCINED_LOI = 2;
  * Whether a material is raw (not calcined) clay, which shrinks as the glaze dries: by its category,
  * calcined by its traits or its LOI, or for one with no category by its analysis.
  */
-const isRawClay = (material) =>
+const isRawClay = (material: MaterialRecord): boolean =>
   (material.category === 'clay' && !traitsOf(material).calcined && !(Number(material.loi ?? NaN) < CALCINED_LOI)) ||
   kindByAnalysis(material) === 'clay';
 
 /** Whether a material is raw whiting or dolomite: by its traits, or for one with no category by its analysis. */
-const isRawCalcium = (material) =>
-  traitsOf(material).rawCalcium === true || ['whiting', 'dolomite'].includes(kindByAnalysis(material));
+const isRawCalcium = (material: MaterialRecord): boolean =>
+  traitsOf(material).rawCalcium === true || ['whiting', 'dolomite'].includes(kindByAnalysis(material) as string);
 
 /** Raw (not calcined) clay as a percent of the batch. */
-function rawClayPercent(lines) {
+function rawClayPercent(lines: Array<MaterialRecord | (Omit<MaterialRecord, 'amount'> & { amount?: Amount })>): number {
   const total = lines.reduce((sum, line) => sum + amountOf(line.amount), 0);
-  const clay = lines.filter(isRawClay).reduce((sum, line) => sum + amountOf(line.amount), 0);
+  const clay = lines
+    .filter((line) => isRawClay(line as MaterialRecord))
+    .reduce((sum, line) => sum + amountOf(line.amount), 0);
   return total > 0 ? (100 * clay) / total : 0;
 }
 
@@ -112,7 +148,7 @@ function rawClayPercent(lines) {
  * (`clayWas`, if there is one) when it was over too, as seriously: from under
  * the likely figure (25%) to it is news.
  */
-function rawClayHigh(clay, clayWas) {
+function rawClayHigh(clay: number, clayWas?: number): boolean {
   const already =
     clayWas !== undefined &&
     clayWas >= L.clay.caution &&
@@ -122,10 +158,16 @@ function rawClayHigh(clay, clayWas) {
 }
 
 /** What a check measured: the quantity, its value, the limit and the side of it that is past. */
-const measured = (quantity, value, limit, direction, severity) => ({ severity, quantity, value, limit, direction });
+const measured = (
+  quantity: Quantity,
+  value: number,
+  limit: number,
+  direction: 'above' | 'below',
+  severity: Severity
+): Measured => ({ severity, quantity, value, limit, direction });
 
 /** 'likely' at or past the likely figure, otherwise 'caution'. */
-const severityOf = (x, likely) => (x >= likely ? 'likely' : 'caution');
+const severityOf = (x: number, likely: number): Serious => (x >= likely ? 'likely' : 'caution');
 
 /** How serious each severity is, to compare two: a likely fault is more so than a caution. */
 const SERIOUS = Object.freeze({ caution: 1, likely: 2 });
@@ -135,10 +177,10 @@ const SERIOUS = Object.freeze({ caution: 1, likely: 2 });
 // tolerated (e.g. 0.05-0.1) if the glaze chemistry is balanced", and "any glaze that has 0.4 BaO
 // would be off-the-scale for potential to leach" (CHECK_LIMITS.barium: 0.1 and 0.4). A range, read
 // as the limit sets' are (pastSide, isLikely): at the two decimals shown, 0.10 itself within.
-const BARIUM = Object.freeze({ max: L.barium.caution, maxLikely: L.barium.likely });
+const BARIUM: UnityRange = Object.freeze({ max: L.barium.caution, maxLikely: L.barium.likely });
 
 /** How serious the BaO in a unity formula is: null to 0.10 as shown, 'likely' from 0.40, else 'caution'. */
-function bariumSeverity(barium) {
+function bariumSeverity(barium: number): Serious | null {
   if (pastSide(barium, BARIUM) !== 'above') return null;
   return isLikely(barium, BARIUM, 'above') ? 'likely' : 'caution';
 }
@@ -153,46 +195,49 @@ function bariumSeverity(barium) {
  * boron, magnesia, raw whiting) are left out. A band the set has no figures
  * for (Hesselberth & Roy's low fire, every set's 'top') checks no ranges.
  */
-function pastLimits(input) {
-  const { unity, old }: { unity?: Oxides | null; old?: unknown } = input;
+function pastLimits(input: CheckInput): Caution[] {
+  const { unity, old } = input;
   // Anything but a finite number is an unknown firing: null is not 0 °C.
-  const celsius = Number.isFinite(input.celsius) ? input.celsius : undefined;
+  const celsius = Number.isFinite(input.celsius) ? (input.celsius as number) : undefined;
   const set = input.limitSet ?? GLAZECALC_LIMITS;
   const additives = input.additives ?? [];
   const band = input.band !== undefined ? bandIn(set, input.band) : bandOf(set, celsius);
   const low = band === undefined ? undefined : band === 'low';
-  const range = set.unity[band ?? set.whenUnknown] ?? {};
-  const cautions = [];
-  const sure = (x, likely, probably, tends) => (x >= likely ? probably : tends);
+  const range: Readonly<Record<string, UnityRange>> = set.unity[band ?? set.whenUnknown] ?? {};
+  const cautions: Caution[] = [];
+  const sure = (x: number, likely: number, probably: RecipeMessage, tends: RecipeMessage) =>
+    x >= likely ? probably : tends;
   // A range's caution: past it by the limits' own rule (pastSide, which the table uses too), and
   // 'likely' only past a set's figure for a likely fault. A set with none (Hesselberth & Roy give one
   // figure per edge) only cautions, as its table does.
-  const graded = (likely) => (likely ? 'likely' : 'caution');
-  const worded = (likely, probably, tends) => (likely ? probably : tends);
+  const graded = (likely: boolean): Serious => (likely ? 'likely' : 'caution');
+  const worded = (likely: boolean, probably: RecipeMessage, tends: RecipeMessage) => (likely ? probably : tends);
   // Whether the old recipe already had it as bad: then it is not news. It had when it raised the
   // same caution as seriously or more (`severityIn` of a unity formula: null for no caution), and the
   // new one is worse by no more than alreadyFactor: more of `bad`, or less of it for a `floor`. A
   // limit newly crossed, from within it or from a caution to a likely fault, is news.
-  const already = (bad, severityIn, floor = false) => {
+  const already = (bad: (u: Oxides) => number, severityIn: (u: Oxides) => Serious | null, floor = false) => {
     if (old === undefined) return false;
     const was = severityIn(old);
-    if (was === null || SERIOUS[was] < SERIOUS[severityIn(unity)]) return false;
-    return floor ? bad(unity) * L.alreadyFactor >= bad(old) : bad(unity) <= bad(old) * L.alreadyFactor;
+    // The new formula as the checks read it: severityIn and bad take a missing one as no oxides (value).
+    const now = unity as Oxides;
+    if (was === null || SERIOUS[was] < SERIOUS[severityIn(now)!]) return false;
+    return floor ? bad(now) * L.alreadyFactor >= bad(old) : bad(now) <= bad(old) * L.alreadyFactor;
   };
   // The same for a range's caution, past it on `side` as the check reads it (boron's likely figure
   // is its own for a thin glaze).
-  const alreadyPast = (bad, r, side) =>
+  const alreadyPast = (bad: (u: Oxides) => number, r: UnityRange, side: Past) =>
     already(
       bad,
-      (u) => (pastSide(bad(u), r) === side ? graded(isLikely(bad(u), r, side, isThin(u))) : null),
+      (u: Oxides) => (pastSide(bad(u), r) === side ? graded(isLikely(bad(u), r, side, isThin(u))) : null),
       side === 'below'
     );
   // The band whose figures are used, which picks the words: the firing's, or the set's choice when
   // the firing is not known (low fire for the app's own set, cone 6 for Hesselberth & Roy's).
   const used = band ?? set.whenUnknown;
-  const caution = (check, fields, ...sentences) =>
-    cautions.push({ check, ...fields, sentences: sentences.filter(Boolean) });
-  const two = (x) => figure(x, 2);
+  const caution = (check: CheckName, fields: Measured, ...sentences: Array<RecipeMessage | null>) =>
+    cautions.push({ check, ...fields, sentences: sentences.filter((s): s is RecipeMessage => Boolean(s)) });
+  const two = (x: number) => figure(x, 2);
   // A percent, ratio or expansion is shown with a decimal more than it once was, so that what a caution
   // shows agrees with the limit it was judged by: 20.3% raw clay, not 20%, is over 20.
 
@@ -284,7 +329,7 @@ function pastLimits(input) {
   // Boron blue, its figures read at the two decimals shown: B2O3 and CaO over 0.50, Al2O3 under 0.20.
   const pink = hasColorant(additives, 'pink', []);
   const blue = L.boronBlue;
-  const isBlue = (u) =>
+  const isBlue = (u: Oxides | null | undefined) =>
     asShown(value(u, 'B2O3')) > blue.boron &&
     asShown(value(u, 'CaO')) > blue.calcia &&
     asShown(value(u, 'Al2O3')) < blue.alumina;
@@ -298,7 +343,7 @@ function pastLimits(input) {
   }
 
   // Soda and potash.
-  const alkali = KNAO(unity);
+  const alkali = KNAO(unity as Oxides);
   const alkaliRange = range['K2O+Na2O'];
   if (
     alkaliRange?.max !== undefined &&
@@ -318,7 +363,7 @@ function pastLimits(input) {
   // Magnesia, at a known firing whose band the set limits it in (the app's own: low fire).
   // The words say it does not melt at cone 06-04, so only a low band's limit is used.
   const magnesia = value(unity, 'MgO');
-  const magnesiaRange = low ? set.unity[band]?.['MgO'] : undefined;
+  const magnesiaRange = low ? set.unity[band!]?.['MgO'] : undefined;
   if (
     magnesiaRange?.max !== undefined &&
     pastSide(magnesia, magnesiaRange) === 'above' &&
@@ -337,8 +382,9 @@ function pastLimits(input) {
   // Zinc with colorants, and below cone 03: from ZnO 0.02 at the two decimals shown, as barium and the
   // limits are read, so 0.0196, shown as 0.02, is zinc that matters.
   const zinc = value(unity, 'ZnO');
-  const zincIn = (u) => value(u, 'ZnO');
-  const zincMatters = (u) => (asShown(zincIn(u)) >= L.zinc ? 'caution' : null);
+  const zincIn = (u: Oxides | null | undefined) => value(u, 'ZnO');
+  const zincMatters = (u: Oxides | null | undefined): Serious | null =>
+    asShown(zincIn(u)) >= L.zinc ? 'caution' : null;
   if (zincMatters(unity) && !already(zincIn, zincMatters)) {
     const fields = measured('ZnO', zinc, L.zinc, 'above', 'caution');
     if (hasColorant(additives, 'chrome', ['Cr2O3'])) caution('zinc-chrome', fields, say('checks.zincChrome'));
@@ -353,7 +399,7 @@ function pastLimits(input) {
   // likely from 0.40 (Digitalfire's Limit Formula page, https://digitalfire.com/glossary/123; BARIUM).
   const barium = value(unity, 'BaO');
   const bariumPast = bariumSeverity(barium);
-  const bariumOf = (u) => value(u, 'BaO');
+  const bariumOf = (u: Oxides) => value(u, 'BaO');
   if (bariumPast && !already(bariumOf, (u) => bariumSeverity(bariumOf(u)))) {
     caution(
       'barium',
@@ -365,7 +411,7 @@ function pastLimits(input) {
 
   // Materials: raw whiting at low fire, fluorspar, kaolin, soluble ones, frits doing the wrong job.
   const total = input.lines.reduce((sum, line) => sum + amountOf(line.amount), 0);
-  const percent = (amount) => (total > 0 ? (100 * amountOf(amount)) / total : 0);
+  const percent = (amount: Amount) => (total > 0 ? (100 * amountOf(amount)) / total : 0);
   const rawCalcium = input.lines.filter((line) => isRawCalcium(line.material));
   const rawShare = rawCalcium.reduce((sum, line) => sum + percent(line.amount), 0);
   if (low && rawShare > L.rawCalcium.caution) {
@@ -438,7 +484,7 @@ function pastLimits(input) {
   }
   const main = [...input.lines].sort((p, q) => amountOf(q.amount) - amountOf(p.amount))[0];
   const role = main?.material.fritRole;
-  const frit = { severity: 'note', material: labelOf(main?.material) };
+  const frit: Measured = { severity: 'note', material: labelOf(main?.material) };
   if (role === 'boron') caution('frit-role', frit, say('checks.boronFrit'));
   else if (role === 'low-expansion') caution('frit-role', frit, say('checks.lowExpansionFrit'));
   else if (role === 'alkali') caution('frit-role', frit, say('checks.alkaliFrit'));
@@ -475,10 +521,10 @@ function pastLimits(input) {
  * Notes on the recipe's size and small amounts: many materials to buy and
  * weigh, or an amount too small to weigh well in a test batch.
  */
-function sizeNotes(lines, low?) {
+function sizeNotes(lines: CheckLine[], low?: boolean): Caution[] {
   const used = lines.filter((line) => amountOf(line.amount) > 0);
   const total = used.reduce((sum, line) => sum + amountOf(line.amount), 0);
-  const notes = [];
+  const notes: Caution[] = [];
   const many = low ? L.manyMaterialsLowFire : L.manyMaterials;
   if (used.length >= many) {
     notes.push({

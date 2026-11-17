@@ -1,6 +1,43 @@
 import * as oxides from './oxides.ts';
 import { prepare, fitAmounts, molesPerGram, newMeter, spent, WORK, WORK_CEILING } from './fit.ts';
-import type { FitOptions, Oxides, SelectLine } from '../types.ts';
+import type { Answer, FitResult } from './fit.ts';
+import type { Meter, Oxides, SelectLine, SelectOptions } from '../types.ts';
+
+/** Options as the choosing reads them: always with a meter. */
+type Metered = SelectOptions & { meter: Meter };
+
+/** A line's share of an oxide in the recipe. */
+export interface Supply {
+  oxide: string;
+  share: number;
+}
+
+/** A cap that costs match, or a shared cap the recipe could not keep (broken). */
+export interface Capped {
+  index: number;
+  group?: string;
+  members?: number[];
+  most: number;
+  wouldBe: number;
+  missLifted: number;
+  broken?: boolean;
+}
+
+/** What selectMaterials chose, and the report on it. */
+export interface Selection {
+  amounts: number[];
+  moles: Oxides;
+  miss: number;
+  best: number;
+  chosen: number[];
+  unreachable: string[];
+  contributions: Array<{ index: number; supplies: Supply[]; missWithout: number }>;
+  unused: Array<{ index: number; helps: number }>;
+  alike: Array<{ used: number; other: number }>;
+  capped: Capped[];
+  countCost: number;
+  cutShort: boolean;
+}
 
 // Choosing among any number of materials (docs/adr/0012-choosing-materials.md):
 // offered a pool, propose the fewest that bring the glaze close, and say what
@@ -61,10 +98,10 @@ const PER_OXIDE = 3;
 // recipe's own, than its own amount if that is less: its 0.5 of lithium carbonate is not raised to 1).
 const MUST_SHARE = 0.01;
 
-const isFlux = (oxide) => oxides.OXIDE_GROUPS[oxide] === 'R2O' || oxides.OXIDE_GROUPS[oxide] === 'RO';
+const isFlux = (oxide: string) => oxides.OXIDE_GROUPS[oxide] === 'R2O' || oxides.OXIDE_GROUPS[oxide] === 'RO';
 
 /** The unity formula of oxide moles: per mole of the fluxes. */
-const unityOf = (moles) => {
+const unityOf = (moles: Oxides): Oxides => {
   const fluxes = Object.keys(moles).reduce((sum, oxide) => (isFlux(oxide) ? sum + moles[oxide] : sum), 0);
   const unity: Oxides = {};
   if (fluxes > 0) Object.keys(moles).forEach((oxide) => (unity[oxide] = moles[oxide] / fluxes));
@@ -77,13 +114,13 @@ const unityOf = (moles) => {
  * (each share banded on its own, not their difference), so every engine sorts
  * alike.
  */
-const largestShareFirst = (unity) => (p, q) =>
+const largestShareFirst = (unity: Oxides) => (p: Supply, q: Supply) =>
   Math.round(20 * q.share) - Math.round(20 * p.share) ||
   (unity[q.oxide] || 0) - (unity[p.oxide] || 0) ||
   (p.oxide < q.oxide ? -1 : p.oxide > q.oxide ? 1 : 0);
 
 /** How nearly two vectors point the same way: 1 for the same direction. */
-const cosine = (p, q) => {
+const cosine = (p: number[], q: number[]) => {
   let dot = 0;
   let pp = 0;
   let qq = 0;
@@ -132,15 +169,15 @@ const cosine = (p, q) => {
  *                              amounts changed than needed, and unused tried for the likeliest only
  * }
  */
-const selectMaterials = function (lines: SelectLine[], target: Oxides, options: FitOptions = {}) {
+const selectMaterials = function (lines: SelectLine[], target: Oxides, options: SelectOptions = {}): Selection {
   // One meter for the choosing and what it tries again for the report (or the caller's, to share it).
   options = { ...options, meter: options.meter ?? newMeter() };
-  const { meter } = options;
+  const { meter } = options as Metered;
   scaledWork(lines, target, meter);
   const { fit, within, everything, columns, best, chosen, mustLeast, result, amounts, countCost } = choose(
     lines,
     target,
-    options
+    options as Metered
   );
   const finalUse = new Set(chosen.filter((i) => amounts[i] > 0));
   const finalMiss = result.miss;
@@ -182,13 +219,13 @@ const selectMaterials = function (lines: SelectLine[], target: Oxides, options: 
   const gains = spent(meter)
     ? left.map((j) => ({ index: j, gain: 0 }))
     : left.map((j) => ({ index: j, gain: base - within(new Set([...finalUse, j])).miss }));
-  const helps = new Map();
+  const helps = new Map<number, number>();
   for (const { index: j } of gains.filter((g) => g.gain >= WORTH_OFFERING).sort((p, q) => q.gain - p.gain)) {
     if (spent(meter)) break;
     const added = choose(
       lines.map((line, i) => (i === j ? { ...line, must: true } : line)),
       target,
-      options
+      options as Metered
     );
     // A choosing cut short is no measure of what adding it gives.
     if (meter.cut) break;
@@ -199,7 +236,7 @@ const selectMaterials = function (lines: SelectLine[], target: Oxides, options: 
   // so silica, which every material has, does not make flint look like feldspar.
   const root = fit.problem.w.map(Math.sqrt);
   const direction = fit.problem.a.map((column) => column.map((value, r) => value * root[r]));
-  const alike = [];
+  const alike: Selection['alike'] = [];
   for (const i of finalUse) {
     for (const j of everything) {
       if (finalUse.has(j) || j === i) continue;
@@ -209,16 +246,16 @@ const selectMaterials = function (lines: SelectLine[], target: Oxides, options: 
   // Caps that cost match: what lifting each alone would give, every other bound
   // kept (each line's least, a must's share), against the best match within
   // the chosen lines as they are.
-  const leastKept = (j) => (amounts[j] > 0 ? Math.max(Number(lines[j].least) || 0, mustLeast(j)) : 0);
-  const withCaps = (change) =>
+  const leastKept = (j: number) => (amounts[j] > 0 ? Math.max(Number(lines[j].least) || 0, mustLeast(j)) : 0);
+  const withCaps = (change: (line: SelectLine, j: number) => SelectLine) =>
     prepare(
       chosen.map((j) => change({ ...lines[j], least: leastKept(j) }, j)),
       target,
       options
     ).solve(0);
-  let capBase;
+  let capBase: number | undefined;
   const asTheyAre = () => (capBase ??= withCaps((line) => line).miss);
-  const capped = [];
+  const capped: Capped[] = [];
   chosen.forEach((i, k) => {
     const most = Number(lines[i].most);
     if (!(most >= 0) || amounts[i] < most * (1 - 1e-6)) return;
@@ -301,7 +338,7 @@ const selectMaterials = function (lines: SelectLine[], target: Oxides, options: 
  * How much larger than the reference this problem is (materials offered, not avoided, times the
  * oxides aimed at), from 1 to WORK_CEILING; a meter that scales is raised to WORK times that.
  */
-const scaledWork = function (lines, target, meter) {
+const scaledWork = function (lines: SelectLine[], target: Oxides, meter: Meter): number {
   const offered = lines.filter((line) => !line.avoid).length;
   const unity = unityOf(target);
   const aimed = Object.keys(unity).filter((oxide) => unity[oxide] >= TRACE).length;
@@ -316,7 +353,7 @@ const scaledWork = function (lines, target, meter) {
  * stop once options.meter is spent; the potter's limit on new materials and
  * each line's least are kept all the same.
  */
-const choose = function (lines: SelectLine[], target: Oxides, options: FitOptions) {
+const choose = function (lines: SelectLine[], target: Oxides, options: Metered) {
   const { meter } = options;
   // Each line's least is applied only once it is chosen, since a candidate may be
   // left out; but a must is always in, so its least holds from the start (or the
@@ -326,20 +363,20 @@ const choose = function (lines: SelectLine[], target: Oxides, options: FitOption
   const n = lines.length;
   const avoided = new Set(lines.map((line, i) => (line.avoid ? i : -1)).filter((i) => i >= 0));
   const must = new Set(lines.map((line, i) => (line.must && !line.avoid ? i : -1)).filter((i) => i >= 0));
-  const own = (i) => (Number(lines[i].start) || 0) > 0;
+  const own = (i: number) => (Number(lines[i].start) || 0) > 0;
   // The best match with only the lines in `use` (the rest at nothing); with `stopAt`, as near as it
   // comes before the meter reaches that.
-  const within = (use, stopAt = Infinity) => {
-    const off = new Set();
+  const within = (use: Set<number>, stopAt = Infinity): Answer => {
+    const off = new Set<number>();
     for (let i = 0; i < n; i++) if (!use.has(i)) off.add(i);
     return fit.solve(TIE_BREAK, new Map(), off, stopAt);
   };
   // How many shared caps a match breaks. A choice that breaks more than another is the worse, however
   // near it comes: leaving out the only line that dilutes a share, say, is no better for the miss it saves.
-  const breaks = (match) => (match.broken ?? []).length;
+  const breaks = (match: Answer | FitResult) => (match.broken ?? []).length;
   // A match with the lines in `set`, scored for the choosing: its miss, and LAST_RESORT for each last resort.
-  const resorts = (set) => [...set].filter((i) => lines[i].lastResort && !must.has(i)).length;
-  const scored = (match, set) => match.miss + LAST_RESORT * resorts(set);
+  const resorts = (set: Set<number>) => [...set].filter((i) => lines[i].lastResort && !must.has(i)).length;
+  const scored = (match: Answer, set: Set<number>) => match.miss + LAST_RESORT * resorts(set);
 
   // The oxides aimed at, the most first.
   const targetUnity = unityOf(target);
@@ -350,16 +387,17 @@ const choose = function (lines: SelectLine[], target: Oxides, options: FitOption
   // A pool of more than SCREEN: the musts, the recipe's own, the richest few in each oxide aimed at, and
   // those nearest the target's way (in the fit's own terms, each oxide weighted by how near it should come),
   // KEPT in all, or more where the musts, the recipe's own and the richest come to more.
-  const screen = (offered) => {
+  const screen = (offered: Set<number>) => {
     const kept = new Set([...offered].filter((i) => must.has(i) || own(i)));
     const root = fit.problem.w.map(Math.sqrt);
     const direction = fit.problem.a.map((column) => column.map((value, r) => value * root[r]));
-    const rich = (i, oxide) => (columns[i][oxide] || 0) * (lines[i].lastResort && !must.has(i) ? 0.5 : 1);
+    const rich = (i: number, oxide: string) =>
+      (columns[i][oxide] || 0) * (lines[i].lastResort && !must.has(i) ? 0.5 : 1);
     for (const oxide of aimedAt) {
       const richest = [...offered]
         .filter((i) => rich(i, oxide) > 0)
         .sort((p, q) => rich(q, oxide) - rich(p, oxide) || p - q);
-      const taken = [];
+      const taken: number[] = [];
       for (const i of richest) {
         if (taken.length >= PER_OXIDE) break;
         if (taken.some((j) => cosine(direction[i], direction[j]) >= SAME_DIRECTION)) continue;
@@ -394,7 +432,7 @@ const choose = function (lines: SelectLine[], target: Oxides, options: FitOption
   let current = spent(meter) ? best : within(used);
   const drop = () => {
     // The removal that matters least, new materials before the recipe's own; none once the work is spent.
-    let choice = null;
+    let choice: { i: number; tried: Answer; score: number } | null = null;
     for (const pass of [false, true]) {
       for (const i of used) {
         if (must.has(i) || own(i) !== pass || (pass && options.keepOwn)) continue;
@@ -425,11 +463,11 @@ const choose = function (lines: SelectLine[], target: Oxides, options: FitOption
   if (meter.cut && used.size > Math.max(aimed, kept.length)) {
     const others = [...used].filter((i) => !kept.includes(i)).sort((p, q) => current.x[q] - current.x[p] || p - q);
     const room = Math.max(0, aimed - kept.length);
-    const keep = new Set();
-    const per = new Map();
-    const given = (i, oxide) => {
+    const keep = new Set<number>();
+    const per = new Map<number, Oxides>();
+    const given = (i: number, oxide: string) => {
       if (!per.has(i)) per.set(i, molesPerGram(lines[i].material));
-      return (per.get(i)[oxide] || 0) * current.x[i];
+      return (per.get(i)![oxide] || 0) * current.x[i];
     };
     for (const oxide of aimedAt) {
       if (keep.size >= room) break;
@@ -466,7 +504,7 @@ const choose = function (lines: SelectLine[], target: Oxides, options: FitOption
   // Closer: add back materials while each is worth it.
   if (options.closer) {
     for (;;) {
-      let choice = null;
+      let choice: { j: number; tried: Answer; score: number } | null = null;
       for (const j of everything) {
         if (used.has(j)) continue;
         if (spent(meter)) break;
@@ -484,10 +522,10 @@ const choose = function (lines: SelectLine[], target: Oxides, options: FitOption
   }
   // The limit on new materials: drop the least useful until it holds, noting the cost.
   let countCost = 0;
-  const extrasLimit = Number.isFinite(options.extras) ? options.extras : Infinity;
+  const extrasLimit = Number.isFinite(options.extras) ? (options.extras as number) : Infinity;
   const extrasUsed = () => [...used].filter((i) => !own(i) && !must.has(i));
   while (extrasUsed().length > extrasLimit) {
-    let choice = null;
+    let choice: { i: number; tried: Answer; score: number } | null = null;
     for (const i of extrasUsed()) {
       const without = new Set(used);
       without.delete(i);
@@ -495,9 +533,10 @@ const choose = function (lines: SelectLine[], target: Oxides, options: FitOption
       const score = scored(tried, without);
       if (!choice || (breaks(tried) - breaks(choice.tried) || score - choice.score) < 0) choice = { i, tried, score };
     }
-    countCost += choice.tried.miss - current.miss;
-    used.delete(choice.i);
-    current = choice.tried;
+    // extrasUsed() was not empty, so a choice was made.
+    countCost += choice!.tried.miss - current.miss;
+    used.delete(choice!.i);
+    current = choice!.tried;
   }
   // Cut short, stage A may have taken up only new materials, and the limit on them can leave none at all
   // ("no materials" thrown for a search with the recipe's own on hand): the recipe's own, which the limit
@@ -507,14 +546,14 @@ const choose = function (lines: SelectLine[], target: Oxides, options: FitOption
   // C: the chosen few, as few amounts changed as possible; each at least its
   // least, and a must at least a token amount, so it stays in.
   const chosen = [...used].sort((p, q) => p - q);
-  const mustLeast = (i) =>
+  const mustLeast = (i: number) =>
     must.has(i)
       ? Math.max(
           Number(lines[i].least) || 0,
           Math.min(MUST_SHARE * fit.size, own(i) ? Number(lines[i].start) : Infinity)
         )
       : 0;
-  const run = (indexes, leastOf) =>
+  const run = (indexes: number[], leastOf: (i: number) => number) =>
     fitAmounts(
       indexes.map((i) => ({ ...lines[i], least: Math.max(leastOf(i), mustLeast(i)) })),
       target,
@@ -527,8 +566,8 @@ const choose = function (lines: SelectLine[], target: Oxides, options: FitOption
   // nearer match. Those raised to their least stay at it or more in every run
   // after, and after any change the scan starts over, since a change can leave
   // a material already passed under its least.
-  const raised = new Set();
-  const leastOf = (i) => (raised.has(i) ? Number(lines[i].least) || 0 : 0);
+  const raised = new Set<number>();
+  const leastOf = (i: number) => (raised.has(i) ? Number(lines[i].least) || 0 : 0);
   for (let k = 0; k < chosen.length; k++) {
     const i = chosen[k];
     const least = Number(lines[i].least) || 0;
@@ -546,7 +585,7 @@ const choose = function (lines: SelectLine[], target: Oxides, options: FitOption
     }
     k = -1;
   }
-  const amounts = new Array(n).fill(0);
+  const amounts: number[] = new Array(n).fill(0);
   chosen.forEach((i, k) => (amounts[i] = result.amounts[k]));
   return { fit, within, everything, columns, best, chosen, mustLeast, result, amounts, countCost };
 };

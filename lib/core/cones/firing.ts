@@ -16,6 +16,10 @@ import { SK_CONES, ORTON_CHART_CONES, ORTON_PUBLISHED_CONES } from './charts.ts'
 export type ConeScale = 'orton' | 'sk' | 'temperature';
 export type Atmosphere = 'oxidation' | 'reduction' | 'neutral';
 export type FiringProcess = 'wood' | 'soda' | 'salt' | 'raku' | 'pit';
+/** The band a cone's glaze is checked in, coolest first. */
+export type Band = 'low' | 'mid' | 'high' | 'top';
+/** What an approximate temperature or cone rests on (approxCelsius). */
+export type ApproxBasis = 'orton-150' | 'orton-150-halfway' | 'orton-2016-150' | 'kyoto' | 'stated';
 
 /**
  * A recipe's firing as stated: the cone exactly as entered with its scale
@@ -67,10 +71,11 @@ const FIRING_LIMITS = Object.freeze({
 // half cones, and Orton's 2016 chart gives 05½ alone a figure for large cones at
 // 150 °C an hour (ORTON_HALF_150). Cones above 15 are offered, as Orton makes
 // them, but no chart gives them a figure.
-const ORTON_CELSIUS = new Map(ORTON_CHART_CONES.map((c) => [c.cone, c.celsius]));
+// Keyed by string | undefined: approxCelsius looks up a neighbour that may not be found, and gets undefined.
+const ORTON_CELSIUS = new Map<string | undefined, number>(ORTON_CHART_CONES.map((c) => [c.cone, c.celsius]));
 /** The half cones Orton's 2016 chart gives a figure for large cones at 150 °C an hour: 05½ (1023 °C). */
-const ORTON_HALF_150 = new Map(
-  ORTON_PUBLISHED_CONES.filter((c) => c.cone.endsWith('.5') && c.large?.[150]).map((c) => [c.cone, c.large[150]])
+const ORTON_HALF_150 = new Map<string, number>(
+  ORTON_PUBLISHED_CONES.filter((c) => c.cone.endsWith('.5') && c.large?.[150]).map((c) => [c.cone, c.large![150]])
 );
 /** Orton's cones above 15, rare in a pottery: offered at the end of the list, as Orton sells them. */
 const ORTON_ABOVE_15 = ['16', '17', '18', '19', '20', '21', '23', '26', '27', '28', '29', '30', '31', '31.5', '32', '32.5', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42']; // prettier-ignore
@@ -85,7 +90,7 @@ const ORTON_HALVES = ['05.5', ...Array.from({ length: 15 }, (_, i) => `${i + 1}.
  * An Orton cone's place in order: '022' is -22, '01' -1, '1' 1, '5.5' 5.5, and
  * '05.5' -5.5, between 06 and 05. NaN when it is not a cone.
  */
-function ortonOrdinal(cone) {
+function ortonOrdinal(cone: unknown): number {
   const text = String(cone);
   if (/^0\d{1,2}(?:\.5)?$/.test(text)) return -Number(text.slice(1));
   if (/^[1-9]\d?(?:\.5)?$/.test(text)) return Number(text);
@@ -115,7 +120,7 @@ const SK_ORDER = new Map(SK_CONES.map((c, i) => [c.cone, i]));
  * mixing them with the JIS figures of their neighbours (SK 7 1230 °C, SK 9
  * 1280 °C) would put the cones out of order.
  */
-const SK_MEASURED = Object.freeze({ 8: 1198, 10: 1232 });
+const SK_MEASURED: Readonly<Record<string, number>> = Object.freeze({ 8: 1198, 10: 1232 });
 /**
  * Kyoto's whole table, both columns bent in the same kiln at 100 °C an hour
  * (ADR 0021, amended 2026-10-19): its own cones SK 7 to 14, and Orton cones 4
@@ -125,8 +130,17 @@ const SK_MEASURED = Object.freeze({ 8: 1198, 10: 1232 });
  * only the match between the scales; the temperatures shown are SK_MEASURED
  * and ORTON_CELSIUS.
  */
-const KYOTO_SK = Object.freeze({ 7: 1183, 8: 1198, 9: 1211, 10: 1232, 11: 1253, 12: 1290, 13: 1311, 14: 1331 });
-const KYOTO_ORTON = Object.freeze({
+const KYOTO_SK: Readonly<Record<string, number>> = Object.freeze({
+  7: 1183,
+  8: 1198,
+  9: 1211,
+  10: 1232,
+  11: 1253,
+  12: 1290,
+  13: 1311,
+  14: 1331
+});
+const KYOTO_ORTON: Readonly<Record<string, number>> = Object.freeze({
   4: 1179,
   5: 1207,
   6: 1211,
@@ -138,7 +152,7 @@ const KYOTO_ORTON = Object.freeze({
   12: 1324
 });
 /** The institute's own replacement: SK 12 ≈ Orton 10. */
-const SK_ORTON_STATED = Object.freeze({ 12: '10' });
+const SK_ORTON_STATED: Readonly<Record<string, string>> = Object.freeze({ 12: '10' });
 
 /**
  * The band an SK cone's glaze is checked in, kept as a table rather than
@@ -159,7 +173,7 @@ const MID_BELOW = 1250;
 const HIGH_BELOW = 1320;
 
 /** Whether a cone is one of the scale's, as stored ('5.5', '6a', or °C as text for temperature). */
-function isCone(scale, cone) {
+function isCone(scale: ConeScale | string, cone: unknown): cone is string {
   if (typeof cone !== 'string' || !cone) return false;
   if (scale === 'orton') return ORTON_ALL.has(cone);
   if (scale === 'sk') return SK_ORDER.has(cone);
@@ -172,21 +186,21 @@ function isCone(scale, cone) {
 }
 
 /** A cone's place in its scale's order, for sorting and ranges; NaN when it is not one. */
-function ordinal(scale, cone) {
+function ordinal(scale: ConeScale, cone: string): number {
   if (!isCone(scale, cone)) return NaN;
   if (scale === 'orton') return ortonOrdinal(cone);
-  if (scale === 'sk') return SK_ORDER.get(cone);
+  if (scale === 'sk') return SK_ORDER.get(cone)!;
   return Number(cone);
 }
 
 /** Two cones of a scale in order: negative when a is lower. */
-const compareCones = (scale, a, b) => ordinal(scale, a) - ordinal(scale, b);
+const compareCones = (scale: ConeScale, a: string, b: string): number => ordinal(scale, a) - ordinal(scale, b);
 
 /**
  * The cones the picker offers for a scale, in groups: Orton's usual 022 … 13,
  * then its half cones, then 14 … 42; SK's chart. None for temperature.
  */
-function coneChoices(scale) {
+function coneChoices(scale: ConeScale): Array<{ group: 'usual' | 'half' | 'above'; cones: string[] }> {
   if (scale === 'orton') {
     return [
       { group: 'usual', cones: ORTON_MAIN },
@@ -203,7 +217,7 @@ function coneChoices(scale) {
  * to high and the two ends themselves (so 5.5–6.5 offers 5.5, 6 and 6.5);
  * for a temperature, the two ends. Just the low cone with no high one.
  */
-function conesBetween(scale, low, high) {
+function conesBetween(scale: ConeScale, low: string | undefined, high?: string): string[] {
   if (!isCone(scale, low)) return [];
   if (!high || high === low || !isCone(scale, high)) return [low];
   const [from, to] = [ordinal(scale, low), ordinal(scale, high)];
@@ -221,15 +235,15 @@ function conesBetween(scale, low, high) {
  * The cones a block counts as tested: only those ticked, within its range. A cone that is just
  * stated (a recipe from a book) is not tested; the potter ticks it after firing it.
  */
-function testedCones(block) {
+function testedCones(block: FiringBlock | null | undefined): string[] {
   if (!block || !block.low) return [];
   const range = conesBetween(block.scale, block.low, block.high);
   return (block.tested ?? []).filter((cone) => range.includes(cone));
 }
 
-const isWhole = (value, { min, max }) =>
+const isWhole = (value: unknown, { min, max }: { min: number; max: number }): boolean =>
   typeof value === 'number' && Number.isFinite(value) && value >= min && value <= max;
-const uniqueIn = (list, allowed) =>
+const uniqueIn = (list: unknown, allowed: readonly string[]): boolean =>
   Array.isArray(list) && list.every((item) => allowed.includes(item)) && new Set(list).size === list.length;
 
 /**
@@ -238,18 +252,20 @@ const uniqueIn = (list, allowed) =>
  * 'processes', 'rate', 'hold', 'schedule', 'witness'. Absent fields are
  * fine; a high cone needs a low one.
  */
-function firingProblem(block: any): string | null {
+function firingProblem(block: unknown): string | null {
   if (!block || typeof block !== 'object' || Array.isArray(block)) return 'block';
-  const { scale, low, high, tested, atmospheres, processes, rate, hold, schedule, witness } = block;
-  if (!SCALES.includes(scale)) return 'scale';
+  const fields = block as Record<string, unknown>;
+  const { low, high, tested, atmospheres, processes, rate, hold, schedule, witness } = fields;
+  if (!(SCALES as readonly unknown[]).includes(fields.scale)) return 'scale';
+  const scale = fields.scale as ConeScale;
   if (low !== undefined && low !== null && low !== '' && !isCone(scale, low)) return 'low';
   if (high !== undefined && high !== null && high !== '') {
     if (!isCone(scale, high)) return 'high';
     if (!low) return 'low';
-    if (compareCones(scale, low, high) > 0) return 'order';
+    if (compareCones(scale, low as string, high) > 0) return 'order';
   }
   if (tested !== undefined && tested !== null) {
-    const range = conesBetween(scale, low, high);
+    const range = conesBetween(scale, low as string | undefined, high as string | undefined);
     if (!Array.isArray(tested) || !tested.every((cone) => range.includes(cone))) return 'tested';
     if (new Set(tested).size !== tested.length) return 'tested';
   }
@@ -276,8 +292,8 @@ function cleanFiring(block: FiringBlock | null | undefined): FiringBlock | null 
   if (block.high && block.high !== block.low) out.high = block.high;
   const tested = (block.tested ?? []).filter((cone) => conesBetween(block.scale, block.low, block.high).includes(cone));
   if (tested.length) out.tested = tested.sort((a, b) => compareCones(block.scale, a, b));
-  if (block.atmospheres?.length) out.atmospheres = ATMOSPHERES.filter((a) => block.atmospheres.includes(a));
-  if (block.processes?.length) out.processes = PROCESSES.filter((p) => block.processes.includes(p));
+  if (block.atmospheres?.length) out.atmospheres = ATMOSPHERES.filter((a) => block.atmospheres!.includes(a));
+  if (block.processes?.length) out.processes = PROCESSES.filter((p) => block.processes!.includes(p));
   if (typeof block.rate === 'number') out.rate = block.rate;
   if (typeof block.hold === 'number') out.hold = block.hold;
   if (block.schedule?.trim()) out.schedule = block.schedule.trim();
@@ -286,10 +302,10 @@ function cleanFiring(block: FiringBlock | null | undefined): FiringBlock | null 
 }
 
 /** Whether a block states anything: a cone, an atmosphere, a process, a schedule. */
-const isStated = (block) => cleanFiring(block) !== null;
+const isStated = (block: FiringBlock | null | undefined): boolean => cleanFiring(block) !== null;
 
-const nearest = (map, celsius) => {
-  let best = null;
+const nearest = <K>(map: Map<K, number>, celsius: number): [K, number] | null => {
+  let best: [K, number] | null = null;
   for (const [cone, at] of map) if (!best || Math.abs(at - celsius) < Math.abs(best[1] - celsius)) best = [cone, at];
   return best;
 };
@@ -307,14 +323,14 @@ const nearest = (map, celsius) => {
  * Null for a cone with no figure: Orton above 15 (and 15½), and every SK cone
  * but 8 and 10 (the JIS nominal figures are never shown as a conversion).
  */
-function approxCelsius(scale, cone) {
+function approxCelsius(scale: ConeScale, cone: string): { celsius: number; basis: ApproxBasis } | null {
   if (!isCone(scale, cone)) return null;
   if (scale === 'temperature') return { celsius: Number(cone), basis: 'stated' };
   if (scale === 'sk') {
     const measured = SK_MEASURED[cone];
     return measured ? { celsius: measured, basis: 'kyoto' } : null;
   }
-  if (ORTON_HALF_150.has(cone)) return { celsius: ORTON_HALF_150.get(cone), basis: 'orton-2016-150' };
+  if (ORTON_HALF_150.has(cone)) return { celsius: ORTON_HALF_150.get(cone)!, basis: 'orton-2016-150' };
   if (cone.endsWith('.5')) {
     // The whole cones either side, in order: 5 and 6 for 5½.
     const at = ortonOrdinal(cone);
@@ -336,7 +352,6 @@ const SK_NEAR = 15;
  * is SK 8, as SK 8 is Orton 5. Orton 9 (1271) is 18 °C from SK 11 and 19 from SK 12: none.
  */
 const KYOTO_MATCH = (() => {
-  /** @type {Map<string, string>} */
   const toOrton = new Map<string, string>(Object.entries(SK_ORTON_STATED));
   const toSk = new Map<string, string>([...toOrton].map(([sk, orton]) => [orton, sk]));
   const pairs = Object.entries(KYOTO_SK)
@@ -361,7 +376,7 @@ const KYOTO_MATCH = (() => {
  * near a measured SK bend; Orton from a temperature by the nearest in its chart
  * (ORTON_CELSIUS, 022 to 15). Never stored.
  */
-function approxCone(scale, cone, toScale) {
+function approxCone(scale: ConeScale, cone: string, toScale: ConeScale): { cone: string; basis: ApproxBasis } | null {
   if (!isCone(scale, cone) || toScale === scale || toScale === 'temperature') return null;
   if (scale === 'sk' || (scale === 'orton' && toScale === 'sk')) {
     const match = scale === 'sk' ? toScale === 'orton' && KYOTO_MATCH.toOrton.get(cone) : KYOTO_MATCH.toSk.get(cone);
@@ -370,25 +385,25 @@ function approxCone(scale, cone, toScale) {
   const from = approxCelsius(scale, cone);
   if (!from) return null;
   if (toScale === 'sk') {
-    const [sk, at] = nearest(new Map(Object.entries(SK_MEASURED)), from.celsius);
+    const [sk, at] = nearest(new Map(Object.entries(SK_MEASURED)), from.celsius)!;
     return Math.abs(at - from.celsius) <= SK_NEAR ? { cone: sk, basis: 'kyoto' } : null;
   }
   // Orton from a temperature: only within the chart's span.
   const figures = [...ORTON_CELSIUS.values()];
-  if (from.celsius < figures[0] - 20 || from.celsius > figures[figures.length - 1] + 20) return null;
-  return { cone: nearest(ORTON_CELSIUS, from.celsius)[0], basis: 'orton-150' };
+  if (from.celsius < figures[0]! - 20 || from.celsius > figures[figures.length - 1]! + 20) return null;
+  return { cone: nearest(ORTON_CELSIUS, from.celsius)![0]!, basis: 'orton-150' };
 }
 
 /**
  * The band a cone's glaze is checked in: 'low' (to about cone 02), 'mid' (cone
  * 1–7), 'high' (cone 8–11), 'top' (cone 12 up, past every limit set's figures).
  */
-function coneBand(scale, cone) {
+function coneBand(scale: ConeScale, cone: string): Band | undefined {
   if (!isCone(scale, cone)) return undefined;
   if (scale === 'sk') {
-    const at = SK_ORDER.get(cone);
-    if (at >= SK_ORDER.get(SK_TOP_FROM)) return 'top';
-    return at >= SK_ORDER.get(SK_HIGH_FROM) ? 'high' : at >= SK_ORDER.get(SK_MID_FROM) ? 'mid' : 'low';
+    const at = SK_ORDER.get(cone)!;
+    if (at >= SK_ORDER.get(SK_TOP_FROM)!) return 'top';
+    return at >= SK_ORDER.get(SK_HIGH_FROM)! ? 'high' : at >= SK_ORDER.get(SK_MID_FROM)! ? 'mid' : 'low';
   }
   const celsius = approxCelsius(scale, cone)?.celsius;
   // Orton above 15 has no figure here, and is far past any limits' figures.
@@ -397,16 +412,16 @@ function coneBand(scale, cone) {
 }
 
 /** The bands a block's range touches, coolest first: one for a single cone, more for a range across them. */
-function firingBands(block) {
+function firingBands(block: FiringBlock | null | undefined): Band[] {
   if (!block || !isCone(block.scale, block.low)) return [];
-  const order = ['low', 'mid', 'high', 'top'];
+  const order: Band[] = ['low', 'mid', 'high', 'top'];
   const from = coneBand(block.scale, block.low);
   const to = block.high && isCone(block.scale, block.high) ? coneBand(block.scale, block.high) : from;
-  return order.slice(order.indexOf(from), order.indexOf(to) + 1);
+  return order.slice(order.indexOf(from!), order.indexOf(to!) + 1);
 }
 
 /** Whether a cone of the same scale is within a block's range (both ends counted). */
-function inRange(block, scale, cone) {
+function inRange(block: FiringBlock | null | undefined, scale: ConeScale, cone: string): boolean {
   if (!block || block.scale !== scale || !isCone(scale, cone) || !isCone(scale, block.low)) return false;
   const at = ordinal(scale, cone);
   const high = block.high && isCone(scale, block.high) ? block.high : block.low;
@@ -427,7 +442,7 @@ const MATCH_NEAR = 15;
  * SK bends) within MATCH_NEAR °C of the stated range. Display aside, nothing is
  * converted for storing.
  */
-function matchesCone(block, scale, cone) {
+function matchesCone(block: FiringBlock | null | undefined, scale: ConeScale, cone: string): boolean {
   if (!block || !isCone(scale, cone) || !isCone(block.scale, block.low)) return false;
   if (block.scale === scale) return inRange(block, scale, cone);
   const ends = [block.low, block.high && isCone(block.scale, block.high) ? block.high : block.low];
@@ -436,13 +451,13 @@ function matchesCone(block, scale, cone) {
       block.scale === 'temperature' ? ends.map(Number) : ends.map((c) => approxCelsius(block.scale, c)?.celsius);
     const at = scale === 'temperature' ? Number(cone) : approxCelsius(scale, cone)?.celsius;
     if (at === undefined || span.some((c) => c === undefined)) return false;
-    return at >= span[0] - MATCH_NEAR && at <= span[1] + MATCH_NEAR;
+    return at >= span[0]! - MATCH_NEAR && at <= span[1]! + MATCH_NEAR;
   }
   const mapped = ends.map((c) => approxCone(block.scale, c, scale)?.cone);
   if (mapped.some((c) => c === undefined)) return false;
-  const [from, to] = mapped.map((c) => ordinal(scale, c)).sort((a, b) => a - b);
+  const [from, to] = mapped.map((c) => ordinal(scale, c!)).sort((a, b) => a - b);
   const at = ordinal(scale, cone);
-  return at >= from && at <= to;
+  return at >= from! && at <= to!;
 }
 
 export {

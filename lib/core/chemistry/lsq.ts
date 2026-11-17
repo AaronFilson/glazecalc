@@ -11,10 +11,32 @@
 // any free variable would leave its range. For the sizes a glaze has (tens of
 // materials, a dozen or two oxides) a solve takes well under a millisecond.
 
+import type { Meter } from '../types.ts';
+
 const TOLERANCE = 1e-12;
 
+/** A^T A and A^T b for one problem (normalEquations). */
+export interface Normal {
+  gram: number[][];
+  atb: number[];
+}
+
+/** boundedLeastSquares' problem. */
+export interface BoundedProblem {
+  columns: number[][];
+  b: number[];
+  lo: number[];
+  hi: number[];
+  lambda?: number;
+  pullTo?: number[];
+  cost?: number[];
+  normal?: Normal;
+  meter?: Meter;
+  stopAt?: number;
+}
+
 /** Solves the symmetric positive definite system M z = v in place of a copy; null if it is not. */
-function cholesky(M, v) {
+function cholesky(M: number[][], v: number[]): number[] | null {
   const n = v.length;
   const L = M.map((row) => row.slice());
   for (let j = 0; j < n; j++) {
@@ -44,7 +66,7 @@ function cholesky(M, v) {
  * (fit.js prepare) works them out once. Their multiply-adds are counted on
  * the meter, when given.
  */
-function normalEquations(columns, b, meter) {
+function normalEquations(columns: number[][], b: number[], meter?: Meter): Normal {
   const gram = columns.map((cj) => columns.map((ck) => cj.reduce((sum, value, r) => sum + value * ck[r], 0)));
   const atb = columns.map((cj) => cj.reduce((sum, value, r) => sum + value * b[r], 0));
   if (meter) meter.used += columns.length * (columns.length + 1) * b.length;
@@ -69,10 +91,21 @@ function normalEquations(columns, b, meter) {
  *
  * Returns x.
  */
-function boundedLeastSquares({ columns, b, lo, hi, lambda = 0, pullTo, cost, normal, meter, stopAt = Infinity }) {
+function boundedLeastSquares({
+  columns,
+  b,
+  lo,
+  hi,
+  lambda = 0,
+  pullTo,
+  cost,
+  normal,
+  meter,
+  stopAt = Infinity
+}: BoundedProblem): number[] {
   const n = columns.length;
   const m = b.length;
-  const tally = (work) => {
+  const tally = (work: number) => {
     if (meter) meter.used += work;
   };
   const toward = pullTo || new Array(n).fill(0);
@@ -103,16 +136,16 @@ function boundedLeastSquares({ columns, b, lo, hi, lambda = 0, pullTo, cost, nor
     else if (cost && cost[j] < 0 && Number.isFinite(hi[j])) x[j] = hi[j];
   });
   // The gradient's negative half: A^T (b - A x) + lambda (pullTo - x).
-  const slope = (j) => {
+  const slope = (j: number) => {
     tally(n);
     let value = atb[j] + lambda * (toward[j] - x[j]);
     for (let k = 0; k < n; k++) value -= gram[j][k] * x[k];
     return value;
   };
   // Tolerances on the finite bounds only: an absent upper bound is Infinity.
-  const sizeOf = (j) => Math.max(1, Math.abs(lo[j]), Number.isFinite(hi[j]) ? Math.abs(hi[j]) : 0);
-  const fixed = (j) => Number.isFinite(hi[j]) && hi[j] - lo[j] <= TOLERANCE * sizeOf(j);
-  const refused = new Set();
+  const sizeOf = (j: number) => Math.max(1, Math.abs(lo[j]), Number.isFinite(hi[j]) ? Math.abs(hi[j]) : 0);
+  const fixed = (j: number) => Number.isFinite(hi[j]) && hi[j] - lo[j] <= TOLERANCE * sizeOf(j);
+  const refused = new Set<number>();
   const spent = () => meter !== undefined && meter.used >= stopAt;
   let stopped = false;
 
@@ -139,7 +172,7 @@ function boundedLeastSquares({ columns, b, lo, hi, lambda = 0, pullTo, cost, nor
         stopped = true;
         break;
       }
-      const F = [];
+      const F: number[] = [];
       for (let j = 0; j < n; j++) if (free[j]) F.push(j);
       // The free variables' exact solution with the others where they are.
       const M = F.map((j) => F.map((k) => gram[j][k] + (j === k ? lambda + ridge[j] : 0)));

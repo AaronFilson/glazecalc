@@ -21,10 +21,11 @@ const SG_TARGET_RANGE = Object.freeze({ min: 1, max: 2.5 });
 /** Litres in a US gallon, an imperial gallon and an imperial pint. */
 const LITRES = Object.freeze({ usGallon: 3.785411784, imperialGallon: 4.54609, imperialPint: 0.56826125 });
 
-const valid = (sg, dry) => Number.isFinite(sg) && Number.isFinite(dry) && dry > 1 && sg > 1 && sg < dry;
+const valid = (sg: number, dry: number): boolean =>
+  Number.isFinite(sg) && Number.isFinite(dry) && dry > 1 && sg > 1 && sg < dry;
 
 /** Kilograms of dry glaze in a litre of slurry of this SG (Brongniart). */
-function dryPerLitre(sg, dry) {
+function dryPerLitre(sg: number, dry: number): number | null {
   return valid(sg, dry) ? ((sg - 1) * dry) / (dry - 1) : null;
 }
 
@@ -32,7 +33,7 @@ function dryPerLitre(sg, dry) {
  * What a volume of slurry holds: its dry glaze and its water, in kilograms.
  * Null for a volume that is not positive or an SG the formula cannot take.
  */
-function slurryContents(litres, sg, dry) {
+function slurryContents(litres: number, sg: number, dry: number): { glaze: number; water: number } | null {
   const perLitre = dryPerLitre(sg, dry);
   if (perLitre === null || !(litres > 0)) return null;
   const glaze = litres * perLitre;
@@ -47,8 +48,9 @@ function slurryContents(litres, sg, dry) {
  * water. Null for values the formula cannot take. With `dry` null, the SGs
  * need only be over water's.
  */
-function waterToReach(litres, sg, target, dry) {
-  const fine = (value) => (dry === null || dry === undefined ? Number.isFinite(value) && value > 1 : valid(value, dry));
+function waterToReach(litres: number, sg: number, target: number, dry?: number | null): number | null {
+  const fine = (value: number) =>
+    dry === null || dry === undefined ? Number.isFinite(value) && value > 1 : valid(value, dry);
   if (!(litres > 0) || !fine(sg) || !fine(target)) return null;
   return (litres * (sg - target)) / (target - 1);
 }
@@ -61,7 +63,7 @@ function waterToReach(litres, sg, target, dry) {
  * it would write as 0 is never water to add or pour off. The recipe page and
  * the MCP tool both decide so by it.
  */
-function reachedAlready(water, litres) {
+function reachedAlready(water: number, litres: number): boolean {
   return Math.abs(water) < 0.0005 * Math.max(litres, 1);
 }
 
@@ -69,7 +71,7 @@ function reachedAlready(water, litres) {
  * Mixing a batch: for a weight of dry glaze (kg) at a target SG, the water to
  * add (kg) and the slurry it makes (litres). Null for values it cannot take.
  */
-function waterForBatch(glaze, target, dry) {
+function waterForBatch(glaze: number, target: number, dry: number): { water: number; litres: number } | null {
   const perLitre = dryPerLitre(target, dry);
   if (perLitre === null || !(glaze > 0)) return null;
   const litres = glaze / perLitre;
@@ -77,18 +79,18 @@ function waterForBatch(glaze, target, dry) {
 }
 
 /** Mixing for a bucket: the dry glaze and the water (kg) for a volume (litres) at a target SG. */
-function batchForVolume(litres, target, dry) {
+function batchForVolume(litres: number, target: number, dry: number): { glaze: number; water: number } | null {
   return slurryContents(litres, target, dry);
 }
 
 /** SG from degrees Baumé (heavier than water): SG = 145 ÷ (145 − °Bé). */
-const sgFromBaume = (baume) => 145 / (145 - baume);
+const sgFromBaume = (baume: number): number => 145 / (145 - baume);
 /** Degrees Baumé from SG. */
-const baumeFromSg = (sg) => 145 - 145 / sg;
+const baumeFromSg = (sg: number): number => 145 - 145 / sg;
 /** SG from the weight of an imperial pint in ounces: its water weighs 20 oz. */
-const sgFromPint = (ounces) => ounces / 20;
+const sgFromPint = (ounces: number): number => ounces / 20;
 /** The ounces an imperial pint weighs at an SG. */
-const pintFromSg = (sg) => sg * 20;
+const pintFromSg = (sg: number): number => sg * 20;
 
 export {
   SG_TARGET_RANGE,

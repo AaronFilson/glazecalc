@@ -10,6 +10,49 @@
 // app's own set; the recipe page shows the set the potter chooses, Hesselberth
 // & Roy's by default (docs/adr/0019-shared-recipe-tools.md).
 
+/** A firing band: cone 06-02, cone 4-6, cone 9-11, or cone 12 up ('top', where no limit set has figures). */
+export type FiringBand = 'low' | 'mid' | 'high' | 'top';
+
+/**
+ * A range for an oxide or sum in the unity formula, in moles. Under `min` or over `max` a caution
+ * starts; at or past `minLikely` or `maxLikely` the fault is likely, and `maxLikelyThin` is boron's
+ * when alumina or silica is thin.
+ */
+export interface UnityRange {
+  readonly min?: number;
+  readonly max?: number;
+  readonly minLikely?: number;
+  readonly maxLikely?: number;
+  readonly maxLikelyThin?: number;
+}
+
+/** Which side of a range a value is past, or null within it. */
+export type Past = 'below' | 'above' | null;
+
+/**
+ * A set of limits on the unity formula: its firing bands (coolest first, the last with no `belowC`),
+ * the band whose figures apply when the firing is not known, and per band a range per oxide or sum.
+ */
+export interface LimitSet {
+  readonly id: string;
+  readonly bands: ReadonlyArray<{ readonly band: FiringBand; readonly belowC?: number }>;
+  readonly whenUnknown: FiringBand;
+  /** The cone each band's figures are for, as the source names it ('6', '10'), where it names one. */
+  readonly cones?: Readonly<Partial<Record<FiringBand, string>>>;
+  /** A band the set names but has no figures for is one it does not apply to. */
+  readonly unity: Readonly<Partial<Record<FiringBand, Readonly<Record<string, UnityRange>>>>>;
+}
+
+/** A recipe's value against one of a set's ranges. */
+export interface LimitRow {
+  oxide: string;
+  value: number;
+  min?: number;
+  max?: number;
+  past: Past;
+  likely: boolean;
+}
+
 /** Firing bands, in °C. */
 const FIRING = Object.freeze({
   /** Below this the firing is low fire (cone 06-02); above it, mid fire (cone 4-6). */
@@ -80,7 +123,7 @@ const CHECK_LIMITS = Object.freeze({
  * we found published, Hesselberth & Roy's, the UK traditional set and Green &
  * Cooper's, stop at cone 10; docs/adr/0021-recipe-firing.md, amended 2026-10-20).
  */
-const FIRING_BANDS = Object.freeze(['low', 'mid', 'high', 'top']);
+const FIRING_BANDS: ReadonlyArray<FiringBand> = Object.freeze(['low', 'mid', 'high', 'top'] as const);
 
 const L = CHECK_LIMITS;
 
@@ -92,14 +135,14 @@ const L = CHECK_LIMITS;
  * itself is within: see `pastSide`); at or past `minLikely` or `maxLikely`
  * the fault is likely.
  */
-const GLAZECALC_LIMITS = Object.freeze({
+const GLAZECALC_LIMITS: LimitSet = Object.freeze({
   id: 'glazecalc',
   bands: Object.freeze([
     Object.freeze({ band: 'low', belowC: FIRING.lowFireBelow }),
     Object.freeze({ band: 'mid', belowC: FIRING.topFrom }),
     Object.freeze({ band: 'top' })
   ]),
-  whenUnknown: 'low',
+  whenUnknown: 'low' as const,
   unity: Object.freeze({
     low: Object.freeze({
       B2O3: Object.freeze({
@@ -119,7 +162,7 @@ const GLAZECALC_LIMITS = Object.freeze({
   })
 });
 
-const range = (min, max) => Object.freeze({ min, max });
+const range = (min: number, max: number): UnityRange => Object.freeze({ min, max });
 
 /**
  * John Hesselberth and Ron Roy's "Recommended Stable Glaze 'Limits'", for
@@ -143,7 +186,7 @@ const range = (min, max) => Object.freeze({ min, max });
  * (FIRING.topFrom) it does not apply either: we found no published limits
  * that reach that far, and figures for another firing would mislead.
  */
-const HESSELBERTH_ROY_LIMITS = Object.freeze({
+const HESSELBERTH_ROY_LIMITS: LimitSet = Object.freeze({
   id: 'hesselberth-roy',
   bands: Object.freeze([
     Object.freeze({ band: 'low', belowC: FIRING.lowFireBelow }),
@@ -151,7 +194,7 @@ const HESSELBERTH_ROY_LIMITS = Object.freeze({
     Object.freeze({ band: 'high', belowC: FIRING.topFrom }),
     Object.freeze({ band: 'top' })
   ]),
-  whenUnknown: 'mid',
+  whenUnknown: 'mid' as const,
   /** The cone each band's figures are for, as the source names it. */
   cones: Object.freeze({ mid: '6', high: '10' }),
   unity: Object.freeze({
@@ -178,20 +221,24 @@ const HESSELBERTH_ROY_LIMITS = Object.freeze({
 });
 
 /** The limit sets to choose from, by id. */
-const LIMIT_SETS = Object.freeze({ 'hesselberth-roy': HESSELBERTH_ROY_LIMITS, glazecalc: GLAZECALC_LIMITS });
+const LIMIT_SETS: Readonly<Record<string, LimitSet>> = Object.freeze({
+  'hesselberth-roy': HESSELBERTH_ROY_LIMITS,
+  glazecalc: GLAZECALC_LIMITS
+});
 
 /** The set the recipe page shows until the potter chooses another (the owner's choice, 2026-10). */
-const DEFAULT_LIMIT_SET = 'hesselberth-roy';
+const DEFAULT_LIMIT_SET: string = 'hesselberth-roy';
 
 /**
  * The band of a set a firing falls in: the first whose `belowC` it is under,
  * or the last band. Undefined when the firing is not known (anything but a
  * finite number: null is not 0 °C).
  */
-function bandOf(set, celsius) {
+function bandOf(set: LimitSet, celsius: number | null | undefined): FiringBand | undefined {
   if (!Number.isFinite(celsius)) return undefined;
+  const c = celsius as number;
   const bands = set.bands;
-  return (bands.find((band) => band.belowC !== undefined && celsius < band.belowC) ?? bands[bands.length - 1]).band;
+  return (bands.find((band) => band.belowC !== undefined && c < band.belowC) ?? bands[bands.length - 1]).band;
 }
 
 /**
@@ -199,7 +246,7 @@ function bandOf(set, celsius) {
  * names it, else the nearest it names, the cooler of two as near (the app's
  * own set, with no high band, reads cone 10 as its mid fire).
  */
-function bandIn(set, band) {
+function bandIn(set: LimitSet, band: FiringBand): FiringBand {
   const named = set.bands.map((b) => b.band);
   if (named.includes(band)) return band;
   const order = FIRING_BANDS.indexOf(band);
@@ -213,12 +260,13 @@ function bandIn(set, band) {
  * names but gives no figures for (Hesselberth & Roy's at low fire, and every
  * set's 'top'). A band it does not name is read as its nearest (bandIn).
  */
-function unityFor(set, band) {
+function unityFor(set: LimitSet, band: FiringBand): Readonly<Record<string, UnityRange>> | null {
   return set.unity[bandIn(set, band)] ?? null;
 }
 
 /** A unity formula's value for an oxide or a sum of them ('K2O+Na2O'). */
-const unityValue = (unity, key) => key.split('+').reduce((sum, oxide) => sum + (unity[oxide] ?? 0), 0);
+const unityValue = (unity: Record<string, number>, key: string): number =>
+  key.split('+').reduce((sum, oxide) => sum + (unity[oxide] ?? 0), 0);
 
 /**
  * A value as the limits compare it: at the two decimals it is shown with
@@ -227,7 +275,7 @@ const unityValue = (unity, key) => key.split('+').reduce((sum, oxide) => sum + (
  * (0.2 + 0.1 = 0.30000000000000004) is not past it. toFixed rounds the
  * double's exact value, as the page's number format does.
  */
-const asShown = (value) => (Number.isFinite(value) ? Number(value.toFixed(2)) : value);
+const asShown = (value: number): number => (Number.isFinite(value) ? Number(value.toFixed(2)) : value);
 
 /**
  * Which side of a range a value is past, or null within it. A range is closed:
@@ -235,7 +283,7 @@ const asShown = (value) => (Number.isFinite(value) ? Number(value.toFixed(2)) : 
  * reads. The checks (checks.js pastLimits) and the table (limitRows) both use
  * this, so they agree.
  */
-function pastSide(value, r) {
+function pastSide(value: number, r: UnityRange): Past {
   const v = asShown(value);
   if (r.min !== undefined && v < r.min) return 'below';
   if (r.max !== undefined && v > r.max) return 'above';
@@ -248,7 +296,7 @@ function pastSide(value, r) {
  * range with no such figure (Hesselberth & Roy give one figure per edge) has
  * no likely fault, only a caution.
  */
-function isLikely(value, r, past, thin?) {
+function isLikely(value: number, r: UnityRange, past: Past, thin?: boolean): boolean {
   const v = asShown(value);
   if (past === 'below') return r.minLikely !== undefined && v <= r.minLikely;
   if (past === 'above') {
@@ -262,7 +310,8 @@ function isLikely(value, r, past, thin?) {
  * A thin glaze, for boron's likely figure: alumina or silica under CHECK_LIMITS.thin, at the two decimals shown
  * (asShown), so alumina shown as 0.15 is not thin.
  */
-const isThin = (unity) => asShown(unity.Al2O3 ?? 0) < L.thin.alumina || asShown(unity.SiO2 ?? 0) < L.thin.silica;
+const isThin = (unity: Record<string, number>): boolean =>
+  asShown(unity.Al2O3 ?? 0) < L.thin.alumina || asShown(unity.SiO2 ?? 0) < L.thin.silica;
 
 /**
  * A row per limit a set has for a band: the oxide or sum, the recipe's value,
@@ -270,12 +319,12 @@ const isThin = (unity) => asShown(unity.Al2O3 ?? 0) < L.thin.alumina || asShown(
  * whether it is past the set's figure for a likely fault too, where it has one. Null where
  * the set does not apply to the band.
  */
-function limitRows(unity, set, band): Array<{ oxide: string; value: number; min?: number; max?: number; past: any; likely: boolean }> | null {
+function limitRows(unity: Record<string, number>, set: LimitSet, band: FiringBand): LimitRow[] | null {
   const ranges = unityFor(set, band);
   if (!ranges) return null;
   // The same comparisons as the checks (checks.js pastLimits): pastSide and isLikely.
   const thin = isThin(unity);
-  return Object.entries(ranges).map(([oxide, r]: [string, any]) => {
+  return Object.entries(ranges).map(([oxide, r]) => {
     const value = unityValue(unity, oxide);
     const past = pastSide(value, r);
     return { oxide, value, min: r.min, max: r.max, past, likely: isLikely(value, r, past, thin) };

@@ -1,11 +1,33 @@
 import type { Oxides } from '../types.ts';
 
+/** A point on Stull's chart: [SiO2, Al2O3] in moles. */
+export type StullXY = readonly [number, number];
+export type StullRegion = 'unfused' | 'matte' | 'semi-matte' | 'bright' | 'underfired' | 'unclassified';
+
+export interface StullPoint {
+  silica: number;
+  alumina: number;
+  ratio: number;
+  /** Null off the chart. */
+  region: StullRegion | null;
+  crazed: boolean;
+}
+
+/** Stull's chart: its extent, regions, crazed area and line of brightest glazes. */
+export interface StullChart {
+  readonly silica: Readonly<{ min: number; max: number }>;
+  readonly alumina: Readonly<{ min: number; max: number }>;
+  readonly regions: Readonly<Record<Exclude<StullRegion, 'bright' | 'unclassified'>, ReadonlyArray<StullXY>>>;
+  readonly crazed: ReadonlyArray<StullXY>;
+  readonly bright: ReadonlyArray<StullXY>;
+}
+
 // What a unity formula says beyond its oxides (docs/adr/0019-shared-recipe-tools.md):
 // each oxide's share of the moles, and where the glaze sits on a Stull chart.
 // Pure functions of the unity formula, with no words; the regions are codes.
 
 /** Each oxide's percent of all the moles in a unity formula; empty when it has none. */
-function molePercent(unity: Oxides | null | undefined) {
+function molePercent(unity: Oxides | null | undefined): Oxides {
   const entries = Object.entries(unity ?? {}).filter(([, moles]) => moles > 0);
   const total = entries.reduce((sum, [, moles]) => sum + moles, 0);
   return total > 0 ? Object.fromEntries(entries.map(([oxide, moles]) => [oxide, (100 * moles) / total])) : {};
@@ -30,7 +52,7 @@ function molePercent(unity: Oxides | null | undefined) {
  * Glazy's 0.242 is 0.00035 under it, which left a sliver of bright between
  * the two.
  */
-const STULL = Object.freeze({
+const STULL: StullChart = Object.freeze<StullChart>({
   /** The chart's extent, in moles. */
   silica: Object.freeze({ min: 0.6, max: 7.2 }),
   alumina: Object.freeze({ min: 0, max: 1 }),
@@ -90,7 +112,7 @@ const ON_EDGE = 1e-12;
  * Whether a point is inside a polygon (even-odd rule) or on its outline. A point on an edge is in it: the chart's
  * own edges (alumina 1.0, silica 0.6 and 7.2) bound regions too, and an edge two regions share goes to the first.
  */
-function inside([x, y]: number[], polygon) {
+function inside([x, y]: StullXY, polygon: ReadonlyArray<StullXY>): boolean {
   let within = false;
   for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i++) {
     const [xi, yi] = polygon[i];
@@ -113,23 +135,24 @@ function inside([x, y]: number[], polygon) {
  * 'underfired', or 'unclassified' under the alumina of the lowest region; null off the chart) and whether it is in the crazed area.
  * Null without silica or alumina.
  */
-function stullPoint(unity) {
+function stullPoint(unity: Oxides | null | undefined): StullPoint | null {
   const silica = unity?.SiO2 ?? 0;
   const alumina = unity?.Al2O3 ?? 0;
   if (!(silica > 0) || !(alumina > 0)) return null;
-  /** @type {[number, number]} */
-  const point = [silica, alumina];
+  const point: StullXY = [silica, alumina];
   const onChart =
     silica >= STULL.silica.min &&
     silica <= STULL.silica.max &&
     alumina >= STULL.alumina.min &&
     alumina <= STULL.alumina.max;
   // Stull's lowest region starts at 0.08 alumina; under it his chart says nothing.
-  const region = !onChart
+  const region: StullRegion | null = !onChart
     ? null
     : alumina < LOWEST_ALUMINA
       ? 'unclassified'
-      : (Object.keys(STULL.regions).find((name) => inside(point, STULL.regions[name])) ?? 'bright');
+      : ((Object.keys(STULL.regions) as Array<keyof StullChart['regions']>).find((name) =>
+          inside(point, STULL.regions[name])
+        ) ?? 'bright');
   return { silica, alumina, ratio: silica / alumina, region, crazed: onChart && inside(point, STULL.crazed) };
 }
 

@@ -99,14 +99,4 @@ const isOxide = (formula: string): boolean => Object.hasOwn(OXIDE_GROUPS, formul
 const isVolatile = (formula: string): boolean => VOLATILES.indexOf(formula) !== -1;
 const isFlux = (formula: string): boolean => FLUX_GROUPS.indexOf(OXIDE_GROUPS[formula] as OxideGroup) !== -1;
 
-export {
-  ATOMIC_WEIGHTS,
-  FLUX_GROUPS,
-  MOLAR_MASS,
-  OXIDE_GROUPS,
-  VOLATILES,
-  isFlux,
-  isOxide,
-  isVolatile,
-  molarMass
-};
+export { ATOMIC_WEIGHTS, FLUX_GROUPS, MOLAR_MASS, OXIDE_GROUPS, VOLATILES, isFlux, isOxide, isVolatile, molarMass };

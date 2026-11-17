@@ -4,31 +4,64 @@
 
 import { OXIDE_GROUPS, expansion } from '../chemistry/index.ts';
 
+/** The part of an analysis the comparison reads (a unity formula result, or a host's saved analysis). */
+export interface ComparableAnalysis {
+  uList: Record<string, number>;
+  groups?: Record<string, number>;
+  loi?: number;
+  siAlRatio?: number | null;
+  expansion?: number | null;
+  /** The fired analysis, in weight percent, for an expansion worked out when there is no figure. */
+  analysis?: Record<string, number> | null;
+}
+
+export interface CompareRow {
+  /** An oxide's formula (with `formula`), or the row's key for a balance row. */
+  label: string;
+  formula?: true;
+  /** An oxide's row: the oxide as the unity formula's keys write it. */
+  oxide?: string;
+  /** A balance row's key: silicaToAlumina, r2oFluxes, roFluxes, loi or expansion. */
+  key?: string;
+  left: number | null;
+  right: number | null;
+  /** Right minus left, counting a recipe without it as 0; null when neither can say. */
+  change: number | null;
+  /** Decimal places to show. */
+  places: number;
+}
+
+export interface CompareGroup {
+  /** One of the UNITY_COLUMNS, or 'balance'. */
+  key: string;
+  rows: CompareRow[];
+}
+
 const STABILIZERS = ['Al2O3', 'B2O3'];
 const GLASS_FORMERS = ['SiO2'];
 
 /** The columns potters read a unity formula in, in order; an oxide goes under one of the first four. */
-const UNITY_COLUMNS = ['fluxes', 'stabilizers', 'glassFormers', 'wildcards'];
+const UNITY_COLUMNS = ['fluxes', 'stabilizers', 'glassFormers', 'wildcards'] as const;
 
 /** Which of the UNITY_COLUMNS an oxide goes under, as an index. */
-function unityColumnOf(oxide) {
+function unityColumnOf(oxide: string): number {
   const group = OXIDE_GROUPS[oxide];
   if (group === 'R2O' || group === 'RO') return 0;
   return STABILIZERS.includes(oxide) ? 1 : GLASS_FORMERS.includes(oxide) ? 2 : 3;
 }
 
 /** The silica to alumina ratio, from the saved value or from the unity formula. */
-function silicaAluminaRatio(analysis) {
+function silicaAluminaRatio(analysis: ComparableAnalysis): number | null {
   if (typeof analysis.siAlRatio === 'number') return analysis.siAlRatio;
   const { SiO2, Al2O3 } = analysis.uList;
-  return Al2O3 > 0 ? (SiO2 ?? 0) / Al2O3 : null;
+  return Al2O3! > 0 ? (SiO2 ?? 0) / Al2O3! : null;
 }
 
-const value = (n) => (typeof n === 'number' && n > 0 ? n : null);
+const value = (n: unknown): number | null => (typeof n === 'number' && n > 0 ? n : null);
 
 // A row. Its change counts an oxide one recipe lacks as 0, but only when both
 // recipes have a unity formula: against a recipe that is not there, there is no change.
-const row = (label, left, right, both, places = 3) => ({
+const row = (label: string, left: number | null, right: number | null, both: boolean, places = 3): CompareRow => ({
   label,
   left,
   right,
@@ -37,7 +70,7 @@ const row = (label, left, right, both, places = 3) => ({
 });
 
 // A ratio or total: a change only when both recipes have one.
-const fact = (key, left, right, places) => ({
+const fact = (key: string, left: number | null, right: number | null, places: number): CompareRow => ({
   key,
   ...row(key, left, right, left !== null && right !== null, places)
 });
@@ -53,8 +86,8 @@ const fact = (key, left, right, places) => ({
  * r2oFluxes, roFluxes, loi, expansion) and its label is that key. The first
  * three columns are always there; the wildcards only with a row.
  */
-function compareUnity(left, right) {
-  const groups = UNITY_COLUMNS.map((key) => ({ key, rows: [] }));
+function compareUnity(left: ComparableAnalysis | null, right: ComparableAnalysis | null): CompareGroup[] {
+  const groups: CompareGroup[] = UNITY_COLUMNS.map((key) => ({ key, rows: [] }));
   const both = !!left && !!right;
   const oxides = [...new Set([...Object.keys(left?.uList ?? {}), ...Object.keys(right?.uList ?? {})])];
   for (const oxide of oxides) {
@@ -63,10 +96,11 @@ function compareUnity(left, right) {
     if (a === null && b === null) continue;
     groups[unityColumnOf(oxide)].rows.push({ ...row(oxide, a, b, both), formula: true, oxide });
   }
-  const ratio = (analysis) => (analysis ? silicaAluminaRatio(analysis) : null);
+  const ratio = (analysis: ComparableAnalysis | null) => (analysis ? silicaAluminaRatio(analysis) : null);
   // Worked out from the fired analysis when a saved one has no figure of its own.
-  const expands = (analysis) => (analysis ? (analysis.expansion ?? expansion(analysis.analysis)) : null);
-  const facts = {
+  const expands = (analysis: ComparableAnalysis | null): number | null =>
+    analysis ? (analysis.expansion ?? expansion(analysis.analysis)) : null;
+  const facts: CompareGroup = {
     key: 'balance',
     rows: [
       fact('silicaToAlumina', ratio(left), ratio(right), 2),

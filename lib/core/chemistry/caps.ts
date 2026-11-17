@@ -18,6 +18,37 @@
 // to more) are broken as little as the bounds allow. Started from where the
 // prices left the amounts, it takes a few steps.
 
+import type { Meter } from '../types.ts';
+import type { Normal } from './lsq.ts';
+
+/** A shared cap: weights . x at most `most`, kept to within `tolerance`; price, a first guess at its worth. */
+export interface Cap {
+  weights: number[];
+  most: number;
+  tolerance: number;
+  price?: number;
+}
+
+/** cappedLeastSquares' problem. */
+export interface CappedProblem {
+  normal: Normal;
+  lambda?: number;
+  pullTo?: number[];
+  lo: number[];
+  hi: number[];
+  caps: Cap[];
+  start: number[];
+  size?: number;
+  meter?: Meter;
+  stopAt?: number;
+}
+
+type CapState = 'under' | 'at' | 'over';
+/** A variable let go from a bound (j, from) or a cap let go from its most (g, to). */
+type Release =
+  | { j: number; from: number; g?: undefined; to?: undefined }
+  | { j?: undefined; from?: undefined; g: number; to: CapState };
+
 /** Steps at most, beyond ten for each variable and cap: a guard against cycling, not reached in the tests. */
 const STEPS = 50;
 /** How far the price on a cap over its most is raised at a time, and how far past the gradients' scale it may go. */
@@ -32,7 +63,7 @@ const DEAREST = 1e12;
  * if A is singular, or so near it that a pivot is under 1e-14 of A's largest
  * entry.
  */
-const solveSquare = (A, v) => {
+const solveSquare = (A: number[][], v: number[]): number[] | null => {
   const n = v.length;
   const M = A.map((row, i) => [...row, v[i]]);
   const column = [...Array(n).keys()];
@@ -66,7 +97,7 @@ const solveSquare = (A, v) => {
     for (let c = r + 1; c < n; c++) value -= M[r][c] * z[c];
     z[r] = value / M[r][r];
   }
-  const solution = new Array(n);
+  const solution: number[] = new Array(n);
   column.forEach((c, i) => (solution[c] = z[i]));
   return solution.every(Number.isFinite) ? solution : null;
 };
@@ -91,11 +122,22 @@ const solveSquare = (A, v) => {
  * Returns x: stopped by the meter, within its bounds and as near the answer
  * as the steps so far have brought it.
  */
-function cappedLeastSquares({ normal, lambda = 0, pullTo, lo, hi, caps, start, size = 1, meter, stopAt }) {
+function cappedLeastSquares({
+  normal,
+  lambda = 0,
+  pullTo,
+  lo,
+  hi,
+  caps,
+  start,
+  size = 1,
+  meter,
+  stopAt
+}: CappedProblem): number[] {
   const { gram, atb } = normal;
   const n = atb.length;
   const k = caps.length;
-  const tally = (work) => {
+  const tally = (work: number) => {
     if (meter) meter.used += work;
   };
   const spent = () => meter !== undefined && meter.used >= (stopAt ?? meter.most);
@@ -105,24 +147,24 @@ function cappedLeastSquares({ normal, lambda = 0, pullTo, lo, hi, caps, start, s
   const diagonal = gram.map((row, j) => row[j] + lambda + ridge[j]);
   const toward = pullTo || new Array(n).fill(0);
   const v = atb.map((value, j) => value + lambda * toward[j]);
-  const sizeOf = (j) => Math.max(1, Math.abs(lo[j]), Number.isFinite(hi[j]) ? Math.abs(hi[j]) : 0);
+  const sizeOf = (j: number) => Math.max(1, Math.abs(lo[j]), Number.isFinite(hi[j]) ? Math.abs(hi[j]) : 0);
   // Held where lo = hi; and a variable in no row and with no pull, which only a cap would move, stays where it starts.
   const fixed = lo.map((low, j) => (Number.isFinite(hi[j]) && hi[j] - low <= 1e-12 * sizeOf(j)) || !(diagonal[j] > 0));
-  const within = (j, value) => Math.min(hi[j], Math.max(lo[j], value));
+  const within = (j: number, value: number) => Math.min(hi[j], Math.max(lo[j], value));
   const x = start.map((value, j) => within(j, value));
   // Each variable: 0 free, -1 at its lower bound, 1 at its upper.
-  const side = x.map((value, j) => (fixed[j] ? 0 : value <= lo[j] ? -1 : value >= hi[j] ? 1 : 0));
-  const isFree = (j) => !fixed[j] && side[j] === 0;
+  const side: number[] = x.map((value, j) => (fixed[j] ? 0 : value <= lo[j] ? -1 : value >= hi[j] ? 1 : 0));
+  const isFree = (j: number) => !fixed[j] && side[j] === 0;
   // Each cap: 'under' its most, 'at' it (held there exactly), or 'over' it at a price for each unit over.
-  const over = (g) => caps[g].weights.reduce((sum, weight, j) => sum + weight * x[j], 0) - caps[g].most;
-  const state = caps.map((cap, g) => (over(g) > 0 ? 'over' : 'under'));
+  const over = (g: number) => caps[g].weights.reduce((sum, weight, j) => sum + weight * x[j], 0) - caps[g].most;
+  const state: CapState[] = caps.map((cap, g) => (over(g) > 0 ? 'over' : 'under'));
   const gradientScale = Math.max(1e-300, ...v.map(Math.abs), ...x.map((value, j) => diagonal[j] * Math.abs(value)));
   const price = caps.map((cap) => RAISE * Math.max(cap.price || 0, gradientScale));
   const dearest = DEAREST * gradientScale;
   // The least gradient or multiplier worth letting a variable or cap go for.
   const least = 1e-11 * gradientScale;
   // The least squares' gradient for x_j, with the prices on caps over their most and the multipliers mu on those at it.
-  const gradient = (j, held, mu) => {
+  const gradient = (j: number, held: number[], mu: number[]) => {
     let value = -v[j] + (lambda + ridge[j]) * x[j];
     for (let c = 0; c < n; c++) value += gram[j][c] * x[c];
     caps.forEach((cap, g) => {
@@ -133,12 +175,11 @@ function cappedLeastSquares({ normal, lambda = 0, pullTo, lo, hi, caps, start, s
   };
   // What was let go last, to undo if the step it gives turns straight back (numerical noise, not a better
   // answer); and what was let go and undone since the amounts last moved, not let go again until they do.
-  /** @type {{ j?: number, from?: number, g?: number, to?: string } | null} */
-  let released = null;
-  const refused = new Set();
+  let released: Release | null = null;
+  const refused = new Set<number>();
   const limit = STEPS + 10 * (n + k);
   for (let step = 0; step < limit && !spent(); step++) {
-    const free = [];
+    const free: number[] = [];
     for (let j = 0; j < n; j++) if (isFree(j)) free.push(j);
     const held = caps.map((cap, g) => g).filter((g) => state[g] === 'at');
     // The free variables' right-hand side: A^T b and the pull, less the others where they are and the prices.
@@ -183,7 +224,7 @@ function cappedLeastSquares({ normal, lambda = 0, pullTo, lo, hi, caps, start, s
       const move = value - x[free[i]];
       return Math.abs(move) > 1e-10 * size ? move : 0;
     });
-    const rate = (g) => free.reduce((sum, j, i) => sum + caps[g].weights[j] * p[i], 0);
+    const rate = (g: number) => free.reduce((sum, j, i) => sum + caps[g].weights[j] * p[i], 0);
     // What was just let go, turning straight back: put back, and not let go again until the amounts move.
     if (released) {
       const { j, g, from } = released;
@@ -206,8 +247,8 @@ function cappedLeastSquares({ normal, lambda = 0, pullTo, lo, hi, caps, start, s
     }
     // How far toward it before a variable reaches a bound or a cap its most.
     let alpha = 1;
-    /** @type {{ j?: number, side?: number, g?: number } | null} */
-    let blocking = null;
+    let blocking = null as
+      { j: number; side: number; g?: undefined } | { j?: undefined; side?: undefined; g: number } | null;
     p.forEach((move, i) => {
       const j = free[i];
       const ratio =
@@ -244,8 +285,7 @@ function cappedLeastSquares({ normal, lambda = 0, pullTo, lo, hi, caps, start, s
     // multiplier says it would rather be under (below 0) or over (above its price), is let go, the most wrong.
     tally(n * n + n * k);
     let worst = least;
-    /** @type {{ j?: number, from?: number, g?: number, to?: string } | null} */
-    let release = null;
+    let release = null as Release | null;
     for (let j = 0; j < n; j++) {
       if (fixed[j] || side[j] === 0 || refused.has(j)) continue;
       const wrong = side[j] * gradient(j, held, mu);

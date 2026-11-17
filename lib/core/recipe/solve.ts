@@ -5,16 +5,35 @@ import { expansionOf, fluxesOf, unityOf } from './materials.ts';
 import { RecipeError } from './messages.ts';
 import { addingUp, explain, lastResort, recipeFrom, scaled, selectHoldingClay } from './pool.ts';
 import type { Meter, Oxides } from '../types.ts';
+import type { MaterialRecord, TryMaterial } from './library.ts';
+import type { FiringBand, LimitSet } from './limits.ts';
+import type { Caution } from './messages.ts';
+import type { Report } from './pool.ts';
 
-/** The firing the cautions are for. */
-type SolveFiringOptions = { celsius?: number; band?: string; limitSet?: string };
+/** A target as typed: a unity formula (moles, per mole of fluxes) or an oxide analysis (weight percent). */
+export interface SolveTarget {
+  kind: 'unity' | 'analysis';
+  oxides: Record<string, number | string | null>;
+}
 
-/**
- * @typedef {import('../../recipe/library.js').MaterialRecord} MaterialRecord
- * @typedef {import('../../recipe/library.js').TryMaterial} TryMaterial
- * @typedef {import('../../recipe/solve.js').SolveFiring} SolveFiring
- * @typedef {import('../../recipe/solve.js').SolveTarget} SolveTarget
- */
+/** The firing and limit set the cautions are for. */
+export interface SolveFiring {
+  celsius?: number;
+  band?: FiringBand;
+  limitSet?: LimitSet;
+}
+
+export interface Solved<M extends MaterialRecord = MaterialRecord> {
+  /** The recipe, its amounts in percent as text. */
+  materials: M[];
+  /** The target's unity formula, and the recipe's. */
+  target: Oxides;
+  unity: Oxides;
+  /** What a unity formula's fluxes added up to as given (1 for an analysis). */
+  fluxes: number;
+  report: Report;
+  cautions: Caution[];
+}
 
 // Target & Solve (docs/adr/0026-target-and-solve.md): a recipe made from the
 // materials given (those on hand, or any chosen) whose unity formula comes as
@@ -32,7 +51,7 @@ const TOGETHER = ['KNaO', 'R2O', 'NaKO'];
 /** Loss on ignition, which an analysis may give and the target leaves out. */
 const LOI = 'LOI';
 
-const isFlux = (oxide) => OXIDE_GROUPS[oxide] === 'R2O' || OXIDE_GROUPS[oxide] === 'RO';
+const isFlux = (oxide: string): boolean => OXIDE_GROUPS[oxide] === 'R2O' || OXIDE_GROUPS[oxide] === 'RO';
 
 /**
  * The target as oxide moles for the solver: the unity formula (per mole of its
@@ -47,8 +66,7 @@ const isFlux = (oxide) => OXIDE_GROUPS[oxide] === 'R2O' || OXIDE_GROUPS[oxide] =
  * Returns { moles, unity, fluxes }: fluxes is what a unity formula's fluxes
  * added up to as given (1 for an analysis).
  */
-function targetOf({ kind, oxides }) {
-  /** @type {Record<string, number>} */
+function targetOf({ kind, oxides }: SolveTarget): { moles: Oxides; unity: Oxides; fluxes: number } {
   const given: Oxides = {};
   for (const [name, value] of Object.entries(oxides ?? {})) {
     const oxide = String(name).trim();
@@ -79,12 +97,12 @@ function targetOf({ kind, oxides }) {
  * The cautions for a solved recipe, as the recipe page's checks give them: past
  * a limit for the firing (the app's own limits unless another set is given),
  * and amounts too small or materials too many for a test batch.
- *
- * @param {MaterialRecord[]} materials
- * @param {Record<string, number>} unity
- * @param {SolveFiring} [firing]
  */
-function solveCautions(materials, unity, { celsius, band, limitSet }: SolveFiringOptions = {}) {
+function solveCautions(
+  materials: MaterialRecord[],
+  unity: Oxides,
+  { celsius, band, limitSet }: SolveFiring = {}
+): Caution[] {
   const lines = materials.map((material) => ({ material, amount: material.amount }));
   return [
     ...pastLimits({ lines, unity, celsius, band, limitSet, expansion: { was: null, now: expansionOf(materials) } }),
@@ -109,21 +127,24 @@ function solveCautions(materials, unity, { celsius, band, limitSet }: SolveFirin
  * target's unity formula and unity the recipe's; report (lib/recipe/pool.js
  * explain) says what each material does and, in closeness, how near each
  * oxide comes; unreachable names the oxides nothing offered supplies.
- *
- * @param {SolveTarget} target
- * @param {TryMaterial[]} offered
- * @param {SolveFiring & { avoid?: string[], uncapped?: string[], meter?: import('../../chemistry/index.js').Meter }} [options]
  */
-function solveTarget(
-  target,
-  offered,
-  { avoid = [], uncapped = [], celsius, band, limitSet, meter }: SolveFiringOptions & { avoid?: unknown[]; uncapped?: unknown[]; meter?: Meter } = {}
-) {
+function solveTarget<M extends MaterialRecord>(
+  target: SolveTarget,
+  offered: TryMaterial<M>[],
+  {
+    avoid = [],
+    uncapped = [],
+    celsius,
+    band,
+    limitSet,
+    meter
+  }: SolveFiring & { avoid?: unknown[]; uncapped?: unknown[]; meter?: Meter } = {}
+): Solved<M> {
   const { moles, unity: aim, fluxes } = targetOf(target);
   if (!offered.length) throw new RecipeError('solve.noMaterials');
   // One meter for the choosing, and for choosing again below.
   const work = meter ?? newMeter();
-  const choose = (least) => {
+  const choose = (least: number) => {
     const lines = offered.map((tried) => ({
       material: { ...structuredClone(tried.material), amount: '' },
       start: 0,
@@ -136,11 +157,12 @@ function solveTarget(
       return selectHoldingClay(lines, moles, { batch: BATCH, uncapped, meter: work });
     } catch (error) {
       // Every material dropped as no help at all: none has any of the target's oxides.
-      if (error?.code === 'no-materials') throw new RecipeError('solve.noMatch');
+      if ((error as { code?: unknown } | null)?.code === 'no-materials') throw new RecipeError('solve.noMatch');
       throw error;
     }
   };
-  const rawTotal = (chosen) => chosen.selection.amounts.reduce((sum, amount) => sum + amount, 0);
+  const rawTotal = (chosen: { selection: { amounts: number[] } }) =>
+    chosen.selection.amounts.reduce((sum, amount) => sum + amount, 0);
   let chosen = choose(LEAST_SHARE * BATCH);
   let total = rawTotal(chosen);
   if (!(total > 0)) throw new RecipeError('solve.noMatch');
@@ -174,7 +196,7 @@ function solveTarget(
 // line or several on one, or a row of oxides over a row of numbers.
 
 /** Subscript digits as plain ones: SiO₂ is SiO2. */
-const SUBSCRIPTS = {
+const SUBSCRIPTS: Readonly<Record<string, string>> = {
   '₀': '0',
   '₁': '1',
   '₂': '2',
@@ -195,7 +217,7 @@ const FORMULA = /^[A-Z][A-Za-z0-9]*$/;
 const NUMBER = /^(\d+(?:[.,]\d+)?|[.,]\d+)$/;
 
 /** The oxide a pasted name stands for, as the app writes it, ignoring case: "sio2" is SiO2. */
-const knownName = (name) => {
+const knownName = (name: string): string | undefined => {
   const wanted = name.toLowerCase();
   if (wanted === LOI.toLowerCase()) return LOI;
   return (
@@ -203,9 +225,9 @@ const knownName = (name) => {
     TOGETHER.find((together) => together.toLowerCase() === wanted)
   );
 };
-const numberOf = (text) => Number(text.replace(',', '.'));
+const numberOf = (text: string): number => Number(text.replace(',', '.'));
 /** Whether a word reads as an oxide's formula: a capital first and oxygen last (Xx2O3, CO2), not "Total" or "UMF". */
-const formulaLike = (word) => FORMULA.test(word) && /O\d*$/.test(word) && word.length <= 8;
+const formulaLike = (word: string): boolean => FORMULA.test(word) && /O\d*$/.test(word) && word.length <= 8;
 
 /**
  * The oxides in pasted text: { oxides: { oxide: amount }, unknown: [names that
@@ -213,12 +235,12 @@ const formulaLike = (word) => FORMULA.test(word) && /O\d*$/.test(word) && word.l
  * soda came together (KNaO) }. LOI is read and left out. An oxide given twice
  * keeps the first.
  */
-function parseTarget(text) {
+function parseTarget(text: unknown): { oxides: Oxides; unknown: string[]; together: boolean } {
   const plain = String(text ?? '').replace(/[₀-₉]/g, (digit) => SUBSCRIPTS[digit]);
   const oxides: Oxides = {};
-  const unknown = [];
+  const unknown: string[] = [];
   let together = false;
-  const take = (name, value) => {
+  const take = (name: string, value: string) => {
     const oxide = knownName(name);
     if (!oxide) {
       if (formulaLike(name) && !unknown.includes(name)) unknown.push(name);

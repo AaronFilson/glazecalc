@@ -8,7 +8,59 @@ import { expansionOf, fluxesOf, molesOf, oxidePercent, unityOf } from './materia
 import { RecipeError } from './messages.ts';
 import { addingUp, explain, placesFor, recipeFrom, selectHoldingClay } from './pool.ts';
 import { modernMaterials } from './swaps.ts';
-import type { Oxides } from '../types.ts';
+import type { Meter, Oxides } from '../types.ts';
+import type { AdditiveRecord, MaterialRecord, TryMaterial } from './library.ts';
+import type { Caution, RecipeMessage } from './messages.ts';
+import type { Report } from './pool.ts';
+import type { Swap } from './swaps.ts';
+
+/** A material that could bring a short oxide back (labelOf), with its weight percent of the oxide. */
+export interface Choice {
+  name: unknown;
+  percent: number;
+}
+
+/** An oxide the old materials gave that the swap leaves well short. */
+export interface Shortfall {
+  oxide: string;
+  /** The old materials that gave it (labelOf), and what replaces them. */
+  from: unknown[];
+  instead: unknown[];
+  /** In the unity formula: in the old recipe, and with the swap. */
+  was: number;
+  now: number;
+  choices: Choice[];
+}
+
+export interface Plan {
+  swaps: Swap[];
+  shortfalls: Shortfall[];
+}
+
+export interface Suggestion<M extends MaterialRecord = MaterialRecord> {
+  materials: M[];
+  /** What changed, for the new recipe's notes. */
+  changes: RecipeMessage[];
+  /** Replacements the fit had no use for (labelOf). */
+  unused: unknown[];
+  /** Oxides (formulas) still well short after all. */
+  stillShort: string[];
+  report: Report;
+  /** What to watch for: limits newly crossed, many materials, small amounts. */
+  cautions: Caution[];
+}
+
+/** An oxide come out short, with the old materials that gave it: labels, and their ids (idOf) not enumerable. */
+interface Short {
+  oxide: string;
+  was: number;
+  now: number;
+  from: unknown[];
+  readonly [IDS]: { from: unknown[] };
+}
+
+/** How swaps are found: a record's library record, or a substitute's by its reference (modernMaterials). */
+type Find<M> = (wanted: M | string) => M | undefined;
 
 // Suggested amounts for swaps that are not like for like (docs/adr/0010 and
 // 0012): the modern materials, the rest of the recipe and any materials the
@@ -29,18 +81,21 @@ const CHOICES = 3;
 const LEAST_SHARE = 0.01;
 
 /** The old recipe's oxides, the modern materials one for one, and the swaps. */
-function setUp(lines, find, region, options) {
+function setUp<M extends MaterialRecord>(lines: M[], find: Find<M>, region: string, options: { allowLead?: boolean }) {
   const { materials, swaps } = modernMaterials(lines, find, region, options);
   const target = molesOf(lines);
-  const modern = materials.map((material) => ({ material, start: amountOf(material.amount) }));
+  const modern = materials.map((material): { material: M; start: number; least?: number } => ({
+    material,
+    start: amountOf(material.amount)
+  }));
   return { target, modern, swaps };
 }
 
 /** Oxides the old materials gave that come out well short, with what came out. */
-function shortOf(target: Oxides, moles: Oxides, old) {
+function shortOf(target: Oxides, moles: Oxides, old: MaterialRecord[]): Short[] {
   const fluxes = fluxesOf(target);
   if (!(fluxes > 0)) return [];
-  const result = [];
+  const result: Short[] = [];
   for (const [oxide, amount] of Object.entries(target)) {
     const was = amount / fluxes;
     const now = (moles[oxide] ?? 0) / fluxes;
@@ -53,7 +108,7 @@ function shortOf(target: Oxides, moles: Oxides, old) {
     if (from.length) {
       const short = { oxide, was, now, from: from.map(labelOf) };
       Object.defineProperty(short, IDS, { value: { from: from.map(idOf) } });
-      result.push(short);
+      result.push(short as Short);
     }
   }
   return result;
@@ -70,7 +125,13 @@ function shortOf(target: Oxides, moles: Oxides, old) {
  * worked out on a meter of their own (suggestAmounts), on the page and in the
  * MCP tools alike, so both give the same answer.
  */
-function planSuggestion(lines, find, standard, region, { allowLead = false, meter = newMeter() } = {}) {
+function planSuggestion<M extends MaterialRecord>(
+  lines: M[],
+  find: Find<M>,
+  standard: M[],
+  region: string,
+  { allowLead = false, meter = newMeter() }: { allowLead?: boolean; meter?: Meter } = {}
+): Plan {
   const { target, modern, swaps } = setUp(lines, find, region, { allowLead });
   const replaced = new Set(swaps.map((swap) => swap[IDS].from));
   const old = lines.filter((line) => replaced.has(idOf(line)));
@@ -111,19 +172,33 @@ function planSuggestion(lines, find, standard, region, { allowLead = false, mete
  * RecipeError, 'solve.noFlux', when the recipe has no flux (of: 'recipe') or
  * none of the materials it may use has one (of: 'offered').
  */
-function suggestAmounts(
-  lines,
-  find,
-  bringIn,
-  region,
-  { allowLead = false, tries = [], avoid = [], additives = [], uncapped = [], meter = newMeter() } = {}
-) {
+function suggestAmounts<M extends MaterialRecord>(
+  lines: M[],
+  find: Find<M>,
+  bringIn: M[],
+  region: string,
+  {
+    allowLead = false,
+    tries = [],
+    avoid = [],
+    additives = [],
+    uncapped = [],
+    meter = newMeter()
+  }: {
+    allowLead?: boolean;
+    tries?: TryMaterial<M>[];
+    avoid?: unknown[];
+    additives?: AdditiveRecord[];
+    uncapped?: unknown[];
+    meter?: Meter;
+  } = {}
+): Suggestion<M> {
   const { target, modern, swaps } = setUp(lines, find, region, { allowLead });
   if (!(fluxesOf(target) > 0)) throw new RecipeError('solve.noFlux', { of: 'recipe' });
   const total = modern.reduce((sum, line) => sum + line.start, 0);
   const places = placesFor(total);
   const inRecipe = new Set(modern.map((line) => idOf(line.material)));
-  const added = (material, must) => ({
+  const added = (material: M, must: boolean) => ({
     material: { ...structuredClone(material), amount: '' },
     start: 0,
     must,
@@ -143,7 +218,7 @@ function suggestAmounts(
   );
   if (!(fluxesOf(chosen.moles) > 0)) throw new RecipeError('solve.noFlux', { of: 'offered' });
   // The amounts as shown add up to the new batch's total, as they come to (one that did not change shown as it was).
-  const unchanged = (i) => chosen.amounts[i] === all[i].start && all[i].start > 0;
+  const unchanged = (i: number) => chosen.amounts[i] === all[i].start && all[i].start > 0;
   const newTotal = chosen.amounts.reduce((sum, amount) => sum + amount, 0);
   const selection = addingUp(chosen, places, newTotal, unchanged, (i) => Number(all[i].least) || 0);
   const replacements = new Set(swaps.map((swap) => swap[IDS].to));

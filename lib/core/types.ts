@@ -64,6 +64,14 @@ export interface FitOptions {
   [more: string]: unknown;
 }
 
+/** selectMaterials' options: fitAmounts' and how the choosing goes (chemistry/select.ts). */
+export interface SelectOptions extends FitOptions {
+  /** Add back materials worth WORTH_ADDING each. */
+  closer?: boolean;
+  /** Never drop the recipe's own lines. */
+  keepOwn?: boolean;
+}
+
 /** A material as the chemistry reads it once checked (chemistry/materials.ts prepareMaterial). */
 export interface PreparedMaterial {
   id: unknown;

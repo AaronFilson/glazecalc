@@ -3,17 +3,48 @@
 // like. The core asks traitsOf, never a name. By default a record carries its own (`record.traits`); a host
 // whose records do not yet sets its own (Glazecalc's reads them from its standard names, lib/recipe/traits.js).
 
-/** What the core needs to know about a record beyond its chemistry. */
-export type Traits = Readonly<Record<string, any>>;
+import type { Reader } from './identity.ts';
 
-let current: (record: any) => Traits | null | undefined = (record) => (record && record.traits) || {};
+/** A material's mineral for its dry specific gravity (recipe/density.ts), or null with why there is none. */
+export interface DensityTrait {
+  mineral: string | null;
+  reason?: string;
+}
+
+/** What the core needs to know about a record beyond its chemistry; a flag left out is false. */
+export interface Traits {
+  /** A theoretical (stoichiometric) mineral. */
+  readonly theoretical?: boolean;
+  /** A calcined clay: it does not shrink as a raw one does. */
+  readonly calcined?: boolean;
+  /** Raw whiting or dolomite. */
+  readonly rawCalcium?: boolean;
+  /** A calcium source that brings its own silica. */
+  readonly wollastonite?: boolean;
+  /** The zinc oxide the lead-free rebuild may bring in. */
+  readonly zincOxide?: boolean;
+  /** A kaolin (or china clay), the clay a lead-free rebuild prefers. */
+  readonly kaolin?: boolean;
+  /** A kaolin or a ball clay, the clays that keep a colour's base. */
+  readonly kaolinOrBallClay?: boolean;
+  /** The standard clay and silica the lead-free rebuild falls back on. */
+  readonly defaultClay?: boolean;
+  readonly defaultSilica?: boolean;
+  /** The mineral for its dry SG. */
+  readonly density?: DensityTrait | null;
+  /** Which colorant an additive is (chrome, pink, iron, copper, antimony, ...): true for each it is. */
+  readonly [colorant: string]: boolean | DensityTrait | null | undefined;
+}
+
+let current: (record: never) => Traits | null | undefined = (record: { traits?: Traits }) =>
+  (record && record.traits) || {};
 
 /** The traits of a record (by default `record.traits`); empty for none. */
 export const traitsOf = (record: unknown): Traits =>
-  record === null || record === undefined ? {} : current(record) || {};
+  record === null || record === undefined ? {} : current(record as never) || {};
 
 /** Sets how the core reads a record's traits. */
-export const setTraitsOf = (read: (record: any) => Traits | null | undefined): void => {
+export const setTraitsOf = (read: Reader<Traits | null | undefined>): void => {
   if (typeof read !== 'function') throw new TypeError('setTraitsOf takes a function');
   current = read;
 };

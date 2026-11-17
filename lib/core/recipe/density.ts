@@ -2,8 +2,9 @@ import { MOLAR_MASS } from '../chemistry/index.ts';
 import { labelOf } from '../identity.ts';
 import { traitsOf } from '../traits.ts';
 import { amountOf } from './amounts.ts';
+import type { Amount } from './amounts.ts';
 import { oxidesPerGram } from './materials.ts';
-import type { Oxides } from '../types.ts';
+import type { MaterialInput, Oxides } from '../types.ts';
 
 // The dry specific gravity (true particle density, g/cm³) of a glaze material
 // and of a recipe, for Brongniart's formula (slurry.js). Every value, with the
@@ -23,8 +24,42 @@ import type { Oxides } from '../types.ts';
 // - anything else (a material of the potter's own, a blend of minerals whose
 //   shares are unknown, a pigment of unknown crystal form) has no estimate.
 
+/** How an estimate was got: a mineral's measured density, a kind's (feldspars, clays), a glass's oxides, or none. */
+export type SgBasis = 'mineral' | 'kind' | 'glass' | 'none';
+
+export interface MaterialSg {
+  sg: number | null;
+  basis: SgBasis;
+  /** The mineral, the kind ('feldspar', 'clay') or 'appen' for a glass. */
+  source?: string;
+  /** Why there is none: one of WHY_NOT's codes. */
+  reason?: string;
+  /** For a frit with no estimate: the oxides outside the glass factors. */
+  oxides?: string[];
+}
+
+/** A material as the library or a recipe line keeps it: its kind and chemistry. */
+export interface SgMaterial extends MaterialInput {
+  category?: string;
+  noChemistry?: boolean;
+}
+
+/** One line's part in a recipe's estimate: its label (labelOf) and grams. */
+export type SgPart = MaterialSg & { label: unknown; grams: number };
+
+export interface RecipeSg {
+  sg: number | null;
+  basis: SgBasis | 'mixed';
+  reason?: string;
+  parts: SgPart[];
+  /** Labels (labelOf) of the materials with no estimate, left out. */
+  unknown: unknown[];
+  /** Their share of the recipe's weight, 0 to 1. */
+  unknownShare: number;
+}
+
 /** Measured densities, g/cm³, by mineral or compound. */
-const MINERALS = Object.freeze({
+const MINERALS: Readonly<Record<string, number>> = Object.freeze({
   quartz: 2.65,
   calcite: 2.71,
   dolomite: 2.86,
@@ -88,7 +123,7 @@ const MINERALS = Object.freeze({
 });
 
 /** What a kind of material is taken to weigh, g/cm³, where its minerals all lie close to it. */
-const KINDS = Object.freeze({ feldspar: 2.6, clay: 2.6 });
+const KINDS: Readonly<Record<string, number>> = Object.freeze({ feldspar: 2.6, clay: 2.6 });
 
 /** Why a material has no estimate, as a code the app words. */
 const WHY_NOT = Object.freeze({
@@ -111,7 +146,7 @@ const WHY_NOT = Object.freeze({
  * B₂O₃ at 38 fits borosilicates (Borofloat 2.26 against 2.23); Volf's single
  * "bound" value 24.87 overestimates them (Pyrex 2.37 against 2.22, SRNL).
  */
-const GLASS_VOLUMES = Object.freeze({
+const GLASS_VOLUMES: Readonly<Record<string, number>> = Object.freeze({
   SiO2: 26.1,
   B2O3: 38.0,
   Al2O3: 40.4,
@@ -132,12 +167,12 @@ const GLASS_VOLUMES = Object.freeze({
 const GLASS_IGNORED_SHARE = 0.01;
 
 /** A glass's density from its fired oxides per gram, or null with the oxides it cannot take. */
-function glassDensity(perGram: Oxides) {
+function glassDensity(perGram: Oxides): { sg: number | null; outside: string[] } {
   let mass = 0;
   let volume = 0;
   let other = 0;
   let total = 0;
-  const outside = [];
+  const outside: string[] = [];
   for (const [oxide, grams] of Object.entries(perGram)) {
     if (!(grams > 0)) continue;
     total += grams;
@@ -155,7 +190,7 @@ function glassDensity(perGram: Oxides) {
   return { sg: mass / volume, outside };
 }
 
-const round = (value) => Math.round(value * 100) / 100;
+const round = (value: number): number => Math.round(value * 100) / 100;
 
 /**
  * A material's dry SG: { sg, basis, source } where basis is 'mineral' (its
@@ -164,7 +199,7 @@ const round = (value) => Math.round(value * 100) / 100;
  * A material whose traits name its mineral (traits.density: { mineral, reason },
  * the mineral null with why there is no estimate) goes by that.
  */
-function materialSg(material) {
+function materialSg(material: SgMaterial): MaterialSg {
   const known = material ? traitsOf(material).density : undefined;
   if (known && typeof known === 'object') {
     const key = known.mineral;
@@ -180,7 +215,7 @@ function materialSg(material) {
     if (sg === null) return { sg: null, basis: 'none', reason: WHY_NOT.glassOxides, oxides: outside };
     return { sg: round(sg), basis: 'glass', source: 'appen' };
   }
-  if (KINDS[category]) return { sg: KINDS[category], basis: 'kind', source: category };
+  if (KINDS[category as string]) return { sg: KINDS[category as string], basis: 'kind', source: category };
   return { sg: null, basis: 'none', reason: WHY_NOT.unknown };
 }
 
@@ -194,8 +229,8 @@ const MOST_UNKNOWN_SHARE = 0.05;
  * `unknownShare` says how much was. Basis: 'mineral', 'kind', 'glass' when
  * every part has the one basis, 'mixed' otherwise, or 'none' (sg null).
  */
-function recipeDrySg(lines) {
-  const parts = (lines ?? []).map((line) => {
+function recipeDrySg(lines: ReadonlyArray<SgMaterial & { amount?: Amount }>): RecipeSg {
+  const parts = (lines ?? []).map((line): SgPart => {
     const grams = amountOf(line.amount);
     return { label: labelOf(line), grams: Number.isFinite(grams) && grams > 0 ? grams : 0, ...materialSg(line) };
   });
@@ -210,7 +245,7 @@ function recipeDrySg(lines) {
   if (!known.length || unknownShare > MOST_UNKNOWN_SHARE + 1e-9) {
     return { sg: null, basis: 'none', reason: 'too-much-unknown', parts, unknown: unknownLabels, unknownShare };
   }
-  const volume = known.reduce((sum, part) => sum + part.grams / part.sg, 0);
+  const volume = known.reduce((sum, part) => sum + part.grams / part.sg!, 0);
   const bases = [...new Set(known.map((part) => part.basis))];
   return {
     sg: round(knownGrams / volume),
@@ -221,13 +256,4 @@ function recipeDrySg(lines) {
   };
 }
 
-export {
-  WHY_NOT,
-  MINERALS,
-  KINDS,
-  GLASS_VOLUMES,
-  MOST_UNKNOWN_SHARE,
-  glassDensity,
-  materialSg,
-  recipeDrySg
-};
+export { WHY_NOT, MINERALS, KINDS, GLASS_VOLUMES, MOST_UNKNOWN_SHARE, glassDensity, materialSg, recipeDrySg };
