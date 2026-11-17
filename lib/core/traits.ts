@@ -1,9 +1,10 @@
 // What the core needs to know about a record beyond its chemistry (docs/adr/0030-nameless-chemistry-core.md):
 // whether it is a theoretical mineral, calcined, a raw calcium source, which colorant an additive is, and the
-// like. The core asks traitsOf, never a name. By default a record carries its own (`record.traits`); a host
-// whose records do not yet sets its own (Glazecalc's reads them from its standard names, lib/recipe/traits.js).
+// like. The core asks the host's traitsOf, never a name (docs/adr/0031-functional-core.md). By default a
+// record carries its own (`record.traits`); a host whose records do not yet gives its own reader (Glazecalc's
+// reads them from its standard names, lib/recipe/traits.js).
 
-import type { Reader } from './identity.ts';
+import type { Host } from './host.ts';
 
 /** A material's mineral for its dry specific gravity (recipe/density.ts), or null with why there is none. */
 export interface DensityTrait {
@@ -36,15 +37,10 @@ export interface Traits {
   readonly [colorant: string]: boolean | DensityTrait | null | undefined;
 }
 
-let current: (record: never) => Traits | null | undefined = (record: { traits?: Traits }) =>
-  (record && record.traits) || {};
+const recordTraits = (record: { traits?: Traits }): Traits => (record && record.traits) || {};
 
-/** The traits of a record (by default `record.traits`); empty for none. */
-export const traitsOf = (record: unknown): Traits =>
-  record === null || record === undefined ? {} : current(record as never) || {};
-
-/** Sets how the core reads a record's traits. */
-export const setTraitsOf = (read: Reader<Traits | null | undefined>): void => {
-  if (typeof read !== 'function') throw new TypeError('setTraitsOf takes a function');
-  current = read;
-};
+/** The traits of a record, as the host reads them (by default `record.traits`); empty for none. */
+export const traitsOf = (host: Host, record: unknown): Traits =>
+  record === null || record === undefined
+    ? {}
+    : (host.traitsOf ? host.traitsOf(record) : recordTraits(record as never)) || {};

@@ -17,5 +17,3 @@ export function wordedWarnings(
 ): { warnings: string[]; warningCodes: ChemistryMessage[] };
 /** A function of the core, its problems worded. */
 export function inWords<T extends (...args: any[]) => any>(work: T): T;
-/** Sets the core's hooks to Glazecalc's: identity, label, same-material key and traits. */
-export function useGlazecalcHosts(): void;

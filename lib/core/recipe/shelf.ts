@@ -9,6 +9,7 @@ import type { Meter } from '../types.ts';
 import type { AdditiveRecord, MaterialRecord, TryMaterial } from './library.ts';
 import type { Caution, RecipeMessage } from './messages.ts';
 import type { Report } from './pool.ts';
+import type { Host } from '../host.ts';
 
 export interface ShelfMatch<M extends MaterialRecord = MaterialRecord> {
   materials: M[];
@@ -38,6 +39,7 @@ const LEAST_SHARE = 0.01;
  * new one, with the library's own bound, if not given).
  */
 function matchFromShelf<M extends MaterialRecord>(
+  host: Host,
   lines: M[],
   shelf: TryMaterial<M>[],
   {
@@ -48,30 +50,30 @@ function matchFromShelf<M extends MaterialRecord>(
   }: { avoid?: unknown[]; additives?: AdditiveRecord[]; uncapped?: unknown[]; meter?: Meter } = {}
 ): ShelfMatch<M> {
   if (!shelf.length) throw new RecipeError('shelf.empty');
-  const target = molesOf(lines);
+  const target = molesOf(host, lines);
   // A unity formula needs a flux: a recipe with none has none to match (the chemistry's no-flux, "Recipe
   // contains no flux oxides", said so of the recipe and of a shelf with no flux alike).
   if (!(fluxesOf(target) > 0)) throw new RecipeError('solve.noFlux', { of: 'recipe' });
   const oldTotal = totalOf(lines.map((line) => line.amount));
   const places = placesFor(oldTotal);
-  const old = new Map<unknown, number>(lines.map((line) => [idOf(line), amountOf(line.amount)]));
-  const oldClay = rawClayPercent(lines);
+  const old = new Map<unknown, number>(lines.map((line) => [idOf(host, line), amountOf(line.amount)]));
+  const oldClay = rawClayPercent(host, lines);
   // The materials on the shelf, each worth at least 1% of `batch` (the recipe's own, at least its amount).
   const offeredOn = (batch: number) =>
     shelf.map((tried) => {
-      const start = old.get(idOf(tried.material)) ?? 0;
+      const start = old.get(idOf(host, tried.material)) ?? 0;
       return {
         material: {
           ...structuredClone(tried.material),
           // Written plainly: an amount kept as it was keeps this text, and String(4e-7) is "4e-7", read as 0.
-          amount: old.has(idOf(tried.material)) ? plainAmount(old.get(idOf(tried.material))!) : ''
+          amount: old.has(idOf(host, tried.material)) ? plainAmount(old.get(idOf(host, tried.material))!) : ''
         },
         start,
         must: tried.must,
         // A material the recipe has is worth what it has, if that is less: its 0.5 of lithium carbonate
         // comes back as 0.5, not as 1 or nothing.
         least: start > 0 ? Math.min(LEAST_SHARE * batch, start) : LEAST_SHARE * batch,
-        avoid: avoid.includes(idOf(tried.material)),
+        avoid: avoid.includes(idOf(host, tried.material)),
         // The recipe's own fluorspar is the recipe's: only one brought in is a last resort.
         lastResort: !(start > 0) && lastResort(tried)
       };
@@ -80,7 +82,7 @@ function matchFromShelf<M extends MaterialRecord>(
   const work = meter ?? newMeter();
   const choose = (batch: number) => {
     try {
-      return selectHoldingClay(offeredOn(batch), target, { oldClay, batch: oldTotal, uncapped, meter: work });
+      return selectHoldingClay(host, offeredOn(batch), target, { oldClay, batch: oldTotal, uncapped, meter: work });
     } catch (error) {
       // Every material dropped as no help at all: none has any of the recipe's oxides (as solveTarget says it).
       if ((error as { code?: unknown } | null)?.code === 'no-materials') throw new RecipeError('solve.noMatch');
@@ -111,25 +113,28 @@ function matchFromShelf<M extends MaterialRecord>(
   const least = (i: number) =>
     pool[i].start > 0 ? Math.min(LEAST_SHARE * oldTotal, pool[i].start) : LEAST_SHARE * oldTotal;
   const onTotal = addingUp(scaledTo, places, oldTotal, unchanged, least);
-  const { materials, changes } = recipeFrom(onTotal, pool, new Set(), places);
-  const onShelf = new Set(shelf.map((tried) => idOf(tried.material)));
+  const { materials, changes } = recipeFrom(host, onTotal, pool, new Set(), places);
+  const onShelf = new Set(shelf.map((tried) => idOf(host, tried.material)));
   for (const line of lines) {
-    if (!onShelf.has(idOf(line)) && amountOf(line.amount) > 0) {
-      changes.push(removed(labelOf(line), amountOf(line.amount), places));
+    if (!onShelf.has(idOf(host, line)) && amountOf(line.amount) > 0) {
+      changes.push(removed(labelOf(host, line), amountOf(line.amount), places));
     }
   }
   const cautions = [
-    ...pastLimits({
+    ...pastLimits(host, {
       lines: materials.map((material) => ({ material, amount: material.amount })),
       unity: unityOf(selection.moles),
       old: unityOf(target),
       oldClay,
       additives,
-      expansion: { was: expansionOf(lines), now: expansionOf(materials) }
+      expansion: { was: expansionOf(host, lines), now: expansionOf(host, materials) }
     }),
-    ...sizeNotes(materials.map((material) => ({ material, amount: material.amount })))
+    ...sizeNotes(
+      host,
+      materials.map((material) => ({ material, amount: material.amount }))
+    )
   ];
-  return { materials, changes, report: explain(onTotal, pool, places, target, oldTotal), cautions };
+  return { materials, changes, report: explain(host, onTotal, pool, places, target, oldTotal), cautions };
 }
 
 export { matchFromShelf };

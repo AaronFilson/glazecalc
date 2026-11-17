@@ -10,6 +10,7 @@ import type { Selection } from '../chemistry/select.ts';
 import type { Closeness } from '../chemistry/closeness.ts';
 import type { MaterialRecord, TryMaterial } from './library.ts';
 import type { Figure, RecipeMessage } from './messages.ts';
+import type { Host } from '../host.ts';
 
 /** What one chosen material does. */
 export interface Use {
@@ -134,6 +135,7 @@ const CLAY_HOLD_COST = 0.5;
  * cut short, whichever is kept.
  */
 function selectHoldingClay<L extends PoolLine>(
+  host: Host,
   lines: L[],
   target: Oxides,
   {
@@ -144,16 +146,16 @@ function selectHoldingClay<L extends PoolLine>(
   }: SelectOptions & { oldClay?: number; batch?: number; uncapped?: unknown[] } = {}
 ): { selection: Selection; lines: L[] } {
   const options = { ...given, meter: given.meter ?? newMeter() };
-  const free = selectMaterials(lines, target, options);
+  const free = selectMaterials(host, lines, target, options);
   const most = Math.max(CHECK_LIMITS.clay.caution, oldClay) / 100;
   const size = batch ?? lines.reduce((sum, line) => sum + (Number(line.start) || 0), 0);
   const main = lines
-    .filter((line) => isRawClay(line.material) && line.start > 0 && !line.avoid)
+    .filter((line) => isRawClay(host, line.material) && line.start > 0 && !line.avoid)
     .reduce((p: L | null, q) => (p && p.start >= q.start ? p : q), null);
   const least = main ? Math.min(main.start, CLAY_LEAST_SHARE * size) : 0;
   const why = say('pool.why.rawClay');
   const held = lines.map((line): L => {
-    const capped = isRawClay(line.material) && !uncapped.includes(idOf(line.material));
+    const capped = isRawClay(host, line.material) && !uncapped.includes(idOf(host, line.material));
     const kept = line === main ? { must: true, least: Math.max(Number(line.least) || 0, least) } : {};
     return capped || line === main ? { ...line, ...(capped ? { group: RAW_CLAY, why } : {}), ...kept } : line;
   });
@@ -161,12 +163,12 @@ function selectHoldingClay<L extends PoolLine>(
   // recipe had), or below the least kept.
   const total = free.amounts.reduce((sum, amount) => sum + amount, 0);
   const clay = (amounts: number[]) =>
-    amounts.reduce((sum, amount, i) => (isRawClay(lines[i].material) ? sum + amount : sum), 0);
+    amounts.reduce((sum, amount, i) => (isRawClay(host, lines[i].material) ? sum + amount : sum), 0);
   const cappedClay = free.amounts.reduce((sum, amount, i) => (held[i].group === RAW_CLAY ? sum + amount : sum), 0);
   const tooMuch = total > 0 && rawClayHigh((100 * cappedClay) / total, oldClay);
   const tooLittle = size > 0 && clay(free.amounts) / total < (least / size) * (1 - 1e-6);
   if (!(total > 0) || !(tooMuch || tooLittle)) return { selection: free, lines };
-  const holding = selectMaterials(held, target, { ...options, shares: { ...options.shares, [RAW_CLAY]: most } });
+  const holding = selectMaterials(host, held, target, { ...options, shares: { ...options.shares, [RAW_CLAY]: most } });
   if (holding.miss - free.miss <= CLAY_HOLD_COST) return { selection: holding, lines: held };
   // The free choosing kept. If the work ran out in the held one, it may have
   // lost for being cut rather than for the clay (a held choosing cut short can
@@ -185,13 +187,14 @@ function selectHoldingClay<L extends PoolLine>(
  * amounts' own if not given (rounded to add up to it, a few may not quite).
  */
 function explain(
+  host: Host,
   selection: Selection,
   lines: ReadonlyArray<{ material: unknown; fixed?: boolean; why?: RecipeMessage }>,
   places: number,
   target?: Oxides,
   batch?: number
 ): Report {
-  const name = (i: number) => labelOf(lines[i].material);
+  const name = (i: number) => labelOf(host, lines[i].material);
   const used = new Set(selection.chosen);
   const total = batch ?? selection.amounts.reduce((sum, amount) => sum + amount, 0);
   const percent = (amount: number) => (total > 0 ? (100 * amount) / total : 0);
@@ -238,6 +241,7 @@ function explain(
  * even if it starts with an amount (a base frit in place of the lead).
  */
 function recipeFrom<M extends MaterialRecord>(
+  host: Host,
   selection: { amounts: number[] },
   lines: ReadonlyArray<{ material: M; start: number; added?: boolean }>,
   replacements: Set<unknown>,
@@ -250,11 +254,11 @@ function recipeFrom<M extends MaterialRecord>(
     const amount = selection.amounts[i];
     const unchanged = amount === line.start && line.start > 0;
     const text = unchanged ? (line.material.amount ?? '') : formatAmount(amount, places);
-    const name = labelOf(line.material);
+    const name = labelOf(host, line.material);
     const fresh = line.added || !(line.start > 0);
     if (amountOf(text) === 0) {
       if (!fresh) {
-        if (replacements.has(idOf(line.material))) unused.push(name);
+        if (replacements.has(idOf(host, line.material))) unused.push(name);
         else changes.push(removed(name, line.start, places));
       }
       return;

@@ -5,6 +5,7 @@ import { amountOf } from './amounts.ts';
 import type { Amount } from './amounts.ts';
 import { oxidesPerGram } from './materials.ts';
 import type { MaterialInput, Oxides } from '../types.ts';
+import type { Host } from '../host.ts';
 
 // The dry specific gravity (true particle density, g/cm³) of a glaze material
 // and of a recipe, for Brongniart's formula (slurry.js). Every value, with the
@@ -199,8 +200,8 @@ const round = (value: number): number => Math.round(value * 100) / 100;
  * A material whose traits name its mineral (traits.density: { mineral, reason },
  * the mineral null with why there is no estimate) goes by that.
  */
-function materialSg(material: SgMaterial): MaterialSg {
-  const known = material ? traitsOf(material).density : undefined;
+function materialSg(host: Host, material: SgMaterial): MaterialSg {
+  const known = material ? traitsOf(host, material).density : undefined;
   if (known && typeof known === 'object') {
     const key = known.mineral;
     if (key === null) return { sg: null, basis: 'none', reason: known.reason ?? WHY_NOT.unknown };
@@ -210,7 +211,7 @@ function materialSg(material: SgMaterial): MaterialSg {
   if (material?.noChemistry) return { sg: null, basis: 'none', reason: WHY_NOT.noChemistry };
   const category = material?.category;
   if (category === 'frit') {
-    const perGram = oxidesPerGram(material);
+    const perGram = oxidesPerGram(host, material);
     const { sg, outside } = perGram ? glassDensity(perGram) : { sg: null, outside: [] };
     if (sg === null) return { sg: null, basis: 'none', reason: WHY_NOT.glassOxides, oxides: outside };
     return { sg: round(sg), basis: 'glass', source: 'appen' };
@@ -229,10 +230,14 @@ const MOST_UNKNOWN_SHARE = 0.05;
  * `unknownShare` says how much was. Basis: 'mineral', 'kind', 'glass' when
  * every part has the one basis, 'mixed' otherwise, or 'none' (sg null).
  */
-function recipeDrySg(lines: ReadonlyArray<SgMaterial & { amount?: Amount }>): RecipeSg {
+function recipeDrySg(host: Host, lines: ReadonlyArray<SgMaterial & { amount?: Amount }>): RecipeSg {
   const parts = (lines ?? []).map((line): SgPart => {
     const grams = amountOf(line.amount);
-    return { label: labelOf(line), grams: Number.isFinite(grams) && grams > 0 ? grams : 0, ...materialSg(line) };
+    return {
+      label: labelOf(host, line),
+      grams: Number.isFinite(grams) && grams > 0 ? grams : 0,
+      ...materialSg(host, line)
+    };
   });
   const total = parts.reduce((sum, part) => sum + part.grams, 0);
   if (!(total > 0)) return { sg: null, basis: 'none', reason: 'no-amounts', parts, unknown: [], unknownShare: 0 };

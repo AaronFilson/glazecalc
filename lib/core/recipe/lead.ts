@@ -14,6 +14,7 @@ import type { Oxides, SelectOptions } from '../types.ts';
 import type { AdditiveRecord, MaterialRecord, TryMaterial } from './library.ts';
 import type { Caution, CheckName, RecipeMessageCode } from './messages.ts';
 import type { PoolLine, Report } from './pool.ts';
+import type { Host } from '../host.ts';
 
 /**
  * A line a rebuild chooses from (selectMaterials'), with what the report says
@@ -109,14 +110,14 @@ const recipeHasLead = (lines: MaterialRecord[]): boolean =>
   lines.some((line) => hasLead(line) && amountOf(line.amount) > 0);
 
 // Whether an additive with an amount is one of these colorants (its traits) or carries one of the oxides.
-const has = (additives: AdditiveRecord[], oxides: string[], colorants: string[] = []): boolean =>
+const has = (host: Host, additives: AdditiveRecord[], oxides: string[], colorants: string[] = []): boolean =>
   additives.some(
     (additive) =>
       amountOf(additive.amount) > 0 &&
-      (colorants.some((colorant) => traitsOf(additive)[colorant] === true) ||
+      (colorants.some((colorant) => traitsOf(host, additive)[colorant] === true) ||
         (additive.fields ?? []).some((field) => oxides.includes(field.name) && Number(field.amount) > 0))
   );
-const hasChrome = (additives: AdditiveRecord[]) => has(additives, ['Cr2O3'], ['chrome']);
+const hasChrome = (host: Host, additives: AdditiveRecord[]) => has(host, additives, ['Cr2O3'], ['chrome']);
 
 /** Sold somewhere the base is: a potter buys the frits from the same suppliers. */
 const soldWith = (material: MaterialRecord, base: MaterialRecord): boolean =>
@@ -125,15 +126,16 @@ const soldWith = (material: MaterialRecord, base: MaterialRecord): boolean =>
 const copyOf = <M extends MaterialRecord>(material: M): M => ({ ...structuredClone(material), amount: '' });
 
 /** The lead-free formula to aim at, for the recipe and its colorants. */
-function targetFor<M extends MaterialRecord>({ lines, additives, celsius, extras }: Setting<M>): Oxides {
-  const chrome = hasChrome(additives);
+function targetFor<M extends MaterialRecord>(host: Host, { lines, additives, celsius, extras }: Setting<M>): Oxides {
+  const chrome = hasChrome(host, additives);
   // Strontium only if something on offer has it: nothing in the set the solver picks from does.
   const strontium = [...lines.filter((line) => !hasLead(line)), ...(extras.tries ?? []).map((t) => t.material)].some(
-    (material) => oxidePercent(material, 'SrO') > 0
+    (material) => oxidePercent(host, material, 'SrO') > 0
   );
-  return leadFreeTarget(molesOf(lines), {
+  return leadFreeTarget(molesOf(host, lines), {
     celsius,
-    noZinc: chrome || has(additives, ['Fe2O3', 'FeO', 'CuO'], ['iron', 'copper']) || celsius < FIRING.zincMeltsFrom,
+    noZinc:
+      chrome || has(host, additives, ['Fe2O3', 'FeO', 'CuO'], ['iron', 'copper']) || celsius < FIRING.zincMeltsFrom,
     noMagnesia: chrome || celsius < FIRING.zincMeltsFrom,
     noStrontium: !strontium
   });
@@ -147,15 +149,15 @@ function targetFor<M extends MaterialRecord>({ lines, additives, celsius, extras
  * base, feldspars, wollastonite, whiting and zinc oxide where they melt, and
  * kaolin and silica if the recipe has none); and what the potter added.
  */
-function linesFor<M extends MaterialRecord>(setting: Setting<M>, base: M, size: number): Line[] {
+function linesFor<M extends MaterialRecord>(host: Host, setting: Setting<M>, base: M, size: number): Line[] {
   const { lines, additives, find, standard, region, celsius, extras } = setting;
   const withoutLead = lines.filter((line) => !hasLead(line));
-  const { materials } = modernMaterials(withoutLead, find, region, { allowLead: false });
+  const { materials } = modernMaterials(host, withoutLead, find, region, { allowLead: false });
   const leadAmount = totalOf(lines.filter(hasLead).map((line) => line.amount));
   const fit: Line[] = materials.map((material): Line => ({ material, start: amountOf(material.amount) }));
-  const inRecipe = new Set(fit.map((line) => idOf(line.material)));
+  const inRecipe = new Set(fit.map((line) => idOf(host, line.material)));
   // The recipe's main raw clay stays, at least at 10% of the batch or what it had.
-  const rawClay = (line: Line) => line.material.category === 'clay' && !traitsOf(line.material).calcined;
+  const rawClay = (line: Line) => line.material.category === 'clay' && !traitsOf(host, line.material).calcined;
   const clay = fit.filter(rawClay).sort((p, q) => q.start - p.start)[0];
   if (clay) Object.assign(clay, { must: true, fixed: true, least: Math.min(clay.start, CLAY_SHARE * size) });
   const uncapped = new Set(extras.uncapped ?? []);
@@ -163,10 +165,10 @@ function linesFor<M extends MaterialRecord>(setting: Setting<M>, base: M, size: 
   // Why each is capped, for the report.
   const rawCalciumWhy = say('lead.why.rawCalcium');
   const add = (material: M | undefined, extra: Partial<Line> = {}) => {
-    if (!material || inRecipe.has(idOf(material))) return;
-    inRecipe.add(idOf(material));
+    if (!material || inRecipe.has(idOf(host, material))) return;
+    inRecipe.add(idOf(host, material));
     const line: Line = { material: copyOf(material), start: 0, least: LEAST_SHARE * size, ...extra };
-    if (uncapped.has(idOf(material))) {
+    if (uncapped.has(idOf(host, material))) {
       delete line.most;
       delete line.group;
       delete line.why;
@@ -174,41 +176,43 @@ function linesFor<M extends MaterialRecord>(setting: Setting<M>, base: M, size: 
     fit.push(line);
   };
   fit.push({ material: copyOf(base), start: leadAmount, must: true, added: true, fixed: true });
-  inRecipe.add(idOf(base));
+  inRecipe.add(idOf(host, base));
   // What the potter added comes first, so a cap or must of theirs holds.
   for (const t of extras.tries ?? []) add(t.material, { must: t.must });
 
-  const offered = standard.filter((m) => suggestable(m, { region }));
+  const offered = standard.filter((m) => suggestable(host, m, { region }));
   for (const m of offered) {
-    const role = roleOf(m);
+    const role = roleOf(host, m);
     if (role === 'alkali' && soldWith(m, base)) add(m);
     else if (role === 'low-expansion' && soldWith(m, base))
       add(m, { most: LOW_EXPANSION_SHARE * size, why: say('lead.why.lowExpansion') });
     else if (role === 'boron' && soldWith(m, base))
       add(m, { most: BORON_FRIT_SHARE * size, why: say('lead.why.boronFrit') });
     else if (m.category === 'feldspar') add(m);
-    else if (traitsOf(m).wollastonite) add(m);
-    else if (traitsOf(m).rawCalcium) add(m, lowFire ? { group: 'raw calcium', why: rawCalciumWhy } : {});
+    else if (traitsOf(host, m).wollastonite) add(m);
+    else if (traitsOf(host, m).rawCalcium) add(m, lowFire ? { group: 'raw calcium', why: rawCalciumWhy } : {});
   }
   const zincWanted = !(
-    hasChrome(additives) ||
-    has(additives, ['Fe2O3', 'FeO', 'CuO'], ['iron', 'copper']) ||
+    hasChrome(host, additives) ||
+    has(host, additives, ['Fe2O3', 'FeO', 'CuO'], ['iron', 'copper']) ||
     celsius < FIRING.zincMeltsFrom
   );
   if (zincWanted)
     add(
-      offered.find((m) => traitsOf(m).zincOxide),
+      offered.find((m) => traitsOf(host, m).zincOxide),
       { most: RAW_SHARE * size, why: say('lead.why.zinc') }
     );
   if (!clay) {
     add(
-      offered.find((m) => m.category === 'clay' && traitsOf(m).kaolin) ?? standard.find((m) => traitsOf(m).defaultClay),
+      offered.find((m) => m.category === 'clay' && traitsOf(host, m).kaolin) ??
+        standard.find((m) => traitsOf(host, m).defaultClay),
       { must: true, fixed: true, least: CLAY_SHARE * size }
     );
   }
-  if (!fit.some((line) => line.material.category === 'silica')) add(standard.find((m) => traitsOf(m).defaultSilica));
+  if (!fit.some((line) => line.material.category === 'silica'))
+    add(standard.find((m) => traitsOf(host, m).defaultSilica));
   const avoid = new Set(extras.avoid ?? []);
-  return fit.map((line) => (avoid.has(idOf(line.material)) && !line.must ? { ...line, avoid: true } : line));
+  return fit.map((line) => (avoid.has(idOf(host, line.material)) && !line.must ? { ...line, avoid: true } : line));
 }
 
 // No pull toward the old glaze's expansion: tried, it moved expansion by 0.2 to
@@ -224,34 +228,38 @@ const optionsFor = (size: number): SelectOptions => ({
 });
 
 /** A rebuild on `base`: the chosen lines, and the selection. */
-function rebuild<M extends MaterialRecord>(setting: Setting<M>, base: M) {
-  const target = targetFor(setting);
+function rebuild<M extends MaterialRecord>(host: Host, setting: Setting<M>, base: M) {
+  const target = targetFor(host, setting);
   const oldTotal = totalOf(setting.lines.map((line) => line.amount));
   // Caps are shares of the new batch, lighter than the old (lead is heavy):
   // set from the old first, then again from the new and worked out once more.
   let size = oldTotal;
-  let fit = linesFor(setting, base, size);
-  let selection = selectMaterials(fit, target, optionsFor(size));
+  let fit = linesFor(host, setting, base, size);
+  let selection = selectMaterials(host, fit, target, optionsFor(size));
   const newTotal = selection.amounts.reduce((sum, amount) => sum + amount, 0);
   if (newTotal > 0 && Math.abs(newTotal - size) > 0.05 * size) {
     size = newTotal;
-    fit = linesFor(setting, base, size);
-    selection = selectMaterials(fit, target, optionsFor(size));
+    fit = linesFor(host, setting, base, size);
+    selection = selectMaterials(host, fit, target, optionsFor(size));
   }
   return { fit, selection, target };
 }
 
 /** The lead-free bases sold in the region. */
-const basesIn = <M extends MaterialRecord>(standard: M[], region: string): M[] =>
-  standard.filter((m) => m.category === 'frit' && suggestable(m, { region }) && roleOf(m) === 'base');
+const basesIn = <M extends MaterialRecord>(host: Host, standard: M[], region: string): M[] =>
+  standard.filter((m) => m.category === 'frit' && suggestable(host, m, { region }) && roleOf(host, m) === 'base');
 
 /** The 85:15 base with kaolin: its unity formula, and its calculated expansion. */
 function colourBase(
+  host: Host,
   base: MaterialRecord,
   clay: MaterialRecord | undefined
 ): { unity: Oxides; expansion: number | null } | null {
   try {
-    const result = calculateUMF([{ material: base, amount: 85 }, ...(clay ? [{ material: clay, amount: 15 }] : [])]);
+    const result = calculateUMF(host, [
+      { material: base, amount: 85 },
+      ...(clay ? [{ material: clay, amount: 15 }] : [])
+    ]);
     return { unity: result.umf, expansion: result.expansion };
   } catch {
     return null;
@@ -265,15 +273,16 @@ function colourBase(
  * (checks.js isRawClay), has a kaolin's or a ball clay's.
  */
 function clayFor<L extends MaterialRecord, M extends MaterialRecord>(
+  host: Host,
   lines: readonly L[],
   standard: readonly M[]
 ): L | M | undefined {
   const sold = (line: MaterialRecord) => line.status !== 'discontinued' && line.status !== 'historical';
-  const kaolin = (line: MaterialRecord) => (!line.category || traitsOf(line).kaolinOrBallClay ? 1 : 0);
+  const kaolin = (line: MaterialRecord) => (!line.category || traitsOf(host, line).kaolinOrBallClay ? 1 : 0);
   const [clay] = lines
-    .filter((line) => !hasLead(line) && isRawClay(line) && sold(line))
+    .filter((line) => !hasLead(line) && isRawClay(host, line) && sold(line))
     .sort((p, q) => kaolin(q) - kaolin(p) || amountOf(q.amount) - amountOf(p.amount));
-  return clay ?? standard.find((m) => traitsOf(m).defaultClay);
+  return clay ?? standard.find((m) => traitsOf(host, m).defaultClay);
 }
 
 /**
@@ -283,6 +292,7 @@ function clayFor<L extends MaterialRecord, M extends MaterialRecord>(
  * kaolin has enough alumina, nearest the old glaze's expansion first.
  */
 function leadFreeBases<M extends MaterialRecord>(
+  host: Host,
   lines: M[],
   additives: AdditiveRecord[],
   find: Find<M>,
@@ -291,13 +301,16 @@ function leadFreeBases<M extends MaterialRecord>(
   celsius: number,
   mode: LeadMode = 'rebuild'
 ): BaseChoice[] {
-  const bases = basesIn(standard, region);
-  const choice = (base: M): BaseChoice => ({ name: labelOf(base), boron: Math.round(oxidePercent(base, 'B2O3')) });
+  const bases = basesIn(host, standard, region);
+  const choice = (base: M): BaseChoice => ({
+    name: labelOf(host, base),
+    boron: Math.round(oxidePercent(host, base, 'B2O3'))
+  });
   if (mode === 'colour') {
-    const was = expansionOf(lines) ?? 0;
-    const clay = clayFor(lines, standard);
+    const was = expansionOf(host, lines) ?? 0;
+    const clay = clayFor(host, lines, standard);
     return bases
-      .map((base) => ({ base, mix: colourBase(base, clay) }))
+      .map((base) => ({ base, mix: colourBase(host, base, clay) }))
       .filter(
         (p): p is { base: M; mix: NonNullable<typeof p.mix> } =>
           !!p.mix && (p.mix.unity['Al2O3'] ?? 0) >= COLOUR_ALUMINA
@@ -307,12 +320,12 @@ function leadFreeBases<M extends MaterialRecord>(
       .map(({ base }) => choice(base));
   }
   const setting: Setting<M> = { lines, additives, find, standard, region, celsius, extras: {} };
-  const target = targetFor(setting);
+  const target = targetFor(host, setting);
   const size = totalOf(lines.map((line) => line.amount));
   return bases
     .map((base) => {
-      const fit = linesFor(setting, base, size).map((line) => ({ ...line, least: 0 }));
-      return { base, miss: bestFit(fit, target, optionsFor(size)).miss };
+      const fit = linesFor(host, setting, base, size).map((line) => ({ ...line, least: 0 }));
+      return { base, miss: bestFit(host, fit, target, optionsFor(size)).miss };
     })
     .sort((p, q) => p.miss - q.miss)
     .slice(0, CHOICES)
@@ -326,6 +339,7 @@ function leadFreeBases<M extends MaterialRecord>(
  * colorants keep their share of it.
  */
 function replaceLead<M extends MaterialRecord>(
+  host: Host,
   lines: M[],
   additives: AdditiveRecord[],
   find: Find<M>,
@@ -333,71 +347,73 @@ function replaceLead<M extends MaterialRecord>(
   region: string,
   { base: baseName, celsius, mode, ...extras }: { base: unknown; celsius: number; mode: LeadMode } & LeadExtras<M>
 ): Replacement<M> {
-  const base = standard.find((material) => idOf(material) === baseName);
+  const base = standard.find((material) => idOf(host, material) === baseName);
   if (!base) throw problem('no-frit', { base: baseName });
   const oldTotal = totalOf(lines.map((line) => line.amount));
   // As a substitution's (pool.js placesFor): enough decimals that 1% of a small batch, the least the base frit
   // is given, is not written as 0 (a batch of 0.00035 came to 0 of everything, and had no unity formula).
   const places = placesFor(oldTotal);
-  const cautions = cautionsFor(lines, additives);
+  const cautions = cautionsFor(host, lines, additives);
 
   let materials: M[];
   let changes: import('./messages.ts').RecipeMessage[];
   let report: Report | null = null;
   if (mode === 'colour') {
-    const clay = clayFor(lines, standard);
+    const clay = clayFor(host, lines, standard);
     const parts: Array<[M, number]> = [[base, 0.85], ...(clay ? [[clay, 0.15] as [M, number]] : [])];
     materials = parts.map(([material, share]) => ({
       ...copyOf(material),
       amount: formatAmount(share * oldTotal, places)
     }));
-    const old = new Map(lines.map((line) => [idOf(line), amountOf(line.amount)]));
+    const old = new Map(lines.map((line) => [idOf(host, line), amountOf(line.amount)]));
     changes = materials.map((m) =>
-      old.has(idOf(m))
-        ? changed(labelOf(m), upTo(old.get(idOf(m))!, places), plainFigure(m.amount))
-        : added(labelOf(m), plainFigure(m.amount))
+      old.has(idOf(host, m))
+        ? changed(labelOf(host, m), upTo(old.get(idOf(host, m))!, places), plainFigure(m.amount))
+        : added(labelOf(host, m), plainFigure(m.amount))
     );
     for (const line of lines) {
-      if (!materials.some((m) => idOf(m) === idOf(line)) && amountOf(line.amount) > 0) {
-        changes.push(removed(labelOf(line), amountOf(line.amount), places));
+      if (!materials.some((m) => idOf(host, m) === idOf(host, line)) && amountOf(line.amount) > 0) {
+        changes.push(removed(labelOf(host, line), amountOf(line.amount), places));
       }
     }
   } else {
     const setting: Setting<M> = { lines, additives, find, standard, region, celsius, extras };
-    const { fit, selection } = rebuild(setting, base);
+    const { fit, selection } = rebuild(host, setting, base);
     // The base comes to the old batch's total.
     const newTotal = selection.amounts.reduce((sum, amount) => sum + amount, 0);
     const onTotal = scaled(selection, newTotal > 0 ? oldTotal / newTotal : 1);
-    const made = recipeFrom(onTotal, fit as Array<Line & { material: M }>, new Set(), places);
+    const made = recipeFrom(host, onTotal, fit as Array<Line & { material: M }>, new Set(), places);
     materials = made.materials;
     changes = made.changes;
     for (const line of lines.filter(hasLead)) {
-      if (amountOf(line.amount) > 0) changes.push(removed(labelOf(line), amountOf(line.amount), places));
+      if (amountOf(line.amount) > 0) changes.push(removed(labelOf(host, line), amountOf(line.amount), places));
     }
-    report = explain(onTotal, fit, places);
-    const baseShare = (onTotal.amounts[fit.findIndex((line) => idOf(line.material) === idOf(base))] ?? 0) / oldTotal;
+    report = explain(host, onTotal, fit, places);
+    const baseShare =
+      (onTotal.amounts[fit.findIndex((line) => idOf(host, line.material) === idOf(host, base))] ?? 0) / oldTotal;
     if (baseShare < BASE_DOING_LITTLE) {
       cautions.push({
         check: 'base-doing-little',
         severity: 'caution',
-        material: labelOf(base),
+        material: labelOf(host, base),
         sentences: [
-          say('lead.baseDoingLittle', { percent: figure(Math.round(baseShare * 100), 0), base: labelOf(base) })
+          say('lead.baseDoingLittle', { percent: figure(Math.round(baseShare * 100), 0), base: labelOf(host, base) })
         ]
       });
     }
   }
 
-  const moles = molesOf(materials);
+  const moles = molesOf(host, materials);
   cautions.push(
-    ...pastLimits({
+    ...pastLimits(host, {
       lines: materials.map((material) => ({ material, amount: material.amount })),
       unity: unityOf(moles),
       celsius,
       additives,
-      expansion: { was: expansionOf(lines), now: expansionOf(materials) }
+      expansion: { was: expansionOf(host, lines), now: expansionOf(host, materials) }
     }),
     ...sizeNotes(
+      host,
       materials.map((material) => ({ material, amount: material.amount })),
       celsius < FIRING.lowFireBelow
     )
@@ -406,18 +422,18 @@ function replaceLead<M extends MaterialRecord>(
 }
 
 /** What changes without lead, for the colorants in the recipe. */
-function cautionsFor(lines: MaterialRecord[], additives: AdditiveRecord[]): Caution[] {
-  const moles = molesOf(lines);
+function cautionsFor(host: Host, lines: MaterialRecord[], additives: AdditiveRecord[]): Caution[] {
+  const moles = molesOf(host, lines);
   const fluxes = fluxesOf(moles);
   const lead = fluxes > 0 ? (moles['PbO'] ?? 0) / fluxes : 0;
   const cautions: Caution[] = [];
   const caution = (check: CheckName, code: RecipeMessageCode) =>
     cautions.push({ check, severity: 'note', sentences: [say(code)] });
-  if (has(additives, ['Sb2O3', 'Sb2O5'], ['antimony'])) caution('lead-antimony', 'lead.antimony');
-  if (hasChrome(additives) && lead >= 0.5) caution('lead-chrome', 'lead.chrome');
-  if (has(additives, ['CuO'])) caution('lead-copper', 'lead.copper');
-  if (has(additives, ['MnO'])) caution('lead-manganese', 'lead.manganese');
-  if (has(additives, ['Fe2O3', 'FeO']) || (moles['Fe2O3'] ?? 0) / (fluxes || 1) > 0.02) {
+  if (has(host, additives, ['Sb2O3', 'Sb2O5'], ['antimony'])) caution('lead-antimony', 'lead.antimony');
+  if (hasChrome(host, additives) && lead >= 0.5) caution('lead-chrome', 'lead.chrome');
+  if (has(host, additives, ['CuO'])) caution('lead-copper', 'lead.copper');
+  if (has(host, additives, ['MnO'])) caution('lead-manganese', 'lead.manganese');
+  if (has(host, additives, ['Fe2O3', 'FeO']) || (moles['Fe2O3'] ?? 0) / (fluxes || 1) > 0.02) {
     caution('lead-iron', 'lead.iron');
   }
   return cautions;
@@ -428,24 +444,24 @@ function cautionsFor(lines: MaterialRecord[], additives: AdditiveRecord[]): Caut
  * cannot (one saved with no oxides, say) adds nothing: the page says what is
  * wrong with it, and what the rest holds is still worth warning about.
  */
-function readableMoles(lines: MaterialRecord[]): Oxides {
+function readableMoles(host: Host, lines: MaterialRecord[]): Oxides {
   const readable = lines.filter((line) => {
     try {
-      oxideMoles([{ material: line, amount: 1 }]);
+      oxideMoles(host, [{ material: line, amount: 1 }]);
       return true;
     } catch {
       return false;
     }
   });
-  return molesOf(readable);
+  return molesOf(host, readable);
 }
 
 /**
  * The share of the fired glaze that is lead oxide, and PbO in the unity
  * formula, for the recipe's warning.
  */
-function leadIn(lines: MaterialRecord[]): { unity: number; percent: number } {
-  const moles = readableMoles(lines);
+function leadIn(host: Host, lines: MaterialRecord[]): { unity: number; percent: number } {
+  const moles = readableMoles(host, lines);
   const fluxes = fluxesOf(moles);
   const grams = Object.entries(moles).reduce((sum, [oxide, amount]) => sum + amount * MOLAR_MASS[oxide], 0);
   const lead = moles['PbO'] ?? 0;
@@ -463,8 +479,8 @@ function leadIn(lines: MaterialRecord[]): { unity: number; percent: number } {
  * "low BaO levels can often be tolerated (e.g. 0.05-0.1)", and "any glaze that
  * has 0.4 BaO would be off-the-scale for potential to leach".
  */
-function bariumIn(lines: MaterialRecord[]): { unity: number; likely: boolean } | null {
-  const moles = readableMoles(lines);
+function bariumIn(host: Host, lines: MaterialRecord[]): { unity: number; likely: boolean } | null {
+  const moles = readableMoles(host, lines);
   const fluxes = fluxesOf(moles);
   const unity = fluxes > 0 ? (moles['BaO'] ?? 0) / fluxes : 0;
   const severity = bariumSeverity(unity);

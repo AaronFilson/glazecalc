@@ -4,6 +4,7 @@ import * as materials from './materials.ts';
 import { boundedLeastSquares, normalEquations } from './lsq.ts';
 import { cappedLeastSquares } from './caps.ts';
 import type { FitLine, FitOptions, Meter, MaterialInput, Oxides } from '../types.ts';
+import type { Host } from '../host.ts';
 
 // Working out a recipe's amounts again after a material in it is swapped for
 // one that is not like for like (niter for a frit, red lead for a lead frit):
@@ -12,20 +13,20 @@ import type { FitLine, FitOptions, Meter, MaterialInput, Oxides } from '../types
 // for choosing among many materials, select.js and docs/adr/0012.
 
 /** Moles of each fired oxide in one gram of the raw material. */
-const molesPerGram = function (material: MaterialInput): Oxides {
-  const { unity, equivalent } = materials.materialWeights(material);
+const molesPerGram = function (host: Host, material: MaterialInput): Oxides {
+  const { unity, equivalent } = materials.materialWeights(host, material);
   const moles: Oxides = {};
   Object.keys(unity).forEach((oxide) => (moles[oxide] = unity[oxide] / equivalent));
   return moles;
 };
 
 /** Moles of each fired oxide in the lines: [{ material, amount }]. */
-const oxideMoles = function (lines: Array<{ material: MaterialInput; amount: unknown }>): Oxides {
+const oxideMoles = function (host: Host, lines: Array<{ material: MaterialInput; amount: unknown }>): Oxides {
   const total: Oxides = {};
   lines.forEach((line) => {
     const amount = Number(line.amount);
     if (!(amount > 0)) return;
-    const moles = molesPerGram(line.material);
+    const moles = molesPerGram(host, line.material);
     Object.keys(moles).forEach((oxide) => (total[oxide] = (total[oxide] || 0) + moles[oxide] * amount));
   });
   return total;
@@ -144,9 +145,9 @@ const isFlux = (oxide: string) => oxides.OXIDE_GROUPS[oxide] === 'R2O' || oxides
  * come, and options.alkalis potash and soda together, in place of the
  * defaults.
  */
-const setUp = function (lines: FitLine[], target: Oxides, options: FitOptions): Problem {
+const setUp = function (host: Host, lines: FitLine[], target: Oxides, options: FitOptions): Problem {
   const near = options.near || {};
-  const columns = lines.map((line) => molesPerGram(line.material));
+  const columns = lines.map((line) => molesPerGram(host, line.material));
   const names = new Set(Object.keys(target));
   columns.forEach((column) => Object.keys(column).forEach((oxide) => names.add(oxide)));
   const list = Array.from(names);
@@ -194,9 +195,9 @@ const missOf = function (problem: Problem, x: number[]): number {
  *            that share (0 to 1) of all the lines together; every solve's
  *            work is counted on the meter, when given (newMeter)
  */
-const prepare = function (lines: FitLine[], target: Oxides, options: FitOptions = {}) {
+const prepare = function (host: Host, lines: FitLine[], target: Oxides, options: FitOptions = {}) {
   if (!lines.length) throw messages.problem('no-materials');
-  const problem = setUp(lines, target, options);
+  const problem = setUp(host, lines, target, options);
   const most = lines.map((line) => (Number(line.most) >= 0 ? Number(line.most) : Infinity));
   const least = lines.map((line, i) => Math.min(most[i], Math.max(0, Number(line.least) || 0)));
   const starts = lines.map((line, i) => Math.min(most[i], Math.max(least[i], Number(line.start) || 0)));
@@ -420,9 +421,9 @@ const prepare = function (lines: FitLine[], target: Oxides, options: FitOptions 
  * out first). With the meter spent, amounts not yet put back at their starts
  * stay where the match has them.
  */
-const fitAmounts = function (lines: FitLine[], target: Oxides, options: FitOptions = {}): FitResult {
+const fitAmounts = function (host: Host, lines: FitLine[], target: Oxides, options: FitOptions = {}): FitResult {
   const meter = options.meter ?? newMeter();
-  const fit = prepare(lines, target, { ...options, meter });
+  const fit = prepare(host, lines, target, { ...options, meter });
   const { starts, size } = fit;
   const allowed = fit.solve(0).miss + ROOM_FOR_FEWER_CHANGES;
   // With some lines held: the best match, then the strongest pull toward the
@@ -478,7 +479,10 @@ const fitAmounts = function (lines: FitLine[], target: Oxides, options: FitOptio
   return {
     amounts,
     miss: best.miss,
-    moles: oxideMoles(lines.map((line, i) => ({ material: line.material, amount: amounts[i] }))),
+    moles: oxideMoles(
+      host,
+      lines.map((line, i) => ({ material: line.material, amount: amounts[i] }))
+    ),
     ...(best.broken ? { broken: best.broken } : {})
   };
 };
@@ -487,8 +491,8 @@ const fitAmounts = function (lines: FitLine[], target: Oxides, options: FitOptio
  * The best match the lines can make, with no pull toward their starts: fast,
  * for ranking choices. Names the shared caps it breaks, when any (broken).
  */
-const bestFit = function (lines: FitLine[], target: Oxides, options: FitOptions = {}): BestFit {
-  const fit = prepare(lines, target, options);
+const bestFit = function (host: Host, lines: FitLine[], target: Oxides, options: FitOptions = {}): BestFit {
+  const fit = prepare(host, lines, target, options);
   const { x, miss, broken } = fit.solve(0);
   return { amounts: x, miss, ...(broken ? { broken } : {}) };
 };
