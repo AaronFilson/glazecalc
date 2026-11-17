@@ -121,8 +121,7 @@ jobs:
         run: npm run test:forwarder
 
       # The nameless core on its own (lib/core/test): Node alone, no server, database or packages,
-      # as it will run in the library's own repository. Its fixture must match data/, and its tests
-      # must run 98% of its lines, 95% of its branches and 97% of its functions.
+      # as it will run in the library's own repository. Its fixture must match data/.
       - name: The chemistry core's own tests
         run: npm run check:core-fixture && npm run test:core
 
