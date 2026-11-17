@@ -156,13 +156,13 @@ const calculateUMF = function (
     if (colorants.reduce((sum, oxide) => sum + umf[oxide], 0) > MOSTLY_COLORANT) {
       warningCodes.push(warning('colorant-flux', { oxides: colorants }));
     }
-    if ((umf.SiO2 || 0) > MOST_SILICA) warningCodes.push(warning('silica-high', { silica: umf.SiO2 }));
+    if ((umf['SiO2'] || 0) > MOST_SILICA) warningCodes.push(warning('silica-high', { silica: umf['SiO2'] }));
   }
 
   return {
     umf,
     groups,
-    siAlRatio: umf.Al2O3 ? (umf.SiO2 || 0) / umf.Al2O3 : null,
+    siAlRatio: umf['Al2O3'] ? (umf['SiO2'] || 0) / umf['Al2O3'] : null,
     analysis,
     loi: (loiWeight / batchWeight) * 100,
     expansion: expansion(analysis),

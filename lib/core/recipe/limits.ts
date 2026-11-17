@@ -311,7 +311,7 @@ function isLikely(value: number, r: UnityRange, past: Past, thin?: boolean): boo
  * (asShown), so alumina shown as 0.15 is not thin.
  */
 const isThin = (unity: Record<string, number>): boolean =>
-  asShown(unity.Al2O3 ?? 0) < L.thin.alumina || asShown(unity.SiO2 ?? 0) < L.thin.silica;
+  asShown(unity['Al2O3'] ?? 0) < L.thin.alumina || asShown(unity['SiO2'] ?? 0) < L.thin.silica;
 
 /**
  * A row per limit a set has for a band: the oxide or sum, the recipe's value,

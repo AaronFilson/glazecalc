@@ -217,7 +217,7 @@ const prepare = function (lines: FitLine[], target: Oxides, options: FitOptions 
     ...Object.keys(caps).map((name) => {
       const members = membersOf(name);
       const cap = Number(caps[name]);
-      const weights = lines.map((line, i) => (members.includes(i) ? 1 : 0));
+      const weights = lines.map((_line, i) => (members.includes(i) ? 1 : 0));
       return { name, most: cap, members, weights, slack: 1e-9 * Math.max(1, cap) };
     }),
     ...Object.keys(shares)
@@ -225,7 +225,7 @@ const prepare = function (lines: FitLine[], target: Oxides, options: FitOptions 
       .map((name) => {
         const share = Number(shares[name]);
         const members = membersOf(name);
-        const weights = lines.map((line, i) => (members.includes(i) ? 1 - share : supplies[i] ? -share : 0));
+        const weights = lines.map((_line, i) => (members.includes(i) ? 1 - share : supplies[i] ? -share : 0));
         return { name, most: 0, members, weights, slack: 1e-9 * Math.max(1, size) };
       })
   ].filter((group) => group.members.length > 0 && Number.isFinite(group.most));

@@ -136,8 +136,8 @@ function inside([x, y]: StullXY, polygon: ReadonlyArray<StullXY>): boolean {
  * Null without silica or alumina.
  */
 function stullPoint(unity: Oxides | null | undefined): StullPoint | null {
-  const silica = unity?.SiO2 ?? 0;
-  const alumina = unity?.Al2O3 ?? 0;
+  const silica = unity?.['SiO2'] ?? 0;
+  const alumina = unity?.['Al2O3'] ?? 0;
   if (!(silica > 0) || !(alumina > 0)) return null;
   const point: StullXY = [silica, alumina];
   const onChart =

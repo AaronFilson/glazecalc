@@ -256,8 +256,8 @@ function firingProblem(block: unknown): string | null {
   if (!block || typeof block !== 'object' || Array.isArray(block)) return 'block';
   const fields = block as Record<string, unknown>;
   const { low, high, tested, atmospheres, processes, rate, hold, schedule, witness } = fields;
-  if (!(SCALES as readonly unknown[]).includes(fields.scale)) return 'scale';
-  const scale = fields.scale as ConeScale;
+  if (!(SCALES as readonly unknown[]).includes(fields['scale'])) return 'scale';
+  const scale = fields['scale'] as ConeScale;
   if (low !== undefined && low !== null && low !== '' && !isCone(scale, low)) return 'low';
   if (high !== undefined && high !== null && high !== '') {
     if (!isCone(scale, high)) return 'high';
