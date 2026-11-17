@@ -9,7 +9,7 @@ Aaron Filson, in 57 languages, and usable from AI assistants through its MCP ser
 
 [![CI](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/AaronFilson/glazecalc/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/AaronFilson/glazecalc/actions/workflows/codeql.yml)
-[![Tests](https://img.shields.io/badge/tests-4%2C050%2B-2ea44f)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
+[![Tests](https://img.shields.io/badge/tests-4%2C000%2B-2ea44f)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
 [![Coverage](https://img.shields.io/badge/coverage-98%25%20server%20%C2%B7%2099%25%20client-2ea44f)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
 [![Lighthouse](https://img.shields.io/badge/Lighthouse-98%20%C2%B7%20100%20%C2%B7%20100%20%C2%B7%20100-f44b21)](https://github.com/AaronFilson/glazecalc/actions/workflows/ci.yml)
 [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-com.glazecalcapp%2Fglazecalc-5b5bd6)](https://registry.modelcontextprotocol.io/v0/servers?search=com.glazecalcapp/glazecalc)
@@ -35,7 +35,7 @@ For anyone reading the code; the [highlights](#highlights) below give the detail
 
 - **Stack:** Angular 22 (standalone components, signals, zoneless), TypeScript on Node 24 with Express 5 and
   Mongoose 9, MongoDB 9, Docker, and AWS (EC2, SSM, SES, S3, CloudWatch).
-- **Tested in CI on every pull request:** over 2,000 server tests (98% of statements, 89% of branches), over 1,600
+- **Tested in CI on every pull request:** over 1,950 server tests (98% of statements, 89% of branches), over 1,600
   Angular unit tests (99% of statements, 91% of branches) and over 450 Playwright browser tests, with axe checks
   against WCAG 2.2 AA. Also the official MCP conformance suite, CodeQL on the code and the workflows, and Lighthouse
   on desktop: performance 98; accessibility, best practices and SEO 100. CI checks these numbers too.
@@ -64,7 +64,7 @@ The details, with the decisions behind them:
   `.ts` files directly with no build step ([ADR 8](docs/adr/0008-typescript-server-without-a-build.md)),
   and put back online. The
   [case study](docs/case-study.md) tells how.
-- **Tested at three levels, in CI on every pull request and push to master:** over 2,000 server tests (98% of
+- **Tested at three levels, in CI on every pull request and push to master:** over 1,950 server tests (98% of
   statements, 89% of branches) run against the app in-process; over 1,600 Angular unit tests (99% of statements,
   91% of branches); over 450 Playwright browser tests, including [axe](https://github.com/dequelabs/axe-core)
   accessibility checks against WCAG 2.2 AA of every page in light and dark mode, every page in a pseudo-locale to
