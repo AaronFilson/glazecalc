@@ -6,6 +6,7 @@
 import type { Identity, Reader } from './identity.ts';
 import type { Traits } from './traits.ts';
 import type { OxideTable } from './types.ts';
+import type { ConeTable } from './cones/firing.ts';
 
 /**
  * How the core reads a host's records. A reader left out is the default: the record's own `id`; its
@@ -27,4 +28,6 @@ export interface Readers {
 export interface Host extends Readers {
   /** The elements and oxides: the catalog's OXIDES (lib/catalog/oxides.ts), or a host's own. */
   readonly oxides: OxideTable;
+  /** The cone charts and their lookups: the catalog's CONES (lib/catalog/cones.ts), or a host's own. */
+  readonly cones: ConeTable;
 }

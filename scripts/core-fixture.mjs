@@ -9,6 +9,7 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { OXIDES } from '../lib/catalog/oxides.ts';
+import { CONE_CHARTS } from '../lib/catalog/cones.ts';
 
 const ROOT = path.join(import.meta.dirname, '..');
 const OUT = path.join(ROOT, 'lib', 'core', 'test', 'standard.json');
@@ -64,7 +65,7 @@ export function build() {
 export const text = () => JSON.stringify(build(), null, 1) + '\n';
 
 /** The catalog's tables, as the tests' host passes them. */
-export const tablesText = () => JSON.stringify({ oxides: OXIDES }, null, 1) + '\n';
+export const tablesText = () => JSON.stringify({ oxides: OXIDES, cones: CONE_CHARTS }, null, 1) + '\n';
 
 if (import.meta.main ?? process.argv[1] === import.meta.filename) {
   const fixtures = [
