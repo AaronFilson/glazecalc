@@ -12,6 +12,7 @@ import { OXIDES } from '../lib/catalog/oxides.ts';
 import { CONE_CHARTS } from '../lib/catalog/cones.ts';
 import { LIMITS, STULL } from '../lib/catalog/limits.ts';
 import { DENSITIES } from '../lib/catalog/densities.ts';
+import { EXPANSION } from '../lib/catalog/expansion.ts';
 
 const ROOT = path.join(import.meta.dirname, '..');
 const OUT = path.join(ROOT, 'lib', 'core', 'test', 'standard.json');
@@ -68,8 +69,11 @@ export const text = () => JSON.stringify(build(), null, 1) + '\n';
 
 /** The catalog's tables, as the tests' host passes them. */
 export const tablesText = () =>
-  JSON.stringify({ oxides: OXIDES, cones: CONE_CHARTS, limits: LIMITS, stull: STULL, densities: DENSITIES }, null, 1) +
-  '\n';
+  JSON.stringify(
+    { oxides: OXIDES, cones: CONE_CHARTS, limits: LIMITS, stull: STULL, densities: DENSITIES, expansion: EXPANSION },
+    null,
+    1
+  ) + '\n';
 
 if (import.meta.main ?? process.argv[1] === import.meta.filename) {
   const fixtures = [

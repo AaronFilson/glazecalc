@@ -168,7 +168,7 @@ const calculateUMF = function (
     siAlRatio: umf['Al2O3'] ? (umf['SiO2'] || 0) / umf['Al2O3'] : null,
     analysis,
     loi: (loiWeight / batchWeight) * 100,
-    expansion: expansion(analysis),
+    expansion: expansion(host, analysis),
     warningCodes
   };
 };

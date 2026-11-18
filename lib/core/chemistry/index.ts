@@ -3,7 +3,7 @@
 export { WORK, WORK_CEILING, bestFit, fitAmounts, molesPerGram, newMeter, oxideMoles } from './fit.ts';
 export { FLUX_GROUPS, isFlux, isOxide, isVolatile, molarMass } from './oxides.ts';
 export { boronFor, leadFreeTarget } from './lead.ts';
-export { EXPANSION, expansion } from './expansion.ts';
+export { expansion } from './expansion.ts';
 export { boundedLeastSquares } from './lsq.ts';
 export { calculateUMF } from './umf.ts';
 export { closeness } from './closeness.ts';
