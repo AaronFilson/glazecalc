@@ -1,4 +1,59 @@
-'use strict';
+// Glazecalc's names: the built-in formula materials, the generic recipe words and the products to offer for
+// each, and the key a name is looked up by. Data and the one reader of it, which the app builds its library
+// and paste-in import from (lib/chemistry/materials.js, lib/recipe/paste.js).
+
+/** A table frozen through: its rows, and each row's lists and records. */
+function deepFreeze<T>(value: T): T {
+  if (value && typeof value === 'object') {
+    for (const inner of Object.values(value)) deepFreeze(inner);
+    Object.freeze(value);
+  }
+  return value;
+}
+
+/** A material defined by its molar formula, with the other names it goes by. */
+export interface FormulaMaterial {
+  readonly name: string;
+  readonly aliases?: ReadonlyArray<string>;
+  readonly formula: Readonly<Record<string, number>>;
+}
+
+/** A generic recipe word (or several) and the library materials to offer for it, most common first. */
+export interface GenericName {
+  readonly words: ReadonlyArray<string>;
+  readonly offer: ReadonlyArray<string>;
+}
+
+// Stoichiometric (theoretical) materials, defined by molar formula so their
+// analyses are exact. Mined materials such as Custer feldspar, EPK or
+// nepheline syenite vary by supplier and lot, so users should enter those
+// from their supplier's data sheet as an analysis instead. Where the standard
+// library (data/) gives a name to a real product, or "Kaolin" offers a choice of
+// products, the formula material here is "(theoretical)": one name, one material.
+const FORMULA_MATERIALS: ReadonlyArray<FormulaMaterial> = deepFreeze<FormulaMaterial[]>([
+  { name: 'Silica', aliases: ['flint', 'quartz'], formula: { SiO2: 1 } },
+  { name: 'Whiting', aliases: ['calcium carbonate'], formula: { CaO: 1, CO2: 1 } },
+  { name: 'Kaolin (theoretical)', formula: { Al2O3: 1, SiO2: 2, H2O: 2 } },
+  { name: 'Calcined Kaolin', formula: { Al2O3: 1, SiO2: 2 } },
+  { name: 'Potash Feldspar (theoretical)', formula: { K2O: 1, Al2O3: 1, SiO2: 6 } },
+  { name: 'Soda Feldspar (theoretical)', formula: { Na2O: 1, Al2O3: 1, SiO2: 6 } },
+  { name: 'Talc', formula: { MgO: 3, SiO2: 4, H2O: 1 } },
+  { name: 'Dolomite', formula: { CaO: 1, MgO: 1, CO2: 2 } },
+  { name: 'Wollastonite (theoretical)', formula: { CaO: 1, SiO2: 1 } },
+  { name: 'Alumina (theoretical)', formula: { Al2O3: 1 } },
+  { name: 'Alumina Hydrate', formula: { Al2O3: 1, H2O: 3 } },
+  { name: 'Zinc Oxide', formula: { ZnO: 1 } },
+  { name: 'Lithium Carbonate', formula: { Li2O: 1, CO2: 1 } },
+  { name: 'Strontium Carbonate', formula: { SrO: 1, CO2: 1 } },
+  { name: 'Barium Carbonate', formula: { BaO: 1, CO2: 1 } },
+  { name: 'Bone Ash', aliases: ['tricalcium phosphate'], formula: { CaO: 3, P2O5: 1 } },
+  { name: 'Zircon', aliases: ['zirconium silicate'], formula: { ZrO2: 1, SiO2: 1 } },
+  { name: 'Tin Oxide (theoretical)', formula: { SnO2: 1 } },
+  { name: 'Titanium Dioxide', formula: { TiO2: 1 } },
+  { name: 'Red Iron Oxide (theoretical)', formula: { Fe2O3: 1 } },
+  { name: 'Cobalt Carbonate (theoretical)', formula: { CoO: 1, CO2: 1 } },
+  { name: 'Copper Carbonate (theoretical)', formula: { CuO: 2, H2O: 1, CO2: 1 } }
+]);
 
 // Common recipe words that name a kind of material, not one product: "Kaolin",
 // "Ball clay", "Feldspar", "Zircopax". A recipe written with one of them does
@@ -19,8 +74,7 @@
 // and data/additives.ndjson are the library, and a test checks that every
 // name offered is in them. A name the person's records do not have is skipped.
 
-/** @type {{ words: string[], offer: string[] }[]} */
-const GENERIC_NAMES = [
+const GENERIC_NAMES: ReadonlyArray<GenericName> = deepFreeze<GenericName[]>([
   {
     // Kaolin and china clay: the one clay of the recipe's whiteness and plasticity differs by product.
     words: ['kaolin', 'kaolinite', 'kaolin clay', 'white clay', 'porcelain kaolin'],
@@ -125,6 +179,16 @@ const GENERIC_NAMES = [
     words: ['titanium', 'titania', 'titanium white'],
     offer: ['Titanium dioxide', 'Titanium Oxide', 'Rutile']
   }
-];
+]);
 
-module.exports = { GENERIC_NAMES };
+// A name as the library looks it up: lower case, with accents and other marks taken off (NFKD), and
+// only the letters and digits of any script kept. 'Silica', 'SILICA' and 'silica.' are one name, as
+// are 'Feldspath' and 'Feldspáth'; '釜戸長石' and 'Улексит' keep their letters, which once all came to ''.
+const nameKey = (name: unknown): string =>
+  String(name)
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/\p{M}/gu, '')
+    .replace(/[^\p{L}\p{N}]/gu, '');
+
+export { FORMULA_MATERIALS, GENERIC_NAMES, nameKey };
