@@ -941,5 +941,364 @@
   "lowBelow": 1150,
   "midBelow": 1250,
   "highBelow": 1320
+ },
+ "limits": {
+  "firing": {
+   "lowFireBelow": 1150,
+   "topFrom": 1320,
+   "zincMeltsFrom": 1101
+  },
+  "checks": {
+   "boronLowFire": {
+    "caution": 0.8,
+    "likely": 1,
+    "thinLikely": 0.8
+   },
+   "boronMidFire": {
+    "caution": 0.33,
+    "likely": 0.4
+   },
+   "thin": {
+    "alumina": 0.15,
+    "silica": 2
+   },
+   "boronShortShare": 0.8,
+   "aluminaLowFire": {
+    "caution": 0.15,
+    "likely": 0.1
+   },
+   "aluminaMidFire": {
+    "caution": 0.25,
+    "likely": 0.2
+   },
+   "silicaAluminaBelow": 5,
+   "boronBlue": {
+    "boron": 0.5,
+    "calcia": 0.5,
+    "alumina": 0.2
+   },
+   "alkaliLowFire": {
+    "caution": 0.35,
+    "likely": 0.5
+   },
+   "alkaliMidFire": {
+    "caution": 0.3,
+    "likely": 0.4
+   },
+   "magnesiaLowFire": {
+    "caution": 0.1,
+    "likely": 0.3
+   },
+   "zinc": 0.02,
+   "barium": {
+    "caution": 0.1,
+    "likely": 0.4
+   },
+   "rawCalcium": {
+    "caution": 5,
+    "likely": 10
+   },
+   "clay": {
+    "least": 5,
+    "caution": 20,
+    "likely": 25
+   },
+   "expansionRises": {
+    "caution": 0.2,
+    "likely": 0.5
+   },
+   "expansionFalls": {
+    "caution": 0.5,
+    "likely": 1
+   },
+   "alreadyFactor": 1.1,
+   "manyMaterials": 8,
+   "manyMaterialsLowFire": 7,
+   "smallPercent": 1,
+   "scaleReads": 0.1
+  },
+  "own": {
+   "id": "glazecalc",
+   "bands": [
+    {
+     "band": "low",
+     "belowC": 1150
+    },
+    {
+     "band": "mid",
+     "belowC": 1320
+    },
+    {
+     "band": "top"
+    }
+   ],
+   "whenUnknown": "low",
+   "unity": {
+    "low": {
+     "B2O3": {
+      "max": 0.8,
+      "maxLikely": 1,
+      "maxLikelyThin": 0.8
+     },
+     "Al2O3": {
+      "min": 0.15,
+      "minLikely": 0.1
+     },
+     "K2O+Na2O": {
+      "max": 0.35,
+      "maxLikely": 0.5
+     },
+     "MgO": {
+      "max": 0.1,
+      "maxLikely": 0.3
+     }
+    },
+    "mid": {
+     "B2O3": {
+      "max": 0.33,
+      "maxLikely": 0.4
+     },
+     "Al2O3": {
+      "min": 0.25,
+      "minLikely": 0.2
+     },
+     "K2O+Na2O": {
+      "max": 0.3,
+      "maxLikely": 0.4
+     }
+    }
+   }
+  },
+  "forFit": {
+   "id": "hesselberth-roy",
+   "bands": [
+    {
+     "band": "low",
+     "belowC": 1150
+    },
+    {
+     "band": "mid",
+     "belowC": 1250
+    },
+    {
+     "band": "high",
+     "belowC": 1320
+    },
+    {
+     "band": "top"
+    }
+   ],
+   "whenUnknown": "mid",
+   "cones": {
+    "mid": "6",
+    "high": "10"
+   },
+   "unity": {
+    "mid": {
+     "K2O+Na2O": {
+      "min": 0.1,
+      "max": 0.3
+     },
+     "CaO": {
+      "min": 0.2,
+      "max": 0.6
+     },
+     "MgO": {
+      "min": 0,
+      "max": 0.3
+     },
+     "ZnO": {
+      "min": 0,
+      "max": 0.2
+     },
+     "SrO": {
+      "min": 0,
+      "max": 0.2
+     },
+     "Al2O3": {
+      "min": 0.25,
+      "max": 0.4
+     },
+     "B2O3": {
+      "min": 0.15,
+      "max": 0.35
+     },
+     "SiO2": {
+      "min": 2.5,
+      "max": 4
+     }
+    },
+    "high": {
+     "K2O+Na2O": {
+      "min": 0.1,
+      "max": 0.3
+     },
+     "CaO": {
+      "min": 0.3,
+      "max": 0.7
+     },
+     "MgO": {
+      "min": 0,
+      "max": 0.4
+     },
+     "SrO": {
+      "min": 0,
+      "max": 0.3
+     },
+     "Al2O3": {
+      "min": 0.3,
+      "max": 0.6
+     },
+     "B2O3": {
+      "min": 0,
+      "max": 0.3
+     },
+     "SiO2": {
+      "min": 3,
+      "max": 5
+     }
+    }
+   }
+  }
+ },
+ "stull": {
+  "silica": {
+   "min": 0.6,
+   "max": 7.2
+  },
+  "alumina": {
+   "min": 0,
+   "max": 1
+  },
+  "regions": {
+   "unfused": [
+    [
+     0.6,
+     0.42
+    ],
+    [
+     0.6,
+     1
+    ],
+    [
+     2.8,
+     1
+    ]
+   ],
+   "matte": [
+    [
+     0.6,
+     0.08
+    ],
+    [
+     0.6,
+     0.42
+    ],
+    [
+     2.8,
+     1
+    ],
+    [
+     4,
+     1
+    ]
+   ],
+   "semi-matte": [
+    [
+     1.2,
+     0.2423529411764706
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     1
+    ]
+   ],
+   "underfired": [
+    [
+     2.4,
+     0.08
+    ],
+    [
+     7.2,
+     0.65
+    ],
+    [
+     7.2,
+     0.08
+    ]
+   ]
+  },
+  "crazed": [
+   [
+    0.6,
+    0.08
+   ],
+   [
+    0.6,
+    1
+   ],
+   [
+    1.67,
+    1
+   ],
+   [
+    2.1,
+    0.5
+   ],
+   [
+    2.38,
+    0.25
+   ],
+   [
+    2.7,
+    0.23
+   ],
+   [
+    3.3,
+    0.25
+   ],
+   [
+    3.9,
+    0.28
+   ],
+   [
+    4.2,
+    0.29
+   ],
+   [
+    5.4,
+    0.49
+   ],
+   [
+    7.2,
+    0.615
+   ],
+   [
+    7.2,
+    0.08
+   ]
+  ],
+  "bright": [
+   [
+    1.8,
+    0.2
+   ],
+   [
+    4.2,
+    0.6
+   ],
+   [
+    6,
+    0.8
+   ],
+   [
+    7.2,
+    0.92
+   ]
+  ]
  }
 }

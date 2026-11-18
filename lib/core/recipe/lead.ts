@@ -4,7 +4,6 @@ import { problem } from '../problem.ts';
 import { bestFit, calculateUMF, leadFreeTarget, oxideMoles, selectMaterials } from '../chemistry/index.ts';
 import { amountOf, formatAmount, totalOf } from './amounts.ts';
 import { bariumSeverity, isRawClay, pastLimits, sizeNotes } from './checks.ts';
-import { FIRING } from './limits.ts';
 import { say, figure, plainFigure, upTo } from './messages.ts';
 import { hasLead, suggestable } from './library.ts';
 import { expansionOf, fluxesOf, molesOf, oxidePercent, roleOf, unityOf } from './materials.ts';
@@ -135,8 +134,10 @@ function targetFor<M extends MaterialRecord>(host: Host, { lines, additives, cel
   return leadFreeTarget(host, molesOf(host, lines), {
     celsius,
     noZinc:
-      chrome || has(host, additives, ['Fe2O3', 'FeO', 'CuO'], ['iron', 'copper']) || celsius < FIRING.zincMeltsFrom,
-    noMagnesia: chrome || celsius < FIRING.zincMeltsFrom,
+      chrome ||
+      has(host, additives, ['Fe2O3', 'FeO', 'CuO'], ['iron', 'copper']) ||
+      celsius < host.limits.firing.zincMeltsFrom,
+    noMagnesia: chrome || celsius < host.limits.firing.zincMeltsFrom,
     noStrontium: !strontium
   });
 }
@@ -161,7 +162,7 @@ function linesFor<M extends MaterialRecord>(host: Host, setting: Setting<M>, bas
   const clay = fit.filter(rawClay).sort((p, q) => q.start - p.start)[0];
   if (clay) Object.assign(clay, { must: true, fixed: true, least: Math.min(clay.start, CLAY_SHARE * size) });
   const uncapped = new Set(extras.uncapped ?? []);
-  const lowFire = celsius < FIRING.lowFireBelow;
+  const lowFire = celsius < host.limits.firing.lowFireBelow;
   // Why each is capped, for the report.
   const rawCalciumWhy = say('lead.why.rawCalcium');
   const add = (material: M | undefined, extra: Partial<Line> = {}) => {
@@ -195,7 +196,7 @@ function linesFor<M extends MaterialRecord>(host: Host, setting: Setting<M>, bas
   const zincWanted = !(
     hasChrome(host, additives) ||
     has(host, additives, ['Fe2O3', 'FeO', 'CuO'], ['iron', 'copper']) ||
-    celsius < FIRING.zincMeltsFrom
+    celsius < host.limits.firing.zincMeltsFrom
   );
   if (zincWanted)
     add(
@@ -415,7 +416,7 @@ function replaceLead<M extends MaterialRecord>(
     ...sizeNotes(
       host,
       materials.map((material) => ({ material, amount: material.amount })),
-      celsius < FIRING.lowFireBelow
+      celsius < host.limits.firing.lowFireBelow
     )
   );
   return { materials, changes, cautions, report };
@@ -483,7 +484,7 @@ function bariumIn(host: Host, lines: MaterialRecord[]): { unity: number; likely:
   const moles = readableMoles(host, lines);
   const fluxes = fluxesOf(host, moles);
   const unity = fluxes > 0 ? (moles['BaO'] ?? 0) / fluxes : 0;
-  const severity = bariumSeverity(unity);
+  const severity = bariumSeverity(host, unity);
   return severity ? { unity, likely: severity === 'likely' } : null;
 }
 

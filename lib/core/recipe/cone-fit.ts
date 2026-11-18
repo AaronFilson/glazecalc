@@ -1,9 +1,9 @@
 import { boronFor } from '../chemistry/index.ts';
 import { approxCelsius, approxCone, isCone, ordinal } from '../cones/firing.ts';
-import { FIRING_BANDS, HESSELBERTH_ROY_LIMITS, bandOf, pastSide } from './limits.ts';
+import { FIRING_BANDS, bandOf, pastSide } from './limits.ts';
 import { say, figure } from './messages.ts';
 import type { ConeScale, FiringBlock } from '../cones/firing.ts';
-import type { FiringBand } from './limits.ts';
+import type { FiringBand, LimitSet } from './limits.ts';
 import type { MessageParams, RecipeMessage, RecipeMessageCode } from './messages.ts';
 import type { Oxides } from '../types.ts';
 import type { Host } from '../host.ts';
@@ -101,40 +101,41 @@ interface Judged {
 // it cannot judge, rather than guess. A firing judged is never called a pass:
 // no note says nothing about whether a glaze is stable or food safe.
 
-// Hesselberth & Roy's set has both bands' silica and alumina figures, as written in limits.ts.
-const HR = HESSELBERTH_ROY_LIMITS.unity as Required<typeof HESSELBERTH_ROY_LIMITS.unity>;
-
 /**
  * The figures the check compares with. Boron's margins around Katz's need are
  * the research report's, chosen on Glazy's glazes: a smaller margin for
  * "cooler" (0.20) tripled the false notes at cone 10, and testing alumina for
  * "hotter" raised them at cone 6 to 6%, as mattes are often high in it.
  */
-const CONE_FIT = Object.freeze({
-  /** "Looks cooler": boron at least this much over Katz's need for the firing. */
-  boronOver: 0.3,
-  /** "Looks hotter": boron at least this much under Katz's need. */
-  boronUnder: 0.15,
-  /** "Looks cooler": silica or alumina under Hesselberth & Roy's least for the band. */
-  floor: Object.freeze({
-    mid: Object.freeze({ SiO2: HR.mid['SiO2']!.min!, Al2O3: HR.mid['Al2O3']!.min! }),
-    high: Object.freeze({ SiO2: HR.high['SiO2']!.min!, Al2O3: HR.high['Al2O3']!.min! })
-  }),
-  /**
-   * "Looks hotter": silica over the band's most. At low fire the UK traditional
-   * limits' cone 04–02 figure (Hesselberth & Roy have none); at cone 6
-   * Hesselberth & Roy's.
-   */
-  ceiling: Object.freeze({ low: 3.0, mid: HR.mid['SiO2']!.max! }),
-  /** Can't judge: the published figures do not cover glazes melted this way. */
-  lead: 0.05,
-  lithium: 0.1,
-  alkali: 0.45,
-  zinc: 0.3,
-  /** Can't judge: not a usual glaze's formula (a slip, a metallic, mostly colorant). */
-  silica: Object.freeze({ min: 1, max: 8 }),
-  colorants: 0.5
-});
+const coneFitFigures = (host: Host) => {
+  // The set cone fit reads (host.limits.forFit, Hesselberth & Roy's) has both bands' silica and alumina figures.
+  const HR = host.limits.forFit.unity as Required<LimitSet['unity']>;
+  return Object.freeze({
+    /** "Looks cooler": boron at least this much over Katz's need for the firing. */
+    boronOver: 0.3,
+    /** "Looks hotter": boron at least this much under Katz's need. */
+    boronUnder: 0.15,
+    /** "Looks cooler": silica or alumina under Hesselberth & Roy's least for the band. */
+    floor: Object.freeze({
+      mid: Object.freeze({ SiO2: HR.mid['SiO2']!.min!, Al2O3: HR.mid['Al2O3']!.min! }),
+      high: Object.freeze({ SiO2: HR.high['SiO2']!.min!, Al2O3: HR.high['Al2O3']!.min! })
+    }),
+    /**
+     * "Looks hotter": silica over the band's most. At low fire the UK traditional
+     * limits' cone 04–02 figure (Hesselberth & Roy have none); at cone 6
+     * Hesselberth & Roy's.
+     */
+    ceiling: Object.freeze({ low: 3.0, mid: HR.mid['SiO2']!.max! }),
+    /** Can't judge: the published figures do not cover glazes melted this way. */
+    lead: 0.05,
+    lithium: 0.1,
+    alkali: 0.45,
+    zinc: 0.3,
+    /** Can't judge: not a usual glaze's formula (a slip, a metallic, mostly colorant). */
+    silica: Object.freeze({ min: 1, max: 8 }),
+    colorants: 0.5
+  });
+};
 
 /** The cone a band chosen by hand is read at: the cone its figures are for (Hesselberth & Roy's 6 and 10; cone 04 at low fire). */
 const BAND_CONES: Readonly<Partial<Record<FiringBand, string>>> = Object.freeze({ low: '04', mid: '6', high: '10' });
@@ -172,17 +173,19 @@ function celsiusOf(host: Host, scale: ConeScale, cone: string): Approx | null {
  * Why the glaze cannot be judged, from its formula, firing and materials; null when it can.
  */
 function formulaSkip(
+  host: Host,
   unity: Oxides,
   processes: string[],
   ash: boolean
 ): { skipped: ConeFitSkip; process?: string } | null {
-  if (value(unity, 'PbO') > CONE_FIT.lead) return { skipped: 'lead' };
-  if (value(unity, 'Li2O') >= CONE_FIT.lithium) return { skipped: 'lithium' };
-  if (value(unity, 'K2O') + value(unity, 'Na2O') >= CONE_FIT.alkali) return { skipped: 'alkali' };
-  if (value(unity, 'ZnO') >= CONE_FIT.zinc) return { skipped: 'zinc' };
+  const figures = coneFitFigures(host);
+  if (value(unity, 'PbO') > figures.lead) return { skipped: 'lead' };
+  if (value(unity, 'Li2O') >= figures.lithium) return { skipped: 'lithium' };
+  if (value(unity, 'K2O') + value(unity, 'Na2O') >= figures.alkali) return { skipped: 'alkali' };
+  if (value(unity, 'ZnO') >= figures.zinc) return { skipped: 'zinc' };
   const silica = value(unity, 'SiO2');
   const colorants = COLORANTS.reduce((sum, oxide) => sum + value(unity, oxide), 0);
-  if (silica < CONE_FIT.silica.min || silica > CONE_FIT.silica.max || colorants > CONE_FIT.colorants) {
+  if (silica < figures.silica.min || silica > figures.silica.max || colorants > figures.colorants) {
     return { skipped: 'notGlaze' };
   }
   const process = KILN_GLAZED.find((p) => processes.includes(p));
@@ -195,15 +198,16 @@ function formulaSkip(
  * The two signals at one temperature: whether the glaze looks cooler or hotter
  * than it, and the figures that say so; null when they do not agree.
  */
-function judgeAt(unity: Oxides, celsius: number): Judged | null {
+function judgeAt(host: Host, unity: Oxides, celsius: number): Judged | null {
+  const figures = coneFitFigures(host);
   // A finite temperature always has a band.
-  const band = bandOf(HESSELBERTH_ROY_LIMITS, celsius)!;
+  const band = bandOf(host.limits.forFit, celsius)!;
   const need = boronFor(celsius);
   const boron = value(unity, 'B2O3');
   const silica = value(unity, 'SiO2');
   const alumina = value(unity, 'Al2O3');
-  const floor = (CONE_FIT.floor as Partial<Record<FiringBand, { SiO2: number; Al2O3: number }>>)[band];
-  if (floor && pastSide(boron, { min: need + CONE_FIT.boronOver }) !== 'below') {
+  const floor = (figures.floor as Partial<Record<FiringBand, { SiO2: number; Al2O3: number }>>)[band];
+  if (floor && pastSide(boron, { min: need + figures.boronOver }) !== 'below') {
     const low = (
       [
         ['SiO2', silica],
@@ -216,7 +220,14 @@ function judgeAt(unity: Oxides, celsius: number): Judged | null {
         band,
         need,
         signals: [
-          { key: 'B2O3', value: boron, figure: need + CONE_FIT.boronOver, side: 'above', band, source: 'katz' },
+          {
+            key: 'B2O3',
+            value: boron,
+            figure: need + figures.boronOver,
+            side: 'above',
+            band,
+            source: 'katz'
+          },
           ...low.map(([key, v]): ConeFitSignal => ({
             key,
             value: v,
@@ -229,10 +240,10 @@ function judgeAt(unity: Oxides, celsius: number): Judged | null {
       };
     }
   }
-  const ceiling = (CONE_FIT.ceiling as Partial<Record<FiringBand, number>>)[band];
+  const ceiling = (figures.ceiling as Partial<Record<FiringBand, number>>)[band];
   if (
     ceiling !== undefined &&
-    pastSide(boron, { max: need - CONE_FIT.boronUnder }) !== 'above' &&
+    pastSide(boron, { max: need - figures.boronUnder }) !== 'above' &&
     pastSide(silica, { max: ceiling }) === 'above'
   ) {
     return {
@@ -243,7 +254,7 @@ function judgeAt(unity: Oxides, celsius: number): Judged | null {
         {
           key: 'B2O3',
           value: boron,
-          figure: Math.max(0, need - CONE_FIT.boronUnder),
+          figure: Math.max(0, need - figures.boronUnder),
           side: 'below',
           band,
           source: 'katz'
@@ -271,7 +282,7 @@ function looksLikeFrom(host: Host, unity: Oxides, judged: Judged): FiringBand | 
   const step = judged.direction === 'cooler' ? -1 : 1;
   const next = FIRING_BANDS[at + step];
   if (next === 'mid') {
-    const again = judgeAt(unity, celsiusOf(host, 'orton', BAND_CONES.mid!)!.celsius);
+    const again = judgeAt(host, unity, celsiusOf(host, 'orton', BAND_CONES.mid!)!.celsius);
     if (again?.direction === judged.direction) return FIRING_BANDS[at + 2 * step];
   }
   return next;
@@ -329,12 +340,12 @@ function endsOf(host: Host, firing: Firing): { ends: End[]; skipped?: ConeFitSki
     const end: End = { scale: firing.scale, cone };
     // An Orton cone above 10 or an SK one above 12 is past the figures, whether it has a temperature or not.
     if (pastHottest(host, firing.scale, cone)) {
-      const band: FiringBand | undefined = at ? bandOf(HESSELBERTH_ROY_LIMITS, at.celsius) : 'top';
+      const band: FiringBand | undefined = at ? bandOf(host.limits.forFit, at.celsius) : 'top';
       ends.push({ ...end, ...(at && { celsius: at.celsius, basis: at.basis }), band, above: true });
       continue;
     }
     if (!at) return { ends: [end], skipped: 'noTemperature', at: end };
-    const band = bandOf(HESSELBERTH_ROY_LIMITS, at.celsius);
+    const band = bandOf(host.limits.forFit, at.celsius);
     ends.push({
       ...end,
       celsius: at.celsius,
@@ -415,7 +426,7 @@ function coneFit(
       sentences: [say(`coneFit.skip.${reason}` satisfies RecipeMessageCode, { ...named(end), ...extra })]
     });
 
-  const formula = formulaSkip(unity ?? {}, processes, options.ash === true);
+  const formula = formulaSkip(host, unity ?? {}, processes, options.ash === true);
   // Past formulaSkip, `unity` is read as the formula it was (judgeAt and the notes read it as they did).
   const u = unity as Oxides;
   if (formula) return skip(formula.skipped, formula.process ? { process: formula.process } : undefined);
@@ -481,7 +492,7 @@ function coneFit(
   const above = ends.find((end) => end.above);
   if (above) {
     const within = judged.find((end) => !end.above);
-    const atWithin = within && judgeAt(u, within.celsius!);
+    const atWithin = within && judgeAt(host, u, within.celsius!);
     if (atWithin?.direction === 'cooler') return note('cooler', within!, atWithin);
     return skip('aboveChart', undefined, above);
   }
@@ -489,9 +500,9 @@ function coneFit(
   const coolest = judged[0];
   const hottest = judged[judged.length - 1];
   // Cooler than the coolest end is cooler than every band stated; hotter than the hottest, hotter than all.
-  const atCoolest = judgeAt(u, coolest.celsius!);
+  const atCoolest = judgeAt(host, u, coolest.celsius!);
   if (atCoolest?.direction === 'cooler') return note('cooler', coolest, atCoolest);
-  const atHottest = judgeAt(u, hottest.celsius!);
+  const atHottest = judgeAt(host, u, hottest.celsius!);
   if (atHottest?.direction === 'hotter') return note('hotter', hottest, atHottest);
   // A range across bands: the chemistry may still point to one end of it.
   if (coolest.band !== hottest.band) {
@@ -507,4 +518,4 @@ function coneFit(
 /** A firing to judge against: a firing block, or a band chosen by hand; anything else has none. */
 export type Firing = FiringBlock | FiringBand | string | null | undefined;
 
-export { CONE_FIT, coneFit };
+export { coneFitFigures, coneFit };

@@ -1,3 +1,4 @@
+import type { Host } from '../host.ts';
 import type { Oxides } from '../types.ts';
 
 /** A point on Stull's chart: [SiO2, Al2O3] in moles. */
@@ -33,80 +34,12 @@ function molePercent(unity: Oxides | null | undefined): Oxides {
   return total > 0 ? Object.fromEntries(entries.map(([oxide, moles]) => [oxide, (100 * moles) / total])) : {};
 }
 
-/**
- * R. T. Stull's chart of silica against alumina in the unity formula: "Influences
- * of variable silica and alumina on porcelain glazes of constant RO", Transactions
- * of the American Ceramic Society 14 (1912), 62-70. Stull fired at cone 11 with
- * the fluxes fixed at 0.3 K2O and 0.7 CaO, so the regions are a guide to the
- * surface, not a prediction: other fluxes and firings move them, and a matte
- * glaze can plot as bright when underfired.
- *
- * The outlines are Glazy's reading of Stull's chart, by Derek Au: points
- * { x: SiO2, y: Al2O3 } from charts/stull-chart-d3.js in
- * https://github.com/derekphilipau/ceramic-chemistry-visualization
- * (Copyright (c) 2017 Derek Au, MIT License: the full notice, which the licence
- * asks to travel with the outlines, is in THIRD-PARTY-NOTICES.md at the repo's
- * root and credited on the About page). Bright is what the others leave,
- * and crazed overlaps them. `bright` is Stull's line of the brightest glazes.
- * Semi-matte's first point is on matte's lower edge, as on Stull's chart:
- * Glazy's 0.242 is 0.00035 under it, which left a sliver of bright between
- * the two.
- */
-const STULL: StullChart = Object.freeze<StullChart>({
-  /** The chart's extent, in moles. */
-  silica: Object.freeze({ min: 0.6, max: 7.2 }),
-  alumina: Object.freeze({ min: 0, max: 1 }),
-  regions: Object.freeze({
-    unfused: [
-      [0.6, 0.42],
-      [0.6, 1.0],
-      [2.8, 1.0]
-    ],
-    matte: [
-      [0.6, 0.08],
-      [0.6, 0.42],
-      [2.8, 1.0],
-      [4.0, 1.0]
-    ],
-    'semi-matte': [
-      // At 1.2 on the line from (0.6, 0.08) to (4.0, 1.0).
-      [1.2, 0.08 + ((1.0 - 0.08) * (1.2 - 0.6)) / (4.0 - 0.6)],
-      [4.0, 1.0],
-      [5.0, 1.0]
-    ],
-    underfired: [
-      [2.4, 0.08],
-      [7.2, 0.65],
-      [7.2, 0.08]
-    ]
-  }),
-  crazed: [
-    [0.6, 0.08],
-    [0.6, 1.0],
-    [1.67, 1.0],
-    [2.1, 0.5],
-    [2.38, 0.25],
-    [2.7, 0.23],
-    [3.3, 0.25],
-    [3.9, 0.28],
-    [4.2, 0.29],
-    [5.4, 0.49],
-    [7.2, 0.615],
-    [7.2, 0.08]
-  ],
-  bright: [
-    [1.8, 0.2],
-    [4.2, 0.6],
-    [6.0, 0.8],
-    [7.2, 0.92]
-  ]
-});
-
-/** The least alumina in any of Stull's regions. */
-const LOWEST_ALUMINA = 0.08;
-
 /** How far off an edge, as the cross product of the point with it, a point still counts as on it: rounding. */
 const ON_EDGE = 1e-12;
+
+/** The least alumina in any of a Stull chart's regions (0.08 on Stull's). */
+const lowestAlumina = (chart: StullChart): number =>
+  Math.min(...Object.values(chart.regions).flatMap((region) => region.map(([, alumina]) => alumina)));
 
 /**
  * Whether a point is inside a polygon (even-odd rule) or on its outline. A point on an edge is in it: the chart's
@@ -135,7 +68,8 @@ function inside([x, y]: StullXY, polygon: ReadonlyArray<StullXY>): boolean {
  * 'underfired', or 'unclassified' under the alumina of the lowest region; null off the chart) and whether it is in the crazed area.
  * Null without silica or alumina.
  */
-function stullPoint(unity: Oxides | null | undefined): StullPoint | null {
+function stullPoint(host: Host, unity: Oxides | null | undefined): StullPoint | null {
+  const STULL = host.stull;
   const silica = unity?.['SiO2'] ?? 0;
   const alumina = unity?.['Al2O3'] ?? 0;
   if (!(silica > 0) || !(alumina > 0)) return null;
@@ -148,7 +82,7 @@ function stullPoint(unity: Oxides | null | undefined): StullPoint | null {
   // Stull's lowest region starts at 0.08 alumina; under it his chart says nothing.
   const region: StullRegion | null = !onChart
     ? null
-    : alumina < LOWEST_ALUMINA
+    : alumina < lowestAlumina(STULL)
       ? 'unclassified'
       : ((Object.keys(STULL.regions) as Array<keyof StullChart['regions']>).find((name) =>
           inside(point, STULL.regions[name])
@@ -156,4 +90,4 @@ function stullPoint(unity: Oxides | null | undefined): StullPoint | null {
   return { silica, alumina, ratio: silica / alumina, region, crazed: onChart && inside(point, STULL.crazed) };
 }
 
-export { molePercent, STULL, stullPoint };
+export { molePercent, stullPoint };

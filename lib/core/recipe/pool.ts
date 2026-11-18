@@ -3,7 +3,6 @@ import type { Identity } from '../identity.ts';
 import { closeness, newMeter, selectMaterials } from '../chemistry/index.ts';
 import { amountOf, formatAmount } from './amounts.ts';
 import { isRawClay, rawClayHigh } from './checks.ts';
-import { CHECK_LIMITS } from './limits.ts';
 import { say, plainFigure, upTo } from './messages.ts';
 import type { Oxides, SelectLine, SelectOptions } from '../types.ts';
 import type { Selection } from '../chemistry/select.ts';
@@ -147,7 +146,7 @@ function selectHoldingClay<L extends PoolLine>(
 ): { selection: Selection; lines: L[] } {
   const options = { ...given, meter: given.meter ?? newMeter() };
   const free = selectMaterials(host, lines, target, options);
-  const most = Math.max(CHECK_LIMITS.clay.caution, oldClay) / 100;
+  const most = Math.max(host.limits.checks.clay.caution, oldClay) / 100;
   const size = batch ?? lines.reduce((sum, line) => sum + (Number(line.start) || 0), 0);
   const main = lines
     .filter((line) => isRawClay(host, line.material) && line.start > 0 && !line.avoid)
@@ -165,7 +164,7 @@ function selectHoldingClay<L extends PoolLine>(
   const clay = (amounts: number[]) =>
     amounts.reduce((sum, amount, i) => (isRawClay(host, lines[i].material) ? sum + amount : sum), 0);
   const cappedClay = free.amounts.reduce((sum, amount, i) => (held[i].group === RAW_CLAY ? sum + amount : sum), 0);
-  const tooMuch = total > 0 && rawClayHigh((100 * cappedClay) / total, oldClay);
+  const tooMuch = total > 0 && rawClayHigh(host, (100 * cappedClay) / total, oldClay);
   const tooLittle = size > 0 && clay(free.amounts) / total < (least / size) * (1 - 1e-6);
   if (!(total > 0) || !(tooMuch || tooLittle)) return { selection: free, lines };
   const holding = selectMaterials(host, held, target, { ...options, shares: { ...options.shares, [RAW_CLAY]: most } });

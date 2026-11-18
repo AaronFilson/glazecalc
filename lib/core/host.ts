@@ -7,6 +7,8 @@ import type { Identity, Reader } from './identity.ts';
 import type { Traits } from './traits.ts';
 import type { OxideTable } from './types.ts';
 import type { ConeTable } from './cones/firing.ts';
+import type { LimitTable } from './recipe/limits.ts';
+import type { StullChart } from './recipe/analysis.ts';
 
 /**
  * How the core reads a host's records. A reader left out is the default: the record's own `id`; its
@@ -30,4 +32,8 @@ export interface Host extends Readers {
   readonly oxides: OxideTable;
   /** The cone charts and their lookups: the catalog's CONES (lib/catalog/cones.ts), or a host's own. */
   readonly cones: ConeTable;
+  /** The limits recipes are checked against: the catalog's LIMITS (lib/catalog/limits.ts), or a host's own. */
+  readonly limits: LimitTable;
+  /** Stull's chart: the catalog's STULL (lib/catalog/limits.ts), or a host's own. */
+  readonly stull: StullChart;
 }

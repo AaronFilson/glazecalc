@@ -30,7 +30,6 @@ const LITTLE = 0.1;
 // low fire, and 0.25 from cone 1 or so, where the published floor is 0.2-0.275.
 const LEAST_ALUMINA = 0.2;
 const LEAST_ALUMINA_MID_FIRE = 0.25;
-const MID_FIRE_FROM = 1150;
 
 /**
  * The lead-free version of a glaze's oxides, to aim the amounts at: the old
@@ -93,7 +92,10 @@ const leadFreeTarget = function (host: Host, moles: Oxides, options: LeadFreeOpt
   others.forEach((oxide) => give(oxide, (unity[oxide] || 0) + LITTLE));
   give('CaO', Infinity);
 
-  unity['Al2O3'] = Math.max(unity['Al2O3'] || 0, celsius >= MID_FIRE_FROM ? LEAST_ALUMINA_MID_FIRE : LEAST_ALUMINA);
+  unity['Al2O3'] = Math.max(
+    unity['Al2O3'] || 0,
+    celsius >= host.limits.firing.lowFireBelow ? LEAST_ALUMINA_MID_FIRE : LEAST_ALUMINA
+  );
   unity['B2O3'] = Math.max(unity['B2O3'] || 0, boronFor(celsius));
   const target: Oxides = {};
   Object.keys(unity).forEach((oxide) => (target[oxide] = unity[oxide] * fluxes));
