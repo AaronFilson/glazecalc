@@ -11,6 +11,7 @@ import { CONES } from '../../lib/catalog/cones.ts';
 import { LIMITS, STULL } from '../../lib/catalog/limits.ts';
 import { DENSITIES } from '../../lib/catalog/densities.ts';
 import { EXPANSION } from '../../lib/catalog/expansion.ts';
+import { POLICY } from '../../lib/catalog/policy.ts';
 
 const HOST: Host = {
   oxides: OXIDES,
@@ -18,7 +19,8 @@ const HOST: Host = {
   limits: LIMITS,
   stull: STULL,
   densities: DENSITIES,
-  expansion: EXPANSION
+  expansion: EXPANSION,
+  policy: POLICY
 };
 
 describe('the core chemistry, nameless', () => {

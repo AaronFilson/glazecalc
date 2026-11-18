@@ -15,9 +15,6 @@
 // potter types. A slurry's SG must be over 1 (water) and under the dry
 // materials' own; where it is not, or a value is missing, the answer is null.
 
-/** The SG a recipe may keep as its target (`sgTarget`): water is 1, no slurry is thicker than 2.5. */
-const SG_TARGET_RANGE = Object.freeze({ min: 1, max: 2.5 });
-
 /** Litres in a US gallon, an imperial gallon and an imperial pint. */
 const LITRES = Object.freeze({ usGallon: 3.785411784, imperialGallon: 4.54609, imperialPint: 0.56826125 });
 
@@ -93,7 +90,6 @@ const sgFromPint = (ounces: number): number => ounces / 20;
 const pintFromSg = (sg: number): number => sg * 20;
 
 export {
-  SG_TARGET_RANGE,
   LITRES,
   dryPerLitre,
   slurryContents,

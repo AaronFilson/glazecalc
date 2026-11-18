@@ -78,7 +78,7 @@ function modernMaterials<M extends MaterialRecord>(
       .filter((sub) => allowLead || !hasLead(sub));
     const substitute =
       substitutes.find((sub) => region && sub.region?.includes(region)) ??
-      substitutes.find((sub) => inRegion(sub, region)) ??
+      substitutes.find((sub) => inRegion(host, sub, region)) ??
       substitutes[0];
     if (!substitute) {
       const additive =

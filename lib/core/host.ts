@@ -10,6 +10,7 @@ import type { ConeTable } from './cones/firing.ts';
 import type { LimitTable } from './recipe/limits.ts';
 import type { StullChart } from './recipe/analysis.ts';
 import type { DensityTable } from './recipe/density.ts';
+import type { ConeFitPolicy } from './recipe/cone-fit.ts';
 
 /**
  * How the core reads a host's records. A reader left out is the default: the record's own `id`; its
@@ -27,6 +28,12 @@ export interface Readers {
   readonly traitsOf?: Reader<Traits | null | undefined>;
 }
 
+/** A host's own choices: the markets each region's library lists too, and cone fit's margins and cut-offs. */
+export interface Policy {
+  readonly alsoLists: Readonly<Record<string, ReadonlyArray<string>>>;
+  readonly coneFit: ConeFitPolicy;
+}
+
 /** What the core is given with each call: how to read the host's records, and the tables to work from. */
 export interface Host extends Readers {
   /** The elements and oxides: the catalog's OXIDES (lib/catalog/oxides.ts), or a host's own. */
@@ -41,4 +48,6 @@ export interface Host extends Readers {
   readonly densities: DensityTable;
   /** Each oxide's coefficient of expansion per weight percent: the catalog's EXPANSION (lib/catalog/expansion.ts), or a host's own. */
   readonly expansion: Readonly<Record<string, number>>;
+  /** Its own choices: the catalog's POLICY (lib/catalog/policy.ts), or a host's own. */
+  readonly policy: Policy;
 }
