@@ -10,26 +10,6 @@ import type { Host } from '../host.ts';
 // firing temperature.
 
 /**
- * The cones a lead glaze is replaced for, 06 to 6, and the temperature each
- * bends at: Orton's older chart for large cones heated at 150 °C an hour, the
- * figures lib/cones/index.js reads (ORTON.chart) and Katz's cone 10 comes from.
- */
-const CONES: ReadonlyArray<{ cone: string; celsius: number }> = [
-  { cone: '06', celsius: 999 },
-  { cone: '05', celsius: 1046 },
-  { cone: '04', celsius: 1060 },
-  { cone: '03', celsius: 1101 },
-  { cone: '02', celsius: 1120 },
-  { cone: '01', celsius: 1137 },
-  { cone: '1', celsius: 1154 },
-  { cone: '2', celsius: 1162 },
-  { cone: '3', celsius: 1168 },
-  { cone: '4', celsius: 1186 },
-  { cone: '5', celsius: 1196 },
-  { cone: '6', celsius: 1222 }
-];
-
-/**
  * Matt Katz's rule: at least 0.1 B2O3 in the unity formula for every 50 °C
  * below cone 10, 1305 °C ("Boron in Glazes", Ceramics Monthly, September
  * 2012; a paraphrase this once followed had 1300 °C, docs/adr/0022). About
@@ -58,7 +38,7 @@ const MID_FIRE_FROM = 1150;
  * other fluxes, alumina at least 0.2 and boron at least Katz's for the firing.
  * The fluxes keep their total, so the result is on the old recipe's scale.
  *
- *   options.celsius     the firing temperature (see CONES)
+ *   options.celsius     the firing temperature
  *   options.noZinc      leave zinc out: with chrome (it browns chrome greens and
  *                       spoils chrome-tin pinks), iron or copper (it muddies or
  *                       shifts their colour), or below cone 03, where it hardly melts
@@ -120,4 +100,4 @@ const leadFreeTarget = function (host: Host, moles: Oxides, options: LeadFreeOpt
   return target;
 };
 
-export { CONES, boronFor, leadFreeTarget };
+export { boronFor, leadFreeTarget };

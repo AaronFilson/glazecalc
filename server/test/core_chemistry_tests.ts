@@ -7,8 +7,9 @@ import type { Host } from '../../lib/core/host.ts';
 import * as materials from '../../lib/core/chemistry/materials.ts';
 import * as umf from '../../lib/core/chemistry/umf.ts';
 import { OXIDES } from '../../lib/catalog/oxides.ts';
+import { CONES } from '../../lib/catalog/cones.ts';
 
-const HOST: Host = { oxides: OXIDES };
+const HOST: Host = { oxides: OXIDES, cones: CONES };
 
 describe('the core chemistry, nameless', () => {
   const silica = { id: 7, formula: { SiO2: 1 } };

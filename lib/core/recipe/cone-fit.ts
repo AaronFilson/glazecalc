@@ -6,6 +6,7 @@ import type { ConeScale, FiringBlock } from '../cones/firing.ts';
 import type { FiringBand } from './limits.ts';
 import type { MessageParams, RecipeMessage, RecipeMessageCode } from './messages.ts';
 import type { Oxides } from '../types.ts';
+import type { Host } from '../host.ts';
 
 /** What a cone's temperature rests on (cones/firing.ts approxCelsius). */
 export type ApproxBasis = 'orton-150' | 'orton-150-halfway' | 'orton-2016-150' | 'kyoto' | 'stated';
@@ -145,26 +146,26 @@ const KILN_GLAZED = ['raku', 'salt', 'soda', 'wood', 'pit'];
 
 const two = (x: number) => figure(x, 2);
 const value = (unity: Oxides, oxide: string): number => unity[oxide] ?? 0;
-const celsiusAt = (cone: string): number => (approxCelsius('orton', cone) as Approx).celsius;
+const celsiusAt = (host: Host, cone: string): number => (approxCelsius(host, 'orton', cone) as Approx).celsius;
 /**
  * Katz's chart is for cone 06 to 10; cooler and hotter firings are not judged.
  * Above cone 10 his rule asks for no boron at all, and Hesselberth & Roy's
  * silica and alumina are for cone 10: the check would only be reading a cone 10
  * glaze's figures as though they reached further (ADR 0022, amended 2026-10-20).
  */
-const KATZ_FROM = celsiusAt('06');
-const KATZ_TO = celsiusAt('10');
+const katzFrom = (host: Host): number => celsiusAt(host, '06');
+const katzTo = (host: Host): number => celsiusAt(host, '10');
 /** The hottest cone of each scale the check judges: Orton 10, and SK 12, Kyoto's own stand-in for it. */
 const HOTTEST: Readonly<Partial<Record<string, string>>> = Object.freeze({ orton: '10', sk: '12' });
 /** The cones between low and mid fire, 01 to 3, which neither band's figures fit. */
-const BETWEEN = Object.freeze({ from: celsiusAt('01'), to: celsiusAt('3') });
+const betweenBands = (host: Host) => ({ from: celsiusAt(host, '01'), to: celsiusAt(host, '3') });
 
 /** A cone's temperature: its own figure, or for an SK cone with none, its stated Orton equivalent's (SK 12 ≈ cone 10). */
-function celsiusOf(scale: ConeScale, cone: string): Approx | null {
-  const own: Approx | null = approxCelsius(scale, cone);
+function celsiusOf(host: Host, scale: ConeScale, cone: string): Approx | null {
+  const own: Approx | null = approxCelsius(host, scale, cone);
   if (own) return own;
-  const orton: { cone: string } | null = approxCone(scale, cone, 'orton');
-  return orton ? approxCelsius('orton', orton.cone) : null;
+  const orton: { cone: string } | null = approxCone(host, scale, cone, 'orton');
+  return orton ? approxCelsius(host, 'orton', orton.cone) : null;
 }
 
 /**
@@ -265,12 +266,12 @@ function judgeAt(unity: Oxides, celsius: number): Judged | null {
  * The band a glaze judged cooler or hotter than a band looks like: the next
  * band that way, or two bands away when it looks so at cone 6 as well.
  */
-function looksLikeFrom(unity: Oxides, judged: Judged): FiringBand | undefined {
+function looksLikeFrom(host: Host, unity: Oxides, judged: Judged): FiringBand | undefined {
   const at = FIRING_BANDS.indexOf(judged.band);
   const step = judged.direction === 'cooler' ? -1 : 1;
   const next = FIRING_BANDS[at + step];
   if (next === 'mid') {
-    const again = judgeAt(unity, celsiusOf('orton', BAND_CONES.mid!)!.celsius);
+    const again = judgeAt(unity, celsiusOf(host, 'orton', BAND_CONES.mid!)!.celsius);
     if (again?.direction === judged.direction) return FIRING_BANDS[at + 2 * step];
   }
   return next;
@@ -298,8 +299,8 @@ const named = (end: End, high?: End): MessageParams =>
     : { scale: end.scale, cone: end.cone!, ...(high && high !== end && { coneTo: high.cone! }) };
 
 /** Whether a cone is hotter than the check's hottest (HOTTEST), by its place in its scale, figure or not. */
-const pastHottest = (scale: ConeScale, cone: string): boolean =>
-  HOTTEST[scale] !== undefined && ordinal(scale, cone) > ordinal(scale, HOTTEST[scale]);
+const pastHottest = (host: Host, scale: ConeScale, cone: string): boolean =>
+  HOTTEST[scale] !== undefined && ordinal(host, scale, cone) > ordinal(host, scale, HOTTEST[scale]);
 
 /**
  * The ends of the firing judged: a band chosen by hand read at its cone, or the
@@ -309,7 +310,7 @@ const pastHottest = (scale: ConeScale, cone: string): boolean =>
  * 'top' band, chosen by hand, has no cone to be read at: it is past the figures.
  * Anything else (no firing, or text that is not a band) has no ends: null.
  */
-function endsOf(firing: Firing): { ends: End[]; skipped?: ConeFitSkip; at?: End } | null {
+function endsOf(host: Host, firing: Firing): { ends: End[]; skipped?: ConeFitSkip; at?: End } | null {
   if (typeof firing === 'string') {
     if (!FIRING_BANDS.includes(firing as FiringBand)) return null;
     if (firing === 'top') {
@@ -317,24 +318,30 @@ function endsOf(firing: Firing): { ends: End[]; skipped?: ConeFitSkip; at?: End 
       return { ends: [end], skipped: 'aboveChart', at: end };
     }
     const band = firing as FiringBand;
-    const at = celsiusOf('orton', BAND_CONES[band]!)!;
+    const at = celsiusOf(host, 'orton', BAND_CONES[band]!)!;
     return { ends: [{ scale: 'band', band, cone: BAND_CONES[band], celsius: at.celsius, basis: at.basis }] };
   }
-  if (!firing || !isCone(firing.scale, firing.low)) return null;
-  const cones = [firing.low!, ...(firing.high && isCone(firing.scale, firing.high) ? [firing.high] : [])];
+  if (!firing || !isCone(host, firing.scale, firing.low)) return null;
+  const cones = [firing.low!, ...(firing.high && isCone(host, firing.scale, firing.high) ? [firing.high] : [])];
   const ends: End[] = [];
   for (const cone of cones) {
-    const at = celsiusOf(firing.scale, cone);
+    const at = celsiusOf(host, firing.scale, cone);
     const end: End = { scale: firing.scale, cone };
     // An Orton cone above 10 or an SK one above 12 is past the figures, whether it has a temperature or not.
-    if (pastHottest(firing.scale, cone)) {
+    if (pastHottest(host, firing.scale, cone)) {
       const band: FiringBand | undefined = at ? bandOf(HESSELBERTH_ROY_LIMITS, at.celsius) : 'top';
       ends.push({ ...end, ...(at && { celsius: at.celsius, basis: at.basis }), band, above: true });
       continue;
     }
     if (!at) return { ends: [end], skipped: 'noTemperature', at: end };
     const band = bandOf(HESSELBERTH_ROY_LIMITS, at.celsius);
-    ends.push({ ...end, celsius: at.celsius, basis: at.basis, band, ...(at.celsius > KATZ_TO && { above: true }) });
+    ends.push({
+      ...end,
+      celsius: at.celsius,
+      basis: at.basis,
+      band,
+      ...(at.celsius > katzTo(host) && { above: true })
+    });
   }
   return { ends };
 }
@@ -361,11 +368,12 @@ function endsOf(firing: Firing): { ends: End[]; skipped?: ConeFitSkip; at?: End 
  * it, as message codes; every note's last is that it is a guide, not a test.
  */
 function coneFit(
+  host: Host,
   unity: Oxides | null | undefined,
   firing: Firing,
   options: { processes?: string[]; ash?: boolean; gerstley?: boolean } = {}
 ): ConeFit | null {
-  const found = endsOf(firing);
+  const found = endsOf(host, firing);
   if (!found) return null;
   const processes: string[] = [
     ...(options.processes ?? []),
@@ -412,13 +420,14 @@ function coneFit(
   const u = unity as Oxides;
   if (formula) return skip(formula.skipped, formula.process ? { process: formula.process } : undefined);
   if (found.skipped) return skip(found.skipped, undefined, found.at);
-  const between = judged.find((end) => end.celsius! >= BETWEEN.from && end.celsius! <= BETWEEN.to);
+  const span = betweenBands(host);
+  const between = judged.find((end) => end.celsius! >= span.from && end.celsius! <= span.to);
   if (between) return skip('between', undefined, between);
-  const cool = judged.find((end) => end.celsius! < KATZ_FROM);
+  const cool = judged.find((end) => end.celsius! < katzFrom(host));
   if (cool) return skip('belowChart', undefined, cool);
   const gerstley = options.gerstley === true;
   const note = (verdict: 'cooler' | 'hotter' | 'closer', judgedEnd: End, at: Judged, fields?: { closerEnd: End }) => {
-    const looksLike = looksLikeFrom(u, at)!;
+    const looksLike = looksLikeFrom(host, u, at)!;
     const soft = verdict !== 'closer' && looksLike !== 'low' && at.band !== 'low';
     const firingWords = named(judgedEnd);
     const figures = {

@@ -1,5 +1,9 @@
-// The cone charts' figures (docs/adr/0030-nameless-chemistry-core.md); what each chart is, its
-// sources and notes, are the app's (lib/cones/index.js).
+// The cone charts' figures, and the figures cones are read by: data, which the core is given in its host
+// (host.cones, built once by the core's coneTable) and never holds (docs/adr/0031-functional-core.md). What
+// each chart is, its sources and notes, are the app's (lib/cones/index.js).
+
+import { coneTable } from '../core/cones/firing.ts';
+import type { ConeCharts, ConeRow, PublishedCone } from '../core/cones/firing.ts';
 
 // SK (JIS R 8101) pyrometric cones, as sold in Japan (docs/asia-plan.md, Phase B).
 // The large cones (大型コーン, 1種) from SK 022 to SK 20, with the nominal
@@ -11,20 +15,6 @@
 // PDF's Last-Modified date 2017-12-20. It prints no heating rate. The standard
 // itself is on the JSA's list as in force, reconfirmed 2023-10-20.
 // Research: research_notes/Asia/japan-verification-2026-10-14.md.
-
-/** The cone number as printed ('022', '015a', '7'), and its nominal melt-down temperature in °C. */
-export interface ConeRow {
-  cone: string;
-  celsius: number;
-}
-
-/** Orton's current figures for a cone: by heating rate (°C an hour), self-supporting and, where printed, large. */
-export interface PublishedCone {
-  cone: string;
-  selfSupporting: Record<number, number>;
-  large?: Record<number, number>;
-  largeDiffers?: boolean;
-}
 
 const row = (cone: string, celsius: number): ConeRow => ({ cone, celsius });
 
@@ -191,4 +181,99 @@ const ORTON_PUBLISHED_CONES: PublishedCone[] = ORTON_PUBLISHED.map(([cone, slow,
   ...(ORTON_LARGE_DIFFERENT.includes(cone) && { largeDiffers: true })
 }));
 
-export { SK_CONES, ORTON_CHART_CONES, ORTON_PUBLISHED_CONES };
+/** Orton's cones above 15, rare in a pottery: offered at the end of the list, as Orton sells them. */
+const ORTON_ABOVE_15 = ['16', '17', '18', '19', '20', '21', '23', '26', '27', '28', '29', '30', '31', '31.5', '32', '32.5', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42']; // prettier-ignore
+/**
+ * Half cones: 05½, which Orton makes and charts (ORTON.published), between 06
+ * and 05; and those between whole ones from 1 to 16, a cone partly bent or a
+ * controller set between two (Orton sells self-supporting 13½, 14½ and 15½).
+ */
+const ORTON_HALVES = ['05.5', ...Array.from({ length: 15 }, (_, i) => `${i + 1}.5`)];
+
+/**
+ * SK cones measured, not nominal: the Kyoto Municipal Institute of Industrial
+ * Technology and Culture's bend points at 100 °C an hour, when it moved its
+ * users from its own Seger cones to Orton (https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf,
+ * read in the research report "Recipe cone field"). They are Kyoto's cones,
+ * not JIS ones; they are used because the JIS figures (SK 8 1250 °C, SK 10
+ * 1300 °C) read far hotter than a potter's kiln bends them. Of them only SK 8
+ * and SK 10 are shown as a temperature, and every other SK cone is shown with
+ * no temperature at all (the owner's decision, docs/adr/0021-recipe-firing.md):
+ * mixing them with the JIS figures of their neighbours (SK 7 1230 °C, SK 9
+ * 1280 °C) would put the cones out of order.
+ */
+const SK_MEASURED: Readonly<Record<string, number>> = Object.freeze({ 8: 1198, 10: 1232 });
+/**
+ * Kyoto's whole table, both columns bent in the same kiln at 100 °C an hour
+ * (ADR 0021, amended 2026-10-19): its own cones SK 7 to 14, and Orton cones 4
+ * to 12 (the table labels the first three 4a, 5a and 6a; the figure sits in
+ * the Orton column). SK and Orton are matched across these two columns, not
+ * against Orton's chart (ORTON_CELSIUS), which is another heating rate. They give
+ * only the match between the scales; the temperatures shown are SK_MEASURED
+ * and ORTON_CELSIUS.
+ */
+const KYOTO_SK: Readonly<Record<string, number>> = Object.freeze({
+  7: 1183,
+  8: 1198,
+  9: 1211,
+  10: 1232,
+  11: 1253,
+  12: 1290,
+  13: 1311,
+  14: 1331
+});
+const KYOTO_ORTON: Readonly<Record<string, number>> = Object.freeze({
+  4: 1179,
+  5: 1207,
+  6: 1211,
+  7: 1232,
+  8: 1252,
+  9: 1271,
+  10: 1290,
+  11: 1301,
+  12: 1324
+});
+/** The institute's own replacement: SK 12 ≈ Orton 10. */
+const SK_ORTON_STATED: Readonly<Record<string, string>> = Object.freeze({ 12: '10' });
+
+/**
+ * The band an SK cone's glaze is checked in, kept as a table rather than
+ * read from the JIS figures: by Kyoto's same-kiln columns SK 8 is near Orton 5
+ * and SK 10 near Orton 7, SK 11 near Orton 8, and SK 12 stands in for Orton 10,
+ * so SK 5a to 10 is mid fire and SK 11 up high fire (the ADR gives the reasoning).
+ * SK 13 is near Orton 11 and SK 14 near Orton 12, so from SK 14 up is past
+ * every limit set's figures, as Orton 12 is (ADR 0021, amended 2026-10-20).
+ */
+const SK_MID_FROM = '5a';
+const SK_HIGH_FROM = '11';
+const SK_TOP_FROM = '14';
+
+/** Band edges in °C, as Hesselberth & Roy's set draws them (lib/core/recipe/limits.ts). */
+const LOW_BELOW = 1150;
+const MID_BELOW = 1250;
+/** From here up (Orton cone 12, 1326 °C, and hotter) no limit set has figures: the 'top' band. */
+const HIGH_BELOW = 1320;
+
+/** The charts and figures, as the core's coneTable takes them. */
+const CONE_CHARTS: ConeCharts = Object.freeze({
+  skCones: SK_CONES,
+  ortonChart: ORTON_CHART_CONES,
+  ortonPublished: ORTON_PUBLISHED_CONES,
+  ortonAbove15: ORTON_ABOVE_15,
+  ortonHalves: ORTON_HALVES,
+  skMeasured: SK_MEASURED,
+  kyotoSk: KYOTO_SK,
+  kyotoOrton: KYOTO_ORTON,
+  skOrtonStated: SK_ORTON_STATED,
+  skMidFrom: SK_MID_FROM,
+  skHighFrom: SK_HIGH_FROM,
+  skTopFrom: SK_TOP_FROM,
+  lowBelow: LOW_BELOW,
+  midBelow: MID_BELOW,
+  highBelow: HIGH_BELOW
+});
+
+/** The charts with their lookups worked out once, as the core's host takes them (host.cones). */
+const CONES = coneTable(CONE_CHARTS);
+
+export { CONE_CHARTS, CONES, ORTON_CHART_CONES, ORTON_PUBLISHED_CONES, SK_CONES, SK_MEASURED };
