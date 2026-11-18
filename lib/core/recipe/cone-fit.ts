@@ -102,38 +102,47 @@ interface Judged {
 // no note says nothing about whether a glaze is stable or food safe.
 
 /**
- * The figures the check compares with. Boron's margins around Katz's need are
- * the research report's, chosen on Glazy's glazes: a smaller margin for
- * "cooler" (0.20) tripled the false notes at cone 10, and testing alumina for
- * "hotter" raised them at cone 6 to 6%, as mattes are often high in it.
+ * The margins and cut-offs a host gives the check (host.policy.coneFit; the catalog's are in
+ * lib/catalog/policy.ts, with why each is what it is).
  */
+export interface ConeFitPolicy {
+  /** "Looks cooler": boron at least this much over Katz's need for the firing. */
+  readonly boronOver: number;
+  /** "Looks hotter": boron at least this much under Katz's need. */
+  readonly boronUnder: number;
+  /** "Looks hotter" at low fire: silica over this, where the set cone fit reads has no low-fire figures. */
+  readonly lowFireSilicaMost: number;
+  /** Can't judge: the published figures do not cover glazes melted this way. */
+  readonly lead: number;
+  readonly lithium: number;
+  readonly alkali: number;
+  readonly zinc: number;
+  /** Can't judge: not a usual glaze's formula (a slip, a metallic, mostly colorant). */
+  readonly silica: Readonly<{ min: number; max: number }>;
+  readonly colorants: number;
+}
+
+/** The figures the check compares with: the host's margins and cut-offs, and its set's silica and alumina. */
 const coneFitFigures = (host: Host) => {
+  const policy = host.policy.coneFit;
   // The set cone fit reads (host.limits.forFit, Hesselberth & Roy's) has both bands' silica and alumina figures.
   const HR = host.limits.forFit.unity as Required<LimitSet['unity']>;
   return Object.freeze({
-    /** "Looks cooler": boron at least this much over Katz's need for the firing. */
-    boronOver: 0.3,
-    /** "Looks hotter": boron at least this much under Katz's need. */
-    boronUnder: 0.15,
+    boronOver: policy.boronOver,
+    boronUnder: policy.boronUnder,
     /** "Looks cooler": silica or alumina under Hesselberth & Roy's least for the band. */
     floor: Object.freeze({
       mid: Object.freeze({ SiO2: HR.mid['SiO2']!.min!, Al2O3: HR.mid['Al2O3']!.min! }),
       high: Object.freeze({ SiO2: HR.high['SiO2']!.min!, Al2O3: HR.high['Al2O3']!.min! })
     }),
-    /**
-     * "Looks hotter": silica over the band's most. At low fire the UK traditional
-     * limits' cone 04–02 figure (Hesselberth & Roy have none); at cone 6
-     * Hesselberth & Roy's.
-     */
-    ceiling: Object.freeze({ low: 3.0, mid: HR.mid['SiO2']!.max! }),
-    /** Can't judge: the published figures do not cover glazes melted this way. */
-    lead: 0.05,
-    lithium: 0.1,
-    alkali: 0.45,
-    zinc: 0.3,
-    /** Can't judge: not a usual glaze's formula (a slip, a metallic, mostly colorant). */
-    silica: Object.freeze({ min: 1, max: 8 }),
-    colorants: 0.5
+    /** "Looks hotter": silica over the band's most, at cone 6 the set's. */
+    ceiling: Object.freeze({ low: policy.lowFireSilicaMost, mid: HR.mid['SiO2']!.max! }),
+    lead: policy.lead,
+    lithium: policy.lithium,
+    alkali: policy.alkali,
+    zinc: policy.zinc,
+    silica: policy.silica,
+    colorants: policy.colorants
   });
 };
 

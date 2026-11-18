@@ -1393,5 +1393,26 @@
   "TiO2": 0.144,
   "ZrO2": 0.02,
   "SnO2": 0.02
+ },
+ "policy": {
+  "alsoLists": {
+   "JP": [
+    "US"
+   ]
+  },
+  "coneFit": {
+   "boronOver": 0.3,
+   "boronUnder": 0.15,
+   "lowFireSilicaMost": 3,
+   "lead": 0.05,
+   "lithium": 0.1,
+   "alkali": 0.45,
+   "zinc": 0.3,
+   "silica": {
+    "min": 1,
+    "max": 8
+   },
+   "colorants": 0.5
+  }
  }
 }

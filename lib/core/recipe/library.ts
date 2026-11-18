@@ -64,21 +64,15 @@ function hasLead(record: WithFields): boolean {
 }
 
 /**
- * The other markets whose materials a region's library lists beside its own. Japan's lists the US
- * set too: Japanese potters picked from it before Japan had materials of its own, and none of those
- * should go missing now that it has (the owner's decision, 2026-11-12; docs/asia-plan.md, decision 5).
- * A Map, so a region kept in the browser that names a property every object has (toString) finds
- * nothing here.
- */
-const ALSO_LISTS = new Map([['JP', ['US']]]);
-
-/**
  * Whether a region's library lists a record: one sold there, or in a market it lists too (Japan's
  * lists the US set). General records, with no region, count everywhere.
  */
-function inRegion(record: { region?: string[] }, region: string): boolean {
+function inRegion(host: Host, record: { region?: string[] }, region: string): boolean {
   if (!region || !record.region?.length) return true;
-  return [region, ...(ALSO_LISTS.get(region) ?? [])].some((market) => record.region!.includes(market));
+  // Its own keys only, so a region kept in the browser that names a property every object has (toString)
+  // finds nothing.
+  const also = Object.hasOwn(host.policy.alsoLists, region) ? host.policy.alsoLists[region]! : [];
+  return [region, ...also].some((market) => record.region!.includes(market));
 }
 
 /**
@@ -103,7 +97,7 @@ function suggestable(
 ): boolean {
   return (
     (!material.status || material.status === 'current') &&
-    inRegion(material, region) &&
+    inRegion(host, material, region) &&
     !isIdealMineral(host, material) &&
     !material.soluble &&
     !material.fluorine &&
