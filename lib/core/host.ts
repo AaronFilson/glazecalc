@@ -9,6 +9,7 @@ import type { OxideTable } from './types.ts';
 import type { ConeTable } from './cones/firing.ts';
 import type { LimitTable } from './recipe/limits.ts';
 import type { StullChart } from './recipe/analysis.ts';
+import type { DensityTable } from './recipe/density.ts';
 
 /**
  * How the core reads a host's records. A reader left out is the default: the record's own `id`; its
@@ -36,4 +37,6 @@ export interface Host extends Readers {
   readonly limits: LimitTable;
   /** Stull's chart: the catalog's STULL (lib/catalog/limits.ts), or a host's own. */
   readonly stull: StullChart;
+  /** The densities dry SG is worked out from: the catalog's DENSITIES (lib/catalog/densities.ts), or a host's own. */
+  readonly densities: DensityTable;
 }
