@@ -3,19 +3,9 @@ import { labelOf } from '../identity.ts';
 import { traitsOf } from '../traits.ts';
 import { prepareMaterial } from '../chemistry/materials.ts';
 import { amountOf } from './amounts.ts';
-import {
-  FIRING,
-  CHECK_LIMITS as L,
-  GLAZECALC_LIMITS,
-  asShown,
-  bandOf,
-  bandIn,
-  pastSide,
-  isLikely,
-  isThin
-} from './limits.ts';
+import { asShown, bandOf, bandIn, pastSide, isLikely, isThin } from './limits.ts';
 import { say, figure } from './messages.ts';
-import { CONE_FIT } from './cone-fit.ts';
+import { coneFitFigures } from './cone-fit.ts';
 import type { Oxides } from '../types.ts';
 import type { FiringBand, LimitSet, Past, UnityRange } from './limits.ts';
 import type { AdditiveRecord, MaterialRecord } from './library.ts';
@@ -155,13 +145,13 @@ function rawClayPercent(
  * (`clayWas`, if there is one) when it was over too, as seriously: from under
  * the likely figure (25%) to it is news.
  */
-function rawClayHigh(clay: number, clayWas?: number): boolean {
+function rawClayHigh(host: Host, clay: number, clayWas?: number): boolean {
   const already =
     clayWas !== undefined &&
-    clayWas >= L.clay.caution &&
-    (clayWas >= L.clay.likely || clay < L.clay.likely) &&
-    clay <= clayWas * L.alreadyFactor;
-  return clay > L.clay.caution && !already;
+    clayWas >= host.limits.checks.clay.caution &&
+    (clayWas >= host.limits.checks.clay.likely || clay < host.limits.checks.clay.likely) &&
+    clay <= clayWas * host.limits.checks.alreadyFactor;
+  return clay > host.limits.checks.clay.caution && !already;
 }
 
 /** What a check measured: the quantity, its value, the limit and the side of it that is past. */
@@ -184,12 +174,16 @@ const SERIOUS = Object.freeze({ caution: 1, likely: 2 });
 // tolerated (e.g. 0.05-0.1) if the glaze chemistry is balanced", and "any glaze that has 0.4 BaO
 // would be off-the-scale for potential to leach" (CHECK_LIMITS.barium: 0.1 and 0.4). A range, read
 // as the limit sets' are (pastSide, isLikely): at the two decimals shown, 0.10 itself within.
-const BARIUM: UnityRange = Object.freeze({ max: L.barium.caution, maxLikely: L.barium.likely });
+const bariumRange = (host: Host): UnityRange => ({
+  max: host.limits.checks.barium.caution,
+  maxLikely: host.limits.checks.barium.likely
+});
 
 /** How serious the BaO in a unity formula is: null to 0.10 as shown, 'likely' from 0.40, else 'caution'. */
-function bariumSeverity(barium: number): Serious | null {
-  if (pastSide(barium, BARIUM) !== 'above') return null;
-  return isLikely(barium, BARIUM, 'above') ? 'likely' : 'caution';
+function bariumSeverity(host: Host, barium: number): Serious | null {
+  const range = bariumRange(host);
+  if (pastSide(barium, range) !== 'above') return null;
+  return isLikely(barium, range, 'above') ? 'likely' : 'caution';
 }
 
 /**
@@ -203,10 +197,11 @@ function bariumSeverity(barium: number): Serious | null {
  * for (Hesselberth & Roy's low fire, every set's 'top') checks no ranges.
  */
 function pastLimits(host: Host, input: CheckInput): Caution[] {
+  const fit = coneFitFigures(host);
   const { unity, old } = input;
   // Anything but a finite number is an unknown firing: null is not 0 °C.
   const celsius = Number.isFinite(input.celsius) ? (input.celsius as number) : undefined;
-  const set = input.limitSet ?? GLAZECALC_LIMITS;
+  const set = input.limitSet ?? host.limits.own;
   const additives = input.additives ?? [];
   const band = input.band !== undefined ? bandIn(set, input.band) : bandOf(set, celsius);
   const low = band === undefined ? undefined : band === 'low';
@@ -229,14 +224,16 @@ function pastLimits(host: Host, input: CheckInput): Caution[] {
     // The new formula as the checks read it: severityIn and bad take a missing one as no oxides (value).
     const now = unity as Oxides;
     if (was === null || SERIOUS[was] < SERIOUS[severityIn(now)!]) return false;
-    return floor ? bad(now) * L.alreadyFactor >= bad(old) : bad(now) <= bad(old) * L.alreadyFactor;
+    return floor
+      ? bad(now) * host.limits.checks.alreadyFactor >= bad(old)
+      : bad(now) <= bad(old) * host.limits.checks.alreadyFactor;
   };
   // The same for a range's caution, past it on `side` as the check reads it (boron's likely figure
   // is its own for a thin glaze).
   const alreadyPast = (bad: (u: Oxides) => number, r: UnityRange, side: Past) =>
     already(
       bad,
-      (u: Oxides) => (pastSide(bad(u), r) === side ? graded(isLikely(bad(u), r, side, isThin(u))) : null),
+      (u: Oxides) => (pastSide(bad(u), r) === side ? graded(isLikely(bad(u), r, side, isThin(host, u))) : null),
       side === 'below'
     );
   // The band whose figures are used, which picks the words: the firing's, or the set's choice when
@@ -254,7 +251,7 @@ function pastLimits(host: Host, input: CheckInput): Caution[] {
   // substitution"); another set's figure is its own (Hesselberth & Roy's 0.35 is the top of their
   // cone 6 range), and the sentence says so.
   const boron = value(unity, 'B2O3');
-  const thin = isThin(unity ?? {});
+  const thin = isThin(host, unity ?? {});
   const boronRange = range['B2O3'];
   if (
     boronRange?.max !== undefined &&
@@ -278,7 +275,7 @@ function pastLimits(host: Host, input: CheckInput): Caution[] {
         fields,
         used === 'high'
           ? say('checks.boronHighFire', figures)
-          : set.id === GLAZECALC_LIMITS.id
+          : set.id === host.limits.own.id
             ? say('checks.boronMidFire', figures)
             : say('checks.boronMidFireSet', figures),
         worded(likely, say('checks.boronMidFireProbably'), say('checks.boronMidFireTends')),
@@ -289,12 +286,16 @@ function pastLimits(host: Host, input: CheckInput): Caution[] {
 
   // Too little boron to melt at low fire: Katz's rule for the firing, the boron as shown. Not for a lead or
   // an alkaline glaze, which melt without it and which the rule is not for (cone-fit.js skips them too).
-  const meltsWithoutBoron =
-    value(unity, 'PbO') > CONE_FIT.lead || value(unity, 'K2O') + value(unity, 'Na2O') >= CONE_FIT.alkali;
-  if (low && celsius !== undefined && !meltsWithoutBoron && asShown(boron) < L.boronShortShare * boronFor(celsius)) {
+  const meltsWithoutBoron = value(unity, 'PbO') > fit.lead || value(unity, 'K2O') + value(unity, 'Na2O') >= fit.alkali;
+  if (
+    low &&
+    celsius !== undefined &&
+    !meltsWithoutBoron &&
+    asShown(boron) < host.limits.checks.boronShortShare * boronFor(celsius)
+  ) {
     caution(
       'boron-short',
-      measured('B2O3', boron, L.boronShortShare * boronFor(celsius), 'below', 'caution'),
+      measured('B2O3', boron, host.limits.checks.boronShortShare * boronFor(celsius), 'below', 'caution'),
       say('checks.boronShort', { boron: two(boron), needed: two(boronFor(celsius)) }),
       say('checks.boronShortEffects')
     );
@@ -321,7 +322,7 @@ function pastLimits(host: Host, input: CheckInput): Caution[] {
     );
   }
   const ratio = alumina > 0 ? value(unity, 'SiO2') / alumina : Infinity;
-  const below = L.silicaAluminaBelow;
+  const below = host.limits.checks.silicaAluminaBelow;
   if (ratio < below && !(old && value(old, 'Al2O3') > 0 && value(old, 'SiO2') / value(old, 'Al2O3') < below)) {
     caution(
       'alumina-high',
@@ -335,7 +336,7 @@ function pastLimits(host: Host, input: CheckInput): Caution[] {
 
   // Boron blue, its figures read at the two decimals shown: B2O3 and CaO over 0.50, Al2O3 under 0.20.
   const pink = hasColorant(host, additives, 'pink', []);
-  const blue = L.boronBlue;
+  const blue = host.limits.checks.boronBlue;
   const isBlue = (u: Oxides | null | undefined) =>
     asShown(value(u, 'B2O3')) > blue.boron &&
     asShown(value(u, 'CaO')) > blue.calcia &&
@@ -391,26 +392,26 @@ function pastLimits(host: Host, input: CheckInput): Caution[] {
   const zinc = value(unity, 'ZnO');
   const zincIn = (u: Oxides | null | undefined) => value(u, 'ZnO');
   const zincMatters = (u: Oxides | null | undefined): Serious | null =>
-    asShown(zincIn(u)) >= L.zinc ? 'caution' : null;
+    asShown(zincIn(u)) >= host.limits.checks.zinc ? 'caution' : null;
   if (zincMatters(unity) && !already(zincIn, zincMatters)) {
-    const fields = measured('ZnO', zinc, L.zinc, 'above', 'caution');
+    const fields = measured('ZnO', zinc, host.limits.checks.zinc, 'above', 'caution');
     if (hasColorant(host, additives, 'chrome', ['Cr2O3'])) caution('zinc-chrome', fields, say('checks.zincChrome'));
     if (hasColorant(host, additives, 'iron', ['Fe2O3', 'FeO'])) caution('zinc-iron', fields, say('checks.zincIron'));
     if (hasColorant(host, additives, 'copper', ['CuO'])) caution('zinc-copper', fields, say('checks.zincCopper'));
-    if (celsius !== undefined && celsius < FIRING.zincMeltsFrom) {
+    if (celsius !== undefined && celsius < host.limits.firing.zincMeltsFrom) {
       caution('zinc-low-fire', fields, say('checks.zincLowFire', { zinc: two(zinc) }));
     }
   }
 
   // Barium, which can leach from the fired glaze onto food, at any firing: past 0.10 as shown, and
-  // likely from 0.40 (Digitalfire's Limit Formula page, https://digitalfire.com/glossary/123; BARIUM).
+  // likely from 0.40 (Digitalfire's Limit Formula page, https://digitalfire.com/glossary/123; bariumRange).
   const barium = value(unity, 'BaO');
-  const bariumPast = bariumSeverity(barium);
+  const bariumPast = bariumSeverity(host, barium);
   const bariumOf = (u: Oxides) => value(u, 'BaO');
-  if (bariumPast && !already(bariumOf, (u) => bariumSeverity(bariumOf(u)))) {
+  if (bariumPast && !already(bariumOf, (u) => bariumSeverity(host, bariumOf(u)))) {
     caution(
       'barium',
-      measured('BaO', barium, L.barium.caution, 'above', bariumPast),
+      measured('BaO', barium, host.limits.checks.barium.caution, 'above', bariumPast),
       say('checks.barium', { barium: two(barium) }),
       bariumPast === 'likely' ? say('checks.bariumLikely') : say('checks.bariumTends')
     );
@@ -421,20 +422,20 @@ function pastLimits(host: Host, input: CheckInput): Caution[] {
   const percent = (amount: Amount) => (total > 0 ? (100 * amountOf(amount)) / total : 0);
   const rawCalcium = input.lines.filter((line) => isRawCalcium(host, line.material));
   const rawShare = rawCalcium.reduce((sum, line) => sum + percent(line.amount), 0);
-  if (low && rawShare > L.rawCalcium.caution) {
+  if (low && rawShare > host.limits.checks.rawCalcium.caution) {
     caution(
       'whiting',
       measured(
         'raw-calcium-percent',
         rawShare,
-        L.rawCalcium.caution,
+        host.limits.checks.rawCalcium.caution,
         'above',
-        severityOf(rawShare, L.rawCalcium.likely)
+        severityOf(rawShare, host.limits.checks.rawCalcium.likely)
       ),
       say('checks.whiting'),
       sure(
         rawShare,
-        L.rawCalcium.likely,
+        host.limits.checks.rawCalcium.likely,
         say('checks.whitingProbably', { percent: figure(rawShare, 1) }),
         say('checks.whitingTends', { percent: figure(rawShare, 1) })
       ),
@@ -454,7 +455,7 @@ function pastLimits(host: Host, input: CheckInput): Caution[] {
     .filter((line) => isRawClay(host, line.material))
     .reduce((sum, line) => sum + percent(line.amount), 0);
   const clayWas = input.oldClay;
-  if (clay < L.clay.least && (clayWas === undefined || clayWas >= L.clay.least)) {
+  if (clay < host.limits.checks.clay.least && (clayWas === undefined || clayWas >= host.limits.checks.clay.least)) {
     const how =
       clay > 0
         ? clayWas !== undefined
@@ -465,18 +466,24 @@ function pastLimits(host: Host, input: CheckInput): Caution[] {
           : say('checks.clayNone');
     caution(
       'clay-low',
-      measured('raw-clay-percent', clay, L.clay.least, 'below', 'caution'),
+      measured('raw-clay-percent', clay, host.limits.checks.clay.least, 'below', 'caution'),
       how,
       say('checks.clayLowFix')
     );
   }
   // As much raw clay as the old recipe had (to rounding, or a little more) is not news.
-  if (rawClayHigh(clay, clayWas)) {
+  if (rawClayHigh(host, clay, clayWas)) {
     caution(
       'clay-high',
-      measured('raw-clay-percent', clay, L.clay.caution, 'above', severityOf(clay, L.clay.likely)),
+      measured(
+        'raw-clay-percent',
+        clay,
+        host.limits.checks.clay.caution,
+        'above',
+        severityOf(clay, host.limits.checks.clay.likely)
+      ),
       say('checks.clayHigh', { clay: figure(clay, 1) }),
-      sure(clay, L.clay.likely, say('checks.clayHighProbably'), say('checks.clayHighTends')),
+      sure(clay, host.limits.checks.clay.likely, say('checks.clayHighProbably'), say('checks.clayHighTends')),
       say('checks.clayHighFix')
     );
   }
@@ -500,7 +507,7 @@ function pastLimits(host: Host, input: CheckInput): Caution[] {
   const was = input.expansion?.was ?? null;
   const now = input.expansion?.now ?? null;
   if (was !== null && now !== null) {
-    const { expansionRises: rises, expansionFalls: falls } = L;
+    const { expansionRises: rises, expansionFalls: falls } = host.limits.checks;
     if (now > was + rises.caution) {
       const likely = now > was + rises.likely;
       caution(
@@ -532,7 +539,7 @@ function sizeNotes(host: Host, lines: CheckLine[], low?: boolean): Caution[] {
   const used = lines.filter((line) => amountOf(line.amount) > 0);
   const total = used.reduce((sum, line) => sum + amountOf(line.amount), 0);
   const notes: Caution[] = [];
-  const many = low ? L.manyMaterialsLowFire : L.manyMaterials;
+  const many = low ? host.limits.checks.manyMaterialsLowFire : host.limits.checks.manyMaterials;
   if (used.length >= many) {
     notes.push({
       check: 'many-materials',
@@ -542,16 +549,16 @@ function sizeNotes(host: Host, lines: CheckLine[], low?: boolean): Caution[] {
   }
   for (const line of used) {
     const percent = (100 * amountOf(line.amount)) / total;
-    if (percent < L.smallPercent) {
+    if (percent < host.limits.checks.smallPercent) {
       notes.push({
         check: 'small-amount',
-        ...measured('material-percent', percent, L.smallPercent, 'below', 'note'),
+        ...measured('material-percent', percent, host.limits.checks.smallPercent, 'below', 'note'),
         material: labelOf(host, line.material),
         sentences: [
           say('checks.smallAmount', {
             name: labelOf(host, line.material),
             percent: figure(percent, 2),
-            reads: figure(L.scaleReads, 1)
+            reads: figure(host.limits.checks.scaleReads, 1)
           })
         ]
       });

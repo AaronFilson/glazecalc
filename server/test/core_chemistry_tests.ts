@@ -8,8 +8,9 @@ import * as materials from '../../lib/core/chemistry/materials.ts';
 import * as umf from '../../lib/core/chemistry/umf.ts';
 import { OXIDES } from '../../lib/catalog/oxides.ts';
 import { CONES } from '../../lib/catalog/cones.ts';
+import { LIMITS, STULL } from '../../lib/catalog/limits.ts';
 
-const HOST: Host = { oxides: OXIDES, cones: CONES };
+const HOST: Host = { oxides: OXIDES, cones: CONES, limits: LIMITS, stull: STULL };
 
 describe('the core chemistry, nameless', () => {
   const silica = { id: 7, formula: { SiO2: 1 } };

@@ -248,11 +248,11 @@ const SK_MID_FROM = '5a';
 const SK_HIGH_FROM = '11';
 const SK_TOP_FROM = '14';
 
-/** Band edges in °C, as Hesselberth & Roy's set draws them (lib/core/recipe/limits.ts). */
-const LOW_BELOW = 1150;
-const MID_BELOW = 1250;
+/** Band edges in °C, as Hesselberth & Roy's set draws them, and the limits' one low-fire edge (lib/catalog/limits.ts). */
+export const LOW_BELOW = 1150;
+export const MID_BELOW = 1250;
 /** From here up (Orton cone 12, 1326 °C, and hotter) no limit set has figures: the 'top' band. */
-const HIGH_BELOW = 1320;
+export const HIGH_BELOW = 1320;
 
 /** The charts and figures, as the core's coneTable takes them. */
 const CONE_CHARTS: ConeCharts = Object.freeze({
