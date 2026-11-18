@@ -21,7 +21,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
 const { MOLAR_MASS, formatFormula, materialWeights } = require('../lib/chemistry');
-const { traitsFromName } = require('../lib/recipe/traits');
+const { traitsFromName } = require('../lib/catalog/traits.ts');
 
 const FILES = { material: 'data/materials.ndjson', additive: 'data/additives.ndjson' };
 const CATEGORIES = [
@@ -140,7 +140,7 @@ function toRecord(entry, problems) {
       kind: entry.source.type
     }
   };
-  // What the chemistry needs to know of it beyond its analysis (lib/recipe/traits.js), as the data keeps it.
+  // What the chemistry needs to know of it beyond its analysis (lib/catalog/traits.ts), as the data keeps it.
   const traits = Object.fromEntries(
     Object.entries(traitsFromName({ ...doc, ownedBy: 'Standard' })).flatMap(([trait, value]) =>
       value === true

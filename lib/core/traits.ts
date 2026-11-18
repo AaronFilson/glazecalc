@@ -2,7 +2,7 @@
 // whether it is a theoretical mineral, calcined, a raw calcium source, which colorant an additive is, and the
 // like. The core asks the host's traitsOf, never a name (docs/adr/0031-functional-core.md). By default a
 // record carries its own (`record.traits`); a host whose records do not yet gives its own reader (Glazecalc's
-// reads them from its standard names, lib/recipe/traits.js).
+// reads them from its standard names, lib/catalog/traits.ts).
 
 import type { Readers } from './host.ts';
 

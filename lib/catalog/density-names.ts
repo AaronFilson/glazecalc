@@ -1,14 +1,14 @@
-'use strict';
+// Glazecalc's standard materials by name, for their dry SG (the core's lib/core/recipe/density.ts reads them as
+// the trait `density`, through traits.ts): a mineral, or null with why there is no estimate. Only a standard
+// record is known by its name: a potter's own "Whiting", or one given with its own analysis, may be anything,
+// so it goes by its kind or, for a frit, its oxides.
 
-// Glazecalc's standard materials by name, for their dry SG (lib/core/recipe/density.js reads them as the
-// trait `density`, lib/recipe/traits.js): a mineral, or null with why there is no estimate. Only a standard
-// record is known by its name: a potter's own "Whiting", or one given with its own analysis, may be
-// anything, so it goes by its kind or, for a frit, its oxides.
-const { WHY_NOT } = require('../core/recipe/density.ts');
+import { WHY_NOT } from '../core/recipe/density.ts';
+import type { DensityTrait } from '../core/traits.ts';
 
 // Standard materials by name: a mineral, or null with why there is no estimate.
 // A name not here takes its kind (feldspar, clay) or, for a frit, its oxides.
-const BY_NAME = {
+const BY_NAME: Readonly<Record<string, string | null>> = Object.freeze({
   'Barium Carbonate': 'witherite',
   'Bone Ash': 'hydroxylapatite',
   Borax: 'borax',
@@ -95,9 +95,10 @@ const BY_NAME = {
   'Bentonit 57 (Carl Jäger / Bodmer Ton 507)': null,
   'Bentonita (Prodesco)': null,
   'Bentonite Trubond (Miles, Queensland)': null
-};
+});
 
-const REASON_OF_NAME = {
+/** Why a standard material named in BY_NAME with no mineral has no estimate. */
+const REASON_OF_NAME: Readonly<Record<string, string>> = Object.freeze({
   'Titanium Oxide': WHY_NOT.form,
   'Titanium dioxide': WHY_NOT.form,
   'Lead, Yellow': WHY_NOT.form,
@@ -126,14 +127,15 @@ const REASON_OF_NAME = {
   'Bentonita (Prodesco)': WHY_NOT.swelling,
   'Bentonite Trubond (Miles, Queensland)': WHY_NOT.swelling,
   'CMC gum': WHY_NOT.noChemistry
-};
+});
 
 /** The density trait of a standard record known by its name; undefined for any other. */
-const densityOf = (material) => {
+const densityOf = (material: { name?: unknown; ownedBy?: unknown } | null | undefined): DensityTrait | undefined => {
   const name = material && typeof material.name === 'string' ? material.name.trim() : '';
   const standard = material?.ownedBy === 'Standard';
-  if (!standard || !Object.prototype.hasOwnProperty.call(BY_NAME, name)) return undefined;
-  return { mineral: BY_NAME[name], reason: REASON_OF_NAME[name] };
+  if (!standard || !Object.hasOwn(BY_NAME, name)) return undefined;
+  const reason = REASON_OF_NAME[name];
+  return { mineral: BY_NAME[name] ?? null, reason } as DensityTrait;
 };
 
-module.exports = { BY_NAME, REASON_OF_NAME, densityOf };
+export { BY_NAME, REASON_OF_NAME, densityOf };

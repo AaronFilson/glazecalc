@@ -1,33 +1,27 @@
-'use strict';
-
-// What Glazecalc knows about a material, for the core to read as traits (lib/core/traits.js,
+// What Glazecalc knows about a material, for the core to read as traits (lib/core/traits.ts,
 // docs/adr/0030-nameless-chemistry-core.md). A standard record carries its own (data/, `traits`); any
 // other record (a potter's own, or a line saved before standard records had them) has them read from its
 // name, exactly as the code once read them.
 
-const { densityOf } = require('./density-names');
+import { densityOf } from './density-names.ts';
+import type { Traits } from '../core/traits.ts';
+
+/** A record as the traits read it: its name, whose it is, and a standard record's own traits. */
+export interface TraitsRecord {
+  readonly name?: unknown;
+  readonly ownedBy?: unknown;
+  readonly traits?: unknown;
+}
 
 // Each test is given the name as the record has it, as the code once tested it.
 const KAOLIN_OR_BALL_CLAY = /kaolin|caol[ií]n|china clay|ball clay/i;
 
 // Each record's traits from its name, worked out once while its name is the same: the core asks often.
-const known = new WeakMap();
+const known = new WeakMap<object, { name: unknown; ownedBy: unknown; traits: Traits }>();
 
-/** A record's traits, from its name. */
-const traitsFromName = (record) => {
-  if (record && typeof record === 'object') {
-    const kept = known.get(record);
-    if (kept && kept.name === record.name && kept.ownedBy === record.ownedBy) return kept.traits;
-    const traits = readTraits(record);
-    known.set(record, { name: record.name, ownedBy: record.ownedBy, traits });
-    return traits;
-  }
-  return readTraits(record);
-};
-
-/** A record's traits, read from its name. */
-const readTraits = (record) => {
-  const name = record?.name;
+/** A record's traits, read from its name. A name that is not a string is tested as the regexes coerce it. */
+const readTraits = (record: TraitsRecord | null | undefined): Traits => {
+  const name = record?.name as string;
   const text = typeof name === 'string' ? name : '';
   return {
     // A theoretical (stoichiometric) mineral: 'Kaolin (theoretical)'.
@@ -59,10 +53,22 @@ const readTraits = (record) => {
   };
 };
 
+/** A record's traits, from its name. */
+const traitsFromName = (record: TraitsRecord | null | undefined): Traits => {
+  if (record && typeof record === 'object') {
+    const kept = known.get(record);
+    if (kept && kept.name === record.name && kept.ownedBy === record.ownedBy) return kept.traits;
+    const traits = readTraits(record);
+    known.set(record, { name: record.name, ownedBy: record.ownedBy, traits });
+    return traits;
+  }
+  return readTraits(record);
+};
+
 /** A record's traits: a standard record's own, or from its name. */
-const traitsOf = (record) =>
+const traitsOf = (record: TraitsRecord | null | undefined): Traits =>
   record?.ownedBy === 'Standard' && record.traits && typeof record.traits === 'object'
-    ? record.traits
+    ? (record.traits as Traits)
     : traitsFromName(record);
 
-module.exports = { traitsOf, traitsFromName };
+export { traitsOf, traitsFromName };
