@@ -39,4 +39,6 @@ export interface Host extends Readers {
   readonly stull: StullChart;
   /** The densities dry SG is worked out from: the catalog's DENSITIES (lib/catalog/densities.ts), or a host's own. */
   readonly densities: DensityTable;
+  /** Each oxide's coefficient of expansion per weight percent: the catalog's EXPANSION (lib/catalog/expansion.ts), or a host's own. */
+  readonly expansion: Readonly<Record<string, number>>;
 }

@@ -100,7 +100,7 @@ function compareUnity(host: Host, left: ComparableAnalysis | null, right: Compar
   const ratio = (analysis: ComparableAnalysis | null) => (analysis ? silicaAluminaRatio(analysis) : null);
   // Worked out from the fired analysis when a saved one has no figure of its own.
   const expands = (analysis: ComparableAnalysis | null): number | null =>
-    analysis ? (analysis.expansion ?? expansion(analysis.analysis)) : null;
+    analysis ? (analysis.expansion ?? expansion(host, analysis.analysis)) : null;
   const facts: CompareGroup = {
     key: 'balance',
     rows: [
