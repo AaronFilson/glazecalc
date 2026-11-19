@@ -480,7 +480,7 @@ jobs:
             jq -e '.email == "ci-check@test.com"'
           count=$(curl -fsS http://127.0.0.1:3000/api/materials/getStandard | jq length)
           echo "standard materials: $count"
-          test "$count" -eq "$(grep -c . data/materials.ndjson)"
+          test "$count" -eq "$(grep -c . lib/catalog/data/materials.ndjson)"
           # The email settings reach the app: a reset email goes out, linking to APP_URL.
           curl -fsS -o /dev/null -X POST -H 'Content-Type: application/json' \
             -d '{"email":"ci-check@test.com"}' http://127.0.0.1:3000/api/password/forgot

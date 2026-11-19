@@ -1,17 +1,22 @@
 // The standard materials, additives and advice every installation starts with.
-// Each file holds one MongoDB Extended JSON document per line (NDJSON), so ids
-// such as { "$oid": ... } come back as real ObjectIds. The file names match the
-// collections Mongoose uses for the models.
+// The materials and additives are the catalog's (lib/catalog/standard.ts, its
+// data/ folder); the advice is Glazecalc's, here. Each file holds one document
+// per line (NDJSON), its ids as MongoDB Extended JSON writes them, which come
+// back as real ObjectIds. The file names match the collections Mongoose uses
+// for the models.
 const fs = require('fs');
 const path = require('path');
-const { EJSON } = require('mongoose').mongo.BSON;
+const { ObjectId } = require('mongoose').mongo.BSON;
+const { STANDARD_COLLECTIONS, standardFile, readRecords } = require('../lib/catalog/standard.ts');
 
-exports.COLLECTIONS = ['materials', 'additives', 'advice'];
+exports.COLLECTIONS = [...STANDARD_COLLECTIONS, 'advice'];
+
+/** Where one collection's standard records are. */
+exports.fileOf = (collection) =>
+  STANDARD_COLLECTIONS.includes(collection)
+    ? path.join(__dirname, '..', 'lib', 'catalog', standardFile(collection))
+    : path.join(__dirname, collection + '.ndjson');
 
 /** The standard documents for one collection. */
 exports.load = (collection) =>
-  fs
-    .readFileSync(path.join(__dirname, collection + '.ndjson'), 'utf8')
-    .split(/\r?\n/)
-    .filter(Boolean)
-    .map((line) => EJSON.parse(line));
+  readRecords(fs.readFileSync(exports.fileOf(collection), 'utf8'), (hex) => new ObjectId(hex));

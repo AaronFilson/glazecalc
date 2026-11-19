@@ -562,7 +562,7 @@ describe('pages in each language', () => {
       'client/public/i18n/de.json',
       'client/public/i18n/reference/de.json',
       'client/public/i18n/records/de.json',
-      'data/materials.ndjson'
+      'lib/catalog/data/materials.ndjson'
     ]);
     expect(pageSources('/materials/cornwall-stone', 'en')).to.include('client/public/i18n/records/en.json');
     expect(pageSources('/terms', 'fr')).to.deep.equal([
@@ -608,6 +608,12 @@ describe('pages in each language', () => {
     expect(allPageDates(titles)['de/guides/firing']).to.equal('2026-12-01');
     expect(allPageDates(titles)['en/guides/firing']).to.equal(undefined);
     expect(allPageDates(dates)['de/guides/firing']).to.equal('2026-11-04');
+    // A file that moved keeps its history under its new name.
+    const moved = newestDates(
+      ['@2026-11-20', 'lib/catalog/data/additives.ndjson', '@2026-11-01', 'data/materials.ndjson'].join('\n')
+    );
+    expect(moved.get('lib/catalog/data/materials.ndjson')).to.equal('2026-11-01');
+    expect(moved.has('data/materials.ndjson')).to.equal(false);
   });
 
   it('gives the guide in English only one address for search engines: the English, alone in the sitemap', () => {
@@ -679,7 +685,7 @@ describe('pages in each language', () => {
 
   describe('the reference pages: the cone chart, the materials and a page for each standard material', () => {
     const names = fs
-      .readFileSync(path.join(import.meta.dirname, '..', '..', 'data', 'materials.ndjson'), 'utf8')
+      .readFileSync(path.join(import.meta.dirname, '..', '..', 'lib', 'catalog', 'data', 'materials.ndjson'), 'utf8')
       .split('\n')
       .filter(Boolean)
       .map((line) => (JSON.parse(line) as { name: string }).name);

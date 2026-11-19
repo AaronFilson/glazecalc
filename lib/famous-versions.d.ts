@@ -25,7 +25,7 @@ export interface GlazeVersion {
 /** The library's regions a version is made for, as the page offers them. */
 export const VERSION_REGIONS: readonly string[];
 
-/** The standard materials as the app's bundle has them, in the order of data/materials.ndjson. */
+/** The standard materials as the app's bundle has them, in the order of lib/catalog/data/materials.ndjson. */
 export function standardMaterials(): MaterialRecord[];
 
 /** The unity formula a version aims at: the native recipe's, or a lead glaze's lead-free target; null with none. */

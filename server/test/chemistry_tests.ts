@@ -9,7 +9,7 @@ const expect = chai.expect;
 const calculateUMF = chemistry.calculateUMF;
 const MW = chemistry.MOLAR_MASS;
 
-/** A material as stored in data/materials.ndjson. */
+/** A material as stored in lib/catalog/data/materials.ndjson. */
 interface StandardMaterial extends MaterialInput {
   equivalent: number;
   formulaweight: number;

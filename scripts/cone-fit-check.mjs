@@ -39,7 +39,7 @@ export function blockOf(row) {
 
 /** The app's standard materials, for rows entered by hand. */
 const standardMaterials = () =>
-  readFileSync(path.join(ROOT, 'data', 'materials.ndjson'), 'utf8')
+  readFileSync(path.join(ROOT, 'lib', 'catalog', 'data', 'materials.ndjson'), 'utf8')
     .split('\n')
     .filter(Boolean)
     .map((line) => JSON.parse(line));

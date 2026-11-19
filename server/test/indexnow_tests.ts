@@ -51,7 +51,7 @@ describe('IndexNow', () => {
   it('counts a change to the client, the guides, lib or data as one to the pages', () => {
     expect(changesContent(['client/public/i18n/de.json'])).to.equal(true);
     expect(changesContent(['docs/guides/firing.md'])).to.equal(true);
-    expect(changesContent(['data/materials.ndjson'])).to.equal(true);
+    expect(changesContent(['lib/catalog/data/materials.ndjson'])).to.equal(true);
     expect(changesContent(['lib/pages.js'])).to.equal(true);
     expect(changesContent(['server/lib/pages.ts'])).to.equal(true);
     expect(changesContent(['server/routes/recipes.ts', '.github/workflows/ci.yml', 'deploy/deploy.sh'])).to.equal(

@@ -1,5 +1,5 @@
 export const OUT: string;
-/** The standard materials, as data/materials.ndjson has them. */
+/** The standard materials, as lib/catalog/data/materials.ndjson has them. */
 export function standardMaterials(): Array<{
   name: string;
   notes?: string[];

@@ -15,7 +15,7 @@ const UNTRANSLATED = LIVE_LANGUAGES.filter((code) => !REFERENCE_LANGUAGES.includ
 const [OTHER, SECOND = OTHER] = UNTRANSLATED;
 
 const NAMES = fs
-  .readFileSync(path.join(__dirname, '..', 'data', 'materials.ndjson'), 'utf8')
+  .readFileSync(path.join(__dirname, '..', 'lib', 'catalog', 'data', 'materials.ndjson'), 'utf8')
   .split('\n')
   .filter(Boolean)
   .map((line) => JSON.parse(line).name);

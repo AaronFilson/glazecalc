@@ -5,3 +5,6 @@ export declare const COLLECTIONS: readonly string[];
 
 /** The standard documents for one collection, as stored (ids are ObjectIds). */
 export declare function load<T = Record<string, unknown>>(collection: string): T[];
+
+/** Where one collection's standard records are: the catalog's materials and additives, Glazecalc's advice. */
+export declare function fileOf(collection: string): string;

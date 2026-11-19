@@ -70,8 +70,8 @@ const FORMULA_MATERIALS: ReadonlyArray<FormulaMaterial> = deepFreeze<FormulaMate
 // `words` are the generic words as people write them (compared without case,
 // accents, punctuation or spaces: "fire clay" is "fireclay", so one is enough), and `offer` are the names of library materials or
 // additives, exactly as the standard library writes them, in the order to
-// offer them. Nothing here is a material of its own: data/materials.ndjson
-// and data/additives.ndjson are the library, and a test checks that every
+// offer them. Nothing here is a material of its own: lib/catalog/data/materials.ndjson
+// and lib/catalog/data/additives.ndjson are the library, and a test checks that every
 // name offered is in them. A name the person's records do not have is skipped.
 
 const GENERIC_NAMES: ReadonlyArray<GenericName> = deepFreeze<GenericName[]>([

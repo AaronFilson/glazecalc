@@ -258,7 +258,7 @@ describe('famous glazes: the versions', function () {
   const BASE_KINDS = ['feldspar', 'clay', 'frit', 'boron', 'flux', 'silica', 'alumina'];
   const isFlux = (oxide: string) => ['R2O', 'RO'].includes(chemistry.OXIDE_GROUPS[oxide]!);
   const STANDARD: MaterialRecord[] = fs
-    .readFileSync('data/materials.ndjson', 'utf8')
+    .readFileSync('lib/catalog/data/materials.ndjson', 'utf8')
     .split('\n')
     .filter((line) => line.trim())
     .map((line) => {
