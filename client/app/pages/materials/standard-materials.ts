@@ -1,10 +1,10 @@
-import text from '../../../../data/materials.ndjson';
+import text from '../../../../lib/catalog/data/materials.ndjson';
 import { materialSlug } from '../../../../lib/material-slug';
 import { Material } from '../../core/models';
 
 /**
  * The standard materials, from the file the database is seeded from
- * (data/materials.ndjson, scripts/seed-standard.js), in the bundle, so each
+ * (lib/catalog/data/materials.ndjson, scripts/seed-standard.js), in the bundle, so each
  * material's public page is rendered with its data at build time and needs no
  * request. The pages list the same materials as lib/pages.js (MATERIAL_PAGES).
  */

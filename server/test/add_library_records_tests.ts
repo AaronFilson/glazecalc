@@ -44,8 +44,8 @@ describe('adding records to the standard library', () => {
       'lib/recipe',
       'lib/cones',
       'lib/chemistry',
-      'data/materials.ndjson',
-      'data/additives.ndjson'
+      'lib/catalog/data/materials.ndjson',
+      'lib/catalog/data/additives.ndjson'
     ]) {
       fs.cpSync(part, path.join(dir, part), { recursive: true });
     }
@@ -53,7 +53,7 @@ describe('adding records to the standard library', () => {
   afterEach(() => fs.rmSync(dir, { recursive: true, force: true }));
 
   it('says what it would add, skip and refuse, and writes nothing without --write', () => {
-    const before = lines('data/materials.ndjson').length;
+    const before = lines('lib/catalog/data/materials.ndjson').length;
     const output = run([
       kaolin,
       { ...kaolin, name: 'Bad Frit', aliases: [], category: 'frit', analysis: { SiO2: 50, Unobtainium: 10 }, loi: 0 },
@@ -69,13 +69,13 @@ describe('adding records to the standard library', () => {
     expect(output).to.contain('FAIL  records.json: Old Kaolin: discontinuedSince "by 2016" is not a year');
     expect(output).to.contain('substitutes "Nowhere Clay" is not in the library, left off');
     expect(output).to.contain('Nothing written.');
-    expect(lines('data/materials.ndjson').length).to.equal(before);
+    expect(lines('lib/catalog/data/materials.ndjson').length).to.equal(before);
   });
 
   it('appends the record with its chemistry worked out, and leaves the others as they were', () => {
-    const before = lines('data/materials.ndjson');
+    const before = lines('lib/catalog/data/materials.ndjson');
     run([kaolin], '--write');
-    const after = lines('data/materials.ndjson');
+    const after = lines('lib/catalog/data/materials.ndjson');
     expect(after.slice(0, before.length)).to.eql(before);
     const record = JSON.parse(after[after.length - 1]);
     expect(record).to.include({

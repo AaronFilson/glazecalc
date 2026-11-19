@@ -38,7 +38,7 @@ add('regions', keysOf('regions'));
 // Every standard material's and additive's hazard line.
 const hazards = new Set();
 for (const file of ['materials', 'additives']) {
-  for (const line of fs.readFileSync(ROOT + 'data/' + file + '.ndjson', 'utf8').split('\n')) {
+  for (const line of fs.readFileSync(ROOT + 'lib/catalog/data/' + file + '.ndjson', 'utf8').split('\n')) {
     if (line.trim() && JSON.parse(line).hazards) hazards.add(textKey(JSON.parse(line).hazards));
   }
 }

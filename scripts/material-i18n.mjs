@@ -28,9 +28,9 @@ export const OUT = path.join(ROOT, 'dist', 'i18n-generated');
 
 const require = createRequire(import.meta.url);
 
-/** The standard materials, as data/materials.ndjson has them. */
+/** The standard materials, as lib/catalog/data/materials.ndjson has them. */
 export const standardMaterials = () =>
-  readFileSync(path.join(ROOT, 'data', 'materials.ndjson'), 'utf8')
+  readFileSync(path.join(ROOT, 'lib', 'catalog', 'data', 'materials.ndjson'), 'utf8')
     .split('\n')
     .filter((line) => line.trim())
     .map((line) => JSON.parse(line));

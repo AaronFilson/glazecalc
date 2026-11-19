@@ -38,7 +38,7 @@ const KEEP = [
 ];
 
 const read = (collection) =>
-  readFileSync(path.join(ROOT, 'data', collection + '.ndjson'), 'utf8')
+  readFileSync(path.join(ROOT, collection === 'advice' ? 'data' : 'lib/catalog/data', collection + '.ndjson'), 'utf8')
     .split(/\r?\n/)
     .filter(Boolean)
     .map((line) => JSON.parse(line));

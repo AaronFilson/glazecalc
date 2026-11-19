@@ -39,7 +39,7 @@ import { STANDARD_MATERIALS, materialBySlug, materialNamed, materialPath, materi
 const named = (name: string) => STANDARD_MATERIALS.find((material) => material.name === name)!;
 
 describe('the standard materials', () => {
-  it("are data/materials.ndjson's, each with a page address of its own", () => {
+  it("are lib/catalog/data/materials.ndjson's, each with a page address of its own", () => {
     expect(STANDARD_MATERIALS.length).toBeGreaterThan(100);
     const slugs = STANDARD_MATERIALS.map((material) => materialSlug(material.name));
     expect(new Set(slugs).size).toBe(slugs.length);

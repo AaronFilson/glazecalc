@@ -64,7 +64,10 @@ export async function sources() {
   );
   const records = new Set();
   for (const file of ['materials', 'additives', 'advice']) {
-    for (const line of readFileSync(path.join(ROOT, 'data', file + '.ndjson'), 'utf8').split('\n')) {
+    for (const line of readFileSync(
+      path.join(ROOT, file === 'advice' ? 'data' : 'lib/catalog/data', file + '.ndjson'),
+      'utf8'
+    ).split('\n')) {
       if (!line.trim()) continue;
       const record = JSON.parse(line);
       for (const text of [

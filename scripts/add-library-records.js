@@ -1,5 +1,5 @@
 // Adds gathered materials and additives to the standard library
-// (data/materials.ndjson and data/additives.ndjson) without changing the
+// (lib/catalog/data/materials.ndjson and lib/catalog/data/additives.ndjson) without changing the
 // records already there, so their ids, and recipes' copies of them, stay put.
 //
 //   node scripts/add-library-records.js research/eu-feldspars.json [more.json]          shows what it would do
@@ -23,7 +23,7 @@ const crypto = require('node:crypto');
 const { MOLAR_MASS, formatFormula, materialWeights } = require('../lib/chemistry');
 const { traitsFromName } = require('../lib/catalog/traits.ts');
 
-const FILES = { material: 'data/materials.ndjson', additive: 'data/additives.ndjson' };
+const FILES = { material: 'lib/catalog/data/materials.ndjson', additive: 'lib/catalog/data/additives.ndjson' };
 const CATEGORIES = [
   'feldspar',
   'clay',
