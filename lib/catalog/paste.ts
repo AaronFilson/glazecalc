@@ -1,0 +1,1483 @@
+// Paste-in import: recipes pasted as text or CSV, read into lines of a name
+// and an amount, and each name found in the library. Nothing here saves
+// anything: the app shows what was read and the person confirms it.
+//
+// What is read:
+//   "Custer Feldspar 25", "EPK 20.5 %", "25 g Silica", "Whiting: 20",
+//   "- Silica .... 30", "1. EPK 20", tab- or semicolon-separated columns, CSV
+//   (quoted or not), decimal commas (by the reader's decimal mark), weights in
+//   g, kg, lb and oz (as grams), and additions marked "+" or under a heading
+//   such as "Add", "Additions" or "Colorants". A title is the first line that
+//   is not a material; a line of text after the materials with materials
+//   below it starts another recipe, as does a line of dashes, or a blank line
+//   followed by a material the recipe already has. Totals, column headings,
+//   firing notes and links are set aside, so they can be shown.
+//
+// Glazecalc binds the host (lib/recipe/paste.js): only parsePaste takes it, for the cone charts its firing lines
+// are read with (isFiringLine, lib/catalog/firing-text.ts).
+
+import type { Host } from '../core/host.ts';
+import { isFiringLine, readsDecimalComma } from './firing-text.ts';
+import { GENERIC_NAMES } from './names.ts';
+import type { GenericName } from './names.ts';
+import { parseNumber, plainDigits, separators, withoutDirectionMarks } from './numbers.ts';
+import type { DecimalMark } from './numbers.ts';
+
+/** A pasted line's unit, as kept: weights are in grams. */
+export type PastedUnit = '%' | 'g' | 'parts' | null;
+
+/** A line read as a material and its amount. */
+export interface PastedLine {
+  /** Its line in the paste, from 1. */
+  line: number;
+  /** The line as pasted. */
+  text: string;
+  /** The material's name as pasted. */
+  name: string;
+  /** Its amount (in grams for a weight); null for a name pasted alone. */
+  amount: number | null;
+  unit: PastedUnit;
+  /** Marked "+", or under a heading such as "Additions". */
+  addition: boolean;
+  /**
+   * The amount as pasted when its thousands may be set apart by a space ("1 500" of "Local clay 1 500": 1500, or
+   * "Local clay 1" at 500), in any language: read as `PasteOptions.spaced` says for the line, so the page asks.
+   * Absent otherwise, and where a known name (`isName`) decides it, with nothing to ask: the name with the first
+   * group, in any language ("Minspar 200 300 g": Minspar 200 at 300); else the name without it, where the locale
+   * writes thousands with a space ("Quartz 3 000 g" in French: Quartz at 3000).
+   */
+  spaced?: string;
+  /**
+   * Two cells of a comma-separated row as pasted, with the comma between them, when they can be one number
+   * (`joinedNumber`) or two columns: "30,5" of "Silica,30,5" where the reader writes decimal commas, "2,140.7" of
+   * "Rutile,2,140.7" or "1.161,5" of "Pegmatita,1.161,5", the thousands set apart inside the number. The last two
+   * of a row of three with no heading row, or under one, the amount's cell and the next when the row has one cell
+   * more than the heading. Or a known name's last number and the number after its comma, when they can be one
+   * ("233,5" of "Kaolin 233,5" where commas mark decimals: Kaolin at 233.5, or Kaolin 233 at 5; "1,111.8" of
+   * "Boraq 1,111.8 g"), where no other row of the paste has a comma between a word and a number. Read as
+   * `PasteOptions.joined` says, so the page asks. Absent otherwise, and in a paste whose rows of three are three
+   * columns ("Talc,5,50"), for digit groups.
+   */
+  joined?: string;
+}
+
+/** A line set aside: a total, or a row of column headings. */
+export interface SetAside {
+  line: number;
+  text: string;
+  why: 'total' | 'columns';
+}
+
+export interface PastedRecipe {
+  title: string | null;
+  /** Lines of text that are not materials: the firing, notes, links. */
+  notes: string[];
+  lines: PastedLine[];
+  skipped: SetAside[];
+}
+
+export interface PasteOptions {
+  mark?: DecimalMark;
+  locale?: string;
+  /** Whether text is a material's whole name ("Frit 3134"), so it is not read as "Frit" at 3134. */
+  isName?: (text: string) => boolean;
+  /** Whether a name is like any material, even only closely: such a line is never read as a title ("Leach 4321"). */
+  known?: (text: string) => boolean;
+  /** How to read a number that could be a decimal or digit groups ("1,500" as 1.5 or 1500), when the paste does not decide it; the locale reads it by default. */
+  reading?: 'decimal' | 'group';
+  /**
+   * How to read an amount with its thousands set apart by a space ("Local clay 1 500"): one number ('group'), or
+   * the first group as the end of the name ('apart'); for the whole paste, or line by line (by `PastedLine.line`).
+   * A line not chosen is read as `spacedReading(locale)` says, and each such line is marked `spaced`. A line a known
+   * name decides is not marked, and is read as that name says whatever is chosen.
+   */
+  spaced?: 'group' | 'apart' | Readonly<Record<number, 'group' | 'apart'>>;
+  /**
+   * How to read a comma-separated row whose amount can be two numbers with only a comma between them ("Silica,30,5"
+   * for a reader who writes decimal commas, "Rutile,2,140.7"; with no heading row or under "Material,Amount"): one
+   * number ('decimal': 30.5, 2140.7, as `joinedNumber` reads it), or two columns, the first the amount ('columns':
+   * 30, 2). A known name's last number and the number after its comma likewise ("Kaolin 233,5": 'decimal' Kaolin at
+   * 233.5, 'columns' Kaolin 233 at 5). By default 'decimal', and each such line is marked `joined`.
+   */
+  joined?: 'decimal' | 'columns';
+}
+
+export type MatchHow = 'name' | 'alias' | 'close' | 'choose' | 'none';
+
+export interface NameMatch<T> {
+  how: MatchHow;
+  /** The record taken: for name, alias and close. */
+  record: T | null;
+  /** The closest records, best first. */
+  candidates: T[];
+}
+
+/** A record a pasted name can be matched to: its name and its other names. */
+export interface Named {
+  name: string;
+  aliases?: string[];
+}
+
+/** matchName, with each name it compares prepared once for as long as it is kept (one for a paste). */
+export type NameMatcher = <T extends Named>(name: string, records: readonly T[], limit?: number) => NameMatch<T>;
+
+/** A unit as a line writes it: a weight, a percent or parts. */
+type WrittenUnit = '%' | 'g' | 'kg' | 'lb' | 'oz' | 'parts';
+
+/** How the paste is read, worked out once for it from its options (parsePaste). */
+interface Settings {
+  mark: DecimalMark;
+  locale: string;
+  isName: (text: string) => boolean;
+  known: (text: string) => boolean;
+  read: (token: string) => number | null;
+  spacedAs: 'group' | 'apart';
+  spacedChosen: (line: number) => 'group' | 'apart' | null;
+  joined: 'decimal' | 'columns';
+  decimalComma: boolean;
+  threeColumns: boolean;
+}
+
+/** How two cells are read as one number (oneNumber). */
+interface OneNumberOptions {
+  mark?: DecimalMark;
+  decimalComma?: boolean;
+  threeColumns?: boolean;
+}
+
+/** A delimited row: its delimiter, its cells, and the row as given; named when namedRow found it. */
+interface Row {
+  delimiter: string;
+  cells: string[];
+  text: string;
+  named?: true;
+}
+
+/** A heading row's columns: which cell is which, -1 for none, and how many cells it has. */
+interface Columns {
+  material: number;
+  amount: number;
+  recipe: number;
+  addition: number;
+  count: number;
+}
+
+/** A name as matching compares it (preparedName). */
+interface PreparedName {
+  folded: string;
+  letters: string;
+  words: string[];
+  pairs: Map<string, number>;
+}
+
+/**
+ * A line read as a material and its amount, before it joins a recipe (its
+ * amount null for a name alone); in a table, marked as an addition, and the
+ * recipe its row is in when there is a column for that. A known name's row
+ * whose number makes one with the next ("Kaolin 233,5", "Boraq 1,111.8") has
+ * the line's reading as text beside it, for parsePaste to ask of (numberTail).
+ */
+interface Item {
+  name: string;
+  value: number | null;
+  unit: PastedUnit;
+  addition?: boolean;
+  recipe?: string;
+  spaced?: string;
+  joined?: string;
+  numberTail?: NumberTail;
+}
+interface NumberTail {
+  name: string;
+  value: number;
+  unit: PastedUnit;
+  token: string;
+}
+
+/** What a line of the paste is, read once (classify). */
+type Entry =
+  | { kind: 'blank' | 'separator' | 'add' | 'base' | 'total' | 'firing'; line: number; text: string }
+  | { kind: 'text'; line: number; text: string; delimited?: Row | null; fraction?: boolean }
+  | { kind: 'columns'; line: number; text: string; columns: Columns }
+  | { kind: 'item'; line: number; text: string; item: Item; delimited: Row | null; commaRow: boolean };
+
+/**
+ * The most a paste can be: characters, lines, and characters in a line that
+ * can be a material (a longer line is text, so no pattern is run on it).
+ */
+const PASTE_LIMITS: { readonly chars: number; readonly lines: number; readonly line: number } = {
+  chars: 50000,
+  lines: 2000,
+  line: 300
+};
+
+/** Which limit a paste is over ('chars' or 'lines'), or null. */
+function pasteTooLong(text: string): 'chars' | 'lines' | null {
+  const all = String(text ?? '');
+  if (all.length > PASTE_LIMITS.chars) return 'chars';
+  let lines = 1;
+  for (let i = all.indexOf('\n'); i >= 0; i = all.indexOf('\n', i + 1)) lines++;
+  return lines > PASTE_LIMITS.lines ? 'lines' : null;
+}
+
+// A number that could be a decimal or digit groups: "1,500" is 1.5 or 1500.
+const AMBIGUOUS = /^[1-9]\d{0,2}[.,]\d{3}$/;
+
+/**
+ * How a paste writes its numbers, from all of them at once: a number with one
+ * separator and other than three digits after it ("22,5", "0.500") is a
+ * decimal in that mark; two kinds ("1.234,5") or a repeated one ("1,234,567")
+ * say which mark groups. Nothing else is evidence.
+ */
+function decimalEvidence(text: string): { comma: boolean; point: boolean } {
+  const seen = { comma: false, point: false };
+  const tokens = String(text ?? '')
+    .normalize('NFKC')
+    .match(/(?<![\d.,])\d[\d.,]*\d(?![\d.,])/g);
+  for (const token of tokens ?? []) {
+    const commas = (token.match(/,/g) ?? []).length;
+    const points = (token.match(/\./g) ?? []).length;
+    if (commas && points) seen[token.lastIndexOf(',') > token.lastIndexOf('.') ? 'comma' : 'point'] = true;
+    else if (commas > 1) seen.point = true;
+    else if (points > 1) seen.comma = true;
+    else if ((commas || points) && !AMBIGUOUS.test(token)) seen[commas ? 'comma' : 'point'] = true;
+  }
+  return seen;
+}
+
+/** Whether an ambiguous number, given the evidence, is decided: digit groups where the other mark is the decimal one. */
+const groupedByEvidence = (token: string, seen: { comma: boolean; point: boolean }): boolean =>
+  token.includes(',') ? seen.point && !seen.comma : seen.comma && !seen.point;
+
+/**
+ * The numbers of a paste that can be read two ways even after reading all of
+ * them ("1,500" in a paste whose other numbers use decimal commas: 1.5 or
+ * 1500), as pasted, each once, in order. Only for a reader whose mark is
+ * 'either'; a chosen mark decides them. parsePaste reads them as the reader's
+ * locale does unless told options.reading ('decimal' or 'group').
+ */
+function ambiguousNumbers(text: string, mark: DecimalMark = 'either'): string[] {
+  if (mark !== 'either') return [];
+  const seen = decimalEvidence(text);
+  const found: string[] = [];
+  for (const token of String(text ?? '')
+    .normalize('NFKC')
+    .match(/(?<![\d.,])\d[\d.,]*\d(?![\d.,])/g) ?? []) {
+    if (AMBIGUOUS.test(token) && !groupedByEvidence(token, seen) && !found.includes(token)) found.push(token);
+  }
+  return found;
+}
+
+/** Grams in each weight a line can be given in; the rest are proportions. */
+const WEIGHTS: Readonly<Partial<Record<WrittenUnit, number>>> = { g: 1, kg: 1000, lb: 453.59237, oz: 28.349523125 };
+
+/** The words a unit can be written as, and what each is. */
+const UNIT_WORDS: Readonly<Record<string, WrittenUnit>> = {
+  '%': '%',
+  '٪': '%',
+  percent: '%',
+  pct: '%',
+  g: 'g',
+  gr: 'g',
+  gm: 'g',
+  gms: 'g',
+  gram: 'g',
+  grams: 'g',
+  gramm: 'g',
+  gramos: 'g',
+  grammes: 'g',
+  kg: 'kg',
+  lb: 'lb',
+  lbs: 'lb',
+  oz: 'oz',
+  part: 'parts',
+  parts: 'parts',
+  pt: 'parts',
+  pts: 'parts',
+  teile: 'parts',
+  parties: 'parts',
+  partes: 'parts',
+  parti: 'parts',
+  delen: 'parts',
+  // Chinese, Japanese and Korean: grams, kilograms and parts.
+  克: 'g',
+  公克: 'g',
+  그램: 'g',
+  公斤: 'kg',
+  千克: 'kg',
+  部: 'parts'
+};
+const UNIT =
+  '(%|٪|percent|pct|公克|克|그램|公斤|千克|部|grams|gramm|gramos|grammes|gram|gms|gm|gr|g|kg|lbs|lb|oz|parts|part|pts|pt|teile|parties|partes|parti|delen)';
+
+// A simple fraction or a mixed number ("1/2", "1 1/2"; ½ is written 1/2 first), with a slash or the fraction slash.
+const FRACTION = '\\p{Nd}{1,2} \\p{Nd}{1,2}[/⁄]\\p{Nd}{1,2}|\\p{Nd}{1,2}[/⁄]\\p{Nd}{1,2}';
+// A number as pasted: digits with points or commas in them, in any script, or a fraction.
+const NUMBER = '(' + FRACTION + '|(?:\\p{Nd}[\\p{Nd}.,٫٬]*)|(?:[.,٫]\\p{Nd}+))';
+// Between a name and its amount: spaces, a tab, a colon or equals sign, dot leaders, or a dash with spaces.
+const GAP = '(?:\\s*(?:\\.{2,}|…+|[:=]|[-–—](?=\\s))\\s*|\\s+)';
+const NAME_FIRST = new RegExp('^(.*?\\S)' + GAP + NUMBER + '\\s*' + UNIT + '?\\.?$', 'iu');
+const NUMBER_FIRST = new RegExp(
+  '^' + NUMBER + '\\s*(?:' + UNIT + '(?![\\p{L}\\p{Nd}]))?\\s*[-–—:x×]?\\s+(\\S.*)$',
+  'iu'
+);
+
+/** The fractions Unicode writes as one character, as typed with a slash. */
+const VULGAR: Readonly<Record<string, string>> = { '½': '1/2', '⅓': '1/3', '⅔': '2/3', '¼': '1/4', '¾': '3/4', '⅕': '1/5', '⅖': '2/5', '⅗': '3/5', '⅘': '4/5', '⅙': '1/6', '⅚': '5/6', '⅐': '1/7', '⅛': '1/8', '⅜': '3/8', '⅝': '5/8', '⅞': '7/8', '⅑': '1/9', '⅒': '1/10' }; // prettier-ignore
+const VULGAR_AFTER = /(\p{Nd})?\s*([½⅓⅔¼¾⅕⅖⅗⅘⅙⅚⅐⅛⅜⅝⅞⅑⅒])/gu;
+/** "1½" as "1 1/2", "½" as " 1/2": before NFKC, which writes ½ as 1⁄2 and so 1½ as 11⁄2. */
+const withSlashes = (text: string): string =>
+  text.replace(
+    VULGAR_AFTER,
+    (_all: string, whole: string | undefined, one: string) => (whole ? whole + ' ' : ' ') + VULGAR[one]
+  );
+// A fraction as a recipe writes one: a smaller number over 2 to 16, after a whole number or not. "30/80" or "2/75"
+// in a name ("Molochite 30/80") is no amount, nor a date ("12/03").
+const SIMPLE_FRACTION = /^(?:(\d{1,2}) )?(\d{1,2})[/⁄](\d{1,2})$/;
+/** Whether a number over another is a fraction as a recipe writes one. */
+const isFraction = (top: number, bottom: number): boolean => top >= 1 && bottom >= 2 && bottom <= 16 && top < bottom;
+/**
+ * Whether a line has a fraction as a recipe writes one ("Bentonite 1/2 tsp", "¼"), so it is never another recipe's
+ * title. "Shino 50/50" has none.
+ */
+const hasFraction = (text: string): boolean =>
+  /[½⅓⅔¼¾⅕⅖⅗⅘⅙⅚⅐⅛⅜⅝⅞⅑⅒]/u.test(text) ||
+  [...plainDigits(text).matchAll(/(?<![\d/⁄])(\d{1,2})\s*[/⁄]\s*(\d{1,2})(?![\d/⁄])/g)].some(([, top, bottom]) =>
+    isFraction(Number(top), Number(bottom))
+  );
+
+/** An amount as pasted, a fraction ("1 1/2" is 1.5) or a number as options.read reads it; null for neither. */
+function amountOf(token: string, options: Pick<Settings, 'read'>): number | null {
+  const fraction = plainDigits(token).match(SIMPLE_FRACTION);
+  if (!fraction) return /[/⁄]/.test(token) ? null : options.read(token);
+  const [whole, top, bottom] = fraction.slice(1).map((part) => Number(part ?? 0));
+  return isFraction(top, bottom) ? whole + top / bottom : null;
+}
+
+/** Text as names are compared: NFKC (full-width letters are plain ones), in lower case, spaces as one. */
+const folded = (text: unknown): string =>
+  String(text ?? '')
+    .normalize('NFKC')
+    .toLowerCase()
+    .replace(/\s+/g, ' ')
+    .trim();
+
+/** Folded text without accents, ß as ss and a Turkish dotless ı as i: what letters and words are read from. */
+const unaccented = (text: string): string =>
+  text.normalize('NFD').replace(/\p{M}/gu, '').replace(/ß/g, 'ss').replace(/ı/g, 'i');
+
+/** Only the letters and the numerals of unaccented text. */
+const lettersOf = (plain: string): string => plain.replace(/[^\p{L}\p{Nd}]/gu, '');
+
+/**
+ * Text with only its letters and digits, without accents, for a looser
+ * comparison: "G-200" is "G200", "Feldspath" and "Feldspäth" are alike, and a
+ * Turkish dotless ı is an i.
+ */
+const compact = (text: unknown): string => lettersOf(unaccented(folded(text)));
+
+/** The words of unaccented text as compared: letters and numerals apart ("g200" is "g", "200"). */
+const wordsIn = (plain: string): string[] =>
+  plain
+    .replace(/(\p{L})(?=\p{Nd})|(\p{Nd})(?=\p{L})/gu, '$1$2 ')
+    .split(/[^\p{L}\p{Nd}]+/u)
+    .filter((word) => word && !STOP_WORDS.has(word));
+
+/**
+ * A name as matching compares it, worked out once: folded, its letters and numerals (as compact), its words,
+ * and the pairs of its letters.
+ */
+function preparedName(text: unknown): PreparedName {
+  const exact = folded(text);
+  const plain = unaccented(exact);
+  const letters = lettersOf(plain);
+  return { folded: exact, letters, words: wordsIn(plain), pairs: pairsIn(letters) };
+}
+
+// Words that say nothing about which material it is.
+const STOP_WORDS = new Set(['the', 'of', 'and', 'mesh', 'm', 'x']);
+
+/** A heading, as compared: without a colon, brackets or a percent sign at the end. */
+const headingOf = (text: string): string =>
+  folded(text)
+    // Arabic vowel marks and the stretching line are not part of the word ("الملوِّنات" is "الملونات").
+    .replace(/[ً-ْٰـ]/g, '')
+    // Urdu letters as the Arabic keyboard writes them (ی ے ى as ي, ک as ك, ہ as ه), so either spelling matches.
+    .replace(/[یےى]/g, 'ي')
+    .replace(/ک/g, 'ك')
+    .replace(/ہ/g, 'ه')
+    .replace(/\(.*?\)|\[.*?\]/g, ' ')
+    .replace(/[:%*#=_\-–—.]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+// Headings over additions, in the languages the app is in or that potters paste from.
+const ADD_HEADINGS = new Set(
+  (
+    '+|add|adds|add ins|add in|added|addition|additions|additive|additives|colorant|colorants|colourant|colourants|' +
+    'color|colors|colour|colours|stain|stains|oxide|oxides|opacifier|opacifiers|extra|extras|plus|' +
+    'zusatz|zusätze|zugabe|zugaben|ajout|ajouts|aggiunte|aggiunta|añadidos|adiciones|aditivos|adições|' +
+    'toevoegingen|toevoeging|tillsatser|tilsætninger|tilsetninger|lisäaineet|lisäykset|dodatki|přísady|prísady|' +
+    'adalékok|lisandid|priedai|piedevas|dodaci|dodatki|aditivi|πρόσθετα|добавки|aditivi|katkılar|ilaveler|' +
+    '添加|添加物|添加剂|添加劑|外加|外加料|着色剂|著色劑|呈色剂|呈色劑|' +
+    '追加|追加分|外割|添加剤|添加材|着色剤|첨가|첨가물|첨가제|추가|발색제|착색제|' +
+    'สารเติมแต่ง|ส่วนที่เติมเพิ่ม|ส่วนเติม|เติมเพิ่ม|สารให้สี|' +
+    'phụ gia|chất phụ gia|phần thêm|thêm|bổ sung|chất tạo màu|chất màu|' +
+    'tambahan|bahan tambahan|aditif|bahan aditif|zat aditif|pewarna|zat pewarna|' +
+    // Arabic (without vowel marks: headingOf drops them).
+    'إضافات|الإضافات|إضافة|الإضافة|اضافات|ملونات|الملونات|مواد ملونة|المواد الملونة|ملون|أصباغ|الأصباغ|صبغات|الصبغات|' +
+    'صبغة|أكاسيد|الأكاسيد|أكاسيد وملونات|الملونات والإضافات|' +
+    // Hindi.
+    'एडिटिव|एडिटिव्स|कलरेंट|कलरेंट्स|रंजक|स्टेन|ऑक्साइड|ऑक्साइड्स|अतिरिक्त सामग्री|अतिरिक्त|कलरेंट और एडिटिव|' +
+    // Urdu.
+    'اضافی مادہ|اضافی مادے|اضافی مواد|اضافہ|اضافے|اضافات|رنگ|رنگ دار آکسائیڈز|رنگ دار آکسائیڈ|رنگ دینے والا آکسائیڈ|' +
+    'رنگ دینے والے آکسائیڈ|آکسائیڈ|آکسائیڈز|اسٹین|اسٹینز|رنگ دار آکسائیڈز اور اضافی مادے|اوپر سے شامل|' +
+    // Bengali.
+    'সংযোজন|রঞ্জক উপাদান|রঞ্জক|রং দেওয়ার অক্সাইড|অক্সাইড|সিরামিক স্টেইন|স্টেইন|উপরে যোগ|রঞ্জক উপাদান ও সংযোজন|' +
+    // Tamil.
+    'சேர்க்கை|சேர்க்கைகள்|சேர்க்கைப் பொருள்|சேர்க்கைப் பொருட்கள்|கலரன்ட்|கலரன்ட்கள்|ஸ்டெயின்|ஆக்சைடு|ஆக்சைடுகள்|' +
+    'நிறமூட்டி|கலரன்ட்களும் சேர்க்கைப் பொருட்களும்|பேஸுக்கு மேல்|' +
+    // Marathi.
+    'ॲडिटिव्ह|कलरंट|रंगद्रव्य|रंगद्रव्ये|स्टेन|ऑक्साइड|भर|कलरंट आणि ॲडिटिव्ह|बेसच्या वर|' +
+    // Kannada.
+    'ಸೇರ್ಪಡೆ|ಸೇರ್ಪಡೆಗಳು|ಆಡಿಟಿವ್|ಆಡಿಟಿವುಗಳು|ಕಲರೆಂಟ್|ಕಲರೆಂಟುಗಳು|ಬಣ್ಣಕಾರಕ|ಸ್ಟೇನ್|ಆಕ್ಸೈಡ್|ಆಕ್ಸೈಡುಗಳು|' +
+    'ಕಲರೆಂಟುಗಳು ಮತ್ತು ಆಡಿಟಿವುಗಳು|ಬೇಸಿನ ಮೇಲೆ'
+  )
+    .split('|')
+    .map(headingOf)
+);
+const BASE_HEADINGS = new Set(
+  (
+    'base|base glaze|base recipe|glaze|recipe|ingredients|materials|batch|basis|grundglasur|grundrezept|rezept|' +
+    'recette|base de l émail|ricetta|base|receta|recept|basisglazuur|resepti|przepis|receptura|alap|retsept|' +
+    'базова|основа|taban|基础釉|基礎釉|基礎|기본 유약|基礎釉薬|' +
+    // Arabic.
+    'الأساس|أساس|الطلاء الأساسي|طلاء أساسي|الخلطة|خلطة|مواد الأساس|المواد|مواد|المادة|المكونات|مكونات|' +
+    // Hindi.
+    'बेस|बेस ग्लेज़|बेस रेसिपी|ग्लेज़|रेसिपी|सामग्री|बेस सामग्री|' +
+    // Urdu.
+    'بنیادی گلیز|بنیادی|بنیاد|ریسیپی|مواد|بنیادی مواد|اجزا|اجزاء|' +
+    // Bengali.
+    'মূল গ্লেজ|মূল উপাদান|বেস|বেস গ্লেজ|রেসিপি|উপাদান|' +
+    // Tamil.
+    'பேஸ்|பேஸ் கிளேஸ்|ரெசிபி|மூலப்பொருள்|மூலப்பொருட்கள்|பேஸ் மூலப்பொருட்கள்|' +
+    // Marathi.
+    'बेस ग्लेझ|साहित्य|बेस साहित्य|' +
+    // Kannada.
+    'ಬೇಸ್|ಬೇಸ್ ಗ್ಲೇಜ್|ರೆಸಿಪಿ|ಸಾಮಗ್ರಿ|ಸಾಮಗ್ರಿಗಳು|ಬೇಸ್ ಸಾಮಗ್ರಿಗಳು'
+  )
+    .split('|')
+    .map(headingOf)
+);
+// Words of a column heading row: "Material, Amount", "Ingredient %".
+const MATERIAL_COLUMNS = new Set(
+  'material|materials|ingredient|ingredients|name|raw material|raw materials|rohstoff|rohstoffe|matière|matières|matière première|materiale|materia prima|materias primas|grondstof|grondstoffen|materiaal|råvara|surowiec|surovina|原料|원료'.split(
+    '|'
+  )
+);
+const AMOUNT_COLUMNS = new Set(
+  '%|amount|amounts|percent|percentage|weight|parts|qty|quantity|batch|grams|g|menge|anteil|gewicht|teile|quantité|poids|pourcentage|quantità|peso|cantidad|porcentaje|hoeveelheid|gewicht|mängd|ilość|množství|量|配合|함량|비율'.split(
+    '|'
+  )
+);
+const RECIPE_COLUMNS = new Set(
+  'recipe|glaze|recipe name|glaze name|title|rezept|glasur|recette|émail|ricetta|smalto|receta|esmalte|recept|glazuur|glasyr|釉|유약'.split(
+    '|'
+  )
+);
+const ADDITION_COLUMNS = new Set('addition|add|additive|type|role'.split('|'));
+
+/** A total line: "Total 100", "Summe: 100,0". */
+const TOTAL =
+  /^(?:total|totals|sum|subtotal|grand total|gesamt|summe|insgesamt|totaal|totale|somme|suma|razem|celkem|spolu|yhteensä|i alt|totalt|összesen|kokku|iš viso|kopā|ukupno|skupaj|σύνολο|итого|общо|toplam|合计|合計|总计|總計|합계)(?![\p{L}\p{Nd}])/u;
+
+/** A line about the firing or the glaze, not a material: "Cone 6", "^6", "SG 1.45", "1240 °C". */
+const NOT_A_MATERIAL =
+  /^(?:(?:\^|δ|△)\s*\p{Nd}|(?:cone|cones|kegel|seger|orton|sk|temp|temperature|firing|fired|atmosphere|oxidation|reduction|sg|s\.g\.|specific gravity|loi|coe|si:al|cost|price|source|notes?|glazy|digitalfire|brennen|brand|cuisson|cottura|cocción)(?![\p{L}\p{Nd}]))/u;
+
+/**
+ * A name that ends in a word or a mark for a cone, as a line read as a name and an amount gives it when the
+ * amount is the cone ("Celadon, cone" of "Celadon, cone 10"): cone, the Spanish, Italian and Portuguese cono,
+ * Kegel, Segerkegel, Seger, Orton, SK, bisque, C/, ^ and Δ. Folded, without accents ("cône" is "cone").
+ */
+const CONE_LAST = /(?:^|[^\p{L}\p{Nd}])(?:cones?|cono|kegel|segerkegel|seger|orton|sk|bisque|c\s*\/|\^|[δ△∆])$/u;
+
+/** A line that only separates two recipes: dashes, equals signs, stars or underscores. */
+const SEPARATOR = /^\s*(?:[-=*_~#]\s*){3,}$/;
+
+/** "1. ", "2) ", "- ", "* ", "• " before a line. */
+// A title that ends in a number ("Leach 4321"): words, then one whole number.
+const TITLE_WITH_NUMBER = /^\p{L}[\p{L}\p{M}'’.\s-]*\s\p{Nd}+$/u;
+const LIST_MARK = /^\s*(?:[-*•·◦▪‣]+\s+|\(?\d{1,2}[.)]\s+(?=\D))/u;
+
+/**
+ * A comma-separated row whose first cell is a name the library has that ends in a digit, with a digit after the
+ * comma ("Ferro Frit 3134,20", "Ferro Frit 3134,20,5"), which cellsOf takes for one cell with a decimal comma in
+ * it; or null. options.isName says what is a name. The row says it was found so (named).
+ */
+function namedRow(text: string, options: Pick<Settings, 'isName'>): Row | null {
+  if (/[\t;]/.test(text)) return null;
+  for (const comma of text.matchAll(/(?<=\p{Nd}),(?=\p{Nd})/gu)) {
+    const name = text.slice(0, comma.index).trim();
+    if (options.isName(name)) {
+      return {
+        delimiter: ',',
+        cells: [
+          name,
+          ...text
+            .slice(comma.index + 1)
+            .split(',')
+            .map((cell) => cell.trim())
+        ],
+        text,
+        named: true
+      };
+    }
+  }
+  return null;
+}
+
+/**
+ * Cells of a delimited row: tab, semicolon or comma separated, with CSV's
+ * quotes ("Feldspar, potash","25"), and the row as given. Null for a line with
+ * no delimiter.
+ */
+function cellsOf(text: string): Row | null {
+  // A comma between digits is a decimal comma ("25,5"), not a column.
+  const commas = /,/.test(text.replace(/(?<=\p{Nd}),(?=\p{Nd})/gu, ''));
+  const delimiter = text.includes('\t') ? '\t' : text.includes(';') ? ';' : commas ? ',' : null;
+  if (!delimiter) return null;
+  const cells: string[] = [];
+  let cell = '';
+  let quoted = false;
+  for (let i = 0; i < text.length; i++) {
+    const char = text[i]!;
+    if (quoted) {
+      if (char === '"' && text[i + 1] === '"') {
+        cell += '"';
+        i++;
+      } else if (char === '"') quoted = false;
+      else cell += char;
+    } else if (char === '"' && !cell.trim()) {
+      quoted = true;
+      cell = '';
+    } else if (char === delimiter) {
+      cells.push(cell.trim());
+      cell = '';
+    } else cell += char;
+  }
+  cells.push(cell.trim());
+  return { delimiter, cells, text };
+}
+
+// An amount with its thousands set apart by a space ("1 500", "12 500"; NFKC makes a no-break, narrow no-break
+// or thin space a plain one), at the end of a line ("Silica 1 500 g") or at its start ("1 500 g Silica").
+const SPACED = '\\p{Nd}{1,3}(?: \\p{Nd}{3})+';
+const SPACED_LAST = new RegExp('(?<=\\s)(' + SPACED + ')(?=(?:[.,٫]\\p{Nd}+)?\\s*' + UNIT + '?\\.?$)', 'iu');
+const SPACED_FIRST = new RegExp(
+  '^(' + SPACED + ')(?=(?:[.,٫]\\p{Nd}+)?\\s*(?:' + UNIT + '(?![\\p{L}\\p{Nd}]))?\\s*[-–—:x×]?\\s+\\p{L})',
+  'iu'
+);
+
+/**
+ * How a line whose amount may have its thousands set apart by a space ("Silica 1 500") is read until the reader
+ * chooses: as one number ('group') where their language writes thousands so (French "1 500", Russian, Swedish:
+ * Intl's group mark is a space), else with the first group the end of the name ('apart').
+ */
+const spacedReading = (locale = 'en'): 'group' | 'apart' =>
+  /^\s$/u.test(separators(locale).group) ? 'group' : 'apart';
+
+/** A pasted number with its unit after it ("20,5 %", "250g"), or null. */
+function amountCell(text: string, options: Pick<Settings, 'read'>): { value: number; unit: WrittenUnit | null } | null {
+  const match = String(text)
+    .normalize('NFKC')
+    .trim()
+    // A cell holds only its amount, so a space in it sets thousands apart ("1 500"), in any language.
+    .replace(new RegExp('^' + SPACED + '(?!\\p{Nd})', 'u'), (all) => all.replace(/ /g, ''))
+    .match(new RegExp('^' + NUMBER + '\\s*' + UNIT + '?\\.?$', 'iu'));
+  if (!match) return null;
+  const value = amountOf(match[1], options);
+  if (value === null || value < 0) return null;
+  return { value, unit: match[2] ? UNIT_WORDS[match[2].toLowerCase()] : null };
+}
+
+/**
+ * Two cells of a comma-separated row as one number, the comma between them inside it, as the reader writes numbers
+ * (options.mark, options.decimalComma); null when they cannot be one, and are two columns. In any script's digits:
+ *   - two whole numbers, where the reader writes commas for decimals: "30" and "5" are 30.5, "1" and "500" 1.5;
+ *   - a number with its thousands set apart by a point or a space, and a whole number: "1.161" and "5" are 1161.5,
+ *     "1 183" and "70" 1183.7, the comma a decimal one (not for a reader who chose decimal points);
+ *   - one to three digits, and three more with decimals after a point or none: "2" and "140.7" are 2140.7, and
+ *     where the reader writes decimal points "1" and "114" are 1114, the comma setting thousands apart (not for a
+ *     reader who chose decimal commas).
+ * Digit groups are never one number in a paste of three columns (options.threeColumns).
+ */
+function oneNumber(first: string, second: string, options: OneNumberOptions): number | null {
+  const [a, b] = [first, second].map((cell) => plainDigits(String(cell).normalize('NFKC')).trim());
+  const whole = /^\d+$/.test(b);
+  if (/^\d+$/.test(a) && whole && options.decimalComma) return Number(a + '.' + b);
+  if (options.threeColumns) return null;
+  if (/^[1-9]\d{0,2}([. ])\d{3}(?:\1\d{3})*$/.test(a) && whole && options.mark !== 'point') {
+    return Number(a.replace(/[. ]/g, '') + '.' + b);
+  }
+  if (/^[1-9]\d{0,2}$/.test(a) && /^\d{3}(?:\.\d+)?$/.test(b) && options.mark !== 'comma') return Number(a + b);
+  return null;
+}
+
+/**
+ * A comma-separated row's cells `at` and the next as one number (oneNumber), with the token as pasted ("2,140.7");
+ * null when they cannot be one, or when a quote or a space is beside that comma ("EPK","20","5" or "EPK, 20, 5"),
+ * which a number never has.
+ */
+function joinedPair(row: Row, at: number, options: OneNumberOptions): { token: string; value: number } | null {
+  const cells = row.cells;
+  if (row.delimiter !== ',' || at < 0 || at + 1 >= cells.length) return null;
+  const token = cells[at] + ',' + cells[at + 1];
+  const asPasted = at + 2 === cells.length ? row.text.endsWith(token) : row.text.includes(token + ',');
+  const value = asPasted ? oneNumber(cells[at], cells[at + 1], options) : null;
+  return value === null ? null : { token, value };
+}
+
+/**
+ * The two cells a line is asked of (PastedLine.joined: "30,5", "2,140.7") as one number, as a reader who writes
+ * numbers so (mark, locale) reads them, the number parsePaste reads until the reader chooses two columns; null when
+ * they cannot be one.
+ */
+function joinedNumber(token: string, mark: DecimalMark = 'either', locale = 'en'): number | null {
+  const text = String(token ?? '');
+  const comma = text.indexOf(',');
+  if (comma < 0) return null;
+  return oneNumber(text.slice(0, comma), text.slice(comma + 1), {
+    mark,
+    decimalComma: readsDecimalComma(mark, locale)
+  });
+}
+
+/** An amount in grams for a weight, or as it is; its unit as the import keeps it. */
+function inUnits(amount: { value: number; unit: WrittenUnit | null }): { value: number; unit: PastedUnit } {
+  if (amount.unit && WEIGHTS[amount.unit]) return { value: amount.value * WEIGHTS[amount.unit]!, unit: 'g' };
+  // Every weight is in WEIGHTS, so what is left is a percent, parts or none.
+  return { value: amount.value, unit: amount.unit as PastedUnit };
+}
+
+/** Whether a row of cells (or the words of a line) is a column heading row, and which column is which. */
+function headingRow(cells: string[]): Columns | null {
+  const names = cells.map(headingOf);
+  if (!names.some((name) => MATERIAL_COLUMNS.has(name) || AMOUNT_COLUMNS.has(name))) return null;
+  const known = (name: string): boolean =>
+    !name ||
+    MATERIAL_COLUMNS.has(name) ||
+    AMOUNT_COLUMNS.has(name) ||
+    RECIPE_COLUMNS.has(name) ||
+    ADDITION_COLUMNS.has(name) ||
+    /^(?:code|id|no|nr|#|notes?|comment|comments|oxide|analysis|cost|price|supplier)$/.test(name);
+  if (!names.every(known)) return null;
+  const find = (set: ReadonlySet<string>): number => names.findIndex((name) => set.has(name));
+  return {
+    material: find(MATERIAL_COLUMNS),
+    amount: find(AMOUNT_COLUMNS),
+    recipe: names.findIndex((name, i) => RECIPE_COLUMNS.has(name) && i !== find(MATERIAL_COLUMNS)),
+    addition: find(ADDITION_COLUMNS),
+    count: cells.length
+  };
+}
+
+/**
+ * A heading row known by its place, in any language: a delimited row of words, with no digit, over rows of the
+ * same delimiter, written as it is, whose numbers are in the same columns, as a spreadsheet's are
+ * ("Rohstoff,Menge,Preis" over "Kalifeldspat,30,2"). A row may have one cell more, the rest of its last number
+ * after a comma inside it, a decimal comma's or a thousands one's (rowItem asks). Its columns are the lists' words
+ * where it has them ("Menge"), else the column of names and the first column of numbers after it. Null when it is
+ * not one.
+ */
+function placedHeading(row: Row, below: Row[], options: Settings): Columns | null {
+  const count = row.cells.length;
+  if (row.cells.some((cell) => /\p{Nd}/u.test(cell) || marksAddition(cell))) return null;
+  // A comma and a space between words, over rows written without one ("Shino, carbon trap" over "Custer,40"): a title.
+  const spacedAfter = (text: string): boolean => text.includes(row.delimiter + ' ');
+  if (spacedAfter(row.text) && !below.some((under) => spacedAfter(under.text))) return null;
+  // The columns a row has numbers in, as text ("1,2"), or null when it has none or is not as wide as the heading.
+  const numbersIn = ({ cells }: Row): string | null => {
+    const more =
+      cells.length === count + 1 &&
+      (/^\d+$/.test(cells[count]!) || oneNumber(cells[count - 1]!, cells[count]!, options) !== null);
+    if (cells.length !== count && !more) return null;
+    return (
+      cells
+        .slice(0, count)
+        .flatMap((cell, i) => (amountCell(cell, options) ? [i] : []))
+        .join() || null
+    );
+  };
+  const first = numbersIn(below[0]!);
+  if (!first || below.some((under) => numbersIn(under) !== first)) return null;
+  const numbered = first.split(',').map(Number);
+  const names = row.cells.map(headingOf);
+  const find = (set: ReadonlySet<string>): number => names.findIndex((name) => set.has(name));
+  const material =
+    find(MATERIAL_COLUMNS) >= 0
+      ? find(MATERIAL_COLUMNS)
+      : below[0]!.cells.findIndex((cell, i) => !numbered.includes(i) && /\p{L}/u.test(cell));
+  if (material < 0 || numbered.includes(material)) return null;
+  return {
+    material,
+    amount: numbered.includes(find(AMOUNT_COLUMNS))
+      ? find(AMOUNT_COLUMNS)
+      : (numbered.find((i) => i > material) ?? numbered[0]!),
+    recipe: names.findIndex((name, i) => RECIPE_COLUMNS.has(name) && i !== material),
+    addition: find(ADDITION_COLUMNS),
+    count
+  };
+}
+
+/** Whether a cell marks its row as an addition: "+", "add", "addition", "yes". */
+const marksAddition = (cell: string): boolean =>
+  /^(?:\+|add|addition|additive|yes)$/i.test(headingOf(cell) || cell.trim());
+
+/**
+ * A line of text as a material and an amount: "Custer Feldspar 25",
+ * "EPK 20.5 %", "25 g Silica". Null when there is no amount at its end or start.
+ * `at` is its line in the paste.
+ */
+function textItem(text: string, options: Settings, at: number): Item | null {
+  const line = withSlashes(text)
+    .normalize('NFKC')
+    .trim()
+    // A full stop after the amount, as at the end of a sentence ("Silica 30."): not part of the number.
+    .replace(/(?<=\s\p{Nd}(?:[\p{Nd}.,٫٬]*\p{Nd})?)\.$/u, '')
+    // A percent sign before the amount, as Turkish writes it ("Silica %20"): after it, as the rest of the paste is read.
+    .replace(/(?<=\s)%\s?(\p{Nd}[\p{Nd}.,٫٬]*)$/u, '$1%');
+  // Digit groups set apart by a space ("Silica 1 500 g", "1 500 g Silica"): one number, 1500, or the first group
+  // the end of the name, "Silica 1" at 500 ("apart"). Each reading's name decides it, with nothing to ask, when the
+  // library has it:
+  //   - the name apart ("Minspar 200 300 g", "Mondré & Manz Frit V 15 098 980"), in every language: that name, and
+  //     the last group its amount;
+  //   - else the name of the one number ("Quartz 3 000 g": Quartz, and no "Quartz 3"), where the reader's language
+  //     writes thousands so (French "1 500", Swedish, Polish: spacedReading).
+  // Any other such line keeps the amount as pasted (spaced), so the page asks, and is read as the reader chose for
+  // it, else as their language writes thousands (options.spacedFor): one number in French, apart in English. With
+  // groups at both ends ("1 828,5 g Mondré & Manz Raku Frit M 233 864"), those whose one number leaves a known name
+  // are the amount's, else those at the end.
+  const found = [line.match(SPACED_LAST), line.match(SPACED_FIRST)].filter((groups): groups is RegExpMatchArray =>
+    Boolean(groups)
+  );
+  if (!found.length) return lineItem(line, options);
+  const apart = lineItem(line, options);
+  if (apart && options.isName(apart.name)) return apart;
+  const joined = found.map((groups) =>
+    lineItem(
+      line.slice(0, groups.index) + groups[1]!.replace(/ /g, '') + line.slice(groups.index! + groups[1]!.length),
+      options
+    )
+  );
+  const which = Math.max(
+    0,
+    joined.findIndex((item) => item && options.isName(item.name))
+  );
+  if (options.spacedAs === 'group' && joined[which] && options.isName(joined[which].name)) return joined[which];
+  // Read apart, a last group of zeros would be the amount ("Quartz 3 000 g": "Quartz 3" at 0): one number is the
+  // default then, in any language, until the reader chooses otherwise for the line.
+  const zeros = /^0+$/.test(found[which]![1]!.split(' ').pop()!);
+  const reading = options.spacedChosen(at) ?? (zeros ? 'group' : options.spacedAs);
+  const item = reading === 'group' ? joined[which]! : apart;
+  return item && { ...item, spaced: found[which]![1]! };
+}
+
+/** A line of text, with its digit groups as textItem chose them, as a material and an amount; null for none. */
+function lineItem(line: string, options: Settings): Item | null {
+  const nameFirst = line.match(NAME_FIRST);
+  const numberFirst = line.match(NUMBER_FIRST);
+  const fromNumberFirst = (): Item | null => {
+    const value = amountOf(numberFirst![1]!, options);
+    // "325 mesh silica": the 325 is the mesh, not an amount.
+    if (
+      value !== null &&
+      value >= 0 &&
+      /\p{L}/u.test(numberFirst![3]!) &&
+      !/^mesh(?![\p{L}\p{Nd}])/iu.test(numberFirst![3]!)
+    ) {
+      return {
+        name: numberFirst![3]!.trim(),
+        ...inUnits({ value, unit: numberFirst![2] ? UNIT_WORDS[numberFirst![2].toLowerCase()]! : null })
+      };
+    }
+    return null;
+  };
+  // A number at each end ("19 g Ferro Frit 3124", "30 Ferro Frit 3134"): the amount is the first where a unit
+  // follows it, or where the name after it is one the library has and the name before the last is not.
+  const amountFirst =
+    nameFirst &&
+    numberFirst &&
+    (!!numberFirst[2] || (options.isName(numberFirst[3]!.trim()) && !options.isName(nameFirst[1]!.trim())));
+  const first = amountFirst ? fromNumberFirst() : null;
+  if (first) return first;
+  // A known name that ends in a number before a fraction ("Tile 6 1/2"): that name, and the fraction its amount.
+  const mixed = nameFirst?.[2]!.match(/^(\p{Nd}+) (\S+)$/u);
+  const [named, token] =
+    mixed && options.isName(nameFirst![1]!.trim() + ' ' + mixed[1])
+      ? [nameFirst![1]!.trim() + ' ' + mixed[1], mixed[2]]
+      : [nameFirst?.[1], nameFirst?.[2]];
+  if (nameFirst) {
+    const value = amountOf(token!, options);
+    if (value !== null && value >= 0 && /(?<![\p{L}\p{Nd}])mesh$/iu.test(named!) && !/\p{Nd}/u.test(named!)) {
+      // "Silica mesh 200": the number is the mesh, part of the name, never the amount.
+      return { name: line, value: null, unit: null };
+    }
+    if (value !== null && value >= 0) {
+      // A column of grams before the percent ("Custer 250.0 25.0%"): the name stops before it.
+      let name = named!.trim();
+      for (
+        let more: RegExpMatchArray | null;
+        !options.isName(name) && (more = name.match(/^(.*\S)\s+\p{Nd}+[.,]\p{Nd}+\s*(?:%|g)?$/u));
+      ) {
+        name = more[1]!;
+      }
+      return { name, ...inUnits({ value, unit: nameFirst[3] ? UNIT_WORDS[nameFirst[3].toLowerCase()]! : null }) };
+    }
+  }
+  const after = numberFirst && !amountFirst ? fromNumberFirst() : null;
+  if (after) return after;
+  // A mesh size with no amount ("Silica 200 mesh", "325 mesh silica"): a name alone.
+  if (
+    /\p{Nd}\s*mesh(?![\p{L}\p{Nd}])|(?<![\p{L}\p{Nd}])mesh\s*\p{Nd}/iu.test(line) &&
+    /\p{L}/u.test(line.replace(/mesh/gi, ''))
+  ) {
+    return { name: line, value: null, unit: null };
+  }
+  return null;
+}
+
+// The cell after a known name's comma that can end the name's number: digits with decimals after a point or none,
+// then a unit or none ("5", "111.8 g").
+const NUMBER_TAIL = new RegExp('^(\\p{Nd}+(?:\\.\\p{Nd}+)?)\\s*' + UNIT + '?\\.?$', 'iu');
+
+/**
+ * A delimited row as a material and an amount, by the heading row's columns
+ * when there was one; otherwise the first cell of text is the name and the
+ * first number after it the amount. Null when it has no name and amount.
+ */
+function rowItem(row: Row, columns: Columns | null, options: Settings): Item | null {
+  const cells = row.cells;
+  // "+ Tin oxide" in a name's cell: an addition.
+  const plus = (cell: string): boolean => /^\+\s*/.test(cell.trim());
+  const named = (cell: string): string => cell.trim().replace(/^\+\s*/, '');
+  const byColumns = columns && columns.material >= 0 && columns.amount >= 0;
+  // Two numbers with only a comma between them in a comma-separated row that can be one number (oneNumber): a
+  // decimal comma where the reader writes them ("EPK,20,5": 20.5, or 20 and 5), or digit groups ("Rutile,2,140.7":
+  // 2140.7, or 2 and 140.7; "Pegmatita,1.161,5": 1161.5, or 1.161 and 5). With no heading row, the last two cells
+  // of a row of three; under one, the amount's cell and the next, when the row has one cell more than the heading
+  // ("Material,Amount" over "Silica,30,5"); a row as wide as its heading ("Material,Amount,Notes" over
+  // "Silica,30,5") has each cell in its column. The line says so (joined), for the page to ask, and is read as
+  // options.joined says, one number until the reader chooses (joinedPair).
+  const at = !columns
+    ? cells.length === 3
+      ? 1
+      : -1
+    : byColumns && cells.length === columns.count + 1
+      ? columns.amount
+      : -1;
+  const pair = joinedPair(row, at, options);
+  const joined = pair?.token ?? null;
+  // The one number, as the page shows it (joinedNumber), whatever the paste's other numbers say.
+  const asOne = joined && options.joined === 'decimal' ? pair!.value : null;
+  if (asOne !== null && !columns) {
+    // The first cell the name, as in any row.
+    const name = cells[0]!;
+    if (!/\p{L}/u.test(name) || amountCell(name, options) || marksAddition(name)) return null;
+    return { name: named(name), value: asOne, unit: null, addition: plus(name), joined: joined! };
+  }
+  if (byColumns) {
+    // One number: the two cells as one, so each cell after them is in its column again.
+    const by = asOne !== null ? [...cells.slice(0, at), joined!, ...cells.slice(at + 2)] : cells;
+    const cell = by[columns!.material] ?? '';
+    const name = named(cell);
+    const amount = asOne !== null ? { value: asOne, unit: null } : amountCell(by[columns!.amount] ?? '', options);
+    if (!name || !amount || !/\p{L}/u.test(name)) return null;
+    return {
+      name,
+      ...inUnits(amount),
+      recipe: columns!.recipe >= 0 ? (by[columns!.recipe] ?? '').trim() : '',
+      addition: plus(cell) || (columns!.addition >= 0 && marksAddition(by[columns!.addition] ?? '')),
+      ...(joined && { joined })
+    };
+  }
+  const nameAt = cells.findIndex((cell) => /\p{L}/u.test(cell) && !amountCell(cell, options) && !marksAddition(cell));
+  if (nameAt < 0) return null;
+  let amountAt = cells.findIndex((cell, i) => i > nameAt && amountCell(cell, options));
+  if (amountAt < 0) amountAt = cells.findIndex((cell) => amountCell(cell, options));
+  if (amountAt < 0) return null;
+  const others = cells.filter((_cell, i) => i !== nameAt && i !== amountAt);
+  // A known name that ends in a number, a comma, and a number that makes one with it as the reader writes numbers
+  // (oneNumber), with a unit or none: "Kaolin 233,5" where commas mark decimals, "Boraq 1,111.8 g" where they set
+  // thousands apart. The name and its amount (Kaolin 233 at 5), or the name without its number and one number
+  // (Kaolin at 233.5), as the line reads as text; not a percent over 100 ("Kaolin 233,5 %"), which no line is.
+  // parsePaste decides from the paste's other rows whether to ask (numberTail).
+  const numbered = row.named && cells.length === 2 ? cells[0]!.match(/^(.*\S)\s+(\p{Nd}+)$/u) : null;
+  const tail = numbered ? cells[1]!.normalize('NFKC').match(NUMBER_TAIL) : null;
+  const value = tail ? oneNumber(numbered![2]!, tail[1]!, options) : null;
+  const unit = tail?.[2] ? UNIT_WORDS[tail[2].toLowerCase()]! : null;
+  const numberTail =
+    value !== null && !(unit === '%' && value > 100)
+      ? { name: numbered![1]!, ...inUnits({ value, unit }), token: numbered![2] + ',' + tail![1] }
+      : null;
+  return {
+    name: named(cells[nameAt]!),
+    ...inUnits(amountCell(cells[amountAt]!, options)!),
+    addition: plus(cells[nameAt]!) || others.some(marksAddition),
+    ...(joined && { joined }),
+    ...(numberTail && { numberTail })
+  };
+}
+
+/**
+ * Recipes read from pasted text, each with its title (or null), its notes
+ * (lines of text that are not materials), its lines, and what was set aside.
+ *
+ * options.mark and options.locale say how the reader writes numbers (see
+ * numbers.js). options.isName(text) may say whether text is a material's
+ * whole name, so "Frit 3134" alone is a material with no amount rather than
+ * "Frit" at 3134. options.known(text) may say whether a name is like any
+ * material at all (even only closely), so it is never read as a title.
+ */
+function parsePaste(host: Host, text: string, options: PasteOptions = {}): PastedRecipe[] {
+  const mark = options.mark ?? 'either';
+  const locale = options.locale ?? 'en';
+  // One decision for the whole paste: a number that could be a decimal or digit groups is read by what the
+  // rest of the paste writes, else as chosen (options.reading), else as the reader's locale does.
+  const seen = decimalEvidence(text);
+  const settings: Settings = {
+    mark,
+    locale,
+    isName: options.isName ?? (() => false),
+    known: options.known ?? (() => false),
+    read: (token) => {
+      if (settings.mark === 'either' && AMBIGUOUS.test(token.trim())) {
+        const sep = token.includes(',') ? ',' : '.';
+        if (groupedByEvidence(token, seen) || options.reading === 'group') return Number(token.trim().replace(sep, ''));
+        if (options.reading === 'decimal') return Number(token.trim().replace(sep, '.'));
+      }
+      return parseNumber(token, settings.mark, settings.locale);
+    },
+    // Thousands set apart by a space ("1 500"): each line asked of read as the reader chose, for the paste or for
+    // that line (options.spaced), else as their language writes thousands (spacedReading). (A spacedFor that put
+    // the two together was never called: textItem asks spacedChosen and spacedAs itself, so it is gone.)
+    spacedAs: spacedReading(locale),
+    spacedChosen: (line) => {
+      const chosen: unknown =
+        options.spaced && typeof options.spaced === 'object' ? options.spaced[line] : options.spaced;
+      return chosen === 'group' || chosen === 'apart' ? chosen : null;
+    },
+    // A comma-separated row whose amount can be one number or two columns ("EPK,20,5", "Rutile,2,140.7"): one
+    // number, as before, unless the reader chose two columns; each such line says so.
+    joined: options.joined === 'columns' ? 'columns' : 'decimal',
+    decimalComma: readsDecimalComma(mark, locale),
+    // Set below, once the paste's rows of three are read with it unset.
+    threeColumns: false
+  };
+  // Past the limits nothing is read: the app says so (pasteTooLong), and a caller that does not still cannot be slowed.
+  if (pasteTooLong(text)) return [];
+  const rows = String(text ?? '')
+    .replace(/^\uFEFF/, '')
+    .split(/\r\n|\r|\n/);
+  // A row of three comma-separated cells, a name and a number first, whose last two cannot be one number ("Talc,5,50"
+  // or "Kaolin,20,x" where the reader writes decimal points): the paste's rows of three are three columns, so none
+  // is read as one number in digit groups ("Silica,30,300" is 30, and 300 another column, as before). A decimal
+  // comma is asked of as before (oneNumber). Worked out before settings.threeColumns is set, so digit groups count.
+  const threeColumns = rows.some((raw) => {
+    const trimmed = withoutDirectionMarks(raw).trim();
+    const row = trimmed.length <= PASTE_LIMITS.line ? cellsOf(trimmed) : null;
+    return (
+      row?.delimiter === ',' &&
+      row.cells.length === 3 &&
+      /\p{L}/u.test(row.cells[0]!) &&
+      !!amountCell(row.cells[1]!, settings) &&
+      !joinedPair(row, 1, settings)
+    );
+  });
+  settings.threeColumns = threeColumns;
+
+  const recipes: PastedRecipe[] = [];
+  // Typed, as it is set in start() as well as here: the loop below would otherwise read it as only ever null.
+  let recipe = null as PastedRecipe | null;
+  let inAdditions = false;
+  // Whether the additions section has had a line yet: a blank line before one is part of the heading's gap.
+  let additionsStarted = false;
+  let columns: Columns | null = null;
+  let afterBlank = false;
+  const start = (title: string | null | undefined): PastedRecipe => {
+    recipe = { title: title || null, notes: [], lines: [], skipped: [] };
+    recipes.push(recipe);
+    inAdditions = false;
+    additionsStarted = false;
+    return recipe;
+  };
+  const current = () => recipe ?? start(null);
+
+  // What each line is, read once: the next material decides what a line of text before it is.
+  const read: Entry[] = rows.map((raw, index) => classify(raw, index));
+  /** The entry at `j` when it is an item, as the heading search below reads rows. */
+  const itemAt = (j: number) => {
+    const entry = read[j];
+    return entry?.kind === 'item' ? entry : null;
+  };
+  // A heading row known by its place (placedHeading), in any language: a row of words that starts its rows.
+  for (let i = 0; i < read.length; i++) {
+    const entry = read[i]!;
+    if (entry.kind !== 'text' || !entry.delimited || read[i - 1]?.kind === 'item') continue;
+    const { delimited } = entry;
+    const below: Row[] = [];
+    for (let j = i + 1; itemAt(j) && itemAt(j)!.delimited?.delimiter === delimited.delimiter; j++) {
+      below.push(itemAt(j)!.delimited!);
+    }
+    const columns = below.length ? placedHeading(delimited, below, settings) : null;
+    if (columns) read[i] = { kind: 'columns', line: entry.line, text: entry.text, columns };
+  }
+  // A known name that ends in a number, a comma and a number that makes one with it (rowItem's numberTail): "Kaolin
+  // 233,5" is Kaolin 233 at 5, or Kaolin at 233.5 as the line reads as text where commas mark decimals; "Boraq
+  // 1,111.8" Boraq 1 at 111.8, or Boraq at 1111.8 where they set thousands apart. Where another row of the paste has
+  // a comma between its cells that is not between two digits ("Quarz,30", or a heading row "Material,Amount"), its
+  // commas are columns: the known name, as before. Otherwise the line is asked as a comma row's two numbers are
+  // (joined), one number until the reader chooses two columns.
+  if (
+    !read.some(
+      (entry) => (entry.kind === 'item' && entry.commaRow) || (entry.kind === 'columns' && entry.text.includes(','))
+    )
+  ) {
+    for (const entry of read) {
+      const tail = entry.kind === 'item' ? entry.item.numberTail : null;
+      if (!tail || entry.kind !== 'item') continue;
+      const { addition } = entry.item;
+      entry.item =
+        settings.joined === 'decimal'
+          ? { name: tail.name, value: tail.value, unit: tail.unit, addition, joined: tail.token }
+          : { ...entry.item, joined: tail.token };
+    }
+  }
+  function classify(raw: string, index: number): Entry {
+    const line = index + 1;
+    const text = raw.trimEnd();
+    // Read without the marks that keep a number's direction in Arabic text ("19.5‎%‎", "١٩٫٥٪؜"): not seen, and
+    // in the way of every pattern. The line is kept as pasted.
+    const trimmed = withoutDirectionMarks(text).trim();
+    if (!trimmed) return { kind: 'blank', line, text };
+    if (SEPARATOR.test(trimmed)) return { kind: 'separator', line, text };
+    // Too long to be a material: set aside as text before any pattern runs on it.
+    if (trimmed.length > PASTE_LIMITS.line) return { kind: 'text', line, text };
+    // A known name before a comma and its amount ("Ferro Frit 3134,20"): the comma ends the name, though there is a
+    // digit each side of it.
+    const row = namedRow(trimmed, settings) ?? cellsOf(trimmed);
+    const delimited = row && row.cells.filter(Boolean).length > 1 ? row : null;
+    const heading = delimited
+      ? headingRow(delimited.cells)
+      : (headingRow([trimmed]) ?? headingRow(trimmed.split(/\s{2,}/)) ?? headingRow(trimmed.split(/\s+/)));
+    if (heading && !/\p{Nd}/u.test(trimmed.replace(/%/g, ''))) return { kind: 'columns', line, text, columns: heading };
+    const head = headingOf(trimmed);
+    if (ADD_HEADINGS.has(head)) return { kind: 'add', line, text };
+    if (BASE_HEADINGS.has(head)) return { kind: 'base', line, text };
+    if (/:\/\//.test(trimmed)) return { kind: 'text', line, text };
+
+    let body = trimmed.replace(LIST_MARK, '');
+    let addition = false;
+    const plus = body.match(/^\+\s*(.*)$/) ?? body.match(/^(?:add|additions?)\s*:\s*(.+)$/i);
+    if (plus && plus[1]) {
+      body = plus[1];
+      addition = true;
+    }
+    if (TOTAL.test(folded(body))) return { kind: 'total', line, text };
+    // Nothing but a firing, clearly ("Cone 6", "C/6", "^6", "6½ ox", "ox/red"): a note of the recipe it is in,
+    // read into its firing on import. A number alone ("06", "5.5") stays what it was, a total set aside.
+    if (isFiringLine(host, body, { decimalComma: settings.decimalComma })) return { kind: 'firing', line, text };
+    if (NOT_A_MATERIAL.test(folded(body)) || /°\s*[cf]\b|\d\s*°/i.test(body)) return { kind: 'text', line, text };
+
+    let item: Item | null = null;
+    if (delimited) item = rowItem(delimited, null, settings);
+    // A row read by its cells and split at a comma that is not between two digits ("Silica,33"): the paste's commas
+    // are columns (numberTail, above).
+    const commaRow = !!item && delimited!.delimiter === ',' && !delimited!.named;
+    if (!item && settings.isName(body)) item = { name: body, value: null, unit: null };
+    if (!item) item = textItem(body, settings, line);
+    if (!item) {
+      if (amountCell(body.replace(/^[^\p{L}\p{Nd}]+/u, ''), settings)) return { kind: 'total', line, text };
+      // A fraction that is not an amount ("Bentonite 1/2 tsp"): never another recipe's title.
+      return { kind: 'text', line, text, delimited, fraction: hasFraction(body) };
+    }
+    if (TOTAL.test(folded(item.name)) || NOT_A_MATERIAL.test(folded(item.name))) {
+      return { kind: TOTAL.test(folded(item.name)) ? 'total' : 'text', line, text };
+    }
+    // A title that names a cone at its end ("Celadon, cone 10", "Seladon, SK 8"): its number is the cone, and the
+    // line is text, a title or a note, never a material at that amount. The firing is read from it on import.
+    if (CONE_LAST.test(unaccented(folded(item.name))) && !settings.isName(item.name)) {
+      return { kind: 'text', line, text };
+    }
+    return { kind: 'item', line, text, item: { ...item, addition: addition || !!item.addition }, delimited, commaRow };
+  }
+
+  const nextItem = (from: number): Entry | null => {
+    for (let i = from; i < read.length; i++) {
+      if (read[i]!.kind === 'item') return read[i]!;
+      if (!['blank', 'add', 'base', 'firing'].includes(read[i]!.kind)) return null;
+    }
+    return null;
+  };
+
+  /**
+   * Whether an item that opens a block is the recipe's title, read as a name and an amount: words and one
+   * whole number ("Leach 4321"), no unit, a name like no material, with at least two base materials
+   * under it whose amounts together are less than its number. A first material not in the library
+   * ("Hawthorn Bond 40" over 60 more) stays a material.
+   */
+  const titleItem = (entry: Extract<Entry, { kind: 'item' }>, i: number): boolean => {
+    const { item } = entry;
+    if (entry.delimited || item.addition || item.unit || inAdditions) return false;
+    if (!Number.isInteger(item.value) || !TITLE_WITH_NUMBER.test(entry.text.trim())) return false;
+    if (settings.isName(item.name) || settings.known(item.name)) return false;
+    let total = 0;
+    let count = 0;
+    for (let j = i + 1; j < read.length && read[j]!.kind === 'item'; j++) {
+      const next = itemAt(j)!.item;
+      if (next.addition) break;
+      if (next.value === null) return false;
+      total += next.value;
+      count++;
+    }
+    return count >= 2 && item.value! > total;
+  };
+
+  for (let i = 0; i < read.length; i++) {
+    const entry = read[i]!;
+    switch (entry.kind) {
+      case 'blank':
+        afterBlank = true;
+        // A blank line ends a section of additions that has had lines: what follows is the base again.
+        if (inAdditions && additionsStarted) inAdditions = false;
+        continue;
+      case 'separator':
+        if (recipe && (recipe.lines.length || recipe.title)) recipe = null;
+        columns = null;
+        break;
+      case 'columns':
+        columns = entry.columns;
+        current().skipped.push({ line: entry.line, text: entry.text, why: 'columns' });
+        break;
+      case 'add':
+        current();
+        inAdditions = true;
+        additionsStarted = false;
+        break;
+      case 'base':
+        current();
+        inAdditions = false;
+        break;
+      case 'total':
+        current().skipped.push({ line: entry.line, text: entry.text, why: 'total' });
+        break;
+      case 'firing': {
+        // A firing is the current recipe's, its title when it has nothing yet. It starts a recipe only as a
+        // title set off by a blank line with materials straight under it ("…\n\nCone 6 Wood\nCuster 60"),
+        // never inside one ("Whiting 20\nCone 6\nAdd:\nTin 2").
+        const next = read.slice(i + 1).find((e) => e.kind !== 'blank');
+        if (!recipe || (!recipe.lines.length && !recipe.title)) current().title = entry.text.trim();
+        else if (afterBlank && recipe.lines.length && next?.kind === 'item') start(entry.text.trim());
+        else recipe.notes.push(entry.text.trim());
+        break;
+      }
+      case 'text': {
+        const has = recipe && recipe.lines.length;
+        if (has && !entry.fraction && nextItem(i + 1)) start(entry.text.trim());
+        else if (!recipe || (!recipe.lines.length && !recipe.title)) current().title = entry.text.trim();
+        else current().notes.push(entry.text.trim());
+        break;
+      }
+      case 'item': {
+        const opens = !recipe || (!recipe.lines.length && !recipe.title);
+        if ((opens || (afterBlank && recipe!.lines.length)) && titleItem(entry, i)) {
+          if (opens) current().title = entry.text.trim();
+          else start(entry.text.trim());
+          break;
+        }
+        let item = entry.item;
+        if (columns && entry.delimited) item = rowItem(entry.delimited, columns, settings) ?? item;
+        if (item.recipe && (!recipe || recipe.title !== item.recipe)) start(item.recipe);
+        else if (
+          afterBlank &&
+          recipe &&
+          !inAdditions &&
+          recipe.lines.some((l) => folded(l.name) === folded(item.name))
+        ) {
+          start(null);
+        }
+        if (inAdditions) additionsStarted = true;
+        current().lines.push({
+          line: entry.line,
+          text: entry.text.trim(),
+          name: item.name,
+          amount: item.value,
+          unit: item.unit,
+          addition: inAdditions || !!item.addition,
+          ...(item.spaced && { spaced: item.spaced }),
+          ...(item.joined && { joined: item.joined })
+        });
+        break;
+      }
+    }
+    afterBlank = false;
+  }
+  return recipes.filter((r) => r.lines.length || r.title);
+}
+
+/** Whether amounts add up to about 100, as a recipe in percent does. */
+const aboutHundred = (total: number): boolean => Math.abs(total - 100) <= 0.5;
+
+/**
+ * The amounts of a read recipe as the app keeps them: base materials as
+ * plain numbers ("20.5"), weights in grams; and each addition's unit, a
+ * percent of the base when it says so or when the base adds up to 100,
+ * grams when it was weighed, and otherwise parts in the base's unit.
+ */
+function importAmounts(recipe: PastedRecipe): Array<{ amount: string; unit?: 'percent' | 'parts' | 'grams' }> {
+  const base = recipe.lines.filter((line) => !line.addition && line.amount !== null);
+  const baseTotal = base.reduce((sum, line) => sum + line.amount!, 0);
+  const percentBase = aboutHundred(baseTotal);
+  const plain = (value: number | null): string => (value === null ? '' : String(Number(value.toFixed(5))));
+  return recipe.lines.map((line) => {
+    if (!line.addition) return { amount: plain(line.amount) };
+    const unit =
+      line.unit === '%' || (line.unit !== 'g' && percentBase) ? 'percent' : line.unit === 'g' ? 'grams' : 'parts';
+    return { amount: plain(line.amount), unit };
+  });
+}
+
+/**
+ * The record a pasted name means, found in the order given (a potter's own
+ * records first, as findNamed does):
+ *   name     the record's name, whatever its case, width or punctuation
+ *   alias    one of its other names
+ *   close    the one record whose name is close enough to take as meant
+ *   choose   several are close and none stands out, or the name is a generic
+ *            word (lib/catalog/names.ts): the person chooses
+ *   none     nothing is close
+ * With the record taken (none for choose and none), and the closest records,
+ * best first, to choose from (up to `limit`). Each record's names are worked
+ * out for this name alone: to match many names, use one nameMatcher.
+ */
+function matchName<T extends Named>(name: string, records: readonly T[], limit = 5): NameMatch<T> {
+  return nameMatcher()(name, records, limit);
+}
+
+/**
+ * matchName, with each name it compares worked out once (preparedName) and kept for as long as the matcher is:
+ * matching a paste compares each of its names with every record's names, so the import page makes one matcher
+ * for a paste, and each record's names are prepared once for all its lines, not once a line. Nothing is kept
+ * between matchers, so a server matching many people's pastes keeps none of them.
+ */
+function nameMatcher(): NameMatcher {
+  const known = new Map<string, PreparedName>();
+  const prepare = (text: unknown): PreparedName => {
+    const key = String(text ?? '');
+    let name = known.get(key);
+    if (!name) known.set(key, (name = preparedName(key)));
+    return name;
+  };
+  return <T extends Named>(name: string, records: readonly T[], limit = 5) => matchWith(prepare, name, records, limit);
+}
+
+/** matchName, with names prepared by `prepare`. */
+function matchWith<T extends Named>(
+  prepare: (text: unknown) => PreparedName,
+  name: string,
+  records: readonly T[],
+  limit: number
+): NameMatch<T> {
+  const query = prepare(name);
+  const wanted = query.folded;
+  const loose = query.letters;
+  const result = (how: MatchHow, record?: T | null, candidates?: T[]): NameMatch<T> => ({
+    how,
+    record: record ?? null,
+    candidates: candidates ?? []
+  });
+  if (!loose) return result('none');
+
+  const byName = records.find((record) => prepare(record.name).folded === wanted);
+  if (byName) return result('name', byName, [byName]);
+  const byAlias = records.find((record) => (record.aliases ?? []).some((alias) => prepare(alias).folded === wanted));
+  if (byAlias) return result('alias', byAlias, [byAlias]);
+
+  // Alike but for punctuation, spaces or accents: "G200", "Nepheline-Syenite".
+  const looseName = records.filter((record) => prepare(record.name).letters === loose);
+  const looseAlias = records.filter(
+    (record) => !looseName.includes(record) && (record.aliases ?? []).some((alias) => prepare(alias).letters === loose)
+  );
+  const loosely = [...looseName, ...looseAlias];
+  if (loosely.length === 1 || (looseName.length === 1 && loosely.length > 1)) {
+    return result(looseName.length ? 'name' : 'alias', loosely[0], [loosely[0]]);
+  }
+  if (loosely.length > 1) return result('choose', null, loosely.slice(0, limit));
+
+  const scoreOf = (record: T): number =>
+    Math.max(...[record.name, ...(record.aliases ?? [])].map((n) => likenessOf(query, prepare(n))));
+  // A mesh size ("Silica 200 mesh") is a regional product's name or none of them: never taken silently.
+  if (/(?<![\p{L}\p{Nd}])mesh(?![\p{L}\p{Nd}])|\p{Nd}\s*#/iu.test(wanted)) {
+    const near = records
+      .map((record) => ({ record, score: scoreOf(record) }))
+      .filter((entry) => entry.score >= 0.45)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, limit)
+      .map((entry) => entry.record);
+    return near.length ? result('choose', null, near) : result('none');
+  }
+
+  const generic = genericCandidates(loose, records, limit, prepare);
+  // Two or more of the table's: those. Just one (the records have few): it, then the close ones.
+  if (generic.length > 1) return result('choose', null, generic);
+
+  const scored = records
+    .map((record) => ({ record, score: scoreOf(record) }))
+    .filter((entry) => entry.score >= 0.45)
+    .sort((a, b) => b.score - a.score);
+  if (generic.length) {
+    const more = scored.map((entry) => entry.record).filter((record) => record !== generic[0]);
+    return result('choose', null, [...generic, ...more].slice(0, limit));
+  }
+  const candidates = scored.slice(0, limit).map((entry) => entry.record);
+  if (!scored.length) return result('none');
+  // Several names have every word of this one and differ only by a qualifier ("Nickel oxide, green" and
+  // ", black"): none is the one meant.
+  const containing = scored.filter((entry) => {
+    const words = prepare(entry.record.name).words;
+    return query.words.every((word) => words.includes(word));
+  });
+  if (containing.length > 1) {
+    const rest = candidates.filter((record) => !containing.some((entry) => entry.record === record));
+    return result('choose', null, [...containing.map((entry) => entry.record), ...rest].slice(0, limit));
+  }
+  const [best, second] = scored;
+  if (best!.score >= 0.6 && (!second || best!.score - second.score >= 0.1))
+    return result('close', best!.record, candidates);
+  return result('choose', null, candidates);
+}
+
+/** A generic word's table, by the word as compared (letters and digits only). */
+const GENERIC_BY_WORD = new Map(
+  GENERIC_NAMES.flatMap((entry) => entry.words.map((word): [string, GenericName] => [compact(word), entry]))
+);
+
+/**
+ * The records to offer for a generic word ("Kaolin", "Zircopax"), the table's
+ * most common first, then any other close ones to fill up to `limit`; none
+ * when the name is not a generic word or the records have none of its list.
+ */
+function genericCandidates<T extends Named>(
+  loose: string,
+  records: readonly T[],
+  limit: number,
+  prepare: (text: unknown) => PreparedName
+): T[] {
+  const entry = GENERIC_BY_WORD.get(loose);
+  if (!entry) return [];
+  const offered: T[] = [];
+  for (const wanted of entry.offer.map((name) => prepare(name).folded)) {
+    const record = records.find((r) => prepare(r.name).folded === wanted);
+    if (record && !offered.includes(record)) offered.push(record);
+  }
+  return offered.slice(0, limit);
+}
+
+/**
+ * How well two words match: 1 the same, 0.75 when one starts the other ("carb",
+ * "carbonate") or long ones are a letter apart ("nephaline"), 0 otherwise.
+ * Numbers match only themselves.
+ */
+function wordMatch(a: string, b: string): number {
+  if (a === b) return 1;
+  if (hasDigit(a) || hasDigit(b)) return 0;
+  if (a.length >= 2 && b.startsWith(a)) return 0.75;
+  if (b.length >= 3 && a.startsWith(b)) return 0.75;
+  return a.length >= 5 && b.length >= 5 && oneApart(a, b) ? 0.75 : 0;
+}
+
+/** Whether a word has a digit in it. */
+const DIGIT = /\p{Nd}/u;
+const hasDigit = (word: string): boolean => DIGIT.test(word);
+
+/** Whether one letter changed, added or taken out turns one word into the other. */
+function oneApart(a: string, b: string): boolean {
+  if (Math.abs(a.length - b.length) > 1) return false;
+  let i = 0;
+  while (i < a.length && a[i] === b[i]) i++;
+  if (a.length === b.length) return a.slice(i + 1) === b.slice(i + 1);
+  return a.length > b.length ? a.slice(i + 1) === b.slice(i) : a.slice(i) === b.slice(i + 1);
+}
+
+/** The pairs of letters of a string, each with how many times it has it. */
+function pairsIn(text: string): Map<string, number> {
+  const pairs = new Map<string, number>();
+  for (let i = 0; i < text.length - 1; i++) pairs.set(text.slice(i, i + 2), (pairs.get(text.slice(i, i + 2)) ?? 0) + 1);
+  return pairs;
+}
+
+/** How alike the letters of two prepared names are, 0 to 1: shared pairs of letters (Dice's coefficient). */
+function pairsAlike(a: PreparedName, b: PreparedName): number {
+  if (a.letters.length < 2 || b.letters.length < 2) return a.letters === b.letters ? 1 : 0;
+  let shared = 0;
+  b.pairs.forEach((count, pair) => (shared += Math.min(count, a.pairs.get(pair) ?? 0)));
+  return (2 * shared) / (a.letters.length + b.letters.length - 2);
+}
+
+/**
+ * How close a pasted name is to a record's name, 0 to 1: mostly how many of
+ * the pasted words the name has, then how much of the name they cover, then
+ * how alike the letters are. Numbers must be the same: "Frit 3134" is not
+ * "Frit 3124".
+ */
+function likeness(pasted: string, recordName: string): number {
+  return likenessOf(preparedName(pasted), preparedName(recordName));
+}
+
+/** likeness, of two prepared names. */
+function likenessOf(pasted: PreparedName, record: PreparedName): number {
+  const query = pasted.words;
+  const words = record.words;
+  if (!query.length || !words.length) return 0;
+  const used = new Set<number>();
+  let found = 0;
+  let exact = 0;
+  let numberMissed = false;
+  for (const word of query) {
+    let at = -1;
+    let best = 0;
+    for (let i = 0; i < words.length; i++) {
+      const match = used.has(i) ? 0 : wordMatch(word, words[i]!);
+      if (match > best) {
+        at = i;
+        best = match;
+      }
+    }
+    if (at >= 0) {
+      used.add(at);
+      found += best;
+      if (best === 1) exact++;
+    } else if (hasDigit(word)) numberMissed = true;
+  }
+  let score = 0.6 * (found / query.length) + 0.25 * (used.size / words.length) + 0.15 * pairsAlike(pasted, record);
+  // Every word on both sides, as near as typed: this is the name, with a slip in it.
+  if (used.size === words.length && used.size === query.length && found > exact) score += 0.1;
+  // A number the name has too, but a different one: another material.
+  const otherNumber = numberMissed && words.some((word) => hasDigit(word) && !query.includes(word));
+  return otherNumber ? score * 0.5 : score;
+}
+
+export {
+  PASTE_LIMITS,
+  ambiguousNumbers,
+  pasteTooLong,
+  parsePaste,
+  spacedReading,
+  joinedNumber,
+  importAmounts,
+  matchName,
+  nameMatcher,
+  likeness,
+  folded as foldedName,
+  compact as compactName
+};
