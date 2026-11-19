@@ -5,6 +5,26 @@ import angular from 'angular-eslint';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
+// Glazecalc reaches the core and the catalog only through their indexes and the catalog's data folder, never a
+// file inside them: the indexes are the libraries' public surfaces. Each library has one (lib/core/index.ts,
+// lib/catalog/index.ts), each area one (lib/core/recipe/index.ts), and finer ones (lib/catalog/host/index.ts,
+// lib/core/recipe/basics/index.ts) let a bundle take only what it needs, since a CommonJS require of an index
+// takes the whole of it. Inside the libraries, and in their own tests, any file is fair.
+const PAST_INDEX = '(?!(?:[a-z-]+\\x2F)*index\\.ts$|data\\x2F)';
+const libraryFile = (prefix) => `${prefix}(?:core|catalog)\\x2F${PAST_INDEX}`;
+const boundary = (sources) => {
+  const pattern = sources.map(libraryFile).join('|');
+  const message = 'Import the core or the catalog through an index (lib/core/index.ts, lib/catalog/host/index.ts, …).';
+  return {
+    'no-restricted-imports': ['error', { patterns: [{ regex: pattern.replaceAll('\\x2F', '/'), message }] }],
+    'no-restricted-syntax': [
+      'error',
+      { selector: `CallExpression[callee.name='require'] > Literal[value=/${pattern}/]`, message },
+      { selector: `ImportExpression > Literal[value=/${pattern}/]`, message }
+    ]
+  };
+};
+
 export default tseslint.config(
   {
     ignores: [
@@ -113,5 +133,18 @@ export default tseslint.config(
   {
     files: ['client/**/*.html'],
     extends: [...angular.configs.templateRecommended, ...angular.configs.templateAccessibility]
+  },
+
+  // The libraries' public surfaces: from anywhere by a path through lib/, and from Glazecalc's own lib/ folders
+  // by ../core/ or ../catalog/ as well.
+  {
+    files: ['**/*.js', '**/*.mjs', 'server/**/*.ts', 'client/**/*.ts', 'deploy/cdk/**/*.ts'],
+    ignores: ['lib/core/**', 'lib/catalog/**'],
+    rules: boundary(['(?:^|\\x2F)lib\\x2F'])
+  },
+  {
+    files: ['lib/**/*.js', 'lib/**/*.mjs', 'data/**/*.js'],
+    ignores: ['lib/core/**', 'lib/catalog/**'],
+    rules: boundary(['(?:^|\\x2F)lib\\x2F', '^\\.\\.\\x2F'])
   }
 );

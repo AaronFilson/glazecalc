@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import recipe from '../../lib/recipe/index.js';
 import type { PastedRecipe } from '../../lib/recipe/index.js';
-import { GENERIC_NAMES } from '../../lib/catalog/names.ts';
+import { GENERIC_NAMES } from '../../lib/catalog/index.ts';
 import standardData from '../../data/index.js';
 
 // Paste-in import (lib/recipe/paste.js): recipes pasted as text or CSV, read

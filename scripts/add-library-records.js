@@ -21,7 +21,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
 const { MOLAR_MASS, formatFormula, materialWeights } = require('../lib/chemistry');
-const { traitsFromName } = require('../lib/catalog/traits.ts');
+const { traitsFromName } = require('../lib/catalog/index.ts');
 
 const FILES = { material: 'lib/catalog/data/materials.ndjson', additive: 'lib/catalog/data/additives.ndjson' };
 const CATEGORIES = [
