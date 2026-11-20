@@ -8,6 +8,9 @@ export type LeadMode = 'rebuild' | 'colour';
 
 /** A lead-free frit to build on, with its weight percent of B₂O₃. */
 export interface BaseChoice {
+  /** The frit's identity (a standard material's uuid), which the core's replaceLead takes. */
+  id: string | number | undefined;
+  /** Its name, which this layer's replaceLead takes as `base`. */
   name: string;
   boron: number;
 }

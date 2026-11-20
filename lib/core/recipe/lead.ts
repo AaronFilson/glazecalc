@@ -14,6 +14,7 @@ import type { AdditiveRecord, MaterialRecord, TryMaterial } from './library.ts';
 import type { Caution, CheckName, RecipeMessageCode } from './messages.ts';
 import type { PoolLine, Report } from './pool.ts';
 import type { Host } from '../host.ts';
+import type { Identity } from '../identity.ts';
 
 /**
  * A line a rebuild chooses from (selectMaterials'), with what the report says
@@ -24,8 +25,12 @@ type Line = PoolLine;
 
 export type LeadMode = 'rebuild' | 'colour';
 
-/** A lead-free frit to build on (its label), with its weight percent of B₂O₃. */
+/**
+ * A lead-free frit to build on: its identity, which replaceLead takes as `base`, its label to show, and its
+ * weight percent of B₂O₃.
+ */
 export interface BaseChoice {
+  id: Identity | undefined;
   name: unknown;
   boron: number;
 }
@@ -304,6 +309,7 @@ function leadFreeBases<M extends MaterialRecord>(
 ): BaseChoice[] {
   const bases = basesIn(host, standard, region);
   const choice = (base: M): BaseChoice => ({
+    id: idOf(host, base),
     name: labelOf(host, base),
     boron: Math.round(oxidePercent(host, base, 'B2O3'))
   });
