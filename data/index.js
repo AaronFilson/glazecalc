@@ -7,7 +7,7 @@
 const fs = require('fs');
 const path = require('path');
 const { ObjectId } = require('mongoose').mongo.BSON;
-const { STANDARD_COLLECTIONS, standardFile, readRecords } = require('../lib/catalog/standard.ts');
+const { STANDARD_COLLECTIONS, standardFile, readRecords } = require('../lib/catalog/standard/index.ts');
 
 exports.COLLECTIONS = [...STANDARD_COLLECTIONS, 'advice'];
 

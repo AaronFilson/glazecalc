@@ -8,12 +8,7 @@
 //   node scripts/core-fixture.mjs --check   fails when a fixture is not what data/ and lib/catalog give
 import { readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
-import { OXIDES } from '../lib/catalog/oxides.ts';
-import { CONE_CHARTS } from '../lib/catalog/cones.ts';
-import { LIMITS, STULL } from '../lib/catalog/limits.ts';
-import { DENSITIES } from '../lib/catalog/densities.ts';
-import { EXPANSION } from '../lib/catalog/expansion.ts';
-import { POLICY } from '../lib/catalog/policy.ts';
+import { OXIDES, CONE_CHARTS, LIMITS, STULL, DENSITIES, EXPANSION, POLICY } from '../lib/catalog/index.ts';
 
 const ROOT = path.join(import.meta.dirname, '..');
 const OUT = path.join(ROOT, 'lib', 'core', 'test', 'standard.json');

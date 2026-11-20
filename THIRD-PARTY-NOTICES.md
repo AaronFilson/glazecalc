@@ -6,7 +6,7 @@ whose licence asks that its notice travel with it.
 ## Stull chart regions
 
 The outlines of the regions on the recipe page's Stull chart (unfused, matte, semi-matte,
-underfired and crazed, in `lib/recipe/analysis.js`) are Glazy's reading of R. T. Stull's 1912 chart,
+underfired and crazed, in `lib/catalog/limits.ts`) are Glazy's reading of R. T. Stull's 1912 chart,
 taken as points from `charts/stull-chart-d3.js` in
 <https://github.com/derekphilipau/ceramic-chemistry-visualization> by Derek Au.
 
