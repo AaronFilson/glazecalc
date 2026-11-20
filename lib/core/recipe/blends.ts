@@ -80,8 +80,10 @@ const share = (value: number): number => Math.round(value * 1e9) / 1e9;
  * Null for an unknown kind or steps out of range.
  */
 function blendTiles(kind: BlendKind, steps: number): Blend | null {
-  const range: { min: number; max: number } | undefined = STEPS[kind];
-  if (!range || !Number.isInteger(steps) || steps < range.min || steps > range.max) return null;
+  // Only STEPS' own kinds: an inherited key ('toString') has no range, and was read as a triaxial blend.
+  if (!Object.hasOwn(STEPS, kind)) return null;
+  const range = STEPS[kind];
+  if (!Number.isInteger(steps) || steps < range.min || steps > range.max) return null;
   const last = steps - 1;
   const tiles: BlendTile[] = [];
   if (kind === 'line') {
