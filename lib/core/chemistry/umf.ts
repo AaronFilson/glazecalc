@@ -1,5 +1,6 @@
 import { expansion } from './expansion.ts';
 import { idOf, labelOf } from '../identity.ts';
+import { givenNumber } from '../plain.ts';
 import * as oxides from './oxides.ts';
 import * as materials from './materials.ts';
 import { problem, warning } from '../problem.ts';
@@ -48,13 +49,11 @@ const recipeLines = function (recipe: RecipeLine[] | Record<string, unknown>): R
   throw problem('recipe-shape');
 };
 
-// A line's amount: a number, or a plain decimal as saved ("12.5", lib/recipe/numbers.js
-// plainNumber); blank or null is 0. Anything else, such as "1e1", "0x10" or true, which
-// Number() would read, is NaN.
+// A line's amount: a number, or a plain decimal as saved (plain.ts); blank or null is 0. Anything else, such
+// as "1e1", "0x10" or true, which Number() would read, is NaN, and so is an amount left undefined.
 const readAmount = function (value: unknown): number {
-  if (typeof value === 'number') return value;
-  if (value === null || (typeof value === 'string' && value.trim() === '')) return 0;
-  return typeof value === 'string' && /^-?\d*\.?\d+$/.test(value.trim()) ? Number(value) : NaN;
+  if (value === undefined) return NaN;
+  return givenNumber(value) ?? 0;
 };
 
 /**

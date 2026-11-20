@@ -1,6 +1,7 @@
 import { problem, warning } from '../problem.ts';
 import type { Warning } from '../problem.ts';
 import { idOf, labelOf } from '../identity.ts';
+import { givenNumber } from '../plain.ts';
 import * as oxides from './oxides.ts';
 import type { MaterialField, MaterialInput, Oxides, PreparedMaterial } from '../types.ts';
 import type { Host } from '../host.ts';
@@ -37,21 +38,19 @@ const formulaToAnalysis = function (
   return { analysis, loi, formulaWeight };
 };
 
-// Returns the number, or null when the value is blank or not a number.
+// A stored figure checked only if it is there: the number, or null when it is left out or not a finite plain
+// number (plain.ts: "1e1" or true is not one).
 const optionalNumber = function (value: unknown): number | null {
-  if (value === undefined || value === null || String(value).trim() === '') return null;
-  const number = Number(value);
-  return isFinite(number) ? number : null;
+  const number = givenNumber(value);
+  return number !== null && isFinite(number) ? number : null;
 };
 
 // A value that may be left out (absent, null or blank: null) but, when given, is a number: a finite
-// number, or a plain decimal as typed and saved ("43.97"). Anything else, such as '43,97', Infinity,
-// NaN or true, is the `code` problem, not a value left out.
-const givenNumber = function (host: Host, value: unknown, code: string, material: MaterialInput): number | null {
-  if (value === undefined || value === null || (typeof value === 'string' && value.trim() === '')) return null;
-  const plain = typeof value === 'string' && /^-?\d*\.?\d+$/.test(value.trim());
-  const number = typeof value === 'number' ? value : plain ? Number(value) : NaN;
-  if (!isFinite(number)) throw problem(code, { material: labelOf(host, material) });
+// number, or a plain decimal as typed and saved ("43.97", plain.ts). Anything else, such as '43,97',
+// Infinity, NaN or true, is the `code` problem, not a value left out.
+const requiredIfGiven = function (host: Host, value: unknown, code: string, material: MaterialInput): number | null {
+  const number = givenNumber(value);
+  if (number !== null && !isFinite(number)) throw problem(code, { material: labelOf(host, material) });
   return number;
 };
 
@@ -77,7 +76,7 @@ const readAmounts = function (host: Host, entries: Array<[string, unknown]>, mat
 
 // The LOI, or null when none is given; at least 0 and less than 100.
 const readLoi = function (host: Host, material: MaterialInput): number | null {
-  const loi = givenNumber(host, material.loi, 'invalid-loi', material);
+  const loi = requiredIfGiven(host, material.loi, 'invalid-loi', material);
   if (loi !== null && (loi < 0 || loi >= 100)) {
     throw problem('loi-range', { material: labelOf(host, material) });
   }
@@ -138,7 +137,7 @@ const fieldsToAnalysis = function (
   let firedWeight = 0;
   Object.keys(amounts).forEach((oxide) => (firedWeight += amounts[oxide] * host.oxides.molarMass[oxide]));
   if (firedWeight === 0) throw problem('no-oxides', { material: labelOf(host, material) });
-  const molecularWeight = givenNumber(host, material.molecularweight, 'invalid-molecular-weight', material);
+  const molecularWeight = requiredIfGiven(host, material.molecularweight, 'invalid-molecular-weight', material);
   // The LOI the molecular weight gives: what the raw formula loses to the fired one.
   const implied =
     molecularWeight !== null && molecularWeight > firedWeight ? (1 - firedWeight / molecularWeight) * 100 : 0;
