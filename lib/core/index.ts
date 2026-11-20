@@ -4,6 +4,7 @@
 
 export * from './host.ts';
 export * from './identity.ts';
+export * from './plain.ts';
 export * from './problem.ts';
 export * from './traits.ts';
 export * from './types.ts';

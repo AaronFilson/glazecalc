@@ -14,7 +14,7 @@ export * from './library.ts';
 export * from './limits.ts';
 export * from './materials.ts';
 export * from './messages.ts';
-export * from './plain.ts';
+export { plainNumber } from '../plain.ts';
 export * from './pool.ts';
 export * from './shelf.ts';
 export * from './slurry.ts';

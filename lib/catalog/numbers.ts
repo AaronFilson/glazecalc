@@ -1,4 +1,4 @@
-import { plainNumber } from '../core/recipe/plain.ts';
+import { plainNumber } from '../core/plain.ts';
 
 /** How the reader writes decimals: with a comma, a point, or either. */
 export type DecimalMark = 'either' | 'comma' | 'point';

@@ -1,4 +1,4 @@
-import { plainNumber } from './plain.ts';
+import { plainNumber } from '../plain.ts';
 import type { AdditiveUnit } from './library.ts';
 
 /**
