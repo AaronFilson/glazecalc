@@ -114,15 +114,19 @@ const round = (value: number): number => Math.round(value * 100) / 100;
  * mineral's measured density), 'kind' (feldspars or clays, 2.6), 'glass'
  * (a frit, from Appen's factors) or 'none' (sg null, with a reason code).
  * A material whose traits name its mineral (traits.density: { mineral, reason },
- * the mineral null with why there is no estimate) goes by that.
+ * the mineral null with why there is no estimate) goes by that; a mineral the
+ * host's table lacks is no estimate, with the unknown reason.
  */
 function materialSg(host: Host, material: SgMaterial): MaterialSg {
   const known = material ? traitsOf(host, material).density : undefined;
   if (known && typeof known === 'object') {
     const key = known.mineral;
     if (key === null) return { sg: null, basis: 'none', reason: known.reason ?? WHY_NOT.unknown };
-    if (host.densities.kinds[key]) return { sg: host.densities.kinds[key], basis: 'kind', source: key };
-    return { sg: host.densities.minerals[key], basis: 'mineral', source: key };
+    if (Object.hasOwn(host.densities.kinds, key)) return { sg: host.densities.kinds[key]!, basis: 'kind', source: key };
+    // A mineral the host's table does not have is no estimate, as an unknown material is: never an undefined SG,
+    // which a recipe's sum would turn into NaN. Only the table's own keys count ('toString' is no mineral).
+    if (!Object.hasOwn(host.densities.minerals, key)) return { sg: null, basis: 'none', reason: WHY_NOT.unknown };
+    return { sg: host.densities.minerals[key]!, basis: 'mineral', source: key };
   }
   if (material?.noChemistry) return { sg: null, basis: 'none', reason: WHY_NOT.noChemistry };
   const category = material?.category;
