@@ -293,7 +293,12 @@ test('two tabs of the same browser send a queued change once', async ({ page, co
     if (request.method() === 'POST' && request.url() === API + '/notes/create') posts++;
   });
   await context.setOffline(false);
-  await expect(status(page, 'Your offline changes are saved.')).toBeVisible();
+  // The tabs send under one lock (client/app/core/outbox.ts), and whichever takes it first sends and says so;
+  // the other finds nothing left to send. So the person is told once, by either tab.
+  const saved = 'Your offline changes are saved.';
+  await expect.poll(async () => (await status(page, saved).count()) + (await status(other, saved).count())).toBe(1);
+  await expect(status(page, 'change waiting to save')).toHaveCount(0);
+  await expect(status(other, 'change waiting to save')).toHaveCount(0);
   await expect.poll(async () => (await getAll(page, 'notes')).map((n) => n.title)).toEqual(['Once Only']);
   expect(posts).toBe(1);
 });
