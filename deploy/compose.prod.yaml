@@ -63,7 +63,7 @@ services:
     logging: *logging
 
   mongo:
-    image: mongo:9.0@sha256:452bdaf2127b8ff851e31410a267809b9829eded219979f2210e7c7efb85a058
+    image: mongo:9.0@sha256:b0c835c26e5997413e985000f1013c275377cd9607761c1784d486f6dd620b7f
     restart: unless-stopped
     # MongoDB production notes: an explicit cache size inside a container (this
     # leaves room for Node and nginx on a 1 GB t4g.micro) and a high open-files limit.
