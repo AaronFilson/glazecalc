@@ -64,3 +64,6 @@ English, and a test holds that none is left out.
 ES modules in erasable TypeScript (ES2024, `strict`, no Node or DOM types), with no dependencies. It runs as it
 is in Node 24, and in any bundler that strips types. Its own tests are in `test/` (`npm run test:core`), at 98%
 of branches or more.
+
+`test/engine-outputs.js` is its output check for other engines: `npm run check:engines` (scripts/engines.mjs)
+bundles it and runs it in Node, JavaScriptCore and SpiderMonkey, and every output must be the same text in all three.
