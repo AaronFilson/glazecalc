@@ -18,6 +18,7 @@
 
 import type { Host } from '../core/host.ts';
 import { isFiringLine, readsDecimalComma } from './firing-text.ts';
+import { firstAfter, matchesAfter, notAfter } from './behind.ts';
 import { GENERIC_NAMES } from './names.ts';
 import type { GenericName } from './names.ts';
 import { parseNumber, plainDigits, separators, withoutDirectionMarks } from './numbers.ts';
@@ -223,6 +224,15 @@ function pasteTooLong(text: string): 'chars' | 'lines' | null {
 // A number that could be a decimal or digit groups: "1,500" is 1.5 or 1500.
 const AMBIGUOUS = /^[1-9]\d{0,2}[.,]\d{3}$/;
 
+/** "mesh" as a word of its own: not after a letter or digit. */
+const NOT_AFTER_WORD = notAfter(/[\p{L}\p{Nd}]/u);
+
+/** The numbers in a text as written, digits with points and commas between ("1.234,5"), each whole. */
+const numberTokens = (text: unknown): string[] =>
+  [...matchesAfter(String(text ?? '').normalize('NFKC'), /\d[\d.,]*\d(?![\d.,])/g, notAfter(/[\d.,]/))].map(
+    (found) => found[0]
+  );
+
 /**
  * How a paste writes its numbers, from all of them at once: a number with one
  * separator and other than three digits after it ("22,5", "0.500") is a
@@ -231,10 +241,7 @@ const AMBIGUOUS = /^[1-9]\d{0,2}[.,]\d{3}$/;
  */
 function decimalEvidence(text: string): { comma: boolean; point: boolean } {
   const seen = { comma: false, point: false };
-  const tokens = String(text ?? '')
-    .normalize('NFKC')
-    .match(/(?<![\d.,])\d[\d.,]*\d(?![\d.,])/g);
-  for (const token of tokens ?? []) {
+  for (const token of numberTokens(text)) {
     const commas = (token.match(/,/g) ?? []).length;
     const points = (token.match(/\./g) ?? []).length;
     if (commas && points) seen[token.lastIndexOf(',') > token.lastIndexOf('.') ? 'comma' : 'point'] = true;
@@ -260,9 +267,7 @@ function ambiguousNumbers(text: string, mark: DecimalMark = 'either'): string[] 
   if (mark !== 'either') return [];
   const seen = decimalEvidence(text);
   const found: string[] = [];
-  for (const token of String(text ?? '')
-    .normalize('NFKC')
-    .match(/(?<![\d.,])\d[\d.,]*\d(?![\d.,])/g) ?? []) {
+  for (const token of numberTokens(text)) {
     if (AMBIGUOUS.test(token) && !groupedByEvidence(token, seen) && !found.includes(token)) found.push(token);
   }
   return found;
@@ -342,8 +347,8 @@ const isFraction = (top: number, bottom: number): boolean => top >= 1 && bottom 
  */
 const hasFraction = (text: string): boolean =>
   /[½⅓⅔¼¾⅕⅖⅗⅘⅙⅚⅐⅛⅜⅝⅞⅑⅒]/u.test(text) ||
-  [...plainDigits(text).matchAll(/(?<![\d/⁄])(\d{1,2})\s*[/⁄]\s*(\d{1,2})(?![\d/⁄])/g)].some(([, top, bottom]) =>
-    isFraction(Number(top), Number(bottom))
+  [...matchesAfter(plainDigits(text), /(\d{1,2})\s*[/⁄]\s*(\d{1,2})(?![\d/⁄])/g, notAfter(/[\d/⁄]/))].some(
+    ([, top, bottom]) => isFraction(Number(top), Number(bottom))
   );
 
 /** An amount as pasted, a fraction ("1 1/2" is 1.5) or a number as options.read reads it; null for neither. */
@@ -517,7 +522,8 @@ const LIST_MARK = /^\s*(?:[-*•·◦▪‣]+\s+|\(?\d{1,2}[.)]\s+(?=\D))/u;
  */
 function namedRow(text: string, options: Pick<Settings, 'isName'>): Row | null {
   if (/[\t;]/.test(text)) return null;
-  for (const comma of text.matchAll(/(?<=\p{Nd}),(?=\p{Nd})/gu)) {
+  for (const digit of text.matchAll(/\p{Nd},(?=\p{Nd})/gu)) {
+    const comma = { index: digit.index + digit[0].length - 1 };
     const name = text.slice(0, comma.index).trim();
     if (options.isName(name)) {
       return {
@@ -544,7 +550,7 @@ function namedRow(text: string, options: Pick<Settings, 'isName'>): Row | null {
  */
 function cellsOf(text: string): Row | null {
   // A comma between digits is a decimal comma ("25,5"), not a column.
-  const commas = /,/.test(text.replace(/(?<=\p{Nd}),(?=\p{Nd})/gu, ''));
+  const commas = /,/.test(text.replace(/(\p{Nd}),(?=\p{Nd})/gu, '$1'));
   const delimiter = text.includes('\t') ? '\t' : text.includes(';') ? ';' : commas ? ',' : null;
   if (!delimiter) return null;
   const cells: string[] = [];
@@ -573,7 +579,7 @@ function cellsOf(text: string): Row | null {
 // An amount with its thousands set apart by a space ("1 500", "12 500"; NFKC makes a no-break, narrow no-break
 // or thin space a plain one), at the end of a line ("Silica 1 500 g") or at its start ("1 500 g Silica").
 const SPACED = '\\p{Nd}{1,3}(?: \\p{Nd}{3})+';
-const SPACED_LAST = new RegExp('(?<=\\s)(' + SPACED + ')(?=(?:[.,٫]\\p{Nd}+)?\\s*' + UNIT + '?\\.?$)', 'iu');
+const SPACED_LAST = new RegExp('(' + SPACED + ')(?=(?:[.,٫]\\p{Nd}+)?\\s*' + UNIT + '?\\.?$)', 'iu');
 const SPACED_FIRST = new RegExp(
   '^(' + SPACED + ')(?=(?:[.,٫]\\p{Nd}+)?\\s*(?:' + UNIT + '(?![\\p{L}\\p{Nd}]))?\\s*[-–—:x×]?\\s+\\p{L})',
   'iu'
@@ -744,9 +750,9 @@ function textItem(text: string, options: Settings, at: number): Item | null {
     .normalize('NFKC')
     .trim()
     // A full stop after the amount, as at the end of a sentence ("Silica 30."): not part of the number.
-    .replace(/(?<=\s\p{Nd}(?:[\p{Nd}.,٫٬]*\p{Nd})?)\.$/u, '')
+    .replace(/(\s\p{Nd}(?:[\p{Nd}.,٫٬]*\p{Nd})?)\.$/u, '$1')
     // A percent sign before the amount, as Turkish writes it ("Silica %20"): after it, as the rest of the paste is read.
-    .replace(/(?<=\s)%\s?(\p{Nd}[\p{Nd}.,٫٬]*)$/u, '$1%');
+    .replace(/(\s)%\s?(\p{Nd}[\p{Nd}.,٫٬]*)$/u, '$1$2%');
   // Digit groups set apart by a space ("Silica 1 500 g", "1 500 g Silica"): one number, 1500, or the first group
   // the end of the name, "Silica 1" at 500 ("apart"). Each reading's name decides it, with nothing to ask, when the
   // library has it:
@@ -758,9 +764,10 @@ function textItem(text: string, options: Settings, at: number): Item | null {
   // it, else as their language writes thousands (options.spacedFor): one number in French, apart in English. With
   // groups at both ends ("1 828,5 g Mondré & Manz Raku Frit M 233 864"), those whose one number leaves a known name
   // are the amount's, else those at the end.
-  const found = [line.match(SPACED_LAST), line.match(SPACED_FIRST)].filter((groups): groups is RegExpMatchArray =>
-    Boolean(groups)
-  );
+  const found = [
+    firstAfter(line, SPACED_LAST, (previous) => previous !== undefined && /\s/u.test(previous)),
+    line.match(SPACED_FIRST)
+  ].filter((groups): groups is RegExpMatchArray => Boolean(groups));
   if (!found.length) return lineItem(line, options);
   const apart = lineItem(line, options);
   if (apart && options.isName(apart.name)) return apart;
@@ -819,7 +826,12 @@ function lineItem(line: string, options: Settings): Item | null {
       : [nameFirst?.[1], nameFirst?.[2]];
   if (nameFirst) {
     const value = amountOf(token!, options);
-    if (value !== null && value >= 0 && /(?<![\p{L}\p{Nd}])mesh$/iu.test(named!) && !/\p{Nd}/u.test(named!)) {
+    if (
+      value !== null &&
+      value >= 0 &&
+      firstAfter(named!, /mesh$/iu, NOT_AFTER_WORD) !== null &&
+      !/\p{Nd}/u.test(named!)
+    ) {
       // "Silica mesh 200": the number is the mesh, part of the name, never the amount.
       return { name: line, value: null, unit: null };
     }
@@ -839,7 +851,7 @@ function lineItem(line: string, options: Settings): Item | null {
   if (after) return after;
   // A mesh size with no amount ("Silica 200 mesh", "325 mesh silica"): a name alone.
   if (
-    /\p{Nd}\s*mesh(?![\p{L}\p{Nd}])|(?<![\p{L}\p{Nd}])mesh\s*\p{Nd}/iu.test(line) &&
+    (/\p{Nd}\s*mesh(?![\p{L}\p{Nd}])/iu.test(line) || firstAfter(line, /mesh\s*\p{Nd}/iu, NOT_AFTER_WORD) !== null) &&
     /\p{L}/u.test(line.replace(/mesh/gi, ''))
   ) {
     return { name: line, value: null, unit: null };
@@ -1317,7 +1329,7 @@ function matchWith<T extends Named>(
   const scoreOf = (record: T): number =>
     Math.max(...[record.name, ...(record.aliases ?? [])].map((n) => likenessOf(query, prepare(n))));
   // A mesh size ("Silica 200 mesh") is a regional product's name or none of them: never taken silently.
-  if (/(?<![\p{L}\p{Nd}])mesh(?![\p{L}\p{Nd}])|\p{Nd}\s*#/iu.test(wanted)) {
+  if (firstAfter(wanted, /mesh(?![\p{L}\p{Nd}])/iu, NOT_AFTER_WORD) !== null || /\p{Nd}\s*#/iu.test(wanted)) {
     const near = records
       .map((record) => ({ record, score: scoreOf(record) }))
       .filter((entry) => entry.score >= 0.45)

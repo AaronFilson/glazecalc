@@ -71,3 +71,8 @@ ES modules in erasable TypeScript (ES2024, `strict`, no Node or DOM types). Its 
 
 `test/engine-outputs.js` is its output check for other engines: `npm run check:engines` (scripts/engines.mjs)
 bundles it and runs it in Node, JavaScriptCore and SpiderMonkey, and every output must be the same text in all three.
+
+It parses and runs in Safari 15 (macOS 12's JavaScriptCore) as well: it writes no regex lookbehind, which Safari
+reads only from 16.4, and `behind.ts` stands in for one at a pattern's start (`test/behind.test.js` holds both).
+Numbers written in a locale come from the engine's own locale data, so an older engine may write them differently:
+macOS 12's writes Arabic figures with Latin digits.

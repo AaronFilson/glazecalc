@@ -76,7 +76,7 @@ function parseNumber(text: string, mark: DecimalMark = 'either', locale = 'en'):
   // NFKC first, so full-width marks (１２．５, －３, ％) read as their plain ones.
   let value = plainDigits(text.normalize('NFKC'))
     .trim()
-    .replace(/(?<=\d)。(?=\d)/g, '.') // a Japanese or Chinese full stop, typed for a point
+    .replace(/(\d)。(?=\d)/g, '$1.') // a Japanese or Chinese full stop, typed for a point
     .replace(/٫/g, '.') // Arabic decimal mark
     .replace(/٬/g, ',') // Arabic thousands mark
     .replace(/٪/g, '%') // Arabic percent sign
@@ -85,7 +85,7 @@ function parseNumber(text: string, mark: DecimalMark = 'either', locale = 'en'):
   const negative = value.startsWith('-');
   if (negative || value.startsWith('+')) value = value.slice(1);
   // One percent sign, before the number or after it.
-  value = value.replace(/^%\s*(?=\d)|(?<=[\d.,])\s*%$/, '');
+  value = value.replace(/^%\s*(?=\d)|([\d.,])\s*%$/, (_all, digit: string | undefined) => digit ?? '');
   value = value.replace(GROUP_SPACES, ' ');
   // Spaces may only group digits in threes, the first group starting with 1 to 9.
   if (value.includes(' ')) {
