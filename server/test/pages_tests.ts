@@ -571,6 +571,7 @@ describe('pages in each language', () => {
     ]);
     // The cone chart's figures, not the code beside them.
     expect(pageSources('/cones', 'de')).to.include('lib/cones/index.js');
+    expect(pageSources('/cones', 'de')).to.include('lib/catalog/cones.ts');
     expect(pageSources('/cones', 'de')).not.to.include('lib/cones/');
     // Every source named is in the repository, so no page goes undated by a typo.
     for (const page of PUBLIC_PAGES) {
