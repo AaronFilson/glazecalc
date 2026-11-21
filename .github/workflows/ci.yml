@@ -173,7 +173,9 @@ jobs:
       # SpiderMonkey (scripts/engines.mjs): each output the same text in all three. esvu installs the
       # engines' current builds.
       - name: Install JavaScriptCore and SpiderMonkey
-        run: npx --yes esvu@1.3.2 install jsc spidermonkey
+        run: |
+          npx --yes esvu@1.3.2 install jsc
+          npx --yes esvu@1.3.2 install spidermonkey
 
       - name: The same outputs in three engines
         run: npm run check:engines

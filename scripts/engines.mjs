@@ -8,7 +8,7 @@
 //   node scripts/engines.mjs core            one library
 //   node scripts/engines.mjs --keep <dir>    also writes each bundle and each engine's output there
 //
-// The engines: JSC and SM from the environment, else ~/.esvu/bin (npx esvu install jsc spidermonkey), else
+// The engines: JSC and SM from the environment, else ~/.esvu/bin (npx esvu install jsc, then spidermonkey), else
 // macOS's own jsc. One missing fails the check: a check that quietly ran in fewer engines would say nothing.
 //
 // A bare engine shell has no structuredClone, which the core takes from its host (lib/core/globals.d.ts). The
@@ -98,7 +98,7 @@ const libraries = wanted.length ? wanted : Object.keys(LIBRARIES);
 const missing = Object.entries(ENGINES).filter(([, file]) => !file);
 if (missing.length) {
   console.error(
-    `No ${missing.map(([name]) => name).join(' or ')} found. Install with: npx esvu install jsc spidermonkey,\n` +
+    `No ${missing.map(([name]) => name).join(' or ')} found. Install with: npx esvu install jsc and npx esvu install spidermonkey,\n` +
       'or name them with JSC=… SM=…'
   );
   process.exit(1);
