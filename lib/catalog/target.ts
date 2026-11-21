@@ -2,6 +2,7 @@
 // the unity formula it aims at.
 
 import { LOI, TOGETHER } from '../core/recipe/solve.ts';
+import { matchesAfter, notAfter } from './behind.ts';
 import type { Host } from '../core/host.ts';
 import type { Oxides } from '../core/types.ts';
 
@@ -24,7 +25,7 @@ const SUBSCRIPTS: Readonly<Record<string, string>> = {
  * A word that may be an oxide's formula, whole, then perhaps a colon or equals
  * sign, then a number: "SiO2 3.20", not "SiO" and 2.
  */
-const PAIR = /(?<![A-Za-z0-9])([A-Za-z][A-Za-z0-9]*)(?![A-Za-z0-9])[ \t]*[:=]?[ \t]*(\d+(?:[.,]\d+)?|[.,]\d+)/g;
+const PAIR = /([A-Za-z][A-Za-z0-9]*)(?![A-Za-z0-9])[ \t]*[:=]?[ \t]*(\d+(?:[.,]\d+)?|[.,]\d+)/g;
 const FORMULA = /^[A-Z][A-Za-z0-9]*$/;
 const NUMBER = /^(\d+(?:[.,]\d+)?|[.,]\d+)$/;
 
@@ -68,7 +69,7 @@ function parseTarget(
     }
     if (!(oxide in oxides)) oxides[oxide] = numberOf(value);
   };
-  for (const [, name, value] of plain.matchAll(PAIR)) take(name, value);
+  for (const [, name, value] of matchesAfter(plain, PAIR, notAfter(/[A-Za-z0-9]/))) take(name, value);
   // A row of oxides over a row of numbers, as a spreadsheet copies a table.
   if (!Object.keys(oxides).length && !together) {
     const rows = plain

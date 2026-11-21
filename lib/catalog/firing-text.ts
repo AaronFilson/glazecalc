@@ -5,6 +5,7 @@
 import { ATMOSPHERES, SCALES, cleanFiring, compareCones, isCone } from '../core/cones/firing.ts';
 import type { Atmosphere, ConeScale, FiringBlock, FiringProcess } from '../core/cones/firing.ts';
 import type { Host } from '../core/host.ts';
+import { firstAfter, matchesAfter, notAfter } from './behind.ts';
 import { plainDigits, separators } from './numbers.ts';
 import type { DecimalMark } from './numbers.ts';
 
@@ -101,13 +102,15 @@ const SK_LIST_RE = /\bsk\s*(?:-\s*)?(0?\d{1,2}a?(?:\s*,\s*(?:sk\s*(?:-\s*)?)?0?\
 const BARE_RE = new RegExp(`^${NUM}(?:${TO}${NUM})?(?=\\s|$|,)`, 'u');
 // A temperature, with a thousands separator or not ("1240°C", "1,945°F", "1.240°C"; "1240ºC" is read as "1240°C").
 const DEGREES = '(?:[1-9][,.]\\d{3}(?!\\d)|[1-9]\\d{2,3})';
-const TEMP_RE = new RegExp(`(?<![\\d.,])(${DEGREES}|\\d{3,4})\\s*(?:°|deg(?:rees)?)\\s*([cf])\\b`, 'gu');
+const TEMP_RE = new RegExp(`(${DEGREES}|\\d{3,4})\\s*(?:°|deg(?:rees)?)\\s*([cf])\\b`, 'gu');
 // A range of temperatures, "1220-1260°C", "1220°C-1260°C", "1220°-1260°C", "1220 to 1260 deg C": the unit at its
 // end, or at both.
 const TEMP_RANGE_RE = new RegExp(
-  `(?<![\\d.,])(${DEGREES})\\s*(?:(?:°|deg(?:rees)?)(?:\\s*([cf]))?\\s*)?(?:-|–|—|~|to)\\s*(${DEGREES})\\s*(?:°|deg(?:rees)?)\\s*([cf])\\b`,
+  `(${DEGREES})\\s*(?:(?:°|deg(?:rees)?)(?:\\s*([cf]))?\\s*)?(?:-|–|—|~|to)\\s*(${DEGREES})\\s*(?:°|deg(?:rees)?)\\s*([cf])\\b`,
   'u'
 );
+// Neither temperature starts inside a number ("21240°C" is not 1240 °C).
+const NOT_AFTER_NUMBER = notAfter(/[\d.,]/);
 // A bisque firing named on the line, with its cone, temperature or range of either beside the word ("Bisque to
 // cone 04", "Bisque: ^06-^04", "cone 04 bisque", "bisque 1000-1040°C"): not the glaze's firing, so not read into
 // it. Its own is the one after the word, with a colon, an equals sign, an at sign, a bracket or a dash between
@@ -306,8 +309,8 @@ function readFiringDetail(host: Host, line: unknown, options?: ReadOptions): Fir
     const degrees = Number(written.replace(/[,.]/g, ''));
     return String(Math.round(unit === 'f' ? ((degrees - 32) * 5) / 9 : degrees));
   };
-  const temps = [...text.matchAll(TEMP_RE)];
-  const tempRange = text.match(TEMP_RANGE_RE);
+  const temps = [...matchesAfter(text, TEMP_RE, NOT_AFTER_NUMBER)];
+  const tempRange = firstAfter(text, TEMP_RANGE_RE, NOT_AFTER_NUMBER);
   const [low, high] = tempRange
     ? [celsius(tempRange[1], tempRange[2] ?? tempRange[4]), celsius(tempRange[3], tempRange[4])]
     : [];
@@ -422,7 +425,7 @@ function conesFromLog(
   for (const row of log.rows ?? []) {
     for (const i of columns) {
       const cell = textForCones(Array.isArray(row) ? String(row[i] ?? '') : '', options).replace(/\bsk\s*-?\s*/g, ' ');
-      for (const [token] of cell.matchAll(/(?<![\d.])0?\d{1,2}(?:\.5|a)?(?![\d.])/g)) {
+      for (const [token] of matchesAfter(cell, /0?\d{1,2}(?:\.5|a)?(?![\d.])/g, notAfter(/[\d.]/))) {
         const cone = scale === 'sk' ? skCone(host, token) : token;
         if (isCone(host, scale, cone)) found.add(cone);
       }
