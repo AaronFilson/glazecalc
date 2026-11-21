@@ -169,6 +169,17 @@ jobs:
       - name: Every output as kept
         run: npm run check:outputs
 
+      # The core's and the catalog's own output checks, bundled and run in Node, JavaScriptCore and
+      # SpiderMonkey (scripts/engines.mjs): each output the same text in all three. esvu installs the
+      # engines' current builds.
+      - name: Install JavaScriptCore and SpiderMonkey
+        run: |
+          npx --yes esvu@1.3.2 install jsc
+          npx --yes esvu@1.3.2 install spidermonkey
+
+      - name: The same outputs in three engines
+        run: npm run check:engines
+
   client:
     name: Client unit tests
     runs-on: ubuntu-24.04

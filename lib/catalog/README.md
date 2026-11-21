@@ -68,3 +68,6 @@ SOFTWARE.
 
 ES modules in erasable TypeScript (ES2024, `strict`, no Node or DOM types). Its tests are in `test/`
 (`npm run test:catalog`), at 100% of lines, branches and functions.
+
+`test/engine-outputs.js` is its output check for other engines: `npm run check:engines` (scripts/engines.mjs)
+bundles it and runs it in Node, JavaScriptCore and SpiderMonkey, and every output must be the same text in all three.
