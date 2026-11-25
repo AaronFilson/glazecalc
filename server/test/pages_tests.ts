@@ -32,7 +32,7 @@ import languages from '../../lib/regions/languages.js';
 import materialSlugs, { materialSlug } from '../../lib/material-slug.js';
 import { OG_IMAGES } from '../../lib/og-images.js';
 import { pageSources } from '../../lib/page-dates.js';
-import { GIT_PATHS, allPageDates, newestDates, newestOf } from '../../scripts/page-dates.mjs';
+import { GIT_PATHS, allPageDates, newestDates, newestOf, submoduleLog } from '../../scripts/page-dates.mjs';
 import { base, expect, site } from './support/app.ts';
 
 // What search engines and link previews read before the app's script runs:
@@ -646,6 +646,29 @@ describe('pages in each language', () => {
     expect(moved.get('lib/catalog/cones.ts')).to.equal('2026-11-05');
     expect(moved.has('data/materials.ndjson')).to.equal(false);
     expect(moved.has('lib/core/cones/charts.ts')).to.equal(false);
+  });
+
+  it("dates a library's files by the commit that moved its submodule's pointer, and none by its first", () => {
+    const [a, b, c] = ['a'.repeat(40), 'b'.repeat(40), 'c'.repeat(40)];
+    const raw = [
+      '@2026-12-09',
+      `:160000 160000 ${b} ${c} M\tlib/catalog`,
+      '@2026-12-01',
+      `:160000 160000 ${a} ${b} M\tlib/catalog`,
+      '@2026-11-25',
+      `:000000 160000 ${'0'.repeat(40)} ${a} A\tlib/catalog`
+    ].join('\n');
+    const asked: string[] = [];
+    const log = submoduleLog(raw, (dir: string, from: string, to: string) => {
+      asked.push(`${dir} ${from[0]}..${to[0]}`);
+      return from === a ? ['cones.ts', 'data/materials.ndjson'] : ['english.ts'];
+    });
+    // The pointer first added asks nothing: the files were Glazecalc's own until then.
+    expect(asked).to.eql(['lib/catalog b..c', 'lib/catalog a..b']);
+    const dates = newestDates(log + '\n@2026-11-01\nlib/catalog/cones.ts');
+    expect(dates.get('lib/catalog/english.ts')).to.equal('2026-12-09');
+    expect(dates.get('lib/catalog/cones.ts')).to.equal('2026-12-01');
+    expect(dates.get('lib/catalog/data/materials.ndjson')).to.equal('2026-12-01');
   });
 
   it('gives the guide in English only one address for search engines: the English, alone in the sitemap', () => {

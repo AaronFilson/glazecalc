@@ -88,16 +88,45 @@ export function allPageDates(dates) {
   return out;
 }
 
+/** The libraries, git submodules since Glazecalc mounted them (.gitmodules). */
+export const SUBMODULES = ['lib/core', 'lib/catalog'];
+
+/**
+ * A submodule's changes as log lines like git log's (newest first): for each Glazecalc commit that moves a
+ * library's pointer ("@date", then a raw line ":160000 160000 <old> <new> M<TAB>lib/catalog"), the files the
+ * library changed between the two, as Glazecalc paths (lib/catalog/cones.ts). A pointer first added (old all
+ * zeros) changes nothing: at that commit the library's files were already Glazecalc's own, with their history.
+ * @param {string} raw  git log --format=@%cs --raw --no-abbrev, over the submodules
+ * @param {(dir: string, from: string, to: string) => string[]} changed  the files a library changed between two commits
+ * @returns {string}
+ */
+export function submoduleLog(raw, changed) {
+  const out = [];
+  for (const line of raw.split('\n')) {
+    if (line.startsWith('@')) out.push(line);
+    const m = /^:160000 160000 ([0-9a-f]{40}) ([0-9a-f]{40}) M\t(.+)$/.exec(line);
+    if (m && !/^0+$/.test(m[1])) out.push(...changed(m[3], m[1], m[2]).map((file) => `${m[3]}/${file}`));
+  }
+  return out.join('\n');
+}
+
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  const log = execFileSync(
-    'git',
-    ['log', '--format=@%cs', '--name-only', '-M100%', '--diff-filter=r', '--', ...GIT_PATHS],
-    {
-      encoding: 'utf8',
-      maxBuffer: 1 << 28
+  const git = (args, cwd) => execFileSync('git', args, { cwd, encoding: 'utf8', maxBuffer: 1 << 28 });
+  // Deletions are left out with exact renames (diff-filter dr): when the libraries became submodules their files
+  // left Glazecalc's own tree unchanged, and no page reads a file it no longer has.
+  const log = git(['log', '--format=@%cs', '--name-only', '-M100%', '--diff-filter=dr', '--', ...GIT_PATHS]);
+  // The libraries' own changes since, each dated by the Glazecalc commit that took it in, which is when the live
+  // pages changed. They come first: they are newer than any of the libraries' history inside Glazecalc.
+  const raw = git(['log', '--format=@%cs', '--raw', '--no-abbrev', '--', ...SUBMODULES]);
+  const bumps = submoduleLog(raw, (dir, from, to) => {
+    try {
+      return git(['diff', '--name-only', from, to], dir).split('\n').filter(Boolean);
+    } catch {
+      // A check that quietly dated nothing would say the pages never changed.
+      throw new Error(`${dir} lacks ${from.slice(0, 7)}..${to.slice(0, 7)}: fetch it with its whole history.`);
     }
-  );
-  const out = allPageDates(newestDates(log));
+  });
+  const out = allPageDates(newestDates(bumps + '\n' + log));
   writeFileSync(fileURLToPath(new URL('../lib/page-dates.json', import.meta.url)), JSON.stringify(out) + '\n');
   console.log(`Wrote the dates of ${Object.keys(out).length} pages to lib/page-dates.json.`);
 }
