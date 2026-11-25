@@ -30,8 +30,8 @@ export function problemsWith(html: string, start: string, code?: string, minText
 export const MAX_GZIPPED: number;
 /** The text with every decimal digit of any script written as 0–9 (১৩০৫ and ١٣٠٥ read as 1305). */
 export function asciiDigits(text: string): string;
-/** What is wrong with one page in particular (its size; the advice page's standard advice). */
-export function pageProblems(html: string, page: string, code?: string): string[];
+/** What is wrong with one page in particular (its size; the advice page's standard advice; a guide's dateModified). */
+export function pageProblems(html: string, page: string, code?: string, modified?: string | null): string[];
 export function prerender(options?: {
   build?: boolean;
   codes?: readonly string[];

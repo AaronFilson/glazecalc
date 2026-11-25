@@ -337,6 +337,8 @@ const APP_PAGES = [
         <nav [attr.aria-label]="t('footer.site')">
           <a routerLink="/about">{{ t('footer.about') }}</a>
           <a routerLink="/guides">{{ t('footer.guides') }}</a>
+          <a routerLink="/materials">{{ t('nav.materials') }}</a>
+          <a routerLink="/famous-glazes">{{ withoutBrand(t('titles.famousGlazes')) }}</a>
           <a routerLink="/advice">{{ t('footer.advice') }}</a>
           <a routerLink="/privacy">{{ t('footer.privacy') }}</a>
           <a routerLink="/terms">{{ t('footer.terms') }}</a>
@@ -392,6 +394,7 @@ export class App implements OnInit {
   protected readonly languages = inject(OFFERED_LANGUAGES);
   protected readonly languageName = languageName;
   protected readonly formatDate = formatDate;
+  protected readonly withoutBrand = (title: string): string => title.replace(/ [-–] Glazecalc$/, '');
   protected readonly menuOpen = signal(false);
 
   private readonly toggle = viewChild.required<ElementRef<HTMLElement>>('toggle');

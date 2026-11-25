@@ -32,7 +32,7 @@ import languages from '../../lib/regions/languages.js';
 import materialSlugs, { materialSlug } from '../../lib/material-slug.js';
 import { OG_IMAGES } from '../../lib/og-images.js';
 import { pageSources } from '../../lib/page-dates.js';
-import { allPageDates, newestDates, newestOf } from '../../scripts/page-dates.mjs';
+import { GIT_PATHS, allPageDates, newestDates, newestOf } from '../../scripts/page-dates.mjs';
 import { base, expect, site } from './support/app.ts';
 
 // What search engines and link previews read before the app's script runs:
@@ -348,14 +348,32 @@ describe('pages in each language', () => {
     expect(out).not.to.include('__GC_NONCE__');
   });
 
-  it("gives link previews the page's og:locale, Chinese by its script", () => {
+  it("gives link previews the page's og:locale, Chinese by its script, and a country code for every live language", () => {
     expect(pageHtml(HTML, '/de/guides', SITE, {}, ['en', 'de'])).to.include(
       '<meta property="og:locale" content="de_DE" />'
     );
     expect(pageHtml(HTML, '/guides', SITE)).to.include('<meta property="og:locale" content="en_US" />');
     expect(
-      ['en', 'de', 'pt-PT', 'ga', 'mt', 'ar', 'en-XA', 'zh-Hans', 'zh-Hant', 'ja', 'ko'].map((code) => ogLocale(code))
-    ).to.eql(['en_US', 'de_DE', 'pt_PT', 'ga_IE', 'mt_MT', 'ar_EG', 'en_US', 'zh_CN', 'zh_TW', 'ja_JP', 'ko_KR']);
+      ['en', 'de', 'pt-PT', 'es-419', 'ga', 'mt', 'ar', 'en-XA', 'zh-Hans', 'zh-Hant', 'ja', 'ko'].map((code) =>
+        ogLocale(code)
+      )
+    ).to.eql([
+      'en_US',
+      'de_DE',
+      'pt_PT',
+      'es_MX',
+      'ga_IE',
+      'mt_MT',
+      'ar_EG',
+      'en_US',
+      'zh_CN',
+      'zh_TW',
+      'ja_JP',
+      'ko_KR'
+    ]);
+    const locales = languages.LIVE_LANGUAGES.map((code) => ogLocale(code));
+    for (const locale of locales) expect(locale).to.match(/^[a-z]{2,3}_[A-Z]{2}$/);
+    expect(new Set(locales).size).to.equal(locales.length);
   });
 
   it("writes a language's part of an address as its code is written, and nothing else", () => {
@@ -510,6 +528,7 @@ describe('pages in each language', () => {
 
   it('tells a file from a page in one pass, even on a long path of dots', () => {
     expect(looksLikeFile('/main-ABC12345.js')).to.equal(true);
+    expect(looksLikeFile('/llms.txt')).to.equal(true);
     expect(looksLikeFile('/guides/firing')).to.equal(false);
     expect(looksLikeFile('/a.b/c')).to.equal(false);
     const start = performance.now();
@@ -573,10 +592,13 @@ describe('pages in each language', () => {
     expect(pageSources('/cones', 'de')).to.include('lib/cones/index.js');
     expect(pageSources('/cones', 'de')).to.include('lib/catalog/cones.ts');
     expect(pageSources('/cones', 'de')).not.to.include('lib/cones/');
-    // Every source named is in the repository, so no page goes undated by a typo.
+    // Every source named is in the repository and read by scripts/page-dates.mjs, so no page goes undated.
+    const coveredByGit = (source: string) =>
+      GIT_PATHS.some((entry) => source === entry || source.startsWith(entry.replace(/\/?$/, '/')));
     for (const page of PUBLIC_PAGES) {
       for (const source of pageSources(page, 'en')) {
         expect(fs.existsSync(path.join(import.meta.dirname, '..', '..', source)), `${page}: ${source}`).to.equal(true);
+        expect(coveredByGit(source), `${page}: ${source} in GIT_PATHS`).to.equal(true);
       }
     }
     for (const code of languages.REFERENCE_LANGUAGES.filter((live) => languages.LIVE_LANGUAGES.includes(live))) {
@@ -611,10 +633,19 @@ describe('pages in each language', () => {
     expect(allPageDates(dates)['de/guides/firing']).to.equal('2026-11-04');
     // A file that moved keeps its history under its new name.
     const moved = newestDates(
-      ['@2026-11-20', 'lib/catalog/data/additives.ndjson', '@2026-11-01', 'data/materials.ndjson'].join('\n')
+      [
+        '@2026-11-20',
+        'lib/catalog/data/additives.ndjson',
+        '@2026-11-05',
+        'lib/core/cones/charts.ts',
+        '@2026-11-01',
+        'data/materials.ndjson'
+      ].join('\n')
     );
     expect(moved.get('lib/catalog/data/materials.ndjson')).to.equal('2026-11-01');
+    expect(moved.get('lib/catalog/cones.ts')).to.equal('2026-11-05');
     expect(moved.has('data/materials.ndjson')).to.equal(false);
+    expect(moved.has('lib/core/cones/charts.ts')).to.equal(false);
   });
 
   it('gives the guide in English only one address for search engines: the English, alone in the sitemap', () => {
@@ -1068,6 +1099,26 @@ describe('search result descriptions', () => {
       for (const [key, text] of Object.entries(meta)) {
         expect([...text].length, `${code} meta.${key}`).to.be.at.most(160);
       }
+    }
+  });
+
+  it('publishes llms.txt naming only real public pages and endpoints of the site', () => {
+    const llms = fs.readFileSync(path.join(import.meta.dirname, '..', '..', 'client', 'public', 'llms.txt'), 'utf8');
+    expect(llms).to.match(/^# Glazecalc\n/);
+    const urls = [...llms.matchAll(/https:\/\/glazecalcapp\.com(\/[^\s)`]*)/g)].map(([, pathname]) => pathname!);
+    expect(urls).to.include.members([
+      '/mcp',
+      '/assistants',
+      '/guides',
+      '/materials',
+      '/cones',
+      '/famous-glazes',
+      '/sitemap.xml'
+    ]);
+    for (const pathname of urls) {
+      expect(PUBLIC_PAGES.includes(pathname) || pathname === '/mcp' || pathname === '/sitemap.xml', pathname).to.equal(
+        true
+      );
     }
   });
 });

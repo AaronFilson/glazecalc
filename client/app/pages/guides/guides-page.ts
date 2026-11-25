@@ -6,7 +6,7 @@ import { PAGE_LANGUAGE } from '../../i18n/language';
 import { REFERENCE_LANGUAGE_LIST } from '../materials/reference-text';
 import { Breadcrumb } from '../../shared/breadcrumb';
 import { PageHeader } from '../../shared/page-header';
-import type { Crumb } from '../../shared/structured-data';
+import { type Crumb, StructuredData, referencePage, withoutBrand } from '../../shared/structured-data';
 
 /** The guides, in the order a new potter would read them; title and text are message keys. */
 export const GUIDES = [
@@ -75,8 +75,9 @@ export type ReferencePage = keyof typeof REFERENCE_PAGES;
 /** The guides for new potters, listed. */
 @Component({
   selector: 'gc-guides-page',
-  imports: [Breadcrumb, PageHeader, RouterLink, TranslocoDirective],
+  imports: [Breadcrumb, PageHeader, RouterLink, StructuredData, TranslocoDirective],
   template: `<ng-container *transloco="let t">
+    <gc-structured-data [data]="structured()" />
     <gc-breadcrumb [crumbs]="crumbs()" />
     <gc-page-header [title]="t('guides.list.title')" [lead]="t('guides.list.lead')" />
     <ul class="guide-cards">
@@ -136,16 +137,27 @@ export type ReferencePage = keyof typeof REFERENCE_PAGES;
 })
 export class GuidesPage {
   protected readonly guides = GUIDES;
-  /** The trail to the page, as the guides' own (guide-view.ts) begins. The list has no data for search engines. */
+  private readonly language = inject(PAGE_LANGUAGE);
+  /** The trail to the page, as the guides' own (guide-view.ts) begins. */
   protected readonly crumbs = computed<Crumb[]>(() => [
     { name: 'Glazecalc', path: '/' },
     { name: translate('nav.guides'), path: '/guides' }
   ]);
+  protected readonly structured = computed(() =>
+    referencePage(
+      withoutBrand(translate('titles.guides')),
+      translate('meta.guides'),
+      '/guides',
+      this.crumbs(),
+      'CollectionPage',
+      this.language
+    )
+  );
   /**
    * The reference pages, each in the languages it is translated into: the cone chart and the standard
    * materials in REFERENCE_LANGUAGES (English is the first), the famous glazes in every language.
    */
-  protected readonly reference = inject(REFERENCE_LANGUAGE_LIST).includes(inject(PAGE_LANGUAGE))
+  protected readonly reference = inject(REFERENCE_LANGUAGE_LIST).includes(this.language)
     ? Object.values(REFERENCE_PAGES)
     : [REFERENCE_PAGES.famous];
 }

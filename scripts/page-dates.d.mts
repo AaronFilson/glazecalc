@@ -1,3 +1,5 @@
+export const MOVED: Readonly<Record<string, string>>;
+export const GIT_PATHS: readonly string[];
 /** The newest commit date (YYYY-MM-DD) of each file, from git log's output (a line "@date" before each commit's files). */
 export function newestDates(log: string): Map<string, string>;
 /** The newest date among a page's sources: a file's own, or for a folder (ending /) any file in it. */

@@ -86,6 +86,13 @@ describe('prerender checks', () => {
     // Text that only names the address is no link; the list of the guides is not a guide.
     expect(pageProblems(page(`<p>${others[0]}"</p>`), first!)).to.have.length(others.length);
     expect(pageProblems(links([]), '/guides')).to.eql([]);
+    // When page-dates has a date for the guide, its Article must carry dateModified.
+    expect(pageProblems(links(others), first!, 'en', '2026-11-04')).to.eql(['its Article has no dateModified']);
+    const dated = page(
+      others.map((p) => `<a href="${p}">x</a>`).join(''),
+      '<script type="application/ld+json">{"@type":"Article","dateModified":"2026-11-04"}</script>'
+    );
+    expect(pageProblems(dated, first!, 'en', '2026-11-04')).to.eql([]);
   });
 
   it('fails the list of materials without a link to every material page, so a search engine can find them', () => {

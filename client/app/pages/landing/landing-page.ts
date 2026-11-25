@@ -24,6 +24,14 @@ export const EXAMPLE_RECIPE = [
   { material: 'Kaolin (theoretical)', amount: 10 }
 ];
 
+/** The public page of each material in EXAMPLE_RECIPE (Orthoclase and China Clay go by the theoretical names). */
+export const EXAMPLE_MATERIAL_PATHS: Readonly<Record<string, string>> = {
+  'Potash Feldspar (theoretical)': '/materials/orthoclase',
+  Silica: '/materials/silica',
+  Whiting: '/materials/whiting',
+  'Kaolin (theoretical)': '/materials/china-clay'
+};
+
 /** What Glazecalc does, as keys to the messages shown. */
 const FEATURES = [
   { title: marker('site.landing.features.unity.title'), text: marker('site.landing.features.unity.text') },
@@ -51,6 +59,7 @@ export class LandingPage {
   protected readonly starting = signal(false);
   protected readonly startError = signal('');
   protected readonly example = EXAMPLE_RECIPE;
+  protected readonly examplePaths = EXAMPLE_MATERIAL_PATHS;
   protected readonly features = FEATURES;
   // Worked out in the browser by the same chemistry code the calculator uses.
   protected readonly analysis: RecipeAnalysis = (() => {

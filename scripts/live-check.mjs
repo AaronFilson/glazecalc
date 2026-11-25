@@ -58,6 +58,140 @@ export function headerProblems(headers, url) {
   return problems;
 }
 
+const isStaging = (url) => new URL(url).hostname.startsWith('staging.');
+
+/**
+ * What is wrong with /robots.txt for production or staging.
+ * @param {number} status
+ * @param {string} text
+ * @param {string} base
+ * @returns {string[]}
+ */
+export function robotsProblems(status, text, base) {
+  if (status !== 200) return [`answered ${status}`];
+  const problems = [];
+  if (isStaging(base)) {
+    if (!/^Disallow:\s*\/\s*$/m.test(text)) problems.push('staging does not disallow /');
+    if (/^Sitemap:/im.test(text)) problems.push('staging names a sitemap');
+    return problems;
+  }
+  if (/^Disallow:\s*\/\s*$/m.test(text)) problems.push('production disallows /');
+  if (!/^Disallow:\s*\/api\/\s*$/m.test(text)) problems.push('does not disallow /api/');
+  if (!text.includes(`Sitemap: ${base}/sitemap.xml`)) problems.push(`lacks Sitemap: ${base}/sitemap.xml`);
+  return problems;
+}
+
+/**
+ * What is wrong with /sitemap.xml (a 404 on staging, the sitemap index on production).
+ * @param {number} status
+ * @param {string} xml
+ * @param {string} base
+ * @returns {string[]}
+ */
+export function sitemapIndexProblems(status, xml, base) {
+  if (isStaging(base)) return status === 404 ? [] : [`staging answered ${status} instead of 404`];
+  if (status !== 200) return [`answered ${status}`];
+  const problems = [];
+  if (!xml.includes('<sitemapindex')) problems.push('lacks <sitemapindex>');
+  const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(([, loc]) => loc);
+  if (locs.length !== languages.LIVE_LANGUAGES.length) {
+    problems.push(`lists ${locs.length} sitemaps, expected ${languages.LIVE_LANGUAGES.length}`);
+  }
+  for (const code of languages.LIVE_LANGUAGES) {
+    if (!locs.includes(`${base}/sitemaps/${code}.xml`)) {
+      problems.push(`lacks /sitemaps/${code}.xml`);
+      break;
+    }
+  }
+  return problems;
+}
+
+/**
+ * What is wrong with a language's sitemap (/sitemaps/<code>.xml).
+ * @param {number} status
+ * @param {string} xml
+ * @param {string} base
+ * @param {string} code
+ * @returns {string[]}
+ */
+export function sitemapProblems(status, xml, base, code) {
+  if (isStaging(base)) return status === 404 ? [] : [`staging answered ${status} instead of 404`];
+  if (status !== 200) return [`answered ${status}`];
+  const problems = [];
+  if (!xml.includes('<urlset')) problems.push('lacks <urlset>');
+  const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(([, loc]) => loc);
+  const expected = pages.PUBLIC_PAGES.filter(
+    (page) => (code === 'en' && pages.ENGLISH_ONLY_PAGES.includes(page)) || !pages.englishOnlyIn(page, code)
+  ).length;
+  if (locs.length !== expected) problems.push(`lists ${locs.length} URLs, expected ${expected}`);
+  if (locs.some((loc) => !loc.startsWith(base + '/'))) problems.push(`names a URL outside ${base}`);
+  if (!xml.includes('hreflang="x-default"')) problems.push('lacks hreflang="x-default"');
+  return problems;
+}
+
+/**
+ * What is wrong with a prerendered public page's search metadata: canonical, hreflang, noindex, and JSON-LD.
+ * For an English-only fallback such as /de/guides/learn-with-john-britt (`englishOnly: true`), checks that it
+ * stays out of the index and points to the English canonical.
+ * @param {string} html
+ * @param {string} pagePath
+ * @param {string} base
+ * @param {{ englishOnly?: boolean, structured?: boolean }} [options]
+ * @returns {string[]}
+ */
+export function seoPageProblems(html, pagePath, base, { englishOnly = false, structured = true } = {}) {
+  const problems = [];
+  const canonical = /<link\s+rel="canonical"\s+href="([^"]*)"/.exec(html)?.[1];
+  const wantedCanonical = base + (englishOnly ? languages.pagePath(pagePath) : pagePath);
+  if (canonical !== wantedCanonical)
+    problems.push(`canonical is ${canonical ?? 'missing'}, expected ${wantedCanonical}`);
+  const hasNoindex = /<meta\s+name="robots"\s+content="[^"]*noindex/i.test(html);
+  const hreflangs = [...html.matchAll(/<link\s+rel="alternate"\s+hreflang="([^"]*)"/g)].map(([, code]) => code);
+  if (englishOnly) {
+    if (!hasNoindex) problems.push('lacks meta noindex on an English-only copy');
+    if (hreflangs.length) problems.push(`has ${hreflangs.length} hreflang links on an English-only copy`);
+  } else {
+    if (hasNoindex) problems.push('carries meta noindex on an indexed page');
+    const wantedCount = languages.LIVE_LANGUAGES.length + 1;
+    if (hreflangs.length !== wantedCount) {
+      problems.push(`has ${hreflangs.length} hreflang links, expected ${wantedCount}`);
+    } else if (!hreflangs.includes('x-default')) {
+      problems.push('lacks hreflang="x-default"');
+    }
+  }
+  if (structured) {
+    const blocks = [...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi)].map(
+      ([, body]) => body
+    );
+    if (blocks.length !== 1) {
+      problems.push(`has ${blocks.length} ld+json blocks, expected 1`);
+    } else {
+      try {
+        const parsed = JSON.parse(blocks[0]);
+        if (parsed?.['@context'] !== 'https://schema.org') problems.push('ld+json lacks schema.org @context');
+      } catch {
+        problems.push('ld+json is not valid JSON');
+      }
+    }
+  }
+  return problems;
+}
+
+/** Sample pages across kinds whose full search metadata is checked on every live run. */
+export const SEO_SAMPLE_PAGES = new Set([
+  '/',
+  '/de/',
+  '/guides',
+  '/guides/firing',
+  '/cones',
+  '/materials',
+  '/materials/silica',
+  '/famous-glazes/shino',
+  '/about',
+  '/advice',
+  '/assistants'
+]);
+
 const COURSE_GUIDE = path.join(
   import.meta.dirname,
   '..',
@@ -147,6 +281,32 @@ async function main() {
       failures.push(`/${file} is not an image`);
   }
 
+  // Search crawlers' entry points: robots.txt, llms.txt, the sitemap index, two sitemaps, and an English-only copy.
+  const robots = await fetch(`${base}/robots.txt`, { redirect: 'manual' });
+  for (const p of robotsProblems(robots.status, await robots.text(), base)) failures.push('/robots.txt: ' + p);
+
+  const llms = await fetch(`${base}/llms.txt`, { redirect: 'manual' });
+  const llmsText = await llms.text();
+  if (llms.status !== 200 || !llmsText.startsWith('# Glazecalc')) failures.push(`/llms.txt answered ${llms.status}`);
+  else if (!/^text\/plain/.test(llms.headers.get('content-type') ?? '')) failures.push('/llms.txt is not text/plain');
+
+  const index = await fetch(`${base}/sitemap.xml`, { redirect: 'manual' });
+  for (const p of sitemapIndexProblems(index.status, await index.text(), base)) failures.push('/sitemap.xml: ' + p);
+  for (const code of ['en', 'de']) {
+    const map = await fetch(`${base}/sitemaps/${code}.xml`, { redirect: 'manual' });
+    for (const p of sitemapProblems(map.status, await map.text(), base, code)) {
+      failures.push(`/sitemaps/${code}.xml: ` + p);
+    }
+  }
+  const fallback = await fetch(`${base}/de/guides/learn-with-john-britt`, { redirect: 'manual' });
+  const fallbackBody = await fallback.text();
+  if (fallback.status !== 200) failures.push(`/de/guides/learn-with-john-britt answered ${fallback.status}`);
+  else {
+    for (const p of seoPageProblems(fallbackBody, '/de/guides/learn-with-john-britt', base, { englishOnly: true })) {
+      failures.push('/de/guides/learn-with-john-britt: ' + p);
+    }
+  }
+
   const list = pagesToCheck();
   await inTurns(
     list.map((page) => async () => {
@@ -155,6 +315,9 @@ async function main() {
       if (reply.status !== 200) failures.push(`${page} answered ${reply.status}`);
       else if (!/text\/html/.test(reply.headers.get('content-type') ?? '')) failures.push(`${page} is not HTML`);
       else if (!/<h1[\s>]/.test(body)) failures.push(`${page} has no heading`);
+      else if (SEO_SAMPLE_PAGES.has(page)) {
+        for (const p of seoPageProblems(body, page, base)) failures.push(`${page}: ${p}`);
+      }
     })
   );
 

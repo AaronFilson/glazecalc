@@ -5,6 +5,7 @@ import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
+import { PAGE_LANGUAGE } from '../../i18n/language';
 import { RichText } from '../../i18n/rich-text';
 import { Advice } from '../../core/models';
 import { Busy } from '../../shared/busy';
@@ -14,12 +15,23 @@ import { Notices, NoticesList } from '../../shared/notices';
 import { PageHeader } from '../../shared/page-header';
 import { Removal, RemoveButton } from '../../shared/remove-button';
 import { standardText } from '../../shared/library-info';
+import { type Crumb, StructuredData, referencePage, withoutBrand } from '../../shared/structured-data';
 import { STANDARD_ADVICE } from './standard-advice';
 
 @Component({
   selector: 'gc-advice-page',
-  imports: [FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton, RichText, TranslocoDirective],
+  imports: [
+    FieldCheck,
+    FormsModule,
+    NoticesList,
+    PageHeader,
+    RemoveButton,
+    RichText,
+    StructuredData,
+    TranslocoDirective
+  ],
   template: `<ng-container *transloco="let t">
+    <gc-structured-data [data]="structured()" />
     <gc-page-header [title]="t('site.advice.title')" [lead]="t('site.advice.lead')" />
     <gc-notices [notices]="notices" />
 
@@ -134,6 +146,21 @@ export class AdvicePage implements OnInit {
   private readonly advice = inject(ApiResourceFactory).for<Advice>('advice');
   private readonly auth = inject(AuthService);
   private readonly browser = isPlatformBrowser(inject(PLATFORM_ID));
+  private readonly language = inject(PAGE_LANGUAGE);
+  private readonly crumbs = computed<Crumb[]>(() => [
+    { name: 'Glazecalc', path: '/' },
+    { name: translate('nav.advice'), path: '/advice' }
+  ]);
+  protected readonly structured = computed(() =>
+    referencePage(
+      withoutBrand(translate('titles.advice')),
+      translate('meta.advice'),
+      '/advice',
+      this.crumbs(),
+      'CollectionPage',
+      this.language
+    )
+  );
 
   protected readonly signedIn = computed(() => this.auth.shownSession());
 

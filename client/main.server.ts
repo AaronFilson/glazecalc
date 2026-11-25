@@ -14,3 +14,4 @@ export { renderApplication } from '@angular/platform-server';
 // What the script gives the render to read the built translation files with.
 export { READ_I18N_FILE } from './app/i18n/server-files.interceptor';
 export { NONCE_PLACEHOLDER } from './app/app.config.server';
+export { PRERENDER_MODIFIED } from './app/shared/structured-data';

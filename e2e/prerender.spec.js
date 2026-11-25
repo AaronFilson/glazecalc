@@ -172,6 +172,14 @@ test.describe('structured data', () => {
       .toEqual(['Article', 'BreadcrumbList']);
     await page.getByRole('link', { name: 'Guides', exact: true }).first().click();
     await expect(page).toHaveURL(/\/guides$/);
+    await expect.poll(() => jsonLd(page)).toHaveLength(1);
+    await expect
+      .poll(async () =>
+        (await jsonLd(page)).flatMap((data) => (data['@graph'] || [data]).map((block) => block['@type']))
+      )
+      .toEqual(['CollectionPage', 'BreadcrumbList']);
+    await page.getByRole('link', { name: 'Sign in' }).first().click();
+    await expect(page).toHaveURL(/\/signin/);
     await expect.poll(() => jsonLd(page)).toHaveLength(0);
     expect(violations).toEqual([]);
   });

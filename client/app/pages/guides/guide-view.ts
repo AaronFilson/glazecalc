@@ -13,7 +13,7 @@ import { fixed, upTo } from '../../shared/format';
 import { textDigitsFor, withTextDigits } from '../../shared/text-digits';
 import { Breadcrumb } from '../../shared/breadcrumb';
 import { PageHeader } from '../../shared/page-header';
-import { type Crumb, StructuredData, article, pageAddress } from '../../shared/structured-data';
+import { PAGE_MODIFIED, type Crumb, StructuredData, article, pageAddress } from '../../shared/structured-data';
 import { GuideContents, SectionLinks } from './guide-contents';
 import { Block, Guide, GuideSection, Inline, Reading, blocks } from './guide-document';
 import { GuideInline, GuideRow, InlineContext } from './guide-inline';
@@ -77,15 +77,17 @@ export class GuideView implements InlineContext {
   /** Whether the reference pages the guide points to are translated into the page's language. */
   protected readonly referenceOffered = REFERENCE_LANGUAGES.includes(this.language);
   private readonly pathname = inject(DOCUMENT).location.pathname;
+  private readonly pageModified = inject(PAGE_MODIFIED);
   /** What search engines read about the guide (shared/structured-data.ts). */
   protected readonly structured = computed(() => {
-    const { title, lead, modified } = this.guide();
+    const { title, lead, modified, language } = this.guide();
+    const address = pageAddress(this.language, this.pathname);
     return article(
       title,
       lead,
-      this.textLanguage() ?? this.language,
-      pageAddress(this.language, this.pathname),
-      modified,
+      language ?? this.textLanguage() ?? this.language,
+      address,
+      modified ?? this.pageModified(address),
       this.crumbs(),
       this.language
     );

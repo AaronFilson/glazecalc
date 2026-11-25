@@ -1,6 +1,16 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { headerProblems, oembedFor, pagesToCheck, videosIn } from '../../scripts/live-check.mjs';
+import {
+  headerProblems,
+  oembedFor,
+  pagesToCheck,
+  robotsProblems,
+  seoPageProblems,
+  sitemapIndexProblems,
+  sitemapProblems,
+  videosIn
+} from '../../scripts/live-check.mjs';
+import { pageHtml, sitemap, sitemapIndex } from '../lib/pages.ts';
 import { expect } from './support/app.ts';
 
 // The checks of a deployed site (scripts/live-check.mjs): the headers it asks
@@ -53,6 +63,41 @@ describe('the live checks', () => {
     const list = pagesToCheck();
     expect(list).to.include.members(['/', '/de/', '/guides/firing', '/signup']);
     expect(new Set(list).size).to.equal(list.length);
+  });
+
+  it('checks robots.txt, the sitemap index, per-language sitemaps and page head metadata on production and staging', () => {
+    const prod = 'https://glazecalcapp.com';
+    const stage = 'https://staging.glazecalcapp.com';
+    const robots = fs.readFileSync(
+      path.join(import.meta.dirname, '..', '..', 'client', 'public', 'robots.txt'),
+      'utf8'
+    );
+    expect(robotsProblems(200, robots, prod)).to.eql([]);
+    expect(robotsProblems(200, robots, stage)).to.include('staging does not disallow /');
+    expect(robotsProblems(200, 'User-agent: *\nDisallow: /\n', stage)).to.eql([]);
+    expect(robotsProblems(200, 'User-agent: *\nDisallow: /\n', prod)).to.include('production disallows /');
+
+    expect(sitemapIndexProblems(200, sitemapIndex(prod), prod)).to.eql([]);
+    expect(sitemapIndexProblems(404, 'Not found', stage)).to.eql([]);
+    expect(sitemapIndexProblems(200, sitemapIndex(stage), stage)).to.eql(['staging answered 200 instead of 404']);
+    expect(sitemapProblems(200, sitemap(prod, undefined, undefined, {}, 'en'), prod, 'en')).to.eql([]);
+    expect(sitemapProblems(200, sitemap(prod, undefined, undefined, {}, 'de'), prod, 'de')).to.eql([]);
+    expect(sitemapProblems(404, 'Not found', stage, 'en')).to.eql([]);
+
+    const shell =
+      '<!doctype html><html lang="en"><head>' +
+      '<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article"}</script>' +
+      '</head><body><h1>Firing</h1></body></html>';
+    const indexed = pageHtml(shell, '/de/guides/firing', prod);
+    expect(seoPageProblems(indexed, '/de/guides/firing', prod)).to.eql([]);
+    expect(seoPageProblems(indexed.replace('application/ld+json', 'text/plain'), '/de/guides/firing', prod)).to.eql([
+      'has 0 ld+json blocks, expected 1'
+    ]);
+    const fallback = pageHtml(shell, '/de/guides/learn-with-john-britt', prod);
+    expect(seoPageProblems(fallback, '/de/guides/learn-with-john-britt', prod, { englishOnly: true })).to.eql([]);
+    expect(seoPageProblems(fallback, '/de/guides/learn-with-john-britt', prod)).to.include(
+      'carries meta noindex on an indexed page'
+    );
   });
 
   it("can check John Britt's videos the course companion links, by YouTube's oEmbed, when asked", () => {

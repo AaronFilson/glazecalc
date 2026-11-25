@@ -57,7 +57,11 @@ export const routes: Routes = [
     path: 'guides/glazing-basics',
     title: marker('titles.glazingBasics'),
     providers: [provideTranslocoScope('guides', 'regions')],
-    data: { description: marker('meta.glazingBasics'), guide: 'glazing-basics' },
+    data: {
+      description: marker('meta.glazingBasics'),
+      guide: 'glazing-basics',
+      related: ['materials', 'cones', 'famous']
+    },
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
@@ -65,7 +69,11 @@ export const routes: Routes = [
     path: 'guides/making-a-glaze',
     title: marker('titles.makingAGlaze'),
     providers: [provideTranslocoScope('guides', 'regions')],
-    data: { description: marker('meta.makingAGlaze'), guide: 'making-a-glaze' },
+    data: {
+      description: marker('meta.makingAGlaze'),
+      guide: 'making-a-glaze',
+      related: ['materials', 'famous']
+    },
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
@@ -89,7 +97,7 @@ export const routes: Routes = [
     path: 'guides/firing',
     title: marker('titles.firing'),
     providers: [provideTranslocoScope('guides')],
-    data: { description: marker('meta.firing'), guide: 'firing', related: ['cones'] },
+    data: { description: marker('meta.firing'), guide: 'firing', related: ['cones', 'famous'] },
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
@@ -110,7 +118,7 @@ export const routes: Routes = [
     data: {
       description: marker('meta.teachingGlazeCalculation'),
       guide: 'teaching-glaze-calculation',
-      related: ['materials']
+      related: ['materials', 'cones', 'famous']
     },
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
