@@ -1,13 +1,52 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, DestroyRef, Renderer2, effect, inject, input } from '@angular/core';
+import { Component, DestroyRef, InjectionToken, Renderer2, effect, inject, input } from '@angular/core';
+import { ogImageFile } from '../../../lib/og-images';
 import { languagePrefix } from '../../../lib/regions/languages';
 import { pathIn } from '../i18n/language';
 
 /** Where the site lives. The prerender has no server to ask, and search wants whole addresses. */
 export const SITE = 'https://glazecalcapp.com';
 
+/** Who makes Glazecalc (site.about.who), linked to the About page. */
+export const AUTHOR = { '@type': 'Person', name: 'Aaron Filson', url: SITE + '/about' } as const;
+
+/** A page title without its trailing " - Glazecalc" or " – Glazecalc" brand suffix. */
+export const withoutBrand = (title: string): string => title.replace(/ [-–] Glazecalc$/, '');
+
+/** The preview image's full address for a language (lib/og-images.js). */
+export const imageAddress = (language: string): string => SITE + '/' + ogImageFile(language);
+
 /** The address of the page being drawn, in its language: https://glazecalcapp.com/de/guides. */
 export const pageAddress = (language: string, pathname: string): string => SITE + pathIn(language, pathname);
+
+/** Supplied by scripts/prerender.mjs in platformProviders (no providedIn, so PlatformInjector is reached). */
+export const PRERENDER_MODIFIED = new InjectionToken<(address: string) => string | null>('PRERENDER_MODIFIED');
+
+/**
+ * When the page at `address` last changed what it says (YYYY-MM-DD), for Article.dateModified.
+ * The prerender supplies PRERENDER_MODIFIED from lib/page-dates.json; in the browser, the initial block
+ * written by the prerender keeps its dateModified during hydration so client-side rendering never strips it,
+ * while moving to another page in the app starts fresh unless the guide's front matter gives one.
+ */
+export const PAGE_MODIFIED = new InjectionToken<(address: string) => string | null>('PAGE_MODIFIED', {
+  providedIn: 'root',
+  factory: () => {
+    const fromPrerender = inject(PRERENDER_MODIFIED, { optional: true });
+    if (fromPrerender) return fromPrerender;
+    const text = inject(DOCUMENT).head.querySelector('script[data-gc-ld]')?.textContent;
+    if (!text) return () => null;
+    try {
+      const parsed = JSON.parse(text) as Record<string, unknown>;
+      const blocks = Array.isArray(parsed['@graph']) ? (parsed['@graph'] as Record<string, unknown>[]) : [parsed];
+      const found = blocks.find((b) => typeof b['dateModified'] === 'string' && typeof b['url'] === 'string');
+      if (!found) return () => null;
+      const { url, dateModified } = found as { url: string; dateModified: string };
+      return (address: string) => (address === url ? dateModified : null);
+    } catch {
+      return () => null;
+    }
+  }
+});
 
 /** The landing page's WebApplication (https://schema.org/WebApplication). */
 export function webApplication(description: string, language: string, address: string): object {
@@ -20,6 +59,8 @@ export function webApplication(description: string, language: string, address: s
     operatingSystem: 'Any',
     isAccessibleForFree: true,
     offers: { '@type': 'Offer', price: 0, priceCurrency: 'USD' },
+    author: AUTHOR,
+    image: imageAddress(language),
     inLanguage: language,
     url: address
   };
@@ -69,10 +110,10 @@ export function breadcrumbList(id: string, crumbs: ReadonlyArray<Crumb>, languag
 }
 
 /**
- * A guide's Article (https://schema.org/Article); dateModified only where the guide's front matter has one.
- * With `crumbs` (the trail to the guide), the Article and its BreadcrumbList are one @graph, as
- * referencePage's are; the trail's addresses are in `crumbLanguage` (the page's, where `language` is the
- * guide's text's).
+ * A guide's Article (https://schema.org/Article); dateModified comes from the guide's front matter or the
+ * build's page-dates (PAGE_MODIFIED). With `crumbs` (the trail to the guide), the Article and its
+ * BreadcrumbList are one @graph, as referencePage's are; the trail's addresses are in `crumbLanguage`
+ * (the page's, where `language` is the guide's text's).
  */
 export function article(
   headline: string,
@@ -87,6 +128,8 @@ export function article(
     '@type': 'Article',
     headline,
     description,
+    author: AUTHOR,
+    image: imageAddress(language === 'en' ? 'en' : crumbLanguage),
     inLanguage: language,
     url: address,
     ...(modified ? { dateModified: modified } : {})
@@ -102,12 +145,12 @@ export function article(
 }
 
 /**
- * A reference page (a standard material's, the materials list, the cone chart): a WebPage
- * of the site (https://schema.org/WebPage) and its trail of pages (https://schema.org/BreadcrumbList),
- * which search results show in place of the address. `path` is the page's address without its language,
- * such as /materials/silica. In English, or for a page not translated, that is its one address for search
- * engines (lib/pages.js, englishOnlyIn); the list, the chart and each material's page in a language they
- * are translated into (REFERENCE_LANGUAGES) are named at their own, in that `language`.
+ * A public page (a standard material's, the materials list, the cone chart, the guides list, About, Advice,
+ * Assistants): a WebPage of the site (https://schema.org/WebPage) and its trail of pages
+ * (https://schema.org/BreadcrumbList), which search results show in place of the address. `path` is the
+ * page's address without its language, such as /materials/silica. In English, or for a page not translated,
+ * that is its one address for search engines (lib/pages.js, englishOnlyIn); in a language the page is
+ * translated into, it is named at its own, in that `language`.
  * `crumbs` is the trail from the home page to this page, each { name, path }.
  */
 export function referencePage(
@@ -115,8 +158,9 @@ export function referencePage(
   description: string,
   path: string,
   crumbs: ReadonlyArray<Crumb>,
-  type: 'WebPage' | 'CollectionPage' = 'WebPage',
-  language = 'en'
+  type: 'WebPage' | 'CollectionPage' | 'AboutPage' = 'WebPage',
+  language = 'en',
+  extra: Record<string, unknown> = {}
 ): object {
   const prefix = languagePrefix(language);
   const address = SITE + prefix + path;
@@ -131,7 +175,8 @@ export function referencePage(
         inLanguage: language,
         url: address,
         isPartOf: { '@type': 'WebSite', name: 'Glazecalc', url: SITE + prefix + '/' },
-        breadcrumb: { '@id': address + '#breadcrumb' }
+        breadcrumb: { '@id': address + '#breadcrumb' },
+        ...extra
       },
       breadcrumbList(address + '#breadcrumb', crumbs, language)
     ]

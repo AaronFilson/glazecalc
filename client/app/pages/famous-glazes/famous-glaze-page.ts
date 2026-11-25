@@ -6,6 +6,7 @@ import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { map } from 'rxjs';
 import { formatFormula } from '../../../../lib/chemistry';
+import { materialSlug } from '../../../../lib/material-slug';
 import { regionFor } from '../../../../lib/regions';
 import { AuthService } from '../../core/auth.service';
 import { FIRST_RENDER } from '../../core/first-render';
@@ -113,7 +114,9 @@ const unityRows = (unity: Record<string, number>): Array<{ oxide: string; amount
             @for (line of recipe.lines; track line.record.name) {
               <tr>
                 <th scope="row">
-                  <bdi>{{ line.record.name }}</bdi>
+                  <bdi
+                    ><a [routerLink]="materialHref(line.record.name)">{{ line.record.name }}</a></bdi
+                  >
                 </th>
                 <td class="num">{{ formatPlain(line.amount) }}</td>
               </tr>
@@ -208,7 +211,9 @@ const unityRows = (unity: Record<string, number>): Array<{ oxide: string; amount
             @for (line of version.materials; track line.name) {
               <tr>
                 <th scope="row">
-                  <bdi>{{ line.name }}</bdi>
+                  <bdi
+                    ><a [routerLink]="materialHref(line.name)">{{ line.name }}</a></bdi
+                  >
                 </th>
                 <td class="num">{{ formatPlain(line.amount) }}</td>
               </tr>
@@ -323,6 +328,7 @@ export class FamousGlazePage {
   protected readonly formatFormula = formatFormula;
   protected readonly formatPlain = formatPlain;
   protected readonly fixed = fixed;
+  protected readonly materialHref = (name: string): string => '/materials/' + materialSlug(name);
   protected readonly unityRows = unityRows;
   protected readonly regions = REGIONS;
   protected readonly verdictKeys = VERDICT_KEYS;

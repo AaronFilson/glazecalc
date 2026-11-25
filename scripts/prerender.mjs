@@ -30,7 +30,10 @@ import { pathToFileURL } from 'node:url';
 import { Worker, isMainThread, parentPort, workerData } from 'node:worker_threads';
 import { gzipSync } from 'node:zlib';
 import pages from '../lib/pages.js';
+import pageDatesData from '../lib/page-dates.js';
 import languages from '../lib/regions/languages.js';
+
+const { dateKey, pageDates } = pageDatesData;
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const OUT = path.join(ROOT, 'dist', 'glazecalc');
@@ -84,7 +87,7 @@ export function asciiDigits(text) {
 }
 
 /** What is wrong with one page in particular: the advice page has each piece of the standard advice. */
-export function pageProblems(html, page, code = 'en') {
+export function pageProblems(html, page, code = 'en', modified = null) {
   const found = [];
   // A reference page in a language it is translated into has no notice that it is in English.
   if (pages.REFERENCE_PAGES.includes(page) && languages.REFERENCE_LANGUAGES.includes(code)) {
@@ -109,12 +112,16 @@ export function pageProblems(html, page, code = 'en') {
   ) {
     found.push('it lacks the Orton or SK chart');
   }
-  // A guide ends with links to the others (the "More guides" block), so a search engine can follow them.
+  // A guide ends with links to the others (the "More guides" block), so a search engine can follow them,
+  // and its Article carries dateModified whenever lib/page-dates.json has a date for the page.
   if (GUIDE_PAGES.includes(page)) {
     for (const other of GUIDE_PAGES.filter((guide) => guide !== page)) {
       if (!html.includes(`${other}"`) || !new RegExp(`href="[^"]*${other}"`).test(html)) {
         found.push(`it does not link the guide ${other}`);
       }
+    }
+    if (modified && !/"dateModified":"[^"]+"/.test(html)) {
+      found.push('its Article has no dateModified');
     }
   }
   return found;
@@ -246,7 +253,13 @@ export function problemsWith(html, start, code, minText = MIN_TEXT) {
  * reports each page's size or its problems.
  */
 async function renderAll({ jobs, start, faces }) {
-  const { default: bootstrap, renderApplication, READ_I18N_FILE } = await import(pathToFileURL(BUNDLE).href);
+  const {
+    default: bootstrap,
+    renderApplication,
+    READ_I18N_FILE,
+    PRERENDER_MODIFIED
+  } = await import(pathToFileURL(BUNDLE).href);
+  const dates = pageDates();
   // The translations and guides, read from the built files the server also sends.
   const readFileUnder = async (file) => {
     try {
@@ -262,16 +275,20 @@ async function renderAll({ jobs, start, faces }) {
   const results = [];
   for (const { code, page, url } of jobs) {
     logged = [];
+    const modified = dates[dateKey(code, page)] ?? null;
     try {
       const rendered = await renderApplication(bootstrap, {
         document: start,
         url,
-        platformProviders: [{ provide: READ_I18N_FILE, useValue: readFileUnder }]
+        platformProviders: [
+          { provide: READ_I18N_FILE, useValue: readFileUnder },
+          { provide: PRERENDER_MODIFIED, useValue: () => modified }
+        ]
       });
       const html = withFontPreloads(rendered, faces);
       const problems = [
         ...problemsWith(html, start, code),
-        ...pageProblems(html, page, code),
+        ...pageProblems(html, page, code, modified),
         ...logged.map((line) => 'logged: ' + line)
       ];
       if (problems.length) {

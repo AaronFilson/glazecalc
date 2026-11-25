@@ -1,15 +1,17 @@
-import { Component, inject } from '@angular/core';
-import { TranslocoDirective } from '@jsverse/transloco';
+import { Component, computed, inject } from '@angular/core';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { OFFERED_LANGUAGES, PAGE_LANGUAGE, pathIn } from '../../i18n/language';
 import { LanguageLinks } from '../../i18n/language-links';
 import { RichText } from '../../i18n/rich-text';
 import { PageHeader } from '../../shared/page-header';
+import { AUTHOR, type Crumb, StructuredData, referencePage, withoutBrand } from '../../shared/structured-data';
 
 /** What Glazecalc is, how its numbers are worked out, and how it is built. */
 @Component({
   selector: 'gc-about-page',
-  imports: [LanguageLinks, PageHeader, RichText, TranslocoDirective],
+  imports: [LanguageLinks, PageHeader, RichText, StructuredData, TranslocoDirective],
   template: `<ng-container *transloco="let t">
+    <gc-structured-data [data]="structured()" />
     <gc-page-header [title]="t('site.about.title')" [lead]="t('site.about.lead')" />
 
     <section class="panel">
@@ -75,6 +77,21 @@ import { PageHeader } from '../../shared/page-header';
 export class AboutPage {
   protected readonly languages = inject(OFFERED_LANGUAGES);
   protected readonly pageLanguage = inject(PAGE_LANGUAGE);
+  private readonly crumbs = computed<Crumb[]>(() => [
+    { name: 'Glazecalc', path: '/' },
+    { name: translate('nav.about'), path: '/about' }
+  ]);
+  protected readonly structured = computed(() =>
+    referencePage(
+      withoutBrand(translate('titles.about')),
+      translate('meta.about'),
+      '/about',
+      this.crumbs(),
+      'AboutPage',
+      this.pageLanguage,
+      { author: AUTHOR, sameAs: 'https://github.com/AaronFilson/glazecalc' }
+    )
+  );
 
   /** This page in a language: /about, /de/about. */
   protected readonly aboutIn = (code: string): string => pathIn(code, '/about');

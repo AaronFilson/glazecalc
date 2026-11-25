@@ -22,8 +22,23 @@ const { pageSources, dateKey } = require('../lib/page-dates.js');
  */
 export const MOVED = {
   'data/materials.ndjson': 'lib/catalog/data/materials.ndjson',
-  'data/additives.ndjson': 'lib/catalog/data/additives.ndjson'
+  'data/additives.ndjson': 'lib/catalog/data/additives.ndjson',
+  'lib/core/cones/charts.ts': 'lib/catalog/cones.ts',
+  'lib/core/cones/charts.js': 'lib/catalog/cones.ts'
 };
+
+/**
+ * Paths passed to git log: every file or folder pageSources (lib/page-dates.js) can name, plus pre-move
+ * locations in MOVED so commits before a rename still count.
+ */
+export const GIT_PATHS = [
+  'client/public/i18n',
+  'data',
+  'lib/catalog/cones.ts',
+  'lib/catalog/data',
+  'lib/cones/index.js',
+  'lib/core/cones'
+];
 
 /**
  * The newest commit date (YYYY-MM-DD) of each file, from git log's output, newest commit first:
@@ -76,19 +91,11 @@ export function allPageDates(dates) {
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const log = execFileSync(
     'git',
-    [
-      'log',
-      '--format=@%cs',
-      '--name-only',
-      '-M100%',
-      '--diff-filter=r',
-      '--',
-      'client/public/i18n',
-      'data',
-      'lib/catalog/data',
-      'lib/cones/index.js'
-    ],
-    { encoding: 'utf8', maxBuffer: 1 << 28 }
+    ['log', '--format=@%cs', '--name-only', '-M100%', '--diff-filter=r', '--', ...GIT_PATHS],
+    {
+      encoding: 'utf8',
+      maxBuffer: 1 << 28
+    }
   );
   const out = allPageDates(newestDates(log));
   writeFileSync(fileURLToPath(new URL('../lib/page-dates.json', import.meta.url)), JSON.stringify(out) + '\n');

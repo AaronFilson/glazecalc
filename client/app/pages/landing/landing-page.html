@@ -59,7 +59,9 @@
           <tbody>
             @for (line of example; track line.material) {
               <tr>
-                <td>{{ line.material }}</td>
+                <td>
+                  <a [routerLink]="examplePaths[line.material]">{{ line.material }}</a>
+                </td>
                 <td>{{ line.amount | gcPlain }}</td>
               </tr>
             }

@@ -215,7 +215,9 @@ const addressIn = (site: string, code: string, page: string): string => site + l
 export function ogLocale(code: string): string {
   try {
     const { language, region } = new Intl.Locale(languages.textLanguage(code)).maximize();
-    return region ? language + '_' + region : language;
+    // UN M49 "419" (Latin America, es-419) is not an ISO 3166-1 territory code for Open Graph.
+    const territory = region === '419' ? 'MX' : region;
+    return territory ? language + '_' + territory : language;
   } catch {
     return 'en_US';
   }

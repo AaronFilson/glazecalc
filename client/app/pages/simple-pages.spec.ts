@@ -536,6 +536,12 @@ describe('App', () => {
     await TestBed.inject(Router).navigateByUrl('/');
     await fixture.whenStable();
     expect(text(fixture, 'footer')).toContain('Privacy');
+    const footerHrefs = [...fixture.nativeElement.querySelectorAll('footer nav a')].map((a: HTMLAnchorElement) =>
+      a.getAttribute('href')
+    );
+    expect(footerHrefs).toEqual(
+      expect.arrayContaining(['/materials', '/famous-glazes', '/guides', '/advice', '/about'])
+    );
   });
 
   it('skips to the content by moving focus, without following the link (which would reload the app)', async () => {

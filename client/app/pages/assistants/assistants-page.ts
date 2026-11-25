@@ -1,8 +1,10 @@
 import { DOCUMENT, NgTemplateOutlet } from '@angular/common';
-import { Component, inject, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
+import { PAGE_LANGUAGE } from '../../i18n/language';
 import { RichText } from '../../i18n/rich-text';
 import { PageHeader } from '../../shared/page-header';
+import { type Crumb, StructuredData, referencePage, withoutBrand } from '../../shared/structured-data';
 
 /** Where the setup shows the token: the person puts their own in its place. */
 const TOKEN = 'YOUR_TOKEN';
@@ -19,8 +21,9 @@ const TOKEN = 'YOUR_TOKEN';
  */
 @Component({
   selector: 'gc-assistants-page',
-  imports: [NgTemplateOutlet, PageHeader, RichText, TranslocoDirective],
+  imports: [NgTemplateOutlet, PageHeader, RichText, StructuredData, TranslocoDirective],
   template: `<ng-container *transloco="let t">
+    <gc-structured-data [data]="structured()" />
     <gc-page-header [title]="t('site.assistants.title')" [lead]="t('site.assistants.lead')" />
 
     <section class="panel">
@@ -172,6 +175,21 @@ const TOKEN = 'YOUR_TOKEN';
   `
 })
 export class AssistantsPage {
+  private readonly language = inject(PAGE_LANGUAGE);
+  private readonly crumbs = computed<Crumb[]>(() => [
+    { name: 'Glazecalc', path: '/' },
+    { name: translate('footer.assistants'), path: '/assistants' }
+  ]);
+  protected readonly structured = computed(() =>
+    referencePage(
+      withoutBrand(translate('titles.assistants')),
+      translate('meta.assistants'),
+      '/assistants',
+      this.crumbs(),
+      'WebPage',
+      this.language
+    )
+  );
   /** What the last Copy did, beside its button. */
   protected readonly said = signal<{ id: string; text: string } | null>(null);
 

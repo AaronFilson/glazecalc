@@ -1,0 +1,34 @@
+# Glazecalc
+
+> Glazecalc (https://glazecalcapp.com) is a free, open-source ceramic glaze chemistry calculator, reference library, and studio notebook for potters, ceramicists, teachers, and students, available in 57 languages.
+
+Glazecalc computes a glaze recipe's unity molecular formula (UMF / Seger formula), oxide weight-percent analysis, silica-to-alumina ratio, flux balance, loss on ignition, Stull chart position, and published firing-range cautions. Visitors can try the calculator immediately without an account, or create a free account (no ads, no analytics, no tracking) to keep recipes, custom materials, colorants, line/triaxial blends, target-to-recipe solves, notes, and firing logs, offline or online. Made by Aaron Filson under the MIT License (https://github.com/AaronFilson/glazecalc).
+
+## AI Assistants & MCP Server
+
+- [Use Glazecalc from your AI assistant](https://glazecalcapp.com/assistants): Connect Claude, Claude Code, VS Code, Cursor, ChatGPT, or Gemini CLI over HTTP MCP (`https://glazecalcapp.com/mcp`) to look up standard materials, calculate unity formulas, check limits, find regional material substitutes, solve target formulas into recipes, convert Orton and SK cones, and search the guides.
+
+## Guides for Potters & Teachers
+
+- [All guides](https://glazecalcapp.com/guides): Overview of Glazecalc's plain-language ceramics guides and reference pages.
+- [Glazing from first principles](https://glazecalcapp.com/guides/glazing-basics): Glass formers, fluxes, alumina, cones, frits, unity formulas, food safety, and glaze defects.
+- [How to make a glaze](https://glazecalcapp.com/guides/making-a-glaze): Buying, storing, weighing, mixing, sieving, specific gravity, test tiles, and record keeping.
+- [Safe mixing and ventilation](https://glazecalcapp.com/guides/safe-mixing): Silica dust limits by country, respirators, wet cleaning, hazardous oxides, and kiln ventilation.
+- [Don't poison your family](https://glazecalcapp.com/guides/home-safety): Home studio safety with children and pets, storage, kiln fumes, food-contact leaching rules, and regional poison-control numbers.
+- [Firing a basic kiln](https://glazecalcapp.com/guides/firing): Witness cones, kiln sitters, manual switches, and published bisque and glaze firing schedules.
+- [Teaching glaze calculation](https://glazecalcapp.com/guides/teaching-glaze-calculation): Six classroom or study-group sessions from triaxial blends to Seger formula calculations both ways, with printable worksheets.
+- [Learn with John Britt's free glaze course](https://glazecalcapp.com/guides/learn-with-john-britt): Unit-by-unit companion to John Britt's video glaze course with calculator exercises (English).
+
+## Reference Data & Historical Glazes
+
+- [Standard glaze materials](https://glazecalcapp.com/materials): 182 ceramic raw materials, feldspars, clays, frits, fluxes, and colorants with oxide analyses, unity contributions, regional availability, substitutes, and GHS hazards.
+- [Cone temperature chart](https://glazecalcapp.com/cones): Orton pyrometric cones and SK cones (JIS R 8101) in °C and °F by heating rate, with primary citations.
+- [Famous glazes](https://glazecalcapp.com/famous-glazes): Historical ceramic glazes with primary sources, unity formulas or archaeometric analyses, and regional modern recipes — including [İznik](https://glazecalcapp.com/famous-glazes/iznik), [Oribe](https://glazecalcapp.com/famous-glazes/oribe), and [Shino](https://glazecalcapp.com/famous-glazes/shino).
+- [Glaze advice](https://glazecalcapp.com/advice): Practical studio tips on mixing, specific gravity, testing, and firing.
+
+## Project & Policies
+
+- [About Glazecalc](https://glazecalcapp.com/about): How the glaze chemistry calculations work, technical stack, credits, and all 57 offered languages.
+- [Privacy](https://glazecalcapp.com/privacy): Data handling, zero-tracking policy, and user rights.
+- [Terms of use](https://glazecalcapp.com/terms): Terms for using glazecalcapp.com.
+- [XML Sitemap Index](https://glazecalcapp.com/sitemap.xml): Per-language sitemaps across all 57 live languages.

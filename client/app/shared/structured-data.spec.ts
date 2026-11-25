@@ -1,14 +1,19 @@
 import { Component, signal } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import {
+  AUTHOR,
+  PAGE_MODIFIED,
+  PRERENDER_MODIFIED,
   StructuredData,
   article,
   breadcrumbList,
   homeData,
+  imageAddress,
   jsonForScript,
   pageAddress,
   referencePage,
-  webApplication
+  webApplication,
+  withoutBrand
 } from './structured-data';
 
 // Data for search engines, written into the head as a block of JSON that never runs.
@@ -72,9 +77,11 @@ describe('structured data', () => {
     );
   });
 
-  it('describes the app and a guide', () => {
+  it('describes the app and a guide, with their author and language preview image', () => {
     const address = pageAddress('de', '/de/guides/firing');
     expect(address).toBe('https://glazecalcapp.com/de/guides/firing');
+    expect(withoutBrand('Famous glazes - Glazecalc')).toBe('Famous glazes');
+    expect(withoutBrand('Anleitungen – Glazecalc')).toBe('Anleitungen');
     expect(webApplication('d', 'en', 'https://glazecalcapp.com/')).toEqual({
       '@context': 'https://schema.org',
       '@type': 'WebApplication',
@@ -84,6 +91,8 @@ describe('structured data', () => {
       operatingSystem: 'Any',
       isAccessibleForFree: true,
       offers: { '@type': 'Offer', price: 0, priceCurrency: 'USD' },
+      author: AUTHOR,
+      image: imageAddress('en'),
       inLanguage: 'en',
       url: 'https://glazecalcapp.com/'
     });
@@ -91,9 +100,34 @@ describe('structured data', () => {
     expect(article('h', 'd', 'de', address, '2026-10-01')).toMatchObject({
       '@type': 'Article',
       headline: 'h',
+      author: AUTHOR,
+      image: imageAddress('de'),
       inLanguage: 'de',
       dateModified: '2026-10-01'
     });
+    // An English-only guide opened on a German page keeps the English preview image, matching og:image.
+    expect(article('h', 'd', 'en', 'https://glazecalcapp.com/de/guides/x', null, undefined, 'de')).toMatchObject({
+      inLanguage: 'en',
+      image: imageAddress('en')
+    });
+  });
+
+  it('keeps a prerendered dateModified for that page alone during hydration', () => {
+    const written = document.createElement('script');
+    written.type = 'application/ld+json';
+    written.setAttribute('data-gc-ld', '');
+    written.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': [{ '@type': 'Article', url: 'https://glazecalcapp.com/guides/firing', dateModified: '2026-11-04' }]
+    });
+    document.head.append(written);
+    TestBed.resetTestingModule();
+    const modified = TestBed.inject(PAGE_MODIFIED);
+    expect(modified('https://glazecalcapp.com/guides/firing')).toBe('2026-11-04');
+    expect(modified('https://glazecalcapp.com/guides/safe-mixing')).toBeNull();
+    TestBed.resetTestingModule();
+    TestBed.configureTestingModule({ providers: [{ provide: PRERENDER_MODIFIED, useValue: () => '2026-11-10' }] });
+    expect(TestBed.inject(PAGE_MODIFIED)('https://glazecalcapp.com/guides/safe-mixing')).toBe('2026-11-10');
   });
 
   it('puts a guide trail beside the Article, in one graph', () => {
@@ -126,5 +160,9 @@ describe('structured data', () => {
       '@graph': Record<string, unknown>[];
     };
     expect(page['@graph'][1]).toEqual(breadcrumbList('https://glazecalcapp.com/materials#breadcrumb', crumbs, 'en'));
+    const about = referencePage('About', 'd', '/about', crumbs, 'AboutPage', 'en', { author: AUTHOR }) as {
+      '@graph': Record<string, unknown>[];
+    };
+    expect(about['@graph'][0]).toMatchObject({ '@type': 'AboutPage', author: AUTHOR });
   });
 });

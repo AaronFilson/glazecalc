@@ -344,6 +344,10 @@ describe("a famous glaze's page", () => {
     expect(page.querySelector('h1')?.textContent?.trim()).toBe('Fixture celadon');
     expect(page.textContent).toContain('試験青磁');
     expect(page.querySelector('#famous-recipe')?.closest('section')?.textContent).toContain('Custer Spar');
+    const recipeTable = page.querySelector('#famous-recipe')?.closest('section')?.querySelector('table');
+    expect(
+      [...(recipeTable?.querySelectorAll<HTMLAnchorElement>('tbody a') ?? [])].map((a) => a.getAttribute('href'))
+    ).toEqual(['/materials/custer-spar', '/materials/silica', '/materials/whiting', '/materials/epk-kaolin']);
     expect(page.querySelectorAll('#famous-unity tr').length).toBeGreaterThan(3);
     expect(page.querySelector('gc-recipe-limits')).not.toBeNull();
     expect(page.querySelectorAll('.famous-sources li')).toHaveLength(3);
@@ -394,6 +398,16 @@ describe("a famous glaze's page", () => {
       ['Wollastonite (NYAD 400)', '18.6'],
       ['New Zealand Halloysite (Imerys, Matauri Bay)', '14.3'],
       ['+ Copper oxide', '5']
+    ]);
+    expect(
+      [...page.querySelectorAll<HTMLAnchorElement>('#famous-local-recipe a')].map((a) => a.getAttribute('href'))
+    ).toEqual([
+      '/materials/dolomite',
+      '/materials/flint',
+      '/materials/g-200-eu-feldspar',
+      '/materials/nepheline-syenite-a270',
+      '/materials/wollastonite-nyad-400',
+      '/materials/new-zealand-halloysite-imerys-matauri-bay'
     ]);
     expect(local().textContent).toContain('It comes close to the target formula.');
     // A region the build made none for says so.
