@@ -81,3 +81,14 @@ updates:
     ignore:
       - dependency-name: mongo
         update-types: ['version-update:semver-major']
+
+  # The core and the catalog (lib/core, lib/catalog): a pull request when a library's main moves, which CI tests
+  # here as it would any change. Each library keeps its main releasable for this (its README, Versions). No
+  # cooldown: they are this project's own repositories.
+  - package-ecosystem: gitsubmodule
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      libraries:
+        patterns: ['lib/core', 'lib/catalog']

@@ -15,6 +15,9 @@ paths-ignore:
   - e2e
   - '**/*.spec.ts'
   - deploy/aws/mail-forwarder/test
+  # The libraries' own tests (submodules), which their repositories leave out too.
+  - lib/core/test
+  - lib/catalog/test
   # The messages in 57 languages and the English they were made from: about
   # 57 MB of JSON and Markdown with no code in it, which would only slow the scan.
   - client/public/i18n

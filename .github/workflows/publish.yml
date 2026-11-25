@@ -45,6 +45,7 @@ jobs:
           # The whole history, for the dates each page last changed.
           fetch-depth: 0
           persist-credentials: false
+          submodules: true
 
       # lib/page-dates.json, the sitemap's <lastmod> (lib/page-dates.js). The image has no .git, so the dates
       # are worked out here and go into the build context with lib/. It needs only Node, which the runner has.
