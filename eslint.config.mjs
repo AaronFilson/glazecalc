@@ -38,7 +38,10 @@ export default tseslint.config(
       '.claude/',
       'scratch/',
       // CDK's synthesized templates and the forwarder's copy (deploy/cdk).
-      'deploy/cdk/cdk.out/'
+      'deploy/cdk/cdk.out/',
+      // The core and the catalog are submodules, each linted by its own repository's config.
+      'lib/core/',
+      'lib/catalog/'
     ]
   },
 

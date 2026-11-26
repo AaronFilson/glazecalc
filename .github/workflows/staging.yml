@@ -68,6 +68,7 @@ jobs:
           # Every branch, with history, to find the commit on one.
           fetch-depth: 0
           persist-credentials: false
+          submodules: true
 
       # staging.sh runs this commit's scripts as root on the instance production
       # shares, so only commits on this repository's own branches, which only

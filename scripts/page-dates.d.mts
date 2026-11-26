@@ -6,3 +6,7 @@ export function newestDates(log: string): Map<string, string>;
 export function newestOf(sources: string[], dates: Map<string, string>): string | undefined;
 /** Every page's date, keyed as lib/page-dates.js keeps them (de/guides/firing). */
 export function allPageDates(dates: Map<string, string>): Record<string, string>;
+/** The libraries, git submodules (.gitmodules). */
+export const SUBMODULES: readonly string[];
+/** A submodule's changes as git log lines, each library file dated by the Glazecalc commit that moved its pointer. */
+export function submoduleLog(raw: string, changed: (dir: string, from: string, to: string) => string[]): string;

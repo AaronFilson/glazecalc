@@ -1,5 +1,7 @@
 # Keep the build context small and secrets out of images.
 .git
+# A submodule's pointer to its git folder (lib/core/.git, lib/catalog/.git).
+**/.git
 .github
 .angular
 node_modules

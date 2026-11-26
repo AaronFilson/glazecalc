@@ -15,18 +15,27 @@ const root = path.resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
 const work = fs.mkdtempSync(path.join(os.tmpdir(), 'glazecalc-linux-'));
 
-// The working tree as a tar, through a temporary index so what is staged is left alone.
-const git = (gitArgs) =>
-  execFileSync('git', gitArgs, {
-    cwd: root,
-    encoding: 'utf8',
-    env: { ...process.env, GIT_INDEX_FILE: path.join(work, 'index') }
-  }).trim();
-git(['read-tree', 'HEAD']);
-git(['add', '--all']);
-const tree = git(['write-tree']);
-const tar = path.join(work, 'source.tar');
-git(['archive', '--format=tar', '-o', tar, tree]);
+// The working tree as a tar, through a temporary index so what is staged is left alone. git archive leaves a
+// submodule's files out (only its pointer goes in), so each library (lib/core, lib/catalog) gets a tar of its
+// own working tree, the same way, beside it: test-e2e-linux.sh unpacks every submodule-*.tar there too.
+const archive = (cwd, name, prefix) => {
+  const git = (gitArgs) =>
+    execFileSync('git', gitArgs, {
+      cwd,
+      encoding: 'utf8',
+      env: { ...process.env, GIT_INDEX_FILE: path.join(work, `${name}.index`) }
+    }).trim();
+  git(['read-tree', 'HEAD']);
+  git(['add', '--all']);
+  const file = path.join(work, `${name}.tar`);
+  git(['archive', '--format=tar', ...(prefix ? [`--prefix=${prefix}/`] : []), '-o', file, git(['write-tree'])]);
+  return file;
+};
+const tar = archive(root, 'source');
+for (const dir of ['lib/core', 'lib/catalog']) {
+  if (!fs.existsSync(path.join(root, dir, '.git'))) continue; // not checked out: the server says what to run
+  archive(path.join(root, dir), `submodule-${path.basename(dir)}`, dir);
+}
 
 const script = path.join(root, 'scripts', 'test-e2e-linux.sh');
 const results = path.join(root, 'test-results-linux');

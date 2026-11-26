@@ -24,6 +24,9 @@ on:
       - '!deploy/aws/mail-forwarder/test/**'
       - '.github/workflows/**'
       - '.github/codeql/**'
+      # A library's new version is a submodule pointer moving, with no .ts of Glazecalc's own.
+      - 'lib/core'
+      - 'lib/catalog'
   pull_request:
     branches: [master]
     paths:
@@ -38,6 +41,9 @@ on:
       - '!deploy/aws/mail-forwarder/test/**'
       - '.github/workflows/**'
       - '.github/codeql/**'
+      # A library's new version is a submodule pointer moving, with no .ts of Glazecalc's own.
+      - 'lib/core'
+      - 'lib/catalog'
   schedule:
     - cron: '41 5 * * 1'
   workflow_dispatch:
@@ -69,6 +75,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+          submodules: true
 
       - uses: github/codeql-action/init@33d7b85da1a04171e211befe2c739303b9a4c066 # v4.39.3
         with:

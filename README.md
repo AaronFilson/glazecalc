@@ -262,12 +262,18 @@ You need [Node.js](https://nodejs.org/) 24 (24.15 or later) with npm 11, and
 [MongoDB Community Server](https://www.mongodb.com/try/download/community) 9.0 (4.4 or later
 works).
 
-    git clone https://github.com/AaronFilson/glazecalc.git
+    git clone --recurse-submodules https://github.com/AaronFilson/glazecalc.git
     cd glazecalc
     npm install
     npm run db                        # MongoDB on ./db, in a second terminal; leave it running
     npm run seed                      # standard materials, additives and advice
     npm run dev                       # then open http://localhost:3000
+
+The chemistry is two libraries of its own, mounted as git submodules: the core
+([glazecalc-core](https://github.com/AaronFilson/glazecalc-core)) at `lib/core` and the catalog
+([glazecalc-catalog](https://github.com/AaronFilson/glazecalc-catalog)) at `lib/catalog`. A clone made without
+`--recurse-submodules` needs `git submodule update --init`; the build, the dev server and the tests stop and say
+so. For a second worktree, `node scripts/worktree.mjs <path> -b <branch>` fills both.
 
 Settings such as `APP_SECRET` and `MONGODB_URI` can go in a `.env` file (copy `.env.example`,
 which describes each one); the scripts load it with Node's built-in `--env-file` support. Outside
@@ -329,8 +335,8 @@ including PowerShell and cmd.
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `npm test`               | Server and chemistry tests (Mocha), the files in parallel (a worker for each core but one; `--jobs` sets it). Each worker serves the app inside its process on a free port with a database of its own (`glazecalc_test_w0`, `_w1`, …, emptied before each file and dropped after); only `mongod` must be running.                                                                                              |
 | `npm run test:client`    | Angular unit tests (Vitest), with no server or database.                                                                                                                                                                                                                                                                                                                                                       |
-| `npm run test:core`      | The chemistry core's own tests (`lib/core/test`, Node's test runner), with no server, database or packages. They fail below 98% of its branches, or 99% of its lines or functions.                                                                                                                                                                                                                             |
-| `npm run test:catalog`   | The catalog's own tests (`lib/catalog/test`), the tables the core is given, with no server, database or packages. They fail below 100% of its lines, branches or functions.                                                                                                                                                                                                                                    |
+| `npm run test:core`      | The chemistry core's own tests (`lib/core/test`, Node's test runner, at the version Glazecalc pins), with no server, database or packages. They fail below 98% of its branches, or 99% of its lines or functions.                                                                                                                                                                                              |
+| `npm run test:catalog`   | The catalog's own tests (`lib/catalog/test`, at the version Glazecalc pins), the tables the core is given, with no server, database or packages. They fail below 100% of its lines, branches or functions.                                                                                                                                                                                                     |
 | `npm run test:e2e`       | Browser and accessibility tests (Playwright and axe), in parallel workers (half the cores; `E2E_WORKERS` sets how many) against one server. They build the app when `dist/` is older than its sources (`E2E_BUILD=always` or `never` overrides), run it on port 3100 (`E2E_PORT`) with a `glazecalc_e2e` database (`E2E_MONGO_URI`) they reset, and need Chromium once: `npx playwright install chromium`.     |
 | `npm run test:e2e:linux` | The browser tests on Linux in Docker, in the same Playwright image CI runs them in, so a layout that passes here passes there. It tests the working tree, uncommitted changes included, and copies what failed to `test-results-linux/`. On Windows it runs through WSL, which needs Docker inside it.                                                                                                         |
 | `npm run test:e2e:both`  | The browser tests here and on Linux at the same time, each with a quarter of the cores (`E2E_WORKERS` sets each run's workers), with each line marked with the run it came from. The two share nothing, so it takes about as long as the slower one.                                                                                                                                                           |
