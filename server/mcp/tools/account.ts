@@ -11,7 +11,7 @@ import mongoose from 'mongoose';
 import type { McpServer } from '@modelcontextprotocol/server';
 import chemistry from '../../../lib/chemistry/index.js';
 import firingLib from '../../../lib/cones/firing.js';
-import type { Band, FiringBlock } from '../../../lib/cones/firing.js';
+import type { Atmosphere, Band, ConeScale, FiringBlock, FiringProcess } from '../../../lib/cones/firing.js';
 import results from '../../../lib/cones/results.js';
 import recipe from '../../../lib/recipe/index.js';
 import type { MaterialRecord, TryMaterial } from '../../../lib/recipe/index.js';
@@ -92,16 +92,17 @@ const coneFilterArgs = {
     .describe(
       'Only recipes whose stated firing includes this cone ("6", "06", "5.5", SK "6a"), or for scale "temperature" this °C. A range matches any cone inside it; recipes tested at it come first. Recipes stated in another scale match approximately: Orton and SK by the Kyoto institute’s same-kiln table (SK 7 to 14 against Orton 4 to 12; other cones match their own scale only), a temperature when the cone bends within 15 °C of it (Orton by its older chart for large cones at 150 °C an hour, which has figures to cone 15).'
     ),
+  // The libraries' own lists (lib/core cones/firing.ts), held by server/test/library_contract_tests.ts.
   scale: z
-    .enum(['orton', 'sk', 'temperature'])
+    .enum(firingLib.SCALES as unknown as readonly [ConeScale, ...ConeScale[]])
     .optional()
     .describe('The scale the cone is in: Orton (the default), SK (JIS R 8101) or a temperature in °C.'),
   atmosphere: z
-    .enum(['oxidation', 'reduction', 'neutral'])
+    .enum(firingLib.ATMOSPHERES as unknown as readonly [Atmosphere, ...Atmosphere[]])
     .optional()
     .describe('Only recipes stated for this atmosphere.'),
   process: z
-    .enum(['wood', 'soda', 'salt', 'raku', 'pit'])
+    .enum(firingLib.PROCESSES as unknown as readonly [FiringProcess, ...FiringProcess[]])
     .optional()
     .describe('Only recipes stated for this firing process.')
 };

@@ -52,7 +52,7 @@ import {
 } from '@modelcontextprotocol/server';
 import chemistry from '../../../lib/chemistry/index.js';
 import recipe from '../../../lib/recipe/index.js';
-import type { MaterialRecord } from '../../../lib/recipe/index.js';
+import type { FiringBand, MaterialRecord } from '../../../lib/recipe/index.js';
 import { makeRoom, type RecordModel } from '../../lib/guest_limits.ts';
 import { textOf, type MessageCode } from '../../lib/messages.ts';
 import {
@@ -152,8 +152,9 @@ const NEEDS = 'Needs an access token that can read and change your records.';
 const idArg = z.string().min(1).max(40);
 const titleArg = z.string().trim().min(1).max(200);
 const notesArg = z.string().max(10000);
+// The library's bands (lib/recipe/limits.js FIRING_BANDS), held by server/test/library_contract_tests.ts.
 const bandArg = z
-  .enum(['low', 'mid', 'high', 'top'])
+  .enum(recipe.FIRING_BANDS as unknown as readonly [FiringBand, ...FiringBand[]])
   .describe(
     'The firing band its limits are checked in: low (cone 06-02), mid (cone 4-6), high (cone 9-11) or top (cone 12 up, where no limit set has figures, so none are checked), as the recipe page chooses it.'
   );
