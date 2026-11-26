@@ -38,6 +38,10 @@ fi
 # files, so a container clears them at the end.
 mkdir -p "$WORK"
 tar -xf "$TAR" -C "$WORK"
+# The libraries, git submodules, which git archive leaves out of the source tar (test-e2e-linux.mjs).
+for SUBMODULE in "$(dirname "$TAR")"/submodule-*.tar; do
+  if [ -e "$SUBMODULE" ]; then tar -xf "$SUBMODULE" -C "$WORK"; fi
+done
 
 # The containers go before their network, which Docker will not remove while
 # one is still on it. It runs once, however the script ends: done, failed, or

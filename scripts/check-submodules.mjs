@@ -24,7 +24,11 @@ if (empty.length) {
 // Where git is at hand (not in the Docker image, which has no .git): each library at the commit Glazecalc pins.
 let status = '';
 try {
-  status = execFileSync('git', ['submodule', 'status', ...LIBRARIES], { cwd: ROOT, encoding: 'utf8' });
+  status = execFileSync('git', ['submodule', 'status', ...LIBRARIES], {
+    cwd: ROOT,
+    encoding: 'utf8',
+    stdio: ['ignore', 'pipe', 'ignore']
+  });
 } catch {
   process.exit(0);
 }
